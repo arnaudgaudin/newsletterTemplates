@@ -1,6 +1,6 @@
 [submodule "_lib/ink"]
 	path = _lib/ink
-	url = ../ink.git
+	url = https://github.com/arnaudgaudin/ink.git
 [submodule "_lib/inkless"]
 	path = _lib/inkless
-	url = ../inkless.git
+	url = https://github.com/arnaudgaudin/inkless.git
