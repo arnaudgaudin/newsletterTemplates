@@ -6,6 +6,6 @@ echo "inlining newsletter.html ..."
 lessc ${PWD}/theme/less/style.less ${PWD}/theme/css/style.css
 
 #inline style in html
-premailer ${PWD}/newsletter.html > ${PWD}/newsletter-inline.html
+../../_lib/premailer/bin/premailer ${PWD}/newsletter.html > ${PWD}/newsletter-inline.html
 
 echo "That's all folks !"
