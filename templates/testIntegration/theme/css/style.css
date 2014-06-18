@@ -765,21 +765,6 @@ body.outlook p {
     display: inherit !important;
   }
 }
-body {
-  background-color: #E6E6E6;
-}
-table.body {
-  background-color: #ccc;
-}
-table.header {
-  background-color: #B3B3B3;
-}
-table.header .container {
-  background-color: transparent;
-}
-table.container {
-  background-color: rgba(128, 128, 128, 0.5);
-}
 table.facebook td {
   background: #3b5998;
   border-color: #2d4473;
