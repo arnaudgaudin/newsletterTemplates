@@ -1,14 +1,20 @@
 echo "Hi, $USER!"
-echo "compiling style.less ..."
-echo "inlining newsletter.html ..."
 
 #compile less file
+echo "compiling style.less ..."
 lessc ${PWD}/theme/less/style.less ${PWD}/theme/css/style.css
 
 #inline style in html
+echo "inlining newsletter.html ..."
 #doc premailer: http://rubydoc.info/gems/premailer/1.8.2/Premailer
 # https://github.com/premailer/premailer/wiki/Premailer-Command-Line-Usage
 # UTILISER IMPÉRATIVEMENT AVEC LE PARSER NOKOGIRI
-premailer -v ${PWD}/newsletter.html > ${PWD}/newsletter-inline.html
+premailer -v -e ${PWD}/newsletter.html > ${PWD}/newsletter-inline.html
+
+#Désactivation des commentaires sur les balises Posta Nova
+echo "enabling PostaNova tags ..."
+cp newsletter-inline.html newsletter-inline-postanova.html
+perl -pi -e 's/<!--{{//g;' newsletter-inline-postanova.html
+perl -pi -e 's/}}-->//g;' newsletter-inline-postanova.html
 
 echo "That's all folks !"
