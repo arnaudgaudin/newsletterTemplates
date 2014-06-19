@@ -4,6 +4,3 @@
 [submodule "_lib/inkless"]
 	path = _lib/inkless
 	url = https://github.com/arnaudgaudin/inkless.git
-[submodule "_lib/premailer"]
-	path = _lib/premailer
-	url = https://github.com/premailer/premailer.git
