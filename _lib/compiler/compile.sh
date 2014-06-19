@@ -10,7 +10,7 @@ lessc ${PWD}/theme/less/style.less ${PWD}/theme/css/style.css
 
 #inline style in html
 #doc premailer: http://rubydoc.info/gems/premailer/1.8.2/Premailer
-# issue : https://github.com/zurb/ink/issues/59
+# UTILISER IMPÉRATIVEMENT AVEC LE PARSER NOKOGIRI
 premailer -v ${PWD}/newsletter.html > ${PWD}/newsletter-inline.html
 # /usr/local/lib/node_modules/swig-email-templates/bin/swig-email-templates.js render newsletter.html -r ${PWD} > ${PWD}/newsletter-inline2.html
 
