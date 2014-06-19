@@ -5,8 +5,12 @@ echo "inlining newsletter.html ..."
 #compile less file
 lessc ${PWD}/theme/less/style.less ${PWD}/theme/css/style.css
 
+#appel js de compilation premailer
+node ${PWD}/../../_lib/compiler/premailer.js
+
 #inline style in html
 #doc premailer: http://rubydoc.info/gems/premailer/1.8.2/Premailer
 premailer -v ${PWD}/newsletter.html > ${PWD}/newsletter-inline.html
+# /usr/local/lib/node_modules/swig-email-templates/bin/swig-email-templates.js render newsletter.html -r ${PWD} > ${PWD}/newsletter-inline2.html
 
 echo "That's all folks !"
