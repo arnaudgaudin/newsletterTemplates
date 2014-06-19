@@ -6,7 +6,7 @@ echo "inlining newsletter.html ..."
 lessc ${PWD}/theme/less/style.less ${PWD}/theme/css/style.css
 
 #appel js de compilation premailer
-node ${PWD}/../../_lib/compiler/premailer.js
+# sudo ${PWD}/../../_lib/compiler/premailer.rb
 
 #inline style in html
 #doc premailer: http://rubydoc.info/gems/premailer/1.8.2/Premailer
