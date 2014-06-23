@@ -50,7 +50,7 @@ img {
 }
 center {
   width: 100%;
-  min-width: 580px;
+  min-width: 640px;
 }
 a img {
   border: none;
@@ -88,7 +88,7 @@ table.body {
   width: 100%;
 }
 table.container {
-  width: 580px;
+  width: 640px;
   margin: 0 auto;
   text-align: inherit;
 }
@@ -127,112 +127,112 @@ table.container td.last {
   padding-right: 0px;
 }
 table.one {
-  width: 30px;
+  width: 35px;
 }
 table.two {
-  width: 80px;
+  width: 90px;
 }
 table.three {
-  width: 130px;
+  width: 145px;
 }
 table.four {
-  width: 180px;
+  width: 200px;
 }
 table.five {
-  width: 230px;
+  width: 255px;
 }
 table.six {
-  width: 280px;
+  width: 310px;
 }
 table.seven {
-  width: 330px;
+  width: 365px;
 }
 table.eight {
-  width: 380px;
+  width: 420px;
 }
 table.nine {
-  width: 430px;
+  width: 475px;
 }
 table.ten {
-  width: 480px;
-}
-table.eleven {
   width: 530px;
 }
+table.eleven {
+  width: 585px;
+}
 table.twelve {
-  width: 580px;
+  width: 640px;
 }
 table.one center {
-  min-width: 30px;
+  min-width: 35px;
 }
 table.two center {
-  min-width: 80px;
+  min-width: 90px;
 }
 table.three center {
-  min-width: 130px;
+  min-width: 145px;
 }
 table.four center {
-  min-width: 180px;
+  min-width: 200px;
 }
 table.five center {
-  min-width: 230px;
+  min-width: 255px;
 }
 table.six center {
-  min-width: 280px;
-}
-table.seven center {
-  min-width: 330px;
-}
-table.eight center {
-  min-width: 380px;
-}
-table.nine center {
-  min-width: 430px;
-}
-table.ten center {
-  min-width: 480px;
-}
-table.eleven center {
-  min-width: 530px;
-}
-table.twelve center {
-  min-width: 580px;
-}
-table.one .panel center {
-  min-width: 10px;
-}
-table.two .panel center {
-  min-width: 60px;
-}
-table.three .panel center {
-  min-width: 110px;
-}
-table.four .panel center {
-  min-width: 160px;
-}
-table.five .panel center {
-  min-width: 210px;
-}
-table.six .panel center {
-  min-width: 260px;
-}
-table.seven .panel center {
   min-width: 310px;
 }
+table.seven center {
+  min-width: 365px;
+}
+table.eight center {
+  min-width: 420px;
+}
+table.nine center {
+  min-width: 475px;
+}
+table.ten center {
+  min-width: 530px;
+}
+table.eleven center {
+  min-width: 585px;
+}
+table.twelve center {
+  min-width: 640px;
+}
+table.one .panel center {
+  min-width: 15px;
+}
+table.two .panel center {
+  min-width: 70px;
+}
+table.three .panel center {
+  min-width: 125px;
+}
+table.four .panel center {
+  min-width: 180px;
+}
+table.five .panel center {
+  min-width: 235px;
+}
+table.six .panel center {
+  min-width: 290px;
+}
+table.seven .panel center {
+  min-width: 345px;
+}
 table.eight .panel center {
-  min-width: 360px;
+  min-width: 400px;
 }
 table.nine .panel center {
-  min-width: 410px;
+  min-width: 455px;
 }
 table.ten .panel center {
-  min-width: 460px;
-}
-table.eleven .panel center {
   min-width: 510px;
 }
+table.eleven .panel center {
+  min-width: 565px;
+}
 table.twelve .panel center {
-  min-width: 560px;
+  min-width: 620px;
 }
 .body .columns td.one,
 .body .column td.one {
@@ -283,37 +283,37 @@ table.twelve .panel center {
   width: 100%;
 }
 td.offset-by-one {
-  padding-left: 50px;
+  padding-left: 55px;
 }
 td.offset-by-two {
-  padding-left: 100px;
+  padding-left: 110px;
 }
 td.offset-by-three {
-  padding-left: 150px;
+  padding-left: 165px;
 }
 td.offset-by-four {
-  padding-left: 200px;
+  padding-left: 220px;
 }
 td.offset-by-five {
-  padding-left: 250px;
+  padding-left: 275px;
 }
 td.offset-by-six {
-  padding-left: 300px;
+  padding-left: 330px;
 }
 td.offset-by-seven {
-  padding-left: 350px;
+  padding-left: 385px;
 }
 td.offset-by-eight {
-  padding-left: 400px;
+  padding-left: 440px;
 }
 td.offset-by-nine {
-  padding-left: 450px;
+  padding-left: 495px;
 }
 td.offset-by-ten {
-  padding-left: 500px;
+  padding-left: 550px;
 }
 td.offset-by-eleven {
-  padding-left: 550px;
+  padding-left: 605px;
 }
 td.expander {
   visibility: hidden;
@@ -340,32 +340,32 @@ table.column .text-pad-right {
 /* Block Grid */
 .block-grid {
   width: 100%;
-  max-width: 580px;
+  max-width: 640px;
 }
 .block-grid td {
   display: inline-block;
   padding: 10px;
 }
 .two-up td {
-  width: 270px;
+  width: 300px;
 }
 .three-up td {
-  width: 173px;
+  width: 193px;
 }
 .four-up td {
-  width: 125px;
+  width: 140px;
 }
 .five-up td {
-  width: 96px;
+  width: 108px;
 }
 .six-up td {
-  width: 76px;
+  width: 86px;
 }
 .seven-up td {
-  width: 62px;
+  width: 71px;
 }
 .eight-up td {
-  width: 52px;
+  width: 60px;
 }
 /* Alignment & Visibility Classes */
 table.center,
@@ -648,7 +648,7 @@ body.outlook p {
   display: inline !important;
 }
 /*  Media Queries */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 660px) {
   table[class="body"] img {
     width: auto !important;
     height: auto !important;
@@ -780,10 +780,4 @@ body,
 }
 .container {
   background-color: #aaa;
-}
-.test1 {
-  background-color: #0f0;
-}
-.test2 {
-  background-color: #00f;
 }
