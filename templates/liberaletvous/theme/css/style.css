@@ -776,6 +776,18 @@ body,
 .body {
   background-color: #444444;
 }
+body,
+table.body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+td {
+  color: #fff;
+}
 .bgc-lbvColorUne {
   background-color: #3059a1;
 }
@@ -793,6 +805,9 @@ body,
 }
 .bgc-lbvColorActus {
   background-color: #e3ecf8;
+}
+.bgc-lbvColorFooter {
+  background-color: #599cd6;
 }
 .header {
   background-color: #888888;
@@ -818,4 +833,13 @@ body,
 .contentMain .columns td {
   padding-top: 10px;
   padding-bottom: 10px;
+}
+.contentBottom .wrapper {
+  padding-top: 0;
+}
+.contentBottom img {
+  float: none;
+}
+.contentBottom td {
+  color: #fff;
 }

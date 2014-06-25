@@ -4,6 +4,11 @@
 // additionnal template's style which extends ink's style
 body, .body { background-color: @bodyBackground; }
 
+//typography (rajouter variable)
+body, table.body, h1, h2, h3, h4, h5, h6, p, td {
+	color: #fff;
+}
+
 //couleurs de fond des cases
 .bgc-lbvColorUne { background-color: @lbvColorUne; }
 .bgc-lbvColorProfession { background-color: @lbvColorProfession; }
@@ -11,6 +16,7 @@ body, .body { background-color: @bodyBackground; }
 .bgc-lbvColorQuiz { background-color: @lbvColorQuiz; }
 .bgc-lbvColorOffre { background-color: @lbvColorOffre; }
 .bgc-lbvColorActus { background-color: @lbvColorActus; }
+.bgc-lbvColorFooter { background-color: @lbvColorFooter; }
 
 .header {
 	background-color: @headerBackground;
@@ -36,4 +42,14 @@ body, .body { background-color: @bodyBackground; }
 		padding-top: 10px;
 		padding-bottom: 10px;
 	}
+}
+
+.contentSecondary {
+}
+
+.contentBottom {
+	//suppression paddingTop
+	.wrapper { padding-top: 0; }
+	img { float: none; }
+	td { color: #fff; }
 }
