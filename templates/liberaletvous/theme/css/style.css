@@ -50,7 +50,7 @@ img {
 }
 center {
   width: 100%;
-  min-width: 580px;
+  min-width: 600px;
 }
 a img {
   border: none;
@@ -88,7 +88,7 @@ table.body {
   width: 100%;
 }
 table.container {
-  width: 580px;
+  width: 600px;
   margin: 0 auto;
   text-align: inherit;
 }
@@ -101,7 +101,7 @@ table.container table.row {
   display: block;
 }
 td.wrapper {
-  padding: 10px 20px 0px 0px;
+  padding: 10px 0px 0px 0px;
   position: relative;
 }
 table.columns,
@@ -127,112 +127,112 @@ table.container td.last {
   padding-right: 0px;
 }
 table.one {
-  width: 30px;
+  width: 50px;
 }
 table.two {
-  width: 80px;
+  width: 100px;
 }
 table.three {
-  width: 130px;
+  width: 150px;
 }
 table.four {
-  width: 180px;
+  width: 200px;
 }
 table.five {
-  width: 230px;
+  width: 250px;
 }
 table.six {
-  width: 280px;
+  width: 300px;
 }
 table.seven {
-  width: 330px;
+  width: 350px;
 }
 table.eight {
-  width: 380px;
+  width: 400px;
 }
 table.nine {
-  width: 430px;
+  width: 450px;
 }
 table.ten {
-  width: 480px;
+  width: 500px;
 }
 table.eleven {
-  width: 530px;
+  width: 550px;
 }
 table.twelve {
-  width: 580px;
+  width: 600px;
 }
 table.one center {
-  min-width: 30px;
+  min-width: 50px;
 }
 table.two center {
-  min-width: 80px;
+  min-width: 100px;
 }
 table.three center {
-  min-width: 130px;
+  min-width: 150px;
 }
 table.four center {
-  min-width: 180px;
+  min-width: 200px;
 }
 table.five center {
-  min-width: 230px;
+  min-width: 250px;
 }
 table.six center {
-  min-width: 280px;
+  min-width: 300px;
 }
 table.seven center {
-  min-width: 330px;
+  min-width: 350px;
 }
 table.eight center {
-  min-width: 380px;
+  min-width: 400px;
 }
 table.nine center {
-  min-width: 430px;
+  min-width: 450px;
 }
 table.ten center {
-  min-width: 480px;
+  min-width: 500px;
 }
 table.eleven center {
-  min-width: 530px;
+  min-width: 550px;
 }
 table.twelve center {
-  min-width: 580px;
+  min-width: 600px;
 }
 table.one .panel center {
-  min-width: 10px;
+  min-width: 50px;
 }
 table.two .panel center {
-  min-width: 60px;
+  min-width: 100px;
 }
 table.three .panel center {
-  min-width: 110px;
+  min-width: 150px;
 }
 table.four .panel center {
-  min-width: 160px;
+  min-width: 200px;
 }
 table.five .panel center {
-  min-width: 210px;
+  min-width: 250px;
 }
 table.six .panel center {
-  min-width: 260px;
+  min-width: 300px;
 }
 table.seven .panel center {
-  min-width: 310px;
+  min-width: 350px;
 }
 table.eight .panel center {
-  min-width: 360px;
+  min-width: 400px;
 }
 table.nine .panel center {
-  min-width: 410px;
+  min-width: 450px;
 }
 table.ten .panel center {
-  min-width: 460px;
+  min-width: 500px;
 }
 table.eleven .panel center {
-  min-width: 510px;
+  min-width: 550px;
 }
 table.twelve .panel center {
-  min-width: 560px;
+  min-width: 600px;
 }
 .body .columns td.one,
 .body .column td.one {
@@ -340,32 +340,32 @@ table.column .text-pad-right {
 /* Block Grid */
 .block-grid {
   width: 100%;
-  max-width: 580px;
+  max-width: 600px;
 }
 .block-grid td {
   display: inline-block;
   padding: 10px;
 }
 .two-up td {
-  width: 270px;
+  width: 300px;
 }
 .three-up td {
-  width: 173px;
+  width: 200px;
 }
 .four-up td {
-  width: 125px;
+  width: 150px;
 }
 .five-up td {
-  width: 96px;
+  width: 120px;
 }
 .six-up td {
-  width: 76px;
+  width: 100px;
 }
 .seven-up td {
-  width: 62px;
+  width: 85px;
 }
 .eight-up td {
-  width: 52px;
+  width: 75px;
 }
 /* Alignment & Visibility Classes */
 table.center,
@@ -766,13 +766,7 @@ body.outlook p {
   }
 }
 @-moz-document url-prefix() {
-  td.expander {
-    display: none;
-  }
   @media only screen and (max-width: 660px) {
-    td.expander {
-      display: inherit;
-    }
     table[class="body"] img {
       width: 100% !important;
     }
@@ -781,6 +775,24 @@ body.outlook p {
 body,
 .body {
   background-color: #444444;
+}
+.bgc-lbvColorUne {
+  background-color: #3059a1;
+}
+.bgc-lbvColorProfession {
+  background-color: #599cd6;
+}
+.bgc-lbvColorDossier {
+  background-color: #ce7d44;
+}
+.bgc-lbvColorQuiz {
+  background-color: #9cb7df;
+}
+.bgc-lbvColorOffre {
+  background-color: #6a5a9f;
+}
+.bgc-lbvColorActus {
+  background-color: #e3ecf8;
 }
 .header {
   background-color: #888888;
@@ -800,15 +812,10 @@ body,
 .container {
   background-color: #aaa;
 }
-.contentActuMois {
-  background-color: #3059a1;
+.contentMain .wrapper {
+  padding-top: 0;
 }
-.contentActuMois > table {
-  background-color: #1e3866;
-}
-.contentTest1 {
-  background-color: #599cd6;
-}
-.contentTest1 > table {
-  background-color: #2d76b6;
+.contentMain .columns td {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }

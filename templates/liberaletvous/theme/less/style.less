@@ -4,6 +4,14 @@
 // additionnal template's style which extends ink's style
 body, .body { background-color: @bodyBackground; }
 
+//couleurs de fond des cases
+.bgc-lbvColorUne { background-color: @lbvColorUne; }
+.bgc-lbvColorProfession { background-color: @lbvColorProfession; }
+.bgc-lbvColorDossier { background-color: @lbvColorDossier; }
+.bgc-lbvColorQuiz { background-color: @lbvColorQuiz; }
+.bgc-lbvColorOffre { background-color: @lbvColorOffre; }
+.bgc-lbvColorActus { background-color: @lbvColorActus; }
+
 .header {
 	background-color: @headerBackground;
 
@@ -21,12 +29,11 @@ body, .body { background-color: @bodyBackground; }
 	background-color: #aaa;
 }
 
-.contentActuMois {
-	background-color: #3059a1;
-	& > table { background-color: darken(#3059a1, 15%); }
-}
-
-.contentTest1 {
-	background-color: #599cd6;
-	& > table { background-color: darken(#599cd6, 15%); }
+.contentMain {
+	//suppression paddingTop
+	.wrapper { padding-top: 0; }
+	.columns td {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
 }
