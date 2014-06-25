@@ -765,6 +765,13 @@ body.outlook p {
     display: inherit !important;
   }
 }
+@-moz-document url-prefix() {
+  @media only screen and (max-width: 660px) {
+    table[class="body"] img {
+      width: 100% !important;
+    }
+  }
+}
 body,
 .body {
   background-color: #000000;
