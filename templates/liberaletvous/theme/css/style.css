@@ -813,10 +813,12 @@ td {
   background-color: #ffffff;
 }
 .header .tagline {
-  background-color: #0f0;
+  vertical-align: middle;
 }
-.header .tagline > table {
-  background-color: #00b300;
+.header .tagline .title {
+  color: #17a9dc;
+  font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+  font-size: 24px;
 }
 .container {
   background-color: #aaa;
