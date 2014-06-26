@@ -810,13 +810,7 @@ td {
   background-color: #599cd6;
 }
 .header {
-  background-color: #888888;
-}
-.header .logo {
-  background-color: #f00;
-}
-.header .logo > table {
-  background-color: #b30000;
+  background-color: #ffffff;
 }
 .header .tagline {
   background-color: #0f0;
