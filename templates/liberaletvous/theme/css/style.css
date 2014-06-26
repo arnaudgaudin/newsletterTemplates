@@ -6,6 +6,13 @@
  * 
  */
 /**********************************************
+* Inkless - Addons                            *
+**********************************************/
+body,
+table.body {
+  background-color: #444444;
+}
+/**********************************************
 * Ink v1.0.5 - Copyright 2013 ZURB Inc        *
 **********************************************/
 /* Client-specific Styles & Reset */
@@ -405,9 +412,7 @@ h5,
 h6,
 p,
 td {
-  color: #222222;
-  font-family: "Helvetica", "Arial", sans-serif;
-  font-weight: normal;
+  color: #ffffff;
   padding: 0;
   margin: 0;
   text-align: left;
@@ -419,54 +424,59 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  color: inherit;
   word-break: normal;
 }
 h1 {
-  font-size: 40px;
-}
-h2 {
-  font-size: 36px;
-}
-h3 {
-  font-size: 32px;
-}
-h4 {
-  font-size: 28px;
-}
-h5 {
   font-size: 24px;
 }
+h2 {
+  font-size: 14px;
+}
+h3 {
+  font-size: 10px;
+}
+h4 {
+  font-size: 12px;
+}
+h5 {
+  font-size: 12px;
+}
 h6 {
-  font-size: 20px;
+  font-size: 12px;
 }
 body,
 table.body,
 p,
 td {
-  font-size: 14px;
-  line-height: 19px;
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
 }
 p.lead,
 p.lede,
 p.leed {
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 16.25px;
+  line-height: 18.6875px;
 }
 p {
   margin-bottom: 10px;
 }
 small {
-  font-size: 10px;
+  font-size: 11px;
 }
 a {
   color: #2ba6cb;
   text-decoration: none;
 }
 a:hover {
-  color: #2795b6 !important;
+  color: #2284a1 !important;
 }
 a:active {
-  color: #2795b6 !important;
+  color: #2284a1 !important;
 }
 a:visited {
   color: #2ba6cb !important;
@@ -525,7 +535,7 @@ table.large-button td {
   width: auto !important;
   text-align: center;
   background: #2ba6cb;
-  border: 1px solid #2284a1;
+  border: 1px solid #196177;
   color: #ffffff;
   padding: 8px 0;
 }
@@ -548,30 +558,30 @@ table.medium-button td a,
 table.large-button td a {
   font-weight: bold;
   text-decoration: none;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Arial, sans-serif;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 14.95px;
   display: block;
   height: 100%;
   width: 100%;
 }
 table.tiny-button td a {
-  font-size: 12px;
+  font-size: 11.05px;
   font-weight: normal;
 }
 table.small-button td a {
-  font-size: 16px;
+  font-size: 14.95px;
 }
 table.medium-button td a {
-  font-size: 20px;
+  font-size: 18.85px;
 }
 table.large-button td a {
-  font-size: 24px;
+  font-size: 26px;
 }
 table.button:hover td,
 table.button:visited td,
 table.button:active td {
-  background: #2795b6 !important;
+  background: #2284a1 !important;
 }
 table.button:hover td a,
 table.button:visited td a,
@@ -583,7 +593,7 @@ table.tiny-button:hover td,
 table.small-button:hover td,
 table.medium-button:hover td,
 table.large-button:hover td {
-  background: #2795b6 !important;
+  background: #2284a1 !important;
 }
 table.button:hover td a,
 table.button:active td a,
@@ -621,17 +631,17 @@ table.secondary:active td a {
 }
 table.success td {
   background: #5da423;
-  border-color: #457a1a;
+  border-color: #396516;
 }
 table.success:hover td {
-  background: #457a1a !important;
+  background: #396516 !important;
 }
 table.alert td {
   background: #c60f13;
-  border-color: #970b0e;
+  border-color: #67080a;
 }
 table.alert:hover td {
-  background: #970b0e !important;
+  background: #67080a !important;
 }
 table.radius td {
   -webkit-border-radius: 3px;
@@ -772,22 +782,6 @@ body.outlook p {
     }
   }
 }
-body,
-.body {
-  background-color: #444444;
-}
-body,
-table.body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-td {
-  color: #fff;
-}
 .bgc-lbvColorUne {
   background-color: #3059a1;
 }
@@ -810,18 +804,50 @@ td {
   background-color: #599cd6;
 }
 .header {
-  background-color: #ffffff;
+  background-color: #fff;
 }
 .header .tagline {
   vertical-align: middle;
 }
 .header .tagline .title {
   color: #17a9dc;
-  font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
-  font-size: 24px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: normal;
 }
-.container {
-  background-color: #aaa;
+h3,
+h4 {
+  text-transform: uppercase;
+  margin-bottom: 9px;
+}
+p {
+  margin-bottom: 4.5px;
+}
+ul,
+ol {
+  padding: 0;
+  margin: 0 0 4.5px 25px;
+}
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin-bottom: 0;
+}
+li {
+  line-height: 18px;
+}
+ul.unstyled,
+ol.unstyled {
+  margin-left: 0;
+  list-style: none;
+}
+.puce {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-color: transparent transparent transparent #ffffff;
+  border-style: solid;
+  border-width: 4px;
 }
 .contentMain .wrapper {
   padding-top: 0;
@@ -829,6 +855,10 @@ td {
 .contentMain .columns td {
   padding-top: 10px;
   padding-bottom: 10px;
+}
+.contentProfession ul li .title {
+  color: #d7d900;
+  font-weight: bold;
 }
 .contentBottom .wrapper {
   padding-top: 0;

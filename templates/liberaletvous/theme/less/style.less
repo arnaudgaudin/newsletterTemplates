@@ -2,12 +2,6 @@
 @import "import.less";
 
 // additionnal template's style which extends ink's style
-body, .body { background-color: @bodyBackground; }
-
-//typography (rajouter variable)
-body, table.body, h1, h2, h3, h4, h5, h6, p, td {
-	color: #fff;
-}
 
 //couleurs de fond des cases
 .bgc-lbvColorUne { background-color: @lbvColorUne; }
@@ -19,20 +13,49 @@ body, table.body, h1, h2, h3, h4, h5, h6, p, td {
 .bgc-lbvColorFooter { background-color: @lbvColorFooter; }
 
 .header {
-	background-color: @headerBackground;
+	background-color: #fff;
 
 	.tagline {
 		vertical-align: middle;
 		.title {
 			color: @lbvColorTagline;
-			font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
-			font-size: 24px;
+			font-family: @serifFontFamily;
+			font-weight: normal;
 		}
 	}
 }
 
-.container {
-	background-color: #aaa;
+//titres de catégories en majuscule
+h3, h4 {
+	text-transform: uppercase;
+	margin-bottom: (@baseLineHeight / 2);
+}
+
+p { margin-bottom: (@baseLineHeight / 4); }
+
+// Unordered and Ordered lists
+ul, ol {
+  padding: 0;
+  margin: 0 0 (@baseLineHeight / 4) 25px;
+}
+ul ul, ul ol, ol ol, ol ul { margin-bottom: 0; }
+li { line-height: @baseLineHeight; }
+
+// Remove default list styles
+ul.unstyled,
+ol.unstyled {
+	margin-left: 0;
+	list-style: none;
+}
+
+//puce par défaut en triangle
+.puce {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-color: transparent transparent transparent @textColor;
+	border-style: solid;
+	border-width: 4px;
 }
 
 .contentMain {
@@ -44,7 +67,19 @@ body, table.body, h1, h2, h3, h4, h5, h6, p, td {
 	}
 }
 
+.contentActuMois {
+
+}
+
+.contentProfession {
+	ul li .title {
+		color: @lvvColorProfessionTitle;
+		font-weight: bold;
+	}
+}
+
 .contentSecondary {
+
 }
 
 .contentBottom {
