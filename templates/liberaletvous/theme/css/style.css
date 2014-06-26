@@ -814,8 +814,8 @@ body.outlook p {
   font-family: "Times New Roman", Times, serif;
   font-weight: normal;
 }
-h3,
-h4 {
+h2,
+h3 {
   text-transform: uppercase;
   margin-bottom: 9px;
 }
@@ -856,16 +856,36 @@ ol.unstyled {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.contentProfession ul li .title {
+.contentMain .contentProfession ul li .title {
   color: #d7d900;
   font-weight: bold;
+}
+.contentSecondary .contentQuiz img {
+  margin-right: 10px;
+}
+.contentSecondary .contentOffre img {
+  float: right;
+  margin-left: 10px;
 }
 .contentBottom .wrapper {
   padding-top: 0;
 }
-.contentBottom img {
+.contentActus h3 {
+  color: #5c686d;
+}
+.contentActus h4 {
+  color: #084d9a;
+}
+.contentActus img {
   float: none;
 }
-.contentBottom td {
-  color: #fff;
+.contentActus .puce {
+  border-color: transparent transparent transparent #cd1619;
+}
+.contentFooter .wrapper {
+  padding-top: 5px;
+}
+.contentFooter table.columns td,
+.contentFooter table.column td {
+  padding-bottom: 5px;
 }

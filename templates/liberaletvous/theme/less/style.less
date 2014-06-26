@@ -26,7 +26,7 @@
 }
 
 //titres de catégories en majuscule
-h3, h4 {
+h2, h3 {
 	text-transform: uppercase;
 	margin-bottom: (@baseLineHeight / 2);
 }
@@ -65,26 +65,42 @@ ol.unstyled {
 		padding-top: 10px;
 		padding-bottom: 10px;
 	}
-}
 
-.contentActuMois {
-
-}
-
-.contentProfession {
-	ul li .title {
-		color: @lvvColorProfessionTitle;
-		font-weight: bold;
+	.contentProfession {
+		ul li .title {
+			color: @lvvColorProfessionTitle;
+			font-weight: bold;
+		}
 	}
+
+	// .contentDossier {}
 }
 
 .contentSecondary {
-
+	.contentQuiz {
+		img { margin-right: 10px; }
+	}
+	.contentOffre {
+		img {
+			float: right;
+			margin-left: 10px;
+		}
+	}
 }
 
 .contentBottom {
 	//suppression paddingTop
 	.wrapper { padding-top: 0; }
+}
+
+.contentActus {
+	h3 { color: @lbvColorActusTitle; }
+	h4 { color: @lbvColorActusSubTitle; }
 	img { float: none; }
-	td { color: #fff; }
+	.puce { border-color: transparent transparent transparent @lbvColorActusPuce; }
+}
+
+.contentFooter {
+	.wrapper { padding-top: 5px; }
+	table.columns td, table.column td { padding-bottom: 5px; }
 }
