@@ -10,7 +10,7 @@ echo "inlining newsletter.html ..."
 # https://github.com/premailer/premailer/wiki/Premailer-Command-Line-Usage
 # UTILISER IMPÉRATIVEMENT AVEC LE PARSER NOKOGIRI
 templateName=$(basename "$PWD")
-premailer --base-url=http://newsletter-templates.expert-infos.com/templates/$templateName --css=${PWD}/theme/css/style.css --entities --verbose  ${PWD}/newsletter.html > ${PWD}/newsletter-inline.html
+premailer --base-url=http://newsletter-templates.expert-infos.com/templates/$templateName/ --css=${PWD}/theme/css/style.css --entities --verbose  ${PWD}/newsletter.html > ${PWD}/newsletter-inline.html
 
 #Désactivation des commentaires sur les balises Posta Nova
 echo "enabling PostaNova tags ..."
