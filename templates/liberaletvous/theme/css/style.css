@@ -473,10 +473,10 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #e6e6e6 !important;
+  color: #ffffff !important;
 }
 a:active {
-  color: #e6e6e6 !important;
+  color: #ffffff !important;
 }
 a:visited {
   color: #ffffff !important;
@@ -822,6 +822,10 @@ h3 {
 p {
   margin-bottom: 4.5px;
 }
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
 ul,
 ol {
   padding: 0;
@@ -889,12 +893,19 @@ ol.unstyled {
 .contentFooter table.column td {
   padding-bottom: 5px;
 }
+.contentLegal small {
+  line-height: 15px;
+}
 .contentUnsub {
   background-color: #444444;
 }
+.contentUnsub small {
+  line-height: 15px;
+}
+.contentUnsub .wrapper {
+  padding-top: 0;
+}
 .contentUnsub table.columns td,
-.contentUnsub table.column td,
-.contentUnsub table.columns td a,
-.contentUnsub table.column td a {
-  font-size: 11px;
+.contentUnsub table.column td {
+  padding-bottom: 0;
 }
