@@ -826,6 +826,12 @@ a:hover,
 a:focus {
   text-decoration: underline;
 }
+.contentOnline a,
+.contentFooter a,
+.contentLegal a,
+.contentUnsub a {
+  text-decoration: underline;
+}
 ul,
 ol {
   padding: 0;
