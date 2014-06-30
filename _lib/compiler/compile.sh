@@ -15,10 +15,17 @@ premailer --base-url=http://newsletter-templates.expert-infos.com/templates/$tem
 #Désactivation des commentaires sur les balises Posta Nova
 echo "enabling PostaNova tags ..."
 cp newsletter-inline.html newsletter-inline-postanova.html
+
+#Remplacement ces balises d'ouverture/fermeture de Posta Nova
 perl -pi -e 's/<!--{{//g;' newsletter-inline-postanova.html
 perl -pi -e 's/}}-->//g;' newsletter-inline-postanova.html
 perl -pi -e 's/##{{/<?/g;' newsletter-inline-postanova.html
 perl -pi -e 's/}}##/?>/g;' newsletter-inline-postanova.html
+
+#Suppression des balises de récupération des styles
+perl -pi -e 's/<(.+?)data-type="getstyle" (.+?)style=/style=/g;' newsletter-inline-postanova.html
+perl -pi -e 's/>getstyle<\/(.+?)>//g;' newsletter-inline-postanova.html
+
 #Remplacement des attributs PostaNova
 perl -pi -e 's/lien_message_online="lien_message_online"/lien_message_online/g;' newsletter-inline-postanova.html
 perl -pi -e 's/lien_blackliste="lien_blackliste"/lien_blackliste/g;' newsletter-inline-postanova.html
