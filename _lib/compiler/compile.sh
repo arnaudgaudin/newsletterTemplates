@@ -30,4 +30,7 @@ perl -pi -e 's/><!--getstyle--><\/(.+?)>//g;' newsletter-inline-postanova.html
 perl -pi -e 's/lien_message_online="lien_message_online"/lien_message_online/g;' newsletter-inline-postanova.html
 perl -pi -e 's/lien_blackliste="lien_blackliste"/lien_blackliste/g;' newsletter-inline-postanova.html
 
+#Suppression des éléments à supprimer
+perl -pi -e 's/<!--DEL\{\{-->.+?<!--\}\}DEL-->//g;' newsletter-inline-postanova.html
+
 echo "That's all folks !"
