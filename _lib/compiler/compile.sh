@@ -17,5 +17,7 @@ echo "enabling PostaNova tags ..."
 cp newsletter-inline.html newsletter-inline-postanova.html
 perl -pi -e 's/<!--{{//g;' newsletter-inline-postanova.html
 perl -pi -e 's/}}-->//g;' newsletter-inline-postanova.html
+#Remplacement des attributs PostaNova
+perl -pi -e 's/lien_blackliste="lien_blackliste"/lien_blackliste/g;' newsletter-inline-postanova.html
 
 echo "That's all folks !"
