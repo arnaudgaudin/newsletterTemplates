@@ -469,17 +469,17 @@ small {
   font-size: 11px;
 }
 a {
-  color: #2ba6cb;
+  color: #ffffff;
   text-decoration: none;
 }
 a:hover {
-  color: #2284a1 !important;
+  color: #e6e6e6 !important;
 }
 a:active {
-  color: #2284a1 !important;
+  color: #e6e6e6 !important;
 }
 a:visited {
-  color: #2ba6cb !important;
+  color: #ffffff !important;
 }
 h1 a,
 h2 a,
@@ -487,7 +487,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-  color: #2ba6cb;
+  color: #ffffff;
 }
 h1 a:active,
 h2 a:active,
@@ -495,7 +495,7 @@ h3 a:active,
 h4 a:active,
 h5 a:active,
 h6 a:active {
-  color: #2ba6cb !important;
+  color: #ffffff !important;
 }
 h1 a:visited,
 h2 a:visited,
@@ -503,7 +503,7 @@ h3 a:visited,
 h4 a:visited,
 h5 a:visited,
 h6 a:visited {
-  color: #2ba6cb !important;
+  color: #ffffff !important;
 }
 /* Panels */
 .panel {
@@ -534,8 +534,8 @@ table.large-button td {
   display: block;
   width: auto !important;
   text-align: center;
-  background: #2ba6cb;
-  border: 1px solid #196177;
+  background: #ffffff;
+  border: 1px solid #cccccc;
   color: #ffffff;
   padding: 8px 0;
 }
@@ -581,7 +581,7 @@ table.large-button td a {
 table.button:hover td,
 table.button:visited td,
 table.button:active td {
-  background: #2284a1 !important;
+  background: #e6e6e6 !important;
 }
 table.button:hover td a,
 table.button:visited td a,
@@ -593,7 +593,7 @@ table.tiny-button:hover td,
 table.small-button:hover td,
 table.medium-button:hover td,
 table.large-button:hover td {
-  background: #2284a1 !important;
+  background: #e6e6e6 !important;
 }
 table.button:hover td a,
 table.button:active td a,
@@ -888,4 +888,13 @@ ol.unstyled {
 .contentFooter table.columns td,
 .contentFooter table.column td {
   padding-bottom: 5px;
+}
+.contentUnsub {
+  background-color: #444444;
+}
+.contentUnsub table.columns td,
+.contentUnsub table.column td,
+.contentUnsub table.columns td a,
+.contentUnsub table.column td a {
+  font-size: 11px;
 }
