@@ -36,6 +36,9 @@ p { margin-bottom: (@baseLineHeight / 4); }
 //rollOver des liens
 a {
 	&:hover, &:focus { text-decoration: underline; }
+
+	//soulignement dans certaines zones
+	.contentOnline &, .contentFooter &, .contentLegal &, .contentUnsub & { text-decoration: underline; }
 }
 
 // Unordered and Ordered lists
@@ -77,8 +80,6 @@ ol.unstyled {
 			font-weight: bold;
 		}
 	}
-
-	// .contentDossier {}
 }
 
 .contentSecondary {
