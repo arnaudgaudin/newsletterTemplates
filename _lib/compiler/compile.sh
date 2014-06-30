@@ -24,7 +24,7 @@ perl -pi -e 's/}}##/?>/g;' newsletter-inline-postanova.html
 
 #Suppression des balises de récupération des styles
 perl -pi -e 's/<(.+?)data-type="getstyle" (.+?)style=/style=/g;' newsletter-inline-postanova.html
-perl -pi -e 's/>getstyle<\/(.+?)>//g;' newsletter-inline-postanova.html
+perl -pi -e 's/><!--getstyle--><\/(.+?)>//g;' newsletter-inline-postanova.html
 
 #Remplacement des attributs PostaNova
 perl -pi -e 's/lien_message_online="lien_message_online"/lien_message_online/g;' newsletter-inline-postanova.html
