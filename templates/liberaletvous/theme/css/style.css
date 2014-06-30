@@ -10,7 +10,7 @@
 **********************************************/
 body,
 table.body {
-  background-color: #444444;
+  background-color: #000000;
 }
 /**********************************************
 * Ink v1.0.5 - Copyright 2013 ZURB Inc        *
@@ -782,6 +782,26 @@ body.outlook p {
     }
   }
 }
+a.link_box {
+  display: block;
+}
+a.link_box,
+a.link_box:link,
+a.link_box:visited,
+a.link_box:hover,
+a.link_box:focus,
+a.link_box:active {
+  text-decoration: none;
+  outline: none;
+}
+a.link_underline {
+  text-decoration: underline;
+}
+a.link_underline:hover,
+a.link_underline:focus {
+  text-decoration: underline;
+  cursor: pointer;
+}
 .bgc-lbvColorUne {
   background-color: #3059a1;
 }
@@ -824,12 +844,6 @@ p {
 }
 a:hover,
 a:focus {
-  text-decoration: underline;
-}
-.contentOnline a,
-.contentFooter a,
-.contentLegal a,
-.contentUnsub a {
   text-decoration: underline;
 }
 ul,
@@ -903,7 +917,7 @@ ol.unstyled {
   line-height: 15px;
 }
 .contentUnsub {
-  background-color: #444444;
+  background-color: #000000;
 }
 .contentUnsub small {
   line-height: 15px;
