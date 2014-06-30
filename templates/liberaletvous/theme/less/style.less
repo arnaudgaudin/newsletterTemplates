@@ -33,6 +33,11 @@ h2, h3 {
 
 p { margin-bottom: (@baseLineHeight / 4); }
 
+//rollOver des liens
+a {
+	&:hover, &:focus { text-decoration: underline; }
+}
+
 // Unordered and Ordered lists
 ul, ol {
   padding: 0;
@@ -105,8 +110,13 @@ ol.unstyled {
 	table.columns td, table.column td { padding-bottom: 5px; }
 }
 
-// .contentLegal { }
+.contentLegal {
+	small { line-height: 15px; }
+}
 
 .contentUnsub {
 	background-color: @bodyBackground;
+	small { line-height: 15px; }
+	.wrapper { padding-top: 0; }
+	table.columns td, table.column td { padding-bottom: 0; }
 }
