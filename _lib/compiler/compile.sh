@@ -23,7 +23,7 @@ perl -pi -e 's/##{{/<?/g;' newsletter-inline-postanova.html
 perl -pi -e 's/}}##/?>/g;' newsletter-inline-postanova.html
 
 #Suppression des balises de récupération des styles
-perl -pi -e 's/<(.+?)data-type="getstyle" (.+?)style=/style=/g;' newsletter-inline-postanova.html
+perl -pi -e 's/<(.+?)data-type="getstyle" (.*?)style=/style=/g;' newsletter-inline-postanova.html
 perl -pi -e 's/\/><!--getstyle-->//g;' newsletter-inline-postanova.html
 perl -pi -e 's/><!--getstyle--><\/(.+?)>//g;' newsletter-inline-postanova.html
 
@@ -33,5 +33,7 @@ perl -pi -e 's/lien_blackliste="lien_blackliste"/lien_blackliste/g;' newsletter-
 
 #Suppression des éléments à supprimer
 perl -pi -e 's/<!--DEL\{\{-->.+?<!--\}\}DEL-->//g;' newsletter-inline-postanova.html
+#test pour multiline, à débugguer
+#<!--DEL\{\{-->\n(?s).+?\n<!--\}\}DEL-->
 
 echo "That's all folks !"
