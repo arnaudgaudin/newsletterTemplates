@@ -120,7 +120,6 @@
 					                                	<h3>Le coin des professions</h3>
 					                                	<ul class="unstyled">
 					                                		<!--DEL{{--><li><i class="puce"></i> <a target="_blank" href="http://www.liberaletvous.fr/actualite.php?id=459"><span class="title">Masseurs-kinésithérapeutes&#160;:</span> avenant à la convention nationale</a></li><li><i class="puce"></i> <a target="_blank" href="http://www.liberaletvous.fr/actualite.php?id=469"><span class="title">Infirmiers&#160;:</span> Dépassements d'honoraires</a></li><li><i class="puce"></i> <a target="_blank" href="http://www.liberaletvous.fr/actualite.php?id=436"><span class="title">Avocats&#160;:</span> dématérialisation des procédures</a></li><!--}}DEL-->
-
 					                                		<!--{{##{{ <bloc nom="professions" type="debut" /> }}##}}-->
 					                                		<li>
 					                                			<!--{{##{{<champ>
@@ -144,9 +143,17 @@
 																</champ>}}##}}-->
 					                                		</li>
 					                                		<!--{{##{{ <bloc nom="professions" type="fin" /> }}##}}-->
-
 					                                	</ul>
-					                                	<a target="_blank" href="http://www.liberaletvous.fr/actualites.php"><small>Tous les articles</small></a>
+					                                	<!--{{##{{<champ>
+														<type>lien</type>
+														<href>http://www.liberaletvous.fr/actualites.php</href>
+														<html_interieur_avant>}}--><small><!--{{</html_interieur_avant>
+														<texte>}}-->Tous les articles<!--{{</texte>
+														<html_interieur_apres>}}--></small><!--{{</html_interieur_apres>
+														<params>
+														}}--><a data-type="getstyle"><!--getstyle--></a><!--{{
+														</params>
+														</champ>}}##}}-->
 					                                </td>
 					                                <td class="expander"></td>
 					                            </tr>
