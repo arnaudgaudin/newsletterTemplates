@@ -804,9 +804,32 @@ display: inline !important;
 					                                <td class="text-pad contentProfession bgc-lbvColorProfession" style="-moz-hyphens: auto; -webkit-hyphens: auto; background: #599cd6; border-collapse: collapse !important; color: #ffffff; font-family: Arial, sans-serif; font-size: 13px; font-weight: normal; hyphens: auto; line-height: 18px; margin: 0; padding: 10px; text-align: left; vertical-align: top; word-break: break-word" align="left" bgcolor="#599cd6" valign="top">
 					                                	<h3 style="color: inherit; font-family: Arial, sans-serif; font-size: 10px; font-weight: bold; line-height: 1.3; margin: 0 0 9px; padding: 0; text-align: left; text-transform: uppercase; word-break: normal" align="left">Le coin des professions</h3>
 					                                	<ul class="unstyled" style="list-style: none; margin: 0 0 4.5px; padding: 0">
-					                                		<li style="line-height: 18px"><i class="puce" style="border-color: transparent transparent transparent #ffffff; border-style: solid; border-width: 4px; display: inline-block; height: 0; width: 0"></i> <a target="_blank" href="http://www.liberaletvous.fr/actualite.php?id=459" style="color: #ffffff; text-decoration: none"><span class="title" style="color: #d7d900; font-weight: bold">Masseurs-kin&#233;sith&#233;rapeutes&#160;:</span> avenant &#224; la convention nationale</a></li>
-					                                		<li style="line-height: 18px"><i class="puce" style="border-color: transparent transparent transparent #ffffff; border-style: solid; border-width: 4px; display: inline-block; height: 0; width: 0"></i> <a target="_blank" href="http://www.liberaletvous.fr/actualite.php?id=469" style="color: #ffffff; text-decoration: none"><span class="title" style="color: #d7d900; font-weight: bold">Infirmiers&#160;:</span> D&#233;passements d'honoraires</a></li>
-					                                		<li style="line-height: 18px"><i class="puce" style="border-color: transparent transparent transparent #ffffff; border-style: solid; border-width: 4px; display: inline-block; height: 0; width: 0"></i> <a target="_blank" href="http://www.liberaletvous.fr/actualite.php?id=436" style="color: #ffffff; text-decoration: none"><span class="title" style="color: #d7d900; font-weight: bold">Avocats&#160;:</span> d&#233;mat&#233;rialisation des proc&#233;dures</a></li>
+					                                		
+
+					                                		<? <bloc nom="professions" type="debut" /> ?>
+					                                		<li style="line-height: 18px">
+					                                			<?<champ>
+																<type>lien</type>
+																<href>http://www.liberaletvous.fr/actualite.php?id=458</href>
+																<html_avant><i class="puce" style="border-color: transparent transparent transparent #ffffff; border-style: solid; border-width: 4px; display: inline-block; height: 0; width: 0"></i> </html_avant>
+																<html_interieur_avant><span class="title" style="color: #d7d900; font-weight: bold"></html_interieur_avant>
+																<texte>Titre profession</texte>
+																<html_interieur_apres>&#160;:</span></html_interieur_apres>
+																<params>
+																style="color: #ffffff; text-decoration: none"
+																</params>
+																</champ>?> <?<champ>
+																<type>lien</type>
+																<href>http://www.liberaletvous.fr/actualite.php?id=458</href>
+																<html_avant> </html_avant>
+																<texte>sous-titre</texte>
+																<params>
+																style="color: #ffffff; text-decoration: none"
+																</params>
+																</champ>?>
+					                                		</li>
+					                                		<? <bloc nom="professions" type="fin" /> ?>
+
 					                                	</ul>
 					                                	<a target="_blank" href="http://www.liberaletvous.fr/actualites.php" style="color: #ffffff; text-decoration: none"><small style="font-size: 11px">Tous les articles</small></a>
 					                                </td>
