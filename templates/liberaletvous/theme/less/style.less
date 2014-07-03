@@ -108,6 +108,10 @@ ol.unstyled {
 	img { float: none; }
 	.puce { border-color: transparent transparent transparent @lbvColorActusPuce; }
 }
+//débuggage image actus
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentActus img { width: 100% !important; }
+}
 
 .contentFooter {
 	.wrapper { padding-top: 5px; }
