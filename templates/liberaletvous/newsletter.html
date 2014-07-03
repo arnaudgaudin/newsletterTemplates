@@ -227,11 +227,25 @@
 					                            <tr>
 					                                <td class="text-pad contentOffre">
 					                                	<h3>L'offre du mois</h3>
-					                                	<a class="link_box" target="_blank" href="http://www.liberaletvous.fr/offres/gestion-bancaire-offre-aux-professions-liberales-57.html">
-					                                		<img src="./theme/images/offre.jpg" class="hide-for-small" width="80" height="70" />
-						                                	<h2>Le prêt atout liberal</h2>
-						                                	<p>Pour le financement de votre activité, l'acquisition de votre matériel ou l'aménagement de vos locaux, découvrez le Prêt Atout Libéral.</p>
-						                                </a>
+					                                	<!--{{##{{<champ>
+														<type>lien</type>
+														<href>http://www.liberaletvous.fr/offres/gestion-bancaire-offre-aux-professions-liberales-57.html</href>
+														<html_avant>}}--><img src="./theme/images/offre.jpg" class="hide-for-small" width="80" height="70" /><h2><!--{{</html_avant>
+														<texte>}}-->Le prêt atout liberal<!--{{</texte>
+														<html_apres>}}--></h2><!--{{</html_apres>
+														<params>
+														}}--><a data-type="getstyle"><!--getstyle--></a><!--{{
+														</params>
+														</champ>}}## ##{{<champ>
+														<type>lien</type>
+														<href>http://www.liberaletvous.fr/offres/gestion-bancaire-offre-aux-professions-liberales-57.html</href>
+														<html_avant>}}--><p><!--{{</html_avant>
+														<texte>}}-->Pour le financement de votre activité, l'acquisition de votre matériel ou l'aménagement de vos locaux, découvrez le Prêt Atout Libéral.<!--{{</texte>
+														<html_apres>}}--></p><!--{{</html_apres>
+														<params>
+														}}--><a data-type="getstyle"><!--getstyle--></a><!--{{
+														</params>
+														</champ>}}##}}-->
 					                                </td>
 					                                <td class="expander"></td>
 					                            </tr>
