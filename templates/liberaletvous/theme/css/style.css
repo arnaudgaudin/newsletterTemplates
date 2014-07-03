@@ -775,7 +775,7 @@ body.outlook p {
     display: inherit !important;
   }
 }
-table.container {
+table {
   table-layout: fixed;
 }
 a.link_box {
