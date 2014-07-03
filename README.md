@@ -40,7 +40,9 @@ L'adresse suivante est donc temporaire. Pour cloner le repository en local :
 
 ##Création de la scruture du template avec INK
 Le template que vous allez créer utilise le framework INK (http://zurb.com/ink/docs.php). Vous devrez donc éditer le fichier "newsletter.html". Ce fichier appel le fichier "style.css" . Ce dernier est compilé à partir du fichier "style.less" situé dans le sous dossier "theme/less/style.less" .  
-Un fork de "inkless" est utilisé afin de pouvoir modeler INK à nos besoins. Vous aurez accès aux variables de personnalisation suivantes (ce listing va s'étoffer au fil du temps) :
+Un fork de "inkless" est utilisé afin de pouvoir modeler INK à nos besoins.  
+Attention ! Vous devrez compiler votre template pour pouvoir le tester. Voir section "Compilation du template".  
+Vous aurez accès aux variables de personnalisation suivantes (ce listing va s'étoffer au fil du temps) :
 
 		// Scaffolding
 		// -------------------------
@@ -125,3 +127,14 @@ Un fork de "inkless" est utilisé afin de pouvoir modeler INK à nos besoins. Vo
 		// --------------------------------------------------
 		@columnWidth: 30px;
 		@gutterWidth: 20px;
+
+##Compilation du template (génération de style.css, création des versions inline et postanova)
+Dans le dossier du template, lancer la commande suivante dans le terminal :
+
+		./compile.sh
+
+Cette commande va faire les opération suivante :
+
+1. Compilation de style.less en style.css
+2. Inline de tous les styles dans le corps du template (sauf styles responsives)
+3. Suppression et transformation des balises d'échappement permettant de récupérer les tags PostaNova
