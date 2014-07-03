@@ -128,7 +128,8 @@ Vous aurez accès aux variables de personnalisation suivantes (ce listing va s'�
 		@columnWidth: 30px;
 		@gutterWidth: 20px;
 
-##Compilation du template (génération de style.css, création des versions inline et postanova)
+##Compilation du template
+(génération de style.css, création des versions inline et postanova)
 Dans le dossier du template, lancer la commande suivante dans le terminal :
 
 		./compile.sh
