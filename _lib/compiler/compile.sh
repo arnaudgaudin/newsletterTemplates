@@ -33,6 +33,10 @@ perl -pi -e 's/<(.+?)data-type="getstyle" (.*?)style=/style=/g;' newsletter-inli
 perl -pi -e 's/\/><!--getstyle-->//g;' newsletter-inline-postanova.html
 perl -pi -e 's/><!--getstyle--><\/(.+?)>//g;' newsletter-inline-postanova.html
 
+#Suppression des balises de récupération des hrefs
+perl -pi -e 's/<(.+?)data-type="gethref" (.*?)href="//g;' newsletter-inline-postanova.html
+perl -pi -e 's/" (.+?)><!--gethref--><\/(.+?)>//g;' newsletter-inline-postanova.html
+
 #Remplacement des attributs PostaNova
 perl -pi -e 's/lien_message_online="lien_message_online"/lien_message_online/g;' newsletter-inline-postanova.html
 perl -pi -e 's/lien_print="lien_print"/lien_print/g;' newsletter-inline-postanova.html
