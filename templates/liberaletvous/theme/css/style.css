@@ -869,6 +869,11 @@ ol.unstyled {
   border-style: solid;
   border-width: 4px;
 }
+.separator .wrapper,
+.separator table.columns td,
+.separator table.column td {
+  padding: 0;
+}
 .contentMain .wrapper {
   padding-top: 0;
 }
