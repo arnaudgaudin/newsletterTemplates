@@ -133,7 +133,7 @@ Vous aurez accès aux variables de personnalisation suivantes (ce listing va s'�
 Les commentaires Posta Nova ne respectant pas les standards HTML, ils font planter PREMAILER qui ne peut pas compiler le template html. Il faut donc les insérer dans des commentaires HTML spécifiques qui seront échappés par le compilateur.
 
 ###Commentaire d'insertion des tags Posta Nova
-Merci d'encadrer chaque tag Posta Nova par les tags suivants :
+Encadrer toute portion de code Posta Nova par les tags suivants :
 
 		<!--{{ ... }}-->
 
@@ -168,6 +168,30 @@ Pour fonctionner INK a besoin d'un doctype en XHTML 1.0 Strict. Il faut donc que
 		<!--{{<gab_lien_mailto>}}-->
 		<a href="#" lien_mailto="lien_mailto">Envoyer ce message à un ami</a>
 		<!--{{</gab_lien_mailto>}}-->
+
+
+###Insertion de code destiné à être supprimé lors de la compilation
+Cela permet d'afficher par exemple une image de test qui serait suivie d'un code d'insertion Posta Nova pour une image. C'est très utile pour la conception du gabarit puisque ça permet de le tester en amont de Posta Nova avec du contenu rentré en dur. Il faut encadrer ce contenu par les tags suivants :
+
+		<!--DEL{{--> ... <!--}}DEL-->
+
+###Récupération automatique des styles d'un élément dans un attribut <param> de Posta Nova
+Premailer permet d'insérer en ligne tous les styles appliqué à un élément. Il est donc possible de récupérer uniquement l'attribut style d'un élément (lien, image, etc) à destination d'un attribut param. Il faut insérer cet élément équipé de sa classe avec l'attribut data-type="getstyle". La classe étant supprimée dans le processus il faut la remettre à la fin du param. Voici des exemples concrets.
+
+####Avec une image
+Le code suivant :
+		
+		<params>
+		}}--><img data-type="getstyle" class="hide-for-small" /><!--getstyle--><!--{{class="hide-for-small"
+		</params>
+
+Donnerait par exemple en sortie :
+
+		<params>
+		style="-ms-interpolation-mode: bicubic; clear: both; display: block; float: right; margin-left: 10px; max-width: 100%; outline: none; text-decoration: none; width: auto" align="right" class="hide-for-small"
+		</params>
+
+À noter que les autres attributs sont également conservés (align).
 
 ##Compilation du template
 (génération de style.css, création des versions inline et postanova)
