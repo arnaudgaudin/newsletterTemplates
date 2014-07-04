@@ -789,6 +789,10 @@ table {
 .appleLinks a:visited {
   color: #ffffff !important;
 }
+a[href^=tel] {
+  color: inherit;
+  text-decoration: none;
+}
 a.link_box {
   display: block;
 }
