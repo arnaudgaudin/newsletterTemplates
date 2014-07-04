@@ -141,6 +141,33 @@ Remplacer les balises ouvrantes <? et ?> par les tags suivants :
 
 		##{{ ... }}##
 
+###Insertion des liens spécifiques Posta Nova
+Pour fonctionner INK a besoin d'un doctype en XHTML 1.0 Strict. Il faut donc que chaque attribut ait une valeurs, ce qui rentre en contradiction avec les liens spécifiques Posta Nova. Merci de les renseigner de la manière suivante :
+
+####Lien de visualisation en ligne
+
+		<!--{{<gab_lien_message_online>}}-->
+		<a href="#" lien_message_online="lien_message_online">cliquez ici</a>
+		<!--{{</gab_lien_message_online>}}-->
+
+####Lien d'impression
+
+		<!--{{<gab_lien_print>}}-->
+		<a href="#" lien_print="lien_print">cliquez ici</a>
+		<!--{{</gab_lien_print>}}-->
+
+####Lien de blackliste
+
+		<!--{{<gab_lien_blackliste>}}-->
+		<a href="#" lien_blackliste="lien_blackliste">cliquez ici</a>
+		<!--{{</gab_lien_blackliste>}}-->
+
+
+####Lien envoyer à un ami
+
+		<!--{{<gab_lien_mailto>}}-->
+		<a href="#" lien_mailto="lien_mailto">Envoyer ce message à un ami</a>
+		<!--{{</gab_lien_mailto>}}-->
 
 ##Compilation du template
 (génération de style.css, création des versions inline et postanova)
