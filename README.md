@@ -178,6 +178,20 @@ Cela permet d'afficher par exemple une image de test qui serait suivie d'un code
 ###Récupération automatique des styles d'un élément dans un attribut <param> de Posta Nova
 Premailer permet d'insérer en ligne tous les styles appliqué à un élément. Il est donc possible de récupérer uniquement l'attribut style d'un élément (lien, image, etc) à destination d'un attribut param. Il faut insérer cet élément équipé de sa classe avec l'attribut data-type="getstyle". La classe étant supprimée dans le processus il faut la remettre à la fin du param. Voici des exemples concrets.
 
+
+####Avec un lien
+Le code suivant :
+
+		<params>
+		}}--><a data-type="getstyle"><!--getstyle--></a><!--{{
+		</params>
+
+Donnerait par exemple en sortie :
+
+		<params>
+		style="color: #ffffff; text-decoration: none"
+		</params>
+
 ####Avec une image
 Le code suivant :
 		
@@ -192,6 +206,36 @@ Donnerait par exemple en sortie :
 		</params>
 
 À noter que les autres attributs sont également conservés (align).
+
+###Génération automatique d'une URL absolue.
+Les gabarits sont accessibles aux adresses suivantes :
+
+		http://newsletter-templates.expert-infos.com/templates/##NOMTEMPLATE##/newsletter.html
+		http://newsletter-templates.expert-infos.com/templates/##NOMTEMPLATE##/newsletter-inline.html
+		http://newsletter-templates.expert-infos.com/templates/##NOMTEMPLATE##/newsletter-inline-postanova.html
+
+Il n'est pas nécessaire de renseigner directement l'URL en absolue, PREMAILER le fait pour vous, ce qui permet de développer votre gabarit en local.  
+Le code suivant :
+
+		<img src="./theme/images/logo.jpg" width="280" height="75" />
+
+Donne donc en sortie (avec les styles insérés en ligne) :
+
+		<img src="http://newsletter-templates.expert-infos.com/templates/liberaletvous/theme/images/logo.jpg" width="280" height="75" style="-ms-interpolation-mode: bicubic; clear: both; display: block; float: left; max-width: 100%; outline: none; text-decoration: none; width: auto" align="left" />
+
+##Récupération automatique de l'URL d'un élément dans un attribut <param> de Posta Nova
+De la même manière que pour getstyle, on va utiliser une syntaxe spécifique à l'aide de gethref.  
+Le code suivant :
+
+		<src>
+		}}--><a data-type="gethref" href="./theme/images/actumois.jpg"><!--gethref--></a><!--{{
+		</src>
+
+Donne en sortie :
+
+		<src>
+		http://newsletter-templates.expert-infos.com/templates/liberaletvous/theme/images/actumois.jpg
+		</src>
 
 ##Compilation du template
 (génération de style.css, création des versions inline et postanova)
