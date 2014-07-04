@@ -137,7 +137,7 @@ Merci d'encadrer chaque tag Posta Nova par les tags suivants :
 
 		<!--{{ ... }}-->
 
-Remplacer les balises ouvrantes <\? et \?> par les tags suivants :
+Remplacer les balises ouvrantes <? et ?> par les tags suivants :
 
 		##{{ ... }}##
 
