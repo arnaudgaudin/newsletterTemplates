@@ -21,6 +21,7 @@
 			color: @lbvColorTagline;
 			font-family: @serifFontFamily;
 			font-weight: normal;
+			line-height: @headingsFontSizeH1;
 		}
 	}
 }
@@ -28,8 +29,10 @@
 //titres de catégories en majuscule
 h2, h3 {
 	text-transform: uppercase;
-	margin-bottom: (@baseLineHeight / 2);
+	margin-bottom: (@baseLineHeight / 3);
 }
+
+h3 { font-weight: normal; }
 
 p { margin-bottom: (@baseLineHeight / 4); }
 
@@ -75,6 +78,10 @@ ol.unstyled {
 	.columns td {
 		padding-top: 10px;
 		padding-bottom: 10px;
+	}
+
+	.contentActuMois {
+		.imgUne { margin-bottom: (@baseLineHeight / 2); }
 	}
 
 	.contentProfession {
