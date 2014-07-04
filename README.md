@@ -128,6 +128,20 @@ Vous aurez accès aux variables de personnalisation suivantes (ce listing va s'�
 		@columnWidth: 30px;
 		@gutterWidth: 20px;
 
+##Insertion des tags PostaNova
+###Principes généraux
+Les commentaires Posta Nova ne respectant pas les standards HTML, ils font planter PREMAILER qui ne peut pas compiler le template html. Il faut donc les insérer dans des commentaires HTML spécifiques qui seront échappés par le compilateur.
+
+###Commentaire d'insertion des tags Posta Nova
+Merci d'encadrer chaque tag Posta Nova par les tags suivants :
+
+		<!--{{ ... }}-->
+
+Remplacer les balises ouvrantes <\? et \?> par les tags suivants :
+
+		##{{ ... }}##
+
+
 ##Compilation du template
 (génération de style.css, création des versions inline et postanova)
 Dans le dossier du template, lancer la commande suivante dans le terminal :
