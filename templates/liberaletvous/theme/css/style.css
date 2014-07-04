@@ -778,6 +778,17 @@ body.outlook p {
 table {
   table-layout: fixed;
 }
+.appleLinks a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.appleLinks a:hover,
+.appleLinks a:active {
+  color: #ffffff !important;
+}
+.appleLinks a:visited {
+  color: #ffffff !important;
+}
 a.link_box {
   display: block;
 }
