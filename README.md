@@ -243,7 +243,7 @@ Dans le dossier du template, lancer la commande suivante dans le terminal :
 
 		./compile.sh
 
-Cette commande va faire les opération suivante :
+Cette commande va faire les opérations suivantes :
 
 1. Compilation de style.less en style.css
 2. Inline de tous les styles dans le corps du template (sauf styles responsives)
