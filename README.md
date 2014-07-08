@@ -28,7 +28,7 @@ Ouvrir le terminal et se déplacer dans le dossier où vous souhaiter copier la 
 Le repository sera bientôt hébergé sur le compte SidPresse. Pour pouvoir le modifier vous devrez le forker et pousser vos modifs sur votre propre compte GitHub, puis faire un pull-request sur SidPresse.  
 L'adresse suivante est donc temporaire. Pour cloner le repository en local :
 
-		git clone https://github.com/arnaudgaudin/newsletterTemplates.git
+		git clone https://github.com/SidPresse/newsletterTemplates.git
 
 ##Création d'un template de base
 1. Aller dans le sous-dossier "templates"
