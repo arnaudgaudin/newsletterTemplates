@@ -14,7 +14,7 @@ Vous devez être sur Mac ou Linux pour pouvoir éditer ou créer de nouveaux tem
 		#Sous Mac avec brew
 		brew install node
 
-2. GEM https://rubygems.org  
+2. RUBYGEMS https://rubygems.org  
 Pour une installation sur CENTOS avec RVM :  
 https://www.digitalocean.com/community/tutorials/how-to-install-ruby-2-1-0-on-centos-6-5-using-rvm
 
