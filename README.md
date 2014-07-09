@@ -14,16 +14,16 @@ Vous devez être sur Mac ou Linux pour pouvoir éditer ou créer de nouveaux tem
 		#Sous Mac avec brew
 		brew install node
 
-2. RUBYGEMS https://rubygems.org  
+2. LESSC http://lesscss.org
+
+		npm install -g less
+
+3. RUBYGEMS https://rubygems.org  
 Pour une installation sur CENTOS avec RVM :  
 https://www.digitalocean.com/community/tutorials/how-to-install-ruby-2-1-0-on-centos-6-5-using-rvm
 
 		#Sous Mac avec brew
 		brew install ruby
-
-3. LESSC http://lesscss.org
-
-		npm install -g less
 
 4. PREMAILER https://github.com/premailer/premailer
 
