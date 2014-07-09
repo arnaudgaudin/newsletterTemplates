@@ -14,14 +14,26 @@ Vous devez être sur Mac ou Linux pour pouvoir éditer ou créer de nouveaux tem
 		#Sous Mac avec brew
 		brew install node
 
-2. LESSC http://lesscss.org
+2. GEM https://rubygems.org  
+Pour une installation sur CENTOS avec RVM :  
+https://www.digitalocean.com/community/tutorials/how-to-install-ruby-2-1-0-on-centos-6-5-using-rvm
+
+		#Sous Mac avec brew
+		brew install ruby
+
+3. LESSC http://lesscss.org
 
 		npm install -g less
 
-3. PREMAILER https://github.com/premailer/premailer
+4. PREMAILER https://github.com/premailer/premailer
 
 		#Installation avec gem
 		gem install premailer
+
+5. NOKOGIRI
+
+		#Installation avec gem
+		gem install nokogiri
 
 ###Installation du repository sur votre poste
 Ouvrir le terminal et se déplacer dans le dossier où vous souhaiter copier la bibliothèque.  
