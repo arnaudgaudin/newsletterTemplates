@@ -813,8 +813,23 @@ a.link_underline:focus {
   text-decoration: underline;
   cursor: pointer;
 }
+.container {
+  background-color: #ffffff;
+}
+.uppercaseText {
+  text-transform: uppercase;
+}
+.boldText {
+  font-weight: bold;
+}
+.lien {
+  font-size: 80%;
+}
+.lien.perso {
+  color: #ee183a;
+}
 h3 {
-  color: #224b31;
+  color: #ee183a;
 }
 h3.surTitre {
   font-weight: lighter;
@@ -824,15 +839,23 @@ h4 {
 }
 b.perso,
 span.perso {
-  color: #224b31;
+  color: #ee183a;
 }
-.lien {
-  font-size: 80%;
+/*-------------------------- header - haut de site ---------------------------------------------------*/
+.header td.wrapper {
+  padding-top: 0px;
 }
-.lien.perso {
-  color: #224b31;
+.header table.columns td,
+.header table.column td {
+  padding-bottom: 0px;
 }
-/*--------------- Mentions legales - surHeader et footer - bas et haut de site ---------------------------------------------------*/
+/*--------------- Mentions legales - surHeader et footer - bas et haut de site ------------------------*/
+.sur-header {
+  background-color: #777777;
+}
+.footer {
+  background-color: #ee183a;
+}
 .mentionsLegales {
   line-height: 100%;
   color: #ffffff;
@@ -843,26 +866,19 @@ span.perso {
 .mentionsLegales a:visited {
   color: #ffffff !important;
 }
-.footer {
-  background-color: #777777;
+/*--------------- Informations et informations client ---------------------------------------------------*/
+.informations {
+  background-color: #ffffff;
 }
-.footer .container {
-  background-color: #224b31;
+.informationsClient {
+  background-color: #ee183a;
 }
-/*--------------- header - haut de site ---------------------------------------------------*/
-.header td.wrapper {
-  padding-top: 0px;
-}
-.header table.columns td,
-.header table.column td {
-  padding-bottom: 0px;
+.informationsClient span {
+  color: #ffffff;
 }
 /*--------------- Cabinet nous informe - article ---------------------------------------------------*/
 .cabInform {
-  background-color: #777777;
-}
-.cabInform .container {
-  background-color: #224b31;
+  background-color: #ee183a;
 }
 .cabInform a,
 .cabInform a:hover,
@@ -883,7 +899,7 @@ span.perso {
 .cabInform .titre {
   font-weight: normal;
 }
-/*--------------- A la une - article ---------------------------------------------------*/
+/*--------------------------- A la une - article ---------------------------------------------------*/
 .aLaUne {
   background-color: #4b606d;
 }
@@ -938,9 +954,17 @@ span.perso {
 .aLaUne table.column td {
   padding-bottom: 0px;
 }
+.aLaUne .text-pad {
+  padding-right: 0px !important;
+}
+@media only screen and (max-width: 750px) {
+  .aLaUne .text-pad {
+    padding-right: 10px !important;
+  }
+}
 /*--------------- Articles - article ---------------------------------------------------*/
-.articles {
-  background-color: #ffffff;
+.articles .article {
+  margin: 0;
 }
 @media only screen and (max-width: 750px) {
   .articles {
@@ -961,7 +985,7 @@ span.perso {
 }
 @media only screen and (max-width: 750px) {
   .articles .titre {
-    border-top: none;
+    border-top: none !important;
   }
 }
 .article span {
@@ -970,7 +994,7 @@ span.perso {
 }
 .article span.sousTitre {
   line-height: 10%;
-  color: #224b31;
+  color: #ee183a;
   font-size: 30px;
   padding-bottom: 15px;
 }
@@ -992,7 +1016,7 @@ span.perso {
 }
 .dessin td.borderTop {
   padding-top: 10px !important;
-  border-top: 1px dotted #459763;
+  border-top: 1px dotted #b9aca5;
 }
 @media only screen and (max-width: 750px) {
   .dessin td.borderTop {

@@ -1,14 +1,23 @@
 // theme's imports
 @import "import.less";
 
+
+
+
+
+
+
 // additionnal template's style which extends ink's style
 
 
 
+.container{ background-color: @containerBackground; }
 
-h3{ color: @ColorPerso1; &.surTitre{ font-weight: lighter; } }
-h4{ padding-bottom: 5px; }
-b.perso, span.perso{ color: @ColorPerso1; }
+
+.uppercaseText{ text-transform: uppercase; }
+.boldText{ font-weight: bold; }
+
+
 
 .lien{
 	font-size: 80%;
@@ -19,10 +28,27 @@ b.perso, span.perso{ color: @ColorPerso1; }
 
 
 
+h3{ color: @ColorPerso1; &.surTitre{ font-weight: lighter; } }
+h4{ padding-bottom: 5px; }
+b.perso, span.perso{ color: @ColorPerso1; }
 
 
 
-/*--------------- Mentions legales - surHeader et footer - bas et haut de site ---------------------------------------------------*/
+
+
+
+
+
+/*-------------------------- header - haut de site ---------------------------------------------------*/
+.header{
+	td.wrapper{ padding-top: 0px; }
+	table.columns td, table.column td { padding-bottom: 0px; }	
+}
+
+
+/*--------------- Mentions legales - surHeader et footer - bas et haut de site ------------------------*/
+.sur-header{ background-color: @bodyBackground; }
+.footer{ background-color: @ColorPerso1; }
 
 .mentionsLegales{
 	line-height: 100%;
@@ -31,32 +57,22 @@ b.perso, span.perso{ color: @ColorPerso1; }
 	
 }
 
-.footer{
-	background-color: @bodyBackground;
-	.container{ background-color: @headerBackground; }
+
+
+/*--------------- Informations et informations client ---------------------------------------------------*/
+.informations{ background-color: @containerBackground; }
+.informationsClient{ background-color: @ColorPerso1; }
+
+.informationsClient{
+	span{ color: #ffffff; }
 }
-
-
-
-
-
-
-
-/*--------------- header - haut de site ---------------------------------------------------*/
-.header{
-	td.wrapper{ padding-top: 0px; }
-	table.columns td, table.column td { padding-bottom: 0px; }	
-}
-
-
 
 
 /*--------------- Cabinet nous informe - article ---------------------------------------------------*/
 .cabInform{
 	
-	background-color: @bodyBackground;
+	background-color: @ColorPerso1;
 	
-	.container{ background-color: @headerBackground; }
 	a, a:hover, a:active, a:visited, h1, h2, h3, h5, h6, td { color: #ffffff !important; }
 	&.dernier .article h2{ padding-top: 10px; border-top: 1px dotted #ffffff; }
 
@@ -70,10 +86,11 @@ b.perso, span.perso{ color: @ColorPerso1; }
 
 
 
-/*--------------- A la une - article ---------------------------------------------------*/
+/*--------------------------- A la une - article ---------------------------------------------------*/
 .aLaUne{
 	
 	background-color: @bleuEIColor;
+	
 	
 	a, a:hover, a:active, a:visited, h1, h2, h3, h5, h6, td { color: #ffffff !important; }
 
@@ -85,7 +102,12 @@ b.perso, span.perso{ color: @ColorPerso1; }
 	td.wrapper{ padding-top: 0px; @media only screen and (max-width: (@containerWidth + @gutterWidth)) { padding-top: 10px; } }
 	table.columns td, table.column td { padding-bottom: 0px; }
 
+	.text-pad{ padding-right: 0px !important; @media only screen and (max-width: (@containerWidth + @gutterWidth)){ padding-right: 10px !important; }}
+
 }
+
+
+
 
 
 
@@ -94,7 +116,8 @@ b.perso, span.perso{ color: @ColorPerso1; }
 
 /*--------------- Articles - article ---------------------------------------------------*/
 .articles{
-	background-color: #ffffff;
+
+	.article{ margin: 0; }
 
 	@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 		border-bottom: 1px dotted @bleuEIColor;
@@ -105,7 +128,7 @@ b.perso, span.perso{ color: @ColorPerso1; }
 		font-weight: normal;
 		padding: 5px 0px;
 		border-top: 1px dotted @bleuEIColor;
-		@media only screen and (max-width: (@containerWidth + @gutterWidth)) { border-top: none; }
+		@media only screen and (max-width: (@containerWidth + @gutterWidth)) { border-top: none !important; }
 		line-height: 110%;
 	}
 }
