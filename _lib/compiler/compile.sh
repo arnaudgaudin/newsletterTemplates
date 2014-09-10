@@ -24,6 +24,10 @@ perl -pi -e 's/}}-->//g;' newsletter-inline-postanova.html
 perl -pi -e 's/##{{/<?/g;' newsletter-inline-postanova.html
 perl -pi -e 's/}}##/?>/g;' newsletter-inline-postanova.html
 
+#Remplacement des balises d'ouverture/fermeture en ASP
+perl -pi -e 's/%%{{/<%/g;' newsletter-inline-postanova.html
+perl -pi -e 's/}}%%/%>/g;' newsletter-inline-postanova.html
+
 #Suppression des balises de récupération des styles
 perl -pi -e 's/<(.+?)data-type="getstyle" (.*?)style=/style=/g;' newsletter-inline-postanova.html
 perl -pi -e 's/\/><!--getstyle-->//g;' newsletter-inline-postanova.html
