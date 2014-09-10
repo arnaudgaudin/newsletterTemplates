@@ -18,7 +18,7 @@ premailer --base-url=$baseurl --css=${PWD}/theme/css/style.css --entities --verb
 echo "enabling PostaNova tags ..."
 cp newsletter-inline.html newsletter-inline-postanova.html
 
-#Remplacement ces balises d'ouverture/fermeture de Posta Nova
+#Remplacement des balises d'ouverture/fermeture de Posta Nova
 perl -pi -e 's/<!--{{//g;' newsletter-inline-postanova.html
 perl -pi -e 's/}}-->//g;' newsletter-inline-postanova.html
 perl -pi -e 's/##{{/<?/g;' newsletter-inline-postanova.html
