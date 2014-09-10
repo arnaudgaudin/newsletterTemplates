@@ -249,6 +249,19 @@ Donne en sortie :
 		http://newsletter-templates.expert-infos.com/templates/liberaletvous/theme/images/actumois.jpg
 		</src>
 
+##Insertion de tags ASP
+Encadrer toute portion de code ASP par les tags suivants :
+
+		<!--{{%%{{ ... }}%%}}-->
+
+Ce qui donnerait par exemple en sortie :
+
+		<% ... %>
+
+Pour les variables ASP insérées en attributs HTML insérer uniquement les tags suivants :
+
+		<a href="%%{{=maVariable}}%%"></a>
+
 ##Compilation du template
 (génération de style.css, création des versions inline et postanova)
 Dans le dossier du template, lancer la commande suivante dans le terminal :
