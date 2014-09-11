@@ -57,7 +57,7 @@ img {
 }
 center {
   width: 100%;
-  min-width: 580px;
+  min-width: 768px;
 }
 a img {
   border: none;
@@ -95,7 +95,7 @@ table.body {
   width: 100%;
 }
 table.container {
-  width: 580px;
+  width: 768px;
   margin: 0 auto;
   text-align: inherit;
 }
@@ -108,7 +108,7 @@ table.container table.row {
   display: block;
 }
 td.wrapper {
-  padding: 10px 20px 0px 0px;
+  padding: 10px 0px 0px 0px;
   position: relative;
 }
 table.columns,
@@ -134,112 +134,112 @@ table.container td.last {
   padding-right: 0px;
 }
 table.one {
-  width: 30px;
+  width: 64px;
 }
 table.two {
-  width: 80px;
+  width: 128px;
 }
 table.three {
-  width: 130px;
+  width: 192px;
 }
 table.four {
-  width: 180px;
+  width: 256px;
 }
 table.five {
-  width: 230px;
+  width: 320px;
 }
 table.six {
-  width: 280px;
+  width: 384px;
 }
 table.seven {
-  width: 330px;
+  width: 448px;
 }
 table.eight {
-  width: 380px;
+  width: 512px;
 }
 table.nine {
-  width: 430px;
+  width: 576px;
 }
 table.ten {
-  width: 480px;
+  width: 640px;
 }
 table.eleven {
-  width: 530px;
+  width: 704px;
 }
 table.twelve {
-  width: 580px;
+  width: 768px;
 }
 table.one center {
-  min-width: 30px;
+  min-width: 64px;
 }
 table.two center {
-  min-width: 80px;
+  min-width: 128px;
 }
 table.three center {
-  min-width: 130px;
+  min-width: 192px;
 }
 table.four center {
-  min-width: 180px;
+  min-width: 256px;
 }
 table.five center {
-  min-width: 230px;
+  min-width: 320px;
 }
 table.six center {
-  min-width: 280px;
+  min-width: 384px;
 }
 table.seven center {
-  min-width: 330px;
+  min-width: 448px;
 }
 table.eight center {
-  min-width: 380px;
+  min-width: 512px;
 }
 table.nine center {
-  min-width: 430px;
+  min-width: 576px;
 }
 table.ten center {
-  min-width: 480px;
+  min-width: 640px;
 }
 table.eleven center {
-  min-width: 530px;
+  min-width: 704px;
 }
 table.twelve center {
-  min-width: 580px;
+  min-width: 768px;
 }
 table.one .panel center {
-  min-width: 10px;
+  min-width: 64px;
 }
 table.two .panel center {
-  min-width: 60px;
+  min-width: 128px;
 }
 table.three .panel center {
-  min-width: 110px;
+  min-width: 192px;
 }
 table.four .panel center {
-  min-width: 160px;
+  min-width: 256px;
 }
 table.five .panel center {
-  min-width: 210px;
+  min-width: 320px;
 }
 table.six .panel center {
-  min-width: 260px;
+  min-width: 384px;
 }
 table.seven .panel center {
-  min-width: 310px;
+  min-width: 448px;
 }
 table.eight .panel center {
-  min-width: 360px;
+  min-width: 512px;
 }
 table.nine .panel center {
-  min-width: 410px;
+  min-width: 576px;
 }
 table.ten .panel center {
-  min-width: 460px;
+  min-width: 640px;
 }
 table.eleven .panel center {
-  min-width: 510px;
+  min-width: 704px;
 }
 table.twelve .panel center {
-  min-width: 560px;
+  min-width: 768px;
 }
 .body .columns td.one,
 .body .column td.one {
@@ -290,37 +290,37 @@ table.twelve .panel center {
   width: 100%;
 }
 td.offset-by-one {
-  padding-left: 50px;
+  padding-left: 64px;
 }
 td.offset-by-two {
-  padding-left: 100px;
+  padding-left: 128px;
 }
 td.offset-by-three {
-  padding-left: 150px;
+  padding-left: 192px;
 }
 td.offset-by-four {
-  padding-left: 200px;
+  padding-left: 256px;
 }
 td.offset-by-five {
-  padding-left: 250px;
+  padding-left: 320px;
 }
 td.offset-by-six {
-  padding-left: 300px;
+  padding-left: 384px;
 }
 td.offset-by-seven {
-  padding-left: 350px;
+  padding-left: 448px;
 }
 td.offset-by-eight {
-  padding-left: 400px;
+  padding-left: 512px;
 }
 td.offset-by-nine {
-  padding-left: 450px;
+  padding-left: 576px;
 }
 td.offset-by-ten {
-  padding-left: 500px;
+  padding-left: 640px;
 }
 td.offset-by-eleven {
-  padding-left: 550px;
+  padding-left: 704px;
 }
 td.expander {
   visibility: hidden;
@@ -347,32 +347,32 @@ table.column .text-pad-right {
 /* Block Grid */
 .block-grid {
   width: 100%;
-  max-width: 580px;
+  max-width: 768px;
 }
 .block-grid td {
   display: inline-block;
   padding: 10px;
 }
 .two-up td {
-  width: 270px;
+  width: 384px;
 }
 .three-up td {
-  width: 173px;
+  width: 256px;
 }
 .four-up td {
-  width: 125px;
+  width: 192px;
 }
 .five-up td {
-  width: 96px;
+  width: 153px;
 }
 .six-up td {
-  width: 76px;
+  width: 128px;
 }
 .seven-up td {
-  width: 62px;
+  width: 109px;
 }
 .eight-up td {
-  width: 52px;
+  width: 96px;
 }
 /* Alignment & Visibility Classes */
 table.center,
@@ -658,7 +658,7 @@ body.outlook p {
   display: inline !important;
 }
 /*  Media Queries */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   table[class="body"] img {
     width: auto !important;
     height: auto !important;
@@ -880,6 +880,39 @@ a.link_underline:focus {
 */
 .container {
   background-color: #fff;
+}
+.sur-header {
+  background-color: #E7A7EB;
+}
+.informations {
+  background-color: #A7C0EB;
+}
+.informationsClient {
+  background-color: #A7EBD3;
+}
+.header {
+  background-color: #A7C0EB;
+}
+.cabInform {
+  background-color: #E0EBA7;
+}
+.aLaUne {
+  background-color: #EBC2A7;
+}
+.articles {
+  background-color: #A7EBEB;
+}
+.agendaDessin {
+  background-color: #EBE0A7;
+}
+.adresse {
+  background-color: #A7C4EB;
+}
+.lienSiteInterent {
+  background-color: #EBA7E5;
+}
+.footer {
+  background-color: #EBB5A7;
 }
 /*
 
