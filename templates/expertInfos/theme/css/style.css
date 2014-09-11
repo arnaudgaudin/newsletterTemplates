@@ -10,7 +10,7 @@
 **********************************************/
 body,
 table.body {
-  background-color: #777777;
+  background-color: #787878;
 }
 /**********************************************
 * Ink v1.0.5 - Copyright 2013 ZURB Inc        *
@@ -57,7 +57,7 @@ img {
 }
 center {
   width: 100%;
-  min-width: 750px;
+  min-width: 580px;
 }
 a img {
   border: none;
@@ -84,8 +84,8 @@ td {
   text-align: left;
 }
 hr {
-  color: #4b606d;
-  background-color: #4b606d;
+  color: #d9d9d9;
+  background-color: #d9d9d9;
   height: 1px;
   border: none;
 }
@@ -95,7 +95,7 @@ table.body {
   width: 100%;
 }
 table.container {
-  width: 750px;
+  width: 580px;
   margin: 0 auto;
   text-align: inherit;
 }
@@ -108,7 +108,7 @@ table.container table.row {
   display: block;
 }
 td.wrapper {
-  padding: 10px 0px 0px 0px;
+  padding: 10px 20px 0px 0px;
   position: relative;
 }
 table.columns,
@@ -134,112 +134,112 @@ table.container td.last {
   padding-right: 0px;
 }
 table.one {
-  width: 62.5px;
+  width: 30px;
 }
 table.two {
-  width: 125px;
+  width: 80px;
 }
 table.three {
-  width: 187.5px;
+  width: 130px;
 }
 table.four {
-  width: 250px;
+  width: 180px;
 }
 table.five {
-  width: 312.5px;
+  width: 230px;
 }
 table.six {
-  width: 375px;
+  width: 280px;
 }
 table.seven {
-  width: 437.5px;
+  width: 330px;
 }
 table.eight {
-  width: 500px;
+  width: 380px;
 }
 table.nine {
-  width: 562.5px;
+  width: 430px;
 }
 table.ten {
-  width: 625px;
+  width: 480px;
 }
 table.eleven {
-  width: 687.5px;
+  width: 530px;
 }
 table.twelve {
-  width: 750px;
+  width: 580px;
 }
 table.one center {
-  min-width: 62.5px;
+  min-width: 30px;
 }
 table.two center {
-  min-width: 125px;
+  min-width: 80px;
 }
 table.three center {
-  min-width: 187.5px;
+  min-width: 130px;
 }
 table.four center {
-  min-width: 250px;
+  min-width: 180px;
 }
 table.five center {
-  min-width: 312.5px;
+  min-width: 230px;
 }
 table.six center {
-  min-width: 375px;
+  min-width: 280px;
 }
 table.seven center {
-  min-width: 437.5px;
+  min-width: 330px;
 }
 table.eight center {
-  min-width: 500px;
+  min-width: 380px;
 }
 table.nine center {
-  min-width: 562.5px;
+  min-width: 430px;
 }
 table.ten center {
-  min-width: 625px;
+  min-width: 480px;
 }
 table.eleven center {
-  min-width: 687.5px;
+  min-width: 530px;
 }
 table.twelve center {
-  min-width: 750px;
+  min-width: 580px;
 }
 table.one .panel center {
-  min-width: 62.5px;
+  min-width: 10px;
 }
 table.two .panel center {
-  min-width: 125px;
+  min-width: 60px;
 }
 table.three .panel center {
-  min-width: 187.5px;
+  min-width: 110px;
 }
 table.four .panel center {
-  min-width: 250px;
+  min-width: 160px;
 }
 table.five .panel center {
-  min-width: 312.5px;
+  min-width: 210px;
 }
 table.six .panel center {
-  min-width: 375px;
+  min-width: 260px;
 }
 table.seven .panel center {
-  min-width: 437.5px;
+  min-width: 310px;
 }
 table.eight .panel center {
-  min-width: 500px;
+  min-width: 360px;
 }
 table.nine .panel center {
-  min-width: 562.5px;
+  min-width: 410px;
 }
 table.ten .panel center {
-  min-width: 625px;
+  min-width: 460px;
 }
 table.eleven .panel center {
-  min-width: 687.5px;
+  min-width: 510px;
 }
 table.twelve .panel center {
-  min-width: 750px;
+  min-width: 560px;
 }
 .body .columns td.one,
 .body .column td.one {
@@ -290,37 +290,37 @@ table.twelve .panel center {
   width: 100%;
 }
 td.offset-by-one {
-  padding-left: 62.5px;
+  padding-left: 50px;
 }
 td.offset-by-two {
-  padding-left: 125px;
+  padding-left: 100px;
 }
 td.offset-by-three {
-  padding-left: 187.5px;
+  padding-left: 150px;
 }
 td.offset-by-four {
-  padding-left: 250px;
+  padding-left: 200px;
 }
 td.offset-by-five {
-  padding-left: 312.5px;
+  padding-left: 250px;
 }
 td.offset-by-six {
-  padding-left: 375px;
+  padding-left: 300px;
 }
 td.offset-by-seven {
-  padding-left: 437.5px;
+  padding-left: 350px;
 }
 td.offset-by-eight {
-  padding-left: 500px;
+  padding-left: 400px;
 }
 td.offset-by-nine {
-  padding-left: 562.5px;
+  padding-left: 450px;
 }
 td.offset-by-ten {
-  padding-left: 625px;
+  padding-left: 500px;
 }
 td.offset-by-eleven {
-  padding-left: 687.5px;
+  padding-left: 550px;
 }
 td.expander {
   visibility: hidden;
@@ -347,32 +347,32 @@ table.column .text-pad-right {
 /* Block Grid */
 .block-grid {
   width: 100%;
-  max-width: 750px;
+  max-width: 580px;
 }
 .block-grid td {
   display: inline-block;
   padding: 10px;
 }
 .two-up td {
-  width: 375px;
+  width: 270px;
 }
 .three-up td {
-  width: 250px;
+  width: 173px;
 }
 .four-up td {
-  width: 187px;
-}
-.five-up td {
-  width: 150px;
-}
-.six-up td {
   width: 125px;
 }
+.five-up td {
+  width: 96px;
+}
+.six-up td {
+  width: 76px;
+}
 .seven-up td {
-  width: 107px;
+  width: 62px;
 }
 .eight-up td {
-  width: 93px;
+  width: 52px;
 }
 /* Alignment & Visibility Classes */
 table.center,
@@ -412,7 +412,7 @@ h5,
 h6,
 p,
 td {
-  color: #4b606d;
+  color: #222222;
   padding: 0;
   margin: 0;
   text-align: left;
@@ -426,20 +426,20 @@ h5,
 h6 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
-  color: #4b606d;
+  color: inherit;
   word-break: normal;
 }
 h1 {
-  font-size: 25px;
+  font-size: 39.9px;
 }
 h2 {
-  font-size: 18px;
+  font-size: 35.7px;
 }
 h3 {
-  font-size: 45px;
+  font-size: 31.5px;
 }
 h4 {
-  font-size: 15px;
+  font-size: 28px;
 }
 h5 {
   font-size: 24.5px;
@@ -451,7 +451,7 @@ body,
 table.body,
 p,
 td {
-  font-family: Arial, sans-serif, "Helvetica Neue", Helvetica;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 19px;
@@ -469,17 +469,17 @@ small {
   font-size: 9.8px;
 }
 a {
-  color: #4b606d;
+  color: #2ba6cb;
   text-decoration: none;
 }
 a:hover {
-  color: #36454f !important;
+  color: #2284a1 !important;
 }
 a:active {
-  color: #36454f !important;
+  color: #2284a1 !important;
 }
 a:visited {
-  color: #4b606d !important;
+  color: #2ba6cb !important;
 }
 h1 a,
 h2 a,
@@ -487,7 +487,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-  color: #4b606d;
+  color: #2ba6cb;
 }
 h1 a:active,
 h2 a:active,
@@ -495,7 +495,7 @@ h3 a:active,
 h4 a:active,
 h5 a:active,
 h6 a:active {
-  color: #4b606d !important;
+  color: #2ba6cb !important;
 }
 h1 a:visited,
 h2 a:visited,
@@ -503,12 +503,12 @@ h3 a:visited,
 h4 a:visited,
 h5 a:visited,
 h6 a:visited {
-  color: #4b606d !important;
+  color: #2ba6cb !important;
 }
 /* Panels */
 .panel {
-  background: #e6e8eb;
-  border: 1px solid #e6e8eb;
+  background: #f2f2f2;
+  border: 1px solid #d9d9d9;
   padding: 10px !important;
 }
 .sub-grid table {
@@ -534,8 +534,8 @@ table.large-button td {
   display: block;
   width: auto !important;
   text-align: center;
-  background: #4b606d;
-  border: 1px solid #212b31;
+  background: #2ba6cb;
+  border: 1px solid #196177;
   color: #ffffff;
   padding: 8px 0;
 }
@@ -558,7 +558,7 @@ table.medium-button td a,
 table.large-button td a {
   font-weight: bold;
   text-decoration: none;
-  font-family: Arial, sans-serif, "Helvetica Neue", Helvetica;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #ffffff;
   font-size: 16.1px;
   display: block;
@@ -581,7 +581,7 @@ table.large-button td a {
 table.button:hover td,
 table.button:visited td,
 table.button:active td {
-  background: #36454f !important;
+  background: #2284a1 !important;
 }
 table.button:hover td a,
 table.button:visited td a,
@@ -593,7 +593,7 @@ table.tiny-button:hover td,
 table.small-button:hover td,
 table.medium-button:hover td,
 table.large-button:hover td {
-  background: #36454f !important;
+  background: #2284a1 !important;
 }
 table.button:hover td a,
 table.button:active td a,
@@ -658,7 +658,7 @@ body.outlook p {
   display: inline !important;
 }
 /*  Media Queries */
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 600px) {
   table[class="body"] img {
     width: auto !important;
     height: auto !important;
@@ -779,15 +779,15 @@ table {
   table-layout: fixed;
 }
 .appleLinks a {
-  color: #4b606d;
+  color: #2ba6cb;
   text-decoration: none;
 }
 .appleLinks a:hover,
 .appleLinks a:active {
-  color: #36454f !important;
+  color: #2284a1 !important;
 }
 .appleLinks a:visited {
-  color: #4b606d !important;
+  color: #2ba6cb !important;
 }
 a[href^=tel] {
   color: inherit;
@@ -813,221 +813,328 @@ a.link_underline:focus {
   text-decoration: underline;
   cursor: pointer;
 }
-/*-----------------------    Classes utiles       --------------------------*/
-.textTransformUpper {
-  text-transform: uppercase;
-}
-.fontWeightBold {
-  font-weight: bold;
-}
-.displayBlock {
-  display: block;
-}
-.floatLeft {
-  float: left;
-}
-.fiveCol {
-  width: 312.5px;
-  padding-right: 30px;
-}
-@media only screen and (max-width: 750px) {
-  .fiveCol {
-    width: 100% !important;
-    padding-right: 0px;
-  }
-}
-/*-----------------------    Classes color       --------------------------*/
-.colorWhite {
-  color: #ffffff;
-}
-.colorWhite a,
-.colorWhite a:hover,
-.colorWhite a:active,
-.colorWhite a:visited,
-.colorWhite h1,
-.colorWhite h2,
-.colorWhite h3,
-.colorWhite h5,
-.colorWhite h6,
-.colorWhite td {
-  color: #ffffff !important;
-}
-/*-----------------------    Classes du theme     --------------------------*/
-.lien {
-  font-size: 80%;
-}
-.lien.perso {
-  color: #ee183a;
-}
-/*-----------------------    Classes pour fond     --------------------------*/
-.informations {
-  background-color: #ffffff;
-}
-.informationsClient {
-  background-color: #ee183a;
-}
+/*
+@rougeEIColor: #d12329;
+@bleuEIColor: #4b606d;
+@grisEIColor: #e6e8eb;
+@colorCouleur3: @grisEIColor;
+
+
+
+@ColorPerso1: @colorCouleur1;
+@ColorPerso2: @colorCouleur2;
+@ColorPerso3: @colorCouleur3;
+@ColorPerso4: @colorCouleur4;
+
+
+
+
+
+// Scaffolding
+// -------------------------
+@containerBackground:   #ffffff;
+@textColor:             @bleuEIColor;
+
+
+// Links
+// -------------------------
+@linkColor:             @textColor;
+
+
+
+// Typography
+// -------------------------
+@baseFontSize:          14px;
+@baseFontFamily:        Arial, sans-serif, "Helvetica Neue", Helvetica;
+@baseLineHeight:        19px;
+
+@headingsFontFamily:    "Helvetica Neue", Helvetica, Arial, sans-serif;
+@headingsFontWeight:    bold;
+@headingsColor:         @textColor;
+
+// Component sizing
+// -------------------------
+// Based on 14px font-size
+
+@headingsFontSizeH1:    25px;
+@headingsFontSizeH2:    18px;
+@headingsFontSizeH3:    45px;
+@headingsFontSizeH4:    15px;
+
+
+// Panels
+// -------------------------
+@panelBackground: @ColorPerso3;
+@panelBorder: @ColorPerso3;
+
+// Hr border color
+// -------------------------
+@hrBorder: @bleuEIColor;
+
+
+// Grid config
+// --------------------------------------------------
+@columnWidth: 62.5px; //largeur totale de 750px)
+@gutterWidth: 0px;
+
+*/
 .container {
-  background-color: #ffffff;
+  background-color: #fff;
 }
-/*--------------------------- A la une - article --------------- ------------*/
-.aLaUne {
-  background-color: #4b606d;
+/*
+
+
+//-----------------------    Classes utiles       --------------------------
+.textTransformUpper{ text-transform: uppercase; }
+.fontWeightBold{ font-weight: bold; }
+.displayBlock{ display: block; }
+.floatLeft{ float: left; }
+.fiveCol{ .columnWidth(5); padding-right: 30px; @media only screen and (max-width: (@containerWidth + @gutterWidth)){ width: 100% !important; padding-right: 0px; } }
+
+
+
+
+//-----------------------    Classes color       --------------------------
+.colorWhite{
+	color: #ffffff;
+	a, a:hover, a:active, a:visited, h1, h2, h3, h5, h6, td{ color: #ffffff !important; }
 }
-.aLaUne .titre {
-  font-weight: normal;
+
+
+
+
+//-----------------------    Classes du theme     --------------------------
+.lien{
+	font-size: 80%;
+	&.perso{
+		color: @ColorPerso1;
+	}
 }
-.aLaUne img {
-  float: right;
-  margin-left: 15px;
-  width: 50%;
+
+
+//-----------------------    Classes pour fond     --------------------------
+.informations{ background-color: @containerBackground; }
+.informationsClient{ background-color: @ColorPerso1; }
+.container{ background-color: @containerBackground; }
+
+
+
+
+//--------------------------- A la une - article --------------- ------------
+.aLaUne{
+	
+	background-color: @bleuEIColor;
+	
+	.titre{ font-weight: normal; }
+
+	img{ 
+		float: right;
+		margin-left: 15px;
+		width: 50%;
+		@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+			margin-bottom: 10px;
+		}
+	}
+	
+	.lien{ color: lighten(@bleuEIColor, 45%) !important; }
+
+	td.wrapper{ 
+		padding-top: 0px;
+		@media only screen and (max-width: (@containerWidth + @gutterWidth)){
+			padding-top: 10px !important;
+		}
+	}
+	
+	table.columns td, table.column td { padding-bottom: 0px; }
+
+	.text-pad{
+		padding-right: 0px !important;
+		@media only screen and (max-width: (@containerWidth + @gutterWidth)){
+			padding-right: 10px !important;
+		}
+	}
+
 }
-@media only screen and (max-width: 750px) {
-  .aLaUne img {
-    margin-bottom: 10px;
-  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h3{ color: @ColorPerso1; &.surTitre{ font-weight: lighter; } }
+b.perso, span.perso{ color: @ColorPerso1; }
+
+
+
+
+
+
+
+
+//-------------------------- header - haut de site ---------------------------------------------------
+.header{
+	td.wrapper{ padding-top: 0px; }
+	table.columns td, table.column td { padding-bottom: 0px; }	
 }
-.aLaUne .lien {
-  color: #c6d1d8 !important;
+
+
+
+
+
+
+//--------------- Cabinet nous informe - article ---------------------------------------------------
+.cabInform{
+	
+	background-color: #6b6b6b;
+	
+	a, a:hover, a:active, a:visited, h1, h2, h3, h5, h6, td { color: #ffffff !important; }
+	&.dernier .article h2{ padding-top: 10px; border-top: 1px dotted #ffffff; }
+
+	.titre{ font-weight: normal; }
 }
-.aLaUne td.wrapper {
-  padding-top: 0px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+//--------------- Articles - article ---------------------------------------------------
+.articles{
+	
+	@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+		border-bottom: 1px dotted @bleuEIColor;
+		&.dernier{ border-bottom: none; }
+	}
+
+	.titre{
+		font-weight: normal;
+		padding-top: 5px;
+		line-height: 110%;
+		border-top: 1px dotted @bleuEIColor;
+		@media only screen and (max-width: (@containerWidth + @gutterWidth)) { border-top: none !important; } 
+	}
 }
-@media only screen and (max-width: 750px) {
-  .aLaUne td.wrapper {
-    padding-top: 10px !important;
-  }
+
+.article span{
+	&.sousTitre{
+		line-height: 10%;
+		color: @ColorPerso1;
+		font-size: 30px;
+	}
 }
-.aLaUne table.columns td,
-.aLaUne table.column td {
-  padding-bottom: 0px;
+
+.sousTitre, .surTitre{
+	@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+		//display: inline !important;
+	}
 }
-.aLaUne .text-pad {
-  padding-right: 0px !important;
+
+.agenda{ background-color: @grisEIColor; }
+
+.dessin{
+	
+	&.wrapper{ padding-top: 0px; }
+	img{ float: right; width: 60%; }
+	td.borderTop{
+		padding-top: 10px !important;
+		border-top: 1px dotted @ColorPerso2;
+		@media only screen and (max-width: (@containerWidth + @gutterWidth)) { border-top: none; } }
 }
-@media only screen and (max-width: 750px) {
-  .aLaUne .text-pad {
-    padding-right: 10px !important;
-  }
+
+
+.agendaDessin{ background-color: #ffffff; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.adresse{
+	
+	background-color: lighten(#6b6b6b, 20%);
+	a, a:hover, a:active, a:visited, h1, h2, h3, h5, h6, td { color: #ffffff !important; }
+
 }
-h3 {
-  color: #ee183a;
+.lienSiteInterent{
+	background-color: lighten(#6b6b6b, 50%);
+	.text-pad {
+		//padding-bottom: 0px;
+	}
 }
-h3.surTitre {
-  font-weight: lighter;
-}
-b.perso,
-span.perso {
-  color: #ee183a;
-}
-/*-------------------------- header - haut de site ---------------------------------------------------*/
-.header td.wrapper {
-  padding-top: 0px;
-}
-.header table.columns td,
-.header table.column td {
-  padding-bottom: 0px;
-}
-/*--------------- Cabinet nous informe - article ---------------------------------------------------*/
-.cabInform {
-  background-color: #6b6b6b;
-}
-.cabInform a,
-.cabInform a:hover,
-.cabInform a:active,
-.cabInform a:visited,
-.cabInform h1,
-.cabInform h2,
-.cabInform h3,
-.cabInform h5,
-.cabInform h6,
-.cabInform td {
-  color: #ffffff !important;
-}
-.cabInform.dernier .article h2 {
-  padding-top: 10px;
-  border-top: 1px dotted #ffffff;
-}
-.cabInform .titre {
-  font-weight: normal;
-}
-/*--------------- Articles - article ---------------------------------------------------*/
-@media only screen and (max-width: 750px) {
-  .articles {
-    border-bottom: 1px dotted #4b606d;
-  }
-  .articles.dernier {
-    border-bottom: none;
-  }
-}
-.articles .titre {
-  font-weight: normal;
-  padding-top: 5px;
-  line-height: 110%;
-  border-top: 1px dotted #4b606d;
-}
-@media only screen and (max-width: 750px) {
-  .articles .titre {
-    border-top: none !important;
-  }
-}
-.article span.sousTitre {
-  line-height: 10%;
-  color: #ee183a;
-  font-size: 30px;
-}
-@media only screen and (max-width: 750px) {
-  .sousTitre,
-  .surTitre {
-    /*display: inline !important;*/
-  }
-}
-.agenda {
-  background-color: #e6e8eb;
-}
-.dessin.wrapper {
-  padding-top: 0px;
-}
-.dessin img {
-  float: right;
-  width: 60%;
-}
-.dessin td.borderTop {
-  padding-top: 10px !important;
-  border-top: 1px dotted #b9aca5;
-}
-@media only screen and (max-width: 750px) {
-  .dessin td.borderTop {
-    border-top: none;
-  }
-}
-.agendaDessin {
-  background-color: #ffffff;
-}
-.adresse {
-  background-color: #9e9e9e;
-}
-.adresse a,
-.adresse a:hover,
-.adresse a:active,
-.adresse a:visited,
-.adresse h1,
-.adresse h2,
-.adresse h3,
-.adresse h5,
-.adresse h6,
-.adresse td {
-  color: #ffffff !important;
-}
-.lienSiteInterent {
-  background-color: #ebebeb;
-}
-.lienSiteInterent .text-pad {
-  /*padding-bottom: 0px;*/
-}
-/*--------------- Mentions legales - surHeader et footer - bas et haut de site ------------------------*/
-.sur-header {
-  background-color: #777777;
-}
-.footer {
-  background-color: #ee183a;
-}
+
+
+
+
+
+
+
+
+
+
+
+//--------------- Mentions legales - surHeader et footer - bas et haut de site ------------------------
+.sur-header{ background-color: @bodyBackground; }
+.footer{ background-color: @ColorPerso1; }
+
+*/
