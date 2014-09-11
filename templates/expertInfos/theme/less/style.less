@@ -20,7 +20,7 @@
 .displayBlock{ display: block; }
 .floatLeft{ float: left; }
 .fiveCol{ .columnWidth(5); padding-right: 30px; @media only screen and (max-width: (@containerWidth + @gutterWidth)){ width: 100% !important; padding-right: 0px; } }
-.borderTop{ border-top: 1px dotted @bleuEIColor; @media only screen and (max-width: (@containerWidth + @gutterWidth)) { border-top: none !important; } }
+
 
 
 
@@ -184,6 +184,8 @@ b.perso, span.perso{ color: @ColorPerso1; }
 		font-weight: normal;
 		padding-top: 5px;
 		line-height: 110%;
+		border-top: 1px dotted @bleuEIColor;
+		@media only screen and (max-width: (@containerWidth + @gutterWidth)) { border-top: none !important; } 
 	}
 }
 

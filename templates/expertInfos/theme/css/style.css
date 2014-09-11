@@ -836,14 +836,6 @@ a.link_underline:focus {
     padding-right: 0px;
   }
 }
-.borderTop {
-  border-top: 1px dotted #4b606d;
-}
-@media only screen and (max-width: 750px) {
-  .borderTop {
-    border-top: none !important;
-  }
-}
 /*-----------------------    Classes color       --------------------------*/
 .colorWhite {
   color: #ffffff;
@@ -971,6 +963,12 @@ span.perso {
   font-weight: normal;
   padding-top: 5px;
   line-height: 110%;
+  border-top: 1px dotted #4b606d;
+}
+@media only screen and (max-width: 750px) {
+  .articles .titre {
+    border-top: none !important;
+  }
 }
 .article span.sousTitre {
   line-height: 10%;
