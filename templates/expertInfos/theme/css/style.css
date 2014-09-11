@@ -93,15 +93,19 @@ hr {
 table.body {
   height: 100%;
   width: 100%;
+  -premailer-height: 100%;
+  -premailer-width: 100%;
 }
 table.container {
   width: 720px;
+  -premailer-width: 720;
   margin: 0 auto;
   text-align: inherit;
 }
 table.row {
   padding: 0px;
   width: 100%;
+  -premailer-width: 100%;
   position: relative;
 }
 table.container table.row {
@@ -135,39 +139,51 @@ table.container td.last {
 }
 table.one {
   width: 60px;
+  -premailer-width: 60;
 }
 table.two {
   width: 120px;
+  -premailer-width: 120;
 }
 table.three {
   width: 180px;
+  -premailer-width: 180;
 }
 table.four {
   width: 240px;
+  -premailer-width: 240;
 }
 table.five {
   width: 300px;
+  -premailer-width: 300;
 }
 table.six {
   width: 360px;
+  -premailer-width: 360;
 }
 table.seven {
   width: 420px;
+  -premailer-width: 420;
 }
 table.eight {
   width: 480px;
+  -premailer-width: 480;
 }
 table.nine {
   width: 540px;
+  -premailer-width: 540;
 }
 table.ten {
   width: 600px;
+  -premailer-width: 600;
 }
 table.eleven {
   width: 660px;
+  -premailer-width: 660;
 }
 table.twelve {
   width: 720px;
+  -premailer-width: 720;
 }
 table.one center {
   min-width: 60px;
@@ -244,50 +260,62 @@ table.twelve .panel center {
 .body .columns td.one,
 .body .column td.one {
   width: 8.333333%;
+  -premailer-width: 8.333333%;
 }
 .body .columns td.two,
 .body .column td.two {
   width: 16.666666%;
+  -premailer-width: 16.666666%;
 }
 .body .columns td.three,
 .body .column td.three {
   width: 25%;
+  -premailer-width: 25%;
 }
 .body .columns td.four,
 .body .column td.four {
   width: 33.333333%;
+  -premailer-width: 33.333333%;
 }
 .body .columns td.five,
 .body .column td.five {
   width: 41.666666%;
+  -premailer-width: 41.666666%;
 }
 .body .columns td.six,
 .body .column td.six {
   width: 50%;
+  -premailer-width: 50%;
 }
 .body .columns td.seven,
 .body .column td.seven {
   width: 58.333333%;
+  -premailer-width: 58.333333%;
 }
 .body .columns td.eight,
 .body .column td.eight {
   width: 66.666666%;
+  -premailer-width: 66.666666%;
 }
 .body .columns td.nine,
 .body .column td.nine {
   width: 75%;
+  -premailer-width: 75%;
 }
 .body .columns td.ten,
 .body .column td.ten {
   width: 83.333333%;
+  -premailer-width: 83.333333%;
 }
 .body .columns td.eleven,
 .body .column td.eleven {
   width: 91.666666%;
+  -premailer-width: 91.666666%;
 }
 .body .columns td.twelve,
 .body .column td.twelve {
   width: 100%;
+  -premailer-width: 100%;
 }
 td.offset-by-one {
   padding-left: 60px;
@@ -325,6 +353,7 @@ td.offset-by-eleven {
 td.expander {
   visibility: hidden;
   width: 0px;
+  -premailer-width: 0;
   padding: 0 !important;
 }
 table.columns .text-pad,
@@ -347,6 +376,7 @@ table.column .text-pad-right {
 /* Block Grid */
 .block-grid {
   width: 100%;
+  -premailer-width: 100%;
   max-width: 720px;
 }
 .block-grid td {
@@ -355,24 +385,31 @@ table.column .text-pad-right {
 }
 .two-up td {
   width: 360px;
+  -premailer-width: 360;
 }
 .three-up td {
   width: 240px;
+  -premailer-width: 240;
 }
 .four-up td {
   width: 180px;
+  -premailer-width: 180;
 }
 .five-up td {
   width: 144px;
+  -premailer-width: 144;
 }
 .six-up td {
   width: 120px;
+  -premailer-width: 120;
 }
 .seven-up td {
   width: 102px;
+  -premailer-width: 102;
 }
 .eight-up td {
   width: 90px;
+  -premailer-width: 90;
 }
 /* Alignment & Visibility Classes */
 table.center,
@@ -513,6 +550,7 @@ h6 a:visited {
 }
 .sub-grid table {
   width: 100%;
+  -premailer-width: 100%;
 }
 .sub-grid td.sub-columns {
   padding-bottom: 0;
@@ -524,6 +562,7 @@ table.small-button,
 table.medium-button,
 table.large-button {
   width: 100%;
+  -premailer-width: 100%;
   overflow: hidden;
 }
 table.button td,
@@ -533,6 +572,7 @@ table.medium-button td,
 table.large-button td {
   display: block;
   width: auto !important;
+  -premailer-width: auto;
   text-align: center;
   background: #2ba6cb;
   border: 1px solid #196177;
