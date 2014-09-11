@@ -57,7 +57,7 @@ img {
 }
 center {
   width: 100%;
-  min-width: 768px;
+  min-width: 720px;
 }
 a img {
   border: none;
@@ -95,7 +95,7 @@ table.body {
   width: 100%;
 }
 table.container {
-  width: 768px;
+  width: 720px;
   margin: 0 auto;
   text-align: inherit;
 }
@@ -134,112 +134,112 @@ table.container td.last {
   padding-right: 0px;
 }
 table.one {
-  width: 64px;
+  width: 60px;
 }
 table.two {
-  width: 128px;
+  width: 120px;
 }
 table.three {
-  width: 192px;
+  width: 180px;
 }
 table.four {
-  width: 256px;
+  width: 240px;
 }
 table.five {
-  width: 320px;
+  width: 300px;
 }
 table.six {
-  width: 384px;
+  width: 360px;
 }
 table.seven {
-  width: 448px;
+  width: 420px;
 }
 table.eight {
-  width: 512px;
+  width: 480px;
 }
 table.nine {
-  width: 576px;
+  width: 540px;
 }
 table.ten {
-  width: 640px;
+  width: 600px;
 }
 table.eleven {
-  width: 704px;
+  width: 660px;
 }
 table.twelve {
-  width: 768px;
+  width: 720px;
 }
 table.one center {
-  min-width: 64px;
+  min-width: 60px;
 }
 table.two center {
-  min-width: 128px;
+  min-width: 120px;
 }
 table.three center {
-  min-width: 192px;
+  min-width: 180px;
 }
 table.four center {
-  min-width: 256px;
+  min-width: 240px;
 }
 table.five center {
-  min-width: 320px;
+  min-width: 300px;
 }
 table.six center {
-  min-width: 384px;
+  min-width: 360px;
 }
 table.seven center {
-  min-width: 448px;
+  min-width: 420px;
 }
 table.eight center {
-  min-width: 512px;
+  min-width: 480px;
 }
 table.nine center {
-  min-width: 576px;
+  min-width: 540px;
 }
 table.ten center {
-  min-width: 640px;
+  min-width: 600px;
 }
 table.eleven center {
-  min-width: 704px;
+  min-width: 660px;
 }
 table.twelve center {
-  min-width: 768px;
+  min-width: 720px;
 }
 table.one .panel center {
-  min-width: 64px;
+  min-width: 60px;
 }
 table.two .panel center {
-  min-width: 128px;
+  min-width: 120px;
 }
 table.three .panel center {
-  min-width: 192px;
+  min-width: 180px;
 }
 table.four .panel center {
-  min-width: 256px;
+  min-width: 240px;
 }
 table.five .panel center {
-  min-width: 320px;
+  min-width: 300px;
 }
 table.six .panel center {
-  min-width: 384px;
+  min-width: 360px;
 }
 table.seven .panel center {
-  min-width: 448px;
+  min-width: 420px;
 }
 table.eight .panel center {
-  min-width: 512px;
+  min-width: 480px;
 }
 table.nine .panel center {
-  min-width: 576px;
+  min-width: 540px;
 }
 table.ten .panel center {
-  min-width: 640px;
+  min-width: 600px;
 }
 table.eleven .panel center {
-  min-width: 704px;
+  min-width: 660px;
 }
 table.twelve .panel center {
-  min-width: 768px;
+  min-width: 720px;
 }
 .body .columns td.one,
 .body .column td.one {
@@ -290,37 +290,37 @@ table.twelve .panel center {
   width: 100%;
 }
 td.offset-by-one {
-  padding-left: 64px;
+  padding-left: 60px;
 }
 td.offset-by-two {
-  padding-left: 128px;
+  padding-left: 120px;
 }
 td.offset-by-three {
-  padding-left: 192px;
+  padding-left: 180px;
 }
 td.offset-by-four {
-  padding-left: 256px;
+  padding-left: 240px;
 }
 td.offset-by-five {
-  padding-left: 320px;
+  padding-left: 300px;
 }
 td.offset-by-six {
-  padding-left: 384px;
+  padding-left: 360px;
 }
 td.offset-by-seven {
-  padding-left: 448px;
+  padding-left: 420px;
 }
 td.offset-by-eight {
-  padding-left: 512px;
+  padding-left: 480px;
 }
 td.offset-by-nine {
-  padding-left: 576px;
+  padding-left: 540px;
 }
 td.offset-by-ten {
-  padding-left: 640px;
+  padding-left: 600px;
 }
 td.offset-by-eleven {
-  padding-left: 704px;
+  padding-left: 660px;
 }
 td.expander {
   visibility: hidden;
@@ -347,32 +347,32 @@ table.column .text-pad-right {
 /* Block Grid */
 .block-grid {
   width: 100%;
-  max-width: 768px;
+  max-width: 720px;
 }
 .block-grid td {
   display: inline-block;
   padding: 10px;
 }
 .two-up td {
-  width: 384px;
+  width: 360px;
 }
 .three-up td {
-  width: 256px;
+  width: 240px;
 }
 .four-up td {
-  width: 192px;
+  width: 180px;
 }
 .five-up td {
-  width: 153px;
+  width: 144px;
 }
 .six-up td {
-  width: 128px;
+  width: 120px;
 }
 .seven-up td {
-  width: 109px;
+  width: 102px;
 }
 .eight-up td {
-  width: 96px;
+  width: 90px;
 }
 /* Alignment & Visibility Classes */
 table.center,
@@ -430,22 +430,22 @@ h6 {
   word-break: normal;
 }
 h1 {
-  font-size: 39.9px;
+  font-size: 26px;
 }
 h2 {
-  font-size: 35.7px;
+  font-size: 20px;
 }
 h3 {
-  font-size: 31.5px;
+  font-size: 16px;
 }
 h4 {
-  font-size: 28px;
+  font-size: 14px;
 }
 h5 {
-  font-size: 24.5px;
+  font-size: 13px;
 }
 h6 {
-  font-size: 20.3px;
+  font-size: 12px;
 }
 body,
 table.body,
@@ -466,7 +466,7 @@ p {
   margin-bottom: 10px;
 }
 small {
-  font-size: 9.8px;
+  font-size: 11px;
 }
 a {
   color: #2ba6cb;
@@ -658,10 +658,15 @@ body.outlook p {
   display: inline !important;
 }
 /*  Media Queries */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 720px) {
   table[class="body"] img {
     width: auto !important;
     height: auto !important;
+  }
+  @-moz-document url-prefix() {
+    table[class="body"] img {
+      width: 100% !important;
+    }
   }
   table[class="body"] center {
     min-width: 0 !important;
