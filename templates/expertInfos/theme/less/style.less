@@ -9,16 +9,16 @@
 }
 
 //zone franches pour test
-.sur-header { background-color: #E7A7EB; }
-.informations { background-color: #A7C0EB; }
-.informationsClient { background-color: #A7EBD3; }
+.contentOnline { background-color: #E7A7EB; }
+.contentInfosCollaborateur { background-color: #A7C0EB; }
+.contentInfosClient { background-color: #A7EBD3; }
 .header { background-color: #A7C0EB; }
-.cabInform { background-color: #E0EBA7; }
-.aLaUne { background-color: #EBC2A7; }
-.articles { background-color: #A7EBEB; }
-.agendaDessin { background-color: #EBE0A7; }
-.adresse { background-color: #A7C4EB; }
-.lienSiteInterent { background-color: #EBA7E5; }
+.contentCabInform { background-color: #E0EBA7; }
+.contentALaUne { background-color: #EBC2A7; }
+.contentArticles { background-color: #A7EBEB; }
+.contentAgendaDessin { background-color: #EBE0A7; }
+.contentAdresse { background-color: #A7C4EB; }
+.contentLienSiteInterent { background-color: #EBA7E5; }
 .footer { background-color: #EBB5A7; }
 
 
@@ -55,15 +55,15 @@
 
 
 //-----------------------    Classes pour fond     --------------------------
-.informations{ background-color: @containerBackground; }
-.informationsClient{ background-color: @ColorPerso1; }
+.contentInfosCollaborateur{ background-color: @containerBackground; }
+.contentInfosClient{ background-color: @ColorPerso1; }
 .container{ background-color: @containerBackground; }
 
 
 
 
 //--------------------------- A la une - article --------------- ------------
-.aLaUne{
+.contentALaUne{
 	
 	background-color: @bleuEIColor;
 	
@@ -162,7 +162,7 @@ b.perso, span.perso{ color: @ColorPerso1; }
 
 
 //--------------- Cabinet nous informe - article ---------------------------------------------------
-.cabInform{
+.contentCabInform{
 	
 	background-color: #6b6b6b;
 	
@@ -185,7 +185,7 @@ b.perso, span.perso{ color: @ColorPerso1; }
 
 
 //--------------- Articles - article ---------------------------------------------------
-.articles{
+.contentArticles{
 	
 	@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 		border-bottom: 1px dotted @bleuEIColor;
@@ -228,7 +228,7 @@ b.perso, span.perso{ color: @ColorPerso1; }
 }
 
 
-.agendaDessin{ background-color: #ffffff; }
+.contentAgendaDessin{ background-color: #ffffff; }
 
 
 
@@ -252,13 +252,13 @@ b.perso, span.perso{ color: @ColorPerso1; }
 
 
 
-.adresse{
+.contentAdresse{
 	
 	background-color: lighten(#6b6b6b, 20%);
 	a, a:hover, a:active, a:visited, h1, h2, h3, h5, h6, td { color: #ffffff !important; }
 
 }
-.lienSiteInterent{
+.contentLienSiteInterent{
 	background-color: lighten(#6b6b6b, 50%);
 	.text-pad {
 		//padding-bottom: 0px;
@@ -276,7 +276,7 @@ b.perso, span.perso{ color: @ColorPerso1; }
 
 
 //--------------- Mentions legales - surHeader et footer - bas et haut de site ------------------------
-.sur-header{ background-color: @bodyBackground; }
+.contentOnline{ background-color: @bodyBackground; }
 .footer{ background-color: @ColorPerso1; }
 
 */

@@ -881,34 +881,34 @@ a.link_underline:focus {
 .container {
   background-color: #fff;
 }
-.sur-header {
+.contentOnline {
   background-color: #E7A7EB;
 }
-.informations {
+.contentInfosCollaborateur {
   background-color: #A7C0EB;
 }
-.informationsClient {
+.contentInfosClient {
   background-color: #A7EBD3;
 }
 .header {
   background-color: #A7C0EB;
 }
-.cabInform {
+.contentCabInform {
   background-color: #E0EBA7;
 }
-.aLaUne {
+.contentALaUne {
   background-color: #EBC2A7;
 }
-.articles {
+.contentArticles {
   background-color: #A7EBEB;
 }
-.agendaDessin {
+.contentAgendaDessin {
   background-color: #EBE0A7;
 }
-.adresse {
+.contentAdresse {
   background-color: #A7C4EB;
 }
-.lienSiteInterent {
+.contentLienSiteInterent {
   background-color: #EBA7E5;
 }
 .footer {
@@ -946,15 +946,15 @@ a.link_underline:focus {
 
 
 //-----------------------    Classes pour fond     --------------------------
-.informations{ background-color: @containerBackground; }
-.informationsClient{ background-color: @ColorPerso1; }
+.contentInfosCollaborateur{ background-color: @containerBackground; }
+.contentInfosClient{ background-color: @ColorPerso1; }
 .container{ background-color: @containerBackground; }
 
 
 
 
 //--------------------------- A la une - article --------------- ------------
-.aLaUne{
+.contentALaUne{
 	
 	background-color: @bleuEIColor;
 	
@@ -1053,7 +1053,7 @@ b.perso, span.perso{ color: @ColorPerso1; }
 
 
 //--------------- Cabinet nous informe - article ---------------------------------------------------
-.cabInform{
+.contentCabInform{
 	
 	background-color: #6b6b6b;
 	
@@ -1076,7 +1076,7 @@ b.perso, span.perso{ color: @ColorPerso1; }
 
 
 //--------------- Articles - article ---------------------------------------------------
-.articles{
+.contentArticles{
 	
 	@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 		border-bottom: 1px dotted @bleuEIColor;
@@ -1119,7 +1119,7 @@ b.perso, span.perso{ color: @ColorPerso1; }
 }
 
 
-.agendaDessin{ background-color: #ffffff; }
+.contentAgendaDessin{ background-color: #ffffff; }
 
 
 
@@ -1143,13 +1143,13 @@ b.perso, span.perso{ color: @ColorPerso1; }
 
 
 
-.adresse{
+.contentAdresse{
 	
 	background-color: lighten(#6b6b6b, 20%);
 	a, a:hover, a:active, a:visited, h1, h2, h3, h5, h6, td { color: #ffffff !important; }
 
 }
-.lienSiteInterent{
+.contentLienSiteInterent{
 	background-color: lighten(#6b6b6b, 50%);
 	.text-pad {
 		//padding-bottom: 0px;
@@ -1167,7 +1167,7 @@ b.perso, span.perso{ color: @ColorPerso1; }
 
 
 //--------------- Mentions legales - surHeader et footer - bas et haut de site ------------------------
-.sur-header{ background-color: @bodyBackground; }
+.contentOnline{ background-color: @bodyBackground; }
 .footer{ background-color: @ColorPerso1; }
 
 */
