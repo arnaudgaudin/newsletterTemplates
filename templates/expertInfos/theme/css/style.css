@@ -813,29 +813,115 @@ a.link_underline:focus {
   text-decoration: underline;
   cursor: pointer;
 }
-.container {
-  background-color: #ffffff;
-}
-.uppercaseText {
+/*-----------------------    Classes utiles       --------------------------*/
+.textTransformUpper {
   text-transform: uppercase;
 }
-.boldText {
+.fontWeightBold {
   font-weight: bold;
 }
+.displayBlock {
+  display: block;
+}
+.floatLeft {
+  float: left;
+}
+.fiveCol {
+  width: 312.5px;
+  padding-right: 30px;
+}
+@media only screen and (max-width: 750px) {
+  .fiveCol {
+    width: 100% !important;
+    padding-right: 0px;
+  }
+}
+.borderTop {
+  border-top: 1px dotted #4b606d;
+}
+@media only screen and (max-width: 750px) {
+  .borderTop {
+    border-top: none !important;
+  }
+}
+/*-----------------------    Classes color       --------------------------*/
+.colorWhite {
+  color: #ffffff;
+}
+.colorWhite a,
+.colorWhite a:hover,
+.colorWhite a:active,
+.colorWhite a:visited,
+.colorWhite h1,
+.colorWhite h2,
+.colorWhite h3,
+.colorWhite h5,
+.colorWhite h6,
+.colorWhite td {
+  color: #ffffff !important;
+}
+/*-----------------------    Classes du theme     --------------------------*/
 .lien {
   font-size: 80%;
 }
 .lien.perso {
   color: #ee183a;
 }
+/*-----------------------    Classes pour fond     --------------------------*/
+.informations {
+  background-color: #ffffff;
+}
+.informationsClient {
+  background-color: #ee183a;
+}
+.container {
+  background-color: #ffffff;
+}
+/*--------------------------- A la une - article --------------- ------------*/
+.aLaUne {
+  background-color: #4b606d;
+}
+.aLaUne .titre {
+  font-weight: normal;
+}
+.aLaUne img {
+  float: right;
+  margin-left: 15px;
+  width: 50%;
+}
+@media only screen and (max-width: 750px) {
+  .aLaUne img {
+    margin-bottom: 10px;
+  }
+}
+.aLaUne .lien {
+  color: #c6d1d8 !important;
+}
+.aLaUne td.wrapper {
+  padding-top: 0px;
+}
+@media only screen and (max-width: 750px) {
+  .aLaUne td.wrapper {
+    padding-top: 10px !important;
+  }
+}
+.aLaUne table.columns td,
+.aLaUne table.column td {
+  padding-bottom: 0px;
+}
+.aLaUne .text-pad {
+  padding-right: 0px !important;
+}
+@media only screen and (max-width: 750px) {
+  .aLaUne .text-pad {
+    padding-right: 10px !important;
+  }
+}
 h3 {
   color: #ee183a;
 }
 h3.surTitre {
   font-weight: lighter;
-}
-h4 {
-  padding-bottom: 5px;
 }
 b.perso,
 span.perso {
@@ -849,36 +935,9 @@ span.perso {
 .header table.column td {
   padding-bottom: 0px;
 }
-/*--------------- Mentions legales - surHeader et footer - bas et haut de site ------------------------*/
-.sur-header {
-  background-color: #777777;
-}
-.footer {
-  background-color: #ee183a;
-}
-.mentionsLegales {
-  line-height: 100%;
-  color: #ffffff;
-}
-.mentionsLegales a,
-.mentionsLegales a:hover,
-.mentionsLegales a:active,
-.mentionsLegales a:visited {
-  color: #ffffff !important;
-}
-/*--------------- Informations et informations client ---------------------------------------------------*/
-.informations {
-  background-color: #ffffff;
-}
-.informationsClient {
-  background-color: #ee183a;
-}
-.informationsClient span {
-  color: #ffffff;
-}
 /*--------------- Cabinet nous informe - article ---------------------------------------------------*/
 .cabInform {
-  background-color: #ee183a;
+  background-color: #6b6b6b;
 }
 .cabInform a,
 .cabInform a:hover,
@@ -899,73 +958,7 @@ span.perso {
 .cabInform .titre {
   font-weight: normal;
 }
-/*--------------------------- A la une - article ---------------------------------------------------*/
-.aLaUne {
-  background-color: #4b606d;
-}
-.aLaUne a,
-.aLaUne a:hover,
-.aLaUne a:active,
-.aLaUne a:visited,
-.aLaUne h1,
-.aLaUne h2,
-.aLaUne h3,
-.aLaUne h5,
-.aLaUne h6,
-.aLaUne td {
-  color: #ffffff !important;
-}
-.aLaUne .titre {
-  font-weight: normal;
-  line-height: 100%;
-  margin-bottom: 10px;
-}
-.aLaUne h1 {
-  padding-top: 10px;
-}
-@media only screen and (max-width: 750px) {
-  .aLaUne h1 {
-    padding-top: 0px;
-  }
-}
-.aLaUne img {
-  float: right;
-  margin-left: 15px;
-  width: 50%;
-  height: auto;
-}
-@media only screen and (max-width: 750px) {
-  .aLaUne img {
-    margin-bottom: 10px;
-  }
-}
-.aLaUne .lien {
-  color: #c6d1d8 !important;
-}
-.aLaUne td.wrapper {
-  padding-top: 0px;
-}
-@media only screen and (max-width: 750px) {
-  .aLaUne td.wrapper {
-    padding-top: 10px;
-  }
-}
-.aLaUne table.columns td,
-.aLaUne table.column td {
-  padding-bottom: 0px;
-}
-.aLaUne .text-pad {
-  padding-right: 0px !important;
-}
-@media only screen and (max-width: 750px) {
-  .aLaUne .text-pad {
-    padding-right: 10px !important;
-  }
-}
 /*--------------- Articles - article ---------------------------------------------------*/
-.articles .article {
-  margin: 0;
-}
 @media only screen and (max-width: 750px) {
   .articles {
     border-bottom: 1px dotted #4b606d;
@@ -973,35 +966,22 @@ span.perso {
   .articles.dernier {
     border-bottom: none;
   }
-  .articles .wrapper.last {
-    padding-top: 0px;
-  }
 }
 .articles .titre {
   font-weight: normal;
-  padding: 5px 0px;
-  border-top: 1px dotted #4b606d;
+  padding-top: 5px;
   line-height: 110%;
-}
-@media only screen and (max-width: 750px) {
-  .articles .titre {
-    border-top: none !important;
-  }
-}
-.article span {
-  display: block;
-  padding-bottom: 5px;
 }
 .article span.sousTitre {
   line-height: 10%;
   color: #ee183a;
   font-size: 30px;
-  padding-bottom: 15px;
 }
 @media only screen and (max-width: 750px) {
   .sousTitre,
   .surTitre {
-    display: inline !important;
+    /*display: inline !important;*/
+  
   }
 }
 .agenda {
@@ -1025,4 +1005,32 @@ span.perso {
 }
 .agendaDessin {
   background-color: #ffffff;
+}
+.adresse {
+  background-color: #9e9e9e;
+}
+.adresse a,
+.adresse a:hover,
+.adresse a:active,
+.adresse a:visited,
+.adresse h1,
+.adresse h2,
+.adresse h3,
+.adresse h5,
+.adresse h6,
+.adresse td {
+  color: #ffffff !important;
+}
+.lienSiteInterent {
+  background-color: #ebebeb;
+}
+.lienSiteInterent .text-pad {
+  /*padding-bottom: 0px;*/
+}
+/*--------------- Mentions legales - surHeader et footer - bas et haut de site ------------------------*/
+.sur-header {
+  background-color: #777777;
+}
+.footer {
+  background-color: #ee183a;
 }
