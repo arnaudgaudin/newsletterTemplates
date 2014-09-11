@@ -98,9 +98,11 @@ table.body {
 }
 table.container {
   width: 720px;
-  -premailer-width: 720;
   margin: 0 auto;
   text-align: inherit;
+}
+table.container > tr > td:not(.expander) {
+  -premailer-width: 720;
 }
 table.row {
   padding: 0px;
@@ -139,50 +141,74 @@ table.container td.last {
 }
 table.one {
   width: 60px;
+}
+table.one > tr > td:not(.expander) {
   -premailer-width: 60;
 }
 table.two {
   width: 120px;
+}
+table.two > tr > td:not(.expander) {
   -premailer-width: 120;
 }
 table.three {
   width: 180px;
+}
+table.three > tr > td:not(.expander) {
   -premailer-width: 180;
 }
 table.four {
   width: 240px;
+}
+table.four > tr > td:not(.expander) {
   -premailer-width: 240;
 }
 table.five {
   width: 300px;
+}
+table.five > tr > td:not(.expander) {
   -premailer-width: 300;
 }
 table.six {
   width: 360px;
+}
+table.six > tr > td:not(.expander) {
   -premailer-width: 360;
 }
 table.seven {
   width: 420px;
+}
+table.seven > tr > td:not(.expander) {
   -premailer-width: 420;
 }
 table.eight {
   width: 480px;
+}
+table.eight > tr > td:not(.expander) {
   -premailer-width: 480;
 }
 table.nine {
   width: 540px;
+}
+table.nine > tr > td:not(.expander) {
   -premailer-width: 540;
 }
 table.ten {
   width: 600px;
+}
+table.ten > tr > td:not(.expander) {
   -premailer-width: 600;
 }
 table.eleven {
   width: 660px;
+}
+table.eleven > tr > td:not(.expander) {
   -premailer-width: 660;
 }
 table.twelve {
   width: 720px;
+}
+table.twelve > tr > td:not(.expander) {
   -premailer-width: 720;
 }
 table.one center {
