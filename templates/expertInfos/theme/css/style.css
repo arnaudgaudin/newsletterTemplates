@@ -466,7 +466,7 @@ p {
   margin-bottom: 10px;
 }
 small {
-  font-size: 9.799999999999999px;
+  font-size: 9.8px;
 }
 a {
   color: #4b606d;
@@ -560,7 +560,7 @@ table.large-button td a {
   text-decoration: none;
   font-family: Arial, sans-serif, "Helvetica Neue", Helvetica;
   color: #ffffff;
-  font-size: 16.099999999999998px;
+  font-size: 16.1px;
   display: block;
   height: 100%;
   width: 100%;
@@ -570,7 +570,7 @@ table.tiny-button td a {
   font-weight: normal;
 }
 table.small-button td a {
-  font-size: 16.099999999999998px;
+  font-size: 16.1px;
 }
 table.medium-button td a {
   font-size: 20.3px;
@@ -979,7 +979,6 @@ span.perso {
   .sousTitre,
   .surTitre {
     /*display: inline !important;*/
-  
   }
 }
 .agenda {
