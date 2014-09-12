@@ -985,12 +985,21 @@ table.large-button td {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+.inner img {
+  float: none;
+}
 .wrapper {
   padding-top: 0 !important;
 }
 table.columns td,
 table.column td {
   padding-bottom: 0;
+}
+.header table.columns td.sub-columns,
+.header table.column td.sub-columns,
+.header table.columns td.sub-column,
+.header table.column td.sub-column {
+  padding-right: 0;
 }
 .container {
   background-color: #ffffff;
