@@ -4,15 +4,13 @@
 // additionnal template's style which extends ink's style
 
 
-.container {
-	background-color: #fff;
-}
+
 
 //zone franches pour test
-.contentOnline { background-color: #E7A7EB; }
-.contentInfosCollaborateur { background-color: #A7C0EB; }
-.contentInfosClient { background-color: #A7EBD3; }
-.header { background-color: #A7C0EB; }
+// .contentOnline { background-color: #E7A7EB; }
+// .contentInfosCollaborateur { background-color: #A7C0EB; }
+// .contentInfosClient { background-color: #A7EBD3; }
+// .header { background-color: #A7C0EB; }
 .contentCabInform { background-color: #E0EBA7; }
 .contentALaUne { background-color: #EBC2A7; }
 .contentArticles { background-color: #A7EBEB; }
@@ -20,6 +18,57 @@
 .contentAdresse { background-color: #A7C4EB; }
 .contentLienSite { background-color: #EBA7E5; }
 .footer { background-color: #EBB5A7; }
+
+
+// LAYOUT
+// --------------------------------------------------
+
+.inner {
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+//suppression paddings verticaux déportés sur classe .inner dans certaines zones
+.wrapper { padding-top: 0 !important; }
+table.columns td, table.column td { padding-bottom: 0; }
+
+
+
+
+
+// CUSTOM COLORS
+// --------------------------------------------------
+
+
+// Main container
+// -------------------------
+.container { background-color: @containerBackground; }
+
+
+// contentOnline area
+// -------------------------
+.contentOnline {
+	background-color: @bodyBackground;
+	&, .inner, a, a:link, a:visited, a:hover, a:focus, a:active { color: #ffffff !important; }
+}
+
+
+// contentInfosClient area
+// -------------------------
+.contentInfosClient{
+	background-color: @colorCouleur1;
+	&, .inner, a, a:link, a:visited, a:hover, a:focus, a:active { color: #ffffff !important; }
+}
+
+// contentCabInform area
+// -------------------------
+.contentCabInform {
+	background-color: darken(@colorCouleur3, 15%);
+	&, .inner, a, a:link, a:visited, a:hover, a:focus, a:active { color: #ffffff !important; }
+	// &.dernier .article h2{ padding-top: 10px; border-top: 1px dotted #ffffff; }
+	.title { font-weight: normal; }
+}
 
 
 
@@ -55,8 +104,8 @@
 
 
 //-----------------------    Classes pour fond     --------------------------
-.contentInfosCollaborateur{ background-color: @containerBackground; }
-.contentInfosClient{ background-color: @ColorPerso1; }
+
+
 .container{ background-color: @containerBackground; }
 
 
@@ -67,7 +116,7 @@
 	
 	background-color: @bleuEIColor;
 	
-	.titre{ font-weight: normal; }
+	.title{ font-weight: normal; }
 
 	img{ 
 		float: right;
@@ -162,15 +211,6 @@ b.perso, span.perso{ color: @ColorPerso1; }
 
 
 //--------------- Cabinet nous informe - article ---------------------------------------------------
-.contentCabInform{
-	
-	background-color: #6b6b6b;
-	
-	a, a:hover, a:active, a:visited, h1, h2, h3, h5, h6, td { color: #ffffff !important; }
-	&.dernier .article h2{ padding-top: 10px; border-top: 1px dotted #ffffff; }
-
-	.titre{ font-weight: normal; }
-}
 
 
 
@@ -192,7 +232,7 @@ b.perso, span.perso{ color: @ColorPerso1; }
 		&.dernier{ border-bottom: none; }
 	}
 
-	.titre{
+	.title{
 		font-weight: normal;
 		padding-top: 5px;
 		line-height: 110%;
@@ -276,7 +316,7 @@ b.perso, span.perso{ color: @ColorPerso1; }
 
 
 //--------------- Mentions legales - surHeader et footer - bas et haut de site ------------------------
-.contentOnline{ background-color: @bodyBackground; }
+
 .footer{ background-color: @ColorPerso1; }
 
 */
