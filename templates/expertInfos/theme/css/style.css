@@ -95,6 +95,7 @@ table.body {
   width: 100%;
 }
 table.container {
+  background-color: #ffffff;
   width: 720px;
   margin: 0 auto;
   text-align: inherit;
@@ -943,12 +944,6 @@ table.large-button td {
 
 
 */
-.contentCabInform {
-  background-color: #E0EBA7;
-}
-.contentALaUne {
-  background-color: #EBC2A7;
-}
 .contentArticles {
   background-color: #A7EBEB;
 }
@@ -1004,6 +999,12 @@ table.column td {
 .preTitle small {
   font-size: 19.5px;
 }
+.contentCabInform .title {
+  font-weight: normal;
+}
+.contentALaUne .title {
+  font-weight: normal;
+}
 .container {
   background-color: #ffffff;
 }
@@ -1047,27 +1048,28 @@ table.column td {
   color: #ffffff !important;
 }
 .contentCabInform .title {
-  font-weight: normal;
+  color: #fff;
+}
+.contentALaUne {
+  background-color: #4b606d;
+}
+.contentALaUne,
+.contentALaUne .inner,
+.contentALaUne a,
+.contentALaUne a:link,
+.contentALaUne a:visited,
+.contentALaUne a:hover,
+.contentALaUne a:focus,
+.contentALaUne a:active {
+  color: #ffffff !important;
+}
+.contentALaUne .title {
+  color: #ffffff;
+}
+.contentALaUne .readMore {
+  color: #d2d7db;
 }
 /*
-
-
-//-----------------------    Classes utiles       --------------------------
-.textTransformUpper{ text-transform: uppercase; }
-.fontWeightBold{ font-weight: bold; }
-.displayBlock{ display: block; }
-.floatLeft{ float: left; }
-.fiveCol{ .columnWidth(5); padding-right: 30px; @media only screen and (max-width: (@containerWidth + @gutterWidth)){ width: 100% !important; padding-right: 0px; } }
-
-
-
-
-//-----------------------    Classes color       --------------------------
-.colorWhite{
-	color: #ffffff;
-	a, a:hover, a:active, a:visited, h1, h2, h3, h5, h6, td{ color: #ffffff !important; }
-}
-
 
 
 
@@ -1083,46 +1085,12 @@ table.column td {
 //-----------------------    Classes pour fond     --------------------------
 
 
-.container{ background-color: @containerBackground; }
+
 
 
 
 
 //--------------------------- A la une - article --------------- ------------
-.contentALaUne{
-	
-	background-color: @expertInfosBleu;
-	
-	.title{ font-weight: normal; }
-
-	img{ 
-		float: right;
-		margin-left: 15px;
-		width: 50%;
-		@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
-			margin-bottom: 10px;
-		}
-	}
-	
-	.lien{ color: lighten(@expertInfosBleu, 45%) !important; }
-
-	td.wrapper{ 
-		padding-top: 0px;
-		@media only screen and (max-width: (@containerWidth + @gutterWidth)){
-			padding-top: 10px !important;
-		}
-	}
-	
-	table.columns td, table.column td { padding-bottom: 0px; }
-
-	.text-pad{
-		padding-right: 0px !important;
-		@media only screen and (max-width: (@containerWidth + @gutterWidth)){
-			padding-right: 10px !important;
-		}
-	}
-
-}
 
 
 

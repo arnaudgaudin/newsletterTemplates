@@ -11,8 +11,8 @@
 // .contentInfosCollaborateur { background-color: #A7C0EB; }
 // .contentInfosClient { background-color: #A7EBD3; }
 // .header { background-color: #A7C0EB; }
-.contentCabInform { background-color: #E0EBA7; }
-.contentALaUne { background-color: #EBC2A7; }
+// .contentCabInform { background-color: #E0EBA7; }
+// .contentALaUne { background-color: #EBC2A7; }
 .contentArticles { background-color: #A7EBEB; }
 .contentAgendaDessin { background-color: #EBE0A7; }
 .contentAdresse { background-color: #A7C4EB; }
@@ -64,6 +64,18 @@ table.columns td, table.column td { padding-bottom: 0; }
 	small { font-size: (@headingsFontSizeH1 * 0.75); }
 }
 
+// contentCabInform area
+// -------------------------
+.contentCabInform {
+	.title{ font-weight: normal; }
+}
+
+
+// contentALaUne area
+// -------------------------
+.contentALaUne {
+	.title{ font-weight: normal; }
+}
 
 
 // CUSTOM COLORS
@@ -96,30 +108,22 @@ table.columns td, table.column td { padding-bottom: 0; }
 	background-color: darken(@colorCouleur3, 15%);
 	&, .inner, a, a:link, a:visited, a:hover, a:focus, a:active { color: #ffffff !important; }
 	// &.dernier .article h2{ padding-top: 10px; border-top: 1px dotted #ffffff; }
-	.title { font-weight: normal; }
+	.title { color: #fff; }
 }
+
+// contentALaUne area
+// -------------------------
+.contentALaUne {
+	background-color: @expertInfosBleu;
+	&, .inner, a, a:link, a:visited, a:hover, a:focus, a:active { color: #ffffff !important; }
+	.title { color: #ffffff; }
+	.readMore { color: mix(#ffffff, @expertInfosBleu, 75%); }
+}
+
 
 
 
 /*
-
-
-//-----------------------    Classes utiles       --------------------------
-.textTransformUpper{ text-transform: uppercase; }
-.fontWeightBold{ font-weight: bold; }
-.displayBlock{ display: block; }
-.floatLeft{ float: left; }
-.fiveCol{ .columnWidth(5); padding-right: 30px; @media only screen and (max-width: (@containerWidth + @gutterWidth)){ width: 100% !important; padding-right: 0px; } }
-
-
-
-
-//-----------------------    Classes color       --------------------------
-.colorWhite{
-	color: #ffffff;
-	a, a:hover, a:active, a:visited, h1, h2, h3, h5, h6, td{ color: #ffffff !important; }
-}
-
 
 
 
@@ -135,46 +139,12 @@ table.columns td, table.column td { padding-bottom: 0; }
 //-----------------------    Classes pour fond     --------------------------
 
 
-.container{ background-color: @containerBackground; }
+
 
 
 
 
 //--------------------------- A la une - article --------------- ------------
-.contentALaUne{
-	
-	background-color: @expertInfosBleu;
-	
-	.title{ font-weight: normal; }
-
-	img{ 
-		float: right;
-		margin-left: 15px;
-		width: 50%;
-		@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
-			margin-bottom: 10px;
-		}
-	}
-	
-	.lien{ color: lighten(@expertInfosBleu, 45%) !important; }
-
-	td.wrapper{ 
-		padding-top: 0px;
-		@media only screen and (max-width: (@containerWidth + @gutterWidth)){
-			padding-top: 10px !important;
-		}
-	}
-	
-	table.columns td, table.column td { padding-bottom: 0px; }
-
-	.text-pad{
-		padding-right: 0px !important;
-		@media only screen and (max-width: (@containerWidth + @gutterWidth)){
-			padding-right: 10px !important;
-		}
-	}
-
-}
 
 
 
