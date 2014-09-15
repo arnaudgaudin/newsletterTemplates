@@ -37,6 +37,7 @@
 @newsletterText: #333333;
 @newsletterLinkColor: @newsletterText;
 @newsletterLinkColorHover: @newsletterLinkColor;
+@newsletterHrBorder: darken(@colorCouleur3, 15%);
 
 //couleurs des différentes zones
 @newsletterContentOnlineBackground: @newsletterBodyBackground;
@@ -58,7 +59,7 @@
 @newsletterContentArticlesTitle: @newsletterText;
 @newsletterContentArticlesText: @newsletterText;
 @newsletterContentArticlesReadMore: @colorCouleur1;
-@newsletterContentArticlesBorder: @hrBorder;
+@newsletterContentArticlesBorder: @newsletterHrBorder;
 
 @newsletterContentAgendaBackground: @colorCouleur3Clair;
 @newsletterContentAgendaPreTitle: @colorCouleur1;
@@ -115,7 +116,7 @@
 
 // Hr border color
 // -------------------------
-@hrBorder: darken(@colorCouleur3, 15%);
+@hrBorder: @newsletterHrBorder;
 
 
 // Grid config
