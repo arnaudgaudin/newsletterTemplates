@@ -14,7 +14,7 @@
 // .contentCabInform { background-color: #E0EBA7; }
 // .contentALaUne { background-color: #EBC2A7; }
 // .contentArticles { background-color: #A7EBEB; }
-.contentAgendaDessin { background-color: #EBE0A7; }
+// .contentAgendaDessin { background-color: #EBE0A7; }
 .contentAdresse { background-color: #A7C4EB; }
 .contentLienSite { background-color: #EBA7E5; }
 .footer { background-color: #EBB5A7; }
@@ -33,7 +33,7 @@ h1, h2, h3, h4, h5, h6 { line-height: 1.1; }
 }
 
 //suppression paddings verticaux déportés sur classe .inner dans certaines zones
-.wrapper { padding-top: 0 !important; }
+td.wrapper { padding-top: 0; }
 table.columns td, table.column td { padding-bottom: 0; }
 
 .header {
@@ -64,6 +64,7 @@ table.columns td, table.column td { padding-bottom: 0; }
 
 //sur titres
 .preTitle {
+	line-height: 0.25;
 	font-size: (@headingsFontSizeH1 * 1.25);
 	small { font-size: (@headingsFontSizeH1 * 0.75); }
 }
@@ -96,6 +97,27 @@ table.columns td, table.column td { padding-bottom: 0; }
 }
 
 
+// contentAgendaDessin area
+// -------------------------
+.contentAgendaDessin {
+	td.agenda.wrapper { padding-top: 10px; }
+	.dessin .sub-columns.last .inner { padding-top: 0; }
+
+	.border {
+		display: block;
+		line-height: 0;
+		padding-top: 9px;
+		border-top: 1px dotted @hrBorder;
+		&.left { margin-left: 10px; }
+		&.right { margin-right: 10px; }
+
+		@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+			// border-top: none;
+			// padding-top: 10px;
+			display: none;
+		}
+	}
+}
 
 
 // CUSTOM COLORS
@@ -144,7 +166,7 @@ table.columns td, table.column td { padding-bottom: 0; }
 // -------------------------
 .contentArticles {
 	.title {
-		border-top-color: @colorCouleur2;
+		border-top-color: @hrBorder;
 		.icon-rsaquo { color: @colorCouleur1; }
 	}
 
@@ -152,7 +174,7 @@ table.columns td, table.column td { padding-bottom: 0; }
 	
 	//rajout bordure en bas en mode responsive
 	@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
-		border-bottom-color: @colorCouleur2;
+		border-bottom-color: @hrBorder;
 	}
 }
 
@@ -160,10 +182,16 @@ table.columns td, table.column td { padding-bottom: 0; }
 // contentAgendaDessin area
 // -------------------------
 .contentAgendaDessin {
+	.agenda { background-color: @colorCouleur3Clair; }
 
-	background-color: #ffffff;
-	
-	
+	.dessin {
+		.readMore { color: lighten(@colorCouleur3, 5%); }
+		// padding-top: 10px !important;
+		// border-top: 1px dotted #0f0;
+		// @media only screen and (max-width: (@containerWidth + @gutterWidth)) { border-top: none; } }
+	}
+
+	.preTitle { color: @colorCouleur1; }
 }
 
 
