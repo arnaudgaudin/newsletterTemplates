@@ -1120,6 +1120,9 @@ table.column td {
     border-bottom-color: #4b606d;
   }
 }
+.contentAgendaDessin {
+  background-color: #ffffff;
+}
 /*
 
 
@@ -1177,7 +1180,7 @@ b.perso, span.perso{ color: @ColorPerso1; }
 }
 
 
-.contentAgendaDessin{ background-color: #ffffff; }
+
 
 
 
