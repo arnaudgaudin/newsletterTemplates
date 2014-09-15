@@ -3,10 +3,8 @@
 
 // additionnal template's style which extends ink's style
 
-
-
-
-//zone franches pour test
+// TEST COLORS
+// --------------------------------------------------
 // .contentOnline { background-color: #E7A7EB; }
 // .contentInfosCollaborateur { background-color: #A7C0EB; }
 // .contentInfosClient { background-color: #A7EBD3; }
@@ -16,8 +14,15 @@
 // .contentArticles { background-color: #A7EBEB; }
 // .contentAgendaDessin { background-color: #EBE0A7; }
 // .contentAdresse { background-color: #A7C4EB; }
-.contentLienSite { background-color: #EBA7E5; }
-.footer { background-color: #EBB5A7; }
+// .contentLienSite { background-color: #EBA7E5; }
+// .footer { background-color: #EBB5A7; }
+
+
+// CUSTOM MIXINS
+// --------------------------------------------------
+.newsletterInnerTextColor(@color) {
+	&, .inner, a, a:link, a:visited, a:hover, a:focus, a:active { color: @color !important; }
+}
 
 
 // LAYOUT
@@ -133,7 +138,7 @@ table.columns td, table.column td { padding-bottom: 0; }
 // -------------------------
 .contentOnline {
 	background-color: @bodyBackground;
-	&, .inner, a, a:link, a:visited, a:hover, a:focus, a:active { color: #ffffff !important; }
+	.newsletterInnerTextColor(#ffffff);
 }
 
 
@@ -141,14 +146,14 @@ table.columns td, table.column td { padding-bottom: 0; }
 // -------------------------
 .contentInfosClient{
 	background-color: @colorCouleur1;
-	&, .inner, a, a:link, a:visited, a:hover, a:focus, a:active { color: #ffffff !important; }
+	.newsletterInnerTextColor(#ffffff);
 }
 
 // contentCabInform area
 // -------------------------
 .contentCabInform {
 	background-color: darken(@colorCouleur3, 15%);
-	&, .inner, a, a:link, a:visited, a:hover, a:focus, a:active { color: #ffffff !important; }
+	.newsletterInnerTextColor(#ffffff);
 	// &.dernier .article h2{ padding-top: 10px; border-top: 1px dotted #ffffff; }
 	.title { color: #fff; }
 }
@@ -157,7 +162,7 @@ table.columns td, table.column td { padding-bottom: 0; }
 // -------------------------
 .contentALaUne {
 	background-color: @colorCouleur2;
-	&, .inner, a, a:link, a:visited, a:hover, a:focus, a:active { color: #ffffff !important; }
+	.newsletterInnerTextColor(#ffffff);
 	.title { color: #ffffff; }
 	.readMore { color: mix(#ffffff, @colorCouleur2, 75%); }
 }
@@ -203,7 +208,7 @@ table.columns td, table.column td { padding-bottom: 0; }
 // -------------------------
 .contentAdresse {
 	background-color: lighten(@colorCouleur3, 5%);
-	&, .inner, a, a:link, a:visited, a:hover, a:focus, a:active { color: #ffffff !important; }
+	.newsletterInnerTextColor(#ffffff);
 }
 
 
@@ -218,5 +223,5 @@ table.columns td, table.column td { padding-bottom: 0; }
 // -------------------------
 .footer {
 	background-color: @colorCouleur1;
-	&, .inner, a, a:link, a:visited, a:hover, a:focus, a:active { color: #ffffff !important; }
+	.newsletterInnerTextColor(#ffffff);
 }
