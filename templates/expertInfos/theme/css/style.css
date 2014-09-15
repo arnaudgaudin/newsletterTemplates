@@ -995,7 +995,7 @@ table.column td {
     border-bottom: none;
   }
 }
-.contentAgendaDessin .dessin .sub-columns.last .inner {
+.contentAgendaDessin .dessin .inner {
   padding-top: 0;
 }
 .contentAgendaDessin .agenda .title {
@@ -1016,11 +1016,14 @@ table.column td {
   margin-right: 10px;
 }
 @media only screen and (max-width: 720px) {
-  .contentAgendaDessin .dessin .sub-columns.last .inner {
-    padding-top: 10px;
+  .contentAgendaDessin .dessin .inner {
+    padding-top: 10px !important;
   }
   .contentAgendaDessin .borderContainer {
-    display: none;
+    display: none !important;
+  }
+  .contentAgendaDessin .dessin .border {
+    border-top: none !important;
   }
   .contentAgendaDessin .dessin .preTitle {
     line-height: 24px;

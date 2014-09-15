@@ -114,8 +114,7 @@ table.columns td, table.column td { padding-bottom: 0; }
 // contentAgendaDessin area
 // -------------------------
 .contentAgendaDessin {
-	.dessin .sub-columns.last .inner { padding-top: 0; }
-
+	.dessin .inner { padding-top: 0; }
 	.agenda .title { margin-top: 10px; }
 	.dessin .title { margin-top: 5px; }
 
@@ -128,8 +127,9 @@ table.columns td, table.column td { padding-bottom: 0; }
 	}
 
 	@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
-		.dessin .sub-columns.last .inner { padding-top: 10px; }
-		.borderContainer { display: none; }
+		.dessin .inner { padding-top: 10px !important; }
+		.borderContainer { display: none !important; }
+		.dessin .border { border-top: none !important; }
 		.dessin .preTitle { line-height: @headingsFontSizeH1; }
 	}
 }
