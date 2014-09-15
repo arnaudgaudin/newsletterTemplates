@@ -906,10 +906,8 @@ table.large-button td {
   }
 }
 /*
-@rougeEIColor: #d12329;
-@bleuEIColor: #4b606d;
-@grisEIColor: #e6e8eb;
-@colorCouleur3: @grisEIColor;
+
+@colorCouleur3: @expertInfosGris;
 
 
 
@@ -940,7 +938,7 @@ table.large-button td {
 
 // Hr border color
 // -------------------------
-@hrBorder: @bleuEIColor;
+@hrBorder: @expertInfosBleu;
 
 
 
@@ -1093,7 +1091,7 @@ table.column td {
 //--------------------------- A la une - article --------------- ------------
 .contentALaUne{
 	
-	background-color: @bleuEIColor;
+	background-color: @expertInfosBleu;
 	
 	.title{ font-weight: normal; }
 
@@ -1106,7 +1104,7 @@ table.column td {
 		}
 	}
 	
-	.lien{ color: lighten(@bleuEIColor, 45%) !important; }
+	.lien{ color: lighten(@expertInfosBleu, 45%) !important; }
 
 	td.wrapper{ 
 		padding-top: 0px;
@@ -1207,7 +1205,7 @@ b.perso, span.perso{ color: @ColorPerso1; }
 .contentArticles{
 	
 	@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
-		border-bottom: 1px dotted @bleuEIColor;
+		border-bottom: 1px dotted @expertInfosBleu;
 		&.dernier{ border-bottom: none; }
 	}
 
@@ -1215,7 +1213,7 @@ b.perso, span.perso{ color: @ColorPerso1; }
 		font-weight: normal;
 		padding-top: 5px;
 		line-height: 110%;
-		border-top: 1px dotted @bleuEIColor;
+		border-top: 1px dotted @expertInfosBleu;
 		@media only screen and (max-width: (@containerWidth + @gutterWidth)) { border-top: none !important; } 
 	}
 }
@@ -1234,7 +1232,7 @@ b.perso, span.perso{ color: @ColorPerso1; }
 	}
 }
 
-.agenda{ background-color: @grisEIColor; }
+.agenda{ background-color: @expertInfosGris; }
 
 .dessin{
 	
