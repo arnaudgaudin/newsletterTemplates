@@ -108,7 +108,7 @@ table.columns td, table.column td { padding-bottom: 0; }
 	td.agenda.wrapper { padding-top: 10px; }
 	.dessin .sub-columns.last .inner { padding-top: 0; }
 
-	.border {
+	.dessin .border {
 		display: block;
 		line-height: 0;
 		padding-top: 9px;
@@ -170,15 +170,16 @@ table.columns td, table.column td { padding-bottom: 0; }
 // -------------------------
 .contentArticles {
 	.title {
-		border-top-color: @hrBorder;
-		.icon-rsaquo { color: @colorCouleur1; }
+		color: @newsletterContentArticlesTitle;
+		border-top-color: @newsletterContentArticlesBorder;
+		.icon-rsaquo { color: @newsletterContentArticlesIconColor; }
 	}
-
-	.readMore { color: @colorCouleur1; }
+	.newsletterInnerTextColor(@newsletterContentArticlesText);
+	.readMore { color: @newsletterContentArticlesReadMore; }
 	
 	//rajout bordure en bas en mode responsive
 	@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
-		border-bottom-color: @hrBorder;
+		border-bottom-color: @newsletterContentArticlesBorder;
 	}
 }
 
@@ -187,42 +188,40 @@ table.columns td, table.column td { padding-bottom: 0; }
 // -------------------------
 .contentAgendaDessin {
 	.agenda {
-		background-color: @colorCouleur3Clair;
-		.preTitle { color: @colorCouleur1; }
+		background-color: @newsletterContentAgendaBackground;
+		.preTitle { color: @newsletterContentAgendaPreTitle; }
+		.title { color: @newsletterContentAgendaTitle; }
+		.newsletterInnerTextColor(@newsletterContentAgendaText);
 	}
 
 	.dessin {
-		.preTitle { color: @colorCouleur1; }
-		.readMore { color: lighten(@colorCouleur3, 5%); }
+		.preTitle { color: @newsletterContentDessinPreTitle; }
+		.title { color: @newsletterContentDessinTitle; }
+		.readMore { color: @newsletterContentDessinReadMore; }
+		.border { border-top-color: @newsletterContentDessinBorder; }
 	}
-}
-
-
-// contentAgendaDessin area
-// -------------------------
-.contentAgendaDessin {
-	.border { border-top-color: @hrBorder; }
 }
 
 
 // contentAdresse area
 // -------------------------
 .contentAdresse {
-	background-color: lighten(@colorCouleur3, 5%);
-	.newsletterInnerTextColor(#ffffff);
+	background-color: @newsletterContentAdresseBackground;
+	.newsletterInnerTextColor(@newsletterContentAdresseText);
 }
 
 
 // contentLienSite area
 // -------------------------
 .contentLienSite {
-	background-color: @colorCouleur3Clair;
+	background-color: @newsletterContentLienSiteBackground;
+	.newsletterInnerTextColor(@newsletterContentLienSiteText);
 }
 
 
 // footer area
 // -------------------------
 .footer {
-	background-color: @colorCouleur1;
-	.newsletterInnerTextColor(#ffffff);
+	background-color: @newsletterFooterBackground;
+	.newsletterInnerTextColor(@newsletterFooterText);
 }
