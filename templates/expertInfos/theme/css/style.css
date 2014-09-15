@@ -1101,11 +1101,14 @@ table.column td {
 .contentAgendaDessin .agenda {
   background-color: #eaeaea;
 }
+.contentAgendaDessin .agenda .preTitle {
+  color: #d12329;
+}
+.contentAgendaDessin .dessin .preTitle {
+  color: #d12329;
+}
 .contentAgendaDessin .dessin .readMore {
   color: #9e9e9e;
-}
-.contentAgendaDessin .preTitle {
-  color: #d12329;
 }
 .contentAgendaDessin .border {
   border-top-color: #6b6b6b;

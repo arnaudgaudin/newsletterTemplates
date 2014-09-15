@@ -138,7 +138,7 @@ table.columns td, table.column td { padding-bottom: 0; }
 // -------------------------
 .contentOnline {
 	background-color: @bodyBackground;
-	.newsletterInnerTextColor(#ffffff);
+	.newsletterInnerTextColor(@newsletterContentOnlineText);
 }
 
 
@@ -187,13 +187,15 @@ table.columns td, table.column td { padding-bottom: 0; }
 // contentAgendaDessin area
 // -------------------------
 .contentAgendaDessin {
-	.agenda { background-color: @colorCouleur3Clair; }
-
-	.dessin {
-		.readMore { color: lighten(@colorCouleur3, 5%); }
+	.agenda {
+		background-color: @colorCouleur3Clair;
+		.preTitle { color: @colorCouleur1; }
 	}
 
-	.preTitle { color: @colorCouleur1; }
+	.dessin {
+		.preTitle { color: @colorCouleur1; }
+		.readMore { color: lighten(@colorCouleur3, 5%); }
+	}
 }
 
 
