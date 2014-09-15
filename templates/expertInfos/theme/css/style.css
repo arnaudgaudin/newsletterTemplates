@@ -959,18 +959,13 @@ table.column td {
   font-size: 18px;
 }
 @media only screen and (max-width: 720px) {
-  .contentInfosCollaborateur img.ei_lep {
+  table[class="body"] .contentInfosCollaborateur img.ei_lep {
     width: 50% !important;
     height: auto !important;
   }
 }
 .contentArticles .title {
   padding-top: 4px;
-}
-@media only screen and (max-width: 720px) {
-  .contentArticles .title {
-    padding-top: 0;
-  }
 }
 .contentArticles .readMore {
   margin-top: 5px;
@@ -982,17 +977,17 @@ table.column td {
   padding-bottom: 10px;
 }
 @media only screen and (max-width: 720px) {
-  .contentArticles .inner {
-    padding-bottom: 9px;
+  table[class="body"] .contentArticles .title {
+    padding-top: 0 !important;
   }
-  .contentArticles.last .inner {
-    padding-bottom: 10px;
+  table[class="body"] .contentArticles .inner {
+    padding-bottom: 9px !important;
   }
-  .contentArticles .wrapper.last .inner {
-    padding-top: 0;
+  table[class="body"] .contentArticles.last .inner {
+    padding-bottom: 10px !important;
   }
-  .contentArticles.last {
-    border-bottom: none;
+  table[class="body"] .contentArticles .wrapper.last .inner {
+    padding-top: 0 !important;
   }
 }
 .contentAgendaDessin .dessin .inner {
@@ -1007,7 +1002,7 @@ table.column td {
 .contentAgendaDessin .dessin .border {
   display: block;
   line-height: 0;
-  padding-top: 9px;
+  height: 9px;
 }
 .contentAgendaDessin .dessin .border.left {
   margin-left: 10px;
@@ -1016,17 +1011,17 @@ table.column td {
   margin-right: 10px;
 }
 @media only screen and (max-width: 720px) {
-  .contentAgendaDessin .dessin .inner {
+  table[class="body"] .contentAgendaDessin .dessin .inner {
     padding-top: 10px !important;
   }
-  .contentAgendaDessin .borderContainer {
-    display: none !important;
-  }
-  .contentAgendaDessin .dessin .border {
+  table[class="body"] .contentAgendaDessin .dessin .border {
     border-top: none !important;
   }
-  .contentAgendaDessin .dessin .preTitle {
-    line-height: 24px;
+  table[class="body"] .contentAgendaDessin .dessin .preTitle {
+    line-height: 24px !important;
+  }
+  table[class="body"] .contentAgendaDessin .borderContainer {
+    display: none !important;
   }
 }
 .container {
@@ -1100,11 +1095,6 @@ table.column td {
 .contentArticles .title .icon-rsaquo {
   color: #d12329;
 }
-@media only screen and (max-width: 720px) {
-  .contentArticles .title {
-    border-top: none;
-  }
-}
 .contentArticles,
 .contentArticles .inner,
 .contentArticles a,
@@ -1119,8 +1109,14 @@ table.column td {
   color: #d12329;
 }
 @media only screen and (max-width: 720px) {
-  .contentArticles {
-    border-bottom: 1px dotted #6b6b6b;
+  table[class="body"] .contentArticles {
+    border-bottom: 1px dotted #6b6b6b !important;
+  }
+  table[class="body"] .contentArticles .title {
+    border-top: none !important;
+  }
+  table[class="body"] .contentArticles.last {
+    border-bottom: none !important;
   }
 }
 .contentAgendaDessin .agenda {
