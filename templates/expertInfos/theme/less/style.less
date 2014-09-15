@@ -107,15 +107,15 @@ table.columns td, table.column td { padding-bottom: 0; }
 		display: block;
 		line-height: 0;
 		padding-top: 9px;
-		border-top: 1px dotted @hrBorder;
+		border-top-width: 1px;
+		border-top-style: dotted;
 		&.left { margin-left: 10px; }
 		&.right { margin-right: 10px; }
+	}
 
-		@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
-			// border-top: none;
-			// padding-top: 10px;
-			display: none;
-		}
+	@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+		td.dessin.wrapper { padding-top: 10px; }
+		.borderContainer { display: none; }
 	}
 }
 
@@ -193,6 +193,14 @@ table.columns td, table.column td { padding-bottom: 0; }
 
 	.preTitle { color: @colorCouleur1; }
 }
+
+
+// contentAgendaDessin area
+// -------------------------
+.contentAgendaDessin {
+	.border { border-top-color: @hrBorder; }
+}
+
 
 
 /*

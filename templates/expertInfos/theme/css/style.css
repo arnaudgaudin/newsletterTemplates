@@ -1050,7 +1050,8 @@ table.column td {
   display: block;
   line-height: 0;
   padding-top: 9px;
-  border-top: 1px dotted #6b6b6b;
+  border-top-width: 1px;
+  border-top-style: dotted;
 }
 .contentAgendaDessin .border.left {
   margin-left: 10px;
@@ -1059,7 +1060,10 @@ table.column td {
   margin-right: 10px;
 }
 @media only screen and (max-width: 720px) {
-  .contentAgendaDessin .border {
+  .contentAgendaDessin td.dessin.wrapper {
+    padding-top: 10px;
+  }
+  .contentAgendaDessin .borderContainer {
     display: none;
   }
 }
@@ -1149,6 +1153,9 @@ table.column td {
 }
 .contentAgendaDessin .preTitle {
   color: #d12329;
+}
+.contentAgendaDessin .border {
+  border-top-color: #6b6b6b;
 }
 /*
 
