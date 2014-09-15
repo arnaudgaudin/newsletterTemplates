@@ -69,7 +69,8 @@ table.columns td, table.column td { padding-bottom: 0; }
 
 //sur titres
 .preTitle {
-	line-height: 0.25;
+	display: block;
+	line-height: (@headingsFontSizeH1 * 0.75);
 	font-size: (@headingsFontSizeH1 * 1.25);
 	small { font-size: (@headingsFontSizeH1 * 0.75); }
 }
@@ -84,10 +85,10 @@ table.columns td, table.column td { padding-bottom: 0; }
 		@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 			padding-top: 0;
 			border-top: none;
-		} 
+		}
 	}
 
-	.readMore { margin-top: 0; }
+	.readMore { margin-top: 5px; }
 	.inner { padding-bottom: 0; }
 	&.last .inner { padding-bottom: 10px; }
 
@@ -105,8 +106,10 @@ table.columns td, table.column td { padding-bottom: 0; }
 // contentAgendaDessin area
 // -------------------------
 .contentAgendaDessin {
-	td.agenda.wrapper { padding-top: 10px; }
 	.dessin .sub-columns.last .inner { padding-top: 0; }
+
+	.agenda .title { margin-top: 10px; }
+	.dessin .title { margin-top: 5px; }
 
 	.dessin .border {
 		display: block;
@@ -119,8 +122,9 @@ table.columns td, table.column td { padding-bottom: 0; }
 	}
 
 	@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
-		td.dessin.wrapper { padding-top: 10px !important; }
+		.dessin .sub-columns.last .inner { padding-top: 10px; }
 		.borderContainer { display: none; }
+		.dessin .preTitle { line-height: @headingsFontSizeH1; }
 	}
 }
 

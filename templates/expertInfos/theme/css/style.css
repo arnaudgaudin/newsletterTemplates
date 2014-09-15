@@ -431,7 +431,7 @@ h6 {
   word-break: normal;
 }
 h1 {
-  font-size: 26px;
+  font-size: 24px;
 }
 h2 {
   font-size: 20px;
@@ -455,7 +455,7 @@ td {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-size: 12px;
-  line-height: 19px;
+  line-height: 16px;
 }
 p.lead,
 p.lede,
@@ -949,11 +949,12 @@ table.column td {
   bottom: -0.1em;
 }
 .preTitle {
-  line-height: 0.25;
-  font-size: 32.5px;
+  display: block;
+  line-height: 18px;
+  font-size: 30px;
 }
 .preTitle small {
-  font-size: 19.5px;
+  font-size: 18px;
 }
 .contentArticles .title {
   padding-top: 4px;
@@ -967,7 +968,7 @@ table.column td {
   }
 }
 .contentArticles .readMore {
-  margin-top: 0;
+  margin-top: 5px;
 }
 .contentArticles .inner {
   padding-bottom: 0;
@@ -993,11 +994,14 @@ table.column td {
     border-bottom: none;
   }
 }
-.contentAgendaDessin td.agenda.wrapper {
-  padding-top: 10px;
-}
 .contentAgendaDessin .dessin .sub-columns.last .inner {
   padding-top: 0;
+}
+.contentAgendaDessin .agenda .title {
+  margin-top: 10px;
+}
+.contentAgendaDessin .dessin .title {
+  margin-top: 5px;
 }
 .contentAgendaDessin .dessin .border {
   display: block;
@@ -1013,11 +1017,14 @@ table.column td {
   margin-right: 10px;
 }
 @media only screen and (max-width: 720px) {
-  .contentAgendaDessin td.dessin.wrapper {
-    padding-top: 10px !important;
+  .contentAgendaDessin .dessin .sub-columns.last .inner {
+    padding-top: 10px;
   }
   .contentAgendaDessin .borderContainer {
     display: none;
+  }
+  .contentAgendaDessin .dessin .preTitle {
+    line-height: 24px;
   }
 }
 .container {
