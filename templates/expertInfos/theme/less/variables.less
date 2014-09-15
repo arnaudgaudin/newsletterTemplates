@@ -29,20 +29,25 @@
 @colorCouleur3Moyen: lighten(@colorCouleur3, 20%);
 @colorCouleur3Fonce: darken(@colorCouleur3, 20%);
 
-//couleur spécifique pour les blocks BDO
-@colorCouleur4: #EEE9E6;
+
+// Newsletter
+// -------------------------
+@newsletterBodyBackground: darken(@colorCouleur3, 10%);
+@newsletterText: #333333;
+@newsletterLinkColor: @newsletterText;
+@newsletterLinkColorHover: @newsletterLinkColor;
 
 
 // Scaffolding
 // -------------------------
-@bodyBackground: darken(@colorCouleur3, 10%);
-@textColor: #333333;
+@bodyBackground: @newsletterBodyBackground;
+@textColor: @newsletterText;
 
 
 // Links
 // -------------------------
-@linkColor:             @textColor;
-@linkColorHover:        @linkColor;
+@linkColor:             @newsletterLinkColor;
+@linkColorHover:        @newsletterLinkColorHover;
 
 
 // Typography
@@ -74,45 +79,3 @@
 // --------------------------------------------------
 @columnWidth: 60px;
 @gutterWidth: 0px;
-
-
-
-
-/*
-
-@colorCouleur3: @expertInfosGris;
-
-
-
-@ColorPerso1: @colorCouleur1;
-@ColorPerso2: @colorCouleur2;
-@ColorPerso3: @colorCouleur3;
-@ColorPerso4: @colorCouleur4;
-
-
-
-
-
-
-// Component sizing
-// -------------------------
-// Based on 14px font-size
-
-@headingsFontSizeH1:    25px;
-@headingsFontSizeH2:    18px;
-@headingsFontSizeH3:    45px;
-@headingsFontSizeH4:    15px;
-
-
-// Panels
-// -------------------------
-@panelBackground: @ColorPerso3;
-@panelBorder: @ColorPerso3;
-
-// Hr border color
-// -------------------------
-@hrBorder: @expertInfosBleu;
-
-
-
-*/
