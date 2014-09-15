@@ -426,7 +426,7 @@ h5,
 h6 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
-  color: inherit;
+  color: #333333;
   word-break: normal;
 }
 h1 {
@@ -436,10 +436,10 @@ h2 {
   font-size: 20px;
 }
 h3 {
-  font-size: 16px;
+  font-size: 18px;
 }
 h4 {
-  font-size: 14px;
+  font-size: 15px;
 }
 h5 {
   font-size: 13px;
@@ -923,16 +923,6 @@ table.large-button td {
 
 
 
-// Typography
-// -------------------------
-@baseFontSize:          14px;
-@baseFontFamily:        Arial, sans-serif, "Helvetica Neue", Helvetica;
-@baseLineHeight:        19px;
-
-@headingsFontFamily:    "Helvetica Neue", Helvetica, Arial, sans-serif;
-@headingsFontWeight:    bold;
-@headingsColor:         @textColor;
-
 // Component sizing
 // -------------------------
 // Based on 14px font-size
@@ -953,10 +943,6 @@ table.large-button td {
 @hrBorder: @bleuEIColor;
 
 
-// Grid config
-// --------------------------------------------------
-@columnWidth: 62.5px; //largeur totale de 750px)
-@gutterWidth: 0px;
 
 */
 .contentCabInform {
@@ -1000,6 +986,25 @@ table.column td {
 .header table.columns td.sub-column,
 .header table.column td.sub-column {
   padding-right: 0;
+}
+.readMore {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.readMore .icon-rsaquo {
+  position: relative;
+  font-style: normal;
+  font-size: 200%;
+  line-height: 0;
+  vertical-align: baseline;
+  bottom: -0.1em;
+}
+.preTitle {
+  font-size: 32.5px;
+}
+.preTitle small {
+  font-size: 19.5px;
 }
 .container {
   background-color: #ffffff;
