@@ -1052,6 +1052,9 @@ table.column td {
 .contentCabInform {
   background-color: #6b6b6b;
 }
+.contentCabInform .title {
+  color: #ffffff;
+}
 .contentCabInform,
 .contentCabInform .inner,
 .contentCabInform a,
@@ -1062,11 +1065,11 @@ table.column td {
 .contentCabInform a:active {
   color: #ffffff !important;
 }
-.contentCabInform .title {
-  color: #fff;
-}
 .contentALaUne {
   background-color: #4b606d;
+}
+.contentALaUne .title {
+  color: #ffffff;
 }
 .contentALaUne,
 .contentALaUne .inner,
@@ -1077,9 +1080,6 @@ table.column td {
 .contentALaUne a:focus,
 .contentALaUne a:active {
   color: #ffffff !important;
-}
-.contentALaUne .title {
-  color: #ffffff;
 }
 .contentALaUne .readMore {
   color: #d2d7db;

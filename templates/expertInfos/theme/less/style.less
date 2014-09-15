@@ -137,34 +137,33 @@ table.columns td, table.column td { padding-bottom: 0; }
 // contentOnline area
 // -------------------------
 .contentOnline {
-	background-color: @bodyBackground;
+	background-color: @newsletterContentOnlineBackground;
 	.newsletterInnerTextColor(@newsletterContentOnlineText);
 }
 
 
 // contentInfosClient area
 // -------------------------
-.contentInfosClient{
-	background-color: @colorCouleur1;
-	.newsletterInnerTextColor(#ffffff);
+.contentInfosClient {
+	background-color: @newsletterContentInfosClientBackground;
+	.newsletterInnerTextColor(@newsletterContentInfosClientText);
 }
 
 // contentCabInform area
 // -------------------------
 .contentCabInform {
-	background-color: darken(@colorCouleur3, 15%);
-	.newsletterInnerTextColor(#ffffff);
-	// &.dernier .article h2{ padding-top: 10px; border-top: 1px dotted #ffffff; }
-	.title { color: #fff; }
+	background-color: @newsletterContentCabInformBackground;
+	.title { color: @newsletterContentCabInformTitle; }
+	.newsletterInnerTextColor(@newsletterContentCabInformText);
 }
 
 // contentALaUne area
 // -------------------------
 .contentALaUne {
-	background-color: @colorCouleur2;
-	.newsletterInnerTextColor(#ffffff);
-	.title { color: #ffffff; }
-	.readMore { color: mix(#ffffff, @colorCouleur2, 75%); }
+	background-color: @newsletterContentALaUneBackground;
+	.title { color: @newsletterContentALaUneTitle; }
+	.newsletterInnerTextColor(@newsletterContentALaUneText);
+	.readMore { color: @newsletterContentALaUneReadMore; }
 }
 
 // contentArticles area
