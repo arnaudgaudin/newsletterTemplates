@@ -956,6 +956,12 @@ table.column td {
 .preTitle small {
   font-size: 18px;
 }
+@media only screen and (max-width: 720px) {
+  .contentInfosCollaborateur img.ei_lep {
+    width: 50% !important;
+    height: auto !important;
+  }
+}
 .contentArticles .title {
   padding-top: 4px;
   border-top-width: 1px;
