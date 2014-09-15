@@ -95,12 +95,7 @@ table.columns td, table.column td { padding-bottom: 0; }
 .contentArticles {
 	.title {
 		padding-top: 4px;
-		border-top-width: 1px;
-		border-top-style: dotted;
-		@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
-			padding-top: 0;
-			border-top: none;
-		}
+		@media only screen and (max-width: (@containerWidth + @gutterWidth)) { padding-top: 0; }
 	}
 
 	.readMore { margin-top: 5px; }
@@ -111,8 +106,6 @@ table.columns td, table.column td { padding-bottom: 0; }
 		.inner { padding-bottom: 9px; }
 		&.last .inner { padding-bottom: 10px; }
 		.wrapper.last .inner { padding-top: 0; }
-		border-bottom-width: 1px;
-		border-bottom-style: dotted;
 		&.last { border-bottom: none; }
 	}
 }
@@ -130,8 +123,6 @@ table.columns td, table.column td { padding-bottom: 0; }
 		display: block;
 		line-height: 0;
 		padding-top: 9px;
-		border-top-width: 1px;
-		border-top-style: dotted;
 		&.left { margin-left: 10px; }
 		&.right { margin-right: 10px; }
 	}
@@ -190,15 +181,16 @@ table.columns td, table.column td { padding-bottom: 0; }
 .contentArticles {
 	.title {
 		color: @newsletterContentArticlesTitle;
-		border-top-color: @newsletterContentArticlesBorder;
+		border-top: 1px dotted @newsletterContentArticlesBorder;
 		.icon-rsaquo { color: @newsletterContentArticlesIconColor; }
+		@media only screen and (max-width: (@containerWidth + @gutterWidth)) { border-top: none; }
 	}
 	.newsletterInnerTextColor(@newsletterContentArticlesText);
 	.readMore { color: @newsletterContentArticlesReadMore; }
 	
 	//rajout bordure en bas en mode responsive
 	@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
-		border-bottom-color: @newsletterContentArticlesBorder;
+		border-bottom: 1px dotted @newsletterContentArticlesBorder;
 	}
 }
 
@@ -217,7 +209,7 @@ table.columns td, table.column td { padding-bottom: 0; }
 		.preTitle { color: @newsletterContentDessinPreTitle; }
 		.title { color: @newsletterContentDessinTitle; }
 		.readMore { color: @newsletterContentDessinReadMore; }
-		.border { border-top-color: @newsletterContentDessinBorder; }
+		.border { border-top: 1px dotted @newsletterContentDessinBorder; }
 	}
 }
 

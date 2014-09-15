@@ -966,13 +966,10 @@ table.column td {
 }
 .contentArticles .title {
   padding-top: 4px;
-  border-top-width: 1px;
-  border-top-style: dotted;
 }
 @media only screen and (max-width: 720px) {
   .contentArticles .title {
     padding-top: 0;
-    border-top: none;
   }
 }
 .contentArticles .readMore {
@@ -985,10 +982,6 @@ table.column td {
   padding-bottom: 10px;
 }
 @media only screen and (max-width: 720px) {
-  .contentArticles {
-    border-bottom-width: 1px;
-    border-bottom-style: dotted;
-  }
   .contentArticles .inner {
     padding-bottom: 9px;
   }
@@ -1015,8 +1008,6 @@ table.column td {
   display: block;
   line-height: 0;
   padding-top: 9px;
-  border-top-width: 1px;
-  border-top-style: dotted;
 }
 .contentAgendaDessin .dessin .border.left {
   margin-left: 10px;
@@ -1101,10 +1092,15 @@ table.column td {
 }
 .contentArticles .title {
   color: #333333;
-  border-top-color: #6b6b6b;
+  border-top: 1px dotted #6b6b6b;
 }
 .contentArticles .title .icon-rsaquo {
   color: #d12329;
+}
+@media only screen and (max-width: 720px) {
+  .contentArticles .title {
+    border-top: none;
+  }
 }
 .contentArticles,
 .contentArticles .inner,
@@ -1121,7 +1117,7 @@ table.column td {
 }
 @media only screen and (max-width: 720px) {
   .contentArticles {
-    border-bottom-color: #6b6b6b;
+    border-bottom: 1px dotted #6b6b6b;
   }
 }
 .contentAgendaDessin .agenda {
@@ -1153,7 +1149,7 @@ table.column td {
   color: #9e9e9e;
 }
 .contentAgendaDessin .dessin .border {
-  border-top-color: #6b6b6b;
+  border-top: 1px dotted #6b6b6b;
 }
 .contentAdresse {
   background-color: #9e9e9e;
