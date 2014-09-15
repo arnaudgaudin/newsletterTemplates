@@ -15,7 +15,7 @@
 // .contentALaUne { background-color: #EBC2A7; }
 // .contentArticles { background-color: #A7EBEB; }
 // .contentAgendaDessin { background-color: #EBE0A7; }
-.contentAdresse { background-color: #A7C4EB; }
+// .contentAdresse { background-color: #A7C4EB; }
 .contentLienSite { background-color: #EBA7E5; }
 .footer { background-color: #EBB5A7; }
 
@@ -202,113 +202,24 @@ table.columns td, table.column td { padding-bottom: 0; }
 }
 
 
-
-/*
-
-
-
-
-
-
-
-
-
-
-h3{ color: @ColorPerso1; &.preTitle{ font-weight: lighter; } }
-b.perso, span.perso{ color: @ColorPerso1; }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//--------------- Articles - article ---------------------------------------------------
-
-
-.article span{
-	&.sousTitre{
-		line-height: 10%;
-		color: @ColorPerso1;
-		font-size: 30px;
-	}
-}
-
-.sousTitre, .preTitle{
-	@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
-		//display: inline !important;
-	}
-}
-
-.agenda{ background-color: @expertInfosGris; }
-
-.dessin{
-	
-	&.wrapper{ padding-top: 0px; }
-	img{ float: right; width: 60%; }
-	td.borderTop{
-		padding-top: 10px !important;
-		border-top: 1px dotted @ColorPerso2;
-		@media only screen and (max-width: (@containerWidth + @gutterWidth)) { border-top: none; } }
+// contentAdresse area
+// -------------------------
+.contentAdresse {
+	background-color: lighten(@colorCouleur3, 5%);
+	&, .inner, a, a:link, a:visited, a:hover, a:focus, a:active { color: #ffffff !important; }
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.contentAdresse{
-	
-	background-color: lighten(#6b6b6b, 20%);
-	a, a:hover, a:active, a:visited, h1, h2, h3, h5, h6, td { color: #ffffff !important; }
-
-}
-.contentLienSite{
-	background-color: lighten(#6b6b6b, 50%);
-	.text-pad {
-		//padding-bottom: 0px;
-	}
+// contentLienSite area
+// -------------------------
+.contentLienSite {
+	background-color: @colorCouleur3Clair;
 }
 
 
-
-
-
-
-
-
-
-
-
-//--------------- Mentions legales - surHeader et footer - bas et haut de site ------------------------
-
-.footer{ background-color: @ColorPerso1; }
-
-*/
+// footer area
+// -------------------------
+.footer {
+	background-color: @colorCouleur1;
+	&, .inner, a, a:link, a:visited, a:hover, a:focus, a:active { color: #ffffff !important; }
+}
