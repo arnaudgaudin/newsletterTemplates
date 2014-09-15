@@ -426,7 +426,7 @@ h4,
 h5,
 h6 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-weight: normal;
   color: #333333;
   word-break: normal;
 }
@@ -454,14 +454,14 @@ p,
 td {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 19px;
 }
 p.lead,
 p.lede,
 p.leed {
-  font-size: 17.5px;
-  line-height: 20.125px;
+  font-size: 15px;
+  line-height: 17.25px;
 }
 p {
   margin-bottom: 10px;
@@ -561,23 +561,23 @@ table.large-button td a {
   text-decoration: none;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #ffffff;
-  font-size: 16.1px;
+  font-size: 13.8px;
   display: block;
   height: 100%;
   width: 100%;
 }
 table.tiny-button td a {
-  font-size: 11.9px;
+  font-size: 10.2px;
   font-weight: normal;
 }
 table.small-button td a {
-  font-size: 16.1px;
+  font-size: 13.8px;
 }
 table.medium-button td a {
-  font-size: 20.3px;
+  font-size: 17.4px;
 }
 table.large-button td a {
-  font-size: 28px;
+  font-size: 24px;
 }
 table.button:hover td,
 table.button:visited td,
@@ -944,9 +944,6 @@ table.large-button td {
 
 
 */
-.contentArticles {
-  background-color: #A7EBEB;
-}
 .contentAgendaDessin {
   background-color: #EBE0A7;
 }
@@ -958,6 +955,14 @@ table.large-button td {
 }
 .footer {
   background-color: #EBB5A7;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.1;
 }
 .inner {
   display: block;
@@ -985,7 +990,7 @@ table.column td {
   margin-top: 10px;
   font-weight: bold;
 }
-.readMore .icon-rsaquo {
+.icon-rsaquo {
   position: relative;
   font-style: normal;
   font-size: 200%;
@@ -998,12 +1003,6 @@ table.column td {
 }
 .preTitle small {
   font-size: 19.5px;
-}
-.contentCabInform .title {
-  font-weight: normal;
-}
-.contentALaUne .title {
-  font-weight: normal;
 }
 .container {
   background-color: #ffffff;
@@ -1022,7 +1021,7 @@ table.column td {
   color: #ffffff !important;
 }
 .contentInfosClient {
-  background-color: #ee183a;
+  background-color: #d12329;
 }
 .contentInfosClient,
 .contentInfosClient .inner,
@@ -1069,61 +1068,41 @@ table.column td {
 .contentALaUne .readMore {
   color: #d2d7db;
 }
-/*
-
-
-
-//-----------------------    Classes du theme     --------------------------
-.lien{
-	font-size: 80%;
-	&.perso{
-		color: @ColorPerso1;
-	}
+.contentArticles .title {
+  padding-top: 5px;
+  border-top: 1px dotted #4b606d;
 }
-
-
-//-----------------------    Classes pour fond     --------------------------
-
-
-
-
-
-
-
-//--------------------------- A la une - article --------------- ------------
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.contentArticles .title .icon-rsaquo {
+  color: #d12329;
+}
+@media only screen and (max-width: 720px) {
+  .contentArticles .title {
+    padding-top: 0;
+    border-top: none;
+  }
+}
+.contentArticles .readMore {
+  margin-top: 0;
+  color: #d12329;
+}
+.contentArticles .inner {
+  padding-bottom: 0;
+}
+.contentArticles.last .inner {
+  padding-bottom: 10px;
+}
+@media only screen and (max-width: 720px) {
+  .contentArticles {
+    border-bottom: 1px dotted #4b606d;
+  }
+  .contentArticles.last {
+    border-bottom: none;
+  }
+  .contentArticles .wrapper.last .inner {
+    padding-top: 0;
+  }
+}
+/*
 
 
 
@@ -1144,25 +1123,6 @@ b.perso, span.perso{ color: @ColorPerso1; }
 
 
 
-//-------------------------- header - haut de site ---------------------------------------------------
-.header{
-	td.wrapper{ padding-top: 0px; }
-	table.columns td, table.column td { padding-bottom: 0px; }	
-}
-
-
-
-
-
-
-//--------------- Cabinet nous informe - article ---------------------------------------------------
-
-
-
-
-
-
-
 
 
 
@@ -1170,21 +1130,7 @@ b.perso, span.perso{ color: @ColorPerso1; }
 
 
 //--------------- Articles - article ---------------------------------------------------
-.contentArticles{
-	
-	@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
-		border-bottom: 1px dotted @expertInfosBleu;
-		&.dernier{ border-bottom: none; }
-	}
 
-	.title{
-		font-weight: normal;
-		padding-top: 5px;
-		line-height: 110%;
-		border-top: 1px dotted @expertInfosBleu;
-		@media only screen and (max-width: (@containerWidth + @gutterWidth)) { border-top: none !important; } 
-	}
-}
 
 .article span{
 	&.sousTitre{

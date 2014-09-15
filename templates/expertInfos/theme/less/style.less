@@ -13,7 +13,7 @@
 // .header { background-color: #A7C0EB; }
 // .contentCabInform { background-color: #E0EBA7; }
 // .contentALaUne { background-color: #EBC2A7; }
-.contentArticles { background-color: #A7EBEB; }
+// .contentArticles { background-color: #A7EBEB; }
 .contentAgendaDessin { background-color: #EBE0A7; }
 .contentAdresse { background-color: #A7C4EB; }
 .contentLienSite { background-color: #EBA7E5; }
@@ -22,6 +22,8 @@
 
 // LAYOUT
 // --------------------------------------------------
+
+h1, h2, h3, h4, h5, h6 { line-height: 1.1; }
 
 .inner {
 	display: block;
@@ -48,33 +50,22 @@ table.columns td, table.column td { padding-bottom: 0; }
 	display: block;
 	margin-top: 10px;
 	font-weight: bold;
-	.icon-rsaquo {
-		position: relative;
-		font-style: normal;
-		font-size: 200%;
-		line-height: 0;
-		vertical-align: baseline;
-		bottom: -0.1em;
-	}
+}
+
+//icone fléchée
+.icon-rsaquo {
+	position: relative;
+	font-style: normal;
+	font-size: 200%;
+	line-height: 0;
+	vertical-align: baseline;
+	bottom: -0.1em;
 }
 
 //sur titres
 .preTitle {
 	font-size: (@headingsFontSizeH1 * 1.25);
 	small { font-size: (@headingsFontSizeH1 * 0.75); }
-}
-
-// contentCabInform area
-// -------------------------
-.contentCabInform {
-	.title{ font-weight: normal; }
-}
-
-
-// contentALaUne area
-// -------------------------
-.contentALaUne {
-	.title{ font-weight: normal; }
 }
 
 
@@ -114,70 +105,46 @@ table.columns td, table.column td { padding-bottom: 0; }
 // contentALaUne area
 // -------------------------
 .contentALaUne {
-	background-color: @expertInfosBleu;
+	background-color: @colorCouleur2;
 	&, .inner, a, a:link, a:visited, a:hover, a:focus, a:active { color: #ffffff !important; }
 	.title { color: #ffffff; }
-	.readMore { color: mix(#ffffff, @expertInfosBleu, 75%); }
+	.readMore { color: mix(#ffffff, @colorCouleur2, 75%); }
+}
+
+// contentArticles area
+// -------------------------
+.contentArticles {
+	.title {
+		padding-top: 5px;
+		border-top: 1px dotted @colorCouleur2;
+		.icon-rsaquo { color: @colorCouleur1; }
+
+		//pas de bordure entre la photo et le titre en mode responsive
+		@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+			padding-top: 0;
+			border-top: none;
+		} 
+	}
+
+	.readMore {
+		margin-top: 0;
+		color: @colorCouleur1;
+	}
+	.inner { padding-bottom: 0; }
+	&.last .inner { padding-bottom: 10px; }
+	
+	//rajout bordure en bas en mode responsive
+	@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+		border-bottom: 1px dotted @colorCouleur2;
+		&.last { border-bottom: none; }
+		.wrapper.last .inner { padding-top: 0; }
+	}
 }
 
 
 
 
 /*
-
-
-
-//-----------------------    Classes du theme     --------------------------
-.lien{
-	font-size: 80%;
-	&.perso{
-		color: @ColorPerso1;
-	}
-}
-
-
-//-----------------------    Classes pour fond     --------------------------
-
-
-
-
-
-
-
-//--------------------------- A la une - article --------------- ------------
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -198,25 +165,6 @@ b.perso, span.perso{ color: @ColorPerso1; }
 
 
 
-//-------------------------- header - haut de site ---------------------------------------------------
-.header{
-	td.wrapper{ padding-top: 0px; }
-	table.columns td, table.column td { padding-bottom: 0px; }	
-}
-
-
-
-
-
-
-//--------------- Cabinet nous informe - article ---------------------------------------------------
-
-
-
-
-
-
-
 
 
 
@@ -224,21 +172,7 @@ b.perso, span.perso{ color: @ColorPerso1; }
 
 
 //--------------- Articles - article ---------------------------------------------------
-.contentArticles{
-	
-	@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
-		border-bottom: 1px dotted @expertInfosBleu;
-		&.dernier{ border-bottom: none; }
-	}
 
-	.title{
-		font-weight: normal;
-		padding-top: 5px;
-		line-height: 110%;
-		border-top: 1px dotted @expertInfosBleu;
-		@media only screen and (max-width: (@containerWidth + @gutterWidth)) { border-top: none !important; } 
-	}
-}
 
 .article span{
 	&.sousTitre{

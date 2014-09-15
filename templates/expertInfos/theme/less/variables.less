@@ -4,14 +4,22 @@
 // Global values
 // --------------------------------------------------
 
+
+// Expert Infos
+// -------------------------
+@expertInfosRouge: #d12329;
+@expertInfosBleu: #4b606d;
+@expertInfosGris: #e6e8eb;
+
+
 // Main colors
 // -------------------------
-@colorCouleur1: #EE183A;
+@colorCouleur1: @expertInfosRouge;
 @colorCouleur1Clair: lighten(@colorCouleur1, 25%);
 @colorCouleur1Moyen: darken(@colorCouleur1, 15%);
 @colorCouleur1Fonce: darken(@colorCouleur1, 30%);
 
-@colorCouleur2: #B9ACA5;
+@colorCouleur2: @expertInfosBleu;
 @colorCouleur2Clair: lighten(@colorCouleur2, 20%);
 @colorCouleur2Moyen: darken(@colorCouleur2, 10%);
 @colorCouleur2Fonce: darken(@colorCouleur2, 25%);
@@ -23,13 +31,6 @@
 
 //couleur spécifique pour les blocks BDO
 @colorCouleur4: #EEE9E6;
-
-
-// Expert Infos
-// -------------------------
-@expertInfosRouge: #d12329;
-@expertInfosBleu: #4b606d;
-@expertInfosGris: #e6e8eb;
 
 
 // Scaffolding
@@ -46,7 +47,9 @@
 
 // Typography
 // -------------------------
+@baseFontSize:          12px;
 @headingsColor:         @textColor;
+@headingsFontWeight:    normal;
 
 
 // Component sizing
