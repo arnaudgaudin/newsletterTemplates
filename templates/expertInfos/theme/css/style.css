@@ -431,16 +431,16 @@ h6 {
   word-break: normal;
 }
 h1 {
-  font-size: 24px;
+  font-size: 22px;
 }
 h2 {
-  font-size: 20px;
-}
-h3 {
   font-size: 18px;
 }
+h3 {
+  font-size: 16px;
+}
 h4 {
-  font-size: 15px;
+  font-size: 14px;
 }
 h5 {
   font-size: 13px;
@@ -953,12 +953,12 @@ table.column td {
 .preTitle {
   display: block;
   font-weight: lighter;
-  font-size: 42px;
-  line-height: 24px;
-  margin-top: 6px;
+  font-size: 33px;
+  line-height: 18.7px;
+  margin-top: 3.66666667px;
 }
 .preTitle small {
-  font-size: 20.4px;
+  font-size: 18.7px;
 }
 .webicons .inner {
   height: 30px;
@@ -1032,7 +1032,7 @@ table.column td {
     border-top: none !important;
   }
   table[class="body"] .contentAgendaDessin .dessin .preTitle {
-    line-height: 24px !important;
+    line-height: 22px !important;
   }
   table[class="body"] .contentAgendaDessin .borderContainer {
     display: none !important;
