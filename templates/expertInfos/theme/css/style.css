@@ -1173,13 +1173,13 @@ h6 a:visited {
 }
 @media only screen and (max-width: 720px) {
   table[class="body"] .contentArticles {
-    border-bottom: 1px dotted #6b6b6b;
+    border-bottom: 1px dotted #6b6b6b !important;
   }
   table[class="body"] .contentArticles .title {
-    border-top: none;
+    border-top: none !important;
   }
   table[class="body"] .contentArticles.last {
-    border-bottom: none;
+    border-bottom: none !important;
   }
 }
 .contentAgendaDessin .agenda {

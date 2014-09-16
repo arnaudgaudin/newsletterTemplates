@@ -217,9 +217,9 @@ a {
 //rajout bordure en bas en mode responsive
 @media only screen and (max-width: (@newsletterContainerWidth + @newsletterGutterWidth)) {
 	table[class="body"] .contentArticles {
-		.title { border-top: none; }
-		border-bottom: 1px dotted @newsletterContentArticlesBorder;
-		&.last { border-bottom: none; }
+		.title { border-top: none !important; }
+		border-bottom: 1px dotted @newsletterContentArticlesBorder !important;
+		&.last { border-bottom: none !important; }
 	}
 }
 
