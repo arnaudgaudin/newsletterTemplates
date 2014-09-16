@@ -1,5 +1,63 @@
+body,
+table.body {
+  background-color: #787878 !important;
+}
 .container {
   background-color: #ffffff !important;
+}
+body,
+table.body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+td {
+  color: #333333 !important;
+}
+a {
+  color: #333333 !important;
+}
+a:hover {
+  color: #333333 !important;
+}
+a:active {
+  color: #333333 !important;
+}
+a:visited {
+  color: #333333 !important;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a,
+h1 a:active,
+h2 a:active,
+h3 a:active,
+h4 a:active,
+h5 a:active,
+h6 a:active,
+h1 a:visited,
+h2 a:visited,
+h3 a:visited,
+h4 a:visited,
+h5 a:visited,
+h6 a:visited {
+  color: #333333 !important;
+}
+.appleLinks a {
+  color: #333333 !important;
+}
+.appleLinks a:hover,
+.appleLinks a:active {
+  color: #333333 !important;
+}
+.appleLinks a:visited {
+  color: #333333 !important;
 }
 .contentOnline {
   background-color: #787878 !important;
