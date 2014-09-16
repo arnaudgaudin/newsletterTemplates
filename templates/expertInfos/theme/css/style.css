@@ -1090,7 +1090,7 @@ table.column td {
 }
 .contentArticles .title {
   color: #333333 !important;
-  border-top: 1px dotted #6b6b6b !important;
+  border-top: 1px dotted #6b6b6b;
 }
 .contentArticles .title .icon-rsaquo {
   color: #d12329 !important;
