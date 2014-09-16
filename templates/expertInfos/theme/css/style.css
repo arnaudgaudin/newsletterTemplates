@@ -1133,14 +1133,6 @@ a {
 }
 
 
-// contentLienSite area
-// -------------------------
-.contentLienSite {
-	background-color: @newsletterContentLienSiteBackground;
-	.newsletterInnerTextColor(@newsletterContentLienSiteText);
-}
-
-
 // footer area
 // -------------------------
 .footer {
