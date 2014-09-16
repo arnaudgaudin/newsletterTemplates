@@ -20,13 +20,13 @@
 
 // Main container
 // -------------------------
-.container { background-color: @newsletterContainerBackground; }
+.container { background-color: @newsletterContainerBackground !important; }
 
 
 // contentOnline area
 // -------------------------
 .contentOnline {
-	background-color: @newsletterContentOnlineBackground;
+	background-color: @newsletterContentOnlineBackground !important;
 	.newsletterInnerTextColor(@newsletterContentOnlineText);
 }
 
@@ -34,37 +34,37 @@
 // contentInfosClient area
 // -------------------------
 .contentInfosClient {
-	background-color: @newsletterContentInfosClientBackground;
+	background-color: @newsletterContentInfosClientBackground !important;
 	.newsletterInnerTextColor(@newsletterContentInfosClientText);
 }
 
 // contentCabInform area
 // -------------------------
 .contentCabInform {
-	background-color: @newsletterContentCabInformBackground;
-	.title { color: @newsletterContentCabInformTitle; }
+	background-color: @newsletterContentCabInformBackground !important;
+	.title { color: @newsletterContentCabInformTitle !important; }
 	.newsletterInnerTextColor(@newsletterContentCabInformText);
 }
 
 // contentALaUne area
 // -------------------------
 .contentALaUne {
-	background-color: @newsletterContentALaUneBackground;
-	.title { color: @newsletterContentALaUneTitle; }
+	background-color: @newsletterContentALaUneBackground !important;
+	.title { color: @newsletterContentALaUneTitle !important; }
 	.newsletterInnerTextColor(@newsletterContentALaUneText);
-	.readMore { color: @newsletterContentALaUneReadMore; }
+	.readMore { color: @newsletterContentALaUneReadMore !important; }
 }
 
 // contentArticles area
 // -------------------------
 .contentArticles {
 	.title {
-		color: @newsletterContentArticlesTitle;
-		border-top: 1px dotted @newsletterContentArticlesBorder;
-		.icon-rsaquo { color: @newsletterContentArticlesIconColor; }
+		color: @newsletterContentArticlesTitle !important;
+		border-top: 1px dotted @newsletterContentArticlesBorder !important;
+		.icon-rsaquo { color: @newsletterContentArticlesIconColor !important; }
 	}
 	.newsletterInnerTextColor(@newsletterContentArticlesText);
-	.readMore { color: @newsletterContentArticlesReadMore; }
+	.readMore { color: @newsletterContentArticlesReadMore !important; }
 }
 //rajout bordure en bas en mode responsive
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
@@ -80,17 +80,17 @@
 // -------------------------
 .contentAgendaDessin {
 	.agenda {
-		background-color: @newsletterContentAgendaBackground;
-		.preTitle { color: @newsletterContentAgendaPreTitle; }
-		.title { color: @newsletterContentAgendaTitle; }
+		background-color: @newsletterContentAgendaBackground !important;
+		.preTitle { color: @newsletterContentAgendaPreTitle !important; }
+		.title { color: @newsletterContentAgendaTitle !important; }
 		.newsletterInnerTextColor(@newsletterContentAgendaText);
 	}
 
 	.dessin {
-		.preTitle { color: @newsletterContentDessinPreTitle; }
-		.title { color: @newsletterContentDessinTitle; }
-		.readMore { color: @newsletterContentDessinReadMore; }
-		.border { border-top: 1px dotted @newsletterContentDessinBorder; }
+		.preTitle { color: @newsletterContentDessinPreTitle !important; }
+		.title { color: @newsletterContentDessinTitle !important; }
+		.readMore { color: @newsletterContentDessinReadMore !important; }
+		.border { border-top: 1px dotted @newsletterContentDessinBorder !important; }
 	}
 }
 
@@ -98,7 +98,7 @@
 // contentAdresse area
 // -------------------------
 .contentAdresse {
-	background-color: @newsletterContentAdresseBackground;
+	background-color: @newsletterContentAdresseBackground !important;
 	.newsletterInnerTextColor(@newsletterContentAdresseText);
 }
 
@@ -106,7 +106,7 @@
 // contentLienSite area
 // -------------------------
 .contentLienSite {
-	background-color: @newsletterContentLienSiteBackground;
+	background-color: @newsletterContentLienSiteBackground !important;
 	.newsletterInnerTextColor(@newsletterContentLienSiteText);
 }
 
@@ -114,6 +114,6 @@
 // footer area
 // -------------------------
 .footer {
-	background-color: @newsletterFooterBackground;
+	background-color: @newsletterFooterBackground !important;
 	.newsletterInnerTextColor(@newsletterFooterText);
 }
