@@ -174,18 +174,18 @@ h6 a:visited {
 .contentAgendaDessin .dessin .border {
   border-top: 1px dotted #6b6b6b !important;
 }
-.contentAdresse {
+.contentContact {
   background-color: #d12329 !important;
 }
-.contentAdresse,
-.contentAdresse td,
-.contentAdresse .inner,
-.contentAdresse a,
-.contentAdresse a:link,
-.contentAdresse a:visited,
-.contentAdresse a:hover,
-.contentAdresse a:focus,
-.contentAdresse a:active {
+.contentContact,
+.contentContact td,
+.contentContact .inner,
+.contentContact a,
+.contentContact a:link,
+.contentContact a:visited,
+.contentContact a:hover,
+.contentContact a:focus,
+.contentContact a:active {
   color: #ffffff !important;
 }
 .footer {

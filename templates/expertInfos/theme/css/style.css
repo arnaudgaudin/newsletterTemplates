@@ -1125,11 +1125,11 @@ a {
 }
 
 
-// contentAdresse area
+// contentContact area
 // -------------------------
-.contentAdresse {
-	background-color: @newsletterContentAdresseBackground;
-	.newsletterInnerTextColor(@newsletterContentAdresseText);
+.contentContact {
+	background-color: @newsletterContentContactBackground;
+	.newsletterInnerTextColor(@newsletterContentContactText);
 }
 
 
