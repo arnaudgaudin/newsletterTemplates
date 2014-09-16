@@ -960,12 +960,23 @@ table.column td {
 .preTitle small {
   font-size: 20.4px;
 }
+.webicons .inner {
+  height: 30px;
+}
 .webicon {
-  display: inline-block;
+  display: block;
   width: 30px;
   height: 30px;
-  text-align: left;
+  margin: 0 5px 5px 5px;
+  float: right;
   border-radius: 5px;
+  line-height: 30px;
+}
+.webicon.first {
+  margin-right: 0;
+}
+.webicon.last {
+  margin-left: 0;
 }
 .contentArticles .title {
   padding-top: 4px;
