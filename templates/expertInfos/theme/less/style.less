@@ -64,10 +64,12 @@ table.columns td, table.column td { padding-bottom: 0; }
 //sur titres
 .preTitle {
 	display: block;
-	line-height: (@headingsFontSizeH1 * 0.75);
-	font-size: (@headingsFontSizeH1 * 1.25);
 	font-weight: lighter;
-	small { font-size: (@headingsFontSizeH1 * 0.75); }
+	font-size: (@headingsFontSizeH1 * 1.75);
+	line-height: @headingsFontSizeH1;
+	//compensation décalage entre font-size et line-height
+	margin-top: ((@headingsFontSizeH1 * 0.75) / 2);
+	small { font-size: (@headingsFontSizeH1 * 0.85); }
 }
 
 

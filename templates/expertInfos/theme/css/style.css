@@ -952,12 +952,13 @@ table.column td {
 }
 .preTitle {
   display: block;
-  line-height: 18px;
-  font-size: 30px;
   font-weight: lighter;
+  font-size: 42px;
+  line-height: 24px;
+  margin-top: 9px;
 }
 .preTitle small {
-  font-size: 18px;
+  font-size: 20.4px;
 }
 @media only screen and (max-width: 720px) {
   table[class="body"] .contentInfosCollaborateur img.ei_lep {
