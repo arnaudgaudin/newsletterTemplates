@@ -1034,7 +1034,7 @@ table.column td {
 // Body
 // -------------------------
 body, table.body {
-  background-color: @bodyBackground;
+  background-color: @newsletterBodyBackground;
 }
 
 
@@ -1046,25 +1046,25 @@ body, table.body {
 // Typography
 // -------------------------
 body, table.body, h1, h2, h3, h4, h5, h6, p, td {
-	color: @textColor;
+	color: @newsletterText;
 }
 
 // Links
 // -------------------------
 a {
-	color: @linkColor;
-	&:hover { color: @linkColorHover; }
-	&:active { color: @linkColorHover; }
-	&:visited { color: @linkColor; }
+	color: @newsletterLinkColor;
+	&:hover { color: @newsletterLinkColorHover; }
+	&:active { color: @newsletterLinkColorHover; }
+	&:visited { color: @newsletterLinkColor; }
 
 	h1 &, h2 &, h3 &, h4 &, h5 &, h6 & {
-		&, &:active, &:visited { color: @linkColor; }
+		&, &:active, &:visited { color: @newsletterLinkColor; }
 	}
 
 	.appleLinks & {
-		color: @linkColor;
-		&:hover, &:active { color: @linkColorHover; }
-		&:visited { color: @linkColor; }
+		color: @newsletterLinkColor;
+		&:hover, &:active { color: @newsletterLinkColorHover; }
+		&:visited { color: @newsletterLinkColor; }
 	}
 }
 
