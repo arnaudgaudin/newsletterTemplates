@@ -960,12 +960,6 @@ table.column td {
 .preTitle small {
   font-size: 20.4px;
 }
-@media only screen and (max-width: 720px) {
-  table[class="body"] .contentInfosCollaborateur img.ei_lep {
-    width: 50% !important;
-    height: auto !important;
-  }
-}
 .contentArticles .title {
   padding-top: 4px;
 }
@@ -1026,140 +1020,226 @@ table.column td {
     display: none !important;
   }
 }
-/*
-
-// CUSTOM COLORS
-// --------------------------------------------------
-
-// Body
-// -------------------------
-body, table.body {
-  background-color: @newsletterBodyBackground;
+body,
+table.body {
+  background-color: #787878;
 }
-
-
-// Main container
-// -------------------------
-.container { background-color: @newsletterContainerBackground; }
-
-
-// Typography
-// -------------------------
-body, table.body, h1, h2, h3, h4, h5, h6, p, td {
-	color: @newsletterText;
+.container {
+  background-color: #ffffff;
 }
-
-// Links
-// -------------------------
+body,
+table.body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+td {
+  color: #333333;
+}
 a {
-	color: @newsletterLinkColor;
-	&:hover { color: @newsletterLinkColorHover; }
-	&:active { color: @newsletterLinkColorHover; }
-	&:visited { color: @newsletterLinkColor; }
-
-	h1 &, h2 &, h3 &, h4 &, h5 &, h6 & {
-		&, &:active, &:visited { color: @newsletterLinkColor; }
-	}
-
-	.appleLinks & {
-		color: @newsletterLinkColor;
-		&:hover, &:active { color: @newsletterLinkColorHover; }
-		&:visited { color: @newsletterLinkColor; }
-	}
+  color: #333333;
 }
-
-// contentOnline area
-// -------------------------
+a:hover {
+  color: #333333;
+}
+a:active {
+  color: #333333;
+}
+a:visited {
+  color: #333333;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a,
+h1 a:active,
+h2 a:active,
+h3 a:active,
+h4 a:active,
+h5 a:active,
+h6 a:active,
+h1 a:visited,
+h2 a:visited,
+h3 a:visited,
+h4 a:visited,
+h5 a:visited,
+h6 a:visited {
+  color: #333333;
+}
+.appleLinks a {
+  color: #333333;
+}
+.appleLinks a:hover,
+.appleLinks a:active {
+  color: #333333;
+}
+.appleLinks a:visited {
+  color: #333333;
+}
 .contentOnline {
-	background-color: @newsletterContentOnlineBackground;
-	.newsletterInnerTextColor(@newsletterContentOnlineText);
+  background-color: #787878;
 }
-
-
-// contentInfosClient area
-// -------------------------
+.contentOnline,
+.contentOnline .inner,
+.contentOnline a,
+.contentOnline a:link,
+.contentOnline a:visited,
+.contentOnline a:hover,
+.contentOnline a:focus,
+.contentOnline a:active {
+  color: #ffffff !important;
+}
 .contentInfosClient {
-	background-color: @newsletterContentInfosClientBackground;
-	.newsletterInnerTextColor(@newsletterContentInfosClientText);
+  background-color: #d12329;
 }
-
-// contentCabInform area
-// -------------------------
+.contentInfosClient,
+.contentInfosClient .inner,
+.contentInfosClient a,
+.contentInfosClient a:link,
+.contentInfosClient a:visited,
+.contentInfosClient a:hover,
+.contentInfosClient a:focus,
+.contentInfosClient a:active {
+  color: #ffffff !important;
+}
 .contentCabInform {
-	background-color: @newsletterContentCabInformBackground;
-	.title { color: @newsletterContentCabInformTitle; }
-	.newsletterInnerTextColor(@newsletterContentCabInformText);
+  background-color: #6b6b6b;
 }
-
-// contentALaUne area
-// -------------------------
+.contentCabInform .title {
+  color: #ffffff;
+}
+.contentCabInform,
+.contentCabInform .inner,
+.contentCabInform a,
+.contentCabInform a:link,
+.contentCabInform a:visited,
+.contentCabInform a:hover,
+.contentCabInform a:focus,
+.contentCabInform a:active {
+  color: #ffffff !important;
+}
 .contentALaUne {
-	background-color: @newsletterContentALaUneBackground;
-	.title { color: @newsletterContentALaUneTitle; }
-	.newsletterInnerTextColor(@newsletterContentALaUneText);
-	.readMore { color: @newsletterContentALaUneReadMore; }
+  background-color: #4b606d;
 }
-
-// contentArticles area
-// -------------------------
-.contentArticles {
-	.title {
-		color: @newsletterContentArticlesTitle;
-		border-top: 1px dotted @newsletterContentArticlesBorder;
-		.icon-rsaquo { color: @newsletterContentArticlesIconColor; }
-	}
-	.newsletterInnerTextColor(@newsletterContentArticlesText);
-	.readMore { color: @newsletterContentArticlesReadMore; }
+.contentALaUne .title {
+  color: #ffffff;
 }
-//rajout bordure en bas en mode responsive
-@media only screen and (max-width: (@newsletterContainerWidth + @newsletterGutterWidth)) {
-	table[class="body"] .contentArticles {
-		.title { border-top: none; }
-		border-bottom: 1px dotted @newsletterContentArticlesBorder;
-		&.last { border-bottom: none; }
-	}
+.contentALaUne,
+.contentALaUne .inner,
+.contentALaUne a,
+.contentALaUne a:link,
+.contentALaUne a:visited,
+.contentALaUne a:hover,
+.contentALaUne a:focus,
+.contentALaUne a:active {
+  color: #ffffff !important;
 }
-
-
-// contentAgendaDessin area
-// -------------------------
-.contentAgendaDessin {
-	.agenda {
-		background-color: @newsletterContentAgendaBackground;
-		.preTitle { color: @newsletterContentAgendaPreTitle; }
-		.title { color: @newsletterContentAgendaTitle; }
-		.newsletterInnerTextColor(@newsletterContentAgendaText);
-	}
-
-	.dessin {
-		.preTitle { color: @newsletterContentDessinPreTitle; }
-		.title { color: @newsletterContentDessinTitle; }
-		.readMore { color: @newsletterContentDessinReadMore; }
-		.border { border-top: 1px dotted @newsletterContentDessinBorder; }
-	}
+.contentALaUne .readMore {
+  color: #d2d7db;
 }
-
-
-// contentAdresse area
-// -------------------------
+.contentArticles .title {
+  color: #333333;
+  border-top: 1px dotted #6b6b6b;
+}
+.contentArticles .title .icon-rsaquo {
+  color: #d12329;
+}
+.contentArticles,
+.contentArticles .inner,
+.contentArticles a,
+.contentArticles a:link,
+.contentArticles a:visited,
+.contentArticles a:hover,
+.contentArticles a:focus,
+.contentArticles a:active {
+  color: #333333 !important;
+}
+.contentArticles .readMore {
+  color: #d12329;
+}
+@media only screen and (max-width: 720px) {
+  table[class="body"] .contentArticles {
+    border-bottom: 1px dotted #6b6b6b;
+  }
+  table[class="body"] .contentArticles .title {
+    border-top: none;
+  }
+  table[class="body"] .contentArticles.last {
+    border-bottom: none;
+  }
+}
+.contentAgendaDessin .agenda {
+  background-color: #eaeaea;
+}
+.contentAgendaDessin .agenda .preTitle {
+  color: #d12329;
+}
+.contentAgendaDessin .agenda .title {
+  color: #333333;
+}
+.contentAgendaDessin .agenda,
+.contentAgendaDessin .agenda .inner,
+.contentAgendaDessin .agenda a,
+.contentAgendaDessin .agenda a:link,
+.contentAgendaDessin .agenda a:visited,
+.contentAgendaDessin .agenda a:hover,
+.contentAgendaDessin .agenda a:focus,
+.contentAgendaDessin .agenda a:active {
+  color: #333333 !important;
+}
+.contentAgendaDessin .dessin .preTitle {
+  color: #d12329;
+}
+.contentAgendaDessin .dessin .title {
+  color: #333333;
+}
+.contentAgendaDessin .dessin .readMore {
+  color: #9e9e9e;
+}
+.contentAgendaDessin .dessin .border {
+  border-top: 1px dotted #6b6b6b;
+}
 .contentAdresse {
-	background-color: @newsletterContentAdresseBackground;
-	.newsletterInnerTextColor(@newsletterContentAdresseText);
+  background-color: #9e9e9e;
 }
-
-
-// contentLienSite area
-// -------------------------
+.contentAdresse,
+.contentAdresse .inner,
+.contentAdresse a,
+.contentAdresse a:link,
+.contentAdresse a:visited,
+.contentAdresse a:hover,
+.contentAdresse a:focus,
+.contentAdresse a:active {
+  color: #ffffff !important;
+}
 .contentLienSite {
-	background-color: @newsletterContentLienSiteBackground;
-	.newsletterInnerTextColor(@newsletterContentLienSiteText);
+  background-color: #eaeaea;
 }
-
-
-// footer area
-// -------------------------
+.contentLienSite,
+.contentLienSite .inner,
+.contentLienSite a,
+.contentLienSite a:link,
+.contentLienSite a:visited,
+.contentLienSite a:hover,
+.contentLienSite a:focus,
+.contentLienSite a:active {
+  color: #333333 !important;
+}
 .footer {
-	background-color: @newsletterFooterBackground;
-	.newsletterInnerTextColor(@newsletterFooterText);
+  background-color: #d12329;
 }
-*/
+.footer,
+.footer .inner,
+.footer a,
+.footer a:link,
+.footer a:visited,
+.footer a:hover,
+.footer a:focus,
+.footer a:active {
+  color: #ffffff !important;
+}
