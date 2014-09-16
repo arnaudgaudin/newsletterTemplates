@@ -954,6 +954,7 @@ table.column td {
   display: block;
   line-height: 18px;
   font-size: 30px;
+  font-weight: lighter;
 }
 .preTitle small {
   font-size: 18px;
