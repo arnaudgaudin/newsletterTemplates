@@ -17,11 +17,42 @@
 // CUSTOM COLORS
 // --------------------------------------------------
 
+// Body
+// -------------------------
+body, table.body {
+  background-color: @bodyBackground !important;
+}
+
 
 // Main container
 // -------------------------
 .container { background-color: @newsletterContainerBackground !important; }
 
+
+// Typography
+// -------------------------
+body, table.body, h1, h2, h3, h4, h5, h6, p, td {
+	color: @textColor !important;
+}
+
+// Links
+// -------------------------
+a {
+	color: @linkColor !important;
+	&:hover { color: @linkColorHover !important; }
+	&:active { color: @linkColorHover !important; }
+	&:visited { color: @linkColor !important; }
+
+	h1 &, h2 &, h3 &, h4 &, h5 &, h6 & {
+		&, &:active, &:visited { color: @linkColor !important; }
+	}
+
+	.appleLinks & {
+		color: @linkColor !important;
+		&:hover, &:active { color: @linkColorHover !important; }
+		&:visited { color: @linkColor !important; }
+	}
+}
 
 // contentOnline area
 // -------------------------
