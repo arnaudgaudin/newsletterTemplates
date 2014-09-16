@@ -20,7 +20,7 @@
 // Body
 // -------------------------
 body, table.body {
-  background-color: @bodyBackground !important;
+  background-color: @newsletterBodyBackground !important;
 }
 
 
@@ -32,25 +32,25 @@ body, table.body {
 // Typography
 // -------------------------
 body, table.body, h1, h2, h3, h4, h5, h6, p, td {
-	color: @textColor !important;
+	color: @newsletterText !important;
 }
 
 // Links
 // -------------------------
 a {
-	color: @linkColor !important;
-	&:hover { color: @linkColorHover !important; }
-	&:active { color: @linkColorHover !important; }
-	&:visited { color: @linkColor !important; }
+	color: @newsletterLinkColor !important;
+	&:hover { color: @newsletterLinkColorHover !important; }
+	&:active { color: @newsletterLinkColorHover !important; }
+	&:visited { color: @newsletterLinkColor !important; }
 
 	h1 &, h2 &, h3 &, h4 &, h5 &, h6 & {
-		&, &:active, &:visited { color: @linkColor !important; }
+		&, &:active, &:visited { color: @newsletterLinkColor !important; }
 	}
 
 	.appleLinks & {
-		color: @linkColor !important;
-		&:hover, &:active { color: @linkColorHover !important; }
-		&:visited { color: @linkColor !important; }
+		color: @newsletterLinkColor !important;
+		&:hover, &:active { color: @newsletterLinkColorHover !important; }
+		&:visited { color: @newsletterLinkColor !important; }
 	}
 }
 
