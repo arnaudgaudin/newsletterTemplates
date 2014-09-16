@@ -63,6 +63,7 @@ h6 a:visited {
   background-color: #787878 !important;
 }
 .contentOnline,
+.contentOnline td,
 .contentOnline .inner,
 .contentOnline a,
 .contentOnline a:link,
@@ -72,26 +73,14 @@ h6 a:visited {
 .contentOnline a:active {
   color: #ffffff !important;
 }
-.contentInfosClient {
-  background-color: #d12329 !important;
-}
-.contentInfosClient,
-.contentInfosClient .inner,
-.contentInfosClient a,
-.contentInfosClient a:link,
-.contentInfosClient a:visited,
-.contentInfosClient a:hover,
-.contentInfosClient a:focus,
-.contentInfosClient a:active {
-  color: #ffffff !important;
-}
 .contentCabInform {
-  background-color: #6b6b6b !important;
+  background-color: #d12329 !important;
 }
 .contentCabInform .title {
   color: #ffffff !important;
 }
 .contentCabInform,
+.contentCabInform td,
 .contentCabInform .inner,
 .contentCabInform a,
 .contentCabInform a:link,
@@ -108,6 +97,7 @@ h6 a:visited {
   color: #ffffff !important;
 }
 .contentALaUne,
+.contentALaUne td,
 .contentALaUne .inner,
 .contentALaUne a,
 .contentALaUne a:link,
@@ -128,6 +118,7 @@ h6 a:visited {
   color: #d12329 !important;
 }
 .contentArticles,
+.contentArticles td,
 .contentArticles .inner,
 .contentArticles a,
 .contentArticles a:link,
@@ -161,6 +152,7 @@ h6 a:visited {
   color: #333333 !important;
 }
 .contentAgendaDessin .agenda,
+.contentAgendaDessin .agenda td,
 .contentAgendaDessin .agenda .inner,
 .contentAgendaDessin .agenda a,
 .contentAgendaDessin .agenda a:link,
@@ -186,6 +178,7 @@ h6 a:visited {
   background-color: #9e9e9e !important;
 }
 .contentAdresse,
+.contentAdresse td,
 .contentAdresse .inner,
 .contentAdresse a,
 .contentAdresse a:link,
@@ -199,6 +192,7 @@ h6 a:visited {
   background-color: #eaeaea !important;
 }
 .contentLienSite,
+.contentLienSite td,
 .contentLienSite .inner,
 .contentLienSite a,
 .contentLienSite a:link,
@@ -212,6 +206,7 @@ h6 a:visited {
   background-color: #d12329 !important;
 }
 .footer,
+.footer td,
 .footer .inner,
 .footer a,
 .footer a:link,

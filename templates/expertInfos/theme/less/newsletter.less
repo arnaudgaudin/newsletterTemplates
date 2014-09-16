@@ -10,7 +10,7 @@
 // CUSTOM MIXINS
 // --------------------------------------------------
 .newsletterInnerTextColor(@color) {
-	&, .inner, a, a:link, a:visited, a:hover, a:focus, a:active { color: @color !important; }
+	&, td, .inner, a, a:link, a:visited, a:hover, a:focus, a:active { color: @color !important; }
 }
 
 
@@ -59,14 +59,6 @@ a {
 .contentOnline {
 	background-color: @newsletterContentOnlineBackground !important;
 	.newsletterInnerTextColor(@newsletterContentOnlineText);
-}
-
-
-// contentInfosClient area
-// -------------------------
-.contentInfosClient {
-	background-color: @newsletterContentInfosClientBackground !important;
-	.newsletterInnerTextColor(@newsletterContentInfosClientText);
 }
 
 // contentCabInform area
