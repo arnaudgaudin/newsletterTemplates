@@ -3,6 +3,12 @@
 
 // additionnal template's style which extends ink's style
 
+// CUSTOM MIXINS
+// --------------------------------------------------
+.newsletterInnerTextColor(@color) {
+	&, .inner, a, a:link, a:visited, a:hover, a:focus, a:active { color: @color !important; }
+}
+
 // TEST COLORS
 // --------------------------------------------------
 // .contentOnline { background-color: #E7A7EB; }
@@ -129,4 +135,111 @@ table.columns td, table.column td { padding-bottom: 0; }
 }
 
 //importation style localisé dans le site pour test
-@import "newsletter.less";
+//@import "newsletter.less";
+//reprise style newsletter.less sans les !important
+
+
+
+// CUSTOM COLORS
+// --------------------------------------------------
+
+
+// Main container
+// -------------------------
+.container { background-color: @newsletterContainerBackground; }
+
+
+// contentOnline area
+// -------------------------
+.contentOnline {
+	background-color: @newsletterContentOnlineBackground;
+	.newsletterInnerTextColor(@newsletterContentOnlineText);
+}
+
+
+// contentInfosClient area
+// -------------------------
+.contentInfosClient {
+	background-color: @newsletterContentInfosClientBackground;
+	.newsletterInnerTextColor(@newsletterContentInfosClientText);
+}
+
+// contentCabInform area
+// -------------------------
+.contentCabInform {
+	background-color: @newsletterContentCabInformBackground;
+	.title { color: @newsletterContentCabInformTitle; }
+	.newsletterInnerTextColor(@newsletterContentCabInformText);
+}
+
+// contentALaUne area
+// -------------------------
+.contentALaUne {
+	background-color: @newsletterContentALaUneBackground;
+	.title { color: @newsletterContentALaUneTitle; }
+	.newsletterInnerTextColor(@newsletterContentALaUneText);
+	.readMore { color: @newsletterContentALaUneReadMore; }
+}
+
+// contentArticles area
+// -------------------------
+.contentArticles {
+	.title {
+		color: @newsletterContentArticlesTitle;
+		border-top: 1px dotted @newsletterContentArticlesBorder;
+		.icon-rsaquo { color: @newsletterContentArticlesIconColor; }
+	}
+	.newsletterInnerTextColor(@newsletterContentArticlesText);
+	.readMore { color: @newsletterContentArticlesReadMore; }
+}
+//rajout bordure en bas en mode responsive
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentArticles {
+		.title { border-top: none; }
+		border-bottom: 1px dotted @newsletterContentArticlesBorder;
+		&.last { border-bottom: none; }
+	}
+}
+
+
+// contentAgendaDessin area
+// -------------------------
+.contentAgendaDessin {
+	.agenda {
+		background-color: @newsletterContentAgendaBackground;
+		.preTitle { color: @newsletterContentAgendaPreTitle; }
+		.title { color: @newsletterContentAgendaTitle; }
+		.newsletterInnerTextColor(@newsletterContentAgendaText);
+	}
+
+	.dessin {
+		.preTitle { color: @newsletterContentDessinPreTitle; }
+		.title { color: @newsletterContentDessinTitle; }
+		.readMore { color: @newsletterContentDessinReadMore; }
+		.border { border-top: 1px dotted @newsletterContentDessinBorder; }
+	}
+}
+
+
+// contentAdresse area
+// -------------------------
+.contentAdresse {
+	background-color: @newsletterContentAdresseBackground;
+	.newsletterInnerTextColor(@newsletterContentAdresseText);
+}
+
+
+// contentLienSite area
+// -------------------------
+.contentLienSite {
+	background-color: @newsletterContentLienSiteBackground;
+	.newsletterInnerTextColor(@newsletterContentLienSiteText);
+}
+
+
+// footer area
+// -------------------------
+.footer {
+	background-color: @newsletterFooterBackground;
+	.newsletterInnerTextColor(@newsletterFooterText);
+}

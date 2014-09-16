@@ -1027,10 +1027,10 @@ table.column td {
   }
 }
 .container {
-  background-color: #ffffff !important;
+  background-color: #ffffff;
 }
 .contentOnline {
-  background-color: #787878 !important;
+  background-color: #787878;
 }
 .contentOnline,
 .contentOnline .inner,
@@ -1043,7 +1043,7 @@ table.column td {
   color: #ffffff !important;
 }
 .contentInfosClient {
-  background-color: #d12329 !important;
+  background-color: #d12329;
 }
 .contentInfosClient,
 .contentInfosClient .inner,
@@ -1056,10 +1056,10 @@ table.column td {
   color: #ffffff !important;
 }
 .contentCabInform {
-  background-color: #6b6b6b !important;
+  background-color: #6b6b6b;
 }
 .contentCabInform .title {
-  color: #ffffff !important;
+  color: #ffffff;
 }
 .contentCabInform,
 .contentCabInform .inner,
@@ -1072,10 +1072,10 @@ table.column td {
   color: #ffffff !important;
 }
 .contentALaUne {
-  background-color: #4b606d !important;
+  background-color: #4b606d;
 }
 .contentALaUne .title {
-  color: #ffffff !important;
+  color: #ffffff;
 }
 .contentALaUne,
 .contentALaUne .inner,
@@ -1088,14 +1088,14 @@ table.column td {
   color: #ffffff !important;
 }
 .contentALaUne .readMore {
-  color: #d2d7db !important;
+  color: #d2d7db;
 }
 .contentArticles .title {
-  color: #333333 !important;
+  color: #333333;
   border-top: 1px dotted #6b6b6b;
 }
 .contentArticles .title .icon-rsaquo {
-  color: #d12329 !important;
+  color: #d12329;
 }
 .contentArticles,
 .contentArticles .inner,
@@ -1108,27 +1108,27 @@ table.column td {
   color: #333333 !important;
 }
 .contentArticles .readMore {
-  color: #d12329 !important;
+  color: #d12329;
 }
 @media only screen and (max-width: 720px) {
   table[class="body"] .contentArticles {
-    border-bottom: 1px dotted #6b6b6b !important;
+    border-bottom: 1px dotted #6b6b6b;
   }
   table[class="body"] .contentArticles .title {
-    border-top: none !important;
+    border-top: none;
   }
   table[class="body"] .contentArticles.last {
-    border-bottom: none !important;
+    border-bottom: none;
   }
 }
 .contentAgendaDessin .agenda {
-  background-color: #eaeaea !important;
+  background-color: #eaeaea;
 }
 .contentAgendaDessin .agenda .preTitle {
-  color: #d12329 !important;
+  color: #d12329;
 }
 .contentAgendaDessin .agenda .title {
-  color: #333333 !important;
+  color: #333333;
 }
 .contentAgendaDessin .agenda,
 .contentAgendaDessin .agenda .inner,
@@ -1141,19 +1141,19 @@ table.column td {
   color: #333333 !important;
 }
 .contentAgendaDessin .dessin .preTitle {
-  color: #d12329 !important;
+  color: #d12329;
 }
 .contentAgendaDessin .dessin .title {
-  color: #333333 !important;
+  color: #333333;
 }
 .contentAgendaDessin .dessin .readMore {
-  color: #9e9e9e !important;
+  color: #9e9e9e;
 }
 .contentAgendaDessin .dessin .border {
-  border-top: 1px dotted #6b6b6b !important;
+  border-top: 1px dotted #6b6b6b;
 }
 .contentAdresse {
-  background-color: #9e9e9e !important;
+  background-color: #9e9e9e;
 }
 .contentAdresse,
 .contentAdresse .inner,
@@ -1166,7 +1166,7 @@ table.column td {
   color: #ffffff !important;
 }
 .contentLienSite {
-  background-color: #eaeaea !important;
+  background-color: #eaeaea;
 }
 .contentLienSite,
 .contentLienSite .inner,
@@ -1179,7 +1179,7 @@ table.column td {
   color: #333333 !important;
 }
 .footer {
-  background-color: #d12329 !important;
+  background-color: #d12329;
 }
 .footer,
 .footer .inner,
