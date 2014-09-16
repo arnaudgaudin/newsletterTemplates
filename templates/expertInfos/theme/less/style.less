@@ -143,11 +143,42 @@ table.columns td, table.column td { padding-bottom: 0; }
 // CUSTOM COLORS
 // --------------------------------------------------
 
+// Body
+// -------------------------
+body, table.body {
+  background-color: @bodyBackground;
+}
+
 
 // Main container
 // -------------------------
 .container { background-color: @newsletterContainerBackground; }
 
+
+// Typography
+// -------------------------
+body, table.body, h1, h2, h3, h4, h5, h6, p, td {
+	color: @textColor;
+}
+
+// Links
+// -------------------------
+a {
+	color: @linkColor;
+	&:hover { color: @linkColorHover; }
+	&:active { color: @linkColorHover; }
+	&:visited { color: @linkColor; }
+
+	h1 &, h2 &, h3 &, h4 &, h5 &, h6 & {
+		&, &:active, &:visited { color: @linkColor; }
+	}
+
+	.appleLinks & {
+		color: @linkColor;
+		&:hover, &:active { color: @linkColorHover; }
+		&:visited { color: @linkColor; }
+	}
+}
 
 // contentOnline area
 // -------------------------
