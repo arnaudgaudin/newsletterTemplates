@@ -1112,7 +1112,7 @@ a {
 	.readMore { color: @newsletterContentArticlesReadMore; }
 }
 //rajout bordure en bas en mode responsive
-@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+@media only screen and (max-width: (@newsletterContainerWidth + @newsletterGutterWidth)) {
 	table[class="body"] .contentArticles {
 		.title { border-top: none; }
 		border-bottom: 1px dotted @newsletterContentArticlesBorder;

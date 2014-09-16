@@ -80,6 +80,11 @@
 @newsletterFooterBackground: @colorCouleur1;
 @newsletterFooterText: #ffffff;
 
+//configuration de la grille
+@newsletterColumnWidth: 60px;
+@newsletterGutterWidth: 0px;
+@newsletterContainerWidth: (11 * @newsletterGutterWidth + 12 * @newsletterColumnWidth);
+
 
 // Scaffolding
 // -------------------------
@@ -122,6 +127,6 @@
 
 // Grid config
 // --------------------------------------------------
-@columnWidth: 60px;
-@gutterWidth: 0px;
-@containerWidth: (11 * @gutterWidth + 12 * @columnWidth);
+@columnWidth: @newsletterColumnWidth;
+@gutterWidth: @newsletterGutterWidth;
+@containerWidth: @newsletterContainerWidth;
