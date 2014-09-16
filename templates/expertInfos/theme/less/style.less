@@ -3,11 +3,6 @@
 
 // additionnal template's style which extends ink's style
 
-// CUSTOM MIXINS
-// --------------------------------------------------
-.newsletterInnerTextColor(@color) {
-	&, td, .inner, a, a:link, a:visited, a:hover, a:focus, a:active { color: @color !important; }
-}
 
 // TEST COLORS
 // --------------------------------------------------
@@ -136,7 +131,14 @@ table.columns td, table.column td { padding-bottom: 0; }
 //@import "newsletter.less";
 //reprise style newsletter.less sans les !important
 
-/*
+
+// CUSTOM MIXINS
+// --------------------------------------------------
+.newsletterInnerTextColor(@color) {
+	&, td, .inner, a, a:link, a:visited, a:hover, a:focus, a:active { color: @color !important; }
+}
+
+
 // CUSTOM COLORS
 // --------------------------------------------------
 
@@ -255,4 +257,3 @@ a {
 	background-color: @newsletterFooterBackground;
 	.newsletterInnerTextColor(@newsletterFooterText);
 }
-*/
