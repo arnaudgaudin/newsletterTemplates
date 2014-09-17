@@ -955,10 +955,14 @@ table.column td {
   font-weight: lighter;
   font-size: 33px;
   line-height: 18.7px;
-  margin-top: 3.66666667px;
+  padding-top: 3.66666667px;
 }
 .preTitle small {
   font-size: 18.7px;
+}
+.preTitle br {
+  font-size: 0 !important;
+  line-height: 0 !important;
 }
 .webicons td {
   text-align: right;
