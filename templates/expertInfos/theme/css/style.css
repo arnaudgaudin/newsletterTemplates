@@ -960,23 +960,24 @@ table.column td {
 .preTitle small {
   font-size: 18.7px;
 }
-.webicons .inner {
-  height: 30px;
+.webicons td {
+  text-align: right;
 }
 .webicon {
-  display: block;
-  width: 30px;
-  height: 30px;
-  margin: 0 5px 5px 5px;
-  float: right;
-  border-radius: 5px;
-  line-height: 30px;
+  display: inline;
+  font-size: 0;
+  line-height: 0;
+  padding: 0 5px 5px 5px;
 }
 .webicon.first {
-  margin-right: 0;
+  padding-left: 0;
 }
 .webicon.last {
-  margin-left: 0;
+  padding-right: 0;
+}
+.webicon img {
+  display: inline;
+  border-radius: 5px;
 }
 .contentArticles .title {
   padding-top: 4px;
