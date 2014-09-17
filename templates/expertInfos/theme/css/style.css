@@ -937,7 +937,7 @@ table.column td {
 }
 .readMore {
   display: block;
-  margin-top: 10px;
+  padding-top: 10px;
   font-weight: bold;
 }
 .icon-rsaquo {
@@ -948,7 +948,7 @@ table.column td {
   bottom: -0.05em;
 }
 .title {
-  margin-bottom: 5px;
+  padding-bottom: 5px;
 }
 .preTitle {
   display: block;
@@ -983,7 +983,7 @@ table.column td {
   padding-top: 4px;
 }
 .contentArticles .readMore {
-  margin-top: 5px;
+  padding-top: 5px;
 }
 .contentArticles .inner {
   padding-bottom: 0;
@@ -1009,21 +1009,25 @@ table.column td {
   padding-top: 0;
 }
 .contentAgendaDessin .agenda .title {
-  margin-top: 10px;
+  padding-top: 10px;
 }
 .contentAgendaDessin .dessin .title {
-  margin-top: 5px;
+  padding-top: 5px;
 }
-.contentAgendaDessin .dessin .border {
+.contentAgendaDessin .dessin .borderOffset {
   display: block;
+}
+.contentAgendaDessin .dessin .borderOffset.left {
+  padding-left: 10px;
+}
+.contentAgendaDessin .dessin .borderOffset.right {
+  padding-right: 10px;
+}
+.contentAgendaDessin .dessin .borderOffset .border {
+  display: block;
+  font-size: 0;
   line-height: 0;
   height: 9px;
-}
-.contentAgendaDessin .dessin .border.left {
-  margin-left: 10px;
-}
-.contentAgendaDessin .dessin .border.right {
-  margin-right: 10px;
 }
 @media only screen and (max-width: 720px) {
   table[class="body"] .contentAgendaDessin .dessin .inner {
