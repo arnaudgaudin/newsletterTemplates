@@ -780,12 +780,6 @@ body.outlook p {
   table {
     table-layout: fixed;
   }
-  @media only screen and (max-width: 720px) {
-    table[class="body"] .wrapper .columns,
-    table[class="body"] .wrapper .column {
-      display: table !important;
-    }
-  }
 }
 .appleLinks a {
   color: #333333;
