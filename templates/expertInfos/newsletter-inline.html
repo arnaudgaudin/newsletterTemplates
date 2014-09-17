@@ -784,11 +784,12 @@ color: #333333;
 												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 													<td class="center" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #ffffff !important; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 0px 0px 0; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
 														<span class="inner text-pad" style="color: #ffffff !important; display: block; padding: 10px">
-															<small style="font-size: 11px">
-																Pour visualiser ce message en ligne, <!--{{<gab_lien_message_online>}}--> <a target="_blank" class="link_underline" href="#" lien_message_online="lien_message_online" style="color: #ffffff !important; text-decoration: underline">suivez ce lien</a><!--{{</gab_lien_message_online>}}-->.
+															<!--{{<gab_lien_message_online>}}-->
+															<small class="online" style="display: block; font-size: 11px; padding-bottom: 5px">
+																Pour visualiser ce message en ligne, <a target="_blank" class="link_underline" href="#" lien_message_online="lien_message_online" style="color: #ffffff !important; text-decoration: underline">suivez ce lien</a>.
 															</small>
-															<br />
-															<strong>M Martin, votre newsletter du 22 septembre 2014.</strong>
+															<!--{{</gab_lien_message_online>}}-->
+															<strong class="name" style="display: block">M Martin, votre newsletter du 22 septembre 2014.</strong>
 														</span>
 													</td>
 												</tr>
@@ -1115,6 +1116,7 @@ color: #333333;
 								<!-- CONTACT END -->
 
 								<!-- FOOTER START -->
+								<!--{{<gab_lien_blackliste>}}-->
 								<table class="row footer" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%; background: #787878; border-collapse: collapse; border-spacing: 0; color: #ffffff !important; display: block; empty-cells: hide; padding: 0px; position: relative; text-align: left; vertical-align: top; width: 100%" bgcolor="#787878" width="100%" cellpadding="0" cellspacing="0">
 									<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 										<td class="wrapper last" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #ffffff !important; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 0 0px 0px; position: relative; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
@@ -1123,7 +1125,7 @@ color: #333333;
 													<td class="center" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #ffffff !important; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 0px 0px 0; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
 														<span class="inner text-pad" style="color: #ffffff !important; display: block; padding: 10px">
 															<small style="font-size: 11px">
-																Si vous ne souhaitez plus recevoir cette newsletter, veuillez acc&#233;der &#224; la page de <!--{{<gab_lien_blackliste>}}--><a target="_blank" class="link_underline" href="#" lien_blackliste="lien_blackliste" style="color: #ffffff !important; text-decoration: underline">d&#233;sinscription</a><!--{{</gab_lien_blackliste>}}-->.
+																Si vous ne souhaitez plus recevoir cette newsletter, veuillez acc&#233;der &#224; la page de <a target="_blank" class="link_underline" href="#" lien_blackliste="lien_blackliste" style="color: #ffffff !important; text-decoration: underline">d&#233;sinscription</a>.
 															</small>
 														</span>
 													</td>
@@ -1132,6 +1134,7 @@ color: #333333;
 										</td>
 									</tr>
 								</table>
+								<!--{{</gab_lien_blackliste>}}-->
 								<!-- FOOTER END -->
 
 							</td>

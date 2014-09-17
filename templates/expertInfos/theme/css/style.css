@@ -989,6 +989,13 @@ table.column td {
     height: 30px !important;
   }
 }
+.contentOnline .online {
+  display: block;
+  padding-bottom: 5px;
+}
+.contentOnline .name {
+  display: block;
+}
 .contentArticles .title {
   padding-top: 4px;
 }
