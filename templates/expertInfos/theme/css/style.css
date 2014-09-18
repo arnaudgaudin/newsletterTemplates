@@ -812,8 +812,9 @@ a.link_underline:focus {
   cursor: pointer;
 }
 a.link_disabled {
-  pointer-events: none;
-  cursor: default;
+  pointer-events: none !important;
+  cursor: default !important;
+  text-decoration: none !important;
 }
 table {
   -premailer-cellpadding: 0;
