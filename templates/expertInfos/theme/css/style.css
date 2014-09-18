@@ -811,6 +811,10 @@ a.link_underline:focus {
   text-decoration: underline;
   cursor: pointer;
 }
+a.link_disabled {
+  pointer-events: none;
+  cursor: default;
+}
 table {
   -premailer-cellpadding: 0;
   -premailer-cellspacing: 0;
