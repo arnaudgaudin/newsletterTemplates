@@ -142,36 +142,36 @@ h6 a:visited {
     border-bottom: none !important;
   }
 }
-.contentAgendaDessin .agenda {
+.contentBottom .agenda {
   background-color: #eaeaea !important;
 }
-.contentAgendaDessin .agenda .preTitle {
+.contentBottom .agenda .preTitle {
   color: #d12329 !important;
 }
-.contentAgendaDessin .agenda .title {
+.contentBottom .agenda .title {
   color: #333333 !important;
 }
-.contentAgendaDessin .agenda,
-.contentAgendaDessin .agenda td,
-.contentAgendaDessin .agenda .inner,
-.contentAgendaDessin .agenda a,
-.contentAgendaDessin .agenda a:link,
-.contentAgendaDessin .agenda a:visited,
-.contentAgendaDessin .agenda a:hover,
-.contentAgendaDessin .agenda a:focus,
-.contentAgendaDessin .agenda a:active {
+.contentBottom .agenda,
+.contentBottom .agenda td,
+.contentBottom .agenda .inner,
+.contentBottom .agenda a,
+.contentBottom .agenda a:link,
+.contentBottom .agenda a:visited,
+.contentBottom .agenda a:hover,
+.contentBottom .agenda a:focus,
+.contentBottom .agenda a:active {
   color: #333333 !important;
 }
-.contentAgendaDessin .dessin .preTitle {
+.contentBottom .dessin .preTitle {
   color: #d12329 !important;
 }
-.contentAgendaDessin .dessin .title {
+.contentBottom .dessin .title {
   color: #333333 !important;
 }
-.contentAgendaDessin .dessin .readMore {
+.contentBottom .dessin .readMore {
   color: #9e9e9e !important;
 }
-.contentAgendaDessin .dessin .border {
+.contentBottom .dessin .border {
   border-top: 1px dotted #6b6b6b !important;
 }
 .contentContact {
