@@ -1010,11 +1010,11 @@ table.column td {
     padding-top: 0 !important;
   }
 }
-.contentBottom .dessin .inner {
-  padding-top: 0;
-}
 .contentBottom .agenda .title {
   padding-top: 10px;
+}
+.contentBottom .dessin .inner {
+  padding-top: 0;
 }
 .contentBottom .dessin .title {
   padding-top: 5px;

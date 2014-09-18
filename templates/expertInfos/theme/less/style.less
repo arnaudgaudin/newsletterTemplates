@@ -123,20 +123,22 @@ table.columns td, table.column td { padding-bottom: 0; }
 // contentBottom area
 // -------------------------
 .contentBottom {
-	.dessin .inner { padding-top: 0; }
 	.agenda .title { padding-top: 10px; }
-	.dessin .title { padding-top: 5px; }
 
-	.dessin .borderOffset {
-		display: block;
-		&.left { padding-left: 10px; }
-		&.right { padding-right: 10px; }
-
-		.border {
+	.dessin {
+		.inner { padding-top: 0; }
+		.title { padding-top: 5px; }
+		.borderOffset {
 			display: block;
-			font-size: 0;
-			line-height: 0;
-			height: 9px;
+			&.left { padding-left: 10px; }
+			&.right { padding-right: 10px; }
+
+			.border {
+				display: block;
+				font-size: 0;
+				line-height: 0;
+				height: 9px;
+			}
 		}
 	}
 	
