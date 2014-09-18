@@ -1010,41 +1010,41 @@ table.column td {
     padding-top: 0 !important;
   }
 }
-.contentAgendaDessin .dessin .inner {
+.contentBottom .dessin .inner {
   padding-top: 0;
 }
-.contentAgendaDessin .agenda .title {
+.contentBottom .agenda .title {
   padding-top: 10px;
 }
-.contentAgendaDessin .dessin .title {
+.contentBottom .dessin .title {
   padding-top: 5px;
 }
-.contentAgendaDessin .dessin .borderOffset {
+.contentBottom .dessin .borderOffset {
   display: block;
 }
-.contentAgendaDessin .dessin .borderOffset.left {
+.contentBottom .dessin .borderOffset.left {
   padding-left: 10px;
 }
-.contentAgendaDessin .dessin .borderOffset.right {
+.contentBottom .dessin .borderOffset.right {
   padding-right: 10px;
 }
-.contentAgendaDessin .dessin .borderOffset .border {
+.contentBottom .dessin .borderOffset .border {
   display: block;
   font-size: 0;
   line-height: 0;
   height: 9px;
 }
 @media only screen and (max-width: 720px) {
-  table[class="body"] .contentAgendaDessin .dessin .inner {
+  table[class="body"] .contentBottom .dessin .inner {
     padding-top: 10px !important;
   }
-  table[class="body"] .contentAgendaDessin .dessin .border {
+  table[class="body"] .contentBottom .dessin .border {
     border-top: none !important;
   }
-  table[class="body"] .contentAgendaDessin .dessin .preTitle {
+  table[class="body"] .contentBottom .dessin .preTitle {
     line-height: 22px !important;
   }
-  table[class="body"] .contentAgendaDessin .borderContainer {
+  table[class="body"] .contentBottom .borderContainer {
     display: none !important;
   }
 }
