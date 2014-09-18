@@ -123,34 +123,49 @@ table.columns td, table.column td { padding-bottom: 0; }
 // contentBottom area
 // -------------------------
 .contentBottom {
+	//gestion bordure Interne
+	.borderOffset {
+		display: block;
+		&.left { padding-left: 10px; }
+		&.right { padding-right: 10px; }
+
+		.border {
+			display: block;
+			font-size: 0;
+			line-height: 0;
+			height: 9px;
+		}
+	}
 	.agenda .title { padding-top: 10px; }
 
 	.dessin {
 		.inner { padding-top: 0; }
 		.title { padding-top: 5px; }
-		.borderOffset {
-			display: block;
-			&.left { padding-left: 10px; }
-			&.right { padding-right: 10px; }
+	}
 
-			.border {
-				display: block;
-				font-size: 0;
-				line-height: 0;
-				height: 9px;
-			}
-		}
+	.profession {
+		.inner { padding-top: 0; }
+		.title { padding-top: 5px; }
+
+
+		// background-color: #0f0;
+
+
+
 	}
 	
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentBottom {
-		.dessin {
+		.dessin, .profession {
 			.inner { padding-top: 10px !important; }
 			.border { border-top: none !important; }
 			.preTitle { line-height: @headingsFontSizeH1 !important; }
 		}
-		.borderContainer { display: none !important; }
+		.borderContainer {
+			display: none !important;
+			visibility: hidden !important;
+		}
 	}
 }
 

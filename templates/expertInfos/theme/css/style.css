@@ -1010,6 +1010,21 @@ table.column td {
     padding-top: 0 !important;
   }
 }
+.contentBottom .borderOffset {
+  display: block;
+}
+.contentBottom .borderOffset.left {
+  padding-left: 10px;
+}
+.contentBottom .borderOffset.right {
+  padding-right: 10px;
+}
+.contentBottom .borderOffset .border {
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  height: 9px;
+}
 .contentBottom .agenda .title {
   padding-top: 10px;
 }
@@ -1019,32 +1034,27 @@ table.column td {
 .contentBottom .dessin .title {
   padding-top: 5px;
 }
-.contentBottom .dessin .borderOffset {
-  display: block;
+.contentBottom .profession .inner {
+  padding-top: 0;
 }
-.contentBottom .dessin .borderOffset.left {
-  padding-left: 10px;
-}
-.contentBottom .dessin .borderOffset.right {
-  padding-right: 10px;
-}
-.contentBottom .dessin .borderOffset .border {
-  display: block;
-  font-size: 0;
-  line-height: 0;
-  height: 9px;
+.contentBottom .profession .title {
+  padding-top: 5px;
 }
 @media only screen and (max-width: 720px) {
-  table[class="body"] .contentBottom .dessin .inner {
+  table[class="body"] .contentBottom .dessin .inner,
+  table[class="body"] .contentBottom .profession .inner {
     padding-top: 10px !important;
   }
-  table[class="body"] .contentBottom .dessin .border {
+  table[class="body"] .contentBottom .dessin .border,
+  table[class="body"] .contentBottom .profession .border {
     border-top: none !important;
   }
-  table[class="body"] .contentBottom .dessin .preTitle {
+  table[class="body"] .contentBottom .dessin .preTitle,
+  table[class="body"] .contentBottom .profession .preTitle {
     line-height: 22px !important;
   }
   table[class="body"] .contentBottom .borderContainer {
     display: none !important;
+    visibility: hidden !important;
   }
 }
