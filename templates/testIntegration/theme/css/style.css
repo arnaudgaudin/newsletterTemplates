@@ -95,6 +95,7 @@ table.body {
   width: 100%;
 }
 table.container {
+  background-color: #ffffff;
   width: 580px;
   margin: 0 auto;
   text-align: inherit;
@@ -775,12 +776,123 @@ body.outlook p {
     display: inherit !important;
   }
 }
-@-moz-document url-prefix() {
-  @media only screen and (max-width: 660px) {
-    table[class="body"] img {
-      width: 100% !important;
-    }
-  }
+.appleLinks a {
+  color: #2ba6cb;
+  text-decoration: none;
+}
+.appleLinks a:hover,
+.appleLinks a:active {
+  color: #2284a1 !important;
+}
+.appleLinks a:visited {
+  color: #2ba6cb !important;
+}
+a[href^=tel] {
+  color: inherit;
+  text-decoration: none;
+}
+a.link_box {
+  display: block;
+}
+a.link_box,
+a.link_box:link,
+a.link_box:visited,
+a.link_box:hover,
+a.link_box:focus,
+a.link_box:active {
+  text-decoration: none;
+  outline: none;
+}
+a.link_underline {
+  text-decoration: underline;
+}
+a.link_underline:hover,
+a.link_underline:focus {
+  text-decoration: underline;
+  cursor: pointer;
+}
+table {
+  -premailer-cellpadding: 0;
+  -premailer-cellspacing: 0;
+  empty-cells: hide;
+}
+table.row {
+  -premailer-width: 100%;
+}
+table.body {
+  -premailer-height: 100%;
+  -premailer-width: 100%;
+}
+.block-grid {
+  -premailer-width: 100%;
+}
+.body .columns td.one,
+.body .column td.one {
+  -premailer-width: 8.333333%;
+}
+.body .columns td.two,
+.body .column td.two {
+  -premailer-width: 16.666666%;
+}
+.body .columns td.three,
+.body .column td.three {
+  -premailer-width: 25%;
+}
+.body .columns td.four,
+.body .column td.four {
+  -premailer-width: 33.333333%;
+}
+.body .columns td.five,
+.body .column td.five {
+  -premailer-width: 41.666666%;
+}
+.body .columns td.six,
+.body .column td.six {
+  -premailer-width: 50%;
+}
+.body .columns td.seven,
+.body .column td.seven {
+  -premailer-width: 58.333333%;
+}
+.body .columns td.eight,
+.body .column td.eight {
+  -premailer-width: 66.666666%;
+}
+.body .columns td.nine,
+.body .column td.nine {
+  -premailer-width: 75%;
+}
+.body .columns td.ten,
+.body .column td.ten {
+  -premailer-width: 83.333333%;
+}
+.body .columns td.eleven,
+.body .column td.eleven {
+  -premailer-width: 91.666666%;
+}
+.body .columns td.twelve,
+.body .column td.twelve {
+  -premailer-width: 100%;
+}
+td.expander {
+  -premailer-width: 1;
+}
+.sub-grid table {
+  -premailer-width: 100%;
+}
+table.button,
+table.tiny-button,
+table.small-button,
+table.medium-button,
+table.large-button {
+  -premailer-width: 100%;
+}
+table.button td,
+table.tiny-button td,
+table.small-button td,
+table.medium-button td,
+table.large-button td {
+  -premailer-width: auto;
 }
 body {
   background-color: #E6E6E6;
