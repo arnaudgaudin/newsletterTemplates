@@ -1233,7 +1233,7 @@ h6 a:visited {
   color: #ffffff !important;
 }
 .contentCabInform {
-  background-color: #d12329;
+  -premailer-background: ##newsletterContentCabInformBackground##;
 }
 .contentCabInform .title {
   color: ##newsletterContentCabInformTitle##;
@@ -1265,7 +1265,7 @@ h6 a:visited {
   color: ##newsletterContentProfessionPreTitle##;
 }
 .contentContact {
-  background-color: #d12329;
+  -premailer-background: ##newsletterContentContactBackground##;
 }
 .contentContact,
 .contentContact td,
