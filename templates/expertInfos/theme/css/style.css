@@ -1236,7 +1236,7 @@ h6 a:visited {
   background-color: #d12329;
 }
 .contentCabInform .title {
-  color: #ffffff;
+  color: ##newsletterContentCabInformTitle##;
 }
 .contentCabInform,
 .contentCabInform td,
@@ -1247,22 +1247,22 @@ h6 a:visited {
 .contentCabInform a:hover,
 .contentCabInform a:focus,
 .contentCabInform a:active {
-  color: #ffffff !important;
+  color: ##newsletterContentCabInformText## !important;
 }
 .contentArticles .title .icon-rsaquo {
-  color: #d12329;
+  color: ##newsletterContentArticlesIconColor##;
 }
 .contentArticles .readMore {
-  color: #d12329;
+  color: ##newsletterContentArticlesReadMore##;
 }
 .contentBottom .agenda .preTitle {
-  color: #d12329;
+  color: ##newsletterContentAgendaPreTitle##;
 }
 .contentBottom .dessin .preTitle {
-  color: #d12329;
+  color: ##newsletterContentDessinPreTitle##;
 }
 .contentBottom .profession .preTitle {
-  color: #d12329;
+  color: ##newsletterContentProfessionPreTitle##;
 }
 .contentContact {
   background-color: #d12329;
@@ -1276,5 +1276,5 @@ h6 a:visited {
 .contentContact a:hover,
 .contentContact a:focus,
 .contentContact a:active {
-  color: #ffffff !important;
+  color: ##newsletterContentContactText## !important;
 }

@@ -286,17 +286,17 @@ a {
 // -------------------------
 .contentCabInform {
 	background-color: @newsletterContentCabInformBackground;
-	.title { color: @newsletterContentCabInformTitle; }
-	.newsletterInnerTextColor(@newsletterContentCabInformText);
+	.title { color: e("##newsletterContentCabInformTitle##"); }
+	.newsletterInnerTextColor(e("##newsletterContentCabInformText##"));
 }
 
 // contentArticles area
 // -------------------------
 .contentArticles {
 	.title {
-		.icon-rsaquo { color: @newsletterContentArticlesIconColor; }
+		.icon-rsaquo { color: e("##newsletterContentArticlesIconColor##"); }
 	}
-	.readMore { color: @newsletterContentArticlesReadMore; }
+	.readMore { color: e("##newsletterContentArticlesReadMore##"); }
 }
 
 
@@ -304,15 +304,15 @@ a {
 // -------------------------
 .contentBottom {
 	.agenda {
-		.preTitle { color: @newsletterContentAgendaPreTitle; }
+		.preTitle { color: e("##newsletterContentAgendaPreTitle##"); }
 	}
 
 	.dessin {
-		.preTitle { color: @newsletterContentDessinPreTitle; }
+		.preTitle { color: e("##newsletterContentDessinPreTitle##"); }
 	}
 
 	.profession {
-		.preTitle { color: @newsletterContentProfessionPreTitle; }
+		.preTitle { color: e("##newsletterContentProfessionPreTitle##"); }
 	}
 }
 
@@ -321,5 +321,5 @@ a {
 // -------------------------
 .contentContact {
 	background-color: @newsletterContentContactBackground;
-	.newsletterInnerTextColor(@newsletterContentContactText);
+	.newsletterInnerTextColor(e("##newsletterContentContactText##"));
 }
