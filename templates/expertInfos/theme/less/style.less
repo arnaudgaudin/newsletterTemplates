@@ -171,6 +171,107 @@ table.columns td, table.column td { padding-bottom: 0; }
 	}
 }
 
+
+// DEFAULT COLORS
+// --------------------------------------------------
+
+// Body
+// -------------------------
+body, table.body {
+  background-color: @newsletterBodyBackground !important;
+}
+
+// Main container
+// -------------------------
+.container { background-color: @newsletterContainerBackground !important; }
+
+// Typography
+// -------------------------
+body, table.body, h1, h2, h3, h4, h5, h6, p, td {
+	color: @newsletterText !important;
+}
+
+// Links
+// -------------------------
+a {
+	color: @newsletterLinkColor !important;
+	&:hover { color: @newsletterLinkColorHover !important; }
+	&:active { color: @newsletterLinkColorHover !important; }
+	&:visited { color: @newsletterLinkColor !important; }
+
+	h1 &, h2 &, h3 &, h4 &, h5 &, h6 & {
+		&, &:active, &:visited { color: @newsletterLinkColor !important; }
+	}
+
+	.appleLinks & {
+		color: @newsletterLinkColor !important;
+		&:hover, &:active { color: @newsletterLinkColorHover !important; }
+		&:visited { color: @newsletterLinkColor !important; }
+	}
+}
+
+// contentOnline area
+// -------------------------
+.contentOnline {
+	background-color: @newsletterContentOnlineBackground !important;
+	.newsletterInnerTextColor(@newsletterContentOnlineText);
+}
+
+// contentALaUne area
+// -------------------------
+.contentALaUne {
+	background-color: @newsletterContentALaUneBackground !important;
+	.title { color: @newsletterContentALaUneTitle !important; }
+	.newsletterInnerTextColor(@newsletterContentALaUneText);
+	.readMore { color: @newsletterContentALaUneReadMore !important; }
+}
+
+// contentArticles area
+// -------------------------
+.contentArticles {
+	.title {
+		color: @newsletterContentArticlesTitle !important;
+		border-top: 1px dotted @newsletterContentArticlesBorder;
+	}
+	.newsletterInnerTextColor(@newsletterContentArticlesText);
+}
+//rajout bordure en bas en mode responsive
+@media only screen and (max-width: (@newsletterContainerWidth + @newsletterGutterWidth)) {
+	table[class="body"] .contentArticles {
+		.title { border-top: none !important; }
+		border-bottom: 1px dotted @newsletterContentArticlesBorder !important;
+		&.last { border-bottom: none !important; }
+	}
+}
+
+// contentBottom area
+// -------------------------
+.contentBottom {
+	.agenda {
+		background-color: @newsletterContentAgendaBackground !important;
+		.title { color: @newsletterContentAgendaTitle !important; }
+		.newsletterInnerTextColor(@newsletterContentAgendaText);
+	}
+
+	.dessin {
+		.title { color: @newsletterContentDessinTitle !important; }
+		.readMore { color: @newsletterContentDessinReadMore !important; }
+		.border { border-top: 1px dotted @newsletterContentDessinBorder !important; }
+	}
+
+	.profession {
+		.title { color: @newsletterContentProfessionTitle !important; }
+		.border { border-top: 1px dotted @newsletterContentProfessionBorder !important; }
+	}
+}
+
+// footer area
+// -------------------------
+.footer {
+	background-color: @newsletterFooterBackground !important;
+	.newsletterInnerTextColor(@newsletterFooterText);
+}
+
 //importation style localisé dans le site pour test
 // @import "newsletter.less";
 //reprise style newsletter.less sans les !important
