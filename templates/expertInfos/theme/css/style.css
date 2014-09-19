@@ -1232,3 +1232,49 @@ h6 a:visited {
 .footer a:active {
   color: #ffffff !important;
 }
+.contentCabInform {
+  background-color: #d12329;
+}
+.contentCabInform .title {
+  color: #ffffff;
+}
+.contentCabInform,
+.contentCabInform td,
+.contentCabInform .inner,
+.contentCabInform a,
+.contentCabInform a:link,
+.contentCabInform a:visited,
+.contentCabInform a:hover,
+.contentCabInform a:focus,
+.contentCabInform a:active {
+  color: #ffffff !important;
+}
+.contentArticles .title .icon-rsaquo {
+  color: #d12329;
+}
+.contentArticles .readMore {
+  color: #d12329;
+}
+.contentBottom .agenda .preTitle {
+  color: #d12329;
+}
+.contentBottom .dessin .preTitle {
+  color: #d12329;
+}
+.contentBottom .profession .preTitle {
+  color: #d12329;
+}
+.contentContact {
+  background-color: #d12329;
+}
+.contentContact,
+.contentContact td,
+.contentContact .inner,
+.contentContact a,
+.contentContact a:link,
+.contentContact a:visited,
+.contentContact a:hover,
+.contentContact a:focus,
+.contentContact a:active {
+  color: #ffffff !important;
+}
