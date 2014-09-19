@@ -277,3 +277,49 @@ a {
 // @import "newsletter.less";
 //reprise style newsletter.less sans les !important
 //désactivé pour export
+
+
+// CUSTOM COLORS
+// --------------------------------------------------
+
+// contentCabInform area
+// -------------------------
+.contentCabInform {
+	background-color: @newsletterContentCabInformBackground;
+	.title { color: @newsletterContentCabInformTitle; }
+	.newsletterInnerTextColor(@newsletterContentCabInformText);
+}
+
+// contentArticles area
+// -------------------------
+.contentArticles {
+	.title {
+		.icon-rsaquo { color: @newsletterContentArticlesIconColor; }
+	}
+	.readMore { color: @newsletterContentArticlesReadMore; }
+}
+
+
+// contentBottom area
+// -------------------------
+.contentBottom {
+	.agenda {
+		.preTitle { color: @newsletterContentAgendaPreTitle; }
+	}
+
+	.dessin {
+		.preTitle { color: @newsletterContentDessinPreTitle; }
+	}
+
+	.profession {
+		.preTitle { color: @newsletterContentProfessionPreTitle; }
+	}
+}
+
+
+// contentContact area
+// -------------------------
+.contentContact {
+	background-color: @newsletterContentContactBackground;
+	.newsletterInnerTextColor(@newsletterContentContactText);
+}
