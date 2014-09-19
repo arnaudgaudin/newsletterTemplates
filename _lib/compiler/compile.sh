@@ -19,15 +19,21 @@ premailer --base-url=$baseurl --css=${PWD}/theme/css/style.css --entities --verb
 echo "enabling PostaNova tags ..."
 cp newsletter-inline.html newsletter-inline-postanova.html
 
-#Remplacement des balises d'ouverture/fermeture de Posta Nova
-perl -pi -e 's/<!--{{//g;' newsletter-inline-postanova.html
-perl -pi -e 's/}}-->//g;' newsletter-inline-postanova.html
-perl -pi -e 's/##{{/<?/g;' newsletter-inline-postanova.html
-perl -pi -e 's/}}##/?>/g;' newsletter-inline-postanova.html
-
 #Remplacement des balises d'ouverture/fermeture en ASP
 perl -pi -e 's/%%{{/<%/g;' newsletter-inline-postanova.html
 perl -pi -e 's/}}%%/%>/g;' newsletter-inline-postanova.html
+
+#Suppression des échappements HTML et CSS
+perl -pi -e 's/<!--{{//g;' newsletter-inline-postanova.html
+perl -pi -e 's/}}-->//g;' newsletter-inline-postanova.html
+perl -pi -e 's/\/\*{{//g;' newsletter-inline-postanova.html
+perl -pi -e 's/}}\*\///g;' newsletter-inline-postanova.html
+
+#Remplacement des balises d'ouverture/fermeture de Posta Nova
+perl -pi -e 's/##{{/<?/g;' newsletter-inline-postanova.html
+perl -pi -e 's/}}##/?>/g;' newsletter-inline-postanova.html
+
+
 
 #Remplacement des attributs spécifiques Premailer
 perl -pi -e 's/-premailer-background/background/g;' newsletter-inline-postanova.html
