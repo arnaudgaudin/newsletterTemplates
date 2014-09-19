@@ -178,33 +178,34 @@ table.columns td, table.column td { padding-bottom: 0; }
 // Body
 // -------------------------
 body, table.body {
-  background-color: @newsletterBodyBackground !important;
+  background-color: @newsletterBodyBackground;
 }
 
 // Main container
 // -------------------------
-.container { background-color: @newsletterContainerBackground !important; }
+.container { background-color: @newsletterContainerBackground; }
 
 // Typography
 // -------------------------
 body, table.body, h1, h2, h3, h4, h5, h6, p, td {
-	color: @newsletterText !important;
+	color: @newsletterText;
 }
 
 // Links
 // -------------------------
 a {
-	color: @newsletterLinkColor !important;
+	color: @newsletterLinkColor;
 	&:hover { color: @newsletterLinkColorHover !important; }
 	&:active { color: @newsletterLinkColorHover !important; }
 	&:visited { color: @newsletterLinkColor !important; }
 
 	h1 &, h2 &, h3 &, h4 &, h5 &, h6 & {
-		&, &:active, &:visited { color: @newsletterLinkColor !important; }
+		color: @newsletterLinkColor;
+		&:active, &:visited { color: @newsletterLinkColor !important; }
 	}
 
 	.appleLinks & {
-		color: @newsletterLinkColor !important;
+		color: @newsletterLinkColor;
 		&:hover, &:active { color: @newsletterLinkColorHover !important; }
 		&:visited { color: @newsletterLinkColor !important; }
 	}
@@ -213,24 +214,24 @@ a {
 // contentOnline area
 // -------------------------
 .contentOnline {
-	background-color: @newsletterContentOnlineBackground !important;
+	background-color: @newsletterContentOnlineBackground;
 	.newsletterInnerTextColor(@newsletterContentOnlineText);
 }
 
 // contentALaUne area
 // -------------------------
 .contentALaUne {
-	background-color: @newsletterContentALaUneBackground !important;
-	.title { color: @newsletterContentALaUneTitle !important; }
+	background-color: @newsletterContentALaUneBackground;
+	.title { color: @newsletterContentALaUneTitle; }
 	.newsletterInnerTextColor(@newsletterContentALaUneText);
-	.readMore { color: @newsletterContentALaUneReadMore !important; }
+	.readMore { color: @newsletterContentALaUneReadMore; }
 }
 
 // contentArticles area
 // -------------------------
 .contentArticles {
 	.title {
-		color: @newsletterContentArticlesTitle !important;
+		color: @newsletterContentArticlesTitle;
 		border-top: 1px dotted @newsletterContentArticlesBorder;
 	}
 	.newsletterInnerTextColor(@newsletterContentArticlesText);
@@ -248,27 +249,27 @@ a {
 // -------------------------
 .contentBottom {
 	.agenda {
-		background-color: @newsletterContentAgendaBackground !important;
-		.title { color: @newsletterContentAgendaTitle !important; }
+		background-color: @newsletterContentAgendaBackground;
+		.title { color: @newsletterContentAgendaTitle; }
 		.newsletterInnerTextColor(@newsletterContentAgendaText);
 	}
 
 	.dessin {
-		.title { color: @newsletterContentDessinTitle !important; }
-		.readMore { color: @newsletterContentDessinReadMore !important; }
-		.border { border-top: 1px dotted @newsletterContentDessinBorder !important; }
+		.title { color: @newsletterContentDessinTitle; }
+		.readMore { color: @newsletterContentDessinReadMore; }
+		.border { border-top: 1px dotted @newsletterContentDessinBorder; }
 	}
 
 	.profession {
-		.title { color: @newsletterContentProfessionTitle !important; }
-		.border { border-top: 1px dotted @newsletterContentProfessionBorder !important; }
+		.title { color: @newsletterContentProfessionTitle; }
+		.border { border-top: 1px dotted @newsletterContentProfessionBorder; }
 	}
 }
 
 // footer area
 // -------------------------
 .footer {
-	background-color: @newsletterFooterBackground !important;
+	background-color: @newsletterFooterBackground;
 	.newsletterInnerTextColor(@newsletterFooterText);
 }
 
