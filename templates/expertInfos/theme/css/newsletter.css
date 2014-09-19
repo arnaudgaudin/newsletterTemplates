@@ -1,3 +1,33 @@
+.newsletterContentCabInformBackground {
+  color: #d12329;
+}
+.newsletterContentCabInformTitle {
+  color: #ffffff;
+}
+.newsletterContentCabInformText {
+  color: #ffffff;
+}
+.newsletterContentArticlesIconColor {
+  color: #d12329;
+}
+.newsletterContentArticlesReadMore {
+  color: #d12329;
+}
+.newsletterContentAgendaPreTitle {
+  color: #d12329;
+}
+.newsletterContentDessinPreTitle {
+  color: #d12329;
+}
+.newsletterContentProfessionPreTitle {
+  color: #d12329;
+}
+.newsletterContentContactBackground {
+  color: #d12329;
+}
+.newsletterContentContactText {
+  color: #ffffff;
+}
 .contentCabInform {
   background-color: #d12329 !important;
 }
