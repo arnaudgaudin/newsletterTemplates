@@ -30,7 +30,7 @@
 @colorCouleur3Fonce: darken(@colorCouleur3, 20%);
 
 
-// Newsletter
+// Newsletter Default Colors
 // --------------------------------------------------
 @newsletterBodyBackground: darken(@colorCouleur3, 10%);
 @newsletterContainerBackground: #ffffff;
@@ -43,37 +43,25 @@
 @newsletterContentOnlineBackground: @newsletterBodyBackground;
 @newsletterContentOnlineText: #ffffff;
 
-@newsletterContentCabInformBackground: @colorCouleur1;
-@newsletterContentCabInformTitle: #ffffff;
-@newsletterContentCabInformText: #ffffff;
-
 @newsletterContentALaUneBackground: @expertInfosBleu;
 @newsletterContentALaUneTitle: #ffffff;
 @newsletterContentALaUneText: #ffffff;
 @newsletterContentALaUneReadMore: mix(@newsletterContentALaUneText, @newsletterContentALaUneBackground, 75%);
 
-@newsletterContentArticlesIconColor: @colorCouleur1;
 @newsletterContentArticlesTitle: @newsletterText;
 @newsletterContentArticlesText: @newsletterText;
-@newsletterContentArticlesReadMore: @colorCouleur1;
 @newsletterContentArticlesBorder: @newsletterHrBorder;
 
 @newsletterContentAgendaBackground: @colorCouleur3Clair;
-@newsletterContentAgendaPreTitle: @colorCouleur1;
 @newsletterContentAgendaTitle: @newsletterText;
 @newsletterContentAgendaText: @newsletterText;
 
-@newsletterContentDessinPreTitle: @colorCouleur1;
 @newsletterContentDessinTitle: @newsletterText;
 @newsletterContentDessinReadMore: lighten(@colorCouleur3, 5%);
 @newsletterContentDessinBorder: @newsletterContentArticlesBorder;
 
-@newsletterContentProfessionPreTitle: @colorCouleur1;
 @newsletterContentProfessionTitle: @newsletterText;
 @newsletterContentProfessionBorder: @newsletterContentArticlesBorder;
-
-@newsletterContentContactBackground: @colorCouleur1;
-@newsletterContentContactText: #ffffff;
 
 @newsletterFooterBackground: @newsletterBodyBackground;
 @newsletterFooterText: #ffffff;
@@ -82,6 +70,23 @@
 @newsletterColumnWidth: 60px;
 @newsletterGutterWidth: 0px;
 @newsletterContainerWidth: (11 * @newsletterGutterWidth + 12 * @newsletterColumnWidth);
+
+
+// Newsletter Custom Colors
+// --------------------------------------------------
+@newsletterContentCabInformBackground: @colorCouleur1;
+@newsletterContentCabInformTitle: #ffffff;
+@newsletterContentCabInformText: #ffffff;
+
+@newsletterContentArticlesIconColor: @colorCouleur1;
+@newsletterContentArticlesReadMore: @colorCouleur1;
+
+@newsletterContentAgendaPreTitle: @colorCouleur1;
+@newsletterContentDessinPreTitle: @colorCouleur1;
+@newsletterContentProfessionPreTitle: @colorCouleur1;
+
+@newsletterContentContactBackground: @colorCouleur1;
+@newsletterContentContactText: #ffffff;
 
 
 // Scaffolding
