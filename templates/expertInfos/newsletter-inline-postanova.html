@@ -859,6 +859,15 @@ color: #333333;
 }
 </style>
 <style type="text/css" data-premailer="ignore">
+<%
+Set xml = Server.CreateObject("Microsoft.XMLHTTP")  'Creer un objet
+xml.Open "GET", "http://" & url_site_exp & "/theme/css/newsletter.css", False  'Ouvrir le fichier CSS
+xml.Send 'Executer
+
+Response.Write xml.responseText 
+Set xml = Nothing
+%>
+
 /* Firefox debug */
 @media only screen and (max-width: 720px) {
   @-moz-document url-prefix() {
