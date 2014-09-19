@@ -1,14 +1,93 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml">
+<%
+Set Conn = Server.CreateObject("ADODB.Connection")
+Conn.ConnectionString =  application("Base_Newsletter")
+Conn.Open
+
+id_client=request.QueryString("id_client")
+
+CLIENT_SQL="SELECT * FROM CLIENTS WHERE (ID_CLIENT = "&id_client&")"
+Set rsClient=conn.Execute(CLIENT_SQL)
+
+id_exp=rsClient("id_exp")
+id_civilite=rsClient("id_civilite")
+if id_civilite = "1" then
+    civilite="Monsieur"
+elseif id_civilite="2" then
+    civilite="Madame"
+elseif id_civilite="3" then
+    civilite="Mademoiselle"
+elseif id_civilite="4" then
+    civilite="Mare"
+elseif id_civilite="5" then
+    civilite="Docteur"
+elseif id_civilite="6" then
+    civilite="Professeur"
+else
+    civilite=""
+end if
+
+nom_client=rsClient("nom_client")
+
+CABINET_SQL="SELECT * FROM EXPERTS_COMPTABLES WHERE (ID_EXP = "&id_exp&")"
+set rsCabinet=conn.Execute(CABINET_SQL)
+
+if not rsCabinet.eof then
+
+	repertoire_ei = rsCabinet("repertoire_ei")
+	nom_exp = rsCabinet("nom_exp")
+	prenom_exp = rsCabinet("prenom_exp")
+	raison_sociale_exp = rsCabinet("raison_sociale_exp")
+	type_client = rsCabinet("type_client")	
+	adresse1_exp = rsCabinet("adresse1_exp")
+	adresse2_exp = rsCabinet("adresse2_exp")
+	code_postal_exp = rsCabinet("code_postal_exp")
+	commune_exp = rsCabinet("commune_exp")
+	tel_cabinet = rsCabinet("tel_cabinet")
+	fax_cabinet = rsCabinet("fax_cabinet")
+	email_exp = rsCabinet("email_exp")
+	type_perso_site = rsCabinet("type_perso_site")
+	login_site_exp = rsCabinet("login_site_exp")
+	mdp_site_exp = rsCabinet("mdp_site_exp")
+	type_abo = rsCabinet("type_abo")
+	if type_abo="4" then
+	url_site_exp=rsCabinet("url_site_V3")
+	else
+	url_site_exp = rsCabinet("url_site_exp")
+	end if
+	url_facebook = rsCabinet("Facebook")
+	url_twitter = rsCabinet("Twitter")
+	url_linkedin = rsCabinet("Linkedin")
+	url_viadeo = rsCabinet("Viadeo")
+	url_google = rsCabinet("Google")
+	url_vimeo = rsCabinet("Vimeo")
+	url_youtube = rsCabinet("Youtube")
+	logo_groupement = rsCabinet("logo_groupement")
+	lien_groupement = rsCabinet("lien_groupement")
+
+	Select Case type_perso_site
+		Case 38 txt_perso_site = "pop"
+		Case 39 txt_perso_site = "disco"
+	End Select
+
+end if
+
+set rsCount=conn.Execute("SELECT COUNT(*) FROM FLASH_CABINFORM WHERE id_exp="& id_exp &" AND (afficher=1)")
+set rs=conn.Execute("SELECT * FROM FLASH_CABINFORM WHERE id_exp=" & id_exp &" AND (afficher=1) ORDER BY ordre")
+%><!--#include file="emill-v2bis.asp"--><%
+idarticleAlaune=request.QueryString("idarticleAlaune")
+idarticle=request.QueryString("idarticle")
+%><html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+    <meta name="viewport" content="width=device-width">
     
     <!-- Chargement feuille de style du client -->
     <link rel="stylesheet" href="theme/css/newsletter.css">
     <title>Newsletter bimensuelle du 22/09/2014</title>
 </head>
-<body style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; background: #787878; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; line-height: 16px; margin: 0; min-width: 100%; padding: 0; text-align: left; width: 100% !important" bgcolor="#787878"><style type="text/css">
+<body style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; background: #787878; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; line-height: 16px; margin: 0; min-width: 100%; padding: 0; text-align: left; width: 100% !important" bgcolor="#787878">
+<style type="text/css">
 body {
 background-color: #787878;
 }
@@ -827,7 +906,7 @@ color: #333333;
 								                <tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 								                    <td class="center" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 0px 0px 0; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
 								                    	<a target="_blank" href="http://ec-opera.expert-infos.com" style="color: #333333; text-decoration: none">
-								                            <img class="link_box center" src="http://ec-tenor.expert-infos.com/uploads/assets/header-newsletter.png" alt="NomCabinet" width="720" height="96" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: none; margin: 0 auto; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none" />
+								                            <img class="link_box center" src="http://ec-tenor.expert-infos.com/uploads/assets/header-newsletter.png" alt="NomCabinet" width="720" height="96" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: none; margin: 0 auto; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none">
 								                        </a>
 								                    </td>
 								                </tr>
@@ -845,12 +924,12 @@ color: #333333;
 												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 													<td class="eight sub-columns first" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; min-width: 0px; padding: 0px 0 0 0px; text-align: left; vertical-align: top; width: 66.666666%; word-break: break-word" align="left" valign="top" width="66.666666%">
 														<a target="_blank" class="link_box" href="http://ec-opera.expert-infos.com/?article=4678710" style="color: #333333; display: block; outline: none; text-decoration: none">
-															<img src="http://lorempixel.com/960/192/city/" alt="NomCabinet" width="480" height="96" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: left; max-width: 100%; outline: none; text-decoration: none; width: auto" align="left" />
+															<img src="http://lorempixel.com/960/192/city/" alt="NomCabinet" width="480" height="96" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: left; max-width: 100%; outline: none; text-decoration: none; width: auto" align="left">
 														</a>
 													</td>
 													<td class="four sub-columns last" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; min-width: 0px; padding: 0px 0 0 0px; text-align: left; vertical-align: top; width: 33.333333%; word-break: break-word" align="left" valign="top" width="33.333333%">
 														<a target="_blank" class="link_box" href="http://ec-opera.expert-infos.com/?article=4678710" style="color: #333333; display: block; outline: none; text-decoration: none">
-															<img src="http://lorempixel.com/480/192/technics/" alt="NomCabinet" width="240" height="96" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: left; max-width: 100%; outline: none; text-decoration: none; width: auto" align="left" />
+															<img src="http://lorempixel.com/480/192/technics/" alt="NomCabinet" width="240" height="96" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: left; max-width: 100%; outline: none; text-decoration: none; width: auto" align="left">
 														</a>
 													</td>
 												</tr>
@@ -941,7 +1020,7 @@ color: #333333;
 											<table class="six columns" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 360px" cellpadding="0" cellspacing="0">
 												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 													<td style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #ffffff !important; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 0px 0px 0; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
-														<img src="http://lorempixel.com/1440/960/business/" width="360" height="240" alt="" style="-ms-interpolation-mode: bicubic; clear: both; display: block; float: left; max-width: 100%; outline: none; text-decoration: none; width: auto" align="left" />
+														<img src="http://lorempixel.com/1440/960/business/" width="360" height="240" alt="" style="-ms-interpolation-mode: bicubic; clear: both; display: block; float: left; max-width: 100%; outline: none; text-decoration: none; width: auto" align="left">
 													</td>
 												</tr>
 											</table>
@@ -959,7 +1038,7 @@ color: #333333;
 												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 													<td style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #333333 !important; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 0px 0px 0; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
 														<a target="_blank" class="link_box inner text-pad-left" href="http://ec-opera.expert-infos.com/?article=4678710" style="color: #333333 !important; display: block; outline: none; padding-bottom: 0; padding-left: 10px; padding-top: 10px; text-decoration: none">
-															<img src="http://lorempixel.com/1440/660/business/" width="290" height="133" alt="" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: none; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none" />
+															<img src="http://lorempixel.com/1440/660/business/" width="290" height="133" alt="" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: none; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none">
 														</a>
 													</td>
 												</tr>
@@ -989,7 +1068,7 @@ color: #333333;
 												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 													<td style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #333333 !important; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 0px 0px 0; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
 														<a target="_blank" class="link_box inner text-pad-left" href="http://ec-opera.expert-infos.com/?article=4678710" style="color: #333333 !important; display: block; outline: none; padding-bottom: 0; padding-left: 10px; padding-top: 10px; text-decoration: none">
-															<img src="http://lorempixel.com/1440/660/business/" width="290" height="133" alt="" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: none; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none" />
+															<img src="http://lorempixel.com/1440/660/business/" width="290" height="133" alt="" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: none; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none">
 														</a>
 													</td>
 												</tr>
@@ -1019,7 +1098,7 @@ color: #333333;
 												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 													<td style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #333333 !important; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 0px 0px 0; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
 														<a target="_blank" class="link_box inner text-pad-left" href="http://ec-opera.expert-infos.com/?article=4678710" style="color: #333333 !important; display: block; outline: none; padding-bottom: 10px; padding-left: 10px; padding-top: 10px; text-decoration: none">
-															<img src="http://lorempixel.com/1440/660/business/" width="290" height="133" alt="" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: none; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none" />
+															<img src="http://lorempixel.com/1440/660/business/" width="290" height="133" alt="" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: none; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none">
 														</a>
 													</td>
 												</tr>
@@ -1069,7 +1148,7 @@ color: #333333;
 												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 													<td class="six sub-columns first" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; min-width: 0px; padding: 0px 10px 0 0px; text-align: left; vertical-align: top; width: 50%; word-break: break-word" align="left" valign="top" width="50%">
 														<a target="_blank" class="link_box inner text-pad-left" href="http://ec-opera.expert-infos.com/?article=4678710" style="color: #333333; display: block; outline: none; padding-bottom: 10px; padding-left: 10px; padding-top: 0; text-decoration: none">
-															<span class="preTitle" style="color: ##newsletterContentDessinPreTitle##; display: block; font-size: 33px; font-weight: lighter; line-height: 18.7px; padding-top: 3.66666667px">L'actu'<br style="font-size: 0 !important; line-height: 0 !important" /><small style="font-size: 18.7px">en dessin</small></span>
+															<span class="preTitle" style="color: ##newsletterContentDessinPreTitle##; display: block; font-size: 33px; font-weight: lighter; line-height: 18.7px; padding-top: 3.66666667px">L'actu'<br style="font-size: 0 !important; line-height: 0 !important"><small style="font-size: 18.7px">en dessin</small></span>
 															<h3 class="title" style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.1; margin: 0; padding: 5px 0; text-align: left; word-break: normal" align="left">Titres-restaurant d&#233;mat&#233;rialis&#233;s</h3>
 															<span class="readMore" style="color: #9e9e9e; display: block; font-weight: bold; padding-top: 10px">
 																<span class="icon-rsaquo" style="bottom: -0.05em; font-size: 150%; font-style: normal; line-height: 0; vertical-align: baseline">&#8250;</span>&#160;agrandir le dessin</span>
@@ -1078,7 +1157,7 @@ color: #333333;
 													</td>
 													<td class="six sub-columns last" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; min-width: 0px; padding: 0px 0px 0; text-align: left; vertical-align: top; width: 50%; word-break: break-word" align="left" valign="top" width="50%">
 														<a target="_blank" class="link_box inner text-pad" href="http://ec-opera.expert-infos.com/?article=4678710" style="color: #333333; display: block; outline: none; padding: 0 10px 10px; text-decoration: none">
-															<img src="http://lorempixel.com/720/480/abstract/" width="190" height="126" alt="" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: none; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none" />
+															<img src="http://lorempixel.com/720/480/abstract/" width="190" height="126" alt="" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: none; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none">
 														</a>
 													</td>
 												</tr>
@@ -1112,13 +1191,13 @@ color: #333333;
 												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 													<td class="six sub-columns first" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; min-width: 0px; padding: 0px 10px 0 0px; text-align: left; vertical-align: top; width: 50%; word-break: break-word" align="left" valign="top" width="50%">
 														<span class="inner text-pad-left" style="display: block; padding-bottom: 10px; padding-left: 10px; padding-top: 0">
-															<span class="preTitle" style="color: ##newsletterContentDessinPreTitle##; display: block; font-size: 33px; font-weight: lighter; line-height: 18.7px; padding-top: 3.66666667px">L'actu'<br style="font-size: 0 !important; line-height: 0 !important" /><small style="font-size: 18.7px">en dessin</small></span>
+															<span class="preTitle" style="color: ##newsletterContentDessinPreTitle##; display: block; font-size: 33px; font-weight: lighter; line-height: 18.7px; padding-top: 3.66666667px">L'actu'<br style="font-size: 0 !important; line-height: 0 !important"><small style="font-size: 18.7px">en dessin</small></span>
 															<h3 class="title" style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.1; margin: 0; padding: 5px 0; text-align: left; word-break: normal" align="left">Titres-restaurant d&#233;mat&#233;rialis&#233;s</h3>
 														</span>
 													</td>
 													<td class="six sub-columns last" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; min-width: 0px; padding: 0px 0px 0; text-align: left; vertical-align: top; width: 50%; word-break: break-word" align="left" valign="top" width="50%">
 														<span class="inner text-pad" style="display: block; padding: 0 10px 10px">
-															<img src="http://lorempixel.com/720/480/abstract/" width="190" height="126" alt="" style="-ms-interpolation-mode: bicubic; clear: both; display: block; float: none; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none" />
+															<img src="http://lorempixel.com/720/480/abstract/" width="190" height="126" alt="" style="-ms-interpolation-mode: bicubic; clear: both; display: block; float: none; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none">
 														</span>
 													</td>
 												</tr>
@@ -1184,13 +1263,13 @@ color: #333333;
 													<td style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: ##newsletterContentContactText## !important; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 0px 0px 0; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
 														<span class="inner text-pad" style="color: ##newsletterContentContactText## !important; display: block; padding: 10px">
 															<strong>BDO France</strong>
-															<br />
+															<br>
 															<!-- Faire un URL encode de l'adresse pour le param&#232;tre q de l'attribut HREF -->
 															<!-- http://www.w3schools.com/asp/met_urlencode.asp -->
 															<a target="_blank" href="http://maps.apple.com/?q=113%2C+rue+de+l%27Universit%E9+-+75007+Paris" style="color: ##newsletterContentContactText## !important; text-decoration: none">113, rue de l'Universit&#233; - 75007 Paris</a>
-															<br />
+															<br>
 															<span class="appleLinks"><a href="tel:0123456789" style="color: ##newsletterContentContactText## !important; text-decoration: none">0123456789</a></span>
-															<br />
+															<br>
 															<a class="link_underline" href="mailto:contact@bdo.fr" style="color: ##newsletterContentContactText## !important; text-decoration: underline">contact@bdo.fr</a>
 															-
 															<a target="_blank" class="link_underline" href="http://www.bdo.fr" style="color: ##newsletterContentContactText## !important; text-decoration: underline">www.bdo.fr</a>
@@ -1207,25 +1286,25 @@ color: #333333;
 													<td style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: ##newsletterContentContactText## !important; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 0px 0px 0; text-align: right; vertical-align: top; word-break: break-word" align="right" valign="top">
 														<span class="inner text-pad" style="color: ##newsletterContentContactText## !important; display: block; padding: 10px">
 															<a target="_blank" class="webicon first" href="http://www.facebook.com" style="color: ##newsletterContentContactText## !important; display: inline; font-size: 0; line-height: 0; padding: 0 5px 5px 0; text-decoration: none">
-																<img src="http://www.expert-infos.com/_newsletter/_logos/webicon-facebook.gif" alt="Facebook" width="30" height="30" style="-ms-interpolation-mode: bicubic; border-radius: 5px; border: none; clear: both; display: inline; float: none; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none" />
+																<img src="http://www.expert-infos.com/_newsletter/_logos/webicon-facebook.gif" alt="Facebook" width="30" height="30" style="-ms-interpolation-mode: bicubic; border-radius: 5px; border: none; clear: both; display: inline; float: none; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none">
 															</a>
 															<a target="_blank" class="webicon" href="http://www.googleplus.com" style="color: ##newsletterContentContactText## !important; display: inline; font-size: 0; line-height: 0; padding: 0 5px 5px; text-decoration: none">
-																<img src="http://www.expert-infos.com/_newsletter/_logos/webicon-googleplus.gif" alt="Google+" width="30" height="30" style="-ms-interpolation-mode: bicubic; border-radius: 5px; border: none; clear: both; display: inline; float: none; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none" />
+																<img src="http://www.expert-infos.com/_newsletter/_logos/webicon-googleplus.gif" alt="Google+" width="30" height="30" style="-ms-interpolation-mode: bicubic; border-radius: 5px; border: none; clear: both; display: inline; float: none; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none">
 															</a>
 															<a target="_blank" class="webicon" href="http://www.linkedin.com" style="color: ##newsletterContentContactText## !important; display: inline; font-size: 0; line-height: 0; padding: 0 5px 5px; text-decoration: none">
-																<img src="http://www.expert-infos.com/_newsletter/_logos/webicon-linkedin.gif" alt="Linkedin" width="30" height="30" style="-ms-interpolation-mode: bicubic; border-radius: 5px; border: none; clear: both; display: inline; float: none; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none" />
+																<img src="http://www.expert-infos.com/_newsletter/_logos/webicon-linkedin.gif" alt="Linkedin" width="30" height="30" style="-ms-interpolation-mode: bicubic; border-radius: 5px; border: none; clear: both; display: inline; float: none; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none">
 															</a>
 															<a target="_blank" class="webicon" href="http://www.twitter.com" style="color: ##newsletterContentContactText## !important; display: inline; font-size: 0; line-height: 0; padding: 0 5px 5px; text-decoration: none">
-																<img src="http://www.expert-infos.com/_newsletter/_logos/webicon-twitter.gif" alt="Twitter" width="30" height="30" style="-ms-interpolation-mode: bicubic; border-radius: 5px; border: none; clear: both; display: inline; float: none; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none" />
+																<img src="http://www.expert-infos.com/_newsletter/_logos/webicon-twitter.gif" alt="Twitter" width="30" height="30" style="-ms-interpolation-mode: bicubic; border-radius: 5px; border: none; clear: both; display: inline; float: none; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none">
 															</a>
 															<a target="_blank" class="webicon" href="http://www.viadeo.com" style="color: ##newsletterContentContactText## !important; display: inline; font-size: 0; line-height: 0; padding: 0 5px 5px; text-decoration: none">
-																<img src="http://www.expert-infos.com/_newsletter/_logos/webicon-viadeo.gif" alt="Viadeo" width="30" height="30" style="-ms-interpolation-mode: bicubic; border-radius: 5px; border: none; clear: both; display: inline; float: none; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none" />
+																<img src="http://www.expert-infos.com/_newsletter/_logos/webicon-viadeo.gif" alt="Viadeo" width="30" height="30" style="-ms-interpolation-mode: bicubic; border-radius: 5px; border: none; clear: both; display: inline; float: none; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none">
 															</a>
 															<a target="_blank" class="webicon" href="http://www.vimeo.com" style="color: ##newsletterContentContactText## !important; display: inline; font-size: 0; line-height: 0; padding: 0 5px 5px; text-decoration: none">
-																<img src="http://www.expert-infos.com/_newsletter/_logos/webicon-vimeo.gif" alt="Vimeo" width="30" height="30" style="-ms-interpolation-mode: bicubic; border-radius: 5px; border: none; clear: both; display: inline; float: none; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none" />
+																<img src="http://www.expert-infos.com/_newsletter/_logos/webicon-vimeo.gif" alt="Vimeo" width="30" height="30" style="-ms-interpolation-mode: bicubic; border-radius: 5px; border: none; clear: both; display: inline; float: none; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none">
 															</a>
 															<a target="_blank" class="webicon last" href="http://www.youtube.com" style="color: ##newsletterContentContactText## !important; display: inline; font-size: 0; line-height: 0; padding: 0 0 5px 5px; text-decoration: none">
-																<img src="http://www.expert-infos.com/_newsletter/_logos/webicon-youtube.gif" alt="Youtube" width="30" height="30" style="-ms-interpolation-mode: bicubic; border-radius: 5px; border: none; clear: both; display: inline; float: none; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none" />
+																<img src="http://www.expert-infos.com/_newsletter/_logos/webicon-youtube.gif" alt="Youtube" width="30" height="30" style="-ms-interpolation-mode: bicubic; border-radius: 5px; border: none; clear: both; display: inline; float: none; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none">
 															</a>
 														</span>
 													</td>
