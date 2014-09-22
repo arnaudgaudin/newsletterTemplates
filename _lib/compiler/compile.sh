@@ -13,7 +13,7 @@ echo "inlining newsletter.html ..."
 templateName=$(basename "$PWD")
 domain=http://newsletter-templates.expert-infos.com
 baseurl=$domain/templates/$templateName/
-premailer --base-url=$baseurl --css=${PWD}/theme/css/style.css --entities --verbose  ${PWD}/newsletter.html > ${PWD}/newsletter-inline.html
+premailer --base-url=$baseurl --css=${PWD}/theme/css/style.css --entities --verbose ${PWD}/newsletter.html > ${PWD}/newsletter-inline.html
 
 #Désactivation des commentaires sur les balises Posta Nova
 echo "enabling PostaNova tags ..."
