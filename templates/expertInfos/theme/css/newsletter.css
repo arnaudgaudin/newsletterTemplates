@@ -1,76 +1,12 @@
-.newsletterContentCabInformBackground {
-  color: #d12329;
-}
-.newsletterContentCabInformTitle {
-  color: #ffffff;
-}
-.newsletterContentCabInformText {
-  color: #ffffff;
-}
-.newsletterContentArticlesIconColor {
-  color: #d12329;
-}
-.newsletterContentArticlesReadMore {
-  color: #d12329;
-}
-.newsletterContentAgendaPreTitle {
-  color: #d12329;
-}
-.newsletterContentDessinPreTitle {
-  color: #d12329;
-}
-.newsletterContentProfessionPreTitle {
-  color: #d12329;
-}
-.newsletterContentContactBackground {
-  color: #d12329;
-}
-.newsletterContentContactText {
-  color: #ffffff;
-}
-.contentCabInform {
-  background-color: #d12329 !important;
-}
-.contentCabInform .title {
-  color: #ffffff !important;
-}
-.contentCabInform,
-.contentCabInform td,
-.contentCabInform .inner,
-.contentCabInform a,
-.contentCabInform a:link,
-.contentCabInform a:visited,
-.contentCabInform a:hover,
-.contentCabInform a:focus,
-.contentCabInform a:active {
-  color: #ffffff !important;
-}
-.contentArticles .title .icon-rsaquo {
-  color: #d12329 !important;
-}
-.contentArticles .readMore {
-  color: #d12329 !important;
-}
-.contentBottom .agenda .preTitle {
-  color: #d12329 !important;
-}
-.contentBottom .dessin .preTitle {
-  color: #d12329 !important;
-}
-.contentBottom .profession .preTitle {
-  color: #d12329 !important;
-}
-.contentContact {
-  background-color: #d12329 !important;
-}
-.contentContact,
-.contentContact td,
-.contentContact .inner,
-.contentContact a,
-.contentContact a:link,
-.contentContact a:visited,
-.contentContact a:hover,
-.contentContact a:focus,
-.contentContact a:active {
-  color: #ffffff !important;
+.colorParsing {
+  newsletterContentCabInformBackground: #d12329;
+  newsletterContentCabInformTitle: #ffffff;
+  newsletterContentCabInformText: #ffffff;
+  newsletterContentArticlesIconColor: #d12329;
+  newsletterContentArticlesReadMore: #d12329;
+  newsletterContentAgendaPreTitle: #d12329;
+  newsletterContentDessinPreTitle: #d12329;
+  newsletterContentProfessionPreTitle: #d12329;
+  newsletterContentContactBackground: #d12329;
+  newsletterContentContactText: #ffffff;
 }
