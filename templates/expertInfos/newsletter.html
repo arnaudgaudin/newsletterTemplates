@@ -598,8 +598,14 @@ Set xml = Nothing
 																if (len(trim(code_postal_exp)) > 1) then response.write(code_postal_exp &"&nbsp;")  end if
 																if (len(trim(commune_exp)) > 1) then response.write(commune_exp) end if
 															}}%%}}--><!--DEL{{-->adresse<!--}}DEL--></a>
+															<!--{{%%{{ if (len(trim(tel_cabinet)) > 1) then }}%%}}-->
 															<br/>
-															<span class="appleLinks"><a href="tel:0123456789">0123456789</a></span>
+															T&eacute;l. <span class="appleLinks"><a href="tel:%%{{=tel_cabinet}}%%"><!--{{%%{{=tel_cabinet}}%%}}--><!--DEL{{-->tel_cabinet<!--}}DEL--></a></span>
+															<!--{{%%{{ end if }}%%}}-->
+															<!--{{%%{{ if (len(trim(fax_cabinet)) > 1) then }}%%}}-->
+															&#160;-&#160;Fax&#160;: <a class="link_disabled" href="#"><!--{{%%{{=fax_cabinet}}%%}}--><!--DEL{{-->fax_cabinet<!--}}DEL--></a>
+															<!--{{%%{{ end if }}%%}}-->
+
 															<br/>
 															<a class="link_underline" href="mailto:contact@bdo.fr">contact@bdo.fr</a>
 															-
