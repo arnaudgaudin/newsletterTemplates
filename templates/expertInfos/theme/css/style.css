@@ -1194,6 +1194,23 @@ h6 a:visited {
 .contentBottom .agenda a:active {
   color: #333333 !important;
 }
+.contentBottom .chiffre {
+  background-color: #eaeaea;
+}
+.contentBottom .chiffre .title {
+  color: #333333;
+}
+.contentBottom .chiffre,
+.contentBottom .chiffre td,
+.contentBottom .chiffre .inner,
+.contentBottom .chiffre a,
+.contentBottom .chiffre a:link,
+.contentBottom .chiffre a:visited,
+.contentBottom .chiffre a:hover,
+.contentBottom .chiffre a:focus,
+.contentBottom .chiffre a:active {
+  color: #333333 !important;
+}
 .contentBottom .dessin .title {
   color: #333333;
 }
@@ -1207,6 +1224,12 @@ h6 a:visited {
   color: #333333;
 }
 .contentBottom .profession .border {
+  border-top: 1px dotted #6b6b6b;
+}
+.contentBottom .question .title {
+  color: #333333;
+}
+.contentBottom .question .border {
   border-top: 1px dotted #6b6b6b;
 }
 .footer {
@@ -1249,11 +1272,17 @@ h6 a:visited {
 .contentBottom .agenda .preTitle {
   color: ##newsletterContentAgendaPreTitle##;
 }
+.contentBottom .chiffre .preTitle {
+  color: ##newsletterContentChiffrePreTitle##;
+}
 .contentBottom .dessin .preTitle {
   color: ##newsletterContentDessinPreTitle##;
 }
 .contentBottom .profession .preTitle {
   color: ##newsletterContentProfessionPreTitle##;
+}
+.contentBottom .question .preTitle {
+  color: ##newsletterContentQuestionPreTitle##;
 }
 .contentContact {
   -premailer-background: ##newsletterContentContactBackground##;

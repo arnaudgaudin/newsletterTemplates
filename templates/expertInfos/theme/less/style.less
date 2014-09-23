@@ -247,6 +247,12 @@ a {
 		.newsletterInnerTextColor(@newsletterContentAgendaText);
 	}
 
+	.chiffre {
+		background-color: @newsletterContentChiffreBackground;
+		.title { color: @newsletterContentChiffreTitle; }
+		.newsletterInnerTextColor(@newsletterContentChiffreText);
+	}
+
 	.dessin {
 		.title { color: @newsletterContentDessinTitle; }
 		.readMore { color: @newsletterContentDessinReadMore; }
@@ -256,6 +262,11 @@ a {
 	.profession {
 		.title { color: @newsletterContentProfessionTitle; }
 		.border { border-top: 1px dotted @newsletterContentProfessionBorder; }
+	}
+
+	.question {
+		.title { color: @newsletterContentQuestionTitle; }
+		.border { border-top: 1px dotted @newsletterContentQuestionBorder; }
 	}
 }
 
@@ -300,12 +311,20 @@ a {
 		.preTitle { color: e("##newsletterContentAgendaPreTitle##"); }
 	}
 
+	.chiffre {
+		.preTitle { color: e("##newsletterContentChiffrePreTitle##"); }
+	}
+
 	.dessin {
 		.preTitle { color: e("##newsletterContentDessinPreTitle##"); }
 	}
 
 	.profession {
 		.preTitle { color: e("##newsletterContentProfessionPreTitle##"); }
+	}
+
+	.question {
+		.preTitle { color: e("##newsletterContentQuestionPreTitle##"); }
 	}
 }
 
