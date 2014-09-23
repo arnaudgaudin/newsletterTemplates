@@ -1030,32 +1030,23 @@ table.column td {
   line-height: 0;
   height: 9px;
 }
-.contentBottom .agenda .title {
-  padding-top: 10px;
-}
-.contentBottom .dessin .inner {
+.contentBottom .wrapper.last .inner {
   padding-top: 0;
 }
-.contentBottom .dessin .title {
+.contentBottom .wrapper .title {
+  padding-top: 10px;
+}
+.contentBottom .wrapper.dessin .title {
   padding-top: 5px;
 }
-.contentBottom .profession .inner {
-  padding-top: 0;
-}
-.contentBottom .profession .title {
-  padding-top: 10px;
-}
 @media only screen and (max-width: 720px) {
-  table[class="body"] .contentBottom .dessin .inner,
-  table[class="body"] .contentBottom .profession .inner {
+  table[class="body"] .contentBottom .wrapper .inner {
     padding-top: 10px !important;
   }
-  table[class="body"] .contentBottom .dessin .border,
-  table[class="body"] .contentBottom .profession .border {
+  table[class="body"] .contentBottom .wrapper .border {
     border-top: none !important;
   }
-  table[class="body"] .contentBottom .dessin .preTitle,
-  table[class="body"] .contentBottom .profession .preTitle {
+  table[class="body"] .contentBottom .wrapper .preTitle {
     line-height: 22px !important;
   }
   table[class="body"] .contentBottom .borderContainer {

@@ -143,23 +143,16 @@ table.columns td, table.column td { padding-bottom: 0; }
 			height: 9px;
 		}
 	}
-	
-	.agenda .title { padding-top: 10px; }
 
-	.dessin {
-		.inner { padding-top: 0; }
-		.title { padding-top: 5px; }
-	}
-
-	.profession {
-		.inner { padding-top: 0; }
+	.wrapper {
+		&.last .inner { padding-top: 0; }
 		.title { padding-top: 10px; }
+		&.dessin .title { padding-top: 5px; }
 	}
-	
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentBottom {
-		.dessin, .profession {
+		.wrapper {
 			.inner { padding-top: 10px !important; }
 			.border { border-top: none !important; }
 			.preTitle { line-height: @headingsFontSizeH1 !important; }
