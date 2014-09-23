@@ -86,7 +86,7 @@ idarticle=request.QueryString("idarticle")
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" type="text/css" media="all" href="theme/css/style.css" />
     <!--{{<link rel="stylesheet" type="text/css" media="all" href="http://<%=url_site_exp%>/theme/css/newsletter.css" />}}-->
-    <title>Newsletter bimensuelle du %%{{la_date}}%%</title>
+    <title>Newsletter bimensuelle du <!--{{%%{{=la_date}}%%}}--><!--DEL{{-->la_date<!--}}DEL--></title>
 </head>
 <body>
 <style type="text/css" data-premailer="ignore">
@@ -127,7 +127,7 @@ Set xml = Nothing
 																Pour visualiser ce message en ligne, <a target="_blank" class="link_underline" href="http://e-newsletter.expert-infos.com/_e-newsletter/%%{{=la_semaine}}%%/flashinfos_V3_resp.asp?id_client=%%{{=id_client}}%%&amp;idarticle=%%{{=idarticle}}%%&amp;idarticleAlaune=%%{{=idarticleAlaune}}%%&amp;fintrack=" lien_message_online="lien_message_online">suivez ce lien</a>.
 															</small>
 															<!--{{</gab_lien_message_online>}}-->
-															<strong class="name">M Martin, votre newsletter du <a class="link_disabled" href="#">%%{{la_date}}%%</a>.</strong>
+															<strong class="name">M Martin, votre newsletter du <a class="link_disabled" href="#"><!--{{%%{{=la_date}}%%}}--><!--DEL{{-->la_date<!--}}DEL--></a>.</strong>
 														</span>
 													</td>
 												</tr>
@@ -189,7 +189,7 @@ Set xml = Nothing
 												<tr>
 													<td>
 														<span class="inner text-pad">
-															%%{{texte_vacances}}%%
+															<!--{{%%{{=texte_vacances}}%%}}--><!--DEL{{-->texte_vacances<!--}}DEL-->
 														</span>
 													</td>
 												</tr>
@@ -217,16 +217,16 @@ Set xml = Nothing
 														if (lien_cab <> "") then
 														}}%%}}-->
 														<a target="_blank" class="link_box inner text-pad" href="%%{{=lien_cab}}%%">
-															<h2 class="title">%%{{=rs("titre")}}%%</h2>
-															<span class="text">%%{{=rs("texte")}}%%</span>
+															<h2 class="title"><!--{{%%{{=rs("titre")}}%%}}--><!--DEL{{-->titre<!--}}DEL--></h2>
+															<span class="text"><!--{{%%{{=rs("texte")}}%%}}--><!--DEL{{-->texte<!--}}DEL--></span>
 															<span class="readMore">
 																<span class="icon-rsaquo">&rsaquo;</span>&#160;lire la suite</span>
 															</span>
 														</a>
 														<!--{{%%{{ else }}%%}}-->
 														<span class="inner text-pad">
-															<h2 class="title">%%{{=rs("titre")}}%%</h2>
-															<span class="text">%%{{=rs("texte")}}%%</span>
+															<h2 class="title"><!--{{%%{{=rs("titre")}}%%}}--><!--DEL{{-->titre<!--}}DEL--></h2>
+															<span class="text"><!--{{%%{{=rs("texte")}}%%}}--><!--DEL{{-->texte<!--}}DEL--></span>
 														</span>
 														<!--{{%%{{ end if }}%%}}-->
 													</td>

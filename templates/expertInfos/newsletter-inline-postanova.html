@@ -86,7 +86,7 @@ idarticle=request.QueryString("idarticle")
     <meta name="viewport" content="width=device-width" />
     
     <link rel="stylesheet" type="text/css" media="all" href="http://<%=url_site_exp%>/theme/css/newsletter.css" />
-    <title>Newsletter bimensuelle du <%la_date%></title>
+    <title>Newsletter bimensuelle du <%=la_date%></title>
 </head>
 <body style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; background: #787878; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; line-height: 16px; margin: 0; min-width: 100%; padding: 0; text-align: left; width: 100% !important" bgcolor="#787878"><style type="text/css">
 body {
@@ -898,7 +898,7 @@ Set xml = Nothing
 																Pour visualiser ce message en ligne, <a target="_blank" class="link_underline" href="http://e-newsletter.expert-infos.com/_e-newsletter/<%=la_semaine%>/flashinfos_V3_resp.asp?id_client=<%=id_client%>&amp;idarticle=<%=idarticle%>&amp;idarticleAlaune=<%=idarticleAlaune%>&amp;fintrack=" lien_message_online style="color: #ffffff !important; text-decoration: underline">suivez ce lien</a>.
 															</small>
 															</gab_lien_message_online>
-															<strong class="name" style="display: block">M Martin, votre newsletter du <a class="link_disabled" href="#" style="color: #ffffff !important; cursor: default !important; pointer-events: none !important; text-decoration: none !important"><%la_date%></a>.</strong>
+															<strong class="name" style="display: block">M Martin, votre newsletter du <a class="link_disabled" href="#" style="color: #ffffff !important; cursor: default !important; pointer-events: none !important; text-decoration: none !important"><%=la_date%></a>.</strong>
 														</span>
 													</td>
 												</tr>
@@ -960,7 +960,7 @@ Set xml = Nothing
 												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 													<td style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: ##newsletterContentCabInformText## !important; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 0px 0px 0; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
 														<span class="inner text-pad" style="color: ##newsletterContentCabInformText## !important; display: block; padding: 10px">
-															<%texte_vacances%>
+															<%=texte_vacances%>
 														</span>
 													</td>
 												</tr>
