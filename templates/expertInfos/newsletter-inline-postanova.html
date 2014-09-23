@@ -862,9 +862,9 @@ color: #333333;
 </style>
 <style type="text/css" data-premailer="ignore">
 <%
-Set xml = Server.CreateObject("Microsoft.XMLHTTP")  'Creer un objet
-xml.Open "GET", "http://" &amp; url_site_exp &amp; "/theme/css/newsletter.css", False  'Ouvrir le fichier CSS
-xml.Send 'Executer
+Set xml = Server.CreateObject("Microsoft.XMLHTTP")
+xml.Open "GET", "http://" &amp; url_site_exp &amp; "/theme/css/newsletter.css", False
+xml.Send
 
 Response.Write xml.responseText 
 Set xml = Nothing
