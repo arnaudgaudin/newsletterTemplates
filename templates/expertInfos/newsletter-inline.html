@@ -1314,11 +1314,43 @@ Set xml = Nothing
 												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 													<td style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: ##newsletterContentContactText## !important; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 0px 0px 0; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
 														<span class="inner text-pad" style="color: ##newsletterContentContactText## !important; display: block; padding: 10px">
-															<strong>BDO France</strong>
+															<strong><!--{{%%{{ if (len(trim(type_client)) > 1) then response.write(type_client & " ") end if }}%%%%{{=raison_sociale_exp}}%%}}--><!--DEL{{-->raison_sociale_exp<!--}}DEL--></strong>
 															<br />
-															<!-- Faire un URL encode de l'adresse pour le param&#232;tre q de l'attribut HREF -->
-															<!-- http://www.w3schools.com/asp/met_urlencode.asp -->
-															<a target="_blank" href="http://maps.apple.com/?q=113%2C+rue+de+l%27Universit%E9+-+75007+Paris" style="color: ##newsletterContentContactText## !important; text-decoration: none">113, rue de l'Universit&#233; - 75007 Paris</a>
+															<!--{{%%{{ lien_adresse=Server.URLEncode(adresse1_exp & " " & adresse2_exp & " " & code_postal_exp & " " & commune_exp) }}%%}}-->
+															<a target="_blank" href="http://maps.apple.com/?q=%%{{=lien_adresse}}%%" style="color: ##newsletterContentContactText## !important; text-decoration: none"><!--{{%%{{
+																'affichage adresse1'
+																nbc_desc=len(adresse1_exp)
+																k=1
+																while k <= nbc_desc
+																	carn=asc(Mid(adresse1_exp,k,1))
+																	car=Mid(adresse1_exp,k,1)
+																	if carn = 10 then
+																		Response.Write "&nbsp;-&nbsp;"
+																	else
+																		Response.Write(car)
+																	end if
+																	k=k+1
+																wend
+																Response.Write "&nbsp;-&nbsp;"
+																'affichage adresse2'
+																if (len(trim(adresse2_exp)) > 1) then
+																	nbc_desc=len(adresse2_exp)
+																	k=1
+																	while k <= nbc_desc
+																		carn=asc(Mid(adresse2_exp,k,1))
+																		car=Mid(adresse2_exp,k,1)
+																		if carn = 10 then
+																			Response.Write "&nbsp;-&nbsp;"
+																		else
+																			Response.Write(car)
+																		end if
+																		k=k+1
+																	wend 
+																	Response.Write "&nbsp;-&nbsp;"
+																end if 
+																if (len(trim(code_postal_exp)) > 1) then response.write(code_postal_exp &"&nbsp;")  end if
+																if (len(trim(commune_exp)) > 1) then response.write(commune_exp) end if
+															}}%%}}--><!--DEL{{-->adresse<!--}}DEL--></a>
 															<br />
 															<span class="appleLinks"><a href="tel:0123456789" style="color: ##newsletterContentContactText## !important; text-decoration: none">0123456789</a></span>
 															<br />
