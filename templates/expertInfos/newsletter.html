@@ -86,7 +86,7 @@ idarticle=request.QueryString("idarticle")
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" media="all" href="theme/css/style.css">
     <!--{{<link rel="stylesheet" type="text/css" media="all" href="http://<%=url_site_exp%>/theme/css/newsletter.css">}}-->
-    <title>Newsletter bimensuelle du %%{{la_date}}##</title>
+    <title>Newsletter bimensuelle du %%{{la_date}}%%</title>
 </head>
 <body>
 <style type="text/css" data-premailer="ignore">
@@ -124,10 +124,10 @@ Set xml = Nothing
 														<span class="inner text-pad">
 															<!--{{<gab_lien_message_online>}}-->
 															<small class="online">
-																Pour visualiser ce message en ligne, <a target="_blank" class="link_underline" href="#" lien_message_online="lien_message_online">suivez ce lien</a>.
+																Pour visualiser ce message en ligne, <a target="_blank" class="link_underline" href="http://e-newsletter.expert-infos.com/_e-newsletter/%%{{=la_semaine}}%%/flashinfos_V3_resp.asp?id_client=%%{{=id_client}}%%&amp;idarticle=%%{{=idarticle}}%%&amp;idarticleAlaune=%%{{=idarticleAlaune}}%%&amp;fintrack=" lien_message_online="lien_message_online">suivez ce lien</a>.
 															</small>
 															<!--{{</gab_lien_message_online>}}-->
-															<strong class="name">M Martin, votre newsletter du <a class="link_disabled" href="#">22 septembre 2014</a>.</strong>
+															<strong class="name">M Martin, votre newsletter du <a class="link_disabled" href="#">%%{{la_date}}%%</a>.</strong>
 														</span>
 													</td>
 												</tr>
@@ -136,25 +136,8 @@ Set xml = Nothing
 									</tr>
 								</table>
 					        	<!-- ONLINE END -->
-
-								<!-- HEADER START -->
-								<table class="row header">
-								    <tr>
-								        <td class="wrapper first">
-								            <table class="twelve columns">
-								                <tr>
-								                    <td class="center">
-								                    	<a target="_blank" href="http://ec-opera.expert-infos.com">
-								                            <img class="link_box center" src="http://ec-tenor.expert-infos.com/uploads/assets/header-newsletter.png" alt="NomCabinet" width="720" height="96" />
-								                        </a>
-								                    </td>
-								                </tr>
-								            </table>
-								        </td>
-								    </tr>
-								</table>
-								<!-- HEADER END -->
-
+								
+								<!--{{%%{{if logo_groupement=True then}}%%}}-->
 								<!-- HEADER GROUPE START -->
 								<table class="row header">
 									<tr>
@@ -177,6 +160,25 @@ Set xml = Nothing
 									</tr>
 								</table>
 								<!-- HEADER GROUPE END -->
+								<!--{{%%{{else}}%%}}-->
+								<!-- HEADER START -->
+								<table class="row header">
+								    <tr>
+								        <td class="wrapper first">
+								            <table class="twelve columns">
+								                <tr>
+								                    <td class="center">
+								                    	<a target="_blank" href="http://ec-opera.expert-infos.com">
+								                            <img class="link_box center" src="http://ec-tenor.expert-infos.com/uploads/assets/header-newsletter.png" alt="NomCabinet" width="720" height="96" />
+								                        </a>
+								                    </td>
+								                </tr>
+								            </table>
+								        </td>
+								    </tr>
+								</table>
+								<!-- HEADER END -->
+								<!--{{%%{{end if}}%%}}-->
 
 								<!-- CABINFORM START -->
 								<table class="row contentCabInform" bgcolor="##newsletterContentCabInformBackground##">
