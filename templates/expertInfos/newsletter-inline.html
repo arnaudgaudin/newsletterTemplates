@@ -1055,45 +1055,42 @@ Set xml = Nothing
 								<!-- ALAUNE END -->
 
 								<!-- ARTICLES START -->
-								<!-- D&#233;finir format H 1440x660 -->
-								<table class="row contentArticles first" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%; border-collapse: collapse; border-spacing: 0; color: #333333 !important; display: block; empty-cells: hide; padding: 0px; position: relative; text-align: left; vertical-align: top; width: 100%" width="100%" cellpadding="0" cellspacing="0">
-									<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
-										<td class="wrapper first" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #333333 !important; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 0 0px 0px; position: relative; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
-											<table class="five columns" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 300px" cellpadding="0" cellspacing="0">
-												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
-													<td style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #333333 !important; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 0px 0px 0; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
-														<a target="_blank" class="link_box inner text-pad-left" href="http://ec-opera.expert-infos.com/?article=4678710" style="color: #333333 !important; display: block; outline: none; padding-bottom: 0; padding-left: 10px; padding-top: 10px; text-decoration: none">
-															<img src="http://lorempixel.com/1440/660/business/" width="290" height="133" alt="" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: none; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none" />
-														</a>
-													</td>
-												</tr>
-											</table>
-										</td>
-										<td class="wrapper last" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #333333 !important; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 0 0px 0px; position: relative; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
-											<table class="seven columns" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 420px" cellpadding="0" cellspacing="0">
-												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
-													<td style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #333333 !important; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 0px 0px 0; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
-														<a target="_blank" class="link_box inner text-pad" href="http://ec-opera.expert-infos.com/?article=4678710" style="color: #333333 !important; display: block; outline: none; padding: 10px 10px 0; text-decoration: none">
-															<h2 class="title" style="border-top-color: #6b6b6b; border-top-style: dotted; border-top-width: 1px; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 1.1; margin: 0; padding: 4px 0 5px; text-align: left; word-break: normal" align="left">
-																<span class="icon-rsaquo" style="bottom: -0.05em; color: ##newsletterContentArticlesIconColor##; font-size: 150%; font-style: normal; line-height: 0; vertical-align: baseline">&#8250;</span>&#160;D&#233;claration d'insaisissabilit&#233;&#160;: n'y recourez pas trop tard&#160;!
-															</h2>
-															<span class="text">Les entreprises doivent r&#233;gler les acomptes de cotisation fonci&#232;re des entreprises (CFE) et de cotisation sur la valeur ajout&#233;e des entreprises (CVAE) pour le 16 juin prochain au plus tard.</span>
-															<span class="readMore" style="color: ##newsletterContentArticlesReadMore##; display: block; font-weight: bold; padding-top: 5px">lire la suite</span>
-														</a>
-													</td>
-												</tr>
-											</table>
-										</td>
-									</tr>
-								</table>
+								<!--{{%%{{
+								idarticle=idarticle&"-"
+								if idarticle="" then request.QueryString("amp;idarticle")
+								article=Mid(idarticle,1,(len(idarticle)))
+								nbc_desc=len(article)
+								k=1
+								i=1
+								
+				    			while k <= nbc_desc
+								carn=asc(Mid(article,k,1))
+								car=Mid(article,k,1)
+								if carn = 45 then
+									SQLArticle="SELECT * FROM CHAPITRES_FLASHS_INFOS WHERE (IDCHAPITRE_FLASH_INFOS = "& cart &")"
+									Set rsArticle=conn.Execute(SQLArticle)
+									id_de_larticle=mid(rsArticle("URL_DETAIL_INFO"),13,len(rsArticle("URL_DETAIL_INFO"))-16)
+									
+									SQLIdArticle="SELECT * FROM CHAPITRES_FLASHS_INFOS WHERE (IDCHAPITRE_FLASH_INFOS = "& cart &")"
+									Set rsIdArticle=conn.Execute(SQLIdArticle)
+									id_flash=rsIdArticle("ID_FLASH_INFOS")
+																						
+									CountArt="SELECT COUNT(*) FROM CHAPITRES_FLASHS_INFOS WHERE ID_FLASH_INFOS="& id_flash
+									set rsCountArt=conn.Execute(CountArt)
+									nbrart=rsCountArt(0)
+									
+								    if (i<(nbrart-1)) then
+
+								    	article_url_v3 = rsArticle("URL_DETAIL_V3")
+								}}%%}}-->
 								<table class="row contentArticles" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%; border-collapse: collapse; border-spacing: 0; color: #333333 !important; display: block; empty-cells: hide; padding: 0px; position: relative; text-align: left; vertical-align: top; width: 100%" width="100%" cellpadding="0" cellspacing="0">
 									<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 										<td class="wrapper first" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #333333 !important; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 0 0px 0px; position: relative; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
 											<table class="five columns" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 300px" cellpadding="0" cellspacing="0">
 												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 													<td style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #333333 !important; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 0px 0px 0; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
-														<a target="_blank" class="link_box inner text-pad-left" href="http://ec-opera.expert-infos.com/?article=4678710" style="color: #333333 !important; display: block; outline: none; padding-bottom: 0; padding-left: 10px; padding-top: 10px; text-decoration: none">
-															<img src="http://lorempixel.com/1440/660/business/" width="290" height="133" alt="" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: none; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none" />
+														<a target="_blank" class="link_box inner text-pad-left" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%" style="color: #333333 !important; display: block; outline: none; padding-bottom: 0; padding-left: 10px; padding-top: 10px; text-decoration: none">
+															<img src="http://e-newsletter.expert-infos.com/_infos/_photos/%%{{=id_de_larticle}}%%-h.jpg" width="290" height="133" alt="" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: none; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none" /><!--DEL{{--><img src="http://lorempixel.com/1440/660/business/" width="290" height="133" alt="" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: none; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none" /><!--}}DEL-->
 														</a>
 													</td>
 												</tr>
@@ -1103,11 +1100,11 @@ Set xml = Nothing
 											<table class="seven columns" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 420px" cellpadding="0" cellspacing="0">
 												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 													<td style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #333333 !important; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 0px 0px 0; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
-														<a target="_blank" class="link_box inner text-pad" href="http://ec-opera.expert-infos.com/?article=4678710" style="color: #333333 !important; display: block; outline: none; padding: 10px 10px 0; text-decoration: none">
+														<a target="_blank" class="link_box inner text-pad" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%" style="color: #333333 !important; display: block; outline: none; padding: 10px 10px 0; text-decoration: none">
 															<h2 class="title" style="border-top-color: #6b6b6b; border-top-style: dotted; border-top-width: 1px; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 1.1; margin: 0; padding: 4px 0 5px; text-align: left; word-break: normal" align="left">
-																<span class="icon-rsaquo" style="bottom: -0.05em; color: ##newsletterContentArticlesIconColor##; font-size: 150%; font-style: normal; line-height: 0; vertical-align: baseline">&#8250;</span>&#160;D&#233;claration d'insaisissabilit&#233;&#160;: n'y recourez pas trop tard&#160;!
+																<span class="icon-rsaquo" style="bottom: -0.05em; color: ##newsletterContentArticlesIconColor##; font-size: 150%; font-style: normal; line-height: 0; vertical-align: baseline">&#8250;</span>&#160;<!--{{%%{{=rsArticle("TITRE_CHAPITRE_FLASH_INFOS")}}%%}}--><!--DEL{{-->TITRE_CHAPITRE_FLASH_INFOS<!--}}DEL-->
 															</h2>
-															<span class="text">Les entreprises doivent r&#233;gler les acomptes de cotisation fonci&#232;re des entreprises (CFE) et de cotisation sur la valeur ajout&#233;e des entreprises (CVAE) pour le 16 juin prochain au plus tard.</span>
+															<span class="text"><!--{{%%{{=rsArticle("CONTENU_CHAPITRE_FLASH_INFOS")}}%%}}--><!--DEL{{-->CONTENU_CHAPITRE_FLASH_INFOS<!--}}DEL--></span>
 															<span class="readMore" style="color: ##newsletterContentArticlesReadMore##; display: block; font-weight: bold; padding-top: 5px">lire la suite</span>
 														</a>
 													</td>
@@ -1116,14 +1113,15 @@ Set xml = Nothing
 										</td>
 									</tr>
 								</table>
+								<!--{{%%{{ else }}%%}}-->
 								<table class="row contentArticles last" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%; border-collapse: collapse; border-spacing: 0; color: #333333 !important; display: block; empty-cells: hide; padding: 0px; position: relative; text-align: left; vertical-align: top; width: 100%" width="100%" cellpadding="0" cellspacing="0">
 									<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 										<td class="wrapper first" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #333333 !important; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 0 0px 0px; position: relative; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
 											<table class="five columns" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 300px" cellpadding="0" cellspacing="0">
 												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 													<td style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #333333 !important; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 0px 0px 0; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
-														<a target="_blank" class="link_box inner text-pad-left" href="http://ec-opera.expert-infos.com/?article=4678710" style="color: #333333 !important; display: block; outline: none; padding-bottom: 10px; padding-left: 10px; padding-top: 10px; text-decoration: none">
-															<img src="http://lorempixel.com/1440/660/business/" width="290" height="133" alt="" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: none; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none" />
+														<a target="_blank" class="link_box inner text-pad-left" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%" style="color: #333333 !important; display: block; outline: none; padding-bottom: 10px; padding-left: 10px; padding-top: 10px; text-decoration: none">
+															<img src="http://e-newsletter.expert-infos.com/_infos/_photos/%%{{=id_de_larticle}}%%-h.jpg" width="290" height="133" alt="" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: none; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none" /><!--DEL{{--><img src="http://lorempixel.com/1440/660/business/" width="290" height="133" alt="" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: none; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none" /><!--}}DEL-->
 														</a>
 													</td>
 												</tr>
@@ -1133,11 +1131,11 @@ Set xml = Nothing
 											<table class="seven columns" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 420px" cellpadding="0" cellspacing="0">
 												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 													<td style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #333333 !important; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 0px 0px 0; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
-														<a target="_blank" class="link_box inner text-pad" href="http://ec-opera.expert-infos.com/?article=4678710" style="color: #333333 !important; display: block; outline: none; padding: 10px; text-decoration: none">
+														<a target="_blank" class="link_box inner text-pad" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%" style="color: #333333 !important; display: block; outline: none; padding: 10px; text-decoration: none">
 															<h2 class="title" style="border-top-color: #6b6b6b; border-top-style: dotted; border-top-width: 1px; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 1.1; margin: 0; padding: 4px 0 5px; text-align: left; word-break: normal" align="left">
-																<span class="icon-rsaquo" style="bottom: -0.05em; color: ##newsletterContentArticlesIconColor##; font-size: 150%; font-style: normal; line-height: 0; vertical-align: baseline">&#8250;</span>&#160;D&#233;claration d'insaisissabilit&#233;&#160;: n'y recourez pas trop tard&#160;!
+																<span class="icon-rsaquo" style="bottom: -0.05em; color: ##newsletterContentArticlesIconColor##; font-size: 150%; font-style: normal; line-height: 0; vertical-align: baseline">&#8250;</span>&#160;<!--{{%%{{=rsArticle("TITRE_CHAPITRE_FLASH_INFOS")}}%%}}--><!--DEL{{-->TITRE_CHAPITRE_FLASH_INFOS<!--}}DEL-->
 															</h2>
-															<span class="text">Les entreprises doivent r&#233;gler les acomptes de cotisation fonci&#232;re des entreprises (CFE) et de cotisation sur la valeur ajout&#233;e des entreprises (CVAE) pour le 16 juin prochain au plus tard.</span>
+															<span class="text"><!--{{%%{{=rsArticle("CONTENU_CHAPITRE_FLASH_INFOS")}}%%}}--><!--DEL{{-->CONTENU_CHAPITRE_FLASH_INFOS<!--}}DEL--></span>
 															<span class="readMore" style="color: ##newsletterContentArticlesReadMore##; display: block; font-weight: bold; padding-top: 5px">lire la suite</span>
 														</a>
 													</td>
@@ -1146,6 +1144,16 @@ Set xml = Nothing
 										</td>
 									</tr>
 								</table>
+								<!--{{%%{{
+									end if 	
+									i=i+1
+										cart=""
+									else
+									    cart=cart+car
+									end if
+									k=k+1
+									wend
+								}}%%}}-->
 								<!-- ARTICLES END -->
 
 								<!-- BOTTOM START -->

@@ -284,45 +284,42 @@ Set xml = Nothing
 								<!-- ALAUNE END -->
 
 								<!-- ARTICLES START -->
-								<!-- Définir format H 1440x660 -->
-								<table class="row contentArticles first">
-									<tr>
-										<td class="wrapper first">
-											<table class="five columns">
-												<tr>
-													<td>
-														<a target="_blank" class="link_box inner text-pad-left" href="http://ec-opera.expert-infos.com/?article=4678710">
-															<img src="http://lorempixel.com/1440/660/business/" width="290" height="133" alt="" />
-														</a>
-													</td>
-												</tr>
-											</table>
-										</td>
-										<td class="wrapper last">
-											<table class="seven columns">
-												<tr>
-													<td>
-														<a target="_blank" class="link_box inner text-pad" href="http://ec-opera.expert-infos.com/?article=4678710">
-															<h2 class="title">
-																<span class="icon-rsaquo">&rsaquo;</span>&#160;D&eacute;claration d'insaisissabilit&eacute;&#160;: n'y recourez pas trop tard&#160;!
-															</h2>
-															<span class="text">Les entreprises doivent r&eacute;gler les acomptes de cotisation fonci&egrave;re des entreprises (CFE) et de cotisation sur la valeur ajout&eacute;e des entreprises (CVAE) pour le 16 juin prochain au plus tard.</span>
-															<span class="readMore">lire la suite</span>
-														</a>
-													</td>
-												</tr>
-											</table>
-										</td>
-									</tr>
-								</table>
+								<!--{{%%{{
+								idarticle=idarticle&"-"
+								if idarticle="" then request.QueryString("amp;idarticle")
+								article=Mid(idarticle,1,(len(idarticle)))
+								nbc_desc=len(article)
+								k=1
+								i=1
+								
+				    			while k <= nbc_desc
+								carn=asc(Mid(article,k,1))
+								car=Mid(article,k,1)
+								if carn = 45 then
+									SQLArticle="SELECT * FROM CHAPITRES_FLASHS_INFOS WHERE (IDCHAPITRE_FLASH_INFOS = "& cart &")"
+									Set rsArticle=conn.Execute(SQLArticle)
+									id_de_larticle=mid(rsArticle("URL_DETAIL_INFO"),13,len(rsArticle("URL_DETAIL_INFO"))-16)
+									
+									SQLIdArticle="SELECT * FROM CHAPITRES_FLASHS_INFOS WHERE (IDCHAPITRE_FLASH_INFOS = "& cart &")"
+									Set rsIdArticle=conn.Execute(SQLIdArticle)
+									id_flash=rsIdArticle("ID_FLASH_INFOS")
+																						
+									CountArt="SELECT COUNT(*) FROM CHAPITRES_FLASHS_INFOS WHERE ID_FLASH_INFOS="& id_flash
+									set rsCountArt=conn.Execute(CountArt)
+									nbrart=rsCountArt(0)
+									
+								    if (i<(nbrart-1)) then
+
+								    	article_url_v3 = rsArticle("URL_DETAIL_V3")
+								}}%%}}-->
 								<table class="row contentArticles">
 									<tr>
 										<td class="wrapper first">
 											<table class="five columns">
 												<tr>
 													<td>
-														<a target="_blank" class="link_box inner text-pad-left" href="http://ec-opera.expert-infos.com/?article=4678710">
-															<img src="http://lorempixel.com/1440/660/business/" width="290" height="133" alt="" />
+														<a target="_blank" class="link_box inner text-pad-left" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%">
+															<img src="http://e-newsletter.expert-infos.com/_infos/_photos/%%{{=id_de_larticle}}%%-h.jpg" width="290" height="133" alt="" /><!--DEL{{--><img src="http://lorempixel.com/1440/660/business/" width="290" height="133" alt="" /><!--}}DEL-->
 														</a>
 													</td>
 												</tr>
@@ -332,11 +329,11 @@ Set xml = Nothing
 											<table class="seven columns">
 												<tr>
 													<td>
-														<a target="_blank" class="link_box inner text-pad" href="http://ec-opera.expert-infos.com/?article=4678710">
+														<a target="_blank" class="link_box inner text-pad" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%">
 															<h2 class="title">
-																<span class="icon-rsaquo">&rsaquo;</span>&#160;D&eacute;claration d'insaisissabilit&eacute;&#160;: n'y recourez pas trop tard&#160;!
+																<span class="icon-rsaquo">&rsaquo;</span>&#160;<!--{{%%{{=rsArticle("TITRE_CHAPITRE_FLASH_INFOS")}}%%}}--><!--DEL{{-->TITRE_CHAPITRE_FLASH_INFOS<!--}}DEL-->
 															</h2>
-															<span class="text">Les entreprises doivent r&eacute;gler les acomptes de cotisation fonci&egrave;re des entreprises (CFE) et de cotisation sur la valeur ajout&eacute;e des entreprises (CVAE) pour le 16 juin prochain au plus tard.</span>
+															<span class="text"><!--{{%%{{=rsArticle("CONTENU_CHAPITRE_FLASH_INFOS")}}%%}}--><!--DEL{{-->CONTENU_CHAPITRE_FLASH_INFOS<!--}}DEL--></span>
 															<span class="readMore">lire la suite</span>
 														</a>
 													</td>
@@ -345,14 +342,15 @@ Set xml = Nothing
 										</td>
 									</tr>
 								</table>
+								<!--{{%%{{ else }}%%}}-->
 								<table class="row contentArticles last">
 									<tr>
 										<td class="wrapper first">
 											<table class="five columns">
 												<tr>
 													<td>
-														<a target="_blank" class="link_box inner text-pad-left" href="http://ec-opera.expert-infos.com/?article=4678710">
-															<img src="http://lorempixel.com/1440/660/business/" width="290" height="133" alt="" />
+														<a target="_blank" class="link_box inner text-pad-left" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%">
+															<img src="http://e-newsletter.expert-infos.com/_infos/_photos/%%{{=id_de_larticle}}%%-h.jpg" width="290" height="133" alt="" /><!--DEL{{--><img src="http://lorempixel.com/1440/660/business/" width="290" height="133" alt="" /><!--}}DEL-->
 														</a>
 													</td>
 												</tr>
@@ -362,11 +360,11 @@ Set xml = Nothing
 											<table class="seven columns">
 												<tr>
 													<td>
-														<a target="_blank" class="link_box inner text-pad" href="http://ec-opera.expert-infos.com/?article=4678710">
+														<a target="_blank" class="link_box inner text-pad" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%">
 															<h2 class="title">
-																<span class="icon-rsaquo">&rsaquo;</span>&#160;D&eacute;claration d'insaisissabilit&eacute;&#160;: n'y recourez pas trop tard&#160;!
+																<span class="icon-rsaquo">&rsaquo;</span>&#160;<!--{{%%{{=rsArticle("TITRE_CHAPITRE_FLASH_INFOS")}}%%}}--><!--DEL{{-->TITRE_CHAPITRE_FLASH_INFOS<!--}}DEL-->
 															</h2>
-															<span class="text">Les entreprises doivent r&eacute;gler les acomptes de cotisation fonci&egrave;re des entreprises (CFE) et de cotisation sur la valeur ajout&eacute;e des entreprises (CVAE) pour le 16 juin prochain au plus tard.</span>
+															<span class="text"><!--{{%%{{=rsArticle("CONTENU_CHAPITRE_FLASH_INFOS")}}%%}}--><!--DEL{{-->CONTENU_CHAPITRE_FLASH_INFOS<!--}}DEL--></span>
 															<span class="readMore">lire la suite</span>
 														</a>
 													</td>
@@ -375,6 +373,16 @@ Set xml = Nothing
 										</td>
 									</tr>
 								</table>
+								<!--{{%%{{
+									end if 	
+									i=i+1
+										cart=""
+									else
+									    cart=cart+car
+									end if
+									k=k+1
+									wend
+								}}%%}}-->
 								<!-- ARTICLES END -->
 
 								<!-- BOTTOM START -->
