@@ -179,7 +179,8 @@ Set xml = Nothing
 								</table>
 								<!-- HEADER END -->
 								<!--{{%%{{end if}}%%}}-->
-
+								
+								<!--{{%%{{if(texte_vacances <> "") then}}%%}}-->
 								<!-- CABINFORM START -->
 								<table class="row contentCabInform" bgcolor="##newsletterContentCabInformBackground##">
 									<tr>
@@ -188,7 +189,7 @@ Set xml = Nothing
 												<tr>
 													<td>
 														<span class="inner text-pad">
-															Le cabinet est fermé !
+															%%{{texte_vacances}}%%
 														</span>
 													</td>
 												</tr>
@@ -197,6 +198,7 @@ Set xml = Nothing
 									</tr>
 								</table>
 								<!-- CABINFORM END -->
+								<!--{{%%{{end if}}%%}}-->
 
 								<!-- CABINFORM START -->
 								<table class="row contentCabInform" bgcolor="##newsletterContentCabInformBackground##">

@@ -950,7 +950,8 @@ Set xml = Nothing
 								</table>
 								<!-- HEADER END -->
 								<%end if%>
-
+								
+								<%if(texte_vacances <> "") then%>
 								<!-- CABINFORM START -->
 								<table class="row contentCabInform" bgcolor="##newsletterContentCabInformBackground##" style="background: ##newsletterContentCabInformBackground##; border-collapse: collapse; border-spacing: 0; color: ##newsletterContentCabInformText## !important; display: block; empty-cells: hide; padding: 0px; position: relative; text-align: left; vertical-align: top; width: 100%" width="100%" cellpadding="0" cellspacing="0">
 									<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
@@ -959,7 +960,7 @@ Set xml = Nothing
 												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 													<td style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: ##newsletterContentCabInformText## !important; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 0px 0px 0; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
 														<span class="inner text-pad" style="color: ##newsletterContentCabInformText## !important; display: block; padding: 10px">
-															Le cabinet est ferm&#233;&#160;!
+															<%texte_vacances%>
 														</span>
 													</td>
 												</tr>
@@ -968,6 +969,7 @@ Set xml = Nothing
 									</tr>
 								</table>
 								<!-- CABINFORM END -->
+								<%end if%>
 
 								<!-- CABINFORM START -->
 								<table class="row contentCabInform" bgcolor="##newsletterContentCabInformBackground##" style="background: ##newsletterContentCabInformBackground##; border-collapse: collapse; border-spacing: 0; color: ##newsletterContentCabInformText## !important; display: block; empty-cells: hide; padding: 0px; position: relative; text-align: left; vertical-align: top; width: 100%" width="100%" cellpadding="0" cellspacing="0">
