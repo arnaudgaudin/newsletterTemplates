@@ -57,6 +57,7 @@ perl -pi -e 's/lien_mailto="lien_mailto"/lien_mailto/g;' newsletter-inline-posta
 
 #Suppression des éléments à supprimer
 perl -pi -e 's/<!--DEL\{\{-->.+?<!--\}\}DEL-->//g;' newsletter-inline-postanova.html
+perl -pi -e 's/\/\*DEL\{\{\*\/.+?\/\*\}\}DEL\*\///g;' newsletter-inline-postanova.html
 #test pour multiline, à débugguer
 #<!--DEL\{\{-->\n(?s).+?\n<!--\}\}DEL-->
 
