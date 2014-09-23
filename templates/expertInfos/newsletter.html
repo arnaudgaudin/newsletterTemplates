@@ -212,13 +212,23 @@ Set xml = Nothing
 											<table class="twelve columns">
 												<tr>
 													<td>
-														<a target="_blank" class="link_box inner text-pad" href="#">
-															<h2 class="title">Titre cabinform</h2>
-															<span class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis error, accusantium ducimus, incidunt doloremque iste placeat maiores perspiciatis optio alias dolorum eligendi tenetur, quaerat velit necessitatibus ut, vitae doloribus nulla!</span>
+														<!--{{%%{{
+														lien_cab=rs("lien")
+														if (lien_cab <> "") then
+														}}%%}}-->
+														<a target="_blank" class="link_box inner text-pad" href="%%{{=lien_cab}}%%">
+															<h2 class="title">%%{{=rs("titre")}}%%</h2>
+															<span class="text">%%{{=rs("texte")}}%%</span>
 															<span class="readMore">
 																<span class="icon-rsaquo">&rsaquo;</span>&#160;lire la suite</span>
 															</span>
 														</a>
+														<!--{{%%{{ else }}%%}}-->
+														<span class="inner text-pad">
+															<h2 class="title">%%{{=rs("titre")}}%%</h2>
+															<span class="text">%%{{=rs("texte")}}%%</span>
+														</span>
+														<!--{{%%{{ end if }}%%}}-->
 													</td>
 												</tr>
 											</table>
