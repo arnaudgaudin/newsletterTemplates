@@ -243,16 +243,23 @@ Set xml = Nothing
 								}}%%}}-->
 
 								<!-- ALAUNE START -->
-								<!-- Définir format F 1440x960 -->
+								<!--{{%%{{
+								if idarticleAlaune="" then idarticleAlaune=request.QueryString("amp;idarticleAlaune")
+									SQLArticleAlaune="SELECT * FROM CHAPITRES_FLASHS_INFOS WHERE (IDCHAPITRE_FLASH_INFOS = "& idarticleAlaune &")"
+									Set rsArticleAlaune=conn.Execute(SQLArticleAlaune)
+									id_de_larticle=mid(rsArticleAlaune("URL_DETAIL_INFO"),13,len(rsArticleAlaune("URL_DETAIL_INFO"))-16)
+
+									article_une_url_v3 = rsArticleAlaune("URL_DETAIL_V3")
+								}}%%}}-->
 								<table class="row contentALaUne">
 									<tr>
 										<td class="wrapper first">
 											<table class="six columns">
 												<tr>
 													<td>
-														<a target="_blank" class="link_box inner text-pad" href="http://ec-opera.expert-infos.com/?article=4678710">
-															<h1 class="title">N'oubliez pas d'acquitter vos acomptes de CET pour le 16 juin !</h1>
-															<span class="text">Les entreprises doivent r&eacute;gler les acomptes de cotisation fonci&egrave;re des entreprises (CFE) et de cotisation sur la valeur ajout&eacute;e des entreprises (CVAE) pour le 16 juin prochain au plus tard.</span>
+														<a target="_blank" class="link_box inner text-pad" href="http://%%{{=url_site_exp}}%%/%%{{=article_une_url_v3}}%%">
+															<h1 class="title">%%{{=rsArticleAlaune("TITRE_CHAPITRE_FLASH_INFOS")}}%%</h1>
+															<span class="text">%%{{=rsArticleAlaune("CONTENU_CHAPITRE_FLASH_INFOS")}}%%</span>
 															<span class="readMore">
 																<span class="icon-rsaquo">&rsaquo;</span>&#160;lire la suite</span>
 															</span>
