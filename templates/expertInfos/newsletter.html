@@ -199,7 +199,12 @@ Set xml = Nothing
 								</table>
 								<!-- CABINFORM END -->
 								<!--{{%%{{end if}}%%}}-->
-
+								
+								<!--{{%%{{
+								if ((rsCount(0)>0)) then
+									if not rs.eof then 
+										while not (rs.eof)
+								}}%%}}-->
 								<!-- CABINFORM START -->
 								<table class="row contentCabInform" bgcolor="##newsletterContentCabInformBackground##">
 									<tr>
@@ -220,6 +225,12 @@ Set xml = Nothing
 										</td>
 									</tr>
 								</table>
+								<!--{{%%{{
+										rs.movenext
+										wend
+									end if
+								end if
+								}}%%}}-->
 
 								<!-- Variante sans lien -->
 								<table class="row contentCabInform" bgcolor="##newsletterContentCabInformBackground##">
