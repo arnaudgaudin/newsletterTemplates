@@ -879,8 +879,8 @@ Set xml = Nothing
 
 /* Masquage image avec variable ASP en test */
 img[src*="%%{{"], img[src*="}}%%"] {
-	display: none;
-	visibility: hidden;
+	display: none !important;
+	visibility: hidden !important;
 }
 </style>
 	<table class="body" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-height: 100%; -premailer-width: 100%; background: #787878; border-collapse: collapse; border-spacing: 0; color: #333333; empty-cells: hide; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; height: 100%; line-height: 16px; margin: 0; padding: 0; text-align: left; vertical-align: top; width: 100%" bgcolor="#787878" width="100%" height="100%" cellpadding="0" cellspacing="0">
@@ -1049,7 +1049,7 @@ img[src*="%%{{"], img[src*="}}%%"] {
 											<table class="six columns" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 360px" cellpadding="0" cellspacing="0">
 												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 													<td style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #ffffff !important; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 0px 0px 0; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
-														<img src="http://e-newsletter.expert-infos.com/_infos/_photos/%%{{=id_de_larticle}}%%-f.jpg" width="360" height="240" alt="Article &#224; la Une" style="-ms-interpolation-mode: bicubic; clear: both; display: block; float: left; max-width: 100%; outline: none; text-decoration: none; width: auto" align="left" />
+														<img src="http://e-newsletter.expert-infos.com/_infos/_photos/%%{{=id_de_larticle}}%%-f.jpg" width="360" height="240" alt="Article &#224; la Une" style="-ms-interpolation-mode: bicubic; clear: both; display: block; float: left; max-width: 100%; outline: none; text-decoration: none; width: auto" align="left" /><!--DEL{{--><img src="http://lorempixel.com/1440/960/business/" width="360" height="240" alt="" style="-ms-interpolation-mode: bicubic; clear: both; display: block; float: left; max-width: 100%; outline: none; text-decoration: none; width: auto" align="left" /><!--}}DEL-->
 													</td>
 												</tr>
 											</table>

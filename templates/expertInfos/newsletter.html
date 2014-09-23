@@ -108,8 +108,8 @@ Set xml = Nothing
 
 /* Masquage image avec variable ASP en test */
 img[src*="%%{{"], img[src*="}}%%"] {
-	display: none;
-	visibility: hidden;
+	display: none !important;
+	visibility: hidden !important;
 }
 </style>
 	<table class="body">
@@ -278,7 +278,7 @@ img[src*="%%{{"], img[src*="}}%%"] {
 											<table class="six columns">
 												<tr>
 													<td>
-														<img src="http://e-newsletter.expert-infos.com/_infos/_photos/%%{{=id_de_larticle}}%%-f.jpg" width="360" height="240" alt="Article à la Une" />
+														<img src="http://e-newsletter.expert-infos.com/_infos/_photos/%%{{=id_de_larticle}}%%-f.jpg" width="360" height="240" alt="Article à la Une" /><!--DEL{{--><img src="http://lorempixel.com/1440/960/business/" width="360" height="240" alt="" /><!--}}DEL-->
 													</td>
 												</tr>
 											</table>
