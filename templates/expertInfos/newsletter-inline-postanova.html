@@ -1314,9 +1314,11 @@ Set xml = Nothing
 								<table class="row contentContact" bgcolor="##newsletterContentContactBackground##" style="background: ##newsletterContentContactBackground##; border-collapse: collapse; border-spacing: 0; color: ##newsletterContentContactText## !important; display: block; empty-cells: hide; padding: 0px; position: relative; text-align: left; vertical-align: top; width: 100%" width="100%" cellpadding="0" cellspacing="0">
 									<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 										<td class="wrapper first" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: ##newsletterContentContactText## !important; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 0 0px 0px; position: relative; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
-											<!-- Passer &#224; twelve si pas de r&#233;seau sociaux  -->
-											<!-- <table class="twelve columns"> -->
+										<% if(isSocialNetwork = false)Then %>
+											<table class="twelve columns" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 720px" cellpadding="0" cellspacing="0">
+										<% else %>
 											<table class="seven columns" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 420px" cellpadding="0" cellspacing="0">
+										<% end if %>
 												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 													<td style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: ##newsletterContentContactText## !important; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 0px 0px 0; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
 														<span class="inner text-pad" style="color: ##newsletterContentContactText## !important; display: block; padding: 10px">

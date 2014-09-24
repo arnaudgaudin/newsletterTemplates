@@ -111,7 +111,7 @@ Set xml = Nothing
     table[class="body"] img { width: 100% !important; }
   }
 }
-/*DEL{{*/img[src*="%%{{"], img[src*="}}%%"] { display: none !important; visibility: hidden !important; }/*}}DEL*/
+/*DEL{{*/img[src*="%%{{"], img[src*="}}%%"], .-premailer-hidden { display: none !important; visibility: hidden !important; }/*}}DEL*/
 </style>
 	<table class="body">
 		<tr>
@@ -561,9 +561,11 @@ Set xml = Nothing
 								<table class="row contentContact" bgcolor="##newsletterContentContactBackground##">
 									<tr>
 										<td class="wrapper first">
-											<!-- Passer à twelve si pas de réseau sociaux  -->
-											<!-- <table class="twelve columns"> -->
+										<!--{{%%{{ if(isSocialNetwork = false)Then }}%%}}-->
+											<table class="twelve columns -premailer-hidden"><!--DEL{{--></table><!--}}DEL-->
+										<!--{{%%{{ else }}%%}}-->
 											<table class="seven columns">
+										<!--{{%%{{ end if }}%%}}-->
 												<tr>
 													<td>
 														<span class="inner text-pad">
