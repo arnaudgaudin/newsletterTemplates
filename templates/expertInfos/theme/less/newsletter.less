@@ -7,13 +7,6 @@
 @import "variables.less";
 
 
-// CUSTOM MIXINS
-// --------------------------------------------------
-.newsletterInnerTextColor(@color) {
-	&, td, .inner, a, a:link, a:visited, a:hover, a:focus, a:active { color: @color !important; }
-}
-
-
 // COLOR PARSING
 // --------------------------------------------------
 
@@ -30,58 +23,4 @@
 	newsletterContentQuestionPreTitle: @newsletterContentQuestionPreTitle;
 	newsletterContentContactBackground: @newsletterContentContactBackground;
 	newsletterContentContactText: @newsletterContentContactText;
-}
-
-
-// CUSTOM COLORS
-// --------------------------------------------------
-
-// contentCabInform area
-// -------------------------
-.contentCabInform {
-	background-color: @newsletterContentCabInformBackground !important;
-	.title { color: @newsletterContentCabInformTitle !important; }
-	.newsletterInnerTextColor(@newsletterContentCabInformText);
-}
-
-// contentArticles area
-// -------------------------
-.contentArticles {
-	.title {
-		.icon-rsaquo { color: @newsletterContentArticlesIconColor !important; }
-	}
-	.readMore { color: @newsletterContentArticlesReadMore !important; }
-}
-
-
-// contentBottom area
-// -------------------------
-.contentBottom {
-	.agenda {
-		.preTitle { color: @newsletterContentAgendaPreTitle !important; }
-	}
-	
-	.chiffre {
-		.preTitle { color: @newsletterContentChiffrePreTitle !important; }
-	}
-
-	.dessin {
-		.preTitle { color: @newsletterContentDessinPreTitle !important; }
-	}
-
-	.profession {
-		.preTitle { color: @newsletterContentProfessionPreTitle !important; }
-	}
-
-	.question {
-		.preTitle { color: @newsletterContentQuestionPreTitle !important; }
-	}
-}
-
-
-// contentContact area
-// -------------------------
-.contentContact {
-	background-color: @newsletterContentContactBackground !important;
-	.newsletterInnerTextColor(@newsletterContentContactText);
 }
