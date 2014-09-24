@@ -1314,7 +1314,7 @@ Set xml = Nothing
 								<table class="row contentContact" bgcolor="##newsletterContentContactBackground##" style="background: ##newsletterContentContactBackground##; border-collapse: collapse; border-spacing: 0; color: ##newsletterContentContactText## !important; display: block; empty-cells: hide; padding: 0px; position: relative; text-align: left; vertical-align: top; width: 100%" width="100%" cellpadding="0" cellspacing="0">
 									<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 										<td class="wrapper first" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: ##newsletterContentContactText## !important; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 0 0px 0px; position: relative; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
-										<% if(isSocialNetwork = false)Then %>
+										<% if(isSocialNetwork=false)Then %>
 											<table class="twelve columns" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 720px" cellpadding="0" cellspacing="0">
 										<% else %>
 											<table class="seven columns" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 420px" cellpadding="0" cellspacing="0">
@@ -1381,8 +1381,7 @@ Set xml = Nothing
 												</tr>
 											</table>
 										</td>
-
-										<!-- Si pas de r&#233;seau sociaux supprimer cette partie -->
+										<% if(isSocialNetwork=true)Then %>
 										<td class="webicons wrapper last" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: ##newsletterContentContactText## !important; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 0 0px 0px; position: relative; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
 											<table class="five columns" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 300px" cellpadding="0" cellspacing="0">
 												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
@@ -1414,8 +1413,7 @@ Set xml = Nothing
 												</tr>
 											</table>
 										</td>
-										<!-- Fin partie &#224; supprimer -->
-
+										<% end if %>
 									</tr>
 								</table>
 								<!-- CONTACT END -->

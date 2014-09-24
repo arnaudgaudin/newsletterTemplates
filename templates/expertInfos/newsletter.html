@@ -561,7 +561,7 @@ Set xml = Nothing
 								<table class="row contentContact" bgcolor="##newsletterContentContactBackground##">
 									<tr>
 										<td class="wrapper first">
-										<!--{{%%{{ if(isSocialNetwork = false)Then }}%%}}-->
+										<!--{{%%{{ if(isSocialNetwork=false)Then }}%%}}-->
 											<table class="twelve columns -premailer-hidden"><!--DEL{{--></table><!--}}DEL-->
 										<!--{{%%{{ else }}%%}}-->
 											<table class="seven columns">
@@ -628,8 +628,7 @@ Set xml = Nothing
 												</tr>
 											</table>
 										</td>
-
-										<!-- Si pas de réseau sociaux supprimer cette partie -->
+										<!--{{%%{{ if(isSocialNetwork=true)Then }}%%}}-->
 										<td class="webicons wrapper last">
 											<table class="five columns">
 												<tr>
@@ -661,8 +660,7 @@ Set xml = Nothing
 												</tr>
 											</table>
 										</td>
-										<!-- Fin partie à supprimer -->
-
+										<!--{{%%{{ end if }}%%}}-->
 									</tr>
 								</table>
 								<!-- CONTACT END -->
