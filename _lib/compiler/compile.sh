@@ -39,6 +39,7 @@ perl -pi -e 's/-premailer-cellpadding(.*?); //g;' newsletter-inline-postanova.ht
 perl -pi -e 's/-premailer-cellspacing(.*?); //g;' newsletter-inline-postanova.html
 perl -pi -e 's/-premailer-width(.*?); //g;' newsletter-inline-postanova.html
 perl -pi -e 's/-premailer-height(.*?); //g;' newsletter-inline-postanova.html
+perl -pi -e 's/( ?)-premailer-hidden( ?)//g;' newsletter-inline-postanova.html
 
 #Suppression des balises de récupération des styles
 perl -pi -e 's/<(.+?)data-type="getstyle" (.*?)style=/style=/g;' newsletter-inline-postanova.html
