@@ -28,6 +28,9 @@ perl -pi -e 's/}}\*\///g;' newsletter-inline-postanova.html
 #Remplacement des balises d'ouverture/fermeture en ASP
 perl -pi -e 's/%%{{/<%/g;' newsletter-inline-postanova.html
 perl -pi -e 's/}}%%/%>/g;' newsletter-inline-postanova.html
+#Gestion des appels de variables via l'URL
+perl -pi -e 's/##\(\(/<%=Request\.QueryString\("/g;' newsletter-inline-postanova.html
+perl -pi -e 's/\)\)##/"\)%>/g;' newsletter-inline-postanova.html
 
 #Remplacement des balises d'ouverture/fermeture de Posta Nova
 perl -pi -e 's/##{{/<?/g;' newsletter-inline-postanova.html
