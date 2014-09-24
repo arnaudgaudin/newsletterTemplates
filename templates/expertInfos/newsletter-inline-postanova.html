@@ -90,6 +90,7 @@ set rs=conn.Execute("SELECT * FROM FLASH_CABINFORM WHERE id_exp=" & id_exp &" AN
 <%
 idarticleAlaune=request.QueryString("idarticleAlaune")
 idarticle=request.QueryString("idarticle")
+online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/flashinfos_V3_resp.asp?"&Request.QueryString&"&fintrack="
 %>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -890,7 +891,7 @@ color: #333333;
 															<% if isOnline=False then %>
 															<gab_lien_message_online>
 															<small class="online" style="display: block; font-size: 11px; padding-bottom: 5px">
-																Pour visualiser ce message en ligne, <a target="_blank" class="link_underline" href="http://e-newsletter.expert-infos.com/_e-newsletter/<%=la_semaine%>/flashinfos_V3_resp.asp?id_client=<%=id_client%>&amp;idarticle=<%=idarticle%>&amp;idarticleAlaune=<%=idarticleAlaune%>&amp;fintrack=" lien_message_online style="color: #ffffff !important; text-decoration: underline">suivez ce lien</a>.
+																Pour visualiser ce message en ligne, <a target="_blank" class="link_underline" href="<%=online_url%>" lien_message_online style="color: #ffffff !important; text-decoration: underline">suivez ce lien</a>.
 															</small>
 															</gab_lien_message_online>
 															<% end if %>
