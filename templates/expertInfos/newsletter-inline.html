@@ -1387,27 +1387,41 @@ Set xml = Nothing
 												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 													<td style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: ##newsletterContentContactText## !important; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 0px 0px 0; text-align: right; vertical-align: top; word-break: break-word" align="right" valign="top">
 														<span class="inner text-pad" style="color: ##newsletterContentContactText## !important; display: block; padding: 10px">
-															<a target="_blank" class="webicon first" href="http://www.facebook.com" style="color: ##newsletterContentContactText## !important; display: inline; font-size: 0; line-height: 0; padding: 0 5px 5px 0; text-decoration: none">
+															<!--{{%%{{ if (url_facebook<>"") then }}%%}}-->
+															<a target="_blank" class="webicon first" href="http://%%{{=url_facebook}}%%" style="color: ##newsletterContentContactText## !important; display: inline; font-size: 0; line-height: 0; padding: 0 5px 5px 0; text-decoration: none">
 																<img src="http://www.expert-infos.com/_newsletter/_logos/webicon-facebook.gif" alt="Facebook" width="30" height="30" style="-ms-interpolation-mode: bicubic; border-radius: 5px; border: none; clear: both; display: inline; float: none; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none" />
 															</a>
-															<a target="_blank" class="webicon" href="http://www.googleplus.com" style="color: ##newsletterContentContactText## !important; display: inline; font-size: 0; line-height: 0; padding: 0 5px 5px; text-decoration: none">
+															<!--{{%%{{ end if }}%%}}-->
+															<!--{{%%{{ if (url_google<>"") then }}%%}}-->
+															<a target="_blank" class="webicon" href="http://%%{{=url_google}}%%" style="color: ##newsletterContentContactText## !important; display: inline; font-size: 0; line-height: 0; padding: 0 5px 5px; text-decoration: none">
 																<img src="http://www.expert-infos.com/_newsletter/_logos/webicon-googleplus.gif" alt="Google+" width="30" height="30" style="-ms-interpolation-mode: bicubic; border-radius: 5px; border: none; clear: both; display: inline; float: none; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none" />
 															</a>
-															<a target="_blank" class="webicon" href="http://www.linkedin.com" style="color: ##newsletterContentContactText## !important; display: inline; font-size: 0; line-height: 0; padding: 0 5px 5px; text-decoration: none">
+															<!--{{%%{{ end if }}%%}}-->
+															<!--{{%%{{ if (url_linkedin<>"") then }}%%}}-->
+															<a target="_blank" class="webicon" href="http://%%{{=url_linkedin}}%%" style="color: ##newsletterContentContactText## !important; display: inline; font-size: 0; line-height: 0; padding: 0 5px 5px; text-decoration: none">
 																<img src="http://www.expert-infos.com/_newsletter/_logos/webicon-linkedin.gif" alt="Linkedin" width="30" height="30" style="-ms-interpolation-mode: bicubic; border-radius: 5px; border: none; clear: both; display: inline; float: none; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none" />
 															</a>
-															<a target="_blank" class="webicon" href="http://www.twitter.com" style="color: ##newsletterContentContactText## !important; display: inline; font-size: 0; line-height: 0; padding: 0 5px 5px; text-decoration: none">
+															<!--{{%%{{ end if }}%%}}-->
+															<!--{{%%{{ if (url_twitter<>"") then }}%%}}-->
+															<a target="_blank" class="webicon" href="http://%%{{=url_twitter}}%%" style="color: ##newsletterContentContactText## !important; display: inline; font-size: 0; line-height: 0; padding: 0 5px 5px; text-decoration: none">
 																<img src="http://www.expert-infos.com/_newsletter/_logos/webicon-twitter.gif" alt="Twitter" width="30" height="30" style="-ms-interpolation-mode: bicubic; border-radius: 5px; border: none; clear: both; display: inline; float: none; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none" />
 															</a>
-															<a target="_blank" class="webicon" href="http://www.viadeo.com" style="color: ##newsletterContentContactText## !important; display: inline; font-size: 0; line-height: 0; padding: 0 5px 5px; text-decoration: none">
+															<!--{{%%{{ end if }}%%}}-->
+															<!--{{%%{{ if (url_viadeo<>"") then }}%%}}-->
+															<a target="_blank" class="webicon" href="http://%%{{=url_viadeo}}%%" style="color: ##newsletterContentContactText## !important; display: inline; font-size: 0; line-height: 0; padding: 0 5px 5px; text-decoration: none">
 																<img src="http://www.expert-infos.com/_newsletter/_logos/webicon-viadeo.gif" alt="Viadeo" width="30" height="30" style="-ms-interpolation-mode: bicubic; border-radius: 5px; border: none; clear: both; display: inline; float: none; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none" />
 															</a>
-															<a target="_blank" class="webicon" href="http://www.vimeo.com" style="color: ##newsletterContentContactText## !important; display: inline; font-size: 0; line-height: 0; padding: 0 5px 5px; text-decoration: none">
+															<!--{{%%{{ end if }}%%}}-->
+															<!--{{%%{{ if (url_vimeo<>"") then }}%%}}-->
+															<a target="_blank" class="webicon" href="http://%%{{=url_vimeo}}%%" style="color: ##newsletterContentContactText## !important; display: inline; font-size: 0; line-height: 0; padding: 0 5px 5px; text-decoration: none">
 																<img src="http://www.expert-infos.com/_newsletter/_logos/webicon-vimeo.gif" alt="Vimeo" width="30" height="30" style="-ms-interpolation-mode: bicubic; border-radius: 5px; border: none; clear: both; display: inline; float: none; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none" />
 															</a>
-															<a target="_blank" class="webicon last" href="http://www.youtube.com" style="color: ##newsletterContentContactText## !important; display: inline; font-size: 0; line-height: 0; padding: 0 0 5px 5px; text-decoration: none">
+															<!--{{%%{{ end if }}%%}}-->
+															<!--{{%%{{ if (url_youtube<>"") then }}%%}}-->
+															<a target="_blank" class="webicon last" href="http://%%{{=url_youtube}}%%" style="color: ##newsletterContentContactText## !important; display: inline; font-size: 0; line-height: 0; padding: 0 0 5px 5px; text-decoration: none">
 																<img src="http://www.expert-infos.com/_newsletter/_logos/webicon-youtube.gif" alt="Youtube" width="30" height="30" style="-ms-interpolation-mode: bicubic; border-radius: 5px; border: none; clear: both; display: inline; float: none; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none" />
 															</a>
+															<!--{{%%{{ end if }}%%}}-->
 														</span>
 													</td>
 												</tr>

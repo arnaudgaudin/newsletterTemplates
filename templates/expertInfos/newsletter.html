@@ -634,27 +634,41 @@ Set xml = Nothing
 												<tr>
 													<td>
 														<span class="inner text-pad">
-															<a target="_blank" class="webicon first" href="http://www.facebook.com">
+															<!--{{%%{{ if (url_facebook<>"") then }}%%}}-->
+															<a target="_blank" class="webicon first" href="http://%%{{=url_facebook}}%%">
 																<img src="http://www.expert-infos.com/_newsletter/_logos/webicon-facebook.gif" alt="Facebook" width="30" height="30" />
 															</a>
-															<a target="_blank" class="webicon" href="http://www.googleplus.com">
+															<!--{{%%{{ end if }}%%}}-->
+															<!--{{%%{{ if (url_google<>"") then }}%%}}-->
+															<a target="_blank" class="webicon" href="http://%%{{=url_google}}%%">
 																<img src="http://www.expert-infos.com/_newsletter/_logos/webicon-googleplus.gif" alt="Google+" width="30" height="30" />
 															</a>
-															<a target="_blank" class="webicon" href="http://www.linkedin.com">
+															<!--{{%%{{ end if }}%%}}-->
+															<!--{{%%{{ if (url_linkedin<>"") then }}%%}}-->
+															<a target="_blank" class="webicon" href="http://%%{{=url_linkedin}}%%">
 																<img src="http://www.expert-infos.com/_newsletter/_logos/webicon-linkedin.gif" alt="Linkedin" width="30" height="30" />
 															</a>
-															<a target="_blank" class="webicon" href="http://www.twitter.com">
+															<!--{{%%{{ end if }}%%}}-->
+															<!--{{%%{{ if (url_twitter<>"") then }}%%}}-->
+															<a target="_blank" class="webicon" href="http://%%{{=url_twitter}}%%">
 																<img src="http://www.expert-infos.com/_newsletter/_logos/webicon-twitter.gif" alt="Twitter" width="30" height="30" />
 															</a>
-															<a target="_blank" class="webicon" href="http://www.viadeo.com">
+															<!--{{%%{{ end if }}%%}}-->
+															<!--{{%%{{ if (url_viadeo<>"") then }}%%}}-->
+															<a target="_blank" class="webicon" href="http://%%{{=url_viadeo}}%%">
 																<img src="http://www.expert-infos.com/_newsletter/_logos/webicon-viadeo.gif" alt="Viadeo" width="30" height="30" />
 															</a>
-															<a target="_blank" class="webicon" href="http://www.vimeo.com">
+															<!--{{%%{{ end if }}%%}}-->
+															<!--{{%%{{ if (url_vimeo<>"") then }}%%}}-->
+															<a target="_blank" class="webicon" href="http://%%{{=url_vimeo}}%%">
 																<img src="http://www.expert-infos.com/_newsletter/_logos/webicon-vimeo.gif" alt="Vimeo" width="30" height="30" />
 															</a>
-															<a target="_blank" class="webicon last" href="http://www.youtube.com">
+															<!--{{%%{{ end if }}%%}}-->
+															<!--{{%%{{ if (url_youtube<>"") then }}%%}}-->
+															<a target="_blank" class="webicon last" href="http://%%{{=url_youtube}}%%">
 																<img src="http://www.expert-infos.com/_newsletter/_logos/webicon-youtube.gif" alt="Youtube" width="30" height="30" />
 															</a>
+															<!--{{%%{{ end if }}%%}}-->
 														</span>
 													</td>
 												</tr>
