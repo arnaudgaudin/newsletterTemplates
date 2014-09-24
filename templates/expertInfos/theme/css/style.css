@@ -97,6 +97,7 @@ table.body {
 table.container {
   background-color: #ffffff;
   width: 720px;
+  -premailer-width: 720;
   margin: 0 auto;
   text-align: inherit;
 }
@@ -136,39 +137,51 @@ table.container td.last {
 }
 table.one {
   width: 60px;
+  -premailer-width: 60;
 }
 table.two {
   width: 120px;
+  -premailer-width: 120;
 }
 table.three {
   width: 180px;
+  -premailer-width: 180;
 }
 table.four {
   width: 240px;
+  -premailer-width: 240;
 }
 table.five {
   width: 300px;
+  -premailer-width: 300;
 }
 table.six {
   width: 360px;
+  -premailer-width: 360;
 }
 table.seven {
   width: 420px;
+  -premailer-width: 420;
 }
 table.eight {
   width: 480px;
+  -premailer-width: 480;
 }
 table.nine {
   width: 540px;
+  -premailer-width: 540;
 }
 table.ten {
   width: 600px;
+  -premailer-width: 600;
 }
 table.eleven {
   width: 660px;
+  -premailer-width: 660;
 }
 table.twelve {
   width: 720px;
+  -premailer-width: 720;
 }
 table.one center {
   min-width: 60px;
@@ -356,24 +369,31 @@ table.column .text-pad-right {
 }
 .two-up td {
   width: 360px;
+  -premailer-width: 360;
 }
 .three-up td {
   width: 240px;
+  -premailer-width: 240;
 }
 .four-up td {
   width: 180px;
+  -premailer-width: 180;
 }
 .five-up td {
   width: 144px;
+  -premailer-width: 144;
 }
 .six-up td {
   width: 120px;
+  -premailer-width: 120;
 }
 .seven-up td {
   width: 102px;
+  -premailer-width: 102;
 }
 .eight-up td {
   width: 90px;
+  -premailer-width: 90;
 }
 /* Alignment & Visibility Classes */
 table.center,
@@ -774,6 +794,9 @@ body.outlook p {
   table[class="body"] .show-for-small,
   table[class="body"] .hide-for-desktop {
     display: inherit !important;
+  }
+  table[class="container"] .block-grid td {
+    width: 100% !important;
   }
 }
 .appleLinks a {
