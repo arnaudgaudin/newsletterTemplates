@@ -73,9 +73,9 @@ end if
 
 'Detect isSocialNetwork'
 if(url_facebook = "" and url_twitter="" and url_linkedin="" and url_viadeo="" and url_google="" and url_vimeo="" and url_youtube="") then
-	isSocialNetwork = false
+	isSocialNetwork = False
 else
-	isSocialNetwork = true
+	isSocialNetwork = True
 end if
 
 'Detect isOnline'
@@ -566,7 +566,7 @@ Set xml = Nothing
 								<table class="row contentContact" bgcolor="##newsletterContentContactBackground##">
 									<tr>
 										<td class="wrapper first">
-										<!--{{%%{{ if(isSocialNetwork=false)Then }}%%}}-->
+										<!--{{%%{{ if(isSocialNetwork=False)Then }}%%}}-->
 											<table class="twelve columns -premailer-hidden"><!--DEL{{--></table><!--}}DEL-->
 										<!--{{%%{{ else }}%%}}-->
 											<table class="seven columns">
@@ -633,7 +633,7 @@ Set xml = Nothing
 												</tr>
 											</table>
 										</td>
-										<!--{{%%{{ if(isSocialNetwork=true)Then }}%%}}-->
+										<!--{{%%{{ if(isSocialNetwork=True)Then }}%%}}-->
 										<td class="webicons wrapper last">
 											<table class="five columns">
 												<tr>

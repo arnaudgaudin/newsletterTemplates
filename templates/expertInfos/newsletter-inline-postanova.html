@@ -73,9 +73,9 @@ end if
 
 'Detect isSocialNetwork'
 if(url_facebook = "" and url_twitter="" and url_linkedin="" and url_viadeo="" and url_google="" and url_vimeo="" and url_youtube="") then
-	isSocialNetwork = false
+	isSocialNetwork = False
 else
-	isSocialNetwork = true
+	isSocialNetwork = True
 end if
 
 'Detect isOnline'
@@ -1319,7 +1319,7 @@ Set xml = Nothing
 								<table class="row contentContact" bgcolor="##newsletterContentContactBackground##" style="background: ##newsletterContentContactBackground##; border-collapse: collapse; border-spacing: 0; color: ##newsletterContentContactText## !important; display: block; empty-cells: hide; padding: 0px; position: relative; text-align: left; vertical-align: top; width: 100%" width="100%" cellpadding="0" cellspacing="0">
 									<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 										<td class="wrapper first" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: ##newsletterContentContactText## !important; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 0 0px 0px; position: relative; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
-										<% if(isSocialNetwork=false)Then %>
+										<% if(isSocialNetwork=False)Then %>
 											<table class="twelve columns" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 720px" cellpadding="0" cellspacing="0">
 										<% else %>
 											<table class="seven columns" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 420px" cellpadding="0" cellspacing="0">
@@ -1386,7 +1386,7 @@ Set xml = Nothing
 												</tr>
 											</table>
 										</td>
-										<% if(isSocialNetwork=true)Then %>
+										<% if(isSocialNetwork=True)Then %>
 										<td class="webicons wrapper last" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: ##newsletterContentContactText## !important; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 0 0px 0px; position: relative; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
 											<table class="five columns" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 300px" cellpadding="0" cellspacing="0">
 												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
