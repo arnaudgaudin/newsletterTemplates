@@ -609,7 +609,12 @@ Set xml = Nothing
 															<br/>
 															<a class="link_underline" href="mailto:%%{{=email_exp}}%%"><!--{{%%{{=email_exp}}%%}}--><!--DEL{{-->email_exp<!--}}DEL--></a>
 															-
-															<a target="_blank" class="link_underline" href="http://www.bdo.fr">www.bdo.fr</a>
+															<!--{{%%{{
+															if type_abo="4" then
+																url_site_exp = rsCabinet("url_site_exp")
+															end if
+															}}%%}}-->
+															<a target="_blank" class="link_underline" href="http://%%{{=url_site_exp}}%%"><!--{{%%{{=url_site_exp}}%%}}--><!--DEL{{-->url_site_exp<!--}}DEL--></a>
 														</span>
 													</td>
 												</tr>
