@@ -134,11 +134,13 @@ Set xml = Nothing
 												<tr>
 													<td class="center">
 														<span class="inner text-pad">
+															<!--{{%%{{ if isOnline=False then }}%%}}-->
 															<!--{{<gab_lien_message_online>}}-->
 															<small class="online">
 																Pour visualiser ce message en ligne, <a target="_blank" class="link_underline" href="http://e-newsletter.expert-infos.com/_e-newsletter/%%{{=la_semaine}}%%/flashinfos_V3_resp.asp?id_client=%%{{=id_client}}%%&amp;idarticle=%%{{=idarticle}}%%&amp;idarticleAlaune=%%{{=idarticleAlaune}}%%&amp;fintrack=" lien_message_online="lien_message_online">suivez ce lien</a>.
 															</small>
 															<!--{{</gab_lien_message_online>}}-->
+															<!--{{%%{{ end if }}%%}}-->
 															<strong class="name">M Martin, votre newsletter du <a class="link_disabled" href="#"><!--{{%%{{=la_date}}%%}}--><!--DEL{{-->la_date<!--}}DEL--></a>.</strong>
 														</span>
 													</td>
