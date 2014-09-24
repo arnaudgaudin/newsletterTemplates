@@ -69,7 +69,13 @@ if not rsCabinet.eof then
 		Case 38 txt_perso_site = "pop"
 		Case 39 txt_perso_site = "disco"
 	End Select
+end if
 
+'Detect socialNetworks'
+if(url_facebook = "" and url_twitter="" and url_linkedin="" and url_viadeo="" and url_google="" and url_vimeo="" and url_youtube="") then
+	isSocialNetwork = false
+else
+	isSocialNetwork = true
 end if
 
 set rsCount=conn.Execute("SELECT COUNT(*) FROM FLASH_CABINFORM WHERE id_exp="& id_exp &" AND (afficher=1)")
