@@ -1247,10 +1247,10 @@ h6 a:visited {
   color: #ffffff !important;
 }
 .contentCabInform {
-  -premailer-background: ##((newsletterContentCabInformBackground))##;
+  -premailer-background: ###((newsletterContentCabInformBackground))##;
 }
 .contentCabInform .title {
-  color: ##((newsletterContentCabInformTitle))##;
+  color: ###((newsletterContentCabInformTitle))##;
 }
 .contentCabInform,
 .contentCabInform td,
@@ -1261,31 +1261,31 @@ h6 a:visited {
 .contentCabInform a:hover,
 .contentCabInform a:focus,
 .contentCabInform a:active {
-  color: ##((newsletterContentCabInformText))## !important;
+  color: ###((newsletterContentCabInformText))## !important;
 }
 .contentArticles .title .icon-rsaquo {
-  color: ##((newsletterContentArticlesIconColor))##;
+  color: ###((newsletterContentArticlesIconColor))##;
 }
 .contentArticles .readMore {
-  color: ##((newsletterContentArticlesReadMore))##;
+  color: ###((newsletterContentArticlesReadMore))##;
 }
 .contentBottom .agenda .preTitle {
-  color: ##((newsletterContentAgendaPreTitle))##;
+  color: ###((newsletterContentAgendaPreTitle))##;
 }
 .contentBottom .chiffre .preTitle {
-  color: ##((newsletterContentChiffrePreTitle))##;
+  color: ###((newsletterContentChiffrePreTitle))##;
 }
 .contentBottom .dessin .preTitle {
-  color: ##((newsletterContentDessinPreTitle))##;
+  color: ###((newsletterContentDessinPreTitle))##;
 }
 .contentBottom .profession .preTitle {
-  color: ##((newsletterContentProfessionPreTitle))##;
+  color: ###((newsletterContentProfessionPreTitle))##;
 }
 .contentBottom .question .preTitle {
-  color: ##((newsletterContentQuestionPreTitle))##;
+  color: ###((newsletterContentQuestionPreTitle))##;
 }
 .contentContact {
-  -premailer-background: ##((newsletterContentContactBackground))##;
+  -premailer-background: ###((newsletterContentContactBackground))##;
 }
 .contentContact,
 .contentContact td,
@@ -1296,7 +1296,7 @@ h6 a:visited {
 .contentContact a:hover,
 .contentContact a:focus,
 .contentContact a:active {
-  color: ##((newsletterContentContactText))## !important;
+  color: ###((newsletterContentContactText))## !important;
 }
 /*
 // contentCabInform area
