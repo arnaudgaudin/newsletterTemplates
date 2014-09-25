@@ -88,7 +88,7 @@ set rs=conn.Execute("SELECT * FROM FLASH_CABINFORM WHERE id_exp=" & id_exp &" AN
 }}%%}}-->
 <!--{{%%{{ 'CSS Parser. Use colorParsing.Item("nlColorVariable")' }}%%}}-->
 <!--#include file="../parserCSS.inc"-->
-<!--#include file="emill-v2bis.asp"-->
+<!--#include file="emill-cgp.asp"-->
 <!--{{%%{{
 idarticleAlaune=request.QueryString("idarticleAlaune")
 idarticle=request.QueryString("idarticle")
@@ -98,7 +98,7 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" type="text/css" media="all" href="theme/css/style.css" /><title>Newsletter hebdomadaire du <!--{{%%{{=la_date}}%%}}--><!--DEL{{-->la_date<!--}}DEL--></title>
+    <link rel="stylesheet" type="text/css" media="all" href="theme/css/style.css" /><title>Newsletter bimensuelle du <!--{{%%{{=la_date}}%%}}--><!--DEL{{-->la_date<!--}}DEL--></title>
 </head>
 <body>
 <style type="text/css" data-premailer="ignore">
@@ -279,7 +279,7 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 											<table class="six columns">
 												<tr>
 													<td>
-														<img src="http://e-newsletter.expert-infos.com/_infos/_photos/%%{{=id_de_larticle}}%%-f.jpg" width="360" height="240" alt="Article à la Une" /><!--DEL{{--><img src="http://lorempixel.com/1440/960/business/" width="360" height="240" alt="" /><!--}}DEL-->
+														<img src="http://e-newsletter.expert-infos.com/_infos/_photos/%%{{=id_de_larticle}}%%-f.jpg" width="360" height="240" alt="Article ï¿½ la Une" /><!--DEL{{--><img src="http://lorempixel.com/1440/960/business/" width="360" height="240" alt="" /><!--}}DEL-->
 													</td>
 												</tr>
 											</table>
@@ -393,39 +393,33 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 								<!-- BOTTOM START -->
 								<table class="row contentBottom">
 									<tr>
-										<td class="agenda wrapper first">
+										<td class="chiffre wrapper first">
 											<table class="five columns">
 												<tr>
 													<td>
-														<a target="_blank" class="link_box inner text-pad" href="http://%%{{=url_site_exp}}%%/%%{{=url_mois1_v3}}%%">
-															<span class="preTitle"><!--{{%%{{=date1}}%%}}--><!--DEL{{-->date1<!--}}DEL--></span>
-															<h2 class="title"><!--{{%%{{=texte1V3_1}}%%}}--><!--DEL{{-->texte1V3_1<!--}}DEL--></h2>
-															<span class="text"><!--{{%%{{=texte1V3_2}}%%}}--><!--DEL{{-->texte1V3_2<!--}}DEL--></span>
+														<a target="_blank" class="link_box inner text-pad" href="http://%%{{=url_site_exp}}%%/%%{{=url_chiffre_v3}}%%">
+															<span class="preTitle"><!--{{%%{{=chiffre}}%%}}--><!--DEL{{-->chiffre<!--}}DEL--></span>
+															<h2 class="title"><!--{{%%{{=titre_chiffre}}%%}}--><!--DEL{{-->titre_chiffre<!--}}DEL--></h2>
+															<span class="text">Retrouvez tous les indicateurs sociaux, fiscaux, et juridiques dans la rubrique &#171;&#160;Chiffres&#160;utiles&#160;&#187; de notre site.</span>
 														</a>
 													</td>
 												</tr>
 											</table>
 										</td>
-										<td class="dessin wrapper last">
+										<td class="question wrapper last">
 											<table class="seven columns">
 												<tr class="borderContainer">
-													<td><span class="borderOffset left"><span class="border"></span></span></td>
-													<td><span class="borderOffset right"><span class="border"></span></span></td>
+													<td><span class="borderOffset left right"><span class="border"></span></span></td>
 												</tr>
 												<tr>
-													<td class="six sub-columns first">
-														<a target="_blank" class="link_box inner text-pad-left" href="http://%%{{=url_site_exp}}%%/dessin">
-															<span class="preTitle">L'actu'<br/><small>en dessin</small></span>
-															<h3 class="title"><!--{{%%{{=texte_dessin}}%%}}--><!--DEL{{-->texte_dessin<!--}}DEL--></h3>
-															<span class="readMore">
-																<span class="icon-rsaquo">&rsaquo;</span>&#160;agrandir le dessin</span>
-															</span>
-														</a>
-													</td>
-													<td class="six sub-columns last">
-														<a target="_blank" class="link_box inner text-pad" href="http://%%{{=url_site_exp}}%%/dessin">
-															<img src="http://e-newsletter.expert-infos.com/_infos/_photos/%%{{=id_article_dessin}}%%-i.jpg" width="190" height="126" alt="Le dessin de la semaine" /><!--DEL{{--><img src="http://lorempixel.com/720/480/abstract/" width="190" height="126" alt="" /><!--}}DEL-->
-														</a>
+													<td>
+														<span class="inner text-pad">
+															<span class="preTitle">La question</span>
+															<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/%%{{=url_question_v3}}%%">
+																<h2 class="title"><!--{{%%{{=titre_question}}%%}}--><!--DEL{{-->titre_question<!--}}DEL--></h2>
+																<span class="text"><!--{{%%{{=question}}%%}}--><!--DEL{{-->question<!--}}DEL--></span>
+															</a>
+														</span>
 													</td>
 												</tr>
 											</table>
@@ -571,7 +565,7 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 													<td class="center">
 														<span class="inner text-pad">
 															<small>
-																Si vous ne souhaitez plus recevoir cette newsletter, veuillez accéder à la page de <a target="_blank" class="link_underline" href="http://e-newsletter.expert-infos.com/_e-newsletter/desinscription.asp?fintrack=&amp;a=%%{{=id_client}}%%" lien_blackliste="lien_blackliste">désinscription</a>.
+																Si vous ne souhaitez plus recevoir cette newsletter, veuillez accï¿½der ï¿½ la page de <a target="_blank" class="link_underline" href="http://e-newsletter.expert-infos.com/_e-newsletter/desinscription.asp?fintrack=&amp;a=%%{{=id_client}}%%" lien_blackliste="lien_blackliste">dï¿½sinscription</a>.
 															</small>
 														</span>
 													</td>
