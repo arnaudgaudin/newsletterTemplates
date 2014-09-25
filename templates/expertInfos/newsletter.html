@@ -83,6 +83,11 @@ if(IsNull(isOnline)=True)then
 	isOnline = false
 end if
 
+'Detect isCollaborateur'
+if(IsNull(isCollaborateur)=True)then
+	isCollaborateur = false
+end if
+
 set rsCount=conn.Execute("SELECT COUNT(*) FROM FLASH_CABINFORM WHERE id_exp="& id_exp &" AND (afficher=1)")
 set rs=conn.Execute("SELECT * FROM FLASH_CABINFORM WHERE id_exp=" & id_exp &" AND (afficher=1) ORDER BY ordre")
 }}%%}}-->
