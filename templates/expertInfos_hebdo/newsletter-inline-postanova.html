@@ -80,7 +80,12 @@ end if
 
 'Detect isOnline'
 if(IsNull(isOnline)=True)then
-	isOnline = false
+	isOnline = False
+end if
+
+'Detect isCollaborateur'
+if(IsNull(isCollaborateur)=True)then
+	isCollaborateur = False
 end if
 
 set rsCount=conn.Execute("SELECT COUNT(*) FROM FLASH_CABINFORM WHERE id_exp="& id_exp &" AND (afficher=1)")
@@ -92,13 +97,23 @@ set rs=conn.Execute("SELECT * FROM FLASH_CABINFORM WHERE id_exp=" & id_exp &" AN
 <%
 idarticleAlaune=request.QueryString("idarticleAlaune")
 idarticle=request.QueryString("idarticle")
-online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/flashinfos_V3_resp.asp?id_client="&id_client&"&idarticle="&idarticle&"&idarticleAlaune="&idarticleAlaune&"&fintrack="
+
+'Changement pour newsletter collaborateur'
+if isCollaborateur=True then
+	fichier_news='flashinfos_V3_collaborateur_resp.asp'
+	get_date = la_date_collaborateur
+else
+	fichier_news='flashinfos_V3_resp.asp'
+	get_date = la_date
+end if
+
+online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/"&fichier_news&"?id_client="&id_client&"&idarticle="&idarticle&"&idarticleAlaune="&idarticleAlaune&"&fintrack="
 %>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
     <meta name="viewport" content="width=device-width" />
-    <title>Newsletter hebdomadaire du <%=la_date%></title>
+    <title>Newsletter hebdomadaire du <%=get_date%></title>
 </head>
 <body style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; background: #787878; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; line-height: 16px; margin: 0; min-width: 100%; padding: 0; text-align: left; width: 100% !important" bgcolor="#787878"><style type="text/css">
 body {
@@ -892,7 +907,7 @@ color: #333333;
 															</small>
 															</gab_lien_message_online>
 															<% end if %>
-															<strong class="name" style="display: block"><%=civilite%>&#160;<%=nom_client%>, votre newsletter du <a class="link_disabled" href="#" style="color: #ffffff !important; cursor: default !important; pointer-events: none !important; text-decoration: none !important"><%=la_date%></a>.</strong>
+															<strong class="name" style="display: block"><%=civilite%>&#160;<%=nom_client%>, votre newsletter du <a class="link_disabled" href="#" style="color: #ffffff !important; cursor: default !important; pointer-events: none !important; text-decoration: none !important"><%=get_date%></a>.</strong>
 														</span>
 													</td>
 												</tr>
