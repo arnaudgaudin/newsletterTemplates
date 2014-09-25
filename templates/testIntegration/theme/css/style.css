@@ -1,10 +1,3 @@
-/*!
- *
- * NOT TO EDIT - DON't TOUCH IT
- *
- * Definitions of main template
- * 
- */
 /**********************************************
 * Inkless - Addons                            *
 **********************************************/
@@ -97,6 +90,7 @@ table.body {
 table.container {
   background-color: #ffffff;
   width: 580px;
+  -premailer-width: 580;
   margin: 0 auto;
   text-align: inherit;
 }
@@ -136,39 +130,51 @@ table.container td.last {
 }
 table.one {
   width: 30px;
+  -premailer-width: 30;
 }
 table.two {
   width: 80px;
+  -premailer-width: 80;
 }
 table.three {
   width: 130px;
+  -premailer-width: 130;
 }
 table.four {
   width: 180px;
+  -premailer-width: 180;
 }
 table.five {
   width: 230px;
+  -premailer-width: 230;
 }
 table.six {
   width: 280px;
+  -premailer-width: 280;
 }
 table.seven {
   width: 330px;
+  -premailer-width: 330;
 }
 table.eight {
   width: 380px;
+  -premailer-width: 380;
 }
 table.nine {
   width: 430px;
+  -premailer-width: 430;
 }
 table.ten {
   width: 480px;
+  -premailer-width: 480;
 }
 table.eleven {
   width: 530px;
+  -premailer-width: 530;
 }
 table.twelve {
   width: 580px;
+  -premailer-width: 580;
 }
 table.one center {
   min-width: 30px;
@@ -356,24 +362,31 @@ table.column .text-pad-right {
 }
 .two-up td {
   width: 270px;
+  -premailer-width: 270;
 }
 .three-up td {
   width: 173px;
+  -premailer-width: 173;
 }
 .four-up td {
   width: 125px;
+  -premailer-width: 125;
 }
 .five-up td {
   width: 96px;
+  -premailer-width: 96;
 }
 .six-up td {
   width: 76px;
+  -premailer-width: 76;
 }
 .seven-up td {
   width: 62px;
+  -premailer-width: 62;
 }
 .eight-up td {
   width: 52px;
+  -premailer-width: 52;
 }
 /* Alignment & Visibility Classes */
 table.center,
@@ -775,6 +788,9 @@ body.outlook p {
   table[class="body"] .hide-for-desktop {
     display: inherit !important;
   }
+  table[class="container"] .block-grid td {
+    width: 100% !important;
+  }
 }
 .appleLinks a {
   color: #2ba6cb;
@@ -810,6 +826,11 @@ a.link_underline:hover,
 a.link_underline:focus {
   text-decoration: underline;
   cursor: pointer;
+}
+a.link_disabled {
+  pointer-events: none !important;
+  cursor: default !important;
+  text-decoration: none !important;
 }
 table {
   -premailer-cellpadding: 0;
