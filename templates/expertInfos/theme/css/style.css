@@ -1348,11 +1348,11 @@ h6 a:visited {
 	}
 
 	.chiffre {
-		.preTitle { color: @nlCntChiffrePreTitle; }
+		.preTitle { color: @nlCntChfPreTitle; }
 	}
 
 	.dessin {
-		.preTitle { color: @nlCntDessinPreTitle; }
+		.preTitle { color: @nlCntDsnPreTitle; }
 	}
 
 	.profession {
