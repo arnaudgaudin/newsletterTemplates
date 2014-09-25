@@ -1334,9 +1334,9 @@ h6 a:visited {
 // -------------------------
 .contentArticles {
 	.title {
-		.icon-rsaquo { color: @nlCntArticlesIconColor; }
+		.icon-rsaquo { color: @nlCntArtIconColor; }
 	}
-	.readMore { color: @nlCntArticlesReadMore; }
+	.readMore { color: @nlCntArtReadMore; }
 }
 
 
