@@ -1,14 +1,14 @@
 .colorParsing {
-  newsletterContentCabInformBackground: #d12329;
-  newsletterContentCabInformTitle: #ffffff;
-  newsletterContentCabInformText: #ffffff;
-  newsletterContentArticlesIconColor: #d12329;
-  newsletterContentArticlesReadMore: #d12329;
-  newsletterContentAgendaPreTitle: #d12329;
-  newsletterContentChiffrePreTitle: #d12329;
-  newsletterContentDessinPreTitle: #d12329;
-  newsletterContentProfessionPreTitle: #d12329;
-  newsletterContentQuestionPreTitle: #d12329;
-  newsletterContentContactBackground: #d12329;
-  newsletterContentContactText: #ffffff;
+  nlCntCabInformBackground: #d12329;
+  nlCntCabInformTitle: #ffffff;
+  nlCntCabInformText: #ffffff;
+  nlCntArticlesIconColor: #d12329;
+  nlCntArticlesReadMore: #d12329;
+  nlCntAgendaPreTitle: #d12329;
+  nlCntChiffrePreTitle: #d12329;
+  nlCntDessinPreTitle: #d12329;
+  nlCntProfessionPreTitle: #d12329;
+  nlCntQuestionPreTitle: #d12329;
+  nlCntContactBackground: #d12329;
+  nlCntContactText: #ffffff;
 }

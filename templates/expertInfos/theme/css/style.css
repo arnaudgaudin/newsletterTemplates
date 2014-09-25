@@ -1325,18 +1325,18 @@ h6 a:visited {
 // contentCabInform area
 // -------------------------
 .contentCabInform {
-	background-color: @newsletterContentCabInformBackground;
-	.title { color: @newsletterContentCabInformTitle; }
-	.newsletterInnerTextColor(@newsletterContentCabInformText);
+	background-color: @nlCntCabInformBackground;
+	.title { color: @nlCntCabInformTitle; }
+	.newsletterInnerTextColor(@nlCntCabInformText);
 }
 
 // contentArticles area
 // -------------------------
 .contentArticles {
 	.title {
-		.icon-rsaquo { color: @newsletterContentArticlesIconColor; }
+		.icon-rsaquo { color: @nlCntArticlesIconColor; }
 	}
-	.readMore { color: @newsletterContentArticlesReadMore; }
+	.readMore { color: @nlCntArticlesReadMore; }
 }
 
 
@@ -1344,23 +1344,23 @@ h6 a:visited {
 // -------------------------
 .contentBottom {
 	.agenda {
-		.preTitle { color: @newsletterContentAgendaPreTitle; }
+		.preTitle { color: @nlCntAgendaPreTitle; }
 	}
 
 	.chiffre {
-		.preTitle { color: @newsletterContentChiffrePreTitle; }
+		.preTitle { color: @nlCntChiffrePreTitle; }
 	}
 
 	.dessin {
-		.preTitle { color: @newsletterContentDessinPreTitle; }
+		.preTitle { color: @nlCntDessinPreTitle; }
 	}
 
 	.profession {
-		.preTitle { color: @newsletterContentProfessionPreTitle; }
+		.preTitle { color: @nlCntProfessionPreTitle; }
 	}
 
 	.question {
-		.preTitle { color: @newsletterContentQuestionPreTitle; }
+		.preTitle { color: @nlCntQuestionPreTitle; }
 	}
 }
 
@@ -1368,7 +1368,7 @@ h6 a:visited {
 // contentContact area
 // -------------------------
 .contentContact {
-	background-color: @newsletterContentContactBackground;
-	.newsletterInnerTextColor(@newsletterContentContactText);
+	background-color: @nlCntContactBackground;
+	.newsletterInnerTextColor(@nlCntContactText);
 }
 */
