@@ -1325,9 +1325,9 @@ h6 a:visited {
 // contentCabInform area
 // -------------------------
 .contentCabInform {
-	background-color: @nlCntCabInformBackground;
-	.title { color: @nlCntCabInformTitle; }
-	.newsletterInnerTextColor(@nlCntCabInformText);
+	background-color: @nlCntCabBackground;
+	.title { color: @nlCntCabTitle; }
+	.newsletterInnerTextColor(@nlCntCabText);
 }
 
 // contentArticles area
@@ -1344,7 +1344,7 @@ h6 a:visited {
 // -------------------------
 .contentBottom {
 	.agenda {
-		.preTitle { color: @nlCntAgendaPreTitle; }
+		.preTitle { color: @nlCntAgdPreTitle; }
 	}
 
 	.chiffre {
