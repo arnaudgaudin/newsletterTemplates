@@ -80,12 +80,12 @@ end if
 
 'Detect isOnline'
 if(IsNull(isOnline)=True)then
-	isOnline = false
+	isOnline = False
 end if
 
 'Detect isCollaborateur'
 if(IsNull(isCollaborateur)=True)then
-	isCollaborateur = false
+	isCollaborateur = False
 end if
 
 set rsCount=conn.Execute("SELECT COUNT(*) FROM FLASH_CABINFORM WHERE id_exp="& id_exp &" AND (afficher=1)")
