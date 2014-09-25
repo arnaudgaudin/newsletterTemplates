@@ -1,6 +1,4 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<% 'CSS Parser. Use colorParsing.Item("nlColorVariable")' %>
-<!--#include file="../parserCSS.inc"-->
 <%
 Set Conn = Server.CreateObject("ADODB.Connection")
 Conn.ConnectionString =  application("Base_Newsletter")
@@ -88,6 +86,8 @@ end if
 set rsCount=conn.Execute("SELECT COUNT(*) FROM FLASH_CABINFORM WHERE id_exp="& id_exp &" AND (afficher=1)")
 set rs=conn.Execute("SELECT * FROM FLASH_CABINFORM WHERE id_exp=" & id_exp &" AND (afficher=1) ORDER BY ordre")
 %>
+<% 'CSS Parser. Use colorParsing.Item("nlColorVariable")' %>
+<!--#include file="../parserCSS.inc"-->
 <!--#include file="emill-v2bis.asp"-->
 <%
 idarticleAlaune=request.QueryString("idarticleAlaune")
