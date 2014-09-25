@@ -171,69 +171,69 @@ table.columns td, table.column td { padding-bottom: 0; }
 // Body
 // -------------------------
 body, table.body {
-  background-color: @newsletterBodyBackground;
+  background-color: @nlBodyBackground;
 }
 
 // Main container
 // -------------------------
-.container { background-color: @newsletterContainerBackground; }
+.container { background-color: @nlContainerBackground; }
 
 // Typography
 // -------------------------
 body, table.body, h1, h2, h3, h4, h5, h6, p, td {
-	color: @newsletterText;
+	color: @nlText;
 }
 
 // Links
 // -------------------------
 a {
-	color: @newsletterLinkColor;
-	&:hover { color: @newsletterLinkColorHover !important; }
-	&:active { color: @newsletterLinkColorHover !important; }
-	&:visited { color: @newsletterLinkColor !important; }
+	color: @nlLinkColor;
+	&:hover { color: @nlLinkColorHover !important; }
+	&:active { color: @nlLinkColorHover !important; }
+	&:visited { color: @nlLinkColor !important; }
 
 	h1 &, h2 &, h3 &, h4 &, h5 &, h6 & {
-		color: @newsletterLinkColor;
-		&:active, &:visited { color: @newsletterLinkColor !important; }
+		color: @nlLinkColor;
+		&:active, &:visited { color: @nlLinkColor !important; }
 	}
 
 	.appleLinks & {
-		color: @newsletterLinkColor;
-		&:hover, &:active { color: @newsletterLinkColorHover !important; }
-		&:visited { color: @newsletterLinkColor !important; }
+		color: @nlLinkColor;
+		&:hover, &:active { color: @nlLinkColorHover !important; }
+		&:visited { color: @nlLinkColor !important; }
 	}
 }
 
 // contentOnline area
 // -------------------------
 .contentOnline {
-	background-color: @newsletterContentOnlineBackground;
-	.newsletterInnerTextColor(@newsletterContentOnlineText);
+	background-color: @nlContentOnlineBackground;
+	.newsletterInnerTextColor(@nlContentOnlineText);
 }
 
 // contentALaUne area
 // -------------------------
 .contentALaUne {
-	background-color: @newsletterContentALaUneBackground;
-	.title { color: @newsletterContentALaUneTitle; }
-	.newsletterInnerTextColor(@newsletterContentALaUneText);
-	.readMore { color: @newsletterContentALaUneReadMore; }
+	background-color: @nlContentALaUneBackground;
+	.title { color: @nlContentALaUneTitle; }
+	.newsletterInnerTextColor(@nlContentALaUneText);
+	.readMore { color: @nlContentALaUneReadMore; }
 }
 
 // contentArticles area
 // -------------------------
 .contentArticles {
 	.title {
-		color: @newsletterContentArticlesTitle;
-		border-top: 1px dotted @newsletterContentArticlesBorder;
+		color: @nlContentArticlesTitle;
+		border-top: 1px dotted @nlContentArticlesBorder;
 	}
-	.newsletterInnerTextColor(@newsletterContentArticlesText);
+	.newsletterInnerTextColor(@nlContentArticlesText);
 }
 //rajout bordure en bas en mode responsive
-@media only screen and (max-width: (@newsletterContainerWidth + @newsletterGutterWidth)) {
+@media only screen and (max-width: (@nlContainerWidth + @nlGutterWidth)) {
 	table[class="body"] .contentArticles {
 		.title { border-top: none !important; }
-		border-bottom: 1px dotted @newsletterContentArticlesBorder !important;
+		border-bottom: 1px dotted @nlContentArticlesBorder !important;
 		&.last { border-bottom: none !important; }
 	}
 }
@@ -242,39 +242,39 @@ a {
 // -------------------------
 .contentBottom {
 	.agenda {
-		background-color: @newsletterContentAgendaBackground;
-		.title { color: @newsletterContentAgendaTitle; }
-		.newsletterInnerTextColor(@newsletterContentAgendaText);
+		background-color: @nlContentAgendaBackground;
+		.title { color: @nlContentAgendaTitle; }
+		.newsletterInnerTextColor(@nlContentAgendaText);
 	}
 
 	.chiffre {
-		background-color: @newsletterContentChiffreBackground;
-		.title { color: @newsletterContentChiffreTitle; }
-		.newsletterInnerTextColor(@newsletterContentChiffreText);
+		background-color: @nlContentChiffreBackground;
+		.title { color: @nlContentChiffreTitle; }
+		.newsletterInnerTextColor(@nlContentChiffreText);
 	}
 
 	.dessin {
-		.title { color: @newsletterContentDessinTitle; }
-		.readMore { color: @newsletterContentDessinReadMore; }
-		.border { border-top: 1px dotted @newsletterContentDessinBorder; }
+		.title { color: @nlContentDessinTitle; }
+		.readMore { color: @nlContentDessinReadMore; }
+		.border { border-top: 1px dotted @nlContentDessinBorder; }
 	}
 
 	.profession {
-		.title { color: @newsletterContentProfessionTitle; }
-		.border { border-top: 1px dotted @newsletterContentProfessionBorder; }
+		.title { color: @nlContentProfessionTitle; }
+		.border { border-top: 1px dotted @nlContentProfessionBorder; }
 	}
 
 	.question {
-		.title { color: @newsletterContentQuestionTitle; }
-		.border { border-top: 1px dotted @newsletterContentQuestionBorder; }
+		.title { color: @nlContentQuestionTitle; }
+		.border { border-top: 1px dotted @nlContentQuestionBorder; }
 	}
 }
 
 // footer area
 // -------------------------
 .footer {
-	background-color: @newsletterFooterBackground;
-	.newsletterInnerTextColor(@newsletterFooterText);
+	background-color: @nlFooterBackground;
+	.newsletterInnerTextColor(@nlFooterText);
 }
 
 //importation style localisé dans le site pour test
@@ -340,18 +340,18 @@ a {
 // contentCabInform area
 // -------------------------
 .contentCabInform {
-	background-color: @newsletterContentCabInformBackground;
-	.title { color: @newsletterContentCabInformTitle; }
-	.newsletterInnerTextColor(@newsletterContentCabInformText);
+	background-color: @nlContentCabInformBackground;
+	.title { color: @nlContentCabInformTitle; }
+	.newsletterInnerTextColor(@nlContentCabInformText);
 }
 
 // contentArticles area
 // -------------------------
 .contentArticles {
 	.title {
-		.icon-rsaquo { color: @newsletterContentArticlesIconColor; }
+		.icon-rsaquo { color: @nlContentArticlesIconColor; }
 	}
-	.readMore { color: @newsletterContentArticlesReadMore; }
+	.readMore { color: @nlContentArticlesReadMore; }
 }
 
 
@@ -359,23 +359,23 @@ a {
 // -------------------------
 .contentBottom {
 	.agenda {
-		.preTitle { color: @newsletterContentAgendaPreTitle; }
+		.preTitle { color: @nlContentAgendaPreTitle; }
 	}
 
 	.chiffre {
-		.preTitle { color: @newsletterContentChiffrePreTitle; }
+		.preTitle { color: @nlContentChiffrePreTitle; }
 	}
 
 	.dessin {
-		.preTitle { color: @newsletterContentDessinPreTitle; }
+		.preTitle { color: @nlContentDessinPreTitle; }
 	}
 
 	.profession {
-		.preTitle { color: @newsletterContentProfessionPreTitle; }
+		.preTitle { color: @nlContentProfessionPreTitle; }
 	}
 
 	.question {
-		.preTitle { color: @newsletterContentQuestionPreTitle; }
+		.preTitle { color: @nlContentQuestionPreTitle; }
 	}
 }
 
@@ -383,7 +383,7 @@ a {
 // contentContact area
 // -------------------------
 .contentContact {
-	background-color: @newsletterContentContactBackground;
-	.newsletterInnerTextColor(@newsletterContentContactText);
+	background-color: @nlContentContactBackground;
+	.newsletterInnerTextColor(@nlContentContactText);
 }
 */
