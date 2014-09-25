@@ -1356,11 +1356,11 @@ h6 a:visited {
 	}
 
 	.profession {
-		.preTitle { color: @nlCntProfessionPreTitle; }
+		.preTitle { color: @nlCntPrfPreTitle; }
 	}
 
 	.question {
-		.preTitle { color: @nlCntQuestionPreTitle; }
+		.preTitle { color: @nlCntQtnPreTitle; }
 	}
 }
 
@@ -1368,7 +1368,7 @@ h6 a:visited {
 // contentContact area
 // -------------------------
 .contentContact {
-	background-color: @nlCntContactBackground;
-	.newsletterInnerTextColor(@nlCntContactText);
+	background-color: @nlCntCctBackground;
+	.newsletterInnerTextColor(@nlCntCctText);
 }
 */
