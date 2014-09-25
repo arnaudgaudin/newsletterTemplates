@@ -1270,10 +1270,10 @@ h6 a:visited {
   color: #ffffff !important;
 }
 .contentCabInform {
-  -premailer-background: ###((nlCntCabBackground))##;
+  -premailer-background: ##((nlCntCabBackground))##;
 }
 .contentCabInform .title {
-  color: ###((nlCntCabTitle))##;
+  color: ##((nlCntCabTitle))##;
 }
 .contentCabInform,
 .contentCabInform td,
@@ -1284,31 +1284,31 @@ h6 a:visited {
 .contentCabInform a:hover,
 .contentCabInform a:focus,
 .contentCabInform a:active {
-  color: ###((nlCntCabText))## !important;
+  color: ##((nlCntCabText))## !important;
 }
 .contentArticles .title .icon-rsaquo {
-  color: ###((nlCntArtIconColor))##;
+  color: ##((nlCntArtIconColor))##;
 }
 .contentArticles .readMore {
-  color: ###((nlCntArtReadMore))##;
+  color: ##((nlCntArtReadMore))##;
 }
 .contentBottom .agenda .preTitle {
-  color: ###((nlCntAgdPreTitle))##;
+  color: ##((nlCntAgdPreTitle))##;
 }
 .contentBottom .chiffre .preTitle {
-  color: ###((nlCntChfPreTitle))##;
+  color: ##((nlCntChfPreTitle))##;
 }
 .contentBottom .dessin .preTitle {
-  color: ###((nlCntDsnPreTitle))##;
+  color: ##((nlCntDsnPreTitle))##;
 }
 .contentBottom .profession .preTitle {
-  color: ###((nlCntPrfPreTitle))##;
+  color: ##((nlCntPrfPreTitle))##;
 }
 .contentBottom .question .preTitle {
-  color: ###((nlCntQtnPreTitle))##;
+  color: ##((nlCntQtnPreTitle))##;
 }
 .contentContact {
-  -premailer-background: ###((nlCntCctBackground))##;
+  -premailer-background: ##((nlCntCctBackground))##;
 }
 .contentContact,
 .contentContact td,
@@ -1319,7 +1319,7 @@ h6 a:visited {
 .contentContact a:hover,
 .contentContact a:focus,
 .contentContact a:active {
-  color: ###((nlCntCctText))## !important;
+  color: ##((nlCntCctText))## !important;
 }
 /*
 // contentCabInform area
