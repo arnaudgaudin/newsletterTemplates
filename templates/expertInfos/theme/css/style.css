@@ -1270,10 +1270,10 @@ h6 a:visited {
   color: #ffffff !important;
 }
 .contentCabInform {
-  -premailer-background: ###((newsletterContentCabInformBackground))##;
+  -premailer-background: ###((nlCntCabBackground))##;
 }
 .contentCabInform .title {
-  color: ###((newsletterContentCabInformTitle))##;
+  color: ###((nlCntCabTitle))##;
 }
 .contentCabInform,
 .contentCabInform td,
@@ -1284,31 +1284,31 @@ h6 a:visited {
 .contentCabInform a:hover,
 .contentCabInform a:focus,
 .contentCabInform a:active {
-  color: ###((newsletterContentCabInformText))## !important;
+  color: ###((nlCntCabText))## !important;
 }
 .contentArticles .title .icon-rsaquo {
-  color: ###((newsletterContentArticlesIconColor))##;
+  color: ###((nlCntArtIconColor))##;
 }
 .contentArticles .readMore {
-  color: ###((newsletterContentArticlesReadMore))##;
+  color: ###((nlCntArtReadMore))##;
 }
 .contentBottom .agenda .preTitle {
-  color: ###((newsletterContentAgendaPreTitle))##;
+  color: ###((nlCntAgdPreTitle))##;
 }
 .contentBottom .chiffre .preTitle {
-  color: ###((newsletterContentChiffrePreTitle))##;
+  color: ###((nlCntChfPreTitle))##;
 }
 .contentBottom .dessin .preTitle {
-  color: ###((newsletterContentDessinPreTitle))##;
+  color: ###((nlCntDsnPreTitle))##;
 }
 .contentBottom .profession .preTitle {
-  color: ###((newsletterContentProfessionPreTitle))##;
+  color: ###((nlCntPrfPreTitle))##;
 }
 .contentBottom .question .preTitle {
-  color: ###((newsletterContentQuestionPreTitle))##;
+  color: ###((nlCntQtnPreTitle))##;
 }
 .contentContact {
-  -premailer-background: ###((newsletterContentContactBackground))##;
+  -premailer-background: ###((nlCntCctBackground))##;
 }
 .contentContact,
 .contentContact td,
@@ -1319,7 +1319,7 @@ h6 a:visited {
 .contentContact a:hover,
 .contentContact a:focus,
 .contentContact a:active {
-  color: ###((newsletterContentContactText))## !important;
+  color: ###((nlCntCctText))## !important;
 }
 /*
 // contentCabInform area
