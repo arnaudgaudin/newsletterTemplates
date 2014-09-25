@@ -92,7 +92,6 @@ set rs=conn.Execute("SELECT * FROM FLASH_CABINFORM WHERE id_exp=" & id_exp &" AN
 <!--{{%%{{
 idarticleAlaune=request.QueryString("idarticleAlaune")
 idarticle=request.QueryString("idarticle")
-'online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/flashinfos_V3_resp_test.asp?"&Request.QueryString&"&fintrack="'
 online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/flashinfos_V3_resp_test.asp?id_client="&id_client&"&idarticle="&idarticle&"&idarticleAlaune="&idarticleAlaune&"&fintrack="
 }}%%}}-->
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml">
@@ -427,128 +426,6 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 														<a target="_blank" class="link_box inner text-pad" href="http://%%{{=url_site_exp}}%%/dessin">
 															<img src="http://e-newsletter.expert-infos.com/_infos/_photos/%%{{=id_article_dessin}}%%-i.jpg" width="190" height="126" alt="Le dessin de la semaine" /><!--DEL{{--><img src="http://lorempixel.com/720/480/abstract/" width="190" height="126" alt="" /><!--}}DEL-->
 														</a>
-													</td>
-												</tr>
-											</table>
-										</td>
-									</tr>
-								</table>
-
-								<!-- Variante avec dessin sans lien -->
-								<table class="row contentBottom">
-									<tr>
-										<td class="agenda wrapper first">
-											<table class="five columns">
-												<tr>
-													<td>
-														<a target="_blank" class="link_box inner text-pad" href="http://%%{{=url_site_exp}}%%/%%{{=url_mois1_v3}}%%">
-															<span class="preTitle"><!--{{%%{{=date1}}%%}}--><!--DEL{{-->date1<!--}}DEL--></span>
-															<h2 class="title"><!--{{%%{{=texte1V3_1}}%%}}--><!--DEL{{-->texte1V3_1<!--}}DEL--></h2>
-															<span class="text"><!--{{%%{{=texte1V3_2}}%%}}--><!--DEL{{-->texte1V3_2<!--}}DEL--></span>
-														</a>
-													</td>
-												</tr>
-											</table>
-										</td>
-										<td class="dessin wrapper last">
-											<table class="seven columns">
-												<tr class="borderContainer">
-													<td><span class="borderOffset left"><span class="border"></span></span></td>
-													<td><span class="borderOffset right"><span class="border"></span></span></td>
-												</tr>
-												<tr>
-													<td class="six sub-columns first">
-														<span class="inner text-pad-left">
-															<span class="preTitle">L'actu'<br/><small>en dessin</small></span>
-															<h3 class="title"><!--{{%%{{=texte_dessin}}%%}}--><!--DEL{{-->texte_dessin<!--}}DEL--></h3>
-														</span>
-													</td>
-													<td class="six sub-columns last">
-														<span class="inner text-pad">
-															<img src="http://e-newsletter.expert-infos.com/_infos/_photos/%%{{=id_article_dessin}}%%-i.jpg" width="190" height="126" alt="Le dessin de la semaine" /><!--DEL{{--><img src="http://lorempixel.com/720/480/abstract/" width="190" height="126" alt="" /><!--}}DEL-->
-														</span>
-													</td>
-												</tr>
-											</table>
-										</td>
-									</tr>
-								</table>
-
-								<!-- Variante avec l'actu des professions -->
-								<table class="row contentBottom">
-									<tr>
-										<td class="agenda wrapper first">
-											<table class="five columns">
-												<tr>
-													<td>
-														<a target="_blank" class="link_box inner text-pad" href="http://%%{{=url_site_exp}}%%/%%{{=url_mois1_v3}}%%">
-															<span class="preTitle"><!--{{%%{{=date1}}%%}}--><!--DEL{{-->date1<!--}}DEL--></span>
-															<h2 class="title"><!--{{%%{{=texte1V3_1}}%%}}--><!--DEL{{-->texte1V3_1<!--}}DEL--></h2>
-															<span class="text"><!--{{%%{{=texte1V3_2}}%%}}--><!--DEL{{-->texte1V3_2<!--}}DEL--></span>
-														</a>
-													</td>
-												</tr>
-											</table>
-										</td>
-										<td class="profession wrapper last">
-											<table class="seven columns">
-												<tr class="borderContainer">
-													<td><span class="borderOffset left right"><span class="border"></span></span></td>
-												</tr>
-												<tr>
-													<td>
-														<span class="inner text-pad">
-															<span class="preTitle">L'actu des professions</span>
-															<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/%%{{=URL_DETAIL_ACTU_PRO_V3_1}}%%">
-																<h2 class="title"><!--{{%%{{=titre_actualite_1}}%%}}--><!--DEL{{-->titre_actualite_1<!--}}DEL--></h2>
-																<span class="text"><!--{{%%{{=chapeau_actualite_1}}%%}}--><!--DEL{{-->chapeau_actualite_1<!--}}DEL--></span>
-															</a>
-															<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/%%{{=URL_DETAIL_ACTU_PRO_V3_2}}%%">
-																<h2 class="title"><!--{{%%{{=titre_actualite_2}}%%}}--><!--DEL{{-->titre_actualite_2<!--}}DEL--></h2>
-																<span class="text"><!--{{%%{{=chapeau_actualite_2}}%%}}--><!--DEL{{-->chapeau_actualite_2<!--}}DEL--></span>
-															</a>
-															<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/%%{{=URL_DETAIL_ACTU_PRO_V3_3}}%%">
-																<h2 class="title"><!--{{%%{{=titre_actualite_3}}%%}}--><!--DEL{{-->titre_actualite_3<!--}}DEL--></h2>
-																<span class="text"><!--{{%%{{=chapeau_actualite_3}}%%}}--><!--DEL{{-->chapeau_actualite_3<!--}}DEL--></span>
-															</a>
-														</span>
-													</td>
-												</tr>
-											</table>
-										</td>
-									</tr>
-								</table>
-
-								<!-- Variante avec le chiffre et la question -->
-								<table class="row contentBottom">
-									<tr>
-										<td class="chiffre wrapper first">
-											<table class="five columns">
-												<tr>
-													<td>
-														<a target="_blank" class="link_box inner text-pad" href="http://%%{{=url_site_exp}}%%/%%{{=url_chiffre_v3}}%%">
-															<span class="preTitle"><!--{{%%{{=chiffre}}%%}}--><!--DEL{{-->chiffre<!--}}DEL--></span>
-															<h2 class="title"><!--{{%%{{=titre_chiffre}}%%}}--><!--DEL{{-->titre_chiffre<!--}}DEL--></h2>
-															<span class="text">Retrouvez tous les indicateurs sociaux, fiscaux, et juridiques dans la rubrique &#171;&#160;Chiffres&#160;utiles&#160;&#187; de notre site.</span>
-														</a>
-													</td>
-												</tr>
-											</table>
-										</td>
-										<td class="question wrapper last">
-											<table class="seven columns">
-												<tr class="borderContainer">
-													<td><span class="borderOffset left right"><span class="border"></span></span></td>
-												</tr>
-												<tr>
-													<td>
-														<span class="inner text-pad">
-															<span class="preTitle">La question</span>
-															<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/%%{{=url_question_v3}}%%">
-																<h2 class="title"><!--{{%%{{=titre_question}}%%}}--><!--DEL{{-->titre_question<!--}}DEL--></h2>
-																<span class="text"><!--{{%%{{=question}}%%}}--><!--DEL{{-->question<!--}}DEL--></span>
-															</a>
-														</span>
 													</td>
 												</tr>
 											</table>
