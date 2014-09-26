@@ -86,7 +86,9 @@ else
 end if
 
 'Detect isCollaborateur'
-if(IsNull(isCollaborateur)=True)then
+if(Request.QueryString("is_coll") = 1)then
+	isCollaborateur = True
+else
 	isCollaborateur = False
 end if
 
@@ -102,14 +104,14 @@ idarticle=request.QueryString("idarticle")
 
 'Changement pour newsletter collaborateur'
 if isCollaborateur=True then
-	fichier_news="flashinfos_mail_V3_collaborateur_resp.asp"
+	get_coll = "&is_coll=1"
 	get_date = la_date_collaborateur
 else
-	fichier_news="flashinfos_mail_V3_resp.asp"
+	get_coll = ""
 	get_date = la_date
 end if
 
-online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/"&fichier_news&"?id_client="&id_client&"&idarticle="&idarticle&"&idarticleAlaune="&idarticleAlaune&"&is_online=1&fintrack="
+online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/flashinfos_mail_V3_resp.asp?id_client="&id_client&"&idarticle="&idarticle&"&idarticleAlaune="&idarticleAlaune&"&is_online=1"&get_coll&"&fintrack="
 }}%%}}-->
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml">
 <head>
