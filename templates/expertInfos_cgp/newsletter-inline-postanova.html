@@ -79,7 +79,9 @@ else
 end if
 
 'Detect isOnline'
-if(IsNull(isOnline)=True)then
+if(Request.QueryString("is_online") = 1)then
+	isOnline = True
+else
 	isOnline = False
 end if
 
@@ -100,14 +102,14 @@ idarticle=request.QueryString("idarticle")
 
 'Changement pour newsletter collaborateur'
 if isCollaborateur=True then
-	fichier_news="flashinfos_cgp_collaborateur_V3_resp.asp"
+	fichier_news="flashinfos_cgp_mail_collaborateur_V3_resp.asp"
 	get_date = la_date_collaborateur
 else
-	fichier_news="flashinfos_cgp_V3_resp.asp"
+	fichier_news="flashinfos_cgp_mail_V3_resp.asp"
 	get_date = la_date
 end if
 
-online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/"&fichier_news&"?id_client="&id_client&"&idarticle="&idarticle&"&idarticleAlaune="&idarticleAlaune&"&fintrack="
+online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/"&fichier_news&"?id_client="&id_client&"&idarticle="&idarticle&"&idarticleAlaune="&idarticleAlaune&"&is_online=1&fintrack="
 %>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml">
 <head>
