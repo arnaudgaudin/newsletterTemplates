@@ -331,10 +331,10 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 									CountArt="SELECT COUNT(*) FROM CHAPITRES_FLASHS_INFOS WHERE ID_FLASH_INFOS="& id_flash
 									set rsCountArt=conn.Execute(CountArt)
 									nbrart=rsCountArt(0)
+
+									article_url_v3 = rsArticle("URL_DETAIL_V3")
 									
 								    if (i<(nbrart-1)) then
-
-								    	article_url_v3 = rsArticle("URL_DETAIL_V3")
 								}}%%}}-->
 								<table class="row contentArticles">
 									<tr>
