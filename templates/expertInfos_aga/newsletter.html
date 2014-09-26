@@ -97,7 +97,7 @@ set rs=conn.Execute("SELECT * FROM FLASH_CABINFORM WHERE id_exp=" & id_exp &" AN
 }}%%}}-->
 <!--{{%%{{ 'CSS Parser. Use colorParsing.Item("nlColorVariable")' }}%%}}-->
 <!--#include file="../parserCSS.inc"-->
-<!--#include file="emill-v2bis.asp"-->
+<!--#include file="emill-aga.asp"-->
 <!--{{%%{{
 idarticleAlaune=request.QueryString("idarticleAlaune")
 idarticle=request.QueryString("idarticle")
@@ -111,13 +111,20 @@ else
 	get_date = la_date
 end if
 
-online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/flashinfos_mail_V3_resp.asp?id_client="&id_client&"&idarticle="&idarticle&"&idarticleAlaune="&idarticleAlaune&"&is_online=1"&get_coll&"&fintrack="
+online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/flashinfos_mail_V3_aga_resp.asp?id_client="&id_client&"&idarticle="&idarticle&"&idarticleAlaune="&idarticleAlaune&"&is_online=1"&get_coll&"&fintrack="
 }}%%}}-->
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" type="text/css" media="all" href="theme/css/style.css" /><title>Newsletter hebdomadaire du <!--{{%%{{=get_date}}%%}}--><!--DEL{{-->get_date<!--}}DEL--></title>
+    <link rel="stylesheet" type="text/css" media="all" href="theme/css/style.css" /><!--{{%%{{
+	'Gestion titre AFPL'
+	if id_exp=3177 then
+		head_title = "Lettre d'information AFPL du "
+	else
+		head_title = "Newsletter bimensuelle du "
+	end if
+	}}%%}}--><title><!--{{%%{{=head_title&get_date}}%%}}--><!--DEL{{-->head_title&amp;get_date<!--}}DEL--></title>
 </head>
 <body>
 <style type="text/css" data-premailer="ignore">
