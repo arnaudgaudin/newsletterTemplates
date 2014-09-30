@@ -1150,26 +1150,6 @@ h6 a:visited {
 .contentOnline a:active {
   color: #ffffff !important;
 }
-.contentALaUne {
-  background-color: #4b606d;
-}
-.contentALaUne .title {
-  color: #ffffff;
-}
-.contentALaUne,
-.contentALaUne td,
-.contentALaUne .inner,
-.contentALaUne a,
-.contentALaUne a:link,
-.contentALaUne a:visited,
-.contentALaUne a:hover,
-.contentALaUne a:focus,
-.contentALaUne a:active {
-  color: #ffffff !important;
-}
-.contentALaUne .readMore {
-  color: #d2d7db;
-}
 .contentArticles .title {
   color: #333333;
   border-top: 1px dotted #6b6b6b;
@@ -1281,6 +1261,26 @@ h6 a:visited {
 .contentCabInform a:focus,
 .contentCabInform a:active {
   color: ##((nlCntCabText))## !important;
+}
+.contentALaUne {
+  -premailer-background: ##((nlCntUneBackground))##;
+}
+.contentALaUne .title {
+  color: ##((nlCntUneTitle))##;
+}
+.contentALaUne,
+.contentALaUne td,
+.contentALaUne .inner,
+.contentALaUne a,
+.contentALaUne a:link,
+.contentALaUne a:visited,
+.contentALaUne a:hover,
+.contentALaUne a:focus,
+.contentALaUne a:active {
+  color: ##((nlCntUneText))## !important;
+}
+.contentALaUne .readMore {
+  color: ##((nlCntUneReadMore))##;
 }
 .contentArticles .title .icon-rsaquo {
   color: ##((nlCntArtIconColor))##;
