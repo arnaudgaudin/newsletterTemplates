@@ -204,15 +204,6 @@ a {
 	.newsletterInnerTextColor(@nlCntOnlineText);
 }
 
-// contentALaUne area
-// -------------------------
-.contentALaUne {
-	background-color: @nlCntUneBackground;
-	.title { color: @nlCntUneTitle; }
-	.newsletterInnerTextColor(@nlCntUneText);
-	.readMore { color: @nlCntUneReadMore; }
-}
-
 // contentArticles area
 // -------------------------
 .contentArticles {
@@ -285,6 +276,15 @@ a {
 	-premailer-background: e("##((nlCntCabBackground))##");
 	.title { color: e("##((nlCntCabTitle))##"); }
 	.newsletterInnerTextColor(e("##((nlCntCabText))##"));
+}
+
+// contentALaUne area
+// -------------------------
+.contentALaUne {
+	-premailer-background: e("##((nlCntUneBackground))##");
+	.title { color: e("##((nlCntUneTitle))##"); }
+	.newsletterInnerTextColor(e("##((nlCntUneText))##"));
+	.readMore { color: e("##((nlCntUneReadMore))##"); }
 }
 
 // contentArticles area
