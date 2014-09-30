@@ -331,8 +331,6 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 									CountArt="SELECT COUNT(*) FROM CHAPITRES_FLASHS_INFOS WHERE ID_FLASH_INFOS="& id_flash
 									set rsCountArt=conn.Execute(CountArt)
 									nbrart=rsCountArt(0)
-
-									article_url_v3 = rsArticle("URL_DETAIL_V3")
 									
 								    if (i<(nbrart-1)) then
 								}}%%}}-->
@@ -342,7 +340,7 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 											<table class="five columns">
 												<tr>
 													<td>
-														<a target="_blank" class="link_box inner text-pad-left" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%">
+														<a target="_blank" class="link_box inner text-pad-left" href="http://%%{{=URL_NL_XML}}%%%%{{=id_de_larticle}}%%">
 															<img src="http://e-newsletter.expert-infos.com/_infos/_photos/%%{{=id_de_larticle}}%%-h.jpg" width="290" height="133" alt="" /><!--DEL{{--><img src="http://lorempixel.com/1440/660/business/" width="290" height="133" alt="" /><!--}}DEL-->
 														</a>
 													</td>
@@ -353,7 +351,7 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 											<table class="seven columns">
 												<tr>
 													<td>
-														<a target="_blank" class="link_box inner text-pad" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%">
+														<a target="_blank" class="link_box inner text-pad" href="http://%%{{=URL_NL_XML}}%%%%{{=id_de_larticle}}%%">
 															<h2 class="title">
 																<span class="icon-rsaquo">&rsaquo;</span>&#160;<!--{{%%{{=rsArticle("TITRE_CHAPITRE_FLASH_INFOS")}}%%}}--><!--DEL{{-->TITRE_CHAPITRE_FLASH_INFOS<!--}}DEL-->
 															</h2>
@@ -373,7 +371,7 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 											<table class="five columns">
 												<tr>
 													<td>
-														<a target="_blank" class="link_box inner text-pad-left" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%">
+														<a target="_blank" class="link_box inner text-pad-left" href="http://%%{{=URL_NL_XML}}%%%%{{=id_de_larticle}}%%">
 															<img src="http://e-newsletter.expert-infos.com/_infos/_photos/%%{{=id_de_larticle}}%%-h.jpg" width="290" height="133" alt="" /><!--DEL{{--><img src="http://lorempixel.com/1440/660/business/" width="290" height="133" alt="" /><!--}}DEL-->
 														</a>
 													</td>
@@ -384,7 +382,7 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 											<table class="seven columns">
 												<tr>
 													<td>
-														<a target="_blank" class="link_box inner text-pad" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%">
+														<a target="_blank" class="link_box inner text-pad" href="http://%%{{=URL_NL_XML}}%%%%{{=id_de_larticle}}%%">
 															<h2 class="title">
 																<span class="icon-rsaquo">&rsaquo;</span>&#160;<!--{{%%{{=rsArticle("TITRE_CHAPITRE_FLASH_INFOS")}}%%}}--><!--DEL{{-->TITRE_CHAPITRE_FLASH_INFOS<!--}}DEL-->
 															</h2>
