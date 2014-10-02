@@ -414,7 +414,16 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 											<table class="five columns">
 												<tr>
 													<td>
-														<a target="_blank" class="link_box inner text-pad" href="http://%%{{=URL_NL_XML}}%%%%{{=url_mois1}}%%">
+														<!--{{%%{{
+														'Composition lien agenda'
+														'Pour aliantis en disco v2bis dans LNET'
+														if (type_perso_site<45) then
+															lien_agenda = "http://"&URL_NL_XML&url_mois1
+														else
+															lien_agenda = "http://"&URL_NL_XML&url_mois1_V3b
+														end if
+														}}%%}}-->
+														<a target="_blank" class="link_box inner text-pad" href="%%{{=lien_agenda}}%%">
 															<span class="preTitle"><!--{{%%{{=date1}}%%}}--><!--DEL{{-->date1<!--}}DEL--></span>
 															<h2 class="title"><!--{{%%{{=texte1V3_1}}%%}}--><!--DEL{{-->texte1V3_1<!--}}DEL--></h2>
 															<span class="text"><!--{{%%{{=texte1V3_2}}%%}}--><!--DEL{{-->texte1V3_2<!--}}DEL--></span>
