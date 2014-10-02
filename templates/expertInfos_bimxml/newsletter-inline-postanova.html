@@ -1173,7 +1173,16 @@ color: #333333;
 											<table class="five columns" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 300px" width="300" cellpadding="0" cellspacing="0">
 												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 													<td style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #333333 !important; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 0px 0px 0; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
-														<a target="_blank" class="link_box inner text-pad" href="http://<%=URL_NL_XML%><%=url_mois1%>" style="color: #333333 !important; display: block; outline: none; padding: 10px; text-decoration: none">
+														<%
+														'Composition lien agenda'
+														'Pour aliantis en disco v2bis dans LNET'
+														if (type_perso_site<45) then
+															lien_agenda = "http://"&URL_NL_XML&url_mois1
+														else
+															lien_agenda = "http://"&URL_NL_XML&url_mois1_V3b
+														end if
+														%>
+														<a target="_blank" class="link_box inner text-pad" href="<%=lien_agenda%>" style="color: #333333 !important; display: block; outline: none; padding: 10px; text-decoration: none">
 															<span class="preTitle" style="color: <%=colorParsing.Item("nlCntAgdPreTitle")%>; display: block; font-size: 33px; font-weight: lighter; line-height: 18.7px; padding-top: 3.66666667px"><%=date1%></span>
 															<h2 class="title" style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 1.1; margin: 0; padding: 10px 0 5px; text-align: left; word-break: normal" align="left"><%=texte1V3_1%></h2>
 															<span class="text"><%=texte1V3_2%></span>
