@@ -79,11 +79,13 @@ else
 end if
 
 'Detect isOnline'
-if(Request.QueryString("is_online") = 1)then
-	isOnline = True
-else
-	isOnline = False
-end if
+'if(Request.QueryString("is_online") = 1)then'
+'	isOnline = True'
+'else'
+'	isOnline = False'
+'end if'
+'Version online'
+isOnline = True
 
 'Detect isCollaborateur'
 if(Request.QueryString("is_coll") = 1)then
