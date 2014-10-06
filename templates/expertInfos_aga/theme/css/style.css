@@ -1183,20 +1183,6 @@ h6 a:visited {
 .contentBottom .question .border {
   border-top: 1px dotted #6b6b6b;
 }
-.footer {
-  background-color: #787878;
-}
-.footer,
-.footer td,
-.footer .inner,
-.footer a,
-.footer a:link,
-.footer a:visited,
-.footer a:hover,
-.footer a:focus,
-.footer a:active {
-  color: #ffffff !important;
-}
 .contentOnline {
   -premailer-background: ##((nlCntOnlineBackground))##;
 }
@@ -1327,4 +1313,18 @@ h6 a:visited {
 .contentContact a:focus,
 .contentContact a:active {
   color: ##((nlCntCctText))## !important;
+}
+.footer {
+  -premailer-background: ##((nlFooterBackground))##;
+}
+.footer,
+.footer td,
+.footer .inner,
+.footer a,
+.footer a:link,
+.footer a:visited,
+.footer a:hover,
+.footer a:focus,
+.footer a:active {
+  color: ##((nlFooterText))## !important;
 }
