@@ -1136,31 +1136,6 @@ h6 a:visited {
 .appleLinks a:visited {
   color: #333333 !important;
 }
-.contentOnline {
-  background-color: #787878;
-}
-.contentOnline,
-.contentOnline td,
-.contentOnline .inner,
-.contentOnline a,
-.contentOnline a:link,
-.contentOnline a:visited,
-.contentOnline a:hover,
-.contentOnline a:focus,
-.contentOnline a:active {
-  color: #ffffff !important;
-}
-.contentOnline .name,
-.contentOnline .name td,
-.contentOnline .name .inner,
-.contentOnline .name a,
-.contentOnline .name a:link,
-.contentOnline .name a:visited,
-.contentOnline .name a:hover,
-.contentOnline .name a:focus,
-.contentOnline .name a:active {
-  color: #ffffff !important;
-}
 .contentArticles .title {
   color: #333333;
   border-top: 1px dotted #6b6b6b;
@@ -1221,6 +1196,31 @@ h6 a:visited {
 .footer a:focus,
 .footer a:active {
   color: #ffffff !important;
+}
+.contentOnline {
+  -premailer-background: ##((nlCntOnlineBackground))##;
+}
+.contentOnline,
+.contentOnline td,
+.contentOnline .inner,
+.contentOnline a,
+.contentOnline a:link,
+.contentOnline a:visited,
+.contentOnline a:hover,
+.contentOnline a:focus,
+.contentOnline a:active {
+  color: ##((nlCntOnlineText))## !important;
+}
+.contentOnline .name,
+.contentOnline .name td,
+.contentOnline .name .inner,
+.contentOnline .name a,
+.contentOnline .name a:link,
+.contentOnline .name a:visited,
+.contentOnline .name a:hover,
+.contentOnline .name a:focus,
+.contentOnline .name a:active {
+  color: ##((nlCntOnlineName))## !important;
 }
 .contentCabInform {
   -premailer-background: ##((nlCntCabBackground))##;
