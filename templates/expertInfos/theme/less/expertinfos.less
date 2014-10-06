@@ -235,13 +235,6 @@ a {
 	}
 }
 
-// footer area
-// -------------------------
-.footer {
-	background-color: @nlFooterBackground;
-	.newsletterInnerTextColor(@nlFooterText);
-}
-
 //importation style localisé dans le site pour test
 // @import "newsletter.less";
 //reprise style newsletter.less sans les !important
@@ -322,6 +315,14 @@ a {
 .contentContact {
 	-premailer-background: e("##((nlCntCctBackground))##");
 	.newsletterInnerTextColor(e("##((nlCntCctText))##"));
+}
+
+
+// footer area
+// -------------------------
+.footer {
+	-premailer-background: e("##((nlFooterBackground))##");
+	.newsletterInnerTextColor(e("##((nlFooterText))##"));
 }
 
 
