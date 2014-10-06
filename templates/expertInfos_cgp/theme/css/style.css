@@ -1176,40 +1176,6 @@ h6 a:visited {
     border-bottom: none !important;
   }
 }
-.contentBottom .agenda {
-  background-color: #eaeaea;
-}
-.contentBottom .agenda .title {
-  color: #333333;
-}
-.contentBottom .agenda,
-.contentBottom .agenda td,
-.contentBottom .agenda .inner,
-.contentBottom .agenda a,
-.contentBottom .agenda a:link,
-.contentBottom .agenda a:visited,
-.contentBottom .agenda a:hover,
-.contentBottom .agenda a:focus,
-.contentBottom .agenda a:active {
-  color: #333333 !important;
-}
-.contentBottom .chiffre {
-  background-color: #eaeaea;
-}
-.contentBottom .chiffre .title {
-  color: #333333;
-}
-.contentBottom .chiffre,
-.contentBottom .chiffre td,
-.contentBottom .chiffre .inner,
-.contentBottom .chiffre a,
-.contentBottom .chiffre a:link,
-.contentBottom .chiffre a:visited,
-.contentBottom .chiffre a:hover,
-.contentBottom .chiffre a:focus,
-.contentBottom .chiffre a:active {
-  color: #333333 !important;
-}
 .contentBottom .dessin .title {
   color: #333333;
 }
@@ -1288,11 +1254,45 @@ h6 a:visited {
 .contentArticles .readMore {
   color: ##((nlCntArtReadMore))##;
 }
+.contentBottom .agenda {
+  -premailer-background: ##((nlCntAgdBackground))##;
+}
 .contentBottom .agenda .preTitle {
   color: ##((nlCntAgdPreTitle))##;
 }
+.contentBottom .agenda .title {
+  color: ##((nlCntAgdTitle))##;
+}
+.contentBottom .agenda,
+.contentBottom .agenda td,
+.contentBottom .agenda .inner,
+.contentBottom .agenda a,
+.contentBottom .agenda a:link,
+.contentBottom .agenda a:visited,
+.contentBottom .agenda a:hover,
+.contentBottom .agenda a:focus,
+.contentBottom .agenda a:active {
+  color: ##((nlCntAgdText))## !important;
+}
+.contentBottom .chiffre {
+  -premailer-background: ##((nlCntChfBackground))##;
+}
 .contentBottom .chiffre .preTitle {
   color: ##((nlCntChfPreTitle))##;
+}
+.contentBottom .chiffre .title {
+  color: ##((nlCntChfTitle))##;
+}
+.contentBottom .chiffre,
+.contentBottom .chiffre td,
+.contentBottom .chiffre .inner,
+.contentBottom .chiffre a,
+.contentBottom .chiffre a:link,
+.contentBottom .chiffre a:visited,
+.contentBottom .chiffre a:hover,
+.contentBottom .chiffre a:focus,
+.contentBottom .chiffre a:active {
+  color: ##((nlCntChfText))## !important;
 }
 .contentBottom .dessin .preTitle {
   color: ##((nlCntDsnPreTitle))##;
