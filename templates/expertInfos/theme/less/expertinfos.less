@@ -225,18 +225,6 @@ a {
 // contentBottom area
 // -------------------------
 .contentBottom {
-	.agenda {
-		background-color: @nlCntAgdBackground;
-		.title { color: @nlCntAgdTitle; }
-		.newsletterInnerTextColor(@nlCntAgdText);
-	}
-
-	.chiffre {
-		background-color: @nlCntChfBackground;
-		.title { color: @nlCntChfTitle; }
-		.newsletterInnerTextColor(@nlCntChfText);
-	}
-
 	.dessin {
 		.title { color: @nlCntDsnTitle; }
 		.readMore { color: @nlCntDsnReadMore; }
@@ -301,11 +289,17 @@ a {
 // -------------------------
 .contentBottom {
 	.agenda {
+		-premailer-background: e("##((nlCntAgdBackground))##");
 		.preTitle { color: e("##((nlCntAgdPreTitle))##"); }
+		.title { color: e("##((nlCntAgdTitle))##"); }
+		.newsletterInnerTextColor(e("##((nlCntAgdText))##"));
 	}
 
 	.chiffre {
+		-premailer-background: e("##((nlCntChfBackground))##");
 		.preTitle { color: e("##((nlCntChfPreTitle))##"); }
+		.title { color: e("##((nlCntChfTitle))##"); }
+		.newsletterInnerTextColor(e("##((nlCntChfText))##"));
 	}
 
 	.dessin {
