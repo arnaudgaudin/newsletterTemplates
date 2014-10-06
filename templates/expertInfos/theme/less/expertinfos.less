@@ -197,14 +197,6 @@ a {
 	}
 }
 
-// contentOnline area
-// -------------------------
-.contentOnline {
-	background-color: @nlCntOnlineBackground;
-	.newsletterInnerTextColor(@nlCntOnlineText);
-	.name { .newsletterInnerTextColor(@nlCntOnlineName); }
-}
-
 // contentArticles area
 // -------------------------
 .contentArticles {
@@ -258,6 +250,14 @@ a {
 
 // CUSTOM COLORS
 // --------------------------------------------------
+
+// contentOnline area
+// -------------------------
+.contentOnline {
+	-premailer-background: e("##((nlCntOnlineBackground))##");
+	.newsletterInnerTextColor(e("##((nlCntOnlineText))##"));
+	.name { .newsletterInnerTextColor(e("##((nlCntOnlineName))##")); }
+}
 
 // contentCabInform area
 // -------------------------
