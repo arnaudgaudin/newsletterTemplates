@@ -1178,10 +1178,10 @@ h6 a:visited {
 }
 body,
 table.body {
-  background-color: #787878;
+  -premailer-background: ##((nlBodyBackground))##;
 }
 .header {
-  background-color: #787878;
+  -premailer-background: ##((nlBodyBackground))##;
 }
 .contentOnline {
   -premailer-background: ##((nlCntOnlineBackground))##;

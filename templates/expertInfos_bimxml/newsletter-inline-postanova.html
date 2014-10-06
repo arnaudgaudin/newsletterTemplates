@@ -121,7 +121,7 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
     <meta name="viewport" content="width=device-width" />
     <title>Newsletter bimensuelle du <%=get_date%></title>
 </head>
-<body style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; background: #787878; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; line-height: 16px; margin: 0; min-width: 100%; padding: 0; text-align: left; width: 100% !important" bgcolor="#787878"><style type="text/css">
+<body bgcolor="<%=colorParsing.Item("nlBodyBackground")%>" style="-ms-text-size-adjust: 100%; background: <%=colorParsing.Item("nlBodyBackground")%>; -webkit-text-size-adjust: 100%; background: #787878; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; line-height: 16px; margin: 0; min-width: 100%; padding: 0; text-align: left; width: 100% !important"><style type="text/css">
 body {
 background-color: #787878;
 }
@@ -294,7 +294,7 @@ body {
 color: #333333;
 }
 body {
-background-color: #787878;
+background: <%=colorParsing.Item("nlBodyBackground")%>;
 }
 body {
 background-color: #787878;
@@ -468,7 +468,7 @@ body {
 color: #333333;
 }
 body {
-background-color: #787878;
+background: <%=colorParsing.Item("nlBodyBackground")%>;
 }
 @media only screen and (max-width: 720px) {
   table[class="body"] img {
@@ -890,7 +890,7 @@ background-color: #787878;
 }
 
 </style>
-	<table class="body" style="background: #787878; border-collapse: collapse; border-spacing: 0; color: #333333; empty-cells: hide; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; height: 100%; line-height: 16px; margin: 0; padding: 0; text-align: left; vertical-align: top; width: 100%" bgcolor="#787878" width="100%" height="100%" cellpadding="0" cellspacing="0">
+	<table class="body" bgcolor="<%=colorParsing.Item("nlBodyBackground")%>" style="background: <%=colorParsing.Item("nlBodyBackground")%>; background: #787878; border-collapse: collapse; border-spacing: 0; color: #333333; empty-cells: hide; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; height: 100%; line-height: 16px; margin: 0; padding: 0; text-align: left; vertical-align: top; width: 100%" width="100%" height="100%" cellpadding="0" cellspacing="0">
 		<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 			<td class="center" align="center" valign="top" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 0; text-align: center; vertical-align: top; word-break: break-word">
 				<center style="min-width: 720px; width: 100%">
@@ -925,7 +925,7 @@ background-color: #787878;
 								
 								<% if logo_groupement=True then %>
 								<!-- HEADER GROUPE START -->
-								<table class="row header" style="background: #787878; border-collapse: collapse; border-spacing: 0; display: block; empty-cells: hide; padding: 0px; position: relative; text-align: left; vertical-align: top; width: 100%" bgcolor="#787878" width="100%" cellpadding="0" cellspacing="0">
+								<table class="row header" bgcolor="<%=colorParsing.Item("nlBodyBackground")%>" style="background: <%=colorParsing.Item("nlBodyBackground")%>; border-collapse: collapse; border-spacing: 0; display: block; empty-cells: hide; padding: 0px; position: relative; text-align: left; vertical-align: top; width: 100%" width="100%" cellpadding="0" cellspacing="0">
 									<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 										<td class="wrapper last" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 0 0px 0px; position: relative; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
 											<table class="twelve columns" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 720px" width="720" cellpadding="0" cellspacing="0">
@@ -948,7 +948,7 @@ background-color: #787878;
 								<!-- HEADER GROUPE END -->
 								<% else %>
 								<!-- HEADER START -->
-								<table class="row header" style="background: #787878; border-collapse: collapse; border-spacing: 0; display: block; empty-cells: hide; padding: 0px; position: relative; text-align: left; vertical-align: top; width: 100%" bgcolor="#787878" width="100%" cellpadding="0" cellspacing="0">
+								<table class="row header" bgcolor="<%=colorParsing.Item("nlBodyBackground")%>" style="background: <%=colorParsing.Item("nlBodyBackground")%>; border-collapse: collapse; border-spacing: 0; display: block; empty-cells: hide; padding: 0px; position: relative; text-align: left; vertical-align: top; width: 100%" width="100%" cellpadding="0" cellspacing="0">
 								    <tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 								        <td class="wrapper first" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 0 0px 0px; position: relative; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
 								            <table class="twelve columns" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 720px" width="720" cellpadding="0" cellspacing="0">
