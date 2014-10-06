@@ -1070,15 +1070,8 @@ table.column td {
     visibility: hidden !important;
   }
 }
-body,
-table.body {
-  background-color: #787878;
-}
 .container {
   background-color: #ffffff;
-}
-.header {
-  background-color: #787878;
 }
 body,
 table.body,
@@ -1182,6 +1175,13 @@ h6 a:visited {
 }
 .contentBottom .question .border {
   border-top: 1px dotted #6b6b6b;
+}
+body,
+table.body {
+  background-color: #787878;
+}
+.header {
+  background-color: #787878;
 }
 .contentOnline {
   -premailer-background: ##((nlCntOnlineBackground))##;
