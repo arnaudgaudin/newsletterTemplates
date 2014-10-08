@@ -961,9 +961,6 @@ table.column td {
 .contentALaUne a:active {
   color: #ffffff !important;
 }
-.contentALaUne .columns {
-  background-color: rgba(255, 0, 0, 0.5);
-}
 .contentALaUne .preTitle {
   text-transform: uppercase;
   color: #a6becf;
@@ -975,37 +972,48 @@ table.column td {
   text-transform: uppercase;
   padding: 5px 0;
 }
-.contentALaUne .wrapper .columns .inner {
+.contentALaUne .filler {
+  height: 20px;
+  -premailer-height: 20px;
+}
+.contentALaUne .inner {
   padding-top: 0;
   padding-bottom: 0;
-}
-.contentALaUne .wrapper.last {
-  border-left: 1px solid #0f0;
 }
 .contentALaUne .wrapper.first .columns .text-pad {
   padding-right: 20px;
 }
-.contentALaUne .wrapper.last .columns .text-pad {
-  padding-left: 19px;
+.contentALaUne .wrapper.last {
   border-left: 1px dotted #ffffff;
 }
+.contentALaUne .wrapper.last .columns .text-pad {
+  padding-left: 19px;
+}
+.contentALaUne .wrapper.last .columns.six {
+  width: 359px;
+}
 @media only screen and (max-width: 720px) {
-  table[class="body"] .contentALaUne .wrapper > .inner {
-    padding: 0 10px;
+  table[class="body"] .contentALaUne .filler {
+    display: none;
+    visibility: hidden;
   }
-  table[class="body"] .contentALaUne .wrapper .columns .inner {
+  table[class="body"] .contentALaUne .inner {
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+  table[class="body"] .contentALaUne .wrapper > .columns td {
+    padding-left: 10px;
+    padding-right: 10px;
   }
   table[class="body"] .contentALaUne .wrapper .columns .text-pad {
     padding-left: 0;
     padding-right: 0;
   }
-  table[class="body"] .contentALaUne .wrapper.last .columns .text-pad {
+  table[class="body"] .contentALaUne .wrapper.last {
     border-left: 0;
   }
-  table[class="body"] .contentALaUne .wrapper.last .columns .inner {
-    padding-top: 9px;
+  table[class="body"] .contentALaUne .wrapper.last .inner {
     border-top: 1px dotted #ffffff;
+    padding-top: 9px;
   }
 }

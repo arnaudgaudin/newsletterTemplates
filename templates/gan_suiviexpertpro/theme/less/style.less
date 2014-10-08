@@ -44,10 +44,6 @@ table.columns td, table.column td { padding-bottom: 0; }
 	background-color: @colorGan1;
 	.newsletterInnerTextColor(#ffffff);
 
-	.columns {
-		background-color: fade(#f00, 50%);
-	}
-
 	.preTitle {
 		text-transform: uppercase;
 		color: mix(#fff, @colorGan1, 50%);
@@ -60,34 +56,47 @@ table.columns td, table.column td { padding-bottom: 0; }
 		text-transform: uppercase;
 		padding: 5px 0;
 	}
+	
+	//pour rajouter de l'espace en haut et en dessous des wrappers
+	.filler {
+		height: 20px;
+		-premailer-height: 20px;
+	}
 
 	//suppression décalage en trop
-	.wrapper .columns .inner {
+	.inner {
 		padding-top: 0;
 		padding-bottom: 0;
-	}
-	
-	//pour test
-	.wrapper.last {
-		border-left: 1px solid #0f0;
 	}
 
 	//modification padding au milieu
 	.wrapper.first .columns .text-pad { padding-right: 20px; }
-	.wrapper.last .columns .text-pad {
-		padding-left: 19px;
+	
+	//rajout bordure sur le 2ème wrapper directement
+	.wrapper.last {
 		border-left: 1px dotted #ffffff;
+
+		.columns .text-pad { padding-left: 19px; }
+		//réduction largeur tableau 6 colonnes de 1px pour compenser
+		.columns.six { width: (5 * @gutterWidth + 6 * @columnWidth - 1px); }
 	}
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentALaUne {
-		//rajout décalage sur les côtés et suppression padding vertical en trop
-		.wrapper > .inner { padding: 0 10px; }
+		//masquage filler
+		.filler {
+			display: none;
+			visibility: hidden;
+		}
 
-		//rajout décalage interne
-		.wrapper .columns .inner {
+		//rajout décalage vertical et horizontal
+		.inner {
 			padding-top: 10px;
 			padding-bottom: 10px;
+		}
+		.wrapper > .columns td {
+			padding-left: 10px;
+			padding-right: 10px;
 		}
 
 		//supppression décalage interne en trop
@@ -97,11 +106,11 @@ table.columns td, table.column td { padding-bottom: 0; }
 		}
 
 		//changement orientation bordure et compensation padding
-		.wrapper.last .columns {
-			.text-pad { border-left: 0; }
+		.wrapper.last {
+			border-left: 0;
 			.inner {
-				padding-top: 9px;
 				border-top: 1px dotted #ffffff;
+				padding-top: 9px;
 			}
 		}
 	}
