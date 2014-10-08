@@ -958,22 +958,23 @@ table.column td {
 .contentALaUne a:active {
   color: #ffffff !important;
 }
-.contentALaUne .wrapper.first .text-pad {
+.contentALaUne .wrapper.first .columns .text-pad {
   padding-right: 20px;
 }
-.contentALaUne .wrapper.last .text-pad {
+.contentALaUne .wrapper.last .columns .text-pad {
   padding-left: 19px;
   border-left: 1px dotted #ffffff;
 }
 @media only screen and (max-width: 720px) {
-  table[class="body"] .contentALaUne .wrapper.first .text-pad {
+  table[class="body"] .contentALaUne .wrapper.first .columns .text-pad {
     padding-right: 10px;
   }
-  table[class="body"] .contentALaUne .wrapper.last {
-    border-top: 1px dotted #ffffff;
-  }
-  table[class="body"] .contentALaUne .wrapper.last .text-pad {
+  table[class="body"] .contentALaUne .wrapper.last .columns .text-pad {
     padding-left: 10px;
     border-left: 0;
+  }
+  table[class="body"] .contentALaUne .wrapper.last .columns .inner {
+    padding-top: 9px;
+    border-top: 1px dotted #ffffff;
   }
 }
