@@ -3,6 +3,12 @@
 
 // additionnal template's style which extends ink's style
 
+// CUSTOM MIXINS
+// --------------------------------------------------
+.newsletterInnerTextColor(@color) {
+	&, td, .inner, a, a:link, a:visited, a:hover, a:focus, a:active { color: @color !important; }
+}
+
 // LAYOUT
 // --------------------------------------------------
 
@@ -26,5 +32,22 @@ table.columns td, table.column td { padding-bottom: 0; }
 	table.columns td.sub-column,
 	table.column td.sub-column {
 	  padding-right: 0;
+	}
+}
+
+// contentALaUne area
+// -------------------------
+.contentALaUne {
+	background-color: @colorGan1;
+	.newsletterInnerTextColor(#ffffff);
+
+	//modification padding au milieu
+	.wrapper.first .text-pad { padding-right: 20px; }
+	.wrapper.last .text-pad { padding-left: 20px; }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentALaUne {
+		.wrapper.first .text-pad { padding-right: 10px; }
+		.wrapper.last .text-pad { padding-left: 10px; }
 	}
 }

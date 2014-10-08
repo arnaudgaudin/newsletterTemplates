@@ -944,3 +944,31 @@ table.column td {
 .header table.column td.sub-column {
   padding-right: 0;
 }
+.contentALaUne {
+  background-color: #4c7d9f;
+}
+.contentALaUne,
+.contentALaUne td,
+.contentALaUne .inner,
+.contentALaUne a,
+.contentALaUne a:link,
+.contentALaUne a:visited,
+.contentALaUne a:hover,
+.contentALaUne a:focus,
+.contentALaUne a:active {
+  color: #ffffff !important;
+}
+.contentALaUne .wrapper.first .text-pad {
+  padding-right: 20px;
+}
+.contentALaUne .wrapper.last .text-pad {
+  padding-left: 20px;
+}
+@media only screen and (max-width: 720px) {
+  table[class="body"] .contentALaUne .wrapper.first .text-pad {
+    padding-right: 10px;
+  }
+  table[class="body"] .contentALaUne .wrapper.last .text-pad {
+    padding-left: 10px;
+  }
+}
