@@ -35,11 +35,27 @@ table.columns td, table.column td { padding-bottom: 0; }
 	}
 }
 
+//sur titres
+.preTitle { display: block;}
+
 // contentALaUne area
 // -------------------------
 .contentALaUne {
 	background-color: @colorGan1;
 	.newsletterInnerTextColor(#ffffff);
+
+	.preTitle {
+		text-transform: uppercase;
+		color: mix(#fff, @colorGan1, 50%);
+		padding-top: 5px;
+	}
+
+	.title {
+		color: #ffffff;
+		font-weight: bold;
+		text-transform: uppercase;
+		padding: 5px 0;
+	}
 
 	//suppression décalage en trop
 	.wrapper .columns .inner {

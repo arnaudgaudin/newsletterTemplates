@@ -439,27 +439,27 @@ h4,
 h5,
 h6 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
-  color: inherit;
+  font-weight: normal;
+  color: #000000;
   word-break: normal;
 }
 h1 {
-  font-size: 39.9px;
+  font-size: 18px;
 }
 h2 {
-  font-size: 35.7px;
+  font-size: 16px;
 }
 h3 {
-  font-size: 31.5px;
+  font-size: 15px;
 }
 h4 {
-  font-size: 28px;
+  font-size: 14px;
 }
 h5 {
-  font-size: 24.5px;
+  font-size: 13px;
 }
 h6 {
-  font-size: 20.3px;
+  font-size: 12px;
 }
 body,
 table.body,
@@ -467,20 +467,20 @@ p,
 td {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 19px;
+  font-size: 12px;
+  line-height: 16px;
 }
 p.lead,
 p.lede,
 p.leed {
-  font-size: 17.5px;
-  line-height: 20.125px;
+  font-size: 15px;
+  line-height: 17.25px;
 }
 p {
   margin-bottom: 10px;
 }
 small {
-  font-size: 9.8px;
+  font-size: 8.4px;
 }
 a {
   color: #000000;
@@ -574,23 +574,23 @@ table.large-button td a {
   text-decoration: none;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #ffffff;
-  font-size: 16.1px;
+  font-size: 13.8px;
   display: block;
   height: 100%;
   width: 100%;
 }
 table.tiny-button td a {
-  font-size: 11.9px;
+  font-size: 10.2px;
   font-weight: normal;
 }
 table.small-button td a {
-  font-size: 16.1px;
+  font-size: 13.8px;
 }
 table.medium-button td a {
-  font-size: 20.3px;
+  font-size: 17.4px;
 }
 table.large-button td a {
-  font-size: 28px;
+  font-size: 24px;
 }
 table.button:hover td,
 table.button:visited td,
@@ -944,6 +944,9 @@ table.column td {
 .header table.column td.sub-column {
   padding-right: 0;
 }
+.preTitle {
+  display: block;
+}
 .contentALaUne {
   background-color: #4c7d9f;
 }
@@ -957,6 +960,17 @@ table.column td {
 .contentALaUne a:focus,
 .contentALaUne a:active {
   color: #ffffff !important;
+}
+.contentALaUne .preTitle {
+  text-transform: uppercase;
+  color: #a6becf;
+  padding-top: 5px;
+}
+.contentALaUne .title {
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 5px 0;
 }
 .contentALaUne .wrapper .columns .inner {
   padding-top: 0;
