@@ -962,13 +962,18 @@ table.column td {
   padding-right: 20px;
 }
 .contentALaUne .wrapper.last .text-pad {
-  padding-left: 20px;
+  padding-left: 19px;
+  border-left: 1px dotted #ffffff;
 }
 @media only screen and (max-width: 720px) {
   table[class="body"] .contentALaUne .wrapper.first .text-pad {
     padding-right: 10px;
   }
+  table[class="body"] .contentALaUne .wrapper.last {
+    border-top: 1px dotted #ffffff;
+  }
   table[class="body"] .contentALaUne .wrapper.last .text-pad {
     padding-left: 10px;
+    border-left: 0;
   }
 }

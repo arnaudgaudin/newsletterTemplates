@@ -43,11 +43,20 @@ table.columns td, table.column td { padding-bottom: 0; }
 
 	//modification padding au milieu
 	.wrapper.first .text-pad { padding-right: 20px; }
-	.wrapper.last .text-pad { padding-left: 20px; }
+	.wrapper.last .text-pad {
+		padding-left: 19px;
+		border-left: 1px dotted #ffffff;
+	}
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentALaUne {
 		.wrapper.first .text-pad { padding-right: 10px; }
-		.wrapper.last .text-pad { padding-left: 10px; }
+		.wrapper.last {
+			.text-pad {
+				padding-left: 10px;
+				border-left: 0;
+			}
+			border-top: 1px dotted #ffffff;
+		}
 	}
 }
