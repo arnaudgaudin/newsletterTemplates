@@ -3,7 +3,7 @@ echo "Hi, $USER!"
 #compile less file
 echo "compiling style.less ..."
 lessc ${PWD}/theme/less/style.less ${PWD}/theme/css/style.css
-lessc ${PWD}/theme/less/newsletter.less ${PWD}/theme/css/newsletter.css
+[ -f ${PWD}/theme/less/newsletter.less ] && lessc ${PWD}/theme/less/newsletter.less ${PWD}/theme/css/newsletter.css
 
 #inline style in html
 echo "inlining newsletter.html ..."
