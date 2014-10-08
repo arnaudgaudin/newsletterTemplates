@@ -958,6 +958,10 @@ table.column td {
 .contentALaUne a:active {
   color: #ffffff !important;
 }
+.contentALaUne .wrapper .columns .inner {
+  padding-top: 0;
+  padding-bottom: 0;
+}
 .contentALaUne .wrapper.first .columns .text-pad {
   padding-right: 20px;
 }
@@ -966,11 +970,18 @@ table.column td {
   border-left: 1px dotted #ffffff;
 }
 @media only screen and (max-width: 720px) {
-  table[class="body"] .contentALaUne .wrapper.first .columns .text-pad {
-    padding-right: 10px;
+  table[class="body"] .contentALaUne .wrapper > .inner {
+    padding: 0 10px;
+  }
+  table[class="body"] .contentALaUne .wrapper .columns .inner {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  table[class="body"] .contentALaUne .wrapper .columns .text-pad {
+    padding-left: 0;
+    padding-right: 0;
   }
   table[class="body"] .contentALaUne .wrapper.last .columns .text-pad {
-    padding-left: 10px;
     border-left: 0;
   }
   table[class="body"] .contentALaUne .wrapper.last .columns .inner {

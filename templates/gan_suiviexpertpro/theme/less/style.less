@@ -41,6 +41,12 @@ table.columns td, table.column td { padding-bottom: 0; }
 	background-color: @colorGan1;
 	.newsletterInnerTextColor(#ffffff);
 
+	//suppression décalage en trop
+	.wrapper .columns .inner {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
 	//modification padding au milieu
 	.wrapper.first .columns .text-pad { padding-right: 20px; }
 	.wrapper.last .columns .text-pad {
@@ -50,12 +56,24 @@ table.columns td, table.column td { padding-bottom: 0; }
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentALaUne {
-		.wrapper.first .columns .text-pad { padding-right: 10px; }
+		//rajout décalage sur les côtés et suppression padding vertical en trop
+		.wrapper > .inner { padding: 0 10px; }
+
+		//rajout décalage interne
+		.wrapper .columns .inner {
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+
+		//supppression décalage interne en trop
+		.wrapper .columns .text-pad {
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		//changement orientation bordure et compensation padding
 		.wrapper.last .columns {
-			.text-pad {
-				padding-left: 10px;
-				border-left: 0;
-			}
+			.text-pad { border-left: 0; }
 			.inner {
 				padding-top: 9px;
 				border-top: 1px dotted #ffffff;

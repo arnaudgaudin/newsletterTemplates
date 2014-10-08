@@ -343,11 +343,17 @@ display: inline !important;
   table[class="container"] .block-grid td {
     width: 100% !important;
   }
-  table[class="body"] .contentALaUne .wrapper.first .columns .text-pad {
-    padding-right: 10px;
+  table[class="body"] .contentALaUne .wrapper &gt; .inner {
+    padding: 0 10px;
+  }
+  table[class="body"] .contentALaUne .wrapper .columns .inner {
+    padding-top: 10px; padding-bottom: 10px;
+  }
+  table[class="body"] .contentALaUne .wrapper .columns .text-pad {
+    padding-left: 0; padding-right: 0;
   }
   table[class="body"] .contentALaUne .wrapper.last .columns .text-pad {
-    padding-left: 10px; border-left: 0;
+    border-left: 0;
   }
   table[class="body"] .contentALaUne .wrapper.last .columns .inner {
     padding-top: 9px; border-top: 1px dotted #ffffff;
@@ -442,11 +448,11 @@ display: inline !important;
 								<table class="row contentALaUne" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%; background: #4c7d9f; border-collapse: collapse; border-spacing: 0; color: #ffffff !important; display: block; empty-cells: hide; padding: 0px; position: relative; text-align: left; vertical-align: top; width: 100%" bgcolor="#4c7d9f" width="100%" cellpadding="0" cellspacing="0">
 									<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 										<td class="wrapper first" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #ffffff !important; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0 0 0px 0px; position: relative; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
-											<span class="inner text-pad" style="color: #ffffff !important; display: block; padding-bottom: 10px; padding-top: 10px">
+											<span class="inner" style="color: #ffffff !important; display: block; padding-bottom: 10px; padding-top: 10px">
 												<table class="six columns" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 360; border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 360px" width="360" cellpadding="0" cellspacing="0">
 													<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 														<td style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #ffffff !important; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0px 0px 0; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
-															<span class="inner text-pad" style="color: #ffffff !important; display: block; padding: 10px 20px 10px 10px">
+															<span class="inner text-pad" style="color: #ffffff !important; display: block; padding: 0 20px 0 10px">
 																<a target="_blank" class="link_box" href="#" style="color: #ffffff !important; display: block; outline: none; text-decoration: none">
 																	COL 1 <br />
 																	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab veritatis, debitis architecto quo nulla magnam voluptatum nobis odit ex cupiditate a provident voluptatibus tenetur maiores aspernatur eligendi asperiores, repellendus id.
@@ -458,11 +464,11 @@ display: inline !important;
 											</span>
 										</td>
 										<td class="wrapper last" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #ffffff !important; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0 0px 0px; position: relative; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
-											<span class="inner text-pad" style="color: #ffffff !important; display: block; padding-bottom: 10px; padding-top: 10px">
+											<span class="inner" style="color: #ffffff !important; display: block; padding-bottom: 10px; padding-top: 10px">
 												<table class="six columns" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 360; border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 360px" width="360" cellpadding="0" cellspacing="0">
 													<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 														<td style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #ffffff !important; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0px 0px 0; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
-															<span class="inner text-pad" style="border-left-color: #ffffff; border-left-style: dotted; border-left-width: 1px; color: #ffffff !important; display: block; padding: 10px 10px 10px 19px">
+															<span class="inner text-pad" style="border-left-color: #ffffff; border-left-style: dotted; border-left-width: 1px; color: #ffffff !important; display: block; padding: 0 10px 0 19px">
 																<a target="_blank" class="link_box" href="#" style="color: #ffffff !important; display: block; outline: none; text-decoration: none">
 																	COL 2 <br />
 																	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab veritatis, debitis architecto quo nulla magnam voluptatum nobis odit ex cupiditate a provident voluptatibus tenetur maiores aspernatur eligendi asperiores, repellendus id.
