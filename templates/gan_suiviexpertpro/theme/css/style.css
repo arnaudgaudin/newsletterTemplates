@@ -931,6 +931,11 @@ h6 {
 .inner img {
   float: none;
 }
+.filler,
+.filler .empty {
+  line-height: 0;
+  font-size: 0;
+}
 td.wrapper {
   padding-top: 0;
 }
@@ -1088,12 +1093,31 @@ table.column td {
     padding-left: 10px;
   }
 }
+.contentBottom .filler {
+  background-color: #0f0;
+  height: 10px;
+  -premailer-height: 10px;
+}
 .contentBottom .wrapper {
-  background-color: #f00;
+  border-left: 1px dotted #4c7d9f;
+}
+.contentBottom .wrapper .columns .text-pad {
+  padding-left: 19px;
+  padding-right: 20px;
+}
+.contentBottom .wrapper .columns.four {
+  width: 239px;
 }
 .contentBottom .wrapper.first {
-  background-color: #0f0;
+  border-left: 0;
 }
-.contentBottom .wrapper.last {
-  background-color: #00f;
+.contentBottom .wrapper.first .columns.four {
+  width: 240px;
+  -premailer-width: 240;
+}
+.contentBottom .wrapper.first .columns .text-pad {
+  padding-left: 10px;
+}
+.contentBottom .wrapper.last .columns .text-pad {
+  padding-right: 10px;
 }

@@ -21,6 +21,14 @@ h1, h2, h3, h4, h5, h6 { line-height: 1.1; }
 	img { float: none; }
 }
 
+//pour rajouter de l'espace en haut et en dessous des wrappers
+.filler {
+	&, .empty {
+		line-height: 0;
+		font-size: 0;
+	}
+}
+
 //suppression paddings verticaux déportés sur classe .inner dans certaines zones
 td.wrapper { padding-top: 0; }
 table.columns td, table.column td { padding-bottom: 0; }
@@ -193,13 +201,48 @@ table.columns td, table.column td { padding-bottom: 0; }
 // contentBottom area
 // -------------------------
 .contentBottom {
+	
+	//pour rajouter de l'espace en haut et en dessous des wrappers
+	.filler {
+		background-color: #0f0;
+		height: 10px;
+		-premailer-height: 10px;
+	}
+
 	.wrapper {
-		background-color: #f00;
+		// background-color: desaturate(#f00, 90%);
+
+		//modification padding
+		.columns .text-pad {
+			padding-left: 19px;
+			padding-right: 20px;
+		}
+
+		//rajout bordure à gauche
+		border-left: 1px dotted @colorGan1;
+
+		//réduction largeur tableau 6 colonnes de 1px pour compenser
+		.columns.four { width: (3 * @gutterWidth + 4 * @columnWidth - 1px); }
+
+		//pas de bordure sur le premier
 		&.first {
-			background-color: #0f0;
+			border-left: 0;
+			.columns.four { .columnWidth(4); }
+			.columns .text-pad { padding-left: 10px; }
+		}
+
+		//padding normal à droite sur le dernier
+		&.last {
+			.columns .text-pad { padding-right: 10px; }
+		}
+
+
+
+		&.first {
+			// background-color: desaturate(#0f0, 90%);
 		}
 		&.last {
-			background-color: #00f;
+			// background-color: desaturate(#00f, 90%);
 		}
 	}
 }
