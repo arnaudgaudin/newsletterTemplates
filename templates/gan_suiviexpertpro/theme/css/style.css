@@ -1237,3 +1237,23 @@ table.column td {
   font-size: 9.1px;
   line-height: 12.103px;
 }
+.contentUnsubscribe {
+  background-color: #2a374e;
+}
+.contentUnsubscribe,
+.contentUnsubscribe td,
+.contentUnsubscribe .inner,
+.contentUnsubscribe a,
+.contentUnsubscribe a:link,
+.contentUnsubscribe a:visited,
+.contentUnsubscribe a:hover,
+.contentUnsubscribe a:focus,
+.contentUnsubscribe a:active {
+  color: #ffffff !important;
+}
+.contentUnsubscribe .inner {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 9.1px;
+  line-height: 12.103px;
+}
