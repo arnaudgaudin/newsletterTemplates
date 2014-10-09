@@ -963,6 +963,49 @@ table.column td {
   font-size: 100%;
   color: #cc2e37;
 }
+.icon-img {
+  position: relative;
+  display: inline;
+  vertical-align: text-bottom;
+  line-height: 0;
+  margin-right: .5em;
+}
+.contentOnline,
+.contentInfoClient {
+  background-color: #2a374e;
+}
+.contentOnline,
+.contentInfoClient,
+.contentOnline td,
+.contentInfoClient td,
+.contentOnline .inner,
+.contentInfoClient .inner,
+.contentOnline a,
+.contentInfoClient a,
+.contentOnline a:link,
+.contentInfoClient a:link,
+.contentOnline a:visited,
+.contentInfoClient a:visited,
+.contentOnline a:hover,
+.contentInfoClient a:hover,
+.contentOnline a:focus,
+.contentInfoClient a:focus,
+.contentOnline a:active,
+.contentInfoClient a:active {
+  color: #ffffff !important;
+}
+.contentOnline .inner {
+  font-size: 9.1px;
+  line-height: 12.103px;
+}
+.contentOnline .online {
+  display: block;
+  padding-top: 5px;
+}
+.contentInfoClient .inner {
+  font-size: 11.2px;
+  line-height: 14.896px;
+}
 .contentALaUne {
   background-color: #4c7d9f;
 }

@@ -61,6 +61,45 @@ table.columns td, table.column td { padding-bottom: 0; }
 	color: @colorGan5;
 }
 
+//icone en image
+.icon-img {
+	position: relative;
+	display: inline;
+	vertical-align: text-bottom;
+	line-height: 0;
+	margin-right: .5em;
+}
+
+// contentOnline et contentInfoClient area
+// -------------------------
+.contentOnline, .contentInfoClient {
+	background-color: @bodyBackground;
+	.newsletterInnerTextColor(#ffffff);
+}
+
+// contentOnline area
+// -------------------------
+.contentOnline {
+	.inner {
+		font-size: @fontSizeMini;
+		line-height: (@fontSizeMini * 1.33);
+	}
+	.online {
+		display: block;
+		padding-top: 5px;
+	}
+}
+
+// contentInfoClient area
+// -------------------------
+.contentInfoClient {
+	.inner {
+		font-size: @fontSizeSmall;
+		line-height: (@fontSizeSmall * 1.33);
+	}
+}
+
+
 // contentALaUne area
 // -------------------------
 .contentALaUne {
