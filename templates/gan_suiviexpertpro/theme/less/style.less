@@ -36,7 +36,11 @@ table.columns td, table.column td { padding-bottom: 0; }
 }
 
 //sur titres
-.preTitle { display: block;}
+.preTitle {
+	display: block;
+	font-size: 12px;
+	text-transform: uppercase;
+}
 
 // contentALaUne area
 // -------------------------
@@ -45,7 +49,6 @@ table.columns td, table.column td { padding-bottom: 0; }
 	.newsletterInnerTextColor(#ffffff);
 
 	.preTitle {
-		text-transform: uppercase;
 		color: mix(#fff, @colorGan1, 50%);
 		padding-top: 5px;
 	}
@@ -112,6 +115,26 @@ table.columns td, table.column td { padding-bottom: 0; }
 				border-top: 1px dotted #ffffff;
 				padding-top: 9px;
 			}
+		}
+	}
+}
+
+// contentMain area
+// -------------------------
+.contentMain {
+	.actualites {
+		background-color: @colorGan2;
+
+		.preTitle {
+			color: mix(#000, @colorGan2, 50%);
+		}
+	}
+
+	.offre {
+		background-color: @colorGan3;
+
+		.preTitle {
+			color: mix(#000, @colorGan3, 50%);
 		}
 	}
 }
