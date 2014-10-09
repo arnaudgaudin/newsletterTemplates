@@ -1094,9 +1094,11 @@ table.column td {
   }
 }
 .contentBottom .filler {
-  background-color: #0f0;
   height: 10px;
   -premailer-height: 10px;
+}
+.contentBottom .preTitle {
+  color: #4c7d9f;
 }
 .contentBottom .wrapper {
   border-left: 1px dotted #4c7d9f;
@@ -1120,4 +1122,33 @@ table.column td {
 }
 .contentBottom .wrapper.last .columns .text-pad {
   padding-right: 10px;
+}
+@media only screen and (max-width: 720px) {
+  table[class="body"] .contentBottom .filler {
+    display: none;
+    visibility: hidden;
+  }
+  table[class="body"] .contentBottom .inner {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  table[class="body"] .contentBottom .wrapper > .columns td {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  table[class="body"] .contentBottom .wrapper .columns .text-pad {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  table[class="body"] .contentBottom .wrapper {
+    border-left: 0;
+  }
+  table[class="body"] .contentBottom .wrapper .inner {
+    border-top: 1px dotted #4c7d9f;
+    padding-top: 9px;
+  }
+  table[class="body"] .contentBottom .wrapper.first .inner {
+    border-top: 0;
+    padding-top: 10px;
+  }
 }

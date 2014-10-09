@@ -204,13 +204,13 @@ table.columns td, table.column td { padding-bottom: 0; }
 	
 	//pour rajouter de l'espace en haut et en dessous des wrappers
 	.filler {
-		background-color: #0f0;
 		height: 10px;
 		-premailer-height: 10px;
 	}
 
+	.preTitle { color: @colorGan1; }
+
 	.wrapper {
-		// background-color: desaturate(#f00, 90%);
 
 		//modification padding
 		.columns .text-pad {
@@ -235,14 +235,44 @@ table.columns td, table.column td { padding-bottom: 0; }
 		&.last {
 			.columns .text-pad { padding-right: 10px; }
 		}
-
-
-
-		&.first {
-			// background-color: desaturate(#0f0, 90%);
+	}
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentBottom {
+		//masquage filler
+		.filler {
+			display: none;
+			visibility: hidden;
 		}
-		&.last {
-			// background-color: desaturate(#00f, 90%);
+
+		//rajout décalage vertical et horizontal
+		.inner {
+			padding-top: 10px;
+			padding-bottom: 10px;
 		}
+		.wrapper > .columns td {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+
+		//supppression décalage interne en trop
+		.wrapper .columns .text-pad {
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		//changement orientation bordure et compensation padding
+		.wrapper {
+			border-left: 0;
+			.inner {
+				border-top: 1px dotted @colorGan1;
+				padding-top: 9px;
+			}
+			&.first .inner {
+				border-top: 0;
+				padding-top: 10px;
+			}
+		}
+
 	}
 }
