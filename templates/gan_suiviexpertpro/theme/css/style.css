@@ -1088,3 +1088,12 @@ table.column td {
     padding-left: 10px;
   }
 }
+.contentBottom .wrapper {
+  background-color: #f00;
+}
+.contentBottom .wrapper.first {
+  background-color: #0f0;
+}
+.contentBottom .wrapper.last {
+  background-color: #00f;
+}
