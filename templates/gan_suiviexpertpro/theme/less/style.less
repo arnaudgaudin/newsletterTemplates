@@ -141,6 +141,9 @@ table.columns td, table.column td { padding-bottom: 0; }
 
 	.preTitle { padding-bottom: 5px; }
 
+	.wrapper.first .columns .text-pad { padding-right: 20px; }
+	.wrapper.last .columns .text-pad { padding-left: 20px; }
+
 	.actualites {
 		background-color: @colorGan2;
 		.preTitle { color: mix(@textColor, @colorGan2, 50%); }
@@ -161,6 +164,20 @@ table.columns td, table.column td { padding-bottom: 0; }
 	.offre {
 		background-color: @colorGan3;
 		.preTitle { color: mix(@textColor, @colorGan3, 50%); }
+
+		.title {
+			color: @colorGan5;
+			text-transform: uppercase;
+		}
+
+		.text {
+			
+		}
+
+
+		.condition {
+			display: block;
+		}
 	}
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
@@ -169,5 +186,7 @@ table.columns td, table.column td { padding-bottom: 0; }
 			padding-top: 10px;
 			padding-bottom: 10px;
 		}
+		.wrapper.first .columns .text-pad { padding-right: 10px; }
+		.wrapper.last .columns .text-pad { padding-left: 10px; }
 	}
 }
