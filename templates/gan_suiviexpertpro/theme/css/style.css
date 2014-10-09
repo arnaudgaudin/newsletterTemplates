@@ -1199,3 +1199,20 @@ table.column td {
     padding-top: 10px;
   }
 }
+.contentFooter {
+  background-color: #4c7d9f;
+}
+.contentFooter,
+.contentFooter td,
+.contentFooter .inner,
+.contentFooter a,
+.contentFooter a:link,
+.contentFooter a:visited,
+.contentFooter a:hover,
+.contentFooter a:focus,
+.contentFooter a:active {
+  color: #ffffff !important;
+}
+.contentFooter .inner {
+  font-size: 11.9px;
+}
