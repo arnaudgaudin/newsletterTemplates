@@ -327,5 +327,22 @@ table.columns td, table.column td { padding-bottom: 0; }
 .contentFooter {
 	background-color: @colorGan1;
 	.newsletterInnerTextColor(#ffffff);
-	.inner { font-size: (@baseFontSize * 0.85); }
+	.inner {
+		font-size: (@baseFontSize * 0.85);
+		line-height: (@baseFontSize * 0.85 * 1.33);
+	}
+}
+
+
+// contentLegal area
+// -------------------------
+.contentLegal {
+	background-color: @bodyBackground;
+	.newsletterInnerTextColor(#ffffff);
+	.inner {
+		padding-top: 5px;
+		padding-bottom: 5px;
+		font-size: @fontSizeMini;
+		line-height: (@fontSizeMini * 1.33);
+	}
 }
