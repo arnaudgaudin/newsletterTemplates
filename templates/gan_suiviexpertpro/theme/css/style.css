@@ -953,6 +953,7 @@ table.column td {
   display: block;
   font-size: 12px;
   text-transform: uppercase;
+  padding-bottom: 5px;
 }
 .icon-rsaquo {
   position: relative;
@@ -1023,7 +1024,6 @@ table.column td {
 .contentALaUne .preTitle {
   color: #a6becf;
   padding-top: 5px;
-  padding-bottom: 5px;
 }
 .contentALaUne .title {
   color: #ffffff;
@@ -1079,9 +1079,6 @@ table.column td {
 .contentMain .inner {
   padding-top: 20px;
   padding-bottom: 20px;
-}
-.contentMain .preTitle {
-  padding-bottom: 5px;
 }
 .contentMain .wrapper.first .columns .text-pad {
   padding-right: 20px;
@@ -1142,10 +1139,19 @@ table.column td {
 }
 .contentBottom .inner {
   padding-top: 0;
-  padding-bottom: 0;
 }
 .contentBottom .preTitle {
   color: #4c7d9f;
+}
+.contentBottom .text {
+  display: block;
+  padding-top: 5px;
+}
+.contentBottom .chiffre .text {
+  font-size: 40px;
+  line-height: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .contentBottom .wrapper {
   border-left: 1px dotted #4c7d9f;
