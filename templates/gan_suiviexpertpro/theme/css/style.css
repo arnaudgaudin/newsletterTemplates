@@ -1097,6 +1097,10 @@ table.column td {
   height: 10px;
   -premailer-height: 10px;
 }
+.contentBottom .inner {
+  padding-top: 0;
+  padding-bottom: 0;
+}
 .contentBottom .preTitle {
   color: #4c7d9f;
 }
