@@ -949,6 +949,15 @@ table.column td {
   font-size: 12px;
   text-transform: uppercase;
 }
+.icon-rsaquo {
+  position: relative;
+  vertical-align: baseline;
+  line-height: 0;
+  bottom: .1em;
+  font-weight: bold;
+  font-size: 100%;
+  color: #cc2e37;
+}
 .contentALaUne {
   background-color: #4c7d9f;
 }
@@ -966,12 +975,13 @@ table.column td {
 .contentALaUne .preTitle {
   color: #a6becf;
   padding-top: 5px;
+  padding-bottom: 5px;
 }
 .contentALaUne .title {
   color: #ffffff;
   font-weight: bold;
   text-transform: uppercase;
-  padding: 5px 0;
+  padding-bottom: 5px;
 }
 .contentALaUne .filler {
   height: 20px;
@@ -1018,15 +1028,38 @@ table.column td {
     padding-top: 9px;
   }
 }
+.contentMain .inner {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.contentMain .preTitle {
+  padding-bottom: 5px;
+}
 .contentMain .actualites {
   background-color: #d3e2ed;
 }
 .contentMain .actualites .preTitle {
   color: #6a7177;
 }
+.contentMain .actualites ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.contentMain .actualites ul li {
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
 .contentMain .offre {
   background-color: #b8c4ca;
 }
 .contentMain .offre .preTitle {
   color: #5c6265;
+}
+@media only screen and (max-width: 720px) {
+  table[class="body"] .contentMain .inner {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }

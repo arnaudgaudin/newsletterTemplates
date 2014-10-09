@@ -42,6 +42,17 @@ table.columns td, table.column td { padding-bottom: 0; }
 	text-transform: uppercase;
 }
 
+//icone fléchée
+.icon-rsaquo {
+	position: relative;
+	vertical-align: baseline;
+	line-height: 0;
+	bottom: .1em;
+	font-weight: bold;
+	font-size: 100%;
+	color: @colorGan5;
+}
+
 // contentALaUne area
 // -------------------------
 .contentALaUne {
@@ -51,13 +62,14 @@ table.columns td, table.column td { padding-bottom: 0; }
 	.preTitle {
 		color: mix(#fff, @colorGan1, 50%);
 		padding-top: 5px;
+		padding-bottom: 5px;
 	}
 
 	.title {
 		color: #ffffff;
 		font-weight: bold;
 		text-transform: uppercase;
-		padding: 5px 0;
+		padding-bottom: 5px;
 	}
 	
 	//pour rajouter de l'espace en haut et en dessous des wrappers
@@ -122,19 +134,40 @@ table.columns td, table.column td { padding-bottom: 0; }
 // contentMain area
 // -------------------------
 .contentMain {
+	.inner {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	.preTitle { padding-bottom: 5px; }
+
 	.actualites {
 		background-color: @colorGan2;
+		.preTitle { color: mix(@textColor, @colorGan2, 50%); }
 
-		.preTitle {
-			color: mix(#000, @colorGan2, 50%);
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+			li {
+				padding-bottom: 5px;
+				text-transform: uppercase;
+				font-size: 12px;
+
+			}
 		}
 	}
 
 	.offre {
 		background-color: @colorGan3;
-
-		.preTitle {
-			color: mix(#000, @colorGan3, 50%);
+		.preTitle { color: mix(@textColor, @colorGan3, 50%); }
+	}
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentMain {
+		.inner {
+			padding-top: 10px;
+			padding-bottom: 10px;
 		}
 	}
 }
