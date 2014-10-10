@@ -324,7 +324,12 @@ table.columns td, table.column td { padding-bottom: 0; }
 		line-height: (@baseFontSize * 0.85 * 1.33);
 	}
 }
-
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentFooter {
+		//on force le display table à cause du texte trop court
+		.wrapper .columns { display: table !important; }
+	}
+}
 
 // contentLegal area
 // -------------------------
@@ -338,7 +343,6 @@ table.columns td, table.column td { padding-bottom: 0; }
 		line-height: (@fontSizeMini * 1.33);
 	}
 }
-
 
 // contentUnsubscribe area
 // -------------------------
