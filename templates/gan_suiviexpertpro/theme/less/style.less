@@ -328,6 +328,20 @@ table.columns td, table.column td { padding-bottom: 0; }
 	table[class="body"] .contentFooter {
 		//on force le display table à cause du texte trop court
 		.wrapper .columns { display: table !important; }
+		
+		//réduction taille du texte
+		.inner {
+			font-size: (@baseFontSize * 0.75) !important;
+			line-height: (@baseFontSize * 0.75 * 1.33) !important;
+		}
+		.wrapper.first .inner {
+			padding-top: 5px !important;
+			padding-bottom: 2px !important;
+		}
+		.wrapper.last .inner {
+			padding-top: 2px !important;
+			padding-bottom: 5px !important;
+		}
 	}
 }
 

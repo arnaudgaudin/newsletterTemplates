@@ -1219,6 +1219,18 @@ table.column td {
   table[class="body"] .contentFooter .wrapper .columns {
     display: table !important;
   }
+  table[class="body"] .contentFooter .inner {
+    font-size: 10.5px !important;
+    line-height: 13.965px !important;
+  }
+  table[class="body"] .contentFooter .wrapper.first .inner {
+    padding-top: 5px !important;
+    padding-bottom: 2px !important;
+  }
+  table[class="body"] .contentFooter .wrapper.last .inner {
+    padding-top: 2px !important;
+    padding-bottom: 5px !important;
+  }
 }
 .contentLegal {
   background-color: #2a374e;
