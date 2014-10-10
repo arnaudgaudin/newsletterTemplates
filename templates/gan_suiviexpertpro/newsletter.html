@@ -14,7 +14,7 @@
     table[class="body"] img { width: 100% !important; }
   }
 }
-/*DEL{{*/img[src*="%%{{"], img[src*="}}%%"], .-premailer-hidden { display: none !important; visibility: hidden !important; }/*}}DEL*/
+/*DEL{{*/img[src*="%%{{"], img[src*="}}%%"], [data-type^="get"], .-premailer-hidden { display: none !important; visibility: hidden !important; }/*}}DEL*/
 </style>
 	<table class="body">
 		<tr>
@@ -107,9 +107,18 @@
 												<tr>
 													<td>
 														<span class="inner text-pad">
-															<a target="_blank" class="link_box" href="#">
-																<img src="http://lorempixel.com/1440/660/business/" alt="NomCabinet" width="330" height="150" />
-															</a>
+															<!--{{##{{<champ>
+															<type>image</type>
+															<src>
+															}}--><a data-type="gethref" href="./theme/images/exemple-img.jpg"><!--gethref--></a><!--{{
+															</src>
+															<lien>http://www.ganassurances.fr/couverture-sante-pour-tous-les-salaries-@/7639/view-868-conseil.html?xtor=EPR-13-SEPNL5-20140916</lien>
+															<width>330</width>
+															<height>150</height>}}-->
+															<!--{{<params>}}-->
+															<img data-type="getstyle" /><!--getstyle-->
+															<!--{{</params>}}##}}-->
+															<!--DEL{{--><img src="./theme/images/exemple-img.jpg" width="330" height="150" /><!--}}DEL-->
 															<span class="preTitle">Actualité du mois</span>
 															<a target="_blank" class="link_box" href="#">
 																<h4 class="title">Couverture santé pour tous les salariés : quel financement ?</h4>
