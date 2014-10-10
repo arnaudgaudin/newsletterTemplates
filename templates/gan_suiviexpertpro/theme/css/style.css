@@ -1053,27 +1053,27 @@ table.column td {
 }
 @media only screen and (max-width: 720px) {
   table[class="body"] .contentALaUne .filler {
-    display: none;
-    visibility: hidden;
+    display: none !important;
+    visibility: hidden !important;
   }
   table[class="body"] .contentALaUne .inner {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
   }
   table[class="body"] .contentALaUne .wrapper > .columns td {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
   }
   table[class="body"] .contentALaUne .wrapper .columns .text-pad {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
   table[class="body"] .contentALaUne .wrapper.last {
-    border-left: 0;
+    border-left: 0 !important;
   }
   table[class="body"] .contentALaUne .wrapper.last .inner {
-    border-top: 1px dotted #ffffff;
-    padding-top: 9px;
+    border-top: 1px dotted #ffffff !important;
+    padding-top: 9px !important;
   }
 }
 .contentMain .inner {
@@ -1123,14 +1123,14 @@ table.column td {
 }
 @media only screen and (max-width: 720px) {
   table[class="body"] .contentMain .inner {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
   }
   table[class="body"] .contentMain .wrapper.first .columns .text-pad {
-    padding-right: 10px;
+    padding-right: 10px !important;
   }
   table[class="body"] .contentMain .wrapper.last .columns .text-pad {
-    padding-left: 10px;
+    padding-left: 10px !important;
   }
 }
 .contentBottom .filler {
@@ -1178,31 +1178,31 @@ table.column td {
 }
 @media only screen and (max-width: 720px) {
   table[class="body"] .contentBottom .filler {
-    display: none;
-    visibility: hidden;
+    display: none !important;
+    visibility: hidden !important;
   }
   table[class="body"] .contentBottom .inner {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
   }
   table[class="body"] .contentBottom .wrapper > .columns td {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
   }
   table[class="body"] .contentBottom .wrapper .columns .text-pad {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
   table[class="body"] .contentBottom .wrapper {
     border-left: 0;
   }
   table[class="body"] .contentBottom .wrapper .inner {
-    border-top: 1px dotted #4c7d9f;
-    padding-top: 9px;
+    border-top: 1px dotted #4c7d9f !important;
+    padding-top: 9px !important;
   }
   table[class="body"] .contentBottom .wrapper.first .inner {
-    border-top: 0;
-    padding-top: 10px;
+    border-top: 0 !important;
+    padding-top: 10px !important;
   }
 }
 .contentFooter {
