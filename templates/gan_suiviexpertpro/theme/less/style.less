@@ -69,6 +69,15 @@ table.columns td, table.column td { padding-bottom: 0; }
 	vertical-align: text-bottom;
 	line-height: 20px;
 	padding-right: .5em;
+	width: 20px !important;
+	height: 20px !important;
+}
+//override version firefox
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .icon-img {
+		width: 20px !important;
+		height: 20px !important;
+	}
 }
 
 // contentOnline et contentInfoClient area

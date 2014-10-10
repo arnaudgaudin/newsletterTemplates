@@ -970,6 +970,14 @@ table.column td {
   vertical-align: text-bottom;
   line-height: 20px;
   padding-right: .5em;
+  width: 20px !important;
+  height: 20px !important;
+}
+@media only screen and (max-width: 720px) {
+  table[class="body"] .icon-img {
+    width: 20px !important;
+    height: 20px !important;
+  }
 }
 .contentOnline,
 .contentInfoClient {
