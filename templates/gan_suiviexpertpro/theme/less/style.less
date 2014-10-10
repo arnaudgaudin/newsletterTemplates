@@ -98,15 +98,18 @@ table.columns td, table.column td { padding-bottom: 0; }
 		}
 
 		//rajout bordure à gauche
-		border-left: 1px dotted @colorGan1;
+		// border-left: 1px dotted @colorGan1;
+		border-left: 1px dotted #f00;
 
 		//réduction largeur tableau 6 colonnes de 1px pour compenser
 		.columns.four { width: (3 * @gutterWidth + 4 * @columnWidth - 1px); }
+		.columns.six { width: (5 * @gutterWidth + 6 * @columnWidth - 1px); }
 
 		//pas de bordure sur le premier
 		&.first {
 			border-left: 0;
 			.columns.four { .columnWidth(4); }
+			.columns.six { .columnWidth(6); }
 			.columns .text-pad { padding-left: 10px; }
 		}
 
@@ -137,7 +140,8 @@ table.columns td, table.column td { padding-bottom: 0; }
 			padding-right: 10px !important;
 
 			.columns {
-				border-top: 1px dotted @colorGan1 !important;
+				// border-top: 1px dotted @colorGan1 !important;
+				border-top: 1px dotted #f00 !important;
 				td {
 					padding-top: 9px !important;
 					padding-bottom: 10px !important;
@@ -204,58 +208,6 @@ table.columns td, table.column td { padding-bottom: 0; }
 	.filler {
 		height: 20px;
 		-premailer-height: 20px;
-	}
-
-	//suppression décalage en trop
-	.inner {
-		padding-top: 0;
-		padding-bottom: 0;
-	}
-
-	//modification padding au milieu
-	.wrapper.first .columns .text-pad { padding-right: 20px; }
-	
-	//rajout bordure sur le 2ème wrapper directement
-	.wrapper.last {
-		border-left: 1px dotted #ffffff;
-
-		.columns .text-pad { padding-left: 19px; }
-		//réduction largeur tableau 6 colonnes de 1px pour compenser
-		.columns.six { width: (5 * @gutterWidth + 6 * @columnWidth - 1px); }
-	}
-}
-@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
-	table[class="body"] .contentALaUne {
-		//masquage filler
-		.filler {
-			display: none !important;
-			visibility: hidden !important;
-		}
-
-		//rajout décalage vertical et horizontal
-		.inner {
-			padding-top: 10px !important;
-			padding-bottom: 10px !important;
-		}
-		.wrapper .columns td {
-			padding-left: 10px !important;
-			padding-right: 10px !important;
-		}
-
-		//supppression décalage interne en trop
-		.wrapper .columns .text-pad {
-			padding-left: 0 !important;
-			padding-right: 0 !important;
-		}
-
-		//changement orientation bordure et compensation padding
-		.wrapper.last {
-			border-left: 0 !important;
-			.inner {
-				border-top: 1px dotted #ffffff !important;
-				padding-top: 9px !important;
-			}
-		}
 	}
 }
 

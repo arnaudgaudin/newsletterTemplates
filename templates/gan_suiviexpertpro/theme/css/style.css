@@ -984,7 +984,7 @@ table.column td {
   padding-bottom: 0;
 }
 .row.bordered .wrapper {
-  border-left: 1px dotted #4c7d9f;
+  border-left: 1px dotted #f00;
 }
 .row.bordered .wrapper .columns .text-pad {
   padding-left: 19px;
@@ -993,12 +993,19 @@ table.column td {
 .row.bordered .wrapper .columns.four {
   width: 239px;
 }
+.row.bordered .wrapper .columns.six {
+  width: 359px;
+}
 .row.bordered .wrapper.first {
   border-left: 0;
 }
 .row.bordered .wrapper.first .columns.four {
   width: 240px;
   -premailer-width: 240;
+}
+.row.bordered .wrapper.first .columns.six {
+  width: 360px;
+  -premailer-width: 360;
 }
 .row.bordered .wrapper.first .columns .text-pad {
   padding-left: 10px;
@@ -1021,7 +1028,7 @@ table.column td {
     padding-right: 0 !important;
   }
   table[class="body"] .row.bordered .wrapper .columns {
-    border-top: 1px dotted #4c7d9f !important;
+    border-top: 1px dotted #f00 !important;
   }
   table[class="body"] .row.bordered .wrapper .columns td {
     padding-top: 9px !important;
@@ -1097,47 +1104,6 @@ table.column td {
 .contentALaUne .filler {
   height: 20px;
   -premailer-height: 20px;
-}
-.contentALaUne .inner {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-.contentALaUne .wrapper.first .columns .text-pad {
-  padding-right: 20px;
-}
-.contentALaUne .wrapper.last {
-  border-left: 1px dotted #ffffff;
-}
-.contentALaUne .wrapper.last .columns .text-pad {
-  padding-left: 19px;
-}
-.contentALaUne .wrapper.last .columns.six {
-  width: 359px;
-}
-@media only screen and (max-width: 720px) {
-  table[class="body"] .contentALaUne .filler {
-    display: none !important;
-    visibility: hidden !important;
-  }
-  table[class="body"] .contentALaUne .inner {
-    padding-top: 10px !important;
-    padding-bottom: 10px !important;
-  }
-  table[class="body"] .contentALaUne .wrapper .columns td {
-    padding-left: 10px !important;
-    padding-right: 10px !important;
-  }
-  table[class="body"] .contentALaUne .wrapper .columns .text-pad {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
-  table[class="body"] .contentALaUne .wrapper.last {
-    border-left: 0 !important;
-  }
-  table[class="body"] .contentALaUne .wrapper.last .inner {
-    border-top: 1px dotted #ffffff !important;
-    padding-top: 9px !important;
-  }
 }
 .contentMain .inner {
   padding-top: 20px;
