@@ -1189,11 +1189,8 @@ table.column td {
     display: none !important;
     visibility: hidden !important;
   }
-  table[class="body"] .contentBottom .inner {
-    padding-top: 10px !important;
-    padding-bottom: 10px !important;
-  }
-  table[class="body"] .contentBottom .wrapper .columns td {
+  table[class="body"] .contentBottom .wrapper {
+    border-left: 0 !important;
     padding-left: 10px !important;
     padding-right: 10px !important;
   }
@@ -1201,15 +1198,17 @@ table.column td {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
-  table[class="body"] .contentBottom .wrapper {
-    border-left: 0 !important;
-  }
-  table[class="body"] .contentBottom .wrapper .inner {
+  table[class="body"] .contentBottom .wrapper .columns {
     border-top: 1px dotted #4c7d9f !important;
-    padding-top: 9px !important;
   }
-  table[class="body"] .contentBottom .wrapper.first .inner {
+  table[class="body"] .contentBottom .wrapper .columns td {
+    padding-top: 9px !important;
+    padding-bottom: 10px !important;
+  }
+  table[class="body"] .contentBottom .wrapper.first .columns {
     border-top: 0 !important;
+  }
+  table[class="body"] .contentBottom .wrapper.first .columns td {
     padding-top: 10px !important;
   }
 }

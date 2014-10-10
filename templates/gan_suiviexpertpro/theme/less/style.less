@@ -311,32 +311,28 @@ table.columns td, table.column td { padding-bottom: 0; }
 			visibility: hidden !important;
 		}
 
-		//rajout décalage vertical et horizontal
-		.inner {
-			padding-top: 10px !important;
-			padding-bottom: 10px !important;
-		}
-		.wrapper .columns td {
+		.wrapper {
+			//supppression décalage interne en trop
+			.columns .text-pad {
+				padding-left: 0 !important;
+				padding-right: 0 !important;
+			}
+
+			//changement orientation bordure et compensation padding
+			border-left: 0 !important;
 			padding-left: 10px !important;
 			padding-right: 10px !important;
-		}
 
-		//supppression décalage interne en trop
-		.wrapper .columns .text-pad {
-			padding-left: 0 !important;
-			padding-right: 0 !important;
-		}
-
-		//changement orientation bordure et compensation padding
-		.wrapper {
-			border-left: 0 !important;
-			.inner {
+			.columns {
 				border-top: 1px dotted @colorGan1 !important;
-				padding-top: 9px !important;
+				td {
+					padding-top: 9px !important;
+					padding-bottom: 10px !important;
+				}
 			}
-			&.first .inner {
+			&.first .columns {
 				border-top: 0 !important;
-				padding-top: 10px !important;
+				td { padding-top: 10px !important; }
 			}
 		}
 
