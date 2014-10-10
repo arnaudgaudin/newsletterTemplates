@@ -979,6 +979,61 @@ table.column td {
     height: 20px !important;
   }
 }
+.row.bordered .inner {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.row.bordered .wrapper {
+  border-left: 1px dotted #4c7d9f;
+}
+.row.bordered .wrapper .columns .text-pad {
+  padding-left: 19px;
+  padding-right: 20px;
+}
+.row.bordered .wrapper .columns.four {
+  width: 239px;
+}
+.row.bordered .wrapper.first {
+  border-left: 0;
+}
+.row.bordered .wrapper.first .columns.four {
+  width: 240px;
+  -premailer-width: 240;
+}
+.row.bordered .wrapper.first .columns .text-pad {
+  padding-left: 10px;
+}
+.row.bordered .wrapper.last .columns .text-pad {
+  padding-right: 10px;
+}
+@media only screen and (max-width: 720px) {
+  table[class="body"] .row.bordered .filler {
+    display: none !important;
+    visibility: hidden !important;
+  }
+  table[class="body"] .row.bordered .wrapper {
+    border-left: 0 !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  table[class="body"] .row.bordered .wrapper .columns .text-pad {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  table[class="body"] .row.bordered .wrapper .columns {
+    border-top: 1px dotted #4c7d9f !important;
+  }
+  table[class="body"] .row.bordered .wrapper .columns td {
+    padding-top: 9px !important;
+    padding-bottom: 10px !important;
+  }
+  table[class="body"] .row.bordered .wrapper.first .columns {
+    border-top: 0 !important;
+  }
+  table[class="body"] .row.bordered .wrapper.first .columns td {
+    padding-top: 10px !important;
+  }
+}
 .contentOnline,
 .contentInfoClient {
   background-color: #2a374e;
@@ -1145,10 +1200,6 @@ table.column td {
   height: 10px;
   -premailer-height: 10px;
 }
-.contentBottom .inner {
-  padding-top: 0;
-  padding-bottom: 0;
-}
 .contentBottom .preTitle {
   color: #4c7d9f;
 }
@@ -1161,57 +1212,6 @@ table.column td {
   line-height: 40px;
   padding-top: 20px;
   padding-bottom: 20px;
-}
-.contentBottom .wrapper {
-  border-left: 1px dotted #4c7d9f;
-}
-.contentBottom .wrapper .columns .text-pad {
-  padding-left: 19px;
-  padding-right: 20px;
-}
-.contentBottom .wrapper .columns.four {
-  width: 239px;
-}
-.contentBottom .wrapper.first {
-  border-left: 0;
-}
-.contentBottom .wrapper.first .columns.four {
-  width: 240px;
-  -premailer-width: 240;
-}
-.contentBottom .wrapper.first .columns .text-pad {
-  padding-left: 10px;
-}
-.contentBottom .wrapper.last .columns .text-pad {
-  padding-right: 10px;
-}
-@media only screen and (max-width: 720px) {
-  table[class="body"] .contentBottom .filler {
-    display: none !important;
-    visibility: hidden !important;
-  }
-  table[class="body"] .contentBottom .wrapper {
-    border-left: 0 !important;
-    padding-left: 10px !important;
-    padding-right: 10px !important;
-  }
-  table[class="body"] .contentBottom .wrapper .columns .text-pad {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
-  table[class="body"] .contentBottom .wrapper .columns {
-    border-top: 1px dotted #4c7d9f !important;
-  }
-  table[class="body"] .contentBottom .wrapper .columns td {
-    padding-top: 9px !important;
-    padding-bottom: 10px !important;
-  }
-  table[class="body"] .contentBottom .wrapper.first .columns {
-    border-top: 0 !important;
-  }
-  table[class="body"] .contentBottom .wrapper.first .columns td {
-    padding-top: 10px !important;
-  }
 }
 .contentFooter {
   background-color: #4c7d9f;

@@ -80,6 +80,78 @@ table.columns td, table.column td { padding-bottom: 0; }
 	}
 }
 
+
+//gestion row avec bordures de séparation
+.row.bordered {
+	//suppression décalage en trop
+	.inner {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	.wrapper {
+
+		//modification padding
+		.columns .text-pad {
+			padding-left: 19px;
+			padding-right: 20px;
+		}
+
+		//rajout bordure à gauche
+		border-left: 1px dotted @colorGan1;
+
+		//réduction largeur tableau 6 colonnes de 1px pour compenser
+		.columns.four { width: (3 * @gutterWidth + 4 * @columnWidth - 1px); }
+
+		//pas de bordure sur le premier
+		&.first {
+			border-left: 0;
+			.columns.four { .columnWidth(4); }
+			.columns .text-pad { padding-left: 10px; }
+		}
+
+		//padding normal à droite sur le dernier
+		&.last {
+			.columns .text-pad { padding-right: 10px; }
+		}
+	}
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .row.bordered {
+		//masquage filler
+		.filler {
+			display: none !important;
+			visibility: hidden !important;
+		}
+
+		.wrapper {
+			//supppression décalage interne en trop
+			.columns .text-pad {
+				padding-left: 0 !important;
+				padding-right: 0 !important;
+			}
+
+			//changement orientation bordure et compensation padding
+			border-left: 0 !important;
+			padding-left: 10px !important;
+			padding-right: 10px !important;
+
+			.columns {
+				border-top: 1px dotted @colorGan1 !important;
+				td {
+					padding-top: 9px !important;
+					padding-bottom: 10px !important;
+				}
+			}
+			&.first .columns {
+				border-top: 0 !important;
+				td { padding-top: 10px !important; }
+			}
+		}
+	}
+}
+
+
 // contentOnline et contentInfoClient area
 // -------------------------
 .contentOnline, .contentInfoClient {
@@ -254,12 +326,6 @@ table.columns td, table.column td { padding-bottom: 0; }
 		-premailer-height: 10px;
 	}
 
-	//suppression décalage en trop
-	.inner {
-		padding-top: 0;
-		padding-bottom: 0;
-	}
-
 	.preTitle { color: @colorGan1; }
 
 	.text {
@@ -274,68 +340,6 @@ table.columns td, table.column td { padding-bottom: 0; }
 			padding-top: 20px;
 			padding-bottom: 20px;
 		}
-	}
-
-	.wrapper {
-
-		//modification padding
-		.columns .text-pad {
-			padding-left: 19px;
-			padding-right: 20px;
-		}
-
-		//rajout bordure à gauche
-		border-left: 1px dotted @colorGan1;
-
-		//réduction largeur tableau 6 colonnes de 1px pour compenser
-		.columns.four { width: (3 * @gutterWidth + 4 * @columnWidth - 1px); }
-
-		//pas de bordure sur le premier
-		&.first {
-			border-left: 0;
-			.columns.four { .columnWidth(4); }
-			.columns .text-pad { padding-left: 10px; }
-		}
-
-		//padding normal à droite sur le dernier
-		&.last {
-			.columns .text-pad { padding-right: 10px; }
-		}
-	}
-}
-@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
-	table[class="body"] .contentBottom {
-		//masquage filler
-		.filler {
-			display: none !important;
-			visibility: hidden !important;
-		}
-
-		.wrapper {
-			//supppression décalage interne en trop
-			.columns .text-pad {
-				padding-left: 0 !important;
-				padding-right: 0 !important;
-			}
-
-			//changement orientation bordure et compensation padding
-			border-left: 0 !important;
-			padding-left: 10px !important;
-			padding-right: 10px !important;
-
-			.columns {
-				border-top: 1px dotted @colorGan1 !important;
-				td {
-					padding-top: 9px !important;
-					padding-bottom: 10px !important;
-				}
-			}
-			&.first .columns {
-				border-top: 0 !important;
-				td { padding-top: 10px !important; }
-			}
-		}
-
 	}
 }
 

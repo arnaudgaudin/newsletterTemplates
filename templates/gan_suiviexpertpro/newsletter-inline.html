@@ -347,6 +347,27 @@ display: inline !important;
   table[class="body"] .icon-img {
     width: 20px !important; height: 20px !important;
   }
+  table[class="body"] .row.bordered .filler {
+    display: none !important; visibility: hidden !important;
+  }
+  table[class="body"] .row.bordered .wrapper {
+    border-left: 0 !important; padding-left: 10px !important; padding-right: 10px !important;
+  }
+  table[class="body"] .row.bordered .wrapper .columns .text-pad {
+    padding-left: 0 !important; padding-right: 0 !important;
+  }
+  table[class="body"] .row.bordered .wrapper .columns {
+    border-top: 1px dotted #4c7d9f !important;
+  }
+  table[class="body"] .row.bordered .wrapper .columns td {
+    padding-top: 9px !important; padding-bottom: 10px !important;
+  }
+  table[class="body"] .row.bordered .wrapper.first .columns {
+    border-top: 0 !important;
+  }
+  table[class="body"] .row.bordered .wrapper.first .columns td {
+    padding-top: 10px !important;
+  }
   table[class="body"] .contentALaUne .filler {
     display: none !important; visibility: hidden !important;
   }
@@ -373,27 +394,6 @@ display: inline !important;
   }
   table[class="body"] .contentMain .wrapper.last .columns .text-pad {
     padding-left: 10px !important;
-  }
-  table[class="body"] .contentBottom .filler {
-    display: none !important; visibility: hidden !important;
-  }
-  table[class="body"] .contentBottom .wrapper {
-    border-left: 0 !important; padding-left: 10px !important; padding-right: 10px !important;
-  }
-  table[class="body"] .contentBottom .wrapper .columns .text-pad {
-    padding-left: 0 !important; padding-right: 0 !important;
-  }
-  table[class="body"] .contentBottom .wrapper .columns {
-    border-top: 1px dotted #4c7d9f !important;
-  }
-  table[class="body"] .contentBottom .wrapper .columns td {
-    padding-top: 9px !important; padding-bottom: 10px !important;
-  }
-  table[class="body"] .contentBottom .wrapper.first .columns {
-    border-top: 0 !important;
-  }
-  table[class="body"] .contentBottom .wrapper.first .columns td {
-    padding-top: 10px !important;
   }
 }
 </style>
@@ -650,7 +650,7 @@ display: inline !important;
 								<!-- CONTENT MAIN END -->
 
 								<!-- CONTENT BOTTOM START -->
-								<table class="row contentBottom" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%; border-collapse: collapse; border-spacing: 0; display: block; empty-cells: hide; padding: 0px; position: relative; text-align: left; vertical-align: top; width: 100%" width="100%" cellpadding="0" cellspacing="0">
+								<table class="row contentBottom bordered" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%; border-collapse: collapse; border-spacing: 0; display: block; empty-cells: hide; padding: 0px; position: relative; text-align: left; vertical-align: top; width: 100%" width="100%" cellpadding="0" cellspacing="0">
 									<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 										<td class="filler" style="-moz-hyphens: auto; -premailer-height: 10px; -webkit-hyphens: auto; border-collapse: collapse !important; color: #000000; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 0; font-weight: normal; height: 10px; hyphens: auto; line-height: 0; margin: 0; padding: 0; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top" height="10px"><span class="empty" style="font-size: 0; line-height: 0">&#160;</span></td>
 										<td class="filler" style="-moz-hyphens: auto; -premailer-height: 10px; -webkit-hyphens: auto; border-collapse: collapse !important; color: #000000; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 0; font-weight: normal; height: 10px; hyphens: auto; line-height: 0; margin: 0; padding: 0; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top" height="10px"><span class="empty" style="font-size: 0; line-height: 0">&#160;</span></td>
