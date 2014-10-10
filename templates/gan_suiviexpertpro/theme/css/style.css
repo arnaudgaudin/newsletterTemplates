@@ -1091,6 +1091,13 @@ table.column td {
 .contentALaUne a:active {
   color: #ffffff !important;
 }
+.contentALaUne .filler {
+  height: 20px;
+  -premailer-height: 20px;
+}
+.contentALaUne.bordered .wrapper {
+  border-left-color: #ffffff;
+}
 .contentALaUne .preTitle {
   color: #a6becf;
   padding-top: 5px;
@@ -1101,9 +1108,10 @@ table.column td {
   text-transform: uppercase;
   padding-bottom: 5px;
 }
-.contentALaUne .filler {
-  height: 20px;
-  -premailer-height: 20px;
+@media only screen and (max-width: 720px) {
+  table[class="body"] .contentALaUne.bordered .wrapper .columns {
+    border-top-color: #ffffff !important;
+  }
 }
 .contentMain .inner {
   padding-top: 20px;
@@ -1166,6 +1174,9 @@ table.column td {
   height: 10px;
   -premailer-height: 10px;
 }
+.contentBottom.bordered .wrapper {
+  border-left-color: #4c7d9f;
+}
 .contentBottom .preTitle {
   color: #4c7d9f;
 }
@@ -1178,6 +1189,11 @@ table.column td {
   line-height: 40px;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+@media only screen and (max-width: 720px) {
+  table[class="body"] .contentBottom.bordered .wrapper .columns {
+    border-top-color: #4c7d9f !important;
+  }
 }
 .contentFooter {
   background-color: #4c7d9f;

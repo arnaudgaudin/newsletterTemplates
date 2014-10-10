@@ -192,6 +192,15 @@ table.columns td, table.column td { padding-bottom: 0; }
 	background-color: @colorGan1;
 	.newsletterInnerTextColor(#ffffff);
 
+	//pour rajouter de l'espace en haut et en dessous des wrappers
+	.filler {
+		height: 20px;
+		-premailer-height: 20px;
+	}
+
+	//changement couleur bordure
+	&.bordered .wrapper { border-left-color: #ffffff; }
+
 	.preTitle {
 		color: mix(#fff, @colorGan1, 50%);
 		padding-top: 5px;
@@ -203,13 +212,14 @@ table.columns td, table.column td { padding-bottom: 0; }
 		text-transform: uppercase;
 		padding-bottom: 5px;
 	}
-	
-	//pour rajouter de l'espace en haut et en dessous des wrappers
-	.filler {
-		height: 20px;
-		-premailer-height: 20px;
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentALaUne {
+		//changement couleur bordure
+		&.bordered .wrapper .columns { border-top-color: #ffffff !important; }
 	}
 }
+
 
 // contentMain area
 // -------------------------
@@ -278,6 +288,9 @@ table.columns td, table.column td { padding-bottom: 0; }
 		-premailer-height: 10px;
 	}
 
+	//changement couleur bordure
+	&.bordered .wrapper { border-left-color: @colorGan1; }
+
 	.preTitle { color: @colorGan1; }
 
 	.text {
@@ -292,6 +305,12 @@ table.columns td, table.column td { padding-bottom: 0; }
 			padding-top: 20px;
 			padding-bottom: 20px;
 		}
+	}
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentBottom {
+		//changement couleur bordure
+		&.bordered .wrapper .columns { border-top-color: @colorGan1 !important; }
 	}
 }
 
