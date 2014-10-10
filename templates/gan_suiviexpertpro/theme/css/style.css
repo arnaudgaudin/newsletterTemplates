@@ -1180,6 +1180,7 @@ table.column td {
   border-left-color: #4c7d9f;
 }
 .contentBottom .preTitle {
+  display: inline;
   color: #4c7d9f;
 }
 .contentBottom .text {
