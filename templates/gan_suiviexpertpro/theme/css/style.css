@@ -968,8 +968,8 @@ table.column td {
   position: relative;
   display: inline;
   vertical-align: text-bottom;
-  line-height: 0;
-  margin-right: .5em;
+  line-height: 20px;
+  padding-right: .5em;
 }
 .contentOnline,
 .contentInfoClient {
