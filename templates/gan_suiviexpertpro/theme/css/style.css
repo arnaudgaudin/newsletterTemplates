@@ -984,7 +984,8 @@ table.column td {
   padding-bottom: 0;
 }
 .row.bordered .wrapper {
-  border-left: 1px dotted #f00;
+  border-left-width: 1px;
+  border-left-style: dotted;
 }
 .row.bordered .wrapper .columns .text-pad {
   padding-left: 19px;
@@ -1028,7 +1029,8 @@ table.column td {
     padding-right: 0 !important;
   }
   table[class="body"] .row.bordered .wrapper .columns {
-    border-top: 1px dotted #f00 !important;
+    border-top-width: 1px !important;
+    border-top-style: dotted !important;
   }
   table[class="body"] .row.bordered .wrapper .columns td {
     padding-top: 9px !important;
