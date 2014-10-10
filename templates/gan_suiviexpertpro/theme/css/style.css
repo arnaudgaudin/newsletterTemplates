@@ -1068,7 +1068,7 @@ table.column td {
     padding-top: 10px !important;
     padding-bottom: 10px !important;
   }
-  table[class="body"] .contentALaUne .wrapper > .columns td {
+  table[class="body"] .contentALaUne .wrapper .columns td {
     padding-left: 10px !important;
     padding-right: 10px !important;
   }
@@ -1193,7 +1193,7 @@ table.column td {
     padding-top: 10px !important;
     padding-bottom: 10px !important;
   }
-  table[class="body"] .contentBottom .wrapper > .columns td {
+  table[class="body"] .contentBottom .wrapper .columns td {
     padding-left: 10px !important;
     padding-right: 10px !important;
   }
@@ -1202,7 +1202,7 @@ table.column td {
     padding-right: 0 !important;
   }
   table[class="body"] .contentBottom .wrapper {
-    border-left: 0;
+    border-left: 0 !important;
   }
   table[class="body"] .contentBottom .wrapper .inner {
     border-top: 1px dotted #4c7d9f !important;
