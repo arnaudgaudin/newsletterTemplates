@@ -445,12 +445,12 @@ display: inline !important;
 					        				<table class="twelve columns" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 720; border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 720px" width="720" cellpadding="0" cellspacing="0">
 					        					<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 					        						<td style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #ffffff !important; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 18px; margin: 0; padding: 0px 0px 0; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
-					        							<span class="inner text-pad" style="color: #ffffff !important; display: block; font-size: 11.2px; line-height: 14.896px; padding: 10px">
+					        							<div class="inner text-pad" style="color: #ffffff !important; display: block; font-size: 11.2px; line-height: 14.896px; padding: 10px">
 					        								<!--{{##{{<champ>
-					        								<type>textbox</type>
+					        								<type>textarea</type>
 					        								<defaut>}}--><strong>Cher client,</strong><br /><br />La Newsletter Suivi Expert Pro revient pour la rentr&#233;e avec une s&#233;lection d'actualit&#233;s &#233;conomiques et professionnelles r&#233;dig&#233;es par les journalistes du groupe Les Echos en partenariat avec Gan Assurances.<br />Bonne lecture&#160;!<br /><br />Votre Agent g&#233;n&#233;ral<!--{{</defaut>
 					        								</champ>}}##}}-->
-					        							</span>
+					        							</div>
 					        						</td>
 					        					</tr>
 					        				</table>
@@ -640,7 +640,7 @@ display: inline !important;
 											<table class="six columns" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 360; border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 360px" width="360" cellpadding="0" cellspacing="0">
 												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 													<td style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #000000; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 18px; margin: 0; padding: 0px 0px 0; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
-														<span class="inner text-pad" style="display: block; padding: 20px 10px 20px 20px">
+														<div class="inner text-pad" style="display: block; padding: 20px 10px 20px 20px">
 															<!--{{##{{<champ>
 															<type>lien</type>
 															<href>http://www.ganassurances.fr/epargne-assurance-banque-@/5893/view-6700-fichearticle.html</href>
@@ -660,25 +660,20 @@ display: inline !important;
 															}}--><a data-type="getstyle" class="link_box" style="color: #000000; display: block; outline: none; text-decoration: none"><!--getstyle--></a><!--{{ class="link_box"
 															</params>
 															</champ>}}## ##{{<champ>
-															<type>lien</type>
-															<href>http://www.ganassurances.fr/epargne-assurance-banque-@/5893/view-6700-fichearticle.html</href>
-															<html_interieur_avant>}}--><span class="text" style="display: block; font-size: 18px; padding-bottom: 20px; padding-top: 20px"><!--{{</html_interieur_avant>
-															<texte>}}-->Compte &#233;pargne r&#233;mun&#233;r&#233; &#224; <span class="big" style="font-size: 130%"><strong>4,80&#160;%</strong></span><!--{{</texte>
-															<html_interieur_apres>}}-->&#160;<sup>*</sup></span><!--{{</html_interieur_apres>
-															<params>
-															}}--><a data-type="getstyle" class="link_box" style="color: #000000; display: block; outline: none; text-decoration: none"><!--getstyle--></a><!--{{ class="link_box"
-															</params>
-															</champ>}}## ##{{<champ>
-															<type>lien</type>
-															<href>http://www.ganassurances.fr/epargne-assurance-banque-@/5893/view-6700-fichearticle.html</href>
-															<html_interieur_avant>}}--><small class="condition" style="font-size: 11.2px"><sup>*</sup>&#160;<!--{{</html_interieur_avant>
-															<texte>}}-->Voir conditions sur le site.<!--{{</texte>
-															<html_interieur_apres>}}--></small><!--{{</html_interieur_apres>
-															<params>
-															}}--><a data-type="getstyle" class="link_box" style="color: #000000; display: block; outline: none; text-decoration: none"><!--getstyle--></a><!--{{ class="link_box"
-															</params>
-															</champ>}}##}}-->
-														</span>
+					        								<type>textarea</type>
+					        								<html_avant>}}--><div class="text" style="display: block; padding-bottom: 20px; padding-top: 20px"><!--{{</html_avant>
+					        								<defaut>}}-->
+					        									<a href="http://www.ganassurances.fr/epargne-assurance-banque-@/5893/view-6700-fichearticle.html" target="_blank" style="color: #000000; text-decoration: none">
+					        										<font size="4">Compte &#233;pargne r&#233;mun&#233;r&#233; &#224; <font size="5"><strong>4,80&#160;%</strong></font><sup>*</sup></font>
+					        									</a>
+					        									<br /><br />
+					        									<a href="http://www.ganassurances.fr/epargne-assurance-banque-@/5893/view-6700-fichearticle.html" target="_blank" style="color: #000000; text-decoration: none">
+					        										<font size="1"><sup>*</sup>Voir conditions sur le site.</font>
+					        									</a>
+					        								<!--{{</defaut>
+					        								<html_apres>}}--></div><!--{{</html_apres>
+					        								</champ>}}##}}-->
+														</div>
 													</td>
 												</tr>
 											</table>
@@ -708,7 +703,7 @@ display: inline !important;
 															<texte>}}-->Chiffre du mois<!--{{</texte>
 															<html_interieur_apres>}}--></span><!--{{</html_interieur_apres>
 															<params>
-															}}--><a data-type="getstyle" class="link_box" style="color: #000000; display: block; outline: none; text-decoration: none"><!--getstyle--></a><!--{{ class="link_box"
+															}}--><a data-type="getstyle" style="color: #000000; text-decoration: none"><!--getstyle--></a><!--{{
 															</params>
 															</champ>}}## ##{{<champ>
 															<type>lien</type>
@@ -738,7 +733,7 @@ display: inline !important;
 															<texte>}}-->Tableau de bord<!--{{</texte>
 															<html_interieur_apres>}}--></span><!--{{</html_interieur_apres>
 															<params>
-															}}--><a data-type="getstyle" class="link_box" style="color: #000000; display: block; outline: none; text-decoration: none"><!--getstyle--></a><!--{{ class="link_box"
+															}}--><a data-type="getstyle" style="color: #000000; text-decoration: none"><!--getstyle--></a><!--{{
 															</params>
 															</champ>}}## ##{{<champ>
 															<type>lien</type>
@@ -768,13 +763,22 @@ display: inline !important;
 															<texte>}}-->&#201;ch&#233;ancier<!--{{</texte>
 															<html_interieur_apres>}}--></span><!--{{</html_interieur_apres>
 															<params>
+															}}--><a data-type="getstyle" style="color: #000000; text-decoration: none"><!--getstyle--></a><!--{{
+															</params>
+															</champ>}}## ##{{<champ>
+															<type>lien</type>
+															<href>http://www.ganassurances.fr/octobre-2014-@/7679/view-791-conseil.html?xtor=EPR-13-SEPNL5-20140916</href>
+															<html_interieur_avant>}}--><span class="text date" style="display: block; padding-top: 5px"><strong><!--{{</html_interieur_avant>
+															<texte>}}-->15 octobre 2014<!--{{</texte>
+															<html_interieur_apres>}}-->&#160;:</strong></span><!--{{</html_interieur_apres>
+															<params>
 															}}--><a data-type="getstyle" class="link_box" style="color: #000000; display: block; outline: none; text-decoration: none"><!--getstyle--></a><!--{{ class="link_box"
 															</params>
 															</champ>}}## ##{{<champ>
 															<type>lien</type>
 															<href>http://www.ganassurances.fr/octobre-2014-@/7679/view-791-conseil.html?xtor=EPR-13-SEPNL5-20140916</href>
-															<html_interieur_avant>}}--><span class="text" style="display: block; padding-top: 5px"><!--{{</html_interieur_avant>
-															<texte>}}--><strong>15 octobre 2014&#160;:</strong><br />paiement de la taxe fonci&#232;re pour les propri&#233;taires de biens immobiliers<!--{{</texte>
+															<html_interieur_avant>}}--><span class="text"><!--{{</html_interieur_avant>
+															<texte>}}-->paiement de la taxe fonci&#232;re pour les propri&#233;taires de biens immobiliers<!--{{</texte>
 															<html_interieur_apres>}}--></span><!--{{</html_interieur_apres>
 															<params>
 															}}--><a data-type="getstyle" class="link_box" style="color: #000000; display: block; outline: none; text-decoration: none"><!--getstyle--></a><!--{{ class="link_box"

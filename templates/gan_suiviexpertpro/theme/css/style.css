@@ -1153,12 +1153,8 @@ table.column td {
 }
 .contentMain .offre .text {
   display: block;
-  font-size: 18px;
   padding-top: 20px;
   padding-bottom: 20px;
-}
-.contentMain .offre .text .big {
-  font-size: 130%;
 }
 @media only screen and (max-width: 720px) {
   table[class="body"] .contentMain .inner {
@@ -1183,7 +1179,8 @@ table.column td {
   display: inline;
   color: #4c7d9f;
 }
-.contentBottom .text {
+.contentBottom .tableau .text,
+.contentBottom .echeancier .text.date {
   display: block;
   padding-top: 5px;
 }
