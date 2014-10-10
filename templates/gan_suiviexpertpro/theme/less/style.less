@@ -147,32 +147,32 @@ table.columns td, table.column td { padding-bottom: 0; }
 	table[class="body"] .contentALaUne {
 		//masquage filler
 		.filler {
-			display: none;
-			visibility: hidden;
+			display: none !important;
+			visibility: hidden !important;
 		}
 
 		//rajout décalage vertical et horizontal
 		.inner {
-			padding-top: 10px;
-			padding-bottom: 10px;
+			padding-top: 10px !important;
+			padding-bottom: 10px !important;
 		}
 		.wrapper > .columns td {
-			padding-left: 10px;
-			padding-right: 10px;
+			padding-left: 10px !important;
+			padding-right: 10px !important;
 		}
 
 		//supppression décalage interne en trop
 		.wrapper .columns .text-pad {
-			padding-left: 0;
-			padding-right: 0;
+			padding-left: 0 !important;
+			padding-right: 0 !important;
 		}
 
 		//changement orientation bordure et compensation padding
 		.wrapper.last {
-			border-left: 0;
+			border-left: 0 !important;
 			.inner {
-				border-top: 1px dotted #ffffff;
-				padding-top: 9px;
+				border-top: 1px dotted #ffffff !important;
+				padding-top: 9px !important;
 			}
 		}
 	}
@@ -227,11 +227,11 @@ table.columns td, table.column td { padding-bottom: 0; }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentMain {
 		.inner {
-			padding-top: 10px;
-			padding-bottom: 10px;
+			padding-top: 10px !important;
+			padding-bottom: 10px !important;
 		}
-		.wrapper.first .columns .text-pad { padding-right: 10px; }
-		.wrapper.last .columns .text-pad { padding-left: 10px; }
+		.wrapper.first .columns .text-pad { padding-right: 10px !important; }
+		.wrapper.last .columns .text-pad { padding-left: 10px !important; }
 	}
 }
 
@@ -298,36 +298,36 @@ table.columns td, table.column td { padding-bottom: 0; }
 	table[class="body"] .contentBottom {
 		//masquage filler
 		.filler {
-			display: none;
-			visibility: hidden;
+			display: none !important;
+			visibility: hidden !important;
 		}
 
 		//rajout décalage vertical et horizontal
 		.inner {
-			padding-top: 10px;
-			padding-bottom: 10px;
+			padding-top: 10px !important;
+			padding-bottom: 10px !important;
 		}
 		.wrapper > .columns td {
-			padding-left: 10px;
-			padding-right: 10px;
+			padding-left: 10px !important;
+			padding-right: 10px !important;
 		}
 
 		//supppression décalage interne en trop
 		.wrapper .columns .text-pad {
-			padding-left: 0;
-			padding-right: 0;
+			padding-left: 0 !important;
+			padding-right: 0 !important;
 		}
 
 		//changement orientation bordure et compensation padding
 		.wrapper {
 			border-left: 0;
 			.inner {
-				border-top: 1px dotted @colorGan1;
-				padding-top: 9px;
+				border-top: 1px dotted @colorGan1 !important;
+				padding-top: 9px !important;
 			}
 			&.first .inner {
-				border-top: 0;
-				padding-top: 10px;
+				border-top: 0 !important;
+				padding-top: 10px !important;
 			}
 		}
 
