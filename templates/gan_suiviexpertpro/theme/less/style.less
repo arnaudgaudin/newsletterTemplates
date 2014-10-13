@@ -15,15 +15,16 @@
 h1, h2, h3, h4, h5, h6 { line-height: 1.1; }
 
 //override des font-size de PostaNova
-body font {
-	&[size="1"] { font-size: @fontSizeMini; }
-	&[size="2"] { font-size: @fontSizeSmall; }
-	&[size="3"] { font-size: @headingsFontSizeH5; }
-	&[size="4"] { font-size: @headingsFontSizeH4; }
-	&[size="5"] { font-size: @headingsFontSizeH3; }
-	&[size="6"] { font-size: @headingsFontSizeH2; }
-	&[size="7"] { font-size: @headingsFontSizeH1; }
-}
+//ne fonctionne pas sous Lotus Note
+// body font {
+// 	&[size="1"] { font-size: @fontSizeMini; line-height: 1.3; }
+// 	&[size="2"] { font-size: @fontSizeSmall; line-height: 1.3; }
+// 	&[size="3"] { font-size: @headingsFontSizeH5; line-height: 1.1; }
+// 	&[size="4"] { font-size: @headingsFontSizeH4; line-height: 1.1; }
+// 	&[size="5"] { font-size: @headingsFontSizeH3; line-height: 1.1; }
+// 	&[size="6"] { font-size: @headingsFontSizeH2; line-height: 1.1; }
+// 	&[size="7"] { font-size: @headingsFontSizeH1; line-height: 1.1; }
+// }
 
 .inner {
 	display: block;
