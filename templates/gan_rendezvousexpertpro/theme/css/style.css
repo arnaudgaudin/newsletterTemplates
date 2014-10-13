@@ -943,18 +943,29 @@ table.columns td,
 table.column td {
   padding-bottom: 0;
 }
-.header table.columns td.sub-columns,
-.contentMain table.columns td.sub-columns,
-.header table.column td.sub-columns,
-.contentMain table.column td.sub-columns,
-.header table.columns td.sub-column,
-.contentMain table.columns td.sub-column,
-.header table.column td.sub-column,
-.contentMain table.column td.sub-column {
+table.columns td.sub-columns,
+table.column td.sub-columns,
+table.columns td.sub-column,
+table.column td.sub-column {
   padding-right: 0;
 }
-.contentFooter .sub-columns.one {
-  background-color: #f00;
+.contentFooter .inner {
+  background-color: #001f46;
+  border-radius: 0 10px 10px 0;
+}
+.contentFooter .inner,
+.contentFooter .inner td,
+.contentFooter .inner .inner,
+.contentFooter .inner a,
+.contentFooter .inner a:link,
+.contentFooter .inner a:visited,
+.contentFooter .inner a:hover,
+.contentFooter .inner a:focus,
+.contentFooter .inner a:active {
+  color: #ffffff !important;
+}
+.contentFooter .sub-columns.first {
+  background-color: #001f46;
 }
 .contentFooter .sub-columns.five {
   background-color: #0f0;
