@@ -14,6 +14,17 @@
 
 h1, h2, h3, h4, h5, h6 { line-height: 1.1; }
 
+//override des font-size de PostaNova
+font {
+	&[size="1"] { font-size: @fontSizeMini; }
+	&[size="2"] { font-size: @fontSizeSmall; }
+	&[size="3"] { font-size: @headingsFontSizeH5; }
+	&[size="4"] { font-size: @headingsFontSizeH4; }
+	&[size="5"] { font-size: @headingsFontSizeH3; }
+	&[size="6"] { font-size: @headingsFontSizeH2; }
+	&[size="7"] { font-size: @headingsFontSizeH1; }
+}
+
 .inner {
 	display: block;
 	padding-top: 10px;
