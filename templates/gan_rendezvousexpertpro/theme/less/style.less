@@ -34,7 +34,7 @@ td.wrapper { padding-top: 0; }
 table.columns td, table.column td { padding-bottom: 0; }
 
 //gestion header
-.header {
+.header, .contentMain {
 	table.columns td.sub-columns,
 	table.column td.sub-columns,
 	table.columns td.sub-column,
@@ -43,9 +43,30 @@ table.columns td, table.column td { padding-bottom: 0; }
 	}
 }
 
-// contentOnline
+//pour tests
+.contentBottom {
+	.sub-columns {
+		&.one { background-color: #f00; }
+		&.five { background-color: #0f0; }
+		&.ten { background-color: #ff0; }
+		&.eleven { background-color: #0f0; }
+	}
+}
+
+
+// contentOnline area
 // -------------------------
 .contentOnline {
 	background-color: @bodyBackground;
 	.newsletterInnerTextColor(#ffffff);
+}
+
+
+
+// contentMain area
+// -------------------------
+.contentMain {
+
+	
+
 }
