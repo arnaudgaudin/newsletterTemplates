@@ -953,16 +953,16 @@ table.column td {
 .contentMain table.column td.sub-column {
   padding-right: 0;
 }
-.contentBottom .sub-columns.one {
+.contentFooter .sub-columns.one {
   background-color: #f00;
 }
-.contentBottom .sub-columns.five {
+.contentFooter .sub-columns.five {
   background-color: #0f0;
 }
-.contentBottom .sub-columns.ten {
+.contentFooter .sub-columns.ten {
   background-color: #ff0;
 }
-.contentBottom .sub-columns.eleven {
+.contentFooter .sub-columns.eleven {
   background-color: #0f0;
 }
 .contentOnline {
