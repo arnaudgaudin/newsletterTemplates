@@ -969,6 +969,14 @@ body .contentOnline a:active {
 .contentMain .sub-columns.first {
   background-color: #eacc90;
 }
+.contentMain .preTitle {
+  display: block;
+  font-size: 15px;
+}
+.contentFooter .wrapper {
+  display: block;
+  padding-right: 20px;
+}
 .contentFooter .sub-columns.first,
 .contentFooter .inner {
   background-color: #001f46;

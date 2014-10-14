@@ -54,12 +54,23 @@ table.column td.sub-column {
 .contentMain {
 	//bande verticale
 	.sub-columns.first { background-color: @colorGan2; }
+
+	.preTitle {
+		display: block;
+		font-size: @headingsFontSizeH5;
+	}
 }
 
 
 // contentFooter area
 // -------------------------
 .contentFooter {
+	//décalage à droite
+	.wrapper {
+		display: block;
+		padding-right: 20px;
+	}
+
 	//bande bleu
 	.sub-columns.first, .inner { background-color: @colorGan3; }
 	
