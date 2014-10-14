@@ -1088,7 +1088,7 @@ body .contentFooter a:active {
   -moz-border-radius: 0 10px 10px 0;
   border-radius: 0 10px 10px 0;
 }
-.contentFooter .wrapper {
+.contentFooter .offset {
   display: block;
   padding-right: 20px;
 }
@@ -1139,5 +1139,6 @@ body .contentLegal a:active {
   padding-top: 5px;
   padding-bottom: 5px;
   font-size: 9.1px;
+  font-style: italic;
   line-height: 12.103px;
 }
