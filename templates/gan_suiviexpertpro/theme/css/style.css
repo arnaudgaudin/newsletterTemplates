@@ -1053,18 +1053,18 @@ table.column td {
 .contentInfoClient td,
 .contentOnline .inner,
 .contentInfoClient .inner,
-.contentOnline a,
-.contentInfoClient a,
-.contentOnline a:link,
-.contentInfoClient a:link,
-.contentOnline a:visited,
-.contentInfoClient a:visited,
-.contentOnline a:hover,
-.contentInfoClient a:hover,
-.contentOnline a:focus,
-.contentInfoClient a:focus,
-.contentOnline a:active,
-.contentInfoClient a:active {
+body .contentOnline a,
+body .contentInfoClient a,
+body .contentOnline a:link,
+body .contentInfoClient a:link,
+body .contentOnline a:visited,
+body .contentInfoClient a:visited,
+body .contentOnline a:hover,
+body .contentInfoClient a:hover,
+body .contentOnline a:focus,
+body .contentInfoClient a:focus,
+body .contentOnline a:active,
+body .contentInfoClient a:active {
   color: #ffffff !important;
 }
 .contentOnline .inner {
@@ -1085,12 +1085,12 @@ table.column td {
 .contentALaUne,
 .contentALaUne td,
 .contentALaUne .inner,
-.contentALaUne a,
-.contentALaUne a:link,
-.contentALaUne a:visited,
-.contentALaUne a:hover,
-.contentALaUne a:focus,
-.contentALaUne a:active {
+body .contentALaUne a,
+body .contentALaUne a:link,
+body .contentALaUne a:visited,
+body .contentALaUne a:hover,
+body .contentALaUne a:focus,
+body .contentALaUne a:active {
   color: #ffffff !important;
 }
 .contentALaUne .filler {
@@ -1204,12 +1204,12 @@ table.column td {
 .contentFooter,
 .contentFooter td,
 .contentFooter .inner,
-.contentFooter a,
-.contentFooter a:link,
-.contentFooter a:visited,
-.contentFooter a:hover,
-.contentFooter a:focus,
-.contentFooter a:active {
+body .contentFooter a,
+body .contentFooter a:link,
+body .contentFooter a:visited,
+body .contentFooter a:hover,
+body .contentFooter a:focus,
+body .contentFooter a:active {
   color: #ffffff !important;
 }
 .contentFooter .inner {
@@ -1239,12 +1239,12 @@ table.column td {
 .contentLegal,
 .contentLegal td,
 .contentLegal .inner,
-.contentLegal a,
-.contentLegal a:link,
-.contentLegal a:visited,
-.contentLegal a:hover,
-.contentLegal a:focus,
-.contentLegal a:active {
+body .contentLegal a,
+body .contentLegal a:link,
+body .contentLegal a:visited,
+body .contentLegal a:hover,
+body .contentLegal a:focus,
+body .contentLegal a:active {
   color: #ffffff !important;
 }
 .contentLegal .inner {
@@ -1259,12 +1259,12 @@ table.column td {
 .contentUnsubscribe,
 .contentUnsubscribe td,
 .contentUnsubscribe .inner,
-.contentUnsubscribe a,
-.contentUnsubscribe a:link,
-.contentUnsubscribe a:visited,
-.contentUnsubscribe a:hover,
-.contentUnsubscribe a:focus,
-.contentUnsubscribe a:active {
+body .contentUnsubscribe a,
+body .contentUnsubscribe a:link,
+body .contentUnsubscribe a:visited,
+body .contentUnsubscribe a:hover,
+body .contentUnsubscribe a:focus,
+body .contentUnsubscribe a:active {
   color: #ffffff !important;
 }
 .contentUnsubscribe .inner {

@@ -955,12 +955,12 @@ table.column td.sub-column {
 .contentOnline,
 .contentOnline td,
 .contentOnline .inner,
-.contentOnline a,
-.contentOnline a:link,
-.contentOnline a:visited,
-.contentOnline a:hover,
-.contentOnline a:focus,
-.contentOnline a:active {
+body .contentOnline a,
+body .contentOnline a:link,
+body .contentOnline a:visited,
+body .contentOnline a:hover,
+body .contentOnline a:focus,
+body .contentOnline a:active {
   color: #ffffff !important;
 }
 .contentMain .sub-columns.first {
@@ -978,11 +978,11 @@ table.column td.sub-column {
 .contentFooter .inner,
 .contentFooter .inner td,
 .contentFooter .inner .inner,
-.contentFooter .inner a,
-.contentFooter .inner a:link,
-.contentFooter .inner a:visited,
-.contentFooter .inner a:hover,
-.contentFooter .inner a:focus,
-.contentFooter .inner a:active {
+body .contentFooter .inner a,
+body .contentFooter .inner a:link,
+body .contentFooter .inner a:visited,
+body .contentFooter .inner a:hover,
+body .contentFooter .inner a:focus,
+body .contentFooter .inner a:active {
   color: #ffffff !important;
 }
