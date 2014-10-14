@@ -10,12 +10,12 @@
 //gestion des couleurs des zones inner
 .newsletterInnerTextColor(@color) {
 	&, td, .inner { color: @color !important; }
-    .newsletterLinkColor(@color);
+    body & a { .newsletterLinkColor(@color); }
 }
 
 //gestion des couleurs de liens
 .newsletterLinkColor(@color) {
-    body & a, body & a:link, body & a:visited, body & a:hover, body & a:focus, body & a:active { color: @color !important; }   
+    &, &:link, &:visited, &:hover, &:focus, &:active { color: @color !important; }   
 }
 
 // CSS3 PROPERTIES
