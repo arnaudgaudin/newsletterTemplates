@@ -9,7 +9,8 @@
 
 //gestion des couleurs des zones inner
 .newsletterInnerTextColor(@color) {
-	&, td, .inner, body & a, body & a:link, body & a:visited, body & a:hover, body & a:focus, body & a:active { color: @color !important; }
+	&, td, .inner { color: @color !important; }
+    .newsletterLinkColor(@color);
 }
 
 //gestion des couleurs de liens
