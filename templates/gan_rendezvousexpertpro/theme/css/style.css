@@ -925,8 +925,8 @@ h6 {
 }
 .inner {
   display: block;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .inner img {
   float: none;
@@ -948,6 +948,33 @@ table.column td.sub-columns,
 table.columns td.sub-column,
 table.column td.sub-column {
   padding-right: 0;
+}
+table.columns .text-pad,
+table.column .text-pad {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+table.columns .left-text-pad,
+table.columns .text-pad-left,
+table.column .left-text-pad,
+table.column .text-pad-left {
+  padding-left: 20px;
+}
+table.columns .right-text-pad,
+table.columns .text-pad-right,
+table.column .right-text-pad,
+table.column .text-pad-right {
+  padding-right: 20px;
+}
+@media only screen and (max-width: 720px) {
+  table[class="body"] .right-text-pad,
+  table[class="body"] .text-pad-right {
+    padding-left: 20px !important;
+  }
+  table[class="body"] .left-text-pad,
+  table[class="body"] .text-pad-left {
+    padding-right: 20px !important;
+  }
 }
 .header {
   background-color: #001f46;
@@ -977,11 +1004,9 @@ body .contentOnline a:active {
   display: block;
   padding-right: 20px;
 }
-.contentFooter .sub-columns.first,
 .contentFooter .inner {
-  background-color: #001f46;
-}
-.contentFooter .inner {
+  padding-top: 5px;
+  padding-bottom: 5px;
   -webkit-border-radius: 0 10px 10px 0;
   -moz-border-radius: 0 10px 10px 0;
   border-radius: 0 10px 10px 0;
@@ -996,4 +1021,25 @@ body .contentFooter .inner a:hover,
 body .contentFooter .inner a:focus,
 body .contentFooter .inner a:active {
   color: #ffffff !important;
+}
+.contentFooter .sub-columns.first,
+.contentFooter .inner {
+  background-color: #001f46;
+}
+.contentLegal,
+.contentLegal td,
+.contentLegal .inner,
+body .contentLegal a,
+body .contentLegal a:link,
+body .contentLegal a:visited,
+body .contentLegal a:hover,
+body .contentLegal a:focus,
+body .contentLegal a:active {
+  color: #d39c0b !important;
+}
+.contentLegal .inner {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 8.4px;
+  line-height: 11.172px;
 }
