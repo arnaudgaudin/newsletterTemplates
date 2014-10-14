@@ -78,6 +78,12 @@ table.column .text-pad-right {
 .contentOnline {
 	background-color: @bodyBackground;
 	.newsletterInnerTextColor(#ffffff);
+	.inner {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		font-size: @fontSizeMini;
+		line-height: (@fontSizeMini * 1.33);
+	}
 }
 
 
@@ -140,25 +146,33 @@ table.column .text-pad-right {
 // contentFooter area
 // -------------------------
 .contentFooter {
+	.newsletterInnerTextColor(#ffffff);
+	.inner {
+		//changement padding intérieur
+		padding-top: 5px;
+		padding-bottom: 5px;
+		-webkit-border-radius: 0 10px 10px 0;
+		   -moz-border-radius: 0 10px 10px 0;
+		        border-radius: 0 10px 10px 0;
+	}
+
+
 	//décalage à droite
 	.wrapper {
 		display: block;
 		padding-right: 20px;
 	}
 
-	.inner {
-		//changement padding intérieur
-		padding-top: 5px;
-		padding-bottom: 5px;
-
-		.newsletterInnerTextColor(#ffffff);
-		-webkit-border-radius: 0 10px 10px 0;
-		   -moz-border-radius: 0 10px 10px 0;
-		        border-radius: 0 10px 10px 0;
-	}
-
 	//bande bleu
 	.sub-columns.first, .inner { background-color: @colorGan3; }
+
+	.subOnline {
+		font-weight: bold;
+		color: @colorGan1 !important;
+		a {
+
+		}
+	}
 }
 
 
