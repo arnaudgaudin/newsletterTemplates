@@ -949,33 +949,6 @@ table.columns td.sub-column,
 table.column td.sub-column {
   padding-right: 0;
 }
-.contentFooter .inner {
-  background-color: #001f46;
-  border-radius: 0 10px 10px 0;
-}
-.contentFooter .inner,
-.contentFooter .inner td,
-.contentFooter .inner .inner,
-.contentFooter .inner a,
-.contentFooter .inner a:link,
-.contentFooter .inner a:visited,
-.contentFooter .inner a:hover,
-.contentFooter .inner a:focus,
-.contentFooter .inner a:active {
-  color: #ffffff !important;
-}
-.contentFooter .sub-columns.first {
-  background-color: #001f46;
-}
-.contentFooter .sub-columns.five {
-  background-color: #0f0;
-}
-.contentFooter .sub-columns.ten {
-  background-color: #ff0;
-}
-.contentFooter .sub-columns.eleven {
-  background-color: #0f0;
-}
 .contentOnline {
   background-color: #7590ad;
 }
@@ -988,5 +961,28 @@ table.column td.sub-column {
 .contentOnline a:hover,
 .contentOnline a:focus,
 .contentOnline a:active {
+  color: #ffffff !important;
+}
+.contentMain .sub-columns.first {
+  background-color: #eacc90;
+}
+.contentFooter .sub-columns.first,
+.contentFooter .inner {
+  background-color: #001f46;
+}
+.contentFooter .inner {
+  -webkit-border-radius: 0 10px 10px 0;
+  -moz-border-radius: 0 10px 10px 0;
+  border-radius: 0 10px 10px 0;
+}
+.contentFooter .inner,
+.contentFooter .inner td,
+.contentFooter .inner .inner,
+.contentFooter .inner a,
+.contentFooter .inner a:link,
+.contentFooter .inner a:visited,
+.contentFooter .inner a:hover,
+.contentFooter .inner a:focus,
+.contentFooter .inner a:active {
   color: #ffffff !important;
 }

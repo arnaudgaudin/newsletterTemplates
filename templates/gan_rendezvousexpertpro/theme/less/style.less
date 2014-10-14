@@ -41,26 +41,6 @@ table.column td.sub-column {
 	padding-right: 0;
 }
 
-//pour tests
-.contentFooter {
-	//fond et arrondi sur le inner
-	.inner {
-		background-color: @colorGan3;
-		.newsletterInnerTextColor(#ffffff);
-		border-radius: 0 10px 10px 0;
-	}
-
-	.sub-columns.first {
-		background-color: @colorGan3;
-	}
-
-	.sub-columns {
-		&.five { background-color: #0f0; }
-		&.ten { background-color: #ff0; }
-		&.eleven { background-color: #0f0; }
-	}
-}
-
 
 // contentOnline area
 // -------------------------
@@ -74,5 +54,22 @@ table.column td.sub-column {
 // contentMain area
 // -------------------------
 .contentMain {
+	//bande verticale
+	.sub-columns.first { background-color: @colorGan2; }
+}
+
+
+// contentFooter area
+// -------------------------
+.contentFooter {
+	//bande bleu
+	.sub-columns.first, .inner { background-color: @colorGan3; }
 	
+	//arrondi sur le inner et couleur de texte
+	.inner {
+		.newsletterInnerTextColor(#ffffff);
+		-webkit-border-radius: 0 10px 10px 0;
+		   -moz-border-radius: 0 10px 10px 0;
+		        border-radius: 0 10px 10px 0;
+	}
 }
