@@ -1052,7 +1052,9 @@ table.column td {
 .contentOnline td,
 .contentInfoClient td,
 .contentOnline .inner,
-.contentInfoClient .inner,
+.contentInfoClient .inner {
+  color: #ffffff !important;
+}
 body .contentOnline a,
 body .contentInfoClient a,
 body .contentOnline a:link,
@@ -1084,7 +1086,9 @@ body .contentInfoClient a:active {
 }
 .contentALaUne,
 .contentALaUne td,
-.contentALaUne .inner,
+.contentALaUne .inner {
+  color: #ffffff !important;
+}
 body .contentALaUne a,
 body .contentALaUne a:link,
 body .contentALaUne a:visited,
@@ -1203,7 +1207,9 @@ body .contentALaUne a:active {
 }
 .contentFooter,
 .contentFooter td,
-.contentFooter .inner,
+.contentFooter .inner {
+  color: #ffffff !important;
+}
 body .contentFooter a,
 body .contentFooter a:link,
 body .contentFooter a:visited,
@@ -1238,7 +1244,9 @@ body .contentFooter a:active {
 }
 .contentLegal,
 .contentLegal td,
-.contentLegal .inner,
+.contentLegal .inner {
+  color: #ffffff !important;
+}
 body .contentLegal a,
 body .contentLegal a:link,
 body .contentLegal a:visited,
@@ -1258,7 +1266,9 @@ body .contentLegal a:active {
 }
 .contentUnsubscribe,
 .contentUnsubscribe td,
-.contentUnsubscribe .inner,
+.contentUnsubscribe .inner {
+  color: #ffffff !important;
+}
 body .contentUnsubscribe a,
 body .contentUnsubscribe a:link,
 body .contentUnsubscribe a:visited,
