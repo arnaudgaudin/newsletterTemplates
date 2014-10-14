@@ -949,6 +949,9 @@ table.columns td.sub-column,
 table.column td.sub-column {
   padding-right: 0;
 }
+.header {
+  background-color: #001f46;
+}
 .contentOnline {
   background-color: #7590ad;
 }
