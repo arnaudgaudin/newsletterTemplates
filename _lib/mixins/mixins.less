@@ -7,9 +7,14 @@
 // UTILITIES
 // --------------------------------------------------
 
-//gestion des couleurs de liens
+//gestion des couleurs des zones inner
 .newsletterInnerTextColor(@color) {
 	&, td, .inner, body & a, body & a:link, body & a:visited, body & a:hover, body & a:focus, body & a:active { color: @color !important; }
+}
+
+//gestion des couleurs de liens
+.newsletterLinkColor(@color) {
+    body & a, body & a:link, body & a:visited, body & a:hover, body & a:focus, body & a:active { color: @color !important; }   
 }
 
 // CSS3 PROPERTIES
