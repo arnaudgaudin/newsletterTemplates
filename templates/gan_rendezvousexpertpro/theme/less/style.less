@@ -57,14 +57,27 @@ table.column .text-pad-right {
 }
 
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	//calcul du padding de 20px de manière relative
+	@prctPadding: unit(round((20px / @containerWidth * 100), 6), %);
+
+	.inner {
+		padding-top: @prctPadding;
+		padding-bottom: @prctPadding;
+	}
+
+	table[class="body"] .text-pad {
+		padding-left: @prctPadding !important;
+		padding-right: @prctPadding !important;
+	}
+
 	table[class="body"] .right-text-pad,
 	table[class="body"] .text-pad-right {
-		padding-left: 20px !important;
+		padding-left: @prctPadding !important;
 	}
 
 	table[class="body"] .left-text-pad,
 	table[class="body"] .text-pad-left {
-		padding-right: 20px !important;
+		padding-right: @prctPadding !important;
 	}
 }
 
