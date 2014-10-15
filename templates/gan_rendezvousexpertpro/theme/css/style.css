@@ -989,6 +989,12 @@ table.column .text-pad-right {
 .header {
   background-color: #001f46;
 }
+.header a {
+  line-height: 0;
+}
+.header img {
+  float: none;
+}
 .contentOnline {
   background-color: #7590ad;
 }

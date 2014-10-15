@@ -81,7 +81,12 @@ table.column .text-pad-right {
 
 // header area
 // -------------------------
-.header { background-color: @colorGan3; }
+.header {
+	background-color: @colorGan3;
+	//suppression décalages liens images
+	a { line-height: 0; }
+	img { float: none; }
+}
 
 
 // contentOnline area
