@@ -498,10 +498,28 @@ color: #d39c0b !important;
 															<html_apres></a></span></html_apres>
 															</champ>?>
 															<? <bloc nom="date" type="fin" /> ?>
-															
+
+															<? <bloc nom="adresse" type="debut" /> ?>
 															<span class="addressWrapper" style="color: #d39c0b !important; display: block; padding-bottom: 20px">
-																<span class="addressTitle">Office de Tourisme et des Congr&#232;s de Rouen</span> - <span class="address"><a target="_blank" href="http://maps.apple.com/?q=25%2C+place+de+la+cath%3Fdrale+76000+Rouen" style="color: #d39c0b !important; text-decoration: none">25, place de la cath&#233;drale 76000 Rouen</a></span>
+																<?<champ>
+																<type>text</type>
+																<html_avant><span class="addressTitle"></html_avant>
+																<defaut>Office de Tourisme et des Congr&#232;s de Rouen</defaut>
+																<html_apres></span></html_apres>
+																</champ>?> - <?<champ>
+																<type>lien</type>
+																<href>http://maps.apple.com/?q=25%2C+place+de+la+cath%3Fdrale+76000+Rouen</href>
+																<html_avant><span class="address"></html_avant>
+																<texte>25, place de la cath&#233;drale 76000 Rouen</texte>
+																<html_apres></span></html_apres>
+																<params>
+																style="color: #d39c0b !important; text-decoration: none"
+																</params>
+																</champ>?>
 															</span>
+															<? <bloc nom="adresse" type="fin" /> ?>
+															
+															
 															<span class="breakfast" style="display: block; font-size: 11.9px; line-height: 13.09px; padding-bottom: 10px">Petit d&#233;jeuner d&#233;bat anim&#233; par&#160;:</span>
 															<span class="orators" style="display: block; font-size: 11.9px; line-height: 15.827px">
 																<strong>Laurent DAVID</strong>, journaliste du groupe Les Echos<br />

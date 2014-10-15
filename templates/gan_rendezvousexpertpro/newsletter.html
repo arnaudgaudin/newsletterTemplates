@@ -105,10 +105,28 @@
 															<html_apres>}}--></a></span><!--{{</html_apres>
 															</champ>}}##}}-->
 															<!--{{##{{ <bloc nom="date" type="fin" /> }}##}}-->
-															
+
+															<!--{{##{{ <bloc nom="adresse" type="debut" /> }}##}}-->
 															<span class="addressWrapper">
-																<span class="addressTitle">Office de Tourisme et des Congrès de Rouen</span> - <span class="address"><a target="_blank" href="http://maps.apple.com/?q=25%2C+place+de+la+cath%3Fdrale+76000+Rouen">25, place de la cathédrale 76000 Rouen</a></span>
+																<!--{{##{{<champ>
+																<type>text</type>
+																<html_avant>}}--><span class="addressTitle"><!--{{</html_avant>
+																<defaut>}}-->Office de Tourisme et des Congrès de Rouen<!--{{</defaut>
+																<html_apres>}}--></span><!--{{</html_apres>
+																</champ>}}##}}--> - <!--{{##{{<champ>
+																<type>lien</type>
+																<href>http://maps.apple.com/?q=25%2C+place+de+la+cath%3Fdrale+76000+Rouen</href>
+																<html_avant>}}--><span class="address"><!--{{</html_avant>
+																<texte>}}-->25, place de la cathédrale 76000 Rouen<!--{{</texte>
+																<html_apres>}}--></span><!--{{</html_apres>
+																<params>
+																}}--><a data-type="getstyle"><!--getstyle--></a><!--{{
+																</params>
+																</champ>}}##}}-->
 															</span>
+															<!--{{##{{ <bloc nom="adresse" type="fin" /> }}##}}-->
+															
+															
 															<span class="breakfast">Petit déjeuner débat animé par :</span>
 															<span class="orators">
 																<strong>Laurent DAVID</strong>, journaliste du groupe Les Echos<br/>
