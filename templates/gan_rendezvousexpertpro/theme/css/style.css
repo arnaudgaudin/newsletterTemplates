@@ -1141,6 +1141,10 @@ body .contentFooter a:active {
   color: #ffffff !important;
 }
 @media only screen and (max-width: 720px) {
+  table[class="body"] .contentFooter .inner {
+    padding-top: 1.388889%;
+    padding-bottom: 1.388889%;
+  }
   table[class="body"] .contentFooter .rounderWrapper {
     padding-right: 2.777778%;
   }

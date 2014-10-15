@@ -199,7 +199,13 @@ table.column .text-pad-right {
 	}
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
-	table[class="body"] .contentFooter .rounderWrapper { padding-right: @prctPadding; }
+	table[class="body"] .contentFooter {
+		.inner {
+			padding-top: (@prctPadding / 2);
+			padding-bottom: (@prctPadding / 2);
+		}
+		.rounderWrapper { padding-right: @prctPadding; }
+	}
 }
 
 
