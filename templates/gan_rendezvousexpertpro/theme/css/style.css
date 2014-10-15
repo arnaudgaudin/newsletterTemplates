@@ -995,6 +995,9 @@ table.column .text-pad-right {
 .header img {
   float: none;
 }
+.header .sub-columns.first {
+  background-color: #d39c0b;
+}
 .contentOnline {
   background-color: #7590ad;
 }
