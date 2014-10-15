@@ -162,20 +162,28 @@ table.column .text-pad-right {
 		//changement padding intérieur
 		padding-top: 5px;
 		padding-bottom: 5px;
-		-webkit-border-radius: 0 10px 10px 0;
-		   -moz-border-radius: 0 10px 10px 0;
-		        border-radius: 0 10px 10px 0;
 	}
 
 
 	//décalage à droite
-	.offset {
-		display: block;
+	.rounderWrapper {
+		// background-color: fade(#00f, 50%);
 		padding-right: 20px;
+		height: 100%;
+		.rounder {
+			overflow: hidden;
+			-webkit-border-radius: 0 10px 10px 0;
+			   -moz-border-radius: 0 10px 10px 0;
+			        border-radius: 0 10px 10px 0;
+			table {
+				width: 100%;
+				td { background-color: @colorGan3; }
+			}
+		}
 	}
 
 	//bande bleu
-	.sub-columns.first, .inner { background-color: @colorGan3; }
+	.sub-columns.first { background-color: @colorGan3; }
 
 	.subOnline {
 		display: block;
@@ -190,6 +198,9 @@ table.column .text-pad-right {
 		color: #ffffff !important;
 		a { .newsletterLinkColor(#ffffff); }
 	}
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentFooter .rounderWrapper { padding-right: @prctPadding; }
 }
 
 

@@ -1094,16 +1094,24 @@ body .contentFooter a:active {
 .contentFooter .inner {
   padding-top: 5px;
   padding-bottom: 5px;
+}
+.contentFooter .rounderWrapper {
+  padding-right: 20px;
+  height: 100%;
+}
+.contentFooter .rounderWrapper .rounder {
+  overflow: hidden;
   -webkit-border-radius: 0 10px 10px 0;
   -moz-border-radius: 0 10px 10px 0;
   border-radius: 0 10px 10px 0;
 }
-.contentFooter .offset {
-  display: block;
-  padding-right: 20px;
+.contentFooter .rounderWrapper .rounder table {
+  width: 100%;
 }
-.contentFooter .sub-columns.first,
-.contentFooter .inner {
+.contentFooter .rounderWrapper .rounder table td {
+  background-color: #001f46;
+}
+.contentFooter .sub-columns.first {
   background-color: #001f46;
 }
 .contentFooter .subOnline {
@@ -1131,6 +1139,11 @@ body .contentFooter a:active {
 .contentFooter .condition a:focus,
 .contentFooter .condition a:active {
   color: #ffffff !important;
+}
+@media only screen and (max-width: 720px) {
+  table[class="body"] .contentFooter .rounderWrapper {
+    padding-right: 2.777778%;
+  }
 }
 .contentLegal,
 .contentLegal td,
