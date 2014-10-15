@@ -998,6 +998,14 @@ table.column .text-pad-right {
 .header .sub-columns.first {
   background-color: #d39c0b;
 }
+.header .sub-columns.last {
+  position: relative;
+}
+body .header .sub-columns.last a[href^="javascript"] {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 .contentOnline {
   background-color: #7590ad;
 }

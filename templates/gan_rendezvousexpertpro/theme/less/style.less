@@ -89,6 +89,16 @@ table.column .text-pad-right {
 
 	//rajout fond dans la colonne de gauche
 	.sub-columns.first { background-color: @colorGan1; }
+
+	//replacement bouton de PostaNova
+	.sub-columns.last {
+		position: relative;
+		body & a[href^="javascript"] {
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+	}
 }
 
 
