@@ -1165,3 +1165,6 @@ body .contentLegal a:active {
   font-style: italic;
   line-height: 12.103px;
 }
+.contentLegal .sub-columns.first {
+  background-color: #eacc90;
+}
