@@ -1167,3 +1167,25 @@ body .contentLegal a:active {
 .contentLegal .sub-columns.first {
   background-color: #eacc90;
 }
+.contentUnsubscribe {
+  background-color: #7590ad;
+}
+.contentUnsubscribe,
+.contentUnsubscribe td,
+.contentUnsubscribe .inner {
+  color: #ffffff !important;
+}
+body .contentUnsubscribe a,
+body .contentUnsubscribe a:link,
+body .contentUnsubscribe a:visited,
+body .contentUnsubscribe a:hover,
+body .contentUnsubscribe a:focus,
+body .contentUnsubscribe a:active {
+  color: #ffffff !important;
+}
+.contentUnsubscribe .inner {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 9.1px;
+  line-height: 12.103px;
+}
