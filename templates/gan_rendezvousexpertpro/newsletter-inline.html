@@ -518,13 +518,28 @@ color: #d39c0b !important;
 																</champ>}}##}}-->
 															</span>
 															<!--{{##{{ <bloc nom="adresse" type="fin" /> }}##}}-->
-															
-															
-															<span class="breakfast" style="display: block; font-size: 11.9px; line-height: 13.09px; padding-bottom: 10px">Petit d&#233;jeuner d&#233;bat anim&#233; par&#160;:</span>
+
+															<!--{{##{{<champ>
+															<type>text</type>
+															<html_avant>}}--><span class="breakfast" style="display: block; font-size: 11.9px; line-height: 13.09px; padding-bottom: 10px"><!--{{</html_avant>
+															<defaut>}}-->Petit d&#233;jeuner d&#233;bat anim&#233; par&#160;:<!--{{</defaut>
+															<html_apres>}}--></span><!--{{</html_apres>
+															</champ>}}##}}-->
+
 															<span class="orators" style="display: block; font-size: 11.9px; line-height: 15.827px">
-																<strong>Laurent DAVID</strong>, journaliste du groupe Les Echos<br />
-																<strong>Jean-Loup CL&#201;MENT</strong>, expert en protection sociale Gan&#160;Assurances<br />
-																<strong>Gilles BERTRAND</strong>, expert-comptable<br />
+																<!--{{##{{ <bloc nom="orateur" type="debut" /> }}##}}-->
+																<!--{{##{{<champ>
+																<type>text</type>
+																<html_avant>}}--><b><!--{{</html_avant>
+																<defaut>}}-->Laurent DAVID<!--{{</defaut>
+																<html_apres>}}--></b>, <!--{{</html_apres>
+																</champ>}}## ##{{<champ>
+																<type>text</type>
+																<defaut>}}-->journaliste du groupe Les Echos<!--{{</defaut>
+																<html_apres>}}--><br /><!--{{</html_apres>
+																</champ>}}##}}-->
+																<!--{{##{{ <bloc nom="orateur" type="fin" /> }}##}}-->
+																<!--DEL{{--><strong>Jean-Loup CL&#201;MENT</strong>, expert en protection sociale Gan&#160;Assurances<br /><strong>Gilles BERTRAND</strong>, expert-comptable<br /><!--}}DEL-->
 															</span>
 														</span>
 													</td>

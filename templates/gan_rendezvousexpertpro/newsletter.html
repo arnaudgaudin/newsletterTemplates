@@ -125,13 +125,28 @@
 																</champ>}}##}}-->
 															</span>
 															<!--{{##{{ <bloc nom="adresse" type="fin" /> }}##}}-->
-															
-															
-															<span class="breakfast">Petit déjeuner débat animé par :</span>
+
+															<!--{{##{{<champ>
+															<type>text</type>
+															<html_avant>}}--><span class="breakfast"><!--{{</html_avant>
+															<defaut>}}-->Petit déjeuner débat animé par :<!--{{</defaut>
+															<html_apres>}}--></span><!--{{</html_apres>
+															</champ>}}##}}-->
+
 															<span class="orators">
-																<strong>Laurent DAVID</strong>, journaliste du groupe Les Echos<br/>
-																<strong>Jean-Loup CLÉMENT</strong>, expert en protection sociale Gan Assurances<br/>
-																<strong>Gilles BERTRAND</strong>, expert-comptable<br/>
+																<!--{{##{{ <bloc nom="orateur" type="debut" /> }}##}}-->
+																<!--{{##{{<champ>
+																<type>text</type>
+																<html_avant>}}--><b><!--{{</html_avant>
+																<defaut>}}-->Laurent DAVID<!--{{</defaut>
+																<html_apres>}}--></b>, <!--{{</html_apres>
+																</champ>}}## ##{{<champ>
+																<type>text</type>
+																<defaut>}}-->journaliste du groupe Les Echos<!--{{</defaut>
+																<html_apres>}}--><br/><!--{{</html_apres>
+																</champ>}}##}}-->
+																<!--{{##{{ <bloc nom="orateur" type="fin" /> }}##}}-->
+																<!--DEL{{--><strong>Jean-Loup CLÉMENT</strong>, expert en protection sociale Gan Assurances<br/><strong>Gilles BERTRAND</strong>, expert-comptable<br/><!--}}DEL-->
 															</span>
 														</span>
 													</td>
