@@ -1118,13 +1118,8 @@ body .contentFooter a:active {
   display: block;
   font-weight: bold;
 }
-.contentFooter .subOnline a.online,
-.contentFooter .subOnline a.online:link,
-.contentFooter .subOnline a.online:visited,
-.contentFooter .subOnline a.online:hover,
-.contentFooter .subOnline a.online:focus,
-.contentFooter .subOnline a.online:active {
-  color: #ffffff !important;
+.contentFooter .subOnline .online {
+  color: #ffffff;
 }
 .contentFooter .condition {
   display: block;
