@@ -14,6 +14,12 @@ h1, h2, h3, h4, h5, h6 { line-height: 1.1; }
 	padding-bottom: 20px;
 	img { float: none; }
 }
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .inner {
+		padding-top: @prctPadding;
+		padding-bottom: @prctPadding;
+	}
+}
 
 //pour rajouter de l'espace en haut et en dessous des wrappers
 .filler {
@@ -57,14 +63,6 @@ table.column .text-pad-right {
 }
 
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
-	//calcul du padding de 20px de manière relative
-	@prctPadding: unit(round((20px / @containerWidth * 100), 6), %);
-
-	.inner {
-		padding-top: @prctPadding;
-		padding-bottom: @prctPadding;
-	}
-
 	table[class="body"] .text-pad {
 		padding-left: @prctPadding !important;
 		padding-right: @prctPadding !important;

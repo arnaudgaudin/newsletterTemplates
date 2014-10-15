@@ -931,6 +931,12 @@ h6 {
 .inner img {
   float: none;
 }
+@media only screen and (max-width: 720px) {
+  table[class="body"] .inner {
+    padding-top: 2.777778%;
+    padding-bottom: 2.777778%;
+  }
+}
 .filler,
 .filler .empty {
   line-height: 0;
@@ -967,10 +973,6 @@ table.column .text-pad-right {
   padding-right: 20px;
 }
 @media only screen and (max-width: 720px) {
-  .inner {
-    padding-top: 2.777778%;
-    padding-bottom: 2.777778%;
-  }
   table[class="body"] .text-pad {
     padding-left: 2.777778% !important;
     padding-right: 2.777778% !important;
