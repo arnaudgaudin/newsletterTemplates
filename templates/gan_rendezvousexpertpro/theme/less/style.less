@@ -190,12 +190,11 @@ table.column .text-pad-right {
 		.online { color: #ffffff; }
 	}
 
-	.condition {
+	.subCondition {
 		display: block;
 		font-size: @fontSizeSmall;
 		line-height: (@fontSizeSmall * 1.1);
-		color: #ffffff !important;
-		a { .newsletterLinkColor(#ffffff); }
+		&, .condition { color: #ffffff; }
 	}
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
