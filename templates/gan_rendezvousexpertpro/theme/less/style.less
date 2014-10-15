@@ -207,11 +207,17 @@ table.column .text-pad-right {
 		font-weight: bold;
 		font-size: (@baseFontSize * 0.95);
 		line-height: (@baseFontSize * 0.95 * 1.33);
+
+		//défition des couleurs
+		color: @colorGan1;
+		.link_disabled { .newsletterLinkColor(@colorGan1); }
+
 		.online {
 			color: #ffffff;
 			font-size: @headingsFontSizeH3;
 			line-height: (@headingsFontSizeH3 * 1.1);
 		}
+		.onlineLink { .newsletterLinkColor(#ffffff); }
 	}
 
 	.subCondition {

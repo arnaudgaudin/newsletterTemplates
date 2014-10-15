@@ -1136,11 +1136,28 @@ body .contentFooter a:active {
   font-weight: bold;
   font-size: 13.3px;
   line-height: 17.689px;
+  color: #d39c0b;
+}
+.contentFooter .subOnline .link_disabled,
+.contentFooter .subOnline .link_disabled:link,
+.contentFooter .subOnline .link_disabled:visited,
+.contentFooter .subOnline .link_disabled:hover,
+.contentFooter .subOnline .link_disabled:focus,
+.contentFooter .subOnline .link_disabled:active {
+  color: #d39c0b !important;
 }
 .contentFooter .subOnline .online {
   color: #ffffff;
   font-size: 17px;
   line-height: 18.7px;
+}
+.contentFooter .subOnline .onlineLink,
+.contentFooter .subOnline .onlineLink:link,
+.contentFooter .subOnline .onlineLink:visited,
+.contentFooter .subOnline .onlineLink:hover,
+.contentFooter .subOnline .onlineLink:focus,
+.contentFooter .subOnline .onlineLink:active {
+  color: #ffffff !important;
 }
 .contentFooter .subCondition {
   display: block;
