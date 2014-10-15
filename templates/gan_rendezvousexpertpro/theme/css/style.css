@@ -1117,9 +1117,13 @@ body .contentFooter a:active {
 .contentFooter .subOnline {
   display: block;
   font-weight: bold;
+  font-size: 13.3px;
+  line-height: 17.689px;
 }
 .contentFooter .subOnline .online {
   color: #ffffff;
+  font-size: 17px;
+  line-height: 18.7px;
 }
 .contentFooter .subCondition {
   display: block;
