@@ -1135,7 +1135,9 @@ h6 a:visited {
 }
 .contentArticles,
 .contentArticles td,
-.contentArticles .inner,
+.contentArticles .inner {
+  color: #333333 !important;
+}
 body .contentArticles a,
 body .contentArticles a:link,
 body .contentArticles a:visited,
@@ -1188,7 +1190,9 @@ table.body {
 }
 .contentOnline,
 .contentOnline td,
-.contentOnline .inner,
+.contentOnline .inner {
+  color: ##((nlCntOnlineText))## !important;
+}
 body .contentOnline a,
 body .contentOnline a:link,
 body .contentOnline a:visited,
@@ -1199,7 +1203,9 @@ body .contentOnline a:active {
 }
 .contentOnline .name,
 .contentOnline .name td,
-.contentOnline .name .inner,
+.contentOnline .name .inner {
+  color: ##((nlCntOnlineName))## !important;
+}
 body .contentOnline .name a,
 body .contentOnline .name a:link,
 body .contentOnline .name a:visited,
@@ -1216,7 +1222,9 @@ body .contentOnline .name a:active {
 }
 .contentCabInform,
 .contentCabInform td,
-.contentCabInform .inner,
+.contentCabInform .inner {
+  color: ##((nlCntCabText))## !important;
+}
 body .contentCabInform a,
 body .contentCabInform a:link,
 body .contentCabInform a:visited,
@@ -1233,7 +1241,9 @@ body .contentCabInform a:active {
 }
 .contentALaUne,
 .contentALaUne td,
-.contentALaUne .inner,
+.contentALaUne .inner {
+  color: ##((nlCntUneText))## !important;
+}
 body .contentALaUne a,
 body .contentALaUne a:link,
 body .contentALaUne a:visited,
@@ -1262,7 +1272,9 @@ body .contentALaUne a:active {
 }
 .contentBottom .agenda,
 .contentBottom .agenda td,
-.contentBottom .agenda .inner,
+.contentBottom .agenda .inner {
+  color: ##((nlCntAgdText))## !important;
+}
 body .contentBottom .agenda a,
 body .contentBottom .agenda a:link,
 body .contentBottom .agenda a:visited,
@@ -1282,7 +1294,9 @@ body .contentBottom .agenda a:active {
 }
 .contentBottom .chiffre,
 .contentBottom .chiffre td,
-.contentBottom .chiffre .inner,
+.contentBottom .chiffre .inner {
+  color: ##((nlCntChfText))## !important;
+}
 body .contentBottom .chiffre a,
 body .contentBottom .chiffre a:link,
 body .contentBottom .chiffre a:visited,
@@ -1305,7 +1319,9 @@ body .contentBottom .chiffre a:active {
 }
 .contentContact,
 .contentContact td,
-.contentContact .inner,
+.contentContact .inner {
+  color: ##((nlCntCctText))## !important;
+}
 body .contentContact a,
 body .contentContact a:link,
 body .contentContact a:visited,
@@ -1319,7 +1335,9 @@ body .contentContact a:active {
 }
 .footer,
 .footer td,
-.footer .inner,
+.footer .inner {
+  color: ##((nlFooterText))## !important;
+}
 body .footer a,
 body .footer a:link,
 body .footer a:visited,
