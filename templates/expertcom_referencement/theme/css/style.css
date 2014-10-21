@@ -50,7 +50,7 @@ img {
 }
 center {
   width: 100%;
-  min-width: 580px;
+  min-width: 660px;
 }
 a img {
   border: none;
@@ -89,8 +89,8 @@ table.body {
 }
 table.container {
   background-color: #ffffff;
-  width: 580px;
-  -premailer-width: 580;
+  width: 660px;
+  -premailer-width: 660;
   margin: 0 auto;
   text-align: inherit;
 }
@@ -103,7 +103,7 @@ table.container table.row {
   display: block;
 }
 td.wrapper {
-  padding: 10px 20px 0px 0px;
+  padding: 10px 0 0px 0px;
   position: relative;
 }
 table.columns,
@@ -129,124 +129,124 @@ table.container td.last {
   padding-right: 0px;
 }
 table.one {
-  width: 30px;
-  -premailer-width: 30;
+  width: 55px;
+  -premailer-width: 55;
 }
 table.two {
-  width: 80px;
-  -premailer-width: 80;
+  width: 110px;
+  -premailer-width: 110;
 }
 table.three {
-  width: 130px;
-  -premailer-width: 130;
+  width: 165px;
+  -premailer-width: 165;
 }
 table.four {
-  width: 180px;
-  -premailer-width: 180;
+  width: 220px;
+  -premailer-width: 220;
 }
 table.five {
-  width: 230px;
-  -premailer-width: 230;
+  width: 275px;
+  -premailer-width: 275;
 }
 table.six {
-  width: 280px;
-  -premailer-width: 280;
-}
-table.seven {
   width: 330px;
   -premailer-width: 330;
 }
+table.seven {
+  width: 385px;
+  -premailer-width: 385;
+}
 table.eight {
-  width: 380px;
-  -premailer-width: 380;
+  width: 440px;
+  -premailer-width: 440;
 }
 table.nine {
-  width: 430px;
-  -premailer-width: 430;
+  width: 495px;
+  -premailer-width: 495;
 }
 table.ten {
-  width: 480px;
-  -premailer-width: 480;
+  width: 550px;
+  -premailer-width: 550;
 }
 table.eleven {
-  width: 530px;
-  -premailer-width: 530;
+  width: 605px;
+  -premailer-width: 605;
 }
 table.twelve {
-  width: 580px;
-  -premailer-width: 580;
+  width: 660px;
+  -premailer-width: 660;
 }
 table.one center {
-  min-width: 30px;
+  min-width: 55px;
 }
 table.two center {
-  min-width: 80px;
-}
-table.three center {
-  min-width: 130px;
-}
-table.four center {
-  min-width: 180px;
-}
-table.five center {
-  min-width: 230px;
-}
-table.six center {
-  min-width: 280px;
-}
-table.seven center {
-  min-width: 330px;
-}
-table.eight center {
-  min-width: 380px;
-}
-table.nine center {
-  min-width: 430px;
-}
-table.ten center {
-  min-width: 480px;
-}
-table.eleven center {
-  min-width: 530px;
-}
-table.twelve center {
-  min-width: 580px;
-}
-table.one .panel center {
-  min-width: 10px;
-}
-table.two .panel center {
-  min-width: 60px;
-}
-table.three .panel center {
   min-width: 110px;
 }
+table.three center {
+  min-width: 165px;
+}
+table.four center {
+  min-width: 220px;
+}
+table.five center {
+  min-width: 275px;
+}
+table.six center {
+  min-width: 330px;
+}
+table.seven center {
+  min-width: 385px;
+}
+table.eight center {
+  min-width: 440px;
+}
+table.nine center {
+  min-width: 495px;
+}
+table.ten center {
+  min-width: 550px;
+}
+table.eleven center {
+  min-width: 605px;
+}
+table.twelve center {
+  min-width: 660px;
+}
+table.one .panel center {
+  min-width: 55px;
+}
+table.two .panel center {
+  min-width: 110px;
+}
+table.three .panel center {
+  min-width: 165px;
+}
 table.four .panel center {
-  min-width: 160px;
+  min-width: 220px;
 }
 table.five .panel center {
-  min-width: 210px;
+  min-width: 275px;
 }
 table.six .panel center {
-  min-width: 260px;
+  min-width: 330px;
 }
 table.seven .panel center {
-  min-width: 310px;
+  min-width: 385px;
 }
 table.eight .panel center {
-  min-width: 360px;
+  min-width: 440px;
 }
 table.nine .panel center {
-  min-width: 410px;
+  min-width: 495px;
 }
 table.ten .panel center {
-  min-width: 460px;
+  min-width: 550px;
 }
 table.eleven .panel center {
-  min-width: 510px;
+  min-width: 605px;
 }
 table.twelve .panel center {
-  min-width: 560px;
+  min-width: 660px;
 }
 .body .columns td.one,
 .body .column td.one {
@@ -297,37 +297,37 @@ table.twelve .panel center {
   width: 100%;
 }
 td.offset-by-one {
-  padding-left: 50px;
+  padding-left: 55px;
 }
 td.offset-by-two {
-  padding-left: 100px;
+  padding-left: 110px;
 }
 td.offset-by-three {
-  padding-left: 150px;
+  padding-left: 165px;
 }
 td.offset-by-four {
-  padding-left: 200px;
+  padding-left: 220px;
 }
 td.offset-by-five {
-  padding-left: 250px;
+  padding-left: 275px;
 }
 td.offset-by-six {
-  padding-left: 300px;
+  padding-left: 330px;
 }
 td.offset-by-seven {
-  padding-left: 350px;
+  padding-left: 385px;
 }
 td.offset-by-eight {
-  padding-left: 400px;
+  padding-left: 440px;
 }
 td.offset-by-nine {
-  padding-left: 450px;
+  padding-left: 495px;
 }
 td.offset-by-ten {
-  padding-left: 500px;
+  padding-left: 550px;
 }
 td.offset-by-eleven {
-  padding-left: 550px;
+  padding-left: 605px;
 }
 td.expander {
   visibility: hidden;
@@ -354,39 +354,39 @@ table.column .text-pad-right {
 /* Block Grid */
 .block-grid {
   width: 100%;
-  max-width: 580px;
+  max-width: 660px;
 }
 .block-grid td {
   display: inline-block;
   padding: 10px;
 }
 .two-up td {
-  width: 270px;
-  -premailer-width: 270;
+  width: 330px;
+  -premailer-width: 330;
 }
 .three-up td {
-  width: 173px;
-  -premailer-width: 173;
+  width: 220px;
+  -premailer-width: 220;
 }
 .four-up td {
-  width: 125px;
-  -premailer-width: 125;
+  width: 165px;
+  -premailer-width: 165;
 }
 .five-up td {
-  width: 96px;
-  -premailer-width: 96;
+  width: 132px;
+  -premailer-width: 132;
 }
 .six-up td {
-  width: 76px;
-  -premailer-width: 76;
+  width: 110px;
+  -premailer-width: 110;
 }
 .seven-up td {
-  width: 62px;
-  -premailer-width: 62;
+  width: 94px;
+  -premailer-width: 94;
 }
 .eight-up td {
-  width: 52px;
-  -premailer-width: 52;
+  width: 82px;
+  -premailer-width: 82;
 }
 /* Alignment & Visibility Classes */
 table.center,
@@ -672,7 +672,7 @@ body.outlook p {
   display: inline !important;
 }
 /*  Media Queries */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 660px) {
   table[class="body"] img {
     width: auto !important;
     height: auto !important;
