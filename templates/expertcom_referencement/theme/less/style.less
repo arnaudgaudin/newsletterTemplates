@@ -2,3 +2,32 @@
 @import "import.less";
 
 // additionnal template's style which extends ink's style
+
+.inner {
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	img { float: none; }
+}
+
+//pour rajouter de l'espace en haut et en dessous des wrappers
+.filler {
+	&, .empty {
+		line-height: 0;
+		font-size: 0;
+	}
+}
+
+//suppression paddings verticaux déportés sur classe .inner dans certaines zones
+td.wrapper { padding-top: 0; }
+table.columns td, table.column td { padding-bottom: 0; }
+
+//gestion header
+.header {
+	table.columns td.sub-columns,
+	table.column td.sub-columns,
+	table.columns td.sub-column,
+	table.column td.sub-column {
+	  padding-right: 0;
+	}
+}
