@@ -336,20 +336,20 @@ td.expander {
 }
 table.columns .text-pad,
 table.column .text-pad {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 table.columns .left-text-pad,
 table.columns .text-pad-left,
 table.column .left-text-pad,
 table.column .text-pad-left {
-  padding-left: 10px;
+  padding-left: 20px;
 }
 table.columns .right-text-pad,
 table.columns .text-pad-right,
 table.column .right-text-pad,
 table.column .text-pad-right {
-  padding-right: 10px;
+  padding-right: 20px;
 }
 /* Block Grid */
 .block-grid {
@@ -774,11 +774,11 @@ body.outlook p {
   }
   table[class="body"] .right-text-pad,
   table[class="body"] .text-pad-right {
-    padding-left: 10px !important;
+    padding-left: 20px !important;
   }
   table[class="body"] .left-text-pad,
   table[class="body"] .text-pad-left {
-    padding-right: 10px !important;
+    padding-right: 20px !important;
   }
   table[class="body"] .hide-for-small,
   table[class="body"] .show-for-desktop {
@@ -917,8 +917,8 @@ table.large-button td {
 }
 .inner {
   display: block;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .inner img {
   float: none;
