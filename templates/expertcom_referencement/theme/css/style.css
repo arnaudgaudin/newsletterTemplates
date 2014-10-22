@@ -1008,3 +1008,54 @@ body .header a:active {
     line-height: 1.33;
   }
 }
+.contentOnline {
+  background-color: #ffffff;
+}
+.contentOnline,
+.contentOnline td,
+.contentOnline .inner {
+  color: #4b606d !important;
+}
+body .contentOnline a,
+body .contentOnline a:link,
+body .contentOnline a:visited,
+body .contentOnline a:hover,
+body .contentOnline a:focus,
+body .contentOnline a:active {
+  color: #4b606d !important;
+}
+.contentOnline .inner {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 10.2px;
+  line-height: 13.566px;
+}
+.contentOnline .online {
+  display: block;
+  padding-bottom: 5px;
+}
+.contentOnline .prestation {
+  display: block;
+}
+.contentInfoClient {
+  background-color: #ffffff;
+}
+.contentInfoClient,
+.contentInfoClient td,
+.contentInfoClient .inner {
+  color: #4b606d !important;
+}
+body .contentInfoClient a,
+body .contentInfoClient a:link,
+body .contentInfoClient a:visited,
+body .contentInfoClient a:hover,
+body .contentInfoClient a:focus,
+body .contentInfoClient a:active {
+  color: #4b606d !important;
+}
+.contentInfoClient .inner {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 11.4px;
+  line-height: 15.162px;
+}
