@@ -99,8 +99,8 @@ table.columns td, table.column td { padding-bottom: 0; }
 
 		//modification padding
 		.columns .text-pad {
-			padding-left: 19px;
-			padding-right: 20px;
+			padding-left: (@textPad * 2 - 1px);
+			padding-right: (@textPad * 2);
 		}
 
 		//rajout bordure à gauche
@@ -116,12 +116,12 @@ table.columns td, table.column td { padding-bottom: 0; }
 			border-left: 0;
 			.columns.four { .columnWidth(4); }
 			.columns.six { .columnWidth(6); }
-			.columns .text-pad { padding-left: 10px; }
+			.columns .text-pad { padding-left: @textPad; }
 		}
 
 		//padding normal à droite sur le dernier
 		&.last {
-			.columns .text-pad { padding-right: 10px; }
+			.columns .text-pad { padding-right: @textPad; }
 		}
 	}
 }
@@ -235,8 +235,8 @@ table.columns td, table.column td { padding-bottom: 0; }
 		padding-bottom: 20px;
 	}
 
-	.wrapper.first .columns .text-pad { padding-right: 20px; }
-	.wrapper.last .columns .text-pad { padding-left: 20px; }
+	.wrapper.first .columns .text-pad { padding-right: (@textPad * 2); }
+	.wrapper.last .columns .text-pad { padding-left: (@textPad * 2); }
 
 	.actualites {
 		background-color: @colorGan2;
@@ -277,8 +277,8 @@ table.columns td, table.column td { padding-bottom: 0; }
 			padding-top: 10px !important;
 			padding-bottom: 10px !important;
 		}
-		.wrapper.first .columns .text-pad { padding-right: 10px !important; }
-		.wrapper.last .columns .text-pad { padding-left: 10px !important; }
+		.wrapper.first .columns .text-pad { padding-right: @textPad !important; }
+		.wrapper.last .columns .text-pad { padding-left: @textPad !important; }
 	}
 }
 
