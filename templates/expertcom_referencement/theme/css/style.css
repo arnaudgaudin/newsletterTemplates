@@ -936,23 +936,28 @@ table.column td {
   padding-bottom: 0;
 }
 table.button td {
-  padding-bottom: 8px;
+  padding: 8px 0;
 }
 table.tiny-button td {
-  padding-bottom: 4px;
+  padding: 5px 0 4px;
 }
 table.small-button td {
-  padding-bottom: 7px;
+  padding: 8px 0 7px;
 }
 table.medium-button td {
-  padding-bottom: 10px;
+  padding: 12px 0 10px;
 }
 table.large-button td {
-  padding-bottom: 18px;
+  padding: 21px 0 18px;
 }
 .header table.columns td.sub-columns,
 .header table.column td.sub-columns,
 .header table.columns td.sub-column,
 .header table.column td.sub-column {
   padding-right: 0;
+}
+.wrapper-buttons {
+  background-color: #f00;
+  width: 100%;
+  -premailer-width: 100%;
 }

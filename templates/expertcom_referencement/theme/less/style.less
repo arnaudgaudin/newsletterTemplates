@@ -23,11 +23,11 @@ td.wrapper { padding-top: 0; }
 table.columns td, table.column td { padding-bottom: 0; }
 
 //remise en place paddings bottoms des boutons
-table.button td { padding-bottom: 8px; }
-table.tiny-button td { padding-bottom: 4px; }
-table.small-button td { padding-bottom: 7px; }
-table.medium-button td { padding-bottom: 10px; }
-table.large-button td { padding-bottom: 18px; }
+table.button td { padding: 8px 0; }
+table.tiny-button td { padding: 5px 0 4px; }
+table.small-button td { padding: 8px 0 7px; }
+table.medium-button td { padding: 12px 0 10px; }
+table.large-button td { padding: 21px 0 18px; }
 
 
 //gestion header
@@ -38,4 +38,12 @@ table.large-button td { padding-bottom: 18px; }
 	table.column td.sub-column {
 	  padding-right: 0;
 	}
+}
+
+
+//gestion boutons
+.wrapper-buttons {
+	background-color: #f00;
+	width: 100%;
+	-premailer-width: 100%;
 }
