@@ -16,8 +16,8 @@ h1, h2, h3, h4, h5, h6 { line-height: 1.1; }
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .inner {
-		padding-top: @prctPadding;
-		padding-bottom: @prctPadding;
+		padding-top: @textPadCollapse;
+		padding-bottom: @textPadCollapse;
 	}
 }
 
@@ -41,23 +41,6 @@ table.column td.sub-column {
 	padding-right: 0;
 }
 
-//paddings proportionnel en mode responsive
-@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
-	table[class="body"] .text-pad {
-		padding-left: @prctPadding !important;
-		padding-right: @prctPadding !important;
-	}
-
-	table[class="body"] .right-text-pad,
-	table[class="body"] .text-pad-right {
-		padding-left: @prctPadding !important;
-	}
-
-	table[class="body"] .left-text-pad,
-	table[class="body"] .text-pad-left {
-		padding-right: @prctPadding !important;
-	}
-}
 
 // header area
 // -------------------------
@@ -210,10 +193,10 @@ table.column td.sub-column {
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentFooter {
 		.inner {
-			padding-top: (@prctPadding / 2);
-			padding-bottom: (@prctPadding / 2);
+			padding-top: (@textPadCollapse / 2);
+			padding-bottom: (@textPadCollapse / 2);
 		}
-		.rounderWrapper { padding-right: @prctPadding; }
+		.rounderWrapper { padding-right: @textPadCollapse; }
 	}
 }
 

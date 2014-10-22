@@ -772,13 +772,17 @@ body.outlook p {
   table[class="body"] table.columns td.expander {
     width: 1px !important;
   }
+  table[class="body"] .text-pad {
+    padding-left: 2.777778% !important;
+    padding-right: 2.777778% !important;
+  }
   table[class="body"] .right-text-pad,
   table[class="body"] .text-pad-right {
-    padding-left: 20px !important;
+    padding-left: 2.777778% !important;
   }
   table[class="body"] .left-text-pad,
   table[class="body"] .text-pad-left {
-    padding-right: 20px !important;
+    padding-right: 2.777778% !important;
   }
   table[class="body"] .hide-for-small,
   table[class="body"] .show-for-desktop {
@@ -954,20 +958,6 @@ table.column td.sub-columns,
 table.columns td.sub-column,
 table.column td.sub-column {
   padding-right: 0;
-}
-@media only screen and (max-width: 720px) {
-  table[class="body"] .text-pad {
-    padding-left: 2.777778% !important;
-    padding-right: 2.777778% !important;
-  }
-  table[class="body"] .right-text-pad,
-  table[class="body"] .text-pad-right {
-    padding-left: 2.777778% !important;
-  }
-  table[class="body"] .left-text-pad,
-  table[class="body"] .text-pad-left {
-    padding-right: 2.777778% !important;
-  }
 }
 .header {
   background-color: #001f46;
