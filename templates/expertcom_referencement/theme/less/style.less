@@ -9,6 +9,12 @@
 	padding-bottom: @textPad;
 	img { float: none; }
 }
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .inner {
+		padding-top: @textPadCollapse;
+		padding-bottom: @textPadCollapse;
+	}
+}
 
 //pour rajouter de l'espace en haut et en dessous des wrappers
 .filler {
@@ -86,8 +92,16 @@ table.secondary:active td a {
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .header {
-		.wrapper.last td.sub-columns.first {
-			&, .name { line-height: 1.33; }
+		.wrapper.last td.sub-columns {
+			&.first { &, .name { line-height: 1.33 !important; } }
+
+			//déplacement padding des sub-columns sur les td
+			.text-pad, .text-pad-right {
+				padding-left: 0 !important;
+				padding-right: 0 !important;
+			}
+			&.first { padding-left: @textPadCollapse !important; }
+			padding-right: @textPadCollapse !important;
 		}
 	}
 }
@@ -125,4 +139,12 @@ table.secondary:active td a {
 		font-size: (@baseFontSize * 0.95);
 		line-height: (@baseFontSize * 0.95 * 1.33);
 	}
+}
+
+
+// contentTop area
+// -------------------------
+.contentTop {
+	background-color: @bodyBackground;
+	.newsletterInnerTextColor(@colorExpertCom1);
 }

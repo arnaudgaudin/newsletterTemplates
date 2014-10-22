@@ -27,8 +27,6 @@
 
 @baseFontSize:          12px;
 @baseLineHeight:        16px;
-@headingsColor:         @textColor;
-@headingsFontWeight:    bold;
 
 
 // Buttons
@@ -61,3 +59,5 @@
 // Padding config
 // --------------------------------------------------
 @textPad: 20px;
+//calcul du padding de 20px de manière relative
+@textPadCollapse: unit(round((@textPad / @containerWidth * 100), 6), %);
