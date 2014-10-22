@@ -931,10 +931,8 @@ table.large-button td {
 td.wrapper {
   padding-top: 0;
 }
-table.columns > tbody > tr > td,
-table.column > tbody > tr > td,
-table.columns > tr > td,
-table.column > tr > td {
+table.columns td,
+table.column td {
   padding-bottom: 0;
 }
 .header table.columns td.sub-columns,
