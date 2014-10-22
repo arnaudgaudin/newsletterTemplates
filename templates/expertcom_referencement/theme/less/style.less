@@ -41,13 +41,6 @@ table.large-button td { padding: 21px 0 18px; }
 	border-right: 1px solid @colorExpertCom5;
 }
 
-//gestion boutons
-.wrapper-buttons {
-	background-color: #f00;
-	width: 100%;
-	-premailer-width: 100%;
-}
-
 table.secondary td,
 table.secondary td a,
 table.secondary:hover td {
@@ -148,3 +141,36 @@ table.secondary:active td a {
 	background-color: @bodyBackground;
 	.newsletterInnerTextColor(@colorExpertCom1);
 }
+
+
+// contentMain area
+// -------------------------
+.contentMain {
+	
+	//gestion boutons
+	.wrapper-buttons {
+		width: 100%;
+		-premailer-width: 100%;
+
+		.small-button td a {
+			font-size: (@baseFontSize * 0.95);
+			line-height: (@baseFontSize * 0.95 * 1.33);
+		}
+
+		.inner {
+			padding-top: (@textPad / 2);
+			padding-bottom: 0;
+		}
+	}
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentMain {
+		.wrapper-buttons {
+			.inner {
+				padding-top: (@textPadCollapse * 2);
+				padding-bottom: 0;
+			}
+		}
+	}
+}
+
