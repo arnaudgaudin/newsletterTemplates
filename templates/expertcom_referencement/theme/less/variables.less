@@ -2,21 +2,22 @@
 
 // Expert Infos
 // -------------------------
-@expertInfosRouge: #d12329;
-@expertInfosBleu: #4b606d;
-@expertInfosGris: #e6e8eb;
+@colorExpertCom1: #d12329;
+@colorExpertCom2: #4b606d;
+@colorExpertCom3: #afbabf;
+@colorExpertCom4: #d9d9d9;
+@colorExpertCom5: #ebebeb;
 
 
 // Scaffolding
 // -------------------------
-@bodyBackground:        #aaaaaa;
 @containerBackground:   #ffffff;
 @textColor:             #222222;
 
 
 // Links
 // -------------------------
-@linkColor:             @expertInfosRouge;
+@linkColor:             @colorExpertCom1;
 @linkColorHover:        darken(@linkColor, 10%);
 
 
@@ -30,13 +31,15 @@
 
 // Buttons
 // -------------------------
-@btnSecondaryBackground: @expertInfosBleu;
+@btnSecondaryBackground: @colorExpertCom2;
 
 
 // Grid config
 // --------------------------------------------------
 @columnWidth: 55px;
 @gutterWidth: 0;
+//on rajoute les bordures du container au calcul
+@containerWidth: (11 * @gutterWidth + 12 * @columnWidth + 2px);
 
 
 // Component sizing

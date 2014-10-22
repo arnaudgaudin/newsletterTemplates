@@ -3,7 +3,7 @@
 **********************************************/
 body,
 table.body {
-  background-color: #aaaaaa;
+  background-color: #ffffff;
 }
 /**********************************************
 * Ink v1.0.5 - Copyright 2013 ZURB Inc        *
@@ -361,8 +361,8 @@ table.column .text-pad-right {
   padding: 10px;
 }
 .two-up td {
-  width: 330px;
-  -premailer-width: 330;
+  width: 331px;
+  -premailer-width: 331;
 }
 .three-up td {
   width: 220px;
@@ -672,7 +672,7 @@ body.outlook p {
   display: inline !important;
 }
 /*  Media Queries */
-@media only screen and (max-width: 660px) {
+@media only screen and (max-width: 662px) {
   table[class="body"] img {
     width: auto !important;
     height: auto !important;
@@ -950,11 +950,9 @@ table.medium-button td {
 table.large-button td {
   padding: 21px 0 18px;
 }
-.header table.columns td.sub-columns,
-.header table.column td.sub-columns,
-.header table.columns td.sub-column,
-.header table.column td.sub-column {
-  padding-right: 0;
+.row.bordered {
+  border-left: 1px solid #ebebeb;
+  border-right: 1px solid #ebebeb;
 }
 .wrapper-buttons {
   background-color: #f00;
@@ -970,4 +968,26 @@ table.secondary:hover td a,
 table.secondary td a:visited,
 table.secondary:active td a {
   color: #ffffff !important;
+}
+.header {
+  background-color: #4b606d;
+}
+.header,
+.header td,
+.header .inner {
+  color: #afbabf !important;
+}
+body .header a,
+body .header a:link,
+body .header a:visited,
+body .header a:hover,
+body .header a:focus,
+body .header a:active {
+  color: #afbabf !important;
+}
+.header table.columns td.sub-columns,
+.header table.column td.sub-columns,
+.header table.columns td.sub-column,
+.header table.column td.sub-column {
+  padding-right: 0;
 }
