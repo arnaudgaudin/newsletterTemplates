@@ -41,27 +41,7 @@ table.column td.sub-column {
 	padding-right: 0;
 }
 
-//changement paddings par défaut
-table.columns .text-pad,
-table.column .text-pad {
-	padding-left: 20px;
-	padding-right: 20px;
-}
-
-table.columns .left-text-pad,
-table.columns .text-pad-left,
-table.column .left-text-pad,
-table.column .text-pad-left {
-	padding-left: 20px;
-}
-
-table.columns .right-text-pad,
-table.columns .text-pad-right,
-table.column .right-text-pad,
-table.column .text-pad-right {
-	padding-right: 20px;
-}
-
+//paddings proportionnel en mode responsive
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .text-pad {
 		padding-left: @prctPadding !important;
