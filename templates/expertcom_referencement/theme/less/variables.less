@@ -1,5 +1,11 @@
 // extends theme's variables.less file here
 
+// Expert Infos
+// -------------------------
+@expertInfosRouge: #d12329;
+@expertInfosBleu: #4b606d;
+@expertInfosGris: #e6e8eb;
+
 
 // Scaffolding
 // -------------------------
@@ -8,7 +14,40 @@
 @textColor:             #222222;
 
 
+// Links
+// -------------------------
+@linkColor:             @expertInfosRouge;
+@linkColorHover:        darken(@linkColor, 10%);
+
+
+// Typography
+// -------------------------
+@baseFontSize:          12px;
+@baseLineHeight:        16px;
+@headingsColor:         @textColor;
+@headingsFontWeight:    bold;
+
+
+// Buttons
+// -------------------------
+@btnSecondaryBackground: @expertInfosBleu;
+
+
 // Grid config
 // --------------------------------------------------
 @columnWidth: 55px;
 @gutterWidth: 0;
+
+
+// Component sizing
+// -------------------------
+@headingsFontSizeH1:    26px;
+@headingsFontSizeH2:    22px;
+@headingsFontSizeH3:    16px;
+@headingsFontSizeH4:    15px;
+@headingsFontSizeH5:    14px;
+@headingsFontSizeH6:    13px;
+
+@fontSizeLarge:         (@baseFontSize * 1.50);  // ~18px
+@fontSizeSmall:         (@baseFontSize * 0.85);  // ~10px
+@fontSizeMini:          (@baseFontSize * 0.75);  // ~9px
