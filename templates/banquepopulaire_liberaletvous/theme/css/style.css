@@ -995,6 +995,9 @@ ol.unstyled {
 .separator table.column td {
   padding: 0;
 }
+.contentOnline {
+  background-color: #000000;
+}
 .contentMain .wrapper {
   padding-top: 0;
 }
