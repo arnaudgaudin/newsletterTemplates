@@ -1167,7 +1167,39 @@ body .contentTop a:active {
 }
 @media only screen and (max-width: 662px) {
   table[class="body"] .contentMain .wrapper-buttons .inner {
-    padding-top: 6.042296%;
-    padding-bottom: 0;
+    padding-top: 6.042296% !important;
+    padding-bottom: 0 !important;
   }
+}
+.contentBottom .title {
+  color: #d12329;
+}
+.contentBottom .number {
+  display: block;
+  font-size: 80px;
+  line-height: 120px;
+  font-weight: bold;
+  color: #afbabf;
+  background-color: #0f0;
+}
+@media only screen and (max-width: 662px) {
+  table[class="body"] .contentBottom .number {
+    line-height: 100px !important;
+  }
+}
+.contentFooter {
+  background-color: #ebebeb;
+}
+.contentFooter,
+.contentFooter td,
+.contentFooter .inner {
+  color: #4b606d !important;
+}
+body .contentFooter a,
+body .contentFooter a:link,
+body .contentFooter a:visited,
+body .contentFooter a:hover,
+body .contentFooter a:focus,
+body .contentFooter a:active {
+  color: #4b606d !important;
 }

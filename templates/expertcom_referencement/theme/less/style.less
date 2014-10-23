@@ -232,10 +232,43 @@ table.secondary:hover td a, table.secondary td a:visited, table.secondary:active
 	table[class="body"] .contentMain {
 		.wrapper-buttons {
 			.inner {
-				padding-top: (@textPadCollapse * 2);
-				padding-bottom: 0;
+				padding-top: (@textPadCollapse * 2) !important;
+				padding-bottom: 0 !important;
 			}
 		}
 	}
 }
 
+
+// contentBottom area
+// -------------------------
+.contentBottom {
+
+	.title { color: @colorExpertCom1; }
+
+	.number {
+		display: block;
+		//Même hauteur que l'image
+		font-size: 80px;
+		line-height: 120px;
+		font-weight: bold;
+		color: @colorExpertCom3;
+		background-color: #0f0;
+	}
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentBottom {
+		.number { line-height: 100px !important; }
+	}
+}
+
+
+// contentFooter area
+// -------------------------
+.contentFooter {
+	background-color: @colorExpertCom5;
+	.newsletterInnerTextColor(@colorExpertCom2);
+	
+
+
+}
