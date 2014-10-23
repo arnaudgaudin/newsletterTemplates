@@ -3,18 +3,18 @@
 
 // additionnal template's style which extends ink's style
 
-.inner {
-	display: block;
-	padding-top: (@textPad / 2);
-	padding-bottom: (@textPad / 2);
-	img { float: none; }
-}
-@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
-	table[class="body"] .inner {
-		padding-top: @textPadCollapse !important;
-		padding-bottom: @textPadCollapse !important;
-	}
-}
+// .inner {
+// 	display: block;
+// 	padding-top: (@textPad / 2);
+// 	padding-bottom: (@textPad / 2);
+// 	img { float: none; }
+// }
+// @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+// 	table[class="body"] .inner {
+// 		padding-top: @textPadCollapse !important;
+// 		padding-bottom: @textPadCollapse !important;
+// 	}
+// }
 
 //pour rajouter de l'espace en haut et en dessous des wrappers
 .filler {
@@ -57,10 +57,8 @@ table.secondary:hover td a, table.secondary td a:visited, table.secondary:active
 //gestion row avec bordures de séparation
 .row.bordered {
 	//suppression décalage en trop
-	.inner {
-		padding-top: 0;
-		padding-bottom: 0;
-	}
+	td.wrapper { padding-top: 0; }
+	table.columns td, table.column td { padding-bottom: 0; }
 
 	.wrapper {
 
@@ -165,7 +163,7 @@ table.secondary:hover td a, table.secondary td a:visited, table.secondary:active
 .contentOnline {
 	background-color: @bodyBackground;
 	.newsletterInnerTextColor(@colorExpertCom2);
-	.inner {
+	td {
 		font-size: @fontSizeSmall;
 		line-height: (@fontSizeSmall * 1.33);
 	}
@@ -184,7 +182,7 @@ table.secondary:hover td a, table.secondary td a:visited, table.secondary:active
 .contentInfoClient {
 	background-color: @bodyBackground;
 	.newsletterInnerTextColor(@colorExpertCom2);
-	.inner {
+	td {
 		font-size: (@baseFontSize * 0.95);
 		line-height: (@baseFontSize * 0.95 * 1.33);
 	}
@@ -211,11 +209,19 @@ table.secondary:hover td a, table.secondary td a:visited, table.secondary:active
 	// table.column td.sub-column {
 	// 	padding-right: 0;
 	// }
+
+	.text {
+		display: block;
+		padding-bottom: 10px;
+	}
 	
 	//gestion boutons
 	.wrapper-buttons {
 		width: 100%;
 		-premailer-width: 100%;
+
+		.sub-columns.first { padding-right: (@textPad / 2); }
+		.sub-columns.last { padding-left: (@textPad / 2); }
 
 		.button td {
 			padding: 0;
@@ -229,18 +235,13 @@ table.secondary:hover td a, table.secondary td a:visited, table.secondary:active
 				box-sizing: border-box;
 			}
 		}
-
-		.inner { padding-bottom: 0; }
 	}
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentMain {
 		.wrapper-buttons {
-			.inner {
-				padding-top: (@textPadCollapse * 2) !important;
-				padding-bottom: 0 !important;
-			}
-			.text-pad-right { padding-left: 0 !important; }
+			.sub-columns.first { padding-right: (@textPadCollapse / 2); }
+			.sub-columns.last { padding-left: (@textPadCollapse / 2); }
 
 			.button td { width: auto !important; }
 		}
@@ -304,7 +305,7 @@ table.secondary:hover td a, table.secondary td a:visited, table.secondary:active
 	background-color: @colorExpertCom4;
 	.newsletterInnerTextColor(@colorExpertCom2);
 
-	.inner {
+	td {
 		font-size: @fontSizeSmall;
 		line-height: (@fontSizeSmall * 1.33);
 	}
@@ -317,7 +318,7 @@ table.secondary:hover td a, table.secondary td a:visited, table.secondary:active
 	background-color: @colorExpertCom2;
 	.newsletterInnerTextColor(#ffffff);
 
-	.inner {
+	td {
 		font-size: @headingsFontSizeH6;
 		line-height: (@headingsFontSizeH6 * 1.33);
 		word-break: normal;
@@ -332,7 +333,7 @@ table.secondary:hover td a, table.secondary td a:visited, table.secondary:active
 	background-color: @bodyBackground;
 	.newsletterInnerTextColor(@colorExpertCom2);
 
-	.inner {
+	td {
 		font-size: (@baseFontSize * 0.95);
 		line-height: (@baseFontSize * 0.95 * 1.33);
 	}
