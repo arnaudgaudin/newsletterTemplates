@@ -11,8 +11,8 @@
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .inner {
-		padding-top: @textPadCollapse;
-		padding-bottom: @textPadCollapse;
+		padding-top: @textPadCollapse !important;
+		padding-bottom: @textPadCollapse !important;
 	}
 }
 
@@ -277,6 +277,12 @@ table.secondary:hover td a, table.secondary td a:visited, table.secondary:active
 	.title {
 		text-transform: uppercase;
 		padding-bottom: 5px;
+	}
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentFooter .columns {
+		background-color: #f00 !important;
+		td { background-color: #0f0 !important; }
 	}
 }
 

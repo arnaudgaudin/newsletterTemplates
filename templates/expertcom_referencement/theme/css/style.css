@@ -797,6 +797,10 @@ body.outlook p {
   table[class="container"] .block-grid td {
     width: 100% !important;
   }
+  table[class="body"] .row tr,
+  table[class="body"] .row tbody {
+    display: block !important;
+  }
 }
 .appleLinks a {
   color: #d12329;
@@ -931,8 +935,8 @@ table.large-button td {
 }
 @media only screen and (max-width: 662px) {
   table[class="body"] .inner {
-    padding-top: 3.021148%;
-    padding-bottom: 3.021148%;
+    padding-top: 3.021148% !important;
+    padding-bottom: 3.021148% !important;
   }
 }
 .filler {
@@ -1213,6 +1217,14 @@ body .contentFooter a:active {
 .contentFooter .title {
   text-transform: uppercase;
   padding-bottom: 5px;
+}
+@media only screen and (max-width: 662px) {
+  table[class="body"] .contentFooter .columns {
+    background-color: #f00 !important;
+  }
+  table[class="body"] .contentFooter .columns td {
+    background-color: #0f0 !important;
+  }
 }
 .contentContact {
   background-color: #d9d9d9;
