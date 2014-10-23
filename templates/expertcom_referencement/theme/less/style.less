@@ -18,7 +18,6 @@
 
 //pour rajouter de l'espace en haut et en dessous des wrappers
 .filler {
-	background-color: #0ff;
 	&, .empty {
 		line-height: 0;
 		font-size: 0;
@@ -59,10 +58,7 @@ table.secondary:hover td a, table.secondary td a:visited, table.secondary:active
 	.wrapper {
 
 		//modification padding
-		.columns .text-pad {
-			padding-left: (@textPad * 2 - 1px);
-			padding-right: (@textPad * 2);
-		}
+		.columns .text-pad { padding-left: (@textPad - 1px); }
 
 		//rajout bordure à gauche
 		border-left: 1px solid @colorExpertCom5;
@@ -75,11 +71,6 @@ table.secondary:hover td a, table.secondary td a:visited, table.secondary:active
 			border-left: 0;
 			.columns.six { .columnWidth(6); }
 			.columns .text-pad { padding-left: @textPad; }
-		}
-
-		//padding normal à droite sur le dernier
-		&.last {
-			.columns .text-pad { padding-right: @textPad; }
 		}
 	}
 }
@@ -253,7 +244,13 @@ table.secondary:hover td a, table.secondary td a:visited, table.secondary:active
 		line-height: 120px;
 		font-weight: bold;
 		color: @colorExpertCom3;
-		background-color: #0f0;
+	}
+
+	.text b { color: @colorExpertCom2; }
+
+	//rajout bordure sur image
+	img {
+		border: 1px solid @colorExpertCom5;
 	}
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {

@@ -936,7 +936,6 @@ table.large-button td {
   }
 }
 .filler {
-  background-color: #0ff;
   height: 10px;
   -premailer-height: 10px;
 }
@@ -989,8 +988,7 @@ table.secondary:active td a {
   border-left: 1px solid #ebebeb;
 }
 .row.bordered .wrapper .columns .text-pad {
-  padding-left: 39px;
-  padding-right: 40px;
+  padding-left: 19px;
 }
 .row.bordered .wrapper .columns.six {
   width: 329px;
@@ -1004,9 +1002,6 @@ table.secondary:active td a {
 }
 .row.bordered .wrapper.first .columns .text-pad {
   padding-left: 20px;
-}
-.row.bordered .wrapper.last .columns .text-pad {
-  padding-right: 20px;
 }
 @media only screen and (max-width: 662px) {
   table[class="body"] .row.bordered .filler {
@@ -1180,7 +1175,12 @@ body .contentTop a:active {
   line-height: 120px;
   font-weight: bold;
   color: #afbabf;
-  background-color: #0f0;
+}
+.contentBottom .text b {
+  color: #4b606d;
+}
+.contentBottom img {
+  border: 1px solid #ebebeb;
 }
 @media only screen and (max-width: 662px) {
   table[class="body"] .contentBottom .number {
