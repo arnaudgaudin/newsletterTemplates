@@ -1109,8 +1109,6 @@ body .contentOnline a:active {
   color: #4b606d !important;
 }
 .contentOnline .inner {
-  padding-top: 10px;
-  padding-bottom: 10px;
   font-size: 10.2px;
   line-height: 13.566px;
 }
@@ -1138,8 +1136,6 @@ body .contentInfoClient a:active {
   color: #4b606d !important;
 }
 .contentInfoClient .inner {
-  padding-top: 10px;
-  padding-bottom: 10px;
   font-size: 11.4px;
   line-height: 15.162px;
 }
@@ -1168,7 +1164,6 @@ body .contentTop a:active {
   line-height: 15.162px;
 }
 .contentMain .wrapper-buttons .inner {
-  padding-top: 10px;
   padding-bottom: 0;
 }
 @media only screen and (max-width: 662px) {
@@ -1238,4 +1233,53 @@ body .contentContact a:active {
 .contentContact .inner {
   font-size: 10.2px;
   line-height: 13.566px;
+}
+.contentWebsite {
+  background-color: #4b606d;
+}
+.contentWebsite,
+.contentWebsite td,
+.contentWebsite .inner {
+  color: #ffffff !important;
+}
+body .contentWebsite a,
+body .contentWebsite a:link,
+body .contentWebsite a:visited,
+body .contentWebsite a:hover,
+body .contentWebsite a:focus,
+body .contentWebsite a:active {
+  color: #ffffff !important;
+}
+.contentWebsite .inner {
+  font-size: 13px;
+  line-height: 17.29px;
+  word-break: normal;
+  word-wrap: normal;
+}
+.contentUnsubscribe {
+  background-color: #ffffff;
+}
+.contentUnsubscribe,
+.contentUnsubscribe td,
+.contentUnsubscribe .inner {
+  color: #4b606d !important;
+}
+body .contentUnsubscribe a,
+body .contentUnsubscribe a:link,
+body .contentUnsubscribe a:visited,
+body .contentUnsubscribe a:hover,
+body .contentUnsubscribe a:focus,
+body .contentUnsubscribe a:active {
+  color: #4b606d !important;
+}
+.contentUnsubscribe .inner {
+  font-size: 11.4px;
+  line-height: 15.162px;
+}
+.contentUnsubscribe .prestation {
+  display: block;
+}
+.contentUnsubscribe .unsub {
+  display: block;
+  padding-top: 5px;
 }

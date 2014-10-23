@@ -176,8 +176,6 @@ table.secondary:hover td a, table.secondary td a:visited, table.secondary:active
 	background-color: @bodyBackground;
 	.newsletterInnerTextColor(@colorExpertCom2);
 	.inner {
-		padding-top: (@textPad / 2);
-		padding-bottom: (@textPad / 2);
 		font-size: @fontSizeSmall;
 		line-height: (@fontSizeSmall * 1.33);
 	}
@@ -197,8 +195,6 @@ table.secondary:hover td a, table.secondary td a:visited, table.secondary:active
 	background-color: @bodyBackground;
 	.newsletterInnerTextColor(@colorExpertCom2);
 	.inner {
-		padding-top: (@textPad / 2);
-		padding-bottom: (@textPad / 2);
 		font-size: (@baseFontSize * 0.95);
 		line-height: (@baseFontSize * 0.95 * 1.33);
 	}
@@ -227,10 +223,7 @@ table.secondary:hover td a, table.secondary td a:visited, table.secondary:active
 			line-height: (@baseFontSize * 0.95 * 1.33);
 		}
 
-		.inner {
-			padding-top: (@textPad / 2);
-			padding-bottom: 0;
-		}
+		.inner { padding-bottom: 0; }
 	}
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
@@ -266,9 +259,7 @@ table.secondary:hover td a, table.secondary td a:visited, table.secondary:active
 	.text b { color: @colorExpertCom2; }
 
 	//rajout bordure sur image
-	img {
-		border: 1px solid @colorExpertCom5;
-	}
+	img { border: 1px solid @colorExpertCom5; }
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentBottom {
@@ -303,3 +294,36 @@ table.secondary:hover td a, table.secondary td a:visited, table.secondary:active
 }
 
 
+// contentWebsite area
+// -------------------------
+.contentWebsite {
+	background-color: @colorExpertCom2;
+	.newsletterInnerTextColor(#ffffff);
+
+	.inner {
+		font-size: @headingsFontSizeH6;
+		line-height: (@headingsFontSizeH6 * 1.33);
+		word-break: normal;
+		word-wrap: normal;
+	}
+}
+
+
+// contentUnsubscribe area
+// -------------------------
+.contentUnsubscribe {
+	background-color: @bodyBackground;
+	.newsletterInnerTextColor(@colorExpertCom2);
+
+	.inner {
+		font-size: (@baseFontSize * 0.95);
+		line-height: (@baseFontSize * 0.95 * 1.33);
+	}
+
+	.prestation { display: block; }
+
+	.unsub {
+		display: block;
+		padding-top: 5px;
+	}
+}
