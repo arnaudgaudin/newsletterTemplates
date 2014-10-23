@@ -15,7 +15,6 @@ table.body {
 body {
   width: 100% !important;
   min-width: 100%;
-  -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   margin: 0;
   padding: 0;
@@ -64,8 +63,7 @@ table {
 }
 td {
   word-break: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
+  -ms-hyphens: auto;
   hyphens: auto;
   border-collapse: collapse !important;
 }
@@ -658,13 +656,9 @@ table.alert:hover td {
   background: #67080a !important;
 }
 table.radius td {
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
   border-radius: 3px;
 }
 table.round td {
-  -webkit-border-radius: 500px;
-  -moz-border-radius: 500px;
   border-radius: 500px;
 }
 /* Outlook First */
@@ -1155,12 +1149,18 @@ body .contentTop a:active {
 }
 .contentMain .wrapper-buttons .button td a {
   padding: 5px 5px 4px 5px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   font-weight: bold;
   font-size: 11.4px;
   line-height: 15.162px;
+  box-sizing: border-box;
+}
+.contentMain .wrapper-buttons .button td a,
+.contentMain .wrapper-buttons .button td a:link,
+.contentMain .wrapper-buttons .button td a:visited,
+.contentMain .wrapper-buttons .button td a:hover,
+.contentMain .wrapper-buttons .button td a:focus,
+.contentMain .wrapper-buttons .button td a:active {
+  color: #ffffff !important;
 }
 .contentMain .wrapper-buttons .inner {
   padding-bottom: 0;
