@@ -5,8 +5,8 @@
 
 .inner {
 	display: block;
-	padding-top: @textPad;
-	padding-bottom: @textPad;
+	padding-top: (@textPad / 2);
+	padding-bottom: (@textPad / 2);
 	img { float: none; }
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
@@ -18,10 +18,13 @@
 
 //pour rajouter de l'espace en haut et en dessous des wrappers
 .filler {
+	background-color: #0ff;
 	&, .empty {
 		line-height: 0;
 		font-size: 0;
 	}
+	height: (@textPad / 2);
+	-premailer-height: (@textPad / 2);
 }
 
 //suppression paddings verticaux déportés sur classe .inner dans certaines zones
@@ -35,22 +38,84 @@ table.small-button td { padding: 8px 0 7px; }
 table.medium-button td { padding: 12px 0 10px; }
 table.large-button td { padding: 21px 0 18px; }
 
+//couleurs des textes des boutons secondaires
+table.secondary td, table.secondary td a, table.secondary:hover td { color: #ffffff; }
+table.secondary:hover td a, table.secondary td a:visited, table.secondary:active td a { color: #ffffff !important; }
+
 //rajout bordure gauche et droite sur certaines zones
-.row.bordered {
+.row.sideBorder {
 	border-left: 1px solid @colorExpertCom5;
 	border-right: 1px solid @colorExpertCom5;
 }
 
-table.secondary td,
-table.secondary td a,
-table.secondary:hover td {
-	color: #ffffff;
-}
+//gestion row avec bordures de séparation
+.row.bordered {
+	//suppression décalage en trop
+	.inner {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
 
-table.secondary:hover td a,
-table.secondary td a:visited,
-table.secondary:active td a {
-	color: #ffffff !important;
+	.wrapper {
+
+		//modification padding
+		.columns .text-pad {
+			padding-left: (@textPad * 2 - 1px);
+			padding-right: (@textPad * 2);
+		}
+
+		//rajout bordure à gauche
+		border-left: 1px solid @colorExpertCom5;
+
+		//réduction largeur tableau 6 colonnes de 1px pour compenser
+		.columns.six { width: (5 * @gutterWidth + 6 * @columnWidth - 1px); }
+
+		//pas de bordure sur le premier
+		&.first {
+			border-left: 0;
+			.columns.six { .columnWidth(6); }
+			.columns .text-pad { padding-left: @textPad; }
+		}
+
+		//padding normal à droite sur le dernier
+		&.last {
+			.columns .text-pad { padding-right: @textPad; }
+		}
+	}
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .row.bordered {
+		//masquage filler
+		.filler {
+			display: none !important;
+			visibility: hidden !important;
+		}
+
+		.wrapper {
+			//supppression décalage interne en trop
+			.columns .text-pad {
+				padding-left: 0 !important;
+				padding-right: 0 !important;
+			}
+
+			//changement orientation bordure et compensation padding
+			border-left: 0 !important;
+			padding-left: @textPadCollapse !important;
+			padding-right: @textPadCollapse !important;
+
+			.columns {
+				border-top: 1px solid @colorExpertCom5 !important;
+				td {
+					padding-top: @textPadCollapse !important;
+					padding-bottom: @textPadCollapse !important;
+				}
+			}
+			&.first .columns {
+				border-top: 0 !important;
+				td { padding-top: 10px !important; }
+			}
+		}
+	}
 }
 
 

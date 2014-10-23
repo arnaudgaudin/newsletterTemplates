@@ -923,8 +923,8 @@ table.large-button td {
 }
 .inner {
   display: block;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .inner img {
   float: none;
@@ -934,6 +934,11 @@ table.large-button td {
     padding-top: 3.021148%;
     padding-bottom: 3.021148%;
   }
+}
+.filler {
+  background-color: #0ff;
+  height: 10px;
+  -premailer-height: 10px;
 }
 .filler,
 .filler .empty {
@@ -962,10 +967,6 @@ table.medium-button td {
 table.large-button td {
   padding: 21px 0 18px;
 }
-.row.bordered {
-  border-left: 1px solid #ebebeb;
-  border-right: 1px solid #ebebeb;
-}
 table.secondary td,
 table.secondary td a,
 table.secondary:hover td {
@@ -975,6 +976,65 @@ table.secondary:hover td a,
 table.secondary td a:visited,
 table.secondary:active td a {
   color: #ffffff !important;
+}
+.row.sideBorder {
+  border-left: 1px solid #ebebeb;
+  border-right: 1px solid #ebebeb;
+}
+.row.bordered .inner {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.row.bordered .wrapper {
+  border-left: 1px solid #ebebeb;
+}
+.row.bordered .wrapper .columns .text-pad {
+  padding-left: 39px;
+  padding-right: 40px;
+}
+.row.bordered .wrapper .columns.six {
+  width: 329px;
+}
+.row.bordered .wrapper.first {
+  border-left: 0;
+}
+.row.bordered .wrapper.first .columns.six {
+  width: 330px;
+  -premailer-width: 330;
+}
+.row.bordered .wrapper.first .columns .text-pad {
+  padding-left: 20px;
+}
+.row.bordered .wrapper.last .columns .text-pad {
+  padding-right: 20px;
+}
+@media only screen and (max-width: 662px) {
+  table[class="body"] .row.bordered .filler {
+    display: none !important;
+    visibility: hidden !important;
+  }
+  table[class="body"] .row.bordered .wrapper {
+    border-left: 0 !important;
+    padding-left: 3.021148% !important;
+    padding-right: 3.021148% !important;
+  }
+  table[class="body"] .row.bordered .wrapper .columns .text-pad {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  table[class="body"] .row.bordered .wrapper .columns {
+    border-top: 1px solid #ebebeb !important;
+  }
+  table[class="body"] .row.bordered .wrapper .columns td {
+    padding-top: 3.021148% !important;
+    padding-bottom: 3.021148% !important;
+  }
+  table[class="body"] .row.bordered .wrapper.first .columns {
+    border-top: 0 !important;
+  }
+  table[class="body"] .row.bordered .wrapper.first .columns td {
+    padding-top: 10px !important;
+  }
 }
 .header {
   background-color: #4b606d;
