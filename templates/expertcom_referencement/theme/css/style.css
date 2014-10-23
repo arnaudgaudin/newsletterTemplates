@@ -797,10 +797,6 @@ body.outlook p {
   table[class="container"] .block-grid td {
     width: 100% !important;
   }
-  table[class="body"] .row tr,
-  table[class="body"] .row tbody {
-    display: block !important;
-  }
 }
 .appleLinks a {
   color: #d12329;
@@ -965,21 +961,6 @@ td.wrapper {
 table.columns td,
 table.column td {
   padding-bottom: 0;
-}
-table.button td {
-  padding: 8px 0;
-}
-table.tiny-button td {
-  padding: 5px 0 4px;
-}
-table.small-button td {
-  padding: 8px 0 7px;
-}
-table.medium-button td {
-  padding: 12px 0 10px;
-}
-table.large-button td {
-  padding: 21px 0 18px;
 }
 table.secondary td,
 table.secondary td a,
@@ -1163,7 +1144,14 @@ body .contentTop a:active {
   width: 100%;
   -premailer-width: 100%;
 }
-.contentMain .wrapper-buttons .small-button td a {
+.contentMain .wrapper-buttons .button td {
+  padding: 0;
+}
+.contentMain .wrapper-buttons .button td a {
+  padding: 5px 5px 4px 5px;
+  width: auto;
+  height: auto;
+  font-weight: bold;
   font-size: 11.4px;
   line-height: 15.162px;
 }
@@ -1174,6 +1162,9 @@ body .contentTop a:active {
   table[class="body"] .contentMain .wrapper-buttons .inner {
     padding-top: 6.042296% !important;
     padding-bottom: 0 !important;
+  }
+  table[class="body"] .contentMain .wrapper-buttons .button td {
+    width: auto !important;
   }
 }
 .contentBottom .title {

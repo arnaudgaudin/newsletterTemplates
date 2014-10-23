@@ -44,13 +44,6 @@
 td.wrapper { padding-top: 0; }
 table.columns td, table.column td { padding-bottom: 0; }
 
-//remise en place paddings bottoms des boutons
-table.button td { padding: 8px 0; }
-table.tiny-button td { padding: 5px 0 4px; }
-table.small-button td { padding: 8px 0 7px; }
-table.medium-button td { padding: 12px 0 10px; }
-table.large-button td { padding: 21px 0 18px; }
-
 //couleurs des textes des boutons secondaires
 table.secondary td, table.secondary td a, table.secondary:hover td { color: #ffffff; }
 table.secondary:hover td a, table.secondary td a:visited, table.secondary:active td a { color: #ffffff !important; }
@@ -218,9 +211,17 @@ table.secondary:hover td a, table.secondary td a:visited, table.secondary:active
 		width: 100%;
 		-premailer-width: 100%;
 
-		.small-button td a {
-			font-size: (@baseFontSize * 0.95);
-			line-height: (@baseFontSize * 0.95 * 1.33);
+		.button td {
+			padding: 0;
+			a {
+				//restylage bouton par défaut
+				padding: 5px 5px 4px 5px;
+				width: auto;
+				height: auto;
+				font-weight: bold;
+				font-size: (@baseFontSize * 0.95);
+				line-height: (@baseFontSize * 0.95 * 1.33);
+			}
 		}
 
 		.inner { padding-bottom: 0; }
@@ -233,6 +234,8 @@ table.secondary:hover td a, table.secondary td a:visited, table.secondary:active
 				padding-top: (@textPadCollapse * 2) !important;
 				padding-bottom: 0 !important;
 			}
+
+			.button td { width: auto !important; }
 		}
 	}
 }
