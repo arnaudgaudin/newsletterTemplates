@@ -1218,14 +1218,6 @@ body .contentFooter a:active {
   text-transform: uppercase;
   padding-bottom: 5px;
 }
-@media only screen and (max-width: 662px) {
-  table[class="body"] .contentFooter .columns {
-    background-color: #f00 !important;
-  }
-  table[class="body"] .contentFooter .columns td {
-    background-color: #0f0 !important;
-  }
-}
 .contentContact {
   background-color: #d9d9d9;
 }
