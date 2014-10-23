@@ -95,14 +95,12 @@ table.container {
 table.row {
   padding: 0px;
   width: 100%;
-  position: relative;
 }
 table.container table.row {
   display: block;
 }
 td.wrapper {
   padding: 10px 0 0px 0px;
-  position: relative;
 }
 table.columns,
 table.column {
@@ -116,7 +114,7 @@ table.columns td.sub-columns,
 table.column td.sub-columns,
 table.columns td.sub-column,
 table.column td.sub-column {
-  padding-right: 10px;
+  padding-right: 0;
 }
 td.sub-column,
 td.sub-columns {
@@ -678,10 +676,12 @@ body.outlook p {
     width: 95% !important;
   }
   table[class="body"] .row {
+    position: relative !important;
     width: 100% !important;
     display: block !important;
   }
   table[class="body"] .wrapper {
+    position: relative !important;
     display: block !important;
     padding-right: 0 !important;
   }
@@ -767,18 +767,18 @@ body.outlook p {
     width: 1px !important;
   }
   table[class="body"] .text-pad {
-    padding-left: 3.021148% !important;
-    padding-right: 3.021148% !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
   }
   table[class="body"] .right-text-pad,
   table[class="body"] .text-pad-right {
-    padding-left: 3.021148% !important;
-    padding-right: 3.021148% !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
   }
   table[class="body"] .left-text-pad,
   table[class="body"] .text-pad-left {
-    padding-left: 3.021148% !important;
-    padding-right: 3.021148% !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
   }
   table[class="body"] .hide-for-small,
   table[class="body"] .show-for-desktop {
@@ -925,8 +925,8 @@ table.large-button td {
 }
 @media only screen and (max-width: 662px) {
   table[class="body"] .inner {
-    padding-top: 3.021148% !important;
-    padding-bottom: 3.021148% !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
   }
 }
 .filler {
@@ -948,13 +948,6 @@ table.large-button td {
   border-width: 8px;
   border-style: solid;
   border-color: transparent transparent transparent #d12329;
-}
-td.wrapper {
-  padding-top: 0;
-}
-table.columns td,
-table.column td {
-  padding-bottom: 0;
 }
 table.secondary td,
 table.secondary td a,
@@ -1000,8 +993,8 @@ table.secondary:active td a {
   }
   table[class="body"] .row.bordered .wrapper {
     border-left: 0 !important;
-    padding-left: 3.021148% !important;
-    padding-right: 3.021148% !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
   }
   table[class="body"] .row.bordered .wrapper .columns .text-pad {
     padding-left: 0 !important;
@@ -1011,14 +1004,13 @@ table.secondary:active td a {
     border-top: 1px solid #ebebeb !important;
   }
   table[class="body"] .row.bordered .wrapper .columns td {
-    padding-top: 3.021148% !important;
-    padding-bottom: 3.021148% !important;
+    padding-top: 10px !important;
   }
   table[class="body"] .row.bordered .wrapper.first .columns {
     border-top: 0 !important;
   }
   table[class="body"] .row.bordered .wrapper.first .columns td {
-    padding-top: 10px !important;
+    padding-top: 0 !important;
   }
 }
 .header {
@@ -1037,12 +1029,6 @@ body .header a:focus,
 body .header a:active {
   color: #afbabf !important;
 }
-.header table.columns td.sub-columns,
-.header table.column td.sub-columns,
-.header table.columns td.sub-column,
-.header table.column td.sub-column {
-  padding-right: 0;
-}
 .header .wrapper.last td.sub-columns.first,
 .header .wrapper.last td.sub-columns.first .name {
   text-align: right;
@@ -1056,7 +1042,7 @@ body .header a:active {
 }
 @media only screen and (max-width: 662px) {
   table[class="body"] .header .wrapper.last td.sub-columns {
-    padding-right: 3.021148% !important;
+    padding-right: 10px !important;
   }
   table[class="body"] .header .wrapper.last td.sub-columns.first,
   table[class="body"] .header .wrapper.last td.sub-columns.first .name {
@@ -1068,7 +1054,7 @@ body .header a:active {
     padding-right: 0 !important;
   }
   table[class="body"] .header .wrapper.last td.sub-columns.first {
-    padding-left: 3.021148% !important;
+    padding-left: 10px !important;
   }
 }
 .contentOnline {
@@ -1134,11 +1120,8 @@ body .contentTop a:focus,
 body .contentTop a:active {
   color: #d12329 !important;
 }
-.contentMain table.columns td.sub-columns,
-.contentMain table.column td.sub-columns,
-.contentMain table.columns td.sub-column,
-.contentMain table.column td.sub-column {
-  padding-right: 0;
+.contentMain {
+  background-color: #ffffff;
 }
 .contentMain .wrapper-buttons {
   width: 100%;
@@ -1167,7 +1150,7 @@ body .contentTop a:active {
 }
 @media only screen and (max-width: 662px) {
   table[class="body"] .contentMain .wrapper-buttons .inner {
-    padding-top: 6.042296% !important;
+    padding-top: 20px !important;
     padding-bottom: 0 !important;
   }
   table[class="body"] .contentMain .wrapper-buttons .text-pad-right {
@@ -1176,6 +1159,9 @@ body .contentTop a:active {
   table[class="body"] .contentMain .wrapper-buttons .button td {
     width: auto !important;
   }
+}
+.contentBottom {
+  background-color: #ffffff;
 }
 .contentBottom .title {
   color: #d12329;

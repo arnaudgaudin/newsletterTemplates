@@ -22,8 +22,8 @@
 		line-height: 0;
 		font-size: 0;
 	}
-	height: (@textPad / 2);
-	-premailer-height: (@textPad / 2);
+	height: @wrapperPad;
+	-premailer-height: @wrapperPad;
 }
 
 //icone triangulaire
@@ -41,8 +41,8 @@
 
 
 //suppression paddings verticaux déportés sur classe .inner dans certaines zones
-td.wrapper { padding-top: 0; }
-table.columns td, table.column td { padding-bottom: 0; }
+// td.wrapper { padding-top: 0; }
+// table.columns td, table.column td { padding-bottom: 0; }
 
 //couleurs des textes des boutons secondaires
 table.secondary td, table.secondary td a, table.secondary:hover td { color: #ffffff; }
@@ -103,14 +103,11 @@ table.secondary:hover td a, table.secondary td a:visited, table.secondary:active
 
 			.columns {
 				border-top: 1px solid @colorExpertCom5 !important;
-				td {
-					padding-top: @textPadCollapse !important;
-					padding-bottom: @textPadCollapse !important;
-				}
+				td { padding-top: @textPadCollapse !important; }
 			}
 			&.first .columns {
 				border-top: 0 !important;
-				td { padding-top: 10px !important; }
+				td { padding-top: 0 !important; }
 			}
 		}
 	}
@@ -124,12 +121,12 @@ table.secondary:hover td a, table.secondary td a:visited, table.secondary:active
 	.newsletterInnerTextColor(@colorExpertCom3);
 
 	//suppression paddings internes
-	table.columns td.sub-columns,
-	table.column td.sub-columns,
-	table.columns td.sub-column,
-	table.column td.sub-column {
-		padding-right: 0;
-	}
+	// table.columns td.sub-columns,
+	// table.column td.sub-columns,
+	// table.columns td.sub-column,
+	// table.column td.sub-column {
+	// 	padding-right: 0;
+	// }
 
 	.wrapper.last td.sub-columns.first {
 		&, .name {
@@ -205,14 +202,15 @@ table.secondary:hover td a, table.secondary td a:visited, table.secondary:active
 // contentMain area
 // -------------------------
 .contentMain {
+	background-color: @bodyBackground;
 
 	//suppression paddings internes
-	table.columns td.sub-columns,
-	table.column td.sub-columns,
-	table.columns td.sub-column,
-	table.column td.sub-column {
-		padding-right: 0;
-	}
+	// table.columns td.sub-columns,
+	// table.column td.sub-columns,
+	// table.columns td.sub-column,
+	// table.column td.sub-column {
+	// 	padding-right: 0;
+	// }
 	
 	//gestion boutons
 	.wrapper-buttons {
@@ -253,6 +251,7 @@ table.secondary:hover td a, table.secondary td a:visited, table.secondary:active
 // contentBottom area
 // -------------------------
 .contentBottom {
+	background-color: @bodyBackground;
 
 	.title {
 		color: @colorExpertCom1;
