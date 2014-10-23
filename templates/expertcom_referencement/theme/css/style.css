@@ -1140,6 +1140,12 @@ body .contentTop a:focus,
 body .contentTop a:active {
   color: #d12329 !important;
 }
+.contentMain table.columns td.sub-columns,
+.contentMain table.column td.sub-columns,
+.contentMain table.columns td.sub-column,
+.contentMain table.column td.sub-column {
+  padding-right: 0;
+}
 .contentMain .wrapper-buttons {
   width: 100%;
   -premailer-width: 100%;
@@ -1163,6 +1169,9 @@ body .contentTop a:active {
   table[class="body"] .contentMain .wrapper-buttons .inner {
     padding-top: 6.042296% !important;
     padding-bottom: 0 !important;
+  }
+  table[class="body"] .contentMain .wrapper-buttons .text-pad-right {
+    padding-left: 0 !important;
   }
   table[class="body"] .contentMain .wrapper-buttons .button td {
     width: auto !important;

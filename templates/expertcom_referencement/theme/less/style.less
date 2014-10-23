@@ -205,6 +205,14 @@ table.secondary:hover td a, table.secondary td a:visited, table.secondary:active
 // contentMain area
 // -------------------------
 .contentMain {
+
+	//suppression paddings internes
+	table.columns td.sub-columns,
+	table.column td.sub-columns,
+	table.columns td.sub-column,
+	table.column td.sub-column {
+		padding-right: 0;
+	}
 	
 	//gestion boutons
 	.wrapper-buttons {
@@ -233,6 +241,7 @@ table.secondary:hover td a, table.secondary td a:visited, table.secondary:active
 				padding-top: (@textPadCollapse * 2) !important;
 				padding-bottom: 0 !important;
 			}
+			.text-pad-right { padding-left: 0 !important; }
 
 			.button td { width: auto !important; }
 		}
