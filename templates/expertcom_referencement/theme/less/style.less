@@ -26,6 +26,20 @@
 	-premailer-height: (@textPad / 2);
 }
 
+//icone triangulaire
+.icon-caret {
+	position: relative;
+	display: inline;
+	vertical-align: text-bottom;
+	line-height: 0;
+	font-size: 0;
+	bottom: 8px;
+	border-width: 8px;
+	border-style: solid;
+	border-color: transparent transparent transparent @colorExpertCom1;
+}
+
+
 //suppression paddings verticaux déportés sur classe .inner dans certaines zones
 td.wrapper { padding-top: 0; }
 table.columns td, table.column td { padding-bottom: 0; }
@@ -235,7 +249,10 @@ table.secondary:hover td a, table.secondary td a:visited, table.secondary:active
 // -------------------------
 .contentBottom {
 
-	.title { color: @colorExpertCom1; }
+	.title {
+		color: @colorExpertCom1;
+		padding-bottom: 5px;
+	}
 
 	.number {
 		display: block;
@@ -266,6 +283,23 @@ table.secondary:hover td a, table.secondary td a:visited, table.secondary:active
 	background-color: @colorExpertCom5;
 	.newsletterInnerTextColor(@colorExpertCom2);
 	
-
-
+	.title {
+		text-transform: uppercase;
+		padding-bottom: 5px;
+	}
 }
+
+
+// contentContact area
+// -------------------------
+.contentContact {
+	background-color: @colorExpertCom4;
+	.newsletterInnerTextColor(@colorExpertCom2);
+
+	.inner {
+		font-size: @fontSizeSmall;
+		line-height: (@fontSizeSmall * 1.33);
+	}
+}
+
+
