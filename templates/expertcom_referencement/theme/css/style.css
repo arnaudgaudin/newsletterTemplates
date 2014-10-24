@@ -980,26 +980,25 @@ table.secondary:active td a {
     display: none !important;
     visibility: hidden !important;
   }
-  table[class="body"] .row.bordered .wrapper {
+  table[class="body"] .row.bordered td.wrapper {
     border-left: 0 !important;
     padding-left: 10px !important;
     padding-right: 10px !important;
   }
-  table[class="body"] .row.bordered .wrapper .columns .text-pad {
+  table[class="body"] .row.bordered td.wrapper .columns .text-pad {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
-  table[class="body"] .row.bordered .wrapper .columns {
+  table[class="body"] .row.bordered td.wrapper table.columns td,
+  table[class="body"] .row.bordered td.wrapper table.column td {
     border-top: 1px solid #ebebeb !important;
+    padding-top: 9px !important;
+    padding-bottom: 10px !important;
   }
-  table[class="body"] .row.bordered .wrapper .columns td {
-    padding-top: 10px !important;
-  }
-  table[class="body"] .row.bordered .wrapper.first .columns {
+  table[class="body"] .row.bordered td.wrapper.first table.columns td,
+  table[class="body"] .row.bordered td.wrapper.first table.column td {
     border-top: 0 !important;
-  }
-  table[class="body"] .row.bordered .wrapper.first .columns td {
-    padding-top: 0 !important;
+    padding-top: 10px !important;
   }
 }
 .header {
@@ -1183,6 +1182,7 @@ body .contentTop a:active {
 }
 .contentBottom .title {
   color: #d12329;
+  padding-top: 5px;
   padding-bottom: 5px;
 }
 .contentBottom .number {
@@ -1196,6 +1196,7 @@ body .contentTop a:active {
   color: #4b606d;
 }
 .contentBottom img {
+  float: none;
   border: 1px solid #ebebeb;
 }
 @media only screen and (max-width: 662px) {

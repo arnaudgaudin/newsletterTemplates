@@ -87,7 +87,7 @@ table.secondary:hover td a, table.secondary td a:visited, table.secondary:active
 			visibility: hidden !important;
 		}
 
-		.wrapper {
+		td.wrapper {
 			//supppression décalage interne en trop
 			.columns .text-pad {
 				padding-left: 0 !important;
@@ -99,13 +99,19 @@ table.secondary:hover td a, table.secondary td a:visited, table.secondary:active
 			padding-left: @textPadCollapse !important;
 			padding-right: @textPadCollapse !important;
 
-			.columns {
+			//remise en place padding et rajout bordure
+			table.columns td, table.column td {
 				border-top: 1px solid @colorExpertCom5 !important;
-				td { padding-top: @textPadCollapse !important; }
+				padding-top: (@columnPad - 1px) !important;
+				padding-bottom: @columnPad !important;
 			}
-			&.first .columns {
-				border-top: 0 !important;
-				td { padding-top: 0 !important; }
+			
+			//pas de bordure sur premier wrapper
+			&.first {
+				table.columns td, table.column td {
+					border-top: 0 !important;
+					padding-top: @columnPad !important;
+				}
 			}
 		}
 	}
@@ -276,6 +282,7 @@ table.secondary:hover td a, table.secondary td a:visited, table.secondary:active
 
 	.title {
 		color: @colorExpertCom1;
+		padding-top: 5px;
 		padding-bottom: 5px;
 	}
 
@@ -291,7 +298,10 @@ table.secondary:hover td a, table.secondary td a:visited, table.secondary:active
 	.text b { color: @colorExpertCom2; }
 
 	//rajout bordure sur image
-	img { border: 1px solid @colorExpertCom5; }
+	img {
+		float: none;
+		border: 1px solid @colorExpertCom5;
+	}
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentBottom {
