@@ -32,9 +32,12 @@
 	vertical-align: text-bottom;
 	line-height: 1em;
 	font-size: 0;
-	border-width: 8px;
-	border-style: solid;
-	border-color: transparent transparent transparent @colorExpertCom1;
+	//on ommet un côté pour éviter que premailer ne compresse tout en border
+	padding-right: 8px;
+	//rajouter override couleur dans zones
+	border-top: 8px solid @containerBackground;
+	border-bottom: 8px solid @containerBackground;
+	border-left: 8px solid @colorExpertCom1;
 }
 
 
@@ -319,7 +322,8 @@ table.secondary:hover td a, table.secondary td a:visited, table.secondary:active
 		padding-bottom: 5px;
 		//couleur du fond (le transparent passe mal)
 		.icon-caret {
-			border-color: @colorExpertCom5 @colorExpertCom5 @colorExpertCom5 @colorExpertCom1;
+			border-top-color: @colorExpertCom5;
+			border-bottom-color: @colorExpertCom5;
 			line-height: @headingsFontSizeH5;
 		}
 	}

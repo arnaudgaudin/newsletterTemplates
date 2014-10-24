@@ -929,9 +929,10 @@ table.large-button td {
   vertical-align: text-bottom;
   line-height: 1em;
   font-size: 0;
-  border-width: 8px;
-  border-style: solid;
-  border-color: transparent transparent transparent #d12329;
+  padding-right: 8px;
+  border-top: 8px solid #ffffff;
+  border-bottom: 8px solid #ffffff;
+  border-left: 8px solid #d12329;
 }
 table.secondary td,
 table.secondary td a,
@@ -1223,7 +1224,8 @@ body .contentFooter a:active {
   padding-bottom: 5px;
 }
 .contentFooter .title .icon-caret {
-  border-color: #ebebeb #ebebeb #ebebeb #d12329;
+  border-top-color: #ebebeb;
+  border-bottom-color: #ebebeb;
   line-height: 14px;
 }
 .contentContact {
