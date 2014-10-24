@@ -136,7 +136,7 @@ table.secondary:hover td a, table.secondary td a:visited, table.secondary:active
 		&, .name {
 			text-align: right;
 			//pour aligner le texte sur la hauteur de l'image
-			line-height: (76px / 3);
+			line-height: (60px / 3);
 		}
 
 		img {
@@ -157,13 +157,24 @@ table.secondary:hover td a, table.secondary td a:visited, table.secondary:active
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .header {
-		.wrapper.last {
-			//taille forcée de l'image
-			img {
-				width: 76px !important;
-				height: 76px !important;
-				padding-left: @textPadCollapse !important;
-			}
+		td.wrapper {
+			padding-top: @wrapperPad !important;
+			&.amandine, &.conseils { padding-top: 0 !important; }
+		}
+		table.columns td, table.column td { padding-bottom: @columnPad !important; }
+
+		//taille forcée de l'image
+		img.logo {
+			width: 75% !important;
+			float: none !important;
+			margin-left: auto !important;
+			margin-right: auto !important;
+		}
+
+		img.avatar {
+			width: 60px !important;
+			height: 60px !important;
+			padding-left: @textPadCollapse !important;
 		}
 	}
 }
