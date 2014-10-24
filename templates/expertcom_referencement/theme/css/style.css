@@ -1192,9 +1192,6 @@ body .contentTop a:active {
   font-weight: bold;
   color: #afbabf;
 }
-.contentBottom .text b {
-  color: #4b606d;
-}
 .contentBottom img {
   float: none;
   border: 1px solid #ebebeb;
