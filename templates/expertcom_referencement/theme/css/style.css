@@ -1018,19 +1018,30 @@ body .header a:focus,
 body .header a:active {
   color: #afbabf !important;
 }
-.header .amandine td,
-.header .amandine td .name {
+.header td.wrapper {
+  padding-top: 20px;
+}
+.header table.columns td,
+.header table.column td {
+  padding-bottom: 20px;
+}
+.header td.wrapper.amandine td table.columns td,
+.header td.wrapper.amandine td table.column td {
+  padding-bottom: 10px;
+}
+.header td.wrapper.amandine td,
+.header td.wrapper.amandine td .name {
   text-align: right;
   line-height: 25.33333333px;
 }
-.header .amandine td img {
+.header td.wrapper.amandine td img {
   float: right;
   padding-left: 20px;
 }
-.header .conseils {
+.header td.wrapper.conseils {
   padding-top: 0;
 }
-.header .conseils td {
+.header td.wrapper.conseils td {
   padding-top: 0;
   text-transform: uppercase;
   font-size: 20.004px;

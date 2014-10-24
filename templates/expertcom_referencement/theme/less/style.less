@@ -125,8 +125,14 @@ table.secondary:hover td a, table.secondary td a:visited, table.secondary:active
 	// table.column td.sub-column {
 	// 	padding-right: 0;
 	// }
+	
+	//augmentation padding vertical
+	td.wrapper { padding-top: (@wrapperPad * 2); }
+	table.columns td, table.column td { padding-bottom: (@columnPad * 2); }
 
-	.amandine td {
+	td.wrapper.amandine td {
+		table.columns td, table.column td { padding-bottom: @wrapperPad; }
+
 		&, .name {
 			text-align: right;
 			//pour aligner le texte sur la hauteur de l'image
@@ -139,7 +145,7 @@ table.secondary:hover td a, table.secondary td a:visited, table.secondary:active
 		}
 	}
 
-	.conseils {
+	td.wrapper.conseils {
 		padding-top: 0;
 		td {
 			padding-top: 0;
