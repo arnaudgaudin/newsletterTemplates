@@ -98,7 +98,10 @@
 					        				<table class="twelve columns">
 					        					<tr>
 					        						<td class="text-pad conseils">
-					        							Les Conseils Référencement d'Expert Infos
+					        							<!--{{##{{<champ>
+														<type>text</type>
+														<defaut>}}-->Les Conseils Référencement d'Expert Infos<!--{{</defaut>
+														</champ>}}##}}-->
 					        						</td>
 													<td class="expander"></td>
 					        					</tr>
@@ -115,7 +118,12 @@
 											<table class="twelve columns">
 												<tr>
 													<td class="text-pad">
-														<h1>La vidéo pour booster votre site internet</h1>
+														<!--{{##{{<champ>
+														<type>text</type>
+														<html_avant>}}--><h1><!--{{</html_avant>
+														<defaut>}}-->La vidéo pour booster votre site internet<!--{{</defaut>
+														<html_apres>}}--></h1><!--{{</html_apres>
+														</champ>}}##}}-->
 													</td>
 													<td class="expander"></td>
 												</tr>
@@ -132,9 +140,22 @@
 											<table class="five columns">
 												<tr>
 													<td class="text-pad-left">
-														<a target="_blank" class="link_box" href="https://api.dmcloud.net/player/embed/52cfc7f894739930d54221a1/543be6ae94a6f650b8cc236d?auth=1728572006-0-0jg9bswc-40e6463a9e137ec85670ed362253a18d">
-															<img src="./theme/images/capture_video.jpg" width="255" height="144" alt="" />
-														</a>
+														<!--{{##{{<champ>
+														<type>image</type>
+														<src>
+														}}--><a data-type="gethref" href="./theme/images/capture_video.jpg"><!--gethref--></a><!--{{
+														</src>
+														<lien>https://api.dmcloud.net/player/embed/52cfc7f894739930d54221a1/543be6ae94a6f650b8cc236d?auth=1728572006-0-0jg9bswc-40e6463a9e137ec85670ed362253a18d</lien>
+														<survol></survol>
+														<width>255</width>
+														<height>144</height>
+														<width_max>1320</width_max>
+														<height_max>745</height_max>
+														<params>}}-->
+														<img data-type="getstyle" /><!--getstyle-->
+														<!--{{</params>
+														</champ>}}##}}-->
+														<!--DEL{{--><a target="_blank" href="https://api.dmcloud.net/player/embed/52cfc7f894739930d54221a1/543be6ae94a6f650b8cc236d?auth=1728572006-0-0jg9bswc-40e6463a9e137ec85670ed362253a18d"><img src="./theme/images/capture_video.jpg" width="255" height="144" alt="" /></a><!--}}DEL-->
 													</td>
 													<td class="expander"></td>
 												</tr>
