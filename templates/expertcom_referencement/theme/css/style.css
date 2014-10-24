@@ -1018,31 +1018,28 @@ body .header a:focus,
 body .header a:active {
   color: #afbabf !important;
 }
-.header .wrapper.last td.sub-columns.first,
-.header .wrapper.last td.sub-columns.first .name {
+.header .amandine td,
+.header .amandine td .name {
   text-align: right;
   line-height: 25.33333333px;
 }
+.header .amandine td img {
+  float: right;
+  padding-left: 20px;
+}
 .header .conseils {
+  padding-top: 0;
+}
+.header .conseils td {
   padding-top: 0;
   text-transform: uppercase;
   font-size: 20.004px;
   line-height: 1.1;
 }
 @media only screen and (max-width: 662px) {
-  table[class="body"] .header .wrapper.last td.sub-columns {
-    padding-right: 10px !important;
-  }
-  table[class="body"] .header .wrapper.last td.sub-columns.first,
-  table[class="body"] .header .wrapper.last td.sub-columns.first .name {
-    line-height: 1.33 !important;
-  }
-  table[class="body"] .header .wrapper.last td.sub-columns .text-pad,
-  table[class="body"] .header .wrapper.last td.sub-columns .text-pad-right {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
-  table[class="body"] .header .wrapper.last td.sub-columns.first {
+  table[class="body"] .header .wrapper.last img {
+    width: 76px !important;
+    height: 76px !important;
     padding-left: 10px !important;
   }
 }
