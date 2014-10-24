@@ -925,12 +925,10 @@ table.large-button td {
   font-size: 0;
 }
 .icon-caret {
-  position: relative;
   display: inline;
   vertical-align: text-bottom;
-  line-height: 0;
+  line-height: 1em;
   font-size: 0;
-  bottom: 8px;
   border-width: 8px;
   border-style: solid;
   border-color: transparent transparent transparent #d12329;
@@ -1223,6 +1221,10 @@ body .contentFooter a:active {
 .contentFooter .title {
   text-transform: uppercase;
   padding-bottom: 5px;
+}
+.contentFooter .title .icon-caret {
+  border-color: #ebebeb #ebebeb #ebebeb #d12329;
+  line-height: 14px;
 }
 .contentContact {
   background-color: #d9d9d9;

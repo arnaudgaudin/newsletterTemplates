@@ -28,12 +28,10 @@
 
 //icone triangulaire
 .icon-caret {
-	position: relative;
 	display: inline;
 	vertical-align: text-bottom;
-	line-height: 0;
+	line-height: 1em;
 	font-size: 0;
-	bottom: 8px;
 	border-width: 8px;
 	border-style: solid;
 	border-color: transparent transparent transparent @colorExpertCom1;
@@ -319,6 +317,11 @@ table.secondary:hover td a, table.secondary td a:visited, table.secondary:active
 	.title {
 		text-transform: uppercase;
 		padding-bottom: 5px;
+		//couleur du fond (le transparent passe mal)
+		.icon-caret {
+			border-color: @colorExpertCom5 @colorExpertCom5 @colorExpertCom5 @colorExpertCom1;
+			line-height: @headingsFontSizeH5;
+		}
 	}
 }
 
