@@ -934,6 +934,20 @@ table.large-button td {
   border-bottom: 8px solid #ffffff;
   border-left: 8px solid #d12329;
 }
+.icon-img {
+  position: relative;
+  display: inline;
+  vertical-align: text-bottom;
+  line-height: 16px;
+  width: 16px !important;
+  height: 16px !important;
+}
+@media only screen and (max-width: 662px) {
+  table[class="body"] .icon-img {
+    width: 16px !important;
+    height: 16px !important;
+  }
+}
 table.secondary td,
 table.secondary td a,
 table.secondary:hover td {

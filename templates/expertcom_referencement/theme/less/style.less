@@ -40,6 +40,23 @@
 	border-left: 8px solid @colorExpertCom1;
 }
 
+//icone en image
+.icon-img {
+	position: relative;
+	display: inline;
+	vertical-align: text-bottom;
+	line-height: 16px;
+	width: 16px !important;
+	height: 16px !important;
+}
+//override version firefox
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .icon-img {
+		width: 16px !important;
+		height: 16px !important;
+	}
+}
+
 
 //suppression paddings verticaux déportés sur classe .inner dans certaines zones
 // td.wrapper { padding-top: 0; }
