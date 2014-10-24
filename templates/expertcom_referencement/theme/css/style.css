@@ -1062,8 +1062,6 @@ body .header a:active {
   table[class="body"] .header img.logo {
     width: 75% !important;
     float: none !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
   }
   table[class="body"] .header img.avatar {
     width: 60px !important;
