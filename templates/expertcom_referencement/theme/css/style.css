@@ -1139,7 +1139,6 @@ body .contentTop a:active {
 }
 .contentMain .text {
   display: block;
-  color: #222222 !important;
   padding-bottom: 10px;
 }
 .contentMain .wrapper-buttons {
@@ -1196,9 +1195,6 @@ body .contentTop a:active {
   line-height: 120px;
   font-weight: bold;
   color: #afbabf;
-}
-.contentBottom .text {
-  color: #222222 !important;
 }
 .contentBottom img {
   float: none;
