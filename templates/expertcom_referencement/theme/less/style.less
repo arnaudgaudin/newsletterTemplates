@@ -130,6 +130,11 @@ table.secondary:hover td a, table.secondary td a:visited, table.secondary:active
 	td.wrapper { padding-top: (@wrapperPad * 2); }
 	table.columns td, table.column td { padding-bottom: (@columnPad * 2); }
 
+	img.avatar {
+		float: right;
+		padding-left: @textPad;
+	}
+
 	td.wrapper.amandine td {
 		table.columns td, table.column td { padding-bottom: @wrapperPad; }
 
@@ -137,11 +142,6 @@ table.secondary:hover td a, table.secondary td a:visited, table.secondary:active
 			text-align: right;
 			//pour aligner le texte sur la hauteur de l'image
 			line-height: (60px / 3);
-		}
-
-		img {
-			float: right;
-			padding-left: @textPad;
 		}
 	}
 
@@ -330,6 +330,19 @@ table.secondary:hover td a, table.secondary td a:visited, table.secondary:active
 	td {
 		font-size: @fontSizeSmall;
 		line-height: (@fontSizeSmall * 1.33);
+	}
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentContact {
+		.wrapper.last { padding-top: 0 !important; }
+
+		//taille forcée de l'image
+		img.logo {
+			width: 145px !important;
+			height: 35px !important;
+			padding-left: 0 !important;
+			float: none !important;
+		}
 	}
 }
 

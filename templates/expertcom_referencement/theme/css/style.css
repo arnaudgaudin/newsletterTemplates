@@ -1025,6 +1025,10 @@ body .header a:active {
 .header table.column td {
   padding-bottom: 20px;
 }
+.header img.avatar {
+  float: right;
+  padding-left: 20px;
+}
 .header td.wrapper.amandine td table.columns td,
 .header td.wrapper.amandine td table.column td {
   padding-bottom: 10px;
@@ -1033,10 +1037,6 @@ body .header a:active {
 .header td.wrapper.amandine td .name {
   text-align: right;
   line-height: 20px;
-}
-.header td.wrapper.amandine td img {
-  float: right;
-  padding-left: 20px;
 }
 .header td.wrapper.conseils {
   padding-top: 0;
@@ -1244,6 +1244,17 @@ body .contentContact a:active {
 .contentContact td {
   font-size: 10.2px;
   line-height: 13.566px;
+}
+@media only screen and (max-width: 662px) {
+  table[class="body"] .contentContact .wrapper.last {
+    padding-top: 0 !important;
+  }
+  table[class="body"] .contentContact img.logo {
+    width: 145px !important;
+    height: 35px !important;
+    padding-left: 0 !important;
+    float: none !important;
+  }
 }
 .contentWebsite {
   background-color: #4b606d;
