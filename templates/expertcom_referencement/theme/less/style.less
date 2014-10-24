@@ -3,19 +3,6 @@
 
 // additionnal template's style which extends ink's style
 
-// .inner {
-// 	display: block;
-// 	padding-top: (@textPad / 2);
-// 	padding-bottom: (@textPad / 2);
-// 	img { float: none; }
-// }
-// @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
-// 	table[class="body"] .inner {
-// 		padding-top: @textPadCollapse !important;
-// 		padding-bottom: @textPadCollapse !important;
-// 	}
-// }
-
 //pour rajouter de l'espace en haut et en dessous des wrappers
 .filler {
 	&, .empty {
@@ -25,20 +12,6 @@
 	height: @wrapperPad;
 	-premailer-height: @wrapperPad;
 }
-
-//icone triangulaire
-// .icon-caret {
-// 	display: inline;
-// 	vertical-align: text-bottom;
-// 	line-height: 1em;
-// 	font-size: 0;
-// 	//on ommet un côté pour éviter que premailer ne compresse tout en border
-// 	padding-right: 8px;
-// 	//rajouter override couleur dans zones
-// 	border-top: 8px solid @containerBackground;
-// 	border-bottom: 8px solid @containerBackground;
-// 	border-left: 8px solid @colorExpertCom1;
-// }
 
 //icone en image
 .icon-img {
@@ -56,11 +29,6 @@
 		height: 16px !important;
 	}
 }
-
-
-//suppression paddings verticaux déportés sur classe .inner dans certaines zones
-// td.wrapper { padding-top: 0; }
-// table.columns td, table.column td { padding-bottom: 0; }
 
 //couleurs des textes des boutons secondaires
 table.secondary td, table.secondary td a, table.secondary:hover td { color: #ffffff; }
@@ -142,14 +110,6 @@ table.secondary:hover td a, table.secondary td a:visited, table.secondary:active
 	background-color: @colorExpertCom2;
 	.newsletterInnerTextColor(@colorExpertCom3);
 
-	//suppression paddings internes
-	// table.columns td.sub-columns,
-	// table.column td.sub-columns,
-	// table.columns td.sub-column,
-	// table.column td.sub-column {
-	// 	padding-right: 0;
-	// }
-	
 	//augmentation padding vertical
 	td.wrapper { padding-top: (@wrapperPad * 2); }
 	table.columns td, table.column td { padding-bottom: (@columnPad * 2); }
@@ -246,14 +206,6 @@ table.secondary:hover td a, table.secondary td a:visited, table.secondary:active
 .contentMain {
 	background-color: @bodyBackground;
 
-	//suppression paddings internes
-	// table.columns td.sub-columns,
-	// table.column td.sub-columns,
-	// table.columns td.sub-column,
-	// table.column td.sub-column {
-	// 	padding-right: 0;
-	// }
-
 	.text {
 		display: block;
 		padding-bottom: 10px;
@@ -314,7 +266,7 @@ table.secondary:hover td a, table.secondary td a:visited, table.secondary:active
 		font-weight: bold;
 		color: @colorExpertCom3;
 	}
-	
+
 	//rajout bordure sur image
 	img {
 		float: none;
@@ -338,13 +290,6 @@ table.secondary:hover td a, table.secondary td a:visited, table.secondary:active
 		text-transform: uppercase;
 		padding-bottom: 5px;
 		.icon-img { bottom: -1px; }
-
-		//couleur du fond (le transparent passe mal)
-		// .icon-caret {
-		// 	border-top-color: @colorExpertCom5;
-		// 	border-bottom-color: @colorExpertCom5;
-		// 	line-height: @headingsFontSizeH5;
-		// }
 	}
 }
 
