@@ -924,16 +924,6 @@ table.large-button td {
   line-height: 0;
   font-size: 0;
 }
-.icon-caret {
-  display: inline;
-  vertical-align: text-bottom;
-  line-height: 1em;
-  font-size: 0;
-  padding-right: 8px;
-  border-top: 8px solid #ffffff;
-  border-bottom: 8px solid #ffffff;
-  border-left: 8px solid #d12329;
-}
 .icon-img {
   position: relative;
   display: inline;
@@ -1235,10 +1225,8 @@ body .contentFooter a:active {
   text-transform: uppercase;
   padding-bottom: 5px;
 }
-.contentFooter .title .icon-caret {
-  border-top-color: #ebebeb;
-  border-bottom-color: #ebebeb;
-  line-height: 14px;
+.contentFooter .title .icon-img {
+  bottom: -1px;
 }
 .contentContact {
   background-color: #d9d9d9;
