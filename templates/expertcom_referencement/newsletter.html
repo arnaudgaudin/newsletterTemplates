@@ -235,9 +235,33 @@
 											<table class="six columns">
 												<tr>
 													<td class="text-pad">
-														<img src="./theme/images/astuce_mois.jpg" width="253" height="118" alt="" />
-														<h2 class="title">L'astuce du mois</h2>
-														<div class="text">Insérez vos différents mots-clés dans le titre, la description et le nom de votre vidéo.</div>
+														<!--{{##{{<champ>
+														<type>image</type>
+														<src>
+														}}--><a data-type="gethref" href="./theme/images/astuce_mois.jpg"><!--gethref--></a><!--{{
+														</src>
+														<lien></lien>
+														<survol></survol>
+														<width>253</width>
+														<height>118</height>
+														<width_max>1320</width_max>
+														<height_max>616</height_max>
+														<params>}}-->
+														<img data-type="getstyle" /><!--getstyle-->
+														<!--{{</params>
+														</champ>}}##}}-->
+														<!--DEL{{--><img src="./theme/images/astuce_mois.jpg" width="253" height="118" alt="" /><!--}}DEL-->
+														<!--{{##{{<champ>
+														<type>text</type>
+														<html_avant>}}--><h2 class="title"><!--{{</html_avant>
+														<defaut>}}-->L'astuce du mois<!--{{</defaut>
+														<html_apres>}}--></h2><!--{{</html_apres>
+														</champ>}}## ##{{<champ>
+														<type>text</type>
+														<html_avant>}}--><div class="text"><!--{{</html_avant>
+														<defaut>}}-->Insérez vos différents mots-clés dans le titre, la description et le nom de votre vidéo.<!--{{</defaut>
+														<html_apres>}}--></div><!--{{</html_apres>
+														</champ>}}##}}-->
 													</td>
 													<td class="expander"></td>
 												</tr>
@@ -247,9 +271,22 @@
 											<table class="six columns">
 												<tr>
 													<td class="text-pad">
-														<span class="number">2,7</span>
-														<h2 class="title">Le chiffre du mois</h2>
-														<div class="text">17% des internautes passent moins de quatre secondes sur un site, mais sont disposés <b>à passer 2,7 minutes à regarder une vidéo en ligne</b>.</div>
+														<!--{{##{{<champ>
+														<type>text</type>
+														<html_avant>}}--><span class="number"><!--{{</html_avant>
+														<defaut>}}-->2,7<!--{{</defaut>
+														<html_apres>}}--></span><!--{{</html_apres>
+														</champ>}}## ##{{<champ>
+														<type>text</type>
+														<html_avant>}}--><h2 class="title"><!--{{</html_avant>
+														<defaut>}}-->Le chiffre du mois<!--{{</defaut>
+														<html_apres>}}--></h2><!--{{</html_apres>
+														</champ>}}## ##{{<champ>
+														<type>text</type>
+														<html_avant>}}--><div class="text"><!--{{</html_avant>
+														<defaut>}}-->17% des internautes passent moins de quatre secondes sur un site, mais sont disposés <b>à passer 2,7 minutes à regarder une vidéo en ligne</b>.<!--{{</defaut>
+														<html_apres>}}--></div><!--{{</html_apres>
+														</champ>}}##}}-->
 													</td>
 													<td class="expander"></td>
 												</tr>
