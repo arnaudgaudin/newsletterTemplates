@@ -305,12 +305,25 @@
 											<table class="six columns">
 												<tr>
 													<td class="text-pad">
-														<a target="_blank" class="link_box" href="http://abonnes.expertinfos.com/login.php">
-															<h5 class="title"><span class="icon-caret">&#160;</span>Votre espace abonné</h5>
-														</a>
-														<a target="_blank" class="link_box" href="http://abonnes.expertinfos.com/login.php">
-															<span class="text">Retrouvez des fiches pratiques et des vidéos pour vous aider à optimiser et contrôler la visibilité de votre site internet.</span>
-														</a>
+														<!--{{##{{<champ>
+														<type>lien</type>
+														<href>http://abonnes.expertinfos.com/login.php</href>
+														<html_interieur_avant>}}--><h5 class="title"><span class="icon-caret">&#160;</span><!--{{</html_interieur_avant>
+														<texte>}}-->Votre espace abonné<!--{{</texte>
+														<html_interieur_apres>}}--></h5><!--{{</html_interieur_apres>
+														<params>
+														}}--><a data-type="getstyle" class="link_box"><!--getstyle--></a><!--{{ class="link_box"
+														</params>
+														</champ>}}## ##{{<champ>
+														<type>lien</type>
+														<href>http://abonnes.expertinfos.com/login.php</href>
+														<html_interieur_avant>}}--><span class="text"><!--{{</html_interieur_avant>
+														<texte>}}-->Retrouvez des fiches pratiques et des vidéos pour vous aider à optimiser et contrôler la visibilité de votre site internet.<!--{{</texte>
+														<html_interieur_apres>}}--></span><!--{{</html_interieur_apres>
+														<params>
+														}}--><a data-type="getstyle" class="link_box"><!--getstyle--></a><!--{{ class="link_box"
+														</params>
+														</champ>}}##}}-->
 													</td>
 													<td class="expander"></td>
 												</tr>
