@@ -143,17 +143,15 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 										<td class="wrapper last">
 											<table class="twelve columns">
 												<tr>
-													<td class="center">
-														<span class="inner text-pad">
-															<!--{{%%{{ if isOnline=False then }}%%}}-->
-															<!--{{<gab_lien_message_online>}}-->
-															<small class="online">
-																Pour visualiser ce message en ligne, <a target="_blank" class="link_underline" href="%%{{=online_url}}%%">suivez ce lien</a>.
-															</small>
-															<!--{{</gab_lien_message_online>}}-->
-															<!--{{%%{{ end if }}%%}}-->
-															<strong class="name"><!--{{%%{{=civilite}}%%}}--><!--DEL{{-->civilite<!--}}DEL-->&nbsp;<!--{{%%{{=nom_client}}%%}}--><!--DEL{{-->nom_client<!--}}DEL-->, votre newsletter du <a class="link_disabled" href="#"><!--{{%%{{=get_date}}%%}}--><!--DEL{{-->get_date<!--}}DEL--></a>.</strong>
-														</span>
+													<td class="center text-pad">
+														<!--{{%%{{ if isOnline=False then }}%%}}-->
+														<!--{{<gab_lien_message_online>}}-->
+														<small class="online">
+															Pour visualiser ce message en ligne, <a target="_blank" class="link_underline" href="%%{{=online_url}}%%">suivez ce lien</a>.
+														</small>
+														<!--{{</gab_lien_message_online>}}-->
+														<!--{{%%{{ end if }}%%}}-->
+														<strong class="name"><!--{{%%{{=civilite}}%%}}--><!--DEL{{-->civilite<!--}}DEL-->&nbsp;<!--{{%%{{=nom_client}}%%}}--><!--DEL{{-->nom_client<!--}}DEL-->, votre newsletter du <a class="link_disabled" href="#"><!--{{%%{{=get_date}}%%}}--><!--DEL{{-->get_date<!--}}DEL--></a>.</strong>
 													</td>
 												</tr>
 											</table>
@@ -212,10 +210,8 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 										<td class="wrapper last">
 											<table class="twelve columns">
 												<tr>
-													<td>
-														<span class="inner text-pad">
-															<!--{{%%{{=texte_vacances}}%%}}--><!--DEL{{-->texte_vacances<!--}}DEL-->
-														</span>
+													<td class="text-pad">
+														<!--{{%%{{=texte_vacances}}%%}}--><!--DEL{{-->texte_vacances<!--}}DEL-->
 													</td>
 												</tr>
 											</table>
@@ -236,12 +232,12 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 										<td class="wrapper last">
 											<table class="twelve columns">
 												<tr>
-													<td>
+													<td class="text-pad">
 														<!--{{%%{{
 														lien_cab=rs("lien")
 														if (lien_cab <> "") then
 														}}%%}}-->
-														<a target="_blank" class="link_box inner text-pad" href="%%{{=lien_cab}}%%">
+														<a target="_blank" class="link_box" href="%%{{=lien_cab}}%%">
 															<h2 class="title"><!--{{%%{{=rs("titre")}}%%}}--><!--DEL{{-->titre<!--}}DEL--></h2>
 															<span class="text"><!--{{%%{{=rs("texte")}}%%}}--><!--DEL{{-->texte<!--}}DEL--></span>
 															<span class="readMore">
@@ -249,10 +245,8 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 															</span>
 														</a>
 														<!--{{%%{{ else }}%%}}-->
-														<span class="inner text-pad">
-															<h2 class="title"><!--{{%%{{=rs("titre")}}%%}}--><!--DEL{{-->titre<!--}}DEL--></h2>
-															<span class="text"><!--{{%%{{=rs("texte")}}%%}}--><!--DEL{{-->texte<!--}}DEL--></span>
-														</span>
+														<h2 class="title"><!--{{%%{{=rs("titre")}}%%}}--><!--DEL{{-->titre<!--}}DEL--></h2>
+														<span class="text"><!--{{%%{{=rs("texte")}}%%}}--><!--DEL{{-->texte<!--}}DEL--></span>
 														<!--{{%%{{ end if }}%%}}-->
 													</td>
 												</tr>
@@ -282,8 +276,8 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 										<td class="wrapper first">
 											<table class="six columns">
 												<tr>
-													<td>
-														<a target="_blank" class="link_box inner text-pad" href="http://%%{{=url_site_exp}}%%/%%{{=article_une_url_v3}}%%">
+													<td class="text-pad">
+														<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/%%{{=article_une_url_v3}}%%">
 															<h1 class="title"><!--{{%%{{=rsArticleAlaune("TITRE_CHAPITRE_FLASH_INFOS")}}%%}}--><!--DEL{{-->TITRE_CHAPITRE_FLASH_INFOS<!--}}DEL--></h1>
 															<span class="text"><!--{{%%{{=rsArticleAlaune("CONTENU_CHAPITRE_FLASH_INFOS")}}%%}}--><!--DEL{{-->CONTENU_CHAPITRE_FLASH_INFOS<!--}}DEL--></span>
 															<span class="readMore">
@@ -341,8 +335,8 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 										<td class="wrapper first">
 											<table class="five columns">
 												<tr>
-													<td>
-														<a target="_blank" class="link_box inner text-pad-left" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%">
+													<td class="text-pad-left">
+														<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%">
 															<img src="http://e-newsletter.expert-infos.com/_infos/_photos/%%{{=id_de_larticle}}%%-h.jpg" width="290" height="133" alt="" /><!--DEL{{--><img src="http://lorempixel.com/1440/660/business/" width="290" height="133" alt="" /><!--}}DEL-->
 														</a>
 													</td>
@@ -352,8 +346,8 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 										<td class="wrapper last">
 											<table class="seven columns">
 												<tr>
-													<td>
-														<a target="_blank" class="link_box inner text-pad" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%">
+													<td class="text-pad">
+														<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%">
 															<h2 class="title">
 																<span class="icon-rsaquo">&rsaquo;</span>&#160;<!--{{%%{{=rsArticle("TITRE_CHAPITRE_FLASH_INFOS")}}%%}}--><!--DEL{{-->TITRE_CHAPITRE_FLASH_INFOS<!--}}DEL-->
 															</h2>
@@ -372,8 +366,8 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 										<td class="wrapper first">
 											<table class="five columns">
 												<tr>
-													<td>
-														<a target="_blank" class="link_box inner text-pad-left" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%">
+													<td class="text-pad-left">
+														<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%">
 															<img src="http://e-newsletter.expert-infos.com/_infos/_photos/%%{{=id_de_larticle}}%%-h.jpg" width="290" height="133" alt="" /><!--DEL{{--><img src="http://lorempixel.com/1440/660/business/" width="290" height="133" alt="" /><!--}}DEL-->
 														</a>
 													</td>
@@ -383,8 +377,8 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 										<td class="wrapper last">
 											<table class="seven columns">
 												<tr>
-													<td>
-														<a target="_blank" class="link_box inner text-pad" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%">
+													<td class="text-pad">
+														<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%">
 															<h2 class="title">
 																<span class="icon-rsaquo">&rsaquo;</span>&#160;<!--{{%%{{=rsArticle("TITRE_CHAPITRE_FLASH_INFOS")}}%%}}--><!--DEL{{-->TITRE_CHAPITRE_FLASH_INFOS<!--}}DEL-->
 															</h2>
@@ -415,8 +409,8 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 										<td class="agenda wrapper first" bgcolor="##((nlCntAgdBackground))##">
 											<table class="five columns">
 												<tr>
-													<td>
-														<a target="_blank" class="link_box inner text-pad" href="http://%%{{=url_site_exp}}%%/%%{{=url_mois1_v3}}%%">
+													<td class="text-pad">
+														<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/%%{{=url_mois1_v3}}%%">
 															<span class="preTitle"><!--{{%%{{=date1}}%%}}--><!--DEL{{-->date1<!--}}DEL--></span>
 															<h2 class="title"><!--{{%%{{=texte1V3_1}}%%}}--><!--DEL{{-->texte1V3_1<!--}}DEL--></h2>
 															<span class="text"><!--{{%%{{=texte1V3_2}}%%}}--><!--DEL{{-->texte1V3_2<!--}}DEL--></span>
@@ -432,8 +426,8 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 													<td><span class="borderOffset right"><span class="border"></span></span></td>
 												</tr>
 												<tr>
-													<td class="six sub-columns first">
-														<a target="_blank" class="link_box inner text-pad-left" href="http://%%{{=url_site_exp}}%%/dessin">
+													<td class="six sub-columns text-pad-left first">
+														<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/dessin">
 															<span class="preTitle">L'actu'<br/><small>en dessin</small></span>
 															<h3 class="title"><!--{{%%{{=texte_dessin}}%%}}--><!--DEL{{-->texte_dessin<!--}}DEL--></h3>
 															<span class="readMore">
@@ -441,8 +435,8 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 															</span>
 														</a>
 													</td>
-													<td class="six sub-columns last">
-														<a target="_blank" class="link_box inner text-pad" href="http://%%{{=url_site_exp}}%%/dessin">
+													<td class="six sub-columns text-pad last">
+														<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/dessin">
 															<img src="http://e-newsletter.expert-infos.com/_infos/_photos/%%{{=id_article_dessin}}%%-i.jpg" width="190" height="126" alt="Le dessin de la semaine" /><!--DEL{{--><img src="http://lorempixel.com/720/480/abstract/" width="190" height="126" alt="" /><!--}}DEL-->
 														</a>
 													</td>
