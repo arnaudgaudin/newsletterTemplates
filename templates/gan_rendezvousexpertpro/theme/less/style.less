@@ -43,10 +43,6 @@ h1, h2, h3, h4, h5, h6 { line-height: 1.1; }
 	background-color: @bodyBackground;
 	.newsletterInnerTextColor(#ffffff);
 
-	//réduction padding interne
-	td.wrapper { padding-top: (@wrapperPad / 2); }
-	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
-
 	td {
 		font-size: @fontSizeMini;
 		line-height: (@fontSizeMini * 1.33);
@@ -60,7 +56,13 @@ h1, h2, h3, h4, h5, h6 { line-height: 1.1; }
 .contentMain {
 	//déplacement paddingTop à l'intérieur pour coller bande jaune
 	td.wrapper { padding-top: 0; }
-	table.columns td, table.column td { padding-top: @wrapperPad; }
+	table.columns, table.column {
+		td { padding-top: (@wrapperPad * 2); }
+		.text-pad {
+			padding-left: (@textPad * 2);
+			padding-right: (@textPad * 2);
+		}
+	}
 
 	//bande verticale
 	.sub-columns.first { background-color: @colorGan2; }
@@ -112,6 +114,18 @@ h1, h2, h3, h4, h5, h6 { line-height: 1.1; }
 		line-height: (@fontSizeSmall * 1.33);
 	}
 }
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentMain {
+		td.wrapper { padding-top: 0 !important; }
+		table.columns, table.column {
+			td { padding-top: @wrapperPad !important; }
+			.text-pad {
+				padding-left: @textPad !important;
+				padding-right: @textPad !important;
+			}
+		}
+	}
+}
 
 
 // contentFooter area
@@ -121,7 +135,13 @@ h1, h2, h3, h4, h5, h6 { line-height: 1.1; }
 
 	//suppression décalage en trop
 	td.wrapper { padding-top: 0; }
-	table.columns td, table.column td { padding-bottom: 0; }
+	table.columns, table.column {
+		td { padding-bottom: 0; }
+		.text-pad {
+			padding-left: (@textPad * 2);
+			padding-right: (@textPad * 2);
+		}
+	}
 
 	//décalage à droite
 	.rounderWrapper {
@@ -134,8 +154,8 @@ h1, h2, h3, h4, h5, h6 { line-height: 1.1; }
 				width: 100%;
 				td {
 					background-color: @colorGan3;
-					padding-top: (@wrapperPad / 4);
-					padding-bottom: (@wrapperPad / 4);
+					padding-top: (@wrapperPad / 2);
+					padding-bottom: (@wrapperPad / 2);
 				}
 			}
 		}
@@ -171,10 +191,15 @@ h1, h2, h3, h4, h5, h6 { line-height: 1.1; }
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentFooter {
+		table.columns, table.column {
+			.text-pad {
+				padding-left: @textPad !important;
+				padding-right: @textPad !important;
+			}
+		}
 		.rounderWrapper { padding-right: @textPadCollapse !important; }
 	}
 }
-
 
 // contentLegal area
 // -------------------------
@@ -183,9 +208,15 @@ h1, h2, h3, h4, h5, h6 { line-height: 1.1; }
 
 	//déplacement paddingTop à l'intérieur pour coller bande jaune
 	td.wrapper { padding-top: 0; }
-	table.columns td, table.column td {
-		padding-top: (@wrapperPad / 4);
-		padding-bottom: (@wrapperPad / 4);
+	table.columns, table.column {
+		td {
+			padding-top: (@wrapperPad / 2);
+			padding-bottom: (@wrapperPad / 2);
+		}
+		.text-pad {
+			padding-left: (@textPad * 2);
+			padding-right: (@textPad * 2);
+		}
 	}
 
 	td {
@@ -197,16 +228,23 @@ h1, h2, h3, h4, h5, h6 { line-height: 1.1; }
 	//bande jaune clair
 	.sub-columns.first { background-color: @colorGan2; }
 }
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentLegal {
+		td.wrapper { padding-top: 0 !important; }
+		table.columns, table.column {
+			.text-pad {
+				padding-left: @textPad !important;
+				padding-right: @textPad !important;
+			}
+		}
+	}
+}
 
 // contentUnsubscribe area
 // -------------------------
 .contentUnsubscribe {
 	background-color: @bodyBackground;
 	.newsletterInnerTextColor(#ffffff);
-
-	//réduction padding interne
-	td.wrapper { padding-top: (@wrapperPad / 2); }
-	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
 
 	td {
 		font-size: @fontSizeMini;

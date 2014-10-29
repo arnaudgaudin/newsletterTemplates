@@ -100,7 +100,7 @@ table.container table.row {
   display: block;
 }
 td.wrapper {
-  padding: 20px 0 0px 0px;
+  padding: 10px 0 0px 0px;
 }
 table.columns,
 table.column {
@@ -108,7 +108,7 @@ table.column {
 }
 table.columns td,
 table.column td {
-  padding: 0px 0px 20px;
+  padding: 0px 0px 10px;
 }
 table.columns td.sub-columns,
 table.column td.sub-columns,
@@ -332,20 +332,20 @@ td.expander {
 }
 table.columns .text-pad,
 table.column .text-pad {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 table.columns .left-text-pad,
 table.columns .text-pad-left,
 table.column .left-text-pad,
 table.column .text-pad-left {
-  padding-left: 20px;
+  padding-left: 10px;
 }
 table.columns .right-text-pad,
 table.columns .text-pad-right,
 table.column .right-text-pad,
 table.column .text-pad-right {
-  padding-right: 20px;
+  padding-right: 10px;
 }
 /* Block Grid */
 .block-grid {
@@ -354,7 +354,7 @@ table.column .text-pad-right {
 }
 .block-grid td {
   display: inline-block;
-  padding: 20px;
+  padding: 10px;
 }
 .two-up td {
   width: 360px;
@@ -519,7 +519,7 @@ h6 a:visited {
 .panel {
   background: #f2f2f2;
   border: 1px solid #d9d9d9;
-  padding: 20px !important;
+  padding: 10px !important;
 }
 .sub-grid table {
   width: 100%;
@@ -683,7 +683,6 @@ body.outlook p {
   table[class="body"] .wrapper {
     position: relative !important;
     display: block !important;
-    padding-top: 20px !important;
     padding-right: 0 !important;
   }
   table[class="body"] .columns,
@@ -702,7 +701,6 @@ body.outlook p {
   table[class="body"] table.columns td,
   table[class="body"] table.column td {
     width: 100% !important;
-    padding-bottom: 20px !important;
   }
   table[class="body"] .columns td.one,
   table[class="body"] .column td.one {
@@ -768,18 +766,12 @@ body.outlook p {
   table[class="body"] table.columns td.expander {
     width: 1px !important;
   }
-  table[class="body"] .text-pad {
-    padding-left: 10px !important;
-    padding-right: 10px !important;
-  }
   table[class="body"] .right-text-pad,
   table[class="body"] .text-pad-right {
     padding-left: 10px !important;
-    padding-right: 10px !important;
   }
   table[class="body"] .left-text-pad,
   table[class="body"] .text-pad-left {
-    padding-left: 10px !important;
     padding-right: 10px !important;
   }
   table[class="body"] .hide-for-small,
@@ -792,10 +784,6 @@ body.outlook p {
   }
   table[class="container"] .block-grid td {
     width: 100% !important;
-    padding: 20px !important;
-  }
-  table[class="container"] .panel {
-    padding: 20px !important;
   }
 }
 .appleLinks a {
@@ -972,13 +960,6 @@ body .contentOnline a:focus,
 body .contentOnline a:active {
   color: #ffffff !important;
 }
-.contentOnline td.wrapper {
-  padding-top: 10px;
-}
-.contentOnline table.columns td,
-.contentOnline table.column td {
-  padding-bottom: 10px;
-}
 .contentOnline td {
   font-size: 9.1px;
   line-height: 12.103px;
@@ -989,6 +970,11 @@ body .contentOnline a:active {
 .contentMain table.columns td,
 .contentMain table.column td {
   padding-top: 20px;
+}
+.contentMain table.columns .text-pad,
+.contentMain table.column .text-pad {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .contentMain .sub-columns.first {
   background-color: #eacc90;
@@ -1057,6 +1043,20 @@ body .contentMain .addressWrapper a:active {
   font-size: 11.9px;
   line-height: 15.827px;
 }
+@media only screen and (max-width: 720px) {
+  table[class="body"] .contentMain td.wrapper {
+    padding-top: 0 !important;
+  }
+  table[class="body"] .contentMain table.columns td,
+  table[class="body"] .contentMain table.column td {
+    padding-top: 10px !important;
+  }
+  table[class="body"] .contentMain table.columns .text-pad,
+  table[class="body"] .contentMain table.column .text-pad {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+}
 .contentFooter,
 .contentFooter td,
 .contentFooter .inner {
@@ -1077,8 +1077,13 @@ body .contentFooter a:active {
 .contentFooter table.column td {
   padding-bottom: 0;
 }
-.contentFooter .rounderWrapper {
+.contentFooter table.columns .text-pad,
+.contentFooter table.column .text-pad {
+  padding-left: 20px;
   padding-right: 20px;
+}
+.contentFooter .rounderWrapper {
+  padding-right: 10px;
   height: 100%;
 }
 .contentFooter .rounderWrapper .rounder {
@@ -1134,6 +1139,11 @@ body .contentFooter a:active {
   color: #ffffff;
 }
 @media only screen and (max-width: 720px) {
+  table[class="body"] .contentFooter table.columns .text-pad,
+  table[class="body"] .contentFooter table.column .text-pad {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
   table[class="body"] .contentFooter .rounderWrapper {
     padding-right: 10px !important;
   }
@@ -1159,6 +1169,11 @@ body .contentLegal a:active {
   padding-top: 5px;
   padding-bottom: 5px;
 }
+.contentLegal table.columns .text-pad,
+.contentLegal table.column .text-pad {
+  padding-left: 20px;
+  padding-right: 20px;
+}
 .contentLegal td {
   font-size: 9.1px;
   font-style: italic;
@@ -1166,6 +1181,16 @@ body .contentLegal a:active {
 }
 .contentLegal .sub-columns.first {
   background-color: #eacc90;
+}
+@media only screen and (max-width: 720px) {
+  table[class="body"] .contentLegal td.wrapper {
+    padding-top: 0 !important;
+  }
+  table[class="body"] .contentLegal table.columns .text-pad,
+  table[class="body"] .contentLegal table.column .text-pad {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
 }
 .contentUnsubscribe {
   background-color: #7590ad;
@@ -1182,13 +1207,6 @@ body .contentUnsubscribe a:hover,
 body .contentUnsubscribe a:focus,
 body .contentUnsubscribe a:active {
   color: #ffffff !important;
-}
-.contentUnsubscribe td.wrapper {
-  padding-top: 10px;
-}
-.contentUnsubscribe table.columns td,
-.contentUnsubscribe table.column td {
-  padding-bottom: 10px;
 }
 .contentUnsubscribe td {
   font-size: 9.1px;
