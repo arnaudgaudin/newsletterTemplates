@@ -923,14 +923,6 @@ h5,
 h6 {
   line-height: 1.1;
 }
-.inner {
-  display: block;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-.inner img {
-  float: none;
-}
 .header td.wrapper {
   padding-top: 0;
 }
@@ -1021,23 +1013,8 @@ h6 {
 .contentArticles .readMore {
   padding-top: 5px;
 }
-.contentArticles .inner {
-  padding-bottom: 0;
-}
-.contentArticles.last .inner {
-  padding-bottom: 10px;
-}
 @media only screen and (max-width: 720px) {
   table[class="body"] .contentArticles .title {
-    padding-top: 0 !important;
-  }
-  table[class="body"] .contentArticles .inner {
-    padding-bottom: 9px !important;
-  }
-  table[class="body"] .contentArticles.last .inner {
-    padding-bottom: 10px !important;
-  }
-  table[class="body"] .contentArticles .wrapper.last .inner {
     padding-top: 0 !important;
   }
 }
@@ -1047,6 +1024,12 @@ h6 {
 .contentBottom td.wrapper.last table.columns .borderContainer td,
 .contentBottom td.wrapper.last table.column .borderContainer td {
   padding-bottom: 0;
+}
+.contentBottom td.wrapper .title {
+  padding-top: 10px;
+}
+.contentBottom td.wrapper.dessin .title {
+  padding-top: 5px;
 }
 .contentBottom .borderOffset {
   display: block;
@@ -1064,23 +1047,14 @@ h6 {
   line-height: 0;
   height: 9px;
 }
-.contentBottom .wrapper.last .inner {
-  padding-top: 0;
-}
-.contentBottom .wrapper .title {
-  padding-top: 10px;
-}
-.contentBottom .wrapper.dessin .title {
-  padding-top: 5px;
-}
 @media only screen and (max-width: 720px) {
-  table[class="body"] .contentBottom .wrapper .inner {
+  table[class="body"] .contentBottom td.wrapper.last {
     padding-top: 10px !important;
   }
-  table[class="body"] .contentBottom .wrapper .border {
+  table[class="body"] .contentBottom td.wrapper .border {
     border-top: none !important;
   }
-  table[class="body"] .contentBottom .wrapper .preTitle {
+  table[class="body"] .contentBottom td.wrapper .preTitle {
     line-height: 22px !important;
   }
   table[class="body"] .contentBottom .borderContainer {
