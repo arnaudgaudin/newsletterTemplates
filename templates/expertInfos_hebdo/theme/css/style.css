@@ -931,11 +931,11 @@ h6 {
 .inner img {
   float: none;
 }
-td.wrapper {
+.header td.wrapper {
   padding-top: 0;
 }
-table.columns td,
-table.column td {
+.header table.columns td,
+.header table.column td {
   padding-bottom: 0;
 }
 .readMore {
@@ -984,6 +984,7 @@ table.column td {
 }
 .webicon img {
   display: inline;
+  float: none;
   border-radius: 5px;
 }
 @media only screen and (max-width: 720px) {
@@ -998,6 +999,21 @@ table.column td {
 }
 .contentOnline .name {
   display: block;
+}
+.contentALaUne td.wrapper.last {
+  padding-top: 0;
+}
+.contentALaUne td.wrapper.last table.columns td,
+.contentALaUne td.wrapper.last table.column td {
+  padding-bottom: 0;
+}
+.contentArticles td.wrapper.first table.columns td,
+.contentArticles td.wrapper.first table.column td {
+  padding-bottom: 0;
+}
+.contentArticles.last td.wrapper.first table.columns td,
+.contentArticles.last td.wrapper.first table.column td {
+  padding-bottom: 10px;
 }
 .contentArticles .title {
   padding-top: 4px;
@@ -1025,8 +1041,16 @@ table.column td {
     padding-top: 0 !important;
   }
 }
+.contentBottom td.wrapper.last {
+  padding-top: 0;
+}
+.contentBottom td.wrapper.last table.columns .borderContainer td,
+.contentBottom td.wrapper.last table.column .borderContainer td {
+  padding-bottom: 0;
+}
 .contentBottom .borderOffset {
   display: block;
+  padding-bottom: 0;
 }
 .contentBottom .borderOffset.left {
   padding-left: 10px;
