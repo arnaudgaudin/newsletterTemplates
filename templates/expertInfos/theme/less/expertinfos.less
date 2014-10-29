@@ -110,12 +110,15 @@ h1, h2, h3, h4, h5, h6 { line-height: 1.1; }
 // contentBottom area
 // -------------------------
 .contentBottom {
-	//suppression décalage en trop déporté sur borderContainer
-	td.wrapper.last {
-		padding-top: 0;
-		table.columns .borderContainer td, table.column .borderContainer td { padding-bottom: 0; }
+	td.wrapper {
+		//suppression décalage en trop déporté sur borderContainer
+		&.last {
+			padding-top: 0;
+			table.columns .borderContainer td, table.column .borderContainer td { padding-bottom: 0; }
+		}
+		.title { padding-top: 10px; }
+		&.dessin .title { padding-top: 5px; }
 	}
-
 
 	//gestion bordure Interne
 	.borderOffset {
@@ -131,17 +134,11 @@ h1, h2, h3, h4, h5, h6 { line-height: 1.1; }
 			height: 9px;
 		}
 	}
-
-	.wrapper {
-		&.last .inner { padding-top: 0; }
-		.title { padding-top: 10px; }
-		&.dessin .title { padding-top: 5px; }
-	}
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentBottom {
-		.wrapper {
-			.inner { padding-top: 10px !important; }
+		td.wrapper {
+			&.last { padding-top: @wrapperPad !important; }
 			.border { border-top: none !important; }
 			.preTitle { line-height: @headingsFontSizeH1 !important; }
 		}
