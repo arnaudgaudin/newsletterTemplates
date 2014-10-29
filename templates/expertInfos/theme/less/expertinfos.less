@@ -8,13 +8,6 @@
 
 h1, h2, h3, h4, h5, h6 { line-height: 1.1; }
 
-.inner {
-	display: block;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	img { float: none; }
-}
-
 .header {
 	//suppression décalage en trop
 	td.wrapper { padding-top: 0; }
@@ -107,15 +100,10 @@ h1, h2, h3, h4, h5, h6 { line-height: 1.1; }
 
 	.title { padding-top: 4px; }
 	.readMore { padding-top: 5px; }
-	.inner { padding-bottom: 0; }
-	&.last .inner { padding-bottom: 10px; }	
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentArticles {
 		.title { padding-top: 0 !important; }
-		.inner { padding-bottom: 9px !important; }
-		&.last .inner { padding-bottom: 10px !important; }
-		.wrapper.last .inner { padding-top: 0 !important; }
 	}
 }
 
