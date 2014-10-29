@@ -683,6 +683,7 @@ body.outlook p {
   table[class="body"] .wrapper {
     position: relative !important;
     display: block !important;
+    padding-top: 20px !important;
     padding-right: 0 !important;
   }
   table[class="body"] .columns,
@@ -701,6 +702,7 @@ body.outlook p {
   table[class="body"] table.columns td,
   table[class="body"] table.column td {
     width: 100% !important;
+    padding-bottom: 20px !important;
   }
   table[class="body"] .columns td.one,
   table[class="body"] .column td.one {
@@ -790,6 +792,10 @@ body.outlook p {
   }
   table[class="container"] .block-grid td {
     width: 100% !important;
+    padding: 20px !important;
+  }
+  table[class="container"] .panel {
+    padding: 20px !important;
   }
 }
 .appleLinks a {
