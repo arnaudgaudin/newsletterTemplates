@@ -15,7 +15,6 @@ table.body {
 body {
   width: 100% !important;
   min-width: 100%;
-  -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   margin: 0;
   padding: 0;
@@ -64,8 +63,7 @@ table {
 }
 td {
   word-break: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
+  -ms-hyphens: auto;
   hyphens: auto;
   border-collapse: collapse !important;
 }
@@ -97,14 +95,12 @@ table.container {
 table.row {
   padding: 0px;
   width: 100%;
-  position: relative;
 }
 table.container table.row {
   display: block;
 }
 td.wrapper {
-  padding: 10px 0 0px 0px;
-  position: relative;
+  padding: 20px 0 0px 0px;
 }
 table.columns,
 table.column {
@@ -112,13 +108,13 @@ table.column {
 }
 table.columns td,
 table.column td {
-  padding: 0px 0px 10px;
+  padding: 0px 0px 20px;
 }
 table.columns td.sub-columns,
 table.column td.sub-columns,
 table.columns td.sub-column,
 table.column td.sub-column {
-  padding-right: 10px;
+  padding-right: 0;
 }
 td.sub-column,
 td.sub-columns {
@@ -358,7 +354,7 @@ table.column .text-pad-right {
 }
 .block-grid td {
   display: inline-block;
-  padding: 10px;
+  padding: 20px;
 }
 .two-up td {
   width: 360px;
@@ -523,7 +519,7 @@ h6 a:visited {
 .panel {
   background: #f2f2f2;
   border: 1px solid #d9d9d9;
-  padding: 10px !important;
+  padding: 20px !important;
 }
 .sub-grid table {
   width: 100%;
@@ -658,13 +654,9 @@ table.alert:hover td {
   background: #67080a !important;
 }
 table.radius td {
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
   border-radius: 3px;
 }
 table.round td {
-  -webkit-border-radius: 500px;
-  -moz-border-radius: 500px;
   border-radius: 500px;
 }
 /* Outlook First */
@@ -684,10 +676,12 @@ body.outlook p {
     width: 95% !important;
   }
   table[class="body"] .row {
+    position: relative !important;
     width: 100% !important;
     display: block !important;
   }
   table[class="body"] .wrapper {
+    position: relative !important;
     display: block !important;
     padding-right: 0 !important;
   }
@@ -773,18 +767,18 @@ body.outlook p {
     width: 1px !important;
   }
   table[class="body"] .text-pad {
-    padding-left: 2.777778% !important;
-    padding-right: 2.777778% !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
   }
   table[class="body"] .right-text-pad,
   table[class="body"] .text-pad-right {
-    padding-left: 2.777778% !important;
-    padding-right: 2.777778% !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
   }
   table[class="body"] .left-text-pad,
   table[class="body"] .text-pad-left {
-    padding-left: 2.777778% !important;
-    padding-right: 2.777778% !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
   }
   table[class="body"] .hide-for-small,
   table[class="body"] .show-for-desktop {
@@ -939,8 +933,8 @@ h6 {
 }
 @media only screen and (max-width: 720px) {
   table[class="body"] .inner {
-    padding-top: 2.777778%;
-    padding-bottom: 2.777778%;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
   }
 }
 .filler,
@@ -948,21 +942,15 @@ h6 {
   line-height: 0;
   font-size: 0;
 }
-td.wrapper {
-  padding-top: 0;
-}
-table.columns td,
-table.column td {
-  padding-bottom: 0;
-}
-table.columns td.sub-columns,
-table.column td.sub-columns,
-table.columns td.sub-column,
-table.column td.sub-column {
-  padding-right: 0;
-}
 .header {
   background-color: #001f46;
+}
+.header td.wrapper {
+  padding-top: 0;
+}
+.header table.columns td,
+.header table.column td {
+  padding-bottom: 0;
 }
 .header a {
   line-height: 0;
@@ -997,11 +985,23 @@ body .contentOnline a:focus,
 body .contentOnline a:active {
   color: #ffffff !important;
 }
-.contentOnline .inner {
+.contentOnline td.wrapper {
   padding-top: 10px;
+}
+.contentOnline table.columns td,
+.contentOnline table.column td {
   padding-bottom: 10px;
+}
+.contentOnline td {
   font-size: 9.1px;
   line-height: 12.103px;
+}
+.contentMain td.wrapper {
+  padding-top: 0;
+}
+.contentMain table.columns td,
+.contentMain table.column td {
+  padding-top: 20px;
 }
 .contentMain .sub-columns.first {
   background-color: #eacc90;
@@ -1083,9 +1083,12 @@ body .contentFooter a:focus,
 body .contentFooter a:active {
   color: #d39c0b !important;
 }
-.contentFooter .inner {
-  padding-top: 5px;
-  padding-bottom: 5px;
+.contentFooter td.wrapper {
+  padding-top: 0;
+}
+.contentFooter table.columns td,
+.contentFooter table.column td {
+  padding-bottom: 0;
 }
 .contentFooter .rounderWrapper {
   padding-right: 20px;
@@ -1093,8 +1096,6 @@ body .contentFooter a:active {
 }
 .contentFooter .rounderWrapper .rounder {
   overflow: hidden;
-  -webkit-border-radius: 0 10px 10px 0;
-  -moz-border-radius: 0 10px 10px 0;
   border-radius: 0 10px 10px 0;
 }
 .contentFooter .rounderWrapper .rounder table {
@@ -1102,6 +1103,8 @@ body .contentFooter a:active {
 }
 .contentFooter .rounderWrapper .rounder table td {
   background-color: #001f46;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 .contentFooter .sub-columns.first {
   background-color: #001f46;
@@ -1144,12 +1147,8 @@ body .contentFooter a:active {
   color: #ffffff;
 }
 @media only screen and (max-width: 720px) {
-  table[class="body"] .contentFooter .inner {
-    padding-top: 1.388889%;
-    padding-bottom: 1.388889%;
-  }
   table[class="body"] .contentFooter .rounderWrapper {
-    padding-right: 2.777778%;
+    padding-right: 10px !important;
   }
 }
 .contentLegal,
@@ -1165,9 +1164,15 @@ body .contentLegal a:focus,
 body .contentLegal a:active {
   color: #d39c0b !important;
 }
-.contentLegal .inner {
+.contentLegal td.wrapper {
+  padding-top: 0;
+}
+.contentLegal table.columns td,
+.contentLegal table.column td {
   padding-top: 5px;
   padding-bottom: 5px;
+}
+.contentLegal td {
   font-size: 9.1px;
   font-style: italic;
   line-height: 12.103px;
@@ -1191,9 +1196,14 @@ body .contentUnsubscribe a:focus,
 body .contentUnsubscribe a:active {
   color: #ffffff !important;
 }
-.contentUnsubscribe .inner {
+.contentUnsubscribe td.wrapper {
   padding-top: 10px;
+}
+.contentUnsubscribe table.columns td,
+.contentUnsubscribe table.column td {
   padding-bottom: 10px;
+}
+.contentUnsubscribe td {
   font-size: 9.1px;
   line-height: 12.103px;
 }

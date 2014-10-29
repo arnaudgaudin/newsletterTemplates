@@ -54,6 +54,9 @@
 
 // Padding config
 // --------------------------------------------------
-@textPad: 20px;
+@wrapperPad: 20px;
+@columnPad: @wrapperPad;
+@textPad: @wrapperPad;
+@textPadCollapse: (@textPad / 2);
 //calcul du padding de 20px de manière relative
-@textPadCollapse: unit(round((@textPad / @containerWidth * 100), 6), %);
+// @textPadCollapse: unit(round((@textPad / @containerWidth * 100), 6), %);
