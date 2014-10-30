@@ -11,7 +11,9 @@
 $templates = scandir('templates');
 if($templates != false) {
 	foreach ($templates as $template) {
-		echo '<li><a href="/templates/' . $template . '/newsletter.html">' . $template . '</a></li>';
+		if(strlen($template) > 2) {
+			echo '<li><a href="/templates/' . $template . '/newsletter.html">' . $template . '</a></li>';
+		}
 	}
 }
 ?>
