@@ -11,7 +11,7 @@ echo "inlining newsletter.html ..."
 # https://github.com/premailer/premailer/wiki/Premailer-Command-Line-Usage
 # UTILISER IMPÉRATIVEMENT AVEC LE PARSER NOKOGIRI
 templateName=$(basename "$PWD")
-domain=http://newsletter-templates.eilep.com
+domain=http://newsletter-templates.lesechos-publishing.fr
 baseurl=$domain/templates/$templateName/
 premailer --base-url=$baseurl --entities --verbose ${PWD}/newsletter.html > ${PWD}/newsletter-inline.html
 
