@@ -190,10 +190,22 @@ color: #d39c0b !important;
 body .contentMain .date a {
 color: #d39c0b !important;
 }
-body .contentMain .addressWrapper a {
+body .contentMain .addressTitle a {
 color: #d39c0b !important;
 }
-body .contentMain .addressWrapper a {
+body .contentMain .addressDash a {
+color: #d39c0b !important;
+}
+body .contentMain .address a {
+color: #d39c0b !important;
+}
+body .contentMain .addressTitle a {
+color: #d39c0b !important;
+}
+body .contentMain .addressDash a {
+color: #d39c0b !important;
+}
+body .contentMain .address a {
 color: #d39c0b !important;
 }
 body .contentFooter a {
@@ -505,12 +517,12 @@ color: #ffffff !important;
 													<td class="eleven sub-columns text-pad last" style="-ms-hyphens: auto; border-collapse: collapse !important; color: #022548; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 18px; margin: 0; min-width: 0px; padding: 20px 10px 10px; text-align: left; vertical-align: top; width: 91.666666%; word-break: break-word" align="left" valign="top" width="91.666666%">
 														<?<champ>
 														<type>text</type>
-														<html_avant><span class="preTitle" style="display: block; font-size: 15px; line-height: 16.5px; padding-bottom: 10px"></html_avant>
+														<html_avant><span class="preTitle" style="display: block; font-size: 15px; line-height: 16.5px"></html_avant>
 														<defaut><b>Gan Assurances et Les Echos</b> vous invitent, avec les clients de votre choix, au Rendez-vous EXPERT&#160;PRO&#160;:</defaut>
 														<html_apres></span></html_apres>
 														</champ>?> <?<champ>
 														<type>text</type>
-														<html_avant><h1 class="title" style="color: #022548; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 22px; font-weight: normal; line-height: 1.1; margin: 0; padding: 0 0 10px; text-align: left; text-transform: uppercase; word-break: normal" align="left">&#171;&#160;</html_avant>
+														<html_avant><h1 class="title" style="color: #022548; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 22px; font-weight: normal; line-height: 1.1; margin: 0; padding: 10px 0 0; text-align: left; text-transform: uppercase; word-break: normal" align="left">&#171;&#160;</html_avant>
 														<defaut>Les nouvelles obligations<br />du chef d'entreprise&#160;:<br />contraintes ou opportunit&#233;s&#160;?</defaut>
 														<html_apres>&#160;&#187;</h1></html_apres>
 														</champ>?>
@@ -518,7 +530,7 @@ color: #ffffff !important;
 														<? <bloc nom="chapeau" type="debut" /> ?>
 														<?<champ>
 														<type>text</type>
-														<html_avant><span class="teaser" style="display: block; font-size: 17px; font-weight: bold; line-height: 18.7px; padding-bottom: 20px"></html_avant>
+														<html_avant><span class="teaser" style="display: block; font-size: 17px; font-weight: bold; line-height: 18.7px; padding-top: 10px"></html_avant>
 														<defaut>La compl&#233;mentaire sant&#233; devient obligatoire dans toutes les entreprises.</defaut>
 														<html_apres></span></html_apres>
 														</champ>?>
@@ -527,35 +539,35 @@ color: #ffffff !important;
 														<? <bloc nom="date" type="debut" /> ?>
 														<?<champ>
 														<type>text</type>
-														<html_avant><span class="date" style="color: #d39c0b !important; display: block; font-size: 17px; font-weight: bold; line-height: 18.7px"><a href="#" class="link_disabled" style="color: #d39c0b !important; cursor: default !important; pointer-events: none !important; text-decoration: none !important"></html_avant>
+														<html_avant><span class="date" style="color: #d39c0b !important; display: block; font-size: 17px; font-weight: bold; line-height: 18.7px; padding-top: 20px"><a href="#" class="link_disabled" style="color: #d39c0b !important; cursor: default !important; pointer-events: none !important; text-decoration: none !important"></html_avant>
 														<defaut>Le jeudi 20 novembre de 8h30 &#224; 10h &#224; l'h&#244;tel Holiday Inn Resort Nice</defaut>
 														<html_apres></a></span></html_apres>
 														</champ>?>
 														<? <bloc nom="date" type="fin" /> ?>
 
-														<? <bloc nom="adresse" type="debut" /> ?>
-														<span class="addressWrapper" style="color: #d39c0b !important; display: block; padding-bottom: 20px">
-															<?<champ>
-															<type>text</type>
-															<html_avant><span class="addressTitle"></html_avant>
-															<defaut>Port Saint Laurent</defaut>
-															<html_apres></span></html_apres>
-															</champ>?> - <?<champ>
-															<type>lien</type>
-															<href>http://maps.apple.com/?q=167%20Promenade%20Des%20Flots%20Bleus%2006700%20Saint-Laurent-du-Var</href>
-															<html_avant><span class="address"></html_avant>
-															<texte>167 Promenade Des Flots Bleus 06700 Saint-Laurent-du-Var</texte>
-															<html_apres></span></html_apres>
-															<params>
-															style="color: #d39c0b !important; text-decoration: none"
-															</params>
-															</champ>?>
-														</span>
+														<? <bloc nom="adresse" type="debut" sstype="adresseTitre" /> ?>
+														<?<champ>
+														<type>text</type>
+														<html_avant><span class="addressTitle" style="color: #d39c0b !important"></html_avant>
+														<defaut>Port Saint Laurent</defaut>
+														<html_apres></span><span class="addressDash" style="color: #d39c0b !important"> -</span></html_apres>
+														</champ>?>
+														<? <bloc nom="adresse" type="inter" sstype="adresseContenu" /> ?>
+														<?<champ>
+														<type>lien</type>
+														<href>http://maps.apple.com/?q=167%20Promenade%20Des%20Flots%20Bleus%2006700%20Saint-Laurent-du-Var</href>
+														<html_avant><span class="address" style="color: #d39c0b !important"></html_avant>
+														<texte>167 Promenade Des Flots Bleus 06700 Saint-Laurent-du-Var</texte>
+														<html_apres></span></html_apres>
+														<params>
+														style="color: #022548; text-decoration: none"
+														</params>
+														</champ>?>
 														<? <bloc nom="adresse" type="fin" /> ?>
 
 														<?<champ>
 														<type>text</type>
-														<html_avant><span class="breakfast" style="display: block; font-size: 11.9px; line-height: 13.09px; padding-bottom: 10px"></html_avant>
+														<html_avant><span class="breakfast" style="display: block; font-size: 11.9px; line-height: 13.09px; padding-bottom: 10px; padding-top: 20px"></html_avant>
 														<defaut>Petit d&#233;jeuner d&#233;bat anim&#233; par&#160;:</defaut>
 														<html_apres></span></html_apres>
 														</champ>?>
