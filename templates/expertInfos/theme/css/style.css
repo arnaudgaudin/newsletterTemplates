@@ -332,20 +332,20 @@ td.expander {
 }
 table.columns .text-pad,
 table.column .text-pad {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
 }
 table.columns .left-text-pad,
 table.columns .text-pad-left,
 table.column .left-text-pad,
 table.column .text-pad-left {
-  padding-left: 10px;
+  padding-left: 10px !important;
 }
 table.columns .right-text-pad,
 table.columns .text-pad-right,
 table.column .right-text-pad,
 table.column .text-pad-right {
-  padding-right: 10px;
+  padding-right: 10px !important;
 }
 /* Block Grid */
 .block-grid {
@@ -766,18 +766,12 @@ body.outlook p {
   table[class="body"] table.columns td.expander {
     width: 1px !important;
   }
-  table[class="body"] .text-pad {
-    padding-left: 10px !important;
-    padding-right: 10px !important;
-  }
   table[class="body"] .right-text-pad,
   table[class="body"] .text-pad-right {
     padding-left: 10px !important;
-    padding-right: 10px !important;
   }
   table[class="body"] .left-text-pad,
   table[class="body"] .text-pad-left {
-    padding-left: 10px !important;
     padding-right: 10px !important;
   }
   table[class="body"] .hide-for-small,
