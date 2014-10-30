@@ -6,16 +6,15 @@
 </head>
 <body>
 <h1>Newsletter templates</h1>
-
+<ul>
 <?php
 $templates = scandir('templates');
-print_r($templates);
+if($templates != false) {
+	foreach ($templates as $template) {
+		echo '<li><a href="/templates/' . $template . '/newsletter.html">' . $template . '</a></li>';
+	}
+}
 ?>
-
-
-<ul>
-	<li><a href="/templates/testIntegration/newsletter.html">Test intégration</a></li>
-	<li><a href="/templates/liberaletvous/newsletter.html">Libéral et vous</a></li>
 </ul>
 </body>
 </html>
