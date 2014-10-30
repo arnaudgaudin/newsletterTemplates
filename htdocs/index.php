@@ -6,6 +6,13 @@
 </head>
 <body>
 <h1>Newsletter templates</h1>
+
+<?php
+$templates = scandir('templates');
+print_r($templates);
+?>
+
+
 <ul>
 	<li><a href="/templates/testIntegration/newsletter.html">Test intégration</a></li>
 	<li><a href="/templates/liberaletvous/newsletter.html">Libéral et vous</a></li>
