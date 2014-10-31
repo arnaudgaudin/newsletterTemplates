@@ -1016,34 +1016,15 @@ body .contentMain .date a:active {
   color: #d39c0b !important;
 }
 .contentMain .addressTitle,
-.contentMain .addressDash,
-.contentMain .address,
-.contentMain .addressTitle td,
-.contentMain .addressDash td,
-.contentMain .address td,
-.contentMain .addressTitle .inner,
-.contentMain .addressDash .inner,
-.contentMain .address .inner {
+.contentMain .addressDash {
   color: #d39c0b !important;
 }
-body .contentMain .addressTitle a,
-body .contentMain .addressDash a,
-body .contentMain .address a,
-body .contentMain .addressTitle a:link,
-body .contentMain .addressDash a:link,
-body .contentMain .address a:link,
-body .contentMain .addressTitle a:visited,
-body .contentMain .addressDash a:visited,
-body .contentMain .address a:visited,
-body .contentMain .addressTitle a:hover,
-body .contentMain .addressDash a:hover,
-body .contentMain .address a:hover,
-body .contentMain .addressTitle a:focus,
-body .contentMain .addressDash a:focus,
-body .contentMain .address a:focus,
-body .contentMain .addressTitle a:active,
-body .contentMain .addressDash a:active,
-body .contentMain .address a:active {
+.contentMain a.address,
+.contentMain a.address:link,
+.contentMain a.address:visited,
+.contentMain a.address:hover,
+.contentMain a.address:focus,
+.contentMain a.address:active {
   color: #d39c0b !important;
 }
 .contentMain .breakfast {

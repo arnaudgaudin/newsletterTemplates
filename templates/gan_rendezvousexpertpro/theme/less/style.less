@@ -94,10 +94,9 @@ h1, h2, h3, h4, h5, h6 { line-height: 1.1; }
 		.newsletterInnerTextColor(@colorGan1);
 		padding-top: 20px;
 	}
-
-	.addressTitle, .addressDash, .address {
-		.newsletterInnerTextColor(@colorGan1);
-	}
+	
+	.addressTitle, .addressDash { color: @colorGan1 !important; }
+	a.address { .newsletterLinkColor(@colorGan1); }
 
 	.breakfast {
 		display: block;
