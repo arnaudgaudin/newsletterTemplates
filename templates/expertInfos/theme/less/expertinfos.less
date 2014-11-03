@@ -3,10 +3,13 @@
 // v3.0 | 2014-09-16 09:30
 // --------------------------------------------------
 
+
+//Propriétés mso-* utilisées dans Outlook
+
 // LAYOUT
 // --------------------------------------------------
 
-h1, h2, h3, h4, h5, h6 { line-height: 1.1; }
+h1, h2, h3, h4, h5, h6 { mso-line-height-rule: exactly; line-height: 1.1; }
 
 .header {
 	//suppression décalage en trop
@@ -25,6 +28,7 @@ h1, h2, h3, h4, h5, h6 { line-height: 1.1; }
 .icon-rsaquo {
 	font-style: normal;
 	font-size: 150%;
+	mso-line-height-rule: exactly;
 	line-height: 0;
 	vertical-align: baseline;
 	bottom: -0.05em;
@@ -37,11 +41,12 @@ h1, h2, h3, h4, h5, h6 { line-height: 1.1; }
 	display: block;
 	font-weight: lighter;
 	font-size: (@headingsFontSizeH1 * 1.5);
+	mso-line-height-rule: exactly;
 	line-height: (@headingsFontSizeH1 * 0.85);
 	//compensation décalage entre font-size et line-height
 	padding-top: ((@headingsFontSizeH1 * 0.5) / 3);
 	small { font-size: (@headingsFontSizeH1 * 0.85); }
-	br { font-size: 0 !important; line-height: 0 !important; }
+	br { font-size: 0 !important; mso-line-height-rule: exactly; line-height: 0 !important; }
 }
 
 //réseaux sociaux
@@ -50,6 +55,7 @@ h1, h2, h3, h4, h5, h6 { line-height: 1.1; }
 	display: inline;
 	//pour supprimer les espaces
 	font-size: 0;
+	mso-line-height-rule: exactly;
 	line-height: 0;
 	padding: 0 5px 5px 5px;
 	&.first { padding-left: 0; }
@@ -128,6 +134,7 @@ h1, h2, h3, h4, h5, h6 { line-height: 1.1; }
 		.border {
 			display: block;
 			font-size: 0;
+			mso-line-height-rule: exactly;
 			line-height: 0;
 			height: (@wrapperPad - 1px);
 		}
@@ -138,7 +145,7 @@ h1, h2, h3, h4, h5, h6 { line-height: 1.1; }
 		td.wrapper {
 			&.last { padding-top: @wrapperPad !important; }
 			.border { border-top: none !important; }
-			.preTitle { line-height: @headingsFontSizeH1 !important; }
+			.preTitle { mso-line-height-rule: exactly; line-height: @headingsFontSizeH1 !important; }
 		}
 		.borderContainer {
 			display: none !important;
