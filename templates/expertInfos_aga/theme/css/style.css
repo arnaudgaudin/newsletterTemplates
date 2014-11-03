@@ -993,12 +993,12 @@ h6 {
 .contentALaUne td.wrapper.last table.column td {
   padding-bottom: 0;
 }
-.contentArticles td.wrapper.first table.columns td,
-.contentArticles td.wrapper.first table.column td {
+.contentArticles table.columns td,
+.contentArticles table.column td {
   padding-bottom: 0;
 }
-.contentArticles.last td.wrapper.first table.columns td,
-.contentArticles.last td.wrapper.first table.column td {
+.contentArticles.last table.columns td,
+.contentArticles.last table.column td {
   padding-bottom: 10px;
 }
 .contentArticles .title {
