@@ -90,11 +90,9 @@ h1, h2, h3, h4, h5, h6 { line-height: 1.1; }
 // contentArticles area
 // -------------------------
 .contentArticles {
-	//suppression décalage en trop sur image, sauf sur le dernier
-	td.wrapper.first {
-		table.columns td, table.column td { padding-bottom: 0; }
-	}
-	&.last td.wrapper.first {
+	//suppression décalage en trop sauf sur le dernier
+	table.columns td, table.column td { padding-bottom: 0; }
+	&.last {
 		table.columns td, table.column td { padding-bottom: @columnPad; }
 	}
 
