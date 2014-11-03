@@ -195,6 +195,7 @@ a {
 		color: @nlCntArtTitle;
 		border-top: 1px dotted @nlCntArtBorder;
 	}
+	.text { color: @nlCntArtText; }
 	.newsletterInnerTextColor(@nlCntArtText);
 }
 //rajout bordure en bas en mode responsive
@@ -211,17 +212,20 @@ a {
 .contentBottom {
 	.dessin {
 		.title { color: @nlCntDsnTitle; }
+		.text { color: @nlText; }
 		.readMore { color: @nlCntDsnReadMore; }
 		.border { border-top: 1px dotted @nlCntDsnBorder; }
 	}
 
 	.profession {
 		.title { color: @nlCntPrfTitle; }
+		.text { color: @nlText; }
 		.border { border-top: 1px dotted @nlCntPrfBorder; }
 	}
 
 	.question {
 		.title { color: @nlCntQtnTitle; }
+		.text { color: @nlText; }
 		.border { border-top: 1px dotted @nlCntQtnBorder; }
 	}
 }
@@ -259,6 +263,7 @@ body, table.body {
 .contentCabInform {
 	-premailer-background: e("##((nlCntCabBackground))##");
 	.title { color: e("##((nlCntCabTitle))##"); }
+	.text, .readMore, .icon-rsaquo { color: e("##((nlCntCabText))##"); }
 	.newsletterInnerTextColor(e("##((nlCntCabText))##"));
 }
 
@@ -267,8 +272,9 @@ body, table.body {
 .contentALaUne {
 	-premailer-background: e("##((nlCntUneBackground))##");
 	.title { color: e("##((nlCntUneTitle))##"); }
+	.text { color: e("##((nlCntUneText))##"); }
 	.newsletterInnerTextColor(e("##((nlCntUneText))##"));
-	.readMore { color: e("##((nlCntUneReadMore))##"); }
+	.readMore, .icon-rsaquo { color: e("##((nlCntUneReadMore))##"); }
 }
 
 // contentArticles area
@@ -288,6 +294,7 @@ body, table.body {
 		-premailer-background: e("##((nlCntAgdBackground))##");
 		.preTitle { color: e("##((nlCntAgdPreTitle))##"); }
 		.title { color: e("##((nlCntAgdTitle))##"); }
+		.text { color: e("##((nlCntAgdText))##"); }
 		.newsletterInnerTextColor(e("##((nlCntAgdText))##"));
 	}
 
@@ -295,6 +302,7 @@ body, table.body {
 		-premailer-background: e("##((nlCntChfBackground))##");
 		.preTitle { color: e("##((nlCntChfPreTitle))##"); }
 		.title { color: e("##((nlCntChfTitle))##"); }
+		.text { color: e("##((nlCntChfText))##"); }
 		.newsletterInnerTextColor(e("##((nlCntChfText))##"));
 	}
 
