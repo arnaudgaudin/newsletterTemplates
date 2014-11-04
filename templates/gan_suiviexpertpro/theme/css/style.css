@@ -15,7 +15,6 @@ table.body {
 body {
   width: 100% !important;
   min-width: 100%;
-  -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   margin: 0;
   padding: 0;
@@ -64,8 +63,7 @@ table {
 }
 td {
   word-break: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
+  -ms-hyphens: auto;
   hyphens: auto;
   border-collapse: collapse !important;
 }
@@ -97,14 +95,12 @@ table.container {
 table.row {
   padding: 0px;
   width: 100%;
-  position: relative;
 }
 table.container table.row {
   display: block;
 }
 td.wrapper {
   padding: 10px 0 0px 0px;
-  position: relative;
 }
 table.columns,
 table.column {
@@ -118,7 +114,7 @@ table.columns td.sub-columns,
 table.column td.sub-columns,
 table.columns td.sub-column,
 table.column td.sub-column {
-  padding-right: 10px;
+  padding-right: 0;
 }
 td.sub-column,
 td.sub-columns {
@@ -336,20 +332,20 @@ td.expander {
 }
 table.columns .text-pad,
 table.column .text-pad {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
 }
 table.columns .left-text-pad,
 table.columns .text-pad-left,
 table.column .left-text-pad,
 table.column .text-pad-left {
-  padding-left: 10px;
+  padding-left: 10px !important;
 }
 table.columns .right-text-pad,
 table.columns .text-pad-right,
 table.column .right-text-pad,
 table.column .text-pad-right {
-  padding-right: 10px;
+  padding-right: 10px !important;
 }
 /* Block Grid */
 .block-grid {
@@ -658,13 +654,9 @@ table.alert:hover td {
   background: #67080a !important;
 }
 table.radius td {
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
   border-radius: 3px;
 }
 table.round td {
-  -webkit-border-radius: 500px;
-  -moz-border-radius: 500px;
   border-radius: 500px;
 }
 /* Outlook First */
@@ -684,10 +676,12 @@ body.outlook p {
     width: 95% !important;
   }
   table[class="body"] .row {
+    position: relative !important;
     width: 100% !important;
     display: block !important;
   }
   table[class="body"] .wrapper {
+    position: relative !important;
     display: block !important;
     padding-right: 0 !important;
   }
@@ -772,18 +766,12 @@ body.outlook p {
   table[class="body"] table.columns td.expander {
     width: 1px !important;
   }
-  table[class="body"] .text-pad {
-    padding-left: 10px !important;
-    padding-right: 10px !important;
-  }
   table[class="body"] .right-text-pad,
   table[class="body"] .text-pad-right {
     padding-left: 10px !important;
-    padding-right: 10px !important;
   }
   table[class="body"] .left-text-pad,
   table[class="body"] .text-pad-left {
-    padding-left: 10px !important;
     padding-right: 10px !important;
   }
   table[class="body"] .hide-for-small,
