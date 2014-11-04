@@ -332,20 +332,20 @@ td.expander {
 }
 table.columns .text-pad,
 table.column .text-pad {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
 }
 table.columns .left-text-pad,
 table.columns .text-pad-left,
 table.column .left-text-pad,
 table.column .text-pad-left {
-  padding-left: 20px;
+  padding-left: 20px !important;
 }
 table.columns .right-text-pad,
 table.columns .text-pad-right,
 table.column .right-text-pad,
 table.column .text-pad-right {
-  padding-right: 20px;
+  padding-right: 20px !important;
 }
 /* Block Grid */
 .block-grid {
