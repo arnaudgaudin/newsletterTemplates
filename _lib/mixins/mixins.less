@@ -9,13 +9,16 @@
 
 //gestion des couleurs des zones inner
 .newsletterInnerTextColor(@color) {
-	&, td, .inner { color: @color !important; }
+	&, td, .inner { color: @color; }
     body & a { .newsletterLinkColor(@color); }
 }
 
 //gestion des couleurs de liens
+//pas de !important sur élément inliné
+//cf. https://www.campaignmonitor.com/blog/post/3143/outlook-2007-and-the-inline-important-declaration
 .newsletterLinkColor(@color) {
-    &, &:link, &:visited, &:hover, &:focus, &:active { color: @color !important; }   
+  & { color: @color; }
+  &:link, &:visited, &:hover, &:focus, &:active { color: @color !important; }   
 }
 
 // CSS3 PROPERTIES
