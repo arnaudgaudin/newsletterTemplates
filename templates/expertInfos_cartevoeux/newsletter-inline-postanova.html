@@ -1,4 +1,112 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<%
+Set Conn = Server.CreateObject("ADODB.Connection")
+Conn.ConnectionString =  application("Base_Newsletter")
+Conn.Open
+
+id_client=request.QueryString("id_client")
+
+CLIENT_SQL="SELECT * FROM CLIENTS WHERE (ID_CLIENT = "&id_client&")"
+Set rsClient=conn.Execute(CLIENT_SQL)
+
+id_exp=rsClient("id_exp")
+id_civilite=rsClient("id_civilite")
+if id_civilite = "1" then
+    civilite="Monsieur"
+elseif id_civilite="2" then
+    civilite="Madame"
+elseif id_civilite="3" then
+    civilite="Mademoiselle"
+elseif id_civilite="4" then
+    civilite="Ma&#238;tre"
+elseif id_civilite="5" then
+    civilite="Docteur"
+elseif id_civilite="6" then
+    civilite="Professeur"
+else
+    civilite=""
+end if
+
+nom_client=rsClient("nom_client")
+
+CABINET_SQL="SELECT * FROM EXPERTS_COMPTABLES WHERE (ID_EXP = "&id_exp&")"
+set rsCabinet=conn.Execute(CABINET_SQL)
+
+if not rsCabinet.eof then
+
+	repertoire_ei = rsCabinet("repertoire_ei")
+	nom_exp = rsCabinet("nom_exp")
+	prenom_exp = rsCabinet("prenom_exp")
+	raison_sociale_exp = rsCabinet("raison_sociale_exp")
+	type_client = rsCabinet("type_client")	
+	adresse1_exp = rsCabinet("adresse1_exp")
+	adresse2_exp = rsCabinet("adresse2_exp")
+	code_postal_exp = rsCabinet("code_postal_exp")
+	commune_exp = rsCabinet("commune_exp")
+	tel_cabinet = rsCabinet("tel_cabinet")
+	fax_cabinet = rsCabinet("fax_cabinet")
+	email_exp = rsCabinet("email_exp")
+	type_perso_site = rsCabinet("type_perso_site")
+	login_site_exp = rsCabinet("login_site_exp")
+	mdp_site_exp = rsCabinet("mdp_site_exp")
+	type_abo = rsCabinet("type_abo")
+	if type_abo="4" then
+	url_site_exp=rsCabinet("url_site_V3")
+	else
+	url_site_exp = rsCabinet("url_site_exp")
+	end if
+	url_facebook = rsCabinet("Facebook")
+	url_twitter = rsCabinet("Twitter")
+	url_linkedin = rsCabinet("Linkedin")
+	url_viadeo = rsCabinet("Viadeo")
+	url_google = rsCabinet("Google")
+	url_vimeo = rsCabinet("Vimeo")
+	url_youtube = rsCabinet("Youtube")
+	logo_groupement = rsCabinet("logo_groupement")
+	lien_groupement = rsCabinet("lien_groupement")
+
+	Select Case type_perso_site
+		Case 38 txt_perso_site = "pop"
+		Case 39 txt_perso_site = "disco"
+	End Select
+end if
+
+'Detect isSocialNetwork'
+if(url_facebook = "" and url_twitter="" and url_linkedin="" and url_viadeo="" and url_google="" and url_vimeo="" and url_youtube="") then
+	isSocialNetwork = False
+else
+	isSocialNetwork = True
+end if
+
+'Detect isOnline'
+if(Request.QueryString("is_online") = 1)then
+	isOnline = True
+else
+	isOnline = False
+end if
+
+'Detect isCollaborateur'
+if(Request.QueryString("is_coll") = 1)then
+	isCollaborateur = True
+else
+	isCollaborateur = False
+end if
+%>
+<% 'CSS Parser. Use colorParsing.Item("nlColorVariable")' %>
+<!--#include file="../parserCSS.inc"-->
+<!--#include file="emill-voeux.asp"-->
+<%
+'Changement pour newsletter collaborateur'
+if isCollaborateur=True then
+	get_coll = "&is_coll=1"
+	get_date = la_date_collaborateur
+else
+	get_coll = ""
+	get_date = la_date
+end if
+
+online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/flashvoeux_mail_V3_resp.asp?id_client="&id_client&"&idarticle="&idarticle&"&idarticleAlaune="&idarticleAlaune&"&is_online=1"&get_coll&"&fintrack="
+%>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
