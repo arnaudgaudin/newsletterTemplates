@@ -2,3 +2,37 @@
 @import "import.less";
 
 // additionnal template's style which extends ink's style
+
+
+// DEFAULT COLORS
+// --------------------------------------------------
+
+// Main container
+// -------------------------
+.container { background-color: @nlContainerBackground; }
+
+// Typography
+// -------------------------
+body, table.body, h1, h2, h3, h4, h5, h6, p, td {
+	color: @nlText;
+}
+
+// Links
+// -------------------------
+a {
+	color: @nlLinkColor;
+	&:hover { color: @nlLinkColorHover !important; }
+	&:active { color: @nlLinkColorHover !important; }
+	&:visited { color: @nlLinkColor !important; }
+
+	h1 &, h2 &, h3 &, h4 &, h5 &, h6 & {
+		color: @nlLinkColor;
+		&:active, &:visited { color: @nlLinkColor !important; }
+	}
+
+	.appleLinks & {
+		color: @nlLinkColor;
+		&:hover, &:active { color: @nlLinkColorHover !important; }
+		&:visited { color: @nlLinkColor !important; }
+	}
+}
