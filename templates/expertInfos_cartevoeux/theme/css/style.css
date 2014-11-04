@@ -1131,9 +1131,11 @@ h6 a:visited {
 .contentArticles,
 .contentArticles td,
 .contentArticles .inner {
-  color: #333333 !important;
+  color: #333333;
 }
-body .contentArticles a,
+body .contentArticles a {
+  color: #333333;
+}
 body .contentArticles a:link,
 body .contentArticles a:visited,
 body .contentArticles a:hover,
@@ -1184,7 +1186,7 @@ body .contentArticles a:active {
 }
 body,
 table.body {
-  -premailer-background: ##((nlBodyBackground))## !important;
+  -premailer-background: ##((nlBodyBackground))##;
 }
 .header {
   -premailer-background: ##((nlBodyBackground))##;
@@ -1195,9 +1197,11 @@ table.body {
 .contentOnline,
 .contentOnline td,
 .contentOnline .inner {
-  color: ##((nlCntOnlineText))## !important;
+  color: ##((nlCntOnlineText))##;
 }
-body .contentOnline a,
+body .contentOnline a {
+  color: ##((nlCntOnlineText))##;
+}
 body .contentOnline a:link,
 body .contentOnline a:visited,
 body .contentOnline a:hover,
@@ -1208,9 +1212,11 @@ body .contentOnline a:active {
 .contentOnline .name,
 .contentOnline .name td,
 .contentOnline .name .inner {
-  color: ##((nlCntOnlineName))## !important;
+  color: ##((nlCntOnlineName))##;
 }
-body .contentOnline .name a,
+body .contentOnline .name a {
+  color: ##((nlCntOnlineName))##;
+}
 body .contentOnline .name a:link,
 body .contentOnline .name a:visited,
 body .contentOnline .name a:hover,
@@ -1232,9 +1238,11 @@ body .contentOnline .name a:active {
 .contentCabInform,
 .contentCabInform td,
 .contentCabInform .inner {
-  color: ##((nlCntCabText))## !important;
+  color: ##((nlCntCabText))##;
 }
-body .contentCabInform a,
+body .contentCabInform a {
+  color: ##((nlCntCabText))##;
+}
 body .contentCabInform a:link,
 body .contentCabInform a:visited,
 body .contentCabInform a:hover,
@@ -1254,9 +1262,11 @@ body .contentCabInform a:active {
 .contentALaUne,
 .contentALaUne td,
 .contentALaUne .inner {
-  color: ##((nlCntUneText))## !important;
+  color: ##((nlCntUneText))##;
 }
-body .contentALaUne a,
+body .contentALaUne a {
+  color: ##((nlCntUneText))##;
+}
 body .contentALaUne a:link,
 body .contentALaUne a:visited,
 body .contentALaUne a:hover,
@@ -1289,9 +1299,11 @@ body .contentALaUne a:active {
 .contentBottom .agenda,
 .contentBottom .agenda td,
 .contentBottom .agenda .inner {
-  color: ##((nlCntAgdText))## !important;
+  color: ##((nlCntAgdText))##;
 }
-body .contentBottom .agenda a,
+body .contentBottom .agenda a {
+  color: ##((nlCntAgdText))##;
+}
 body .contentBottom .agenda a:link,
 body .contentBottom .agenda a:visited,
 body .contentBottom .agenda a:hover,
@@ -1314,9 +1326,11 @@ body .contentBottom .agenda a:active {
 .contentBottom .chiffre,
 .contentBottom .chiffre td,
 .contentBottom .chiffre .inner {
-  color: ##((nlCntChfText))## !important;
+  color: ##((nlCntChfText))##;
 }
-body .contentBottom .chiffre a,
+body .contentBottom .chiffre a {
+  color: ##((nlCntChfText))##;
+}
 body .contentBottom .chiffre a:link,
 body .contentBottom .chiffre a:visited,
 body .contentBottom .chiffre a:hover,
@@ -1339,9 +1353,11 @@ body .contentBottom .chiffre a:active {
 .contentContact,
 .contentContact td,
 .contentContact .inner {
-  color: ##((nlCntCctText))## !important;
+  color: ##((nlCntCctText))##;
 }
-body .contentContact a,
+body .contentContact a {
+  color: ##((nlCntCctText))##;
+}
 body .contentContact a:link,
 body .contentContact a:visited,
 body .contentContact a:hover,
@@ -1359,9 +1375,11 @@ body .contentContact a:active {
 .footer,
 .footer td,
 .footer .inner {
-  color: ##((nlFooterText))## !important;
+  color: ##((nlFooterText))##;
 }
-body .footer a,
+body .footer a {
+  color: ##((nlFooterText))##;
+}
 body .footer a:link,
 body .footer a:visited,
 body .footer a:hover,
