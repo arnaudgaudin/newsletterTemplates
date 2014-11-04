@@ -901,10 +901,10 @@ color: ##((nlFooterText))## !important;
 										<!--{{%%{{ end if }}%%}}-->
 												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 													<td class="text-pad" style="-ms-hyphens: auto; border-collapse: collapse !important; color: ##((nlCntCctText))## !important; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 0px 10px 10px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
-														<strong><!--{{%%{{ if (len(trim(type_client)) > 1) then response.write(type_client & " ") end if }}%%%%{{=raison_sociale_exp}}%%}}--><!--DEL{{-->raison_sociale_exp<!--}}DEL--></strong>
+														<strong style="color: ##((nlCntCctText))##"><!--{{%%{{ if (len(trim(type_client)) > 1) then response.write(type_client & " ") end if }}%%%%{{=raison_sociale_exp}}%%}}--><!--DEL{{-->raison_sociale_exp<!--}}DEL--></strong>
 														<br />
 														<!--{{%%{{ lien_adresse=Server.URLEncode(adresse1_exp & " " & adresse2_exp & " " & code_postal_exp & " " & commune_exp) }}%%}}-->
-														<a target="_blank" href="http://maps.apple.com/?q=%%{{=lien_adresse}}%%" style="color: ##((nlCntCctText))## !important; text-decoration: none"><!--{{%%{{
+														<a target="_blank" href="http://maps.apple.com/?q=%%{{=lien_adresse}}%%" style="color: ##((nlCntCctText))## !important; text-decoration: none"><span class="text" style="color: ##((nlCntCctText))##"><!--{{%%{{
 															'affichage adresse1'
 															nbc_desc=len(adresse1_exp)
 															k=1
@@ -937,24 +937,24 @@ color: ##((nlFooterText))## !important;
 															end if 
 															if (len(trim(code_postal_exp)) > 1) then response.write(code_postal_exp &"&nbsp;")  end if
 															if (len(trim(commune_exp)) > 1) then response.write(commune_exp) end if
-														}}%%}}--><!--DEL{{-->adresse<!--}}DEL--></a>
+														}}%%}}--><!--DEL{{-->adresse<!--}}DEL--></span></a>
 														<!--{{%%{{ if (len(trim(tel_cabinet)) > 1) then }}%%}}-->
 														<br />
-														T&#233;l. <span class="appleLinks"><a href="tel:%%{{=tel_cabinet}}%%" style="color: ##((nlCntCctText))## !important; text-decoration: none"><!--{{%%{{=tel_cabinet}}%%}}--><!--DEL{{-->tel_cabinet<!--}}DEL--></a></span>
+														<span class="text" style="color: ##((nlCntCctText))##">T&#233;l. </span><span class="appleLinks"><a href="tel:%%{{=tel_cabinet}}%%" style="color: ##((nlCntCctText))## !important; text-decoration: none"><span class="text" style="color: ##((nlCntCctText))##"><!--{{%%{{=tel_cabinet}}%%}}--><!--DEL{{-->tel_cabinet<!--}}DEL--></span></a></span>
 														<!--{{%%{{ end if }}%%}}-->
 														<!--{{%%{{ if (len(trim(fax_cabinet)) > 1) then }}%%}}-->
-														&#160;-&#160;Fax&#160;: <a class="link_disabled" href="#" style="color: ##((nlCntCctText))## !important; cursor: default !important; pointer-events: none !important; text-decoration: none !important"><!--{{%%{{=fax_cabinet}}%%}}--><!--DEL{{-->fax_cabinet<!--}}DEL--></a>
+														<span class="text" style="color: ##((nlCntCctText))##">&#160;-&#160;Fax&#160;: </span><a class="link_disabled" href="#" style="color: ##((nlCntCctText))## !important; cursor: default !important; pointer-events: none !important; text-decoration: none !important"><span class="text" style="color: ##((nlCntCctText))##"><!--{{%%{{=fax_cabinet}}%%}}--><!--DEL{{-->fax_cabinet<!--}}DEL--></span></a>
 														<!--{{%%{{ end if }}%%}}-->
 
 														<br />
-														<a class="link_underline" href="mailto:%%{{=email_exp}}%%" style="color: ##((nlCntCctText))## !important; text-decoration: underline"><!--{{%%{{=email_exp}}%%}}--><!--DEL{{-->email_exp<!--}}DEL--></a>
-														-
+														<a class="link_underline" href="mailto:%%{{=email_exp}}%%" style="color: ##((nlCntCctText))## !important; text-decoration: underline"><span class="text" style="color: ##((nlCntCctText))##"><!--{{%%{{=email_exp}}%%}}--><!--DEL{{-->email_exp<!--}}DEL--></span></a>
+														<span class="text" style="color: ##((nlCntCctText))##">-</span>
 														<!--{{%%{{
 														if type_abo="4" then
 															url_site_exp = rsCabinet("url_site_exp")
 														end if
 														}}%%}}-->
-														<a target="_blank" class="link_underline" href="http://%%{{=url_site_exp}}%%" style="color: ##((nlCntCctText))## !important; text-decoration: underline"><!--{{%%{{=url_site_exp}}%%}}--><!--DEL{{-->url_site_exp<!--}}DEL--></a>
+														<a target="_blank" class="link_underline" href="http://%%{{=url_site_exp}}%%" style="color: ##((nlCntCctText))## !important; text-decoration: underline"><span class="text" style="color: ##((nlCntCctText))##"><!--{{%%{{=url_site_exp}}%%}}--><!--DEL{{-->url_site_exp<!--}}DEL--></span></a>
 													</td>
 													<td class="expander" style="-ms-hyphens: auto; -premailer-width: 1; border-collapse: collapse !important; color: ##((nlCntCctText))## !important; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word" align="left" valign="top" width="1"></td>
 												</tr>
@@ -1023,7 +1023,7 @@ color: ##((nlFooterText))## !important;
 											<table class="twelve columns" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 720; border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 720px" width="720" cellpadding="0" cellspacing="0">
 												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 													<td class="center text-pad" style="-ms-hyphens: auto; border-collapse: collapse !important; color: ##((nlFooterText))## !important; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 0px 10px 10px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
-														<small style="font-size: 11px">
+														<small style="color: ##((nlFooterText))##; font-size: 11px">
 															Si vous ne souhaitez plus recevoir cette newsletter, veuillez acc&#233;der &#224; la page de <a target="_blank" class="link_underline" href="http://e-newsletter.expert-infos.com/_e-newsletter/desinscription.asp?fintrack=&amp;a=%%{{=id_client}}%%" style="color: ##((nlFooterText))## !important; text-decoration: underline">d&#233;sinscription</a>.<a class="link_disabled" href="#" lien_blackliste="lien_blackliste" style="color: ##((nlFooterText))## !important; cursor: default !important; pointer-events: none !important; text-decoration: none !important"></a>
 														</small>
 													</td>

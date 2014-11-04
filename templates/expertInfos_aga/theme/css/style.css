@@ -1349,6 +1349,10 @@ body .contentContact a:focus,
 body .contentContact a:active {
   color: ##((nlCntCctText))## !important;
 }
+.contentContact strong,
+.contentContact .text {
+  color: ##((nlCntCctText))##;
+}
 .footer {
   -premailer-background: ##((nlFooterBackground))##;
 }
@@ -1364,4 +1368,7 @@ body .footer a:hover,
 body .footer a:focus,
 body .footer a:active {
   color: ##((nlFooterText))## !important;
+}
+.footer small {
+  color: ##((nlFooterText))##;
 }
