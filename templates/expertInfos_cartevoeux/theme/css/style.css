@@ -925,6 +925,143 @@ h6 {
 .header table.column td {
   padding-bottom: 0;
 }
+.readMore {
+  display: block;
+  padding-top: 10px;
+  font-weight: bold;
+}
+.icon-rsaquo {
+  font-style: normal;
+  font-size: 150%;
+  mso-line-height-rule: exactly;
+  line-height: 0;
+  vertical-align: baseline;
+  bottom: -0.05em;
+}
+.title {
+  padding-bottom: 5px;
+}
+.preTitle {
+  display: block;
+  font-weight: lighter;
+  font-size: 33px;
+  mso-line-height-rule: exactly;
+  line-height: 18.7px;
+  padding-top: 3.66666667px;
+}
+.preTitle small {
+  font-size: 18.7px;
+}
+.preTitle br {
+  font-size: 0 !important;
+  mso-line-height-rule: exactly;
+  line-height: 0 !important;
+}
+.webicons td {
+  text-align: right;
+}
+.webicon {
+  display: inline;
+  font-size: 0;
+  mso-line-height-rule: exactly;
+  line-height: 0;
+  padding: 0 5px 5px 5px;
+}
+.webicon.first {
+  padding-left: 0;
+}
+.webicon.last {
+  padding-right: 0;
+}
+.webicon img {
+  display: inline;
+  float: none;
+  border-radius: 5px;
+}
+@media only screen and (max-width: 720px) {
+  table[class="body"] .webicon img {
+    width: 30px !important;
+    height: 30px !important;
+  }
+}
+.contentOnline .online {
+  display: block;
+  padding-bottom: 5px;
+}
+.contentOnline .name {
+  display: block;
+}
+.contentALaUne td.wrapper.last {
+  padding-top: 0;
+}
+.contentALaUne td.wrapper.last table.columns td,
+.contentALaUne td.wrapper.last table.column td {
+  padding-bottom: 0;
+}
+.contentArticles table.columns td,
+.contentArticles table.column td {
+  padding-bottom: 0;
+}
+.contentArticles.last table.columns td,
+.contentArticles.last table.column td {
+  padding-bottom: 10px;
+}
+.contentArticles .title {
+  padding-top: 4px;
+}
+.contentArticles .readMore {
+  padding-top: 5px;
+}
+@media only screen and (max-width: 720px) {
+  table[class="body"] .contentArticles .title {
+    padding-top: 0 !important;
+  }
+}
+.contentBottom td.wrapper.last {
+  padding-top: 0;
+}
+.contentBottom td.wrapper.last table.columns .borderContainer td,
+.contentBottom td.wrapper.last table.column .borderContainer td {
+  padding-bottom: 0;
+}
+.contentBottom td.wrapper .title {
+  padding-top: 10px;
+}
+.contentBottom td.wrapper.dessin .title {
+  padding-top: 5px;
+}
+.contentBottom .borderOffset {
+  display: block;
+  padding-bottom: 0;
+}
+.contentBottom .borderOffset.left {
+  padding-left: 10px;
+}
+.contentBottom .borderOffset.right {
+  padding-right: 10px;
+}
+.contentBottom .borderOffset .border {
+  display: block;
+  font-size: 0;
+  mso-line-height-rule: exactly;
+  line-height: 0;
+  height: 9px;
+}
+@media only screen and (max-width: 720px) {
+  table[class="body"] .contentBottom td.wrapper.last {
+    padding-top: 10px !important;
+  }
+  table[class="body"] .contentBottom td.wrapper .border {
+    border-top: none !important;
+  }
+  table[class="body"] .contentBottom td.wrapper .preTitle {
+    line-height: 22px !important;
+  }
+  table[class="body"] .contentBottom .borderContainer {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
 .container {
   background-color: #ffffff;
 }
@@ -984,13 +1121,81 @@ h6 a:visited {
 .appleLinks a:visited {
   color: #333333 !important;
 }
+.contentArticles .title {
+  color: #333333;
+  border-top: 1px dotted #6b6b6b;
+}
+.contentArticles .text {
+  color: #333333;
+}
+.contentArticles,
+.contentArticles td,
+.contentArticles .inner {
+  color: #333333 !important;
+}
+body .contentArticles a,
+body .contentArticles a:link,
+body .contentArticles a:visited,
+body .contentArticles a:hover,
+body .contentArticles a:focus,
+body .contentArticles a:active {
+  color: #333333 !important;
+}
+@media only screen and (max-width: 720px) {
+  table[class="body"] .contentArticles {
+    border-bottom: 1px dotted #6b6b6b !important;
+  }
+  table[class="body"] .contentArticles .title {
+    border-top: none !important;
+  }
+  table[class="body"] .contentArticles.last {
+    border-bottom: none !important;
+  }
+}
+.contentBottom .dessin .title {
+  color: #333333;
+}
+.contentBottom .dessin .text {
+  color: #333333;
+}
+.contentBottom .dessin .readMore {
+  color: #9e9e9e;
+}
+.contentBottom .dessin .border {
+  border-top: 1px dotted #6b6b6b;
+}
+.contentBottom .profession .title {
+  color: #333333;
+}
+.contentBottom .profession .text {
+  color: #333333;
+}
+.contentBottom .profession .border {
+  border-top: 1px dotted #6b6b6b;
+}
+.contentBottom .question .title {
+  color: #333333;
+}
+.contentBottom .question .text {
+  color: #333333;
+}
+.contentBottom .question .border {
+  border-top: 1px dotted #6b6b6b;
+}
+body,
+table.body {
+  -premailer-background: ##((nlBodyBackground))## !important;
+}
+.header {
+  -premailer-background: ##((nlBodyBackground))##;
+}
 .contentOnline {
-  background-color: #787878;
+  -premailer-background: ##((nlCntOnlineBackground))##;
 }
 .contentOnline,
 .contentOnline td,
 .contentOnline .inner {
-  color: #ffffff !important;
+  color: ##((nlCntOnlineText))## !important;
 }
 body .contentOnline a,
 body .contentOnline a:link,
@@ -998,57 +1203,172 @@ body .contentOnline a:visited,
 body .contentOnline a:hover,
 body .contentOnline a:focus,
 body .contentOnline a:active {
-  color: #ffffff !important;
+  color: ##((nlCntOnlineText))## !important;
 }
-.contentOnline .online {
-  color: #ffffff;
+.contentOnline .name,
+.contentOnline .name td,
+.contentOnline .name .inner {
+  color: ##((nlCntOnlineName))## !important;
 }
-.contentOnline td {
-  font-size: 11px;
-  line-height: 14.63px;
+body .contentOnline .name a,
+body .contentOnline .name a:link,
+body .contentOnline .name a:visited,
+body .contentOnline .name a:hover,
+body .contentOnline .name a:focus,
+body .contentOnline .name a:active {
+  color: ##((nlCntOnlineName))## !important;
 }
-.contentWebsite {
-  background-color: #4b606d;
+.contentCabInform {
+  -premailer-background: ##((nlCntCabBackground))##;
 }
-.contentWebsite,
-.contentWebsite td,
-.contentWebsite .inner {
-  color: #ffffff !important;
+.contentCabInform .title {
+  color: ##((nlCntCabTitle))##;
 }
-body .contentWebsite a,
-body .contentWebsite a:link,
-body .contentWebsite a:visited,
-body .contentWebsite a:hover,
-body .contentWebsite a:focus,
-body .contentWebsite a:active {
-  color: #ffffff !important;
+.contentCabInform .text,
+.contentCabInform .readMore,
+.contentCabInform .icon-rsaquo {
+  color: ##((nlCntCabText))##;
 }
-.contentWebsite td {
-  font-size: 12px;
-  line-height: 15.96px;
-  word-break: normal;
-  word-wrap: normal;
+.contentCabInform,
+.contentCabInform td,
+.contentCabInform .inner {
+  color: ##((nlCntCabText))## !important;
 }
-.contentUnsubscribe {
-  background-color: #787878;
+body .contentCabInform a,
+body .contentCabInform a:link,
+body .contentCabInform a:visited,
+body .contentCabInform a:hover,
+body .contentCabInform a:focus,
+body .contentCabInform a:active {
+  color: ##((nlCntCabText))## !important;
 }
-.contentUnsubscribe,
-.contentUnsubscribe td,
-.contentUnsubscribe .inner {
-  color: #ffffff !important;
+.contentALaUne {
+  -premailer-background: ##((nlCntUneBackground))##;
 }
-body .contentUnsubscribe a,
-body .contentUnsubscribe a:link,
-body .contentUnsubscribe a:visited,
-body .contentUnsubscribe a:hover,
-body .contentUnsubscribe a:focus,
-body .contentUnsubscribe a:active {
-  color: #ffffff !important;
+.contentALaUne .title {
+  color: ##((nlCntUneTitle))##;
 }
-.contentUnsubscribe small {
-  color: #ffffff;
+.contentALaUne .text {
+  color: ##((nlCntUneText))##;
 }
-.contentUnsubscribe td {
-  font-size: 11.4px;
-  line-height: 15.162px;
+.contentALaUne,
+.contentALaUne td,
+.contentALaUne .inner {
+  color: ##((nlCntUneText))## !important;
+}
+body .contentALaUne a,
+body .contentALaUne a:link,
+body .contentALaUne a:visited,
+body .contentALaUne a:hover,
+body .contentALaUne a:focus,
+body .contentALaUne a:active {
+  color: ##((nlCntUneText))## !important;
+}
+.contentALaUne .readMore,
+.contentALaUne .icon-rsaquo {
+  color: ##((nlCntUneReadMore))##;
+}
+.contentArticles .title .icon-rsaquo {
+  color: ##((nlCntArtIconColor))##;
+}
+.contentArticles .readMore {
+  color: ##((nlCntArtReadMore))##;
+}
+.contentBottom .agenda {
+  -premailer-background: ##((nlCntAgdBackground))##;
+}
+.contentBottom .agenda .preTitle {
+  color: ##((nlCntAgdPreTitle))##;
+}
+.contentBottom .agenda .title {
+  color: ##((nlCntAgdTitle))##;
+}
+.contentBottom .agenda .text {
+  color: ##((nlCntAgdText))##;
+}
+.contentBottom .agenda,
+.contentBottom .agenda td,
+.contentBottom .agenda .inner {
+  color: ##((nlCntAgdText))## !important;
+}
+body .contentBottom .agenda a,
+body .contentBottom .agenda a:link,
+body .contentBottom .agenda a:visited,
+body .contentBottom .agenda a:hover,
+body .contentBottom .agenda a:focus,
+body .contentBottom .agenda a:active {
+  color: ##((nlCntAgdText))## !important;
+}
+.contentBottom .chiffre {
+  -premailer-background: ##((nlCntChfBackground))##;
+}
+.contentBottom .chiffre .preTitle {
+  color: ##((nlCntChfPreTitle))##;
+}
+.contentBottom .chiffre .title {
+  color: ##((nlCntChfTitle))##;
+}
+.contentBottom .chiffre .text {
+  color: ##((nlCntChfText))##;
+}
+.contentBottom .chiffre,
+.contentBottom .chiffre td,
+.contentBottom .chiffre .inner {
+  color: ##((nlCntChfText))## !important;
+}
+body .contentBottom .chiffre a,
+body .contentBottom .chiffre a:link,
+body .contentBottom .chiffre a:visited,
+body .contentBottom .chiffre a:hover,
+body .contentBottom .chiffre a:focus,
+body .contentBottom .chiffre a:active {
+  color: ##((nlCntChfText))## !important;
+}
+.contentBottom .dessin .preTitle {
+  color: ##((nlCntDsnPreTitle))##;
+}
+.contentBottom .profession .preTitle {
+  color: ##((nlCntPrfPreTitle))##;
+}
+.contentBottom .question .preTitle {
+  color: ##((nlCntQtnPreTitle))##;
+}
+.contentContact {
+  -premailer-background: ##((nlCntCctBackground))##;
+}
+.contentContact,
+.contentContact td,
+.contentContact .inner {
+  color: ##((nlCntCctText))## !important;
+}
+body .contentContact a,
+body .contentContact a:link,
+body .contentContact a:visited,
+body .contentContact a:hover,
+body .contentContact a:focus,
+body .contentContact a:active {
+  color: ##((nlCntCctText))## !important;
+}
+.contentContact strong,
+.contentContact .text {
+  color: ##((nlCntCctText))##;
+}
+.footer {
+  -premailer-background: ##((nlFooterBackground))##;
+}
+.footer,
+.footer td,
+.footer .inner {
+  color: ##((nlFooterText))## !important;
+}
+body .footer a,
+body .footer a:link,
+body .footer a:visited,
+body .footer a:hover,
+body .footer a:focus,
+body .footer a:active {
+  color: ##((nlFooterText))## !important;
+}
+.footer small {
+  color: ##((nlFooterText))##;
 }

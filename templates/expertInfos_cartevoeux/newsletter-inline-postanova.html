@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width" />
     
 </head>
-<body style="-ms-text-size-adjust: 100%; background: #787878; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; line-height: 16px; margin: 0; min-width: 100%; padding: 0; text-align: left; width: 100% !important" bgcolor="#787878"><style type="text/css">
+<body style="-ms-text-size-adjust: 100%; background: <%=colorParsing.Item("nlBodyBackground")%> !important; background: #787878; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; line-height: 16px; margin: 0; min-width: 100%; padding: 0; text-align: left; width: 100% !important" bgcolor="#787878"><style type="text/css">
 body {
 background-color: #787878;
 }
@@ -177,23 +177,62 @@ display: inline !important;
 body {
 color: #333333;
 }
-body .contentOnline a {
-color: #ffffff !important;
+body .contentArticles a {
+color: #333333 !important;
+}
+body .contentArticles a {
+color: #333333 !important;
+}
+body {
+background: <%=colorParsing.Item("nlBodyBackground")%> !important;
 }
 body .contentOnline a {
-color: #ffffff !important;
+color: <%=colorParsing.Item("nlCntOnlineText")%> !important;
 }
-body .contentWebsite a {
-color: #ffffff !important;
+body .contentOnline a {
+color: <%=colorParsing.Item("nlCntOnlineText")%> !important;
 }
-body .contentWebsite a {
-color: #ffffff !important;
+body .contentOnline .name a {
+color: <%=colorParsing.Item("nlCntOnlineName")%> !important;
 }
-body .contentUnsubscribe a {
-color: #ffffff !important;
+body .contentOnline .name a {
+color: <%=colorParsing.Item("nlCntOnlineName")%> !important;
 }
-body .contentUnsubscribe a {
-color: #ffffff !important;
+body .contentCabInform a {
+color: <%=colorParsing.Item("nlCntCabText")%> !important;
+}
+body .contentCabInform a {
+color: <%=colorParsing.Item("nlCntCabText")%> !important;
+}
+body .contentALaUne a {
+color: <%=colorParsing.Item("nlCntUneText")%> !important;
+}
+body .contentALaUne a {
+color: <%=colorParsing.Item("nlCntUneText")%> !important;
+}
+body .contentBottom .agenda a {
+color: <%=colorParsing.Item("nlCntAgdText")%> !important;
+}
+body .contentBottom .agenda a {
+color: <%=colorParsing.Item("nlCntAgdText")%> !important;
+}
+body .contentBottom .chiffre a {
+color: <%=colorParsing.Item("nlCntChfText")%> !important;
+}
+body .contentBottom .chiffre a {
+color: <%=colorParsing.Item("nlCntChfText")%> !important;
+}
+body .contentContact a {
+color: <%=colorParsing.Item("nlCntCctText")%> !important;
+}
+body .contentContact a {
+color: <%=colorParsing.Item("nlCntCctText")%> !important;
+}
+body .footer a {
+color: <%=colorParsing.Item("nlFooterText")%> !important;
+}
+body .footer a {
+color: <%=colorParsing.Item("nlFooterText")%> !important;
 }
 @media only screen and (max-width: 720px) {
   table[class="body"] img {
@@ -364,6 +403,33 @@ color: #ffffff !important;
   table[class="container"] .block-grid td {
     width: 100% !important;
   }
+  table[class="body"] .webicon img {
+    width: 30px !important; height: 30px !important;
+  }
+  table[class="body"] .contentArticles .title {
+    padding-top: 0 !important;
+  }
+  table[class="body"] .contentBottom td.wrapper.last {
+    padding-top: 10px !important;
+  }
+  table[class="body"] .contentBottom td.wrapper .border {
+    border-top: none !important;
+  }
+  table[class="body"] .contentBottom td.wrapper .preTitle {
+    line-height: 22px !important;
+  }
+  table[class="body"] .contentBottom .borderContainer {
+    display: none !important; visibility: hidden !important;
+  }
+  table[class="body"] .contentArticles {
+    border-bottom: 1px dotted #6b6b6b !important;
+  }
+  table[class="body"] .contentArticles .title {
+    border-top: none !important;
+  }
+  table[class="body"] .contentArticles.last {
+    border-bottom: none !important;
+  }
 }
 </style>
 <style type="text/css" data-premailer="ignore">
@@ -375,7 +441,7 @@ color: #ffffff !important;
 }
 
 </style>
-	<table border="0" class="body" style="background: #787878; border-collapse: collapse; border-spacing: 0; color: #333333; empty-cells: hide; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; height: 100%; line-height: 16px; margin: 0; padding: 0; text-align: left; vertical-align: top; width: 100%" bgcolor="#787878" width="100%" height="100%" cellpadding="0" cellspacing="0">
+	<table border="0" class="body" style="background: <%=colorParsing.Item("nlBodyBackground")%> !important; background: #787878; border-collapse: collapse; border-spacing: 0; color: #333333; empty-cells: hide; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; height: 100%; line-height: 16px; margin: 0; padding: 0; text-align: left; vertical-align: top; width: 100%" bgcolor="#787878" width="100%" height="100%" cellpadding="0" cellspacing="0">
 		<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 			<td class="center" align="center" valign="top" style="-ms-hyphens: auto; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 0; text-align: center; vertical-align: top; word-break: break-word">
 				<center style="min-width: 720px; width: 100%">
@@ -385,15 +451,15 @@ color: #ffffff !important;
 
 								<gab_lien_message_online>
 								<!-- ONLINE START -->
-								<table border="0" class="row contentOnline" style="background: #787878; border-collapse: collapse; border-spacing: 0; color: #ffffff !important; display: block; empty-cells: hide; padding: 0px; text-align: left; vertical-align: top; width: 100%" bgcolor="#787878" width="100%" cellpadding="0" cellspacing="0">
+								<table border="0" class="row contentOnline" style="background: <%=colorParsing.Item("nlCntOnlineBackground")%>; border-collapse: collapse; border-spacing: 0; color: <%=colorParsing.Item("nlCntOnlineText")%> !important; display: block; empty-cells: hide; padding: 0px; text-align: left; vertical-align: top; width: 100%" width="100%" cellpadding="0" cellspacing="0">
 									<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
-										<td class="wrapper last" style="-ms-hyphens: auto; border-collapse: collapse !important; color: #ffffff !important; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 11px; font-weight: normal; hyphens: auto; line-height: 14.63px; margin: 0; padding: 10px 0px 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+										<td class="wrapper last" style="-ms-hyphens: auto; border-collapse: collapse !important; color: <%=colorParsing.Item("nlCntOnlineText")%> !important; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 10px 0px 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
 											<table border="0" class="twelve columns" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 720px" width="720" cellpadding="0" cellspacing="0">
 												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
-													<td class="center text-pad" style="-ms-hyphens: auto; border-collapse: collapse !important; color: #ffffff !important; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 11px; font-weight: normal; hyphens: auto; line-height: 14.63px; margin: 0; padding: 0px 10px 10px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
-														<span class="online" style="color: #ffffff">EXPERT INFOS LES ECHOS - Pour visualiser ce message en ligne, <a class="link_underline" target="_blank" href="#" lien_message_online style="color: #ffffff !important; text-decoration: underline">suivez ce lien</a>.</span>
+													<td class="center text-pad" style="-ms-hyphens: auto; border-collapse: collapse !important; color: <%=colorParsing.Item("nlCntOnlineText")%> !important; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 0px 10px 10px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
+														<span class="online" style="display: block; padding-bottom: 5px">EXPERT INFOS LES ECHOS - Pour visualiser ce message en ligne, <a class="link_underline" target="_blank" href="#" lien_message_online style="color: <%=colorParsing.Item("nlCntOnlineText")%> !important; text-decoration: underline">suivez ce lien</a>.</span>
 													</td>
-													<td class="expander" style="-ms-hyphens: auto; border-collapse: collapse !important; color: #ffffff !important; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 11px; font-weight: normal; hyphens: auto; line-height: 14.63px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word" align="left" valign="top" width="1"></td>
+													<td class="expander" style="-ms-hyphens: auto; border-collapse: collapse !important; color: <%=colorParsing.Item("nlCntOnlineText")%> !important; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word" align="left" valign="top" width="1"></td>
 												</tr>
 											</table>
 										</td>
@@ -403,14 +469,14 @@ color: #ffffff !important;
 								</gab_lien_message_online>
 
 								<!-- HEADER START -->
-								<table border="0" class="row header" style="border-collapse: collapse; border-spacing: 0; display: block; empty-cells: hide; padding: 0px; text-align: left; vertical-align: top; width: 100%" width="100%" cellpadding="0" cellspacing="0">
+								<table border="0" class="row header" style="background: <%=colorParsing.Item("nlBodyBackground")%>; border-collapse: collapse; border-spacing: 0; display: block; empty-cells: hide; padding: 0px; text-align: left; vertical-align: top; width: 100%" width="100%" cellpadding="0" cellspacing="0">
 								    <tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 								        <td class="wrapper last" style="-ms-hyphens: auto; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 0 0px 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
 								            <table border="0" class="twelve columns" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 720px" width="720" cellpadding="0" cellspacing="0">
 								                <tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 								                    <td class="center" style="-ms-hyphens: auto; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 0px 0px 0; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
 								                    	<a target="_blank" href="http://www.expertinfos.com" style="color: #333333; text-decoration: none">
-								                            <img class="link_box center" src="http://newsletter-templates.lesechos-publishing.fr/templates/expertcom_cartevoeux/theme/images/header-newsletter.png" alt="Header Newsletter" width="720" height="96" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: none; margin: 0 auto; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none" />
+								                            <img class="link_box center" src="http://newsletter-templates.lesechos-publishing.fr/templates/expertInfos_cartevoeux/theme/images/header-newsletter.png" alt="Header Newsletter" width="720" height="96" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: none; margin: 0 auto; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none" />
 								                        </a>
 								                    </td>
 								                </tr>
@@ -447,7 +513,7 @@ color: #ffffff !important;
 												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 													<td class="text-pad-left" style="-ms-hyphens: auto; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 0px 0px 10px 10px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
 														<a target="_blank" href="http://www.firecom.fr/voeux2015.php" class="link_box" style="color: #333333; display: block; outline: none; text-decoration: none">
-															<img src="http://newsletter-templates.lesechos-publishing.fr/templates/expertcom_cartevoeux/theme/images/cartevoeux.jpg" alt="Carte de voeux Expert Infos" width="350" height="350" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: left; max-width: 100%; outline: none; text-decoration: none; width: auto" align="left" />
+															<img src="http://newsletter-templates.lesechos-publishing.fr/templates/expertInfos_cartevoeux/theme/images/cartevoeux.jpg" alt="Carte de voeux Expert Infos" width="350" height="350" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: left; max-width: 100%; outline: none; text-decoration: none; width: auto" align="left" />
 														</a>
 													</td>
 												</tr>
@@ -474,15 +540,15 @@ color: #ffffff !important;
 								<!-- CONTENT MAIN END -->
 
 								<!-- CONTENT WEBSITE START -->
-								<table border="0" class="row contentWebsite" style="background: #4b606d; border-collapse: collapse; border-spacing: 0; color: #ffffff !important; display: block; empty-cells: hide; padding: 0px; text-align: left; vertical-align: top; width: 100%" bgcolor="#4b606d" width="100%" cellpadding="0" cellspacing="0">
+								<table border="0" class="row contentWebsite" style="border-collapse: collapse; border-spacing: 0; display: block; empty-cells: hide; padding: 0px; text-align: left; vertical-align: top; width: 100%" width="100%" cellpadding="0" cellspacing="0">
 									<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
-										<td class="wrapper last" style="-ms-hyphens: auto; border-collapse: collapse !important; color: #ffffff !important; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 15.96px; margin: 0; padding: 10px 0px 0px; text-align: left; vertical-align: top; word-break: normal; word-wrap: normal" align="left" valign="top">
+										<td class="wrapper last" style="-ms-hyphens: auto; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 10px 0px 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
 											<table border="0" class="twelve columns" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 720px" width="720" cellpadding="0" cellspacing="0">
 												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
-													<td class="center text-pad" style="-ms-hyphens: auto; border-collapse: collapse !important; color: #ffffff !important; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 15.96px; margin: 0; padding: 0px 10px 10px; text-align: center; vertical-align: top; word-break: normal; word-wrap: normal" align="center" valign="top">
-														<a class="link_box" target="_blank" href="http://www.firecom.fr" style="color: #ffffff !important; display: block; outline: none; text-decoration: none">www.firecom.fr</a>
+													<td class="center text-pad" style="-ms-hyphens: auto; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 0px 10px 10px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
+														<a class="link_box" target="_blank" href="http://www.firecom.fr" style="color: #333333; display: block; outline: none; text-decoration: none">www.firecom.fr</a>
 													</td>
-													<td class="expander" style="-ms-hyphens: auto; border-collapse: collapse !important; color: #ffffff !important; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 15.96px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: normal; word-wrap: normal" align="left" valign="top" width="1"></td>
+													<td class="expander" style="-ms-hyphens: auto; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word" align="left" valign="top" width="1"></td>
 												</tr>
 											</table>
 										</td>
@@ -492,15 +558,15 @@ color: #ffffff !important;
 
 								<!-- CONTENT UNSUBSCRIBE START -->
 								<gab_lien_blackliste>
-								<table border="0" class="row contentUnsubscribe" style="background: #787878; border-collapse: collapse; border-spacing: 0; color: #ffffff !important; display: block; empty-cells: hide; padding: 0px; text-align: left; vertical-align: top; width: 100%" bgcolor="#787878" width="100%" cellpadding="0" cellspacing="0">
+								<table border="0" class="row contentUnsubscribe" style="border-collapse: collapse; border-spacing: 0; display: block; empty-cells: hide; padding: 0px; text-align: left; vertical-align: top; width: 100%" width="100%" cellpadding="0" cellspacing="0">
 									<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
-										<td class="wrapper last" style="-ms-hyphens: auto; border-collapse: collapse !important; color: #ffffff !important; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 11.4px; font-weight: normal; hyphens: auto; line-height: 15.162px; margin: 0; padding: 10px 0px 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+										<td class="wrapper last" style="-ms-hyphens: auto; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 10px 0px 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
 											<table border="0" class="twelve columns" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 720px" width="720" cellpadding="0" cellspacing="0">
 												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
-													<td class="center text-pad" style="-ms-hyphens: auto; border-collapse: collapse !important; color: #ffffff !important; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 11.4px; font-weight: normal; hyphens: auto; line-height: 15.162px; margin: 0; padding: 0px 10px 10px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
-														<small style="color: #ffffff; font-size: 11px">Si vous ne souhaitez plus recevoir de messages, <a class="link_underline" target="_blank" href="#" lien_blackliste style="color: #ffffff !important; text-decoration: underline">cliquez&#160;ici</a>.</small>
+													<td class="center text-pad" style="-ms-hyphens: auto; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 0px 10px 10px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
+														<small style="font-size: 11px">Si vous ne souhaitez plus recevoir de messages, <a class="link_underline" target="_blank" href="#" lien_blackliste style="color: #333333; text-decoration: underline">cliquez&#160;ici</a>.</small>
 													</td>
-													<td class="expander" style="-ms-hyphens: auto; border-collapse: collapse !important; color: #ffffff !important; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 11.4px; font-weight: normal; hyphens: auto; line-height: 15.162px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word" align="left" valign="top" width="1"></td>
+													<td class="expander" style="-ms-hyphens: auto; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word" align="left" valign="top" width="1"></td>
 												</tr>
 											</table>
 										</td>
