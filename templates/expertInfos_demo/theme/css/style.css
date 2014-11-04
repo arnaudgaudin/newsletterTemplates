@@ -1137,7 +1137,6 @@ h6 a:visited {
 body .contentArticles a {
   color: #333333;
 }
-body .contentArticles a:link,
 body .contentArticles a:visited,
 body .contentArticles a:hover,
 body .contentArticles a:focus,
@@ -1203,7 +1202,6 @@ table.body {
 body .contentOnline a {
   color: ##((nlCntOnlineText))##;
 }
-body .contentOnline a:link,
 body .contentOnline a:visited,
 body .contentOnline a:hover,
 body .contentOnline a:focus,
@@ -1218,7 +1216,6 @@ body .contentOnline a:active {
 body .contentOnline .name a {
   color: ##((nlCntOnlineName))##;
 }
-body .contentOnline .name a:link,
 body .contentOnline .name a:visited,
 body .contentOnline .name a:hover,
 body .contentOnline .name a:focus,
@@ -1244,7 +1241,6 @@ body .contentOnline .name a:active {
 body .contentCabInform a {
   color: ##((nlCntCabText))##;
 }
-body .contentCabInform a:link,
 body .contentCabInform a:visited,
 body .contentCabInform a:hover,
 body .contentCabInform a:focus,
@@ -1268,7 +1264,6 @@ body .contentCabInform a:active {
 body .contentALaUne a {
   color: ##((nlCntUneText))##;
 }
-body .contentALaUne a:link,
 body .contentALaUne a:visited,
 body .contentALaUne a:hover,
 body .contentALaUne a:focus,
@@ -1305,7 +1300,6 @@ body .contentALaUne a:active {
 body .contentBottom .agenda a {
   color: ##((nlCntAgdText))##;
 }
-body .contentBottom .agenda a:link,
 body .contentBottom .agenda a:visited,
 body .contentBottom .agenda a:hover,
 body .contentBottom .agenda a:focus,
@@ -1332,7 +1326,6 @@ body .contentBottom .agenda a:active {
 body .contentBottom .chiffre a {
   color: ##((nlCntChfText))##;
 }
-body .contentBottom .chiffre a:link,
 body .contentBottom .chiffre a:visited,
 body .contentBottom .chiffre a:hover,
 body .contentBottom .chiffre a:focus,
@@ -1359,7 +1352,6 @@ body .contentBottom .chiffre a:active {
 body .contentContact a {
   color: ##((nlCntCctText))##;
 }
-body .contentContact a:link,
 body .contentContact a:visited,
 body .contentContact a:hover,
 body .contentContact a:focus,
@@ -1381,7 +1373,6 @@ body .contentContact a:active {
 body .footer a {
   color: ##((nlFooterText))##;
 }
-body .footer a:link,
 body .footer a:visited,
 body .footer a:hover,
 body .footer a:focus,
