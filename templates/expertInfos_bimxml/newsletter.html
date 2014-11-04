@@ -131,19 +131,19 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 }
 /*DEL{{*/img[src*="%%{{"], img[src*="}}%%"], .-premailer-hidden { display: none !important; visibility: hidden !important; }/*}}DEL*/
 </style>
-	<table class="body" bgcolor="##((nlBodyBackground))##">
+	<table border="0" class="body" bgcolor="##((nlBodyBackground))##">
 		<tr>
 			<td class="center" align="center" valign="top">
 				<center>
-					<table class="container">
+					<table border="0" class="container">
 						<tr>
 							<td>
 
 								<!-- ONLINE START -->
-								<table class="row contentOnline" bgcolor="##((nlCntOnlineBackground))##">
+								<table border="0" class="row contentOnline" bgcolor="##((nlCntOnlineBackground))##">
 									<tr>
 										<td class="wrapper last">
-											<table class="twelve columns">
+											<table border="0" class="twelve columns">
 												<tr>
 													<td class="center text-pad">
 														<!--{{%%{{ if isOnline=False then }}%%}}-->
@@ -165,10 +165,10 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 								
 								<!--{{%%{{ if logo_groupement=True then }}%%}}-->
 								<!-- HEADER GROUPE START -->
-								<table class="row header" bgcolor="##((nlBodyBackground))##">
+								<table border="0" class="row header" bgcolor="##((nlBodyBackground))##">
 									<tr>
 										<td class="wrapper last">
-											<table class="twelve columns">
+											<table border="0" class="twelve columns">
 												<tr>
 													<td class="eight sub-columns first">
 														<a target="_blank" class="link_box" href="http://%%{{=rscab_url_site_exp}}%%">
@@ -188,10 +188,10 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 								<!-- HEADER GROUPE END -->
 								<!--{{%%{{ else }}%%}}-->
 								<!-- HEADER START -->
-								<table class="row header" bgcolor="##((nlBodyBackground))##">
+								<table border="0" class="row header" bgcolor="##((nlBodyBackground))##">
 								    <tr>
 								        <td class="wrapper last">
-								            <table class="twelve columns">
+								            <table border="0" class="twelve columns">
 								                <tr>
 								                    <td class="center">
 								                    	<a target="_blank" href="http://%%{{=rscab_url_site_exp}}%%">
@@ -208,10 +208,10 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 								
 								<!--{{%%{{ if(texte_vacances <> "") then }}%%}}-->
 								<!-- TEXTEVACANCES START -->
-								<table class="row contentCabInform" bgcolor="##((nlCntCabBackground))##">
+								<table border="0" class="row contentCabInform" bgcolor="##((nlCntCabBackground))##">
 									<tr>
 										<td class="wrapper last">
-											<table class="twelve columns">
+											<table border="0" class="twelve columns">
 												<tr>
 													<td class="text-pad">
 														<!--{{%%{{=texte_vacances}}%%}}--><!--DEL{{-->texte_vacances<!--}}DEL-->
@@ -231,10 +231,10 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 										while not (rs.eof)
 								}}%%}}-->
 								<!-- CABINFORM START -->
-								<table class="row contentCabInform" bgcolor="##((nlCntCabBackground))##">
+								<table border="0" class="row contentCabInform" bgcolor="##((nlCntCabBackground))##">
 									<tr>
 										<td class="wrapper last">
-											<table class="twelve columns">
+											<table border="0" class="twelve columns">
 												<tr>
 													<td class="text-pad">
 														<!--{{%%{{
@@ -274,10 +274,10 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 									Set rsArticleAlaune=conn.Execute(SQLArticleAlaune)
 									id_de_larticle=mid(rsArticleAlaune("URL_DETAIL_INFO"),13,len(rsArticleAlaune("URL_DETAIL_INFO"))-16)
 								}}%%}}-->
-								<table class="row contentALaUne" bgcolor="##((nlCntUneBackground))##">
+								<table border="0" class="row contentALaUne" bgcolor="##((nlCntUneBackground))##">
 									<tr>
 										<td class="wrapper first">
-											<table class="six columns">
+											<table border="0" class="six columns">
 												<tr>
 													<td class="text-pad">
 														<a target="_blank" class="link_box" href="http://%%{{=URL_NL_XML}}%%%%{{=id_de_larticle}}%%">
@@ -292,7 +292,7 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 											</table>
 										</td>
 										<td class="wrapper last">
-											<table class="six columns">
+											<table border="0" class="six columns">
 												<tr>
 													<td>
 														<img src="http://e-newsletter.expert-infos.com/_infos/_photos/%%{{=id_de_larticle}}%%-f.jpg" width="360" height="240" alt="Article à la Une" /><!--DEL{{--><img src="http://lorempixel.com/1440/960/business/" width="360" height="240" alt="" /><!--}}DEL-->
@@ -331,10 +331,10 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 									
 								    if (i<(nbrart-1)) then
 								}}%%}}-->
-								<table class="row contentArticles">
+								<table border="0" class="row contentArticles">
 									<tr>
 										<td class="wrapper first">
-											<table class="five columns">
+											<table border="0" class="five columns">
 												<tr>
 													<td class="text-pad-left">
 														<a target="_blank" class="link_box" href="http://%%{{=URL_NL_XML}}%%%%{{=id_de_larticle}}%%">
@@ -346,7 +346,7 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 											</table>
 										</td>
 										<td class="wrapper last">
-											<table class="seven columns">
+											<table border="0" class="seven columns">
 												<tr>
 													<td class="text-pad">
 														<a target="_blank" class="link_box" href="http://%%{{=URL_NL_XML}}%%%%{{=id_de_larticle}}%%">
@@ -364,10 +364,10 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 									</tr>
 								</table>
 								<!--{{%%{{ else }}%%}}-->
-								<table class="row contentArticles last">
+								<table border="0" class="row contentArticles last">
 									<tr>
 										<td class="wrapper first">
-											<table class="five columns">
+											<table border="0" class="five columns">
 												<tr>
 													<td class="text-pad-left">
 														<a target="_blank" class="link_box" href="http://%%{{=URL_NL_XML}}%%%%{{=id_de_larticle}}%%">
@@ -379,7 +379,7 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 											</table>
 										</td>
 										<td class="wrapper last">
-											<table class="seven columns">
+											<table border="0" class="seven columns">
 												<tr>
 													<td class="text-pad">
 														<a target="_blank" class="link_box" href="http://%%{{=URL_NL_XML}}%%%%{{=id_de_larticle}}%%">
@@ -409,10 +409,10 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 								<!-- ARTICLES END -->
 
 								<!-- BOTTOM START -->
-								<table class="row contentBottom">
+								<table border="0" class="row contentBottom">
 									<tr>
 										<td class="agenda wrapper first" bgcolor="##((nlCntAgdBackground))##">
-											<table class="five columns">
+											<table border="0" class="five columns">
 												<tr>
 													<td class="text-pad">
 														<!--{{%%{{
@@ -435,7 +435,7 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 											</table>
 										</td>
 										<td class="dessin wrapper last">
-											<table class="seven columns">
+											<table border="0" class="seven columns">
 												<tr class="borderContainer">
 													<td><span class="borderOffset left"><span class="border"></span></span></td>
 													<td><span class="borderOffset right"><span class="border"></span></span></td>
@@ -458,13 +458,13 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 								<!-- BOTTOM END -->
 
 								<!-- CONTACT START -->
-								<table class="row contentContact" bgcolor="##((nlCntCctBackground))##">
+								<table border="0" class="row contentContact" bgcolor="##((nlCntCctBackground))##">
 									<tr>
 										<td class="wrapper first">
 										<!--{{%%{{ if(isSocialNetwork=False)Then }}%%}}-->
-											<table class="twelve columns -premailer-hidden"><!--DEL{{--></table><!--}}DEL-->
+											<table border="0" class="twelve columns -premailer-hidden"><!--DEL{{--></table><!--}}DEL-->
 										<!--{{%%{{ else }}%%}}-->
-											<table class="seven columns">
+											<table border="0" class="seven columns">
 										<!--{{%%{{ end if }}%%}}-->
 												<tr>
 													<td class="text-pad">
@@ -529,7 +529,7 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 										</td>
 										<!--{{%%{{ if(isSocialNetwork=True)Then }}%%}}-->
 										<td class="webicons wrapper last">
-											<table class="five columns">
+											<table border="0" class="five columns">
 												<tr>
 													<td class="text-pad">
 														<!--{{%%{{ if (url_facebook<>"") then }}%%}}-->
@@ -584,10 +584,10 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 									url_site_exp = rsCabinet("repertoire_ei")&".expert-infos.com"
 								end if
 								}}%%}}-->
-								<table class="row footer" bgcolor="##((nlFooterBackground))##">
+								<table border="0" class="row footer" bgcolor="##((nlFooterBackground))##">
 									<tr>
 										<td class="wrapper last">
-											<table class="twelve columns">
+											<table border="0" class="twelve columns">
 												<tr>
 													<td class="center text-pad">
 														<small>
