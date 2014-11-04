@@ -47,3 +47,46 @@ a {
 		&:visited { color: @nlLinkColor !important; }
 	}
 }
+
+
+// contentOnline area
+// -------------------------
+.contentOnline {
+	background-color: @bodyBackground;
+	.newsletterInnerTextColor(#ffffff);
+	.online { color: #ffffff; }
+
+	td {
+		font-size: @fontSizeSmall;
+		line-height: (@fontSizeSmall * 1.33);
+	}
+}
+
+
+// contentWebsite area
+// -------------------------
+.contentWebsite {
+	background-color: @expertInfosBleu;
+	.newsletterInnerTextColor(#ffffff);
+
+	td {
+		font-size: @headingsFontSizeH6;
+		line-height: (@headingsFontSizeH6 * 1.33);
+		word-break: normal;
+		word-wrap: normal;
+	}
+}
+
+
+// contentUnsubscribe area
+// -------------------------
+.contentUnsubscribe {
+	background-color: @bodyBackground;
+	.newsletterInnerTextColor(#ffffff);
+	small { color: #ffffff; }
+
+	td {
+		font-size: (@baseFontSize * 0.95);
+		line-height: (@baseFontSize * 0.95 * 1.33);
+	}
+}
