@@ -5,6 +5,7 @@
 
 
 //Propriétés mso-* utilisées dans Outlook
+//Debug outlook : http://www.verticalresponse.com/blog/its-not-you-its-outlook-the-complete-guide-for-email-marketers/
 
 // LAYOUT
 // --------------------------------------------------
@@ -112,6 +113,17 @@ h1, h2, h3, h4, h5, h6 { mso-line-height-rule: exactly; line-height: 1.1; }
 	table.columns td, table.column td { padding-bottom: 0px; }
 	&.last {
 		table.columns td, table.column td { padding-bottom: @columnPad; }
+	}
+
+	.wrapper.first {
+		//suppression fontSize et lineHeight pour début Outlook
+		table.columns td, table.column td {
+			&, img {
+				mso-line-height-rule: exactly;
+				line-height: 0px;
+				font-size: 0px;
+			}
+		}
 	}
 
 	.title {
