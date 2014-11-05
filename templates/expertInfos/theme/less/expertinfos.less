@@ -13,8 +13,8 @@ h1, h2, h3, h4, h5, h6 { mso-line-height-rule: exactly; line-height: 1.1; }
 
 .header {
 	//suppression décalage en trop
-	td.wrapper { padding-top: 0; }
-	table.columns td, table.column td { padding-bottom: 0; }
+	td.wrapper { padding-top: 0px; }
+	table.columns td, table.column td { padding-bottom: 0px; }
 }
 
 //en savoir plus
@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5, h6 { mso-line-height-rule: exactly; line-height: 1.1; }
 	font-style: normal;
 	font-size: 150%;
 	mso-line-height-rule: exactly;
-	line-height: 0;
+	line-height: 0px;
 	vertical-align: baseline;
 	bottom: -0.05em;
 }
@@ -54,12 +54,12 @@ h1, h2, h3, h4, h5, h6 { mso-line-height-rule: exactly; line-height: 1.1; }
 .webicon {
 	display: inline;
 	//pour supprimer les espaces
-	font-size: 0;
+	font-size: 0px;
 	mso-line-height-rule: exactly;
-	line-height: 0;
-	padding: 0 5px 5px 5px;
-	&.first { padding-left: 0; }
-	&.last { padding-right: 0; }
+	line-height: 0px;
+	padding: 0px 5px 5px 5px;
+	&.first { padding-left: 0px; }
+	&.last { padding-right: 0px; }
 	img {
 		display: inline;
 		float: none;
@@ -78,12 +78,12 @@ h1, h2, h3, h4, h5, h6 { mso-line-height-rule: exactly; line-height: 1.1; }
 .contentOnline {
 	.online {
 		display: block;
-		margin: 0;
+		margin: 0px;
 		padding-bottom: 5px;
 	}
 	.name {
 		display: block;
-		margin: 0;
+		margin: 0px;
 	}
 }
 
@@ -92,8 +92,8 @@ h1, h2, h3, h4, h5, h6 { mso-line-height-rule: exactly; line-height: 1.1; }
 .contentALaUne {
 	//suppression décalage en trop sur image
 	td.wrapper.last {
-		padding-top: 0;
-		table.columns td, table.column td { padding-bottom: 0; }
+		padding-top: 0px;
+		table.columns td, table.column td { padding-bottom: 0px; }
 	}
 }
 
@@ -101,25 +101,25 @@ h1, h2, h3, h4, h5, h6 { mso-line-height-rule: exactly; line-height: 1.1; }
 // -------------------------
 .contentArticles {
 	//suppression décalage en trop sauf sur le dernier
-	table.columns td, table.column td { padding-bottom: 0; }
+	table.columns td, table.column td { padding-bottom: 0px; }
 	&.last {
 		table.columns td, table.column td { padding-bottom: @columnPad; }
 	}
 
 	.title {
 		padding-top: 4px;
-		margin: 0;
+		margin: 0px;
 		body.outlook & { display: block !important; }
 	}
 	.readMore {
 		padding-top: 5px;
-		margin: 0;
+		margin: 0px;
 		body.outlook & { display: block !important; }
 	}
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentArticles {
-		.title { padding-top: 0 !important; }
+		.title { padding-top: 0px !important; }
 	}
 }
 
@@ -129,8 +129,8 @@ h1, h2, h3, h4, h5, h6 { mso-line-height-rule: exactly; line-height: 1.1; }
 	td.wrapper {
 		//suppression décalage en trop déporté sur borderContainer
 		&.last {
-			padding-top: 0;
-			table.columns .borderContainer td, table.column .borderContainer td { padding-bottom: 0; }
+			padding-top: 0px;
+			table.columns .borderContainer td, table.column .borderContainer td { padding-bottom: 0px; }
 		}
 		.title { padding-top: @wrapperPad; }
 		&.dessin .title { padding-top: (@wrapperPad / 2); }
@@ -139,15 +139,15 @@ h1, h2, h3, h4, h5, h6 { mso-line-height-rule: exactly; line-height: 1.1; }
 	//gestion bordure Interne
 	.borderOffset {
 		display: block;
-		padding-bottom: 0;
+		padding-bottom: 0px;
 		&.left { padding-left: @textPad; }
 		&.right { padding-right: @textPad; }
 
 		.border {
 			display: block;
-			font-size: 0;
+			font-size: 0px;
 			mso-line-height-rule: exactly;
-			line-height: 0;
+			line-height: 0px;
 			height: (@wrapperPad - 1px);
 		}
 	}
