@@ -144,14 +144,16 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 											<table border="0" class="twelve columns">
 												<tr>
 													<td class="center text-pad">
-														<!--{{%%{{ if isOnline=False then }}%%}}-->
-														<!--{{<gab_lien_message_online>}}-->
-														<small class="online">
-															Pour visualiser ce message en ligne, <a target="_blank" class="link_underline" href="%%{{=online_url}}%%">suivez ce lien</a>.
-														</small>
-														<!--{{</gab_lien_message_online>}}-->
-														<!--{{%%{{ end if }}%%}}-->
-														<strong class="name"><!--{{%%{{=civilite}}%%}}--><!--DEL{{-->civilite<!--}}DEL-->&nbsp;<!--{{%%{{=nom_client}}%%}}--><!--DEL{{-->nom_client<!--}}DEL-->, votre newsletter du <a class="link_disabled" href="#"><!--{{%%{{=get_date}}%%}}--><!--DEL{{-->get_date<!--}}DEL--></a>.</strong>
+														<center>
+															<!--{{%%{{ if isOnline=False then }}%%}}-->
+															<!--{{<gab_lien_message_online>}}-->
+															<p class="online">
+																<small>Pour visualiser ce message en ligne, <a target="_blank" class="link_underline" href="%%{{=online_url}}%%">suivez ce lien</a>.</small>
+															</p>
+															<!--{{</gab_lien_message_online>}}-->
+															<!--{{%%{{ end if }}%%}}-->
+															<p class="name"><strong><!--{{%%{{=civilite}}%%}}--><!--DEL{{-->civilite<!--}}DEL-->&nbsp;<!--{{%%{{=nom_client}}%%}}--><!--DEL{{-->nom_client<!--}}DEL-->, votre newsletter du <a class="link_disabled" href="#"><!--{{%%{{=get_date}}%%}}--><!--DEL{{-->get_date<!--}}DEL--></a>.</strong></p>
+														</center>
 													</td>
 													<td class="expander" bgcolor="##((nlBodyBackground))##"></td>
 												</tr>
