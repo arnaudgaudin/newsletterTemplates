@@ -121,13 +121,17 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 		table.columns td, table.column td { padding-bottom: @columnPad; }
 	}
 
-	.wrapper.first {
-		//suppression fontSize et lineHeight pour débug Outlook
-		table.columns td, table.column td {
-			mso-line-height-rule: exactly;
-			line-height: 0px;
-			font-size: 0px;
-		}
+	//suppression fontSize et lineHeight pour débug Outlook
+	table.columns td, table.column td {
+		mso-line-height-rule: exactly;
+		line-height: 0px;
+		font-size: 0px;
+	}
+
+	//remise en place fontSize et ligneHeight
+	.text, .readMore {
+		font-size: @baseFontSize;
+		line-height:@baseLineHeight;
 	}
 
 	.title {
@@ -138,6 +142,8 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 		padding-top: 5px;
 		margin: 0px;
 	}
+
+
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentArticles {
