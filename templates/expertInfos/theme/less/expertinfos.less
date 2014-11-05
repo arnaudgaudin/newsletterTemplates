@@ -78,11 +78,13 @@ h1, h2, h3, h4, h5, h6 { mso-line-height-rule: exactly; line-height: 1.1; }
 .contentOnline {
 	.online {
 		display: block;
+		margin: 0;
 		padding-bottom: 5px;
 	}
-	.name { display: block; }
-
-	body.outlook & p { display: block !important; }
+	.name {
+		display: block;
+		margin: 0;
+	}
 }
 
 // contentALaUne area
@@ -266,6 +268,7 @@ table.container > tr > td > table.row > tr > td.wrapper > table.columns > tr > t
 .contentOnline {
 	-premailer-background: e("##((nlCntOnlineBackground))##");
 	.newsletterInnerTextColor(e("##((nlCntOnlineText))##"));
+	.online { color: e("##((nlCntOnlineText))##"); }
 	.name { .newsletterInnerTextColor(e("##((nlCntOnlineName))##")); }
 }
 
