@@ -60,6 +60,8 @@ p {
 table {
   border-spacing: 0;
   border-collapse: collapse;
+  mso-table-lspace: 0pt;
+  mso-table-rspace: 0pt;
 }
 td {
   word-break: break-word;
@@ -916,14 +918,31 @@ h4,
 h5,
 h6 {
   mso-line-height-rule: exactly;
-  line-height: 1.1;
+}
+h1 {
+  line-height: 24.2px;
+}
+h2 {
+  line-height: 19.8px;
+}
+h3 {
+  line-height: 17.6px;
+}
+h4 {
+  line-height: 15.4px;
+}
+h5 {
+  line-height: 14.3px;
+}
+h6 {
+  line-height: 13.2px;
 }
 .header td.wrapper {
-  padding-top: 0;
+  padding-top: 0px;
 }
 .header table.columns td,
 .header table.column td {
-  padding-bottom: 0;
+  padding-bottom: 0px;
 }
 .readMore {
   display: block;
@@ -934,7 +953,7 @@ h6 {
   font-style: normal;
   font-size: 150%;
   mso-line-height-rule: exactly;
-  line-height: 0;
+  line-height: 0px;
   vertical-align: baseline;
   bottom: -0.05em;
 }
@@ -962,16 +981,16 @@ h6 {
 }
 .webicon {
   display: inline;
-  font-size: 0;
+  font-size: 0px;
   mso-line-height-rule: exactly;
-  line-height: 0;
-  padding: 0 5px 5px 5px;
+  line-height: 0px;
+  padding: 0px 5px 5px 5px;
 }
 .webicon.first {
-  padding-left: 0;
+  padding-left: 0px;
 }
 .webicon.last {
-  padding-right: 0;
+  padding-right: 0px;
 }
 .webicon img {
   display: inline;
@@ -986,51 +1005,61 @@ h6 {
 }
 .contentOnline .online {
   display: block;
+  margin: 0px;
   padding-bottom: 5px;
 }
 .contentOnline .name {
   display: block;
+  margin: 0px;
 }
-.contentALaUne td.wrapper.last {
-  padding-top: 0;
+.contentALaUne td.wrapper {
+  padding-top: 0px;
 }
-.contentALaUne td.wrapper.last table.columns td,
-.contentALaUne td.wrapper.last table.column td {
-  padding-bottom: 0;
+.contentALaUne td.wrapper table.columns td,
+.contentALaUne td.wrapper table.column td {
+  padding-bottom: 0px;
+}
+.contentALaUne td.wrapper.first table.columns td,
+.contentALaUne td.wrapper.first table.column td {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .contentArticles table.columns td,
 .contentArticles table.column td {
-  padding-bottom: 0;
+  padding-bottom: 0px;
 }
 .contentArticles.last table.columns td,
 .contentArticles.last table.column td {
   padding-bottom: 10px;
 }
+.contentArticles table.columns td,
+.contentArticles table.column td {
+  mso-line-height-rule: exactly;
+  line-height: 0px;
+  font-size: 0px;
+}
+.contentArticles .text,
+.contentArticles .readMore {
+  font-size: 12px;
+  line-height: 16px;
+}
 .contentArticles .title {
   padding-top: 4px;
-  margin: 0;
-}
-body.outlook .contentArticles .title {
-  display: block !important;
 }
 .contentArticles .readMore {
   padding-top: 5px;
-  margin: 0;
-}
-body.outlook .contentArticles .readMore {
-  display: block !important;
 }
 @media only screen and (max-width: 720px) {
   table[class="body"] .contentArticles .title {
-    padding-top: 0 !important;
+    padding-top: 0px !important;
   }
 }
 .contentBottom td.wrapper.last {
-  padding-top: 0;
+  padding-top: 0px;
 }
 .contentBottom td.wrapper.last table.columns .borderContainer td,
 .contentBottom td.wrapper.last table.column .borderContainer td {
-  padding-bottom: 0;
+  padding-bottom: 0px;
 }
 .contentBottom td.wrapper .title {
   padding-top: 10px;
@@ -1040,7 +1069,7 @@ body.outlook .contentArticles .readMore {
 }
 .contentBottom .borderOffset {
   display: block;
-  padding-bottom: 0;
+  padding-bottom: 0px;
 }
 .contentBottom .borderOffset.left {
   padding-left: 10px;
@@ -1050,9 +1079,9 @@ body.outlook .contentArticles .readMore {
 }
 .contentBottom .borderOffset .border {
   display: block;
-  font-size: 0;
+  font-size: 0px;
   mso-line-height-rule: exactly;
-  line-height: 0;
+  line-height: 0px;
   height: 9px;
 }
 @media only screen and (max-width: 720px) {
@@ -1215,6 +1244,9 @@ body .contentOnline a:hover,
 body .contentOnline a:focus,
 body .contentOnline a:active {
   color: ##((nlCntOnlineText))## !important;
+}
+.contentOnline .online {
+  color: ##((nlCntOnlineText))##;
 }
 .contentOnline .name,
 .contentOnline .name td,
