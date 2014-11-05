@@ -102,8 +102,16 @@ h1, h2, h3, h4, h5, h6 { mso-line-height-rule: exactly; line-height: 1.1; }
 		table.columns td, table.column td { padding-bottom: @columnPad; }
 	}
 
-	.title { padding-top: 4px; }
-	.readMore { padding-top: 5px; }
+	.title {
+		padding-top: 4px;
+		margin: 0;
+		body.outlook & { display: block !important; }
+	}
+	.readMore {
+		padding-top: 5px;
+		margin: 0;
+		body.outlook & { display: block !important; }
+	}
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentArticles {
