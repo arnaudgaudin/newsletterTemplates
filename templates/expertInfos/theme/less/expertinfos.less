@@ -115,6 +115,15 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 // contentArticles area
 // -------------------------
 .contentArticles {
+	td.wrapper {
+		background-color: #ff0000;
+		table.columns td, table.column td { background-color: darken(#ff0000, 20%); }
+		&.first {
+			background-color: #00ffff;
+			table.columns td, table.column td { background-color: darken(#00ffff, 20%); }
+		}
+	}
+	
 	//suppression décalage en trop sauf sur le dernier
 	table.columns td, table.column td { padding-bottom: 0px; }
 	&.last {
@@ -122,16 +131,12 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 	}
 
 	//suppression fontSize et lineHeight pour débug Outlook
-	table.columns td, table.column td {
-		mso-line-height-rule: exactly;
-		line-height: 0px;
-		font-size: 0px;
-	}
-
-	//remise en place fontSize et ligneHeight
-	.text, .readMore {
-		font-size: @baseFontSize;
-		line-height:@baseLineHeight;
+	td.wrapper.first {
+		table.columns td, table.column td {
+			mso-line-height-rule: exactly;
+			line-height: 0px;
+			font-size: 0px;
+		}
 	}
 
 	.title { padding-top: 4px; }
