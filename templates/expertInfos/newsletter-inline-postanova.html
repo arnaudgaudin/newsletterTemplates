@@ -524,11 +524,11 @@ background: <%=colorParsing.Item("nlBodyBackground")%>;
 														<% if isOnline=False then %>
 														<gab_lien_message_online>
 														<span class="online" style="color: <%=colorParsing.Item("nlCntOnlineText")%>; display: block; font-size: 12px; line-height: 16px; mso-line-height-rule: exactly; padding-bottom: 5px">
-															<small style="font-size: 11px">Pour visualiser ce message en ligne, <a target="_blank" class="link_underline" href="<%=online_url%>" style="color: <%=colorParsing.Item("nlCntOnlineText")%>; text-decoration: underline"><span class="important">suivez ce lien</span></a>.</small>
+															<small style="font-size: 11px">Pour visualiser ce message en ligne, <a target="_blank" class="link_underline" href="<%=online_url%>" style="color: <%=colorParsing.Item("nlCntOnlineText")%>; text-decoration: underline"><span class="important" style="color: <%=colorParsing.Item("nlCntOnlineText")%> !important">suivez ce lien</span></a>.</small>
 														</span>
 														</gab_lien_message_online>
 														<% end if %>
-														<br /><span class="name" style="color: <%=colorParsing.Item("nlCntOnlineName")%>; display: block; font-size: 12px; line-height: 16px; mso-line-height-rule: exactly"><strong><%=civilite%>&#160;<%=nom_client%>, votre newsletter du <a class="link_disabled" href="#" style="color: <%=colorParsing.Item("nlCntOnlineName")%>; cursor: default !important; pointer-events: none !important; text-decoration: none !important"><span class="important"><%=get_date%></span></a>.</strong></span>
+														<br /><span class="name" style="color: <%=colorParsing.Item("nlCntOnlineName")%>; display: block; font-size: 12px; line-height: 16px; mso-line-height-rule: exactly"><strong><%=civilite%>&#160;<%=nom_client%>, votre newsletter du <a class="link_disabled" href="#" style="color: <%=colorParsing.Item("nlCntOnlineName")%>; cursor: default !important; pointer-events: none !important; text-decoration: none !important"><span class="important" style="color: <%=colorParsing.Item("nlCntOnlineName")%> !important"><%=get_date%></span></a>.</strong></span>
 													</td>
 													<td class="expander" bgcolor="<%=colorParsing.Item("nlBodyBackground")%>" style="-ms-hyphens: auto; background: <%=colorParsing.Item("nlBodyBackground")%>; border-collapse: collapse !important; color: <%=colorParsing.Item("nlCntOnlineText")%>; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 0px; font-weight: normal; hyphens: auto; line-height: 0px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word" align="left" valign="top" width="1"></td>
 												</tr>
@@ -985,7 +985,7 @@ background: <%=colorParsing.Item("nlBodyBackground")%>;
 														<strong><% if (len(trim(type_client)) > 1) then response.write(type_client & " ") end if %><%=raison_sociale_exp%></strong>
 														<br />
 														<% lien_adresse=Server.URLEncode(adresse1_exp & " " & adresse2_exp & " " & code_postal_exp & " " & commune_exp) %>
-														<a target="_blank" href="http://maps.apple.com/?q=<%=lien_adresse%>" style="color: <%=colorParsing.Item("nlCntCctText")%>; text-decoration: none"><%
+														<a target="_blank" href="http://maps.apple.com/?q=<%=lien_adresse%>" style="color: <%=colorParsing.Item("nlCntCctText")%>; text-decoration: none"><span class="important" style="color: <%=colorParsing.Item("nlCntCctText")%> !important"><%
 															'affichage adresse1'
 															nbc_desc=len(adresse1_exp)
 															k=1
@@ -1018,24 +1018,24 @@ background: <%=colorParsing.Item("nlBodyBackground")%>;
 															end if 
 															if (len(trim(code_postal_exp)) > 1) then response.write(code_postal_exp &"&nbsp;")  end if
 															if (len(trim(commune_exp)) > 1) then response.write(commune_exp) end if
-														%></a>
+														%></span></a>
 														<% if (len(trim(tel_cabinet)) > 1) then %>
 														<br />
-														T&#233;l. <span class="appleLinks"><a href="tel:<%=tel_cabinet%>" style="color: <%=colorParsing.Item("nlCntCctText")%>; text-decoration: none"><%=tel_cabinet%></a></span>
+														T&#233;l. <span class="appleLinks"><a href="tel:<%=tel_cabinet%>" style="color: <%=colorParsing.Item("nlCntCctText")%>; text-decoration: none"><span class="important" style="color: <%=colorParsing.Item("nlCntCctText")%> !important"><%=tel_cabinet%></span></a></span>
 														<% end if %>
 														<% if (len(trim(fax_cabinet)) > 1) then %>
-														&#160;-&#160;Fax&#160;: <a class="link_disabled" href="#" style="color: <%=colorParsing.Item("nlCntCctText")%>; cursor: default !important; pointer-events: none !important; text-decoration: none !important"><%=fax_cabinet%></a>
+														&#160;-&#160;Fax&#160;: <a class="link_disabled" href="#" style="color: <%=colorParsing.Item("nlCntCctText")%>; cursor: default !important; pointer-events: none !important; text-decoration: none !important"><span class="important" style="color: <%=colorParsing.Item("nlCntCctText")%> !important"><%=fax_cabinet%></span></a>
 														<% end if %>
 
 														<br />
-														<a class="link_underline" href="mailto:<%=email_exp%>" style="color: <%=colorParsing.Item("nlCntCctText")%>; text-decoration: underline"><%=email_exp%></a>
+														<a class="link_underline" href="mailto:<%=email_exp%>" style="color: <%=colorParsing.Item("nlCntCctText")%>; text-decoration: underline"><span class="important" style="color: <%=colorParsing.Item("nlCntCctText")%> !important"><%=email_exp%></span></a>
 														-
 														<%
 														if type_abo="4" then
 															url_site_exp = rsCabinet("url_site_exp")
 														end if
 														%>
-														<a target="_blank" class="link_underline" href="http://<%=url_site_exp%>" style="color: <%=colorParsing.Item("nlCntCctText")%>; text-decoration: underline"><%=url_site_exp%></a>
+														<a target="_blank" class="link_underline" href="http://<%=url_site_exp%>" style="color: <%=colorParsing.Item("nlCntCctText")%>; text-decoration: underline"><span class="important" style="color: <%=colorParsing.Item("nlCntCctText")%> !important"><%=url_site_exp%></span></a>
 													</td>
 													<td class="expander" bgcolor="<%=colorParsing.Item("nlBodyBackground")%>" style="-ms-hyphens: auto; background: <%=colorParsing.Item("nlBodyBackground")%>; border-collapse: collapse !important; color: <%=colorParsing.Item("nlCntCctText")%>; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word" align="left" valign="top" width="1"></td>
 												</tr>
@@ -1105,7 +1105,7 @@ background: <%=colorParsing.Item("nlBodyBackground")%>;
 												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 													<td class="center text-pad" style="-ms-hyphens: auto; border-collapse: collapse !important; color: <%=colorParsing.Item("nlFooterText")%>; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 0px 10px 10px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
 														<small style="color: <%=colorParsing.Item("nlFooterText")%>; font-size: 11px">
-															Si vous ne souhaitez plus recevoir cette newsletter, veuillez acc&#233;der &#224; la page de <a target="_blank" class="link_underline" href="http://e-newsletter.expert-infos.com/_e-newsletter/desinscription.asp?fintrack=&amp;a=<%=id_client%>" style="color: <%=colorParsing.Item("nlFooterText")%>; text-decoration: underline"><span class="important">d&#233;sinscription</span></a>.<a class="link_disabled" href="#" lien_blackliste style="color: <%=colorParsing.Item("nlFooterText")%>; cursor: default !important; pointer-events: none !important; text-decoration: none !important"></a>
+															Si vous ne souhaitez plus recevoir cette newsletter, veuillez acc&#233;der &#224; la page de <a target="_blank" class="link_underline" href="http://e-newsletter.expert-infos.com/_e-newsletter/desinscription.asp?fintrack=&amp;a=<%=id_client%>" style="color: <%=colorParsing.Item("nlFooterText")%>; text-decoration: underline"><span class="important" style="color: <%=colorParsing.Item("nlFooterText")%> !important">d&#233;sinscription</span></a>.<a class="link_disabled" href="#" lien_blackliste style="color: <%=colorParsing.Item("nlFooterText")%>; cursor: default !important; pointer-events: none !important; text-decoration: none !important"></a>
 														</small>
 													</td>
 													<td class="expander" bgcolor="<%=colorParsing.Item("nlBodyBackground")%>" style="-ms-hyphens: auto; background: <%=colorParsing.Item("nlBodyBackground")%>; border-collapse: collapse !important; color: <%=colorParsing.Item("nlFooterText")%>; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word" align="left" valign="top" width="1"></td>

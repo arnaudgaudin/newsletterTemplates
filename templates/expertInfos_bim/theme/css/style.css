@@ -1170,6 +1170,7 @@ h6 a:visited {
 .contentArticles .title a {
   color: #333333;
 }
+.contentArticles .title a .important,
 .contentArticles .title a:visited,
 .contentArticles .title a:hover,
 .contentArticles .title a:focus,
@@ -1187,6 +1188,7 @@ h6 a:visited {
 .contentArticles a {
   color: #333333;
 }
+.contentArticles a .important,
 .contentArticles a:visited,
 .contentArticles a:hover,
 .contentArticles a:focus,
@@ -1210,6 +1212,7 @@ h6 a:visited {
 .contentBottom .dessin .title a {
   color: #333333;
 }
+.contentBottom .dessin .title a .important,
 .contentBottom .dessin .title a:visited,
 .contentBottom .dessin .title a:hover,
 .contentBottom .dessin .title a:focus,
@@ -1231,6 +1234,7 @@ h6 a:visited {
 .contentBottom .profession .title a {
   color: #333333;
 }
+.contentBottom .profession .title a .important,
 .contentBottom .profession .title a:visited,
 .contentBottom .profession .title a:hover,
 .contentBottom .profession .title a:focus,
@@ -1249,6 +1253,7 @@ h6 a:visited {
 .contentBottom .question .title a {
   color: #333333;
 }
+.contentBottom .question .title a .important,
 .contentBottom .question .title a:visited,
 .contentBottom .question .title a:hover,
 .contentBottom .question .title a:focus,
@@ -1280,6 +1285,7 @@ table.container > tr > td > table.row > tr > td.wrapper > table.columns > tr > t
 .contentOnline a {
   color: ##((nlCntOnlineText))##;
 }
+.contentOnline a .important,
 .contentOnline a:visited,
 .contentOnline a:hover,
 .contentOnline a:focus,
@@ -1292,6 +1298,7 @@ table.container > tr > td > table.row > tr > td.wrapper > table.columns > tr > t
 .contentOnline .online a {
   color: ##((nlCntOnlineText))##;
 }
+.contentOnline .online a .important,
 .contentOnline .online a:visited,
 .contentOnline .online a:hover,
 .contentOnline .online a:focus,
@@ -1304,6 +1311,7 @@ table.container > tr > td > table.row > tr > td.wrapper > table.columns > tr > t
 .contentOnline .name a {
   color: ##((nlCntOnlineName))##;
 }
+.contentOnline .name a .important,
 .contentOnline .name a:visited,
 .contentOnline .name a:hover,
 .contentOnline .name a:focus,
@@ -1319,6 +1327,7 @@ table.container > tr > td > table.row > tr > td.wrapper > table.columns > tr > t
 .contentCabInform .title a {
   color: ##((nlCntCabTitle))##;
 }
+.contentCabInform .title a .important,
 .contentCabInform .title a:visited,
 .contentCabInform .title a:hover,
 .contentCabInform .title a:focus,
@@ -1338,6 +1347,7 @@ table.container > tr > td > table.row > tr > td.wrapper > table.columns > tr > t
 .contentCabInform a {
   color: ##((nlCntCabText))##;
 }
+.contentCabInform a .important,
 .contentCabInform a:visited,
 .contentCabInform a:hover,
 .contentCabInform a:focus,
@@ -1353,6 +1363,7 @@ table.container > tr > td > table.row > tr > td.wrapper > table.columns > tr > t
 .contentALaUne .title a {
   color: ##((nlCntUneTitle))##;
 }
+.contentALaUne .title a .important,
 .contentALaUne .title a:visited,
 .contentALaUne .title a:hover,
 .contentALaUne .title a:focus,
@@ -1370,6 +1381,7 @@ table.container > tr > td > table.row > tr > td.wrapper > table.columns > tr > t
 .contentALaUne a {
   color: ##((nlCntUneText))##;
 }
+.contentALaUne a .important,
 .contentALaUne a:visited,
 .contentALaUne a:hover,
 .contentALaUne a:focus,
@@ -1398,6 +1410,7 @@ table.container > tr > td > table.row > tr > td.wrapper > table.columns > tr > t
 .contentBottom .agenda .title a {
   color: ##((nlCntAgdTitle))##;
 }
+.contentBottom .agenda .title a .important,
 .contentBottom .agenda .title a:visited,
 .contentBottom .agenda .title a:hover,
 .contentBottom .agenda .title a:focus,
@@ -1415,6 +1428,7 @@ table.container > tr > td > table.row > tr > td.wrapper > table.columns > tr > t
 .contentBottom .agenda a {
   color: ##((nlCntAgdText))##;
 }
+.contentBottom .agenda a .important,
 .contentBottom .agenda a:visited,
 .contentBottom .agenda a:hover,
 .contentBottom .agenda a:focus,
@@ -1433,6 +1447,7 @@ table.container > tr > td > table.row > tr > td.wrapper > table.columns > tr > t
 .contentBottom .chiffre .title a {
   color: ##((nlCntChfTitle))##;
 }
+.contentBottom .chiffre .title a .important,
 .contentBottom .chiffre .title a:visited,
 .contentBottom .chiffre .title a:hover,
 .contentBottom .chiffre .title a:focus,
@@ -1450,6 +1465,7 @@ table.container > tr > td > table.row > tr > td.wrapper > table.columns > tr > t
 .contentBottom .chiffre a {
   color: ##((nlCntChfText))##;
 }
+.contentBottom .chiffre a .important,
 .contentBottom .chiffre a:visited,
 .contentBottom .chiffre a:hover,
 .contentBottom .chiffre a:focus,
@@ -1476,6 +1492,7 @@ table.container > tr > td > table.row > tr > td.wrapper > table.columns > tr > t
 .contentContact a {
   color: ##((nlCntCctText))##;
 }
+.contentContact a .important,
 .contentContact a:visited,
 .contentContact a:hover,
 .contentContact a:focus,
@@ -1493,6 +1510,7 @@ table.container > tr > td > table.row > tr > td.wrapper > table.columns > tr > t
 .footer a {
   color: ##((nlFooterText))##;
 }
+.footer a .important,
 .footer a:visited,
 .footer a:hover,
 .footer a:focus,
