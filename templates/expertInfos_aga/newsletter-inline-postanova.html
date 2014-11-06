@@ -645,12 +645,10 @@ color: <%=colorParsing.Item("nlFooterText")%>;
 														lien_cab=rs("lien")
 														if (lien_cab <> "") then
 														%>
+														<h2 class="title" style="color: <%=colorParsing.Item("nlCntCabTitle")%>; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 19.8px; margin: 0; mso-line-height-rule: exactly; padding: 0 0 5px; text-align: left; word-break: normal" align="left"><a target="_blank" href="<%=lien_cab%>" style="color: <%=colorParsing.Item("nlCntCabText")%>; text-decoration: none"><%=rs("titre")%></a></h2>
 														<a target="_blank" class="link_box" href="<%=lien_cab%>" style="color: <%=colorParsing.Item("nlCntCabText")%>; display: block; outline: none; text-decoration: none">
-															<h2 class="title" style="color: <%=colorParsing.Item("nlCntCabTitle")%>; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 19.8px; margin: 0; mso-line-height-rule: exactly; padding: 0 0 5px; text-align: left; word-break: normal" align="left"><%=rs("titre")%></h2>
 															<span class="text" style="color: <%=colorParsing.Item("nlCntCabText")%>"><%=rs("texte")%></span>
-															<span class="readMore" style="color: <%=colorParsing.Item("nlCntCabText")%>; display: block; font-weight: bold; padding-top: 10px">
-																<span class="icon-rsaquo" style="bottom: -0.05em; color: <%=colorParsing.Item("nlCntCabText")%>; font-size: 150%; font-style: normal; line-height: 0px; mso-line-height-rule: exactly; vertical-align: baseline">&#8250;</span>&#160;lire la suite</span>
-															
+															<br /><span class="readMore" style="color: <%=colorParsing.Item("nlCntCabText")%>; display: block; font-weight: bold; padding-top: 10px"><span class="icon-rsaquo" style="bottom: -0.05em; color: <%=colorParsing.Item("nlCntCabText")%>; font-size: 150%; font-style: normal; line-height: 0px; mso-line-height-rule: exactly; vertical-align: baseline">&#8250;</span>&#160;lire la suite</span>
 														</a>
 														<% else %>
 														<h2 class="title" style="color: <%=colorParsing.Item("nlCntCabTitle")%>; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 19.8px; margin: 0; mso-line-height-rule: exactly; padding: 0 0 5px; text-align: left; word-break: normal" align="left"><%=rs("titre")%></h2>
