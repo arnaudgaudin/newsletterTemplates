@@ -5,3 +5,9 @@
 
 //importation style par défaut de la maquette expertInfos
 @import "../../../expertInfos/theme/less/expertinfos.less";
+
+//pour centrer image dans Outlook
+img.voeux { display: inline; }
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] img.voeux { display: block !important; }
+}

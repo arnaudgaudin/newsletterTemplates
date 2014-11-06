@@ -1523,3 +1523,11 @@ table.container > tr > td > table.row > tr > td.wrapper > table.columns > tr > t
 .footer small {
   color: ##((nlFooterText))##;
 }
+img.voeux {
+  display: inline;
+}
+@media only screen and (max-width: 720px) {
+  table[class="body"] img.voeux {
+    display: block !important;
+  }
+}
