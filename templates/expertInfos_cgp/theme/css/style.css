@@ -815,17 +815,14 @@ a.link_box:active {
   text-decoration: none;
   outline: none;
 }
-a.link_underline {
+a.link_underline,
+a.link_underline .important {
   text-decoration: underline;
 }
 a.link_underline:hover,
 a.link_underline:focus {
   text-decoration: underline;
   cursor: pointer;
-}
-a.link_underline:hover .important,
-a.link_underline:focus .important {
-  text-decoration: underline;
 }
 a.link_disabled {
   pointer-events: none !important;
