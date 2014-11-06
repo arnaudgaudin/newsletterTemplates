@@ -1289,18 +1289,25 @@ body .contentOnline a:active {
 .contentOnline .online {
   color: ##((nlCntOnlineText))##;
 }
-.contentOnline .name,
-.contentOnline .name td,
-.contentOnline .name .inner {
+.contentOnline .online a {
+  color: ##((nlCntOnlineText))##;
+}
+.contentOnline .online a:visited,
+.contentOnline .online a:hover,
+.contentOnline .online a:focus,
+.contentOnline .online a:active {
+  color: ##((nlCntOnlineText))## !important;
+}
+.contentOnline .name {
   color: ##((nlCntOnlineName))##;
 }
-body .contentOnline .name a {
+.contentOnline .name a {
   color: ##((nlCntOnlineName))##;
 }
-body .contentOnline .name a:visited,
-body .contentOnline .name a:hover,
-body .contentOnline .name a:focus,
-body .contentOnline .name a:active {
+.contentOnline .name a:visited,
+.contentOnline .name a:hover,
+.contentOnline .name a:focus,
+.contentOnline .name a:active {
   color: ##((nlCntOnlineName))## !important;
 }
 .contentCabInform {
