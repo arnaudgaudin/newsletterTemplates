@@ -613,7 +613,7 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 														<strong><!--{{%%{{ if (len(trim(type_client)) > 1) then response.write(type_client & " ") end if }}%%%%{{=raison_sociale_exp}}%%}}--><!--DEL{{-->raison_sociale_exp<!--}}DEL--></strong>
 														<br/>
 														<!--{{%%{{ lien_adresse=Server.URLEncode(adresse1_exp & " " & adresse2_exp & " " & code_postal_exp & " " & commune_exp) }}%%}}-->
-														<a target="_blank" href="http://maps.apple.com/?q=%%{{=lien_adresse}}%%"><!--{{%%{{
+														<a target="_blank" href="http://maps.apple.com/?q=%%{{=lien_adresse}}%%"><span class="important"><!--{{%%{{
 															'affichage adresse1'
 															nbc_desc=len(adresse1_exp)
 															k=1
@@ -646,24 +646,24 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 															end if 
 															if (len(trim(code_postal_exp)) > 1) then response.write(code_postal_exp &"&nbsp;")  end if
 															if (len(trim(commune_exp)) > 1) then response.write(commune_exp) end if
-														}}%%}}--><!--DEL{{-->adresse<!--}}DEL--></a>
+														}}%%}}--><!--DEL{{-->adresse<!--}}DEL--></span></a>
 														<!--{{%%{{ if (len(trim(tel_cabinet)) > 1) then }}%%}}-->
 														<br/>
-														T&eacute;l. <span class="appleLinks"><a href="tel:%%{{=tel_cabinet}}%%"><!--{{%%{{=tel_cabinet}}%%}}--><!--DEL{{-->tel_cabinet<!--}}DEL--></a></span>
+														T&eacute;l. <span class="appleLinks"><a href="tel:%%{{=tel_cabinet}}%%"><span class="important"><!--{{%%{{=tel_cabinet}}%%}}--><!--DEL{{-->tel_cabinet<!--}}DEL--></span></a></span>
 														<!--{{%%{{ end if }}%%}}-->
 														<!--{{%%{{ if (len(trim(fax_cabinet)) > 1) then }}%%}}-->
-														&#160;-&#160;Fax&#160;: <a class="link_disabled" href="#"><!--{{%%{{=fax_cabinet}}%%}}--><!--DEL{{-->fax_cabinet<!--}}DEL--></a>
+														&#160;-&#160;Fax&#160;: <a class="link_disabled" href="#"><span class="important"><!--{{%%{{=fax_cabinet}}%%}}--><!--DEL{{-->fax_cabinet<!--}}DEL--></span></a>
 														<!--{{%%{{ end if }}%%}}-->
 
 														<br/>
-														<a class="link_underline" href="mailto:%%{{=email_exp}}%%"><!--{{%%{{=email_exp}}%%}}--><!--DEL{{-->email_exp<!--}}DEL--></a>
+														<a class="link_underline" href="mailto:%%{{=email_exp}}%%"><span class="important"><!--{{%%{{=email_exp}}%%}}--><!--DEL{{-->email_exp<!--}}DEL--></span></a>
 														-
 														<!--{{%%{{
 														if type_abo="4" then
 															url_site_exp = rsCabinet("url_site_exp")
 														end if
 														}}%%}}-->
-														<a target="_blank" class="link_underline" href="http://%%{{=url_site_exp}}%%"><!--{{%%{{=url_site_exp}}%%}}--><!--DEL{{-->url_site_exp<!--}}DEL--></a>
+														<a target="_blank" class="link_underline" href="http://%%{{=url_site_exp}}%%"><span class="important"><!--{{%%{{=url_site_exp}}%%}}--><!--DEL{{-->url_site_exp<!--}}DEL--></span></a>
 													</td>
 													<td class="expander" bgcolor="##((nlBodyBackground))##"></td>
 												</tr>
