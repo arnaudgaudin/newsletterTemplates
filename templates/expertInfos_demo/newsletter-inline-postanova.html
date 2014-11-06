@@ -521,7 +521,7 @@ background: <%=colorParsing.Item("nlBodyBackground")%>;
 														<% if isOnline=False then %>
 														<gab_lien_message_online>
 														<span class="online" style="color: <%=colorParsing.Item("nlCntOnlineText")%>; display: block; font-size: 12px; line-height: 16px; mso-line-height-rule: exactly; padding-bottom: 5px">
-															<small style="font-size: 11px">Pour visualiser ce message en ligne, <a target="_blank" class="link_underline" href="<%=online_url%>" style="color: <%=colorParsing.Item("nlCntOnlineText")%>; text-decoration: underline"><span class="important" style="color: <%=colorParsing.Item("nlCntOnlineText")%> !important; text-decoration: underline">suivez ce lien</span></a>.</small>
+															<small style="font-size: 11px">Pour visualiser ce message en ligne, <a target="_blank" class="link_underline" href="<%=online_url%>" style="color: <%=colorParsing.Item("nlCntOnlineText")%>; text-decoration: underline"><span class="important" style="color: <%=colorParsing.Item("nlCntOnlineText")%> !important; text-decoration: underline !important">suivez ce lien</span></a>.</small>
 														</span>
 														</gab_lien_message_online>
 														<% end if %>
@@ -916,14 +916,14 @@ background: <%=colorParsing.Item("nlBodyBackground")%>;
 														<% end if %>
 
 														<br />
-														<a class="link_underline" href="mailto:<%=email_exp%>" style="color: <%=colorParsing.Item("nlCntCctText")%>; text-decoration: underline"><span class="important" style="color: <%=colorParsing.Item("nlCntCctText")%> !important; text-decoration: underline"><%=email_exp%></span></a>
+														<a class="link_underline" href="mailto:<%=email_exp%>" style="color: <%=colorParsing.Item("nlCntCctText")%>; text-decoration: underline"><span class="important" style="color: <%=colorParsing.Item("nlCntCctText")%> !important; text-decoration: underline !important"><%=email_exp%></span></a>
 														-
 														<%
 														if type_abo="4" then
 															url_site_exp = rsCabinet("url_site_exp")
 														end if
 														%>
-														<a target="_blank" class="link_underline" href="http://<%=url_site_exp%>" style="color: <%=colorParsing.Item("nlCntCctText")%>; text-decoration: underline"><span class="important" style="color: <%=colorParsing.Item("nlCntCctText")%> !important; text-decoration: underline"><%=url_site_exp%></span></a>
+														<a target="_blank" class="link_underline" href="http://<%=url_site_exp%>" style="color: <%=colorParsing.Item("nlCntCctText")%>; text-decoration: underline"><span class="important" style="color: <%=colorParsing.Item("nlCntCctText")%> !important; text-decoration: underline !important"><%=url_site_exp%></span></a>
 													</td>
 													<td class="expander" bgcolor="<%=colorParsing.Item("nlBodyBackground")%>" style="-ms-hyphens: auto; background: <%=colorParsing.Item("nlBodyBackground")%>; border-collapse: collapse !important; color: <%=colorParsing.Item("nlCntCctText")%>; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word" align="left" valign="top" width="1"></td>
 												</tr>

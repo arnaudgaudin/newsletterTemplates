@@ -815,9 +815,11 @@ a.link_box:active {
   text-decoration: none;
   outline: none;
 }
-a.link_underline,
-a.link_underline .important {
+a.link_underline {
   text-decoration: underline;
+}
+a.link_underline .important {
+  text-decoration: underline !important;
 }
 a.link_underline:hover,
 a.link_underline:focus {
