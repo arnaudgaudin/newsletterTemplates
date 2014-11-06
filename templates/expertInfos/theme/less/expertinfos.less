@@ -314,8 +314,14 @@ table.container > tr > td > table.row > tr > td.wrapper > table.columns > tr > t
 .contentOnline {
 	-premailer-background: e("##((nlCntOnlineBackground))##");
 	.newsletterInnerTextColor(e("##((nlCntOnlineText))##"));
-	.online { color: e("##((nlCntOnlineText))##"); }
-	.name { .newsletterInnerTextColor(e("##((nlCntOnlineName))##")); }
+	.online {
+		color: e("##((nlCntOnlineText))##");
+		a { .newsletterLinkColor(e("##((nlCntOnlineText))##")); }
+	}
+	.name {
+		color: e("##((nlCntOnlineName))##");
+		a { .newsletterLinkColor(e("##((nlCntOnlineName))##")); }
+	}
 }
 
 // contentCabInform area
