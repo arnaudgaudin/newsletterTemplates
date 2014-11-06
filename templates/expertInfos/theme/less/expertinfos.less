@@ -312,7 +312,10 @@ table.container > tr > td > table.row > tr > td.wrapper > table.columns > tr > t
 // -------------------------
 .contentCabInform {
 	-premailer-background: e("##((nlCntCabBackground))##");
-	.title { color: e("##((nlCntCabTitle))##"); }
+	.title {
+		color: e("##((nlCntCabTitle))##");
+		a { .newsletterLinkColor(e("##((nlCntCabTitle))##")); }
+	}
 	.text, .readMore, .icon-rsaquo { color: e("##((nlCntCabText))##"); }
 	.newsletterInnerTextColor(e("##((nlCntCabText))##"));
 }
@@ -321,7 +324,10 @@ table.container > tr > td > table.row > tr > td.wrapper > table.columns > tr > t
 // -------------------------
 .contentALaUne {
 	-premailer-background: e("##((nlCntUneBackground))##");
-	.title { color: e("##((nlCntUneTitle))##"); }
+	.title {
+		color: e("##((nlCntUneTitle))##");
+		a { .newsletterLinkColor(e("##((nlCntUneTitle))##")); }
+	}
 	.text { color: e("##((nlCntUneText))##"); }
 	.newsletterInnerTextColor(e("##((nlCntUneText))##"));
 	.readMore, .icon-rsaquo { color: e("##((nlCntUneReadMore))##"); }
@@ -343,7 +349,10 @@ table.container > tr > td > table.row > tr > td.wrapper > table.columns > tr > t
 	.agenda {
 		-premailer-background: e("##((nlCntAgdBackground))##");
 		.preTitle { color: e("##((nlCntAgdPreTitle))##"); }
-		.title { color: e("##((nlCntAgdTitle))##"); }
+		.title {
+			color: e("##((nlCntAgdTitle))##");
+			a { .newsletterLinkColor(e("##((nlCntAgdTitle))##")); }
+		}
 		.text { color: e("##((nlCntAgdText))##"); }
 		.newsletterInnerTextColor(e("##((nlCntAgdText))##"));
 	}
@@ -351,7 +360,10 @@ table.container > tr > td > table.row > tr > td.wrapper > table.columns > tr > t
 	.chiffre {
 		-premailer-background: e("##((nlCntChfBackground))##");
 		.preTitle { color: e("##((nlCntChfPreTitle))##"); }
-		.title { color: e("##((nlCntChfTitle))##"); }
+		.title {
+			color: e("##((nlCntChfTitle))##");
+			a { .newsletterLinkColor(e("##((nlCntChfTitle))##")); }
+		}
 		.text { color: e("##((nlCntChfText))##"); }
 		.newsletterInnerTextColor(e("##((nlCntChfText))##"));
 	}
