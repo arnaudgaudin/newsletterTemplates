@@ -545,12 +545,12 @@ color: <%=colorParsing.Item("nlFooterText")%>;
 													<td class="text-pad center" style="-ms-hyphens: auto; border-collapse: collapse !important; color: <%=colorParsing.Item("nlCntOnlineText")%>; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 0px; font-weight: normal; hyphens: auto; line-height: 0px; margin: 0; mso-line-height-rule: exactly; padding: 0px 10px 10px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
 														<% if isOnline=False then %>
 														<gab_lien_message_online>
-														<span class="online center" style="color: <%=colorParsing.Item("nlCntOnlineText")%>; display: block; font-size: 12px; line-height: 16px; mso-line-height-rule: exactly; padding-bottom: 5px; text-align: center; width: 100%">
+														<span class="online" style="color: <%=colorParsing.Item("nlCntOnlineText")%>; display: block; font-size: 12px; line-height: 16px; mso-line-height-rule: exactly; padding-bottom: 5px">
 															<small style="font-size: 11px">Pour visualiser ce message en ligne, <a target="_blank" class="link_underline" href="<%=online_url%>" style="color: <%=colorParsing.Item("nlCntOnlineText")%>; text-decoration: underline">suivez ce lien</a>.</small>
 														</span>
 														</gab_lien_message_online>
 														<% end if %>
-														<br /><span class="name center" style="color: <%=colorParsing.Item("nlCntOnlineName")%>; display: block; font-size: 12px; line-height: 16px; mso-line-height-rule: exactly; text-align: center; width: 100%"><strong><%=civilite%>&#160;<%=nom_client%>, votre newsletter du <a class="link_disabled" href="#" style="color: <%=colorParsing.Item("nlCntOnlineName")%>; cursor: default !important; pointer-events: none !important; text-decoration: none !important"><%=get_date%></a>.</strong></span>
+														<br /><span class="name" style="color: <%=colorParsing.Item("nlCntOnlineName")%>; display: block; font-size: 12px; line-height: 16px; mso-line-height-rule: exactly"><strong><%=civilite%>&#160;<%=nom_client%>, votre newsletter du <a class="link_disabled" href="#" style="color: <%=colorParsing.Item("nlCntOnlineName")%>; cursor: default !important; pointer-events: none !important; text-decoration: none !important"><%=get_date%></a>.</strong></span>
 													</td>
 													<td class="expander" bgcolor="<%=colorParsing.Item("nlBodyBackground")%>" style="-ms-hyphens: auto; background: <%=colorParsing.Item("nlBodyBackground")%>; border-collapse: collapse !important; color: <%=colorParsing.Item("nlCntOnlineText")%>; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 0px; font-weight: normal; hyphens: auto; line-height: 0px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word" align="left" valign="top" width="1"></td>
 												</tr>
