@@ -823,6 +823,10 @@ a.link_underline:focus {
   text-decoration: underline;
   cursor: pointer;
 }
+a.link_underline:hover .important,
+a.link_underline:focus .important {
+  text-decoration: underline;
+}
 a.link_disabled {
   pointer-events: none !important;
   cursor: default !important;
