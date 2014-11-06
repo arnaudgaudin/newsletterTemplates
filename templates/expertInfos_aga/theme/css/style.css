@@ -1032,22 +1032,17 @@ h6 {
 .contentArticles.last table.column td {
   padding-bottom: 10px;
 }
-.contentArticles table.columns td,
-.contentArticles table.column td {
+.contentArticles td.wrapper.first table.columns td,
+.contentArticles td.wrapper.first table.column td {
   mso-line-height-rule: exactly;
   line-height: 0px;
   font-size: 0px;
-}
-.contentArticles .text,
-.contentArticles .readMore {
-  font-size: 12px;
-  line-height: 16px;
 }
 .contentArticles .title {
   padding-top: 4px;
 }
 .contentArticles .readMore {
-  padding-top: 5px;
+  padding-top: 0px;
 }
 @media only screen and (max-width: 720px) {
   table[class="body"] .contentArticles .title {
