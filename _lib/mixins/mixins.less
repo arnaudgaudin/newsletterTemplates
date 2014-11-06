@@ -18,7 +18,11 @@
 //cf. https://www.campaignmonitor.com/blog/post/3143/outlook-2007-and-the-inline-important-declaration
 .newsletterLinkColor(@color) {
   & { color: @color; }
-  &:visited, &:hover, &:focus, &:active { color: @color !important; }   
+  &:visited, &:hover, &:focus, &:active { color: @color !important; }
+  // &:visited { color: @color !important; }
+  // &:hover { color: @color !important; }
+  // &:focus { color: @color !important; }
+  // &:active { color: @color !important; }
 }
 
 // CSS3 PROPERTIES
