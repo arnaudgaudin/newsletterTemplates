@@ -1184,13 +1184,13 @@ h6 a:visited {
 .contentArticles .inner {
   color: #333333;
 }
-body .contentArticles a {
+.contentArticles a {
   color: #333333;
 }
-body .contentArticles a:visited,
-body .contentArticles a:hover,
-body .contentArticles a:focus,
-body .contentArticles a:active {
+.contentArticles a:visited,
+.contentArticles a:hover,
+.contentArticles a:focus,
+.contentArticles a:active {
   color: #333333 !important;
 }
 @media only screen and (max-width: 720px) {
@@ -1277,13 +1277,13 @@ table.container > tr > td > table.row > tr > td.wrapper > table.columns > tr > t
 .contentOnline .inner {
   color: ##((nlCntOnlineText))##;
 }
-body .contentOnline a {
+.contentOnline a {
   color: ##((nlCntOnlineText))##;
 }
-body .contentOnline a:visited,
-body .contentOnline a:hover,
-body .contentOnline a:focus,
-body .contentOnline a:active {
+.contentOnline a:visited,
+.contentOnline a:hover,
+.contentOnline a:focus,
+.contentOnline a:active {
   color: ##((nlCntOnlineText))## !important;
 }
 .contentOnline .online {
@@ -1335,13 +1335,13 @@ body .contentOnline a:active {
 .contentCabInform .inner {
   color: ##((nlCntCabText))##;
 }
-body .contentCabInform a {
+.contentCabInform a {
   color: ##((nlCntCabText))##;
 }
-body .contentCabInform a:visited,
-body .contentCabInform a:hover,
-body .contentCabInform a:focus,
-body .contentCabInform a:active {
+.contentCabInform a:visited,
+.contentCabInform a:hover,
+.contentCabInform a:focus,
+.contentCabInform a:active {
   color: ##((nlCntCabText))## !important;
 }
 .contentALaUne {
@@ -1367,13 +1367,13 @@ body .contentCabInform a:active {
 .contentALaUne .inner {
   color: ##((nlCntUneText))##;
 }
-body .contentALaUne a {
+.contentALaUne a {
   color: ##((nlCntUneText))##;
 }
-body .contentALaUne a:visited,
-body .contentALaUne a:hover,
-body .contentALaUne a:focus,
-body .contentALaUne a:active {
+.contentALaUne a:visited,
+.contentALaUne a:hover,
+.contentALaUne a:focus,
+.contentALaUne a:active {
   color: ##((nlCntUneText))## !important;
 }
 .contentALaUne .readMore,
@@ -1412,13 +1412,13 @@ body .contentALaUne a:active {
 .contentBottom .agenda .inner {
   color: ##((nlCntAgdText))##;
 }
-body .contentBottom .agenda a {
+.contentBottom .agenda a {
   color: ##((nlCntAgdText))##;
 }
-body .contentBottom .agenda a:visited,
-body .contentBottom .agenda a:hover,
-body .contentBottom .agenda a:focus,
-body .contentBottom .agenda a:active {
+.contentBottom .agenda a:visited,
+.contentBottom .agenda a:hover,
+.contentBottom .agenda a:focus,
+.contentBottom .agenda a:active {
   color: ##((nlCntAgdText))## !important;
 }
 .contentBottom .chiffre {
@@ -1447,13 +1447,13 @@ body .contentBottom .agenda a:active {
 .contentBottom .chiffre .inner {
   color: ##((nlCntChfText))##;
 }
-body .contentBottom .chiffre a {
+.contentBottom .chiffre a {
   color: ##((nlCntChfText))##;
 }
-body .contentBottom .chiffre a:visited,
-body .contentBottom .chiffre a:hover,
-body .contentBottom .chiffre a:focus,
-body .contentBottom .chiffre a:active {
+.contentBottom .chiffre a:visited,
+.contentBottom .chiffre a:hover,
+.contentBottom .chiffre a:focus,
+.contentBottom .chiffre a:active {
   color: ##((nlCntChfText))## !important;
 }
 .contentBottom .dessin .preTitle {
@@ -1473,13 +1473,13 @@ body .contentBottom .chiffre a:active {
 .contentContact .inner {
   color: ##((nlCntCctText))##;
 }
-body .contentContact a {
+.contentContact a {
   color: ##((nlCntCctText))##;
 }
-body .contentContact a:visited,
-body .contentContact a:hover,
-body .contentContact a:focus,
-body .contentContact a:active {
+.contentContact a:visited,
+.contentContact a:hover,
+.contentContact a:focus,
+.contentContact a:active {
   color: ##((nlCntCctText))## !important;
 }
 .footer {
@@ -1490,13 +1490,13 @@ body .contentContact a:active {
 .footer .inner {
   color: ##((nlFooterText))##;
 }
-body .footer a {
+.footer a {
   color: ##((nlFooterText))##;
 }
-body .footer a:visited,
-body .footer a:hover,
-body .footer a:focus,
-body .footer a:active {
+.footer a:visited,
+.footer a:hover,
+.footer a:focus,
+.footer a:active {
   color: ##((nlFooterText))## !important;
 }
 .footer small {
