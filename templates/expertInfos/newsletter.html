@@ -151,12 +151,12 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 													<td class="text-pad">
 														<!--{{%%{{ if isOnline=False then }}%%}}-->
 														<!--{{<gab_lien_message_online>}}-->
-														<p class="online center">
+														<span class="online center">
 															<small>Pour visualiser ce message en ligne, <a target="_blank" class="link_underline" href="%%{{=online_url}}%%">suivez ce lien</a>.</small>
-														</p>
+														</span>
 														<!--{{</gab_lien_message_online>}}-->
 														<!--{{%%{{ end if }}%%}}-->
-														<p class="name center"><strong><!--{{%%{{=civilite}}%%}}--><!--DEL{{-->civilite<!--}}DEL-->&nbsp;<!--{{%%{{=nom_client}}%%}}--><!--DEL{{-->nom_client<!--}}DEL-->, votre newsletter du <a class="link_disabled" href="#"><!--{{%%{{=get_date}}%%}}--><!--DEL{{-->get_date<!--}}DEL--></a>.</strong></p>
+														<br/><span class="name center"><strong><!--{{%%{{=civilite}}%%}}--><!--DEL{{-->civilite<!--}}DEL-->&nbsp;<!--{{%%{{=nom_client}}%%}}--><!--DEL{{-->nom_client<!--}}DEL-->, votre newsletter du <a class="link_disabled" href="#"><!--{{%%{{=get_date}}%%}}--><!--DEL{{-->get_date<!--}}DEL--></a>.</strong></span>
 													</td>
 													<td class="expander" bgcolor="##((nlBodyBackground))##"></td>
 												</tr>
