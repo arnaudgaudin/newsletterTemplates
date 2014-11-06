@@ -250,20 +250,29 @@ a {
 // -------------------------
 .contentBottom {
 	.dessin {
-		.title { color: @nlCntDsnTitle; }
+		.title {
+			color: @nlCntDsnTitle;
+			a { .newsletterLinkColor(@nlCntDsnTitle); }
+		}
 		.text { color: @nlText; }
 		.readMore { color: @nlCntDsnReadMore; }
 		.border { border-top: 1px dotted @nlCntDsnBorder; }
 	}
 
 	.profession {
-		.title { color: @nlCntPrfTitle; }
+		.title {
+			color: @nlCntPrfTitle;
+			a { .newsletterLinkColor(@nlCntPrfTitle); }
+		}
 		.text { color: @nlText; }
 		.border { border-top: 1px dotted @nlCntPrfBorder; }
 	}
 
 	.question {
-		.title { color: @nlCntQtnTitle; }
+		.title {
+			color: @nlCntQtnTitle;
+			a { .newsletterLinkColor(@nlCntQtnTitle); }
+		}
 		.text { color: @nlText; }
 		.border { border-top: 1px dotted @nlCntQtnBorder; }
 	}
