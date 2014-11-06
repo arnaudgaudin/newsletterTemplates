@@ -83,14 +83,26 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 // contentOnline area
 // -------------------------
 .contentOnline {
+	//suppression fontSize et lineHeight pour débug Outlook
+	table.columns td, table.column td {
+		mso-line-height-rule: exactly;
+		line-height: 0px;
+		font-size: 0px;
+	}
+
+	//remise en place taille texte directement sur éléments
+	.online, .name {
+		mso-line-height-rule: exactly;
+		line-height: @baseLineHeight;
+		font-size: @baseFontSize;
+	}
+
 	.online {
 		display: block;
-		margin: 0px;
 		padding-bottom: 5px;
 	}
 	.name {
 		display: block;
-		margin: 0px;
 	}
 }
 
