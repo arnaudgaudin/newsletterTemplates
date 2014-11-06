@@ -1003,14 +1003,24 @@ h6 {
     height: 30px !important;
   }
 }
+.contentOnline table.columns td,
+.contentOnline table.column td {
+  mso-line-height-rule: exactly;
+  line-height: 0px;
+  font-size: 0px;
+}
+.contentOnline .online,
+.contentOnline .name {
+  mso-line-height-rule: exactly;
+  line-height: 16px;
+  font-size: 12px;
+}
 .contentOnline .online {
   display: block;
-  margin: 0px;
   padding-bottom: 5px;
 }
 .contentOnline .name {
   display: block;
-  margin: 0px;
 }
 .contentALaUne td.wrapper {
   padding-top: 0px;
