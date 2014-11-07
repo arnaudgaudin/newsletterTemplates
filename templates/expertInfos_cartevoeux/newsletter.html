@@ -130,7 +130,9 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 					<table border="0" class="container">
 						<tr>
 							<td>
-
+								
+								<!--{{%%{{ if isOnline=False then }}%%}}-->
+								<!--{{<gab_lien_message_online>}}-->
 								<!-- ONLINE START -->
 								<table border="0" class="row contentOnline" bgcolor="##((nlCntOnlineBackground))##">
 									<tr>
@@ -138,14 +140,9 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 											<table border="0" class="twelve columns">
 												<tr>
 													<td class="text-pad center">
-														<!--{{%%{{ if isOnline=False then }}%%}}-->
-														<!--{{<gab_lien_message_online>}}-->
 														<span class="online">
 															<small>Pour visualiser ce message en ligne, <a target="_blank" class="link_underline" href="%%{{=online_url}}%%"><span class="important">suivez ce lien</span></a>.</small>
 														</span>
-														<!--{{</gab_lien_message_online>}}-->
-														<!--{{%%{{ end if }}%%}}-->
-														<br/><span class="name"><strong><!--{{%%{{=civilite}}%%}}--><!--DEL{{-->civilite<!--}}DEL-->&nbsp;<!--{{%%{{=nom_client}}%%}}--><!--DEL{{-->nom_client<!--}}DEL-->, <!--{{%%{{=raison_sociale_exp}}%%}}--><!--DEL{{-->raison_sociale_exp<!--}}DEL--> vous souhaite une très bonne année <!--{{%%{{=voeux_annee}}%%}}--><!--DEL{{-->voeux_annee<!--}}DEL--> !</strong></span>
 													</td>
 													<td class="expander" bgcolor="##((nlBodyBackground))##"></td>
 												</tr>
@@ -154,6 +151,8 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 									</tr>
 								</table>
 					        	<!-- ONLINE END -->
+								<!--{{</gab_lien_message_online>}}-->
+								<!--{{%%{{ end if }}%%}}-->
 
 								<!--{{%%{{ if logo_groupement=True then }}%%}}-->
 								<!-- HEADER GROUPE START -->
