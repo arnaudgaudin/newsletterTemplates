@@ -1919,6 +1919,11 @@ img.voeux {
     width: auto !important;
   }
 
+  table[class="body"] .contentCallToAction table.columns,
+  table[class="body"] .contentCallToAction table.column {
+    display: table !important;
+  }
+
   table[class="body"] .contentCallToAction table.columns .text-pad,
   table[class="body"] .contentCallToAction table.column .text-pad {
     padding-left: 10px !important;
