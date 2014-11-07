@@ -1706,12 +1706,11 @@ img.voeux {
 }
 
 .contentCallToAction .button td {
-  padding: 0;
+  padding: 12px 12px 10px 12px;
 }
 
 .contentCallToAction .button td a {
   color: #ffffff;
-  padding: 12px 12px 10px 12px;
   font-weight: bold;
   width: auto;
   height: auto;
