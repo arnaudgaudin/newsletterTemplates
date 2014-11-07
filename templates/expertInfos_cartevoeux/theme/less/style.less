@@ -18,3 +18,33 @@ img.voeux {
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] img.voeux { display: block !important; }
 }
+
+
+// contentCallToAction
+// -------------------------
+.contentCallToAction {
+	//suppression décalage en trop
+	td.wrapper { padding-top: 0px; }
+
+	.button td {
+		padding: 0;
+		a {
+			.newsletterLinkColor(#ffffff);
+			//restylage bouton par défaut
+			padding: 12px 12px 10px 12px;
+			font-weight: bold;
+			width: auto;
+			height: auto;
+		}
+	}
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentCallToAction {
+		.button td { width: auto !important; }
+		table.columns td,
+		table.column td {
+			.compareProperty(padding-left, @textPad, @textPadCollapse) !important;
+    		.compareProperty(padding-right, @textPad, @textPadCollapse) !important;
+		}
+	}
+}

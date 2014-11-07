@@ -1695,6 +1695,30 @@ img.voeux {
   vertical-align: top;
 }
 
+.contentCallToAction td.wrapper {
+  padding-top: 0px;
+}
+
+.contentCallToAction .button td {
+  padding: 0;
+}
+
+.contentCallToAction .button td a {
+  color: #ffffff;
+  padding: 12px 12px 10px 12px;
+  font-weight: bold;
+  width: auto;
+  height: auto;
+}
+
+.contentCallToAction .button td a .important,
+.contentCallToAction .button td a:visited,
+.contentCallToAction .button td a:hover,
+.contentCallToAction .button td a:focus,
+.contentCallToAction .button td a:active {
+  color: #ffffff !important;
+}
+
 @media only screen and (max-width: 720px) {
   table[class="body"] img {
     width: auto !important;
@@ -1883,5 +1907,9 @@ img.voeux {
 
   table[class="body"] img.voeux {
     display: block !important;
+  }
+
+  table[class="body"] .contentCallToAction .button td {
+    width: auto !important;
   }
 }

@@ -585,6 +585,18 @@ color: <%=colorParsing.Item("nlFooterText")%> !important;
 .footer a:active {
 color: <%=colorParsing.Item("nlFooterText")%> !important;
 }
+.contentCallToAction .button td a:visited {
+color: #ffffff !important;
+}
+.contentCallToAction .button td a:hover {
+color: #ffffff !important;
+}
+.contentCallToAction .button td a:focus {
+color: #ffffff !important;
+}
+.contentCallToAction .button td a:active {
+color: #ffffff !important;
+}
 @media only screen and (max-width: 720px) {
   table[class="body"] img {
     width: auto !important; height: auto !important;
@@ -784,6 +796,9 @@ color: <%=colorParsing.Item("nlFooterText")%> !important;
   table[class="body"] img.voeux {
     display: block !important;
   }
+  table[class="body"] .contentCallToAction .button td {
+    width: auto !important;
+  }
 }
 </style>
 <style type="text/css" data-premailer="ignore">
@@ -892,18 +907,19 @@ color: <%=colorParsing.Item("nlFooterText")%> !important;
 								<!-- CONTENT CALL TO ACTION START -->
 								<table border="0" class="row contentCallToAction" style="border-collapse: collapse; border-spacing: 0; display: block; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px; text-align: left; vertical-align: top; width: 100%" width="100%" cellpadding="0" cellspacing="0">
 									<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
-										<td class="wrapper last" style="-ms-hyphens: auto; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 10px 0px 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
-											<table border="0" class="twelve columns" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 720px" width="720" cellpadding="0" cellspacing="0">
+										<td class="wrapper last offset-by-three" style="-ms-hyphens: auto; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 0px 0px 0px 180px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+											<table border="0" class="six columns" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 360px" width="360" cellpadding="0" cellspacing="0">
 												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
-													<td class="text-pad center" style="-ms-hyphens: auto; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 0px 10px 10px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
+													<td class="center" style="-ms-hyphens: auto; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 0px 0px 10px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
 														<table border="0" class="button medium-button" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; overflow: hidden; padding: 0; text-align: left; vertical-align: top; width: 100%" width="100%" cellpadding="0" cellspacing="0">
 															<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
-																<td class="text-pad center" style="-ms-hyphens: auto; background: #4b606d; border-collapse: collapse !important; border: 1px solid #212b31; color: #ffffff; display: block; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 12px 10px 10px; text-align: center; vertical-align: top; width: auto !important; word-break: break-word" align="center" bgcolor="#4b606d" valign="top" width="auto">
-																	<a target="_blank" href="http://<%=url_site_exp%>/voeux<%=voeux_annee%>.php" title="Visualisez votre carte de voeux en ligne" style="color: #ffffff; display: block; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 17.4px; font-weight: bold; height: 100%; text-decoration: none; width: 100%">D&#233;couvrez votre carte de voeux <%=voeux_annee%>&#160;!</a>
+																<td style="-ms-hyphens: auto; background: #4b606d; border-collapse: collapse !important; border: 1px solid #212b31; color: #ffffff; display: block; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 0; text-align: center; vertical-align: top; width: auto !important; word-break: break-word" align="center" bgcolor="#4b606d" valign="top" width="auto">
+																	<a target="_blank" href="http://<%=url_site_exp%>/voeux<%=voeux_annee%>.php" title="Visualisez votre carte de voeux en ligne" style="color: #ffffff; display: block; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 17.4px; font-weight: bold; height: auto; padding: 12px 12px 10px; text-decoration: none; width: auto">D&#233;couvrez votre carte de voeux <%=voeux_annee%>&#160;!</a>
 																</td>
 															</tr>
 														</table>
 													</td>
+													<td class="expander" bgcolor="<%=colorParsing.Item("nlBodyBackground")%>" style="-ms-hyphens: auto; background: <%=colorParsing.Item("nlBodyBackground")%>; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word" align="left" valign="top" width="1"></td>
 												</tr>
 											</table>
 										</td>
