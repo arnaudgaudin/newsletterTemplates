@@ -1699,6 +1699,12 @@ img.voeux {
   padding-top: 0px;
 }
 
+.contentCallToAction table.columns .text-pad,
+.contentCallToAction table.column .text-pad {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
 .contentCallToAction .button td {
   padding: 0;
 }
@@ -1911,5 +1917,11 @@ img.voeux {
 
   table[class="body"] .contentCallToAction .button td {
     width: auto !important;
+  }
+
+  table[class="body"] .contentCallToAction table.columns .text-pad,
+  table[class="body"] .contentCallToAction table.column .text-pad {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
   }
 }

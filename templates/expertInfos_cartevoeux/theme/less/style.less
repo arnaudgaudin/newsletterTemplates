@@ -26,6 +26,12 @@ img.voeux {
 	//suppression décalage en trop
 	td.wrapper { padding-top: 0px; }
 
+	table.columns .text-pad,
+	table.column .text-pad {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+
 	.button td {
 		padding: 0;
 		a {
@@ -41,5 +47,10 @@ img.voeux {
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentCallToAction {
 		.button td { width: auto !important; }
+		table.columns .text-pad,
+		table.column .text-pad {
+			padding-left: @textPadCollapse !important;
+			padding-right: @textPadCollapse !important;
+		}
 	}
 }
