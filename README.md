@@ -14,9 +14,10 @@ Vous devez être sur Mac ou Linux pour pouvoir éditer ou créer de nouveaux tem
 		#Sous Mac avec brew
 		brew install node
 
-2. LESSC http://lesscss.org
+2. LESSC http://lesscss.org et GROUP-CSS-MEDIA-QUERIES https://github.com/Se7enSky/group-css-media-queries
 
 		npm install -g less
+		npm install -g group-css-media-queries
 
 3. RUBYGEMS https://rubygems.org  
 Pour une installation sur CENTOS avec RVM :  
