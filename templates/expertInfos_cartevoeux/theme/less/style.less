@@ -7,7 +7,10 @@
 @import "../../../expertInfos/theme/less/expertinfos.less";
 
 //pour centrer image dans Outlook
-img.voeux { display: inline; }
+img.voeux {
+	display: inline;
+	vertical-align: top;
+}
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] img.voeux { display: block !important; }
 }

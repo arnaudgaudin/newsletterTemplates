@@ -1692,6 +1692,7 @@ table.container > tr > td > table.row > tr > td.wrapper > table.columns > tr > t
 
 img.voeux {
   display: inline;
+  vertical-align: top;
 }
 
 @media only screen and (max-width: 720px) {
