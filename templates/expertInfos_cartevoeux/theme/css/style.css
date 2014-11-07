@@ -680,8 +680,8 @@ table.large-button td {
   display: block;
   width: auto !important;
   text-align: center;
-  background: #333333;
-  border: 1px solid #000000;
+  background: #4b606d;
+  border: 1px solid #212b31;
   color: #ffffff;
   padding: 8px 0;
 }
@@ -737,7 +737,7 @@ table.large-button td a {
 table.button:hover td,
 table.button:visited td,
 table.button:active td {
-  background: #1a1a1a !important;
+  background: #36454f !important;
 }
 
 table.button:hover td a,
@@ -751,7 +751,7 @@ table.tiny-button:hover td,
 table.small-button:hover td,
 table.medium-button:hover td,
 table.large-button:hover td {
-  background: #1a1a1a !important;
+  background: #36454f !important;
 }
 
 table.button:hover td a,
