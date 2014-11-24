@@ -29,6 +29,9 @@ perl -pi -e 's/}}\*\///g;' newsletter-inline-postanova.html
 #Remplacement des balises d'ouverture/fermeture en ASP
 perl -pi -e 's/%%{{/<%/g;' newsletter-inline-postanova.html
 perl -pi -e 's/}}%%/%>/g;' newsletter-inline-postanova.html
+#Même chose en ASCII pour les attributs SRC
+perl -pi -e 's/%25%25%7B%7B/<%/g;' newsletter-inline-postanova.html
+perl -pi -e 's/%7D%7D%25%25/%>/g;' newsletter-inline-postanova.html
 #Gestion des appels de variables via Dictionary
 perl -pi -e 's/##\(\(/<%=colorParsing\.Item\("/g;' newsletter-inline-postanova.html
 perl -pi -e 's/\)\)##/"\)%>/g;' newsletter-inline-postanova.html
