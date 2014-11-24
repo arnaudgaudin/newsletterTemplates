@@ -301,8 +301,11 @@ a {
 // -------------------------
 body, table.body,
 table.container > tr > td > table.row > tr > td.wrapper > table.columns > tr > td.expander {
-  -premailer-background: e("##((nlBodyBackground))##");
+	-premailer-background: e("##((nlBodyBackground))##");
 }
+
+//rajout pour suppression paramètre doublon via compiler
+body, table.body { background: none; }
 
 // Header
 // -------------------------
