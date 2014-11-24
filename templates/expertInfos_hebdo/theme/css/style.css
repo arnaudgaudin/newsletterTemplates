@@ -1381,6 +1381,11 @@ table.container > tr > td > table.row > tr > td.wrapper > table.columns > tr > t
   -premailer-background: ##((nlBodyBackground))##;
 }
 
+body,
+table.body {
+  background: none;
+}
+
 .header {
   -premailer-background: ##((nlBodyBackground))##;
 }

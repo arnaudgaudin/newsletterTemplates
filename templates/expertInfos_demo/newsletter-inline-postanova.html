@@ -121,7 +121,7 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Newsletter hebdomadaire du <%=get_date%></title>
 </head>
-<body bgcolor="<%=colorParsing.Item("nlBodyBackground")%>" style="-ms-text-size-adjust: 100%; background: <%=colorParsing.Item("nlBodyBackground")%>; background: #787878; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; line-height: 16px; margin: 0; min-width: 100%; padding: 0; text-align: left; width: 100% !important"><style type="text/css">
+<body bgcolor="<%=colorParsing.Item("nlBodyBackground")%>" style="-ms-text-size-adjust: 100%; background: <%=colorParsing.Item("nlBodyBackground")%>; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; line-height: 16px; margin: 0; min-width: 100%; padding: 0; text-align: left; width: 100% !important"><style type="text/css">
 body {
 background-color: #787878;
 }
@@ -436,6 +436,9 @@ color: #333333 !important;
 }
 body {
 background: <%=colorParsing.Item("nlBodyBackground")%>;
+}
+body {
+background: none;
 }
 .contentOnline a:visited {
 color: <%=colorParsing.Item("nlCntOnlineText")%> !important;
@@ -800,7 +803,7 @@ color: <%=colorParsing.Item("nlFooterText")%> !important;
 }
 
 </style>
-	<table border="0" class="body" bgcolor="<%=colorParsing.Item("nlBodyBackground")%>" id="backgroundTable" style="background: <%=colorParsing.Item("nlBodyBackground")%>; background: #787878; border-collapse: collapse; border-spacing: 0; color: #333333; empty-cells: hide; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; height: 100%; line-height: 100% !important; margin: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 100% !important" width="100%" height="100%" cellpadding="0" cellspacing="0">
+	<table border="0" class="body" bgcolor="<%=colorParsing.Item("nlBodyBackground")%>" id="backgroundTable" style="background: <%=colorParsing.Item("nlBodyBackground")%>; border-collapse: collapse; border-spacing: 0; color: #333333; empty-cells: hide; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; height: 100%; line-height: 100% !important; margin: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 100% !important" background="none" width="100%" height="100%" cellpadding="0" cellspacing="0">
 		<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 			<td class="center" align="center" valign="top" style="-ms-hyphens: auto; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 0; text-align: center; vertical-align: top; word-break: break-word">
 				<center style="min-width: 720px; width: 100%">
