@@ -64,9 +64,8 @@ if not rsCabinet.eof then
 	url_youtube = rsCabinet("Youtube")
 	logo_groupement = rsCabinet("logo_groupement")
 	lien_groupement = rsCabinet("lien_groupement")
-	type_carte = rsCabinet("type_carte")
-	url_carte = rsCabinet("url_carte")
 
+	type_carte = rsCabinet("type_carte")
 	Select Case type_carte
 		Case 0 img_carte = "voeux-newsletter.png"
 		Case 1 img_carte = "m11-aviateur.jpg"
@@ -75,6 +74,11 @@ if not rsCabinet.eof then
 		Case 4 img_carte = "m10-chiffres.jpg"
 		Case 5 img_carte = "m16-typo.jpg"
 	End Select
+
+	url_carte = rsCabinet("url_carte")
+	if(InStr(url_carte,"http://") = 0) then
+		url_carte = "http://" & url_carte
+	end if
 
 	Select Case type_perso_site
 		Case 38 txt_perso_site = "pop"
@@ -914,8 +918,8 @@ color: #ffffff !important;
 											<table border="0" class="twelve columns" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 720px" width="720" cellpadding="0" cellspacing="0">
 												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 													<td class="text-pad center" style="-ms-hyphens: auto; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 0px 10px 10px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
-														<a target="_blank" href="http://<%=url_site_exp%>/voeux<%=voeux_annee%>.php" title="Visualisez votre carte de voeux en ligne" style="color: #333333; text-decoration: none">
-															<img class="voeux center" src="http://<%=url_site_exp%>/uploads/assets/voeux-newsletter.png" alt="Carte de voeux Expert Infos" width="360" height="360" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: inline; float: none; margin: 0 auto; max-width: 100%; outline: none; text-decoration: none; vertical-align: top; width: auto" align="none" />
+														<a target="_blank" href="<%=url_carte%>" title="Visualisez votre carte de voeux en ligne" style="color: #333333; text-decoration: none">
+															<img class="voeux center" src="http://newsletter-templates.lesechos-publishing.fr/templates/expertInfos_cartevoeux/theme/images/%25%25%7B%7B=img_carte%7D%7D%25%25" alt="Carte de voeux Expert Infos" width="360" height="360" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: inline; float: none; margin: 0 auto; max-width: 100%; outline: none; text-decoration: none; vertical-align: top; width: auto" align="none" />
 														</a>
 													</td>
 													<td class="expander" bgcolor="<%=colorParsing.Item("nlBodyBackground")%>" style="-ms-hyphens: auto; background: <%=colorParsing.Item("nlBodyBackground")%>; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word" align="left" valign="top" width="1"></td>
@@ -937,7 +941,7 @@ color: #ffffff !important;
 														<table border="0" class="button medium-button" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; overflow: hidden; padding: 0; text-align: left; vertical-align: top; width: 100%" width="100%" cellpadding="0" cellspacing="0">
 															<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 																<td style="-ms-hyphens: auto; background: #4b606d; border-collapse: collapse !important; border: 1px solid #212b31; color: #ffffff; display: block; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 12px 12px 10px; text-align: center; vertical-align: top; width: auto !important; word-break: break-word" align="center" bgcolor="#4b606d" valign="top" width="auto">
-																	<a target="_blank" href="http://<%=url_site_exp%>/voeux<%=voeux_annee%>.php" title="Visualisez votre carte de voeux en ligne" style="color: #ffffff; display: block; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 15.6px; font-weight: bold; height: auto; text-decoration: none; width: auto">D&#233;couvrez la e-carte de v&#156;ux du Cabinet</a>
+																	<a target="_blank" href="<%=url_carte%>" title="Visualisez votre carte de voeux en ligne" style="color: #ffffff; display: block; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 15.6px; font-weight: bold; height: auto; text-decoration: none; width: auto">D&#233;couvrez la e-carte de v&#156;ux du Cabinet</a>
 																</td>
 															</tr>
 														</table>
