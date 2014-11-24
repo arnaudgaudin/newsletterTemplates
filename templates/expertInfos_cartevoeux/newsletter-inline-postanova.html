@@ -64,6 +64,17 @@ if not rsCabinet.eof then
 	url_youtube = rsCabinet("Youtube")
 	logo_groupement = rsCabinet("logo_groupement")
 	lien_groupement = rsCabinet("lien_groupement")
+	type_carte = rsCabinet("type_carte")
+	url_carte = rsCabinet("url_carte")
+
+	Select Case type_carte
+		Case 0 img_carte = "voeux-newsletter.jpg"
+		Case 1 img_carte = "m11-aviateur.jpg"
+		Case 2 img_carte = "m13-etoile.jpg"
+		Case 3 img_carte = "m19-telechargement.jpg"
+		Case 4 img_carte = "m10-chiffres.jpg"
+		Case 5 img_carte = "m16-typo.jpg"
+	End Select
 
 	Select Case type_perso_site
 		Case 38 txt_perso_site = "pop"
