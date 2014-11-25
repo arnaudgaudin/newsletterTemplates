@@ -342,8 +342,11 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 										wend
 									end if
 								end if
-								
-								idarticle=idarticle&"-"
+
+								if isDemo=False then
+									idarticle=idarticle&"-"
+								end if
+
 								if idarticle="" then request.QueryString("amp;idarticle")
 								article=Mid(idarticle,1,(len(idarticle)))
 								nbc_desc=len(article)
