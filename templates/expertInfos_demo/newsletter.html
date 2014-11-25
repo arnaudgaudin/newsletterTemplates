@@ -78,6 +78,11 @@ else
 	isSocialNetwork = True
 end if
 
+'Detect isDemo'
+if(IsNull(isDemo)=True)then
+	isDemo = false
+end if
+
 'Detect isOnline'
 'if(Request.QueryString("is_online") = 1 OR isDemo = True)then'
 '	isOnline = True'
@@ -86,11 +91,6 @@ end if
 'end if'
 'Version online'
 isOnline = True
-
-'Detect isDemo'
-if(IsNull(isDemo)=True)then
-	isDemo = false
-end if
 
 'Detect isCollaborateur'
 if(Request.QueryString("is_coll") = 1)then
