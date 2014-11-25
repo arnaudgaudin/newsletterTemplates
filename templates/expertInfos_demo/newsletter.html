@@ -87,6 +87,11 @@ end if
 'Version online'
 isOnline = True
 
+'Detect isDemo'
+if(IsNull(isDemo)=True)then
+	isDemo = false
+end if
+
 'Detect isCollaborateur'
 if(Request.QueryString("is_coll") = 1)then
 	isCollaborateur = True

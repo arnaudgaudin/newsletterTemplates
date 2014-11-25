@@ -100,6 +100,11 @@ else
 	isOnline = False
 end if
 
+'Detect isDemo'
+if(IsNull(isDemo)=True)then
+	isDemo = false
+end if
+
 'Detect isCollaborateur'
 if(Request.QueryString("is_coll") = 1)then
 	isCollaborateur = True
