@@ -78,8 +78,13 @@ else
 	isSocialNetwork = True
 end if
 
+'Detect isDemo'
+if(IsNull(isDemo)=True)then
+	isDemo = false
+end if
+
 'Detect isOnline'
-if(Request.QueryString("is_online") = 1)then
+if(Request.QueryString("is_online") = 1 OR isDemo = True)then
 	isOnline = True
 else
 	isOnline = False
@@ -116,7 +121,14 @@ else
 	get_date = la_date
 end if
 
-online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/flashinfos_mail_V3_resp.asp?id_client="&id_client&"&idarticle="&idarticle&"&idarticleAlaune="&idarticleAlaune&"&is_online=1"&get_coll&"&fintrack="
+'Ciblage fichier de demo'
+if isDemo=True then
+	fileName = "flashinfos_demo_V3_resp"
+else
+	fileName = "flashinfos_mail_V3_resp"
+end if
+
+online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/"&fileName&".asp?id_client="&id_client&"&idarticle="&idarticle&"&idarticleAlaune="&idarticleAlaune&"&is_online=1"&get_coll&"&fintrack="
 %>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -1391,6 +1403,7 @@ color: <%=colorParsing.Item("nlFooterText")%> !important;
 								</table>
 								<!-- CONTACT END -->
 
+								<% if(isDemo=False)Then %>
 								<!-- FOOTER START -->
 								<gab_lien_blackliste>
 								<%
@@ -1416,6 +1429,7 @@ color: <%=colorParsing.Item("nlFooterText")%> !important;
 								</table>
 								</gab_lien_blackliste>
 								<!-- FOOTER END -->
+								<% end if %>
 
 							</td>
 						</tr>
