@@ -94,7 +94,7 @@ else
 end if
 
 'Detect isOnline'
-if(Request.QueryString("is_online") = 1)then
+if(Request.QueryString("is_online") = 1 OR isDemo = True)then
 	isOnline = True
 else
 	isOnline = False
