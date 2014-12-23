@@ -4,7 +4,7 @@
 
 body,
 table.body {
-  background-color: #000000;
+  background-color: #e6e6e7;
 }
 
 /**********************************************
@@ -1084,7 +1084,25 @@ ol.unstyled {
 }
 
 .contentOnline {
-  background-color: #000000;
+  background-color: #e6e6e7;
+}
+
+.contentOnline,
+.contentOnline td,
+.contentOnline .inner {
+  color: #444444;
+}
+
+.contentOnline a {
+  color: #444444;
+}
+
+.contentOnline a .important,
+.contentOnline a:visited,
+.contentOnline a:hover,
+.contentOnline a:focus,
+.contentOnline a:active {
+  color: #444444 !important;
 }
 
 .contentMain .wrapper {
@@ -1144,7 +1162,25 @@ ol.unstyled {
 }
 
 .contentLegal {
-  background-color: #000000;
+  background-color: #e6e6e7;
+}
+
+.contentLegal,
+.contentLegal td,
+.contentLegal .inner {
+  color: #444444;
+}
+
+.contentLegal a {
+  color: #444444;
+}
+
+.contentLegal a .important,
+.contentLegal a:visited,
+.contentLegal a:hover,
+.contentLegal a:focus,
+.contentLegal a:active {
+  color: #444444 !important;
 }
 
 .contentLegal small {
@@ -1152,7 +1188,25 @@ ol.unstyled {
 }
 
 .contentUnsub {
-  background-color: #000000;
+  background-color: #e6e6e7;
+}
+
+.contentUnsub,
+.contentUnsub td,
+.contentUnsub .inner {
+  color: #444444;
+}
+
+.contentUnsub a {
+  color: #444444;
+}
+
+.contentUnsub a .important,
+.contentUnsub a:visited,
+.contentUnsub a:hover,
+.contentUnsub a:focus,
+.contentUnsub a:active {
+  color: #444444 !important;
 }
 
 .contentUnsub small {
