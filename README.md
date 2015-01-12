@@ -17,7 +17,7 @@ Vous devez être sur Mac ou Linux pour pouvoir éditer ou créer de nouveaux tem
 2. LESSC http://lesscss.org et GROUP-CSS-MEDIA-QUERIES https://github.com/Se7enSky/group-css-media-queries
 
 		npm install -g less
-		npm install -g group-css-media-queries
+		npm install -g less-plugin-group-css-media-queries
 
 3. RUBYGEMS https://rubygems.org  
 Pour une installation sur CENTOS avec RVM :  
