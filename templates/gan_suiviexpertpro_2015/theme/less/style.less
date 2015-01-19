@@ -21,6 +21,12 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 	td.wrapper { padding-top: (@wrapperPad / 2); }
 	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
 }
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .header {
+		td.wrapper { padding-top: (@wrapperPad / 2) !important; }
+		table.columns td, table.column td { padding-bottom: (@columnPad / 2) !important; }
+	}
+}
 
 //sur titres
 .preTitle {
@@ -70,6 +76,12 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 		hr.border { margin: 0; }
 	}
 }
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .row.bordered {
+		td.wrapper { padding-top: 0px !important; }
+		table.columns td, table.column td { padding-bottom: 0px !important; }
+	}
+}
 
 //icone en image
 .icon-img {
@@ -86,12 +98,12 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 //override version firefox
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .icon-img {
-		display: block;
-		float: left;
+		display: block !important;
+		float: left !important;
 		width: 60px !important;
 		height: 60px !important;
-		padding-right: 10px;
-		padding-bottom: 0;
+		padding-right: 10px !important;
+		padding-bottom: 0 !important;
 	}
 }
 
@@ -114,9 +126,35 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 	}
 }
 
+//contentPartenariat area
+// -------------------------
+.contentPartenariat {
+	//suppression décalage en trop
+	td.wrapper { padding-top: 0px; }
+	table.columns td, table.column td { padding-bottom: 0px; }
+
+	td.sub-columns {
+		&.first {
+			background-color: #0f0;
+		}
+		&.last {
+			background-color: #f00;
+		}
+	}
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentPartenariat {
+		td.wrapper { padding-top: 0px !important; }
+		table.columns td, table.column td { padding-bottom: 0px !important; }
+	}
+}
+
 // contentInfoClient area
 // -------------------------
 .contentInfoClient {
+	//suppression décalage en trop
+	td.wrapper { padding-top: 0px; }
+
 	.text {
 		color: @colorGan1;
 		padding-top: 0;
@@ -151,9 +189,7 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 //override version firefox
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentBottom {
-		td {
-			&, .title { text-align: left; }
-		}
+		td { &, .title { text-align: left !important; } }
 	}
 }
 
@@ -173,6 +209,12 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 		text-align: right;
 	}
 }
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentFooter {
+		td.wrapper { padding-top: (@wrapperPad / 2) !important; }
+		table.columns td, table.column td { padding-bottom: (@columnPad / 2) !important; }
+	}
+}
 
 // contentUnsubscribe area
 // -------------------------
@@ -186,5 +228,11 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 	td {
 		font-size: @fontSizeSmall;
 		line-height: (@fontSizeSmall * 1.25);
+	}
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentUnsubscribe {
+		td.wrapper { padding-top: (@wrapperPad / 2) !important; }
+		table.columns td, table.column td { padding-bottom: (@columnPad / 2) !important; }
 	}
 }

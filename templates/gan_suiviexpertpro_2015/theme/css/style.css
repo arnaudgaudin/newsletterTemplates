@@ -1140,6 +1140,27 @@ h6 {
   background-color: #f00;
 }
 
+.contentPartenariat td.wrapper {
+  padding-top: 0px;
+}
+
+.contentPartenariat table.columns td,
+.contentPartenariat table.column td {
+  padding-bottom: 0px;
+}
+
+.contentPartenariat td.sub-columns.first {
+  background-color: #0f0;
+}
+
+.contentPartenariat td.sub-columns.last {
+  background-color: #f00;
+}
+
+.contentInfoClient td.wrapper {
+  padding-top: 0px;
+}
+
 .contentInfoClient .text {
   color: #43769e;
   padding-top: 0;
@@ -1412,17 +1433,62 @@ h6 {
     padding: 10px !important;
   }
 
+  table[class="body"] .header td.wrapper {
+    padding-top: 10px !important;
+  }
+
+  table[class="body"] .header table.columns td,
+  table[class="body"] .header table.column td {
+    padding-bottom: 10px !important;
+  }
+
+  table[class="body"] .row.bordered td.wrapper {
+    padding-top: 0px !important;
+  }
+
+  table[class="body"] .row.bordered table.columns td,
+  table[class="body"] .row.bordered table.column td {
+    padding-bottom: 0px !important;
+  }
+
   table[class="body"] .icon-img {
-    display: block;
-    float: left;
+    display: block !important;
+    float: left !important;
     width: 60px !important;
     height: 60px !important;
-    padding-right: 10px;
-    padding-bottom: 0;
+    padding-right: 10px !important;
+    padding-bottom: 0 !important;
+  }
+
+  table[class="body"] .contentPartenariat td.wrapper {
+    padding-top: 0px !important;
+  }
+
+  table[class="body"] .contentPartenariat table.columns td,
+  table[class="body"] .contentPartenariat table.column td {
+    padding-bottom: 0px !important;
   }
 
   table[class="body"] .contentBottom td,
   table[class="body"] .contentBottom td .title {
-    text-align: left;
+    text-align: left !important;
+  }
+
+  table[class="body"] .contentFooter td.wrapper {
+    padding-top: 10px !important;
+  }
+
+  table[class="body"] .contentFooter table.columns td,
+  table[class="body"] .contentFooter table.column td {
+    padding-bottom: 10px !important;
+  }
+
+  table[class="body"] .contentUnsubscribe td.wrapper {
+    padding-top: 10px !important;
+  }
+
+  table[class="body"] .contentUnsubscribe table.columns td,
+  table[class="body"] .contentUnsubscribe table.column td {
+    padding-bottom: 10px !important;
   }
 }
