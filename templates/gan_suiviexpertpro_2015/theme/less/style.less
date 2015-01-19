@@ -35,6 +35,8 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 .title {
 	color: #000;
 	padding-bottom: 10px;
+	//on rajoute un padding de séparation lorsque précédé d'un readMore (utile pour articles)
+	.readMore + & { padding-top: 10px; }
 }
 
 //lien de suivis
@@ -42,7 +44,20 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 	text-align: right;
 	font-size: @fontSizeSmall;
 	margin: 0;
-	a { .newsletterLinkColor(@colorGan1); }
+	.newsletterInnerTextColor(#ffffff);
+}
+
+//pas de float pour image contenus dans liens en block
+.link_box img {
+	float: none;
+}
+
+
+//texte éditable en textarea
+.text {
+	padding-top: 10px;
+	//suppression padding lorsque précédé d'un titre car ce dernier en a un
+	.title + & { padding-top: 0; }
 }
 
 //gestion row avec bordures de séparation
@@ -68,9 +83,18 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 .contentInfoClient {
 	.text {
 		color: @colorGan1;
+		padding-top: 0;
 	}
 	.signature {
 		text-align: right;
 		color: #000;
 	}
+}
+
+// contentOffre
+// -------------------------
+.contentOffre {
+	background-color: @colorGan5;
+	.preTitle, .title, .readMore { color: #ffffff; }
+	.newsletterInnerTextColor(#ffffff);
 }

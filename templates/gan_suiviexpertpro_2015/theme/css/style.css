@@ -1042,14 +1042,24 @@ h6 {
   padding-bottom: 10px;
 }
 
+.readMore + .title {
+  padding-top: 10px;
+}
+
 .readMore {
   text-align: right;
   font-size: 11.9px;
   margin: 0;
 }
 
+.readMore,
+.readMore td,
+.readMore .inner {
+  color: #ffffff;
+}
+
 .readMore a {
-  color: #43769e;
+  color: #ffffff;
 }
 
 .readMore a .important,
@@ -1057,7 +1067,19 @@ h6 {
 .readMore a:hover,
 .readMore a:focus,
 .readMore a:active {
-  color: #43769e !important;
+  color: #ffffff !important;
+}
+
+.link_box img {
+  float: none;
+}
+
+.text {
+  padding-top: 10px;
+}
+
+.title + .text {
+  padding-top: 0;
 }
 
 .row.bordered td.wrapper {
@@ -1101,11 +1123,40 @@ h6 {
 
 .contentInfoClient .text {
   color: #43769e;
+  padding-top: 0;
 }
 
 .contentInfoClient .signature {
   text-align: right;
   color: #000;
+}
+
+.contentOffre {
+  background-color: #91999c;
+}
+
+.contentOffre .preTitle,
+.contentOffre .title,
+.contentOffre .readMore {
+  color: #ffffff;
+}
+
+.contentOffre,
+.contentOffre td,
+.contentOffre .inner {
+  color: #ffffff;
+}
+
+.contentOffre a {
+  color: #ffffff;
+}
+
+.contentOffre a .important,
+.contentOffre a:visited,
+.contentOffre a:hover,
+.contentOffre a:focus,
+.contentOffre a:active {
+  color: #ffffff !important;
 }
 
 @media only screen and (max-width: 720px) {
