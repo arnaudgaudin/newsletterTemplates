@@ -1025,6 +1025,18 @@ h6 {
   padding-bottom: 0px;
 }
 
+.preTitle {
+  display: block;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  color: #43769e;
+}
+
+.row.bordered {
+  border-bottom: 1px solid #43769e;
+}
+
 @media only screen and (max-width: 720px) {
   table[class="body"] img {
     width: auto !important;
