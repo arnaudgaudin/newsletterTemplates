@@ -17,7 +17,7 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 //gestion header
 .header {
 	background-color: @bodyBackground;
-	//suppression décalage en trop
+	//réduction décalage vertical
 	td.wrapper { padding-top: (@wrapperPad / 2); }
 	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
 }
@@ -44,7 +44,7 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 	text-align: right;
 	font-size: @fontSizeSmall;
 	margin: 0;
-	.newsletterInnerTextColor(@colorGan1);
+	a { .newsletterLinkColor(@colorGan1); }
 }
 
 //pas de float pour image contenus dans liens en block
@@ -71,11 +71,39 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 	}
 }
 
+//icone en image
+.icon-img {
+	background-color: #0f0;
+	position: relative;
+	display: inline;
+	float: none;
+	vertical-align: text-bottom;
+	line-height: 60px;
+	padding-bottom: 5px;
+	width: 60px !important;
+	height: 60px !important;
+}
+//override version firefox
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .icon-img {
+		display: block;
+		float: left;
+		width: 60px !important;
+		height: 60px !important;
+		padding-right: 10px;
+		padding-bottom: 0;
+	}
+}
+
 // contentOnline et contentInfoClient area
 // -------------------------
 .contentOnline {
 	background-color: @bodyBackground;
-	.newsletterInnerTextColor(@colorGan5);
+	.newsletterInnerTextColor(darken(@colorGan5, 30%));
+	td {
+		font-size: @fontSizeSmall;
+		line-height: (@fontSizeSmall * 1.25);
+	}
 }
 
 // contentInfoClient area
@@ -91,10 +119,64 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 	}
 }
 
-// contentOffre
+// contentOffre area
 // -------------------------
 .contentOffre {
 	background-color: @colorGan5;
 	.preTitle, .title, .readMore { color: #ffffff; }
 	.newsletterInnerTextColor(#ffffff);
+}
+
+// contentBottom area
+// -------------------------
+.contentBottom {
+	.title {
+		text-align: center;
+		padding-bottom: 5px;
+	}
+	.text {
+		font-size: @fontSizeSmall;
+		line-height: (@fontSizeSmall * 1.25);
+	}
+
+}
+//override version firefox
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentBottom {
+		td {
+			&, .title { text-align: left; }
+		}
+	}
+}
+
+// contentFooter area
+// -------------------------
+.contentFooter {
+	//réduction décalage vertical en haut
+	td.wrapper { padding-top: (@wrapperPad / 2); }
+	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+
+	a {
+		font-weight: bold;
+		.newsletterLinkColor(@colorGan1);
+	}
+	//placement à droite pour le dernier
+	.wrapper.last td {
+		text-align: right;
+	}
+}
+
+// contentUnsubscribe area
+// -------------------------
+.contentUnsubscribe {
+	//réduction décalage vertical
+	td.wrapper { padding-top: (@wrapperPad / 2); }
+	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+
+	background-color: @bodyBackground;
+	.newsletterInnerTextColor(darken(@colorGan5, 30%));
+	td {
+		font-size: @fontSizeSmall;
+		line-height: (@fontSizeSmall * 1.25);
+	}
 }

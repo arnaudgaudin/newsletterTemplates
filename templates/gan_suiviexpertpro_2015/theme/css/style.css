@@ -1052,12 +1052,6 @@ h6 {
   margin: 0;
 }
 
-.readMore,
-.readMore td,
-.readMore .inner {
-  color: #43769e;
-}
-
 .readMore a {
   color: #43769e;
 }
@@ -1099,6 +1093,18 @@ h6 {
   margin: 0;
 }
 
+.icon-img {
+  background-color: #0f0;
+  position: relative;
+  display: inline;
+  float: none;
+  vertical-align: text-bottom;
+  line-height: 60px;
+  padding-bottom: 5px;
+  width: 60px !important;
+  height: 60px !important;
+}
+
 .contentOnline {
   background-color: #ededed;
 }
@@ -1106,11 +1112,11 @@ h6 {
 .contentOnline,
 .contentOnline td,
 .contentOnline .inner {
-  color: #91999c;
+  color: #464c4e;
 }
 
 .contentOnline a {
-  color: #91999c;
+  color: #464c4e;
 }
 
 .contentOnline a .important,
@@ -1118,7 +1124,12 @@ h6 {
 .contentOnline a:hover,
 .contentOnline a:focus,
 .contentOnline a:active {
-  color: #91999c !important;
+  color: #464c4e !important;
+}
+
+.contentOnline td {
+  font-size: 11.9px;
+  line-height: 14.875px;
 }
 
 .contentInfoClient .text {
@@ -1157,6 +1168,78 @@ h6 {
 .contentOffre a:focus,
 .contentOffre a:active {
   color: #ffffff !important;
+}
+
+.contentBottom .title {
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.contentBottom .text {
+  font-size: 11.9px;
+  line-height: 14.875px;
+}
+
+.contentFooter td.wrapper {
+  padding-top: 10px;
+}
+
+.contentFooter table.columns td,
+.contentFooter table.column td {
+  padding-bottom: 10px;
+}
+
+.contentFooter a {
+  font-weight: bold;
+  color: #43769e;
+}
+
+.contentFooter a .important,
+.contentFooter a:visited,
+.contentFooter a:hover,
+.contentFooter a:focus,
+.contentFooter a:active {
+  color: #43769e !important;
+}
+
+.contentFooter .wrapper.last td {
+  text-align: right;
+}
+
+.contentUnsubscribe {
+  background-color: #ededed;
+}
+
+.contentUnsubscribe td.wrapper {
+  padding-top: 10px;
+}
+
+.contentUnsubscribe table.columns td,
+.contentUnsubscribe table.column td {
+  padding-bottom: 10px;
+}
+
+.contentUnsubscribe,
+.contentUnsubscribe td,
+.contentUnsubscribe .inner {
+  color: #464c4e;
+}
+
+.contentUnsubscribe a {
+  color: #464c4e;
+}
+
+.contentUnsubscribe a .important,
+.contentUnsubscribe a:visited,
+.contentUnsubscribe a:hover,
+.contentUnsubscribe a:focus,
+.contentUnsubscribe a:active {
+  color: #464c4e !important;
+}
+
+.contentUnsubscribe td {
+  font-size: 11.9px;
+  line-height: 14.875px;
 }
 
 @media only screen and (max-width: 720px) {
@@ -1319,5 +1402,19 @@ h6 {
 
   table[class="container"] .panel {
     padding: 10px !important;
+  }
+
+  table[class="body"] .icon-img {
+    display: block;
+    float: left;
+    width: 60px !important;
+    height: 60px !important;
+    padding-right: 10px;
+    padding-bottom: 0;
+  }
+
+  table[class="body"] .contentBottom td,
+  table[class="body"] .contentBottom td .title {
+    text-align: left;
   }
 }
