@@ -1132,6 +1132,14 @@ h6 {
   line-height: 14.875px;
 }
 
+.contentOnline td.sub-columns.first {
+  background-color: #0f0;
+}
+
+.contentOnline td.sub-columns.last {
+  background-color: #f00;
+}
+
 .contentInfoClient .text {
   color: #43769e;
   padding-top: 0;
