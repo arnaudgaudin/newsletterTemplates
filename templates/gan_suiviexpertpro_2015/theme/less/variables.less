@@ -35,6 +35,11 @@
 @headingsFontWeight:    normal;
 
 
+// Hr border color
+// -------------------------
+@hrBorder: @colorGan1;
+
+
 // Component sizing
 // -------------------------
 @headingsFontSizeH1:    21px;
@@ -57,7 +62,7 @@
 
 // Padding config
 // --------------------------------------------------
-@wrapperPad: 40px;
+@wrapperPad: 20px;
 @wrapperPadCollapse: (@wrapperPad / 2);
 
 @columnPad: @wrapperPad;
@@ -69,5 +74,5 @@
 @panelPad: @wrapperPad;
 @panelPadCollapse: (@panelPad / 2);
 
-@textPad: @wrapperPad;
+@textPad: (@wrapperPad * 2);
 @textPadCollapse: (@textPad / 2);

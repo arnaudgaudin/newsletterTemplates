@@ -94,8 +94,8 @@ td {
 }
 
 hr {
-  color: #d9d9d9;
-  background-color: #d9d9d9;
+  color: #43769e;
+  background-color: #43769e;
   height: 1px;
   border: none;
 }
@@ -125,7 +125,7 @@ table.container table.row {
 }
 
 td.wrapper {
-  padding: 40px 0 0px 0px;
+  padding: 20px 0 0px 0px;
 }
 
 table.columns,
@@ -135,7 +135,7 @@ table.column {
 
 table.columns td,
 table.column td {
-  padding: 0px 0px 40px;
+  padding: 0px 0px 20px;
 }
 
 table.columns td.sub-columns,
@@ -450,7 +450,7 @@ table.column .text-pad-right {
 
 .block-grid td {
   display: inline-block;
-  padding: 40px;
+  padding: 20px;
 }
 
 .two-up td {
@@ -650,7 +650,7 @@ h6 a:visited {
 .panel {
   background: #f2f2f2;
   border: 1px solid #d9d9d9;
-  padding: 40px !important;
+  padding: 20px !important;
 }
 
 .sub-grid table {
@@ -1016,13 +1016,17 @@ h6 {
   line-height: 15.4px;
 }
 
+.header {
+  background-color: #ededed;
+}
+
 .header td.wrapper {
-  padding-top: 0px;
+  padding-top: 10px;
 }
 
 .header table.columns td,
 .header table.column td {
-  padding-bottom: 0px;
+  padding-bottom: 10px;
 }
 
 .preTitle {
@@ -1033,8 +1037,58 @@ h6 {
   color: #43769e;
 }
 
-.row.bordered {
-  border-bottom: 1px solid #43769e;
+.row.bordered td.wrapper {
+  padding-top: 0px;
+}
+
+.row.bordered table.columns td,
+.row.bordered table.column td {
+  padding-bottom: 0px;
+}
+
+.row.bordered td {
+  line-height: 0;
+}
+
+.row.bordered td hr.border {
+  margin: 0;
+}
+
+.contentOnline {
+  background-color: #ededed;
+}
+
+.contentOnline,
+.contentOnline td,
+.contentOnline .inner {
+  color: #91999c;
+}
+
+.contentOnline a {
+  color: #91999c;
+}
+
+.contentOnline a .important,
+.contentOnline a:visited,
+.contentOnline a:hover,
+.contentOnline a:focus,
+.contentOnline a:active {
+  color: #91999c !important;
+}
+
+.contentInfoClient .title {
+  font-weight: bold;
+  color: #000;
+  padding-bottom: 10px;
+}
+
+.contentInfoClient .text {
+  color: #43769e;
+}
+
+.contentInfoClient .signature {
+  text-align: right;
+  color: #000;
 }
 
 @media only screen and (max-width: 720px) {
@@ -1060,7 +1114,7 @@ h6 {
   table[class="body"] .wrapper {
     position: relative !important;
     display: block !important;
-    padding-top: 20px !important;
+    padding-top: 10px !important;
     padding-right: 0 !important;
   }
 
@@ -1082,7 +1136,7 @@ h6 {
   table[class="body"] table.columns td,
   table[class="body"] table.column td {
     width: 100% !important;
-    padding-bottom: 20px !important;
+    padding-bottom: 10px !important;
   }
 
   table[class="body"] .columns td.one,
@@ -1192,10 +1246,10 @@ h6 {
 
   table[class="container"] .block-grid td {
     width: 100% !important;
-    padding: 20px !important;
+    padding: 10px !important;
   }
 
   table[class="container"] .panel {
-    padding: 20px !important;
+    padding: 10px !important;
   }
 }
