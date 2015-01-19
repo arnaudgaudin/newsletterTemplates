@@ -216,7 +216,7 @@ text-decoration: underline; cursor: pointer;
     position: relative !important; width: 100% !important; display: block !important;
   }
   table[class="body"] .wrapper {
-    position: relative !important; display: block !important; padding-right: 0 !important;
+    position: relative !important; display: block !important; padding-top: 20px !important; padding-right: 0 !important;
   }
   table[class="body"] .columns {
     table-layout: fixed !important; float: none !important; width: 100% !important; padding-right: 0px !important; padding-left: 0px !important; display: block !important;
@@ -231,10 +231,10 @@ text-decoration: underline; cursor: pointer;
     display: table !important;
   }
   table[class="body"] table.columns td {
-    width: 100% !important;
+    width: 100% !important; padding-bottom: 20px !important;
   }
   table[class="body"] table.column td {
-    width: 100% !important;
+    width: 100% !important; padding-bottom: 20px !important;
   }
   table[class="body"] .columns td.one {
     width: 8.333333% !important;
@@ -344,17 +344,20 @@ text-decoration: underline; cursor: pointer;
   table[class="body"] table.columns td.expander {
     width: 1px !important;
   }
+  table[class="body"] .text-pad {
+    padding-left: 20px !important; padding-right: 20px !important;
+  }
   table[class="body"] .right-text-pad {
-    padding-left: 10px !important;
+    padding-left: 20px !important; padding-right: 20px !important;
   }
   table[class="body"] .text-pad-right {
-    padding-left: 10px !important;
+    padding-left: 20px !important; padding-right: 20px !important;
   }
   table[class="body"] .left-text-pad {
-    padding-right: 10px !important;
+    padding-left: 20px !important; padding-right: 20px !important;
   }
   table[class="body"] .text-pad-left {
-    padding-right: 10px !important;
+    padding-left: 20px !important; padding-right: 20px !important;
   }
   table[class="body"] .hide-for-small {
     display: none !important;
@@ -369,7 +372,10 @@ text-decoration: underline; cursor: pointer;
     display: inherit !important;
   }
   table[class="container"] .block-grid td {
-    width: 100% !important;
+    width: 100% !important; padding: 20px !important;
+  }
+  table[class="container"] .panel {
+    padding: 20px !important;
   }
 }
 </style>
@@ -392,28 +398,88 @@ text-decoration: underline; cursor: pointer;
 								<!-- ONLINE START -->
 								<table border="0" class="row contentOnline" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%; border-collapse: collapse; border-spacing: 0; display: block; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px; text-align: left; vertical-align: top; width: 100%" width="100%" cellpadding="0" cellspacing="0">
 									<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
-										<td class="wrapper last" style="-ms-hyphens: auto; border-collapse: collapse !important; color: #91999c; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 18px; margin: 0; padding: 10px 0px 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+										<td class="wrapper last" style="-ms-hyphens: auto; border-collapse: collapse !important; color: #91999c; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 18px; margin: 0; padding: 40px 0px 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
 											<table border="0" class="twelve columns" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 720; border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 720px" width="720" cellpadding="0" cellspacing="0">
 												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
-													<td class="center" style="-ms-hyphens: auto; border-collapse: collapse !important; color: #91999c; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 18px; margin: 0; padding: 0px 0px 10px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
-														<span class="inner text-pad" style="padding-left: 10px !important; padding-right: 10px !important">
-															<span class="infos">
-																Pour vous assurer de recevoir notre lettre d'informations, nous vous recommandons d'ajouter l'adresse &#8220;&#160;<a href="mailto:gan-assurances-news@lesechos-publishing.fr" style="color: #91999c; text-decoration: none">gan-assurances-news@lesechos-publishing.fr</a>&#160;&#8221; &#224;&#160;votre&#160;carnet&#160;d'adresses.
-															</span>
-															<!--{{<gab_lien_message_online>}}-->
-															<span class="online">
-																Si vous avez des difficult&#233;s &#224; visualiser cette lettre d'informations, <a class="link_underline" target="_blank" href="#" lien_message_online="lien_message_online" style="color: #91999c; text-decoration: underline">cliquez&#160;ici</a>.
-															</span>
-															<!--{{</gab_lien_message_online>}}-->
+													<td class="nine sub-columns text-pad first" style="-ms-hyphens: auto; -premailer-width: 75%; border-collapse: collapse !important; color: #91999c; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 18px; margin: 0; min-width: 0px; padding: 0px 40px 40px; text-align: left; vertical-align: top; width: 75%; word-break: break-word" align="left" valign="top" width="75%">
+														<!--{{<gab_lien_message_online>}}-->
+														<span class="online">
+															Pour visualiser ce message en ligne, <a class="link_underline" target="_blank" href="#" lien_message_online="lien_message_online" style="color: #91999c; text-decoration: underline">suivez ce lien</a>.
 														</span>
+														<!--{{</gab_lien_message_online>}}-->
 													</td>
+													<td class="three sub-columns last" style="-ms-hyphens: auto; -premailer-width: 25%; border-collapse: collapse !important; color: #91999c; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 18px; margin: 0; min-width: 0px; padding: 0px 0px 40px; text-align: left; vertical-align: top; width: 25%; word-break: break-word" align="left" valign="top" width="25%">
+														Rajout image vignette
+													</td>
+													<td class="expander" style="-ms-hyphens: auto; -premailer-width: 1; border-collapse: collapse !important; color: #91999c; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 18px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word" align="left" valign="top" width="1"></td>
 												</tr>
 											</table>
 										</td>
 									</tr>
 								</table>
 					        	<!-- ONLINE END -->
-								
+
+					        	<!-- HEADER START -->
+					        	<table border="0" class="row header" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%; border-collapse: collapse; border-spacing: 0; display: block; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px; text-align: left; vertical-align: top; width: 100%" width="100%" cellpadding="0" cellspacing="0">
+								    <tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+								        <td class="wrapper last" style="-ms-hyphens: auto; border-collapse: collapse !important; color: #91999c; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 18px; margin: 0; padding: 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+								            <table border="0" class="twelve columns" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 720; border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 720px" width="720" cellpadding="0" cellspacing="0">
+								                <tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+								                    <td class="center" style="-ms-hyphens: auto; border-collapse: collapse !important; color: #91999c; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 18px; margin: 0; padding: 0px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
+								                    	<a target="_blank" class="link_box" href="http://www.ganassurances.fr/vos-actualites-professionnelles-@/7399/view-7399-category.html?servername=gan&amp;lang=fr" style="color: #91999c; display: block; outline: none; text-decoration: none">
+								                            <img src="http://newsletter-templates.lesechos-publishing.fr/templates/gan_suiviexpertpro_2015/theme/images/header.png" alt="Gan&#160;-&#160;SuiviExpertPro" width="720" height="90" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: left; max-width: 100%; outline: none; text-decoration: none; width: auto" align="left" />
+								                        </a>
+								                    </td>
+								                </tr>
+								            </table>
+								        </td>
+								    </tr>
+								</table>
+								<!-- HEADER END -->
+
+								<!-- INFO CLIENT START -->
+					        	<table border="0" class="row contentInfoClient" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%; border-collapse: collapse; border-spacing: 0; display: block; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px; text-align: left; vertical-align: top; width: 100%" width="100%" cellpadding="0" cellspacing="0">
+					        		<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+					        			<td class="wrapper last" style="-ms-hyphens: auto; border-collapse: collapse !important; color: #91999c; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 18px; margin: 0; padding: 40px 0px 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+					        				<table border="0" class="twelve columns" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 720; border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 720px" width="720" cellpadding="0" cellspacing="0">
+					        					<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+					        						<td class="text-pad" style="-ms-hyphens: auto; border-collapse: collapse !important; color: #91999c; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 18px; margin: 0; padding: 0px 40px 40px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+					        							<h5 class="title" style="color: #91999c; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 15px; font-weight: normal; line-height: 16.5px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; word-break: normal" align="left">Madame, Monsieur l'Agent g&#233;n&#233;ral,</h5>
+					        							<div class="text">
+					        								Nous avons le plaisir de vous adresser la nouvelle Newsletter Suivi Expert Pro de Janvier qui sera envoy&#233;e tr&#232;s prochainement &#224; vos clients professionnels et chefs d'entreprise par email.<br /><br />
+					        								Pour abonner vos clients chefs d'entreprise &#224; la newsletter, il suffit de renseigner leur adresse email dans la GRC et ils seront automatiquement inscrits.<br /><br />Bonne lecture.
+					        							</div>
+					        							<p class="signature" style="color: #91999c; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 18px; margin: 0 0 10px; padding: 0; text-align: left" align="left">Direction de la Communication de Gan Assurances</p>
+					        						</td>
+					        					</tr>
+					        				</table>
+					        			</td>
+					        		</tr>
+					        	</table>
+					        	<!-- INFO CLIENT END -->
+
+								<!-- ALAUNE START -->
+								<table border="0" class="row contentALaUne" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%; border-collapse: collapse; border-spacing: 0; display: block; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px; text-align: left; vertical-align: top; width: 100%" width="100%" cellpadding="0" cellspacing="0">
+					        		<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+					        			<td class="wrapper last" style="-ms-hyphens: auto; border-collapse: collapse !important; color: #91999c; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 18px; margin: 0; padding: 40px 0px 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+					        				<table border="0" class="twelve columns" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 720; border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 720px" width="720" cellpadding="0" cellspacing="0">
+					        					<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+					        						<td class="text-pad" style="-ms-hyphens: auto; border-collapse: collapse !important; color: #91999c; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 18px; margin: 0; padding: 0px 40px 40px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+					        							<span class="preTitle">&#192; la une</span>
+					        							<h4 class="title" style="color: #91999c; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 17.6px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; word-break: normal" align="left">Stages&#160;: les principaux changements au 1<sup>er</sup>&#160;d&#233;cembre 2014</h4>
+					        							<a href="http://google.com" style="color: #91999c; text-decoration: none">
+					        								<img src="http://lorempixel.com/1280/580/cats/" width="640" height="290" alt="" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: left; max-width: 100%; outline: none; text-decoration: none; width: auto" align="left" />
+					        							</a>
+					        							<div class="text"><a href="http://google.com" class="link_box" target="_blank" style="color: #91999c; display: block; outline: none; text-decoration: none">Outre la mesure phare sur le rel&#232;vement de la gratification minimale allou&#233;e au stagiaire, d'autres modifications ont &#233;t&#233; apport&#233;es au r&#233;gime des stages en entreprise. Plusieurs mesures pr&#233;vues par la loi de juillet 2014 sur la r&#233;forme des stages viennent d'&#234;tre pr&#233;cis&#233;es par d&#233;cret et s'appliquent aux conventions conclues depuis le 1<sup>er</sup>&#160;d&#233;cembre&#160;2014&#160;(...)</a></div>
+					        							<a href="http://google.com" class="readMore" target="_blank" style="color: #91999c; text-decoration: none">Lire la suite</a>
+					        						</td>
+					        					</tr>
+					        				</table>
+					        			</td>
+					        		</tr>
+					        	</table>
+								<!-- ALAUNE END -->
+
 							</td>
 						</tr>
 					</table>

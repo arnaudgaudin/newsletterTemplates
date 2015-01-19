@@ -2,3 +2,21 @@
 @import "import.less";
 
 // additionnal template's style which extends ink's style
+
+// LAYOUT
+// --------------------------------------------------
+
+h1, h2, h3, h4, h5, h6 { mso-line-height-rule: exactly; }
+h1 { line-height: (@headingsFontSizeH1 * 1.1); }
+h2 { line-height: (@headingsFontSizeH2 * 1.1); }
+h3 { line-height: (@headingsFontSizeH3 * 1.1); }
+h4 { line-height: (@headingsFontSizeH4 * 1.1); }
+h5 { line-height: (@headingsFontSizeH5 * 1.1); }
+h6 { line-height: (@headingsFontSizeH6 * 1.1); }
+
+//gestion header
+.header {
+	//suppression décalage en trop
+	td.wrapper { padding-top: 0px; }
+	table.columns td, table.column td { padding-bottom: 0px; }
+}
