@@ -1055,11 +1055,11 @@ h6 {
 .readMore,
 .readMore td,
 .readMore .inner {
-  color: #ffffff;
+  color: #43769e;
 }
 
 .readMore a {
-  color: #ffffff;
+  color: #43769e;
 }
 
 .readMore a .important,
@@ -1067,7 +1067,7 @@ h6 {
 .readMore a:hover,
 .readMore a:focus,
 .readMore a:active {
-  color: #ffffff !important;
+  color: #43769e !important;
 }
 
 .link_box img {
