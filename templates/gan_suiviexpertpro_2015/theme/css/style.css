@@ -1094,7 +1094,6 @@ h6 {
 }
 
 .icon-img {
-  background-color: #0f0;
   position: relative;
   display: inline;
   float: none;
@@ -1107,6 +1106,15 @@ h6 {
 
 .contentOnline {
   background-color: #ededed;
+}
+
+.contentOnline td.wrapper {
+  padding-top: 0px;
+}
+
+.contentOnline table.columns td,
+.contentOnline table.column td {
+  padding-bottom: 0px;
 }
 
 .contentOnline,
@@ -1133,11 +1141,8 @@ h6 {
 }
 
 .contentOnline td.sub-columns.first {
-  background-color: #0f0;
-}
-
-.contentOnline td.sub-columns.last {
-  background-color: #f00;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .contentPartenariat td.wrapper {
@@ -1147,14 +1152,6 @@ h6 {
 .contentPartenariat table.columns td,
 .contentPartenariat table.column td {
   padding-bottom: 0px;
-}
-
-.contentPartenariat td.sub-columns.first {
-  background-color: #0f0;
-}
-
-.contentPartenariat td.sub-columns.last {
-  background-color: #f00;
 }
 
 .contentInfoClient td.wrapper {
@@ -1458,6 +1455,20 @@ h6 {
     height: 60px !important;
     padding-right: 10px !important;
     padding-bottom: 0 !important;
+  }
+
+  table[class="body"] .contentOnline td.wrapper {
+    padding-top: 0px !important;
+  }
+
+  table[class="body"] .contentOnline table.columns td,
+  table[class="body"] .contentOnline table.column td {
+    padding-bottom: 0px !important;
+  }
+
+  table[class="body"] .contentOnline td.sub-columns.first {
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 
   table[class="body"] .contentPartenariat td.wrapper {

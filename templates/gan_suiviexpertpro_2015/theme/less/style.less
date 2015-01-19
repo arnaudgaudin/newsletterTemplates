@@ -85,7 +85,6 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 
 //icone en image
 .icon-img {
-	background-color: #0f0;
 	position: relative;
 	display: inline;
 	float: none;
@@ -110,18 +109,29 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 // contentOnline et contentInfoClient area
 // -------------------------
 .contentOnline {
+	//suppression décalage en trop
+	td.wrapper { padding-top: 0px; }
+	table.columns td, table.column td { padding-bottom: 0px; }
+
 	background-color: @bodyBackground;
 	.newsletterInnerTextColor(darken(@colorGan5, 30%));
 	td {
 		font-size: @fontSizeSmall;
 		line-height: (@fontSizeSmall * 1.25);
 	}
-	td.sub-columns {
-		&.first {
-			background-color: #0f0;
-		}
-		&.last {
-			background-color: #f00;
+
+	td.sub-columns.first {
+		padding-top: (@wrapperPad / 2);
+		padding-bottom: (@columnPad / 2);
+	}
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentOnline {
+		td.wrapper { padding-top: 0px !important; }
+		table.columns td, table.column td { padding-bottom: 0px !important; }
+		td.sub-columns.first {
+			padding-top: (@wrapperPad / 4);
+			padding-bottom: (@columnPad / 4);
 		}
 	}
 }
@@ -132,15 +142,6 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 	//suppression décalage en trop
 	td.wrapper { padding-top: 0px; }
 	table.columns td, table.column td { padding-bottom: 0px; }
-
-	td.sub-columns {
-		&.first {
-			background-color: #0f0;
-		}
-		&.last {
-			background-color: #f00;
-		}
-	}
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentPartenariat {
