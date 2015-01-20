@@ -35,11 +35,13 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 	text-transform: uppercase;
 	padding-bottom: 5px;
 	color: @colorGan1;
+	a { .newsletterLinkColor(@colorGan1); }
 }
 
 //tous les titres
 .title {
-	color: #000;
+	color: #000000;
+	a { .newsletterLinkColor(#000000); }
 	padding-bottom: 10px;
 	//on rajoute un padding de séparation lorsque précédé d'un readMore (utile pour articles)
 	.readMore + & { padding-top: 10px; }
@@ -50,6 +52,7 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 	text-align: right;
 	font-size: @fontSizeSmall;
 	margin: 0;
+	color: @colorGan1;
 	a { .newsletterLinkColor(@colorGan1); }
 }
 
@@ -150,11 +153,13 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 
 	.text {
 		color: @colorGan1;
+		a { .newsletterLinkColor(@colorGan1); }
 		padding-top: 0;
 	}
 	.signature {
 		text-align: right;
-		color: #000;
+		color: #000000;
+		a { .newsletterLinkColor(#000000); }
 	}
 }
 
@@ -174,7 +179,10 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 // -------------------------
 .contentOffre {
 	background-color: @colorGan5;
-	.preTitle, .title, .readMore { color: #ffffff; }
+	.preTitle, .title, .readMore {
+		color: #ffffff;
+		a { .newsletterLinkColor(#ffffff); }
+	}
 	.newsletterInnerTextColor(#ffffff);
 }
 

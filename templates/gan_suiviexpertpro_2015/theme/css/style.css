@@ -1037,9 +1037,33 @@ h6 {
   color: #43769e;
 }
 
+.preTitle a {
+  color: #43769e;
+}
+
+.preTitle a .important,
+.preTitle a:visited,
+.preTitle a:hover,
+.preTitle a:focus,
+.preTitle a:active {
+  color: #43769e !important;
+}
+
 .title {
-  color: #000;
+  color: #000000;
   padding-bottom: 10px;
+}
+
+.title a {
+  color: #000000;
+}
+
+.title a .important,
+.title a:visited,
+.title a:hover,
+.title a:focus,
+.title a:active {
+  color: #000000 !important;
 }
 
 .readMore + .title {
@@ -1050,6 +1074,7 @@ h6 {
   text-align: right;
   font-size: 11.9px;
   margin: 0;
+  color: #43769e;
 }
 
 .readMore a {
@@ -1159,9 +1184,33 @@ h6 {
   padding-top: 0;
 }
 
+.contentInfoClient .text a {
+  color: #43769e;
+}
+
+.contentInfoClient .text a .important,
+.contentInfoClient .text a:visited,
+.contentInfoClient .text a:hover,
+.contentInfoClient .text a:focus,
+.contentInfoClient .text a:active {
+  color: #43769e !important;
+}
+
 .contentInfoClient .signature {
   text-align: right;
-  color: #000;
+  color: #000000;
+}
+
+.contentInfoClient .signature a {
+  color: #000000;
+}
+
+.contentInfoClient .signature a .important,
+.contentInfoClient .signature a:visited,
+.contentInfoClient .signature a:hover,
+.contentInfoClient .signature a:focus,
+.contentInfoClient .signature a:active {
+  color: #000000 !important;
 }
 
 .contentALaUne .text {
@@ -1180,6 +1229,30 @@ h6 {
 .contentOffre .title,
 .contentOffre .readMore {
   color: #ffffff;
+}
+
+.contentOffre .preTitle a,
+.contentOffre .title a,
+.contentOffre .readMore a {
+  color: #ffffff;
+}
+
+.contentOffre .preTitle a .important,
+.contentOffre .title a .important,
+.contentOffre .readMore a .important,
+.contentOffre .preTitle a:visited,
+.contentOffre .title a:visited,
+.contentOffre .readMore a:visited,
+.contentOffre .preTitle a:hover,
+.contentOffre .title a:hover,
+.contentOffre .readMore a:hover,
+.contentOffre .preTitle a:focus,
+.contentOffre .title a:focus,
+.contentOffre .readMore a:focus,
+.contentOffre .preTitle a:active,
+.contentOffre .title a:active,
+.contentOffre .readMore a:active {
+  color: #ffffff !important;
 }
 
 .contentOffre,
