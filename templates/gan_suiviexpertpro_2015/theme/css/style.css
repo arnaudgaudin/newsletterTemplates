@@ -1120,16 +1120,19 @@ table.imgCont {
 
 table.imgCont td {
   background-color: #0f0;
-  padding: 0;
+  padding: 0 0 5px 0;
+}
+
+table.imgCont .icon-img,
+body table.imgCont img {
+  display: inline;
+  float: none;
 }
 
 table.imgCont .icon-img {
   position: relative;
-  display: inline;
-  float: none;
   vertical-align: text-bottom;
   line-height: 60px;
-  padding-bottom: 5px;
   width: 60px !important;
   height: 60px !important;
 }
@@ -1544,13 +1547,15 @@ table.imgCont .icon-img {
     float: left !important;
   }
 
+  table[class="body"] table.imgCont td {
+    padding: 0 10px 0 0 !important;
+  }
+
   table[class="body"] table.imgCont .icon-img {
     display: block !important;
     float: left !important;
     width: 60px !important;
     height: 60px !important;
-    padding-right: 10px !important;
-    padding-bottom: 0 !important;
   }
 
   table[class="body"] table.imgCont .icon-img[data-type^="get"] {
