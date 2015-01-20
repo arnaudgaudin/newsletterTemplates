@@ -53,11 +53,10 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 	a { .newsletterLinkColor(@colorGan1); }
 }
 
-//pas de float pour image contenus dans liens en block
-.link_box img {
-	float: none;
+//pas de float pour image contenus dans liens en block ou les liens images
+.link_box, .contentALaUne, .contentDossier, .contentActualites, .contentBottom {
+	img { float: none; }
 }
-
 
 //texte éditable en textarea
 .text {

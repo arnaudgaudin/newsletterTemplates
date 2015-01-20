@@ -1064,7 +1064,11 @@ h6 {
   color: #43769e !important;
 }
 
-.link_box img {
+.link_box img,
+.contentALaUne img,
+.contentDossier img,
+.contentActualites img,
+.contentBottom img {
   float: none;
 }
 
