@@ -91,13 +91,18 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 }
 //override version firefox
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
-	table[class="body"] .icon-img {
-		display: block !important;
-		float: left !important;
-		width: 60px !important;
-		height: 60px !important;
-		padding-right: 10px !important;
-		padding-bottom: 0 !important;
+	table[class="body"] {
+		.icon-img {
+			display: block !important;
+			float: left !important;
+			width: 60px !important;
+			height: 60px !important;
+			padding-right: 10px !important;
+			padding-bottom: 0 !important;
+
+			//masquage image de test
+			&[data-type^="get"] { display: none !important; }
+		}
 	}
 }
 
