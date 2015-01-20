@@ -79,19 +79,32 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 }
 
 //icone en image
-.icon-img {
-	position: relative;
-	display: inline;
-	float: none;
-	vertical-align: text-bottom;
-	line-height: 60px;
-	padding-bottom: 5px;
-	width: 60px !important;
-	height: 60px !important;
+table.imgCont {
+	td {
+		background-color: #0f0;
+		padding: 0;
+	}
+	width: 100%;
+
+	.icon-img {
+		position: relative;
+		display: inline;
+		float: none;
+		vertical-align: text-bottom;
+		line-height: 60px;
+		padding-bottom: 5px;
+		width: 60px !important;
+		height: 60px !important;
+	}
 }
+
+
 //override version firefox
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
-	table[class="body"] {
+	table[class="body"] table.imgCont {
+		width: auto !important;
+		float: left !important;
+
 		.icon-img {
 			display: block !important;
 			float: left !important;

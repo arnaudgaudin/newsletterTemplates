@@ -539,10 +539,13 @@ color: #464c4e !important;
   table[class="body"] .row.bordered table.column td {
     padding-bottom: 0px !important;
   }
-  table[class="body"] .icon-img {
+  table[class="body"] table.imgCont {
+    width: auto !important; float: left !important;
+  }
+  table[class="body"] table.imgCont .icon-img {
     display: block !important; float: left !important; width: 60px !important; height: 60px !important; padding-right: 10px !important; padding-bottom: 0 !important;
   }
-  table[class="body"] .icon-img[data-type^="get"] {
+  table[class="body"] table.imgCont .icon-img[data-type^="get"] {
     display: none !important;
   }
   table[class="body"] .contentOnline td.wrapper {
@@ -1037,24 +1040,29 @@ color: #464c4e !important;
 											<table border="0" class="four columns" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 240px" width="240" cellpadding="0" cellspacing="0">
 												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 													<td class="center text-pad" style="-ms-hyphens: auto; border-collapse: collapse !important; color: #91999c; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 18px; margin: 0; padding: 0px 40px 20px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
-														<?<champ>
-														<type>image</type>
-														<src>
-														http://newsletter-templates.lesechos-publishing.fr/templates/gan_suiviexpertpro_2015/theme/images/bottom-chiffre.png
-														</src>
-														<lien></lien>
-														<survol></survol>
-														<width>60</width>
-														<height>60</height>
-														<width_max>120</width_max>
-														<height_max>120</height_max>
-														<params>
-														style="-ms-interpolation-mode: bicubic; clear: both; display: inline; float: none; height: 60px !important; line-height: 60px; max-width: 100%; outline: none; padding-bottom: 5px; position: relative; text-decoration: none; vertical-align: text-bottom; width: 60px !important" align="none" 
-														class="icon-img"
-														</params>
-														</champ>?>
-														
-														<br class="hide-for-small" />
+														<table border="0" class="imgCont" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 100%" cellpadding="0" cellspacing="0">
+															<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+																<td class="center" style="-ms-hyphens: auto; background: #0f0; border-collapse: collapse !important; color: #91999c; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 18px; margin: 0; padding: 0; text-align: center; vertical-align: top; word-break: break-word" align="center" bgcolor="#0f0" valign="top">
+																	<?<champ>
+																	<type>image</type>
+																	<src>
+																	http://newsletter-templates.lesechos-publishing.fr/templates/gan_suiviexpertpro_2015/theme/images/bottom-chiffre.png
+																	</src>
+																	<lien></lien>
+																	<survol></survol>
+																	<width>60</width>
+																	<height>60</height>
+																	<width_max>120</width_max>
+																	<height_max>120</height_max>
+																	<params>
+																	style="-ms-interpolation-mode: bicubic; clear: both; display: inline; float: none; height: 60px !important; line-height: 60px; max-width: 100%; outline: none; padding-bottom: 5px; position: relative; text-decoration: none; vertical-align: text-bottom; width: 60px !important" align="none" 
+																	class="icon-img"
+																	</params>
+																	</champ>?>
+																	
+																</td>
+															</tr>
+														</table>
 														<?<champ>
 														<type>lien</type>
 														<href>http://www.ganassurances.fr/0-93-@/7780/view-1271-conseil.html?xtor=EPR-21-SEPNL9-20140121</href>
@@ -1078,8 +1086,13 @@ color: #464c4e !important;
 											<table border="0" class="four columns" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 240px" width="240" cellpadding="0" cellspacing="0">
 												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 													<td class="center text-pad" style="-ms-hyphens: auto; border-collapse: collapse !important; color: #91999c; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 18px; margin: 0; padding: 0px 40px 20px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
-														<img class="icon-img" src="http://newsletter-templates.lesechos-publishing.fr/templates/gan_suiviexpertpro_2015/theme/images/bottom-tableau.png" width="60" height="60" style="-ms-interpolation-mode: bicubic; clear: both; display: inline; float: none; height: 60px !important; line-height: 60px; max-width: 100%; outline: none; padding-bottom: 5px; position: relative; text-decoration: none; vertical-align: text-bottom; width: 60px !important" align="none" />
-														<br class="hide-for-small" />
+														<table border="0" class="imgCont" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 100%" cellpadding="0" cellspacing="0">
+															<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+																<td class="center" style="-ms-hyphens: auto; background: #0f0; border-collapse: collapse !important; color: #91999c; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 18px; margin: 0; padding: 0; text-align: center; vertical-align: top; word-break: break-word" align="center" bgcolor="#0f0" valign="top">
+																	<img class="icon-img" src="http://newsletter-templates.lesechos-publishing.fr/templates/gan_suiviexpertpro_2015/theme/images/bottom-tableau.png" width="60" height="60" style="-ms-interpolation-mode: bicubic; clear: both; display: inline; float: none; height: 60px !important; line-height: 60px; max-width: 100%; outline: none; padding-bottom: 5px; position: relative; text-decoration: none; vertical-align: text-bottom; width: 60px !important" align="none" />
+																</td>
+															</tr>
+														</table>
 														<?<champ>
 														<type>lien</type>
 														<href>http://www.ganassurances.fr/avantages-en-nature-@/7659/view-1273-conseil.html?xtor=EPR-21-SEPNL9-20140121</href>
@@ -1103,8 +1116,13 @@ color: #464c4e !important;
 											<table border="0" class="four columns" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 240px" width="240" cellpadding="0" cellspacing="0">
 												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 													<td class="center text-pad" style="-ms-hyphens: auto; border-collapse: collapse !important; color: #91999c; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 18px; margin: 0; padding: 0px 40px 20px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
-														<img class="icon-img" src="http://newsletter-templates.lesechos-publishing.fr/templates/gan_suiviexpertpro_2015/theme/images/bottom-echeancier.png" width="60" height="60" style="-ms-interpolation-mode: bicubic; clear: both; display: inline; float: none; height: 60px !important; line-height: 60px; max-width: 100%; outline: none; padding-bottom: 5px; position: relative; text-decoration: none; vertical-align: text-bottom; width: 60px !important" align="none" />
-														<br class="hide-for-small" />
+														<table border="0" class="imgCont" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 100%" cellpadding="0" cellspacing="0">
+															<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+																<td class="center" style="-ms-hyphens: auto; background: #0f0; border-collapse: collapse !important; color: #91999c; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 18px; margin: 0; padding: 0; text-align: center; vertical-align: top; word-break: break-word" align="center" bgcolor="#0f0" valign="top">
+																	<img class="icon-img" src="http://newsletter-templates.lesechos-publishing.fr/templates/gan_suiviexpertpro_2015/theme/images/bottom-echeancier.png" width="60" height="60" style="-ms-interpolation-mode: bicubic; clear: both; display: inline; float: none; height: 60px !important; line-height: 60px; max-width: 100%; outline: none; padding-bottom: 5px; position: relative; text-decoration: none; vertical-align: text-bottom; width: 60px !important" align="none" />
+																</td>
+															</tr>
+														</table>
 														<?<champ>
 														<type>lien</type>
 														<href>http://www.ganassurances.fr/fevrier-2015-@/7679/view-1272-conseil.html?xtor=EPR-21-SEPNL9-20140121</href>
