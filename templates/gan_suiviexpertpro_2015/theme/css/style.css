@@ -1072,14 +1072,6 @@ h6 {
   float: none;
 }
 
-.text {
-  padding-top: 10px;
-}
-
-.title + .text {
-  padding-top: 0;
-}
-
 .row.bordered td.wrapper {
   padding-top: 0px;
 }
@@ -1172,6 +1164,14 @@ h6 {
   color: #000;
 }
 
+.contentALaUne .text {
+  padding-top: 10px;
+}
+
+.contentDossier .text {
+  padding-top: 10px;
+}
+
 .contentOffre {
   background-color: #91999c;
 }
@@ -1205,9 +1205,15 @@ h6 {
   padding-bottom: 5px;
 }
 
-.contentBottom .text {
+.contentBottom .text,
+.contentBottom .date {
   font-size: 11.9px;
   line-height: 14.875px;
+}
+
+.contentBottom .date {
+  padding-top: 10px;
+  font-weight: bold;
 }
 
 .contentFooter td.wrapper {

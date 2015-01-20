@@ -58,13 +58,6 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 	img { float: none; }
 }
 
-//texte éditable en textarea
-.text {
-	padding-top: 10px;
-	//suppression padding lorsque précédé d'un titre car ce dernier en a un
-	.title + & { padding-top: 0; }
-}
-
 //gestion row avec bordures de séparation
 .row.bordered {
 	//suppression décalage en trop
@@ -165,6 +158,18 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 	}
 }
 
+// contentALaUne area
+// -------------------------
+.contentALaUne {
+	.text { padding-top: 10px; }
+}
+
+// contentDossier area
+// -------------------------
+.contentDossier {
+	.text { padding-top: 10px; }
+}
+
 // contentOffre area
 // -------------------------
 .contentOffre {
@@ -180,9 +185,13 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 		text-align: center;
 		padding-bottom: 5px;
 	}
-	.text {
+	.text, .date {
 		font-size: @fontSizeSmall;
 		line-height: (@fontSizeSmall * 1.25);
+	}
+	.date {
+		padding-top: 10px;
+		font-weight: bold;
 	}
 
 }
