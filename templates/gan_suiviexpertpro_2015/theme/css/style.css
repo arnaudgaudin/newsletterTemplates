@@ -1339,12 +1339,30 @@ table.imgCont .icon-img {
   text-align: right;
 }
 
+.contentLegal {
+  background-color: #ededed;
+}
+
+.contentLegal td {
+  font-size: 9.1px;
+  line-height: 12.103px;
+}
+
+.contentLegal td.wrapper {
+  padding-top: 10px;
+}
+
+.contentLegal table.columns td,
+.contentLegal table.column td {
+  padding-bottom: 10px;
+}
+
 .contentUnsubscribe {
   background-color: #ededed;
 }
 
 .contentUnsubscribe td.wrapper {
-  padding-top: 10px;
+  padding-top: 0;
 }
 
 .contentUnsubscribe table.columns td,
@@ -1612,8 +1630,17 @@ table.imgCont .icon-img {
     padding-bottom: 10px !important;
   }
 
-  table[class="body"] .contentUnsubscribe td.wrapper {
+  table[class="body"] .contentLegal td.wrapper {
     padding-top: 10px !important;
+  }
+
+  table[class="body"] .contentLegal table.columns td,
+  table[class="body"] .contentLegal table.column td {
+    padding-bottom: 10px !important;
+  }
+
+  table[class="body"] .contentUnsubscribe td.wrapper {
+    padding-top: 0 !important;
   }
 
   table[class="body"] .contentUnsubscribe table.columns td,

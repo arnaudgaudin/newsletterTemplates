@@ -72,7 +72,7 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 			margin: 0;
 			//débuggage bordure pour PostaNova
 			background-color: transparent;
-			
+
 		}
 	}
 }
@@ -257,11 +257,30 @@ table.imgCont {
 	}
 }
 
+// contentLegal area
+// -------------------------
+.contentLegal {
+	background-color: @bodyBackground;
+	td {
+		font-size: @fontSizeMini;
+		line-height: (@fontSizeMini * 1.33);
+	}
+	//réduction décalage vertical
+	td.wrapper { padding-top: (@wrapperPad / 2); }
+	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentLegal {
+		td.wrapper { padding-top: (@wrapperPad / 2) !important; }
+		table.columns td, table.column td { padding-bottom: (@columnPad / 2) !important; }
+	}
+}
+
 // contentUnsubscribe area
 // -------------------------
 .contentUnsubscribe {
 	//réduction décalage vertical
-	td.wrapper { padding-top: (@wrapperPad / 2); }
+	td.wrapper { padding-top: 0; }
 	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
 
 	background-color: @bodyBackground;
@@ -273,7 +292,7 @@ table.imgCont {
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentUnsubscribe {
-		td.wrapper { padding-top: (@wrapperPad / 2) !important; }
+		td.wrapper { padding-top: 0 !important; }
 		table.columns td, table.column td { padding-bottom: (@columnPad / 2) !important; }
 	}
 }
