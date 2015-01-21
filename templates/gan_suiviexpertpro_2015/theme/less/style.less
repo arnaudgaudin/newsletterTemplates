@@ -19,12 +19,12 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 	background-color: @bodyBackground;
 	//réduction décalage vertical
 	td.wrapper { padding-top: (@wrapperPad / 2); }
-	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+	// table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .header {
 		td.wrapper { padding-top: (@wrapperPad / 2) !important; }
-		table.columns td, table.column td { padding-bottom: (@columnPad / 2) !important; }
+		// table.columns td, table.column td { padding-bottom: (@columnPad / 2) !important; }
 	}
 }
 
@@ -127,6 +127,7 @@ table.imgCont {
 // contentOnline area
 // -------------------------
 .contentOnline {
+	background-color: @bodyBackground;
 	//réduction décalage vertical en haut
 	td.wrapper { padding-top: (@wrapperPad / 2); }
 	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
@@ -185,7 +186,10 @@ table.imgCont {
 		padding-top: 0;
 	}
 	.signature {
+		padding-top: 5px;
 		text-align: right;
+		font-size: @fontSizeSmall;
+		font-weight: bold;
 		color: #000000;
 		a { .newsletterLinkColor(#000000); }
 	}

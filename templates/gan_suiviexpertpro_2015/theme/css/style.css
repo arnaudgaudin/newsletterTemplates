@@ -1024,11 +1024,6 @@ h6 {
   padding-top: 10px;
 }
 
-.header table.columns td,
-.header table.column td {
-  padding-bottom: 10px;
-}
-
 .preTitle {
   display: block;
   font-size: 12px;
@@ -1137,6 +1132,10 @@ table.imgCont .icon-img {
   height: 60px !important;
 }
 
+.contentOnline {
+  background-color: #ededed;
+}
+
 .contentOnline td.wrapper {
   padding-top: 10px;
 }
@@ -1213,7 +1212,10 @@ table.imgCont .icon-img {
 }
 
 .contentInfoClient .signature {
+  padding-top: 5px;
   text-align: right;
+  font-size: 11.9px;
+  font-weight: bold;
   color: #000000;
 }
 
@@ -1561,11 +1563,6 @@ table.imgCont .icon-img {
 
   table[class="body"] .header td.wrapper {
     padding-top: 10px !important;
-  }
-
-  table[class="body"] .header table.columns td,
-  table[class="body"] .header table.column td {
-    padding-bottom: 10px !important;
   }
 
   table[class="body"] .row.bordered td.wrapper {
