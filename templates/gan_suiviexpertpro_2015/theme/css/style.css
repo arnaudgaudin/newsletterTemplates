@@ -1137,45 +1137,49 @@ table.imgCont .icon-img {
   height: 60px !important;
 }
 
-.contentOnline {
-  background-color: #ededed;
-}
-
 .contentOnline td.wrapper {
-  padding-top: 0px;
+  padding-top: 10px;
 }
 
 .contentOnline table.columns td,
 .contentOnline table.column td {
+  padding-bottom: 10px;
+}
+
+.contentMonth {
+  background-color: #ededed;
+}
+
+.contentMonth td.wrapper {
+  padding-top: 0px;
+}
+
+.contentMonth table.columns td,
+.contentMonth table.column td {
   padding-bottom: 0px;
 }
 
-.contentOnline,
-.contentOnline td,
-.contentOnline .inner {
+.contentMonth,
+.contentMonth td,
+.contentMonth .inner {
   color: #464c4e;
 }
 
-.contentOnline a {
+.contentMonth a {
   color: #464c4e;
 }
 
-.contentOnline a .important,
-.contentOnline a:visited,
-.contentOnline a:hover,
-.contentOnline a:focus,
-.contentOnline a:active {
+.contentMonth a .important,
+.contentMonth a:visited,
+.contentMonth a:hover,
+.contentMonth a:focus,
+.contentMonth a:active {
   color: #464c4e !important;
 }
 
-.contentOnline td {
+.contentMonth td {
   font-size: 11.9px;
   line-height: 14.875px;
-}
-
-.contentOnline td.sub-columns.first {
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 
 .contentPartenariat td.wrapper {
@@ -1594,17 +1598,21 @@ table.imgCont .icon-img {
   }
 
   table[class="body"] .contentOnline td.wrapper {
-    padding-top: 0px !important;
+    padding-top: 10px !important;
   }
 
   table[class="body"] .contentOnline table.columns td,
   table[class="body"] .contentOnline table.column td {
-    padding-bottom: 0px !important;
+    padding-bottom: 10px !important;
   }
 
-  table[class="body"] .contentOnline td.sub-columns.first {
-    padding-top: 5px;
-    padding-bottom: 5px;
+  table[class="body"] .contentMonth td.wrapper {
+    padding-top: 0px !important;
+  }
+
+  table[class="body"] .contentMonth table.columns td,
+  table[class="body"] .contentMonth table.column td {
+    padding-bottom: 0px !important;
   }
 
   table[class="body"] .contentPartenariat td.wrapper {
