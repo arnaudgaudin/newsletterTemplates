@@ -129,6 +129,10 @@ table.imgCont {
 // -------------------------
 .contentOnline {
 	background-color: @bodyBackground;
+	td {
+		font-size: @fontSizeSmall;
+		line-height: (@fontSizeSmall * 1.25);
+	}
 	//réduction décalage vertical en haut
 	td.wrapper { padding-top: (@wrapperPad / 2); }
 	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
@@ -149,10 +153,6 @@ table.imgCont {
 
 	background-color: @bodyBackground;
 	.newsletterInnerTextColor(darken(@colorGan5, 30%));
-	td {
-		font-size: @fontSizeSmall;
-		line-height: (@fontSizeSmall * 1.25);
-	}
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentMonth {
