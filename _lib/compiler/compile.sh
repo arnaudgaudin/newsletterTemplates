@@ -57,7 +57,8 @@ perl -pi -e 's/\/><!--getstyle-->//g;' newsletter-inline-postanova.html
 perl -pi -e 's/><!--getstyle--><\/(.+?)>//g;' newsletter-inline-postanova.html
 
 #Suppression des balises de récupération des hrefs
-perl -pi -e 's/<(.+?)data-type="gethref" (.*?)href="//g;' newsletter-inline-postanova.html
+#Ancien sélecteur : <(.+?)
+perl -pi -e 's/<a data-type="gethref" (.*?)href="//g;' newsletter-inline-postanova.html
 perl -pi -e 's/" (.+?)><!--gethref--><\/(.+?)>//g;' newsletter-inline-postanova.html
 
 #Remplacement des attributs PostaNova
