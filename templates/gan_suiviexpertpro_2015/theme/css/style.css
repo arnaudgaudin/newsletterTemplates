@@ -1061,7 +1061,8 @@ h6 {
   color: #000000 !important;
 }
 
-.readMore + .title {
+.readMore + .title,
+.readMore + * + .title {
   padding-top: 10px;
 }
 
