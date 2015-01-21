@@ -68,7 +68,12 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 	table.columns td, table.column td { padding-bottom: 0px; }
 	td {
 		line-height: 0;
-		hr.border { margin: 0; }
+		hr.border {
+			margin: 0;
+			//débuggage bordure pour PostaNova
+			background-color: transparent;
+			
+		}
 	}
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
@@ -128,8 +133,8 @@ table.imgCont {
 	background-color: @bodyBackground;
 	.newsletterInnerTextColor(darken(@colorGan5, 30%));
 	td {
-		font-size: @fontSizeMini;
-		line-height: (@fontSizeMini * 1.25);
+		font-size: @fontSizeSmall;
+		line-height: (@fontSizeSmall * 1.25);
 	}
 
 	td.sub-columns.first {
