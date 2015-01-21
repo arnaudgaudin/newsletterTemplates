@@ -1297,6 +1297,19 @@ table.imgCont .icon-img {
 
 .contentBottom .date {
   font-weight: bold;
+  color: #91999c;
+}
+
+.contentBottom .date a {
+  color: #91999c;
+}
+
+.contentBottom .date a .important,
+.contentBottom .date a:visited,
+.contentBottom .date a:hover,
+.contentBottom .date a:focus,
+.contentBottom .date a:active {
+  color: #91999c !important;
 }
 
 .contentFooter td.wrapper {
