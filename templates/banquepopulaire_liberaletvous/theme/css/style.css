@@ -20,6 +20,7 @@ table.body {
 body {
   width: 100% !important;
   min-width: 100%;
+  -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   margin: 0;
   padding: 0;
@@ -1029,7 +1030,7 @@ table.large-button td {
 h2,
 h3 {
   text-transform: uppercase;
-  margin-bottom: 6px;
+  padding-bottom: 6px;
 }
 
 h3 {
@@ -1037,7 +1038,8 @@ h3 {
 }
 
 p {
-  margin-bottom: 4.5px;
+  margin: 0;
+  padding-bottom: 4.5px;
 }
 
 a:hover,
@@ -1047,8 +1049,8 @@ a:focus {
 
 ul,
 ol {
-  padding: 0;
-  margin: 0 0 4.5px 25px;
+  margin: 0;
+  padding: 0 0 4.5px 25px;
 }
 
 ul ul,
@@ -1064,7 +1066,7 @@ li {
 
 ul.unstyled,
 ol.unstyled {
-  margin-left: 0;
+  padding-left: 0;
   list-style: none;
 }
 
@@ -1115,7 +1117,7 @@ ol.unstyled {
 }
 
 .contentMain .contentActuMois .imgUne {
-  margin-bottom: 9px;
+  padding-bottom: 9px;
 }
 
 .contentMain .contentProfession ul li .title {
@@ -1124,12 +1126,11 @@ ol.unstyled {
 }
 
 .contentSecondary .contentQuiz img {
-  margin-right: 10px;
+  padding-right: 10px;
 }
 
 .contentSecondary .contentOffre img {
-  float: right;
-  margin-left: 10px;
+  padding-right: 10px;
 }
 
 .contentBottom .wrapper {
