@@ -41,6 +41,12 @@ body {
   line-height: 100%;
 }
 
+/* Equivalent to .ExternalClass */
+
+.ReadMsgBody {
+  width: 100%;
+}
+
 #backgroundTable {
   margin: 0;
   padding: 0;

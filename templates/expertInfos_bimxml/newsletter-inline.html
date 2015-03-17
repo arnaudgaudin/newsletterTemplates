@@ -134,18 +134,21 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
     <meta name="robots" content="noindex" />
     <title>Newsletter bimensuelle du <!--{{%%{{=get_date}}%%}}--><!--DEL{{-->get_date<!--}}DEL--></title>
 </head>
-<body bgcolor="##((nlBodyBackground))##" style="-ms-text-size-adjust: 100%; -premailer-background: ##((nlBodyBackground))##; background: #787878 none; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; line-height: 16px; margin: 0; min-width: 100%; padding: 0; text-align: left; width: 100% !important"><style type="text/css">
+<body bgcolor="##((nlBodyBackground))##" style="-ms-text-size-adjust: 100%; -premailer-background: ##((nlBodyBackground))##; -webkit-text-size-adjust: 100%; background: #787878 none; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; line-height: 16px; margin: 0; min-width: 100%; padding: 0; text-align: left; width: 100% !important"><style type="text/css">
 body {
 background-color: #787878;
 }
 body {
-width: 100% !important; min-width: 100%; -ms-text-size-adjust: 100%; margin: 0; padding: 0;
+width: 100% !important; min-width: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; margin: 0; padding: 0;
 }
 .ExternalClass {
 width: 100%;
 }
 .ExternalClass {
 line-height: 100%;
+}
+.ReadMsgBody {
+width: 100%;
 }
 #backgroundTable {
 margin: 0; padding: 0; width: 100% !important; line-height: 100% !important;
@@ -808,7 +811,6 @@ color: ##((nlFooterText))## !important;
 }
 </style>
 <style type="text/css" data-premailer="ignore">
-/* Firefox debug */
 @media only screen and (max-width: 720px) {
   @-moz-document url-prefix() {
     table[class="body"] img { width: 100% !important; }
