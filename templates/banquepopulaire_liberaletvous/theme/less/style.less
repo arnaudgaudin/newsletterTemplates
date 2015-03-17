@@ -117,7 +117,12 @@ ol.unstyled {
 .contentActus {
 	h3 { color: @lbvColorActusTitle; }
 	h4 { color: @lbvColorActusSubTitle; }
-	img { float: none; }
+	p { padding: 0; }
+	img {
+		display: block;
+		float: none;
+		padding-bottom: (@baseLineHeight / 4);
+	}
 	.puce { border-color: transparent transparent transparent @lbvColorActusPuce; }
 }
 //débuggage image actus

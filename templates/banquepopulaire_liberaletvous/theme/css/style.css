@@ -1145,8 +1145,14 @@ ol.unstyled {
   color: #084d9a;
 }
 
+.contentActus p {
+  padding: 0;
+}
+
 .contentActus img {
+  display: block;
   float: none;
+  padding-bottom: 4.5px;
 }
 
 .contentActus .puce {
