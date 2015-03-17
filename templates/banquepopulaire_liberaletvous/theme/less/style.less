@@ -29,12 +29,15 @@
 //titres de catégories en majuscule
 h2, h3 {
 	text-transform: uppercase;
-	margin-bottom: (@baseLineHeight / 3);
+	padding-bottom: (@baseLineHeight / 3);
 }
 
 h3 { font-weight: normal; }
 
-p { margin-bottom: (@baseLineHeight / 4); }
+p {
+	margin: 0;
+	padding-bottom: (@baseLineHeight / 4);
+}
 
 //gestion des liens
 a {
@@ -44,8 +47,8 @@ a {
 
 // Unordered and Ordered lists
 ul, ol {
-  padding: 0;
-  margin: 0 0 (@baseLineHeight / 4) 25px;
+	margin: 0;
+	padding: 0 0 (@baseLineHeight / 4) 25px;
 }
 ul ul, ul ol, ol ol, ol ul { margin-bottom: 0; }
 li { line-height: @baseLineHeight; }
@@ -53,7 +56,7 @@ li { line-height: @baseLineHeight; }
 // Remove default list styles
 ul.unstyled,
 ol.unstyled {
-	margin-left: 0;
+	padding-left: 0;
 	list-style: none;
 }
 
@@ -86,7 +89,7 @@ ol.unstyled {
 	}
 
 	.contentActuMois {
-		.imgUne { margin-bottom: (@baseLineHeight / 2); }
+		.imgUne { padding-bottom: (@baseLineHeight / 2); }
 	}
 
 	.contentProfession {
@@ -99,13 +102,10 @@ ol.unstyled {
 
 .contentSecondary {
 	.contentQuiz {
-		img { margin-right: 10px; }
+		img { padding-right: 10px; }
 	}
 	.contentOffre {
-		img {
-			float: right;
-			margin-left: 10px;
-		}
+		img { padding-right: 10px; }
 	}
 }
 
