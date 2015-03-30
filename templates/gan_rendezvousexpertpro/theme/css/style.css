@@ -1087,7 +1087,6 @@ body .header .sub-columns.last a[href^="javascript"] {
 }
 
 .contentMain .title {
-  text-transform: uppercase;
   padding-top: 10px;
 }
 
