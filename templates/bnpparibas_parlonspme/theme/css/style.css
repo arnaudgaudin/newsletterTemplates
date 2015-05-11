@@ -1194,6 +1194,15 @@ h6 {
   text-transform: uppercase;
 }
 
+.contentPartenariat td.wrapper {
+  padding-top: 0px;
+}
+
+.contentPartenariat table.columns td,
+.contentPartenariat table.column td {
+  padding-bottom: 0px;
+}
+
 @media only screen and (max-width: 720px) {
   table[class="body"] img {
     width: auto !important;
@@ -1384,6 +1393,15 @@ h6 {
 
   table[class="body"] .contentMonth table.columns td,
   table[class="body"] .contentMonth table.column td {
+    padding-bottom: 0px !important;
+  }
+
+  table[class="body"] .contentPartenariat td.wrapper {
+    padding-top: 0px !important;
+  }
+
+  table[class="body"] .contentPartenariat table.columns td,
+  table[class="body"] .contentPartenariat table.column td {
     padding-bottom: 0px !important;
   }
 }
