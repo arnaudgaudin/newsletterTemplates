@@ -2,3 +2,22 @@
 @import "import.less";
 
 // additionnal template's style which extends ink's style
+
+// LAYOUT
+// --------------------------------------------------
+
+h1, h2, h3, h4, h5, h6 { mso-line-height-rule: exactly; }
+
+//gestion header
+.header {
+	background-color: @bodyBackground;
+	//réduction décalage vertical
+	td.wrapper { padding-top: (@wrapperPad / 2); }
+	// table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .header {
+		td.wrapper { padding-top: (@wrapperPad / 2) !important; }
+		// table.columns td, table.column td { padding-bottom: (@columnPad / 2) !important; }
+	}
+}
