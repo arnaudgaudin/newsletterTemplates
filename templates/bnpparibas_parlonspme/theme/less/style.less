@@ -14,9 +14,19 @@ h1, h2, h3, h4, h5, h6 { mso-line-height-rule: exactly; }
 	//suppression décalage vertical
 	td.wrapper { padding-top: 0; }
 }
+.headerShadow {
+	td.wrapper { padding-top: 0; }
+	table.columns td, table.column td { padding-bottom: 0; }	
+}
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
-	table[class="body"] .header {
-		td.wrapper { padding-top: 0 !important; }
+	table[class="body"] {
+		.header {
+			td.wrapper { padding-top: 0 !important; }
+		}
+		.headerShadow {
+			td.wrapper { padding-top: 0 !important; }
+			table.columns td, table.column td { padding-bottom: 0 !important; }
+		}
 	}
 }
 
@@ -37,8 +47,8 @@ h1, h2, h3, h4, h5, h6 { mso-line-height-rule: exactly; }
 	background-color: #0f0;
 	font-size: 0;
 	line-height: 0;
-	padding-top: 1px;
-	padding-bottom: 2px;
+	padding-top: 2px;
+	padding-bottom: 1px;
 	//padding intérieur pour le fond
 	span {
 		font-size: 10px;
@@ -64,6 +74,27 @@ h1, h2, h3, h4, h5, h6 { mso-line-height-rule: exactly; }
 		&.succes { background-color: @categorie_succes; }
 		&.legislation { background-color: @categorie_legislation; }
 		&.creationentreprise { background-color: @categorie_creationentreprise; }
+	}
+}
+
+
+// contentOnline area
+// -------------------------
+.contentOnline {
+	background-color: @bodyBackground;
+	.newsletterInnerTextColor(darken(@bodyBackground, 30%));
+	td {
+		font-size: @fontSizeSmall;
+		line-height: (@fontSizeSmall * 1.25);
+	}
+	//réduction décalage vertical en haut
+	td.wrapper { padding-top: (@wrapperPad / 2); }
+	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentOnline {
+		td.wrapper { padding-top: (@wrapperPad / 2) !important; }
+		table.columns td, table.column td { padding-bottom: (@columnPad / 2) !important; }
 	}
 }
 
