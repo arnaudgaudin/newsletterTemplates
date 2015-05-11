@@ -41,6 +41,37 @@ h1, h2, h3, h4, h5, h6 { mso-line-height-rule: exactly; }
 	a { .newsletterLinkColor(@textColor); }
 }
 
+//tous les titres
+.title {
+	color: #000000;
+	a { .newsletterLinkColor(#000000); }
+	padding-bottom: 5px;
+}
+
+//lien de suivis
+.readMore {
+	text-align: right;
+	font-size: @fontSizeSmall;
+	font-weight: bold;
+	margin: 0;
+	&.vieentreprise { color: @categorie_vieentreprise; }
+	&.conjoncture { color: @categorie_conjoncture; }
+	&.innovation { color: @categorie_innovation; }
+	&.international { color: @categorie_international; }
+	&.financement { color: @categorie_financement; }
+	&.marketing { color: @categorie_marketing; }
+	&.assurances { color: @categorie_assurances; }
+	&.moyenspaiement { color: @categorie_moyenspaiement; }
+	&.tresorerie { color: @categorie_tresorerie; }
+	&.fiscalite { color: @categorie_fiscalite; }
+	&.immobilier { color: @categorie_immobilier; }
+	&.entrepriseresponsable { color: @categorie_entrepriseresponsable; }
+	&.management { color: @categorie_management; }
+	&.succes { color: @categorie_succes; }
+	&.legislation { color: @categorie_legislation; }
+	&.creationentreprise { color: @categorie_creationentreprise; }
+}
+
 //categories
 .category {
 	display: block;
