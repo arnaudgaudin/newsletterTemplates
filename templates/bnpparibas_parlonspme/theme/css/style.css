@@ -4,7 +4,7 @@
 
 body,
 table.body {
-  background-color: #ffffff;
+  background-color: #ededed;
 }
 
 /**********************************************
@@ -115,7 +115,7 @@ table.body {
 }
 
 table.container {
-  background-color: #aaaaaa;
+  background-color: #ffffff;
   width: 720px;
   -premailer-width: 720;
   margin: 0 auto;
@@ -589,15 +589,15 @@ p,
 td {
   font-family: "Arial Narrow", Arial, sans-serif;
   font-weight: normal;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 18px;
 }
 
 p.lead,
 p.lede,
 p.leed {
-  font-size: 15px;
-  line-height: 17.25px;
+  font-size: 18.2px;
+  line-height: 20.93px;
 }
 
 p {
@@ -605,7 +605,7 @@ p {
 }
 
 small {
-  font-size: 8.4px;
+  font-size: 11.9px;
 }
 
 a {
@@ -718,27 +718,27 @@ table.large-button td a {
   text-decoration: none;
   font-family: "Arial Narrow", Arial, sans-serif;
   color: #ffffff;
-  font-size: 13.8px;
+  font-size: 16.1px;
   display: block;
   height: 100%;
   width: 100%;
 }
 
 table.tiny-button td a {
-  font-size: 10.2px;
+  font-size: 11.9px;
   font-weight: normal;
 }
 
 table.small-button td a {
-  font-size: 13.8px;
+  font-size: 16.1px;
 }
 
 table.medium-button td a {
-  font-size: 17.4px;
+  font-size: 20.3px;
 }
 
 table.large-button td a {
-  font-size: 24px;
+  font-size: 28px;
 }
 
 table.button:hover td,
@@ -1007,6 +1007,15 @@ h6 {
   padding-top: 0;
 }
 
+.headerShadow td.wrapper {
+  padding-top: 0;
+}
+
+.headerShadow table.columns td,
+.headerShadow table.column td {
+  padding-bottom: 0;
+}
+
 .preTitle {
   display: block;
   font-size: 22px;
@@ -1033,8 +1042,8 @@ h6 {
   background-color: #0f0;
   font-size: 0;
   line-height: 0;
-  padding-top: 1px;
-  padding-bottom: 2px;
+  padding-top: 2px;
+  padding-bottom: 1px;
 }
 
 .category span {
@@ -1108,6 +1117,42 @@ h6 {
 
 .category span.creationentreprise {
   background-color: #891616;
+}
+
+.contentOnline {
+  background-color: #ededed;
+}
+
+.contentOnline,
+.contentOnline td,
+.contentOnline .inner {
+  color: #a1a1a1;
+}
+
+.contentOnline a {
+  color: #a1a1a1;
+}
+
+.contentOnline a .important,
+.contentOnline a:visited,
+.contentOnline a:hover,
+.contentOnline a:focus,
+.contentOnline a:active {
+  color: #a1a1a1 !important;
+}
+
+.contentOnline td {
+  font-size: 11.9px;
+  line-height: 14.875px;
+}
+
+.contentOnline td.wrapper {
+  padding-top: 10px;
+}
+
+.contentOnline table.columns td,
+.contentOnline table.column td {
+  padding-bottom: 10px;
 }
 
 .contentMonth {
@@ -1313,6 +1358,24 @@ h6 {
 
   table[class="body"] .header td.wrapper {
     padding-top: 0 !important;
+  }
+
+  table[class="body"] .headerShadow td.wrapper {
+    padding-top: 0 !important;
+  }
+
+  table[class="body"] .headerShadow table.columns td,
+  table[class="body"] .headerShadow table.column td {
+    padding-bottom: 0 !important;
+  }
+
+  table[class="body"] .contentOnline td.wrapper {
+    padding-top: 10px !important;
+  }
+
+  table[class="body"] .contentOnline table.columns td,
+  table[class="body"] .contentOnline table.column td {
+    padding-bottom: 10px !important;
   }
 
   table[class="body"] .contentMonth td.wrapper {
