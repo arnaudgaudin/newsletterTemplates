@@ -1133,6 +1133,10 @@ h6 {
   padding-bottom: 1px;
 }
 
+.category + .title {
+  padding-top: 5px;
+}
+
 .category span {
   font-size: 10px;
   line-height: 18px;
