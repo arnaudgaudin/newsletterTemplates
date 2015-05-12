@@ -272,6 +272,12 @@ h1, h2, h3, h4, h5, h6 {
 		vertical-align: ((28px - @baseFontSize) / 2);
 	}
 }
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentContact {
+		td.wrapper.first table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
+		td.wrapper.last { padding-top: (@wrapperPadCollapse / 2) !important; }
+	}
+}
 
 //réseaux sociaux
 .webicons td { text-align: right; }
