@@ -250,7 +250,18 @@ h1, h2, h3, h4, h5, h6 {
 // -------------------------
 .contentContact {
 	background-color: @colorBnp4;
-	.newsletterInnerTextColor(#ffffff);
+	.newsletterInnerTextColor(mix(#fff, @colorBnp4, 75%));
+
+	.joinus {
+		font-size: @baseFontSize;
+		line-height: @baseFontSize;
+		font-weight: bold;
+		padding-right: 10px;
+		color: mix(#fff, @colorBnp4, 50%);
+		padding-top: ((28px - @baseFontSize) / 2);
+		padding-bottom: ((28px - @baseFontSize) / 2);
+		vertical-align: ((28px - @baseFontSize) / 2);
+	}
 }
 
 //réseaux sociaux

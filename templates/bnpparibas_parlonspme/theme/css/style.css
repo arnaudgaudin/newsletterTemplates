@@ -1359,11 +1359,11 @@ h6 {
 .contentContact,
 .contentContact td,
 .contentContact .inner {
-  color: #ffffff;
+  color: #bfe9e2;
 }
 
 .contentContact a {
-  color: #ffffff;
+  color: #bfe9e2;
 }
 
 .contentContact a .important,
@@ -1371,7 +1371,18 @@ h6 {
 .contentContact a:hover,
 .contentContact a:focus,
 .contentContact a:active {
-  color: #ffffff !important;
+  color: #bfe9e2 !important;
+}
+
+.contentContact .joinus {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: bold;
+  padding-right: 10px;
+  color: #80d3c5;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  vertical-align: 7px;
 }
 
 .webicons td {
