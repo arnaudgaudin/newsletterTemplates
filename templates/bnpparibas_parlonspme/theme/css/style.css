@@ -1127,11 +1127,10 @@ h6 {
 
 .category {
   display: block;
-  background-color: #0f0;
   font-size: 0;
   line-height: 0;
-  padding-top: 2px;
-  padding-bottom: 1px;
+  padding-top: 1px;
+  padding-bottom: 2px;
 }
 
 .category span {
@@ -1289,6 +1288,10 @@ h6 {
 .contentPartenariat table.columns td,
 .contentPartenariat table.column td {
   padding-bottom: 0px;
+}
+
+.contentSecondaire {
+  background-color: #d5d6d5;
 }
 
 @media only screen and (max-width: 720px) {
