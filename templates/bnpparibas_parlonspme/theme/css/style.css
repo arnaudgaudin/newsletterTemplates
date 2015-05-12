@@ -1374,6 +1374,30 @@ h6 {
   color: #ffffff !important;
 }
 
+.webicons td {
+  text-align: right;
+}
+
+.webicon {
+  display: inline;
+  font-size: 0px;
+  mso-line-height-rule: exactly;
+  line-height: 0px;
+}
+
+.webicon.first {
+  padding-left: 0px;
+}
+
+.webicon.last {
+  padding-right: 0px;
+}
+
+.webicon img {
+  display: inline;
+  float: none;
+}
+
 @media only screen and (max-width: 720px) {
   table[class="body"] img {
     width: auto !important;
@@ -1592,5 +1616,10 @@ h6 {
 
   table[class="body"] .contentBottom td.wrapper {
     padding-top: 0px !important;
+  }
+
+  table[class="body"] .webicon img {
+    width: 28px !important;
+    height: 28px !important;
   }
 }

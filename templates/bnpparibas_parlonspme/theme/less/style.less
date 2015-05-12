@@ -252,3 +252,26 @@ h1, h2, h3, h4, h5, h6 {
 	background-color: @colorBnp4;
 	.newsletterInnerTextColor(#ffffff);
 }
+
+//réseaux sociaux
+.webicons td { text-align: right; }
+.webicon {
+	display: inline;
+	//pour supprimer les espaces
+	font-size: 0px;
+	mso-line-height-rule: exactly;
+	line-height: 0px;
+	// padding: 0px 5px 5px 5px;
+	&.first { padding-left: 0px; }
+	&.last { padding-right: 0px; }
+	img {
+		display: inline;
+		float: none;
+	}
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .webicon img {
+		width: 28px !important;
+		height: 28px !important;
+	}
+}
