@@ -1325,6 +1325,24 @@ h6 {
   background-color: #d5d6d5;
 }
 
+.contentBottomTitle,
+.contentBottom {
+  background-color: #d5d6d5;
+}
+
+.contentBottomTitle table.columns td,
+.contentBottomTitle table.column td {
+  padding-bottom: 0px;
+}
+
+.contentBottom {
+  background-color: #0f0;
+}
+
+.contentBottom td.wrapper {
+  padding-top: 0px;
+}
+
 @media only screen and (max-width: 720px) {
   table[class="body"] img {
     width: auto !important;
@@ -1534,5 +1552,14 @@ h6 {
   table[class="body"] .contentPartenariat table.columns td,
   table[class="body"] .contentPartenariat table.column td {
     padding-bottom: 0px !important;
+  }
+
+  table[class="body"] .contentBottomTitle table.columns td,
+  table[class="body"] .contentBottomTitle table.column td {
+    padding-bottom: 0px !important;
+  }
+
+  table[class="body"] .contentBottom td.wrapper {
+    padding-top: 0px !important;
   }
 }

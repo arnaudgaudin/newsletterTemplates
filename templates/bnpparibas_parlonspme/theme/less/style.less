@@ -206,3 +206,25 @@ h1, h2, h3, h4, h5, h6 { mso-line-height-rule: exactly; }
 .contentSecondaire {
 	background-color: @colorBnp3;
 }
+
+
+// contentBottom area
+// -------------------------
+.contentBottomTitle, .contentBottom {
+	background-color: @colorBnp3;
+}
+.contentBottomTitle {
+	table.columns td, table.column td { padding-bottom: 0px; }
+}
+.contentBottom {
+	background-color: #0f0;
+	td.wrapper { padding-top: 0px; }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentBottomTitle {
+		table.columns td, table.column td { padding-bottom: 0px !important; }
+	}
+	table[class="body"] .contentBottom {
+		td.wrapper { padding-top: 0px !important; }
+	}
+}
