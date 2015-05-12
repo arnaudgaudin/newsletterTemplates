@@ -1128,20 +1128,17 @@ h6 {
 }
 
 .category {
-  display: block;
   font-size: 0;
   line-height: 0;
-  padding-top: 1px;
-  padding-bottom: 1px;
+  height: 22px;
 }
 
 .category span {
-  font-size: 10px;
-  line-height: 18px;
   padding: 4px;
-  color: #fff;
+  font-size: 11px;
+  line-height: 22px;
+  color: #ffffff;
   text-transform: uppercase;
-  vertical-align: 2px;
 }
 
 .category span.vieentreprise {

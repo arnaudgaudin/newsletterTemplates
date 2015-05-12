@@ -78,20 +78,21 @@ h1, h2, h3, h4, h5, h6 {
 
 //categories
 .category {
-	display: block;
+	@localFontSize: 11px;
+	@localPadding: 4px;
+	@localHeight: (@localFontSize + @localPadding * 2 + 3px);
+
 	font-size: 0;
 	line-height: 0;
-	padding-top: 1px;
-	padding-bottom: 1px;
+	height: @localHeight;
 
 	//padding intérieur pour le fond
 	span {
-		font-size: 10px;
-		line-height: 18px;
-		padding: 4px;
-		color: #fff;
+		padding: @localPadding;
+		font-size: @localFontSize;
+		line-height: @localHeight;
+		color: #ffffff;
 		text-transform: uppercase;
-		vertical-align: 2px;
 
 		&.vieentreprise { background-color: @categorie_vieentreprise; }
 		&.conjoncture { background-color: @categorie_conjoncture; }
