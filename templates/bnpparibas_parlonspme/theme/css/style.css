@@ -1359,11 +1359,11 @@ h6 {
 .contentContact,
 .contentContact td,
 .contentContact .inner {
-  color: #bfe9e2;
+  color: #d9f2ee;
 }
 
 .contentContact a {
-  color: #bfe9e2;
+  color: #d9f2ee;
 }
 
 .contentContact a .important,
@@ -1371,7 +1371,7 @@ h6 {
 .contentContact a:hover,
 .contentContact a:focus,
 .contentContact a:active {
-  color: #bfe9e2 !important;
+  color: #d9f2ee !important;
 }
 
 .contentContact .link_site {
@@ -1388,7 +1388,7 @@ h6 {
   line-height: 14px;
   font-weight: bold;
   padding-right: 10px;
-  color: #80d3c5;
+  color: #a6e0d6;
   padding-top: 7px;
   padding-bottom: 7px;
   vertical-align: 7px;
