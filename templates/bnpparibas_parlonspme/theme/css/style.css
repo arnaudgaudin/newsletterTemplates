@@ -101,8 +101,8 @@ td {
 }
 
 hr {
-  color: #d9d9d9;
-  background-color: #d9d9d9;
+  color: #d5d6d5;
+  background-color: #d5d6d5;
   height: 1px;
   border: none;
 }
@@ -1130,7 +1130,7 @@ h6 {
   font-size: 0;
   line-height: 0;
   padding-top: 1px;
-  padding-bottom: 2px;
+  padding-bottom: 1px;
 }
 
 .category span {
@@ -1204,6 +1204,33 @@ h6 {
 
 .category span.creationentreprise {
   background-color: #891616;
+}
+
+.link_box img,
+.contentALaUne img,
+.contentSecondaire img,
+.contentTertiaire img {
+  float: none;
+}
+
+.row.bordered td.wrapper {
+  padding-top: 0px;
+}
+
+.row.bordered table.columns td,
+.row.bordered table.column td {
+  padding-bottom: 0px;
+}
+
+.row.bordered td {
+  line-height: 0;
+}
+
+.row.bordered td hr.border {
+  margin: 0;
+  background-color: transparent;
+  height: 0;
+  border-bottom: 1px solid #d5d6d5;
 }
 
 .contentOnline {
@@ -1467,6 +1494,15 @@ h6 {
   table[class="body"] .headerShadow table.columns td,
   table[class="body"] .headerShadow table.column td {
     padding-bottom: 0 !important;
+  }
+
+  table[class="body"] .row.bordered td.wrapper {
+    padding-top: 0px !important;
+  }
+
+  table[class="body"] .row.bordered table.columns td,
+  table[class="body"] .row.bordered table.column td {
+    padding-bottom: 0px !important;
   }
 
   table[class="body"] .contentOnline td.wrapper {

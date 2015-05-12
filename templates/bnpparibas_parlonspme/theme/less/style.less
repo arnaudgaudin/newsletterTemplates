@@ -78,7 +78,7 @@ h1, h2, h3, h4, h5, h6 { mso-line-height-rule: exactly; }
 	font-size: 0;
 	line-height: 0;
 	padding-top: 1px;
-	padding-bottom: 2px;
+	padding-bottom: 1px;
 	//padding intérieur pour le fond
 	span {
 		font-size: 10px;
@@ -104,6 +104,34 @@ h1, h2, h3, h4, h5, h6 { mso-line-height-rule: exactly; }
 		&.succes { background-color: @categorie_succes; }
 		&.legislation { background-color: @categorie_legislation; }
 		&.creationentreprise { background-color: @categorie_creationentreprise; }
+	}
+}
+
+//pas de float pour image contenus dans liens en block ou les liens images
+.link_box, .contentALaUne, .contentSecondaire, .contentTertiaire {
+	img { float: none; }
+}
+
+//gestion row avec bordures de séparation
+.row.bordered {
+	//suppression décalage en trop
+	td.wrapper { padding-top: 0px; }
+	table.columns td, table.column td { padding-bottom: 0px; }
+	td {
+		line-height: 0;
+		hr.border {
+			margin: 0;
+			//débuggage bordure pour PostaNova
+			background-color: transparent;
+			height: 0;
+			border-bottom: 1px solid @hrBorder;
+		}
+	}
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .row.bordered {
+		td.wrapper { padding-top: 0px !important; }
+		table.columns td, table.column td { padding-bottom: 0px !important; }
 	}
 }
 
