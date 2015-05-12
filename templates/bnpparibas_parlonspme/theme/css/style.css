@@ -1418,6 +1418,42 @@ h6 {
   float: none;
 }
 
+.contentUnsubscribe {
+  background-color: #ededed;
+}
+
+.contentUnsubscribe,
+.contentUnsubscribe td,
+.contentUnsubscribe .inner {
+  color: #a1a1a1;
+}
+
+.contentUnsubscribe a {
+  color: #a1a1a1;
+}
+
+.contentUnsubscribe a .important,
+.contentUnsubscribe a:visited,
+.contentUnsubscribe a:hover,
+.contentUnsubscribe a:focus,
+.contentUnsubscribe a:active {
+  color: #a1a1a1 !important;
+}
+
+.contentUnsubscribe td {
+  font-size: 11.9px;
+  line-height: 14.875px;
+}
+
+.contentUnsubscribe td.wrapper {
+  padding-top: 10px;
+}
+
+.contentUnsubscribe table.columns td,
+.contentUnsubscribe table.column td {
+  padding-bottom: 10px;
+}
+
 @media only screen and (max-width: 720px) {
   table[class="body"] img {
     width: auto !important;
@@ -1603,12 +1639,12 @@ h6 {
   }
 
   table[class="body"] .contentOnline td.wrapper {
-    padding-top: 10px !important;
+    padding-top: 5px !important;
   }
 
   table[class="body"] .contentOnline table.columns td,
   table[class="body"] .contentOnline table.column td {
-    padding-bottom: 10px !important;
+    padding-bottom: 5px !important;
   }
 
   table[class="body"] .contentMonth td.wrapper {
@@ -1650,5 +1686,14 @@ h6 {
   table[class="body"] .webicon img {
     width: 28px !important;
     height: 28px !important;
+  }
+
+  table[class="body"] .contentUnsubscribe td.wrapper {
+    padding-top: 5px !important;
+  }
+
+  table[class="body"] .contentUnsubscribe table.columns td,
+  table[class="body"] .contentUnsubscribe table.column td {
+    padding-bottom: 5px !important;
   }
 }
