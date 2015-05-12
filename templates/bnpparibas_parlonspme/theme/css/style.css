@@ -997,6 +997,7 @@ h4,
 h5,
 h6 {
   mso-line-height-rule: exactly;
+  line-height: 1.1;
 }
 
 .header {
@@ -1039,6 +1040,7 @@ h6 {
 
 .title {
   color: #000000;
+  padding-top: 5px;
   padding-bottom: 5px;
 }
 
@@ -1131,10 +1133,6 @@ h6 {
   line-height: 0;
   padding-top: 1px;
   padding-bottom: 1px;
-}
-
-.category + .title {
-  padding-top: 5px;
 }
 
 .category span {
