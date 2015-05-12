@@ -1352,6 +1352,28 @@ h6 {
   padding-top: 10px;
 }
 
+.contentContact {
+  background-color: #00a68b;
+}
+
+.contentContact,
+.contentContact td,
+.contentContact .inner {
+  color: #ffffff;
+}
+
+.contentContact a {
+  color: #ffffff;
+}
+
+.contentContact a .important,
+.contentContact a:visited,
+.contentContact a:hover,
+.contentContact a:focus,
+.contentContact a:active {
+  color: #ffffff !important;
+}
+
 @media only screen and (max-width: 720px) {
   table[class="body"] img {
     width: auto !important;
