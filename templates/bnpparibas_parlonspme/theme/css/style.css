@@ -1679,6 +1679,19 @@ h6 {
     padding-top: 5px !important;
   }
 
+  table[class="body"] .contentContact td {
+    text-align: center !important;
+  }
+
+  table[class="body"] .webicons .columns,
+  table[class="body"] .webicons .column {
+    display: table !important;
+  }
+
+  table[class="body"] .webicons td {
+    text-align: center !important;
+  }
+
   table[class="body"] .webicon img {
     width: 28px !important;
     height: 28px !important;
