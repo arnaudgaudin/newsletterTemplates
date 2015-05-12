@@ -1213,7 +1213,8 @@ h6 {
 .link_box img,
 .contentALaUne img,
 .contentSecondaire img,
-.contentTertiaire img {
+.contentTertiaire img,
+.contentBottom img {
   float: none;
 }
 
@@ -1347,6 +1348,10 @@ h6 {
 .contentBottom td.wrapper.last table.columns .text-pad,
 .contentBottom td.wrapper.last table.column .text-pad {
   padding-left: 20px !important;
+}
+
+.contentBottom .category {
+  padding-top: 10px;
 }
 
 @media only screen and (max-width: 720px) {

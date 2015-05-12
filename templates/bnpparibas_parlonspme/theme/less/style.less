@@ -111,7 +111,7 @@ h1, h2, h3, h4, h5, h6 { mso-line-height-rule: exactly; }
 }
 
 //pas de float pour image contenus dans liens en block ou les liens images
-.link_box, .contentALaUne, .contentSecondaire, .contentTertiaire {
+.link_box, .contentALaUne, .contentSecondaire, .contentTertiaire, .contentBottom {
 	img { float: none; }
 }
 
@@ -231,6 +231,8 @@ h1, h2, h3, h4, h5, h6 { mso-line-height-rule: exactly; }
 			padding-left: (@textPad / 2) !important;
 		}
 	}
+
+	.category { padding-top: 10px; }
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentBottomTitle {
