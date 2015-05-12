@@ -1343,6 +1343,16 @@ h6 {
   padding-top: 0px;
 }
 
+.contentBottom td.wrapper.first table.columns .text-pad,
+.contentBottom td.wrapper.first table.column .text-pad {
+  padding-right: 20px !important;
+}
+
+.contentBottom td.wrapper.last table.columns .text-pad,
+.contentBottom td.wrapper.last table.column .text-pad {
+  padding-left: 20px !important;
+}
+
 @media only screen and (max-width: 720px) {
   table[class="body"] img {
     width: auto !important;

@@ -219,6 +219,19 @@ h1, h2, h3, h4, h5, h6 { mso-line-height-rule: exactly; }
 .contentBottom {
 	background-color: #0f0;
 	td.wrapper { padding-top: 0px; }
+
+	td.wrapper.first {
+		table.columns .text-pad,
+		table.column .text-pad {
+			padding-right: (@textPad / 2) !important;
+		}
+	}
+	td.wrapper.last {
+		table.columns .text-pad,
+		table.column .text-pad {
+			padding-left: (@textPad / 2) !important;
+		}
+	}
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentBottomTitle {
