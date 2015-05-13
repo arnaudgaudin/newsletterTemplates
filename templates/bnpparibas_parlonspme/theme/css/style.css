@@ -1127,8 +1127,13 @@ h6 {
   color: #891616;
 }
 
-table.columns .category td,
-table.column .category td {
+table.columns .category_wrapper td,
+table.column .category_wrapper td {
+  padding: 0;
+}
+
+table.columns .category_wrapper .category td,
+table.column .category_wrapper .category td {
   padding: 4px;
   font-size: 11px;
   line-height: 11px;
@@ -1136,83 +1141,83 @@ table.column .category td {
   text-transform: uppercase;
 }
 
-table.columns .category td.vieentreprise,
-table.column .category td.vieentreprise {
+table.columns .category_wrapper .category td.vieentreprise,
+table.column .category_wrapper .category td.vieentreprise {
   background-color: #b2790a;
 }
 
-table.columns .category td.conjoncture,
-table.column .category td.conjoncture {
+table.columns .category_wrapper .category td.conjoncture,
+table.column .category_wrapper .category td.conjoncture {
   background-color: #789d98;
 }
 
-table.columns .category td.innovation,
-table.column .category td.innovation {
+table.columns .category_wrapper .category td.innovation,
+table.column .category_wrapper .category td.innovation {
   background-color: #4ab9e8;
 }
 
-table.columns .category td.international,
-table.column .category td.international {
+table.columns .category_wrapper .category td.international,
+table.column .category_wrapper .category td.international {
   background-color: #104564;
 }
 
-table.columns .category td.financement,
-table.column .category td.financement {
+table.columns .category_wrapper .category td.financement,
+table.column .category_wrapper .category td.financement {
   background-color: #ffaa06;
 }
 
-table.columns .category td.marketing,
-table.column .category td.marketing {
+table.columns .category_wrapper .category td.marketing,
+table.column .category_wrapper .category td.marketing {
   background-color: #5b62bf;
 }
 
-table.columns .category td.assurances,
-table.column .category td.assurances {
+table.columns .category_wrapper .category td.assurances,
+table.column .category_wrapper .category td.assurances {
   background-color: #1d6b30;
 }
 
-table.columns .category td.moyenspaiement,
-table.column .category td.moyenspaiement {
+table.columns .category_wrapper .category td.moyenspaiement,
+table.column .category_wrapper .category td.moyenspaiement {
   background-color: #c2002a;
 }
 
-table.columns .category td.tresorerie,
-table.column .category td.tresorerie {
+table.columns .category_wrapper .category td.tresorerie,
+table.column .category_wrapper .category td.tresorerie {
   background-color: #603107;
 }
 
-table.columns .category td.fiscalite,
-table.column .category td.fiscalite {
+table.columns .category_wrapper .category td.fiscalite,
+table.column .category_wrapper .category td.fiscalite {
   background-color: #006a8a;
 }
 
-table.columns .category td.immobilier,
-table.column .category td.immobilier {
+table.columns .category_wrapper .category td.immobilier,
+table.column .category_wrapper .category td.immobilier {
   background-color: #868686;
 }
 
-table.columns .category td.entrepriseresponsable,
-table.column .category td.entrepriseresponsable {
+table.columns .category_wrapper .category td.entrepriseresponsable,
+table.column .category_wrapper .category td.entrepriseresponsable {
   background-color: #00bb9c;
 }
 
-table.columns .category td.management,
-table.column .category td.management {
+table.columns .category_wrapper .category td.management,
+table.column .category_wrapper .category td.management {
   background-color: #39de60;
 }
 
-table.columns .category td.succes,
-table.column .category td.succes {
+table.columns .category_wrapper .category td.succes,
+table.column .category_wrapper .category td.succes {
   background-color: #fc6320;
 }
 
-table.columns .category td.legislation,
-table.column .category td.legislation {
+table.columns .category_wrapper .category td.legislation,
+table.column .category_wrapper .category td.legislation {
   background-color: #799c24;
 }
 
-table.columns .category td.creationentreprise,
-table.column .category td.creationentreprise {
+table.columns .category_wrapper .category td.creationentreprise,
+table.column .category_wrapper .category td.creationentreprise {
   background-color: #891616;
 }
 
@@ -1356,8 +1361,14 @@ table.column .category td.creationentreprise {
   padding-left: 20px !important;
 }
 
-.contentBottom img {
-  padding-bottom: 10px;
+.contentBottom table.columns .category_wrapper tr td,
+.contentBottom table.column .category_wrapper tr td {
+  padding-top: 10px;
+}
+
+.contentBottom table.columns .category_wrapper tr td .category tr td,
+.contentBottom table.column .category_wrapper tr td .category tr td {
+  padding-top: 4px;
 }
 
 .contentContact {

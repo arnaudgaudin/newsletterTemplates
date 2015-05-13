@@ -78,31 +78,34 @@ h1, h2, h3, h4, h5, h6 {
 
 //categories
 table.columns, table.column {
-	.category {
-		//padding intérieur pour le fond
-		td {
-			padding: 4px;
-			font-size: 11px;
-			line-height: 11px;
-			color: #ffffff;
-			text-transform: uppercase;
+	.category_wrapper {
+		td { padding: 0; }
+		.category {
+			//padding intérieur pour le fond
+			td {
+				padding: 4px;
+				font-size: 11px;
+				line-height: 11px;
+				color: #ffffff;
+				text-transform: uppercase;
 
-			&.vieentreprise { background-color: @categorie_vieentreprise; }
-			&.conjoncture { background-color: @categorie_conjoncture; }
-			&.innovation { background-color: @categorie_innovation; }
-			&.international { background-color: @categorie_international; }
-			&.financement { background-color: @categorie_financement; }
-			&.marketing { background-color: @categorie_marketing; }
-			&.assurances { background-color: @categorie_assurances; }
-			&.moyenspaiement { background-color: @categorie_moyenspaiement; }
-			&.tresorerie { background-color: @categorie_tresorerie; }
-			&.fiscalite { background-color: @categorie_fiscalite; }
-			&.immobilier { background-color: @categorie_immobilier; }
-			&.entrepriseresponsable { background-color: @categorie_entrepriseresponsable; }
-			&.management { background-color: @categorie_management; }
-			&.succes { background-color: @categorie_succes; }
-			&.legislation { background-color: @categorie_legislation; }
-			&.creationentreprise { background-color: @categorie_creationentreprise; }
+				&.vieentreprise { background-color: @categorie_vieentreprise; }
+				&.conjoncture { background-color: @categorie_conjoncture; }
+				&.innovation { background-color: @categorie_innovation; }
+				&.international { background-color: @categorie_international; }
+				&.financement { background-color: @categorie_financement; }
+				&.marketing { background-color: @categorie_marketing; }
+				&.assurances { background-color: @categorie_assurances; }
+				&.moyenspaiement { background-color: @categorie_moyenspaiement; }
+				&.tresorerie { background-color: @categorie_tresorerie; }
+				&.fiscalite { background-color: @categorie_fiscalite; }
+				&.immobilier { background-color: @categorie_immobilier; }
+				&.entrepriseresponsable { background-color: @categorie_entrepriseresponsable; }
+				&.management { background-color: @categorie_management; }
+				&.succes { background-color: @categorie_succes; }
+				&.legislation { background-color: @categorie_legislation; }
+				&.creationentreprise { background-color: @categorie_creationentreprise; }
+			}
 		}
 	}
 }
@@ -228,7 +231,12 @@ table.columns, table.column {
 			padding-left: (@textPad / 2) !important;
 		}
 	}
-	img { padding-bottom: 10px; }
+	table.columns, table.column {
+		.category_wrapper tr td {
+			padding-top: 10px;
+			.category tr td { padding-top: 4px; }
+		}	
+	}
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentBottomTitle {
