@@ -1127,81 +1127,92 @@ h6 {
   color: #891616;
 }
 
-.category {
-  font-size: 0;
-  line-height: 0;
-  height: 22px;
-}
-
-.category span {
+table.columns .category td,
+table.column .category td {
   padding: 4px;
   font-size: 11px;
-  line-height: 22px;
+  line-height: 11px;
   color: #ffffff;
   text-transform: uppercase;
 }
 
-.category span.vieentreprise {
+table.columns .category td.vieentreprise,
+table.column .category td.vieentreprise {
   background-color: #b2790a;
 }
 
-.category span.conjoncture {
+table.columns .category td.conjoncture,
+table.column .category td.conjoncture {
   background-color: #789d98;
 }
 
-.category span.innovation {
+table.columns .category td.innovation,
+table.column .category td.innovation {
   background-color: #4ab9e8;
 }
 
-.category span.international {
+table.columns .category td.international,
+table.column .category td.international {
   background-color: #104564;
 }
 
-.category span.financement {
+table.columns .category td.financement,
+table.column .category td.financement {
   background-color: #ffaa06;
 }
 
-.category span.marketing {
+table.columns .category td.marketing,
+table.column .category td.marketing {
   background-color: #5b62bf;
 }
 
-.category span.assurances {
+table.columns .category td.assurances,
+table.column .category td.assurances {
   background-color: #1d6b30;
 }
 
-.category span.moyenspaiement {
+table.columns .category td.moyenspaiement,
+table.column .category td.moyenspaiement {
   background-color: #c2002a;
 }
 
-.category span.tresorerie {
+table.columns .category td.tresorerie,
+table.column .category td.tresorerie {
   background-color: #603107;
 }
 
-.category span.fiscalite {
+table.columns .category td.fiscalite,
+table.column .category td.fiscalite {
   background-color: #006a8a;
 }
 
-.category span.immobilier {
+table.columns .category td.immobilier,
+table.column .category td.immobilier {
   background-color: #868686;
 }
 
-.category span.entrepriseresponsable {
+table.columns .category td.entrepriseresponsable,
+table.column .category td.entrepriseresponsable {
   background-color: #00bb9c;
 }
 
-.category span.management {
+table.columns .category td.management,
+table.column .category td.management {
   background-color: #39de60;
 }
 
-.category span.succes {
+table.columns .category td.succes,
+table.column .category td.succes {
   background-color: #fc6320;
 }
 
-.category span.legislation {
+table.columns .category td.legislation,
+table.column .category td.legislation {
   background-color: #799c24;
 }
 
-.category span.creationentreprise {
+table.columns .category td.creationentreprise,
+table.column .category td.creationentreprise {
   background-color: #891616;
 }
 
@@ -1345,8 +1356,8 @@ h6 {
   padding-left: 20px !important;
 }
 
-.contentBottom .category {
-  padding-top: 10px;
+.contentBottom img {
+  padding-bottom: 10px;
 }
 
 .contentContact {
