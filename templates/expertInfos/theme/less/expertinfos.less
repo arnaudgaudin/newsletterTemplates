@@ -123,16 +123,6 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 // contentArticles area
 // -------------------------
 .contentArticles {
-	//pour débugage Outlook
-	// td.wrapper {
-	// 	background-color: #ff0000;
-	// 	table.columns td, table.column td { background-color: darken(#ff0000, 20%); }
-	// 	&.first {
-	// 		background-color: #00ffff;
-	// 		table.columns td, table.column td { background-color: darken(#00ffff, 20%); }
-	// 	}
-	// }
-	
 	//suppression décalage en trop sauf sur le dernier
 	table.columns td, table.column td { padding-bottom: 0px; }
 	&.last {
@@ -285,11 +275,6 @@ a {
 		.border { border-top: 1px dotted @nlCntQtnBorder; }
 	}
 }
-
-//importation style localisé dans le site pour test
-// @import "newsletter.less";
-//reprise style newsletter.less sans les !important
-//désactivé pour export
 
 
 // CUSTOM COLORS
