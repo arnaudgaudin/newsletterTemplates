@@ -169,7 +169,7 @@ tracking_url = "fintrack=&amp;rep="&repertoire_ei&"&amp;url_site_exp="&url_site_
 														<!--{{%%{{ if isOnline=False then }}%%}}-->
 														<!--{{<gab_lien_message_online>}}-->
 														<span class="online">
-															<small>Pour visualiser ce message en ligne, <a target="_blank" class="link_underline" href="%%{{=online_url}}%%&amp;fintrack=&amp;rep=%%{{=repertoire_ei}}%%&amp;url_site_exp=%%{{=url_site_exp}}%%"><span class="important">suivez ce lien</span></a>.</small>
+															<small>Pour visualiser ce message en ligne, <a target="_blank" class="link_underline" href="%%{{=online_url}}%%&amp;%%{{=tracking_url}}%%"><span class="important">suivez ce lien</span></a>.</small>
 														</span>
 														<!--{{</gab_lien_message_online>}}-->
 														<!--{{%%{{ end if }}%%}}-->
@@ -191,12 +191,12 @@ tracking_url = "fintrack=&amp;rep="&repertoire_ei&"&amp;url_site_exp="&url_site_
 											<table border="0" class="twelve columns">
 												<tr>
 													<td class="eight sub-columns first">
-														<a target="_blank" class="link_box" href="http://%%{{=rscab_url_site_exp}}%%&amp;fintrack=&amp;rep=%%{{=repertoire_ei}}%%&amp;url_site_exp=%%{{=url_site_exp}}%%">
+														<a target="_blank" class="link_box" href="http://%%{{=rscab_url_site_exp}}%%&amp;%%{{=tracking_url}}%%">
 															<img src="http://%%{{=url_site_exp}}%%/uploads/assets/header-newsletter-site.png" alt="Header Newsletter Site" width="480" height="96" /><!--DEL{{--><img src="http://lorempixel.com/960/192/city/" alt="NomCabinet" width="480" height="96" /><!--}}DEL-->
 														</a>
 													</td>
 													<td class="four sub-columns last">
-														<a target="_blank" class="link_box" href="http://%%{{=lien_groupement}}%%&amp;fintrack=&amp;rep=%%{{=repertoire_ei}}%%&amp;url_site_exp=%%{{=url_site_exp}}%%">
+														<a target="_blank" class="link_box" href="http://%%{{=lien_groupement}}%%&amp;%%{{=tracking_url}}%%">
 															<img src="http://%%{{=url_site_exp}}%%/uploads/assets/header-newsletter-groupe.png" alt="Header Newsletter Groupe" width="240" height="96" /><!--DEL{{--><img src="http://lorempixel.com/480/192/technics/" alt="NomCabinet" width="240" height="96" /><!--}}DEL-->
 														</a>
 													</td>
@@ -214,7 +214,7 @@ tracking_url = "fintrack=&amp;rep="&repertoire_ei&"&amp;url_site_exp="&url_site_
 								            <table border="0" class="twelve columns">
 								                <tr>
 								                    <td class="center">
-								                    	<a target="_blank" href="http://%%{{=rscab_url_site_exp}}%%?fintrack=&amp;rep=%%{{=repertoire_ei}}%%&amp;url_site_exp=%%{{=url_site_exp}}%%">
+								                    	<a target="_blank" href="http://%%{{=rscab_url_site_exp}}%%?%%{{=tracking_url}}%%">
 								                            <img class="link_box center" src="http://%%{{=url_site_exp}}%%/uploads/assets/header-newsletter.png" alt="Header Newsletter" width="720" height="96" /><!--DEL{{--><img src="http://ec-tenor.expert-infos.com/uploads/assets/header-newsletter.png" width="720" height="96" alt="" /><!--}}DEL-->
 								                        </a>
 								                    </td>
@@ -559,7 +559,7 @@ tracking_url = "fintrack=&amp;rep="&repertoire_ei&"&amp;url_site_exp="&url_site_
 															url_site_exp = rsCabinet("url_site_exp")
 														end if
 														}}%%}}-->
-														<a target="_blank" class="link_underline" href="http://%%{{=url_site_exp}}%%?fintrack=&amp;rep=%%{{=repertoire_ei}}%%&amp;url_site_exp=%%{{=url_site_exp}}%%"><span class="important"><!--{{%%{{=url_site_exp}}%%}}--><!--DEL{{-->url_site_exp<!--}}DEL--></span></a>
+														<a target="_blank" class="link_underline" href="http://%%{{=url_site_exp}}%%?%%{{=tracking_url}}%%"><span class="important"><!--{{%%{{=url_site_exp}}%%}}--><!--DEL{{-->url_site_exp<!--}}DEL--></span></a>
 													</td>
 													<td class="expander" bgcolor="##((nlBodyBackground))##"></td>
 												</tr>
