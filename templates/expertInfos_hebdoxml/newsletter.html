@@ -293,7 +293,7 @@ tracking_url = "fintrack=&amp;rep="&repertoire_ei&"&amp;url_site_exp="&url_site_
 									id_de_larticle=mid(rsArticleAlaune("URL_DETAIL_INFO"),13,len(rsArticleAlaune("URL_DETAIL_INFO"))-16)
 
 									'Composition lien article'
-									lien_article = "http://"&URL_NL_XML&id_de_larticle&beginGetParam&"&rep="&repertoire_ei&"&url_site_exp="&url_site_exp
+									lien_article = "http://"&URL_NL_XML&id_de_larticle&beginGetParam&tracking_url
 								}}%%}}-->
 								<table border="0" class="row contentALaUne" bgcolor="##((nlCntUneBackground))##">
 									<tr>
@@ -359,7 +359,7 @@ tracking_url = "fintrack=&amp;rep="&repertoire_ei&"&amp;url_site_exp="&url_site_
 									nbrart=rsCountArt(0)
 
 									'Composition lien article'
-							    	lien_article = "http://"&URL_NL_XML&id_de_larticle&beginGetParam&"&rep="&repertoire_ei&"&url_site_exp="&url_site_exp
+							    	lien_article = "http://"&URL_NL_XML&id_de_larticle&beginGetParam&tracking_url
 									
 								    if (i<(nbrart-1)) then
 								}}%%}}-->
@@ -455,9 +455,9 @@ tracking_url = "fintrack=&amp;rep="&repertoire_ei&"&amp;url_site_exp="&url_site_
 														'Composition lien agenda'
 														'Pour aliantis en disco v2bis dans LNET'
 														if (type_perso_site<45) then
-															lien_agenda = "http://"&URL_NL_XML&url_mois1&beginGetParam&"&rep="&repertoire_ei&"&url_site_exp="&url_site_exp
+															lien_agenda = "http://"&URL_NL_XML&url_mois1&beginGetParam&tracking_url
 														else
-															lien_agenda = "http://"&URL_NL_XML&url_mois1_V3b&beginGetParam&"&rep="&repertoire_ei&"&url_site_exp="&url_site_exp
+															lien_agenda = "http://"&URL_NL_XML&url_mois1_V3b&beginGetParam&tracking_url
 														end if
 														}}%%}}-->
 														<a target="_blank" class="link_box" href="%%{{=lien_agenda}}%%">
