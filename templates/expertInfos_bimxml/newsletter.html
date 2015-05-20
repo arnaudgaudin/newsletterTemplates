@@ -99,6 +99,12 @@ else
 	isCollaborateur = False
 end if
 
+'Begin get param'
+beginGetParam="&fintrack="
+if instr(URL_NL_XML,"?")<1 then
+	beginGetParam="?fintrack="
+end if
+
 set rsCount=conn.Execute("SELECT COUNT(*) FROM FLASH_CABINFORM WHERE id_exp="& id_exp &" AND (afficher=1)")
 set rs=conn.Execute("SELECT * FROM FLASH_CABINFORM WHERE id_exp=" & id_exp &" AND (afficher=1) ORDER BY ordre")
 }}%%}}-->
@@ -125,7 +131,7 @@ else
 	fileName = "flashinfos_bimxml_mail_V3_resp"
 end if
 
-online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/"&fileName&".asp?id_client="&id_client&"&idarticle="&idarticle&"&idarticleAlaune="&idarticleAlaune&"&is_online=1"&get_coll&"&fintrack="
+online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/"&fileName&".asp?id_client="&id_client&"&idarticle="&idarticle&"&idarticleAlaune="&idarticleAlaune&"&is_online=1"&get_coll
 }}%%}}-->
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -161,7 +167,7 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 														<!--{{%%{{ if isOnline=False then }}%%}}-->
 														<!--{{<gab_lien_message_online>}}-->
 														<span class="online">
-															<small>Pour visualiser ce message en ligne, <a target="_blank" class="link_underline" href="%%{{=online_url}}%%"><span class="important">suivez ce lien</span></a>.</small>
+															<small>Pour visualiser ce message en ligne, <a target="_blank" class="link_underline" href="%%{{=online_url}}%%&amp;fintrack=&amp;rep=%%{{=repertoire_ei}}%%&amp;url_site_exp=%%{{=url_site_exp}}%%"><span class="important">suivez ce lien</span></a>.</small>
 														</span>
 														<!--{{</gab_lien_message_online>}}-->
 														<!--{{%%{{ end if }}%%}}-->
@@ -183,12 +189,12 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 											<table border="0" class="twelve columns">
 												<tr>
 													<td class="eight sub-columns first">
-														<a target="_blank" class="link_box" href="http://%%{{=rscab_url_site_exp}}%%">
+														<a target="_blank" class="link_box" href="http://%%{{=rscab_url_site_exp}}%%%%{{=beginGetParam}}%%&amp;rep=%%{{=repertoire_ei}}%%&amp;url_site_exp=%%{{=url_site_exp}}%%">
 															<img src="http://%%{{=url_site_exp}}%%/uploads/assets/header-newsletter-site.png" alt="Header Newsletter Site" width="480" height="96" /><!--DEL{{--><img src="http://lorempixel.com/960/192/city/" alt="NomCabinet" width="480" height="96" /><!--}}DEL-->
 														</a>
 													</td>
 													<td class="four sub-columns last">
-														<a target="_blank" class="link_box" href="http://%%{{=lien_groupement}}%%">
+														<a target="_blank" class="link_box" href="http://%%{{=lien_groupement}}%%%%{{=beginGetParam}}%%&amp;rep=%%{{=repertoire_ei}}%%&amp;url_site_exp=%%{{=url_site_exp}}%%">
 															<img src="http://%%{{=url_site_exp}}%%/uploads/assets/header-newsletter-groupe.png" alt="Header Newsletter Groupe" width="240" height="96" /><!--DEL{{--><img src="http://lorempixel.com/480/192/technics/" alt="NomCabinet" width="240" height="96" /><!--}}DEL-->
 														</a>
 													</td>
@@ -206,7 +212,7 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 								            <table border="0" class="twelve columns">
 								                <tr>
 								                    <td class="center">
-								                    	<a target="_blank" href="http://%%{{=rscab_url_site_exp}}%%">
+								                    	<a target="_blank" href="http://%%{{=rscab_url_site_exp}}%%%%{{=beginGetParam}}%%&amp;rep=%%{{=repertoire_ei}}%%&amp;url_site_exp=%%{{=url_site_exp}}%%">
 								                            <img class="link_box center" src="http://%%{{=url_site_exp}}%%/uploads/assets/header-newsletter.png" alt="Header Newsletter" width="720" height="96" /><!--DEL{{--><img src="http://ec-tenor.expert-infos.com/uploads/assets/header-newsletter.png" width="720" height="96" alt="" /><!--}}DEL-->
 								                        </a>
 								                    </td>
@@ -283,6 +289,9 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 									SQLArticleAlaune="SELECT * FROM CHAPITRES_FLASHS_INFOS WHERE (IDCHAPITRE_FLASH_INFOS = "& idarticleAlaune &")"
 									Set rsArticleAlaune=conn.Execute(SQLArticleAlaune)
 									id_de_larticle=mid(rsArticleAlaune("URL_DETAIL_INFO"),13,len(rsArticleAlaune("URL_DETAIL_INFO"))-16)
+
+									'Composition lien article'
+									lien_article = "http://"&URL_NL_XML&id_de_larticle&beginGetParam&"&rep="&repertoire_ei&"&url_site_exp="&url_site_exp
 								}}%%}}-->
 								<table border="0" class="row contentALaUne" bgcolor="##((nlCntUneBackground))##">
 									<tr>
@@ -294,11 +303,11 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 															<tr>
 																<td class="text-pad">
 																	<h1 class="title">
-																		<a target="_blank" href="http://%%{{=URL_NL_XML}}%%%%{{=id_de_larticle}}%%">
+																		<a target="_blank" href="%%{{lien_article}}%%">
 																			<!--{{%%{{=rsArticleAlaune("TITRE_CHAPITRE_FLASH_INFOS")}}%%}}--><!--DEL{{-->TITRE_CHAPITRE_FLASH_INFOS<!--}}DEL-->
 																		</a>
 																	</h1>
-																	<a target="_blank" class="link_box" href="http://%%{{=URL_NL_XML}}%%%%{{=id_de_larticle}}%%">
+																	<a target="_blank" class="link_box" href="%%{{lien_article}}%%">
 																		<span class="text"><!--{{%%{{=rsArticleAlaune("CONTENU_CHAPITRE_FLASH_INFOS")}}%%}}--><!--DEL{{-->CONTENU_CHAPITRE_FLASH_INFOS<!--}}DEL--></span>
 																		<br /><span class="readMore"><span class="icon-rsaquo">&rsaquo;</span>&#160;lire la suite</span></span>
 																	</a>
@@ -346,6 +355,9 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 									CountArt="SELECT COUNT(*) FROM CHAPITRES_FLASHS_INFOS WHERE ID_FLASH_INFOS="& id_flash
 									set rsCountArt=conn.Execute(CountArt)
 									nbrart=rsCountArt(0)
+
+									'Composition lien article'
+							    	lien_article = "http://"&URL_NL_XML&id_de_larticle&beginGetParam&"&rep="&repertoire_ei&"&url_site_exp="&url_site_exp
 									
 								    if (i<(nbrart-1)) then
 								}}%%}}-->
@@ -355,7 +367,7 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 											<table border="0" class="five columns">
 												<tr>
 													<td class="text-pad-left">
-														<a target="_blank" class="link_box" href="http://%%{{=URL_NL_XML}}%%%%{{=id_de_larticle}}%%">
+														<a target="_blank" class="link_box" href="%%{{lien_article}}%%">
 															<img src="http://e-newsletter.expert-infos.com/_infos/_photos/%%{{=id_de_larticle}}%%-h.jpg" width="290" height="133" alt="" /><!--DEL{{--><img src="http://lorempixel.com/1440/660/business/" width="290" height="133" alt="" /><!--}}DEL-->
 														</a>
 													</td>
@@ -368,11 +380,11 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 												<tr>
 													<td class="text-pad">
 														<h2 class="title">
-															<a target="_blank" href="http://%%{{=URL_NL_XML}}%%%%{{=id_de_larticle}}%%">
+															<a target="_blank" href="%%{{lien_article}}%%">
 																<span class="icon-rsaquo">&rsaquo;</span>&#160;<!--{{%%{{=rsArticle("TITRE_CHAPITRE_FLASH_INFOS")}}%%}}--><!--DEL{{-->TITRE_CHAPITRE_FLASH_INFOS<!--}}DEL-->
 															</a>
 														</h2>
-														<a target="_blank" href="http://%%{{=URL_NL_XML}}%%%%{{=id_de_larticle}}%%">
+														<a target="_blank" href="%%{{lien_article}}%%">
 															<span class="text"><!--{{%%{{=rsArticle("CONTENU_CHAPITRE_FLASH_INFOS")}}%%}}--><!--DEL{{-->CONTENU_CHAPITRE_FLASH_INFOS<!--}}DEL--></span>
 															<br /><span class="readMore">lire la suite</span>
 														</a>
@@ -390,7 +402,7 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 											<table border="0" class="five columns">
 												<tr>
 													<td class="text-pad-left">
-														<a target="_blank" class="link_box" href="http://%%{{=URL_NL_XML}}%%%%{{=id_de_larticle}}%%">
+														<a target="_blank" class="link_box" href="%%{{lien_article}}%%">
 															<img src="http://e-newsletter.expert-infos.com/_infos/_photos/%%{{=id_de_larticle}}%%-h.jpg" width="290" height="133" alt="" /><!--DEL{{--><img src="http://lorempixel.com/1440/660/business/" width="290" height="133" alt="" /><!--}}DEL-->
 														</a>
 													</td>
@@ -403,11 +415,11 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 												<tr>
 													<td class="text-pad">
 														<h2 class="title">
-															<a target="_blank" href="http://%%{{=URL_NL_XML}}%%%%{{=id_de_larticle}}%%">
+															<a target="_blank" href="%%{{lien_article}}%%">
 																<span class="icon-rsaquo">&rsaquo;</span>&#160;<!--{{%%{{=rsArticle("TITRE_CHAPITRE_FLASH_INFOS")}}%%}}--><!--DEL{{-->TITRE_CHAPITRE_FLASH_INFOS<!--}}DEL-->
 															</a>
 														</h2>
-														<a target="_blank" href="http://%%{{=URL_NL_XML}}%%%%{{=id_de_larticle}}%%">
+														<a target="_blank" href="%%{{lien_article}}%%">
 															<span class="text"><!--{{%%{{=rsArticle("CONTENU_CHAPITRE_FLASH_INFOS")}}%%}}--><!--DEL{{-->CONTENU_CHAPITRE_FLASH_INFOS<!--}}DEL--></span>
 															<br /><span class="readMore">lire la suite</span>
 														</a>
@@ -441,9 +453,9 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 														'Composition lien agenda'
 														'Pour aliantis en disco v2bis dans LNET'
 														if (type_perso_site<45) then
-															lien_agenda = "http://"&URL_NL_XML&url_mois1
+															lien_agenda = "http://"&URL_NL_XML&url_mois1&beginGetParam&"&rep="&repertoire_ei&"&url_site_exp="&url_site_exp
 														else
-															lien_agenda = "http://"&URL_NL_XML&url_mois1_V3b
+															lien_agenda = "http://"&URL_NL_XML&url_mois1_V3b&beginGetParam&"&rep="&repertoire_ei&"&url_site_exp="&url_site_exp
 														end if
 														}}%%}}-->
 														<a target="_blank" class="link_box" href="%%{{=lien_agenda}}%%">
@@ -495,7 +507,7 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 														<strong><!--{{%%{{ if (len(trim(type_client)) > 1) then response.write(type_client & " ") end if }}%%%%{{=raison_sociale_exp}}%%}}--><!--DEL{{-->raison_sociale_exp<!--}}DEL--></strong>
 														<br/>
 														<!--{{%%{{ lien_adresse=Server.URLEncode(adresse1_exp & " " & adresse2_exp & " " & code_postal_exp & " " & commune_exp) }}%%}}-->
-														<a target="_blank" href="http://maps.apple.com/?q=%%{{=lien_adresse}}%%"><span class="important"><!--{{%%{{
+														<a target="_blank" href="http://maps.apple.com/?q=%%{{=lien_adresse}}%%&amp;fintrack=&amp;rep=%%{{=repertoire_ei}}%%&amp;url_site_exp=%%{{=url_site_exp}}%%"><span class="important"><!--{{%%{{
 															'affichage adresse1'
 															nbc_desc=len(adresse1_exp)
 															k=1
@@ -545,7 +557,7 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 															url_site_exp = rsCabinet("url_site_exp")
 														end if
 														}}%%}}-->
-														<a target="_blank" class="link_underline" href="http://%%{{=url_site_exp}}%%"><span class="important"><!--{{%%{{=url_site_exp}}%%}}--><!--DEL{{-->url_site_exp<!--}}DEL--></span></a>
+														<a target="_blank" class="link_underline" href="http://%%{{=url_site_exp}}%%%%{{=beginGetParam}}%%&amp;rep=%%{{=repertoire_ei}}%%&amp;url_site_exp=%%{{=url_site_exp}}%%"><span class="important"><!--{{%%{{=url_site_exp}}%%}}--><!--DEL{{-->url_site_exp<!--}}DEL--></span></a>
 													</td>
 													<td class="expander" bgcolor="##((nlBodyBackground))##"></td>
 												</tr>
@@ -616,7 +628,7 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 												<tr>
 													<td class="center text-pad">
 														<small>
-															Si vous ne souhaitez plus recevoir cette newsletter, veuillez accéder à la page de <a target="_blank" class="link_underline" href="http://e-newsletter.expert-infos.com/_e-newsletter/desinscription.asp?fintrack=&amp;a=%%{{=id_client}}%%"><span class="important">désinscription</span></a>.<a class="link_disabled" href="#" lien_blackliste="lien_blackliste"></a>
+															Si vous ne souhaitez plus recevoir cette newsletter, veuillez accéder à la page de <a target="_blank" class="link_underline" href="#" lien_blackliste="lien_blackliste"><span class="important">désinscription</span></a>.
 														</small>
 													</td>
 													<td class="expander" bgcolor="##((nlBodyBackground))##"></td>
