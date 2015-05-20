@@ -1,4 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- flashinfos_bimxml_mail_V3_resp.asp -->
 <%
 Set Conn = Server.CreateObject("ADODB.Connection")
 Conn.ConnectionString =  application("Base_Newsletter")
@@ -99,10 +100,10 @@ else
 	isCollaborateur = False
 end if
 
-'Begin get param'
-beginGetParam="&fintrack="
+'Detect get starting in URL'
+beginGetParam="&"
 if instr(URL_NL_XML,"?")<1 then
-	beginGetParam="?fintrack="
+	beginGetParam="?"
 end if
 
 set rsCount=conn.Execute("SELECT COUNT(*) FROM FLASH_CABINFORM WHERE id_exp="& id_exp &" AND (afficher=1)")
@@ -132,6 +133,7 @@ else
 end if
 
 online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/"&fileName&".asp?id_client="&id_client&"&idarticle="&idarticle&"&idarticleAlaune="&idarticleAlaune&"&is_online=1"&get_coll
+tracking_url = "fintrack=&amp;rep="&repertoire_ei&"&amp;url_site_exp="&url_site_exp
 %>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -842,7 +844,7 @@ color: <%=colorParsing.Item("nlFooterText")%> !important;
 														<% if isOnline=False then %>
 														<gab_lien_message_online>
 														<span class="online" style="color: <%=colorParsing.Item("nlCntOnlineText")%>; display: block; font-size: 12px; line-height: 16px; mso-line-height-rule: exactly; padding-bottom: 5px">
-															<small style="font-size: 11px">Pour visualiser ce message en ligne, <a target="_blank" class="link_underline" href="<%=online_url%>&amp;fintrack=&amp;rep=<%=repertoire_ei%>&amp;url_site_exp=<%=url_site_exp%>" style="color: <%=colorParsing.Item("nlCntOnlineText")%>; text-decoration: underline"><span class="important" style="color: <%=colorParsing.Item("nlCntOnlineText")%> !important; text-decoration: underline !important">suivez ce lien</span></a>.</small>
+															<small style="font-size: 11px">Pour visualiser ce message en ligne, <a target="_blank" class="link_underline" href="<%=online_url%>&amp;<%=tracking_url%>" style="color: <%=colorParsing.Item("nlCntOnlineText")%>; text-decoration: underline"><span class="important" style="color: <%=colorParsing.Item("nlCntOnlineText")%> !important; text-decoration: underline !important">suivez ce lien</span></a>.</small>
 														</span>
 														</gab_lien_message_online>
 														<% end if %>
@@ -864,12 +866,12 @@ color: <%=colorParsing.Item("nlFooterText")%> !important;
 											<table border="0" class="twelve columns" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 720px" width="720" cellpadding="0" cellspacing="0">
 												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 													<td class="eight sub-columns first" style="-ms-hyphens: auto; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; min-width: 0px; padding: 0px; text-align: left; vertical-align: top; width: 66.666666%; word-break: break-word" align="left" valign="top" width="66.666666%">
-														<a target="_blank" class="link_box" href="http://<%=rscab_url_site_exp%><%=beginGetParam%>&amp;rep=<%=repertoire_ei%>&amp;url_site_exp=<%=url_site_exp%>" style="color: #333333; display: block; outline: none; text-decoration: none">
+														<a target="_blank" class="link_box" href="http://<%=rscab_url_site_exp%>?<%=tracking_url%>" style="color: #333333; display: block; outline: none; text-decoration: none">
 															<img src="http://<%=url_site_exp%>/uploads/assets/header-newsletter-site.png" alt="Header Newsletter Site" width="480" height="96" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: left; max-width: 100%; outline: none; text-decoration: none; width: auto" align="left" />
 														</a>
 													</td>
 													<td class="four sub-columns last" style="-ms-hyphens: auto; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; min-width: 0px; padding: 0px; text-align: left; vertical-align: top; width: 33.333333%; word-break: break-word" align="left" valign="top" width="33.333333%">
-														<a target="_blank" class="link_box" href="http://<%=lien_groupement%><%=beginGetParam%>&amp;rep=<%=repertoire_ei%>&amp;url_site_exp=<%=url_site_exp%>" style="color: #333333; display: block; outline: none; text-decoration: none">
+														<a target="_blank" class="link_box" href="http://<%=lien_groupement%>?<%=tracking_url%>" style="color: #333333; display: block; outline: none; text-decoration: none">
 															<img src="http://<%=url_site_exp%>/uploads/assets/header-newsletter-groupe.png" alt="Header Newsletter Groupe" width="240" height="96" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: left; max-width: 100%; outline: none; text-decoration: none; width: auto" align="left" />
 														</a>
 													</td>
@@ -887,7 +889,7 @@ color: <%=colorParsing.Item("nlFooterText")%> !important;
 								            <table border="0" class="twelve columns" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 720px" width="720" cellpadding="0" cellspacing="0">
 								                <tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 								                    <td class="center" style="-ms-hyphens: auto; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 0px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
-								                    	<a target="_blank" href="http://<%=rscab_url_site_exp%><%=beginGetParam%>&amp;rep=<%=repertoire_ei%>&amp;url_site_exp=<%=url_site_exp%>" style="color: #333333; text-decoration: none">
+								                    	<a target="_blank" href="http://<%=rscab_url_site_exp%>?<%=tracking_url%>" style="color: #333333; text-decoration: none">
 								                            <img class="link_box center" src="http://<%=url_site_exp%>/uploads/assets/header-newsletter.png" alt="Header Newsletter" width="720" height="96" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: none; margin: 0 auto; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none" />
 								                        </a>
 								                    </td>
@@ -966,7 +968,7 @@ color: <%=colorParsing.Item("nlFooterText")%> !important;
 									id_de_larticle=mid(rsArticleAlaune("URL_DETAIL_INFO"),13,len(rsArticleAlaune("URL_DETAIL_INFO"))-16)
 
 									'Composition lien article'
-									lien_article = "http://"&URL_NL_XML&id_de_larticle&beginGetParam&"&rep="&repertoire_ei&"&url_site_exp="&url_site_exp
+									lien_article = "http://"&URL_NL_XML&id_de_larticle&beginGetParam&tracking_url
 								%>
 								<table border="0" class="row contentALaUne" bgcolor="<%=colorParsing.Item("nlCntUneBackground")%>" style="background: <%=colorParsing.Item("nlCntUneBackground")%>; border-collapse: collapse; border-spacing: 0; color: <%=colorParsing.Item("nlCntUneText")%>; display: block; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px; text-align: left; vertical-align: top; width: 100%" width="100%" cellpadding="0" cellspacing="0">
 									<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
@@ -1032,7 +1034,7 @@ color: <%=colorParsing.Item("nlFooterText")%> !important;
 									nbrart=rsCountArt(0)
 
 									'Composition lien article'
-							    	lien_article = "http://"&URL_NL_XML&id_de_larticle&beginGetParam&"&rep="&repertoire_ei&"&url_site_exp="&url_site_exp
+							    	lien_article = "http://"&URL_NL_XML&id_de_larticle&beginGetParam&tracking_url
 									
 								    if (i<(nbrart-1)) then
 								%>
@@ -1128,9 +1130,9 @@ color: <%=colorParsing.Item("nlFooterText")%> !important;
 														'Composition lien agenda'
 														'Pour aliantis en disco v2bis dans LNET'
 														if (type_perso_site<45) then
-															lien_agenda = "http://"&URL_NL_XML&url_mois1&beginGetParam&"&rep="&repertoire_ei&"&url_site_exp="&url_site_exp
+															lien_agenda = "http://"&URL_NL_XML&url_mois1&beginGetParam&tracking_url
 														else
-															lien_agenda = "http://"&URL_NL_XML&url_mois1_V3b&beginGetParam&"&rep="&repertoire_ei&"&url_site_exp="&url_site_exp
+															lien_agenda = "http://"&URL_NL_XML&url_mois1_V3b&beginGetParam&tracking_url
 														end if
 														%>
 														<a target="_blank" class="link_box" href="<%=lien_agenda%>" style="color: <%=colorParsing.Item("nlCntAgdText")%>; display: block; outline: none; text-decoration: none">
@@ -1182,7 +1184,7 @@ color: <%=colorParsing.Item("nlFooterText")%> !important;
 														<strong><% if (len(trim(type_client)) > 1) then response.write(type_client & " ") end if %><%=raison_sociale_exp%></strong>
 														<br />
 														<% lien_adresse=Server.URLEncode(adresse1_exp & " " & adresse2_exp & " " & code_postal_exp & " " & commune_exp) %>
-														<a target="_blank" href="http://maps.apple.com/?q=<%=lien_adresse%>&amp;fintrack=&amp;rep=<%=repertoire_ei%>&amp;url_site_exp=<%=url_site_exp%>" style="color: <%=colorParsing.Item("nlCntCctText")%>; text-decoration: none"><span class="important" style="color: <%=colorParsing.Item("nlCntCctText")%> !important"><%
+														<a target="_blank" href="http://maps.apple.com/?q=<%=lien_adresse%>" style="color: <%=colorParsing.Item("nlCntCctText")%>; text-decoration: none"><span class="important" style="color: <%=colorParsing.Item("nlCntCctText")%> !important"><%
 															'affichage adresse1'
 															nbc_desc=len(adresse1_exp)
 															k=1
@@ -1232,7 +1234,7 @@ color: <%=colorParsing.Item("nlFooterText")%> !important;
 															url_site_exp = rsCabinet("url_site_exp")
 														end if
 														%>
-														<a target="_blank" class="link_underline" href="http://<%=url_site_exp%><%=beginGetParam%>&amp;rep=<%=repertoire_ei%>&amp;url_site_exp=<%=url_site_exp%>" style="color: <%=colorParsing.Item("nlCntCctText")%>; text-decoration: underline"><span class="important" style="color: <%=colorParsing.Item("nlCntCctText")%> !important; text-decoration: underline !important"><%=url_site_exp%></span></a>
+														<a target="_blank" class="link_underline" href="http://<%=url_site_exp%>?<%=tracking_url%>" style="color: <%=colorParsing.Item("nlCntCctText")%>; text-decoration: underline"><span class="important" style="color: <%=colorParsing.Item("nlCntCctText")%> !important; text-decoration: underline !important"><%=url_site_exp%></span></a>
 													</td>
 													<td class="expander" bgcolor="<%=colorParsing.Item("nlBodyBackground")%>" style="-ms-hyphens: auto; background: <%=colorParsing.Item("nlBodyBackground")%>; border-collapse: collapse !important; color: <%=colorParsing.Item("nlCntCctText")%>; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 16px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word" align="left" valign="top" width="1"></td>
 												</tr>
