@@ -100,10 +100,10 @@ else
 	isCollaborateur = False
 end if
 
-'Begin get param'
-beginGetParam="&fintrack="
+'Detect get starting in URL'
+beginGetParam="&"
 if instr(URL_NL_XML,"?")<1 then
-	beginGetParam="?fintrack="
+	beginGetParam="?"
 end if
 
 set rsCount=conn.Execute("SELECT COUNT(*) FROM FLASH_CABINFORM WHERE id_exp="& id_exp &" AND (afficher=1)")
