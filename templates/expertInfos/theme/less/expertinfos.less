@@ -111,13 +111,11 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 	td.wrapper {
 		padding-top: 0px;
 		table.columns td, table.column td { padding-bottom: 0px; }
-
-		//remise en place padding à l'intérieur pour Outlook
-		&.first {
-			table.columns td, table.column td {
-				padding-top: @wrapperPad;
-				padding-bottom: @columnPad;
-			}
+		
+		//padding intérieur séparé pour Outlook
+		table.subWrapper td {
+			padding-top: @wrapperPad;
+			padding-bottom: @columnPad;
 		}
 	}
 }
