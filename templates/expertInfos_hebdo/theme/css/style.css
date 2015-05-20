@@ -1128,8 +1128,7 @@ h6 {
   padding-bottom: 0px;
 }
 
-.contentALaUne td.wrapper.first table.columns td,
-.contentALaUne td.wrapper.first table.column td {
+.contentALaUne td.wrapper table.subWrapper td {
   padding-top: 10px;
   padding-bottom: 10px;
 }
