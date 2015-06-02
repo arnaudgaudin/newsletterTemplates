@@ -67,6 +67,7 @@ if not rsCabinet.eof then
 	logo_groupement = rsCabinet("logo_groupement")
 	lien_groupement = rsCabinet("lien_groupement")
 	URL_NL_XML = rsCabinet("URL_NL_XML")
+	URL_NL_XML_SUF = rsCabinet("URL_NL_XML_SUF")
 
 	Select Case type_perso_site
 		Case 38 txt_perso_site = "pop"
@@ -968,7 +969,7 @@ color: <%=colorParsing.Item("nlFooterText")%> !important;
 									id_de_larticle=mid(rsArticleAlaune("URL_DETAIL_INFO"),13,len(rsArticleAlaune("URL_DETAIL_INFO"))-16)
 
 									'Composition lien article'
-									lien_article = "http://"&URL_NL_XML&id_de_larticle&beginGetParam&tracking_url
+									lien_article = "http://"&URL_NL_XML&id_de_larticle&URL_NL_XML_SUF&beginGetParam&tracking_url
 								%>
 								<table border="0" class="row contentALaUne" bgcolor="<%=colorParsing.Item("nlCntUneBackground")%>" style="background: <%=colorParsing.Item("nlCntUneBackground")%>; border-collapse: collapse; border-spacing: 0; color: <%=colorParsing.Item("nlCntUneText")%>; display: block; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px; text-align: left; vertical-align: top; width: 100%" width="100%" cellpadding="0" cellspacing="0">
 									<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
@@ -1034,7 +1035,7 @@ color: <%=colorParsing.Item("nlFooterText")%> !important;
 									nbrart=rsCountArt(0)
 
 									'Composition lien article'
-							    	lien_article = "http://"&URL_NL_XML&id_de_larticle&beginGetParam&tracking_url
+							    	lien_article = "http://"&URL_NL_XML&id_de_larticle&URL_NL_XML_SUF&beginGetParam&tracking_url
 									
 								    if (i<(nbrart-1)) then
 								%>
