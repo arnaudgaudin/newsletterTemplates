@@ -609,20 +609,20 @@ small {
 }
 
 a {
-  color: #2ba6cb;
+  color: #d12329;
   text-decoration: none;
 }
 
 a:hover {
-  color: #2284a1 !important;
+  color: #bb1f25 !important;
 }
 
 a:active {
-  color: #2284a1 !important;
+  color: #bb1f25 !important;
 }
 
 a:visited {
-  color: #2ba6cb !important;
+  color: #d12329 !important;
 }
 
 h1 a,
@@ -631,7 +631,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-  color: #2ba6cb;
+  color: #d12329;
 }
 
 h1 a:active,
@@ -640,7 +640,7 @@ h3 a:active,
 h4 a:active,
 h5 a:active,
 h6 a:active {
-  color: #2ba6cb !important;
+  color: #d12329 !important;
 }
 
 h1 a:visited,
@@ -649,7 +649,7 @@ h3 a:visited,
 h4 a:visited,
 h5 a:visited,
 h6 a:visited {
-  color: #2ba6cb !important;
+  color: #d12329 !important;
 }
 
 /* Panels */
@@ -687,8 +687,8 @@ table.large-button td {
   display: block;
   width: auto !important;
   text-align: center;
-  background: #2ba6cb;
-  border: 1px solid #196177;
+  background: #d12329;
+  border: 1px solid #7a1418;
   color: #ffffff;
   padding: 8px 0;
 }
@@ -744,7 +744,7 @@ table.large-button td a {
 table.button:hover td,
 table.button:visited td,
 table.button:active td {
-  background: #2284a1 !important;
+  background: #a51c20 !important;
 }
 
 table.button:hover td a,
@@ -758,7 +758,7 @@ table.tiny-button:hover td,
 table.small-button:hover td,
 table.medium-button:hover td,
 table.large-button:hover td {
-  background: #2284a1 !important;
+  background: #a51c20 !important;
 }
 
 table.button:hover td a,
@@ -835,17 +835,17 @@ body.outlook p {
 /*  Media Queries */
 
 .appleLinks a {
-  color: #2ba6cb;
+  color: #d12329;
   text-decoration: none;
 }
 
 .appleLinks a:hover,
 .appleLinks a:active {
-  color: #2284a1 !important;
+  color: #bb1f25 !important;
 }
 
 .appleLinks a:visited {
-  color: #2ba6cb !important;
+  color: #d12329 !important;
 }
 
 a[href^=tel] {
