@@ -990,6 +990,15 @@ table.large-button td {
   -premailer-width: auto;
 }
 
+.header td.wrapper {
+  padding-top: 0px;
+}
+
+.header table.columns td,
+.header table.column td {
+  padding-bottom: 0px;
+}
+
 @media only screen and (max-width: 720px) {
   table[class="body"] img {
     width: auto !important;
