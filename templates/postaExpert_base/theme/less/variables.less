@@ -1,1 +1,76 @@
 // extends theme's variables.less file here
+
+
+
+// Global values
+// --------------------------------------------------
+
+
+// Expert Infos
+// -------------------------
+@expertInfosRouge: #d12329;
+@expertInfosBleu: #4b606d;
+@expertInfosGris: #e6e8eb;
+
+
+// Main colors
+// -------------------------
+@colorCouleur1: @expertInfosRouge;
+@colorCouleur1Clair: lighten(@colorCouleur1, 25%);
+@colorCouleur1Moyen: darken(@colorCouleur1, 15%);
+@colorCouleur1Fonce: darken(@colorCouleur1, 30%);
+
+@colorCouleur2: @expertInfosBleu;
+@colorCouleur2Clair: lighten(@colorCouleur2, 20%);
+@colorCouleur2Moyen: darken(@colorCouleur2, 10%);
+@colorCouleur2Fonce: darken(@colorCouleur2, 25%);
+
+@colorCouleur3: #919191;
+@colorCouleur3Clair: lighten(@colorCouleur3, 35%);
+@colorCouleur3Moyen: lighten(@colorCouleur3, 20%);
+@colorCouleur3Fonce: darken(@colorCouleur3, 20%);
+
+
+// Scaffolding
+// -------------------------
+@bodyBackground: darken(@colorCouleur3, 10%);
+@containerBackground: #ffffff;
+@textColor: #333333;
+
+
+// Component sizing
+// -------------------------
+@headingsFontSizeH1:    28px;
+@headingsFontSizeH2:    26px;
+@headingsFontSizeH3:    20px;
+@headingsFontSizeH4:    16px;
+@headingsFontSizeH5:    15px;
+@headingsFontSizeH6:    14px;
+
+@fontSizeLarge:         (@baseFontSize * 1.30);  // ~18px
+@fontSizeSmall:         (@baseFontSize * 0.85);  // ~12px
+@fontSizeMini:          (@baseFontSize * 0.65);  // ~9px
+
+
+// Grid config
+// --------------------------------------------------
+@columnWidth: 60px;
+@gutterWidth: 0;
+
+
+// Padding config
+// --------------------------------------------------
+@wrapperPad: 20px;
+@wrapperPadCollapse: (@wrapperPad / 2);
+
+@columnPad: @wrapperPad;
+@columnPadCollapse: (@columnPad / 2);
+
+@blockGridPad: @wrapperPad;
+@blockGridPadCollapse: (@blockGridPad / 2);
+
+@panelPad: @wrapperPad;
+@panelPadCollapse: (@panelPad / 2);
+
+@textPad: (@wrapperPad * 2);
+@textPadCollapse: (@textPad / 2);
