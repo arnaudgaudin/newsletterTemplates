@@ -10,6 +10,12 @@
 	td.wrapper { padding-top: 0px; }
 	table.columns td, table.column td { padding-bottom: 0px; }
 }
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .header {
+		td.wrapper { padding-top: 0px !important; }
+		table.columns td, table.column td { padding-bottom: 0px !important; }
+	}
+}
 
 //tous les titres
 .title {
@@ -34,7 +40,7 @@
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentOnline {
 		td.wrapper { padding-top: @wrapperPadCollapse !important; }
-		table.columns td, table.column td { padding-bottom: @wrapperPadCollapse !important; }
+		table.columns td, table.column td { padding-bottom: @columnPadCollapse !important; }
 	}
 }
 
@@ -43,12 +49,31 @@
 // -------------------------
 .contentContact {
 	background-color: @colorCouleur3Clair;
+	//réduction décalage vertical en haut
+	td.wrapper { padding-top: (@wrapperPad / 2); }
+	table.columns td, table.column td { padding-bottom: 0; }
 }
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentContact {
+		td.wrapper { padding-top: @wrapperPadCollapse !important; }
+		table.columns td, table.column td { padding-bottom: 0 !important; }
+	}
+}
+
 
 // contentBtn area
 // -------------------------
 .contentBtn {
-	background-color: @colorCouleur3Clair;	
+	background-color: @colorCouleur3Clair;
+	//réduction décalage vertical en haut
+	td.wrapper { padding-top: (@wrapperPad / 2); }
+	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentBtn {
+		td.wrapper { padding-top: @wrapperPadCollapse !important; }
+		table.columns td, table.column td { padding-bottom: @columnPadCollapse !important; }
+	}
 }
 
 // contentSignature area
