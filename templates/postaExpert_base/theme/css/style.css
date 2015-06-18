@@ -999,6 +999,22 @@ table.large-button td {
   padding-bottom: 0px;
 }
 
+.title {
+  color: #d12329;
+}
+
+.title a {
+  color: #d12329;
+}
+
+.title a .important,
+.title a:visited,
+.title a:hover,
+.title a:focus,
+.title a:active {
+  color: #d12329 !important;
+}
+
 .contentOnline {
   background-color: #787878;
 }
