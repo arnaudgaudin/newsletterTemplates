@@ -19,9 +19,17 @@
 
 //tous les titres
 .title {
+	text-align: center;
 	color: @colorCouleur1;
 	a { .newsletterLinkColor(@colorCouleur1); }
+	
+	//rajout espacement après titre
+	& + * { padding-top: 10px; }
+}
 
+//chapeau
+.teaser {
+	font-weight: bold;
 }
 
 // contentOnline area

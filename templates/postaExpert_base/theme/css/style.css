@@ -1000,6 +1000,7 @@ table.large-button td {
 }
 
 .title {
+  text-align: center;
   color: #d12329;
 }
 
@@ -1013,6 +1014,14 @@ table.large-button td {
 .title a:focus,
 .title a:active {
   color: #d12329 !important;
+}
+
+.title + * {
+  padding-top: 10px;
+}
+
+.teaser {
+  font-weight: bold;
 }
 
 .contentOnline {
