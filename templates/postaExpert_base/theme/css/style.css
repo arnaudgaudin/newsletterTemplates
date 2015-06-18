@@ -999,6 +999,16 @@ table.large-button td {
   padding-bottom: 0px;
 }
 
+.contentSignature .signature {
+  vertical-align: middle;
+}
+
+.contentSignature .signature table.columns .text-pad,
+.contentSignature .signature table.column .text-pad {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
 @media only screen and (max-width: 720px) {
   table[class="body"] img {
     width: auto !important;
@@ -1159,5 +1169,15 @@ table.large-button td {
 
   table[class="container"] .panel {
     padding: 10px !important;
+  }
+
+  table[class="body"] .contentSignature .signature {
+    vertical-align: top !important;
+  }
+
+  table[class="body"] .contentSignature .signature table.columns .text-pad,
+  table[class="body"] .contentSignature .signature table.column .text-pad {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
   }
 }

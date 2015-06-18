@@ -10,3 +10,29 @@
 	td.wrapper { padding-top: 0px; }
 	table.columns td, table.column td { padding-bottom: 0px; }
 }
+
+
+// contentSignature area
+// -------------------------
+.contentSignature {
+
+	//suppression padding sur signature
+	.signature {
+		vertical-align: middle;
+		table.columns .text-pad, table.column .text-pad {
+			padding-left: 0 !important;
+			padding-right: 0 !important;
+		}
+	}
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentSignature {
+		.signature {
+			vertical-align: top !important;
+			table.columns .text-pad, table.column .text-pad {
+				padding-left: @textPadCollapse !important;
+				padding-right: @textPadCollapse !important;
+			}
+		}
+	}
+}
