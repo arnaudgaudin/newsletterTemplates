@@ -80,7 +80,10 @@ p {
 	table[class="body"] .contentALaUne {
 		td.wrapper { padding-top: 0px !important; }
 		table.columns td, table.column td { padding-bottom: 0px !important; }
-		table.subWrapper td { padding-top: (@wrapperPadCollapse / 2) !important; }
+		table.subWrapper td {
+			padding-top: @wrapperPadCollapse !important;
+			padding-bottom: @columnPadCollapse !important;
+		}
 	}
 }
 
