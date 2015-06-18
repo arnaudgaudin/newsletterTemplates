@@ -999,6 +999,42 @@ table.large-button td {
   padding-bottom: 0px;
 }
 
+.contentOnline {
+  background-color: #787878;
+}
+
+.contentOnline,
+.contentOnline td,
+.contentOnline .inner {
+  color: #bbbbbb;
+}
+
+.contentOnline a {
+  color: #bbbbbb;
+}
+
+.contentOnline a .important,
+.contentOnline a:visited,
+.contentOnline a:hover,
+.contentOnline a:focus,
+.contentOnline a:active {
+  color: #bbbbbb !important;
+}
+
+.contentOnline td {
+  font-size: 11.9px;
+  line-height: 14.875px;
+}
+
+.contentOnline td.wrapper {
+  padding-top: 10px;
+}
+
+.contentOnline table.columns td,
+.contentOnline table.column td {
+  padding-bottom: 10px;
+}
+
 .contentContact {
   background-color: #eaeaea;
 }
@@ -1015,6 +1051,42 @@ table.large-button td {
 .contentSignature .signature table.column .text-pad {
   padding-left: 0 !important;
   padding-right: 0 !important;
+}
+
+.footer {
+  background-color: #787878;
+}
+
+.footer,
+.footer td,
+.footer .inner {
+  color: #bbbbbb;
+}
+
+.footer a {
+  color: #bbbbbb;
+}
+
+.footer a .important,
+.footer a:visited,
+.footer a:hover,
+.footer a:focus,
+.footer a:active {
+  color: #bbbbbb !important;
+}
+
+.footer td {
+  font-size: 11.9px;
+  line-height: 14.875px;
+}
+
+.footer td.wrapper {
+  padding-top: 10px;
+}
+
+.footer table.columns td,
+.footer table.column td {
+  padding-bottom: 10px;
 }
 
 @media only screen and (max-width: 720px) {
@@ -1179,6 +1251,15 @@ table.large-button td {
     padding: 10px !important;
   }
 
+  table[class="body"] .contentOnline td.wrapper {
+    padding-top: 10px !important;
+  }
+
+  table[class="body"] .contentOnline table.columns td,
+  table[class="body"] .contentOnline table.column td {
+    padding-bottom: 10px !important;
+  }
+
   table[class="body"] .contentSignature .signature {
     vertical-align: top !important;
   }
@@ -1187,5 +1268,14 @@ table.large-button td {
   table[class="body"] .contentSignature .signature table.column .text-pad {
     padding-left: 20px !important;
     padding-right: 20px !important;
+  }
+
+  table[class="body"] .footer td.wrapper {
+    padding-top: 10px !important;
+  }
+
+  table[class="body"] .footer table.columns td,
+  table[class="body"] .footer table.column td {
+    padding-bottom: 10px !important;
   }
 }

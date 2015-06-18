@@ -11,6 +11,28 @@
 	table.columns td, table.column td { padding-bottom: 0px; }
 }
 
+
+// contentOnline area
+// -------------------------
+.contentOnline {
+	background-color: @bodyBackground;
+	.newsletterInnerTextColor(mix(@bodyBackground, #ffffff, 50%));
+	td {
+		font-size: @fontSizeSmall;
+		line-height: (@fontSizeSmall * 1.25);
+	}
+	//réduction décalage vertical en haut
+	td.wrapper { padding-top: (@wrapperPad / 2); }
+	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentOnline {
+		td.wrapper { padding-top: @wrapperPadCollapse !important; }
+		table.columns td, table.column td { padding-bottom: @wrapperPadCollapse !important; }
+	}
+}
+
+
 // contentContact area
 // -------------------------
 .contentContact {
@@ -45,5 +67,25 @@
 				padding-right: @textPadCollapse !important;
 			}
 		}
+	}
+}
+
+// footer area
+// -------------------------
+.footer {
+	background-color: @bodyBackground;
+	.newsletterInnerTextColor(mix(@bodyBackground, #ffffff, 50%));
+	td {
+		font-size: @fontSizeSmall;
+		line-height: (@fontSizeSmall * 1.25);
+	}
+	//réduction décalage vertical en haut
+	td.wrapper { padding-top: (@wrapperPad / 2); }
+	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .footer {
+		td.wrapper { padding-top: @wrapperPadCollapse !important; }
+		table.columns td, table.column td { padding-bottom: @wrapperPadCollapse !important; }
 	}
 }
