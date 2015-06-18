@@ -27,10 +27,20 @@
 	& + * { padding-top: 10px; }
 }
 
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1.1;
+}
+
+p {
+	margin-bottom: 0;
+	padding-bottom: 10px;
+}
+
 //chapeau
 .teaser {
 	font-weight: bold;
 }
+
 
 // contentOnline area
 // -------------------------
@@ -49,6 +59,28 @@
 	table[class="body"] .contentOnline {
 		td.wrapper { padding-top: @wrapperPadCollapse !important; }
 		table.columns td, table.column td { padding-bottom: @columnPadCollapse !important; }
+	}
+}
+
+
+// contentALaUne area
+// -------------------------
+.contentALaUne {
+	background-color: @colorCouleur3Clair;
+	.teaser { padding-bottom: 0; }
+
+	//suppression décalage en trop
+	td.wrapper { padding-top: 0px; }
+	table.columns td, table.column td { padding-bottom: 0px; }
+
+	//padding intérieur séparé pour Outlook
+	table.subWrapper td { padding-top: (@wrapperPad / 2); }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentALaUne {
+		td.wrapper { padding-top: 0px !important; }
+		table.columns td, table.column td { padding-bottom: 0px !important; }
+		table.subWrapper td { padding-top: (@wrapperPadCollapse / 2) !important; }
 	}
 }
 
@@ -84,10 +116,14 @@
 	}
 }
 
+
 // contentSignature area
 // -------------------------
 .contentSignature {
-
+	td {
+		font-size: @fontSizeSmall;
+		line-height: (@fontSizeSmall * 1.25);
+	}
 	//suppression padding sur signature
 	.signature {
 		vertical-align: middle;
@@ -97,17 +133,43 @@
 		}
 	}
 }
+.contentSignature, .contentBottom {
+	td.wrapper { padding-top: (@wrapperPad / 2); }
+	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+}
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
-	table[class="body"] .contentSignature {
-		.signature {
-			vertical-align: top !important;
-			table.columns .text-pad, table.column .text-pad {
-				padding-left: @textPadCollapse !important;
-				padding-right: @textPadCollapse !important;
+	table[class="body"] {
+		.contentSignature {
+			.signature {
+				vertical-align: top !important;
+				table.columns .text-pad, table.column .text-pad {
+					padding-left: @textPadCollapse !important;
+					padding-right: @textPadCollapse !important;
+				}
 			}
+		}
+		.contentSignature, .contentBottom {
+			td.wrapper { padding-top: @wrapperPadCollapse !important; }
+			table.columns td, table.column td { padding-bottom: @columnPadCollapse !important; }
 		}
 	}
 }
+
+
+// contentBottom area
+// -------------------------
+.contentBottom {
+	td {
+		font-size: @fontSizeSmall;
+		line-height: (@fontSizeSmall * 1.25);
+	}
+
+	a.link_map {
+		color:inherit;
+  		text-decoration:none;
+	}
+}
+
 
 // footer area
 // -------------------------
