@@ -4,7 +4,7 @@
 
 body,
 table.body {
-  background-color: #787878;
+  background-color: #efefef;
 }
 
 /**********************************************
@@ -1039,17 +1039,17 @@ p {
 }
 
 .contentOnline {
-  background-color: #787878;
+  background-color: #efefef;
 }
 
 .contentOnline,
 .contentOnline td,
 .contentOnline .inner {
-  color: #bbbbbb;
+  color: #a3a3a3;
 }
 
 .contentOnline a {
-  color: #bbbbbb;
+  color: #a3a3a3;
 }
 
 .contentOnline a .important,
@@ -1057,7 +1057,7 @@ p {
 .contentOnline a:hover,
 .contentOnline a:focus,
 .contentOnline a:active {
-  color: #bbbbbb !important;
+  color: #a3a3a3 !important;
 }
 
 .contentOnline td {
@@ -1075,7 +1075,7 @@ p {
 }
 
 .contentALaUne {
-  background-color: #eaeaea;
+  background-color: #e5e5e5;
 }
 
 .contentALaUne .teaser {
@@ -1096,7 +1096,7 @@ p {
 }
 
 .contentContact {
-  background-color: #eaeaea;
+  background-color: #e5e5e5;
 }
 
 .contentContact td.wrapper {
@@ -1109,7 +1109,7 @@ p {
 }
 
 .contentBtn {
-  background-color: #eaeaea;
+  background-color: #e5e5e5;
 }
 
 .contentBtn td.wrapper {
@@ -1159,17 +1159,17 @@ p {
 }
 
 .footer {
-  background-color: #787878;
+  background-color: #efefef;
 }
 
 .footer,
 .footer td,
 .footer .inner {
-  color: #bbbbbb;
+  color: #a3a3a3;
 }
 
 .footer a {
-  color: #bbbbbb;
+  color: #a3a3a3;
 }
 
 .footer a .important,
@@ -1177,7 +1177,7 @@ p {
 .footer a:hover,
 .footer a:focus,
 .footer a:active {
-  color: #bbbbbb !important;
+  color: #a3a3a3 !important;
 }
 
 .footer td {

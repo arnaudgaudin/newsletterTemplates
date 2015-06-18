@@ -46,7 +46,7 @@ p {
 // -------------------------
 .contentOnline {
 	background-color: @bodyBackground;
-	.newsletterInnerTextColor(mix(@bodyBackground, #ffffff, 50%));
+	.newsletterInnerTextColor(darken(@bodyBackground, 30%));
 	td {
 		font-size: @fontSizeSmall;
 		line-height: (@fontSizeSmall * 1.25);
@@ -66,7 +66,7 @@ p {
 // contentALaUne area
 // -------------------------
 .contentALaUne {
-	background-color: @colorCouleur3Clair;
+	background-color: darken(@bodyBackground, 4%);
 	.teaser { padding-bottom: 0; }
 
 	//suppression décalage en trop
@@ -91,7 +91,7 @@ p {
 // contentContact area
 // -------------------------
 .contentContact {
-	background-color: @colorCouleur3Clair;
+	background-color: darken(@bodyBackground, 4%);
 	//réduction décalage vertical en haut
 	td.wrapper { padding-top: (@wrapperPad / 2); }
 	table.columns td, table.column td { padding-bottom: 0; }
@@ -107,7 +107,7 @@ p {
 // contentBtn area
 // -------------------------
 .contentBtn {
-	background-color: @colorCouleur3Clair;
+	background-color: darken(@bodyBackground, 4%);
 	//réduction décalage vertical en haut
 	td.wrapper { padding-top: (@wrapperPad / 2); }
 	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
@@ -178,7 +178,7 @@ p {
 // -------------------------
 .footer {
 	background-color: @bodyBackground;
-	.newsletterInnerTextColor(mix(@bodyBackground, #ffffff, 50%));
+	.newsletterInnerTextColor(darken(@bodyBackground, 30%));
 	td {
 		font-size: @fontSizeSmall;
 		line-height: (@fontSizeSmall * 1.25);
