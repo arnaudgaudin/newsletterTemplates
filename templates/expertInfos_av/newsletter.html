@@ -134,7 +134,7 @@ tracking_url = "fintrack=&amp;rep="&repertoire_ei&"&amp;url_site_exp="&url_site_
     <meta name="robots" content="noindex" />
     <link rel="stylesheet" type="text/css" media="all" href="theme/css/style.css" /><title>Newsletter bimensuelle du <!--{{%%{{=get_date}}%%}}--><!--DEL{{-->get_date<!--}}DEL--></title>
 </head>
-<body>
+<body bgcolor="##((nlBodyBackground))##">
 <style type="text/css" data-premailer="ignore">
 @media only screen and (max-width: 720px) {
   @-moz-document url-prefix() {
@@ -143,11 +143,84 @@ tracking_url = "fintrack=&amp;rep="&repertoire_ei&"&amp;url_site_exp="&url_site_
 }
 /*DEL{{*/img[src*="%%{{"], img[src*="}}%%"], [data-type^="get"], .-premailer-hidden { display: none !important; visibility: hidden !important; }/*}}DEL*/
 </style>
-	<table border="0" class="body">
+	<table border="0" class="body" bgcolor="##((nlBodyBackground))##" id="backgroundTable">
 		<tr>
 			<td class="center" align="center" valign="top">
 				<center>
-					<!-- Email Content -->
+					<table border="0" class="container">
+						<tr>
+							<td>
+
+								<!-- ONLINE START -->
+								<table border="0" class="row contentOnline" bgcolor="##((nlCntOnlineBackground))##">
+									<tr>
+										<td class="wrapper last">
+											<table border="0" class="twelve columns">
+												<tr>
+													<td class="text-pad center">
+														<!--{{%%{{ if isOnline=False then }}%%}}-->
+														<!--{{<gab_lien_message_online>}}-->
+														<span class="online">
+															<small>Pour visualiser ce message en ligne, <a target="_blank" class="link_underline" href="%%{{=online_url}}%%&amp;%%{{=tracking_url}}%%"><span class="important">suivez ce lien</span></a>.</small>
+														</span>
+														<!--{{</gab_lien_message_online>}}-->
+														<!--{{%%{{ end if }}%%}}-->
+														<br/><span class="name"><strong><!--{{%%{{=civilite}}%%}}--><!--DEL{{-->civilite<!--}}DEL-->&nbsp;<!--{{%%{{=nom_client}}%%}}--><!--DEL{{-->nom_client<!--}}DEL-->, votre newsletter du <a class="link_disabled" href="#"><span class="important"><!--{{%%{{=get_date}}%%}}--><!--DEL{{-->get_date<!--}}DEL--></span></a>.</strong></span>
+													</td>
+													<td class="expander" bgcolor="##((nlBodyBackground))##"></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+								<!-- ONLINE END -->
+								
+								<!--{{%%{{ if logo_groupement=True then }}%%}}-->
+								<!-- HEADER GROUPE START -->
+								<table border="0" class="row header" bgcolor="##((nlBodyBackground))##">
+									<tr>
+										<td class="wrapper last">
+											<table border="0" class="twelve columns">
+												<tr>
+													<td class="eight sub-columns first">
+														<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%?%%{{=tracking_url}}%%">
+															<img src="http://%%{{=url_site_exp}}%%/uploads/assets/header-newsletter-site.png" alt="Header Newsletter Site" width="480" height="96" /><!--DEL{{--><img src="http://lorempixel.com/960/192/city/" alt="NomCabinet" width="480" height="96" /><!--}}DEL-->
+														</a>
+													</td>
+													<td class="four sub-columns last">
+														<a target="_blank" class="link_box" href="http://%%{{=lien_groupement}}%%?%%{{=tracking_url}}%%">
+															<img src="http://%%{{=url_site_exp}}%%/uploads/assets/header-newsletter-groupe.png" alt="Header Newsletter Groupe" width="240" height="96" /><!--DEL{{--><img src="http://lorempixel.com/480/192/technics/" alt="NomCabinet" width="240" height="96" /><!--}}DEL-->
+														</a>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+								<!-- HEADER GROUPE END -->
+								<!--{{%%{{ else }}%%}}-->
+								<!-- HEADER START -->
+								<table border="0" class="row header" bgcolor="##((nlBodyBackground))##">
+								    <tr>
+								        <td class="wrapper last">
+								            <table border="0" class="twelve columns">
+								                <tr>
+								                    <td class="center">
+								                    	<a target="_blank" href="http://%%{{=url_site_exp}}%%?%%{{=tracking_url}}%%">
+								                            <img class="link_box center" src="http://%%{{=url_site_exp}}%%/uploads/assets/header-newsletter.png" alt="Header Newsletter" width="720" height="96" /><!--DEL{{--><img src="http://ec-tenor.expert-infos.com/uploads/assets/header-newsletter.png" width="720" height="96" alt="" /><!--}}DEL-->
+								                        </a>
+								                    </td>
+								                </tr>
+								            </table>
+								        </td>
+								    </tr>
+								</table>
+								<!-- HEADER END -->
+								<!--{{%%{{ end if }}%%}}-->
+
+							</td>
+						</tr>
+					</table>
 				</center>
 			</td>
 		</tr>
