@@ -297,7 +297,7 @@ body, table.body { background: none; }
 // contentOnline area
 // -------------------------
 .contentOnline {
-	-premailer-background: e("##((nlCntOnlineBackground))##");
+	&, td.expander { -premailer-background: e("##((nlCntOnlineBackground))##"); }
 	.newsletterInnerTextColor(e("##((nlCntOnlineText))##"));
 	.online {
 		color: e("##((nlCntOnlineText))##");
@@ -312,7 +312,7 @@ body, table.body { background: none; }
 // contentCabInform area
 // -------------------------
 .contentCabInform {
-	-premailer-background: e("##((nlCntCabBackground))##");
+	&, td.expander { -premailer-background: e("##((nlCntCabBackground))##"); }
 	.title {
 		color: e("##((nlCntCabTitle))##");
 		a { .newsletterLinkColor(e("##((nlCntCabTitle))##")); }
@@ -324,7 +324,7 @@ body, table.body { background: none; }
 // contentALaUne area
 // -------------------------
 .contentALaUne {
-	-premailer-background: e("##((nlCntUneBackground))##");
+	&, td.expander { -premailer-background: e("##((nlCntUneBackground))##"); }
 	.title {
 		color: e("##((nlCntUneTitle))##");
 		a { .newsletterLinkColor(e("##((nlCntUneTitle))##")); }
@@ -348,7 +348,7 @@ body, table.body { background: none; }
 // -------------------------
 .contentBottom {
 	.agenda {
-		-premailer-background: e("##((nlCntAgdBackground))##");
+		&, td.expander { -premailer-background: e("##((nlCntAgdBackground))##"); }
 		.preTitle { color: e("##((nlCntAgdPreTitle))##"); }
 		.title {
 			color: e("##((nlCntAgdTitle))##");
@@ -359,7 +359,7 @@ body, table.body { background: none; }
 	}
 
 	.chiffre {
-		-premailer-background: e("##((nlCntChfBackground))##");
+		&, td.expander { -premailer-background: e("##((nlCntChfBackground))##"); }
 		.preTitle { color: e("##((nlCntChfPreTitle))##"); }
 		.title {
 			color: e("##((nlCntChfTitle))##");
@@ -386,7 +386,7 @@ body, table.body { background: none; }
 // contentContact area
 // -------------------------
 .contentContact {
-	-premailer-background: e("##((nlCntCctBackground))##");
+	&, td.expander { -premailer-background: e("##((nlCntCctBackground))##"); }
 	.newsletterInnerTextColor(e("##((nlCntCctText))##"));
 }
 
@@ -394,7 +394,7 @@ body, table.body { background: none; }
 // footer area
 // -------------------------
 .footer {
-	-premailer-background: e("##((nlFooterBackground))##");
+	&, td.expander { -premailer-background: e("##((nlFooterBackground))##"); }
 	.newsletterInnerTextColor(e("##((nlFooterText))##"));
 	small { color: e("##((nlFooterText))##"); }
 }
