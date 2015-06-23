@@ -6,6 +6,13 @@ lessc --group-css-media-queries ${PWD}/theme/less/style.less ${PWD}/theme/css/st
 # group-css-media-queries ${PWD}/theme/css/style.css ${PWD}/theme/css/style.css
 [ -f ${PWD}/theme/less/newsletter.less ] && lessc ${PWD}/theme/less/newsletter.less ${PWD}/theme/css/newsletter.css
 
+#preprocess html before premailer
+echo "preprocess newsletter.html ..."
+cp newsletter.html newsletter-preprocess.html
+
+#Remplacement des propriétés spécifiques pour les Newsletters
+perl -pi -e 's/nlbgcolor=/bgcolor=/g;' newsletter-preprocess.html
+
 #inline style in html
 echo "inlining newsletter.html ..."
 #doc premailer: http://rubydoc.info/gems/premailer/1.8.2/Premailer
@@ -14,7 +21,8 @@ echo "inlining newsletter.html ..."
 templateName=$(basename "$PWD")
 domain=http://newsletter-templates.lesechos-publishing.fr
 baseurl=$domain/templates/$templateName/
-premailer --base-url=$baseurl --entities --verbose ${PWD}/newsletter.html > ${PWD}/newsletter-inline.html
+premailer --base-url=$baseurl --entities --verbose ${PWD}/newsletter-preprocess.html > ${PWD}/newsletter-inline.html
+rm newsletter-preprocess.html
 
 #Désactivation des commentaires sur les balises Posta Nova
 echo "enabling PostaNova tags ..."
