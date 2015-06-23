@@ -334,6 +334,133 @@ tracking_url = "fintrack=&amp;rep="&repertoire_ei&"&amp;url_site_exp="&url_site_
 								</table>
 								<!-- ALAUNE END -->
 
+								<!-- ARTICLES START -->
+								<!--{{%%{{
+								if isDemo=True then
+									sql_Chapitre_Flash_Infos="SELECT * FROM CHAPITRES_FLASHS_INFOS where ID_FLASH_INFOS = "& ID_FLASH_INFOS &" order by ORDRE_CHAPITRE_FLASH_INFOS DESC"
+									set rs_Chapitre_Flash_Infos=conn.execute(sql_Chapitre_Flash_Infos)
+									                          
+									if not rs_Chapitre_Flash_Infos.eof then
+										while not rs_Chapitre_Flash_Infos.eof
+											idarticle_1=rs_Chapitre_Flash_Infos(0)
+											rs_Chapitre_Flash_Infos.movenext
+											if idarticle_1<>idarticleAlaune then
+												idarticle= idarticle_1 &"-"& idarticle
+											end if
+										wend
+									end if
+								end if
+
+								if isDemo=False then
+									idarticle=idarticle&"-"
+								end if
+
+								if idarticle="" then request.QueryString("amp;idarticle")
+								article=Mid(idarticle,1,(len(idarticle)))
+								nbc_desc=len(article)
+								k=1
+								i=1
+								
+				    			while k <= nbc_desc
+								carn=asc(Mid(article,k,1))
+								car=Mid(article,k,1)
+								if carn = 45 then
+									SQLArticle="SELECT * FROM CHAPITRES_FLASHS_INFOS WHERE (IDCHAPITRE_FLASH_INFOS = "& cart &")"
+									Set rsArticle=conn.Execute(SQLArticle)
+									id_de_larticle=mid(rsArticle("URL_DETAIL_INFO"),13,len(rsArticle("URL_DETAIL_INFO"))-16)
+									
+									SQLIdArticle="SELECT * FROM CHAPITRES_FLASHS_INFOS WHERE (IDCHAPITRE_FLASH_INFOS = "& cart &")"
+									Set rsIdArticle=conn.Execute(SQLIdArticle)
+									id_flash=rsIdArticle("ID_FLASH_INFOS")
+																						
+									CountArt="SELECT COUNT(*) FROM CHAPITRES_FLASHS_INFOS WHERE ID_FLASH_INFOS="& id_flash
+									set rsCountArt=conn.Execute(CountArt)
+									nbrart=rsCountArt(0)
+
+									article_url_v3 = rsArticle("URL_DETAIL_V3")
+									
+								    if (i<(nbrart-1)) then
+								}}%%}}-->
+								<table border="0" class="row contentArticles">
+									<tr>
+										<td class="wrapper first">
+											<table border="0" class="five columns">
+												<tr>
+													<td class="text-pad-left">
+														<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%&amp;%%{{=tracking_url}}%%">
+															<img src="http://e-newsletter.expert-infos.com/_infos/_photos/%%{{=id_de_larticle}}%%-h.jpg" width="290" height="133" alt="" /><!--DEL{{--><img src="http://lorempixel.com/1440/660/business/" width="290" height="133" alt="" /><!--}}DEL-->
+														</a>
+													</td>
+													<td class="expander" bgcolor="##((nlBodyBackground))##"></td>
+												</tr>
+											</table>
+										</td>
+										<td class="wrapper last">
+											<table border="0" class="seven columns">
+												<tr>
+													<td class="text-pad">
+														<h2 class="title">
+															<a target="_blank" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%&amp;%%{{=tracking_url}}%%">
+																<span class="icon-rsaquo">&rsaquo;</span>&#160;<!--{{%%{{=rsArticle("TITRE_CHAPITRE_FLASH_INFOS")}}%%}}--><!--DEL{{-->TITRE_CHAPITRE_FLASH_INFOS<!--}}DEL-->
+															</a>
+														</h2>
+														<a target="_blank" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%&amp;%%{{=tracking_url}}%%">
+															<span class="text"><!--{{%%{{=rsArticle("CONTENU_CHAPITRE_FLASH_INFOS")}}%%}}--><!--DEL{{-->CONTENU_CHAPITRE_FLASH_INFOS<!--}}DEL--></span>
+															<br /><span class="readMore">lire la suite</span>
+														</a>
+													</td>
+													<td class="expander" bgcolor="##((nlBodyBackground))##"></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+								<!--{{%%{{ else }}%%}}-->
+								<table border="0" class="row contentArticles last">
+									<tr>
+										<td class="wrapper first">
+											<table border="0" class="five columns">
+												<tr>
+													<td class="text-pad-left">
+														<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%&amp;%%{{=tracking_url}}%%">
+															<img src="http://e-newsletter.expert-infos.com/_infos/_photos/%%{{=id_de_larticle}}%%-h.jpg" width="290" height="133" alt="" /><!--DEL{{--><img src="http://lorempixel.com/1440/660/business/" width="290" height="133" alt="" /><!--}}DEL-->
+														</a>
+													</td>
+													<td class="expander" bgcolor="##((nlBodyBackground))##"></td>
+												</tr>
+											</table>
+										</td>
+										<td class="wrapper last">
+											<table border="0" class="seven columns">
+												<tr>
+													<td class="text-pad">
+														<h2 class="title">
+															<a target="_blank" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%&amp;%%{{=tracking_url}}%%">
+																<span class="icon-rsaquo">&rsaquo;</span>&#160;<!--{{%%{{=rsArticle("TITRE_CHAPITRE_FLASH_INFOS")}}%%}}--><!--DEL{{-->TITRE_CHAPITRE_FLASH_INFOS<!--}}DEL-->
+															</a>
+														</h2>
+														<a target="_blank" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%&amp;%%{{=tracking_url}}%%">
+															<span class="text"><!--{{%%{{=rsArticle("CONTENU_CHAPITRE_FLASH_INFOS")}}%%}}--><!--DEL{{-->CONTENU_CHAPITRE_FLASH_INFOS<!--}}DEL--></span>
+															<br /><span class="readMore">lire la suite</span>
+														</a>
+													</td>
+													<td class="expander" bgcolor="##((nlBodyBackground))##"></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+								<!--{{%%{{
+									end if 	
+									i=i+1
+										cart=""
+									else
+									    cart=cart+car
+									end if
+									k=k+1
+									wend
+								}}%%}}-->
+								<!-- ARTICLES END -->
 							</td>
 						</tr>
 					</table>
