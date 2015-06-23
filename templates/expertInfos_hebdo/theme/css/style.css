@@ -1382,8 +1382,7 @@ h6 a:visited {
 }
 
 body,
-table.body,
-table.container > tr > td > table.row > tr > td.wrapper > table.columns > tr > td.expander {
+table.body {
   -premailer-background: ##((nlBodyBackground))##;
 }
 
@@ -1396,7 +1395,8 @@ table.body {
   -premailer-background: ##((nlBodyBackground))##;
 }
 
-.contentOnline {
+.contentOnline,
+.contentOnline td.expander {
   -premailer-background: ##((nlCntOnlineBackground))##;
 }
 
@@ -1450,7 +1450,8 @@ table.body {
   color: ##((nlCntOnlineName))## !important;
 }
 
-.contentCabInform {
+.contentCabInform,
+.contentCabInform td.expander {
   -premailer-background: ##((nlCntCabBackground))##;
 }
 
@@ -1494,7 +1495,8 @@ table.body {
   color: ##((nlCntCabText))## !important;
 }
 
-.contentALaUne {
+.contentALaUne,
+.contentALaUne td.expander {
   -premailer-background: ##((nlCntUneBackground))##;
 }
 
@@ -1549,7 +1551,8 @@ table.body {
   color: ##((nlCntArtReadMore))##;
 }
 
-.contentBottom .agenda {
+.contentBottom .agenda,
+.contentBottom .agenda td.expander {
   -premailer-background: ##((nlCntAgdBackground))##;
 }
 
@@ -1595,7 +1598,8 @@ table.body {
   color: ##((nlCntAgdText))## !important;
 }
 
-.contentBottom .chiffre {
+.contentBottom .chiffre,
+.contentBottom .chiffre td.expander {
   -premailer-background: ##((nlCntChfBackground))##;
 }
 
@@ -1653,7 +1657,8 @@ table.body {
   color: ##((nlCntQtnPreTitle))##;
 }
 
-.contentContact {
+.contentContact,
+.contentContact td.expander {
   -premailer-background: ##((nlCntCctBackground))##;
 }
 
@@ -1675,7 +1680,8 @@ table.body {
   color: ##((nlCntCctText))## !important;
 }
 
-.footer {
+.footer,
+.footer td.expander {
   -premailer-background: ##((nlFooterBackground))##;
 }
 
