@@ -1193,7 +1193,6 @@ h6 {
 }
 
 .contentBottom table.round td {
-  background-color: #a00;
   padding: 5px;
   text-align: center;
   overflow: hidden;
@@ -1360,6 +1359,18 @@ table.body {
 
 .contentBottom table.round td {
   color: #ffffff;
+}
+
+.contentBottom .chiffre table.round td {
+  background-color: #79468c;
+}
+
+.contentBottom .question table.round td {
+  background-color: #919191;
+}
+
+.contentBottom .echeancier table.round td {
+  background-color: #4b606d;
 }
 
 @media only screen and (max-width: 720px) {
@@ -1533,6 +1544,10 @@ table.body {
     display: block !important;
     float: left !important;
     width: 60px !important;
+  }
+
+  table[class="body"] .contentBottom table.round td {
+    text-align: center !important;
   }
 
   table[class="body"] .contentBottom table.round,

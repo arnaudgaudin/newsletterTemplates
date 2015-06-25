@@ -142,7 +142,6 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 		}
 		
 		td {
-			background-color: #a00;
 			padding: 5px;
 			text-align: center;
 			overflow: hidden;
@@ -190,6 +189,7 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 		}
 
 		table.round {
+			td { text-align: center !important; }
 			&, td {
 				width: (@columnWidth - 10px) !important;
 				height: (@columnWidth - 10px) !important;
@@ -279,7 +279,18 @@ body, table.body {
 //créer nouvelles variables
 .contentBottom {
 	table.round td {
-		color: #ffffff;
+		color: #ffffff;	
+	}
+	.chiffre table.round td {
+		background-color: @colorCouleur1;
+
+	}
+	.question table.round td {
+		background-color: @colorCouleur3;
+		
+	}
+	.echeancier table.round td {
+		background-color: @colorCouleur2;
 	}
 }
 
