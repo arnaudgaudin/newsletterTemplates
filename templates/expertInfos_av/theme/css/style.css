@@ -1124,6 +1124,32 @@ h6 {
   border-bottom: 1px solid #79468c;
 }
 
+.faicons td {
+  text-align: right;
+}
+
+.faicon {
+  display: inline;
+  font-size: 0px;
+  mso-line-height-rule: exactly;
+  line-height: 0px;
+  padding: 0px 5px 5px 5px;
+}
+
+.faicon.first {
+  padding-left: 0px;
+}
+
+.faicon.last {
+  padding-right: 0px;
+}
+
+.faicon img {
+  background-color: #f00;
+  display: inline;
+  float: none;
+}
+
 @media only screen and (max-width: 720px) {
   table[class="body"] img {
     max-width: auto !important;
@@ -1274,5 +1300,10 @@ h6 {
 
   table[class="container"] .block-grid td {
     width: 100% !important;
+  }
+
+  table[class="body"] .faicon img {
+    width: 15px !important;
+    height: 15px !important;
   }
 }
