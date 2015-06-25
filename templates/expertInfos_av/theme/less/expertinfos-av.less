@@ -278,10 +278,12 @@ body, table.body {
 //décommenter pour finalisation
 // body, table.body { background: none; }
 
+
 // Header
 // -------------------------
 //pour supprimer toute zone blanche avant chargement header
 .header { background: @nlBodyBackground; }
+
 
 // contentOnline area
 // -------------------------
@@ -297,6 +299,7 @@ body, table.body {
 		a { .newsletterLinkColor(@nlCntOnlineName); }
 	}
 }
+
 
 // contentBottom area
 // -------------------------
@@ -318,3 +321,18 @@ body, table.body {
 	}
 }
 
+// contentContact area
+// -------------------------
+.contentContact {
+	&, td.expander { background: @nlCntCctBackground; }
+	.newsletterInnerTextColor(@nlCntCctText);
+}
+
+
+// footer area
+// -------------------------
+.footer {
+	&, td.expander { background: @nlFooterBackground; }
+	.newsletterInnerTextColor(@nlFooterText);
+	small { color: @nlFooterText; }
+}

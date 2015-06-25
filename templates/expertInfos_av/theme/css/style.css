@@ -1395,6 +1395,56 @@ table.body {
   background-color: #4b606d;
 }
 
+.contentContact,
+.contentContact td.expander {
+  background: #eaeaea;
+}
+
+.contentContact,
+.contentContact td,
+.contentContact .inner {
+  color: #333333;
+}
+
+.contentContact a {
+  color: #333333;
+}
+
+.contentContact a .important,
+.contentContact a:visited,
+.contentContact a:hover,
+.contentContact a:focus,
+.contentContact a:active {
+  color: #333333 !important;
+}
+
+.footer,
+.footer td.expander {
+  background: #787878;
+}
+
+.footer,
+.footer td,
+.footer .inner {
+  color: #ffffff;
+}
+
+.footer a {
+  color: #ffffff;
+}
+
+.footer a .important,
+.footer a:visited,
+.footer a:hover,
+.footer a:focus,
+.footer a:active {
+  color: #ffffff !important;
+}
+
+.footer small {
+  color: #ffffff;
+}
+
 @media only screen and (max-width: 720px) {
   table[class="body"] img {
     max-width: auto !important;
