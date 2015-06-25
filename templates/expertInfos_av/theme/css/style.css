@@ -1044,6 +1044,7 @@ h6 {
 }
 
 .preTitle {
+  background-color: #0f0;
   display: block;
   font-size: 12px;
   text-transform: uppercase;
@@ -1064,6 +1065,7 @@ h6 {
 }
 
 .title {
+  background-color: #f00;
   color: #000000;
   padding-bottom: 10px;
 }
@@ -1085,7 +1087,12 @@ h6 {
   padding-top: 10px;
 }
 
+.text {
+  background-color: #0ff;
+}
+
 .readMore {
+  background-color: #00f;
   text-align: right;
   font-size: 10.2px;
   margin: 0;

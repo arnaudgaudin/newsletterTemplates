@@ -26,6 +26,7 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 
 //sur titres
 .preTitle {
+	background-color: #0f0;
 	display: block;
 	font-size: 12px;
 	text-transform: uppercase;
@@ -36,6 +37,7 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 
 //tous les titres
 .title {
+	background-color: #f00;
 	color: #000000;
 	a { .newsletterLinkColor(#000000); }
 	padding-bottom: 10px;
@@ -43,8 +45,14 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 	.readMore + &, .readMore + * + & { padding-top: 10px; }
 }
 
+//tous les container de texte
+.text {
+	background-color: #0ff;
+}
+
 //lien de suivis
 .readMore {
+	background-color: #00f;
 	text-align: right;
 	font-size: @fontSizeSmall;
 	margin: 0;
