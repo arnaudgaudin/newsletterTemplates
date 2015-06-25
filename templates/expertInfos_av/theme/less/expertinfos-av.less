@@ -120,6 +120,30 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 	.name { display: block; }
 }
 
+// contentBottom area
+// -------------------------
+.contentBottom {
+	.title {
+		text-align: center;
+		padding-bottom: 5px;
+	}
+
+	//tableau arrondi
+	table.round {
+		table-layout: fixed;
+		&, td {
+			width: (@columnWidth - 20px);
+			height: (@columnWidth - 20px);
+		}
+		
+		td {
+			background-color: #a00;
+			padding: 10px;
+			overflow: hidden;
+		}
+	}
+}
+
 
 // DEFAULT COLORS
 // --------------------------------------------------
@@ -195,3 +219,5 @@ body, table.body {
 		a { .newsletterLinkColor(@nlCntOnlineName); }
 	}
 }
+
+

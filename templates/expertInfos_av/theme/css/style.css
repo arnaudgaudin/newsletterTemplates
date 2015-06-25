@@ -1173,6 +1173,27 @@ h6 {
   display: block;
 }
 
+.contentBottom .title {
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.contentBottom table.round {
+  table-layout: fixed;
+}
+
+.contentBottom table.round,
+.contentBottom table.round td {
+  width: 40px;
+  height: 40px;
+}
+
+.contentBottom table.round td {
+  background-color: #a00;
+  padding: 10px;
+  overflow: hidden;
+}
+
 .container {
   background-color: #ffffff;
 }
