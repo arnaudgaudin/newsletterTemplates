@@ -333,6 +333,30 @@ text-decoration: underline; cursor: pointer;
 a.link_underline:focus {
 text-decoration: underline; cursor: pointer;
 }
+.preTitle a:visited {
+color: #79468c !important;
+}
+.preTitle a:hover {
+color: #79468c !important;
+}
+.preTitle a:focus {
+color: #79468c !important;
+}
+.preTitle a:active {
+color: #79468c !important;
+}
+.title a:visited {
+color: #000000 !important;
+}
+.title a:hover {
+color: #000000 !important;
+}
+.title a:focus {
+color: #000000 !important;
+}
+.title a:active {
+color: #000000 !important;
+}
 @media only screen and (max-width: 720px) {
   table[class="body"] img {
     max-width: auto !important; max-height: auto !important; width: auto !important; height: auto !important;
@@ -620,18 +644,18 @@ text-decoration: underline; cursor: pointer;
 											<table border="0" class="twelve columns" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 720px" width="720" cellpadding="0" cellspacing="0">
 												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 													<td class="text-pad" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px 10px 10px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
-														<span class="preTitle">Le cabinet vous informe</span>
+														<span class="preTitle" style="color: #79468c; display: block; font-size: 12px; padding-bottom: 5px; text-transform: uppercase">Le cabinet vous informe</span>
 														<%
 														lien_cab=rs("lien")
 														if (lien_cab <> "") then
 														%>
-														<h2 class="title" style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 19.8px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; word-break: normal" align="left"><a target="_blank" href="<%=lien_cab%>" style="color: #333333; text-decoration: none"><%=rs("titre")%></a></h2>
+														<h2 class="title" style="color: #000000; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 19.8px; margin: 0; mso-line-height-rule: exactly; padding: 0 0 10px; text-align: left; word-break: normal" align="left"><a target="_blank" href="<%=lien_cab%>" style="color: #000000; text-decoration: none"><%=rs("titre")%></a></h2>
 														<a target="_blank" class="link_box" href="<%=lien_cab%>" style="color: #333333; display: block; outline: none; text-decoration: none">
 															<span class="text"><%=rs("texte")%></span>
 															<br /><span class="readMore"><span class="icon-rsaquo">&#8250;</span>&#160;lire la suite</span>
 														</a>
 														<% else %>
-														<h2 class="title" style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 19.8px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; word-break: normal" align="left"><%=rs("titre")%></h2>
+														<h2 class="title" style="color: #000000; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 19.8px; margin: 0; mso-line-height-rule: exactly; padding: 0 0 10px; text-align: left; word-break: normal" align="left"><%=rs("titre")%></h2>
 														<span class="text"><%=rs("texte")%></span>
 														<% end if %>
 													</td>
@@ -677,9 +701,9 @@ text-decoration: underline; cursor: pointer;
 														<table border="0" class="subWrapper" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top" cellpadding="0" cellspacing="0">
 															<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 																<td class="text-pad" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px 10px 10px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
-																	<span class="preTitle">&#192; la une</span>
-																	<h1 class="title" style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 22px; font-weight: normal; line-height: 24.2px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; word-break: normal" align="left">
-																		<a target="_blank" href="http://<%=url_site_exp%>/<%=article_une_url_v3%>&amp;<%=tracking_url%>" style="color: #333333; text-decoration: none">
+																	<span class="preTitle" style="color: #79468c; display: block; font-size: 12px; padding-bottom: 5px; text-transform: uppercase">&#192; la une</span>
+																	<h1 class="title" style="color: #000000; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 22px; font-weight: normal; line-height: 24.2px; margin: 0; mso-line-height-rule: exactly; padding: 0 0 10px; text-align: left; word-break: normal" align="left">
+																		<a target="_blank" href="http://<%=url_site_exp%>/<%=article_une_url_v3%>&amp;<%=tracking_url%>" style="color: #000000; text-decoration: none">
 																			<span class="category">RUBRIQUE_FLASH_INFOS</span> <%=rsArticleAlaune("TITRE_CHAPITRE_FLASH_INFOS")%>
 																		</a>
 																	</h1>
@@ -755,9 +779,9 @@ text-decoration: underline; cursor: pointer;
 											<table border="0" class="twelve columns" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 720px" width="720" cellpadding="0" cellspacing="0">
 												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 													<td class="text-pad" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px 10px 10px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
-														<span class="preTitle">Autres actualit&#233;s</span>
-														<h2 class="title" style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 19.8px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; word-break: normal" align="left">
-															<a target="_blank" href="http://<%=url_site_exp%>/<%=article_url_v3%>&amp;<%=tracking_url%>" style="color: #333333; text-decoration: none">
+														<span class="preTitle" style="color: #79468c; display: block; font-size: 12px; padding-bottom: 5px; text-transform: uppercase">Autres actualit&#233;s</span>
+														<h2 class="title" style="color: #000000; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 19.8px; margin: 0; mso-line-height-rule: exactly; padding: 0 0 10px; text-align: left; word-break: normal" align="left">
+															<a target="_blank" href="http://<%=url_site_exp%>/<%=article_url_v3%>&amp;<%=tracking_url%>" style="color: #000000; text-decoration: none">
 																<span class="category">RUBRIQUE_FLASH_INFOS</span> <%=rsArticle("TITRE_CHAPITRE_FLASH_INFOS")%>
 															</a>
 														</h2>
@@ -779,8 +803,8 @@ text-decoration: underline; cursor: pointer;
 											<table border="0" class="twelve columns" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 720px" width="720" cellpadding="0" cellspacing="0">
 												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 													<td class="text-pad" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px 10px 10px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
-														<h2 class="title" style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 19.8px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; word-break: normal" align="left">
-															<a target="_blank" href="http://<%=url_site_exp%>/<%=article_url_v3%>&amp;<%=tracking_url%>" style="color: #333333; text-decoration: none">
+														<h2 class="title" style="color: #000000; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 19.8px; margin: 0; mso-line-height-rule: exactly; padding: 0 0 10px; text-align: left; word-break: normal" align="left">
+															<a target="_blank" href="http://<%=url_site_exp%>/<%=article_url_v3%>&amp;<%=tracking_url%>" style="color: #000000; text-decoration: none">
 																<span class="category">RUBRIQUE_FLASH_INFOS</span> <%=rsArticle("TITRE_CHAPITRE_FLASH_INFOS")%>
 															</a>
 														</h2>
@@ -802,8 +826,8 @@ text-decoration: underline; cursor: pointer;
 											<table border="0" class="twelve columns" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 720px" width="720" cellpadding="0" cellspacing="0">
 												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 													<td class="text-pad" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px 10px 10px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
-														<h2 class="title" style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 19.8px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; word-break: normal" align="left">
-															<a target="_blank" href="http://<%=url_site_exp%>/<%=article_url_v3%>&amp;<%=tracking_url%>" style="color: #333333; text-decoration: none">
+														<h2 class="title" style="color: #000000; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 19.8px; margin: 0; mso-line-height-rule: exactly; padding: 0 0 10px; text-align: left; word-break: normal" align="left">
+															<a target="_blank" href="http://<%=url_site_exp%>/<%=article_url_v3%>&amp;<%=tracking_url%>" style="color: #000000; text-decoration: none">
 																<span class="category">RUBRIQUE_FLASH_INFOS</span> <%=rsArticle("TITRE_CHAPITRE_FLASH_INFOS")%>
 															</a>
 														</h2>
@@ -844,7 +868,7 @@ text-decoration: underline; cursor: pointer;
 																</td>
 															</tr>
 														</table>
-														<h4 class="title" style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 15.4px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; word-break: normal" align="left">Le chiffre</h4>
+														<h4 class="title" style="color: #000000; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 15.4px; margin: 0; mso-line-height-rule: exactly; padding: 0 0 10px; text-align: left; word-break: normal" align="left">Le chiffre</h4>
 														<div class="text">
 															Indice trimestriel du co&#251;t de la construction
 														</div>
@@ -863,7 +887,7 @@ text-decoration: underline; cursor: pointer;
 																</td>
 															</tr>
 														</table>
-														<h4 class="title" style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 15.4px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; word-break: normal" align="left">La question</h4>
+														<h4 class="title" style="color: #000000; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 15.4px; margin: 0; mso-line-height-rule: exactly; padding: 0 0 10px; text-align: left; word-break: normal" align="left">La question</h4>
 														<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quis, provident explicabo.</div>
 													</td>
 												</tr>
@@ -880,7 +904,7 @@ text-decoration: underline; cursor: pointer;
 																</td>
 															</tr>
 														</table>
-														<h4 class="title" style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 15.4px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; word-break: normal" align="left">Le&#160;rappel</h4>
+														<h4 class="title" style="color: #000000; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 15.4px; margin: 0; mso-line-height-rule: exactly; padding: 0 0 10px; text-align: left; word-break: normal" align="left">Le&#160;rappel</h4>
 														<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quis, provident explicabo.</div>
 													</td>
 												</tr>
