@@ -128,6 +128,11 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 		padding-bottom: 5px;
 	}
 
+	//suppression sous padding
+	table.wrapper-text td {
+		padding-bottom: 0;
+	}
+
 	//tableau arrondi
 	table.round {
 		table-layout: fixed;
@@ -140,6 +145,29 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 			background-color: #a00;
 			padding: 10px;
 			overflow: hidden;
+		}
+	}
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentBottom {
+		td { &, .title { text-align: left !important; } }
+
+		td.wrapper-round {
+			padding-left: @textPadCollapse !important;
+			padding-right: @textPadCollapse !important;
+		}
+
+		center {
+			display: block !important;
+			float: left !important;
+			width: @columnWidth !important;
+		}
+
+		table.round {
+			&, td {
+				width: (@columnWidth - 20px) !important;
+				height: (@columnWidth - 20px) !important;
+			}
 		}
 	}
 }

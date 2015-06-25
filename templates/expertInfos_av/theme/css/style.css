@@ -1178,6 +1178,10 @@ h6 {
   padding-bottom: 5px;
 }
 
+.contentBottom table.wrapper-text td {
+  padding-bottom: 0;
+}
+
 .contentBottom table.round {
   table-layout: fixed;
 }
@@ -1483,5 +1487,27 @@ table.body {
   table[class="body"] .faicon img {
     width: 15px !important;
     height: 15px !important;
+  }
+
+  table[class="body"] .contentBottom td,
+  table[class="body"] .contentBottom td .title {
+    text-align: left !important;
+  }
+
+  table[class="body"] .contentBottom td.wrapper-round {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  table[class="body"] .contentBottom center {
+    display: block !important;
+    float: left !important;
+    width: 60px !important;
+  }
+
+  table[class="body"] .contentBottom table.round,
+  table[class="body"] .contentBottom table.round td {
+    width: 40px !important;
+    height: 40px !important;
   }
 }
