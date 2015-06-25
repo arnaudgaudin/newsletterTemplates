@@ -42,3 +42,12 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 	//on rajoute un padding de séparation lorsque précédé d'un readMore (utile pour articles)
 	.readMore + &, .readMore + * + & { padding-top: 10px; }
 }
+
+//lien de suivis
+.readMore {
+	text-align: right;
+	font-size: @fontSizeSmall;
+	margin: 0;
+	color: @colorCouleur1;
+	a { .newsletterLinkColor(@colorCouleur1); }
+}

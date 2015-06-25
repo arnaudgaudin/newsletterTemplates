@@ -1085,6 +1085,25 @@ h6 {
   padding-top: 10px;
 }
 
+.readMore {
+  text-align: right;
+  font-size: 10.2px;
+  margin: 0;
+  color: #79468c;
+}
+
+.readMore a {
+  color: #79468c;
+}
+
+.readMore a .important,
+.readMore a:visited,
+.readMore a:hover,
+.readMore a:focus,
+.readMore a:active {
+  color: #79468c !important;
+}
+
 @media only screen and (max-width: 720px) {
   table[class="body"] img {
     max-width: auto !important;
