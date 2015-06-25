@@ -353,63 +353,41 @@ tracking_url = "fintrack=&amp;rep="&repertoire_ei&"&amp;url_site_exp="&url_site_
 								if isDemo=False then
 									idarticle=idarticle&"-"
 								end if
-
-								if idarticle="" then request.QueryString("amp;idarticle")
-								article=Mid(idarticle,1,(len(idarticle)))
-								nbc_desc=len(article)
-								k=1
-								i=1
-								
-				    			while k <= nbc_desc
-								carn=asc(Mid(article,k,1))
-								car=Mid(article,k,1)
-								if carn = 45 then
-									SQLArticle="SELECT * FROM CHAPITRES_FLASHS_INFOS WHERE (IDCHAPITRE_FLASH_INFOS = "& cart &")"
-									Set rsArticle=conn.Execute(SQLArticle)
-									id_de_larticle=mid(rsArticle("URL_DETAIL_INFO"),13,len(rsArticle("URL_DETAIL_INFO"))-16)
-									
-									SQLIdArticle="SELECT * FROM CHAPITRES_FLASHS_INFOS WHERE (IDCHAPITRE_FLASH_INFOS = "& cart &")"
-									Set rsIdArticle=conn.Execute(SQLIdArticle)
-									id_flash=rsIdArticle("ID_FLASH_INFOS")
-																						
-									CountArt="SELECT COUNT(*) FROM CHAPITRES_FLASHS_INFOS WHERE ID_FLASH_INFOS="& id_flash
-									set rsCountArt=conn.Execute(CountArt)
-									nbrart=rsCountArt(0)
-
-									article_url_v3 = rsArticle("URL_DETAIL_V3")
-									
-								    if (i=1) then
 								}}%%}}-->
-								<table border="0" class="row contentArticles first">
-									<tr>
-										<td class="wrapper last">
-											<table border="0" class="twelve columns">
-												<tr>
-													<td class="text-pad">
-														<span class="preTitle">Autres actualités</span>
-														<h2 class="title">
-															<a target="_blank" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%&amp;%%{{=tracking_url}}%%">
-																<span class="category">RUBRIQUE_FLASH_INFOS</span> <!--{{%%{{=rsArticle("TITRE_CHAPITRE_FLASH_INFOS")}}%%}}--><!--DEL{{-->TITRE_CHAPITRE_FLASH_INFOS<!--}}DEL-->
-															</a>
-														</h2>
-														<a target="_blank" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%&amp;%%{{=tracking_url}}%%">
-															<span class="text"><!--{{%%{{=rsArticle("CONTENU_CHAPITRE_FLASH_INFOS")}}%%}}--><!--DEL{{-->CONTENU_CHAPITRE_FLASH_INFOS<!--}}DEL--></span>
-															<br /><span class="readMore">lire la suite</span>
-														</a>
-													</td>
-													<td class="expander"></td>
-												</tr>
-											</table>
-										</td>
-									</tr>
-								</table>
-								<!--{{%%{{ elseif (i<(nbrart-1)) then }}%%}}-->
 								<table border="0" class="row contentArticles">
 									<tr>
 										<td class="wrapper last">
 											<table border="0" class="twelve columns">
 												<tr>
 													<td class="text-pad">
+														<span class="preTitle">Autres actualités</span>
+														<!--{{%%{{
+														if idarticle="" then request.QueryString("amp;idarticle")
+														article=Mid(idarticle,1,(len(idarticle)))
+														nbc_desc=len(article)
+														k=1
+														i=1
+														
+										    			while k <= nbc_desc
+														carn=asc(Mid(article,k,1))
+														car=Mid(article,k,1)
+														if carn = 45 then
+															SQLArticle="SELECT * FROM CHAPITRES_FLASHS_INFOS WHERE (IDCHAPITRE_FLASH_INFOS = "& cart &")"
+															Set rsArticle=conn.Execute(SQLArticle)
+															id_de_larticle=mid(rsArticle("URL_DETAIL_INFO"),13,len(rsArticle("URL_DETAIL_INFO"))-16)
+															
+															SQLIdArticle="SELECT * FROM CHAPITRES_FLASHS_INFOS WHERE (IDCHAPITRE_FLASH_INFOS = "& cart &")"
+															Set rsIdArticle=conn.Execute(SQLIdArticle)
+															id_flash=rsIdArticle("ID_FLASH_INFOS")
+																												
+															CountArt="SELECT COUNT(*) FROM CHAPITRES_FLASHS_INFOS WHERE ID_FLASH_INFOS="& id_flash
+															set rsCountArt=conn.Execute(CountArt)
+															nbrart=rsCountArt(0)
+
+															article_url_v3 = rsArticle("URL_DETAIL_V3")
+															
+														    if (i=1) then
+														}}%%}}-->
 														<h2 class="title">
 															<a target="_blank" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%&amp;%%{{=tracking_url}}%%">
 																<span class="category">RUBRIQUE_FLASH_INFOS</span> <!--{{%%{{=rsArticle("TITRE_CHAPITRE_FLASH_INFOS")}}%%}}--><!--DEL{{-->TITRE_CHAPITRE_FLASH_INFOS<!--}}DEL-->
@@ -419,20 +397,7 @@ tracking_url = "fintrack=&amp;rep="&repertoire_ei&"&amp;url_site_exp="&url_site_
 															<span class="text"><!--{{%%{{=rsArticle("CONTENU_CHAPITRE_FLASH_INFOS")}}%%}}--><!--DEL{{-->CONTENU_CHAPITRE_FLASH_INFOS<!--}}DEL--></span>
 															<br /><span class="readMore">lire la suite</span>
 														</a>
-													</td>
-													<td class="expander"></td>
-												</tr>
-											</table>
-										</td>
-									</tr>
-								</table>
-								<!--{{%%{{ else }}%%}}-->
-								<table border="0" class="row contentArticles last">
-									<tr>
-										<td class="wrapper last">
-											<table border="0" class="twelve columns">
-												<tr>
-													<td class="text-pad">
+														<!--{{%%{{ elseif (i<(nbrart-1)) then }}%%}}-->
 														<h2 class="title">
 															<a target="_blank" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%&amp;%%{{=tracking_url}}%%">
 																<span class="category">RUBRIQUE_FLASH_INFOS</span> <!--{{%%{{=rsArticle("TITRE_CHAPITRE_FLASH_INFOS")}}%%}}--><!--DEL{{-->TITRE_CHAPITRE_FLASH_INFOS<!--}}DEL-->
@@ -442,6 +407,26 @@ tracking_url = "fintrack=&amp;rep="&repertoire_ei&"&amp;url_site_exp="&url_site_
 															<span class="text"><!--{{%%{{=rsArticle("CONTENU_CHAPITRE_FLASH_INFOS")}}%%}}--><!--DEL{{-->CONTENU_CHAPITRE_FLASH_INFOS<!--}}DEL--></span>
 															<br /><span class="readMore">lire la suite</span>
 														</a>
+														<!--{{%%{{ else }}%%}}-->
+														<h2 class="title">
+															<a target="_blank" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%&amp;%%{{=tracking_url}}%%">
+																<span class="category">RUBRIQUE_FLASH_INFOS</span> <!--{{%%{{=rsArticle("TITRE_CHAPITRE_FLASH_INFOS")}}%%}}--><!--DEL{{-->TITRE_CHAPITRE_FLASH_INFOS<!--}}DEL-->
+															</a>
+														</h2>
+														<a target="_blank" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%&amp;%%{{=tracking_url}}%%">
+															<span class="text"><!--{{%%{{=rsArticle("CONTENU_CHAPITRE_FLASH_INFOS")}}%%}}--><!--DEL{{-->CONTENU_CHAPITRE_FLASH_INFOS<!--}}DEL--></span>
+															<br /><span class="readMore">lire la suite</span>
+														</a>
+														<!--{{%%{{
+															end if 	
+															i=i+1
+																cart=""
+															else
+															    cart=cart+car
+															end if
+															k=k+1
+															wend
+														}}%%}}-->
 													</td>
 													<td class="expander"></td>
 												</tr>
@@ -449,16 +434,6 @@ tracking_url = "fintrack=&amp;rep="&repertoire_ei&"&amp;url_site_exp="&url_site_
 										</td>
 									</tr>
 								</table>
-								<!--{{%%{{
-									end if 	
-									i=i+1
-										cart=""
-									else
-									    cart=cart+car
-									end if
-									k=k+1
-									wend
-								}}%%}}-->
 								<!-- ARTICLES END -->
 
 								<!-- BOTTOM START -->
