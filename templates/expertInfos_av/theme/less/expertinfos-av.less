@@ -51,3 +51,22 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 	color: @colorCouleur1;
 	a { .newsletterLinkColor(@colorCouleur1); }
 }
+
+
+//gestion row avec bordures de séparation
+.row.bordered {
+	//suppression décalage en trop
+	td.wrapper { padding-top: 0px; }
+	table.columns td, table.column td { padding-bottom: 0px; }
+
+	td {
+		line-height: 0;
+		hr.border {
+			margin: 0;
+			//débuggage bordure pour PostaNova
+			background-color: transparent;
+			height: 0;
+			border-bottom: 1px solid @hrBorder;
+		}
+	}
+}

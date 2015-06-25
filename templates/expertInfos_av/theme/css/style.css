@@ -1104,6 +1104,26 @@ h6 {
   color: #79468c !important;
 }
 
+.row.bordered td.wrapper {
+  padding-top: 0px;
+}
+
+.row.bordered table.columns td,
+.row.bordered table.column td {
+  padding-bottom: 0px;
+}
+
+.row.bordered td {
+  line-height: 0;
+}
+
+.row.bordered td hr.border {
+  margin: 0;
+  background-color: transparent;
+  height: 0;
+  border-bottom: 1px solid #79468c;
+}
+
 @media only screen and (max-width: 720px) {
   table[class="body"] img {
     max-width: auto !important;
