@@ -378,8 +378,32 @@ tracking_url = "fintrack=&amp;rep="&repertoire_ei&"&amp;url_site_exp="&url_site_
 
 									article_url_v3 = rsArticle("URL_DETAIL_V3")
 									
-								    if (i<(nbrart-1)) then
+								    if (i=1) then
 								}}%%}}-->
+								<table border="0" class="row contentArticles first">
+									<tr>
+										<td class="wrapper last">
+											<table border="0" class="twelve columns">
+												<tr>
+													<td class="text-pad">
+														<span class="preTitle">Autres actualités</span>
+														<h2 class="title">
+															<a target="_blank" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%&amp;%%{{=tracking_url}}%%">
+																<span class="category">RUBRIQUE_FLASH_INFOS</span> <!--{{%%{{=rsArticle("TITRE_CHAPITRE_FLASH_INFOS")}}%%}}--><!--DEL{{-->TITRE_CHAPITRE_FLASH_INFOS<!--}}DEL-->
+															</a>
+														</h2>
+														<a target="_blank" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%&amp;%%{{=tracking_url}}%%">
+															<span class="text"><!--{{%%{{=rsArticle("CONTENU_CHAPITRE_FLASH_INFOS")}}%%}}--><!--DEL{{-->CONTENU_CHAPITRE_FLASH_INFOS<!--}}DEL--></span>
+															<br /><span class="readMore">lire la suite</span>
+														</a>
+													</td>
+													<td class="expander"></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+								<!--{{%%{{ elseif (i<(nbrart-1)) then }}%%}}-->
 								<table border="0" class="row contentArticles">
 									<tr>
 										<td class="wrapper last">
