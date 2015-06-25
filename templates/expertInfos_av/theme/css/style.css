@@ -1190,7 +1190,6 @@ h6 {
 .contentBottom table.round td {
   width: 50px;
   height: 50px;
-  line-height: 50px;
 }
 
 .contentBottom table.round td {
@@ -1201,15 +1200,28 @@ h6 {
 }
 
 .contentBottom .chiffre table.round td {
-  font-size: calc(88px / 4);
+  line-height: 50px;
+  font-size: 22px;
 }
 
 .contentBottom .question table.round td {
+  line-height: 50px;
   font-size: 50px;
 }
 
 .contentBottom .echeancier table.round td {
-  font-size: 25px;
+  line-height: 0;
+  text-transform: uppercase;
+}
+
+.contentBottom .echeancier table.round td .day {
+  line-height: 32px;
+  font-size: 32px;
+}
+
+.contentBottom .echeancier table.round td .month {
+  line-height: 18px;
+  font-size: 12px;
 }
 
 .container {

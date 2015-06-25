@@ -139,7 +139,6 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 		&, td {
 			width: (@columnWidth - 10px);
 			height: (@columnWidth - 10px);
-			line-height: (@columnWidth - 10px);
 		}
 		
 		td {
@@ -152,14 +151,27 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 
 	//différenciation des tailles
 	.chiffre table.round td {
-		//fonction calc en attendant
-		font-size: calc(~"88px / 4");
+		line-height: (@columnWidth - 10px);
+
+		//en dur en attendant VBSCRIPT
+		@chfNbr: 4;
+		font-size: (88px / @chfNbr);
 	}
 	.question table.round td {
+		line-height: (@columnWidth - 10px);
 		font-size: 50px;
 	}
 	.echeancier table.round td {
-		font-size: 25px;
+		line-height: 0;
+		text-transform: uppercase;
+		.day {
+			line-height: 32px;
+			font-size: 32px;
+		}
+		.month {
+			line-height: (@columnWidth - 10px - 32px);
+			font-size: 12px;
+		}
 	}
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
