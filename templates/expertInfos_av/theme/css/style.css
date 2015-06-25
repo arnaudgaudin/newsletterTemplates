@@ -1161,10 +1161,15 @@ h6 {
   padding-right: 0px;
 }
 
-.faicon img {
-  background-color: #f00;
+.faicon img,
+img.faicon {
   display: inline;
   float: none;
+}
+
+img.faicon {
+  padding: 2px;
+  vertical-align: top;
 }
 
 .contentOnline table.columns td,
