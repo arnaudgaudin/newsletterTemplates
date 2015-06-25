@@ -1150,6 +1150,29 @@ h6 {
   float: none;
 }
 
+.contentOnline table.columns td,
+.contentOnline table.column td {
+  mso-line-height-rule: exactly;
+  line-height: 0px;
+  font-size: 0px;
+}
+
+.contentOnline .online,
+.contentOnline .name {
+  mso-line-height-rule: exactly;
+  line-height: 16px;
+  font-size: 12px;
+}
+
+.contentOnline .online {
+  display: block;
+  padding-bottom: 5px;
+}
+
+.contentOnline .name {
+  display: block;
+}
+
 @media only screen and (max-width: 720px) {
   table[class="body"] img {
     max-width: auto !important;
