@@ -1082,6 +1082,10 @@ h6 {
   color: #000000 !important;
 }
 
+.title .category {
+  font-weight: normal;
+}
+
 * + .title {
   padding-top: 5px;
 }
@@ -1377,6 +1381,14 @@ table.body {
 .contentOnline .name a:focus,
 .contentOnline .name a:active {
   color: #ffffff !important;
+}
+
+.contentALaUne .title .category {
+  color: #4b606d;
+}
+
+.contentArticles .title .category {
+  color: #4b606d;
 }
 
 .contentBottom table.round td {

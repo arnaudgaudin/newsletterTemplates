@@ -40,6 +40,10 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 .title {
 	color: #000000;
 	a { .newsletterLinkColor(#000000); }
+
+	.category {
+		font-weight: normal;
+	}
 	
 	//décalage si précédé
 	* + & { padding-top: 5px; }
@@ -297,6 +301,24 @@ body, table.body {
 	.name {
 		color: @nlCntOnlineName;
 		a { .newsletterLinkColor(@nlCntOnlineName); }
+	}
+}
+
+
+// contentALaUne area
+// -------------------------
+.contentALaUne {
+	.title {
+		.category { color: @colorCouleur2; }
+	}
+}
+
+
+// contentArticles area
+// -------------------------
+.contentArticles {
+	.title {
+		.category { color: @colorCouleur2; }
 	}
 }
 
