@@ -99,11 +99,6 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 // contentOnline area
 // -------------------------
 .contentOnline {
-	//à variabiliser
-	&, td.expander { -premailer-background: e("##((nlCntOnlineBackground))##"); }
-	.newsletterInnerTextColor(e("##((nlCntOnlineText))##"));
-
-
 	//suppression fontSize et lineHeight pour débug Outlook
 	table.columns td, table.column td {
 		mso-line-height-rule: exactly;
@@ -163,4 +158,39 @@ a {
 // CUSTOM COLORS
 // --------------------------------------------------
 
+// remplacement à faire pour variabilisation
+// e("##((
+// @
+// ))##")
+// 
+// -premailer-background
+// background
 
+// Body
+// -------------------------
+body, table.body {
+	background: @nlBodyBackground;
+}
+
+//rajout pour suppression paramètre doublon via compiler
+body, table.body { background: none; }
+
+// Header
+// -------------------------
+//pour supprimer toute zone blanche avant chargement header
+.header { background: @nlBodyBackground; }
+
+// contentOnline area
+// -------------------------
+.contentOnline {
+	&, td.expander { background: @nlCntOnlineBackground; }
+	.newsletterInnerTextColor(@nlCntOnlineText);
+	.online {
+		color: @nlCntOnlineText;
+		a { .newsletterLinkColor(@nlCntOnlineText); }
+	}
+	.name {
+		color: @nlCntOnlineName;
+		a { .newsletterLinkColor(@nlCntOnlineName); }
+	}
+}

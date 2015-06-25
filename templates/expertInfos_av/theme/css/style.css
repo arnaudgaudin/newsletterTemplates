@@ -1150,29 +1150,6 @@ h6 {
   float: none;
 }
 
-.contentOnline,
-.contentOnline td.expander {
-  -premailer-background: ##((nlCntOnlineBackground))##;
-}
-
-.contentOnline,
-.contentOnline td,
-.contentOnline .inner {
-  color: ##((nlCntOnlineText))##;
-}
-
-.contentOnline a {
-  color: ##((nlCntOnlineText))##;
-}
-
-.contentOnline a .important,
-.contentOnline a:visited,
-.contentOnline a:hover,
-.contentOnline a:focus,
-.contentOnline a:active {
-  color: ##((nlCntOnlineText))## !important;
-}
-
 .contentOnline table.columns td,
 .contentOnline table.column td {
   mso-line-height-rule: exactly;
@@ -1264,6 +1241,75 @@ h6 a:visited {
 
 .appleLinks a:visited {
   color: #333333 !important;
+}
+
+body,
+table.body {
+  background: #787878;
+}
+
+body,
+table.body {
+  background: none;
+}
+
+.header {
+  background: #787878;
+}
+
+.contentOnline,
+.contentOnline td.expander {
+  background: #787878;
+}
+
+.contentOnline,
+.contentOnline td,
+.contentOnline .inner {
+  color: #ffffff;
+}
+
+.contentOnline a {
+  color: #ffffff;
+}
+
+.contentOnline a .important,
+.contentOnline a:visited,
+.contentOnline a:hover,
+.contentOnline a:focus,
+.contentOnline a:active {
+  color: #ffffff !important;
+}
+
+.contentOnline .online {
+  color: #ffffff;
+}
+
+.contentOnline .online a {
+  color: #ffffff;
+}
+
+.contentOnline .online a .important,
+.contentOnline .online a:visited,
+.contentOnline .online a:hover,
+.contentOnline .online a:focus,
+.contentOnline .online a:active {
+  color: #ffffff !important;
+}
+
+.contentOnline .name {
+  color: #ffffff;
+}
+
+.contentOnline .name a {
+  color: #ffffff;
+}
+
+.contentOnline .name a .important,
+.contentOnline .name a:visited,
+.contentOnline .name a:hover,
+.contentOnline .name a:focus,
+.contentOnline .name a:active {
+  color: #ffffff !important;
 }
 
 @media only screen and (max-width: 720px) {
