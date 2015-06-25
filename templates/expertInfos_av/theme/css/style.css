@@ -564,7 +564,7 @@ h4,
 h5,
 h6 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
+  font-weight: bold;
   color: #333333;
   word-break: normal;
 }
@@ -1150,6 +1150,29 @@ h6 {
   float: none;
 }
 
+.contentOnline,
+.contentOnline td.expander {
+  -premailer-background: ##((nlCntOnlineBackground))##;
+}
+
+.contentOnline,
+.contentOnline td,
+.contentOnline .inner {
+  color: ##((nlCntOnlineText))##;
+}
+
+.contentOnline a {
+  color: ##((nlCntOnlineText))##;
+}
+
+.contentOnline a .important,
+.contentOnline a:visited,
+.contentOnline a:hover,
+.contentOnline a:focus,
+.contentOnline a:active {
+  color: ##((nlCntOnlineText))## !important;
+}
+
 .contentOnline table.columns td,
 .contentOnline table.column td {
   mso-line-height-rule: exactly;
@@ -1171,6 +1194,76 @@ h6 {
 
 .contentOnline .name {
   display: block;
+}
+
+.container {
+  background-color: #ffffff;
+}
+
+body,
+table.body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+td {
+  color: #333333;
+}
+
+a {
+  color: #333333;
+}
+
+a:hover {
+  color: #333333 !important;
+}
+
+a:active {
+  color: #333333 !important;
+}
+
+a:visited {
+  color: #333333 !important;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: #333333;
+}
+
+h1 a:active,
+h2 a:active,
+h3 a:active,
+h4 a:active,
+h5 a:active,
+h6 a:active,
+h1 a:visited,
+h2 a:visited,
+h3 a:visited,
+h4 a:visited,
+h5 a:visited,
+h6 a:visited {
+  color: #333333 !important;
+}
+
+.appleLinks a {
+  color: #333333;
+}
+
+.appleLinks a:hover,
+.appleLinks a:active {
+  color: #333333 !important;
+}
+
+.appleLinks a:visited {
+  color: #333333 !important;
 }
 
 @media only screen and (max-width: 720px) {

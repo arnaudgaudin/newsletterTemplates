@@ -99,6 +99,11 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 // contentOnline area
 // -------------------------
 .contentOnline {
+	//à variabiliser
+	&, td.expander { -premailer-background: e("##((nlCntOnlineBackground))##"); }
+	.newsletterInnerTextColor(e("##((nlCntOnlineText))##"));
+
+
 	//suppression fontSize et lineHeight pour débug Outlook
 	table.columns td, table.column td {
 		mso-line-height-rule: exactly;
@@ -119,3 +124,43 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 	}
 	.name { display: block; }
 }
+
+
+// DEFAULT COLORS
+// --------------------------------------------------
+
+// Main container
+// -------------------------
+.container { background-color: @nlContainerBackground; }
+
+// Typography
+// -------------------------
+body, table.body, h1, h2, h3, h4, h5, h6, p, td {
+	color: @nlText;
+}
+
+// Links
+// -------------------------
+a {
+	color: @nlLinkColor;
+	&:hover { color: @nlLinkColorHover !important; }
+	&:active { color: @nlLinkColorHover !important; }
+	&:visited { color: @nlLinkColor !important; }
+
+	h1 &, h2 &, h3 &, h4 &, h5 &, h6 & {
+		color: @nlLinkColor;
+		&:active, &:visited { color: @nlLinkColor !important; }
+	}
+
+	.appleLinks & {
+		color: @nlLinkColor;
+		&:hover, &:active { color: @nlLinkColorHover !important; }
+		&:visited { color: @nlLinkColor !important; }
+	}
+}
+
+
+// CUSTOM COLORS
+// --------------------------------------------------
+
+
