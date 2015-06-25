@@ -137,15 +137,29 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 	table.round {
 		table-layout: fixed;
 		&, td {
-			width: (@columnWidth - 20px);
-			height: (@columnWidth - 20px);
+			width: (@columnWidth - 10px);
+			height: (@columnWidth - 10px);
+			line-height: (@columnWidth - 10px);
 		}
 		
 		td {
 			background-color: #a00;
-			padding: 10px;
+			padding: 5px;
+			text-align: center;
 			overflow: hidden;
 		}
+	}
+
+	//différenciation des tailles
+	.chiffre table.round td {
+		//fonction calc en attendant
+		font-size: calc(~"88px / 4");
+	}
+	.question table.round td {
+		font-size: 50px;
+	}
+	.echeancier table.round td {
+		font-size: 25px;
 	}
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
@@ -165,8 +179,8 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 
 		table.round {
 			&, td {
-				width: (@columnWidth - 20px) !important;
-				height: (@columnWidth - 20px) !important;
+				width: (@columnWidth - 10px) !important;
+				height: (@columnWidth - 10px) !important;
 			}
 		}
 	}
@@ -248,4 +262,12 @@ body, table.body {
 	}
 }
 
+// contentBottom area
+// -------------------------
+//créer nouvelles variables
+.contentBottom {
+	table.round td {
+		color: #ffffff;
+	}
+}
 
