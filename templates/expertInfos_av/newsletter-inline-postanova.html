@@ -639,6 +639,9 @@ color: #ffffff !important;
   table[class="body"] .faicon img {
     width: 15px !important; height: 15px !important;
   }
+  table[class="body"] img.faicon {
+    width: 15px !important; height: 15px !important;
+  }
   table[class="body"] .contentBottom td {
     text-align: left !important;
   }
@@ -1091,14 +1094,14 @@ color: #ffffff !important;
 														%></span></a>
 														<% if (len(trim(tel_cabinet)) > 1) then %>
 														<br />
-														<img class="faicon" src="http://www.expert-infos.com/_newsletter/_logos/faicon-phone.gif" alt="Twitter" width="15" height="15" style="-ms-interpolation-mode: bicubic; clear: both; display: inline; float: none; font-size: 0px; line-height: 0px; max-width: 100%; mso-line-height-rule: exactly; outline: none; padding: 2px; text-decoration: none; vertical-align: top; width: auto" align="none" /> T&#233;l. <span class="appleLinks"><a href="tel:<%=tel_cabinet%>" style="color: #333333; text-decoration: none"><span class="important"><%=tel_cabinet%></span></a></span>
+														<img class="faicon" src="http://www.expert-infos.com/_newsletter/_logos/faicon-phone.gif" alt="T&#233;l&#233;phone" width="15" height="15" style="-ms-interpolation-mode: bicubic; clear: both; display: inline; float: none; font-size: 0px; line-height: 0px; max-width: 100%; mso-line-height-rule: exactly; outline: none; padding: 2px; text-decoration: none; vertical-align: top; width: auto" align="none" />&#160;T&#233;l. <span class="appleLinks"><a href="tel:<%=tel_cabinet%>" style="color: #333333; text-decoration: none"><span class="important"><%=tel_cabinet%></span></a></span>
 														<% end if %>
 														<% if (len(trim(fax_cabinet)) > 1) then %>
-														&#160;-&#160;Fax&#160;: <a class="link_disabled" href="#" style="color: #333333; cursor: default !important; pointer-events: none !important; text-decoration: none !important"><span class="important"><%=fax_cabinet%></span></a>
+														&#160;-&#160;<img class="faicon" src="http://www.expert-infos.com/_newsletter/_logos/faicon-print.gif" alt="T&#233;l&#233;phone" width="15" height="15" style="-ms-interpolation-mode: bicubic; clear: both; display: inline; float: none; font-size: 0px; line-height: 0px; max-width: 100%; mso-line-height-rule: exactly; outline: none; padding: 2px; text-decoration: none; vertical-align: top; width: auto" align="none" />&#160;Fax&#160;: <a class="link_disabled" href="#" style="color: #333333; cursor: default !important; pointer-events: none !important; text-decoration: none !important"><span class="important"><%=fax_cabinet%></span></a>
 														<% end if %>
 
 														<br />
-														<img class="faicon" src="http://www.expert-infos.com/_newsletter/_logos/faicon-envelope.gif" alt="Twitter" width="15" height="15" style="-ms-interpolation-mode: bicubic; clear: both; display: inline; float: none; font-size: 0px; line-height: 0px; max-width: 100%; mso-line-height-rule: exactly; outline: none; padding: 2px; text-decoration: none; vertical-align: top; width: auto" align="none" /> <a class="link_underline" href="mailto:<%=email_exp%>" style="color: #333333; text-decoration: underline"><span class="important" style="text-decoration: underline !important"><%=email_exp%></span></a>
+														<img class="faicon" src="http://www.expert-infos.com/_newsletter/_logos/faicon-envelope.gif" alt="Email" width="15" height="15" style="-ms-interpolation-mode: bicubic; clear: both; display: inline; float: none; font-size: 0px; line-height: 0px; max-width: 100%; mso-line-height-rule: exactly; outline: none; padding: 2px; text-decoration: none; vertical-align: top; width: auto" align="none" />&#160;<a class="link_underline" href="mailto:<%=email_exp%>" style="color: #333333; text-decoration: underline"><span class="important" style="text-decoration: underline !important"><%=email_exp%></span></a>
 														-
 														<%
 														if type_abo="4" then

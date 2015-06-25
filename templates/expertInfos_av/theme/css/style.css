@@ -1547,7 +1547,8 @@ table.body {
     width: 100% !important;
   }
 
-  table[class="body"] .faicon img {
+  table[class="body"] .faicon img,
+  table[class="body"] img.faicon {
     width: 15px !important;
     height: 15px !important;
   }
