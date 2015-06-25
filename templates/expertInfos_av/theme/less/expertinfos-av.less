@@ -4,7 +4,7 @@
 // --------------------------------------------------
 
 
-//PropriÃ©tÃ©s mso-* utilisÃ©es dans Outlook
+//Propriétés mso-* utilisées dans Outlook
 //Debug outlook : http://www.verticalresponse.com/blog/its-not-you-its-outlook-the-complete-guide-for-email-marketers/
 
 // LAYOUT
@@ -19,7 +19,7 @@ h5 { line-height: (@headingsFontSizeH5 * 1.1); }
 h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 
 .header {
-	//suppression dÃ©calage en trop
+	//suppression décalage en trop
 	td.wrapper { padding-top: 0px; }
 	table.columns td, table.column td { padding-bottom: 0px; }
 }
@@ -39,7 +39,7 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 	color: #000000;
 	a { .newsletterLinkColor(#000000); }
 	padding-bottom: 10px;
-	//on rajoute un padding de sÃ©paration lorsque prÃ©cÃ©dÃ© d'un readMore (utile pour articles)
+	//on rajoute un padding de séparation lorsque précédé d'un readMore (utile pour articles)
 	.readMore + &, .readMore + * + & { padding-top: 10px; }
 }
 
@@ -53,9 +53,9 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 }
 
 
-//gestion row avec bordures de sÃ©paration
+//gestion row avec bordures de séparation
 .row.bordered {
-	//suppression dÃ©calage en trop
+	//suppression décalage en trop
 	td.wrapper { padding-top: 0px; }
 	table.columns td, table.column td { padding-bottom: 0px; }
 
@@ -63,10 +63,34 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 		line-height: 0;
 		hr.border {
 			margin: 0;
-			//dÃ©buggage bordure pour PostaNova
+			//débuggage bordure pour PostaNova
 			background-color: transparent;
 			height: 0;
 			border-bottom: 1px solid @hrBorder;
 		}
+	}
+}
+
+//réseaux sociaux
+.faicons td { text-align: right; }
+.faicon {
+	display: inline;
+	//pour supprimer les espaces
+	font-size: 0px;
+	mso-line-height-rule: exactly;
+	line-height: 0px;
+	padding: 0px 5px 5px 5px;
+	&.first { padding-left: 0px; }
+	&.last { padding-right: 0px; }
+	img {
+		background-color: #f00;
+		display: inline;
+		float: none;
+	}
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .faicon img {
+		width: 15px !important;
+		height: 15px !important;
 	}
 }
