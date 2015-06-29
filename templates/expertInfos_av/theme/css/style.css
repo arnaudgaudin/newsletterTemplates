@@ -1047,11 +1047,11 @@ h6 {
   display: block;
   font-size: 12px;
   text-transform: uppercase;
-  color: #79468c;
+  color: #c73b1b;
 }
 
 .preTitle a {
-  color: #79468c;
+  color: #c73b1b;
 }
 
 .preTitle a .important,
@@ -1059,7 +1059,7 @@ h6 {
 .preTitle a:hover,
 .preTitle a:focus,
 .preTitle a:active {
-  color: #79468c !important;
+  color: #c73b1b !important;
 }
 
 * + .preTitle {
@@ -1106,11 +1106,11 @@ h6 {
   text-align: right;
   font-size: 10.2px;
   margin: 0;
-  color: #79468c;
+  color: #c73b1b;
 }
 
 .readMore a {
-  color: #79468c;
+  color: #c73b1b;
 }
 
 .readMore a .important,
@@ -1118,7 +1118,7 @@ h6 {
 .readMore a:hover,
 .readMore a:focus,
 .readMore a:active {
-  color: #79468c !important;
+  color: #c73b1b !important;
 }
 
 * + .readMore {
