@@ -57,7 +57,9 @@ perl -pi -e 's/-premailer-height(.*?); //g;' newsletter-inline-postanova.html
 perl -pi -e 's/( ?)-premailer-hidden( ?)//g;' newsletter-inline-postanova.html
 
 #Suppression doublon résultant des -premailer-background sur body et table.body
-perl -pi -e 's/background: #(.*?)none; //g;' newsletter-inline-postanova.html
+perl -pi -e "s/background-image: url\('(.*?)-premailer-bgdebug'\);//g;" newsletter-inline-postanova.html
+perl -pi -e "s/background: #(.*?)-premailer-bgdebug'\); //g;" newsletter-inline-postanova.html
+perl -pi -e 's/background="(.*?)-premailer-bgdebug" //g;' newsletter-inline-postanova.html
 
 #Suppression des balises de récupération des styles
 perl -pi -e 's/<(.+?)data-type="getstyle" (.*?)style=/style=/g;' newsletter-inline-postanova.html
