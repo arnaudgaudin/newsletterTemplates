@@ -953,18 +953,21 @@ color: #ffffff !important;
 															set rsCountArt=conn.Execute(CountArt)
 															nbrart=rsCountArt(0)
 
+															article_url_v3 = rsArticle("URL_DETAIL_V3")
+															article_rub = ""
 															article_titre = rsArticle("TITRE_CHAPITRE_FLASH_INFOS")
-															'$${{Social}}$$Titre article'
+															
 															rub_start = (InStr(article_titre,"$${{") + 4)
 															rub_end = InStr(article_titre,"}}$$")
 															rub_len = (rub_end - rub_start)
-															article_rub = Mid(article_titre, rub_start, rub_len)
-															article_titre = Mid(article_titre, (rub_end + 4))
-															article_url_v3 = rsArticle("URL_DETAIL_V3")
+															if(rub_len > 0) then
+																article_rub = Mid(article_titre, rub_start, rub_len)
+																article_titre = Mid(article_titre, (rub_end + 4))
+															end if
 														}}%%}}-->
 														<h3 class="title" style="color: #000000; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 20px; font-weight: bold; line-height: 22px; margin: 0; mso-line-height-rule: exactly; padding: 5px 0 0; text-align: left; word-break: normal" align="left">
 															<a target="_blank" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%&amp;%%{{=tracking_url}}%%" style="color: #000000; text-decoration: none">
-																<span class="category" style="color: #4b606d; font-weight: normal"><!--{{%%{{=article_rub}}%%}}--><!--DEL{{-->article_rub<!--}}DEL--></span> <!--{{%%{{=article_titre}}%%}}--><!--DEL{{-->article_titre<!--}}DEL-->
+																<!--{{%%{{ if article_rub <> "" then }}%%}}--><span class="category" style="color: #4b606d; font-weight: normal"><!--{{%%{{=article_rub}}%%}}--><!--DEL{{-->article_rub<!--}}DEL-->.</span> <!--{{%%{{ end if }}%%}}--><!--{{%%{{=article_titre}}%%}}--><!--DEL{{-->article_titre<!--}}DEL-->
 															</a>
 														</h3>
 														<div class="text" style="padding-top: 5px">
