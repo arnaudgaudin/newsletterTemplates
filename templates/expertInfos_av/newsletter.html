@@ -400,12 +400,12 @@ tracking_url = "fintrack=&amp;rep="&repertoire_ei&"&amp;url_site_exp="&url_site_
 
 															article_titre = rsArticle("TITRE_CHAPITRE_FLASH_INFOS")
 															'$${{Social}}$$Titre article'
-															article_rub = 'recup_rub'
+															article_rub = "recup_rub"
 															article_url_v3 = rsArticle("URL_DETAIL_V3")
 														}}%%}}-->
 														<h3 class="title">
 															<a target="_blank" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%&amp;%%{{=tracking_url}}%%">
-																<span class="category">RUBRIQUE_FLASH_INFOS</span> <!--{{%%{{=rsArticle("TITRE_CHAPITRE_FLASH_INFOS")}}%%}}--><!--DEL{{-->TITRE_CHAPITRE_FLASH_INFOS<!--}}DEL-->
+																<span class="category"><!--{{%%{{=article_rub}}%%}}--><!--DEL{{-->RUBRIQUE_FLASH_INFOS<!--}}DEL--></span> <!--{{%%{{=rsArticle("TITRE_CHAPITRE_FLASH_INFOS")}}%%}}--><!--DEL{{-->TITRE_CHAPITRE_FLASH_INFOS<!--}}DEL-->
 															</a>
 														</h3>
 														<div class="text">

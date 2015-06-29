@@ -1,8 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <!-- flashinfos_av_mail_V3_resp.asp -->
 <!--{{%%{{
-'$${{Social}}$$Titre article'
-
 Set Conn = Server.CreateObject("ADODB.Connection")
 Conn.ConnectionString =  application("Base_Newsletter")
 Conn.Open
@@ -955,11 +953,14 @@ color: #ffffff !important;
 															set rsCountArt=conn.Execute(CountArt)
 															nbrart=rsCountArt(0)
 
+															article_titre = rsArticle("TITRE_CHAPITRE_FLASH_INFOS")
+															'$${{Social}}$$Titre article'
+															article_rub = "recup_rub"
 															article_url_v3 = rsArticle("URL_DETAIL_V3")
 														}}%%}}-->
 														<h3 class="title" style="color: #000000; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 20px; font-weight: bold; line-height: 22px; margin: 0; mso-line-height-rule: exactly; padding: 5px 0 0; text-align: left; word-break: normal" align="left">
 															<a target="_blank" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%&amp;%%{{=tracking_url}}%%" style="color: #000000; text-decoration: none">
-																<span class="category" style="color: #4b606d; font-weight: normal">RUBRIQUE_FLASH_INFOS</span> <!--{{%%{{=rsArticle("TITRE_CHAPITRE_FLASH_INFOS")}}%%}}--><!--DEL{{-->TITRE_CHAPITRE_FLASH_INFOS<!--}}DEL-->
+																<span class="category" style="color: #4b606d; font-weight: normal"><!--{{%%{{=article_rub}}%%}}--><!--DEL{{-->RUBRIQUE_FLASH_INFOS<!--}}DEL--></span> <!--{{%%{{=rsArticle("TITRE_CHAPITRE_FLASH_INFOS")}}%%}}--><!--DEL{{-->TITRE_CHAPITRE_FLASH_INFOS<!--}}DEL-->
 															</a>
 														</h3>
 														<div class="text" style="padding-top: 5px">
