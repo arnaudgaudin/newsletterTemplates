@@ -1324,6 +1324,11 @@ table.body {
   background: #787878;
 }
 
+body,
+table.body {
+  background-image: url("-premailer-bgdebug");
+}
+
 .header {
   background: #787878;
 }

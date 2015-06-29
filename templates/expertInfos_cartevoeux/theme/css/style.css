@@ -1399,7 +1399,7 @@ table.body {
 
 body,
 table.body {
-  background: none;
+  background-image: url("-premailer-bgdebug");
 }
 
 .header {
