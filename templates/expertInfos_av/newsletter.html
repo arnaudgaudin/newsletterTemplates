@@ -1,8 +1,6 @@
 <!-- flashinfos_av_mail_V3_resp.asp -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <!--{{%%{{
-'$${{Social}}$$Titre article'
-
 Set Conn = Server.CreateObject("ADODB.Connection")
 Conn.ConnectionString =  application("Base_Newsletter")
 Conn.Open
@@ -400,6 +398,8 @@ tracking_url = "fintrack=&amp;rep="&repertoire_ei&"&amp;url_site_exp="&url_site_
 															set rsCountArt=conn.Execute(CountArt)
 															nbrart=rsCountArt(0)
 
+															article_titre = rsArticle("TITRE_CHAPITRE_FLASH_INFOS")
+															article_rub = '$${{Social}}$$Titre article'
 															article_url_v3 = rsArticle("URL_DETAIL_V3")
 														}}%%}}-->
 														<h3 class="title">
