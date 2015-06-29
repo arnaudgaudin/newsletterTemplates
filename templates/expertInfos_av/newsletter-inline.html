@@ -861,6 +861,16 @@ color: #ffffff !important;
 									id_de_larticle=mid(rsArticleAlaune("URL_DETAIL_INFO"),13,len(rsArticleAlaune("URL_DETAIL_INFO"))-16)
 
 									article_une_url_v3 = rsArticleAlaune("URL_DETAIL_V3")
+									article_une_rub = ""
+									article_une_titre = rsArticleAlaune("TITRE_CHAPITRE_FLASH_INFOS")
+									
+									rub_une_start = (InStr(article_une_titre,"$${{") + 4)
+									rub_une_end = InStr(article_une_titre,"}}$$")
+									rub_une_len = (rub_une_end - rub_une_start)
+									if(rub_une_len > 0) then
+										article_une_rub = Mid(article_une_titre, rub_une_start, rub_une_len)
+										article_une_titre = Mid(article_une_titre, (rub_une_end + 4))
+									end if
 								}}%%}}-->
 								<table border="0" class="row contentALaUne" bgcolor="##((nlCntUneBackground))##" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%; border-collapse: collapse; border-spacing: 0; display: block; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px; text-align: left; vertical-align: top; width: 100%" width="100%" cellpadding="0" cellspacing="0">
 									<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
@@ -874,7 +884,7 @@ color: #ffffff !important;
 																	<div class="preTitle" style="color: #79468c; display: block; font-size: 12px; text-transform: uppercase">&#192; la une</div>
 																	<h2 class="title" style="color: #000000; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 26px; font-weight: bold; line-height: 28.6px; margin: 0; mso-line-height-rule: exactly; padding: 5px 0 0; text-align: left; word-break: normal" align="left">
 																		<a target="_blank" href="http://%%{{=url_site_exp}}%%/%%{{=article_une_url_v3}}%%&amp;%%{{=tracking_url}}%%" style="color: #000000; text-decoration: none">
-																			<span class="category" style="color: #4b606d; font-weight: normal">RUBRIQUE_FLASH_INFOS</span> <!--{{%%{{=rsArticleAlaune("TITRE_CHAPITRE_FLASH_INFOS")}}%%}}--><!--DEL{{-->TITRE_CHAPITRE_FLASH_INFOS<!--}}DEL-->
+																			<!--{{%%{{ if article_une_rub <> "" then }}%%}}--><span class="category" style="color: #4b606d; font-weight: normal"><!--{{%%{{=article_une_rub}}%%}}--><!--DEL{{-->article_une_rub<!--}}DEL-->.</span> <!--{{%%{{ end if }}%%}}--><!--{{%%{{=article_une_titre}}%%}}--><!--DEL{{-->article_une_titre<!--}}DEL-->
 																		</a>
 																	</h2>
 																	<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/%%{{=article_une_url_v3}}%%&amp;%%{{=tracking_url}}%%" style="color: #333333; display: block; outline: none; text-decoration: none">

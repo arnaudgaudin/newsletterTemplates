@@ -329,7 +329,7 @@ tracking_url = "fintrack=&amp;rep="&repertoire_ei&"&amp;url_site_exp="&url_site_
 																	<div class="preTitle">À la une</div>
 																	<h2 class="title">
 																		<a target="_blank" href="http://%%{{=url_site_exp}}%%/%%{{=article_une_url_v3}}%%&amp;%%{{=tracking_url}}%%">
-																			<span class="category">RUBRIQUE_FLASH_INFOS</span> <!--{{%%{{=rsArticleAlaune("TITRE_CHAPITRE_FLASH_INFOS")}}%%}}--><!--DEL{{-->TITRE_CHAPITRE_FLASH_INFOS<!--}}DEL-->
+																			<!--{{%%{{ if article_une_rub <> "" then }}%%}}--><span class="category"><!--{{%%{{=article_une_rub}}%%}}--><!--DEL{{-->article_une_rub<!--}}DEL-->.</span> <!--{{%%{{ end if }}%%}}--><!--{{%%{{=article_une_titre}}%%}}--><!--DEL{{-->article_une_titre<!--}}DEL-->
 																		</a>
 																	</h2>
 																	<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/%%{{=article_une_url_v3}}%%&amp;%%{{=tracking_url}}%%">
