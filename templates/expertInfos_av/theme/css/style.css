@@ -1357,6 +1357,102 @@ h6 a:visited {
   color: #333333 !important;
 }
 
+.contentBottom .chiffre .title {
+  color: #333333;
+}
+
+.contentBottom .chiffre .title a {
+  color: #333333;
+}
+
+.contentBottom .chiffre .title a .important,
+.contentBottom .chiffre .title a:visited,
+.contentBottom .chiffre .title a:hover,
+.contentBottom .chiffre .title a:focus,
+.contentBottom .chiffre .title a:active {
+  color: #333333 !important;
+}
+
+.contentBottom .chiffre .text {
+  color: #333333;
+}
+
+.contentBottom .chiffre .text a {
+  color: #333333;
+}
+
+.contentBottom .chiffre .text a .important,
+.contentBottom .chiffre .text a:visited,
+.contentBottom .chiffre .text a:hover,
+.contentBottom .chiffre .text a:focus,
+.contentBottom .chiffre .text a:active {
+  color: #333333 !important;
+}
+
+.contentBottom .question .title {
+  color: #333333;
+}
+
+.contentBottom .question .title a {
+  color: #333333;
+}
+
+.contentBottom .question .title a .important,
+.contentBottom .question .title a:visited,
+.contentBottom .question .title a:hover,
+.contentBottom .question .title a:focus,
+.contentBottom .question .title a:active {
+  color: #333333 !important;
+}
+
+.contentBottom .question .text {
+  color: #333333;
+}
+
+.contentBottom .question .text a {
+  color: #333333;
+}
+
+.contentBottom .question .text a .important,
+.contentBottom .question .text a:visited,
+.contentBottom .question .text a:hover,
+.contentBottom .question .text a:focus,
+.contentBottom .question .text a:active {
+  color: #333333 !important;
+}
+
+.contentBottom .echeancier .title {
+  color: #333333;
+}
+
+.contentBottom .echeancier .title a {
+  color: #333333;
+}
+
+.contentBottom .echeancier .title a .important,
+.contentBottom .echeancier .title a:visited,
+.contentBottom .echeancier .title a:hover,
+.contentBottom .echeancier .title a:focus,
+.contentBottom .echeancier .title a:active {
+  color: #333333 !important;
+}
+
+.contentBottom .echeancier .text {
+  color: #333333;
+}
+
+.contentBottom .echeancier .text a {
+  color: #333333;
+}
+
+.contentBottom .echeancier .text a .important,
+.contentBottom .echeancier .text a:visited,
+.contentBottom .echeancier .text a:hover,
+.contentBottom .echeancier .text a:focus,
+.contentBottom .echeancier .text a:active {
+  color: #333333 !important;
+}
+
 body,
 table.body {
   background: #ffffff;
@@ -1581,38 +1677,6 @@ hr {
   color: #ffffff !important;
 }
 
-.contentBottom .chiffre .title {
-  color: #333333;
-}
-
-.contentBottom .chiffre .title a {
-  color: #333333;
-}
-
-.contentBottom .chiffre .title a .important,
-.contentBottom .chiffre .title a:visited,
-.contentBottom .chiffre .title a:hover,
-.contentBottom .chiffre .title a:focus,
-.contentBottom .chiffre .title a:active {
-  color: #333333 !important;
-}
-
-.contentBottom .chiffre .text {
-  color: #333333;
-}
-
-.contentBottom .chiffre .text a {
-  color: #333333;
-}
-
-.contentBottom .chiffre .text a .important,
-.contentBottom .chiffre .text a:visited,
-.contentBottom .chiffre .text a:hover,
-.contentBottom .chiffre .text a:focus,
-.contentBottom .chiffre .text a:active {
-  color: #333333 !important;
-}
-
 .contentBottom .question table.round td {
   background-color: #919191;
 }
@@ -1635,38 +1699,6 @@ hr {
   color: #ffffff !important;
 }
 
-.contentBottom .question .title {
-  color: #333333;
-}
-
-.contentBottom .question .title a {
-  color: #333333;
-}
-
-.contentBottom .question .title a .important,
-.contentBottom .question .title a:visited,
-.contentBottom .question .title a:hover,
-.contentBottom .question .title a:focus,
-.contentBottom .question .title a:active {
-  color: #333333 !important;
-}
-
-.contentBottom .question .text {
-  color: #333333;
-}
-
-.contentBottom .question .text a {
-  color: #333333;
-}
-
-.contentBottom .question .text a .important,
-.contentBottom .question .text a:visited,
-.contentBottom .question .text a:hover,
-.contentBottom .question .text a:focus,
-.contentBottom .question .text a:active {
-  color: #333333 !important;
-}
-
 .contentBottom .echeancier table.round td {
   background-color: #c73b1b;
 }
@@ -1687,38 +1719,6 @@ hr {
 .contentBottom .echeancier table.round a:focus,
 .contentBottom .echeancier table.round a:active {
   color: #ffffff !important;
-}
-
-.contentBottom .echeancier .title {
-  color: #333333;
-}
-
-.contentBottom .echeancier .title a {
-  color: #333333;
-}
-
-.contentBottom .echeancier .title a .important,
-.contentBottom .echeancier .title a:visited,
-.contentBottom .echeancier .title a:hover,
-.contentBottom .echeancier .title a:focus,
-.contentBottom .echeancier .title a:active {
-  color: #333333 !important;
-}
-
-.contentBottom .echeancier .text {
-  color: #333333;
-}
-
-.contentBottom .echeancier .text a {
-  color: #333333;
-}
-
-.contentBottom .echeancier .text a .important,
-.contentBottom .echeancier .text a:visited,
-.contentBottom .echeancier .text a:hover,
-.contentBottom .echeancier .text a:focus,
-.contentBottom .echeancier .text a:active {
-  color: #333333 !important;
 }
 
 .contentContact,

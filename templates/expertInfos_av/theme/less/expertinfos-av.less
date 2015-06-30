@@ -306,6 +306,40 @@ a {
 	}
 }
 
+// contentBottom area
+// -------------------------
+.contentBottom {
+	.chiffre {
+		.title {
+			color: @nlCntChfTitle;
+			a { .newsletterLinkColor(@nlCntChfTitle); }
+		}
+		.text {
+			color: @nlCntChfText;
+			a { .newsletterLinkColor(@nlCntChfText); }
+		}
+	}
+	.question {
+		.title {
+			color: @nlCntQtnTitle;
+			a { .newsletterLinkColor(@nlCntQtnTitle); }
+		}
+		.text {
+			color: @nlCntQtnText;
+			a { .newsletterLinkColor(@nlCntQtnText); }
+		}
+	}
+	.echeancier {
+		.title {
+			color: @nlCntAgdTitle;
+			a { .newsletterLinkColor(@nlCntAgdTitle); }
+		}
+		.text {
+			color: @nlCntAgdText;
+			a { .newsletterLinkColor(@nlCntAgdText); }
+		}
+	}
+}
 
 // CUSTOM COLORS
 // --------------------------------------------------
@@ -409,20 +443,11 @@ hr {
 
 // contentBottom area
 // -------------------------
-//créer nouvelles variables
 .contentBottom {
 	.chiffre {
 		table.round {
 			td { background-color: @nlCntChfBackground; }
 			.newsletterInnerTextColor(@nlCntChfValue);
-		}
-		.title {
-			color: @nlCntChfTitle;
-			a { .newsletterLinkColor(@nlCntChfTitle); }
-		}
-		.text {
-			color: @nlCntChfText;
-			a { .newsletterLinkColor(@nlCntChfText); }
 		}
 	}
 	.question {
@@ -430,27 +455,11 @@ hr {
 			td { background-color: @nlCntQtnBackground; }
 			.newsletterInnerTextColor(@nlCntQtnValue);
 		}
-		.title {
-			color: @nlCntQtnTitle;
-			a { .newsletterLinkColor(@nlCntQtnTitle); }
-		}
-		.text {
-			color: @nlCntQtnText;
-			a { .newsletterLinkColor(@nlCntQtnText); }
-		}
 	}
 	.echeancier {
 		table.round {
 			td { background-color: @nlCntAgdBackground; }
 			.newsletterInnerTextColor(@nlCntAgdValue);
-		}
-		.title {
-			color: @nlCntAgdTitle;
-			a { .newsletterLinkColor(@nlCntAgdTitle); }
-		}
-		.text {
-			color: @nlCntAgdText;
-			a { .newsletterLinkColor(@nlCntAgdText); }
 		}
 	}
 }
