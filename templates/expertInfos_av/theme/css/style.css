@@ -1581,6 +1581,22 @@ hr {
   color: #ffffff !important;
 }
 
+.contentBottom .chiffre .text {
+  color: #333333;
+}
+
+.contentBottom .chiffre .text a {
+  color: #333333;
+}
+
+.contentBottom .chiffre .text a .important,
+.contentBottom .chiffre .text a:visited,
+.contentBottom .chiffre .text a:hover,
+.contentBottom .chiffre .text a:focus,
+.contentBottom .chiffre .text a:active {
+  color: #333333 !important;
+}
+
 .contentBottom .question table.round td {
   background-color: #919191;
 }
@@ -1603,6 +1619,22 @@ hr {
   color: #ffffff !important;
 }
 
+.contentBottom .question .text {
+  color: #333333;
+}
+
+.contentBottom .question .text a {
+  color: #333333;
+}
+
+.contentBottom .question .text a .important,
+.contentBottom .question .text a:visited,
+.contentBottom .question .text a:hover,
+.contentBottom .question .text a:focus,
+.contentBottom .question .text a:active {
+  color: #333333 !important;
+}
+
 .contentBottom .echeancier table.round td {
   background-color: #c73b1b;
 }
@@ -1623,6 +1655,22 @@ hr {
 .contentBottom .echeancier table.round a:focus,
 .contentBottom .echeancier table.round a:active {
   color: #ffffff !important;
+}
+
+.contentBottom .echeancier .text {
+  color: #333333;
+}
+
+.contentBottom .echeancier .text a {
+  color: #333333;
+}
+
+.contentBottom .echeancier .text a .important,
+.contentBottom .echeancier .text a:visited,
+.contentBottom .echeancier .text a:hover,
+.contentBottom .echeancier .text a:focus,
+.contentBottom .echeancier .text a:active {
+  color: #333333 !important;
 }
 
 .contentContact,

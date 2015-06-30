@@ -406,17 +406,35 @@ hr {
 // -------------------------
 //créer nouvelles variables
 .contentBottom {
-	.chiffre table.round {
-		td { background-color: @nlCntChfBackground; }
-		.newsletterInnerTextColor(@nlCntChfValue);
+	.chiffre {
+		table.round {
+			td { background-color: @nlCntChfBackground; }
+			.newsletterInnerTextColor(@nlCntChfValue);
+		}
+		.text {
+			color: @nlCntChfText;
+			a { .newsletterLinkColor(@nlCntChfText); }
+		}
 	}
-	.question table.round {
-		td { background-color: @nlCntQtnBackground; }
-		.newsletterInnerTextColor(@nlCntQtnValue);
+	.question {
+		table.round {
+			td { background-color: @nlCntQtnBackground; }
+			.newsletterInnerTextColor(@nlCntQtnValue);
+		}
+		.text {
+			color: @nlCntQtnText;
+			a { .newsletterLinkColor(@nlCntQtnText); }
+		}
 	}
-	.echeancier table.round {
-		td { background-color: @nlCntAgdBackground; }
-		.newsletterInnerTextColor(@nlCntAgdValue);
+	.echeancier {
+		table.round {
+			td { background-color: @nlCntAgdBackground; }
+			.newsletterInnerTextColor(@nlCntAgdValue);
+		}
+		.text {
+			color: @nlCntAgdText;
+			a { .newsletterLinkColor(@nlCntAgdText); }
+		}
 	}
 }
 
