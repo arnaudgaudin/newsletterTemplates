@@ -1498,7 +1498,7 @@ table.body {
 
 hr {
   color: #79468c;
-  background-color: #79468c;
+  background: #79468c;
 }
 
 .row.bordered td hr.border {
@@ -1653,7 +1653,7 @@ hr {
 }
 
 .contentBottom .chiffre table.round td {
-  background-color: #79468c;
+  background: #79468c;
 }
 
 .contentBottom .chiffre table.round,
@@ -1675,7 +1675,7 @@ hr {
 }
 
 .contentBottom .question table.round td {
-  background-color: #919191;
+  background: #919191;
 }
 
 .contentBottom .question table.round,
@@ -1697,7 +1697,7 @@ hr {
 }
 
 .contentBottom .echeancier table.round td {
-  background-color: #c73b1b;
+  background: #c73b1b;
 }
 
 .contentBottom .echeancier table.round,
