@@ -550,7 +550,7 @@ h5,
 h6,
 p,
 td {
-  color: #333333;
+  color: #666666;
   padding: 0;
   margin: 0;
   text-align: left;
@@ -619,20 +619,20 @@ small {
 }
 
 a {
-  color: #333333;
+  color: #666666;
   text-decoration: none;
 }
 
 a:hover {
-  color: #333333 !important;
+  color: #666666 !important;
 }
 
 a:active {
-  color: #333333 !important;
+  color: #666666 !important;
 }
 
 a:visited {
-  color: #333333 !important;
+  color: #666666 !important;
 }
 
 h1 a,
@@ -641,7 +641,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-  color: #333333;
+  color: #666666;
 }
 
 h1 a:active,
@@ -650,7 +650,7 @@ h3 a:active,
 h4 a:active,
 h5 a:active,
 h6 a:active {
-  color: #333333 !important;
+  color: #666666 !important;
 }
 
 h1 a:visited,
@@ -659,7 +659,7 @@ h3 a:visited,
 h4 a:visited,
 h5 a:visited,
 h6 a:visited {
-  color: #333333 !important;
+  color: #666666 !important;
 }
 
 /* Panels */
@@ -697,8 +697,8 @@ table.large-button td {
   display: block;
   width: auto !important;
   text-align: center;
-  background: #333333;
-  border: 1px solid #000000;
+  background: #666666;
+  border: 1px solid #333333;
   color: #ffffff;
   padding: 8px 0;
   line-height: initial !important;
@@ -755,7 +755,7 @@ table.large-button td a {
 table.button:hover td,
 table.button:visited td,
 table.button:active td {
-  background: #1a1a1a !important;
+  background: #4d4d4d !important;
 }
 
 table.button:hover td a,
@@ -769,7 +769,7 @@ table.tiny-button:hover td,
 table.small-button:hover td,
 table.medium-button:hover td,
 table.large-button:hover td {
-  background: #1a1a1a !important;
+  background: #4d4d4d !important;
 }
 
 table.button:hover td a,
@@ -846,17 +846,17 @@ body.outlook p {
 /*  Media Queries */
 
 .appleLinks a {
-  color: #333333;
+  color: #666666;
   text-decoration: none;
 }
 
 .appleLinks a:hover,
 .appleLinks a:active {
-  color: #333333 !important;
+  color: #666666 !important;
 }
 
 .appleLinks a:visited {
-  color: #333333 !important;
+  color: #666666 !important;
 }
 
 a[href^=tel] {
@@ -1269,23 +1269,23 @@ h5,
 h6,
 p,
 td {
-  color: #333333;
+  color: #666666;
 }
 
 a {
-  color: #333333;
+  color: #666666;
 }
 
 a:hover {
-  color: #333333 !important;
+  color: #666666 !important;
 }
 
 a:active {
-  color: #333333 !important;
+  color: #666666 !important;
 }
 
 a:visited {
-  color: #333333 !important;
+  color: #666666 !important;
 }
 
 h1 a,
@@ -1294,7 +1294,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-  color: #333333;
+  color: #666666;
 }
 
 h1 a:active,
@@ -1309,20 +1309,20 @@ h3 a:visited,
 h4 a:visited,
 h5 a:visited,
 h6 a:visited {
-  color: #333333 !important;
+  color: #666666 !important;
 }
 
 .appleLinks a {
-  color: #333333;
+  color: #666666;
 }
 
 .appleLinks a:hover,
 .appleLinks a:active {
-  color: #333333 !important;
+  color: #666666 !important;
 }
 
 .appleLinks a:visited {
-  color: #333333 !important;
+  color: #666666 !important;
 }
 
 .contentALaUne .title {
@@ -1342,11 +1342,11 @@ h6 a:visited {
 }
 
 .contentALaUne .text {
-  color: #333333;
+  color: #666666;
 }
 
 .contentALaUne .text a {
-  color: #333333;
+  color: #666666;
 }
 
 .contentALaUne .text a .important,
@@ -1354,7 +1354,7 @@ h6 a:visited {
 .contentALaUne .text a:hover,
 .contentALaUne .text a:focus,
 .contentALaUne .text a:active {
-  color: #333333 !important;
+  color: #666666 !important;
 }
 
 .contentArticles .title {
@@ -1374,11 +1374,11 @@ h6 a:visited {
 }
 
 .contentArticles .text {
-  color: #333333;
+  color: #666666;
 }
 
 .contentArticles .text a {
-  color: #333333;
+  color: #666666;
 }
 
 .contentArticles .text a .important,
@@ -1386,7 +1386,7 @@ h6 a:visited {
 .contentArticles .text a:hover,
 .contentArticles .text a:focus,
 .contentArticles .text a:active {
-  color: #333333 !important;
+  color: #666666 !important;
 }
 
 .contentBottom .chiffre .title {
@@ -1406,11 +1406,11 @@ h6 a:visited {
 }
 
 .contentBottom .chiffre .text {
-  color: #333333;
+  color: #666666;
 }
 
 .contentBottom .chiffre .text a {
-  color: #333333;
+  color: #666666;
 }
 
 .contentBottom .chiffre .text a .important,
@@ -1418,7 +1418,7 @@ h6 a:visited {
 .contentBottom .chiffre .text a:hover,
 .contentBottom .chiffre .text a:focus,
 .contentBottom .chiffre .text a:active {
-  color: #333333 !important;
+  color: #666666 !important;
 }
 
 .contentBottom .question .title {
@@ -1438,11 +1438,11 @@ h6 a:visited {
 }
 
 .contentBottom .question .text {
-  color: #333333;
+  color: #666666;
 }
 
 .contentBottom .question .text a {
-  color: #333333;
+  color: #666666;
 }
 
 .contentBottom .question .text a .important,
@@ -1450,7 +1450,7 @@ h6 a:visited {
 .contentBottom .question .text a:hover,
 .contentBottom .question .text a:focus,
 .contentBottom .question .text a:active {
-  color: #333333 !important;
+  color: #666666 !important;
 }
 
 .contentBottom .echeancier .title {
@@ -1470,11 +1470,11 @@ h6 a:visited {
 }
 
 .contentBottom .echeancier .text {
-  color: #333333;
+  color: #666666;
 }
 
 .contentBottom .echeancier .text a {
-  color: #333333;
+  color: #666666;
 }
 
 .contentBottom .echeancier .text a .important,
@@ -1482,7 +1482,7 @@ h6 a:visited {
 .contentBottom .echeancier .text a:hover,
 .contentBottom .echeancier .text a:focus,
 .contentBottom .echeancier .text a:active {
-  color: #333333 !important;
+  color: #666666 !important;
 }
 
 body,
