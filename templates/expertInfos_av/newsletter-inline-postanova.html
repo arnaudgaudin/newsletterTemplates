@@ -468,6 +468,18 @@ color: #ffffff !important;
 .contentOnline .name a:active {
 color: #ffffff !important;
 }
+.contentBottom table.round a:visited {
+color: #ffffff !important;
+}
+.contentBottom table.round a:hover {
+color: #ffffff !important;
+}
+.contentBottom table.round a:focus {
+color: #ffffff !important;
+}
+.contentBottom table.round a:active {
+color: #ffffff !important;
+}
 .contentContact a:visited {
 color: #333333 !important;
 }
@@ -1019,19 +1031,27 @@ color: #ffffff !important;
 												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 													<td class="wrapper-round" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px 0px 10px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
 														<center style="min-width: 240px; width: 100%">
-															<table border="0" class="round" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; height: 50px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; table-layout: fixed; text-align: left; vertical-align: top; width: 50px" cellpadding="0" cellspacing="0">
+															<table border="0" class="round" style="border-collapse: collapse; border-spacing: 0; color: #ffffff; empty-cells: hide; height: 50px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; table-layout: fixed; text-align: left; vertical-align: top; width: 50px" cellpadding="0" cellspacing="0">
 																<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 																	<% chiffre_fs = Round(88 / Len(chiffre_valeur)) %>
-																	<td style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; background: #79468c; border-collapse: collapse !important; border-radius: 500px; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: <%=chiffre_fs%>px; font-weight: normal; height: 50px; hyphens: none; line-height: 50px; margin: 0; overflow: hidden; padding: 5px; text-align: center; vertical-align: top; width: 50px; word-break: break-word" align="center" bgcolor="#79468c" valign="top"><%=chiffre_valeur%></td>
+																	<td style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; background: #79468c; border-collapse: collapse !important; border-radius: 500px; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: <%=chiffre_fs%>px; font-weight: normal; height: 50px; hyphens: none; line-height: 50px; margin: 0; overflow: hidden; padding: 5px; text-align: center; vertical-align: top; width: 50px; word-break: break-word" align="center" bgcolor="#79468c" valign="top">
+																		<a target="_blank" class="link_box" href="http://<%=url_site_exp%>/?article=<%=chiffre_id%>&amp;<%=tracking_url%>" style="color: #ffffff; display: block; outline: none; text-decoration: none">
+																			<%=chiffre_valeur%>
+																		</a>
+																	</td>
 																</tr>
 															</table>
 														</center>
 														<table class="wrapper-text" border="0" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top" cellpadding="0" cellspacing="0">
 															<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 																<td class="center text-pad" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 5px 10px 0; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
-																	<h4 class="title" style="color: #000000; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold; line-height: 17.6px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: center; word-break: normal" align="center">Le chiffre</h4>
+																	<h4 class="title" style="color: #000000; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold; line-height: 17.6px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: center; word-break: normal" align="center">
+																		<a target="_blank" href="http://<%=url_site_exp%>/?article=<%=chiffre_id%>&amp;<%=tracking_url%>" style="color: #000000; text-decoration: none">Le chiffre</a>
+																	</h4>
 																	<div class="text" style="padding-top: 5px">
-																		Indice trimestriel du co&#251;t de la construction
+																		<a target="_blank" href="http://<%=url_site_exp%>/?article=<%=chiffre_id%>&amp;<%=tracking_url%>" style="color: #333333; text-decoration: none">
+																			<%=chiffre_titre%>
+																		</a>
 																	</div>
 																</td>
 															</tr>
@@ -1045,7 +1065,7 @@ color: #ffffff !important;
 												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 													<td class="wrapper-round" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px 0px 10px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
 														<center style="min-width: 240px; width: 100%">
-															<table border="0" class="round" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; height: 50px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; table-layout: fixed; text-align: left; vertical-align: top; width: 50px" cellpadding="0" cellspacing="0">
+															<table border="0" class="round" style="border-collapse: collapse; border-spacing: 0; color: #ffffff; empty-cells: hide; height: 50px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; table-layout: fixed; text-align: left; vertical-align: top; width: 50px" cellpadding="0" cellspacing="0">
 																<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 																	<td style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; background: #919191; border-collapse: collapse !important; border-radius: 500px; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 50px; font-weight: normal; height: 50px; hyphens: none; line-height: 50px; margin: 0; overflow: hidden; padding: 5px; text-align: center; vertical-align: top; width: 50px; word-break: break-word" align="center" bgcolor="#919191" valign="top">?</td>
 																</tr>
@@ -1068,7 +1088,7 @@ color: #ffffff !important;
 												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 													<td class="wrapper-round" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px 0px 10px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
 														<center style="min-width: 240px; width: 100%">
-															<table border="0" class="round" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; height: 50px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; table-layout: fixed; text-align: left; vertical-align: top; width: 50px" cellpadding="0" cellspacing="0">
+															<table border="0" class="round" style="border-collapse: collapse; border-spacing: 0; color: #ffffff; empty-cells: hide; height: 50px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; table-layout: fixed; text-align: left; vertical-align: top; width: 50px" cellpadding="0" cellspacing="0">
 																<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 																	<td style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; background: #c73b1b; border-collapse: collapse !important; border-radius: 500px; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; height: 50px; hyphens: none; line-height: 0; margin: 0; overflow: hidden; padding: 5px; text-align: center; text-transform: uppercase; vertical-align: top; width: 50px; word-break: break-word" align="center" bgcolor="#c73b1b" valign="top"><span class="day" style="font-size: 32px; line-height: 32px">25</span><br /><span class="month" style="font-size: 12px; line-height: 18px">mars</span></td>
 																</tr>

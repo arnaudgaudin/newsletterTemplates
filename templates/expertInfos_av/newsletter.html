@@ -464,16 +464,24 @@ tracking_url = "fintrack=&amp;rep="&repertoire_ei&"&amp;url_site_exp="&url_site_
 															<table border="0" class="round">
 																<tr>
 																	<!--{{%%{{ chiffre_fs = Round(88 / Len(chiffre_valeur)) }}%%}}-->
-																	<td style="font-size: %%{{=chiffre_fs}}%%px;"><a target="_blank" class="link_box" href=""><!--{{%%{{=chiffre_valeur}}%%}}--><!--DEL{{-->1625<!--}}DEL--></a></td>
+																	<td style="font-size: %%{{=chiffre_fs}}%%px;">
+																		<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/?article=%%{{=chiffre_id}}%%&amp;%%{{=tracking_url}}%%">
+																			<!--{{%%{{=chiffre_valeur}}%%}}--><!--DEL{{-->1625<!--}}DEL-->
+																		</a>
+																	</td>
 																</tr>
 															</table>
 														</center>
 														<table class="wrapper-text" border="0">
 															<tr>
 																<td class="center text-pad">
-																	<h4 class="title">Le chiffre</h4>
+																	<h4 class="title">
+																		<a target="_blank" href="http://%%{{=url_site_exp}}%%/?article=%%{{=chiffre_id}}%%&amp;%%{{=tracking_url}}%%">Le chiffre</a>
+																	</h4>
 																	<div class="text">
-																		<!--{{%%{{=chiffre_titre}}%%}}--><!--DEL{{-->chiffre_titre<!--}}DEL-->
+																		<a target="_blank" href="http://%%{{=url_site_exp}}%%/?article=%%{{=chiffre_id}}%%&amp;%%{{=tracking_url}}%%">
+																			<!--{{%%{{=chiffre_titre}}%%}}--><!--DEL{{-->chiffre_titre<!--}}DEL-->
+																		</a>
 																	</div>
 																</td>
 															</tr>

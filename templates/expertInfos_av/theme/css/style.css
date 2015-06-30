@@ -1396,8 +1396,22 @@ table.body {
   color: #c73b1b;
 }
 
-.contentBottom table.round td {
+.contentBottom table.round,
+.contentBottom table.round td,
+.contentBottom table.round .inner {
   color: #ffffff;
+}
+
+.contentBottom table.round a {
+  color: #ffffff;
+}
+
+.contentBottom table.round a .important,
+.contentBottom table.round a:visited,
+.contentBottom table.round a:hover,
+.contentBottom table.round a:focus,
+.contentBottom table.round a:active {
+  color: #ffffff !important;
 }
 
 .contentBottom .chiffre table.round td {
