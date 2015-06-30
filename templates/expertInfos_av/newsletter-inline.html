@@ -1104,8 +1104,38 @@ color: #ffffff !important;
 															<table border="0" class="round" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; border-collapse: collapse; border-spacing: 0; color: #ffffff; empty-cells: hide; height: 50px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; table-layout: fixed; text-align: left; vertical-align: top; width: 50px" cellpadding="0" cellspacing="0">
 																<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 																	<td style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; background: #c73b1b; border-collapse: collapse !important; border-radius: 500px; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; height: 50px; hyphens: none; line-height: 0; margin: 0; overflow: hidden; padding: 5px; text-align: center; text-transform: uppercase; vertical-align: top; width: 50px; word-break: break-word" align="center" bgcolor="#c73b1b" valign="top">
+																		<!--{{%%{{
+																		Select Case agenda_mois
+																			Case  "01"
+																				agenda_mois_texte = "janv"
+																			Case  "02"
+																				agenda_mois_texte = "f&#233;v"
+																			Case  "03"
+																				agenda_mois_texte = "mars"
+																			Case  "04"
+																				agenda_mois_texte = "avril"
+																			Case  "05"
+																				agenda_mois_texte = "mai"
+																			Case  "06"
+																				agenda_mois_texte = "juin"
+																			Case  "07"
+																				agenda_mois_texte = "juil"
+																			Case  "08"
+																				agenda_mois_texte = "ao&#251;t"
+																			Case  "09"
+																				agenda_mois_texte = "sept"
+																			Case  "10"
+																				agenda_mois_texte = "oct"
+																			Case  "11"
+																				agenda_mois_texte = "nov"
+																			Case  "12"
+																				agenda_mois_texte = "d&#233;c"
+																			Case Else
+																				agenda_mois_texte = "null"
+																		End Select
+																		}}%%}}-->
 																		<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/?article=%%{{=agenda_id}}%%&amp;%%{{=tracking_url}}%%" style="color: #ffffff; display: block; outline: none; text-decoration: none">
-																			<span class="day" style="font-size: 32px; line-height: 32px"><!--{{%%{{=agenda_jour}}%%}}--><!--DEL{{-->25<!--}}DEL--></span><br /><span class="month" style="font-size: 12px; line-height: 18px"><!--{{%%{{=agenda_mois}}%%}}--><!--DEL{{-->mars<!--}}DEL--></span>
+																			<span class="day" style="font-size: 32px; line-height: 32px"><!--{{%%{{=agenda_jour}}%%}}--><!--DEL{{-->25<!--}}DEL--></span><br /><span class="month" style="font-size: 12px; line-height: 18px"><!--{{%%{{=agenda_mois_texte}}%%}}--><!--DEL{{-->mars<!--}}DEL--></span>
 																		</a>
 																	</td>
 																</tr>
