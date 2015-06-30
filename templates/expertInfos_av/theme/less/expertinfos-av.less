@@ -368,7 +368,7 @@ a {
 // Body
 // -------------------------
 body, table.body {
-	background: @nlBodyBackground;
+	-premailer-background: @nlBodyBackground;
 	//rajout pour suppression paramètre doublon via compiler
 	background-image: url("-premailer-bgdebug");
 }
@@ -378,7 +378,7 @@ body, table.body {
 // -------------------------
 //pour supprimer toute zone blanche avant chargement header
 .header {
-	&, td.expander { background: @nlBodyBackground; }
+	&, td.expander { -premailer-background: @nlBodyBackground; }
 }
 
 
@@ -386,7 +386,7 @@ body, table.body {
 // -------------------------
 hr {
 	color: @nlHrBorder;
-	background: @nlHrBorder;
+	-premailer-background: @nlHrBorder;
 }
 //gestion row avec bordures de séparation
 .row.bordered {
@@ -397,7 +397,7 @@ hr {
 // contentOnline area
 // -------------------------
 .contentOnline {
-	&, td.expander { background: @nlCntOnlineBackground; }
+	&, td.expander { -premailer-background: @nlCntOnlineBackground; }
 	.newsletterInnerTextColor(@nlCntOnlineText);
 	.online {
 		color: @nlCntOnlineText;
@@ -413,7 +413,7 @@ hr {
 // contentCabInform area
 // -------------------------
 .contentCabInform {
-	&, td.expander { background: @nlCntCabBackground; }
+	&, td.expander { -premailer-background: @nlCntCabBackground; }
 	.title {
 		color: @nlCntCabTitle;
 		a { .newsletterLinkColor(@nlCntCabTitle); }
@@ -454,19 +454,19 @@ hr {
 .contentBottom {
 	.chiffre {
 		table.round {
-			td { background: @nlCntChfBackground; }
+			td { -premailer-background: @nlCntChfBackground; }
 			.newsletterInnerTextColor(@nlCntChfValue);
 		}
 	}
 	.question {
 		table.round {
-			td { background: @nlCntQtnBackground; }
+			td { -premailer-background: @nlCntQtnBackground; }
 			.newsletterInnerTextColor(@nlCntQtnValue);
 		}
 	}
 	.echeancier {
 		table.round {
-			td { background: @nlCntAgdBackground; }
+			td { -premailer-background: @nlCntAgdBackground; }
 			.newsletterInnerTextColor(@nlCntAgdValue);
 		}
 	}
@@ -475,7 +475,7 @@ hr {
 // contentContact area
 // -------------------------
 .contentContact {
-	&, td.expander { background: @nlCntCctBackground; }
+	&, td.expander { -premailer-background: @nlCntCctBackground; }
 	.newsletterInnerTextColor(@nlCntCctText);
 }
 
@@ -483,7 +483,7 @@ hr {
 // footer area
 // -------------------------
 .footer {
-	&, td.expander { background: @nlFooterBackground; }
+	&, td.expander { -premailer-background: @nlFooterBackground; }
 	.newsletterInnerTextColor(@nlFooterText);
 	small { color: @nlFooterText; }
 }
