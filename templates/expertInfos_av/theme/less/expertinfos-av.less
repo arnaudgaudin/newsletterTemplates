@@ -179,7 +179,7 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 	.chiffre table.round td {
 		line-height: (@columnWidth - 10px);
 
-		//en dur en attendant VBSCRIPT
+		//variabilisé en VBSCRIPT
 		@chfNbr: 4;
 		font-size: (88px / @chfNbr);
 	}
@@ -327,8 +327,8 @@ body, table.body { background-image: url("-premailer-bgdebug"); }
 // -------------------------
 //créer nouvelles variables
 .contentBottom {
-	table.round td {
-		color: #ffffff;	
+	table.round {
+		.newsletterInnerTextColor(#ffffff);
 	}
 	.chiffre table.round td {
 		background-color: @colorCouleur2;
