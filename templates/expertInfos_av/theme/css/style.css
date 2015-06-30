@@ -1488,10 +1488,6 @@ h6 a:visited {
 body,
 table.body {
   background: #ffffff;
-}
-
-body,
-table.body {
   background-image: url("-premailer-bgdebug");
 }
 
