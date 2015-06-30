@@ -1133,7 +1133,6 @@ h6 {
   margin: 0px;
   background-color: transparent;
   height: 0px;
-  border-bottom: 1px solid #79468c;
 }
 
 .faicons {
@@ -1339,6 +1338,10 @@ table.body {
 hr {
   color: #79468c;
   background-color: #79468c;
+}
+
+.row.bordered td hr.border {
+  border-bottom: 1px solid #79468c;
 }
 
 .header {

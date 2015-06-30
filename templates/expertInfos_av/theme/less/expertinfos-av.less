@@ -84,7 +84,6 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 			//débuggage bordure pour PostaNova
 			background-color: transparent;
 			height: 0px;
-			border-bottom: 1px solid @hrBorder;
 		}
 	}
 }
@@ -321,6 +320,10 @@ body, table.body { background-image: url("-premailer-bgdebug"); }
 hr {
 	color: @nlHrBorder;
 	background-color: @nlHrBorder;
+}
+//gestion row avec bordures de séparation
+.row.bordered {
+	td hr.border { border-bottom: 1px solid @nlHrBorder; }
 }
 
 
