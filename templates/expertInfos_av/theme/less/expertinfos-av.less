@@ -293,6 +293,19 @@ a {
 	}
 }
 
+// contentALaUne area
+// -------------------------
+.contentALaUne {
+	.title {
+		color: @nlCntUneTitle;
+		a { .newsletterLinkColor(@nlCntUneTitle); }
+	}
+	.text {
+		color: @nlCntUneText;
+		a { .newsletterLinkColor(@nlCntUneText); }
+	}
+}
+
 // contentArticles area
 // -------------------------
 .contentArticles {
@@ -415,12 +428,6 @@ hr {
 	.preTitle { color: @nlCntUnePreTitle; }
 	.title {
 		.category { color: @nlCntUneCategory; }
-		color: @nlCntUneTitle;
-		a { .newsletterLinkColor(@nlCntUneTitle); }
-	}
-	.text {
-		color: @nlCntUneText;
-		a { .newsletterLinkColor(@nlCntUneText); }
 	}
 	.readMore {
 		color: @nlCntUneReadMore;

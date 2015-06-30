@@ -1325,6 +1325,38 @@ h6 a:visited {
   color: #333333 !important;
 }
 
+.contentALaUne .title {
+  color: #333333;
+}
+
+.contentALaUne .title a {
+  color: #333333;
+}
+
+.contentALaUne .title a .important,
+.contentALaUne .title a:visited,
+.contentALaUne .title a:hover,
+.contentALaUne .title a:focus,
+.contentALaUne .title a:active {
+  color: #333333 !important;
+}
+
+.contentALaUne .text {
+  color: #333333;
+}
+
+.contentALaUne .text a {
+  color: #333333;
+}
+
+.contentALaUne .text a .important,
+.contentALaUne .text a:visited,
+.contentALaUne .text a:hover,
+.contentALaUne .text a:focus,
+.contentALaUne .text a:active {
+  color: #333333 !important;
+}
+
 .contentArticles .title {
   color: #333333;
 }
@@ -1579,40 +1611,8 @@ hr {
   color: #c73b1b;
 }
 
-.contentALaUne .title {
-  color: #333333;
-}
-
 .contentALaUne .title .category {
   color: #c73b1b;
-}
-
-.contentALaUne .title a {
-  color: #333333;
-}
-
-.contentALaUne .title a .important,
-.contentALaUne .title a:visited,
-.contentALaUne .title a:hover,
-.contentALaUne .title a:focus,
-.contentALaUne .title a:active {
-  color: #333333 !important;
-}
-
-.contentALaUne .text {
-  color: #333333;
-}
-
-.contentALaUne .text a {
-  color: #333333;
-}
-
-.contentALaUne .text a .important,
-.contentALaUne .text a:visited,
-.contentALaUne .text a:hover,
-.contentALaUne .text a:focus,
-.contentALaUne .text a:active {
-  color: #333333 !important;
 }
 
 .contentALaUne .readMore {
