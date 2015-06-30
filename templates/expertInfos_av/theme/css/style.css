@@ -1325,6 +1325,38 @@ h6 a:visited {
   color: #333333 !important;
 }
 
+.contentArticles .title {
+  color: #333333;
+}
+
+.contentArticles .title a {
+  color: #333333;
+}
+
+.contentArticles .title a .important,
+.contentArticles .title a:visited,
+.contentArticles .title a:hover,
+.contentArticles .title a:focus,
+.contentArticles .title a:active {
+  color: #333333 !important;
+}
+
+.contentArticles .text {
+  color: #333333;
+}
+
+.contentArticles .text a {
+  color: #333333;
+}
+
+.contentArticles .text a .important,
+.contentArticles .text a:visited,
+.contentArticles .text a:hover,
+.contentArticles .text a:focus,
+.contentArticles .text a:active {
+  color: #333333 !important;
+}
+
 body,
 table.body {
   background: #ffffff;
@@ -1507,40 +1539,8 @@ hr {
   color: #c73b1b;
 }
 
-.contentArticles .title {
-  color: #333333;
-}
-
 .contentArticles .title .category {
   color: #c73b1b;
-}
-
-.contentArticles .title a {
-  color: #333333;
-}
-
-.contentArticles .title a .important,
-.contentArticles .title a:visited,
-.contentArticles .title a:hover,
-.contentArticles .title a:focus,
-.contentArticles .title a:active {
-  color: #333333 !important;
-}
-
-.contentArticles .text {
-  color: #333333;
-}
-
-.contentArticles .text a {
-  color: #333333;
-}
-
-.contentArticles .text a .important,
-.contentArticles .text a:visited,
-.contentArticles .text a:hover,
-.contentArticles .text a:focus,
-.contentArticles .text a:active {
-  color: #333333 !important;
 }
 
 .contentArticles .readMore {

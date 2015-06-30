@@ -293,6 +293,19 @@ a {
 	}
 }
 
+// contentArticles area
+// -------------------------
+.contentArticles {
+	.title {
+		color: @nlCntArtTitle;
+		a { .newsletterLinkColor(@nlCntArtTitle); }
+	}
+	.text {
+		color: @nlCntArtText;
+		a { .newsletterLinkColor(@nlCntArtText); }
+	}
+}
+
 
 // CUSTOM COLORS
 // --------------------------------------------------
@@ -386,15 +399,7 @@ hr {
 // -------------------------
 .contentArticles {
 	.preTitle { color: @nlCntArtPreTitle; }
-	.title {
-		.category { color: @nlCntArtCategory; }
-		color: @nlCntArtTitle;
-		a { .newsletterLinkColor(@nlCntArtTitle); }
-	}
-	.text {
-		color: @nlCntArtText;
-		a { .newsletterLinkColor(@nlCntArtText); }
-	}
+	.title .category { color: @nlCntArtCategory; }
 	.readMore {
 		color: @nlCntArtReadMore;
 		a { .newsletterLinkColor(@nlCntArtReadMore); }
