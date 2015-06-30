@@ -46,12 +46,12 @@
 // Newsletter Custom Colors
 // --------------------------------------------------
 //couleur de fond générale
-@nlBodyBackground: darken(@colorCouleur3, 10%);
+@nlBodyBackground: #ffffff;
 
 //Visualisation message en ligne et Titre
 @nlCntOnlineBackground: @nlBodyBackground;
-@nlCntOnlineText: #ffffff;
-@nlCntOnlineName: #ffffff;
+@nlCntOnlineText: darken(@nlCntOnlineBackground, 45%);
+@nlCntOnlineName: #333333;
 
 //Le cabinet vous informe
 @nlCntCabBackground: @colorCouleur1;
@@ -85,12 +85,12 @@
 @nlCntAgdValue: #ffffff;
 
 //Contact
-@nlCntCctBackground: @colorCouleur3Clair;
-@nlCntCctText: @nlText;
+@nlCntCctBackground: lighten(@colorCouleur3Clair, 5%);
+@nlCntCctText: #333333;
 
 //Footer
-@nlFooterBackground: @nlBodyBackground;
-@nlFooterText: #ffffff;
+@nlFooterBackground: @nlCntCctBackground;
+@nlFooterText: darken(@nlFooterBackground, 45%);
 
 
 // Scaffolding
