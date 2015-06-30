@@ -530,15 +530,25 @@ tracking_url = "fintrack=&amp;rep="&repertoire_ei&"&amp;url_site_exp="&url_site_
 														<center>
 															<table border="0" class="round">
 																<tr>
-																	<td><span class="day">25</span><br /><span class="month">mars</span></td>
+																	<td>
+																		<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/?article=%%{{=agenda_id}}%%&amp;%%{{=tracking_url}}%%">
+																			<span class="day"><!--{{%%{{=agenda_jour}}%%}}--><!--DEL{{-->25<!--}}DEL--></span><br /><span class="month"><!--{{%%{{=agenda_mois}}%%}}--><!--DEL{{-->mars<!--}}DEL--></span>
+																		</a>
+																	</td>
 																</tr>
 															</table>
 														</center>
 														<table class="wrapper-text" border="0">
 															<tr>
 																<td class="center text-pad">
-																	<h4 class="title">Le rappel</h4>
-																	<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quis, provident explicabo.</div>
+																	<h4 class="title">
+																		<a target="_blank" href="http://%%{{=url_site_exp}}%%/?article=%%{{=agenda_id}}%%&amp;%%{{=tracking_url}}%%">Le rappel</a>
+																	</h4>
+																	<div class="text">
+																		<a target="_blank" href="http://%%{{=url_site_exp}}%%/?article=%%{{=agenda_id}}%%&amp;%%{{=tracking_url}}%%">
+																			<!--{{%%{{=agenda_titre}}%%}}--><!--DEL{{-->agenda_titre<!--}}DEL-->
+																		</a>
+																	</div>
 																</td>
 															</tr>
 														</table>
