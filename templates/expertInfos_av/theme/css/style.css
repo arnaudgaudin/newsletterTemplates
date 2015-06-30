@@ -1125,13 +1125,8 @@ h6 {
   padding-top: 5px;
 }
 
-.row.bordered td.wrapper {
-  padding-top: 0px;
-}
-
-.row.bordered table.columns td,
-.row.bordered table.column td {
-  padding-bottom: 0px;
+.row.bordered {
+  background-color: #0f0;
 }
 
 .row.bordered td {
