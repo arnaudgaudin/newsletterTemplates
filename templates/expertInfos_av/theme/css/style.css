@@ -1125,10 +1125,6 @@ h6 {
   padding-top: 5px;
 }
 
-.row.bordered {
-  background-color: #0f0;
-}
-
 .row.bordered td {
   line-height: 0;
 }
@@ -1661,6 +1657,15 @@ table.body {
 
   table[class="container"] .block-grid td {
     width: 100% !important;
+  }
+
+  table[class="body"] .row.bordered td.wrapper {
+    padding-top: 5px !important;
+  }
+
+  table[class="body"] .row.bordered table.columns td,
+  table[class="body"] .row.bordered table.column td {
+    padding-bottom: 5px !important;
   }
 
   table[class="body"] .faicon img,
