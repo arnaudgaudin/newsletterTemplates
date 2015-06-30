@@ -1336,6 +1336,11 @@ table.body {
   background-image: url("-premailer-bgdebug");
 }
 
+hr {
+  color: #79468c;
+  background-color: #79468c;
+}
+
 .header {
   background: #ffffff;
 }
