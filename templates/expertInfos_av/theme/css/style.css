@@ -1198,6 +1198,10 @@ img.faicon {
   text-align: center;
 }
 
+.contentBottom td.wrapper {
+  padding-bottom: 10px;
+}
+
 .contentBottom table.wrapper-text {
   width: 100%;
 }
@@ -1837,6 +1841,10 @@ table.body {
   table[class="body"] .contentBottom td,
   table[class="body"] .contentBottom td .title {
     text-align: left !important;
+  }
+
+  table[class="body"] .contentBottom td.wrapper {
+    padding-bottom: 0px !important;
   }
 
   table[class="body"] .contentBottom table.wrapper-text {
