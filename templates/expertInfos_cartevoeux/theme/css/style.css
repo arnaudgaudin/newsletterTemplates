@@ -1395,10 +1395,6 @@ h6 a:visited {
 body,
 table.body {
   -premailer-background: ##((nlBodyBackground))##;
-}
-
-body,
-table.body {
   background-image: url("-premailer-bgdebug");
 }
 
