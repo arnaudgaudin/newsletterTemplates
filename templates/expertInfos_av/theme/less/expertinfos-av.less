@@ -368,7 +368,7 @@ a {
 // Body
 // -------------------------
 body, table.body {
-	-premailer-background: @nlBodyBackground;
+	-premailer-background: e("##((@nlBodyBackground))##");
 	//rajout pour suppression paramètre doublon via compiler
 	background-image: url("-premailer-bgdebug");
 }
@@ -378,34 +378,34 @@ body, table.body {
 // -------------------------
 //pour supprimer toute zone blanche avant chargement header
 .header {
-	&, td.expander { -premailer-background: @nlBodyBackground; }
+	&, td.expander { -premailer-background: e("##((@nlBodyBackground))##"); }
 }
 
 
 // Hr borders
 // -------------------------
 hr {
-	color: @nlHrBorder;
-	-premailer-background: @nlHrBorder;
+	color: e("##((@nlHrBorder))##");
+	-premailer-background: e("##((@nlHrBorder))##");
 }
 //gestion row avec bordures de séparation
 .row.bordered {
-	td hr.border { border-bottom: 1px solid @nlHrBorder; }
+	td hr.border { border-bottom: 1px solid e("##((@nlHrBorder))##"); }
 }
 
 
 // contentOnline area
 // -------------------------
 .contentOnline {
-	&, td.expander { -premailer-background: @nlCntOnlineBackground; }
-	.newsletterInnerTextColor(@nlCntOnlineText);
+	&, td.expander { -premailer-background: e("##((@nlCntOnlineBackground))##"); }
+	.newsletterInnerTextColor(e("##((@nlCntOnlineText))##"));
 	.online {
-		color: @nlCntOnlineText;
-		a { .newsletterLinkColor(@nlCntOnlineText); }
+		color: e("##((@nlCntOnlineText))##");
+		a { .newsletterLinkColor(e("##((@nlCntOnlineText))##")); }
 	}
 	.name {
-		color: @nlCntOnlineName;
-		a { .newsletterLinkColor(@nlCntOnlineName); }
+		color: e("##((@nlCntOnlineName))##");
+		a { .newsletterLinkColor(e("##((@nlCntOnlineName))##")); }
 	}
 }
 
@@ -413,26 +413,26 @@ hr {
 // contentCabInform area
 // -------------------------
 .contentCabInform {
-	&, td.expander { -premailer-background: @nlCntCabBackground; }
+	&, td.expander { -premailer-background: e("##((@nlCntCabBackground))##"); }
 	.title {
-		color: @nlCntCabTitle;
-		a { .newsletterLinkColor(@nlCntCabTitle); }
+		color: e("##((@nlCntCabTitle))##");
+		a { .newsletterLinkColor(e("##((@nlCntCabTitle))##")); }
 	}
-	.text, .readMore { color: @nlCntCabText; }
-	.newsletterInnerTextColor(@nlCntCabText);
+	.text, .readMore { color: e("##((@nlCntCabText))##"); }
+	.newsletterInnerTextColor(e("##((@nlCntCabText))##"));
 }
 
 
 // contentALaUne area
 // -------------------------
 .contentALaUne {
-	.preTitle { color: @nlCntUnePreTitle; }
+	.preTitle { color: e("##((@nlCntUnePreTitle))##"); }
 	.title {
-		.category { color: @nlCntUneCategory; }
+		.category { color: e("##((@nlCntUneCategory))##"); }
 	}
 	.readMore {
-		color: @nlCntUneReadMore;
-		a { .newsletterLinkColor(@nlCntUneReadMore); }
+		color: e("##((@nlCntUneReadMore))##");
+		a { .newsletterLinkColor(e("##((@nlCntUneReadMore))##")); }
 	}
 }
 
@@ -440,11 +440,11 @@ hr {
 // contentArticles area
 // -------------------------
 .contentArticles {
-	.preTitle { color: @nlCntArtPreTitle; }
-	.title .category { color: @nlCntArtCategory; }
+	.preTitle { color: e("##((@nlCntArtPreTitle))##"); }
+	.title .category { color: e("##((@nlCntArtCategory))##"); }
 	.readMore {
-		color: @nlCntArtReadMore;
-		a { .newsletterLinkColor(@nlCntArtReadMore); }
+		color: e("##((@nlCntArtReadMore))##");
+		a { .newsletterLinkColor(e("##((@nlCntArtReadMore))##")); }
 	}
 }
 
@@ -454,20 +454,20 @@ hr {
 .contentBottom {
 	.chiffre {
 		table.round {
-			td { -premailer-background: @nlCntChfBackground; }
-			.newsletterInnerTextColor(@nlCntChfValue);
+			td { -premailer-background: e("##((@nlCntChfBackground))##"); }
+			.newsletterInnerTextColor(e("##((@nlCntChfValue))##"));
 		}
 	}
 	.question {
 		table.round {
-			td { -premailer-background: @nlCntQtnBackground; }
-			.newsletterInnerTextColor(@nlCntQtnValue);
+			td { -premailer-background: e("##((@nlCntQtnBackground))##"); }
+			.newsletterInnerTextColor(e("##((@nlCntQtnValue))##"));
 		}
 	}
 	.echeancier {
 		table.round {
-			td { -premailer-background: @nlCntAgdBackground; }
-			.newsletterInnerTextColor(@nlCntAgdValue);
+			td { -premailer-background: e("##((@nlCntAgdBackground))##"); }
+			.newsletterInnerTextColor(e("##((@nlCntAgdValue))##"));
 		}
 	}
 }
@@ -475,15 +475,15 @@ hr {
 // contentContact area
 // -------------------------
 .contentContact {
-	&, td.expander { -premailer-background: @nlCntCctBackground; }
-	.newsletterInnerTextColor(@nlCntCctText);
+	&, td.expander { -premailer-background: e("##((@nlCntCctBackground))##"); }
+	.newsletterInnerTextColor(e("##((@nlCntCctText))##"));
 }
 
 
 // footer area
 // -------------------------
 .footer {
-	&, td.expander { -premailer-background: @nlFooterBackground; }
-	.newsletterInnerTextColor(@nlFooterText);
-	small { color: @nlFooterText; }
+	&, td.expander { -premailer-background: e("##((@nlFooterBackground))##"); }
+	.newsletterInnerTextColor(e("##((@nlFooterText))##"));
+	small { color: e("##((@nlFooterText))##"); }
 }
