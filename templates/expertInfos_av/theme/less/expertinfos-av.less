@@ -155,9 +155,12 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 	.title { text-align: center; }
 
 	//suppression sous padding
-	table.wrapper-text td {
-		padding-top: 5px;
-		padding-bottom: 0;
+	table.wrapper-text {
+		width: 100%;
+		td {
+			padding-top: 5px;
+			padding-bottom: 0;
+		}
 	}
 
 	//tableau arrondi
@@ -204,7 +207,10 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 	table[class="body"] .contentBottom {
 		td { &, .title { text-align: left !important; } }
 
-		table.wrapper-text td { padding-top: 0 !important; }
+		table.wrapper-text {
+			width: auto !important;
+			td { padding-top: 0 !important; }
+		}
 
 		td.wrapper-round {
 			padding-left: @textPadCollapse !important;
