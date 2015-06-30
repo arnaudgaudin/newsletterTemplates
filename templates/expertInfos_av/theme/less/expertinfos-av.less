@@ -330,9 +330,15 @@ body, table.body { background-image: url("-premailer-bgdebug"); }
 // contentALaUne area
 // -------------------------
 .contentALaUne {
+	.preTitle { color: @nlCntUnePreTitle; }
 	.title {
-		.category { color: @colorCouleur1; }
+		color: @nlCntUneTitle;
+		a { .newsletterLinkColor(@nlCntUneTitle); }
+		.category { color: @nlCntUneCategory; }
 	}
+	.text { color: @nlCntUneText; }
+	.newsletterInnerTextColor(@nlCntUneText);
+	.readMore { color: @nlCntUneReadMore; }
 }
 
 

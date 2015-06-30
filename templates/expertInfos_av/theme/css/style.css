@@ -1428,8 +1428,54 @@ table.body {
   color: #ffffff !important;
 }
 
+.contentALaUne .preTitle {
+  color: #c73b1b;
+}
+
+.contentALaUne .title {
+  color: #333333;
+}
+
+.contentALaUne .title a {
+  color: #333333;
+}
+
+.contentALaUne .title a .important,
+.contentALaUne .title a:visited,
+.contentALaUne .title a:hover,
+.contentALaUne .title a:focus,
+.contentALaUne .title a:active {
+  color: #333333 !important;
+}
+
 .contentALaUne .title .category {
   color: #c73b1b;
+}
+
+.contentALaUne .text {
+  color: #333333;
+}
+
+.contentALaUne,
+.contentALaUne td,
+.contentALaUne .inner {
+  color: #333333;
+}
+
+.contentALaUne a {
+  color: #333333;
+}
+
+.contentALaUne a .important,
+.contentALaUne a:visited,
+.contentALaUne a:hover,
+.contentALaUne a:focus,
+.contentALaUne a:active {
+  color: #333333 !important;
+}
+
+.contentALaUne .readMore {
+  color: #79468c;
 }
 
 .contentArticles .title .category {
