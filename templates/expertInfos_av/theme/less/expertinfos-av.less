@@ -390,7 +390,9 @@ hr {
 // Header
 // -------------------------
 //pour supprimer toute zone blanche avant chargement header
-.header { background: @nlBodyBackground; }
+.header {
+	&, td.expander { background: @nlBodyBackground; }
+}
 
 
 // contentOnline area

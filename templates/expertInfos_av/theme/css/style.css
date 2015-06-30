@@ -1504,7 +1504,8 @@ hr {
   border-bottom: 1px solid #79468c;
 }
 
-.header {
+.header,
+.header td.expander {
   background: #ffffff;
 }
 
