@@ -333,19 +333,17 @@ body, table.body { background-image: url("-premailer-bgdebug"); }
 // -------------------------
 //créer nouvelles variables
 .contentBottom {
-	table.round {
-		.newsletterInnerTextColor(#ffffff);
+	.chiffre table.round {
+		td { background-color: @nlCntChfBackground; }
+		.newsletterInnerTextColor(@nlCntChfValue);
 	}
-	.chiffre table.round td {
-		background-color: @colorCouleur2;
-
+	.question table.round {
+		td { background-color: @nlCntQtnBackground; }
+		.newsletterInnerTextColor(@nlCntQtnValue);
 	}
-	.question table.round td {
-		background-color: @colorCouleur3;
-		
-	}
-	.echeancier table.round td {
-		background-color: @colorCouleur1;
+	.echeancier table.round {
+		td { background-color: @nlCntAgdBackground; }
+		.newsletterInnerTextColor(@nlCntAgdValue);
 	}
 }
 
