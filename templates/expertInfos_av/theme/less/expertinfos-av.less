@@ -322,7 +322,7 @@ body, table.body { background-image: url("-premailer-bgdebug"); }
 		color: @nlCntCabTitle;
 		a { .newsletterLinkColor(@nlCntCabTitle); }
 	}
-	.text, .readMore, .icon-rsaquo { color: @nlCntCabText; }
+	.text, .readMore { color: @nlCntCabText; }
 	.newsletterInnerTextColor(@nlCntCabText);
 }
 
@@ -332,13 +332,18 @@ body, table.body { background-image: url("-premailer-bgdebug"); }
 .contentALaUne {
 	.preTitle { color: @nlCntUnePreTitle; }
 	.title {
+		.category { color: @nlCntUneCategory; }
 		color: @nlCntUneTitle;
 		a { .newsletterLinkColor(@nlCntUneTitle); }
-		.category { color: @nlCntUneCategory; }
 	}
-	.text { color: @nlCntUneText; }
-	.newsletterInnerTextColor(@nlCntUneText);
-	.readMore { color: @nlCntUneReadMore; }
+	.text {
+		color: @nlCntUneText;
+		a { .newsletterLinkColor(@nlCntUneText); }
+	}
+	.readMore {
+		color: @nlCntUneReadMore;
+		a { .newsletterLinkColor(@nlCntUneReadMore); }
+	}
 }
 
 
