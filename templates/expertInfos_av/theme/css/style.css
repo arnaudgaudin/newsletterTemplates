@@ -1105,7 +1105,7 @@ h6 {
 .readMore {
   text-align: right;
   font-size: 10.2px;
-  margin: 0;
+  margin: 0px;
   color: #c73b1b;
 }
 
@@ -1126,14 +1126,18 @@ h6 {
 }
 
 .row.bordered td {
-  line-height: 0;
+  line-height: 0px;
 }
 
 .row.bordered td hr.border {
-  margin: 0;
+  margin: 0px;
   background-color: transparent;
-  height: 0;
+  height: 0px;
   border-bottom: 1px solid #79468c;
+}
+
+.faicons {
+  vertical-align: bottom;
 }
 
 .faicons td {
@@ -1200,7 +1204,7 @@ img.faicon {
 
 .contentBottom table.wrapper-text td {
   padding-top: 5px;
-  padding-bottom: 0;
+  padding-bottom: 0px;
 }
 
 .contentBottom table.round {
@@ -1230,7 +1234,7 @@ img.faicon {
 }
 
 .contentBottom .echeancier table.round td {
-  line-height: 0;
+  line-height: 0px;
   text-transform: uppercase;
 }
 
@@ -1242,6 +1246,10 @@ img.faicon {
 .contentBottom .echeancier table.round td .month {
   line-height: 18px;
   font-size: 12px;
+}
+
+.contentContact.bordered td.wrapper {
+  padding-top: 0px;
 }
 
 .container {
@@ -1816,6 +1824,10 @@ table.body {
     padding-bottom: 5px !important;
   }
 
+  table[class="body"] .faicons {
+    vertical-align: baseline !important;
+  }
+
   table[class="body"] .faicon img,
   table[class="body"] img.faicon {
     width: 15px !important;
@@ -1832,7 +1844,7 @@ table.body {
   }
 
   table[class="body"] .contentBottom table.wrapper-text td {
-    padding-top: 0 !important;
+    padding-top: 0px !important;
   }
 
   table[class="body"] .contentBottom td.wrapper-round {
@@ -1854,5 +1866,14 @@ table.body {
   table[class="body"] .contentBottom table.round td {
     width: 50px !important;
     height: 50px !important;
+  }
+
+  table[class="body"] .contentContact.bordered td.wrapper {
+    padding-top: 0px !important;
+  }
+
+  table[class="body"] .contentContact.bordered table.columns td,
+  table[class="body"] .contentContact.bordered table.column td {
+    padding-bottom: 10px !important;
   }
 }

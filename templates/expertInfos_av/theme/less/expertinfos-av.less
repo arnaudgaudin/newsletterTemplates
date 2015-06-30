@@ -66,7 +66,7 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 .readMore {
 	text-align: right;
 	font-size: @fontSizeSmall;
-	margin: 0;
+	margin: 0px;
 	color: @colorCouleur1;
 	a { .newsletterLinkColor(@colorCouleur1); }
 
@@ -78,12 +78,12 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 //gestion row avec bordures de séparation
 .row.bordered {
 	td {
-		line-height: 0;
+		line-height: 0px;
 		hr.border {
-			margin: 0;
+			margin: 0px;
 			//débuggage bordure pour PostaNova
 			background-color: transparent;
-			height: 0;
+			height: 0px;
 			border-bottom: 1px solid @hrBorder;
 		}
 	}
@@ -97,7 +97,10 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 
 
 //réseaux sociaux
-.faicons td { text-align: right; }
+.faicons {
+	vertical-align: bottom;
+	td { text-align: right; }
+}
 .faicon {
 	display: inline;
 	//pour supprimer les espaces
@@ -119,6 +122,7 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] {
+		.faicons { vertical-align: baseline !important; }
 		.faicon img, img.faicon {
 			width: 15px !important;
 			height: 15px !important;
@@ -162,7 +166,7 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 		width: 100%;
 		td {
 			padding-top: 5px;
-			padding-bottom: 0;
+			padding-bottom: 0px;
 		}
 	}
 
@@ -194,7 +198,7 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 		font-size: 50px;
 	}
 	.echeancier table.round td {
-		line-height: 0;
+		line-height: 0px;
 		text-transform: uppercase;
 		.day {
 			line-height: 32px;
@@ -212,7 +216,7 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 
 		table.wrapper-text {
 			width: auto !important;
-			td { padding-top: 0 !important; }
+			td { padding-top: 0px !important; }
 		}
 
 		td.wrapper-round {
@@ -232,6 +236,21 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 				width: (@columnWidth - 10px) !important;
 				height: (@columnWidth - 10px) !important;
 			}
+		}
+	}
+}
+
+
+// contentContact area
+// -------------------------
+.contentContact {
+	&.bordered { td.wrapper { padding-top: 0px; } }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentContact {
+		&.bordered {
+			td.wrapper { padding-top: 0px !important; }
+			table.columns td, table.column td { padding-bottom: @columnPadCollapse !important; }
 		}
 	}
 }
