@@ -350,8 +350,19 @@ body, table.body { background-image: url("-premailer-bgdebug"); }
 // contentArticles area
 // -------------------------
 .contentArticles {
+	.preTitle { color: @nlCntArtPreTitle; }
 	.title {
-		.category { color: @colorCouleur1; }
+		.category { color: @nlCntArtCategory; }
+		color: @nlCntArtTitle;
+		a { .newsletterLinkColor(@nlCntArtTitle); }
+	}
+	.text {
+		color: @nlCntArtText;
+		a { .newsletterLinkColor(@nlCntArtText); }
+	}
+	.readMore {
+		color: @nlCntArtReadMore;
+		a { .newsletterLinkColor(@nlCntArtReadMore); }
 	}
 }
 
