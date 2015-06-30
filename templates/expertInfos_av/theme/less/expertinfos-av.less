@@ -314,6 +314,19 @@ body, table.body { background-image: url("-premailer-bgdebug"); }
 }
 
 
+// contentCabInform area
+// -------------------------
+.contentCabInform {
+	&, td.expander { background: @nlCntCabBackground; }
+	.title {
+		color: @nlCntCabTitle;
+		a { .newsletterLinkColor(@nlCntCabTitle); }
+	}
+	.text, .readMore, .icon-rsaquo { color: @nlCntCabText; }
+	.newsletterInnerTextColor(@nlCntCabText);
+}
+
+
 // contentALaUne area
 // -------------------------
 .contentALaUne {

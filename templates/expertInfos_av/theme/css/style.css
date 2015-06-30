@@ -1383,6 +1383,51 @@ table.body {
   color: #ffffff !important;
 }
 
+.contentCabInform,
+.contentCabInform td.expander {
+  background: #c73b1b;
+}
+
+.contentCabInform .title {
+  color: #ffffff;
+}
+
+.contentCabInform .title a {
+  color: #ffffff;
+}
+
+.contentCabInform .title a .important,
+.contentCabInform .title a:visited,
+.contentCabInform .title a:hover,
+.contentCabInform .title a:focus,
+.contentCabInform .title a:active {
+  color: #ffffff !important;
+}
+
+.contentCabInform .text,
+.contentCabInform .readMore,
+.contentCabInform .icon-rsaquo {
+  color: #ffffff;
+}
+
+.contentCabInform,
+.contentCabInform td,
+.contentCabInform .inner {
+  color: #ffffff;
+}
+
+.contentCabInform a {
+  color: #ffffff;
+}
+
+.contentCabInform a .important,
+.contentCabInform a:visited,
+.contentCabInform a:hover,
+.contentCabInform a:focus,
+.contentCabInform a:active {
+  color: #ffffff !important;
+}
+
 .contentALaUne .title .category {
   color: #c73b1b;
 }
