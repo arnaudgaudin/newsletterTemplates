@@ -411,6 +411,10 @@ hr {
 			td { background-color: @nlCntChfBackground; }
 			.newsletterInnerTextColor(@nlCntChfValue);
 		}
+		.title {
+			color: @nlCntChfTitle;
+			a { .newsletterLinkColor(@nlCntChfTitle); }
+		}
 		.text {
 			color: @nlCntChfText;
 			a { .newsletterLinkColor(@nlCntChfText); }
@@ -421,6 +425,10 @@ hr {
 			td { background-color: @nlCntQtnBackground; }
 			.newsletterInnerTextColor(@nlCntQtnValue);
 		}
+		.title {
+			color: @nlCntQtnTitle;
+			a { .newsletterLinkColor(@nlCntQtnTitle); }
+		}
 		.text {
 			color: @nlCntQtnText;
 			a { .newsletterLinkColor(@nlCntQtnText); }
@@ -430,6 +438,10 @@ hr {
 		table.round {
 			td { background-color: @nlCntAgdBackground; }
 			.newsletterInnerTextColor(@nlCntAgdValue);
+		}
+		.title {
+			color: @nlCntAgdTitle;
+			a { .newsletterLinkColor(@nlCntAgdTitle); }
 		}
 		.text {
 			color: @nlCntAgdText;
