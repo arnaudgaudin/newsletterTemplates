@@ -1495,6 +1495,11 @@ table.body {
   background-image: url("-premailer-bgdebug");
 }
 
+.header,
+.header td.expander {
+  background: #ffffff;
+}
+
 hr {
   color: #79468c;
   background-color: #79468c;
@@ -1502,11 +1507,6 @@ hr {
 
 .row.bordered td hr.border {
   border-bottom: 1px solid #79468c;
-}
-
-.header,
-.header td.expander {
-  background: #ffffff;
 }
 
 .contentOnline,

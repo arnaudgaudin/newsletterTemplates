@@ -370,9 +370,16 @@ a {
 body, table.body {
 	background: @nlBodyBackground;
 }
-
 //rajout pour suppression paramètre doublon via compiler
 body, table.body { background-image: url("-premailer-bgdebug"); }
+
+
+// Header
+// -------------------------
+//pour supprimer toute zone blanche avant chargement header
+.header {
+	&, td.expander { background: @nlBodyBackground; }
+}
 
 
 // Hr borders
@@ -384,14 +391,6 @@ hr {
 //gestion row avec bordures de séparation
 .row.bordered {
 	td hr.border { border-bottom: 1px solid @nlHrBorder; }
-}
-
-
-// Header
-// -------------------------
-//pour supprimer toute zone blanche avant chargement header
-.header {
-	&, td.expander { background: @nlBodyBackground; }
 }
 
 
