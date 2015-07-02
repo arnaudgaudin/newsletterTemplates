@@ -369,7 +369,7 @@ a {
 // Body
 // -------------------------
 body, table.body {
-	-premailer-background: e("##((nlBodyBackground))##");
+	background: @nlBodyBackground;
 	//rajout pour suppression paramètre doublon via compiler
 	background-image: url("-premailer-bgdebug");
 }
@@ -379,34 +379,34 @@ body, table.body {
 // -------------------------
 //pour supprimer toute zone blanche avant chargement header
 .header {
-	&, td.expander { -premailer-background: e("##((nlBodyBackground))##"); }
+	&, td.expander { background: @nlBodyBackground; }
 }
 
 
 // Hr borders
 // -------------------------
 hr {
-	color: e("##((nlHrBorder))##");
-	-premailer-background: e("##((nlHrBorder))##");
+	color: @nlHrBorder;
+	background: @nlHrBorder;
 }
 //gestion row avec bordures de séparation
 .row.bordered {
-	td hr.border { border-bottom: 1px solid e("##((nlHrBorder))##"); }
+	td hr.border { border-bottom: 1px solid @nlHrBorder; }
 }
 
 
 // contentOnline area
 // -------------------------
 .contentOnline {
-	&, td.expander { -premailer-background: e("##((nlCntOnlineBackground))##"); }
-	.newsletterInnerTextColor(e("##((nlCntOnlineText))##"));
+	&, td.expander { background: @nlCntOnlineBackground; }
+	.newsletterInnerTextColor(@nlCntOnlineText);
 	.online {
-		color: e("##((nlCntOnlineText))##");
-		a { .newsletterLinkColor(e("##((nlCntOnlineText))##")); }
+		color: @nlCntOnlineText;
+		a { .newsletterLinkColor(@nlCntOnlineText); }
 	}
 	.name {
-		color: e("##((nlCntOnlineName))##");
-		a { .newsletterLinkColor(e("##((nlCntOnlineName))##")); }
+		color: @nlCntOnlineName;
+		a { .newsletterLinkColor(@nlCntOnlineName); }
 	}
 }
 
@@ -414,26 +414,26 @@ hr {
 // contentCabInform area
 // -------------------------
 .contentCabInform {
-	&, td.expander { -premailer-background: e("##((nlCntCabBackground))##"); }
+	&, td.expander { background: @nlCntCabBackground; }
 	.title {
-		color: e("##((nlCntCabTitle))##");
-		a { .newsletterLinkColor(e("##((nlCntCabTitle))##")); }
+		color: @nlCntCabTitle;
+		a { .newsletterLinkColor(@nlCntCabTitle); }
 	}
-	.text, .readMore { color: e("##((nlCntCabText))##"); }
-	.newsletterInnerTextColor(e("##((nlCntCabText))##"));
+	.text, .readMore { color: @nlCntCabText; }
+	.newsletterInnerTextColor(@nlCntCabText);
 }
 
 
 // contentALaUne area
 // -------------------------
 .contentALaUne {
-	.preTitle { color: e("##((nlCntUnePreTitle))##"); }
+	.preTitle { color: @nlCntUnePreTitle; }
 	.title {
-		.category { color: e("##((nlCntUneCategory))##"); }
+		.category { color: @nlCntUneCategory; }
 	}
 	.readMore {
-		color: e("##((nlCntUneReadMore))##");
-		a { .newsletterLinkColor(e("##((nlCntUneReadMore))##")); }
+		color: @nlCntUneReadMore;
+		a { .newsletterLinkColor(@nlCntUneReadMore); }
 	}
 }
 
@@ -441,11 +441,11 @@ hr {
 // contentArticles area
 // -------------------------
 .contentArticles {
-	.preTitle { color: e("##((nlCntArtPreTitle))##"); }
-	.title .category { color: e("##((nlCntArtCategory))##"); }
+	.preTitle { color: @nlCntArtPreTitle; }
+	.title .category { color: @nlCntArtCategory; }
 	.readMore {
-		color: e("##((nlCntArtReadMore))##");
-		a { .newsletterLinkColor(e("##((nlCntArtReadMore))##")); }
+		color: @nlCntArtReadMore;
+		a { .newsletterLinkColor(@nlCntArtReadMore); }
 	}
 }
 
@@ -455,20 +455,20 @@ hr {
 .contentBottom {
 	.chiffre {
 		table.round {
-			td { -premailer-background: e("##((nlCntChfBackground))##"); }
-			.newsletterInnerTextColor(e("##((nlCntChfValue))##"));
+			td { background: @nlCntChfBackground; }
+			.newsletterInnerTextColor(@nlCntChfValue);
 		}
 	}
 	.question {
 		table.round {
-			td { -premailer-background: e("##((nlCntQtnBackground))##"); }
-			.newsletterInnerTextColor(e("##((nlCntQtnValue))##"));
+			td { background: @nlCntQtnBackground; }
+			.newsletterInnerTextColor(@nlCntQtnValue);
 		}
 	}
 	.echeancier {
 		table.round {
-			td { -premailer-background: e("##((nlCntAgdBackground))##"); }
-			.newsletterInnerTextColor(e("##((nlCntAgdValue))##"));
+			td { background: @nlCntAgdBackground; }
+			.newsletterInnerTextColor(@nlCntAgdValue);
 		}
 	}
 }
@@ -476,15 +476,15 @@ hr {
 // contentContact area
 // -------------------------
 .contentContact {
-	&, td.expander { -premailer-background: e("##((nlCntCctBackground))##"); }
-	.newsletterInnerTextColor(e("##((nlCntCctText))##"));
+	&, td.expander { background: @nlCntCctBackground; }
+	.newsletterInnerTextColor(@nlCntCctText);
 }
 
 
 // footer area
 // -------------------------
 .footer {
-	&, td.expander { -premailer-background: e("##((nlFooterBackground))##"); }
-	.newsletterInnerTextColor(e("##((nlFooterText))##"));
-	small { color: e("##((nlFooterText))##"); }
+	&, td.expander { background: @nlFooterBackground; }
+	.newsletterInnerTextColor(@nlFooterText);
+	small { color: @nlFooterText; }
 }
