@@ -485,9 +485,11 @@ tracking_url = "fintrack=&amp;rep="&repertoire_ei&"&amp;url_site_exp="&url_site_
 																<tr>
 																	<!--{{%%{{ chiffre_fs = Round(88 / Len(chiffre_valeur)) }}%%}}-->
 																	<td nlbgcolor="##((nlCntChfBackground))##" style="font-size: %%{{=chiffre_fs}}%%px;">
-																		<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/?article=%%{{=chiffre_id}}%%&amp;%%{{=tracking_url}}%%">
-																			<!--{{%%{{=chiffre_valeur}}%%}}--><!--DEL{{-->1625<!--}}DEL-->
-																		</a>
+																		<p class="inner">
+																			<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/?article=%%{{=chiffre_id}}%%&amp;%%{{=tracking_url}}%%">
+																				<!--{{%%{{=chiffre_valeur}}%%}}--><!--DEL{{-->1625<!--}}DEL-->
+																			</a>
+																		</p>
 																	</td>
 																</tr>
 															</table>
@@ -519,7 +521,9 @@ tracking_url = "fintrack=&amp;rep="&repertoire_ei&"&amp;url_site_exp="&url_site_
 															<table border="0" class="round">
 																<tr>
 																	<td nlbgcolor="##((nlCntQtnBackground))##">
-																		<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/?article=%%{{=question_id}}%%&amp;%%{{=tracking_url}}%%">?</a>
+																		<p class="inner">
+																			<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/?article=%%{{=question_id}}%%&amp;%%{{=tracking_url}}%%">?</a>
+																		</p>
 																	</td>
 																</tr>
 															</table>
@@ -581,9 +585,11 @@ tracking_url = "fintrack=&amp;rep="&repertoire_ei&"&amp;url_site_exp="&url_site_
 																				agenda_mois_texte = "null"
 																		End Select
 																		}}%%}}-->
-																		<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/?article=%%{{=agenda_id}}%%&amp;collapse=collapse%%{{=agenda_collapse}}%%&amp;%%{{=tracking_url}}%%">
-																			<span class="day"><!--{{%%{{=agenda_jour}}%%}}--><!--DEL{{-->25<!--}}DEL--></span><br /><span class="month"><!--{{%%{{=agenda_mois_texte}}%%}}--><!--DEL{{-->mars<!--}}DEL--></span>
-																		</a>
+																		<p class="inner">
+																			<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/?article=%%{{=agenda_id}}%%&amp;collapse=collapse%%{{=agenda_collapse}}%%&amp;%%{{=tracking_url}}%%">
+																				<span class="day"><!--{{%%{{=agenda_jour}}%%}}--><!--DEL{{-->25<!--}}DEL--></span><br /><span class="month"><!--{{%%{{=agenda_mois_texte}}%%}}--><!--DEL{{-->mars<!--}}DEL--></span>
+																			</a>
+																		</p>
 																	</td>
 																</tr>
 															</table>
