@@ -1487,37 +1487,37 @@ h6 a:visited {
 
 body,
 table.body {
-  -premailer-background: ##((nlBodyBackground))##;
+  background: #ffffff;
   background-image: url("-premailer-bgdebug");
 }
 
 .header,
 .header td.expander {
-  -premailer-background: ##((nlBodyBackground))##;
+  background: #ffffff;
 }
 
 hr {
-  color: ##((nlHrBorder))##;
-  -premailer-background: ##((nlHrBorder))##;
+  color: #79468c;
+  background: #79468c;
 }
 
 .row.bordered td hr.border {
-  border-bottom: 1px solid ##((nlHrBorder))##;
+  border-bottom: 1px solid #79468c;
 }
 
 .contentOnline,
 .contentOnline td.expander {
-  -premailer-background: ##((nlCntOnlineBackground))##;
+  background: #ffffff;
 }
 
 .contentOnline,
 .contentOnline td,
 .contentOnline .inner {
-  color: ##((nlCntOnlineText))##;
+  color: #8c8c8c;
 }
 
 .contentOnline a {
-  color: ##((nlCntOnlineText))##;
+  color: #8c8c8c;
 }
 
 .contentOnline a .important,
@@ -1525,15 +1525,15 @@ hr {
 .contentOnline a:hover,
 .contentOnline a:focus,
 .contentOnline a:active {
-  color: ##((nlCntOnlineText))## !important;
+  color: #8c8c8c !important;
 }
 
 .contentOnline .online {
-  color: ##((nlCntOnlineText))##;
+  color: #8c8c8c;
 }
 
 .contentOnline .online a {
-  color: ##((nlCntOnlineText))##;
+  color: #8c8c8c;
 }
 
 .contentOnline .online a .important,
@@ -1541,15 +1541,15 @@ hr {
 .contentOnline .online a:hover,
 .contentOnline .online a:focus,
 .contentOnline .online a:active {
-  color: ##((nlCntOnlineText))## !important;
+  color: #8c8c8c !important;
 }
 
 .contentOnline .name {
-  color: ##((nlCntOnlineName))##;
+  color: #333333;
 }
 
 .contentOnline .name a {
-  color: ##((nlCntOnlineName))##;
+  color: #333333;
 }
 
 .contentOnline .name a .important,
@@ -1557,20 +1557,20 @@ hr {
 .contentOnline .name a:hover,
 .contentOnline .name a:focus,
 .contentOnline .name a:active {
-  color: ##((nlCntOnlineName))## !important;
+  color: #333333 !important;
 }
 
 .contentCabInform,
 .contentCabInform td.expander {
-  -premailer-background: ##((nlCntCabBackground))##;
+  background: #c73b1b;
 }
 
 .contentCabInform .title {
-  color: ##((nlCntCabTitle))##;
+  color: #ffffff;
 }
 
 .contentCabInform .title a {
-  color: ##((nlCntCabTitle))##;
+  color: #ffffff;
 }
 
 .contentCabInform .title a .important,
@@ -1578,22 +1578,22 @@ hr {
 .contentCabInform .title a:hover,
 .contentCabInform .title a:focus,
 .contentCabInform .title a:active {
-  color: ##((nlCntCabTitle))## !important;
+  color: #ffffff !important;
 }
 
 .contentCabInform .text,
 .contentCabInform .readMore {
-  color: ##((nlCntCabText))##;
+  color: #ffffff;
 }
 
 .contentCabInform,
 .contentCabInform td,
 .contentCabInform .inner {
-  color: ##((nlCntCabText))##;
+  color: #ffffff;
 }
 
 .contentCabInform a {
-  color: ##((nlCntCabText))##;
+  color: #ffffff;
 }
 
 .contentCabInform a .important,
@@ -1601,23 +1601,23 @@ hr {
 .contentCabInform a:hover,
 .contentCabInform a:focus,
 .contentCabInform a:active {
-  color: ##((nlCntCabText))## !important;
+  color: #ffffff !important;
 }
 
 .contentALaUne .preTitle {
-  color: ##((nlCntUnePreTitle))##;
+  color: #79468c;
 }
 
 .contentALaUne .title .category {
-  color: ##((nlCntUneCategory))##;
+  color: #c73b1b;
 }
 
 .contentALaUne .readMore {
-  color: ##((nlCntUneReadMore))##;
+  color: #79468c;
 }
 
 .contentALaUne .readMore a {
-  color: ##((nlCntUneReadMore))##;
+  color: #79468c;
 }
 
 .contentALaUne .readMore a .important,
@@ -1625,23 +1625,23 @@ hr {
 .contentALaUne .readMore a:hover,
 .contentALaUne .readMore a:focus,
 .contentALaUne .readMore a:active {
-  color: ##((nlCntUneReadMore))## !important;
+  color: #79468c !important;
 }
 
 .contentArticles .preTitle {
-  color: ##((nlCntArtPreTitle))##;
+  color: #79468c;
 }
 
 .contentArticles .title .category {
-  color: ##((nlCntArtCategory))##;
+  color: #c73b1b;
 }
 
 .contentArticles .readMore {
-  color: ##((nlCntArtReadMore))##;
+  color: #79468c;
 }
 
 .contentArticles .readMore a {
-  color: ##((nlCntArtReadMore))##;
+  color: #79468c;
 }
 
 .contentArticles .readMore a .important,
@@ -1649,21 +1649,21 @@ hr {
 .contentArticles .readMore a:hover,
 .contentArticles .readMore a:focus,
 .contentArticles .readMore a:active {
-  color: ##((nlCntArtReadMore))## !important;
+  color: #79468c !important;
 }
 
 .contentBottom .chiffre table.round td {
-  -premailer-background: ##((nlCntChfBackground))##;
+  background: #79468c;
 }
 
 .contentBottom .chiffre table.round,
 .contentBottom .chiffre table.round td,
 .contentBottom .chiffre table.round .inner {
-  color: ##((nlCntChfValue))##;
+  color: #ffffff;
 }
 
 .contentBottom .chiffre table.round a {
-  color: ##((nlCntChfValue))##;
+  color: #ffffff;
 }
 
 .contentBottom .chiffre table.round a .important,
@@ -1671,21 +1671,21 @@ hr {
 .contentBottom .chiffre table.round a:hover,
 .contentBottom .chiffre table.round a:focus,
 .contentBottom .chiffre table.round a:active {
-  color: ##((nlCntChfValue))## !important;
+  color: #ffffff !important;
 }
 
 .contentBottom .question table.round td {
-  -premailer-background: ##((nlCntQtnBackground))##;
+  background: #919191;
 }
 
 .contentBottom .question table.round,
 .contentBottom .question table.round td,
 .contentBottom .question table.round .inner {
-  color: ##((nlCntQtnValue))##;
+  color: #ffffff;
 }
 
 .contentBottom .question table.round a {
-  color: ##((nlCntQtnValue))##;
+  color: #ffffff;
 }
 
 .contentBottom .question table.round a .important,
@@ -1693,21 +1693,21 @@ hr {
 .contentBottom .question table.round a:hover,
 .contentBottom .question table.round a:focus,
 .contentBottom .question table.round a:active {
-  color: ##((nlCntQtnValue))## !important;
+  color: #ffffff !important;
 }
 
 .contentBottom .echeancier table.round td {
-  -premailer-background: ##((nlCntAgdBackground))##;
+  background: #c73b1b;
 }
 
 .contentBottom .echeancier table.round,
 .contentBottom .echeancier table.round td,
 .contentBottom .echeancier table.round .inner {
-  color: ##((nlCntAgdValue))##;
+  color: #ffffff;
 }
 
 .contentBottom .echeancier table.round a {
-  color: ##((nlCntAgdValue))##;
+  color: #ffffff;
 }
 
 .contentBottom .echeancier table.round a .important,
@@ -1715,22 +1715,22 @@ hr {
 .contentBottom .echeancier table.round a:hover,
 .contentBottom .echeancier table.round a:focus,
 .contentBottom .echeancier table.round a:active {
-  color: ##((nlCntAgdValue))## !important;
+  color: #ffffff !important;
 }
 
 .contentContact,
 .contentContact td.expander {
-  -premailer-background: ##((nlCntCctBackground))##;
+  background: #f7f7f7;
 }
 
 .contentContact,
 .contentContact td,
 .contentContact .inner {
-  color: ##((nlCntCctText))##;
+  color: #333333;
 }
 
 .contentContact a {
-  color: ##((nlCntCctText))##;
+  color: #333333;
 }
 
 .contentContact a .important,
@@ -1738,22 +1738,22 @@ hr {
 .contentContact a:hover,
 .contentContact a:focus,
 .contentContact a:active {
-  color: ##((nlCntCctText))## !important;
+  color: #333333 !important;
 }
 
 .footer,
 .footer td.expander {
-  -premailer-background: ##((nlFooterBackground))##;
+  background: #f7f7f7;
 }
 
 .footer,
 .footer td,
 .footer .inner {
-  color: ##((nlFooterText))##;
+  color: #848484;
 }
 
 .footer a {
-  color: ##((nlFooterText))##;
+  color: #848484;
 }
 
 .footer a .important,
@@ -1761,11 +1761,11 @@ hr {
 .footer a:hover,
 .footer a:focus,
 .footer a:active {
-  color: ##((nlFooterText))## !important;
+  color: #848484 !important;
 }
 
 .footer small {
-  color: ##((nlFooterText))##;
+  color: #848484;
 }
 
 @media only screen and (max-width: 720px) {
