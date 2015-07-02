@@ -1500,37 +1500,37 @@ h6 a:visited {
 
 body,
 table.body {
-  background: #eaeaea;
+  -premailer-background: ##((nlBodyBackground))##;
   background-image: url("-premailer-bgdebug");
 }
 
 .header,
 .header td.expander {
-  background: #eaeaea;
+  -premailer-background: ##((nlBodyBackground))##;
 }
 
 hr {
-  color: #79468c;
-  background: #79468c;
+  color: ##((nlHrBorder))##;
+  -premailer-background: ##((nlHrBorder))##;
 }
 
 .row.bordered td hr.border {
-  border-bottom: 1px solid #79468c;
+  border-bottom: 1px solid ##((nlHrBorder))##;
 }
 
 .contentOnline,
 .contentOnline td.expander {
-  background: #eaeaea;
+  -premailer-background: ##((nlCntOnlineBackground))##;
 }
 
 .contentOnline,
 .contentOnline td,
 .contentOnline .inner {
-  color: #777777;
+  color: ##((nlCntOnlineText))##;
 }
 
 .contentOnline a {
-  color: #777777;
+  color: ##((nlCntOnlineText))##;
 }
 
 .contentOnline a .important,
@@ -1538,15 +1538,15 @@ hr {
 .contentOnline a:hover,
 .contentOnline a:focus,
 .contentOnline a:active {
-  color: #777777 !important;
+  color: ##((nlCntOnlineText))## !important;
 }
 
 .contentOnline .online {
-  color: #777777;
+  color: ##((nlCntOnlineText))##;
 }
 
 .contentOnline .online a {
-  color: #777777;
+  color: ##((nlCntOnlineText))##;
 }
 
 .contentOnline .online a .important,
@@ -1554,15 +1554,15 @@ hr {
 .contentOnline .online a:hover,
 .contentOnline .online a:focus,
 .contentOnline .online a:active {
-  color: #777777 !important;
+  color: ##((nlCntOnlineText))## !important;
 }
 
 .contentOnline .name {
-  color: #333333;
+  color: ##((nlCntOnlineName))##;
 }
 
 .contentOnline .name a {
-  color: #333333;
+  color: ##((nlCntOnlineName))##;
 }
 
 .contentOnline .name a .important,
@@ -1570,20 +1570,20 @@ hr {
 .contentOnline .name a:hover,
 .contentOnline .name a:focus,
 .contentOnline .name a:active {
-  color: #333333 !important;
+  color: ##((nlCntOnlineName))## !important;
 }
 
 .contentCabInform,
 .contentCabInform td.expander {
-  background: #c73b1b;
+  -premailer-background: ##((nlCntCabBackground))##;
 }
 
 .contentCabInform .title {
-  color: #ffffff;
+  color: ##((nlCntCabTitle))##;
 }
 
 .contentCabInform .title a {
-  color: #ffffff;
+  color: ##((nlCntCabTitle))##;
 }
 
 .contentCabInform .title a .important,
@@ -1591,22 +1591,22 @@ hr {
 .contentCabInform .title a:hover,
 .contentCabInform .title a:focus,
 .contentCabInform .title a:active {
-  color: #ffffff !important;
+  color: ##((nlCntCabTitle))## !important;
 }
 
 .contentCabInform .text,
 .contentCabInform .readMore {
-  color: #ffffff;
+  color: ##((nlCntCabText))##;
 }
 
 .contentCabInform,
 .contentCabInform td,
 .contentCabInform .inner {
-  color: #ffffff;
+  color: ##((nlCntCabText))##;
 }
 
 .contentCabInform a {
-  color: #ffffff;
+  color: ##((nlCntCabText))##;
 }
 
 .contentCabInform a .important,
@@ -1614,23 +1614,23 @@ hr {
 .contentCabInform a:hover,
 .contentCabInform a:focus,
 .contentCabInform a:active {
-  color: #ffffff !important;
+  color: ##((nlCntCabText))## !important;
 }
 
 .contentALaUne .preTitle {
-  color: #79468c;
+  color: ##((nlCntUnePreTitle))##;
 }
 
 .contentALaUne .title .category {
-  color: #c73b1b;
+  color: ##((nlCntUneCategory))##;
 }
 
 .contentALaUne .readMore {
-  color: #79468c;
+  color: ##((nlCntUneReadMore))##;
 }
 
 .contentALaUne .readMore a {
-  color: #79468c;
+  color: ##((nlCntUneReadMore))##;
 }
 
 .contentALaUne .readMore a .important,
@@ -1638,23 +1638,23 @@ hr {
 .contentALaUne .readMore a:hover,
 .contentALaUne .readMore a:focus,
 .contentALaUne .readMore a:active {
-  color: #79468c !important;
+  color: ##((nlCntUneReadMore))## !important;
 }
 
 .contentArticles .preTitle {
-  color: #79468c;
+  color: ##((nlCntArtPreTitle))##;
 }
 
 .contentArticles .title .category {
-  color: #c73b1b;
+  color: ##((nlCntArtCategory))##;
 }
 
 .contentArticles .readMore {
-  color: #79468c;
+  color: ##((nlCntArtReadMore))##;
 }
 
 .contentArticles .readMore a {
-  color: #79468c;
+  color: ##((nlCntArtReadMore))##;
 }
 
 .contentArticles .readMore a .important,
@@ -1662,21 +1662,21 @@ hr {
 .contentArticles .readMore a:hover,
 .contentArticles .readMore a:focus,
 .contentArticles .readMore a:active {
-  color: #79468c !important;
+  color: ##((nlCntArtReadMore))## !important;
 }
 
 .contentBottom .chiffre table.round td {
-  background: #79468c;
+  -premailer-background: ##((nlCntChfBackground))##;
 }
 
 .contentBottom .chiffre table.round,
 .contentBottom .chiffre table.round td,
 .contentBottom .chiffre table.round .inner {
-  color: #ffffff;
+  color: ##((nlCntChfValue))##;
 }
 
 .contentBottom .chiffre table.round a {
-  color: #ffffff;
+  color: ##((nlCntChfValue))##;
 }
 
 .contentBottom .chiffre table.round a .important,
@@ -1684,21 +1684,21 @@ hr {
 .contentBottom .chiffre table.round a:hover,
 .contentBottom .chiffre table.round a:focus,
 .contentBottom .chiffre table.round a:active {
-  color: #ffffff !important;
+  color: ##((nlCntChfValue))## !important;
 }
 
 .contentBottom .question table.round td {
-  background: #919191;
+  -premailer-background: ##((nlCntQtnBackground))##;
 }
 
 .contentBottom .question table.round,
 .contentBottom .question table.round td,
 .contentBottom .question table.round .inner {
-  color: #ffffff;
+  color: ##((nlCntQtnValue))##;
 }
 
 .contentBottom .question table.round a {
-  color: #ffffff;
+  color: ##((nlCntQtnValue))##;
 }
 
 .contentBottom .question table.round a .important,
@@ -1706,21 +1706,21 @@ hr {
 .contentBottom .question table.round a:hover,
 .contentBottom .question table.round a:focus,
 .contentBottom .question table.round a:active {
-  color: #ffffff !important;
+  color: ##((nlCntQtnValue))## !important;
 }
 
 .contentBottom .echeancier table.round td {
-  background: #c73b1b;
+  -premailer-background: ##((nlCntAgdBackground))##;
 }
 
 .contentBottom .echeancier table.round,
 .contentBottom .echeancier table.round td,
 .contentBottom .echeancier table.round .inner {
-  color: #ffffff;
+  color: ##((nlCntAgdValue))##;
 }
 
 .contentBottom .echeancier table.round a {
-  color: #ffffff;
+  color: ##((nlCntAgdValue))##;
 }
 
 .contentBottom .echeancier table.round a .important,
@@ -1728,22 +1728,22 @@ hr {
 .contentBottom .echeancier table.round a:hover,
 .contentBottom .echeancier table.round a:focus,
 .contentBottom .echeancier table.round a:active {
-  color: #ffffff !important;
+  color: ##((nlCntAgdValue))## !important;
 }
 
 .contentContact,
 .contentContact td.expander {
-  background: #f7f7f7;
+  -premailer-background: ##((nlCntCctBackground))##;
 }
 
 .contentContact,
 .contentContact td,
 .contentContact .inner {
-  color: #333333;
+  color: ##((nlCntCctText))##;
 }
 
 .contentContact a {
-  color: #333333;
+  color: ##((nlCntCctText))##;
 }
 
 .contentContact a .important,
@@ -1751,22 +1751,22 @@ hr {
 .contentContact a:hover,
 .contentContact a:focus,
 .contentContact a:active {
-  color: #333333 !important;
+  color: ##((nlCntCctText))## !important;
 }
 
 .footer,
 .footer td.expander {
-  background: #f7f7f7;
+  -premailer-background: ##((nlFooterBackground))##;
 }
 
 .footer,
 .footer td,
 .footer .inner {
-  color: #848484;
+  color: ##((nlFooterText))##;
 }
 
 .footer a {
-  color: #848484;
+  color: ##((nlFooterText))##;
 }
 
 .footer a .important,
@@ -1774,12 +1774,140 @@ hr {
 .footer a:hover,
 .footer a:focus,
 .footer a:active {
-  color: #848484 !important;
+  color: ##((nlFooterText))## !important;
 }
 
 .footer small {
-  color: #848484;
+  color: ##((nlFooterText))##;
 }
+
+/*
+// DEVELOPPEMENT COLORS
+// --------------------------------------------------
+
+// Body
+// -------------------------
+body, table.body {
+	background: @nlBodyBackground;
+	//rajout pour suppression param�tre doublon via compiler
+	background-image: url("-premailer-bgdebug");
+}
+
+
+// Header
+// -------------------------
+//pour supprimer toute zone blanche avant chargement header
+.header {
+	&, td.expander { background: @nlBodyBackground; }
+}
+
+
+// Hr borders
+// -------------------------
+hr {
+	color: @nlHrBorder;
+	background: @nlHrBorder;
+}
+//gestion row avec bordures de s�paration
+.row.bordered {
+	td hr.border { border-bottom: 1px solid @nlHrBorder; }
+}
+
+
+// contentOnline area
+// -------------------------
+.contentOnline {
+	&, td.expander { background: @nlCntOnlineBackground; }
+	.newsletterInnerTextColor(@nlCntOnlineText);
+	.online {
+		color: @nlCntOnlineText;
+		a { .newsletterLinkColor(@nlCntOnlineText); }
+	}
+	.name {
+		color: @nlCntOnlineName;
+		a { .newsletterLinkColor(@nlCntOnlineName); }
+	}
+}
+
+
+// contentCabInform area
+// -------------------------
+.contentCabInform {
+	&, td.expander { background: @nlCntCabBackground; }
+	.title {
+		color: @nlCntCabTitle;
+		a { .newsletterLinkColor(@nlCntCabTitle); }
+	}
+	.text, .readMore { color: @nlCntCabText; }
+	.newsletterInnerTextColor(@nlCntCabText);
+}
+
+
+// contentALaUne area
+// -------------------------
+.contentALaUne {
+	.preTitle { color: @nlCntUnePreTitle; }
+	.title {
+		.category { color: @nlCntUneCategory; }
+	}
+	.readMore {
+		color: @nlCntUneReadMore;
+		a { .newsletterLinkColor(@nlCntUneReadMore); }
+	}
+}
+
+
+// contentArticles area
+// -------------------------
+.contentArticles {
+	.preTitle { color: @nlCntArtPreTitle; }
+	.title .category { color: @nlCntArtCategory; }
+	.readMore {
+		color: @nlCntArtReadMore;
+		a { .newsletterLinkColor(@nlCntArtReadMore); }
+	}
+}
+
+
+// contentBottom area
+// -------------------------
+.contentBottom {
+	.chiffre {
+		table.round {
+			td { background: @nlCntChfBackground; }
+			.newsletterInnerTextColor(@nlCntChfValue);
+		}
+	}
+	.question {
+		table.round {
+			td { background: @nlCntQtnBackground; }
+			.newsletterInnerTextColor(@nlCntQtnValue);
+		}
+	}
+	.echeancier {
+		table.round {
+			td { background: @nlCntAgdBackground; }
+			.newsletterInnerTextColor(@nlCntAgdValue);
+		}
+	}
+}
+
+// contentContact area
+// -------------------------
+.contentContact {
+	&, td.expander { background: @nlCntCctBackground; }
+	.newsletterInnerTextColor(@nlCntCctText);
+}
+
+
+// footer area
+// -------------------------
+.footer {
+	&, td.expander { background: @nlFooterBackground; }
+	.newsletterInnerTextColor(@nlFooterText);
+	small { color: @nlFooterText; }
+}
+*/
 
 @media only screen and (max-width: 720px) {
   table[class="body"] img {
