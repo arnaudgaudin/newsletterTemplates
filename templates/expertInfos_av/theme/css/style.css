@@ -4,7 +4,7 @@
 
 body,
 table.body {
-  background-color: #ffffff;
+  background-color: #eaeaea;
 }
 
 /**********************************************
@@ -1487,13 +1487,13 @@ h6 a:visited {
 
 body,
 table.body {
-  background: #ffffff;
+  background: #eaeaea;
   background-image: url("-premailer-bgdebug");
 }
 
 .header,
 .header td.expander {
-  background: #ffffff;
+  background: #eaeaea;
 }
 
 hr {
@@ -1507,17 +1507,17 @@ hr {
 
 .contentOnline,
 .contentOnline td.expander {
-  background: #ffffff;
+  background: #eaeaea;
 }
 
 .contentOnline,
 .contentOnline td,
 .contentOnline .inner {
-  color: #8c8c8c;
+  color: #777777;
 }
 
 .contentOnline a {
-  color: #8c8c8c;
+  color: #777777;
 }
 
 .contentOnline a .important,
@@ -1525,15 +1525,15 @@ hr {
 .contentOnline a:hover,
 .contentOnline a:focus,
 .contentOnline a:active {
-  color: #8c8c8c !important;
+  color: #777777 !important;
 }
 
 .contentOnline .online {
-  color: #8c8c8c;
+  color: #777777;
 }
 
 .contentOnline .online a {
-  color: #8c8c8c;
+  color: #777777;
 }
 
 .contentOnline .online a .important,
@@ -1541,7 +1541,7 @@ hr {
 .contentOnline .online a:hover,
 .contentOnline .online a:focus,
 .contentOnline .online a:active {
-  color: #8c8c8c !important;
+  color: #777777 !important;
 }
 
 .contentOnline .name {
