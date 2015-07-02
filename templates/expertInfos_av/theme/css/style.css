@@ -1208,6 +1208,7 @@ img.faicon {
 
 .contentBottom table.wrapper-text {
   width: 100%;
+  -premailer-width: 100%;
 }
 
 .contentBottom table.wrapper-text td {
