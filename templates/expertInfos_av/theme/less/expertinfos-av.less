@@ -217,25 +217,32 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 		
 		td {
 			padding: 5px;
-			text-align: center;
 			overflow: hidden;
+			.inner {
+				text-align: center;
+				margin: 0;
+				padding: 0;
+			}
 		}
 	}
 
 	//différenciation des tailles
 	.chiffre table.round td {
-		line-height: (@columnWidth - 10px);
-
-		//variabilisé en VBSCRIPT
-		@chfNbr: 4;
-		font-size: (88px / @chfNbr);
+		&, .inner {
+			line-height: (@columnWidth - 10px);
+			//variabilisé en VBSCRIPT
+			@chfNbr: 4;
+			font-size: (88px / @chfNbr);
+		}
 	}
 	.question table.round td {
-		line-height: (@columnWidth - 10px);
-		font-size: 50px;
+		&, .inner {
+			line-height: (@columnWidth - 10px);
+			font-size: 50px;
+		}
 	}
 	.echeancier table.round td {
-		line-height: 0px;
+		&, .inner { line-height: 0px; }
 		text-transform: uppercase;
 		.day {
 			line-height: 32px;
