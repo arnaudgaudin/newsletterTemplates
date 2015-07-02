@@ -1179,6 +1179,15 @@ img.faicon {
   vertical-align: top;
 }
 
+.contentOnline td.wrapper {
+  padding-top: 10px;
+}
+
+.contentOnline table.columns td,
+.contentOnline table.column td {
+  padding-bottom: 10px;
+}
+
 .contentOnline table.columns td,
 .contentOnline table.column td {
   mso-line-height-rule: exactly;
@@ -1964,6 +1973,24 @@ hr {
   table[class="body"] img.faicon {
     width: 15px !important;
     height: 15px !important;
+  }
+
+  table[class="body"] .contentOnline td.wrapper {
+    padding-top: 5px !important;
+  }
+
+  table[class="body"] .contentOnline table.columns td,
+  table[class="body"] .contentOnline table.column td {
+    padding-bottom: 5px !important;
+  }
+
+  table[class="body"] .contentOnline .online {
+    padding-bottom: 0px !important;
+  }
+
+  table[class="body"] .contentOnline .columns,
+  table[class="body"] .contentOnline .column {
+    display: table !important;
   }
 
   table[class="body"] .contentBottom td.wrapper:not(:first-child) {

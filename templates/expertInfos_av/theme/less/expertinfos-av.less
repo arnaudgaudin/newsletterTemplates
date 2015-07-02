@@ -142,6 +142,10 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 // contentOnline area
 // -------------------------
 .contentOnline {
+	//réduction décalage vertical en haut
+	td.wrapper { padding-top: (@wrapperPad / 2); }
+	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+
 	//suppression fontSize et lineHeight pour débug Outlook
 	table.columns td, table.column td {
 		mso-line-height-rule: exactly;
@@ -161,6 +165,16 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 		padding-bottom: 5px;
 	}
 	.name { display: block; }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentOnline {
+		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
+		table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
+		.online { padding-bottom: 0px !important; }
+
+		//pour forcer centrage contenu trop petit
+		.columns, .column { display: table !important; }
+	}
 }
 
 
