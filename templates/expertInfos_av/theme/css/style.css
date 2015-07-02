@@ -134,7 +134,7 @@ table.container table.row {
 }
 
 td.wrapper {
-  padding: 10px 0px 0px 0px;
+  padding: 20px 0px 0px 0px;
 }
 
 table.columns,
@@ -144,7 +144,7 @@ table.column {
 
 table.columns td,
 table.column td {
-  padding: 0px 0px 10px;
+  padding: 0px 0px 20px;
 }
 
 table.columns td.sub-columns,
@@ -432,22 +432,22 @@ td.expander {
 
 table.columns .text-pad,
 table.column .text-pad {
-  padding-left: 10px !important;
-  padding-right: 10px !important;
+  padding-left: 40px !important;
+  padding-right: 40px !important;
 }
 
 table.columns .left-text-pad,
 table.columns .text-pad-left,
 table.column .left-text-pad,
 table.column .text-pad-left {
-  padding-left: 10px !important;
+  padding-left: 40px !important;
 }
 
 table.columns .right-text-pad,
 table.columns .text-pad-right,
 table.column .right-text-pad,
 table.column .text-pad-right {
-  padding-right: 10px !important;
+  padding-right: 40px !important;
 }
 
 /* Block Grid */
@@ -459,7 +459,7 @@ table.column .text-pad-right {
 
 .block-grid td {
   display: inline-block;
-  padding: 10px;
+  padding: 20px;
 }
 
 .two-up td {
@@ -667,7 +667,7 @@ h6 a:visited {
 .panel {
   background: #f2f2f2;
   border: 1px solid #d9d9d9;
-  padding: 10px !important;
+  padding: 20px !important;
 }
 
 .sub-grid table {
@@ -1125,6 +1125,15 @@ h6 {
   padding-top: 5px;
 }
 
+.row.bordered td.wrapper {
+  padding-top: 0px;
+}
+
+.row.bordered table.columns td,
+.row.bordered table.column td {
+  padding-bottom: 0px;
+}
+
 .row.bordered td {
   line-height: 0px;
 }
@@ -1197,16 +1206,12 @@ img.faicon {
   text-align: center;
 }
 
-.contentBottom td.wrapper {
-  padding-bottom: 10px;
-}
-
 .contentBottom table.wrapper-text {
   width: 100%;
 }
 
 .contentBottom table.wrapper-text td {
-  padding-top: 5px;
+  padding-top: 10px;
   padding-bottom: 0px;
 }
 
@@ -1249,10 +1254,6 @@ img.faicon {
 .contentBottom .echeancier table.round td .month {
   line-height: 18px;
   font-size: 12px;
-}
-
-.contentContact.bordered td.wrapper {
-  padding-top: 0px;
 }
 
 .container {
@@ -1793,6 +1794,7 @@ hr {
   table[class="body"] .wrapper {
     position: relative !important;
     display: block !important;
+    padding-top: 10px !important;
     padding-right: 0 !important;
   }
 
@@ -1814,6 +1816,7 @@ hr {
   table[class="body"] table.columns td,
   table[class="body"] table.column td {
     width: 100% !important;
+    padding-bottom: 10px !important;
   }
 
   table[class="body"] .columns td.one,
@@ -1894,14 +1897,21 @@ hr {
     width: 1px !important;
   }
 
+  table[class="body"] .text-pad {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
   table[class="body"] .right-text-pad,
   table[class="body"] .text-pad-right {
-    padding-left: 10px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
   }
 
   table[class="body"] .left-text-pad,
   table[class="body"] .text-pad-left {
-    padding-right: 10px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
   }
 
   table[class="body"] .hide-for-small,
@@ -1918,15 +1928,29 @@ hr {
 
   table[class="container"] .block-grid td {
     width: 100% !important;
+    padding: 10px !important;
+  }
+
+  table[class="container"] .panel {
+    padding: 10px !important;
+  }
+
+  table[class="body"] .header td.wrapper {
+    padding-top: 0px !important;
+  }
+
+  table[class="body"] .header table.columns td,
+  table[class="body"] .header table.column td {
+    padding-bottom: 0px !important;
   }
 
   table[class="body"] .row.bordered td.wrapper {
-    padding-top: 5px !important;
+    padding-top: 0px !important;
   }
 
   table[class="body"] .row.bordered table.columns td,
   table[class="body"] .row.bordered table.column td {
-    padding-bottom: 5px !important;
+    padding-bottom: 0px !important;
   }
 
   table[class="body"] .faicons {
@@ -1939,13 +1963,18 @@ hr {
     height: 15px !important;
   }
 
+  table[class="body"] .contentBottom td.wrapper:not(:first-child) {
+    padding-top: 5px !important;
+  }
+
+  table[class="body"] .contentBottom td.wrapper:not(:last-child) table.columns td,
+  table[class="body"] .contentBottom td.wrapper:not(:last-child) table.column td {
+    padding-bottom: 5px !important;
+  }
+
   table[class="body"] .contentBottom td,
   table[class="body"] .contentBottom td .title {
     text-align: left !important;
-  }
-
-  table[class="body"] .contentBottom td.wrapper {
-    padding-bottom: 0px !important;
   }
 
   table[class="body"] .contentBottom table.wrapper-text {
@@ -1953,12 +1982,13 @@ hr {
   }
 
   table[class="body"] .contentBottom table.wrapper-text td {
-    padding-top: 0px !important;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
   }
 
   table[class="body"] .contentBottom td.wrapper-round {
-    padding-left: 10px !important;
-    padding-right: 10px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
   }
 
   table[class="body"] .contentBottom center {
@@ -1975,14 +2005,5 @@ hr {
   table[class="body"] .contentBottom table.round td {
     width: 50px !important;
     height: 50px !important;
-  }
-
-  table[class="body"] .contentContact.bordered td.wrapper {
-    padding-top: 0px !important;
-  }
-
-  table[class="body"] .contentContact.bordered table.columns td,
-  table[class="body"] .contentContact.bordered table.column td {
-    padding-bottom: 10px !important;
   }
 }
