@@ -271,19 +271,22 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 		@localContHeight: (@roundContHeight - @localPadVertical * 2);
 
 		td {
-			&, .inner { font-size: @localFontSize; }
+			&, .inner {
+				// font-size: @localFontSize;
+				font-size: e("**((localFontSize))**px");
+			}
 			padding-top: @localPadVertical;
 			padding-bottom: @localPadVertical;
 		}
 		&, td {
-			height: @localContHeight;
+			// height: @localContHeight;
+			// -premailer-height: unit(@localContHeight);
 			height: e("**((localContHeight))**px");
-			-premailer-height: unit(@localContHeight);
 			-premailer-height: e("**((localContHeight))**");
 			//application dimension en mode mobile
 			@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 				table[class="body"] & {
-					height: @localContHeight !important;
+					// height: @localContHeight !important;
 					height: e("**((localContHeight))**px !important");
 				}
 			}

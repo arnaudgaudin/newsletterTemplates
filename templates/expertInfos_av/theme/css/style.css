@@ -1282,14 +1282,12 @@ img.faicon {
 
 .contentBottom .chiffre table.round td,
 .contentBottom .chiffre table.round td .inner {
-  font-size: 22px;
+  font-size: **((localFontSize))**px;
 }
 
 .contentBottom .chiffre table.round,
 .contentBottom .chiffre table.round td {
-  height: 22px;
   height: **((localContHeight))**px;
-  -premailer-height: 22;
   -premailer-height: **((localContHeight))**;
 }
 
@@ -2194,7 +2192,6 @@ hr {
 
   table[class="body"] .contentBottom .chiffre table.round,
   table[class="body"] .contentBottom .chiffre table.round td {
-    height: 22px !important;
     height: **((localContHeight))**px !important;
   }
 
