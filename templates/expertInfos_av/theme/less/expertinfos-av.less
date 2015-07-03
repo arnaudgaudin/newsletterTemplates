@@ -244,7 +244,7 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 		//variabilisé en VBSCRIPT
 		@chfNbr: 4;
 		@localFontSize: round(88px / @chfNbr);
-		@localPadVertical: ((@contHeight - @localFontSize) / 2);
+		@localPadVertical: round((@contHeight - @localFontSize) / 2);
 		@localContHeight: (@contHeight - @localPadVertical * 2);
 
 		td {
