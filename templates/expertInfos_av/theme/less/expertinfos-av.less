@@ -207,21 +207,32 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 		}
 	}
 
+	//dimension containers (carré ou rond selon les clients mails)
+	@contPad: 5px;
+	@contWidth: @columnWidth;
+	@contHeight: @contWidth;					//padding non déduit car alignement vertical du contenu avec le padding vertical
+
 	//tableau arrondi
 	table.round {
+		background-color: #0f0;
 		table-layout: fixed;
 		&, td {
-			width: (@columnWidth - 10px);
-			height: (@columnWidth - 10px);
-			-premailer-width: (@columnWidth - 10px);
-			-premailer-height: (@columnWidth - 10px);
+			width: (@contWidth - @contPad * 2);
+			-premailer-width: (@contWidth - @contPad * 2);
 		}
 		
 		td {
-			padding: 5px;
+			//padding horizontal fixe
+			padding-left: @contPad;
+			padding-right: @contPad;
 			overflow: hidden;
-			.inner {
+			&, .inner {
 				text-align: center;
+				line-height: 1;
+				mso-line-height-rule: exactly;
+			}
+			.inner {
+				background-color: fade(#00f, 50%);
 				margin: 0;
 				padding: 0;
 			}
@@ -237,10 +248,19 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 			font-size: (88px / @chfNbr);
 		}
 	}
-	.question table.round td {
-		&, .inner {
-			line-height: (@columnWidth - 10px);
-			font-size: 50px;
+	.question table.round {
+		@localFontSize: 50px;
+		@localPadVertical: ((@contHeight - @localFontSize) / 2);
+		@localContHeight: (@contHeight - @localPadVertical * 2);
+
+		td {
+			&, .inner { font-size: @localFontSize; }
+			padding-top: @localPadVertical;
+			padding-bottom: @localPadVertical;
+		}
+		&, td {
+			height: @localContHeight;
+			-premailer-height: @localContHeight;
 		}
 	}
 	.echeancier table.round td {
