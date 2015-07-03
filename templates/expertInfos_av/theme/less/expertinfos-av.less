@@ -277,10 +277,15 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 		}
 		&, td {
 			height: @localContHeight;
+			height: e("**((localContHeight))**px");
 			-premailer-height: unit(@localContHeight);
+			-premailer-height: e("**((localContHeight))**");
 			//application dimension en mode mobile
 			@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
-				table[class="body"] & { height: @localContHeight !important; }
+				table[class="body"] & {
+					height: @localContHeight !important;
+					height: e("**((localContHeight))**px !important");
+				}
 			}
 		}
 	}

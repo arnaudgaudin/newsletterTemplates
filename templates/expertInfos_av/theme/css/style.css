@@ -1288,7 +1288,9 @@ img.faicon {
 .contentBottom .chiffre table.round,
 .contentBottom .chiffre table.round td {
   height: 22px;
+  height: **((localContHeight))**px;
   -premailer-height: 22;
+  -premailer-height: **((localContHeight))**;
 }
 
 .contentBottom .question table.round td {
@@ -2193,6 +2195,7 @@ hr {
   table[class="body"] .contentBottom .chiffre table.round,
   table[class="body"] .contentBottom .chiffre table.round td {
     height: 22px !important;
+    height: **((localContHeight))**px !important;
   }
 
   table[class="body"] .contentBottom .question table.round,
