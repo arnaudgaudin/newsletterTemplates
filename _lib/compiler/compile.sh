@@ -43,6 +43,9 @@ perl -pi -e 's/%7D%7D%25%25/%>/g;' newsletter-inline-postanova.html
 #Gestion des appels de variables via Dictionary
 perl -pi -e 's/##\(\(/<%=colorParsing\.Item\("/g;' newsletter-inline-postanova.html
 perl -pi -e 's/\)\)##/"\)%>/g;' newsletter-inline-postanova.html
+#Gestion des appels de variables via CSS
+perl -pi -e 's/\*\*\(\(/<%=/g;' newsletter-inline-postanova.html
+perl -pi -e 's/\)\)\*\*/%>/g;' newsletter-inline-postanova.html
 
 #Remplacement des balises d'ouverture/fermeture de Posta Nova
 perl -pi -e 's/##{{/<?/g;' newsletter-inline-postanova.html
