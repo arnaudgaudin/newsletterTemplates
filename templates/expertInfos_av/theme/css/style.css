@@ -2185,6 +2185,26 @@ hr {
     display: table !important;
   }
 
+  table[class="body"] .contentBottom table.round,
+  table[class="body"] .contentBottom table.round td {
+    width: 50px !important;
+  }
+
+  table[class="body"] .contentBottom .chiffre table.round,
+  table[class="body"] .contentBottom .chiffre table.round td {
+    height: 22px !important;
+  }
+
+  table[class="body"] .contentBottom .question table.round,
+  table[class="body"] .contentBottom .question table.round td {
+    height: 50px !important;
+  }
+
+  table[class="body"] .contentBottom .echeancier table.round,
+  table[class="body"] .contentBottom .echeancier table.round td {
+    height: 44px !important;
+  }
+
   table[class="body"] .contentBottom td.wrapper:not(:first-child) {
     padding-top: 5px !important;
   }
@@ -2221,11 +2241,5 @@ hr {
 
   table[class="body"] .contentBottom table.round td {
     text-align: center !important;
-  }
-
-  table[class="body"] .contentBottom table.round,
-  table[class="body"] .contentBottom table.round td {
-    width: 50px !important;
-    height: 50px !important;
   }
 }

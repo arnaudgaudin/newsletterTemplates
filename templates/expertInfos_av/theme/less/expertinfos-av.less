@@ -222,6 +222,10 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 		&, td {
 			width: (@roundContWidth - @roundContPad * 2);
 			-premailer-width: unit(@roundContWidth - @roundContPad * 2);
+			//application dimension en mode mobile
+			@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+				table[class="body"] & { width: (@roundContWidth - @roundContPad * 2) !important; }
+			}
 		}
 		
 		td {
@@ -274,6 +278,10 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 		&, td {
 			height: @localContHeight;
 			-premailer-height: unit(@localContHeight);
+			//application dimension en mode mobile
+			@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+				table[class="body"] & { height: @localContHeight !important; }
+			}
 		}
 	}
 	.question table.round {
@@ -289,6 +297,10 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 		&, td {
 			height: @localContHeight;
 			-premailer-height: unit(@localContHeight);
+			//application dimension en mode mobile
+			@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+				table[class="body"] & { height: @localContHeight !important; }
+			}
 		}
 	}
 	.echeancier table.round {
@@ -308,6 +320,10 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 		&, td {
 			height: @localContHeight;
 			-premailer-height: unit(@localContHeight);
+			//application dimension en mode mobile
+			@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+				table[class="body"] & { height: @localContHeight !important; }
+			}
 		}
 
 		//calage différencié du jour et du mois
@@ -351,10 +367,7 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 
 		table.round {
 			td { text-align: center !important; }
-			&, td {
-				width: (@columnWidth - 10px) !important;
-				height: (@columnWidth - 10px) !important;
-			}
+			// &, td { width: (@roundContWidth - @roundContPad * 2) !important; }
 		}
 	}
 }
