@@ -1233,7 +1233,7 @@ img.faicon {
 .contentBottom table.round,
 .contentBottom table.round td {
   width: 50px;
-  -premailer-width: 50px;
+  -premailer-width: 50;
 }
 
 .contentBottom table.round td {
@@ -1268,7 +1268,7 @@ img.faicon {
 .contentBottom .chiffre table.round,
 .contentBottom .chiffre table.round td {
   height: 22px;
-  -premailer-height: 22px;
+  -premailer-height: 22;
 }
 
 .contentBottom .question table.round td {
@@ -1284,7 +1284,7 @@ img.faicon {
 .contentBottom .question table.round,
 .contentBottom .question table.round td {
   height: 50px;
-  -premailer-height: 50px;
+  -premailer-height: 50;
 }
 
 .contentBottom .echeancier table.round td {
@@ -1301,7 +1301,7 @@ img.faicon {
 .contentBottom .echeancier table.round,
 .contentBottom .echeancier table.round td {
   height: 44px;
-  -premailer-height: 44px;
+  -premailer-height: 44;
 }
 
 .contentBottom .echeancier table.round td .inner .day {

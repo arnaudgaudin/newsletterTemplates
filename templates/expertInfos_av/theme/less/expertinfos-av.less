@@ -218,7 +218,7 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 		table-layout: fixed;
 		&, td {
 			width: (@contWidth - @contPad * 2);
-			-premailer-width: (@contWidth - @contPad * 2);
+			-premailer-width: unit(@contWidth - @contPad * 2);
 		}
 		
 		td {
@@ -254,7 +254,7 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 		}
 		&, td {
 			height: @localContHeight;
-			-premailer-height: @localContHeight;
+			-premailer-height: unit(@localContHeight);
 		}
 	}
 	.question table.round {
@@ -269,7 +269,7 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 		}
 		&, td {
 			height: @localContHeight;
-			-premailer-height: @localContHeight;
+			-premailer-height: unit(@localContHeight);
 		}
 	}
 	.echeancier table.round {
@@ -288,7 +288,7 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 		}
 		&, td {
 			height: @localContHeight;
-			-premailer-height: @localContHeight;
+			-premailer-height: unit(@localContHeight);
 		}
 
 		//calage différencié du jour et du mois
