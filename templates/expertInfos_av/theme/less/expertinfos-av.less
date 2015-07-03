@@ -194,6 +194,11 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 
 // contentBottom area
 // -------------------------
+//dimension containers (carré ou rond selon les clients mails)
+@contPad: 5px;
+@contWidth: 60px;
+@contHeight: @contWidth;					//padding non déduit car alignement vertical du contenu avec le padding vertical
+
 .contentBottom {
 	.title { text-align: center; }
 
@@ -209,11 +214,6 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 			padding-bottom: 0px;
 		}
 	}
-
-	//dimension containers (carré ou rond selon les clients mails)
-	@contPad: 5px;
-	@contWidth: 60px;
-	@contHeight: @contWidth;					//padding non déduit car alignement vertical du contenu avec le padding vertical
 
 	//tableau arrondi
 	table.round {
