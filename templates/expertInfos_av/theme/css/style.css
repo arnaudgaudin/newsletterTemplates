@@ -1215,6 +1215,14 @@ img.faicon {
   text-align: center;
 }
 
+.contentBottom .wrapper:nth-child(odd) .wrapper-round {
+  background-color: #aa0;
+}
+
+.contentBottom .wrapper:nth-child(even) .wrapper-round {
+  background-color: #ee0;
+}
+
 .contentBottom table.wrapper-text {
   width: 100%;
   -premailer-width: 100%;
@@ -1253,6 +1261,18 @@ img.faicon {
   background-color: #00f;
   margin: 0;
   padding: 0;
+}
+
+.contentBottom table.columns.four table.round td.first,
+.contentBottom table.column.four table.round td.first,
+.contentBottom table.columns.four table.round td.last,
+.contentBottom table.column.four table.round td.last {
+  background-color: #888;
+  vertical-align: middle;
+  border-radius: 0px;
+  font-size: 12px;
+  width: 80px;
+  -premailer-width: 80;
 }
 
 .contentBottom .chiffre table.round td {

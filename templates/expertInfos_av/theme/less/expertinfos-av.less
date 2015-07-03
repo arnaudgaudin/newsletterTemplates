@@ -197,6 +197,9 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 .contentBottom {
 	.title { text-align: center; }
 
+	.wrapper:nth-child(odd) .wrapper-round { background-color: #aa0; }
+	.wrapper:nth-child(even) .wrapper-round { background-color: #ee0; }
+
 	//suppression sous padding
 	table.wrapper-text {
 		width: 100%;
@@ -235,6 +238,22 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 				background-color: #00f;
 				margin: 0;
 				padding: 0;
+			}
+		}
+	}
+	table.columns, table.column {
+		//largeur exaxte des colonnes contenant les arrondis
+		@fourColWidth: (3 * @gutterWidth + 4 * @columnWidth);
+		@sideWidth: ((@fourColWidth - @contWidth) / 2 - @contPad * 2);
+
+		&.four table.round {
+			td.first, td.last {
+				background-color: #888;
+				vertical-align: middle;
+				border-radius: 0px;
+				font-size: @baseFontSize;
+				width: @sideWidth;
+				-premailer-width: unit(@sideWidth);
 			}
 		}
 	}
