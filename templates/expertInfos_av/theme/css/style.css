@@ -2205,15 +2205,6 @@ hr {
     height: 44px !important;
   }
 
-  table[class="body"] .contentBottom td.wrapper:not(:first-child) {
-    padding-top: 5px !important;
-  }
-
-  table[class="body"] .contentBottom td.wrapper:not(:last-child) table.columns td,
-  table[class="body"] .contentBottom td.wrapper:not(:last-child) table.column td {
-    padding-bottom: 5px !important;
-  }
-
   table[class="body"] .contentBottom td,
   table[class="body"] .contentBottom td .title {
     text-align: left !important;
