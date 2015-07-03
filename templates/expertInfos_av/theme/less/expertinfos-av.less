@@ -263,16 +263,29 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 			-premailer-height: @localContHeight;
 		}
 	}
-	.echeancier table.round td {
-		&, .inner { line-height: 0px; }
-		text-transform: uppercase;
-		.day {
-			line-height: 32px;
-			font-size: 32px;
+	.echeancier table.round {
+		@localFontSize1: 32px;
+		@localFontSize2: 12px;
+		@localPadVertical: ((@contHeight - @localFontSize1 - @localFontSize2) / 2);
+		@localContHeight: (@contHeight - @localPadVertical * 2);
+
+		td {
+			&, .inner {
+				font-size: 0px;
+				text-transform: uppercase;
+			}
+			padding-top: @localPadVertical;
+			padding-bottom: @localPadVertical;
 		}
-		.month {
-			line-height: (@columnWidth - 10px - 32px);
-			font-size: 12px;
+		&, td {
+			height: @localContHeight;
+			-premailer-height: @localContHeight;
+		}
+
+		//calage différencié du jour et du mois
+		td .inner {
+			.day { font-size: @localFontSize1; }
+			.month { font-size: @localFontSize2; }
 		}
 	}
 }
