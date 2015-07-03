@@ -481,17 +481,17 @@ tracking_url = "fintrack=&amp;rep="&repertoire_ei&"&amp;url_site_exp="&url_site_
 												<tr>
 													<td class="wrapper-round">
 														<center>
+															<!--{{%%{{
+																'Calcul alignement vertical en fonction de la taille de police basée sur le nombre de caractères'
+																'Cf expertinfos-av.less pour explication calcul'
+																contHeight = 60
+																chfNbr = Len(chiffre_valeur)
+																localFontSize = Round(88 / chfNbr)
+																localPadVertical = ((contHeight - localFontSize) / 2)
+																localContHeight = (contHeight - localPadVertical * 2)
+															}}%%}}-->
 															<table border="0" class="round">
 																<tr>
-																	<!--{{%%{{
-																		'Calcul alignement vertical en fonction de la taille de police basée sur le nombre de caractères'
-																		'Cf expertinfos-av.less pour explication calcul'
-																		contHeight = 60
-																		chfNbr = Len(chiffre_valeur)
-																		localFontSize = Round(88 / chfNbr)
-																		localPadVertical = ((contHeight - localFontSize) / 2)
-																		localContHeight = (contHeight - localPadVertical * 2)
-																	}}%%}}-->
 																	<td nlbgcolor="##((nlCntChfBackground))##" style="font-size: %%{{=localFontSize}}%%px; padding-top: %%{{=localPadVertical}}%%px; padding-bottom: %%{{=localPadVertical}}%%px;">
 																		<p class="inner" style="font-size: %%{{=localFontSize}}%%px;">
 																			<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/?article=%%{{=chiffre_id}}%%&amp;%%{{=tracking_url}}%%">
