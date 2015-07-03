@@ -240,12 +240,21 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 	}
 
 	//différenciation des tailles
-	.chiffre table.round td {
-		&, .inner {
-			line-height: (@columnWidth - 10px);
-			//variabilisé en VBSCRIPT
-			@chfNbr: 4;
-			font-size: (88px / @chfNbr);
+	.chiffre table.round {
+		//variabilisé en VBSCRIPT
+		@chfNbr: 4;
+		@localFontSize: round(88px / @chfNbr);
+		@localPadVertical: ((@contHeight - @localFontSize) / 2);
+		@localContHeight: (@contHeight - @localPadVertical * 2);
+
+		td {
+			&, .inner { font-size: @localFontSize; }
+			padding-top: @localPadVertical;
+			padding-bottom: @localPadVertical;
+		}
+		&, td {
+			height: @localContHeight;
+			-premailer-height: @localContHeight;
 		}
 	}
 	.question table.round {
