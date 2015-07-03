@@ -126,6 +126,15 @@ end if
 
 online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/"&fileName&".asp?id_client="&id_client&"&idarticle="&idarticle&"&idarticleAlaune="&idarticleAlaune&"&is_online=1"&get_coll
 tracking_url = "fintrack=&amp;rep="&repertoire_ei&"&amp;url_site_exp="&url_site_exp
+
+'Calcul placement du chiffre'
+'Calcul alignement vertical en fonction de la taille de police basée sur le nombre de caractères'
+'Cf expertinfos-av.less pour explication calcul'
+roundContHeight = 60
+chfNbr = Len(chiffre_valeur)
+localFontSize = Round(88 / chfNbr)
+localPadVertical = Round((roundContHeight - localFontSize) / 2)
+localContHeight = (roundContHeight - localPadVertical * 2)
 }}%%}}-->
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -481,15 +490,6 @@ tracking_url = "fintrack=&amp;rep="&repertoire_ei&"&amp;url_site_exp="&url_site_
 												<tr>
 													<td class="wrapper-round">
 														<center>
-															<!--{{%%{{
-																'Calcul alignement vertical en fonction de la taille de police basée sur le nombre de caractères'
-																'Cf expertinfos-av.less pour explication calcul'
-																roundContHeight = 60
-																chfNbr = Len(chiffre_valeur)
-																localFontSize = Round(88 / chfNbr)
-																localPadVertical = Round((roundContHeight - localFontSize) / 2)
-																localContHeight = (roundContHeight - localPadVertical * 2)
-															}}%%}}-->
 															<table border="0" class="round">
 																<tr>
 																	<td class="first hide-for-small">1</td>
