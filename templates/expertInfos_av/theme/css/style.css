@@ -1226,56 +1226,89 @@ img.faicon {
 }
 
 .contentBottom table.round {
+  background-color: #0f0;
   table-layout: fixed;
 }
 
 .contentBottom table.round,
 .contentBottom table.round td {
   width: 50px;
-  height: 50px;
   -premailer-width: 50px;
-  -premailer-height: 50px;
 }
 
 .contentBottom table.round td {
-  padding: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
   overflow: hidden;
 }
 
+.contentBottom table.round td,
 .contentBottom table.round td .inner {
   text-align: center;
+  line-height: 1;
+  mso-line-height-rule: exactly;
+}
+
+.contentBottom table.round td .inner {
+  background-color: rgba(0, 0, 255, 0.5);
   margin: 0;
   padding: 0;
 }
 
+.contentBottom .chiffre table.round td {
+  padding-top: 19px;
+  padding-bottom: 19px;
+}
+
 .contentBottom .chiffre table.round td,
 .contentBottom .chiffre table.round td .inner {
-  line-height: 50px;
   font-size: 22px;
+}
+
+.contentBottom .chiffre table.round,
+.contentBottom .chiffre table.round td {
+  height: 22px;
+  -premailer-height: 22px;
+}
+
+.contentBottom .question table.round td {
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .contentBottom .question table.round td,
 .contentBottom .question table.round td .inner {
-  line-height: 50px;
   font-size: 50px;
 }
 
+.contentBottom .question table.round,
+.contentBottom .question table.round td {
+  height: 50px;
+  -premailer-height: 50px;
+}
+
 .contentBottom .echeancier table.round td {
-  text-transform: uppercase;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .contentBottom .echeancier table.round td,
 .contentBottom .echeancier table.round td .inner {
-  line-height: 0px;
+  font-size: 0px;
+  text-transform: uppercase;
 }
 
-.contentBottom .echeancier table.round td .day {
-  line-height: 32px;
+.contentBottom .echeancier table.round,
+.contentBottom .echeancier table.round td {
+  height: 44px;
+  -premailer-height: 44px;
+}
+
+.contentBottom .echeancier table.round td .inner .day {
   font-size: 32px;
 }
 
-.contentBottom .echeancier table.round td .month {
-  line-height: 18px;
+.contentBottom .echeancier table.round td .inner .month {
   font-size: 12px;
 }
 
