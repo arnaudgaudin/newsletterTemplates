@@ -275,8 +275,10 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 				// font-size: @localFontSize;
 				font-size: e("**((localFontSize))**px");
 			}
-			padding-top: @localPadVertical;
-			padding-bottom: @localPadVertical;
+			// padding-top: @localPadVertical;
+			// padding-bottom: @localPadVertical;
+			padding-top: e("**((localPadVertical))**px");
+			padding-bottom: e("**((localPadVertical))**px");
 		}
 		&, td {
 			// height: @localContHeight;
