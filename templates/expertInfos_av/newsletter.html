@@ -484,11 +484,11 @@ tracking_url = "fintrack=&amp;rep="&repertoire_ei&"&amp;url_site_exp="&url_site_
 															<!--{{%%{{
 																'Calcul alignement vertical en fonction de la taille de police basée sur le nombre de caractères'
 																'Cf expertinfos-av.less pour explication calcul'
-																contHeight = 60
+																roundContHeight = 60
 																chfNbr = Len(chiffre_valeur)
 																localFontSize = Round(88 / chfNbr)
-																localPadVertical = Round((contHeight - localFontSize) / 2)
-																localContHeight = (contHeight - localPadVertical * 2)
+																localPadVertical = Round((roundContHeight - localFontSize) / 2)
+																localContHeight = (roundContHeight - localPadVertical * 2)
 															}}%%}}-->
 															<table border="0" class="round" style="height: %%{{=localContHeight}}%%px;" height="%%{{=localContHeight}}%%">
 																<tr>

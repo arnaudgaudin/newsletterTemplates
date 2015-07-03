@@ -195,9 +195,9 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 // contentBottom area
 // -------------------------
 //dimension containers (carré ou rond selon les clients mails)
-@contPad: 5px;
-@contWidth: 60px;
-@contHeight: @contWidth;					//padding non déduit car alignement vertical du contenu avec le padding vertical
+@roundContPad: 5px;
+@roundContWidth: 60px;
+@roundContHeight: @roundContWidth;					//padding non déduit car alignement vertical du contenu avec le padding vertical
 
 .contentBottom {
 	.title { text-align: center; }
@@ -220,14 +220,14 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 		background-color: #0f0;
 		table-layout: fixed;
 		&, td {
-			width: (@contWidth - @contPad * 2);
-			-premailer-width: unit(@contWidth - @contPad * 2);
+			width: (@roundContWidth - @roundContPad * 2);
+			-premailer-width: unit(@roundContWidth - @roundContPad * 2);
 		}
 		
 		td {
 			//padding horizontal fixe
-			padding-left: @contPad;
-			padding-right: @contPad;
+			padding-left: @roundContPad;
+			padding-right: @roundContPad;
 			overflow: hidden;
 			&, .inner {
 				text-align: center;
@@ -244,7 +244,7 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 	table.columns, table.column {
 		//largeur exaxte des colonnes contenant les arrondis
 		@fourColWidth: (3 * @gutterWidth + 4 * @columnWidth);
-		@sideWidth: ((@fourColWidth - @contWidth) / 2 - @contPad * 2);
+		@sideWidth: ((@fourColWidth - @roundContWidth) / 2 - @roundContPad * 2);
 
 		&.four table.round {
 			td.first, td.last {
@@ -263,8 +263,8 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 		//variabilisé en VBSCRIPT
 		@chfNbr: 4;
 		@localFontSize: round(88px / @chfNbr);
-		@localPadVertical: round((@contHeight - @localFontSize) / 2);
-		@localContHeight: (@contHeight - @localPadVertical * 2);
+		@localPadVertical: round((@roundContHeight - @localFontSize) / 2);
+		@localContHeight: (@roundContHeight - @localPadVertical * 2);
 
 		td {
 			&, .inner { font-size: @localFontSize; }
@@ -278,8 +278,8 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 	}
 	.question table.round {
 		@localFontSize: 50px;
-		@localPadVertical: ((@contHeight - @localFontSize) / 2);
-		@localContHeight: (@contHeight - @localPadVertical * 2);
+		@localPadVertical: ((@roundContHeight - @localFontSize) / 2);
+		@localContHeight: (@roundContHeight - @localPadVertical * 2);
 
 		td {
 			&, .inner { font-size: @localFontSize; }
@@ -294,8 +294,8 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 	.echeancier table.round {
 		@localFontSize1: 32px;
 		@localFontSize2: 12px;
-		@localPadVertical: ((@contHeight - @localFontSize1 - @localFontSize2) / 2);
-		@localContHeight: (@contHeight - @localPadVertical * 2);
+		@localPadVertical: ((@roundContHeight - @localFontSize1 - @localFontSize2) / 2);
+		@localContHeight: (@roundContHeight - @localPadVertical * 2);
 
 		td {
 			&, .inner {
