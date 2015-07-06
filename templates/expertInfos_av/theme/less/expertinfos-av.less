@@ -204,9 +204,6 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 .contentBottom {
 	.title { text-align: center; }
 
-	.wrapper:nth-child(odd) .wrapper-round { background-color: #aa0; }
-	.wrapper:nth-child(even) .wrapper-round { background-color: #ee0; }
-
 	//suppression sous padding
 	table.wrapper-text {
 		width: 100%;
@@ -219,7 +216,6 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 
 	//tableau arrondi
 	table.round {
-		background-color: #0f0;
 		table-layout: fixed;
 		width: 100%;
 		-premailer-width: 100%;
@@ -238,14 +234,12 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 				}
 			}
 			&.first, &.last {
+				font-size: 0px;
 				border-radius: 0px;
 				width: ((100% - @roundContPrct) / 2);
 				-premailer-width: ((100% - @roundContPrct) / 2);
-				//pour debug
-				.body & {
-					background-color: #888;
-					font-size: @baseFontSize;
-				}
+				//suppression fond de couleur
+				.body & { background-color: transparent; }
 			}
 
 			&, .inner {
@@ -254,7 +248,6 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 				mso-line-height-rule: exactly;
 			}
 			.inner {
-				background-color: #00f;
 				margin: 0;
 				padding: 0;
 			}
@@ -367,7 +360,6 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 
 		table.round {
 			td { text-align: center !important; }
-			// &, td { width: (@roundContWidth - @roundContPad * 2) !important; }
 		}
 	}
 }

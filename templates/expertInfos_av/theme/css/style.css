@@ -1215,14 +1215,6 @@ img.faicon {
   text-align: center;
 }
 
-.contentBottom .wrapper:nth-child(odd) .wrapper-round {
-  background-color: #aa0;
-}
-
-.contentBottom .wrapper:nth-child(even) .wrapper-round {
-  background-color: #ee0;
-}
-
 .contentBottom table.wrapper-text {
   width: 100%;
   -premailer-width: 100%;
@@ -1234,7 +1226,6 @@ img.faicon {
 }
 
 .contentBottom table.round {
-  background-color: #0f0;
   table-layout: fixed;
   width: 100%;
   -premailer-width: 100%;
@@ -1253,6 +1244,7 @@ img.faicon {
 
 .contentBottom table.round td.first,
 .contentBottom table.round td.last {
+  font-size: 0px;
   border-radius: 0px;
   width: 37.5%;
   -premailer-width: 37.5%;
@@ -1260,8 +1252,7 @@ img.faicon {
 
 .body .contentBottom table.round td.first,
 .body .contentBottom table.round td.last {
-  background-color: #888;
-  font-size: 12px;
+  background-color: transparent;
 }
 
 .contentBottom table.round td,
@@ -1272,7 +1263,6 @@ img.faicon {
 }
 
 .contentBottom table.round td .inner {
-  background-color: #00f;
   margin: 0;
   padding: 0;
 }
