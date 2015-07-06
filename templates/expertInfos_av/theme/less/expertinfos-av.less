@@ -213,6 +213,10 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 			padding-bottom: 0px;
 		}
 	}
+	
+	//couleurs de débug
+	.wrapper:nth-child(odd) center { background-color: #080; }
+	.wrapper:nth-child(even) center { background-color: #0b0; }
 
 	//tableau arrondi
 	table.round {
@@ -457,7 +461,7 @@ a {
 	}
 }
 
-
+/*
 // CUSTOM COLORS
 // --------------------------------------------------
 
@@ -583,8 +587,8 @@ hr {
 	.newsletterInnerTextColor(e("##((nlFooterText))##"));
 	small { color: e("##((nlFooterText))##"); }
 }
+*/
 
-/*
 // DEVELOPPEMENT COLORS
 // --------------------------------------------------
 
@@ -710,4 +714,3 @@ hr {
 	.newsletterInnerTextColor(@nlFooterText);
 	small { color: @nlFooterText; }
 }
-*/
