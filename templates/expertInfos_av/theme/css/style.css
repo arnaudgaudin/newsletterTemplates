@@ -1266,7 +1266,6 @@ img.faicon {
 .contentBottom table.round td,
 .contentBottom table.round td .inner {
   text-align: center;
-  line-height: 125%;
   mso-line-height-rule: exactly;
 }
 
@@ -1289,6 +1288,7 @@ img.faicon {
 .contentBottom .chiffre table.round td,
 .contentBottom .chiffre table.round td .inner {
   font-size: **((chiffreFontSize))**px;
+  line-height: **((chiffreLineHeight))**px;
 }
 
 .contentBottom .question table.round td {
@@ -1305,6 +1305,7 @@ img.faicon {
 .contentBottom .question table.round td,
 .contentBottom .question table.round td .inner {
   font-size: 48px;
+  line-height: 60px;
 }
 
 .contentBottom .echeancier table.round td {
@@ -1330,11 +1331,13 @@ img.faicon {
 .contentBottom .echeancier table.round td .inner.day {
   background-color: #0f0;
   font-size: 32px;
+  line-height: 40px;
 }
 
 .contentBottom .echeancier table.round td .inner.month {
   background-color: #00f;
   font-size: 12px;
+  line-height: 15px;
 }
 
 .container {

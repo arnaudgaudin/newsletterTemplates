@@ -249,7 +249,7 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 
 			&, .inner {
 				text-align: center;
-				line-height: unit(@roundContLineHeight * 100, %);
+				// line-height: unit(@roundContLineHeight * 100, %);
 				mso-line-height-rule: exactly;
 			}
 			.inner {
@@ -264,12 +264,16 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 		//variabilisé en VBSCRIPT
 		@chiffreNbr: 4;
 		@chiffreFontSize: round(88px / @chiffreNbr);
+		@chiffreLineHeight: (@chiffreFontSize * @roundContLineHeight);
 		@chiffrePadVertical: round((@roundContHeight - @chiffreFontSize * @roundContLineHeight) / 2);
 		@chiffreContHeight: (@roundContHeight - @chiffrePadVertical * 2);
 
 		td {
 			a { background-color: #0f0; }
-			&, .inner { font-size: e("**((chiffreFontSize))**px"); }
+			&, .inner {
+				font-size: e("**((chiffreFontSize))**px");
+				line-height: e("**((chiffreLineHeight))**px");
+			}
 
 			height: e("**((chiffreContHeight))**px");
 			-premailer-height: e("**((chiffreContHeight))**");
@@ -287,12 +291,16 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 	}
 	.question table.round {
 		@localFontSize: 48px;
+		@localLineHeight: (@localFontSize * @roundContLineHeight);
 		@localPadVertical: ((@roundContHeight - @localFontSize * @roundContLineHeight) / 2);
 		@localContHeight: (@roundContHeight - @localPadVertical * 2);
 
 		td {
 			a { background-color: #0f0; }
-			&, .inner { font-size: @localFontSize; }
+			&, .inner {
+				font-size: @localFontSize;
+				line-height: @localLineHeight;
+			}
 
 			height: @localContHeight;
 			-premailer-height: unit(@localContHeight);
@@ -311,6 +319,8 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 	.echeancier table.round {
 		@localFontSize1: 32px;
 		@localFontSize2: 12px;
+		@localLineHeight1: (@localFontSize1 * @roundContLineHeight);
+		@localLineHeight2: (@localFontSize2 * @roundContLineHeight);
 		@localPadVertical: ((@roundContHeight - (@localFontSize1 + @localFontSize2) * @roundContLineHeight) / 2);
 		@localContHeight: (@roundContHeight - @localPadVertical * 2);
 
@@ -327,10 +337,12 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 				&.day {
 					background-color: #0f0;
 					font-size: @localFontSize1;
+					line-height: @localLineHeight1;
 				}
 				&.month {
 					background-color: #00f;
 					font-size: @localFontSize2;
+					line-height: @localLineHeight2;
 				}
 			}
 
