@@ -1542,14 +1542,297 @@ h6 a:visited {
   color: #666666 !important;
 }
 
+body,
+table.body {
+  -premailer-background: ##((nlBodyBackground))##;
+  background-image: url("-premailer-bgdebug");
+}
+
+.header,
+.header td.expander {
+  -premailer-background: ##((nlBodyBackground))##;
+}
+
+hr {
+  color: ##((nlHrBorder))##;
+  -premailer-background: ##((nlHrBorder))##;
+}
+
+.row.bordered td hr.border {
+  border-bottom: 1px solid ##((nlHrBorder))##;
+}
+
+.contentOnline,
+.contentOnline td.expander {
+  -premailer-background: ##((nlCntOnlineBackground))##;
+}
+
+.contentOnline,
+.contentOnline td,
+.contentOnline .inner {
+  color: ##((nlCntOnlineText))##;
+}
+
+.contentOnline a {
+  color: ##((nlCntOnlineText))##;
+}
+
+.contentOnline a .important,
+.contentOnline a:visited,
+.contentOnline a:hover,
+.contentOnline a:focus,
+.contentOnline a:active {
+  color: ##((nlCntOnlineText))## !important;
+}
+
+.contentOnline .online {
+  color: ##((nlCntOnlineText))##;
+}
+
+.contentOnline .online a {
+  color: ##((nlCntOnlineText))##;
+}
+
+.contentOnline .online a .important,
+.contentOnline .online a:visited,
+.contentOnline .online a:hover,
+.contentOnline .online a:focus,
+.contentOnline .online a:active {
+  color: ##((nlCntOnlineText))## !important;
+}
+
+.contentOnline .name {
+  color: ##((nlCntOnlineName))##;
+}
+
+.contentOnline .name a {
+  color: ##((nlCntOnlineName))##;
+}
+
+.contentOnline .name a .important,
+.contentOnline .name a:visited,
+.contentOnline .name a:hover,
+.contentOnline .name a:focus,
+.contentOnline .name a:active {
+  color: ##((nlCntOnlineName))## !important;
+}
+
+.contentCabInform,
+.contentCabInform td.expander {
+  -premailer-background: ##((nlCntCabBackground))##;
+}
+
+.contentCabInform .title {
+  color: ##((nlCntCabTitle))##;
+}
+
+.contentCabInform .title a {
+  color: ##((nlCntCabTitle))##;
+}
+
+.contentCabInform .title a .important,
+.contentCabInform .title a:visited,
+.contentCabInform .title a:hover,
+.contentCabInform .title a:focus,
+.contentCabInform .title a:active {
+  color: ##((nlCntCabTitle))## !important;
+}
+
+.contentCabInform .text,
+.contentCabInform .readMore {
+  color: ##((nlCntCabText))##;
+}
+
+.contentCabInform,
+.contentCabInform td,
+.contentCabInform .inner {
+  color: ##((nlCntCabText))##;
+}
+
+.contentCabInform a {
+  color: ##((nlCntCabText))##;
+}
+
+.contentCabInform a .important,
+.contentCabInform a:visited,
+.contentCabInform a:hover,
+.contentCabInform a:focus,
+.contentCabInform a:active {
+  color: ##((nlCntCabText))## !important;
+}
+
+.contentALaUne .preTitle {
+  color: ##((nlCntUnePreTitle))##;
+}
+
+.contentALaUne .title .category {
+  color: ##((nlCntUneCategory))##;
+}
+
+.contentALaUne .readMore {
+  color: ##((nlCntUneReadMore))##;
+}
+
+.contentALaUne .readMore a {
+  color: ##((nlCntUneReadMore))##;
+}
+
+.contentALaUne .readMore a .important,
+.contentALaUne .readMore a:visited,
+.contentALaUne .readMore a:hover,
+.contentALaUne .readMore a:focus,
+.contentALaUne .readMore a:active {
+  color: ##((nlCntUneReadMore))## !important;
+}
+
+.contentArticles .preTitle {
+  color: ##((nlCntArtPreTitle))##;
+}
+
+.contentArticles .title .category {
+  color: ##((nlCntArtCategory))##;
+}
+
+.contentArticles .readMore {
+  color: ##((nlCntArtReadMore))##;
+}
+
+.contentArticles .readMore a {
+  color: ##((nlCntArtReadMore))##;
+}
+
+.contentArticles .readMore a .important,
+.contentArticles .readMore a:visited,
+.contentArticles .readMore a:hover,
+.contentArticles .readMore a:focus,
+.contentArticles .readMore a:active {
+  color: ##((nlCntArtReadMore))## !important;
+}
+
+.contentBottom .chiffre table.round td {
+  -premailer-background: ##((nlCntChfBackground))##;
+}
+
+.contentBottom .chiffre table.round,
+.contentBottom .chiffre table.round td,
+.contentBottom .chiffre table.round .inner {
+  color: ##((nlCntChfValue))##;
+}
+
+.contentBottom .chiffre table.round a {
+  color: ##((nlCntChfValue))##;
+}
+
+.contentBottom .chiffre table.round a .important,
+.contentBottom .chiffre table.round a:visited,
+.contentBottom .chiffre table.round a:hover,
+.contentBottom .chiffre table.round a:focus,
+.contentBottom .chiffre table.round a:active {
+  color: ##((nlCntChfValue))## !important;
+}
+
+.contentBottom .question table.round td {
+  -premailer-background: ##((nlCntQtnBackground))##;
+}
+
+.contentBottom .question table.round,
+.contentBottom .question table.round td,
+.contentBottom .question table.round .inner {
+  color: ##((nlCntQtnValue))##;
+}
+
+.contentBottom .question table.round a {
+  color: ##((nlCntQtnValue))##;
+}
+
+.contentBottom .question table.round a .important,
+.contentBottom .question table.round a:visited,
+.contentBottom .question table.round a:hover,
+.contentBottom .question table.round a:focus,
+.contentBottom .question table.round a:active {
+  color: ##((nlCntQtnValue))## !important;
+}
+
+.contentBottom .echeancier table.round td {
+  -premailer-background: ##((nlCntAgdBackground))##;
+}
+
+.contentBottom .echeancier table.round,
+.contentBottom .echeancier table.round td,
+.contentBottom .echeancier table.round .inner {
+  color: ##((nlCntAgdValue))##;
+}
+
+.contentBottom .echeancier table.round a {
+  color: ##((nlCntAgdValue))##;
+}
+
+.contentBottom .echeancier table.round a .important,
+.contentBottom .echeancier table.round a:visited,
+.contentBottom .echeancier table.round a:hover,
+.contentBottom .echeancier table.round a:focus,
+.contentBottom .echeancier table.round a:active {
+  color: ##((nlCntAgdValue))## !important;
+}
+
+.contentContact,
+.contentContact td.expander {
+  -premailer-background: ##((nlCntCctBackground))##;
+}
+
+.contentContact,
+.contentContact td,
+.contentContact .inner {
+  color: ##((nlCntCctText))##;
+}
+
+.contentContact a {
+  color: ##((nlCntCctText))##;
+}
+
+.contentContact a .important,
+.contentContact a:visited,
+.contentContact a:hover,
+.contentContact a:focus,
+.contentContact a:active {
+  color: ##((nlCntCctText))## !important;
+}
+
+.footer,
+.footer td.expander {
+  -premailer-background: ##((nlFooterBackground))##;
+}
+
+.footer,
+.footer td,
+.footer .inner {
+  color: ##((nlFooterText))##;
+}
+
+.footer a {
+  color: ##((nlFooterText))##;
+}
+
+.footer a .important,
+.footer a:visited,
+.footer a:hover,
+.footer a:focus,
+.footer a:active {
+  color: ##((nlFooterText))## !important;
+}
+
+.footer small {
+  color: ##((nlFooterText))##;
+}
+
 /*
-// CUSTOM COLORS
+// DEVELOPPEMENT COLORS
 // --------------------------------------------------
 
 // Body
 // -------------------------
 body, table.body {
-	-premailer-background: e("##((nlBodyBackground))##");
+	background: @nlBodyBackground;
 	//rajout pour suppression param�tre doublon via compiler
 	background-image: url("-premailer-bgdebug");
 }
@@ -1559,34 +1842,34 @@ body, table.body {
 // -------------------------
 //pour supprimer toute zone blanche avant chargement header
 .header {
-	&, td.expander { -premailer-background: e("##((nlBodyBackground))##"); }
+	&, td.expander { background: @nlBodyBackground; }
 }
 
 
 // Hr borders
 // -------------------------
 hr {
-	color: e("##((nlHrBorder))##");
-	-premailer-background: e("##((nlHrBorder))##");
+	color: @nlHrBorder;
+	background: @nlHrBorder;
 }
 //gestion row avec bordures de s�paration
 .row.bordered {
-	td hr.border { border-bottom: 1px solid e("##((nlHrBorder))##"); }
+	td hr.border { border-bottom: 1px solid @nlHrBorder; }
 }
 
 
 // contentOnline area
 // -------------------------
 .contentOnline {
-	&, td.expander { -premailer-background: e("##((nlCntOnlineBackground))##"); }
-	.newsletterInnerTextColor(e("##((nlCntOnlineText))##"));
+	&, td.expander { background: @nlCntOnlineBackground; }
+	.newsletterInnerTextColor(@nlCntOnlineText);
 	.online {
-		color: e("##((nlCntOnlineText))##");
-		a { .newsletterLinkColor(e("##((nlCntOnlineText))##")); }
+		color: @nlCntOnlineText;
+		a { .newsletterLinkColor(@nlCntOnlineText); }
 	}
 	.name {
-		color: e("##((nlCntOnlineName))##");
-		a { .newsletterLinkColor(e("##((nlCntOnlineName))##")); }
+		color: @nlCntOnlineName;
+		a { .newsletterLinkColor(@nlCntOnlineName); }
 	}
 }
 
@@ -1594,26 +1877,26 @@ hr {
 // contentCabInform area
 // -------------------------
 .contentCabInform {
-	&, td.expander { -premailer-background: e("##((nlCntCabBackground))##"); }
+	&, td.expander { background: @nlCntCabBackground; }
 	.title {
-		color: e("##((nlCntCabTitle))##");
-		a { .newsletterLinkColor(e("##((nlCntCabTitle))##")); }
+		color: @nlCntCabTitle;
+		a { .newsletterLinkColor(@nlCntCabTitle); }
 	}
-	.text, .readMore { color: e("##((nlCntCabText))##"); }
-	.newsletterInnerTextColor(e("##((nlCntCabText))##"));
+	.text, .readMore { color: @nlCntCabText; }
+	.newsletterInnerTextColor(@nlCntCabText);
 }
 
 
 // contentALaUne area
 // -------------------------
 .contentALaUne {
-	.preTitle { color: e("##((nlCntUnePreTitle))##"); }
+	.preTitle { color: @nlCntUnePreTitle; }
 	.title {
-		.category { color: e("##((nlCntUneCategory))##"); }
+		.category { color: @nlCntUneCategory; }
 	}
 	.readMore {
-		color: e("##((nlCntUneReadMore))##");
-		a { .newsletterLinkColor(e("##((nlCntUneReadMore))##")); }
+		color: @nlCntUneReadMore;
+		a { .newsletterLinkColor(@nlCntUneReadMore); }
 	}
 }
 
@@ -1621,11 +1904,11 @@ hr {
 // contentArticles area
 // -------------------------
 .contentArticles {
-	.preTitle { color: e("##((nlCntArtPreTitle))##"); }
-	.title .category { color: e("##((nlCntArtCategory))##"); }
+	.preTitle { color: @nlCntArtPreTitle; }
+	.title .category { color: @nlCntArtCategory; }
 	.readMore {
-		color: e("##((nlCntArtReadMore))##");
-		a { .newsletterLinkColor(e("##((nlCntArtReadMore))##")); }
+		color: @nlCntArtReadMore;
+		a { .newsletterLinkColor(@nlCntArtReadMore); }
 	}
 }
 
@@ -1635,20 +1918,20 @@ hr {
 .contentBottom {
 	.chiffre {
 		table.round {
-			td { -premailer-background: e("##((nlCntChfBackground))##"); }
-			.newsletterInnerTextColor(e("##((nlCntChfValue))##"));
+			td { background: @nlCntChfBackground; }
+			.newsletterInnerTextColor(@nlCntChfValue);
 		}
 	}
 	.question {
 		table.round {
-			td { -premailer-background: e("##((nlCntQtnBackground))##"); }
-			.newsletterInnerTextColor(e("##((nlCntQtnValue))##"));
+			td { background: @nlCntQtnBackground; }
+			.newsletterInnerTextColor(@nlCntQtnValue);
 		}
 	}
 	.echeancier {
 		table.round {
-			td { -premailer-background: e("##((nlCntAgdBackground))##"); }
-			.newsletterInnerTextColor(e("##((nlCntAgdValue))##"));
+			td { background: @nlCntAgdBackground; }
+			.newsletterInnerTextColor(@nlCntAgdValue);
 		}
 	}
 }
@@ -1656,302 +1939,19 @@ hr {
 // contentContact area
 // -------------------------
 .contentContact {
-	&, td.expander { -premailer-background: e("##((nlCntCctBackground))##"); }
-	.newsletterInnerTextColor(e("##((nlCntCctText))##"));
+	&, td.expander { background: @nlCntCctBackground; }
+	.newsletterInnerTextColor(@nlCntCctText);
 }
 
 
 // footer area
 // -------------------------
 .footer {
-	&, td.expander { -premailer-background: e("##((nlFooterBackground))##"); }
-	.newsletterInnerTextColor(e("##((nlFooterText))##"));
-	small { color: e("##((nlFooterText))##"); }
+	&, td.expander { background: @nlFooterBackground; }
+	.newsletterInnerTextColor(@nlFooterText);
+	small { color: @nlFooterText; }
 }
 */
-
-body,
-table.body {
-  background: #e0e0e0;
-  background-image: url("-premailer-bgdebug");
-}
-
-.header,
-.header td.expander {
-  background: #e0e0e0;
-}
-
-hr {
-  color: #79468c;
-  background: #79468c;
-}
-
-.row.bordered td hr.border {
-  border-bottom: 1px solid #79468c;
-}
-
-.contentOnline,
-.contentOnline td.expander {
-  background: #e0e0e0;
-}
-
-.contentOnline,
-.contentOnline td,
-.contentOnline .inner {
-  color: #6d6d6d;
-}
-
-.contentOnline a {
-  color: #6d6d6d;
-}
-
-.contentOnline a .important,
-.contentOnline a:visited,
-.contentOnline a:hover,
-.contentOnline a:focus,
-.contentOnline a:active {
-  color: #6d6d6d !important;
-}
-
-.contentOnline .online {
-  color: #6d6d6d;
-}
-
-.contentOnline .online a {
-  color: #6d6d6d;
-}
-
-.contentOnline .online a .important,
-.contentOnline .online a:visited,
-.contentOnline .online a:hover,
-.contentOnline .online a:focus,
-.contentOnline .online a:active {
-  color: #6d6d6d !important;
-}
-
-.contentOnline .name {
-  color: #333333;
-}
-
-.contentOnline .name a {
-  color: #333333;
-}
-
-.contentOnline .name a .important,
-.contentOnline .name a:visited,
-.contentOnline .name a:hover,
-.contentOnline .name a:focus,
-.contentOnline .name a:active {
-  color: #333333 !important;
-}
-
-.contentCabInform,
-.contentCabInform td.expander {
-  background: #c73b1b;
-}
-
-.contentCabInform .title {
-  color: #ffffff;
-}
-
-.contentCabInform .title a {
-  color: #ffffff;
-}
-
-.contentCabInform .title a .important,
-.contentCabInform .title a:visited,
-.contentCabInform .title a:hover,
-.contentCabInform .title a:focus,
-.contentCabInform .title a:active {
-  color: #ffffff !important;
-}
-
-.contentCabInform .text,
-.contentCabInform .readMore {
-  color: #ffffff;
-}
-
-.contentCabInform,
-.contentCabInform td,
-.contentCabInform .inner {
-  color: #ffffff;
-}
-
-.contentCabInform a {
-  color: #ffffff;
-}
-
-.contentCabInform a .important,
-.contentCabInform a:visited,
-.contentCabInform a:hover,
-.contentCabInform a:focus,
-.contentCabInform a:active {
-  color: #ffffff !important;
-}
-
-.contentALaUne .preTitle {
-  color: #79468c;
-}
-
-.contentALaUne .title .category {
-  color: #c73b1b;
-}
-
-.contentALaUne .readMore {
-  color: #79468c;
-}
-
-.contentALaUne .readMore a {
-  color: #79468c;
-}
-
-.contentALaUne .readMore a .important,
-.contentALaUne .readMore a:visited,
-.contentALaUne .readMore a:hover,
-.contentALaUne .readMore a:focus,
-.contentALaUne .readMore a:active {
-  color: #79468c !important;
-}
-
-.contentArticles .preTitle {
-  color: #79468c;
-}
-
-.contentArticles .title .category {
-  color: #c73b1b;
-}
-
-.contentArticles .readMore {
-  color: #79468c;
-}
-
-.contentArticles .readMore a {
-  color: #79468c;
-}
-
-.contentArticles .readMore a .important,
-.contentArticles .readMore a:visited,
-.contentArticles .readMore a:hover,
-.contentArticles .readMore a:focus,
-.contentArticles .readMore a:active {
-  color: #79468c !important;
-}
-
-.contentBottom .chiffre table.round td {
-  background: #79468c;
-}
-
-.contentBottom .chiffre table.round,
-.contentBottom .chiffre table.round td,
-.contentBottom .chiffre table.round .inner {
-  color: #ffffff;
-}
-
-.contentBottom .chiffre table.round a {
-  color: #ffffff;
-}
-
-.contentBottom .chiffre table.round a .important,
-.contentBottom .chiffre table.round a:visited,
-.contentBottom .chiffre table.round a:hover,
-.contentBottom .chiffre table.round a:focus,
-.contentBottom .chiffre table.round a:active {
-  color: #ffffff !important;
-}
-
-.contentBottom .question table.round td {
-  background: #919191;
-}
-
-.contentBottom .question table.round,
-.contentBottom .question table.round td,
-.contentBottom .question table.round .inner {
-  color: #ffffff;
-}
-
-.contentBottom .question table.round a {
-  color: #ffffff;
-}
-
-.contentBottom .question table.round a .important,
-.contentBottom .question table.round a:visited,
-.contentBottom .question table.round a:hover,
-.contentBottom .question table.round a:focus,
-.contentBottom .question table.round a:active {
-  color: #ffffff !important;
-}
-
-.contentBottom .echeancier table.round td {
-  background: #c73b1b;
-}
-
-.contentBottom .echeancier table.round,
-.contentBottom .echeancier table.round td,
-.contentBottom .echeancier table.round .inner {
-  color: #ffffff;
-}
-
-.contentBottom .echeancier table.round a {
-  color: #ffffff;
-}
-
-.contentBottom .echeancier table.round a .important,
-.contentBottom .echeancier table.round a:visited,
-.contentBottom .echeancier table.round a:hover,
-.contentBottom .echeancier table.round a:focus,
-.contentBottom .echeancier table.round a:active {
-  color: #ffffff !important;
-}
-
-.contentContact,
-.contentContact td.expander {
-  background: #f4f4f4;
-}
-
-.contentContact,
-.contentContact td,
-.contentContact .inner {
-  color: #333333;
-}
-
-.contentContact a {
-  color: #333333;
-}
-
-.contentContact a .important,
-.contentContact a:visited,
-.contentContact a:hover,
-.contentContact a:focus,
-.contentContact a:active {
-  color: #333333 !important;
-}
-
-.footer,
-.footer td.expander {
-  background: #f4f4f4;
-}
-
-.footer,
-.footer td,
-.footer .inner {
-  color: #828282;
-}
-
-.footer a {
-  color: #828282;
-}
-
-.footer a .important,
-.footer a:visited,
-.footer a:hover,
-.footer a:focus,
-.footer a:active {
-  color: #828282 !important;
-}
-
-.footer small {
-  color: #828282;
-}
 
 @media only screen and (max-width: 720px) {
   table[class="body"] img {
