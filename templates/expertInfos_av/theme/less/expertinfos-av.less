@@ -362,9 +362,9 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 			}
 		}
 
-		td.wrapper-round {
-			padding-left: @textPadCollapse !important;
-			padding-right: @textPadCollapse !important;
+		td.wrapper-round { padding: 0px @textPadCollapse !important; }
+		.wrapper.last {
+			td.wrapper-round { padding-bottom: @columnPadCollapse !important; }
 		}
 
 		center {
