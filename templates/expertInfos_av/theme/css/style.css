@@ -1264,8 +1264,8 @@ img.faicon {
 .contentBottom table.columns.four table.round,
 .contentBottom table.column.four table.round {
   table-layout: fixed;
-  width: 240px;
-  -premailer-width: 240;
+  width: 100%;
+  -premailer-width: 100%;
 }
 
 .contentBottom table.columns.four table.round td.first,
