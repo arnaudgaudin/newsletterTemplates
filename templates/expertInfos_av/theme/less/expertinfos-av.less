@@ -200,6 +200,7 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 //pourcentage par rapport à une largeur de 4 colonnes
 @roundContPrct: unit(60px / (3 * @gutterWidth + 4 * @columnWidth) * 100, %);
 @roundContHeight: @roundContWidth;					//padding non déduit car alignement vertical du contenu avec le padding vertical
+@roundContLineHeight: 1.25;							//Outlook ignore le line-height de la même taille que la police, on l'augmente donc de 25%
 
 .contentBottom {
 	.title { text-align: center; }
@@ -248,7 +249,7 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 
 			&, .inner {
 				text-align: center;
-				line-height: 100%;
+				line-height: unit(@roundContLineHeight * 100, %);
 				mso-line-height-rule: exactly;
 			}
 			.inner {
@@ -263,7 +264,7 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 		//variabilisé en VBSCRIPT
 		@chiffreNbr: 4;
 		@chiffreFontSize: round(88px / @chiffreNbr);
-		@chiffrePadVertical: round((@roundContHeight - @chiffreFontSize) / 2);
+		@chiffrePadVertical: round((@roundContHeight - @chiffreFontSize * @roundContLineHeight) / 2);
 		@chiffreContHeight: (@roundContHeight - @chiffrePadVertical * 2);
 
 		td {
@@ -285,8 +286,8 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 		}
 	}
 	.question table.round {
-		@localFontSize: 50px;
-		@localPadVertical: ((@roundContHeight - @localFontSize) / 2);
+		@localFontSize: 48px;
+		@localPadVertical: ((@roundContHeight - @localFontSize * @roundContLineHeight) / 2);
 		@localContHeight: (@roundContHeight - @localPadVertical * 2);
 
 		td {
@@ -310,7 +311,7 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 	.echeancier table.round {
 		@localFontSize1: 32px;
 		@localFontSize2: 12px;
-		@localPadVertical: ((@roundContHeight - @localFontSize1 - @localFontSize2) / 2);
+		@localPadVertical: ((@roundContHeight - (@localFontSize1 + @localFontSize2) * @roundContLineHeight) / 2);
 		@localContHeight: (@roundContHeight - @localPadVertical * 2);
 
 		td {

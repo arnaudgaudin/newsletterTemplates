@@ -1266,7 +1266,7 @@ img.faicon {
 .contentBottom table.round td,
 .contentBottom table.round td .inner {
   text-align: center;
-  line-height: 100%;
+  line-height: 125%;
   mso-line-height-rule: exactly;
 }
 
@@ -1292,10 +1292,10 @@ img.faicon {
 }
 
 .contentBottom .question table.round td {
-  height: 50px;
-  -premailer-height: 50;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  height: 60px;
+  -premailer-height: 60;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .contentBottom .question table.round td a {
@@ -1304,16 +1304,16 @@ img.faicon {
 
 .contentBottom .question table.round td,
 .contentBottom .question table.round td .inner {
-  font-size: 50px;
+  font-size: 48px;
 }
 
 .contentBottom .echeancier table.round td {
   line-height: 0px;
   font-size: 0px;
-  height: 44px;
-  -premailer-height: 44;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  height: 55px;
+  -premailer-height: 55;
+  padding-top: 2.5px;
+  padding-bottom: 2.5px;
 }
 
 .contentBottom .echeancier table.round td,
@@ -2201,15 +2201,15 @@ hr {
   }
 
   table[class="body"] .contentBottom .question table.round td {
-    height: 50px !important;
-    padding-top: 5px !important;
-    padding-bottom: 5px !important;
+    height: 60px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
   }
 
   table[class="body"] .contentBottom .echeancier table.round td {
-    height: 44px !important;
-    padding-top: 8px !important;
-    padding-bottom: 8px !important;
+    height: 55px !important;
+    padding-top: 2.5px !important;
+    padding-bottom: 2.5px !important;
   }
 
   table[class="body"] .contentBottom td,
