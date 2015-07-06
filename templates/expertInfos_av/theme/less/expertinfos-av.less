@@ -272,11 +272,8 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 
 		td {
 			&, .inner {
-				// font-size: @chiffreFontSize;
 				font-size: e("**((chiffreFontSize))**px");
 			}
-			// padding-top: @chiffrePadVertical;
-			// padding-bottom: @chiffrePadVertical;
 			padding-top: e("**((chiffrePadVertical))**px");
 			padding-bottom: e("**((chiffrePadVertical))**px");
 			@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
@@ -287,14 +284,11 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 			}
 		}
 		&, td {
-			// height: @chiffreContHeight;
-			// -premailer-height: unit(@chiffreContHeight);
 			height: e("**((chiffreContHeight))**px");
 			-premailer-height: e("**((chiffreContHeight))**");
 			//application dimension en mode mobile
 			@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 				table[class="body"] & {
-					// height: @chiffreContHeight !important;
 					height: e("**((chiffreContHeight))**px !important");
 				}
 			}
