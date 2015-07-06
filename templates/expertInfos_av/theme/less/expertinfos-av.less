@@ -276,6 +276,7 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 
 		td {
 			&, .inner { font-size: e("**((chiffreFontSize))**px"); }
+			
 			height: e("**((chiffreContHeight))**px");
 			-premailer-height: e("**((chiffreContHeight))**");
 			padding-top: e("**((chiffrePadVertical))**px");
@@ -297,6 +298,7 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 
 		td {
 			&, .inner { font-size: @localFontSize; }
+
 			height: @localContHeight;
 			-premailer-height: unit(@localContHeight);
 			padding-top: @localPadVertical;
@@ -322,6 +324,12 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 				font-size: 0px;
 				text-transform: uppercase;
 			}
+			//calage différencié du jour et du mois
+			.inner {
+				.day { font-size: @localFontSize1; }
+				.month { font-size: @localFontSize2; }
+			}
+
 			height: @localContHeight;
 			-premailer-height: unit(@localContHeight);
 			padding-top: @localPadVertical;
@@ -336,11 +344,7 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 			}
 		}
 
-		//calage différencié du jour et du mois
-		td .inner {
-			.day { font-size: @localFontSize1; }
-			.month { font-size: @localFontSize2; }
-		}
+		
 	}
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
