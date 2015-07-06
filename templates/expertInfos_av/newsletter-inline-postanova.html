@@ -129,14 +129,14 @@ end if
 'Cf expertinfos-av.less pour explication calcul'
 
 'Fonctions de gestion des arrondis de nombres'
-function Ceil(Number)
-	Ceil = Int(Number)
-	if Ceil <> Number then
-		Ceil = Ceil + 1
+function ceil(Number)
+	ceil = Int(Number)
+	if ceil <> Number then
+		ceil = ceil + 1
 	end if
 end function
-function Floor(Number)
-	Floor = Int(Number)
+function floor(Number)
+	floor = Int(Number)
 end function
 
 roundContHeight = 60
@@ -970,7 +970,7 @@ color: #828282 !important;
     width: 50px !important;
   }
   table[class="body"] .contentBottom .chiffre table.round td {
-    height: <%=chiffreContHeight%>px !important; padding-top: <%=Floor(chiffrePadVertical)%>px !important; padding-bottom: <%=Ceil(chiffrePadVertical)%>px !important;
+    height: <%=chiffreContHeight%>px !important; padding-top: <%=floor(chiffrePadVertical)%>px !important; padding-bottom: <%=ceil(chiffrePadVertical)%>px !important;
   }
   table[class="body"] .contentBottom .question table.round td {
     height: 50px !important; padding-top: 5px !important; padding-bottom: 5px !important;
