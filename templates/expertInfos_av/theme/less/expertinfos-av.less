@@ -216,8 +216,8 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 	}
 	
 	//couleurs de débug
-	.wrapper:nth-child(odd) center { background-color: #080; }
-	.wrapper:nth-child(even) center { background-color: #0b0; }
+	// .wrapper:nth-child(odd) center { background-color: #080; }
+	// .wrapper:nth-child(even) center { background-color: #0b0; }
 
 	//tableau arrondi
 	table.round {
@@ -249,7 +249,6 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 
 			&, .inner {
 				text-align: center;
-				// line-height: unit(@roundContLineHeight * 100, %);
 				mso-line-height-rule: exactly;
 			}
 			.inner {
@@ -269,7 +268,6 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 		@chiffreContHeight: (@roundContHeight - @chiffrePadVertical * 2);
 
 		td {
-			a { background-color: #0f0; }
 			&, .inner {
 				font-size: e("**((chiffreFontSize))**px");
 				line-height: e("**((chiffreLineHeight))**px");
@@ -296,7 +294,6 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 		@localContHeight: (@roundContHeight - @localPadVertical * 2);
 
 		td {
-			a { background-color: #0f0; }
 			&, .inner {
 				font-size: @localFontSize;
 				line-height: @localLineHeight;
@@ -335,12 +332,10 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 				margin: 0;
 				//calage différencié du jour et du mois
 				&.day {
-					background-color: #0f0;
 					font-size: @localFontSize1;
 					line-height: @localLineHeight1;
 				}
 				&.month {
-					background-color: #00f;
 					font-size: @localFontSize2;
 					line-height: @localLineHeight2;
 				}

@@ -1225,14 +1225,6 @@ img.faicon {
   padding-bottom: 0px;
 }
 
-.contentBottom .wrapper:nth-child(odd) center {
-  background-color: #080;
-}
-
-.contentBottom .wrapper:nth-child(even) center {
-  background-color: #0b0;
-}
-
 .contentBottom table.round {
   table-layout: fixed;
   width: 100%;
@@ -1281,10 +1273,6 @@ img.faicon {
   padding-bottom: **((ceil(chiffrePadVertical)))**px;
 }
 
-.contentBottom .chiffre table.round td a {
-  background-color: #0f0;
-}
-
 .contentBottom .chiffre table.round td,
 .contentBottom .chiffre table.round td .inner {
   font-size: **((chiffreFontSize))**px;
@@ -1296,10 +1284,6 @@ img.faicon {
   -premailer-height: 50;
   padding-top: 5px;
   padding-bottom: 5px;
-}
-
-.contentBottom .question table.round td a {
-  background-color: #0f0;
 }
 
 .contentBottom .question table.round td,
@@ -1329,13 +1313,11 @@ img.faicon {
 }
 
 .contentBottom .echeancier table.round td .inner.day {
-  background-color: #0f0;
   font-size: 32px;
   line-height: 40px;
 }
 
 .contentBottom .echeancier table.round td .inner.month {
-  background-color: #00f;
   font-size: 12px;
   line-height: 15px;
 }
