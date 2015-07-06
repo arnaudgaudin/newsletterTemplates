@@ -265,31 +265,31 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 	//différenciation des tailles
 	.chiffre table.round {
 		//variabilisé en VBSCRIPT
-		@chfNbr: 4;
-		@localFontSize: round(88px / @chfNbr);
-		@localPadVertical: round((@roundContHeight - @localFontSize) / 2);
-		@localContHeight: (@roundContHeight - @localPadVertical * 2);
+		@chiffreNbr: 4;
+		@chiffreFontSize: round(88px / @chiffreNbr);
+		@chiffrePadVertical: round((@roundContHeight - @chiffreFontSize) / 2);
+		@chiffreContHeight: (@roundContHeight - @chiffrePadVertical * 2);
 
 		td {
 			&, .inner {
-				// font-size: @localFontSize;
-				font-size: e("**((localFontSize))**px");
+				// font-size: @chiffreFontSize;
+				font-size: e("**((chiffreFontSize))**px");
 			}
-			// padding-top: @localPadVertical;
-			// padding-bottom: @localPadVertical;
-			padding-top: e("**((localPadVertical))**px");
-			padding-bottom: e("**((localPadVertical))**px");
+			// padding-top: @chiffrePadVertical;
+			// padding-bottom: @chiffrePadVertical;
+			padding-top: e("**((chiffrePadVertical))**px");
+			padding-bottom: e("**((chiffrePadVertical))**px");
 		}
 		&, td {
-			// height: @localContHeight;
-			// -premailer-height: unit(@localContHeight);
-			height: e("**((localContHeight))**px");
-			-premailer-height: e("**((localContHeight))**");
+			// height: @chiffreContHeight;
+			// -premailer-height: unit(@chiffreContHeight);
+			height: e("**((chiffreContHeight))**px");
+			-premailer-height: e("**((chiffreContHeight))**");
 			//application dimension en mode mobile
 			@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 				table[class="body"] & {
-					// height: @localContHeight !important;
-					height: e("**((localContHeight))**px !important");
+					// height: @chiffreContHeight !important;
+					height: e("**((chiffreContHeight))**px !important");
 				}
 			}
 		}

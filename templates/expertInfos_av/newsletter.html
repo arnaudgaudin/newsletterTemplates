@@ -485,15 +485,15 @@ tracking_url = "fintrack=&amp;rep="&repertoire_ei&"&amp;url_site_exp="&url_site_
 																'Calcul alignement vertical en fonction de la taille de police basée sur le nombre de caractères'
 																'Cf expertinfos-av.less pour explication calcul'
 																roundContHeight = 60
-																chfNbr = Len(chiffre_valeur)
-																localFontSize = Round(88 / chfNbr)
-																localPadVertical = Round((roundContHeight - localFontSize) / 2)
-																localContHeight = (roundContHeight - localPadVertical * 2)
+																chiffreNbr = Len(chiffre_valeur)
+																chiffreFontSize = Round(88 / chiffreNbr)
+																chiffrePadVertical = Round((roundContHeight - chiffreFontSize) / 2)
+																chiffreContHeight = (roundContHeight - chiffrePadVertical * 2)
 															}}%%}}-->
 															<table border="0" class="round">
 																<tr>
 																	<td class="first hide-for-small">1</td>
-																	<td class="value" nlbgcolor="##((nlCntChfBackground))##" style="padding-top: %%{{=localPadVertical}}%%px; padding-bottom: %%{{=localPadVertical}}%%px;">
+																	<td class="value" nlbgcolor="##((nlCntChfBackground))##" style="padding-top: %%{{=chiffrePadVertical}}%%px; padding-bottom: %%{{=chiffrePadVertical}}%%px;">
 																		<p class="inner">
 																			<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/?article=%%{{=chiffre_id}}%%&amp;%%{{=tracking_url}}%%">
 																				<!--{{%%{{=chiffre_valeur}}%%}}--><!--DEL{{-->1625<!--}}DEL-->
