@@ -127,6 +127,18 @@ end if
 'Gestion des variables du chiffre'
 'Calcul alignement vertical en fonction de la taille de police et du nombre de caracteres'
 'Cf expertinfos-av.less pour explication calcul'
+
+'Fonctions de gestion des arrondis de nombres'
+function Ceil(Number)
+	Ceil = Int(Number)
+	if Ceil <> Number then
+		Ceil = Ceil + 1
+	end if
+end function
+function Floor(Number)
+	Floor = Int(Number)
+end function
+
 roundContHeight = 60
 roundContLineHeight =  1.25
 chiffreNbr = Len(chiffre_valeur)
