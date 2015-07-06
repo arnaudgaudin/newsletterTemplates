@@ -143,8 +143,8 @@ roundContHeight = 60
 roundContLineHeight =  1.25
 chiffreNbr = Len(chiffre_valeur)
 chiffreFontSize = Round(88 / chiffreNbr)
-chiffreLineHeight = (chiffreFontSize * roundContLineHeight)
-chiffrePadVertical = ((roundContHeight - chiffreFontSize * roundContLineHeight) / 2)
+chiffreLineHeight = ceil(chiffreFontSize * roundContLineHeight)
+chiffrePadVertical = ((roundContHeight - chiffreLineHeight) / 2)
 chiffreContHeight = (roundContHeight - chiffrePadVertical * 2)
 
 'Gestion des variables de lagenda'
