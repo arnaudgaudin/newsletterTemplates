@@ -133,6 +133,36 @@ chiffreFontSize = Round(88 / chiffreNbr)
 chiffrePadVertical = Round((roundContHeight - chiffreFontSize) / 2)
 chiffreContHeight = (roundContHeight - chiffrePadVertical * 2)
 
+'Gestion des variables de lagenda'
+Select Case agenda_mois
+	Case  "01"
+		agenda_mois_texte = "janv"
+	Case  "02"
+		agenda_mois_texte = "f&eacute;v"
+	Case  "03"
+		agenda_mois_texte = "mars"
+	Case  "04"
+		agenda_mois_texte = "avril"
+	Case  "05"
+		agenda_mois_texte = "mai"
+	Case  "06"
+		agenda_mois_texte = "juin"
+	Case  "07"
+		agenda_mois_texte = "juil"
+	Case  "08"
+		agenda_mois_texte = "ao&ucirc;t"
+	Case  "09"
+		agenda_mois_texte = "sept"
+	Case  "10"
+		agenda_mois_texte = "oct"
+	Case  "11"
+		agenda_mois_texte = "nov"
+	Case  "12"
+		agenda_mois_texte = "d&eacute;c"
+	Case Else
+		agenda_mois_texte = "null"
+End Select
+
 online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/"&fileName&".asp?id_client="&id_client&"&idarticle="&idarticle&"&idarticleAlaune="&idarticleAlaune&"&is_online=1"&get_coll
 tracking_url = "fintrack=&amp;rep="&repertoire_ei&"&amp;url_site_exp="&url_site_exp
 }}%%}}-->
@@ -1384,36 +1414,6 @@ color: #828282 !important;
 																<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 																	<td class="sub-columns first hide-for-small" style="-moz-hyphens: none; -ms-hyphens: none; -premailer-height: 44; -premailer-width: 37.5%; -webkit-hyphens: none; background: #888; border-collapse: collapse !important; border-radius: 0px; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; height: 44px; hyphens: none; line-height: 1; margin: 0; min-width: 0px; mso-line-height-rule: exactly; overflow: hidden; padding: 8px 0px; text-align: center; text-transform: uppercase; vertical-align: middle; width: 37.5%; word-break: break-word" align="center" bgcolor="#888" valign="middle" width="37.5%" height="44">&#160;</td>
 																	<td class="sub-columns value" bgcolor="##((nlCntAgdBackground))##" style="-moz-hyphens: none; -ms-hyphens: none; -premailer-height: 44; -premailer-width: 25%; -webkit-hyphens: none; background: #c73b1b; border-collapse: collapse !important; border-radius: 500px; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 0px; font-weight: normal; height: 44px; hyphens: none; line-height: 1; margin: 0; min-width: 0px; mso-line-height-rule: exactly; overflow: hidden; padding: 8px 0px; text-align: center; text-transform: uppercase; vertical-align: middle; width: 25%; word-break: break-word" align="center" valign="middle" width="25%" height="44">
-																		<!--{{%%{{
-																		Select Case agenda_mois
-																			Case  "01"
-																				agenda_mois_texte = "janv"
-																			Case  "02"
-																				agenda_mois_texte = "f&#233;v"
-																			Case  "03"
-																				agenda_mois_texte = "mars"
-																			Case  "04"
-																				agenda_mois_texte = "avril"
-																			Case  "05"
-																				agenda_mois_texte = "mai"
-																			Case  "06"
-																				agenda_mois_texte = "juin"
-																			Case  "07"
-																				agenda_mois_texte = "juil"
-																			Case  "08"
-																				agenda_mois_texte = "ao&#251;t"
-																			Case  "09"
-																				agenda_mois_texte = "sept"
-																			Case  "10"
-																				agenda_mois_texte = "oct"
-																			Case  "11"
-																				agenda_mois_texte = "nov"
-																			Case  "12"
-																				agenda_mois_texte = "d&#233;c"
-																			Case Else
-																				agenda_mois_texte = "null"
-																		End Select
-																		}}%%}}-->
 																		<p class="inner" style="background: #00f; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 0px; font-weight: normal; line-height: 1; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: center; text-transform: uppercase" align="center">
 																			<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/?article=%%{{=agenda_id}}%%&amp;collapse=collapse%%{{=agenda_collapse}}%%&amp;%%{{=tracking_url}}%%" style="color: #ffffff; display: block; outline: none; text-decoration: none">
 																				<span class="day" style="font-size: 32px"><!--{{%%{{=agenda_jour}}%%}}--><!--DEL{{-->25<!--}}DEL--></span><br /><span class="month" style="font-size: 12px"><!--{{%%{{=agenda_mois_texte}}%%}}--><!--DEL{{-->mars<!--}}DEL--></span>

@@ -133,6 +133,36 @@ chiffreFontSize = Round(88 / chiffreNbr)
 chiffrePadVertical = Round((roundContHeight - chiffreFontSize) / 2)
 chiffreContHeight = (roundContHeight - chiffrePadVertical * 2)
 
+'Gestion des variables de lagenda'
+Select Case agenda_mois
+	Case  "01"
+		agenda_mois_texte = "janv"
+	Case  "02"
+		agenda_mois_texte = "f&eacute;v"
+	Case  "03"
+		agenda_mois_texte = "mars"
+	Case  "04"
+		agenda_mois_texte = "avril"
+	Case  "05"
+		agenda_mois_texte = "mai"
+	Case  "06"
+		agenda_mois_texte = "juin"
+	Case  "07"
+		agenda_mois_texte = "juil"
+	Case  "08"
+		agenda_mois_texte = "ao&ucirc;t"
+	Case  "09"
+		agenda_mois_texte = "sept"
+	Case  "10"
+		agenda_mois_texte = "oct"
+	Case  "11"
+		agenda_mois_texte = "nov"
+	Case  "12"
+		agenda_mois_texte = "d&eacute;c"
+	Case Else
+		agenda_mois_texte = "null"
+End Select
+
 online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/"&fileName&".asp?id_client="&id_client&"&idarticle="&idarticle&"&idarticleAlaune="&idarticleAlaune&"&is_online=1"&get_coll
 tracking_url = "fintrack=&amp;rep="&repertoire_ei&"&amp;url_site_exp="&url_site_exp
 }}%%}}-->
@@ -568,36 +598,6 @@ tracking_url = "fintrack=&amp;rep="&repertoire_ei&"&amp;url_site_exp="&url_site_
 																<tr>
 																	<td class="sub-columns first hide-for-small">&#160;</td>
 																	<td class="sub-columns value" nlbgcolor="##((nlCntAgdBackground))##">
-																		<!--{{%%{{
-																		Select Case agenda_mois
-																			Case  "01"
-																				agenda_mois_texte = "janv"
-																			Case  "02"
-																				agenda_mois_texte = "fév"
-																			Case  "03"
-																				agenda_mois_texte = "mars"
-																			Case  "04"
-																				agenda_mois_texte = "avril"
-																			Case  "05"
-																				agenda_mois_texte = "mai"
-																			Case  "06"
-																				agenda_mois_texte = "juin"
-																			Case  "07"
-																				agenda_mois_texte = "juil"
-																			Case  "08"
-																				agenda_mois_texte = "août"
-																			Case  "09"
-																				agenda_mois_texte = "sept"
-																			Case  "10"
-																				agenda_mois_texte = "oct"
-																			Case  "11"
-																				agenda_mois_texte = "nov"
-																			Case  "12"
-																				agenda_mois_texte = "déc"
-																			Case Else
-																				agenda_mois_texte = "null"
-																		End Select
-																		}}%%}}-->
 																		<p class="inner">
 																			<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/?article=%%{{=agenda_id}}%%&amp;collapse=collapse%%{{=agenda_collapse}}%%&amp;%%{{=tracking_url}}%%">
 																				<span class="day"><!--{{%%{{=agenda_jour}}%%}}--><!--DEL{{-->25<!--}}DEL--></span><br /><span class="month"><!--{{%%{{=agenda_mois_texte}}%%}}--><!--DEL{{-->mars<!--}}DEL--></span>
