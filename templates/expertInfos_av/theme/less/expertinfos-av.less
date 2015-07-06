@@ -198,7 +198,7 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 @roundContPad: 5px;
 @roundContWidth: 60px;
 //pourcentage par rapport à une largeur de 4 colonnes
-@roundContPrct: unit((60px / (3 * @gutterWidth + 4 * @columnWidth)), %);
+@roundContPrct: unit(60px / (3 * @gutterWidth + 4 * @columnWidth) * 100, %);
 @roundContHeight: @roundContWidth;					//padding non déduit car alignement vertical du contenu avec le padding vertical
 
 .contentBottom {
