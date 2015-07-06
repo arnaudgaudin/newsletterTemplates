@@ -223,24 +223,15 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 		margin: 0 auto;
 		td {
 			&.value {
-				// width: (@roundContWidth - @roundContPad * 2);
-				// -premailer-width: unit(@roundContWidth - @roundContPad * 2);
 				width: @roundContPrct;
 				-premailer-width: @roundContPrct;
-
 				//application dimension en mode mobile
+				//largeur fixe par uniquement cette cellule est affichée
 				@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
-					table[class="body"] & {
-						// width: (@roundContWidth - @roundContPad * 2) !important;
-						width: @roundContPrct !important;
-					}
+					table[class="body"] & { width: (@roundContWidth - @roundContPad * 2) !important; }
 				}
 			}
-
-			// padding-left: @roundContPad;
-			// padding-right: @roundContPad;
 			overflow: hidden;
-
 			&, .inner {
 				text-align: center;
 				line-height: 1;
@@ -260,8 +251,6 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 
 		&.four table.round {
 			table-layout: fixed;
-			// width: @fourColWidth;
-			// -premailer-width: unit(@fourColWidth);
 			width: 100%;
 			-premailer-width: 100%;
 			td.first, td.last {
@@ -269,8 +258,6 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 				vertical-align: middle;
 				border-radius: 0px;
 				font-size: @baseFontSize;
-				// width: @sideWidth;
-				// -premailer-width: unit(@sideWidth);
 				width: ((100% - @roundContPrct) / 2);
 				-premailer-width: ((100% - @roundContPrct) / 2);
 			}

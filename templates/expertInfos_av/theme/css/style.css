@@ -2178,7 +2178,7 @@ hr {
   }
 
   table[class="body"] .contentBottom table.round td.value {
-    width: 25% !important;
+    width: 50px !important;
   }
 
   table[class="body"] .contentBottom .chiffre table.round td {
