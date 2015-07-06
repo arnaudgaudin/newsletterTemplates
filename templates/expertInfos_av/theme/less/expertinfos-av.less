@@ -304,14 +304,14 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 
 			height: @localContHeight;
 			-premailer-height: unit(@localContHeight);
-			padding-top: @localPadVertical;
-			padding-bottom: @localPadVertical;
+			padding-top: floor(@localPadVertical);
+			padding-bottom: ceil(@localPadVertical);
 			//application dimension en mode mobile
 			@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 				table[class="body"] & {
 					height: @localContHeight !important;
-					padding-top: @localPadVertical !important;
-					padding-bottom: @localPadVertical !important;
+					padding-top: floor(@localPadVertical) !important;
+					padding-bottom: ceil(@localPadVertical) !important;
 				}
 			}
 		}
@@ -348,14 +348,14 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 
 			height: @localContHeight;
 			-premailer-height: unit(@localContHeight);
-			padding-top: @localPadVertical;
-			padding-bottom: @localPadVertical;
+			padding-top: floor(@localPadVertical);
+			padding-bottom: ceil(@localPadVertical);
 			//application dimension en mode mobile
 			@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 				table[class="body"] & {
 					height: @localContHeight !important;
-					padding-top: @localPadVertical !important;
-					padding-bottom: @localPadVertical !important;
+					padding-top: floor(@localPadVertical) !important;
+					padding-bottom: ceil(@localPadVertical) !important;
 				}
 			}
 		}
