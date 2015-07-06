@@ -248,7 +248,7 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 
 			&, .inner {
 				text-align: center;
-				line-height: 1;
+				line-height: 100%;
 				mso-line-height-rule: exactly;
 			}
 			.inner {
@@ -267,6 +267,7 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 		@chiffreContHeight: (@roundContHeight - @chiffrePadVertical * 2);
 
 		td {
+			a { background-color: #0f0; }
 			&, .inner { font-size: e("**((chiffreFontSize))**px"); }
 
 			height: e("**((chiffreContHeight))**px");
@@ -289,6 +290,7 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 		@localContHeight: (@roundContHeight - @localPadVertical * 2);
 
 		td {
+			a { background-color: #0f0; }
 			&, .inner { font-size: @localFontSize; }
 
 			height: @localContHeight;
@@ -312,14 +314,23 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 		@localContHeight: (@roundContHeight - @localPadVertical * 2);
 
 		td {
-			&, .inner {
-				font-size: 0px;
-				text-transform: uppercase;
-			}
-			//calage différencié du jour et du mois
+			line-height: 0px;
+			font-size: 0px;
+			&, .inner { text-transform: uppercase; }
+
 			.inner {
-				.day { font-size: @localFontSize1; }
-				.month { font-size: @localFontSize2; }
+				text-align: center;
+				padding: 0;
+				margin: 0;
+				//calage différencié du jour et du mois
+				&.day {
+					background-color: #0f0;
+					font-size: @localFontSize1;
+				}
+				&.month {
+					background-color: #00f;
+					font-size: @localFontSize2;
+				}
 			}
 
 			height: @localContHeight;
