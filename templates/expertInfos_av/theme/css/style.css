@@ -1295,10 +1295,10 @@ img.faicon {
 .contentBottom .echeancier table.round td {
   line-height: 0px;
   font-size: 0px;
-  height: 55px;
-  -premailer-height: 55;
-  padding-top: 2px;
-  padding-bottom: 3px;
+  height: 48px;
+  -premailer-height: 48;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 .contentBottom .echeancier table.round td,
@@ -1313,13 +1313,13 @@ img.faicon {
 }
 
 .contentBottom .echeancier table.round td .inner.day {
-  font-size: 32px;
-  line-height: 40px;
+  font-size: 28px;
+  line-height: 35px;
 }
 
 .contentBottom .echeancier table.round td .inner.month {
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 10px;
+  line-height: 13px;
 }
 
 .container {
@@ -2192,9 +2192,9 @@ hr {
   }
 
   table[class="body"] .contentBottom .echeancier table.round td {
-    height: 55px !important;
-    padding-top: 2px !important;
-    padding-bottom: 3px !important;
+    height: 48px !important;
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
   }
 
   table[class="body"] .contentBottom td,
