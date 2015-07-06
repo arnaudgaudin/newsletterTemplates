@@ -277,14 +277,14 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 
 			height: e("**((chiffreContHeight))**px");
 			-premailer-height: e("**((chiffreContHeight))**");
-			padding-top: e("**((chiffrePadVertical))**px");
-			padding-bottom: e("**((chiffrePadVertical))**px");
+			padding-top: e("**((Floor(chiffrePadVertical)))**px");
+			padding-bottom: e("**((Ceil(chiffrePadVertical)))**px");
 			//application dimension en mode mobile
 			@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 				table[class="body"] & {
 					height: e("**((chiffreContHeight))**px") !important;
-					padding-top: e("**((chiffrePadVertical))**px") !important;
-					padding-bottom: e("**((chiffrePadVertical))**px") !important;
+					padding-top: e("**((Floor(chiffrePadVertical)))**px") !important;
+					padding-bottom: e("**((Ceil(chiffrePadVertical)))**px") !important;
 				}
 			}
 		}

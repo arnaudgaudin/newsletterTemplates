@@ -1277,8 +1277,8 @@ img.faicon {
 .contentBottom .chiffre table.round td {
   height: **((chiffreContHeight))**px;
   -premailer-height: **((chiffreContHeight))**;
-  padding-top: **((chiffrePadVertical))**px;
-  padding-bottom: **((chiffrePadVertical))**px;
+  padding-top: **((Floor(chiffrePadVertical)))**px;
+  padding-bottom: **((Ceil(chiffrePadVertical)))**px;
 }
 
 .contentBottom .chiffre table.round td a {
@@ -2199,8 +2199,8 @@ hr {
 
   table[class="body"] .contentBottom .chiffre table.round td {
     height: **((chiffreContHeight))**px !important;
-    padding-top: **((chiffrePadVertical))**px !important;
-    padding-bottom: **((chiffrePadVertical))**px !important;
+    padding-top: **((Floor(chiffrePadVertical)))**px !important;
+    padding-bottom: **((Ceil(chiffrePadVertical)))**px !important;
   }
 
   table[class="body"] .contentBottom .question table.round td {
