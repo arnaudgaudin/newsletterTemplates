@@ -279,6 +279,12 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 			// padding-bottom: @chiffrePadVertical;
 			padding-top: e("**((chiffrePadVertical))**px");
 			padding-bottom: e("**((chiffrePadVertical))**px");
+			@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+				table[class="body"] & {
+					padding-top: e("**((chiffrePadVertical))**px") !important;
+					padding-bottom: e("**((chiffrePadVertical))**px") !important;
+				}
+			}
 		}
 		&, td {
 			// height: @chiffreContHeight;
@@ -303,6 +309,12 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 			&, .inner { font-size: @localFontSize; }
 			padding-top: @localPadVertical;
 			padding-bottom: @localPadVertical;
+			@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+				table[class="body"] & {
+					padding-top: @localPadVertical !important;
+					padding-bottom: @localPadVertical !important;
+				}
+			}
 		}
 		&, td {
 			height: @localContHeight;
@@ -326,6 +338,12 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 			}
 			padding-top: @localPadVertical;
 			padding-bottom: @localPadVertical;
+			@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+				table[class="body"] & {
+					padding-top: @localPadVertical !important;
+					padding-bottom: @localPadVertical !important;
+				}
+			}
 		}
 		&, td {
 			height: @localContHeight;
