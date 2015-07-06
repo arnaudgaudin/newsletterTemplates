@@ -1281,6 +1281,8 @@ img.faicon {
 }
 
 .contentBottom .chiffre table.round td {
+  height: **((chiffreContHeight))**px;
+  -premailer-height: **((chiffreContHeight))**;
   padding-top: **((chiffrePadVertical))**px;
   padding-bottom: **((chiffrePadVertical))**px;
 }
@@ -1290,13 +1292,9 @@ img.faicon {
   font-size: **((chiffreFontSize))**px;
 }
 
-.contentBottom .chiffre table.round,
-.contentBottom .chiffre table.round td {
-  height: **((chiffreContHeight))**px;
-  -premailer-height: **((chiffreContHeight))**;
-}
-
 .contentBottom .question table.round td {
+  height: 50px;
+  -premailer-height: 50;
   padding-top: 5px;
   padding-bottom: 5px;
 }
@@ -1306,13 +1304,9 @@ img.faicon {
   font-size: 50px;
 }
 
-.contentBottom .question table.round,
-.contentBottom .question table.round td {
-  height: 50px;
-  -premailer-height: 50;
-}
-
 .contentBottom .echeancier table.round td {
+  height: 44px;
+  -premailer-height: 44;
   padding-top: 8px;
   padding-bottom: 8px;
 }
@@ -1321,12 +1315,6 @@ img.faicon {
 .contentBottom .echeancier table.round td .inner {
   font-size: 0px;
   text-transform: uppercase;
-}
-
-.contentBottom .echeancier table.round,
-.contentBottom .echeancier table.round td {
-  height: 44px;
-  -premailer-height: 44;
 }
 
 .contentBottom .echeancier table.round td .inner .day {
@@ -2195,33 +2183,21 @@ hr {
   }
 
   table[class="body"] .contentBottom .chiffre table.round td {
+    height: **((chiffreContHeight))**px !important;
     padding-top: **((chiffrePadVertical))**px !important;
     padding-bottom: **((chiffrePadVertical))**px !important;
   }
 
-  table[class="body"] .contentBottom .chiffre table.round,
-  table[class="body"] .contentBottom .chiffre table.round td {
-    height: **((chiffreContHeight))**px !important;
-  }
-
   table[class="body"] .contentBottom .question table.round td {
+    height: 50px !important;
     padding-top: 5px !important;
     padding-bottom: 5px !important;
   }
 
-  table[class="body"] .contentBottom .question table.round,
-  table[class="body"] .contentBottom .question table.round td {
-    height: 50px !important;
-  }
-
-  table[class="body"] .contentBottom .echeancier table.round td {
-    padding-top: 8px !important;
-    padding-bottom: 8px !important;
-  }
-
-  table[class="body"] .contentBottom .echeancier table.round,
   table[class="body"] .contentBottom .echeancier table.round td {
     height: 44px !important;
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
   }
 
   table[class="body"] .contentBottom td,

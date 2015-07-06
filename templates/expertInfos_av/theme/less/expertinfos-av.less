@@ -275,25 +275,17 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 		@chiffreContHeight: (@roundContHeight - @chiffrePadVertical * 2);
 
 		td {
-			&, .inner {
-				font-size: e("**((chiffreFontSize))**px");
-			}
-			padding-top: e("**((chiffrePadVertical))**px");
-			padding-bottom: e("**((chiffrePadVertical))**px");
-			@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
-				table[class="body"] & {
-					padding-top: e("**((chiffrePadVertical))**px") !important;
-					padding-bottom: e("**((chiffrePadVertical))**px") !important;
-				}
-			}
-		}
-		&, td {
+			&, .inner { font-size: e("**((chiffreFontSize))**px"); }
 			height: e("**((chiffreContHeight))**px");
 			-premailer-height: e("**((chiffreContHeight))**");
+			padding-top: e("**((chiffrePadVertical))**px");
+			padding-bottom: e("**((chiffrePadVertical))**px");
 			//application dimension en mode mobile
 			@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 				table[class="body"] & {
-					height: e("**((chiffreContHeight))**px !important");
+					height: e("**((chiffreContHeight))**px") !important;
+					padding-top: e("**((chiffrePadVertical))**px") !important;
+					padding-bottom: e("**((chiffrePadVertical))**px") !important;
 				}
 			}
 		}
@@ -305,21 +297,17 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 
 		td {
 			&, .inner { font-size: @localFontSize; }
+			height: @localContHeight;
+			-premailer-height: unit(@localContHeight);
 			padding-top: @localPadVertical;
 			padding-bottom: @localPadVertical;
+			//application dimension en mode mobile
 			@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 				table[class="body"] & {
+					height: @localContHeight !important;
 					padding-top: @localPadVertical !important;
 					padding-bottom: @localPadVertical !important;
 				}
-			}
-		}
-		&, td {
-			height: @localContHeight;
-			-premailer-height: unit(@localContHeight);
-			//application dimension en mode mobile
-			@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
-				table[class="body"] & { height: @localContHeight !important; }
 			}
 		}
 	}
@@ -334,21 +322,17 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 				font-size: 0px;
 				text-transform: uppercase;
 			}
+			height: @localContHeight;
+			-premailer-height: unit(@localContHeight);
 			padding-top: @localPadVertical;
 			padding-bottom: @localPadVertical;
+			//application dimension en mode mobile
 			@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 				table[class="body"] & {
+					height: @localContHeight !important;
 					padding-top: @localPadVertical !important;
 					padding-bottom: @localPadVertical !important;
 				}
-			}
-		}
-		&, td {
-			height: @localContHeight;
-			-premailer-height: unit(@localContHeight);
-			//application dimension en mode mobile
-			@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
-				table[class="body"] & { height: @localContHeight !important; }
 			}
 		}
 
