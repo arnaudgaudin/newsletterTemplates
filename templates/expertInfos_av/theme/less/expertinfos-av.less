@@ -197,6 +197,8 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 //dimension containers (carré ou rond selon les clients mails)
 @roundContPad: 5px;
 @roundContWidth: 60px;
+//pourcentage par rapport à une largeur de 4 colonnes
+@roundContPrct: unit((60px / (3 * @gutterWidth + 4 * @columnWidth)), %);
 @roundContHeight: @roundContWidth;					//padding non déduit car alignement vertical du contenu avec le padding vertical
 
 .contentBottom {
