@@ -350,6 +350,12 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 			td.wrapper-round { padding-bottom: @columnPadCollapse !important; }
 		}
 
+		center {
+			display: block !important;
+			float: left !important;
+			width: @columnWidth !important;
+		}
+
 		table.round {
 			td { text-align: center !important; }
 		}
@@ -451,7 +457,7 @@ a {
 	}
 }
 
-
+/*
 // CUSTOM COLORS
 // --------------------------------------------------
 
@@ -577,8 +583,8 @@ hr {
 	.newsletterInnerTextColor(e("##((nlFooterText))##"));
 	small { color: e("##((nlFooterText))##"); }
 }
+*/
 
-/*
 // DEVELOPPEMENT COLORS
 // --------------------------------------------------
 
@@ -704,4 +710,3 @@ hr {
 	.newsletterInnerTextColor(@nlFooterText);
 	small { color: @nlFooterText; }
 }
-*/
