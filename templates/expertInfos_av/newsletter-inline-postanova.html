@@ -920,10 +920,10 @@ color: #828282 !important;
     width: 50px !important;
   }
   table[class="body"] .contentBottom .chiffre table.round {
-    height: <%=localContHeight%>px !important;
+    height: <%=chiffreContHeight%>px !important;
   }
   table[class="body"] .contentBottom .chiffre table.round td {
-    height: <%=localContHeight%>px !important;
+    height: <%=chiffreContHeight%>px !important;
   }
   table[class="body"] .contentBottom .question table.round {
     height: 50px !important;
@@ -1310,22 +1310,22 @@ color: #828282 !important;
 																'Calcul alignement vertical en fonction de la taille de police bas&#233;e sur le nombre de caract&#232;res'
 																'Cf expertinfos-av.less pour explication calcul'
 																roundContHeight = 60
-																chfNbr = Len(chiffre_valeur)
-																localFontSize = Round(88 / chfNbr)
-																localPadVertical = Round((roundContHeight - localFontSize) / 2)
-																localContHeight = (roundContHeight - localPadVertical * 2)
+																chiffreNbr = Len(chiffre_valeur)
+																chiffreFontSize = Round(88 / chiffreNbr)
+																chiffrePadVertical = Round((roundContHeight - chiffreFontSize) / 2)
+																chiffreContHeight = (roundContHeight - chiffrePadVertical * 2)
 															%>
-															<table border="0" class="round" style="background: #0f0; border-collapse: collapse; border-spacing: 0; color: #ffffff; empty-cells: hide; height: <%=localContHeight%>px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; table-layout: fixed; text-align: left; vertical-align: top; width: 50px" bgcolor="#0f0" width="50" height="<%=localContHeight%>" cellpadding="0" cellspacing="0">
+															<table border="0" class="round" style="background: #0f0; border-collapse: collapse; border-spacing: 0; color: #ffffff; empty-cells: hide; height: <%=chiffreContHeight%>px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; table-layout: fixed; text-align: left; vertical-align: top; width: 50px" bgcolor="#0f0" width="50" height="<%=chiffreContHeight%>" cellpadding="0" cellspacing="0">
 																<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
-																	<td class="first hide-for-small" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; background: #888; border-collapse: collapse !important; border-radius: 0px; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; height: <%=localContHeight%>px; hyphens: none; line-height: 1; margin: 0; mso-line-height-rule: exactly; overflow: hidden; padding: <%=localpadvertical%>px 5px; text-align: center; vertical-align: middle; width: 80px; word-break: break-word" align="center" bgcolor="#888" valign="middle" width="80" height="<%=localContHeight%>">1</td>
-																	<td class="value" bgcolor="<%=colorParsing.Item("nlCntChfBackground")%>" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; background: #79468c; border-collapse: collapse !important; border-radius: 500px; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: <%=localFontSize%>px; font-weight: normal; height: <%=localContHeight%>px; hyphens: none; line-height: 1; margin: 0; mso-line-height-rule: exactly; overflow: hidden; padding: <%=localpadvertical%>px 5px; text-align: center; vertical-align: top; width: 50px; word-break: break-word" align="center" valign="top" width="50" height="<%=localContHeight%>">
-																		<p class="inner" style="background: #00f; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: <%=localFontSize%>px; font-weight: normal; line-height: 1; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: center" align="center">
+																	<td class="first hide-for-small" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; background: #888; border-collapse: collapse !important; border-radius: 0px; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; height: <%=chiffreContHeight%>px; hyphens: none; line-height: 1; margin: 0; mso-line-height-rule: exactly; overflow: hidden; padding: <%=chiffrepadvertical%>px 5px; text-align: center; vertical-align: middle; width: 80px; word-break: break-word" align="center" bgcolor="#888" valign="middle" width="80" height="<%=chiffreContHeight%>">1</td>
+																	<td class="value" bgcolor="<%=colorParsing.Item("nlCntChfBackground")%>" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; background: #79468c; border-collapse: collapse !important; border-radius: 500px; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: <%=chiffreFontSize%>px; font-weight: normal; height: <%=chiffreContHeight%>px; hyphens: none; line-height: 1; margin: 0; mso-line-height-rule: exactly; overflow: hidden; padding: <%=chiffrepadvertical%>px 5px; text-align: center; vertical-align: top; width: 50px; word-break: break-word" align="center" valign="top" width="50" height="<%=chiffreContHeight%>">
+																		<p class="inner" style="background: #00f; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: <%=chiffreFontSize%>px; font-weight: normal; line-height: 1; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: center" align="center">
 																			<a target="_blank" class="link_box" href="http://<%=url_site_exp%>/?article=<%=chiffre_id%>&amp;<%=tracking_url%>" style="color: #ffffff; display: block; outline: none; text-decoration: none">
 																				<%=chiffre_valeur%>
 																			</a>
 																		</p>
 																	</td>
-																	<td class="last hide-for-small" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; background: #888; border-collapse: collapse !important; border-radius: 0px; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; height: <%=localContHeight%>px; hyphens: none; line-height: 1; margin: 0; mso-line-height-rule: exactly; overflow: hidden; padding: <%=localpadvertical%>px 5px; text-align: center; vertical-align: middle; width: 80px; word-break: break-word" align="center" bgcolor="#888" valign="middle" width="80" height="<%=localContHeight%>">2</td>
+																	<td class="last hide-for-small" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; background: #888; border-collapse: collapse !important; border-radius: 0px; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; height: <%=chiffreContHeight%>px; hyphens: none; line-height: 1; margin: 0; mso-line-height-rule: exactly; overflow: hidden; padding: <%=chiffrepadvertical%>px 5px; text-align: center; vertical-align: middle; width: 80px; word-break: break-word" align="center" bgcolor="#888" valign="middle" width="80" height="<%=chiffreContHeight%>">2</td>
 																</tr>
 															</table>
 														</center>

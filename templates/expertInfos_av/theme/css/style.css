@@ -1276,19 +1276,19 @@ img.faicon {
 }
 
 .contentBottom .chiffre table.round td {
-  padding-top: **((localPadVertical))**px;
-  padding-bottom: **((localPadVertical))**px;
+  padding-top: **((chiffrePadVertical))**px;
+  padding-bottom: **((chiffrePadVertical))**px;
 }
 
 .contentBottom .chiffre table.round td,
 .contentBottom .chiffre table.round td .inner {
-  font-size: **((localFontSize))**px;
+  font-size: **((chiffreFontSize))**px;
 }
 
 .contentBottom .chiffre table.round,
 .contentBottom .chiffre table.round td {
-  height: **((localContHeight))**px;
-  -premailer-height: **((localContHeight))**;
+  height: **((chiffreContHeight))**px;
+  -premailer-height: **((chiffreContHeight))**;
 }
 
 .contentBottom .question table.round td {
@@ -2192,7 +2192,7 @@ hr {
 
   table[class="body"] .contentBottom .chiffre table.round,
   table[class="body"] .contentBottom .chiffre table.round td {
-    height: **((localContHeight))**px !important;
+    height: **((chiffreContHeight))**px !important;
   }
 
   table[class="body"] .contentBottom .question table.round,
