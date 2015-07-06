@@ -251,8 +251,8 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 
 		&.four table.round {
 			table-layout: fixed;
-			.columnWidth(4);
-
+			width: @fourColWidth;
+			-premailer-width: unit(@fourColWidth);
 			td.first, td.last {
 				background-color: #888;
 				vertical-align: middle;
