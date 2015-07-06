@@ -1235,16 +1235,33 @@ img.faicon {
 
 .contentBottom table.round {
   background-color: #0f0;
+  table-layout: fixed;
+  width: 100%;
+  -premailer-width: 100%;
   margin: 0 auto;
 }
 
 .contentBottom table.round td {
+  vertical-align: middle;
   overflow: hidden;
 }
 
 .contentBottom table.round td.value {
   width: 25%;
   -premailer-width: 25%;
+}
+
+.contentBottom table.round td.first,
+.contentBottom table.round td.last {
+  border-radius: 0px;
+  width: 37.5%;
+  -premailer-width: 37.5%;
+}
+
+.body .contentBottom table.round td.first,
+.body .contentBottom table.round td.last {
+  background-color: #888;
+  font-size: 12px;
 }
 
 .contentBottom table.round td,
@@ -1258,25 +1275,6 @@ img.faicon {
   background-color: #00f;
   margin: 0;
   padding: 0;
-}
-
-.contentBottom table.columns.four table.round,
-.contentBottom table.column.four table.round {
-  table-layout: fixed;
-  width: 100%;
-  -premailer-width: 100%;
-}
-
-.contentBottom table.columns.four table.round td.first,
-.contentBottom table.column.four table.round td.first,
-.contentBottom table.columns.four table.round td.last,
-.contentBottom table.column.four table.round td.last {
-  background-color: #888;
-  vertical-align: middle;
-  border-radius: 0px;
-  font-size: 12px;
-  width: 37.5%;
-  -premailer-width: 37.5%;
 }
 
 .contentBottom .chiffre table.round td {

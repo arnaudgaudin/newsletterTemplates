@@ -220,8 +220,14 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 	//tableau arrondi
 	table.round {
 		background-color: #0f0;
+		table-layout: fixed;
+		width: 100%;
+		-premailer-width: 100%;
 		margin: 0 auto;
 		td {
+			vertical-align: middle;
+			overflow: hidden;
+
 			&.value {
 				width: @roundContPrct;
 				-premailer-width: @roundContPrct;
@@ -231,7 +237,17 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 					table[class="body"] & { width: (@roundContWidth - @roundContPad * 2) !important; }
 				}
 			}
-			overflow: hidden;
+			&.first, &.last {
+				border-radius: 0px;
+				width: ((100% - @roundContPrct) / 2);
+				-premailer-width: ((100% - @roundContPrct) / 2);
+				//pour debug
+				.body & {
+					background-color: #888;
+					font-size: @baseFontSize;
+				}
+			}
+
 			&, .inner {
 				text-align: center;
 				line-height: 1;
@@ -241,25 +257,6 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 				background-color: #00f;
 				margin: 0;
 				padding: 0;
-			}
-		}
-	}
-	table.columns, table.column {
-		//largeur exaxte des colonnes contenant les arrondis
-		@fourColWidth: (3 * @gutterWidth + 4 * @columnWidth);
-		// @sideWidth: ((@fourColWidth - @roundContWidth) / 2 - @roundContPad * 2);
-
-		&.four table.round {
-			table-layout: fixed;
-			width: 100%;
-			-premailer-width: 100%;
-			td.first, td.last {
-				background-color: #888;
-				vertical-align: middle;
-				border-radius: 0px;
-				font-size: @baseFontSize;
-				width: ((100% - @roundContPrct) / 2);
-				-premailer-width: ((100% - @roundContPrct) / 2);
 			}
 		}
 	}
