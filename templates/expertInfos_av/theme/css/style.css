@@ -1235,19 +1235,17 @@ img.faicon {
 
 .contentBottom table.round {
   background-color: #0f0;
-  table-layout: fixed;
-}
-
-.contentBottom table.round,
-.contentBottom table.round td {
-  width: 50px;
-  -premailer-width: 50;
 }
 
 .contentBottom table.round td {
   padding-left: 5px;
   padding-right: 5px;
   overflow: hidden;
+}
+
+.contentBottom table.round td.value {
+  width: 50px;
+  -premailer-width: 50;
 }
 
 .contentBottom table.round td,
@@ -1261,6 +1259,13 @@ img.faicon {
   background-color: #00f;
   margin: 0;
   padding: 0;
+}
+
+.contentBottom table.columns.four table.round,
+.contentBottom table.column.four table.round {
+  table-layout: fixed;
+  width: 240px;
+  -premailer-width: 240;
 }
 
 .contentBottom table.columns.four table.round td.first,
@@ -2185,8 +2190,7 @@ hr {
     display: table !important;
   }
 
-  table[class="body"] .contentBottom table.round,
-  table[class="body"] .contentBottom table.round td {
+  table[class="body"] .contentBottom table.round td.value {
     width: 50px !important;
   }
 

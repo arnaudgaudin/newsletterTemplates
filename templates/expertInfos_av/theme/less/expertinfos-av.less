@@ -218,21 +218,20 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 	//tableau arrondi
 	table.round {
 		background-color: #0f0;
-		table-layout: fixed;
-		&, td {
-			width: (@roundContWidth - @roundContPad * 2);
-			-premailer-width: unit(@roundContWidth - @roundContPad * 2);
-			//application dimension en mode mobile
-			@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
-				table[class="body"] & { width: (@roundContWidth - @roundContPad * 2) !important; }
-			}
-		}
-		
 		td {
-			//padding horizontal fixe
+			&.value {
+				width: (@roundContWidth - @roundContPad * 2);
+				-premailer-width: unit(@roundContWidth - @roundContPad * 2);
+				//application dimension en mode mobile
+				@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+					table[class="body"] & { width: (@roundContWidth - @roundContPad * 2) !important; }
+				}
+			}
+
 			padding-left: @roundContPad;
 			padding-right: @roundContPad;
 			overflow: hidden;
+
 			&, .inner {
 				text-align: center;
 				line-height: 1;
@@ -251,6 +250,9 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 		@sideWidth: ((@fourColWidth - @roundContWidth) / 2 - @roundContPad * 2);
 
 		&.four table.round {
+			table-layout: fixed;
+			.columnWidth(4);
+
 			td.first, td.last {
 				background-color: #888;
 				vertical-align: middle;
