@@ -1239,14 +1239,12 @@ img.faicon {
 }
 
 .contentBottom table.round td {
-  padding-left: 5px;
-  padding-right: 5px;
   overflow: hidden;
 }
 
 .contentBottom table.round td.value {
-  width: 50px;
-  -premailer-width: 50;
+  width: 25%;
+  -premailer-width: 25%;
 }
 
 .contentBottom table.round td,
@@ -1277,8 +1275,8 @@ img.faicon {
   vertical-align: middle;
   border-radius: 0px;
   font-size: 12px;
-  width: 80px;
-  -premailer-width: 80;
+  width: 37.5%;
+  -premailer-width: 37.5%;
 }
 
 .contentBottom .chiffre table.round td {
@@ -2180,7 +2178,7 @@ hr {
   }
 
   table[class="body"] .contentBottom table.round td.value {
-    width: 50px !important;
+    width: 25% !important;
   }
 
   table[class="body"] .contentBottom .chiffre table.round td {

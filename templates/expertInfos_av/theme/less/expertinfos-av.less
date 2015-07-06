@@ -223,16 +223,22 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 		margin: 0 auto;
 		td {
 			&.value {
-				width: (@roundContWidth - @roundContPad * 2);
-				-premailer-width: unit(@roundContWidth - @roundContPad * 2);
+				// width: (@roundContWidth - @roundContPad * 2);
+				// -premailer-width: unit(@roundContWidth - @roundContPad * 2);
+				width: @roundContPrct;
+				-premailer-width: @roundContPrct;
+
 				//application dimension en mode mobile
 				@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
-					table[class="body"] & { width: (@roundContWidth - @roundContPad * 2) !important; }
+					table[class="body"] & {
+						// width: (@roundContWidth - @roundContPad * 2) !important;
+						width: @roundContPrct !important;
+					}
 				}
 			}
 
-			padding-left: @roundContPad;
-			padding-right: @roundContPad;
+			// padding-left: @roundContPad;
+			// padding-right: @roundContPad;
 			overflow: hidden;
 
 			&, .inner {
@@ -250,7 +256,7 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 	table.columns, table.column {
 		//largeur exaxte des colonnes contenant les arrondis
 		@fourColWidth: (3 * @gutterWidth + 4 * @columnWidth);
-		@sideWidth: ((@fourColWidth - @roundContWidth) / 2 - @roundContPad * 2);
+		// @sideWidth: ((@fourColWidth - @roundContWidth) / 2 - @roundContPad * 2);
 
 		&.four table.round {
 			table-layout: fixed;
@@ -263,8 +269,10 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 				vertical-align: middle;
 				border-radius: 0px;
 				font-size: @baseFontSize;
-				width: @sideWidth;
-				-premailer-width: unit(@sideWidth);
+				// width: @sideWidth;
+				// -premailer-width: unit(@sideWidth);
+				width: ((100% - @roundContPrct) / 2);
+				-premailer-width: ((100% - @roundContPrct) / 2);
 			}
 		}
 	}
