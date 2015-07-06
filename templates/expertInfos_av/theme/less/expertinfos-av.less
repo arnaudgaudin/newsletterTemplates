@@ -264,8 +264,8 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 		//variabilisé en VBSCRIPT
 		@chiffreNbr: 4;
 		@chiffreFontSize: round(88px / @chiffreNbr);
-		@chiffreLineHeight: (@chiffreFontSize * @roundContLineHeight);
-		@chiffrePadVertical: ((@roundContHeight - @chiffreFontSize * @roundContLineHeight) / 2);
+		@chiffreLineHeight: ceil(@chiffreFontSize * @roundContLineHeight);
+		@chiffrePadVertical: ((@roundContHeight - @chiffreLineHeight) / 2);
 		@chiffreContHeight: (@roundContHeight - @chiffrePadVertical * 2);
 
 		td {
@@ -291,8 +291,8 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 	}
 	.question table.round {
 		@localFontSize: 40px;
-		@localLineHeight: (@localFontSize * @roundContLineHeight);
-		@localPadVertical: ((@roundContHeight - @localFontSize * @roundContLineHeight) / 2);
+		@localLineHeight: ceil(@localFontSize * @roundContLineHeight);
+		@localPadVertical: ((@roundContHeight - @localLineHeight) / 2);
 		@localContHeight: (@roundContHeight - @localPadVertical * 2);
 
 		td {
@@ -319,9 +319,9 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 	.echeancier table.round {
 		@localFontSize1: 32px;
 		@localFontSize2: 12px;
-		@localLineHeight1: (@localFontSize1 * @roundContLineHeight);
-		@localLineHeight2: (@localFontSize2 * @roundContLineHeight);
-		@localPadVertical: ((@roundContHeight - (@localFontSize1 + @localFontSize2) * @roundContLineHeight) / 2);
+		@localLineHeight1: ceil(@localFontSize1 * @roundContLineHeight);
+		@localLineHeight2: ceil(@localFontSize2 * @roundContLineHeight);
+		@localPadVertical: ((@roundContHeight - @localLineHeight1 - @localLineHeight2) / 2);
 		@localContHeight: (@roundContHeight - @localPadVertical * 2);
 
 		td {
