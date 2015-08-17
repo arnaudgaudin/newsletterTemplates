@@ -1148,6 +1148,24 @@ table.column .readMore td {
   padding-bottom: 10px;
 }
 
+.contentIntroduction {
+  background-color: #2d2d2d;
+}
+
+.contentIntroduction h3.introduction {
+  font-weight: normal;
+  color: #ffffff;
+}
+
+.contentPartenariat td.wrapper {
+  padding-top: 0px;
+}
+
+.contentPartenariat table.columns td,
+.contentPartenariat table.column td {
+  padding-bottom: 0px;
+}
+
 @media only screen and (max-width: 720px) {
   table[class="body"] img {
     max-width: auto !important;
