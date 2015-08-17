@@ -45,10 +45,12 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 
 //lien de suivis
 .readMore {
-	text-align: right;
-	font-size: @fontSizeSmall;
-	margin: 0;
-	background-color: @colorBoosterHealth2;
-	color: #ffffff;
-	a { .newsletterLinkColor(#ffffff); }
+	td {
+		table.columns &, table.column & { padding: 3px 10px; }
+		background-color: @colorBoosterHealth2;
+		color: #ffffff;
+		font-size: @fontSizeSmall;
+		text-align: right;
+		a { .newsletterLinkColor(#ffffff); }
+	}
 }

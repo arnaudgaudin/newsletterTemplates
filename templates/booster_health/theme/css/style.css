@@ -1088,23 +1088,27 @@ h6 {
   padding-top: 10px;
 }
 
-.readMore {
-  text-align: right;
-  font-size: 11.9px;
-  margin: 0;
+.readMore td {
   background-color: #2d2d2d;
   color: #ffffff;
+  font-size: 11.9px;
+  text-align: right;
 }
 
-.readMore a {
+table.columns .readMore td,
+table.column .readMore td {
+  padding: 3px 10px;
+}
+
+.readMore td a {
   color: #ffffff;
 }
 
-.readMore a .important,
-.readMore a:visited,
-.readMore a:hover,
-.readMore a:focus,
-.readMore a:active {
+.readMore td a .important,
+.readMore td a:visited,
+.readMore td a:hover,
+.readMore td a:focus,
+.readMore td a:active {
   color: #ffffff !important;
 }
 
