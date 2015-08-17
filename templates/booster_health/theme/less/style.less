@@ -54,3 +54,25 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 		a { .newsletterLinkColor(#ffffff); }
 	}
 }
+
+
+// contentOnline area
+// -------------------------
+.contentOnline {
+	background-color: @bodyBackground;
+	.newsletterInnerTextColor(#ffffff);
+	
+	td {
+		font-size: @fontSizeSmall;
+		line-height: (@fontSizeSmall * 1.25);
+	}
+	//réduction décalage vertical en haut
+	td.wrapper { padding-top: (@wrapperPad / 2); }
+	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentOnline {
+		td.wrapper { padding-top: (@wrapperPad / 2) !important; }
+		table.columns td, table.column td { padding-bottom: (@columnPad / 2) !important; }
+	}
+}
