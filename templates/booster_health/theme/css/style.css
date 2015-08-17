@@ -4,7 +4,7 @@
 
 body,
 table.body {
-  background-color: #ffffff;
+  background-color: #bebebe;
 }
 
 /**********************************************
@@ -999,6 +999,48 @@ table.small-button td,
 table.medium-button td,
 table.large-button td {
   -premailer-width: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  mso-line-height-rule: exactly;
+}
+
+h1 {
+  line-height: 43.89px;
+}
+
+h2 {
+  line-height: 39.27px;
+}
+
+h3 {
+  line-height: 34.65px;
+}
+
+h4 {
+  line-height: 30.8px;
+}
+
+h5 {
+  line-height: 26.95px;
+}
+
+h6 {
+  line-height: 22.33px;
+}
+
+.header td.wrapper {
+  padding-top: 0px;
+}
+
+.header table.columns td,
+.header table.column td {
+  padding-bottom: 0px;
 }
 
 @media only screen and (max-width: 720px) {
