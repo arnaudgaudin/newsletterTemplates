@@ -563,51 +563,51 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   font-weight: bold;
-  color: inherit;
+  color: #222222;
   word-break: normal;
 }
 
 h1 {
-  font-size: 39.9px;
+  font-size: 30px;
 }
 
 h2 {
-  font-size: 35.7px;
+  font-size: 26px;
 }
 
 h3 {
-  font-size: 31.5px;
+  font-size: 22px;
 }
 
 h4 {
-  font-size: 28px;
+  font-size: 20px;
 }
 
 h5 {
-  font-size: 24.5px;
+  font-size: 18px;
 }
 
 h6 {
-  font-size: 20.3px;
+  font-size: 16px;
 }
 
 body,
 table.body,
 p,
 td {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   font-weight: normal;
   font-size: 14px;
-  line-height: 19px;
+  line-height: 18px;
 }
 
 p.lead,
 p.lede,
 p.leed {
-  font-size: 17.5px;
-  line-height: 20.125px;
+  font-size: 18.2px;
+  line-height: 20.93px;
 }
 
 p {
@@ -615,7 +615,7 @@ p {
 }
 
 small {
-  font-size: 9.8px;
+  font-size: 11.9px;
 }
 
 a {
@@ -727,7 +727,7 @@ table.medium-button td a,
 table.large-button td a {
   font-weight: bold;
   text-decoration: none;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   color: #ffffff;
   font-size: 16.1px;
   display: block;
@@ -1011,27 +1011,27 @@ h6 {
 }
 
 h1 {
-  line-height: 43.89px;
+  line-height: 33px;
 }
 
 h2 {
-  line-height: 39.27px;
+  line-height: 28.6px;
 }
 
 h3 {
-  line-height: 34.65px;
+  line-height: 24.2px;
 }
 
 h4 {
-  line-height: 30.8px;
+  line-height: 22px;
 }
 
 h5 {
-  line-height: 26.95px;
+  line-height: 19.8px;
 }
 
 h6 {
-  line-height: 22.33px;
+  line-height: 17.6px;
 }
 
 .header td.wrapper {
