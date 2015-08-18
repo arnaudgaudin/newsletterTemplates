@@ -619,20 +619,20 @@ small {
 }
 
 a {
-  color: #3c96cd;
+  color: #3593ce;
   text-decoration: none;
 }
 
 a:hover {
-  color: #2c7aaa !important;
+  color: #2977a7 !important;
 }
 
 a:active {
-  color: #2c7aaa !important;
+  color: #2977a7 !important;
 }
 
 a:visited {
-  color: #3c96cd !important;
+  color: #3593ce !important;
 }
 
 h1 a,
@@ -641,7 +641,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-  color: #3c96cd;
+  color: #3593ce;
 }
 
 h1 a:active,
@@ -650,7 +650,7 @@ h3 a:active,
 h4 a:active,
 h5 a:active,
 h6 a:active {
-  color: #3c96cd !important;
+  color: #3593ce !important;
 }
 
 h1 a:visited,
@@ -659,7 +659,7 @@ h3 a:visited,
 h4 a:visited,
 h5 a:visited,
 h6 a:visited {
-  color: #3c96cd !important;
+  color: #3593ce !important;
 }
 
 /* Panels */
@@ -697,8 +697,8 @@ table.large-button td {
   display: block;
   width: auto !important;
   text-align: center;
-  background: #3c96cd;
-  border: 1px solid #3086bb;
+  background: #3593ce;
+  border: 1px solid #2d82b8;
   color: #ffffff;
   padding: 8px 0;
   line-height: initial !important;
@@ -755,7 +755,7 @@ table.large-button td a {
 table.button:hover td,
 table.button:visited td,
 table.button:active td {
-  background: #338fc7 !important;
+  background: #308bc4 !important;
 }
 
 table.button:hover td a,
@@ -769,7 +769,7 @@ table.tiny-button:hover td,
 table.small-button:hover td,
 table.medium-button:hover td,
 table.large-button:hover td {
-  background: #338fc7 !important;
+  background: #308bc4 !important;
 }
 
 table.button:hover td a,
@@ -846,17 +846,17 @@ body.outlook p {
 /*  Media Queries */
 
 .appleLinks a {
-  color: #3c96cd;
+  color: #3593ce;
   text-decoration: none;
 }
 
 .appleLinks a:hover,
 .appleLinks a:active {
-  color: #2c7aaa !important;
+  color: #2977a7 !important;
 }
 
 .appleLinks a:visited {
-  color: #3c96cd !important;
+  color: #3593ce !important;
 }
 
 a[href^=tel] {
@@ -1048,11 +1048,11 @@ h6 {
 }
 
 .preTitle .last {
-  color: #3c96cd;
+  color: #3593ce;
 }
 
 .preTitle .last a {
-  color: #3c96cd;
+  color: #3593ce;
 }
 
 .preTitle .last a .important,
@@ -1060,16 +1060,16 @@ h6 {
 .preTitle .last a:hover,
 .preTitle .last a:focus,
 .preTitle .last a:active {
-  color: #3c96cd !important;
+  color: #3593ce !important;
 }
 
 .title {
-  color: #000000;
+  color: #151415;
   padding-bottom: 5px;
 }
 
 .title a {
-  color: #000000;
+  color: #151415;
 }
 
 .title a .important,
@@ -1077,7 +1077,7 @@ h6 {
 .title a:hover,
 .title a:focus,
 .title a:active {
-  color: #000000 !important;
+  color: #151415 !important;
 }
 
 .readMore + .title,
@@ -1228,11 +1228,11 @@ table.secondary:active td a {
 }
 
 .contentActualites .title {
-  color: #3c96cd;
+  color: #3593ce;
 }
 
 .contentActualites .title a {
-  color: #3c96cd;
+  color: #3593ce;
 }
 
 .contentActualites .title a .important,
@@ -1240,7 +1240,7 @@ table.secondary:active td a {
 .contentActualites .title a:hover,
 .contentActualites .title a:focus,
 .contentActualites .title a:active {
-  color: #3c96cd !important;
+  color: #3593ce !important;
 }
 
 .contentProjet {
@@ -1301,7 +1301,7 @@ table.secondary:active td a {
 }
 
 .contentUnsubscribe {
-  background-color: #3c96cd;
+  background-color: #3593ce;
 }
 
 .contentUnsubscribe,
