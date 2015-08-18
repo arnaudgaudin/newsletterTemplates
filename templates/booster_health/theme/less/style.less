@@ -100,10 +100,6 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 	td.buttonWrapper {
 		padding-bottom: 0;
 		.text + & { padding-top: 5px; }
-		td, a.tiny-button-link {
-			font-size: @buttonFontSizeTiny;
-			font-weight: normal;
-		}
 	}
 
 	table.tiny-button {
@@ -114,6 +110,11 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 		}
 	}
 }
+a.tiny-button-link, .readMore td.buttonWrapper td {
+	font-size: @buttonFontSizeTiny;
+	font-weight: normal;
+}
+
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .readMore {
 		table.tiny-button {
