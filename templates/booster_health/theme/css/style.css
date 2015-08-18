@@ -1088,6 +1088,11 @@ h6 {
   padding-top: 10px;
 }
 
+.author {
+  display: block;
+  padding-bottom: 5px;
+}
+
 .readMore {
   width: 100%;
   overflow: hidden;
@@ -1203,6 +1208,22 @@ table.secondary:active td a {
 
 .contentAvisExpert .person {
   padding-top: 5px;
+}
+
+.contentActualites .title {
+  color: #3c96cd;
+}
+
+.contentActualites .title a {
+  color: #3c96cd;
+}
+
+.contentActualites .title a .important,
+.contentActualites .title a:visited,
+.contentActualites .title a:hover,
+.contentActualites .title a:focus,
+.contentActualites .title a:active {
+  color: #3c96cd !important;
 }
 
 @media only screen and (max-width: 720px) {

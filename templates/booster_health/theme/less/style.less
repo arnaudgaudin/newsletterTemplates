@@ -42,6 +42,11 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 	.readMore + &, .readMore + * + & { padding-top: 10px; }
 }
 
+.author {
+	display: block;
+	padding-bottom: 5px;
+}
+
 //lien de suivis
 .readMore {
 	width: 100%;
@@ -153,9 +158,7 @@ table.secondary {
 
 	img { float: none; }
 
-	.person {
-		padding-top: 5px;
-	}
+	.person { padding-top: 5px; }
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentAvisExpert {
@@ -166,5 +169,15 @@ table.secondary {
 			td.wrapper { padding-top: 0px !important; }
 		}
 		.left-text-pad, .text-pad-left { padding-right: 0 !important; }
+	}
+}
+
+
+// contentActualites area
+// -------------------------
+.contentActualites {
+	.title {
+		color: @colorBoosterHealth1;
+		a { .newsletterLinkColor(@colorBoosterHealth1); }
 	}
 }
