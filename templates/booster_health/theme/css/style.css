@@ -1210,6 +1210,10 @@ table.secondary:active td a {
   padding-bottom: 10px;
 }
 
+.contentALaUne img {
+  float: none;
+}
+
 .contentALaUne td.wrapper {
   padding-top: 10px;
 }
@@ -1265,6 +1269,10 @@ table.secondary:active td a {
 
 .contentProjet {
   background-color: #e6e6e6;
+}
+
+.contentProjet img {
+  float: none;
 }
 
 .contentProjet table.columns .subWrapper,
