@@ -1047,7 +1047,7 @@ h6 {
   display: block;
   font-size: 18px;
   font-weight: bold;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 }
 
 .preTitle .last {
@@ -1090,14 +1090,7 @@ h6 {
 
 .readMore {
   width: 100%;
-}
-
-.readMore table.button,
-.readMore table.tiny-button,
-.readMore table.small-button,
-.readMore table.medium-button,
-.readMore table.large-button {
-  width: auto;
+  overflow: hidden;
 }
 
 .readMore td.buttonWrapper {
@@ -1108,7 +1101,11 @@ h6 {
   padding-top: 5px;
 }
 
-.readMore table[class*="button"] td {
+.readMore table.tiny-button {
+  width: auto;
+}
+
+.readMore table.tiny-button td {
   padding: 4px 8px;
   text-transform: uppercase;
 }
@@ -1198,6 +1195,14 @@ table.secondary:active td a {
 
 .contentAvisExpert tr:last-child td.wrapper {
   padding-top: 0px;
+}
+
+.contentAvisExpert img {
+  float: none;
+}
+
+.contentAvisExpert .person {
+  padding-top: 5px;
 }
 
 @media only screen and (max-width: 720px) {
@@ -1366,6 +1371,15 @@ table.secondary:active td a {
     padding: 10px !important;
   }
 
+  table[class="body"] .readMore table.tiny-button {
+    width: auto !important;
+  }
+
+  table[class="body"] .readMore table.tiny-button td {
+    width: auto !important;
+    padding: 4px 8px !important;
+  }
+
   table[class="body"] .contentOnline td.wrapper {
     padding-top: 10px !important;
   }
@@ -1395,5 +1409,10 @@ table.secondary:active td a {
 
   table[class="body"] .contentAvisExpert tr:last-child td.wrapper {
     padding-top: 0px !important;
+  }
+
+  table[class="body"] .contentAvisExpert .left-text-pad,
+  table[class="body"] .contentAvisExpert .text-pad-left {
+    padding-right: 0 !important;
   }
 }
