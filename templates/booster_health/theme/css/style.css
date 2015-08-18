@@ -1187,6 +1187,19 @@ table.secondary:active td a {
   padding-top: 10px;
 }
 
+.contentAvisExpert {
+  background-color: #e6e6e6;
+}
+
+.contentAvisExpert tr:first-child table.columns td,
+.contentAvisExpert tr:first-child table.column td {
+  padding-bottom: 0px;
+}
+
+.contentAvisExpert tr:last-child td.wrapper {
+  padding-top: 0px;
+}
+
 @media only screen and (max-width: 720px) {
   table[class="body"] img {
     max-width: auto !important;
@@ -1373,5 +1386,14 @@ table.secondary:active td a {
 
   table[class="body"] .contentALaUne td.wrapper {
     padding-top: 10px !important;
+  }
+
+  table[class="body"] .contentAvisExpert tr:first-child table.columns td,
+  table[class="body"] .contentAvisExpert tr:first-child table.column td {
+    padding-bottom: 0px !important;
+  }
+
+  table[class="body"] .contentAvisExpert tr:last-child td.wrapper {
+    padding-top: 0px !important;
   }
 }
