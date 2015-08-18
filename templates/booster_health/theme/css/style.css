@@ -1103,6 +1103,12 @@ h6 {
   padding-top: 5px;
 }
 
+.readMore td.buttonWrapper td,
+.readMore td.buttonWrapper a.tiny-button-link {
+  font-size: 9px;
+  font-weight: normal;
+}
+
 .readMore table.tiny-button {
   width: auto;
 }
