@@ -1286,19 +1286,18 @@ table.secondary:active td a {
   color: #ffffff !important;
 }
 
-.contentFooter table.columns .subWrapper td,
-.contentFooter table.column .subWrapper td {
-  padding-bottom: 0px;
+.contentFooter .boosterFunds {
+  font-weight: normal;
 }
 
-.contentFooter .faicons td.joinus {
-  background-color: #f00;
-  padding-right: 20px;
-}
-
-.contentFooter .faicons td.joinus p {
-  margin: 0;
-  line-height: 30px;
+.contentFooter .joinus {
+  font-size: 14px;
+  line-height: 14px;
+  padding-right: 10px;
+  color: #b6b6b6;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  vertical-align: 8px;
 }
 
 @media only screen and (max-width: 720px) {
@@ -1589,12 +1588,17 @@ table.secondary:active td a {
     padding-right: 5px !important;
   }
 
-  table[class="body"] .contentFooter table.columns .subWrapper td,
-  table[class="body"] .contentFooter table.column .subWrapper td {
-    padding-bottom: 0px !important;
+  table[class="body"] .contentFooter .boosterFunds,
+  table[class="body"] .contentFooter td {
+    text-align: center !important;
   }
 
-  table[class="body"] .contentFooter .faicons td.joinus {
-    padding-right: 10px !important;
+  table[class="body"] .contentFooter td.wrapper.first table.columns td,
+  table[class="body"] .contentFooter td.wrapper.first table.column td {
+    padding-bottom: 5px !important;
+  }
+
+  table[class="body"] .contentFooter td.wrapper.last {
+    padding-top: 5px !important;
   }
 }
