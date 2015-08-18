@@ -1086,7 +1086,8 @@ h6 {
 }
 
 .author {
-  display: block;
+  font-weight: bold;
+  margin: 0;
   padding-bottom: 5px;
 }
 
@@ -1259,10 +1260,6 @@ table.secondary:active td a {
 .contentActualites .title a:focus,
 .contentActualites .title a:active {
   color: #3593ce !important;
-}
-
-.contentActualites .author {
-  color: #222222;
 }
 
 .contentProjet {
