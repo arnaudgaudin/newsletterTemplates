@@ -22,6 +22,10 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
   			line-height: floor(@baseLineHeight * 0.9);
 		}
 
+		small {
+			font-size: floor(@fontSizeSmall * 0.9);
+		}
+
 		h1 {
 			font-size: floor(@headingsFontSizeH1 * 0.9);
 			line-height: (floor(@headingsFontSizeH1 * 0.9) * 1.1);
@@ -67,9 +71,6 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 
 //sur titres
 .preTitle {
-	display: block;
-	font-size: @headingsFontSizeH5;
-	font-weight: bold;
 	padding-bottom: 10px;
 	.last {
 		color: @colorBoosterHealth1;

@@ -1044,9 +1044,6 @@ h6 {
 }
 
 .preTitle {
-  display: block;
-  font-size: 18px;
-  font-weight: bold;
   padding-bottom: 10px;
 }
 
@@ -1415,6 +1412,10 @@ table.secondary:active td a {
   table[class="body"] td {
     font-size: 12px;
     line-height: 16px;
+  }
+
+  table[class="body"] small {
+    font-size: 10px;
   }
 
   table[class="body"] h1 {
