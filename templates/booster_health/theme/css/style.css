@@ -1227,6 +1227,18 @@ table.secondary:active td a {
   padding-top: 5px;
 }
 
+.contentAvisExpert .person a {
+  color: #222222;
+}
+
+.contentAvisExpert .person a .important,
+.contentAvisExpert .person a:visited,
+.contentAvisExpert .person a:hover,
+.contentAvisExpert .person a:focus,
+.contentAvisExpert .person a:active {
+  color: #222222 !important;
+}
+
 .contentActualites .title {
   color: #3593ce;
 }

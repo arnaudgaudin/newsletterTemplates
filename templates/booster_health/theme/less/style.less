@@ -74,7 +74,7 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 	padding-bottom: 10px;
 	.last {
 		color: @colorBoosterHealth1;
-		a { .newsletterLinkColor(@colorBoosterHealth1); }	
+		a { .newsletterLinkColor(@colorBoosterHealth1); }
 	}
 }
 
@@ -228,7 +228,10 @@ table.secondary {
 
 	img { float: none; }
 
-	.person { padding-top: 5px; }
+	.person {
+		padding-top: 5px;
+		a { .newsletterLinkColor(@textColor); }
+	}
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentAvisExpert {
