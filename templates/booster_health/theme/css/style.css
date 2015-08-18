@@ -1124,6 +1124,30 @@ table.secondary:active td a {
   color: #ffffff !important;
 }
 
+.faicons td {
+  text-align: right;
+}
+
+.faicon {
+  display: inline;
+  font-size: 0px;
+  mso-line-height-rule: exactly;
+  line-height: 0px;
+}
+
+.faicon.first {
+  padding-left: 0px;
+}
+
+.faicon.last {
+  padding-right: 0px;
+}
+
+.faicon img {
+  display: inline;
+  float: none;
+}
+
 .contentOnline {
   background-color: #bebebe;
 }
@@ -1238,6 +1262,10 @@ table.secondary:active td a {
 .contentProjet table.column .subWrapper .text-pad {
   padding-left: 10px !important;
   padding-right: 10px !important;
+}
+
+.contentFooter {
+  background-color: #f00;
 }
 
 @media only screen and (max-width: 720px) {
@@ -1464,6 +1492,20 @@ table.secondary:active td a {
   table[class="body"] .readMore table.tiny-button td {
     width: auto !important;
     padding: 4px 8px !important;
+  }
+
+  table[class="body"] .faicons .columns,
+  table[class="body"] .faicons .column {
+    display: table !important;
+  }
+
+  table[class="body"] .faicons td {
+    text-align: center !important;
+  }
+
+  table[class="body"] .faicon img {
+    width: 30px !important;
+    height: 30px !important;
   }
 
   table[class="body"] .contentOnline td.wrapper {

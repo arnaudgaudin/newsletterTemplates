@@ -128,6 +128,33 @@ table.secondary {
 	&:hover td a, td a:visited, &:active td a { color: #ffffff !important; }
 }
 
+//réseaux sociaux
+.faicons td { text-align: right; }
+.faicon {
+	display: inline;
+	//pour supprimer les espaces
+	font-size: 0px;
+	mso-line-height-rule: exactly;
+	line-height: 0px;
+	// padding: 0px 5px 5px 5px;
+	&.first { padding-left: 0px; }
+	&.last { padding-right: 0px; }
+	img {
+		display: inline;
+		float: none;
+	}
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .faicons {
+		.columns, .column { display: table !important; }
+		td { text-align: center !important; }
+	}
+	table[class="body"] .faicon img {
+		width: 30px !important;
+		height: 30px !important;
+	}
+}
+
 
 // contentOnline area
 // -------------------------
@@ -260,4 +287,12 @@ table.secondary {
 			}
 		}
 	}
+}
+
+
+
+// contentFooter area
+// -------------------------
+.contentFooter {
+	background-color: #f00;
 }
