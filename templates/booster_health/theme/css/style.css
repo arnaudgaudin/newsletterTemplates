@@ -1261,6 +1261,10 @@ table.secondary:active td a {
   color: #3593ce !important;
 }
 
+.contentActualites .author {
+  color: #222222;
+}
+
 .contentProjet {
   background-color: #e6e6e6;
 }
