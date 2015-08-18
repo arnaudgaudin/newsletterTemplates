@@ -1092,6 +1092,26 @@ h6 {
   padding-bottom: 5px;
 }
 
+.readMore {
+  width: 100%;
+}
+
+.readMore table.button,
+.readMore table.tiny-button,
+.readMore table.small-button,
+.readMore table.medium-button,
+.readMore table.large-button {
+  width: auto;
+}
+
+.readMore td.buttonWrapper {
+  padding-bottom: 0;
+}
+
+.readMore table[class*="button"] td {
+  padding: 3px 10px;
+}
+
 table.secondary td,
 table.secondary td a,
 table.secondary:hover td {
