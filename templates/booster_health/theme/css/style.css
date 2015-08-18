@@ -1265,7 +1265,40 @@ table.secondary:active td a {
 }
 
 .contentFooter {
+  background-color: #2d2d2d;
+}
+
+.contentFooter,
+.contentFooter td,
+.contentFooter .inner {
+  color: #ffffff;
+}
+
+.contentFooter a {
+  color: #ffffff;
+}
+
+.contentFooter a .important,
+.contentFooter a:visited,
+.contentFooter a:hover,
+.contentFooter a:focus,
+.contentFooter a:active {
+  color: #ffffff !important;
+}
+
+.contentFooter table.columns .subWrapper td,
+.contentFooter table.column .subWrapper td {
+  padding-bottom: 0px;
+}
+
+.contentFooter .faicons td.joinus {
   background-color: #f00;
+  padding-right: 20px;
+}
+
+.contentFooter .faicons td.joinus p {
+  margin: 0;
+  line-height: 30px;
 }
 
 @media only screen and (max-width: 720px) {
@@ -1554,5 +1587,14 @@ table.secondary:active td a {
   table[class="body"] .contentProjet table.column .subWrapper .text-pad {
     padding-left: 5px !important;
     padding-right: 5px !important;
+  }
+
+  table[class="body"] .contentFooter table.columns .subWrapper td,
+  table[class="body"] .contentFooter table.column .subWrapper td {
+    padding-bottom: 0px !important;
+  }
+
+  table[class="body"] .contentFooter .faicons td.joinus {
+    padding-right: 10px !important;
   }
 }

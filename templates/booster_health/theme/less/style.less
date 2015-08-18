@@ -294,5 +294,33 @@ table.secondary {
 // contentFooter area
 // -------------------------
 .contentFooter {
-	background-color: #f00;
+	background-color: @colorBoosterHealth2;
+	.newsletterInnerTextColor(#ffffff);
+	
+	table.columns, table.column {
+		.subWrapper td { padding-bottom: 0px; }
+	}
+
+	.faicons {
+		td.joinus {
+			background-color: #f00;
+			padding-right: (@textPad / 2);
+			p {
+				margin: 0;
+				line-height: 30px;
+			}
+		}
+	}
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentFooter {
+		table.columns, table.column {
+			.subWrapper td { padding-bottom: 0px !important; }
+		}
+		.faicons {
+			td.joinus {
+				padding-right: (@textPadCollapse / 2) !important;
+			}
+		}
+	}
 }
