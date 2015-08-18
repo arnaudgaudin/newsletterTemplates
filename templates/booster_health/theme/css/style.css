@@ -1181,10 +1181,6 @@ table.secondary:active td a {
   padding-bottom: 10px;
 }
 
-.contentALaUne {
-  background-color: #ff8080;
-}
-
 .contentALaUne td.wrapper {
   padding-top: 10px;
 }
@@ -1413,6 +1409,15 @@ table.secondary:active td a {
     padding: 10px !important;
   }
 
+  table[class="body"] .header td.wrapper {
+    padding-top: 0px !important;
+  }
+
+  table[class="body"] .header table.columns td,
+  table[class="body"] .header table.column td {
+    padding-bottom: 0px !important;
+  }
+
   table[class="body"] .readMore table.tiny-button {
     width: auto !important;
   }
@@ -1423,25 +1428,29 @@ table.secondary:active td a {
   }
 
   table[class="body"] .contentOnline td.wrapper {
-    padding-top: 10px !important;
+    padding-top: 5px !important;
   }
 
   table[class="body"] .contentOnline table.columns td,
   table[class="body"] .contentOnline table.column td {
-    padding-bottom: 10px !important;
+    padding-bottom: 5px !important;
+  }
+
+  table[class="body"] .contentIntroduction h3.introduction {
+    font-size: 22px !important;
   }
 
   table[class="body"] .contentPartenariat td.wrapper {
-    padding-top: 10px !important;
+    padding-top: 5px !important;
   }
 
   table[class="body"] .contentPartenariat table.columns td,
   table[class="body"] .contentPartenariat table.column td {
-    padding-bottom: 10px !important;
+    padding-bottom: 5px !important;
   }
 
   table[class="body"] .contentALaUne td.wrapper {
-    padding-top: 10px !important;
+    padding-top: 5px !important;
   }
 
   table[class="body"] .contentAvisExpert tr:first-child table.columns td,
