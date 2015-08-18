@@ -1410,42 +1410,42 @@ table.secondary:active td a {
   table[class="body"],
   table[class="body"] p,
   table[class="body"] td {
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 12px !important;
+    line-height: 16px !important;
   }
 
   table[class="body"] small {
-    font-size: 10px;
+    font-size: 10px !important;
   }
 
   table[class="body"] h1 {
-    font-size: 28px;
-    line-height: 30.8px;
+    font-size: 28px !important;
+    line-height: 30.8px !important;
   }
 
   table[class="body"] h2 {
-    font-size: 25px;
-    line-height: 27.5px;
+    font-size: 25px !important;
+    line-height: 27.5px !important;
   }
 
   table[class="body"] h3 {
-    font-size: 21px;
-    line-height: 23.1px;
+    font-size: 21px !important;
+    line-height: 23.1px !important;
   }
 
   table[class="body"] h4 {
-    font-size: 19px;
-    line-height: 20.9px;
+    font-size: 19px !important;
+    line-height: 20.9px !important;
   }
 
   table[class="body"] h5 {
-    font-size: 16px;
-    line-height: 17.6px;
+    font-size: 16px !important;
+    line-height: 17.6px !important;
   }
 
   table[class="body"] h6 {
-    font-size: 14px;
-    line-height: 15.4px;
+    font-size: 14px !important;
+    line-height: 15.4px !important;
   }
 
   table[class="body"] .header td.wrapper {
