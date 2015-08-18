@@ -181,3 +181,40 @@ table.secondary {
 		a { .newsletterLinkColor(@colorBoosterHealth1); }
 	}
 }
+
+
+// contentProjet area
+// -------------------------
+.contentProjet {
+	background-color: @colorBoosterHealth4;
+	table.columns, table.column {
+		.subWrapper {
+			background-color: @containerBackground;
+
+			td {
+				padding-top: floor(@columnPad / 4) !important;
+				padding-bottom: floor(@columnPad / 4) !important;
+			}
+			.text-pad {
+				padding-left: floor(@textPad / 4) !important;
+				padding-right: floor(@textPad / 4) !important;
+			}
+		}
+	}
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentProjet {
+		table.columns, table.column {
+			.subWrapper {
+				td {
+					padding-top: floor(@columnPadCollapse / 4) !important;
+					padding-bottom: floor(@columnPadCollapse / 4) !important;
+				}
+				.text-pad {
+					padding-left: floor(@textPadCollapse / 4) !important;
+					padding-right: floor(@textPadCollapse / 4) !important;
+				}
+			}
+		}
+	}
+}
