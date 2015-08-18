@@ -42,6 +42,11 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 	.readMore + &, .readMore + * + & { padding-top: 10px; }
 }
 
+//tous les textes
+.text {
+	//systématiquement suivi d'un readMore, donc rajout d'une séparation
+	padding-bottom: 5px;
+}
 
 //lien de suivis
 .readMore {
@@ -66,7 +71,7 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 		font-size: @fontSizeSmall;
 		line-height: (@fontSizeSmall * 1.25);
 	}
-	//réduction décalage vertical en haut
+	//réduction décalage vertical
 	td.wrapper { padding-top: (@wrapperPad / 2); }
 	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
 }
@@ -92,7 +97,7 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 // contentPartenariat area
 // -------------------------
 .contentPartenariat {
-	//réduction décalage vertical en haut
+	//réduction décalage vertical
 	td.wrapper { padding-top: (@wrapperPad / 2); }
 	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
 }
@@ -100,5 +105,18 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 	table[class="body"] .contentPartenariat {
 		td.wrapper { padding-top: (@wrapperPad / 2) !important; }
 		table.columns td, table.column td { padding-bottom: (@columnPad / 2) !important; }
+	}
+}
+
+// contentALaUne area
+// -------------------------
+.contentALaUne {
+	background-color: lighten(#f00, 25%);
+	//réduction décalage vertical
+	td.wrapper { padding-top: (@wrapperPad / 2); }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentALaUne {
+		td.wrapper { padding-top: (@wrapperPad / 2) !important; }
 	}
 }

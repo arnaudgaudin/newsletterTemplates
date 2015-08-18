@@ -619,20 +619,20 @@ small {
 }
 
 a {
-  color: #2ba6cb;
+  color: #3c96cd;
   text-decoration: none;
 }
 
 a:hover {
-  color: #2284a1 !important;
+  color: #2c7aaa !important;
 }
 
 a:active {
-  color: #2284a1 !important;
+  color: #2c7aaa !important;
 }
 
 a:visited {
-  color: #2ba6cb !important;
+  color: #3c96cd !important;
 }
 
 h1 a,
@@ -641,7 +641,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-  color: #2ba6cb;
+  color: #3c96cd;
 }
 
 h1 a:active,
@@ -650,7 +650,7 @@ h3 a:active,
 h4 a:active,
 h5 a:active,
 h6 a:active {
-  color: #2ba6cb !important;
+  color: #3c96cd !important;
 }
 
 h1 a:visited,
@@ -659,7 +659,7 @@ h3 a:visited,
 h4 a:visited,
 h5 a:visited,
 h6 a:visited {
-  color: #2ba6cb !important;
+  color: #3c96cd !important;
 }
 
 /* Panels */
@@ -697,8 +697,8 @@ table.large-button td {
   display: block;
   width: auto !important;
   text-align: center;
-  background: #2ba6cb;
-  border: 1px solid #196177;
+  background: #3c96cd;
+  border: 1px solid #215d82;
   color: #ffffff;
   padding: 8px 0;
   line-height: initial !important;
@@ -755,7 +755,7 @@ table.large-button td a {
 table.button:hover td,
 table.button:visited td,
 table.button:active td {
-  background: #2284a1 !important;
+  background: #2c7aaa !important;
 }
 
 table.button:hover td a,
@@ -769,7 +769,7 @@ table.tiny-button:hover td,
 table.small-button:hover td,
 table.medium-button:hover td,
 table.large-button:hover td {
-  background: #2284a1 !important;
+  background: #2c7aaa !important;
 }
 
 table.button:hover td a,
@@ -846,17 +846,17 @@ body.outlook p {
 /*  Media Queries */
 
 .appleLinks a {
-  color: #2ba6cb;
+  color: #3c96cd;
   text-decoration: none;
 }
 
 .appleLinks a:hover,
 .appleLinks a:active {
-  color: #2284a1 !important;
+  color: #2c7aaa !important;
 }
 
 .appleLinks a:visited {
-  color: #2ba6cb !important;
+  color: #3c96cd !important;
 }
 
 a[href^=tel] {
@@ -1088,6 +1088,10 @@ h6 {
   padding-top: 10px;
 }
 
+.text {
+  padding-bottom: 5px;
+}
+
 .readMore td {
   background-color: #2d2d2d;
   color: #ffffff;
@@ -1164,6 +1168,14 @@ table.column .readMore td {
 .contentPartenariat table.columns td,
 .contentPartenariat table.column td {
   padding-bottom: 10px;
+}
+
+.contentALaUne {
+  background-color: #ff8080;
+}
+
+.contentALaUne td.wrapper {
+  padding-top: 10px;
 }
 
 @media only screen and (max-width: 720px) {
@@ -1348,5 +1360,9 @@ table.column .readMore td {
   table[class="body"] .contentPartenariat table.columns td,
   table[class="body"] .contentPartenariat table.column td {
     padding-bottom: 10px !important;
+  }
+
+  table[class="body"] .contentALaUne td.wrapper {
+    padding-top: 10px !important;
   }
 }
