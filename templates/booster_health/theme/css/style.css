@@ -698,7 +698,7 @@ table.large-button td {
   width: auto !important;
   text-align: center;
   background: #3c96cd;
-  border: 1px solid #215d82;
+  border: 1px solid #3086bb;
   color: #ffffff;
   padding: 8px 0;
   line-height: initial !important;
@@ -755,7 +755,7 @@ table.large-button td a {
 table.button:hover td,
 table.button:visited td,
 table.button:active td {
-  background: #2c7aaa !important;
+  background: #338fc7 !important;
 }
 
 table.button:hover td a,
@@ -769,7 +769,7 @@ table.tiny-button:hover td,
 table.small-button:hover td,
 table.medium-button:hover td,
 table.large-button:hover td {
-  background: #2c7aaa !important;
+  background: #338fc7 !important;
 }
 
 table.button:hover td a,
@@ -792,7 +792,7 @@ table.large-button td a:visited {
 
 table.secondary td {
   background: #2d2d2d;
-  border-color: #141414;
+  border-color: #1e1e1e;
   color: #555555;
 }
 
@@ -801,7 +801,7 @@ table.secondary td a {
 }
 
 table.secondary:hover td {
-  background: #141414 !important;
+  background: #252525 !important;
   color: #555555;
 }
 
@@ -1068,7 +1068,7 @@ h6 {
 
 .title {
   color: #000000;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 
 .title a {
@@ -1088,10 +1088,6 @@ h6 {
   padding-top: 10px;
 }
 
-.text {
-  padding-bottom: 5px;
-}
-
 .readMore {
   width: 100%;
 }
@@ -1108,8 +1104,13 @@ h6 {
   padding-bottom: 0;
 }
 
+.text + .readMore td.buttonWrapper {
+  padding-top: 5px;
+}
+
 .readMore table[class*="button"] td {
-  padding: 3px 10px;
+  padding: 4px 8px;
+  text-transform: uppercase;
 }
 
 table.secondary td,
