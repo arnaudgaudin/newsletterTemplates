@@ -1105,6 +1105,10 @@ h6 {
   padding-top: 5px;
 }
 
+.readMore td.buttonWrapper td {
+  color: #ffffff;
+}
+
 .readMore table.tiny-button {
   width: auto;
 }
@@ -1112,6 +1116,18 @@ h6 {
 .readMore table.tiny-button td {
   padding: 4px 8px;
   text-transform: uppercase;
+}
+
+a.tiny-button-link {
+  color: #ffffff;
+}
+
+a.tiny-button-link .important,
+a.tiny-button-link:visited,
+a.tiny-button-link:hover,
+a.tiny-button-link:focus,
+a.tiny-button-link:active {
+  color: #ffffff !important;
 }
 
 a.tiny-button-link,
