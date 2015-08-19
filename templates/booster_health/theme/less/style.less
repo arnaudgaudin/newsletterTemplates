@@ -306,15 +306,11 @@ table.secondary {
 	table.columns, table.column {
 		.subWrapper {
 			background-color: @containerBackground;
-
-			td:not(.buttonWrapper) {
-				padding-top: floor(@columnPad / 2) !important;
-				padding-bottom: floor(@columnPad / 2) !important;
-			}
-			.text-pad {
-				padding-left: floor(@textPad / 4) !important;
-				padding-right: floor(@textPad / 4) !important;
-			}
+			//comparaison des paddings
+			@padV: floor(@columnPad / 2);
+			@padH: floor(@textPad / 4);
+			td.text-pad when (@padV = @padH) { padding: @padV !important; }
+			td.text-pad when not(@padV = @padH) { padding: @padV @padH !important; }
 		}
 	}
 }
@@ -322,14 +318,11 @@ table.secondary {
 	table[class="body"] .contentProjet {
 		table.columns, table.column {
 			.subWrapper {
-				td {
-					padding-top: floor(@columnPadCollapse / 2) !important;
-					padding-bottom: floor(@columnPadCollapse / 2) !important;
-				}
-				.text-pad {
-					padding-left: floor(@textPadCollapse / 4) !important;
-					padding-right: floor(@textPadCollapse / 4) !important;
-				}
+				//comparaison des paddings
+				@padV: floor(@columnPadCollapse / 2);
+				@padH: floor(@textPadCollapse / 4);
+				td.text-pad when (@padV = @padH) { padding: @padV !important; }
+				td.text-pad when not(@padV = @padH) { padding: @padV @padH !important; }
 			}
 		}
 	}
