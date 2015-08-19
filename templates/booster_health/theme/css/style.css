@@ -1085,6 +1085,10 @@ h6 {
   padding-top: 10px;
 }
 
+img + .title {
+  padding-top: 5px;
+}
+
 .author {
   font-weight: bold;
   font-size: 12px;
