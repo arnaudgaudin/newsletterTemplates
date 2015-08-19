@@ -100,25 +100,30 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 	width: 100%;
 	overflow: hidden;
 
-	td.buttonWrapper {
-		padding-bottom: 0px;
-		.text + & { padding-top: 5px; }
-		td { color: #ffffff; }
-	}
-
-	table.tiny-button {
-		display: table;
-		table-layout: auto;
-		width: auto;
-		td {
+	table.columns &, table.column & {
+		td.buttonWrapper {
+			padding-bottom: 0px;
+			td { color: #ffffff; }
+		}
+		table.tiny-button {
+			display: table;
+			table-layout: auto;
 			width: auto;
-			padding: 4px 8px;
-			text-transform: uppercase;
+			td {
+				width: auto;
+				padding: 4px 8px;
+				text-transform: uppercase;
+			}
+		}
+	}
+	.text + & {
+		table.columns &, table.column & {
+			td.buttonWrapper { padding-top: 5px; }
 		}
 	}
 }
 a.tiny-button-link { .newsletterLinkColor(#ffffff); }
-a.tiny-button-link, .readMore td.buttonWrapper td {
+a.tiny-button-link, table.columns .readMore td.buttonWrapper td, table.column .readMore td.buttonWrapper td {
 	font-size: @buttonFontSizeTiny;
 	line-height: ceil(@buttonFontSizeTiny * 1.33);
 	font-weight: normal;
@@ -126,21 +131,23 @@ a.tiny-button-link, .readMore td.buttonWrapper td {
 
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] {
-		.readMore {
-			td.buttonWrapper {
-				padding-bottom: 0px !important;
-			}
-			table.tiny-button {
-				display: table !important;
-				table-layout: auto !important;
-				width: auto !important;
-				td {
+		table.columns, table.column {
+			.readMore {
+				td.buttonWrapper {
+					padding-bottom: 0px !important;
+				}
+				table.tiny-button {
+					display: table !important;
+					table-layout: auto !important;
 					width: auto !important;
-					padding: 4px 8px !important;
+					td {
+						width: auto !important;
+						padding: 4px 8px !important;
+					}
 				}
 			}
 		}
-		a.tiny-button-link, .readMore td.buttonWrapper td {
+		a.tiny-button-link, table.columns .readMore td.buttonWrapper td, table.column .readMore td.buttonWrapper td {
 			font-size: @buttonFontSizeTiny !important;
 			line-height: ceil(@buttonFontSizeTiny * 1.33) !important;
 		}
@@ -294,7 +301,7 @@ table.secondary {
 		.subWrapper {
 			background-color: @containerBackground;
 
-			td {
+			td:not(.buttonWrapper) {
 				padding-top: floor(@columnPad / 4) !important;
 				padding-bottom: floor(@columnPad / 4) !important;
 			}

@@ -1098,28 +1098,33 @@ h6 {
   overflow: hidden;
 }
 
-.readMore td.buttonWrapper {
+table.columns .readMore td.buttonWrapper,
+table.column .readMore td.buttonWrapper {
   padding-bottom: 0px;
 }
 
-.text + .readMore td.buttonWrapper {
-  padding-top: 5px;
-}
-
-.readMore td.buttonWrapper td {
+table.columns .readMore td.buttonWrapper td,
+table.column .readMore td.buttonWrapper td {
   color: #ffffff;
 }
 
-.readMore table.tiny-button {
+table.columns .readMore table.tiny-button,
+table.column .readMore table.tiny-button {
   display: table;
   table-layout: auto;
   width: auto;
 }
 
-.readMore table.tiny-button td {
+table.columns .readMore table.tiny-button td,
+table.column .readMore table.tiny-button td {
   width: auto;
   padding: 4px 8px;
   text-transform: uppercase;
+}
+
+table.columns .text + .readMore td.buttonWrapper,
+table.column .text + .readMore td.buttonWrapper {
+  padding-top: 5px;
 }
 
 a.tiny-button-link {
@@ -1135,7 +1140,8 @@ a.tiny-button-link:active {
 }
 
 a.tiny-button-link,
-.readMore td.buttonWrapper td {
+table.columns .readMore td.buttonWrapper td,
+table.column .readMore td.buttonWrapper td {
   font-size: 9px;
   line-height: 12px;
   font-weight: normal;
@@ -1301,8 +1307,8 @@ table.secondary:active td a {
   background-color: #ffffff;
 }
 
-.contentProjet table.columns .subWrapper td,
-.contentProjet table.column .subWrapper td {
+.contentProjet table.columns .subWrapper td:not(.buttonWrapper),
+.contentProjet table.column .subWrapper td:not(.buttonWrapper) {
   padding-top: 5px !important;
   padding-bottom: 5px !important;
 }
@@ -1602,23 +1608,27 @@ table.secondary:active td a {
     padding-bottom: 0px !important;
   }
 
-  table[class="body"] .readMore td.buttonWrapper {
+  table[class="body"] table.columns .readMore td.buttonWrapper,
+  table[class="body"] table.column .readMore td.buttonWrapper {
     padding-bottom: 0px !important;
   }
 
-  table[class="body"] .readMore table.tiny-button {
+  table[class="body"] table.columns .readMore table.tiny-button,
+  table[class="body"] table.column .readMore table.tiny-button {
     display: table !important;
     table-layout: auto !important;
     width: auto !important;
   }
 
-  table[class="body"] .readMore table.tiny-button td {
+  table[class="body"] table.columns .readMore table.tiny-button td,
+  table[class="body"] table.column .readMore table.tiny-button td {
     width: auto !important;
     padding: 4px 8px !important;
   }
 
   table[class="body"] a.tiny-button-link,
-  table[class="body"] .readMore td.buttonWrapper td {
+  table[class="body"] table.columns .readMore td.buttonWrapper td,
+  table[class="body"] table.column .readMore td.buttonWrapper td {
     font-size: 9px !important;
     line-height: 12px !important;
   }
