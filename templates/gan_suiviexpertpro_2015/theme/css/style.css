@@ -1313,55 +1313,55 @@ table.imgCont .icon-img {
   color: #ffffff !important;
 }
 
-.contentPartenariat {
+.contentPartenaire {
   background-color: #c98c1f;
 }
 
-.contentPartenariat .preTitle,
-.contentPartenariat .title,
-.contentPartenariat .readMore {
+.contentPartenaire .preTitle,
+.contentPartenaire .title,
+.contentPartenaire .readMore {
   color: #ffffff;
 }
 
-.contentPartenariat .preTitle a,
-.contentPartenariat .title a,
-.contentPartenariat .readMore a {
+.contentPartenaire .preTitle a,
+.contentPartenaire .title a,
+.contentPartenaire .readMore a {
   color: #ffffff;
 }
 
-.contentPartenariat .preTitle a .important,
-.contentPartenariat .title a .important,
-.contentPartenariat .readMore a .important,
-.contentPartenariat .preTitle a:visited,
-.contentPartenariat .title a:visited,
-.contentPartenariat .readMore a:visited,
-.contentPartenariat .preTitle a:hover,
-.contentPartenariat .title a:hover,
-.contentPartenariat .readMore a:hover,
-.contentPartenariat .preTitle a:focus,
-.contentPartenariat .title a:focus,
-.contentPartenariat .readMore a:focus,
-.contentPartenariat .preTitle a:active,
-.contentPartenariat .title a:active,
-.contentPartenariat .readMore a:active {
+.contentPartenaire .preTitle a .important,
+.contentPartenaire .title a .important,
+.contentPartenaire .readMore a .important,
+.contentPartenaire .preTitle a:visited,
+.contentPartenaire .title a:visited,
+.contentPartenaire .readMore a:visited,
+.contentPartenaire .preTitle a:hover,
+.contentPartenaire .title a:hover,
+.contentPartenaire .readMore a:hover,
+.contentPartenaire .preTitle a:focus,
+.contentPartenaire .title a:focus,
+.contentPartenaire .readMore a:focus,
+.contentPartenaire .preTitle a:active,
+.contentPartenaire .title a:active,
+.contentPartenaire .readMore a:active {
   color: #ffffff !important;
 }
 
-.contentPartenariat,
-.contentPartenariat td,
-.contentPartenariat .inner {
+.contentPartenaire,
+.contentPartenaire td,
+.contentPartenaire .inner {
   color: #ffffff;
 }
 
-.contentPartenariat a {
+.contentPartenaire a {
   color: #ffffff;
 }
 
-.contentPartenariat a .important,
-.contentPartenariat a:visited,
-.contentPartenariat a:hover,
-.contentPartenariat a:focus,
-.contentPartenariat a:active {
+.contentPartenaire a .important,
+.contentPartenaire a:visited,
+.contentPartenaire a:hover,
+.contentPartenaire a:focus,
+.contentPartenaire a:active {
   color: #ffffff !important;
 }
 
