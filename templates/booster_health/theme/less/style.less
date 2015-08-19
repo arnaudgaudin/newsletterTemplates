@@ -90,24 +90,28 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 .author {
 	font-weight: bold;
 	font-size: @fontSizeSmall;
-	margin: 0;
+	margin: 0px;
 	padding-bottom: 5px;
 }
 
 //lien de suivis
 .readMore {
+	background-color: #f00;
 	width: 100%;
 	overflow: hidden;
 
 	td.buttonWrapper {
-		padding-bottom: 0;
+		padding-bottom: 0px;
 		.text + & { padding-top: 5px; }
 		td { color: #ffffff; }
 	}
 
 	table.tiny-button {
+		display: table;
+		table-layout: auto;
 		width: auto;
 		td {
+			width: auto;
 			padding: 4px 8px;
 			text-transform: uppercase;
 		}
@@ -116,17 +120,29 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 a.tiny-button-link { .newsletterLinkColor(#ffffff); }
 a.tiny-button-link, .readMore td.buttonWrapper td {
 	font-size: @buttonFontSizeTiny;
+	line-height: ceil(@buttonFontSizeTiny * 1.33);
 	font-weight: normal;
 }
 
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
-	table[class="body"] .readMore {
-		table.tiny-button {
-			width: auto !important;
-			td {
-				width: auto !important;
-				padding: 4px 8px !important;
+	table[class="body"] {
+		.readMore {
+			td.buttonWrapper {
+				padding-bottom: 0px !important;
 			}
+			table.tiny-button {
+				display: table !important;
+				table-layout: auto !important;
+				width: auto !important;
+				td {
+					width: auto !important;
+					padding: 4px 8px !important;
+				}
+			}
+		}
+		a.tiny-button-link, .readMore td.buttonWrapper td {
+			font-size: @buttonFontSizeTiny !important;
+			line-height: ceil(@buttonFontSizeTiny * 1.33) !important;
 		}
 	}
 }

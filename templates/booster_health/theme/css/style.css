@@ -1088,17 +1088,18 @@ h6 {
 .author {
   font-weight: bold;
   font-size: 12px;
-  margin: 0;
+  margin: 0px;
   padding-bottom: 5px;
 }
 
 .readMore {
+  background-color: #f00;
   width: 100%;
   overflow: hidden;
 }
 
 .readMore td.buttonWrapper {
-  padding-bottom: 0;
+  padding-bottom: 0px;
 }
 
 .text + .readMore td.buttonWrapper {
@@ -1110,10 +1111,13 @@ h6 {
 }
 
 .readMore table.tiny-button {
+  display: table;
+  table-layout: auto;
   width: auto;
 }
 
 .readMore table.tiny-button td {
+  width: auto;
   padding: 4px 8px;
   text-transform: uppercase;
 }
@@ -1133,6 +1137,7 @@ a.tiny-button-link:active {
 a.tiny-button-link,
 .readMore td.buttonWrapper td {
   font-size: 9px;
+  line-height: 12px;
   font-weight: normal;
 }
 
@@ -1597,13 +1602,25 @@ table.secondary:active td a {
     padding-bottom: 0px !important;
   }
 
+  table[class="body"] .readMore td.buttonWrapper {
+    padding-bottom: 0px !important;
+  }
+
   table[class="body"] .readMore table.tiny-button {
+    display: table !important;
+    table-layout: auto !important;
     width: auto !important;
   }
 
   table[class="body"] .readMore table.tiny-button td {
     width: auto !important;
     padding: 4px 8px !important;
+  }
+
+  table[class="body"] a.tiny-button-link,
+  table[class="body"] .readMore td.buttonWrapper td {
+    font-size: 9px !important;
+    line-height: 12px !important;
   }
 
   table[class="body"] .faicons .columns,
