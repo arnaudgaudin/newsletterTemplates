@@ -149,8 +149,13 @@ a.tiny-button-link {
 	mso-line-height-rule: exactly;
 }
 table.columns .readMore td.buttonWrapper td, table.column .readMore td.buttonWrapper td {
-	line-height: ceil(@buttonFontSizeTiny * 1.33) !important;
-	mso-line-height-rule: exactly;
+	//pour Outlook
+	&, p.MsoNormal {
+		line-height: ceil(@buttonFontSizeTiny * 1.33) !important;
+		mso-line-height-rule: exactly;
+		margin: 0px;
+	}
+	p.MsoNormal { padding: 0px; }
 }
 a.tiny-button-link, table.columns .readMore td.buttonWrapper td, table.column .readMore td.buttonWrapper td {
 	font-size: @buttonFontSizeTiny;

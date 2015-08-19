@@ -1162,9 +1162,17 @@ a.tiny-button-link:active {
 }
 
 table.columns .readMore td.buttonWrapper td,
-table.column .readMore td.buttonWrapper td {
+table.column .readMore td.buttonWrapper td,
+table.columns .readMore td.buttonWrapper td p.MsoNormal,
+table.column .readMore td.buttonWrapper td p.MsoNormal {
   line-height: 12px !important;
   mso-line-height-rule: exactly;
+  margin: 0px;
+}
+
+table.columns .readMore td.buttonWrapper td p.MsoNormal,
+table.column .readMore td.buttonWrapper td p.MsoNormal {
+  padding: 0px;
 }
 
 a.tiny-button-link,
