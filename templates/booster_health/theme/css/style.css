@@ -1108,11 +1108,13 @@ p {
   width: 100%;
   -premailer-width: 100%;
   overflow: hidden;
+  clear: both;
 }
 
 table.columns .readMore td.buttonWrapper,
 table.column .readMore td.buttonWrapper {
   padding-bottom: 0px;
+  clear: both;
 }
 
 table.columns .readMore td.buttonWrapper td,
@@ -1126,6 +1128,7 @@ table.column .readMore table.tiny-button {
   table-layout: auto;
   width: auto;
   -premailer-width: auto;
+  float: right;
 }
 
 table.columns .readMore table.tiny-button td,
