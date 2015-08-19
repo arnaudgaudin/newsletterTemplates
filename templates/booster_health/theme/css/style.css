@@ -1313,8 +1313,8 @@ table.secondary:active td a {
 
 .contentProjet table.columns .subWrapper td:not(.buttonWrapper),
 .contentProjet table.column .subWrapper td:not(.buttonWrapper) {
-  padding-top: 5px !important;
-  padding-bottom: 5px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
 }
 
 .contentProjet table.columns .subWrapper .text-pad,
@@ -1689,8 +1689,8 @@ table.secondary:active td a {
 
   table[class="body"] .contentProjet table.columns .subWrapper td,
   table[class="body"] .contentProjet table.column .subWrapper td {
-    padding-top: 2px !important;
-    padding-bottom: 2px !important;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
   }
 
   table[class="body"] .contentProjet table.columns .subWrapper .text-pad,
