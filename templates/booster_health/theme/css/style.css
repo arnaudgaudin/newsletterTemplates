@@ -1145,6 +1145,8 @@ table.column .text + .readMore td.buttonWrapper {
 }
 
 a.tiny-button-link {
+  padding: 0px;
+  margin: 0px;
   color: #ffffff;
   line-height: 12px;
   mso-line-height-rule: exactly;
