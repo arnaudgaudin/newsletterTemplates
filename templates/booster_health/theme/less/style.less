@@ -83,12 +83,21 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 	color: @colorBoosterHealth5;
 	a { .newsletterLinkColor(@colorBoosterHealth5); }
 	margin: 0px;
+	padding: 0px;
 	padding-bottom: 5px;
 	//on rajoute un padding de séparation lorsque précédé d'un readMore (utile pour articles)
 	.readMore + &, .readMore + * + & { padding-top: 10px; }
 
 	//séparation de l'image qui précède
 	img + & { padding-top: 5px; }
+}
+
+//tous les paragraphes pour Outlook
+//cf http://stackoverflow.com/questions/18109812/ms-outlook-email-templates-adding-extra-spacing
+p {
+	margin: 0px;
+	padding: 0px;
+	margin-bottom: 0px;
 }
 
 .author {
@@ -131,9 +140,11 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 a.tiny-button-link {
 	.newsletterLinkColor(#ffffff);
 	line-height: ceil(@buttonFontSizeTiny * 1.33);
+	mso-line-height-rule: exactly;
 }
 table.columns .readMore td.buttonWrapper td, table.column .readMore td.buttonWrapper td {
 	line-height: ceil(@buttonFontSizeTiny * 1.33) !important;
+	mso-line-height-rule: exactly;
 }
 a.tiny-button-link, table.columns .readMore td.buttonWrapper td, table.column .readMore td.buttonWrapper td {
 	font-size: @buttonFontSizeTiny;

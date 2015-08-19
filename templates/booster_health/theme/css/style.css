@@ -1066,6 +1066,7 @@ h6 {
 .title {
   color: #151415;
   margin: 0px;
+  padding: 0px;
   padding-bottom: 5px;
 }
 
@@ -1088,6 +1089,12 @@ h6 {
 
 img + .title {
   padding-top: 5px;
+}
+
+p {
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 0px;
 }
 
 .author {
@@ -1137,6 +1144,7 @@ table.column .text + .readMore td.buttonWrapper {
 a.tiny-button-link {
   color: #ffffff;
   line-height: 12px;
+  mso-line-height-rule: exactly;
 }
 
 a.tiny-button-link .important,
@@ -1150,6 +1158,7 @@ a.tiny-button-link:active {
 table.columns .readMore td.buttonWrapper td,
 table.column .readMore td.buttonWrapper td {
   line-height: 12px !important;
+  mso-line-height-rule: exactly;
 }
 
 a.tiny-button-link,
