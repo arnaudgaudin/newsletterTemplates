@@ -101,6 +101,7 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 .readMore {
 	background-color: #f00;
 	width: 100%;
+	-premailer-width: 100%;
 	overflow: hidden;
 
 	table.columns &, table.column & {
@@ -112,8 +113,10 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 			display: table;
 			table-layout: auto;
 			width: auto;
+			-premailer-width: auto;
 			td {
 				width: auto;
+				-premailer-width: auto;
 				padding: 4px 8px;
 				text-transform: uppercase;
 			}

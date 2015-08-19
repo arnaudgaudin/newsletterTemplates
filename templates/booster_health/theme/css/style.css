@@ -1099,6 +1099,7 @@ img + .title {
 .readMore {
   background-color: #f00;
   width: 100%;
+  -premailer-width: 100%;
   overflow: hidden;
 }
 
@@ -1117,11 +1118,13 @@ table.column .readMore table.tiny-button {
   display: table;
   table-layout: auto;
   width: auto;
+  -premailer-width: auto;
 }
 
 table.columns .readMore table.tiny-button td,
 table.column .readMore table.tiny-button td {
   width: auto;
+  -premailer-width: auto;
   padding: 4px 8px;
   text-transform: uppercase;
 }
