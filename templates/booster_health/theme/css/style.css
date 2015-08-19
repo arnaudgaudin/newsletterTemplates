@@ -1302,6 +1302,11 @@ table.secondary:active td a {
   color: #222222 !important;
 }
 
+.contentAvisExpert table.columns .subWrapper td,
+.contentAvisExpert table.column .subWrapper td {
+  padding-bottom: 0px;
+}
+
 .contentActualites .title {
   color: #3593ce;
 }
@@ -1698,6 +1703,11 @@ table.secondary:active td a {
   table[class="body"] .contentAvisExpert .right-text-pad,
   table[class="body"] .contentAvisExpert .text-pad-right {
     padding-left: 0px !important;
+  }
+
+  table[class="body"] .contentAvisExpert table.columns .subWrapper td,
+  table[class="body"] .contentAvisExpert table.column .subWrapper td {
+    padding-bottom: 0px !important;
   }
 
   table[class="body"] .contentProjet table.columns .subWrapper td.text-pad,

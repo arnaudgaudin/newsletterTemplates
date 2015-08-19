@@ -291,6 +291,10 @@ table.secondary {
 		padding-top: 5px;
 		a { .newsletterLinkColor(@textColor); }
 	}
+
+	table.columns, table.column {
+		.subWrapper td { padding-bottom: 0px; }
+	}
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentAvisExpert {
@@ -301,6 +305,9 @@ table.secondary {
 			td.wrapper { padding-top: 0px !important; }
 		}
 		.right-text-pad, .text-pad-right { padding-left: 0px !important; }
+		table.columns, table.column {
+			.subWrapper td { padding-bottom: 0px !important; }
+		}
 	}
 }
 
