@@ -1134,6 +1134,7 @@ table.column .readMore table.tiny-button {
 table.columns .readMore table.tiny-button td,
 table.column .readMore table.tiny-button td {
   width: auto;
+  float: none;
   -premailer-width: auto;
   padding: 4px 8px;
   text-transform: uppercase;
