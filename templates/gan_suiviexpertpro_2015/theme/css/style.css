@@ -1365,6 +1365,10 @@ table.imgCont .icon-img {
   color: #ffffff !important;
 }
 
+.contentPartenaire .readMore {
+  text-align: left;
+}
+
 .contentBottom .title {
   text-align: center;
   padding-bottom: 5px;
