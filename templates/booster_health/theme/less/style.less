@@ -129,10 +129,15 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 		}
 	}
 }
-a.tiny-button-link { .newsletterLinkColor(#ffffff); }
+a.tiny-button-link {
+	.newsletterLinkColor(#ffffff);
+	line-height: ceil(@buttonFontSizeTiny * 1.33);
+}
+table.columns .readMore td.buttonWrapper td, table.column .readMore td.buttonWrapper td {
+	line-height: ceil(@buttonFontSizeTiny * 1.33) !important;
+}
 a.tiny-button-link, table.columns .readMore td.buttonWrapper td, table.column .readMore td.buttonWrapper td {
 	font-size: @buttonFontSizeTiny;
-	line-height: ceil(@buttonFontSizeTiny * 1.33);
 	font-weight: normal;
 }
 

@@ -1137,6 +1137,7 @@ table.column .text + .readMore td.buttonWrapper {
 
 a.tiny-button-link {
   color: #ffffff;
+  line-height: 12px;
 }
 
 a.tiny-button-link .important,
@@ -1147,11 +1148,15 @@ a.tiny-button-link:active {
   color: #ffffff !important;
 }
 
+table.columns .readMore td.buttonWrapper td,
+table.column .readMore td.buttonWrapper td {
+  line-height: 12px !important;
+}
+
 a.tiny-button-link,
 table.columns .readMore td.buttonWrapper td,
 table.column .readMore td.buttonWrapper td {
   font-size: 9px;
-  line-height: 12px;
   font-weight: normal;
 }
 
