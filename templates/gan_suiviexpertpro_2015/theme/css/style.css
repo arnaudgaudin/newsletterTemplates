@@ -1646,6 +1646,11 @@ table.imgCont .icon-img {
     padding-bottom: 0px !important;
   }
 
+  table[class="body"] .contentOffre .left-text-pad,
+  table[class="body"] .contentOffre .text-pad-left {
+    padding-right: 0px !important;
+  }
+
   table[class="body"] .contentBottom td,
   table[class="body"] .contentBottom td .title {
     text-align: left !important;
