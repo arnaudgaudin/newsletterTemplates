@@ -4,7 +4,7 @@
 
 body,
 table.body {
-  background-color: #efefef;
+  background-color: #e5e5e5;
 }
 
 /**********************************************
@@ -619,20 +619,20 @@ small {
 }
 
 a {
-  color: #d12329;
+  color: #e84d0e;
   text-decoration: none;
 }
 
 a:hover {
-  color: #bb1f25 !important;
+  color: #d0450d !important;
 }
 
 a:active {
-  color: #bb1f25 !important;
+  color: #d0450d !important;
 }
 
 a:visited {
-  color: #d12329 !important;
+  color: #e84d0e !important;
 }
 
 h1 a,
@@ -641,7 +641,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-  color: #d12329;
+  color: #e84d0e;
 }
 
 h1 a:active,
@@ -650,7 +650,7 @@ h3 a:active,
 h4 a:active,
 h5 a:active,
 h6 a:active {
-  color: #d12329 !important;
+  color: #e84d0e !important;
 }
 
 h1 a:visited,
@@ -659,7 +659,7 @@ h3 a:visited,
 h4 a:visited,
 h5 a:visited,
 h6 a:visited {
-  color: #d12329 !important;
+  color: #e84d0e !important;
 }
 
 /* Panels */
@@ -697,8 +697,8 @@ table.large-button td {
   display: block;
   width: auto !important;
   text-align: center;
-  background: #d12329;
-  border: 1px solid #7a1418;
+  background: #e84d0e;
+  border: 1px solid #882d08;
   color: #ffffff;
   padding: 8px 0;
   line-height: initial !important;
@@ -755,7 +755,7 @@ table.large-button td a {
 table.button:hover td,
 table.button:visited td,
 table.button:active td {
-  background: #a51c20 !important;
+  background: #b83d0b !important;
 }
 
 table.button:hover td a,
@@ -769,7 +769,7 @@ table.tiny-button:hover td,
 table.small-button:hover td,
 table.medium-button:hover td,
 table.large-button:hover td {
-  background: #a51c20 !important;
+  background: #b83d0b !important;
 }
 
 table.button:hover td a,
@@ -846,17 +846,17 @@ body.outlook p {
 /*  Media Queries */
 
 .appleLinks a {
-  color: #d12329;
+  color: #e84d0e;
   text-decoration: none;
 }
 
 .appleLinks a:hover,
 .appleLinks a:active {
-  color: #bb1f25 !important;
+  color: #d0450d !important;
 }
 
 .appleLinks a:visited {
-  color: #d12329 !important;
+  color: #e84d0e !important;
 }
 
 a[href^=tel] {
@@ -1012,11 +1012,11 @@ table.large-button td {
 
 .title {
   text-align: center;
-  color: #d12329;
+  color: #e84d0e;
 }
 
 .title a {
-  color: #d12329;
+  color: #e84d0e;
 }
 
 .title a .important,
@@ -1024,7 +1024,7 @@ table.large-button td {
 .title a:hover,
 .title a:focus,
 .title a:active {
-  color: #d12329 !important;
+  color: #e84d0e !important;
 }
 
 .title + * {
@@ -1050,17 +1050,17 @@ p {
 }
 
 .contentOnline {
-  background-color: #efefef;
+  background-color: #e5e5e5;
 }
 
 .contentOnline,
 .contentOnline td,
 .contentOnline .inner {
-  color: #a3a3a3;
+  color: #999998;
 }
 
 .contentOnline a {
-  color: #a3a3a3;
+  color: #999998;
 }
 
 .contentOnline a .important,
@@ -1068,7 +1068,7 @@ p {
 .contentOnline a:hover,
 .contentOnline a:focus,
 .contentOnline a:active {
-  color: #a3a3a3 !important;
+  color: #999998 !important;
 }
 
 .contentOnline td {
@@ -1086,7 +1086,7 @@ p {
 }
 
 .contentALaUne {
-  background-color: #e5e5e5;
+  background-color: #dbdbda;
 }
 
 .contentALaUne .teaser {
@@ -1107,7 +1107,7 @@ p {
 }
 
 .contentContact {
-  background-color: #e5e5e5;
+  background-color: #dbdbda;
 }
 
 .contentContact td.wrapper {
@@ -1120,7 +1120,7 @@ p {
 }
 
 .contentBtn {
-  background-color: #e5e5e5;
+  background-color: #dbdbda;
 }
 
 .contentBtn td.wrapper {
@@ -1170,17 +1170,17 @@ p {
 }
 
 .footer {
-  background-color: #efefef;
+  background-color: #e5e5e5;
 }
 
 .footer,
 .footer td,
 .footer .inner {
-  color: #a3a3a3;
+  color: #999998;
 }
 
 .footer a {
-  color: #a3a3a3;
+  color: #999998;
 }
 
 .footer a .important,
@@ -1188,7 +1188,7 @@ p {
 .footer a:hover,
 .footer a:focus,
 .footer a:active {
-  color: #a3a3a3 !important;
+  color: #999998 !important;
 }
 
 .footer td {
