@@ -1090,20 +1090,28 @@ p {
   font-size: 0px;
   mso-line-height-rule: exactly;
   line-height: 0px;
-  padding: 0px 5px;
-}
-
-.faicon:first-child {
-  padding-left: 0px;
-}
-
-.faicon:last-child {
-  padding-right: 0px;
 }
 
 .faicon img {
   display: inline;
   float: none;
+  vertical-align: bottom;
+}
+
+.faicons .faicon {
+  padding: 0px 5px;
+}
+
+.faicons .faicon:first-child {
+  padding-left: 0px;
+}
+
+.faicons .faicon:last-child {
+  padding-right: 0px;
+}
+
+.faicons .faicon img {
+  vertical-align: baseline;
 }
 
 .contentOnline {
@@ -1243,6 +1251,7 @@ p {
 .contentBottom td {
   font-size: 12px;
   line-height: 15px;
+  vertical-align: bottom;
 }
 
 .contentBottom a.link_map {

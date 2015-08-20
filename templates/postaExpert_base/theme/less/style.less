@@ -95,12 +95,18 @@ p {
 	font-size: 0px;
 	mso-line-height-rule: exactly;
 	line-height: 0px;
-	padding: 0px 5px;
-	&:first-child { padding-left: 0px; }
-	&:last-child { padding-right: 0px; }
 	img {
 		display: inline;
 		float: none;
+		vertical-align: bottom;
+	}
+
+	//rajout espacement lorsque plusieurs icones
+	.faicons & {
+		padding: 0px 5px;
+		&:first-child { padding-left: 0px; }
+		&:last-child { padding-right: 0px; }
+		img { vertical-align: baseline; }
 	}
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
@@ -266,6 +272,7 @@ p {
 	td {
 		font-size: @fontSizeSmall;
 		line-height: (@fontSizeSmall * 1.25);
+		vertical-align: bottom;
 	}
 
 	a.link_map {
