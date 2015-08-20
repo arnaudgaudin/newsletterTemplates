@@ -9,9 +9,18 @@
 // Expert Infos Expert
 // couleurs utilisées dans le nouveau logos EC
 // -------------------------
-@expertInfosExpertRouge: #d12329;
-@expertInfosExpertBleu: #4b606d;
+@expertInfosExpertRouge: #E84D0E;
+
+@expertInfosExpertBleu: #3262AC;
+//nuances de bleu :
+//05418D	| TSL : 214,96,55	=> darken 10
+//3262AC	| TSL : 216,71,67	=> base
+//4084C5	| TSL : 209,68,77	=> lighten 10
+
 @expertInfosExpertGris: #e6e8eb;
+//nuances de gris :
+//1C1C1B	| TSL : 60,4,11		=> darken 40
+//878786	| TSL : 60,1,53		=> base
 
 
 // Main colors
@@ -22,11 +31,11 @@
 @colorCouleur1Fonce: darken(@colorCouleur1, 30%);
 
 @colorCouleur2: @expertInfosExpertBleu;
-@colorCouleur2Clair: lighten(@colorCouleur2, 20%);
+@colorCouleur2Clair: lighten(@colorCouleur2, 10%);
 @colorCouleur2Moyen: darken(@colorCouleur2, 10%);
 @colorCouleur2Fonce: darken(@colorCouleur2, 25%);
 
-@colorCouleur3: #919191;
+@colorCouleur3: @expertInfosExpertGris;
 @colorCouleur3Clair: lighten(@colorCouleur3, 35%);
 @colorCouleur3Moyen: lighten(@colorCouleur3, 20%);
 @colorCouleur3Fonce: darken(@colorCouleur3, 20%);
