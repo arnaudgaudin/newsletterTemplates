@@ -1149,29 +1149,20 @@ p {
 }
 
 .contentContact {
-  background-color: #dbdbda;
+  background-color: #e84d0e;
 }
 
-.contentContact td.wrapper {
-  padding-top: 10px;
+.contentContact .title {
+  color: #ffffff;
 }
 
 .contentContact table.columns td,
 .contentContact table.column td {
-  padding-bottom: 0;
+  padding-bottom: 0px;
 }
 
 .contentBtn {
-  background-color: #dbdbda;
-}
-
-.contentBtn td.wrapper {
-  padding-top: 10px;
-}
-
-.contentBtn table.columns td,
-.contentBtn table.column td {
-  padding-bottom: 10px;
+  background-color: #e84d0e;
 }
 
 .contentSignature td {
@@ -1494,22 +1485,9 @@ p {
     height: 70px !important;
   }
 
-  table[class="body"] .contentContact td.wrapper {
-    padding-top: 10px !important;
-  }
-
   table[class="body"] .contentContact table.columns td,
   table[class="body"] .contentContact table.column td {
-    padding-bottom: 0 !important;
-  }
-
-  table[class="body"] .contentBtn td.wrapper {
-    padding-top: 10px !important;
-  }
-
-  table[class="body"] .contentBtn table.columns td,
-  table[class="body"] .contentBtn table.column td {
-    padding-bottom: 10px !important;
+    padding-bottom: 0px !important;
   }
 
   table[class="body"] .contentSignature .signature {

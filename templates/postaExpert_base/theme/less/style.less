@@ -156,15 +156,18 @@ p {
 // contentContact area
 // -------------------------
 .contentContact {
-	background-color: darken(@bodyBackground, 4%);
+	background-color: @colorCouleur1;
+
+	.title { color: #ffffff; }
+
 	//réduction décalage vertical en haut
-	td.wrapper { padding-top: (@wrapperPad / 2); }
-	table.columns td, table.column td { padding-bottom: 0; }
+	// td.wrapper { padding-top: (@wrapperPad / 2); }
+	table.columns td, table.column td { padding-bottom: 0px; }
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentContact {
-		td.wrapper { padding-top: @wrapperPadCollapse !important; }
-		table.columns td, table.column td { padding-bottom: 0 !important; }
+		// td.wrapper { padding-top: @wrapperPadCollapse !important; }
+		table.columns td, table.column td { padding-bottom: 0px !important; }
 	}
 }
 
@@ -172,15 +175,11 @@ p {
 // contentBtn area
 // -------------------------
 .contentBtn {
-	background-color: darken(@bodyBackground, 4%);
-	//réduction décalage vertical en haut
-	td.wrapper { padding-top: (@wrapperPad / 2); }
-	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+	background-color: @colorCouleur1;
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentBtn {
-		td.wrapper { padding-top: @wrapperPadCollapse !important; }
-		table.columns td, table.column td { padding-bottom: @columnPadCollapse !important; }
+		
 	}
 }
 
