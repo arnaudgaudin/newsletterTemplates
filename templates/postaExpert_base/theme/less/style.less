@@ -176,10 +176,21 @@ p {
 // -------------------------
 .contentBtn {
 	background-color: @colorCouleur1;
+
+	.title { text-align: center; }
+
+	table.large-button {
+		td, &:hover td a, &:visited td a, &:active td a { color: @colorCouleur1 !important; }
+		td {
+			padding: 5px 10px;
+			border-radius: 10px;
+			a { .newsletterLinkColor(@colorCouleur1); }
+		}
+	}
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentBtn {
-		
+
 	}
 }
 

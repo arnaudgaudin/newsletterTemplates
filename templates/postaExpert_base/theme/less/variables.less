@@ -56,6 +56,11 @@
 
 // Component sizing
 // -------------------------
+@buttonFontSizeLarge:   floor(@baseFontSize * 1.60);  // ~22px
+@buttonFontSizeMedium:  floor(@baseFontSize * 1.15);  // ~16px
+@buttonFontSizeSmall:   ceil(@baseFontSize * 0.85);   // ~12px
+@buttonFontSizeTiny:    ceil(@baseFontSize * 0.70);   // ~10px
+
 @headingsFontSizeH1:    30px;
 @headingsFontSizeH2:    26px;
 @headingsFontSizeH3:    22px;
@@ -63,9 +68,16 @@
 @headingsFontSizeH5:    16px;
 @headingsFontSizeH6:    15px;
 
-@fontSizeLarge:         (@baseFontSize * 1.30);  // ~18px
-@fontSizeSmall:         (@baseFontSize * 0.85);  // ~12px
-@fontSizeMini:          (@baseFontSize * 0.65);  // ~9px
+@fontSizeLarge:         floor(@baseFontSize * 1.30);  // ~18px
+@fontSizeSmall:         ceil(@baseFontSize * 0.85);  // ~12px
+@fontSizeMini:          floor(@baseFontSize * 0.65);  // ~9px
+
+
+// Buttons
+// -------------------------
+@btnSecondaryBackground:      lighten(@colorCouleur3Clair, 10%);
+@btnSecondaryBackgroundHover: darken(@btnSecondaryBackground, 5%);
+@btnSecondaryBorder:          darken(@btnSecondaryBackground, 2%);
 
 
 // Grid config
