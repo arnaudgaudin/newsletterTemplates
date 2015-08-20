@@ -154,9 +154,21 @@ p {
 
 	//container image arrondi
 	table.subWrapper {
+		table-layout: fixed;
+		//image carrée de 140px, on rajoute le padding
+		width: 160px;
+		-premailer-width: 160px;
+		height: 160px;
+		-premailer-height: 160px;
+
+		margin: 0 auto;
 		overflow: hidden;
 		td {
 			background-color: @containerBackground;
+			width: 140px;
+			-premailer-width: 140px;
+			height: 140px;
+			-premailer-height: 140px;
 			overflow: hidden;
 			&, img { border-radius: 500px; }
 		}
@@ -168,21 +180,26 @@ p {
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentALaUne {
-		table.columns, table.column {
-			//on change la taille des colonnes
-			//8 passe à 10 et 4 passe à 2
-			td.eight { width: unit(100 * 10 / 12, %) !important; }
-			td.four { width: unit(100 * 2 / 12, %) !important; }
+		//on change la taille des colonnes
+		//8 passe à 10 et 4 passe à 2
+		td.eight { width: unit(100 * 10 / 12, %) !important; }
+		td.four { width: unit(100 * 2 / 12, %) !important; }
 
-			table.subWrapper {
-				td {
-					padding: 5px !important;
-					img {
-						width: 70px !important;
-						height: 70px !important;
-					}
+		table.subWrapper {
+			width: 80px !important;
+			height: 80px !important;
+			td {
+				width: 70px !important;
+				height: 70px !important;
+				img {
+					width: 70px !important;
+					height: 70px !important;
 				}
 			}
+		}
+
+		table.columns, table.column {
+			table.subWrapper td { padding: 5px !important; }
 		}
 	}
 }
