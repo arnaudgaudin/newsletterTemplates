@@ -1186,15 +1186,15 @@ p {
 
 .contentALaUne table.subWrapper td {
   background-color: #ffffff;
-  width: 140px;
   -premailer-width: 140px;
-  height: 140px;
   -premailer-height: 140px;
   overflow: hidden;
 }
 
 .contentALaUne table.subWrapper td,
 .contentALaUne table.subWrapper td img {
+  width: 140px;
+  height: 140px;
   border-radius: 500px;
 }
 

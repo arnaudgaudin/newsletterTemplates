@@ -165,12 +165,14 @@ p {
 		overflow: hidden;
 		td {
 			background-color: @containerBackground;
-			width: 140px;
 			-premailer-width: 140px;
-			height: 140px;
 			-premailer-height: 140px;
 			overflow: hidden;
-			&, img { border-radius: 500px; }
+			&, img {
+				width: 140px;
+				height: 140px;
+				border-radius: 500px;
+			}
 		}
 	}
 
