@@ -1174,23 +1174,23 @@ p {
   color: #ffffff !important;
 }
 
-.contentALaUne table.columns table.subWrapper,
-.contentALaUne table.column table.subWrapper {
+.contentALaUne table.subWrapper {
   overflow: hidden;
+}
+
+.contentALaUne table.subWrapper td {
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.contentALaUne table.subWrapper td,
+.contentALaUne table.subWrapper td img {
+  border-radius: 500px;
 }
 
 .contentALaUne table.columns table.subWrapper td,
 .contentALaUne table.column table.subWrapper td {
-  background-color: #ffffff;
   padding: 10px;
-  overflow: hidden;
-}
-
-.contentALaUne table.columns table.subWrapper td,
-.contentALaUne table.column table.subWrapper td,
-.contentALaUne table.columns table.subWrapper td img,
-.contentALaUne table.column table.subWrapper td img {
-  border-radius: 500px;
 }
 
 .contentContact {

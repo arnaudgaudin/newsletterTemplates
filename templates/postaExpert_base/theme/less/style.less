@@ -153,16 +153,17 @@ p {
 	}
 
 	//container image arrondi
-	table.columns, table.column {
-		table.subWrapper {
+	table.subWrapper {
+		overflow: hidden;
+		td {
+			background-color: @containerBackground;
 			overflow: hidden;
-			td {
-				background-color: @containerBackground;
-				padding: 10px;
-				overflow: hidden;
-				&, img { border-radius: 500px; }
-			}
+			&, img { border-radius: 500px; }
 		}
+	}
+
+	table.columns, table.column {
+		table.subWrapper td { padding: 10px; }
 	}
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
