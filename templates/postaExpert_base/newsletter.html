@@ -219,9 +219,20 @@
 														<!--{{##{{ <bloc nom="socialNetworks" type="debut" sstype="facebook">
 															<items_ini>facebook|googleplus|linkedin|twitter|viadeo|vimeo|youtube|mail|rss</items_ini>
 														</bloc>}}##}}-->
-														<a target="_blank" class="faicon" href="http://www.facebook.com">
-															<img src="./theme/images/faicon-facebook.gif" alt="Youtube" width="20" height="20" />
-														</a>
+														<!--{{##{{<champ>
+														<type>lien</type>
+														<href>http://www.facebook.com</href>
+														<html_interieur_avant>}}-->
+														<!--DEL{{--><a target="_blank" class="faicon" href="http://www.facebook.com"><!--}}DEL-->
+														<img src="./theme/images/faicon-facebook.gif" alt="Youtube" width="20" height="20" />
+														<!--DEL{{--></a><!--}}DEL-->
+														<!--{{</html_interieur_avant>
+														<texte></texte>
+														<params>
+														}}--><a class="faicon" data-type="getstyle"><!--getstyle--></a><!--{{ class="faicon"
+														</params>
+														</champ>}}##}}-->
+
 														<!--{{##{{ <bloc nom="socialNetworks" type="inter" sstype="googleplus" /> }}##}}-->
 														<a target="_blank" class="faicon" href="http://plus.google.com">
 															<img src="./theme/images/faicon-googleplus.gif" alt="Google Plus" width="20" height="20" />
