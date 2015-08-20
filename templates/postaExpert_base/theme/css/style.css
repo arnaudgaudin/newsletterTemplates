@@ -1208,15 +1208,12 @@ p {
   padding-right: 0 !important;
 }
 
-.contentSignature td.wrapper,
-.contentBottom td.wrapper {
+.contentSignature td.wrapper {
   padding-top: 10px;
 }
 
 .contentSignature table.columns td,
-.contentBottom table.columns td,
-.contentSignature table.column td,
-.contentBottom table.column td {
+.contentSignature table.column td {
   padding-bottom: 10px;
 }
 
@@ -1228,6 +1225,15 @@ p {
 .contentBottom a.link_map {
   color: inherit;
   text-decoration: none;
+}
+
+.contentBottom td.wrapper {
+  padding-top: 10px;
+}
+
+.contentBottom table.columns td,
+.contentBottom table.column td {
+  padding-bottom: 10px;
 }
 
 .footer {
@@ -1518,6 +1524,15 @@ p {
     padding-bottom: 0px !important;
   }
 
+  table[class="body"] .contentSignature td.wrapper {
+    padding-top: 10px !important;
+  }
+
+  table[class="body"] .contentSignature table.columns td,
+  table[class="body"] .contentSignature table.column td {
+    padding-bottom: 10px !important;
+  }
+
   table[class="body"] .contentSignature .signature {
     vertical-align: top !important;
   }
@@ -1528,14 +1543,11 @@ p {
     padding-right: 20px !important;
   }
 
-  table[class="body"] .contentSignature td.wrapper,
   table[class="body"] .contentBottom td.wrapper {
     padding-top: 10px !important;
   }
 
-  table[class="body"] .contentSignature table.columns td,
   table[class="body"] .contentBottom table.columns td,
-  table[class="body"] .contentSignature table.column td,
   table[class="body"] .contentBottom table.column td {
     padding-bottom: 10px !important;
   }

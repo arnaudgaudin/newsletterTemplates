@@ -197,40 +197,38 @@ p {
 
 // contentSignature area
 // -------------------------
-.contentSignature {
-	td {
-		font-size: @fontSizeSmall;
-		line-height: (@fontSizeSmall * 1.25);
-	}
-	//suppression padding sur signature
-	.signature {
-		vertical-align: middle;
-		table.columns .text-pad, table.column .text-pad {
-			padding-left: 0 !important;
-			padding-right: 0 !important;
-		}
-	}
-}
-.contentSignature, .contentBottom {
-	td.wrapper { padding-top: (@wrapperPad / 2); }
-	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
-}
-@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
-	table[class="body"] {
-		.contentSignature {
-			.signature {
-				vertical-align: top !important;
-				table.columns .text-pad, table.column .text-pad {
-					padding-left: @textPadCollapse !important;
-					padding-right: @textPadCollapse !important;
-				}
-			}
-		}
-		.contentSignature, .contentBottom {
-			td.wrapper { padding-top: @wrapperPadCollapse !important; }
-			table.columns td, table.column td { padding-bottom: @columnPadCollapse !important; }
-		}
-	}
+// .contentSignature {
+// 	td {
+// 		font-size: @fontSizeSmall;
+// 		line-height: (@fontSizeSmall * 1.25);
+// 	}
+// 	//suppression padding sur signature
+// 	.signature {
+// 		vertical-align: middle;
+// 		table.columns .text-pad, table.column .text-pad {
+// 			padding-left: 0 !important;
+// 			padding-right: 0 !important;
+// 		}
+// 	}
+
+// 	//réduction décalage vertical
+// 	td.wrapper { padding-top: (@wrapperPad / 2); }
+// 	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+// }
+// @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+// 	table[class="body"] {
+// 		.contentSignature {
+// 			td.wrapper { padding-top: @wrapperPadCollapse !important; }
+// 			table.columns td, table.column td { padding-bottom: @columnPadCollapse !important; }
+// 			.signature {
+// 				vertical-align: top !important;
+// 				table.columns .text-pad, table.column .text-pad {
+// 					padding-left: @textPadCollapse !important;
+// 					padding-right: @textPadCollapse !important;
+// 				}
+// 			}
+// 		}
+// 	}
 }
 
 
@@ -245,6 +243,16 @@ p {
 	a.link_map {
 		color:inherit;
   		text-decoration:none;
+	}
+	
+	//réduction décalage vertical
+	td.wrapper { padding-top: (@wrapperPad / 2); }
+	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentBottom {
+		td.wrapper { padding-top: @wrapperPadCollapse !important; }
+		table.columns td, table.column td { padding-bottom: @columnPadCollapse !important; }
 	}
 }
 
