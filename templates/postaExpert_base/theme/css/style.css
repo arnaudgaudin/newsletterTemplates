@@ -1162,6 +1162,18 @@ p {
   color: #ffffff;
 }
 
+.contentALaUne .title a {
+  color: #ffffff;
+}
+
+.contentALaUne .title a .important,
+.contentALaUne .title a:visited,
+.contentALaUne .title a:hover,
+.contentALaUne .title a:focus,
+.contentALaUne .title a:active {
+  color: #ffffff !important;
+}
+
 .contentALaUne table.columns table.subWrapper,
 .contentALaUne table.column table.subWrapper {
   overflow: hidden;
