@@ -20,7 +20,6 @@
 //tous les titres
 .title {
 	text-align: center;
-	color: @colorCouleur1;
 	a { .newsletterLinkColor(@colorCouleur1); }
 	
 	//rajout espacement après titre
@@ -66,23 +65,40 @@ p {
 // contentALaUne area
 // -------------------------
 .contentALaUne {
-	background-color: darken(@bodyBackground, 4%);
-	.teaser { padding-bottom: 0; }
+	background-color: @colorCouleur2;
+	td { vertical-align: middle; }
+	.title { color: #ffffff; }
 
-	//suppression décalage en trop
-	td.wrapper { padding-top: 0px; }
-	table.columns td, table.column td { padding-bottom: 0px; }
-
-	//padding intérieur séparé pour Outlook
-	table.subWrapper td { padding-top: (@wrapperPad / 2); }
+	//container image arrondi
+	table.columns, table.column {
+		table.subWrapper {
+			overflow: hidden;
+			td {
+				background-color: @containerBackground;
+				padding: 10px;
+				overflow: hidden;
+				&, img { border-radius: 500px; }
+			}
+		}
+	}
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentALaUne {
-		td.wrapper { padding-top: 0px !important; }
-		table.columns td, table.column td { padding-bottom: 0px !important; }
-		table.subWrapper td {
-			padding-top: @wrapperPadCollapse !important;
-			padding-bottom: @columnPadCollapse !important;
+		table.columns, table.column {
+			//on change la taille des colonnes
+			//8 passe à 10 et 4 passe à 2
+			td.eight { width: unit(100 * 10 / 12, %) !important; }
+			td.four { width: unit(100 * 2 / 12, %) !important; }
+
+			table.subWrapper {
+				td {
+					padding: 5px !important;
+					img {
+						width: 70px !important;
+						height: 70px !important;
+					}
+				}
+			}
 		}
 	}
 }

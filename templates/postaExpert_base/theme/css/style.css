@@ -570,27 +570,27 @@ h6 {
 }
 
 h1 {
-  font-size: 22px;
+  font-size: 30px;
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 26px;
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 22px;
 }
 
 h4 {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 h5 {
-  font-size: 15px;
+  font-size: 16px;
 }
 
 h6 {
-  font-size: 14px;
+  font-size: 15px;
 }
 
 body,
@@ -1012,7 +1012,6 @@ table.large-button td {
 
 .title {
   text-align: center;
-  color: #e84d0e;
 }
 
 .title a {
@@ -1086,24 +1085,34 @@ p {
 }
 
 .contentALaUne {
-  background-color: #dbdbda;
+  background-color: #3262ac;
 }
 
-.contentALaUne .teaser {
-  padding-bottom: 0;
+.contentALaUne td {
+  vertical-align: middle;
 }
 
-.contentALaUne td.wrapper {
-  padding-top: 0px;
+.contentALaUne .title {
+  color: #ffffff;
 }
 
-.contentALaUne table.columns td,
-.contentALaUne table.column td {
-  padding-bottom: 0px;
+.contentALaUne table.columns table.subWrapper,
+.contentALaUne table.column table.subWrapper {
+  overflow: hidden;
 }
 
-.contentALaUne table.subWrapper td {
-  padding-top: 10px;
+.contentALaUne table.columns table.subWrapper td,
+.contentALaUne table.column table.subWrapper td {
+  background-color: #ffffff;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.contentALaUne table.columns table.subWrapper td,
+.contentALaUne table.column table.subWrapper td,
+.contentALaUne table.columns table.subWrapper td img,
+.contentALaUne table.column table.subWrapper td img {
+  border-radius: 500px;
 }
 
 .contentContact {
@@ -1389,18 +1398,25 @@ p {
     padding-bottom: 10px !important;
   }
 
-  table[class="body"] .contentALaUne td.wrapper {
-    padding-top: 0px !important;
+  table[class="body"] .contentALaUne table.columns td.eight,
+  table[class="body"] .contentALaUne table.column td.eight {
+    width: 83.33333333% !important;
   }
 
-  table[class="body"] .contentALaUne table.columns td,
-  table[class="body"] .contentALaUne table.column td {
-    padding-bottom: 0px !important;
+  table[class="body"] .contentALaUne table.columns td.four,
+  table[class="body"] .contentALaUne table.column td.four {
+    width: 16.66666667% !important;
   }
 
-  table[class="body"] .contentALaUne table.subWrapper td {
-    padding-top: 10px !important;
-    padding-bottom: 10px !important;
+  table[class="body"] .contentALaUne table.columns table.subWrapper td,
+  table[class="body"] .contentALaUne table.column table.subWrapper td {
+    padding: 5px !important;
+  }
+
+  table[class="body"] .contentALaUne table.columns table.subWrapper td img,
+  table[class="body"] .contentALaUne table.column table.subWrapper td img {
+    width: 70px !important;
+    height: 70px !important;
   }
 
   table[class="body"] .contentContact td.wrapper {
