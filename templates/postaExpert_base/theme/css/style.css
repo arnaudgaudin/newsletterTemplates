@@ -1081,6 +1081,31 @@ p {
   font-weight: bold;
 }
 
+.faicons td {
+  text-align: right;
+}
+
+.faicon {
+  display: inline;
+  font-size: 0px;
+  mso-line-height-rule: exactly;
+  line-height: 0px;
+  padding: 0px 5px;
+}
+
+.faicon:first-child {
+  padding-left: 0px;
+}
+
+.faicon:last-child {
+  padding-right: 0px;
+}
+
+.faicon img {
+  display: inline;
+  float: none;
+}
+
 .contentOnline {
   background-color: #e5e5e5;
 }
@@ -1476,6 +1501,20 @@ p {
   table[class="body"] .header table.columns td,
   table[class="body"] .header table.column td {
     padding-bottom: 0px !important;
+  }
+
+  table[class="body"] .faicons .columns,
+  table[class="body"] .faicons .column {
+    display: table !important;
+  }
+
+  table[class="body"] .faicons td {
+    text-align: center !important;
+  }
+
+  table[class="body"] .faicon img {
+    width: 20px !important;
+    height: 20px !important;
   }
 
   table[class="body"] .contentOnline td.wrapper {
