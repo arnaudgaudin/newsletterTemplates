@@ -1059,7 +1059,7 @@ h6 {
   color: #e84d0e !important;
 }
 
-.title + * {
+.title + *:not([data-type="getstyle"]) {
   padding-top: 10px;
 }
 

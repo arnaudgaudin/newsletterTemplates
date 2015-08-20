@@ -72,7 +72,7 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 	a { .newsletterLinkColor(@colorCouleur1); }
 	
 	//rajout espacement après titre
-	& + * { padding-top: 10px; }
+	& + *:not([data-type="getstyle"]) { padding-top: 10px; }
 }
 
 h1, h2, h3, h4, h5, h6 {
