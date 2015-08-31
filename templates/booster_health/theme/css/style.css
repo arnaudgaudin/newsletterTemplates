@@ -1295,6 +1295,8 @@ table.secondary:active td a {
 
 .contentAvisExpert img {
   float: none;
+  width: 240px;
+  height: 240px;
 }
 
 .contentAvisExpert .person {
