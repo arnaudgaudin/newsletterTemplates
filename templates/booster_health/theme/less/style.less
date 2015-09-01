@@ -309,13 +309,6 @@ table.secondary {
 		td.wrapper { padding-top: 0px; }
 	}
 
-	img {
-		float: none;
-		//taille rentrée en dur, bug Android Gmail
-		width: 240px;
-		height: 240px;
-	}
-
 	.person {
 		padding-top: 5px;
 		a { .newsletterLinkColor(@textColor); }
@@ -327,11 +320,6 @@ table.secondary {
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentAvisExpert {
-		img {
-			width: 100% !important;
-			height: auto !important;
-		}
-
 		tr:first-child {
 			table.columns td, table.column td { padding-bottom: 0px !important; }
 		}
