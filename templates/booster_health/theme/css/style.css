@@ -1138,6 +1138,15 @@ table.column .readMore table.tiny-button td {
   -premailer-width: auto;
   padding: 4px 8px;
   text-transform: uppercase;
+  vertical-align: middle;
+}
+
+table.columns .readMore table.tiny-button td a,
+table.column .readMore table.tiny-button td a,
+table.columns .readMore table.tiny-button td p,
+table.column .readMore table.tiny-button td p {
+  margin: 0px !important;
+  padding: 0px !important;
 }
 
 table.columns .text + .readMore td.buttonWrapper,
