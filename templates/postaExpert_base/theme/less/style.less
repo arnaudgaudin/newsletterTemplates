@@ -159,6 +159,7 @@ p {
 
 	//container image arrondi
 	table.subWrapper {
+		background-color: #0f0;
 		table-layout: fixed;
 		//image carrée de 140px, on rajoute le padding
 		width: @imgUneFull;
@@ -175,7 +176,8 @@ p {
 			vertical-align: middle;
 			overflow: hidden;
 
-			background-color: @containerBackground;
+			// background-color: @containerBackground;
+			background-color: #f00;
 			-premailer-width: @imgUneSize;
 			-premailer-height: @imgUneSize;
 
@@ -210,9 +212,7 @@ p {
 			width: 80px !important;
 			height: 80px !important;
 			td {
-				width: 70px !important;
-				height: 70px !important;
-				img {
+				&, img, .inner {
 					width: 70px !important;
 					height: 70px !important;
 				}
