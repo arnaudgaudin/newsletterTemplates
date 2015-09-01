@@ -203,6 +203,12 @@ p {
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentALaUne {
+		//réduction taille titre (application taille h2 réduite)
+		h1.title {
+			font-size: floor(@headingsFontSizeH2 * 0.9) !important;
+			line-height: (floor(@headingsFontSizeH2 * 0.9) * 1.1) !important;
+		}
+
 		//on change la taille des colonnes
 		//8 passe à 10 et 4 passe à 2
 		td.eight { width: unit(100 * 10 / 12, %) !important; }
@@ -234,12 +240,16 @@ p {
 	.title { color: #ffffff; }
 
 	//réduction décalage vertical en haut
-	// td.wrapper { padding-top: (@wrapperPad / 2); }
 	table.columns td, table.column td { padding-bottom: 0px; }
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentContact {
-		// td.wrapper { padding-top: @wrapperPadCollapse !important; }
+		//réduction taille titre (application taille h4 réduite)
+		h3.title {
+			font-size: floor(@headingsFontSizeH4 * 0.9) !important;
+			line-height: (floor(@headingsFontSizeH4 * 0.9) * 1.1) !important;
+		}
+
 		table.columns td, table.column td { padding-bottom: 0px !important; }
 	}
 }

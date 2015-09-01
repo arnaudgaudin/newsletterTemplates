@@ -1579,6 +1579,11 @@ p {
     padding-bottom: 10px !important;
   }
 
+  table[class="body"] .contentALaUne h1.title {
+    font-size: 23px !important;
+    line-height: 25.3px !important;
+  }
+
   table[class="body"] .contentALaUne td.eight {
     width: 83.33333333% !important;
   }
@@ -1602,6 +1607,11 @@ p {
   table[class="body"] .contentALaUne table.columns table.subWrapper td,
   table[class="body"] .contentALaUne table.column table.subWrapper td {
     padding: 5px !important;
+  }
+
+  table[class="body"] .contentContact h3.title {
+    font-size: 16px !important;
+    line-height: 17.6px !important;
   }
 
   table[class="body"] .contentContact table.columns td,
