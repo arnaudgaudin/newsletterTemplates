@@ -1185,6 +1185,10 @@ p {
 }
 
 .contentALaUne table.subWrapper td {
+  font-size: 80px;
+  line-height: 140px;
+  text-align: center;
+  mso-line-height-rule: exactly;
   vertical-align: middle;
   overflow: hidden;
   background-color: #f00;
@@ -1200,17 +1204,12 @@ p {
   border-radius: 500px;
 }
 
-.contentALaUne table.subWrapper td,
-.contentALaUne table.subWrapper td .inner {
-  font-size: 80px;
-  line-height: 140px;
-  text-align: center;
-  mso-line-height-rule: exactly;
-}
-
 .contentALaUne table.subWrapper td .inner {
   margin: 0px;
   padding: 0px;
+  font-size: 0px;
+  line-height: 0px;
+  mso-line-height-rule: exactly;
 }
 
 .contentALaUne table.columns table.subWrapper td,
