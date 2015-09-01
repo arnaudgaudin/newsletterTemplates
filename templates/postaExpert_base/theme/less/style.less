@@ -144,6 +144,11 @@ p {
 
 // contentALaUne area
 // -------------------------
+//taille image arrondi
+@imgUneSize: 140px;
+@imgUnePad: 10px;
+@imgUneFull: (@imgUneSize + @imgUnePad * 2);
+
 .contentALaUne {
 	background-color: @colorCouleur2;
 	td { vertical-align: middle; }
@@ -154,24 +159,38 @@ p {
 
 	//container image arrondi
 	table.subWrapper {
+		background-color: #0f0;
 		table-layout: fixed;
 		//image carrée de 140px, on rajoute le padding
-		width: 160px;
-		-premailer-width: 160px;
-		height: 160px;
-		-premailer-height: 160px;
-
+		width: @imgUneFull;
+		-premailer-width: @imgUneFull;
+		height: @imgUneFull;
+		-premailer-height: @imgUneFull;
 		margin: 0 auto;
-		overflow: hidden;
 		td {
-			background-color: @containerBackground;
-			-premailer-width: 140px;
-			-premailer-height: 140px;
+			vertical-align: middle;
 			overflow: hidden;
+
+			// background-color: @containerBackground;
+			background-color: #f00;
+			-premailer-width: @imgUneSize;
+			-premailer-height: @imgUneSize;
 			&, img {
-				width: 140px;
-				height: 140px;
+				width: @imgUneSize;
+				height: @imgUneSize;
 				border-radius: 500px;
+			}
+
+			&, .inner {
+				//Outlook ignore le line-height de la même taille que la police, on l'augmente donc de 25%
+				font-size: floor(@imgUneSize / 1.25);
+				line-height: @imgUneSize;
+				text-align: center;
+				mso-line-height-rule: exactly;
+			}
+			.inner {
+				margin: 0;
+				padding: 0;
 			}
 		}
 	}
