@@ -1193,7 +1193,8 @@ p {
 }
 
 .contentALaUne table.subWrapper td,
-.contentALaUne table.subWrapper td img {
+.contentALaUne table.subWrapper td img,
+.contentALaUne table.subWrapper td .inner {
   width: 140px;
   height: 140px;
   border-radius: 500px;
@@ -1201,15 +1202,15 @@ p {
 
 .contentALaUne table.subWrapper td,
 .contentALaUne table.subWrapper td .inner {
-  font-size: 112px;
+  font-size: 80px;
   line-height: 140px;
   text-align: center;
   mso-line-height-rule: exactly;
 }
 
 .contentALaUne table.subWrapper td .inner {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
 }
 
 .contentALaUne table.columns table.subWrapper td,

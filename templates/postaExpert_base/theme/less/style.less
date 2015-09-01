@@ -175,7 +175,7 @@ p {
 			background-color: #f00;
 			-premailer-width: @imgUneSize;
 			-premailer-height: @imgUneSize;
-			&, img {
+			&, img, .inner {
 				width: @imgUneSize;
 				height: @imgUneSize;
 				border-radius: 500px;
@@ -183,14 +183,14 @@ p {
 
 			&, .inner {
 				//Outlook ignore le line-height de la même taille que la police, on l'augmente donc de 25%
-				font-size: floor(@imgUneSize / 1.25);
+				font-size: floor(@imgUneSize / 1.75);
 				line-height: @imgUneSize;
 				text-align: center;
 				mso-line-height-rule: exactly;
 			}
 			.inner {
-				margin: 0;
-				padding: 0;
+				margin: 0px;
+				padding: 0px;
 			}
 		}
 	}
