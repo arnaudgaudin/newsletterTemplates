@@ -1175,7 +1175,6 @@ p {
 }
 
 .contentALaUne table.subWrapper {
-  background-color: #0f0;
   table-layout: fixed;
   width: 160px;
   -premailer-width: 160px;
@@ -1191,7 +1190,7 @@ p {
   mso-line-height-rule: exactly;
   vertical-align: middle;
   overflow: hidden;
-  background-color: #f00;
+  background-color: #ffffff;
   -premailer-width: 140px;
   -premailer-height: 140px;
 }
