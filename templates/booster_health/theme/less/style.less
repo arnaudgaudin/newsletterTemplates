@@ -256,12 +256,25 @@ table.secondary {
 // contentPartenariat area
 // -------------------------
 .contentPartenariat {
+	td {
+		line-height: 0px;
+		text-align: right;
+		img.les_echos {
+			display: inline;
+			float: none;
+		}
+	}
+
 	//réduction décalage vertical
 	td.wrapper { padding-top: (@wrapperPad / 2); }
 	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentPartenariat {
+		td img.les_echos {
+			width: 230px !important;
+			height: auto !important;
+		}
 		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
 		table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
 	}

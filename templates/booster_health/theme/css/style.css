@@ -1263,6 +1263,16 @@ table.secondary:active td a {
   color: #ffffff;
 }
 
+.contentPartenariat td {
+  line-height: 0px;
+  text-align: right;
+}
+
+.contentPartenariat td img.les_echos {
+  display: inline;
+  float: none;
+}
+
 .contentPartenariat td.wrapper {
   padding-top: 10px;
 }
@@ -1689,6 +1699,11 @@ table.secondary:active td a {
   table[class="body"] .contentOnline table.columns td,
   table[class="body"] .contentOnline table.column td {
     padding-bottom: 5px !important;
+  }
+
+  table[class="body"] .contentPartenariat td img.les_echos {
+    width: 230px !important;
+    height: auto !important;
   }
 
   table[class="body"] .contentPartenariat td.wrapper {
