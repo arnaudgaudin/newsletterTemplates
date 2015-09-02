@@ -103,10 +103,12 @@ p {
 
 	//rajout espacement lorsque plusieurs icones
 	.faicons & {
-		padding: 0px 5px;
-		&:first-child { padding-left: 0px; }
-		&:last-child { padding-right: 0px; }
-		img { vertical-align: baseline; }
+		img {
+			vertical-align: baseline;
+			padding: 0px 5px;
+		}
+		&:first-child img { padding-left: 0px; }
+		&:last-child img { padding-right: 0px; }
 	}
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {

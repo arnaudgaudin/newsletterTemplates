@@ -1098,20 +1098,17 @@ p {
   vertical-align: bottom;
 }
 
-.faicons .faicon {
+.faicons .faicon img {
+  vertical-align: baseline;
   padding: 0px 5px;
 }
 
-.faicons .faicon:first-child {
+.faicons .faicon:first-child img {
   padding-left: 0px;
 }
 
-.faicons .faicon:last-child {
+.faicons .faicon:last-child img {
   padding-right: 0px;
-}
-
-.faicons .faicon img {
-  vertical-align: baseline;
 }
 
 .contentOnline {
