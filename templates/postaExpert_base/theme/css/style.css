@@ -1289,6 +1289,10 @@ p {
   color: #ffffff !important;
 }
 
+.contentBottom .important {
+  color: #ffffff;
+}
+
 .contentBottom td {
   font-size: 12px;
   line-height: 15px;
