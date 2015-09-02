@@ -163,9 +163,9 @@ p {
 		table-layout: fixed;
 		//image carrée de 140px, on rajoute le padding
 		width: @imgUneFull;
-		-premailer-width: @imgUneFull;
+		-premailer-width: unit(@imgUneFull);
 		height: @imgUneFull;
-		-premailer-height: @imgUneFull;
+		-premailer-height: unit(@imgUneFull);
 		margin: 0 auto;
 		td {
 			//Outlook ignore le line-height de la même taille que la police, on l'augmente donc de 25%
@@ -178,8 +178,8 @@ p {
 
 			background-color: @containerBackground;
 			// background-color: #f00;
-			-premailer-width: @imgUneSize;
-			-premailer-height: @imgUneSize;
+			-premailer-width: unit(@imgUneSize);
+			-premailer-height: unit(@imgUneSize);
 
 			&, img, .inner {
 				width: @imgUneSize;
