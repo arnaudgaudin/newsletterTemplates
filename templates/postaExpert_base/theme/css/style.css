@@ -1154,24 +1154,30 @@ p {
   background-color: #3262ac;
 }
 
-.contentALaUne td {
-  vertical-align: middle;
+.contentALaUne,
+.contentALaUne td,
+.contentALaUne .inner {
+  color: #ffffff;
+}
+
+.contentALaUne a {
+  color: #ffffff;
+}
+
+.contentALaUne a .important,
+.contentALaUne a:visited,
+.contentALaUne a:hover,
+.contentALaUne a:focus,
+.contentALaUne a:active {
+  color: #ffffff !important;
 }
 
 .contentALaUne .title {
   color: #ffffff;
 }
 
-.contentALaUne .title a {
-  color: #ffffff;
-}
-
-.contentALaUne .title a .important,
-.contentALaUne .title a:visited,
-.contentALaUne .title a:hover,
-.contentALaUne .title a:focus,
-.contentALaUne .title a:active {
-  color: #ffffff !important;
+.contentALaUne td {
+  vertical-align: middle;
 }
 
 .contentALaUne table.subWrapper {
