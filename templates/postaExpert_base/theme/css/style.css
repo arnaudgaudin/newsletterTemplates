@@ -1251,7 +1251,7 @@ p {
 }
 
 .contentBtn table.large-button td {
-  padding: 5px 10px;
+  padding: 5px 0;
   border-radius: 10px;
 }
 
@@ -1622,6 +1622,15 @@ p {
   table[class="body"] .contentContact table.columns td,
   table[class="body"] .contentContact table.column td {
     padding-bottom: 0px !important;
+  }
+
+  table[class="body"] .contentBtn table.large-button td {
+    padding: 2px 0 !important;
+    width: auto !important;
+  }
+
+  table[class="body"] .contentBtn table.large-button td a {
+    font-size: 16px !important;
   }
 
   table[class="body"] .footer td.wrapper {
