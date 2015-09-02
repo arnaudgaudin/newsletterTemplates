@@ -1177,9 +1177,9 @@ p {
 .contentALaUne table.subWrapper {
   table-layout: fixed;
   width: 160px;
-  -premailer-width: 160px;
+  -premailer-width: 160;
   height: 160px;
-  -premailer-height: 160px;
+  -premailer-height: 160;
   margin: 0 auto;
 }
 
@@ -1191,8 +1191,8 @@ p {
   vertical-align: middle;
   overflow: hidden;
   background-color: #ffffff;
-  -premailer-width: 140px;
-  -premailer-height: 140px;
+  -premailer-width: 140;
+  -premailer-height: 140;
 }
 
 .contentALaUne table.subWrapper td,
