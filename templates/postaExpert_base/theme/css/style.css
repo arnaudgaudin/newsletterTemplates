@@ -1295,19 +1295,6 @@ p {
   vertical-align: bottom;
 }
 
-.contentBottom a.link_map {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-.contentBottom a.link_map .important,
-.contentBottom a.link_map:visited,
-.contentBottom a.link_map:hover,
-.contentBottom a.link_map:focus,
-.contentBottom a.link_map:active {
-  color: #ffffff !important;
-}
-
 .footer {
   background-color: #e5e5e5;
 }
