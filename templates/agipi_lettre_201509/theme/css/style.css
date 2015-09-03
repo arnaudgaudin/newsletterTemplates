@@ -1062,6 +1062,22 @@ table.large-button td {
   background-color: #0f0;
 }
 
+.contentLettre table.columns table.subWrapper,
+.contentLettre table.column table.subWrapper,
+.contentLettre table.columns table.subWrapper td,
+.contentLettre table.column table.subWrapper td {
+  -premailer-width: 280;
+  -premailer-height: 529;
+}
+
+.contentLettre table.columns table.subWrapper .inner,
+.contentLettre table.column table.subWrapper .inner,
+.contentLettre table.columns table.subWrapper img,
+.contentLettre table.column table.subWrapper img {
+  width: 280px;
+  height: 529px;
+}
+
 @media only screen and (max-width: 720px) {
   table[class="body"] img {
     max-width: auto !important;
