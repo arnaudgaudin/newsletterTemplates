@@ -606,8 +606,8 @@ td {
 p.lead,
 p.lede,
 p.leed {
-  font-size: 17.5px;
-  line-height: 20.125px;
+  font-size: 18px;
+  line-height: 20.7px;
 }
 
 p {
@@ -615,7 +615,7 @@ p {
 }
 
 small {
-  font-size: 9.8px;
+  font-size: 12px;
 }
 
 a {
@@ -1061,8 +1061,8 @@ table.large-button td {
 }
 
 .contentOnline td {
-  font-size: 9.8px;
-  line-height: 12.25px;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .contentOnline td.wrapper {
@@ -1130,6 +1130,12 @@ table.large-button td {
   color: #ffffff !important;
 }
 
+.contentFooter td {
+  font-size: 12px;
+  line-height: 15px;
+  vertical-align: middle;
+}
+
 .contentUnsubscribe {
   background-color: #e5e5e5;
 }
@@ -1153,8 +1159,8 @@ table.large-button td {
 }
 
 .contentUnsubscribe td {
-  font-size: 9.8px;
-  line-height: 12.25px;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .contentUnsubscribe td.wrapper {
@@ -1359,6 +1365,19 @@ table.large-button td {
     padding-bottom: 5px !important;
   }
 
+  table[class="body"] .contentLettre td.wrapper.last {
+    padding-top: 20px !important;
+  }
+
+  table[class="body"] .contentLettre td.wrapper.last table.columns td,
+  table[class="body"] .contentLettre td.wrapper.last table.column td {
+    padding-bottom: 20px !important;
+  }
+
+  table[class="body"] .contentLettre td.wrapper.last table.subWrapper td {
+    padding: 0px !important;
+  }
+
   table[class="body"] .contentLettre table.columns table.subWrapper .inner,
   table[class="body"] .contentLettre table.column table.subWrapper .inner {
     width: 100% !important;
@@ -1368,15 +1387,6 @@ table.large-button td {
   table[class="body"] .contentFooter .right-text-pad,
   table[class="body"] .contentFooter .text-pad-right {
     padding-left: 0px !important;
-  }
-
-  table[class="body"] .contentFooter td.wrapper.first table.columns td,
-  table[class="body"] .contentFooter td.wrapper.first table.column td {
-    padding-bottom: 5px !important;
-  }
-
-  table[class="body"] .contentFooter td.wrapper.last {
-    padding-top: 5px !important;
   }
 
   table[class="body"] .contentUnsubscribe td.wrapper {

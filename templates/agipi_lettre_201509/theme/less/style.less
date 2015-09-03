@@ -100,6 +100,13 @@
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentLettre {
+
+		td.wrapper.last {
+			padding-top: (@wrapperPadCollapse * 2) !important;
+			table.columns td, table.column td { padding-bottom: (@columnPadCollapse * 2) !important; }
+			table.subWrapper td { padding: 0px !important; }
+		}
+
 		table.columns, table.column {
 			table.subWrapper {
 				.inner {
@@ -118,17 +125,16 @@
 	background-color: @colorAgipi1;
 	.newsletterInnerTextColor(#ffffff);
 
+	td {
+		font-size: @fontSizeSmall;
+		line-height: (@fontSizeSmall * 1.25);
+		vertical-align: middle;
+	}
+
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentFooter {
 		.right-text-pad, .text-pad-right { padding-left: 0px !important; }
-
-		td.wrapper.first {
-			table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
-		}
-		td.wrapper.last {
-			padding-top: (@wrapperPadCollapse / 2) !important;
-		}
 	}
 }
 
