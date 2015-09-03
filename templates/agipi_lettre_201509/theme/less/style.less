@@ -103,9 +103,13 @@
 				-premailer-width: 280;
 				-premailer-height: 529;
 			}
+			//container responsive
 			.inner {
-				width: 280px;
+				background-color: #f0f;
+				width: auto;
 				height: 529px;
+				max-width: 100%;
+				margin: 0px;
 			}
 		}
 	}
@@ -121,10 +125,7 @@
 
 		table.columns, table.column {
 			table.subWrapper {
-				.inner {
-					width: 100% !important;
-					height: auto !important;
-				}
+				.inner { height: auto !important; }
 			}
 		}
 	}
@@ -152,8 +153,11 @@
 					-premailer-height: 56;
 				}
 				.inner {
-					width: 100px;
+					background-color: #f0f;
+					width: auto;
 					height: 56px;
+					max-width: 100%;
+					margin: 0px;
 				}
 			}
 		}
@@ -165,10 +169,7 @@
 			table.subWrapper {
 				td { padding-bottom: 0px !important; }
 				&.logo {
-					.inner {
-						width: 100% !important;
-						height: auto !important;
-					}
+					.inner { height: auto !important; }
 				}
 			}
 		}

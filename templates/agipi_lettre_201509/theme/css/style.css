@@ -1080,8 +1080,11 @@ table.large-button td {
 
 .contentLettre table.columns table.subWrapper .inner,
 .contentLettre table.column table.subWrapper .inner {
-  width: 280px;
+  background-color: #f0f;
+  width: auto;
   height: 529px;
+  max-width: 100%;
+  margin: 0px;
 }
 
 .contentFooter {
@@ -1127,8 +1130,11 @@ table.large-button td {
 
 .contentFooter table.columns table.subWrapper.logo .inner,
 .contentFooter table.column table.subWrapper.logo .inner {
-  width: 100px;
+  background-color: #f0f;
+  width: auto;
   height: 56px;
+  max-width: 100%;
+  margin: 0px;
 }
 
 .contentUnsubscribe {
@@ -1366,7 +1372,6 @@ table.large-button td {
 
   table[class="body"] .contentLettre table.columns table.subWrapper .inner,
   table[class="body"] .contentLettre table.column table.subWrapper .inner {
-    width: 100% !important;
     height: auto !important;
   }
 
@@ -1377,7 +1382,6 @@ table.large-button td {
 
   table[class="body"] .contentFooter table.columns table.subWrapper.logo .inner,
   table[class="body"] .contentFooter table.column table.subWrapper.logo .inner {
-    width: 100% !important;
     height: auto !important;
   }
 
