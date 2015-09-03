@@ -1126,6 +1126,7 @@ table.large-button td {
 
 .contentFooter table.columns table.subWrapper.logo,
 .contentFooter table.column table.subWrapper.logo {
+  -premailer-width: auto;
   -premailer-height: 56;
 }
 
