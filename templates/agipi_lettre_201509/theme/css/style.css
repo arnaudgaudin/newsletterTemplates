@@ -1086,6 +1086,28 @@ table.large-button td {
   height: 529px;
 }
 
+.contentFooter {
+  background-color: #005ca4;
+}
+
+.contentFooter,
+.contentFooter td,
+.contentFooter .inner {
+  color: #ffffff;
+}
+
+.contentFooter a {
+  color: #ffffff;
+}
+
+.contentFooter a .important,
+.contentFooter a:visited,
+.contentFooter a:hover,
+.contentFooter a:focus,
+.contentFooter a:active {
+  color: #ffffff !important;
+}
+
 @media only screen and (max-width: 720px) {
   table[class="body"] img {
     max-width: auto !important;
@@ -1274,5 +1296,14 @@ table.large-button td {
   table[class="body"] .contentLettre table.column table.subWrapper .inner {
     width: 100% !important;
     height: auto !important;
+  }
+
+  table[class="body"] .contentFooter td.wrapper.first table.columns td,
+  table[class="body"] .contentFooter td.wrapper.first table.column td {
+    padding-bottom: 5px !important;
+  }
+
+  table[class="body"] .contentFooter td.wrapper.last {
+    padding-top: 5px !important;
   }
 }

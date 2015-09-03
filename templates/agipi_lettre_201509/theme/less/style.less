@@ -88,3 +88,22 @@
 		}
 	}
 }
+
+
+// contentFooter area
+// -------------------------
+.contentFooter {
+	background-color: @colorAgipi1;
+	.newsletterInnerTextColor(#ffffff);
+
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentFooter {
+		td.wrapper.first {
+			table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
+		}
+		td.wrapper.last {
+			padding-top: (@wrapperPadCollapse / 2) !important;
+		}
+	}
+}
