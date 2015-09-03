@@ -4,7 +4,7 @@
 
 body,
 table.body {
-  background-color: #f2f2f2;
+  background-color: #e5e5e5;
 }
 
 /**********************************************
@@ -1015,17 +1015,17 @@ table.large-button td {
 }
 
 .contentOnline {
-  background-color: #f2f2f2;
+  background-color: #e5e5e5;
 }
 
 .contentOnline,
 .contentOnline td,
 .contentOnline .inner {
-  color: #bfbfbf;
+  color: #b2b2b2;
 }
 
 .contentOnline a {
-  color: #bfbfbf;
+  color: #b2b2b2;
 }
 
 .contentOnline a .important,
@@ -1033,7 +1033,7 @@ table.large-button td {
 .contentOnline a:hover,
 .contentOnline a:focus,
 .contentOnline a:active {
-  color: #bfbfbf !important;
+  color: #b2b2b2 !important;
 }
 
 .contentOnline td {
@@ -1059,17 +1059,15 @@ table.large-button td {
 }
 
 .contentLettre td.wrapper.last {
-  background-color: #0f0;
+  background-color: #f2f2f2;
 }
 
 .contentLettre table.columns table.subWrapper td,
 .contentLettre table.column table.subWrapper td {
   padding: 0px;
-}
-
-.contentLettre table.columns table.subWrapper .inner,
-.contentLettre table.column table.subWrapper .inner {
-  background-color: #ff0;
+  -webkit-box-shadow: 0 0 5px #3d3d3d;
+  -moz-box-shadow: 0 0 5px #3d3d3d;
+  box-shadow: 0 0 5px #3d3d3d;
 }
 
 .contentLettre table.columns table.subWrapper,
