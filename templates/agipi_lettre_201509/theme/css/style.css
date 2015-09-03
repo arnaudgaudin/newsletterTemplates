@@ -1021,11 +1021,11 @@ table.large-button td {
 .contentOnline,
 .contentOnline td,
 .contentOnline .inner {
-  color: #b2b2b2;
+  color: #8c8c8c;
 }
 
 .contentOnline a {
-  color: #b2b2b2;
+  color: #8c8c8c;
 }
 
 .contentOnline a .important,
@@ -1033,7 +1033,7 @@ table.large-button td {
 .contentOnline a:hover,
 .contentOnline a:focus,
 .contentOnline a:active {
-  color: #b2b2b2 !important;
+  color: #8c8c8c !important;
 }
 
 .contentOnline td {
@@ -1104,6 +1104,42 @@ table.large-button td {
 .contentFooter a:focus,
 .contentFooter a:active {
   color: #ffffff !important;
+}
+
+.contentUnsubscribe {
+  background-color: #e5e5e5;
+}
+
+.contentUnsubscribe,
+.contentUnsubscribe td,
+.contentUnsubscribe .inner {
+  color: #8c8c8c;
+}
+
+.contentUnsubscribe a {
+  color: #8c8c8c;
+}
+
+.contentUnsubscribe a .important,
+.contentUnsubscribe a:visited,
+.contentUnsubscribe a:hover,
+.contentUnsubscribe a:focus,
+.contentUnsubscribe a:active {
+  color: #8c8c8c !important;
+}
+
+.contentUnsubscribe td {
+  font-size: 9.8px;
+  line-height: 12.25px;
+}
+
+.contentUnsubscribe td.wrapper {
+  padding-top: 10px;
+}
+
+.contentUnsubscribe table.columns td,
+.contentUnsubscribe table.column td {
+  padding-bottom: 10px;
 }
 
 @media only screen and (max-width: 720px) {
@@ -1303,5 +1339,14 @@ table.large-button td {
 
   table[class="body"] .contentFooter td.wrapper.last {
     padding-top: 5px !important;
+  }
+
+  table[class="body"] .contentUnsubscribe td.wrapper {
+    padding-top: 5px !important;
+  }
+
+  table[class="body"] .contentUnsubscribe table.columns td,
+  table[class="body"] .contentUnsubscribe table.column td {
+    padding-bottom: 5px !important;
   }
 }

@@ -24,7 +24,7 @@
 // -------------------------
 .contentOnline {
 	background-color: @bodyBackground;
-	.newsletterInnerTextColor(darken(@bodyBackground, 20%));
+	.newsletterInnerTextColor(darken(@bodyBackground, 35%));
 	
 	td {
 		font-size: @fontSizeSmall;
@@ -102,5 +102,29 @@
 		td.wrapper.last {
 			padding-top: (@wrapperPadCollapse / 2) !important;
 		}
+	}
+}
+
+
+
+// contentUnsubscribe area
+// -------------------------
+.contentUnsubscribe {
+	background-color: @bodyBackground;
+	.newsletterInnerTextColor(darken(@bodyBackground, 35%));
+
+	td {
+		font-size: @fontSizeSmall;
+		line-height: (@fontSizeSmall * 1.25);
+	}
+
+	//réduction décalage vertical
+	td.wrapper { padding-top: (@wrapperPad / 2); }
+	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentUnsubscribe {
+		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
+		table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
 	}
 }
