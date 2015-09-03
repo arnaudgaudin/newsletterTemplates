@@ -1117,6 +1117,20 @@ table.large-button td {
   padding-bottom: 0px;
 }
 
+.contentFooter table.columns table.subWrapper.logo,
+.contentFooter table.column table.subWrapper.logo,
+.contentFooter table.columns table.subWrapper.logo td,
+.contentFooter table.column table.subWrapper.logo td {
+  -premailer-width: 100;
+  -premailer-height: 56;
+}
+
+.contentFooter table.columns table.subWrapper.logo .inner,
+.contentFooter table.column table.subWrapper.logo .inner {
+  width: 100px;
+  height: 56px;
+}
+
 .contentUnsubscribe {
   background-color: #005ca4;
 }
@@ -1359,6 +1373,12 @@ table.large-button td {
   table[class="body"] .contentFooter table.columns table.subWrapper td,
   table[class="body"] .contentFooter table.column table.subWrapper td {
     padding-bottom: 0px !important;
+  }
+
+  table[class="body"] .contentFooter table.columns table.subWrapper.logo .inner,
+  table[class="body"] .contentFooter table.column table.subWrapper.logo .inner {
+    width: 100% !important;
+    height: auto !important;
   }
 
   table[class="body"] .contentFooter .right-text-pad,
