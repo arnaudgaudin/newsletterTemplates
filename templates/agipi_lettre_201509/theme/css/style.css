@@ -1132,12 +1132,8 @@ table.large-button td {
   -premailer-height: 56;
 }
 
-.contentFooter table.columns table.subWrapper.logo .inner,
-.contentFooter table.column table.subWrapper.logo .inner {
-  background-color: #f0f;
-  width: auto;
-  height: 56px;
-  max-width: 100%;
+.contentFooter table.columns table.subWrapper.logo a,
+.contentFooter table.column table.subWrapper.logo a {
   margin: 0px;
 }
 
@@ -1382,11 +1378,6 @@ table.large-button td {
   table[class="body"] .contentFooter table.columns table.subWrapper td,
   table[class="body"] .contentFooter table.column table.subWrapper td {
     padding-bottom: 0px !important;
-  }
-
-  table[class="body"] .contentFooter table.columns table.subWrapper.logo .inner,
-  table[class="body"] .contentFooter table.column table.subWrapper.logo .inner {
-    height: auto !important;
   }
 
   table[class="body"] .contentFooter .right-text-pad,

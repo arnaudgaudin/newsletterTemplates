@@ -20,43 +20,6 @@
 }
 
 
-//gestion row avec bordures de séparation
-// .row.bordered {
-// 	background-color: #ff0;
-// 	//suppression décalage en trop
-// 	td.wrapper { padding-top: 0px; }
-// 	table.columns td, table.column td { padding-bottom: 0px; }
-
-// 	//hauteur en dur pour éviter espace en dessous
-// 	&, table, td {
-// 		height: 2px;
-// 		-premailer-height: 2;
-// 	}
-
-// 	td {
-// 		background-color: #0f0;
-// 		line-height: 0px;
-// 		mso-line-height-rule: exactly;
-// 		hr.border {
-// 			margin: 0px;
-// 			//débuggage bordure pour PostaNova
-// 			background-color: transparent;
-// 			height: 0px;
-// 			border-bottom: 2px solid @hrBorder;
-// 			//débuggage Outlook
-// 			mso-margin-bottom-alt: 0px;
-// 			mso-margin-top-alt: 0px;
-// 		}
-// 	}
-// }
-// @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
-// 	table[class="body"] .row.bordered {
-// 		td.wrapper { padding-top: 0px !important; }
-// 		table.columns td, table.column td { padding-bottom: 0px !important; }
-// 	}
-// }
-
-
 // contentOnline area
 // -------------------------
 .contentOnline {
@@ -156,13 +119,14 @@
 					-premailer-width: 100;
 					-premailer-height: 56;
 				}
-				.inner {
-					background-color: #f0f;
-					width: auto;
-					height: 56px;
-					max-width: 100%;
-					margin: 0px;
-				}
+				a { margin: 0px; }
+				// .inner {
+				// 	background-color: #f0f;
+				// 	width: auto;
+				// 	height: 56px;
+				// 	max-width: 100%;
+				// 	margin: 0px;
+				// }
 			}
 		}
 	}
@@ -173,7 +137,7 @@
 			table.subWrapper {
 				td { padding-bottom: 0px !important; }
 				&.logo {
-					.inner { height: auto !important; }
+					// .inner { height: auto !important; }
 				}
 			}
 		}
