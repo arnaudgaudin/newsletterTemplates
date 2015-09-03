@@ -1028,14 +1028,17 @@ table.large-button td {
 }
 
 .row.bordered td {
-  line-height: 0;
+  line-height: 0px;
+  mso-line-height-rule: exactly;
 }
 
 .row.bordered td hr.border {
-  margin: 0;
+  margin: 0px;
   background-color: transparent;
-  height: 0;
+  height: 0px;
   border-bottom: 2px solid #005ca4;
+  mso-margin-bottom-alt: 0px;
+  mso-margin-top-alt: 0px;
 }
 
 .contentOnline {

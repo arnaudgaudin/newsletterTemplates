@@ -27,13 +27,17 @@
 	td.wrapper { padding-top: 0px; }
 	table.columns td, table.column td { padding-bottom: 0px; }
 	td {
-		line-height: 0;
+		line-height: 0px;
+		mso-line-height-rule: exactly;
 		hr.border {
-			margin: 0;
+			margin: 0px;
 			//débuggage bordure pour PostaNova
 			background-color: transparent;
-			height: 0;
+			height: 0px;
 			border-bottom: 2px solid @hrBorder;
+			//débuggage Outlook
+			mso-margin-bottom-alt: 0px;
+			mso-margin-top-alt: 0px;
 		}
 	}
 }
