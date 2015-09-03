@@ -1091,11 +1091,11 @@ table.large-button td {
 .contentFooter,
 .contentFooter td,
 .contentFooter .inner {
-  color: #999999;
+  color: #7f7f7f;
 }
 
 .contentFooter a {
-  color: #999999;
+  color: #7f7f7f;
 }
 
 .contentFooter a .important,
@@ -1103,7 +1103,7 @@ table.large-button td {
 .contentFooter a:hover,
 .contentFooter a:focus,
 .contentFooter a:active {
-  color: #999999 !important;
+  color: #7f7f7f !important;
 }
 
 .contentFooter td {
@@ -1112,18 +1112,23 @@ table.large-button td {
   vertical-align: middle;
 }
 
+.contentFooter table.columns table.subWrapper td,
+.contentFooter table.column table.subWrapper td {
+  padding-bottom: 0px;
+}
+
 .contentUnsubscribe {
-  background-color: #e5e5e5;
+  background-color: #005ca4;
 }
 
 .contentUnsubscribe,
 .contentUnsubscribe td,
 .contentUnsubscribe .inner {
-  color: #8c8c8c;
+  color: #ffffff;
 }
 
 .contentUnsubscribe a {
-  color: #8c8c8c;
+  color: #ffffff;
 }
 
 .contentUnsubscribe a .important,
@@ -1131,7 +1136,7 @@ table.large-button td {
 .contentUnsubscribe a:hover,
 .contentUnsubscribe a:focus,
 .contentUnsubscribe a:active {
-  color: #8c8c8c !important;
+  color: #ffffff !important;
 }
 
 .contentUnsubscribe td {
@@ -1349,6 +1354,11 @@ table.large-button td {
   table[class="body"] .contentLettre table.column table.subWrapper .inner {
     width: 100% !important;
     height: auto !important;
+  }
+
+  table[class="body"] .contentFooter table.columns table.subWrapper td,
+  table[class="body"] .contentFooter table.column table.subWrapper td {
+    padding-bottom: 0px !important;
   }
 
   table[class="body"] .contentFooter .right-text-pad,

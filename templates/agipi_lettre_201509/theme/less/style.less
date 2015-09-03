@@ -135,7 +135,7 @@
 // -------------------------
 .contentFooter {
 	background-color: @colorAgipi2;
-	.newsletterInnerTextColor(darken(@colorAgipi2, 35%));
+	.newsletterInnerTextColor(darken(@colorAgipi2, 45%));
 
 	td {
 		font-size: @fontSizeSmall;
@@ -143,9 +143,18 @@
 		vertical-align: middle;
 	}
 
+	table.columns, table.column {
+		table.subWrapper {
+			td { padding-bottom: 0px; }
+		}
+	}
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentFooter {
+		table.columns, table.column {
+			table.subWrapper td { padding-bottom: 0px !important; }
+		}
+
 		.right-text-pad, .text-pad-right { padding-left: 0px !important; }
 	}
 }
@@ -155,8 +164,8 @@
 // contentUnsubscribe area
 // -------------------------
 .contentUnsubscribe {
-	background-color: @bodyBackground;
-	.newsletterInnerTextColor(darken(@bodyBackground, 35%));
+	background-color: @colorAgipi1;
+	.newsletterInnerTextColor(#ffffff);
 
 	td {
 		font-size: @fontSizeSmall;
