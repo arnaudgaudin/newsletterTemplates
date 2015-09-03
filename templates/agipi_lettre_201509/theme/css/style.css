@@ -1115,6 +1115,10 @@ table.large-button td {
   vertical-align: middle;
 }
 
+.contentFooter td.sub-columns.first {
+  background-color: #0f0;
+}
+
 .contentFooter table.columns table.subWrapper td,
 .contentFooter table.column table.subWrapper td {
   padding-bottom: 0px;
