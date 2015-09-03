@@ -1002,7 +1002,7 @@ table.large-button td {
 }
 
 .header {
-  background-color: #0ff;
+  background-color: #ff0;
 }
 
 .header td.wrapper {
@@ -1015,7 +1015,7 @@ table.large-button td {
 }
 
 .row.bordered {
-  background-color: #0ff;
+  background-color: #ff0;
 }
 
 .row.bordered td.wrapper {
@@ -1027,7 +1027,15 @@ table.large-button td {
   padding-bottom: 0px;
 }
 
+.row.bordered,
+.row.bordered table,
 .row.bordered td {
+  height: 2px;
+  -premailer-height: 2;
+}
+
+.row.bordered td {
+  background-color: #0f0;
   line-height: 0px;
   mso-line-height-rule: exactly;
 }
