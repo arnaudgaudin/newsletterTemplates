@@ -1085,17 +1085,17 @@ table.large-button td {
 }
 
 .contentFooter {
-  background-color: #005ca4;
+  background-color: #f2f2f2;
 }
 
 .contentFooter,
 .contentFooter td,
 .contentFooter .inner {
-  color: #ffffff;
+  color: #999999;
 }
 
 .contentFooter a {
-  color: #ffffff;
+  color: #999999;
 }
 
 .contentFooter a .important,
@@ -1103,7 +1103,7 @@ table.large-button td {
 .contentFooter a:hover,
 .contentFooter a:focus,
 .contentFooter a:active {
-  color: #ffffff !important;
+  color: #999999 !important;
 }
 
 .contentFooter td {
