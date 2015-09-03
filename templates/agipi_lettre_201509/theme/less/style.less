@@ -59,18 +59,32 @@
 	//calage de l'image avec dimensions en dur
 	table.columns, table.column {
 		table.subWrapper {
+			td { padding: 0px; }
+
+			.inner {
+				background-color: #ff0;
+			}
+
 			&, td {
 				-premailer-width: 280;
 				-premailer-height: 529;
 			}
-			.inner, img {
+			.inner {
 				width: 280px;
 				height: 529px;
 			}
 		}
 	}
 }
-
-
-
-
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentLettre {
+		table.columns, table.column {
+			table.subWrapper {
+				.inner {
+					width: 100% !important;
+					height: auto !important;
+				}
+			}
+		}
+	}
+}

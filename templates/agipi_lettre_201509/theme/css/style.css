@@ -1062,6 +1062,16 @@ table.large-button td {
   background-color: #0f0;
 }
 
+.contentLettre table.columns table.subWrapper td,
+.contentLettre table.column table.subWrapper td {
+  padding: 0px;
+}
+
+.contentLettre table.columns table.subWrapper .inner,
+.contentLettre table.column table.subWrapper .inner {
+  background-color: #ff0;
+}
+
 .contentLettre table.columns table.subWrapper,
 .contentLettre table.column table.subWrapper,
 .contentLettre table.columns table.subWrapper td,
@@ -1071,9 +1081,7 @@ table.large-button td {
 }
 
 .contentLettre table.columns table.subWrapper .inner,
-.contentLettre table.column table.subWrapper .inner,
-.contentLettre table.columns table.subWrapper img,
-.contentLettre table.column table.subWrapper img {
+.contentLettre table.column table.subWrapper .inner {
   width: 280px;
   height: 529px;
 }
@@ -1260,5 +1268,11 @@ table.large-button td {
   table[class="body"] .contentOnline table.columns td,
   table[class="body"] .contentOnline table.column td {
     padding-bottom: 5px !important;
+  }
+
+  table[class="body"] .contentLettre table.columns table.subWrapper .inner,
+  table[class="body"] .contentLettre table.column table.subWrapper .inner {
+    width: 100% !important;
+    height: auto !important;
   }
 }
