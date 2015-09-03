@@ -1001,10 +1001,6 @@ table.large-button td {
   -premailer-width: auto;
 }
 
-.header {
-  background-color: #ff0;
-}
-
 .header td.wrapper {
   padding-top: 10px;
 }
@@ -1054,10 +1050,6 @@ table.large-button td {
   margin-bottom: 0px;
 }
 
-.contentLettre td.wrapper.first {
-  background-color: #f00;
-}
-
 .contentLettre td.wrapper.last {
   background-color: #f2f2f2;
 }
@@ -1080,7 +1072,6 @@ table.large-button td {
 
 .contentLettre table.columns table.subWrapper .inner,
 .contentLettre table.column table.subWrapper .inner {
-  background-color: #f0f;
   width: auto;
   height: 529px;
   max-width: 100%;
@@ -1115,10 +1106,6 @@ table.large-button td {
   vertical-align: middle;
 }
 
-.contentFooter td.sub-columns.first {
-  background-color: #0f0;
-}
-
 .contentFooter table.columns table.subWrapper td,
 .contentFooter table.column table.subWrapper td {
   padding-bottom: 0px;
@@ -1143,7 +1130,6 @@ table.large-button td {
 
 .contentFooter table.columns table.subWrapper.logo img,
 .contentFooter table.column table.subWrapper.logo img {
-  background-color: #f00;
   width: 100px;
   height: 56px;
 }
