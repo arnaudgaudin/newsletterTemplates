@@ -2,3 +2,61 @@
 @import "import.less";
 
 // additionnal template's style which extends ink's style
+
+
+
+//gestion header
+.header {
+	background-color: #0ff;
+	//suppression décalage en trop
+	td.wrapper { padding-top: (@wrapperPad / 2); }
+	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .header {
+		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
+		table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
+	}
+}
+
+
+// contentOnline area
+// -------------------------
+.contentOnline {
+	background-color: @bodyBackground;
+	.newsletterInnerTextColor(darken(@bodyBackground, 20%));
+	
+	td {
+		font-size: @fontSizeSmall;
+		line-height: (@fontSizeSmall * 1.25);
+	}
+	//réduction décalage vertical
+	td.wrapper { padding-top: (@wrapperPad / 2); }
+	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentOnline {
+		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
+		table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
+	}
+}
+
+
+// contentLettre area
+// -------------------------
+.contentLettre {
+	//suppression marge sur dernier paragraphe
+	p:last-child { margin-bottom: 0px; }
+
+	td.wrapper.first {
+		background-color: #f00;
+
+	}
+	td.wrapper.last {
+		background-color: #0f0;
+	}
+}
+
+
+
+

@@ -1001,6 +1001,67 @@ table.large-button td {
   -premailer-width: auto;
 }
 
+.header {
+  background-color: #0ff;
+}
+
+.header td.wrapper {
+  padding-top: 10px;
+}
+
+.header table.columns td,
+.header table.column td {
+  padding-bottom: 10px;
+}
+
+.contentOnline {
+  background-color: #f2f2f2;
+}
+
+.contentOnline,
+.contentOnline td,
+.contentOnline .inner {
+  color: #bfbfbf;
+}
+
+.contentOnline a {
+  color: #bfbfbf;
+}
+
+.contentOnline a .important,
+.contentOnline a:visited,
+.contentOnline a:hover,
+.contentOnline a:focus,
+.contentOnline a:active {
+  color: #bfbfbf !important;
+}
+
+.contentOnline td {
+  font-size: 9.8px;
+  line-height: 12.25px;
+}
+
+.contentOnline td.wrapper {
+  padding-top: 10px;
+}
+
+.contentOnline table.columns td,
+.contentOnline table.column td {
+  padding-bottom: 10px;
+}
+
+.contentLettre p:last-child {
+  margin-bottom: 0px;
+}
+
+.contentLettre td.wrapper.first {
+  background-color: #f00;
+}
+
+.contentLettre td.wrapper.last {
+  background-color: #0f0;
+}
+
 @media only screen and (max-width: 720px) {
   table[class="body"] img {
     max-width: auto !important;
@@ -1165,5 +1226,23 @@ table.large-button td {
 
   table[class="container"] .panel {
     padding: 10px !important;
+  }
+
+  table[class="body"] .header td.wrapper {
+    padding-top: 5px !important;
+  }
+
+  table[class="body"] .header table.columns td,
+  table[class="body"] .header table.column td {
+    padding-bottom: 5px !important;
+  }
+
+  table[class="body"] .contentOnline td.wrapper {
+    padding-top: 5px !important;
+  }
+
+  table[class="body"] .contentOnline table.columns td,
+  table[class="body"] .contentOnline table.column td {
+    padding-bottom: 5px !important;
   }
 }
