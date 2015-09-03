@@ -20,6 +20,31 @@
 }
 
 
+//gestion row avec bordures de séparation
+.row.bordered {
+	background-color: #0ff;
+	//suppression décalage en trop
+	td.wrapper { padding-top: 0px; }
+	table.columns td, table.column td { padding-bottom: 0px; }
+	td {
+		line-height: 0;
+		hr.border {
+			margin: 0;
+			//débuggage bordure pour PostaNova
+			background-color: transparent;
+			height: 0;
+			border-bottom: 2px solid @hrBorder;
+		}
+	}
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .row.bordered {
+		td.wrapper { padding-top: 0px !important; }
+		table.columns td, table.column td { padding-bottom: 0px !important; }
+	}
+}
+
+
 // contentOnline area
 // -------------------------
 .contentOnline {
