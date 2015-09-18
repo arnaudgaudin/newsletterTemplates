@@ -489,6 +489,27 @@ tracking_url = "rep="&repertoire_ei&"&amp;url_site_exp="&url_site_exp
 									else
 										url_mois1_v3 = "?fintrack=&amp;"&url_mois1_v3
 									end if
+
+									actupro1_qstart_v3 = InStr(URL_DETAIL_ACTU_PRO_V3_1,"?")
+									if (actupro1_qstart_v3 > 0) then
+										URL_DETAIL_ACTU_PRO_V3_1 = Replace(URL_DETAIL_ACTU_PRO_V3_1,"?","?fintrack=&amp;",actupro1_qstart_v3,1)
+									else
+										URL_DETAIL_ACTU_PRO_V3_1 = "?fintrack=&amp;"&URL_DETAIL_ACTU_PRO_V3_1
+									end if
+
+									actupro2_qstart_v3 = InStr(URL_DETAIL_ACTU_PRO_V3_2,"?")
+									if (actupro2_qstart_v3 > 0) then
+										URL_DETAIL_ACTU_PRO_V3_2 = Replace(URL_DETAIL_ACTU_PRO_V3_2,"?","?fintrack=&amp;",actupro2_qstart_v3,1)
+									else
+										URL_DETAIL_ACTU_PRO_V3_2 = "?fintrack=&amp;"&URL_DETAIL_ACTU_PRO_V3_2
+									end if
+
+									actupro3_qstart_v3 = InStr(URL_DETAIL_ACTU_PRO_V3_3,"?")
+									if (actupro3_qstart_v3 > 0) then
+										URL_DETAIL_ACTU_PRO_V3_3 = Replace(URL_DETAIL_ACTU_PRO_V3_3,"?","?fintrack=&amp;",actupro3_qstart_v3,1)
+									else
+										URL_DETAIL_ACTU_PRO_V3_3 = "?fintrack=&amp;"&URL_DETAIL_ACTU_PRO_V3_3
+									end if
 								}}%%}}-->
 								<table border="0" class="row contentBottom">
 									<tr>
