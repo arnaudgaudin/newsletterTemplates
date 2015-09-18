@@ -384,7 +384,12 @@ tracking_url = "rep="&repertoire_ei&"&amp;url_site_exp="&url_site_exp
 									set rsCountArt=conn.Execute(CountArt)
 									nbrart=rsCountArt(0)
 
-									article_url_v3 = rsArticle("URL_DETAIL_V3")
+									article_qstart_v3 = InStr(rsArticle("URL_DETAIL_V3"),"?")
+									if (article_qstart_v3 > 0) then
+										article_url_v3 = Replace(rsArticle("URL_DETAIL_V3"),"?","?fintrack=&amp;",article_qstart_v3,1)
+									else
+										article_url_v3 = "?fintrack=&amp;"&rsArticle("URL_DETAIL_V3")
+									end if
 									
 								    if (i<(nbrart-1)) then
 								}}%%}}-->
