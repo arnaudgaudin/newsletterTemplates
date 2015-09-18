@@ -295,6 +295,13 @@ tracking_url = "rep="&repertoire_ei&"&amp;url_site_exp="&url_site_exp
 
 									'Composition lien article'
 									lien_article = "http://"&URL_NL_XML&id_de_larticle&URL_NL_XML_SUF&beginGetParam&tracking_url
+
+									article_qstart_v3 = InStr(lien_article,"?")
+									if (article_qstart_v3 > 0) then
+										lien_article = Replace(lien_article,"?","?fintrack=&amp;",article_qstart_v3,1)
+									else
+										lien_article = "?fintrack=&amp;"&lien_article
+									end if
 								}}%%}}-->
 								<table border="0" class="row contentALaUne" nlbgcolor="##((nlCntUneBackground))##">
 									<tr>
@@ -363,6 +370,13 @@ tracking_url = "rep="&repertoire_ei&"&amp;url_site_exp="&url_site_exp
 
 									'Composition lien article'
 							    	lien_article = "http://"&URL_NL_XML&id_de_larticle&URL_NL_XML_SUF&beginGetParam&tracking_url
+
+							    	article_qstart_v3 = InStr(lien_article,"?")
+									if (article_qstart_v3 > 0) then
+										lien_article = Replace(lien_article,"?","?fintrack=&amp;",article_qstart_v3,1)
+									else
+										lien_article = "?fintrack=&amp;"&lien_article
+									end if
 									
 								    if (i<(nbrart-1)) then
 								}}%%}}-->
