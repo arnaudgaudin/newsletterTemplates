@@ -301,7 +301,12 @@ tracking_url = "rep="&repertoire_ei&"&amp;url_site_exp="&url_site_exp
 									Set rsArticleAlaune=conn.Execute(SQLArticleAlaune)
 									id_de_larticle=mid(rsArticleAlaune("URL_DETAIL_INFO"),13,len(rsArticleAlaune("URL_DETAIL_INFO"))-16)
 
-									article_une_url_v3 = rsArticleAlaune("URL_DETAIL_V3")
+									article_une_qstart_v3 = InStr(rsArticleAlaune("URL_DETAIL_V3"),"?")
+									if (article_une_qstart_v3 > 0) then
+										article_une_url_v3 = Replace(rsArticleAlaune("URL_DETAIL_V3"),"?","?fintrack=&amp;",article_une_qstart_v3,1)
+									else
+										article_une_url_v3 = "?fintrack=&amp;"&rsArticleAlaune("URL_DETAIL_V3")
+									end if
 								}}%%}}-->
 								<table border="0" class="row contentALaUne" nlbgcolor="##((nlCntUneBackground))##">
 									<tr>
