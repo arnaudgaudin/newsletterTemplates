@@ -482,6 +482,13 @@ tracking_url = "rep="&repertoire_ei&"&amp;url_site_exp="&url_site_exp
 									else
 										url_chiffre_v3 = "?fintrack=&amp;"&url_chiffre_v3
 									end if
+
+									question_qstart_v3 = InStr(url_question_v3,"?")
+									if (question_qstart_v3 > 0) then
+										url_question_v3 = Replace(url_question_v3,"?","?fintrack=&amp;",question_qstart_v3,1)
+									else
+										url_question_v3 = "?fintrack=&amp;"&url_question_v3
+									end if
 								}}%%}}-->
 								<table border="0" class="row contentBottom">
 									<tr>
