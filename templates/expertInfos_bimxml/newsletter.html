@@ -170,7 +170,7 @@ tracking_url = "rep="&repertoire_ei&"&amp;url_site_exp="&url_site_exp
 														<!--{{%%{{ if isOnline=False then }}%%}}-->
 														<!--{{<gab_lien_message_online>}}-->
 														<span class="online">
-															<small>Pour visualiser ce message en ligne, <a target="_blank" class="link_underline" href="%%{{=online_url}}%%&amp;%%{{=tracking_url}}%%"><span class="important">suivez ce lien</span></a>.</small>
+															<small>Pour visualiser ce message en ligne, <a target="_blank" class="link_underline" href="%%{{=online_url}}%%"><span class="important">suivez ce lien</span></a>.</small>
 														</span>
 														<!--{{</gab_lien_message_online>}}-->
 														<!--{{%%{{ end if }}%%}}-->
@@ -294,7 +294,7 @@ tracking_url = "rep="&repertoire_ei&"&amp;url_site_exp="&url_site_exp
 									id_de_larticle=mid(rsArticleAlaune("URL_DETAIL_INFO"),13,len(rsArticleAlaune("URL_DETAIL_INFO"))-16)
 
 									'Composition lien article'
-									lien_article = "http://"&URL_NL_XML&id_de_larticle&URL_NL_XML_SUF&beginGetParam&tracking_url
+									lien_article = "http://"&URL_NL_XML&id_de_larticle&URL_NL_XML_SUF
 								}}%%}}-->
 								<table border="0" class="row contentALaUne" nlbgcolor="##((nlCntUneBackground))##">
 									<tr>
@@ -362,7 +362,7 @@ tracking_url = "rep="&repertoire_ei&"&amp;url_site_exp="&url_site_exp
 									nbrart=rsCountArt(0)
 
 									'Composition lien article'
-							    	lien_article = "http://"&URL_NL_XML&id_de_larticle&URL_NL_XML_SUF&beginGetParam&tracking_url
+							    	lien_article = "http://"&URL_NL_XML&id_de_larticle&URL_NL_XML_SUF
 
 							    	if (i<(nbrart-1)) then
 								}}%%}}-->
@@ -458,9 +458,9 @@ tracking_url = "rep="&repertoire_ei&"&amp;url_site_exp="&url_site_exp
 														'Composition lien agenda'
 														'Pour aliantis en disco v2bis dans LNET'
 														if (type_perso_site<45) then
-															lien_agenda = "http://"&URL_NL_XML&url_mois1&beginGetParam&tracking_url
+															lien_agenda = "http://"&URL_NL_XML&url_mois1
 														else
-															lien_agenda = "http://"&URL_NL_XML&url_mois1_V3b&beginGetParam&tracking_url
+															lien_agenda = "http://"&URL_NL_XML&url_mois1_V3b
 														end if
 														}}%%}}-->
 														<a target="_blank" class="link_box" href="%%{{=lien_agenda}}%%">
