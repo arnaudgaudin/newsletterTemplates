@@ -507,6 +507,13 @@ tracking_url = "rep="&repertoire_ei&"&amp;url_site_exp="&url_site_exp
 									else
 										URL_DETAIL_ACTU_PRO_V3_3 = "?fintrack=&amp;"&URL_DETAIL_ACTU_PRO_V3_3
 									end if
+
+									chiffre_qstart_v3 = InStr(url_chiffre_v3,"?")
+									if (chiffre_qstart_v3 > 0) then
+										url_chiffre_v3 = Replace(url_chiffre_v3,"?","?fintrack=&amp;",chiffre_qstart_v3,1)
+									else
+										url_chiffre_v3 = "?fintrack=&amp;"&url_chiffre_v3
+									end if
 								}}%%}}-->
 								<table border="0" class="row contentBottom">
 									<tr>
