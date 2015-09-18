@@ -475,6 +475,14 @@ tracking_url = "rep="&repertoire_ei&"&amp;url_site_exp="&url_site_exp
 								<!-- ARTICLES END -->
 
 								<!-- BOTTOM START -->
+								<!--{{%%{{
+									mois1_qstart_v3 = InStr(url_mois1_v3,"?")
+									if (mois1_qstart_v3 > 0) then
+										url_mois1_v3 = Replace(url_mois1_v3,"?","?fintrack=&amp;",mois1_qstart_v3,1)
+									else
+										url_mois1_v3 = "?fintrack=&amp;"&url_mois1_v3
+									end if
+								}}%%}}-->
 								<table border="0" class="row contentBottom">
 									<tr>
 										<td class="agenda wrapper first" nlbgcolor="##((nlCntAgdBackground))##">
