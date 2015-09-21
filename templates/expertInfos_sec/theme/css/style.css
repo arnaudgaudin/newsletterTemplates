@@ -1044,12 +1044,11 @@ h6 {
 }
 
 .preTitle {
-  color: #666666;
-  color: #f39b1e;
+  color: #333333;
 }
 
 .preTitle a {
-  color: #666666;
+  color: #333333;
 }
 
 .preTitle a .important,
@@ -1057,7 +1056,7 @@ h6 {
 .preTitle a:hover,
 .preTitle a:focus,
 .preTitle a:active {
-  color: #666666 !important;
+  color: #333333 !important;
 }
 
 .preTitle .last {
@@ -1073,18 +1072,6 @@ h6 {
 .preTitle .last a:hover,
 .preTitle .last a:focus,
 .preTitle .last a:active {
-  color: #f39b1e !important;
-}
-
-.preTitle a {
-  color: #f39b1e;
-}
-
-.preTitle a .important,
-.preTitle a:visited,
-.preTitle a:hover,
-.preTitle a:focus,
-.preTitle a:active {
   color: #f39b1e !important;
 }
 

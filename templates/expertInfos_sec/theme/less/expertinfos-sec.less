@@ -32,6 +32,12 @@ h4 { line-height: (@headingsFontSizeH4 * 1.1); }
 h5 { line-height: (@headingsFontSizeH5 * 1.1); }
 h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 
+h1, h2, h3, h4, h5, h6 {
+	a {
+		
+	}
+}
+
 .header {
 	//suppression décalage en trop
 	td.wrapper { padding-top: 0px; }
@@ -46,20 +52,14 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 
 //sur titres
 .preTitle {
-	// display: block;
-	// font-size: 14px;
-	// font-weight: bold;
-
-	color: @nlText;
-	a { .newsletterLinkColor(@nlText); }
+	color: @nlHeadings;
+	a { .newsletterLinkColor(@nlHeadings); }
 	.last {
 		color: @colorCouleur1;
 		a { .newsletterLinkColor(@colorCouleur1); }
 	}
 
-	color: @colorCouleur1;
-	a { .newsletterLinkColor(@colorCouleur1); }
-
 	//décalage si précédé
 	* + & { padding-top: 10px; }
 }
+
