@@ -22,6 +22,30 @@
 						<tr>
 							<td>
 
+								<!-- ONLINE START -->
+								<table border="0" class="row contentOnline" nlbgcolor="##((nlCntOnlineBackground))##">
+									<tr>
+										<td class="wrapper last">
+											<table border="0" class="twelve columns">
+												<tr>
+													<td class="text-pad center">
+														<!--{{%%{{ if isOnline=False then }}%%}}-->
+														<!--{{<gab_lien_message_online>}}-->
+														<span class="online">
+															<small>Pour visualiser ce message en ligne, <a target="_blank" class="link_underline" href="%%{{=online_url}}%%&amp;%%{{=tracking_url}}%%"><span class="important">suivez ce lien</span></a>.</small>
+														</span>
+														<!--{{</gab_lien_message_online>}}-->
+														<!--{{%%{{ end if }}%%}}-->
+														<br/><span class="name"><strong><!--{{%%{{=civilite}}%%}}--><!--DEL{{-->civilite<!--}}DEL-->&nbsp;<!--{{%%{{=nom_client}}%%}}--><!--DEL{{-->nom_client<!--}}DEL-->, votre newsletter du <a class="link_disabled" href="#"><span class="important"><!--{{%%{{=get_date}}%%}}--><!--DEL{{-->get_date<!--}}DEL--></span></a>.</strong></span>
+													</td>
+													<td class="expander" nlbgcolor="##((nlCntOnlineBackground))##"></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+					        	<!-- ONLINE END -->
+
 								<!--{{%%{{ if logo_groupement=True then }}%%}}-->
 								<!-- HEADER GROUPE START -->
 								<table border="0" class="row header" nlbgcolor="##((nlBodyBackground))##">
@@ -64,6 +88,65 @@
 								</table>
 								<!-- HEADER END -->
 								<!--{{%%{{ end if }}%%}}-->
+
+								<!--{{%%{{ if(texte_vacances <> "") then }}%%}}-->
+								<!-- TEXTEVACANCES START -->
+								<table border="0" class="row contentCabInform" nlbgcolor="##((nlCntCabBackground))##">
+									<tr>
+										<td class="wrapper last">
+											<table border="0" class="twelve columns">
+												<tr>
+													<td class="text-pad">
+														<!--{{%%{{=texte_vacances}}%%}}--><!--DEL{{-->texte_vacances<!--}}DEL-->
+													</td>
+													<td class="expander" nlbgcolor="##((nlCntCabBackground))##"></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+								<!-- TEXTEVACANCES END -->
+								<!--{{%%{{ end if }}%%}}-->
+								
+								<!--{{%%{{
+								if ((rsCount(0)>0)) then
+									if not rs.eof then 
+										while not (rs.eof)
+								}}%%}}-->
+								<!-- CABINFORM START -->
+								<table border="0" class="row contentCabInform" nlbgcolor="##((nlCntCabBackground))##">
+									<tr>
+										<td class="wrapper last">
+											<table border="0" class="twelve columns">
+												<tr>
+													<td class="text-pad">
+														<!--{{%%{{
+														lien_cab=rs("lien")
+														if (lien_cab <> "") then
+														}}%%}}-->
+														<h2 class="title"><a target="_blank" href="%%{{=lien_cab}}%%"><!--{{%%{{=rs("titre")}}%%}}--><!--DEL{{-->titre<!--}}DEL--></a></h2>
+														<a target="_blank" class="link_box" href="%%{{=lien_cab}}%%">
+															<span class="text"><!--{{%%{{=rs("texte")}}%%}}--><!--DEL{{-->texte<!--}}DEL--></span>
+															<br/><span class="readMore"><span class="icon-rsaquo">&rsaquo;</span>&#160;lire la suite</span></span>
+														</a>
+														<!--{{%%{{ else }}%%}}-->
+														<h2 class="title"><!--{{%%{{=rs("titre")}}%%}}--><!--DEL{{-->titre<!--}}DEL--></h2>
+														<span class="text"><!--{{%%{{=rs("texte")}}%%}}--><!--DEL{{-->texte<!--}}DEL--></span>
+														<!--{{%%{{ end if }}%%}}-->
+													</td>
+													<td class="expander" nlbgcolor="##((nlCntCabBackground))##"></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+								<!-- CABINFORM END -->
+								<!--{{%%{{
+										rs.movenext
+										wend
+									end if
+								end if
+								}}%%}}-->
 
 
 							</td>
