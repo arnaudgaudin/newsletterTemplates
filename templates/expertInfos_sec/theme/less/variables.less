@@ -6,17 +6,30 @@
 @avocatInfosViolet: #79468c;	//Violet foncé : #452258 => darken 15%
 
 
+// Secteur - sections
+// -------------------------
+//listing de tous les motifs TESTA des secteurs
+@secteur-section-motifs: BTP, SAN, TRA, COM, HCR;
+
+//couleurs associées à chacun des motifs des secteurs
+@secteur-section-color-BTP: #f39b1e;					//bâtiment travaux publics
+@secteur-section-color-SAN: #20a611;					//santé
+@secteur-section-color-TRA: #e7503d;					//transport
+@secteur-section-color-COM: #9186bc;					//commerce
+@secteur-section-color-HCR: #c9526f;					//hotels cafés restaurants
+
+
 // Main colors
 // -------------------------
-@colorCouleur1: @avocatInfosOrange;
+@colorCouleur1: @secteur-section-color-BTP;
 @colorCouleur1Clair: lighten(@colorCouleur1, 25%);
 @colorCouleur1Moyen: darken(@colorCouleur1, 15%);
 @colorCouleur1Fonce: darken(@colorCouleur1, 30%);
 
-@colorCouleur2: @avocatInfosViolet;
-@colorCouleur2Clair: lighten(@colorCouleur2, 20%);
-@colorCouleur2Moyen: darken(@colorCouleur2, 15%);
-@colorCouleur2Fonce: darken(@colorCouleur2, 30%);
+@colorCouleur2: #4f5966;
+@colorCouleur2Clair: lighten(@colorCouleur2, 25%);
+@colorCouleur2Moyen: darken(@colorCouleur2, 10%);
+@colorCouleur2Fonce: darken(@colorCouleur2, 20%);
 
 @colorCouleur3: #919191;
 @colorCouleur3Clair: lighten(@colorCouleur3, 35%);
