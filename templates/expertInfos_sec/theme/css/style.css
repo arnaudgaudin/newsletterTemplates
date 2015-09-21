@@ -103,8 +103,8 @@ td {
 }
 
 hr {
-  color: #4f5966;
-  background-color: #4f5966;
+  color: #f39b1e;
+  background-color: #f39b1e;
   height: 1px;
   border: none;
 }
@@ -1034,6 +1034,15 @@ h6 {
   line-height: 15.4px;
 }
 
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: #333333;
+}
+
 .header td.wrapper {
   padding-top: 0px;
 }
@@ -1077,6 +1086,61 @@ h6 {
 
 * + .preTitle {
   padding-top: 10px;
+}
+
+* + .text {
+  padding-top: 5px;
+}
+
+.readMore {
+  text-align: right;
+  font-size: 10.2px;
+  margin: 0px;
+  color: #f39b1e;
+}
+
+.readMore a {
+  color: #f39b1e;
+}
+
+.readMore a .important,
+.readMore a:visited,
+.readMore a:hover,
+.readMore a:focus,
+.readMore a:active {
+  color: #f39b1e !important;
+}
+
+* + .readMore {
+  padding-top: 5px;
+}
+
+.row.bordered td.wrapper {
+  padding-top: 0px;
+}
+
+.row.bordered table.columns td,
+.row.bordered table.column td {
+  padding-bottom: 0px;
+}
+
+.row.bordered td {
+  line-height: 0px;
+}
+
+.row.bordered td hr.border {
+  margin: 0px;
+  background-color: transparent;
+  height: 0px;
+}
+
+hr {
+  color: #f39b1e;
+  -premailer-background: #f39b1e;
+}
+
+.row.bordered td hr.border {
+  border-bottom: 1px solid #f39b1e;
 }
 
 @media only screen and (max-width: 720px) {
@@ -1251,6 +1315,15 @@ h6 {
 
   table[class="body"] .header table.columns td,
   table[class="body"] .header table.column td {
+    padding-bottom: 0px !important;
+  }
+
+  table[class="body"] .row.bordered td.wrapper {
+    padding-top: 0px !important;
+  }
+
+  table[class="body"] .row.bordered table.columns td,
+  table[class="body"] .row.bordered table.column td {
     padding-bottom: 0px !important;
   }
 }
