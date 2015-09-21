@@ -392,7 +392,165 @@
 								</table>
 								<!-- BOTTOM END -->
 
+								<!-- CONTACT START -->
+								<table border="0" class="row contentContact" nlbgcolor="##((nlCntCctBackground))##">
+									<tr>
+										<td class="wrapper first">
+										<!--{{%%{{ if(isSocialNetwork=False)Then }}%%}}-->
+											<table border="0" class="twelve columns -premailer-hidden"><!--DEL{{--></table><!--}}DEL-->
+										<!--{{%%{{ else }}%%}}-->
+											<table border="0" class="seven columns">
+										<!--{{%%{{ end if }}%%}}-->
+												<tr>
+													<td class="text-pad">
+														<strong><!--{{%%{{ if (len(trim(type_client)) > 1) then response.write(type_client & " ") end if }}%%%%{{=raison_sociale_exp}}%%}}--><!--DEL{{-->raison_sociale_exp<!--}}DEL--></strong>
+														<br/>
+														<!--{{%%{{ lien_adresse=Server.URLEncode(adresse1_exp & " " & adresse2_exp & " " & code_postal_exp & " " & commune_exp) }}%%}}-->
+														<a target="_blank" href="http://maps.apple.com/?q=%%{{=lien_adresse}}%%"><span class="important"><!--{{%%{{
+															'affichage adresse1'
+															nbc_desc=len(adresse1_exp)
+															k=1
+															while k <= nbc_desc
+																carn=asc(Mid(adresse1_exp,k,1))
+																car=Mid(adresse1_exp,k,1)
+																if carn = 10 then
+																	Response.Write "&nbsp;-&nbsp;"
+																else
+																	Response.Write(car)
+																end if
+																k=k+1
+															wend
+															Response.Write "&nbsp;-&nbsp;"
+															'affichage adresse2'
+															if (len(trim(adresse2_exp)) > 1) then
+																nbc_desc=len(adresse2_exp)
+																k=1
+																while k <= nbc_desc
+																	carn=asc(Mid(adresse2_exp,k,1))
+																	car=Mid(adresse2_exp,k,1)
+																	if carn = 10 then
+																		Response.Write "&nbsp;-&nbsp;"
+																	else
+																		Response.Write(car)
+																	end if
+																	k=k+1
+																wend 
+																Response.Write "&nbsp;-&nbsp;"
+															end if 
+															if (len(trim(code_postal_exp)) > 1) then response.write(code_postal_exp &"&nbsp;")  end if
+															if (len(trim(commune_exp)) > 1) then response.write(commune_exp) end if
+														}}%%}}--><!--DEL{{-->adresse<!--}}DEL--></span></a>
+														<!--{{%%{{ if (len(trim(tel_cabinet)) > 1) then }}%%}}-->
+														<br/>
+														<img class="faicon" src="http://www.expert-infos.com/_newsletter/_logos/faicon-phone.gif" alt="Téléphone" width="15" height="15" />&#160;T&eacute;l. <span class="appleLinks"><a href="tel:%%{{=tel_cabinet}}%%"><span class="important"><!--{{%%{{=tel_cabinet}}%%}}--><!--DEL{{-->tel_cabinet<!--}}DEL--></span></a></span>
+														<!--{{%%{{ end if }}%%}}-->
+														<!--{{%%{{ if (len(trim(fax_cabinet)) > 1) then }}%%}}-->
+														&#160;-&#160;<img class="faicon" src="http://www.expert-infos.com/_newsletter/_logos/faicon-print.gif" alt="Téléphone" width="15" height="15" />&#160;Fax&#160;: <a class="link_disabled" href="#"><span class="important"><!--{{%%{{=fax_cabinet}}%%}}--><!--DEL{{-->fax_cabinet<!--}}DEL--></span></a>
+														<!--{{%%{{ end if }}%%}}-->
 
+														<br/>
+														<img class="faicon" src="http://www.expert-infos.com/_newsletter/_logos/faicon-envelope.gif" alt="Email" width="15" height="15" />&#160;<a class="link_underline" href="mailto:%%{{=email_exp}}%%"><span class="important"><!--{{%%{{=email_exp}}%%}}--><!--DEL{{-->email_exp<!--}}DEL--></span></a>
+														-
+														<!--{{%%{{
+														if type_abo="4" then
+															url_site_exp = rsCabinet("url_site_exp")
+														end if
+														}}%%}}-->
+														<a target="_blank" class="link_underline" href="http://%%{{=url_site_exp}}%%?fintrack=&amp;%%{{=tracking_url}}%%"><span class="important"><!--{{%%{{=url_site_exp}}%%}}--><!--DEL{{-->url_site_exp<!--}}DEL--></span></a>
+													</td>
+													<td class="expander" nlbgcolor="##((nlCntCctBackground))##"></td>
+												</tr>
+											</table>
+										</td>
+										<!--{{%%{{ if(isSocialNetwork=True)Then }}%%}}-->
+										<td class="faicons wrapper last">
+											<table border="0" class="five columns">
+												<tr>
+													<td class="text-pad">
+														<!--{{%%{{ if (url_facebook<>"") then }}%%}}-->
+														<a target="_blank" class="faicon first" href="http://%%{{=url_facebook}}%%">
+															<img src="http://www.expert-infos.com/_newsletter/_logos/faicon-facebook.gif" alt="Facebook" width="15" height="15" />
+														</a>
+														<!--{{%%{{ end if }}%%}}-->
+														<!--{{%%{{ if (url_google<>"") then }}%%}}-->
+														<a target="_blank" class="faicon" href="http://%%{{=url_google}}%%">
+															<img src="http://www.expert-infos.com/_newsletter/_logos/faicon-googleplus.gif" alt="Google+" width="15" height="15" />
+														</a>
+														<!--{{%%{{ end if }}%%}}-->
+														<!--{{%%{{ if (url_linkedin<>"") then }}%%}}-->
+														<a target="_blank" class="faicon" href="http://%%{{=url_linkedin}}%%">
+															<img src="http://www.expert-infos.com/_newsletter/_logos/faicon-linkedin.gif" alt="Linkedin" width="15" height="15" />
+														</a>
+														<!--{{%%{{ end if }}%%}}-->
+														<!--{{%%{{ if (url_twitter<>"") then }}%%}}-->
+														<a target="_blank" class="faicon" href="http://%%{{=url_twitter}}%%">
+															<img src="http://www.expert-infos.com/_newsletter/_logos/faicon-twitter.gif" alt="Twitter" width="15" height="15" />
+														</a>
+														<!--{{%%{{ end if }}%%}}-->
+														<!--{{%%{{ if (url_viadeo<>"") then }}%%}}-->
+														<a target="_blank" class="faicon" href="http://%%{{=url_viadeo}}%%">
+															<img src="http://www.expert-infos.com/_newsletter/_logos/faicon-viadeo.gif" alt="Viadeo" width="15" height="15" />
+														</a>
+														<!--{{%%{{ end if }}%%}}-->
+														<!--{{%%{{ if (url_vimeo<>"") then }}%%}}-->
+														<a target="_blank" class="faicon" href="http://%%{{=url_vimeo}}%%">
+															<img src="http://www.expert-infos.com/_newsletter/_logos/faicon-vimeo.gif" alt="Vimeo" width="15" height="15" />
+														</a>
+														<!--{{%%{{ end if }}%%}}-->
+														<!--{{%%{{ if (url_youtube<>"") then }}%%}}-->
+														<a target="_blank" class="faicon last" href="http://%%{{=url_youtube}}%%">
+															<img src="http://www.expert-infos.com/_newsletter/_logos/faicon-youtube.gif" alt="Youtube" width="15" height="15" />
+														</a>
+														<!--{{%%{{ end if }}%%}}-->
+													</td>
+													<td class="expander" nlbgcolor="##((nlCntCctBackground))##"></td>
+												</tr>
+											</table>
+										</td>
+										<!--{{%%{{ end if }}%%}}-->
+									</tr>
+								</table>
+								<table border="0" class="row contentContact bordered" nlbgcolor="##((nlCntCctBackground))##">
+									<tr>
+										<td class="wrapper first">
+											<table border="0" class="twelve columns">
+												<tr>
+													<td class="center text-pad"><hr class="border" /></td>
+													<td class="expander" nlbgcolor="##((nlCntCctBackground))##"></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+								<!-- CONTACT END -->
+
+								<!--{{%%{{ if(isDemo=False)Then }}%%}}-->
+								<!-- FOOTER START -->
+								<!--{{<gab_lien_blackliste>}}-->
+								<!--{{%%{{
+								if (type_abo="4") then
+									url_site_exp = rsCabinet("repertoire_ei")&".expert-infos.com"
+								end if
+								}}%%}}-->
+								<table border="0" class="row footer" nlbgcolor="##((nlFooterBackground))##">
+									<tr>
+										<td class="wrapper last">
+											<table border="0" class="twelve columns">
+												<tr>
+													<td class="center text-pad">
+														<small>
+															Si vous ne souhaitez plus recevoir cette newsletter, veuillez accéder à la page de <a target="_blank" class="link_underline" href="#" lien_blackliste="lien_blackliste"><span class="important">désinscription</span></a>.
+														</small>
+													</td>
+													<td class="expander" nlbgcolor="##((nlFooterBackground))##"></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+								<!--{{</gab_lien_blackliste>}}-->
+								<!-- FOOTER END -->
+								<!--{{%%{{ end if }}%%}}-->
 							</td>
 						</tr>
 					</table>
