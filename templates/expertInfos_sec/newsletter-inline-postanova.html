@@ -582,14 +582,14 @@ text-decoration: underline; cursor: pointer;
 											<table border="0" class="twelve columns" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 720px" width="720" cellpadding="0" cellspacing="0">
 												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 													<td class="text-pad" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px 40px 20px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
-														<div class="preTitle">&#195;&#128; la une</div>
+														<div class="preTitle">&#192; la une</div>
 														<h2 class="title" style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 26px; font-weight: bold; line-height: 28.6px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; word-break: normal" align="left">
 															<a target="_blank" href="http://<%=url_site_exp%>/<%=article_une_url_v3%>&amp;<%=tracking_url%>" style="color: #666666; text-decoration: none">
 																<% if article_une_rub <> "" then %><span class="category"><%=article_une_rub%>.</span> <% end if %><%=article_une_titre%>
 															</a>
 														</h2>
 														<a target="_blank" class="link_box" href="http://<%=url_site_exp%>/<%=article_une_url_v3%>&amp;<%=tracking_url%>" style="color: #666666; display: block; outline: none; text-decoration: none">
-															<img class="center" src="http://e-newsletter.expert-infos.com/_infos/_photos/<%=id_de_larticle%>-h.jpg" width="640" height="293" alt="Article &#195;&#160; la Une" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: none; margin: 0 auto; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none" />
+															<img class="center" src="http://e-newsletter.expert-infos.com/_infos/_photos/<%=id_de_larticle%>-h.jpg" width="640" height="293" alt="Article &#224; la Une" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: none; margin: 0 auto; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none" />
 														</a>
 														<div class="text">
 															<a target="_blank" href="http://<%=url_site_exp%>/<%=article_une_url_v3%>&amp;<%=tracking_url%>" style="color: #666666; text-decoration: none">
@@ -609,6 +609,228 @@ text-decoration: underline; cursor: pointer;
 									</tr>
 								</table>
 								<!-- ALAUNE END -->
+
+								<!-- ARTICLES START -->
+								<%
+								if isDemo=True then
+									sql_Chapitre_Flash_Infos="SELECT * FROM CHAPITRES_FLASHS_INFOS where ID_FLASH_INFOS = "& ID_FLASH_INFOS &" order by ORDRE_CHAPITRE_FLASH_INFOS DESC"
+									set rs_Chapitre_Flash_Infos=conn.execute(sql_Chapitre_Flash_Infos)
+									                          
+									if not rs_Chapitre_Flash_Infos.eof then
+										while not rs_Chapitre_Flash_Infos.eof
+											idarticle_1=rs_Chapitre_Flash_Infos(0)
+											rs_Chapitre_Flash_Infos.movenext
+											if idarticle_1<>idarticleAlaune then
+												idarticle= idarticle_1 &"-"& idarticle
+											end if
+										wend
+									end if
+								end if
+
+								if isDemo=False then
+									idarticle=idarticle&"-"
+								end if
+								%>
+								<table border="0" class="row contentArticles" style="border-collapse: collapse; border-spacing: 0; display: block; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px; text-align: left; vertical-align: top; width: 100%" width="100%" cellpadding="0" cellspacing="0">
+									<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+										<td class="wrapper last" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 20px 0px 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+											<table border="0" class="twelve columns" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 720px" width="720" cellpadding="0" cellspacing="0">
+												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+													<td class="text-pad" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px 40px 20px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+														<div class="preTitle">Autres actualit&#233;s</div>
+														<%
+														if idarticle="" then request.QueryString("amp;idarticle")
+														article=Mid(idarticle,1,(len(idarticle)))
+														nbc_desc=len(article)
+														k=1
+														i=1
+														
+										    			while k <= nbc_desc
+														carn=asc(Mid(article,k,1))
+														car=Mid(article,k,1)
+														if carn = 45 then
+															SQLArticle="SELECT * FROM CHAPITRES_FLASHS_INFOS WHERE (IDCHAPITRE_FLASH_INFOS = "& cart &")"
+															Set rsArticle=conn.Execute(SQLArticle)
+															id_de_larticle=mid(rsArticle("URL_DETAIL_INFO"),13,len(rsArticle("URL_DETAIL_INFO"))-16)
+															
+															SQLIdArticle="SELECT * FROM CHAPITRES_FLASHS_INFOS WHERE (IDCHAPITRE_FLASH_INFOS = "& cart &")"
+															Set rsIdArticle=conn.Execute(SQLIdArticle)
+															id_flash=rsIdArticle("ID_FLASH_INFOS")
+																												
+															CountArt="SELECT COUNT(*) FROM CHAPITRES_FLASHS_INFOS WHERE ID_FLASH_INFOS="& id_flash
+															set rsCountArt=conn.Execute(CountArt)
+															nbrart=rsCountArt(0)
+
+															article_qstart_v3 = InStr(rsArticle("URL_DETAIL_V3"),"?")
+															if (article_qstart_v3 > 0) then
+																article_url_v3 = Replace(rsArticle("URL_DETAIL_V3"),"?","?fintrack=&amp;",article_qstart_v3,1)
+															else
+																article_url_v3 = "?fintrack=&amp;"&rsArticle("URL_DETAIL_V3")
+															end if
+
+															article_rub = ""
+															article_titre = rsArticle("TITRE_CHAPITRE_FLASH_INFOS")
+															
+															rub_start = (InStr(article_titre,"$${{") + 4)
+															rub_end = InStr(article_titre,"}}$$")
+															rub_len = (rub_end - rub_start)
+															if(rub_len > 0) then
+																article_rub = Mid(article_titre, rub_start, rub_len)
+																article_titre = Mid(article_titre, (rub_end + 4))
+															end if
+														%>
+														<h3 class="title" style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 20px; font-weight: bold; line-height: 22px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; word-break: normal" align="left">
+															<a target="_blank" href="http://<%=url_site_exp%>/<%=article_url_v3%>&amp;<%=tracking_url%>" style="color: #666666; text-decoration: none">
+																<% if article_rub <> "" then %><span class="category"><%=article_rub%>.</span> <% end if %><%=article_titre%>
+															</a>
+														</h3>
+														<div class="text">
+															<a target="_blank" href="http://<%=url_site_exp%>/<%=article_url_v3%>&amp;<%=tracking_url%>" style="color: #666666; text-decoration: none">
+																<%=rsArticle("CONTENU_CHAPITRE_FLASH_INFOS")%>
+															</a>
+														</div>
+														<p class="readMore" style="color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; line-height: 16px; margin: 0 0 10px; padding: 0; text-align: left" align="left">
+															<a target="_blank" href="http://<%=url_site_exp%>/<%=article_url_v3%>&amp;<%=tracking_url%>" style="color: #666666; text-decoration: none">
+																Lire la suite
+															</a>
+														</p>
+														<%
+															i=i+1
+																cart=""
+															else
+															    cart=cart+car
+															end if
+															k=k+1
+															wend
+														%>
+													</td>
+													<td class="expander" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word" align="left" valign="top" width="1"></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+								<!-- ARTICLES END -->
+
+								<!-- BOTTOM START -->
+								<table border="0" class="row contentBottom" style="border-collapse: collapse; border-spacing: 0; display: block; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px; text-align: left; vertical-align: top; width: 100%" width="100%" cellpadding="0" cellspacing="0">
+									<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+										<td class="chiffre wrapper first" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 20px 0px 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+											<table border="0" class="four columns" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 240px" width="240" cellpadding="0" cellspacing="0">
+												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+													<td class="wrapper-round" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px 0px 20px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+														<center style="min-width: 240px; width: 100%">
+															<table border="0" class="round" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top" cellpadding="0" cellspacing="0">
+																<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+																	<td class="sub-columns first hide-for-small" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; border-radius: 500px; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; min-width: 0px; padding: 0px 0px 20px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">&#160;</td>
+																	<td class="sub-columns value" bgcolor="<%=colorParsing.Item("nlCntChfBackground")%>" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; border-radius: 500px; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; min-width: 0px; padding: 0px 0px 20px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+																		<p class="inner" style="color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; line-height: 16px; margin: 0 0 10px; padding: 0; text-align: left" align="left">
+																			<a target="_blank" class="link_box" href="http://<%=url_site_exp%>/?fintrack=&amp;article=<%=chiffre_id%>&amp;<%=tracking_url%>" style="color: #666666; display: block; outline: none; text-decoration: none">
+																				<%=chiffre_valeur%>
+																			</a>
+																		</p>
+																	</td>
+																	<td class="sub-columns last hide-for-small" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; border-radius: 500px; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; min-width: 0px; padding: 0px 0px 20px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">&#160;</td>
+																</tr>
+															</table>
+														</center>
+														<table class="wrapper-text" border="0" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top" cellpadding="0" cellspacing="0">
+															<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+																<td class="center text-pad" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px 40px 20px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
+																	<h4 class="title" style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold; line-height: 17.6px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; word-break: normal" align="left">
+																		<a target="_blank" href="http://<%=url_site_exp%>/?fintrack=&amp;article=<%=chiffre_id%>&amp;<%=tracking_url%>" style="color: #666666; text-decoration: none">Le chiffre</a>
+																	</h4>
+																	<div class="text">
+																		<a target="_blank" href="http://<%=url_site_exp%>/?fintrack=&amp;article=<%=chiffre_id%>&amp;<%=tracking_url%>" style="color: #666666; text-decoration: none">
+																			<%=chiffre_titre%>
+																		</a>
+																	</div>
+																</td>
+															</tr>
+														</table>
+													</td>
+													<td class="expander" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word" align="left" valign="top" width="1"></td>
+												</tr>
+											</table>
+										</td>
+										<td class="question wrapper" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 20px 0px 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+											<table border="0" class="four columns" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 240px" width="240" cellpadding="0" cellspacing="0">
+												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+													<td class="wrapper-round" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px 0px 20px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+														<center style="min-width: 240px; width: 100%">
+															<table border="0" class="round" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top" cellpadding="0" cellspacing="0">
+																<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+																	<td class="sub-columns first hide-for-small" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; border-radius: 500px; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; min-width: 0px; padding: 0px 0px 20px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">&#160;</td>
+																	<td class="sub-columns value" bgcolor="<%=colorParsing.Item("nlCntQtnBackground")%>" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; border-radius: 500px; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; min-width: 0px; padding: 0px 0px 20px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+																		<p class="inner" style="color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; line-height: 16px; margin: 0 0 10px; padding: 0; text-align: left" align="left">
+																			<a target="_blank" class="link_box" href="http://<%=url_site_exp%>/?fintrack=&amp;article=<%=question_id%>&amp;<%=tracking_url%>" style="color: #666666; display: block; outline: none; text-decoration: none">?</a>
+																		</p>
+																	</td>
+																	<td class="sub-columns last hide-for-small" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; border-radius: 500px; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; min-width: 0px; padding: 0px 0px 20px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">&#160;</td>
+																</tr>
+															</table>
+														</center>
+														<table class="wrapper-text" border="0" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top" cellpadding="0" cellspacing="0">
+															<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+																<td class="center text-pad" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px 40px 20px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
+																	<h4 class="title" style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold; line-height: 17.6px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; word-break: normal" align="left">
+																		<a target="_blank" href="http://<%=url_site_exp%>/?fintrack=&amp;article=<%=question_id%>&amp;<%=tracking_url%>" style="color: #666666; text-decoration: none">La question</a>
+																	</h4>
+																	<div class="text">
+																		<a target="_blank" href="http://<%=url_site_exp%>/?fintrack=&amp;article=<%=question_id%>&amp;<%=tracking_url%>" style="color: #666666; text-decoration: none">
+																			<%=question_titre%>
+																		</a>
+																	</div>
+																</td>
+															</tr>
+														</table>
+													</td>
+													<td class="expander" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word" align="left" valign="top" width="1"></td>
+												</tr>
+											</table>
+										</td>
+										<td class="echeancier wrapper last" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 20px 0px 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+											<table border="0" class="four columns" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 240px" width="240" cellpadding="0" cellspacing="0">
+												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+													<td class="wrapper-round" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px 0px 20px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+														<center style="min-width: 240px; width: 100%">
+															<table border="0" class="round" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top" cellpadding="0" cellspacing="0">
+																<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+																	<td class="sub-columns first hide-for-small" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; border-radius: 500px; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; min-width: 0px; padding: 0px 0px 20px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">&#160;</td>
+																	<td class="sub-columns value" bgcolor="<%=colorParsing.Item("nlCntAgdBackground")%>" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; border-radius: 500px; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; min-width: 0px; padding: 0px 0px 20px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+																		<p class="inner day" style="color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; line-height: 16px; margin: 0 0 10px; padding: 0; text-align: left" align="left">
+																			<a target="_blank" class="link_box" href="http://<%=url_site_exp%>/?fintrack=&amp;article=<%=agenda_id%>&amp;collapse=collapse<%=agenda_collapse%>&amp;<%=tracking_url%>" style="color: #666666; display: block; outline: none; text-decoration: none"><%=agenda_jour%></a>
+																		</p>
+																		<p class="inner month" style="color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; line-height: 16px; margin: 0 0 10px; padding: 0; text-align: left" align="left">
+																			<a target="_blank" class="link_box" href="http://<%=url_site_exp%>/?fintrack=&amp;article=<%=agenda_id%>&amp;collapse=collapse<%=agenda_collapse%>&amp;<%=tracking_url%>" style="color: #666666; display: block; outline: none; text-decoration: none"><%=agenda_mois_texte%></a>
+																		</p>
+																	</td>
+																	<td class="sub-columns last hide-for-small" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; border-radius: 500px; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; min-width: 0px; padding: 0px 0px 20px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">&#160;</td>
+																</tr>
+															</table>
+														</center>
+														<table class="wrapper-text" border="0" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top" cellpadding="0" cellspacing="0">
+															<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+																<td class="center text-pad" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px 40px 20px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
+																	<h4 class="title" style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold; line-height: 17.6px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; word-break: normal" align="left">
+																		<a target="_blank" href="http://<%=url_site_exp%>/?fintrack=&amp;article=<%=agenda_id%>&amp;collapse=collapse<%=agenda_collapse%>&amp;<%=tracking_url%>" style="color: #666666; text-decoration: none">Le&#160;rappel</a>
+																	</h4>
+																	<div class="text">
+																		<a target="_blank" href="http://<%=url_site_exp%>/?fintrack=&amp;article=<%=agenda_id%>&amp;collapse=collapse<%=agenda_collapse%>&amp;<%=tracking_url%>" style="color: #666666; text-decoration: none">
+																			<%=agenda_titre%>
+																		</a>
+																	</div>
+																</td>
+															</tr>
+														</table>
+													</td>
+													<td class="expander" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word" align="left" valign="top" width="1"></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+								<!-- BOTTOM END -->
 
 
 							</td>

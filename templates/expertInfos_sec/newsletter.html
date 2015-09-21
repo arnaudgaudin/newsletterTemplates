@@ -198,14 +198,14 @@
 											<table border="0" class="twelve columns">
 												<tr>
 													<td class="text-pad">
-														<div class="preTitle">Ã€ la une</div>
+														<div class="preTitle">À la une</div>
 														<h2 class="title">
 															<a target="_blank" href="http://%%{{=url_site_exp}}%%/%%{{=article_une_url_v3}}%%&amp;%%{{=tracking_url}}%%">
 																<!--{{%%{{ if article_une_rub <> "" then }}%%}}--><span class="category"><!--{{%%{{=article_une_rub}}%%}}--><!--DEL{{-->article_une_rub<!--}}DEL-->.</span> <!--{{%%{{ end if }}%%}}--><!--{{%%{{=article_une_titre}}%%}}--><!--DEL{{-->article_une_titre<!--}}DEL-->
 															</a>
 														</h2>
 														<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/%%{{=article_une_url_v3}}%%&amp;%%{{=tracking_url}}%%">
-															<img class="center" src="http://e-newsletter.expert-infos.com/_infos/_photos/%%{{=id_de_larticle}}%%-h.jpg" width="640" height="293" alt="Article Ã  la Une" /><!--DEL{{--><img class="center" src="http://lorempixel.com/1280/586/business/" width="640" height="293" alt="" /><!--}}DEL-->
+															<img class="center" src="http://e-newsletter.expert-infos.com/_infos/_photos/%%{{=id_de_larticle}}%%-h.jpg" width="640" height="293" alt="Article à la Une" /><!--DEL{{--><img class="center" src="http://lorempixel.com/1280/586/business/" width="640" height="293" alt="" /><!--}}DEL-->
 														</a>
 														<div class="text">
 															<a target="_blank" href="http://%%{{=url_site_exp}}%%/%%{{=article_une_url_v3}}%%&amp;%%{{=tracking_url}}%%">
@@ -225,6 +225,228 @@
 									</tr>
 								</table>
 								<!-- ALAUNE END -->
+
+								<!-- ARTICLES START -->
+								<!--{{%%{{
+								if isDemo=True then
+									sql_Chapitre_Flash_Infos="SELECT * FROM CHAPITRES_FLASHS_INFOS where ID_FLASH_INFOS = "& ID_FLASH_INFOS &" order by ORDRE_CHAPITRE_FLASH_INFOS DESC"
+									set rs_Chapitre_Flash_Infos=conn.execute(sql_Chapitre_Flash_Infos)
+									                          
+									if not rs_Chapitre_Flash_Infos.eof then
+										while not rs_Chapitre_Flash_Infos.eof
+											idarticle_1=rs_Chapitre_Flash_Infos(0)
+											rs_Chapitre_Flash_Infos.movenext
+											if idarticle_1<>idarticleAlaune then
+												idarticle= idarticle_1 &"-"& idarticle
+											end if
+										wend
+									end if
+								end if
+
+								if isDemo=False then
+									idarticle=idarticle&"-"
+								end if
+								}}%%}}-->
+								<table border="0" class="row contentArticles">
+									<tr>
+										<td class="wrapper last">
+											<table border="0" class="twelve columns">
+												<tr>
+													<td class="text-pad">
+														<div class="preTitle">Autres actualités</div>
+														<!--{{%%{{
+														if idarticle="" then request.QueryString("amp;idarticle")
+														article=Mid(idarticle,1,(len(idarticle)))
+														nbc_desc=len(article)
+														k=1
+														i=1
+														
+										    			while k <= nbc_desc
+														carn=asc(Mid(article,k,1))
+														car=Mid(article,k,1)
+														if carn = 45 then
+															SQLArticle="SELECT * FROM CHAPITRES_FLASHS_INFOS WHERE (IDCHAPITRE_FLASH_INFOS = "& cart &")"
+															Set rsArticle=conn.Execute(SQLArticle)
+															id_de_larticle=mid(rsArticle("URL_DETAIL_INFO"),13,len(rsArticle("URL_DETAIL_INFO"))-16)
+															
+															SQLIdArticle="SELECT * FROM CHAPITRES_FLASHS_INFOS WHERE (IDCHAPITRE_FLASH_INFOS = "& cart &")"
+															Set rsIdArticle=conn.Execute(SQLIdArticle)
+															id_flash=rsIdArticle("ID_FLASH_INFOS")
+																												
+															CountArt="SELECT COUNT(*) FROM CHAPITRES_FLASHS_INFOS WHERE ID_FLASH_INFOS="& id_flash
+															set rsCountArt=conn.Execute(CountArt)
+															nbrart=rsCountArt(0)
+
+															article_qstart_v3 = InStr(rsArticle("URL_DETAIL_V3"),"?")
+															if (article_qstart_v3 > 0) then
+																article_url_v3 = Replace(rsArticle("URL_DETAIL_V3"),"?","?fintrack=&amp;",article_qstart_v3,1)
+															else
+																article_url_v3 = "?fintrack=&amp;"&rsArticle("URL_DETAIL_V3")
+															end if
+
+															article_rub = ""
+															article_titre = rsArticle("TITRE_CHAPITRE_FLASH_INFOS")
+															
+															rub_start = (InStr(article_titre,"$${{") + 4)
+															rub_end = InStr(article_titre,"}}$$")
+															rub_len = (rub_end - rub_start)
+															if(rub_len > 0) then
+																article_rub = Mid(article_titre, rub_start, rub_len)
+																article_titre = Mid(article_titre, (rub_end + 4))
+															end if
+														}}%%}}-->
+														<h3 class="title">
+															<a target="_blank" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%&amp;%%{{=tracking_url}}%%">
+																<!--{{%%{{ if article_rub <> "" then }}%%}}--><span class="category"><!--{{%%{{=article_rub}}%%}}--><!--DEL{{-->article_rub<!--}}DEL-->.</span> <!--{{%%{{ end if }}%%}}--><!--{{%%{{=article_titre}}%%}}--><!--DEL{{-->article_titre<!--}}DEL-->
+															</a>
+														</h3>
+														<div class="text">
+															<a target="_blank" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%&amp;%%{{=tracking_url}}%%">
+																<!--{{%%{{=rsArticle("CONTENU_CHAPITRE_FLASH_INFOS")}}%%}}--><!--DEL{{-->CONTENU_CHAPITRE_FLASH_INFOS<!--}}DEL-->
+															</a>
+														</div>
+														<p class="readMore">
+															<a target="_blank" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%&amp;%%{{=tracking_url}}%%">
+																Lire la suite
+															</a>
+														</p>
+														<!--{{%%{{
+															i=i+1
+																cart=""
+															else
+															    cart=cart+car
+															end if
+															k=k+1
+															wend
+														}}%%}}-->
+													</td>
+													<td class="expander"></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+								<!-- ARTICLES END -->
+
+								<!-- BOTTOM START -->
+								<table border="0" class="row contentBottom">
+									<tr>
+										<td class="chiffre wrapper first">
+											<table border="0" class="four columns">
+												<tr>
+													<td class="wrapper-round">
+														<center>
+															<table border="0" class="round">
+																<tr>
+																	<td class="sub-columns first hide-for-small">&#160;</td>
+																	<td class="sub-columns value" nlbgcolor="##((nlCntChfBackground))##">
+																		<p class="inner">
+																			<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/?fintrack=&amp;article=%%{{=chiffre_id}}%%&amp;%%{{=tracking_url}}%%">
+																				<!--{{%%{{=chiffre_valeur}}%%}}--><!--DEL{{-->1625<!--}}DEL-->
+																			</a>
+																		</p>
+																	</td>
+																	<td class="sub-columns last hide-for-small">&#160;</td>
+																</tr>
+															</table>
+														</center>
+														<table class="wrapper-text" border="0">
+															<tr>
+																<td class="center text-pad">
+																	<h4 class="title">
+																		<a target="_blank" href="http://%%{{=url_site_exp}}%%/?fintrack=&amp;article=%%{{=chiffre_id}}%%&amp;%%{{=tracking_url}}%%">Le chiffre</a>
+																	</h4>
+																	<div class="text">
+																		<a target="_blank" href="http://%%{{=url_site_exp}}%%/?fintrack=&amp;article=%%{{=chiffre_id}}%%&amp;%%{{=tracking_url}}%%">
+																			<!--{{%%{{=chiffre_titre}}%%}}--><!--DEL{{-->chiffre_titre<!--}}DEL-->
+																		</a>
+																	</div>
+																</td>
+															</tr>
+														</table>
+													</td>
+													<td class="expander"></td>
+												</tr>
+											</table>
+										</td>
+										<td class="question wrapper">
+											<table border="0" class="four columns">
+												<tr>
+													<td class="wrapper-round">
+														<center>
+															<table border="0" class="round">
+																<tr>
+																	<td class="sub-columns first hide-for-small">&#160;</td>
+																	<td class="sub-columns value" nlbgcolor="##((nlCntQtnBackground))##">
+																		<p class="inner">
+																			<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/?fintrack=&amp;article=%%{{=question_id}}%%&amp;%%{{=tracking_url}}%%">?</a>
+																		</p>
+																	</td>
+																	<td class="sub-columns last hide-for-small">&#160;</td>
+																</tr>
+															</table>
+														</center>
+														<table class="wrapper-text" border="0">
+															<tr>
+																<td class="center text-pad">
+																	<h4 class="title">
+																		<a target="_blank" href="http://%%{{=url_site_exp}}%%/?fintrack=&amp;article=%%{{=question_id}}%%&amp;%%{{=tracking_url}}%%">La question</a>
+																	</h4>
+																	<div class="text">
+																		<a target="_blank" href="http://%%{{=url_site_exp}}%%/?fintrack=&amp;article=%%{{=question_id}}%%&amp;%%{{=tracking_url}}%%">
+																			<!--{{%%{{=question_titre}}%%}}--><!--DEL{{-->question_titre<!--}}DEL-->
+																		</a>
+																	</div>
+																</td>
+															</tr>
+														</table>
+													</td>
+													<td class="expander"></td>
+												</tr>
+											</table>
+										</td>
+										<td class="echeancier wrapper last">
+											<table border="0" class="four columns">
+												<tr>
+													<td class="wrapper-round">
+														<center>
+															<table border="0" class="round">
+																<tr>
+																	<td class="sub-columns first hide-for-small">&#160;</td>
+																	<td class="sub-columns value" nlbgcolor="##((nlCntAgdBackground))##">
+																		<p class="inner day">
+																			<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/?fintrack=&amp;article=%%{{=agenda_id}}%%&amp;collapse=collapse%%{{=agenda_collapse}}%%&amp;%%{{=tracking_url}}%%"><!--{{%%{{=agenda_jour}}%%}}--><!--DEL{{-->25<!--}}DEL--></a>
+																		</p>
+																		<p class="inner month">
+																			<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/?fintrack=&amp;article=%%{{=agenda_id}}%%&amp;collapse=collapse%%{{=agenda_collapse}}%%&amp;%%{{=tracking_url}}%%"><!--{{%%{{=agenda_mois_texte}}%%}}--><!--DEL{{-->mars<!--}}DEL--></a>
+																		</p>
+																	</td>
+																	<td class="sub-columns last hide-for-small">&#160;</td>
+																</tr>
+															</table>
+														</center>
+														<table class="wrapper-text" border="0">
+															<tr>
+																<td class="center text-pad">
+																	<h4 class="title">
+																		<a target="_blank" href="http://%%{{=url_site_exp}}%%/?fintrack=&amp;article=%%{{=agenda_id}}%%&amp;collapse=collapse%%{{=agenda_collapse}}%%&amp;%%{{=tracking_url}}%%">Le rappel</a>
+																	</h4>
+																	<div class="text">
+																		<a target="_blank" href="http://%%{{=url_site_exp}}%%/?fintrack=&amp;article=%%{{=agenda_id}}%%&amp;collapse=collapse%%{{=agenda_collapse}}%%&amp;%%{{=tracking_url}}%%">
+																			<!--{{%%{{=agenda_titre}}%%}}--><!--DEL{{-->agenda_titre<!--}}DEL-->
+																		</a>
+																	</div>
+																</td>
+															</tr>
+														</table>
+													</td>
+													<td class="expander"></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+								<!-- BOTTOM END -->
 
 
 							</td>
