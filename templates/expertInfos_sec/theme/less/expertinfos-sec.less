@@ -102,6 +102,41 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+//réseaux sociaux
+.faicons {
+	vertical-align: bottom;
+	td { text-align: right; }
+}
+.faicon {
+	display: inline;
+	//pour supprimer les espaces
+	font-size: 0px;
+	mso-line-height-rule: exactly;
+	line-height: 0px;
+	padding: 0px 5px 5px 5px;
+	&.first { padding-left: 0px; }
+	&.last { padding-right: 0px; }
+	img, img& {
+		display: inline;
+		float: none;
+	}
+	img& {
+		padding: 2px;
+		vertical-align: top;
+	}
+}
+
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] {
+		.faicons { vertical-align: baseline !important; }
+		.faicon img, img.faicon {
+			width: 15px !important;
+			height: 15px !important;
+		}
+	}
+}
+
+
 
 // CUSTOM COLORS
 // --------------------------------------------------
