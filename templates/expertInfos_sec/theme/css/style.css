@@ -1043,6 +1043,55 @@ h6 {
   padding-bottom: 0px;
 }
 
+.preTitle {
+  color: #666666;
+  color: #f39b1e;
+}
+
+.preTitle a {
+  color: #666666;
+}
+
+.preTitle a .important,
+.preTitle a:visited,
+.preTitle a:hover,
+.preTitle a:focus,
+.preTitle a:active {
+  color: #666666 !important;
+}
+
+.preTitle .last {
+  color: #f39b1e;
+}
+
+.preTitle .last a {
+  color: #f39b1e;
+}
+
+.preTitle .last a .important,
+.preTitle .last a:visited,
+.preTitle .last a:hover,
+.preTitle .last a:focus,
+.preTitle .last a:active {
+  color: #f39b1e !important;
+}
+
+.preTitle a {
+  color: #f39b1e;
+}
+
+.preTitle a .important,
+.preTitle a:visited,
+.preTitle a:hover,
+.preTitle a:focus,
+.preTitle a:active {
+  color: #f39b1e !important;
+}
+
+* + .preTitle {
+  padding-top: 10px;
+}
+
 @media only screen and (max-width: 720px) {
   table[class="body"] img {
     max-width: auto !important;

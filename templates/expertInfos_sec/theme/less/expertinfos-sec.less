@@ -43,3 +43,23 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 		table.columns td, table.column td { padding-bottom: 0px !important; }
 	}
 }
+
+//sur titres
+.preTitle {
+	// display: block;
+	// font-size: 14px;
+	// font-weight: bold;
+
+	color: @nlText;
+	a { .newsletterLinkColor(@nlText); }
+	.last {
+		color: @colorCouleur1;
+		a { .newsletterLinkColor(@colorCouleur1); }
+	}
+
+	color: @colorCouleur1;
+	a { .newsletterLinkColor(@colorCouleur1); }
+
+	//décalage si précédé
+	* + & { padding-top: 10px; }
+}
