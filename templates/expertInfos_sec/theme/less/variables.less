@@ -1,12 +1,100 @@
 // extends theme's variables.less file here
 
+// Expert Infos
+// -------------------------
+@avocatInfosOrange: #c73b1b;
+@avocatInfosViolet: #79468c;	//Violet foncé : #452258 => darken 15%
+
+
+// Main colors
+// -------------------------
+@colorCouleur1: @avocatInfosOrange;
+@colorCouleur1Clair: lighten(@colorCouleur1, 25%);
+@colorCouleur1Moyen: darken(@colorCouleur1, 15%);
+@colorCouleur1Fonce: darken(@colorCouleur1, 30%);
+
+@colorCouleur2: @avocatInfosViolet;
+@colorCouleur2Clair: lighten(@colorCouleur2, 20%);
+@colorCouleur2Moyen: darken(@colorCouleur2, 15%);
+@colorCouleur2Fonce: darken(@colorCouleur2, 30%);
+
+@colorCouleur3: #919191;
+@colorCouleur3Clair: lighten(@colorCouleur3, 35%);
+@colorCouleur3Moyen: lighten(@colorCouleur3, 20%);
+@colorCouleur3Fonce: darken(@colorCouleur3, 20%);
+
 
 // Newsletter Default Colors
 // --------------------------------------------------
+@nlContainerBackground: #ffffff;
+@nlText: #666666;
+@nlHeadings: #333333;
+@nlLinkColor: @nlText;
+@nlLinkColorHover: @nlLinkColor;
+
 //configuration de la grille
 @nlColumnWidth: 60px;
 @nlGutterWidth: 0px;
 @nlContainerWidth: (11 * @nlGutterWidth + 12 * @nlColumnWidth);
+
+
+// Newsletter Custom Colors
+// --------------------------------------------------
+//couleur de fond générale
+@nlBodyBackground: darken(@colorCouleur3Clair, 4%);
+
+//couleur de fond des bordures de séparation
+@nlHrBorder: @colorCouleur2;
+
+//Visualisation message en ligne et Titre
+@nlCntOnlineBackground: @nlBodyBackground;
+@nlCntOnlineText: darken(@nlCntOnlineBackground, 45%);
+@nlCntOnlineName: #333333;
+
+//Le cabinet vous informe
+@nlCntCabBackground: @colorCouleur1;
+@nlCntCabTitle: #ffffff;
+@nlCntCabText: #ffffff;
+
+
+// Scaffolding
+// -------------------------
+@bodyBackground: @nlBodyBackground;
+@containerBackground: @nlContainerBackground;
+@textColor: @nlText;
+
+
+// Links
+// -------------------------
+@linkColor:             @nlLinkColor;
+@linkColorHover:        @nlLinkColorHover;
+
+
+// Typography
+// -------------------------
+@baseFontSize:          12px;
+@baseLineHeight:        16px;
+@headingsColor:         @nlHeadings;
+@headingsFontWeight:    bold;
+
+
+// Component sizing
+// -------------------------
+@headingsFontSizeH1:    28px;
+@headingsFontSizeH2:    26px;
+@headingsFontSizeH3:    20px;
+@headingsFontSizeH4:    16px;
+@headingsFontSizeH5:    15px;
+@headingsFontSizeH6:    14px;
+
+@fontSizeLarge:         (@baseFontSize * 1.30);  // ~18px
+@fontSizeSmall:         (@baseFontSize * 0.85);  // ~12px
+@fontSizeMini:          (@baseFontSize * 0.65);  // ~9px
+
+
+// Hr border color
+// -------------------------
+@hrBorder: @nlHrBorder;
 
 
 // Grid config
