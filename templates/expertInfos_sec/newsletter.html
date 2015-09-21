@@ -14,11 +14,61 @@
 }
 /*DEL{{*/img[src*="%%{{"], img[src*="}}%%"], [data-type^="get"], .-premailer-hidden { display: none !important; visibility: hidden !important; }/*}}DEL*/
 </style>
-	<table border="0" class="body">
+	<table border="0" class="body" id="backgroundTable">
 		<tr>
 			<td class="center" align="center" valign="top">
 				<center>
-					<!-- Email Content -->
+					<table border="0" class="container">
+						<tr>
+							<td>
+
+								<!--{{%%{{ if logo_groupement=True then }}%%}}-->
+								<!-- HEADER GROUPE START -->
+								<table border="0" class="row header" nlbgcolor="##((nlBodyBackground))##">
+									<tr>
+										<td class="wrapper last">
+											<table border="0" class="twelve columns">
+												<tr>
+													<td class="eight sub-columns first">
+														<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%?fintrack=&amp;%%{{=tracking_url}}%%">
+															<img class="center" src="http://%%{{=url_site_exp}}%%/uploads/assets/header-newsletter-site.png" alt="Header Newsletter Site" width="480" height="96" /><!--DEL{{--><img class="center" src="http://lorempixel.com/960/192/city/" alt="NomCabinet" width="480" height="96" /><!--}}DEL-->
+														</a>
+													</td>
+													<td class="four sub-columns last">
+														<a target="_blank" class="link_box" href="http://%%{{=lien_groupement}}%%?fintrack=&amp;%%{{=tracking_url}}%%">
+															<img class="center" src="http://%%{{=url_site_exp}}%%/uploads/assets/header-newsletter-groupe.png" alt="Header Newsletter Groupe" width="240" height="96" /><!--DEL{{--><img class="center" src="http://lorempixel.com/480/192/technics/" alt="NomCabinet" width="240" height="96" /><!--}}DEL-->
+														</a>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+								<!-- HEADER GROUPE END -->
+								<!--{{%%{{ else }}%%}}-->
+								<!-- HEADER START -->
+								<table border="0" class="row header" nlbgcolor="##((nlBodyBackground))##">
+								    <tr>
+								        <td class="wrapper last">
+								            <table border="0" class="twelve columns">
+								                <tr>
+								                    <td class="center">
+								                    	<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%?fintrack=&amp;%%{{=tracking_url}}%%">
+								                            <img class="center" src="http://%%{{=url_site_exp}}%%/uploads/assets/header-newsletter.png" alt="Header Newsletter" width="720" height="96" /><!--DEL{{--><img class="center" src="http://ec-tenor.expert-infos.com/uploads/assets/header-newsletter.png" width="720" height="96" alt="" /><!--}}DEL-->
+								                        </a>
+								                    </td>
+								                </tr>
+								            </table>
+								        </td>
+								    </tr>
+								</table>
+								<!-- HEADER END -->
+								<!--{{%%{{ end if }}%%}}-->
+
+
+							</td>
+						</tr>
+					</table>
 				</center>
 			</td>
 		</tr>
