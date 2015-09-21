@@ -428,7 +428,7 @@ text-decoration: underline; cursor: pointer;
 										</td>
 									</tr>
 								</table>
-					        	<!-- ONLINE END -->
+								<!-- ONLINE END -->
 
 								<!--{{%%{{ if logo_groupement=True then }}%%}}-->
 								<!-- HEADER GROUPE START -->
@@ -481,7 +481,7 @@ text-decoration: underline; cursor: pointer;
 											<table border="0" class="twelve columns" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 720; border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 720px" width="720" cellpadding="0" cellspacing="0">
 												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 													<td class="text-pad" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px 40px 20px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
-														<!--{{%%{{=texte_vacances}}%%}}--><!--DEL{{-->texte_vacances<!--}}DEL-->
+														<div class="text"><!--{{%%{{=texte_vacances}}%%}}--><!--DEL{{-->texte_vacances<!--}}DEL--></div>
 													</td>
 													<td class="expander" bgcolor="##((nlCntCabBackground))##" style="-moz-hyphens: none; -ms-hyphens: none; -premailer-width: 1; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word" align="left" valign="top" width="1"></td>
 												</tr>
@@ -504,18 +504,27 @@ text-decoration: underline; cursor: pointer;
 											<table border="0" class="twelve columns" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 720; border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 720px" width="720" cellpadding="0" cellspacing="0">
 												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 													<td class="text-pad" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px 40px 20px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+														<div class="preTitle">Le cabinet vous informe</div>
 														<!--{{%%{{
 														lien_cab=rs("lien")
 														if (lien_cab <> "") then
 														}}%%}}-->
-														<h2 class="title" style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 26px; font-weight: bold; line-height: 28.6px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; word-break: normal" align="left"><a target="_blank" href="%%{{=lien_cab}}%%" style="color: #666666; text-decoration: none"><!--{{%%{{=rs("titre")}}%%}}--><!--DEL{{-->titre<!--}}DEL--></a></h2>
-														<a target="_blank" class="link_box" href="%%{{=lien_cab}}%%" style="color: #666666; display: block; outline: none; text-decoration: none">
-															<span class="text"><!--{{%%{{=rs("texte")}}%%}}--><!--DEL{{-->texte<!--}}DEL--></span>
-															<br /><span class="readMore"><span class="icon-rsaquo">&#8250;</span>&#160;lire la suite</span>
-														</a>
+														<h3 class="title" style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 20px; font-weight: bold; line-height: 22px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; word-break: normal" align="left">
+															<a target="_blank" href="%%{{=lien_cab}}%%" style="color: #666666; text-decoration: none"><!--{{%%{{=rs("titre")}}%%}}--><!--DEL{{-->titre<!--}}DEL--></a>
+														</h3>
+														<div class="text">
+															<a target="_blank" href="%%{{=lien_cab}}%%" style="color: #666666; text-decoration: none">
+																<!--{{%%{{=rs("texte")}}%%}}--><!--DEL{{-->texte<!--}}DEL-->
+															</a>
+														</div>
+														<p class="readMore" style="color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; line-height: 16px; margin: 0 0 10px; padding: 0; text-align: left" align="left">
+															<a target="_blank" href="%%{{=lien_cab}}%%" style="color: #666666; text-decoration: none">
+																Lire la suite
+															</a>
+														</p>
 														<!--{{%%{{ else }}%%}}-->
-														<h2 class="title" style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 26px; font-weight: bold; line-height: 28.6px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; word-break: normal" align="left"><!--{{%%{{=rs("titre")}}%%}}--><!--DEL{{-->titre<!--}}DEL--></h2>
-														<span class="text"><!--{{%%{{=rs("texte")}}%%}}--><!--DEL{{-->texte<!--}}DEL--></span>
+														<h3 class="title" style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 20px; font-weight: bold; line-height: 22px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; word-break: normal" align="left"><!--{{%%{{=rs("titre")}}%%}}--><!--DEL{{-->titre<!--}}DEL--></h3>
+														<div class="text"><!--{{%%{{=rs("texte")}}%%}}--><!--DEL{{-->texte<!--}}DEL--></div>
 														<!--{{%%{{ end if }}%%}}-->
 													</td>
 													<td class="expander" bgcolor="##((nlCntCabBackground))##" style="-moz-hyphens: none; -ms-hyphens: none; -premailer-width: 1; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word" align="left" valign="top" width="1"></td>
@@ -531,6 +540,75 @@ text-decoration: underline; cursor: pointer;
 									end if
 								end if
 								}}%%}}-->
+
+								<!-- ALAUNE START -->
+								<!--{{%%{{
+								if isDemo=True then
+									sql_Flash_Infos="SELECT MAX(ID_FLASH_INFOS) FROM FLASHS_INFOS where type_flash=4 and frequence_flash=2"
+									set rs_Flash_Infos=conn.execute(sql_Flash_Infos)
+									ID_FLASH_INFOS=rs_Flash_Infos(0)
+
+									sql_Flash_Infos_bis="SELECT * FROM FLASHS_INFOS where ID_FLASH_INFOS = "& ID_FLASH_INFOS
+									set rs_Flash_Infos_bis=conn.execute(sql_Flash_Infos_bis)
+									idarticleAlaune= rs_Flash_Infos_bis(4)
+								end if
+
+								if idarticleAlaune="" then idarticleAlaune=request.QueryString("amp;idarticleAlaune")
+									SQLArticleAlaune="SELECT * FROM CHAPITRES_FLASHS_INFOS WHERE (IDCHAPITRE_FLASH_INFOS = "& idarticleAlaune &")"
+									Set rsArticleAlaune=conn.Execute(SQLArticleAlaune)
+									id_de_larticle=mid(rsArticleAlaune("URL_DETAIL_INFO"),13,len(rsArticleAlaune("URL_DETAIL_INFO"))-16)
+
+									article_une_qstart_v3 = InStr(rsArticleAlaune("URL_DETAIL_V3"),"?")
+									if (article_une_qstart_v3 > 0) then
+										article_une_url_v3 = Replace(rsArticleAlaune("URL_DETAIL_V3"),"?","?fintrack=&amp;",article_une_qstart_v3,1)
+									else
+										article_une_url_v3 = "?fintrack=&amp;"&rsArticleAlaune("URL_DETAIL_V3")
+									end if
+									
+									article_une_rub = ""
+									article_une_titre = rsArticleAlaune("TITRE_CHAPITRE_FLASH_INFOS")
+
+									rub_une_start = (InStr(article_une_titre,"$${{") + 4)
+									rub_une_end = InStr(article_une_titre,"}}$$")
+									rub_une_len = (rub_une_end - rub_une_start)
+									if(rub_une_len > 0) then
+										article_une_rub = Mid(article_une_titre, rub_une_start, rub_une_len)
+										article_une_titre = Mid(article_une_titre, (rub_une_end + 4))
+									end if
+								}}%%}}-->
+								<table border="0" class="row contentALaUne" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%; border-collapse: collapse; border-spacing: 0; display: block; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px; text-align: left; vertical-align: top; width: 100%" width="100%" cellpadding="0" cellspacing="0">
+									<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+										<td class="wrapper last" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 20px 0px 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+											<table border="0" class="twelve columns" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 720; border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 720px" width="720" cellpadding="0" cellspacing="0">
+												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+													<td class="text-pad" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px 40px 20px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+														<div class="preTitle">&#195;&#128; la une</div>
+														<h2 class="title" style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 26px; font-weight: bold; line-height: 28.6px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; word-break: normal" align="left">
+															<a target="_blank" href="http://%%{{=url_site_exp}}%%/%%{{=article_une_url_v3}}%%&amp;%%{{=tracking_url}}%%" style="color: #666666; text-decoration: none">
+																<!--{{%%{{ if article_une_rub <> "" then }}%%}}--><span class="category"><!--{{%%{{=article_une_rub}}%%}}--><!--DEL{{-->article_une_rub<!--}}DEL-->.</span> <!--{{%%{{ end if }}%%}}--><!--{{%%{{=article_une_titre}}%%}}--><!--DEL{{-->article_une_titre<!--}}DEL-->
+															</a>
+														</h2>
+														<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/%%{{=article_une_url_v3}}%%&amp;%%{{=tracking_url}}%%" style="color: #666666; display: block; outline: none; text-decoration: none">
+															<img class="center" src="http://e-newsletter.expert-infos.com/_infos/_photos/%%{{=id_de_larticle}}%%-h.jpg" width="640" height="293" alt="Article &#195;&#160; la Une" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: none; margin: 0 auto; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none" /><!--DEL{{--><img class="center" src="http://lorempixel.com/1280/586/business/" width="640" height="293" alt="" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: none; margin: 0 auto; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none" /><!--}}DEL-->
+														</a>
+														<div class="text">
+															<a target="_blank" href="http://%%{{=url_site_exp}}%%/%%{{=article_une_url_v3}}%%&amp;%%{{=tracking_url}}%%" style="color: #666666; text-decoration: none">
+																<!--{{%%{{=rsArticleAlaune("CONTENU_CHAPITRE_FLASH_INFOS")}}%%}}--><!--DEL{{-->CONTENU_CHAPITRE_FLASH_INFOS<!--}}DEL-->
+															</a>
+														</div>
+														<p class="readMore" style="color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; line-height: 16px; margin: 0 0 10px; padding: 0; text-align: left" align="left">
+															<a target="_blank" href="http://%%{{=url_site_exp}}%%/%%{{=article_une_url_v3}}%%&amp;%%{{=tracking_url}}%%" style="color: #666666; text-decoration: none">
+																Lire la suite
+															</a>
+														</p>
+													</td>
+													<td class="expander" style="-moz-hyphens: none; -ms-hyphens: none; -premailer-width: 1; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word" align="left" valign="top" width="1"></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+								<!-- ALAUNE END -->
 
 
 							</td>
