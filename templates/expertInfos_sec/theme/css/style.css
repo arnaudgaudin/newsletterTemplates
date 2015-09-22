@@ -1061,26 +1061,103 @@ h6 a {
 }
 
 .readMore {
-  text-align: right;
-  font-size: 11px;
-  margin: 0px;
-  color: #f39b1e;
+  background-color: #f00;
+  width: 100%;
+  -premailer-width: 100%;
+  overflow: hidden;
+  clear: both;
 }
 
-.readMore a {
-  color: #f39b1e;
+table.columns .readMore td.buttonWrapper,
+table.column .readMore td.buttonWrapper {
+  padding-bottom: 0px;
+  clear: both;
 }
 
-.readMore a .important,
-.readMore a:visited,
-.readMore a:hover,
-.readMore a:focus,
-.readMore a:active {
-  color: #f39b1e !important;
+table.columns .readMore td.buttonWrapper td,
+table.column .readMore td.buttonWrapper td {
+  color: #ffffff;
 }
 
-* + .readMore {
+table.columns .readMore table.tiny-button,
+table.column .readMore table.tiny-button {
+  display: table;
+  table-layout: auto;
+  width: auto;
+  -premailer-width: auto;
+  float: right;
+}
+
+table.columns .readMore table.tiny-button td,
+table.column .readMore table.tiny-button td {
+  width: auto;
+  float: none;
+  -premailer-width: auto;
+  padding: 4px 8px;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+table.columns .readMore table.tiny-button td a,
+table.column .readMore table.tiny-button td a,
+table.columns .readMore table.tiny-button td p,
+table.column .readMore table.tiny-button td p {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+table.columns .text + .readMore td.buttonWrapper,
+table.column .text + .readMore td.buttonWrapper {
   padding-top: 5px;
+}
+
+a.tiny-button-link {
+  padding: 0px;
+  margin: 0px;
+  color: #ffffff;
+  line-height: 14px;
+  mso-line-height-rule: exactly;
+}
+
+a.tiny-button-link .important,
+a.tiny-button-link:visited,
+a.tiny-button-link:hover,
+a.tiny-button-link:focus,
+a.tiny-button-link:active {
+  color: #ffffff !important;
+}
+
+table.columns .readMore td.buttonWrapper td,
+table.column .readMore td.buttonWrapper td,
+table.columns .readMore td.buttonWrapper td p.MsoNormal,
+table.column .readMore td.buttonWrapper td p.MsoNormal {
+  line-height: 14px !important;
+  mso-line-height-rule: exactly;
+  margin: 0px;
+}
+
+table.columns .readMore td.buttonWrapper td p.MsoNormal,
+table.column .readMore td.buttonWrapper td p.MsoNormal {
+  padding: 0px;
+}
+
+a.tiny-button-link,
+table.columns .readMore td.buttonWrapper td,
+table.column .readMore td.buttonWrapper td {
+  font-size: 10.2px;
+  font-weight: normal;
+}
+
+table.secondary td,
+table.secondary td a,
+table.secondary:hover td {
+  color: #ffffff;
+}
+
+table.secondary:hover td a,
+table.secondary td a:visited,
+table.secondary:active td a {
+  color: #ffffff !important;
 }
 
 .row.bordered td.wrapper {
@@ -1623,6 +1700,31 @@ hr {
   table[class="body"] .header table.columns td,
   table[class="body"] .header table.column td {
     padding-bottom: 0px !important;
+  }
+
+  table[class="body"] table.columns .readMore td.buttonWrapper,
+  table[class="body"] table.column .readMore td.buttonWrapper {
+    padding-bottom: 0px !important;
+  }
+
+  table[class="body"] table.columns .readMore table.tiny-button,
+  table[class="body"] table.column .readMore table.tiny-button {
+    display: table !important;
+    table-layout: auto !important;
+    width: auto !important;
+  }
+
+  table[class="body"] table.columns .readMore table.tiny-button td,
+  table[class="body"] table.column .readMore table.tiny-button td {
+    width: auto !important;
+    padding: 4px 8px !important;
+  }
+
+  table[class="body"] a.tiny-button-link,
+  table[class="body"] table.columns .readMore td.buttonWrapper td,
+  table[class="body"] table.column .readMore td.buttonWrapper td {
+    font-size: 10.2px !important;
+    line-height: 14px !important;
   }
 
   table[class="body"] .row.bordered td.wrapper {

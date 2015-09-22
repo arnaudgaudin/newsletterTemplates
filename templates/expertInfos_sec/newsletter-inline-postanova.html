@@ -204,17 +204,29 @@ text-decoration: underline; cursor: pointer;
 a.link_underline:focus {
 text-decoration: underline; cursor: pointer;
 }
-.readMore a:visited {
-color: #f39b1e !important;
+a.tiny-button-link:visited {
+color: #ffffff !important;
 }
-.readMore a:hover {
-color: #f39b1e !important;
+a.tiny-button-link:hover {
+color: #ffffff !important;
 }
-.readMore a:focus {
-color: #f39b1e !important;
+a.tiny-button-link:focus {
+color: #ffffff !important;
 }
-.readMore a:active {
-color: #f39b1e !important;
+a.tiny-button-link:active {
+color: #ffffff !important;
+}
+table.secondary:hover td {
+color: #ffffff;
+}
+table.secondary:hover td a {
+color: #ffffff !important;
+}
+table.secondary td a:visited {
+color: #ffffff !important;
+}
+table.secondary:active td a {
+color: #ffffff !important;
 }
 .contentSecteur a:visited {
 color: #ffffff !important;
@@ -523,6 +535,33 @@ color: #595959 !important;
   table[class="body"] .header table.column td {
     padding-bottom: 0px !important;
   }
+  table[class="body"] table.columns .readMore td.buttonWrapper {
+    padding-bottom: 0px !important;
+  }
+  table[class="body"] table.column .readMore td.buttonWrapper {
+    padding-bottom: 0px !important;
+  }
+  table[class="body"] table.columns .readMore table.tiny-button {
+    display: table !important; table-layout: auto !important; width: auto !important;
+  }
+  table[class="body"] table.column .readMore table.tiny-button {
+    display: table !important; table-layout: auto !important; width: auto !important;
+  }
+  table[class="body"] table.columns .readMore table.tiny-button td {
+    width: auto !important; padding: 4px 8px !important;
+  }
+  table[class="body"] table.column .readMore table.tiny-button td {
+    width: auto !important; padding: 4px 8px !important;
+  }
+  table[class="body"] a.tiny-button-link {
+    font-size: 10.2px !important; line-height: 14px !important;
+  }
+  table[class="body"] table.columns .readMore td.buttonWrapper td {
+    font-size: 10.2px !important; line-height: 14px !important;
+  }
+  table[class="body"] table.column .readMore td.buttonWrapper td {
+    font-size: 10.2px !important; line-height: 14px !important;
+  }
   table[class="body"] .row.bordered td.wrapper {
     padding-top: 0px !important;
   }
@@ -811,7 +850,7 @@ color: #595959 !important;
 																<%=rs("texte")%>
 															</a>
 														</div>
-														<p class="readMore" style="color: #595959; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 11px; font-weight: normal; line-height: 16px; margin: 0px; padding: 5px 0 0; text-align: right" align="right">
+														<p class="readMore" style="background: #f00; clear: both; color: #595959; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; line-height: 16px; margin: 0 0 10px; overflow: hidden; padding: 0; text-align: left; width: 100%" align="left">
 															<a target="_blank" href="<%=lien_cab%>" style="color: #595959; text-decoration: none">
 																Lire la suite
 															</a>
@@ -890,13 +929,13 @@ color: #595959 !important;
 																<%=rsArticleAlaune("CONTENU_CHAPITRE_FLASH_INFOS")%>
 															</a>
 														</div>
-														<table class="readMore" border="0" style="border-collapse: collapse; border-spacing: 0; color: #f39b1e; empty-cells: hide; font-size: 11px; margin: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 5px 0 0; text-align: right; vertical-align: top" cellpadding="0" cellspacing="0">
+														<table class="readMore" border="0" style="background: #f00; border-collapse: collapse; border-spacing: 0; clear: both; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; overflow: hidden; padding: 0; text-align: left; vertical-align: top; width: 100%" bgcolor="#f00" width="100%" cellpadding="0" cellspacing="0">
 															<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
-																<td class="buttonWrapper" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px 0px 20px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
-																	<table border="0" align="right" class="tiny-button" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; overflow: hidden; padding: 0; text-align: left; vertical-align: top; width: 100%" width="100%" cellpadding="0" cellspacing="0">
+																<td class="buttonWrapper" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; clear: both; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 5px 0px 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+																	<table border="0" align="right" class="tiny-button" style="border-collapse: collapse; border-spacing: 0; display: table; empty-cells: hide; float: right; mso-table-lspace: 0pt; mso-table-rspace: 0pt; overflow: hidden; padding: 0; table-layout: auto; text-align: left; vertical-align: top; width: auto" width="auto" cellpadding="0" cellspacing="0">
 																		<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
-																			<td style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; background: #666666; border: 1px solid #333333; border-collapse: collapse !important; color: #ffffff; display: block; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: initial !important; margin: 0; padding: 5px 0; text-align: center; vertical-align: top; width: auto !important; word-break: break-word" align="center" bgcolor="#666666" valign="top" width="auto">
-																				<a target="_blank" href="http://<%=url_site_exp%>/<%=article_une_url_v3%>&amp;<%=tracking_url%>" style="color: #ffffff; display: block; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 10.2px; font-weight: normal; height: 100%; text-decoration: none; width: 100%">Lire la suite</a>
+																			<td style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; background: #666666; border: 1px solid #333333; border-collapse: collapse !important; color: #ffffff; display: block; float: none; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 10.2px; font-weight: normal; hyphens: none; line-height: 14px !important; margin: 0px; mso-line-height-rule: exactly; padding: 4px 8px; text-align: center; text-transform: uppercase; vertical-align: middle; width: auto !important; word-break: break-word" align="center" bgcolor="#666666" valign="middle" width="auto">
+																				<a target="_blank" href="http://<%=url_site_exp%>/<%=article_une_url_v3%>&amp;<%=tracking_url%>" style="color: #ffffff; display: block; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 10.2px; font-weight: normal; height: 100%; margin: 0px; padding: 0px; text-decoration: none; width: 100%">Lire la suite</a>
 																			</td>
 																		</tr>
 																	</table>
@@ -991,8 +1030,8 @@ color: #595959 !important;
 																<%=rsArticle("CONTENU_CHAPITRE_FLASH_INFOS")%>
 															</a>
 														</div>
-														<p class="readMore" style="color: #f39b1e; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 11px; font-weight: normal; line-height: 16px; margin: 0px; padding: 5px 0 0; text-align: right" align="right">
-															<a target="_blank" href="http://<%=url_site_exp%>/<%=article_url_v3%>&amp;<%=tracking_url%>" style="color: #f39b1e; text-decoration: none">
+														<p class="readMore" style="background: #f00; clear: both; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; line-height: 16px; margin: 0 0 10px; overflow: hidden; padding: 0; text-align: left; width: 100%" align="left">
+															<a target="_blank" href="http://<%=url_site_exp%>/<%=article_url_v3%>&amp;<%=tracking_url%>" style="color: #666666; text-decoration: none">
 																Lire la suite
 															</a>
 														</p>

@@ -61,16 +61,106 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 //lien de suivis
-.readMore {
-	text-align: right;
-	font-size: @fontSizeSmall;
-	margin: 0px;
-	color: @colorCouleur1;
-	a { .newsletterLinkColor(@colorCouleur1); }
+// .readMore {
+// 	text-align: right;
+// 	font-size: @fontSizeSmall;
+// 	margin: 0px;
+// 	color: @colorCouleur1;
+// 	a { .newsletterLinkColor(@colorCouleur1); }
 
-	//décalage si précédé
-	* + & { padding-top: 5px; }
+// 	//décalage si précédé
+// 	* + & { padding-top: 5px; }
+// }
+.readMore {
+	background-color: #f00;
+	width: 100%;
+	-premailer-width: 100%;
+	overflow: hidden;
+	clear: both;
+
+	table.columns &, table.column & {
+		td.buttonWrapper {
+			padding-bottom: 0px;
+			clear: both;
+			td { color: #ffffff; }
+		}
+		table.tiny-button {
+			display: table;
+			table-layout: auto;
+			width: auto;
+			-premailer-width: auto;
+			float: right;
+			td {
+				width: auto;
+				float: none;
+				-premailer-width: auto;
+				padding: 4px 8px;
+				text-transform: uppercase;
+				vertical-align: middle;
+				//pour les éventuels paragraphes vides rajoutés par Outlook
+				a, p { margin: 0px !important; padding: 0px !important; }
+			}
+		}
+	}
+	.text + & {
+		table.columns &, table.column & {
+			td.buttonWrapper { padding-top: 5px; }
+		}
+	}
 }
+a.tiny-button-link {
+	padding: 0px;
+	margin: 0px;
+	.newsletterLinkColor(#ffffff);
+	line-height: ceil(@buttonFontSizeTiny * 1.33);
+	mso-line-height-rule: exactly;
+}
+table.columns .readMore td.buttonWrapper td, table.column .readMore td.buttonWrapper td {
+	//pour Outlook
+	&, p.MsoNormal {
+		line-height: ceil(@buttonFontSizeTiny * 1.33) !important;
+		mso-line-height-rule: exactly;
+		margin: 0px;
+	}
+	p.MsoNormal { padding: 0px; }
+}
+a.tiny-button-link, table.columns .readMore td.buttonWrapper td, table.column .readMore td.buttonWrapper td {
+	font-size: @buttonFontSizeTiny;
+	font-weight: normal;
+}
+
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] {
+		table.columns, table.column {
+			.readMore {
+				td.buttonWrapper {
+					padding-bottom: 0px !important;
+				}
+				table.tiny-button {
+					display: table !important;
+					table-layout: auto !important;
+					width: auto !important;
+					td {
+						width: auto !important;
+						padding: 4px 8px !important;
+					}
+				}
+			}
+		}
+		a.tiny-button-link, table.columns .readMore td.buttonWrapper td, table.column .readMore td.buttonWrapper td {
+			font-size: @buttonFontSizeTiny !important;
+			line-height: ceil(@buttonFontSizeTiny * 1.33) !important;
+		}
+	}
+}
+
+
+//buttons
+table.secondary {
+	td, td a, &:hover td { color: #ffffff; }
+	&:hover td a, td a:visited, &:active td a { color: #ffffff !important; }
+}
+
 
 //gestion row avec bordures de séparation
 .row.bordered {
