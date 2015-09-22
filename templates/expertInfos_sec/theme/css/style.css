@@ -1060,23 +1060,6 @@ h6 a {
   padding-top: 5px;
 }
 
-table.columns .readMore td.buttonWrapper td,
-table.column .readMore td.buttonWrapper td {
-  color: #ffffff;
-}
-
-.readMore a.tiny-button-link {
-  color: #ffffff;
-}
-
-.readMore a.tiny-button-link .important,
-.readMore a.tiny-button-link:visited,
-.readMore a.tiny-button-link:hover,
-.readMore a.tiny-button-link:focus,
-.readMore a.tiny-button-link:active {
-  color: #ffffff !important;
-}
-
 .readMore {
   background-color: #f00;
   width: 100%;
