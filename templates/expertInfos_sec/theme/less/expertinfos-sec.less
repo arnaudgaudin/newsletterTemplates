@@ -237,6 +237,10 @@ h1, h2, h3, h4, h5, h6 {
 	//réduction décalage vertical en haut
 	td.wrapper { padding-top: (@wrapperPad / 2); }
 	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+
+	.info {
+		td { text-transform: uppercase; }
+	}
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentDateInfo {

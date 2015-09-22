@@ -1274,6 +1274,10 @@ img.faicon {
   padding-bottom: 10px;
 }
 
+.contentDateInfo .info td {
+  text-transform: uppercase;
+}
+
 body,
 table.body {
   background: #e0e0e0;
