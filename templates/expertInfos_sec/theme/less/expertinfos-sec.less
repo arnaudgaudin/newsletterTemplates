@@ -73,27 +73,21 @@ h1, h2, h3, h4, h5, h6 {
 // }
 
 .readMore {
-	table.tiny-button td {
-		background: #00ff00;
-		color: #ff0000;
-		border-color: #ffff00;
-	}
-	table.tiny-button td a {
-		color: #ff0000;
-	}
+	table.tiny-button {
+		td {
+			background: #00ff00;
+			border-color: #ffff00;
+			&, a { color: #ff0000; }
+		}
 
-	//hover state
-	table.tiny-button:hover td,
-	table.tiny-button:visited td,
-	table.tiny-button:active td {
-		background: darken(#00ff00, 10%) !important;
-	}
-
-	table.tiny-button:hover td a,
-	table.tiny-button:visited td a,
-	table.tiny-button:active td a,
-	table.tiny-button td a:visited {
-		color: darken(#ff0000, 10%) !important;
+		//hover|visited|active state
+		&:hover td,
+		&:visited td,
+		&:active td {
+			background: darken(#00ff00, 10%) !important;
+			a { color: darken(#ff0000, 10%) !important; }
+		}
+		td a:visited { color: darken(#ff0000, 10%) !important; }
 	}
 }
 
