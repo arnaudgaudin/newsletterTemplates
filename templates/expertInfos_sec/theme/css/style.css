@@ -1060,6 +1060,23 @@ h6 a {
   padding-top: 5px;
 }
 
+table.columns .readMore td.buttonWrapper td,
+table.column .readMore td.buttonWrapper td {
+  color: #ffffff;
+}
+
+.readMore a.tiny-button-link {
+  color: #ffffff;
+}
+
+.readMore a.tiny-button-link .important,
+.readMore a.tiny-button-link:visited,
+.readMore a.tiny-button-link:hover,
+.readMore a.tiny-button-link:focus,
+.readMore a.tiny-button-link:active {
+  color: #ffffff !important;
+}
+
 .readMore {
   background-color: #f00;
   width: 100%;
@@ -1072,11 +1089,6 @@ table.columns .readMore td.buttonWrapper,
 table.column .readMore td.buttonWrapper {
   padding-bottom: 0px;
   clear: both;
-}
-
-table.columns .readMore td.buttonWrapper td,
-table.column .readMore td.buttonWrapper td {
-  color: #ffffff;
 }
 
 table.columns .readMore table.tiny-button,
@@ -1114,17 +1126,8 @@ table.column .text + .readMore td.buttonWrapper {
 a.tiny-button-link {
   padding: 0px;
   margin: 0px;
-  color: #ffffff;
   line-height: 14px;
   mso-line-height-rule: exactly;
-}
-
-a.tiny-button-link .important,
-a.tiny-button-link:visited,
-a.tiny-button-link:hover,
-a.tiny-button-link:focus,
-a.tiny-button-link:active {
-  color: #ffffff !important;
 }
 
 table.columns .readMore td.buttonWrapper td,
@@ -1146,18 +1149,6 @@ table.columns .readMore td.buttonWrapper td,
 table.column .readMore td.buttonWrapper td {
   font-size: 10.2px;
   font-weight: normal;
-}
-
-table.secondary td,
-table.secondary td a,
-table.secondary:hover td {
-  color: #ffffff;
-}
-
-table.secondary:hover td a,
-table.secondary td a:visited,
-table.secondary:active td a {
-  color: #ffffff !important;
 }
 
 .row.bordered td.wrapper {
