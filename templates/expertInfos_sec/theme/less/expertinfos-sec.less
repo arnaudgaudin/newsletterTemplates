@@ -137,6 +137,45 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+// contentOnline area
+// -------------------------
+.contentOnline {
+	//réduction décalage vertical en haut
+	td.wrapper { padding-top: (@wrapperPad / 2); }
+	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+
+	//suppression fontSize et lineHeight pour débug Outlook
+	table.columns td, table.column td {
+		mso-line-height-rule: exactly;
+		line-height: 0px;
+		font-size: 0px;
+	}
+
+	//remise en place taille texte directement sur éléments
+	.online, .name {
+		mso-line-height-rule: exactly;
+		line-height: @baseLineHeight;
+		font-size: @baseFontSize;
+	}
+
+	.online {
+		display: block;
+		padding-bottom: 5px;
+	}
+	.name { display: block; }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentOnline {
+		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
+		table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
+		.online { padding-bottom: 0px !important; }
+
+		//pour forcer centrage contenu trop petit
+		.columns, .column { display: table !important; }
+	}
+}
+
+
 
 // DEVELOPPEMENT COLORS
 // --------------------------------------------------
