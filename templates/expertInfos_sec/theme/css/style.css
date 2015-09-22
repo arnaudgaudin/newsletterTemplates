@@ -1201,10 +1201,6 @@ img.faicon {
   display: block;
 }
 
-.contentSecteur {
-  background-color: #f00;
-}
-
 .contentSecteur,
 .contentSecteur td,
 .contentSecteur .inner {
@@ -1267,6 +1263,29 @@ img.faicon {
 
 .contentSecteur td .secteur .dash {
   margin: 0 -0.25em;
+}
+
+.contentDateInfo,
+.contentDateInfo td.expander {
+  background: #4f5966;
+}
+
+.contentDateInfo,
+.contentDateInfo td,
+.contentDateInfo .inner {
+  color: #ffffff;
+}
+
+.contentDateInfo a {
+  color: #ffffff;
+}
+
+.contentDateInfo a .important,
+.contentDateInfo a:visited,
+.contentDateInfo a:hover,
+.contentDateInfo a:focus,
+.contentDateInfo a:active {
+  color: #ffffff !important;
 }
 
 body,

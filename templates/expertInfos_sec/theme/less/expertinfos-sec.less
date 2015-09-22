@@ -179,7 +179,6 @@ h1, h2, h3, h4, h5, h6 {
 // contentSecteur area
 // -------------------------
 .contentSecteur {
-	background-color: #f00;
 	.newsletterInnerTextColor(#fff);
 
 	.contentSecteur-loop(@list, @index: 1) when (@index <= length(@list)) {
@@ -231,6 +230,13 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 
+
+// contentDateInfo area
+// -------------------------
+.contentDateInfo {
+	&, td.expander { background: @nlCntDtiBackground; }
+	.newsletterInnerTextColor(@nlCntDtiText);
+}
 
 
 // DEVELOPPEMENT COLORS
