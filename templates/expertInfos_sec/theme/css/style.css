@@ -1579,6 +1579,34 @@ hr {
   color: #ffffff !important;
 }
 
+.contentEtude,
+.contentEtude td.expander {
+  background: #4f5966;
+}
+
+.contentEtude,
+.contentEtude td,
+.contentEtude .inner {
+  color: #ffffff;
+}
+
+.contentEtude a {
+  color: #ffffff;
+}
+
+.contentEtude a .important,
+.contentEtude a:visited,
+.contentEtude a:hover,
+.contentEtude a:focus,
+.contentEtude a:active {
+  color: #ffffff !important;
+}
+
+.contentEtude .value {
+  font-size: 30px;
+  line-height: 30px;
+}
+
 @media only screen and (max-width: 720px) {
   table[class="body"] img {
     max-width: auto !important;
