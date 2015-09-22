@@ -170,3 +170,19 @@ hr {
 .row.bordered {
 	td hr.border { border-bottom: 1px solid @nlHrBorder; }
 }
+
+
+// contentOnline area
+// -------------------------
+.contentOnline {
+	&, td.expander { background: @nlCntOnlineBackground; }
+	.newsletterInnerTextColor(@nlCntOnlineText);
+	.online {
+		color: @nlCntOnlineText;
+		a { .newsletterLinkColor(@nlCntOnlineText); }
+	}
+	.name {
+		color: @nlCntOnlineName;
+		a { .newsletterLinkColor(@nlCntOnlineName); }
+	}
+}

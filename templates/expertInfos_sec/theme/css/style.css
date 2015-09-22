@@ -1188,6 +1188,61 @@ hr {
   border-bottom: 1px solid #f39b1e;
 }
 
+.contentOnline,
+.contentOnline td.expander {
+  background: #e0e0e0;
+}
+
+.contentOnline,
+.contentOnline td,
+.contentOnline .inner {
+  color: #6d6d6d;
+}
+
+.contentOnline a {
+  color: #6d6d6d;
+}
+
+.contentOnline a .important,
+.contentOnline a:visited,
+.contentOnline a:hover,
+.contentOnline a:focus,
+.contentOnline a:active {
+  color: #6d6d6d !important;
+}
+
+.contentOnline .online {
+  color: #6d6d6d;
+}
+
+.contentOnline .online a {
+  color: #6d6d6d;
+}
+
+.contentOnline .online a .important,
+.contentOnline .online a:visited,
+.contentOnline .online a:hover,
+.contentOnline .online a:focus,
+.contentOnline .online a:active {
+  color: #6d6d6d !important;
+}
+
+.contentOnline .name {
+  color: #333333;
+}
+
+.contentOnline .name a {
+  color: #333333;
+}
+
+.contentOnline .name a .important,
+.contentOnline .name a:visited,
+.contentOnline .name a:hover,
+.contentOnline .name a:focus,
+.contentOnline .name a:active {
+  color: #333333 !important;
+}
+
 @media only screen and (max-width: 720px) {
   table[class="body"] img {
     max-width: auto !important;
