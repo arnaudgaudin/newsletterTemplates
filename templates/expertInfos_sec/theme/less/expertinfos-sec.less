@@ -426,6 +426,28 @@ hr {
 }
 
 
+// contentALaUne area
+// -------------------------
+.contentALaUne {
+	.readMore table.tiny-button {
+		td {
+			background: @nlCntUneReadMoreBackground;
+			border-color: @nlCntUneReadMoreBorder;
+			&, a { color: @nlCntUneReadMoreText; }
+		}
+
+		//hover|visited|active state
+		&:hover td,
+		&:visited td,
+		&:active td {
+			background: @nlCntUneReadMoreBackgroundHover !important;
+			a { color: @nlCntUneReadMoreText !important; }
+		}
+		td a:visited { color: @nlCntUneReadMoreText !important; }
+	}
+}
+
+
 // contentArticles area
 // -------------------------
 .contentArticles {
