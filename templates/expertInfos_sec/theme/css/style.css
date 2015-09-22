@@ -1538,10 +1538,18 @@ hr {
   table[class="body"] .contentSecteur td {
     font-size: 30px !important;
     line-height: 30px !important;
+    text-align: left !important;
+  }
+
+  table[class="body"] .contentSecteur td .essentiel {
+    display: block !important;
   }
 
   table[class="body"] .contentSecteur td .secteur {
     word-break: normal !important;
     white-space: normal !important;
+    display: block !important;
+    background-color: #0f0 !important;
+    text-align: right;
   }
 }
