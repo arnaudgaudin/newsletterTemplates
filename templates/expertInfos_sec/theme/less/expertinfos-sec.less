@@ -140,13 +140,23 @@ h1, h2, h3, h4, h5, h6 {
 
 // DEVELOPPEMENT COLORS
 // --------------------------------------------------
+//couleurs de la newsletter figée, donc on reste sur des couleurs fixes
+
 
 // Body
 // -------------------------
 body, table.body {
-	-premailer-background: e("##((nlBodyBackground))##");
+	background: @nlBodyBackground;
 	//rajout pour suppression paramètre doublon via compiler
-	background-image: url("-premailer-bgdebug");
+	// background-image: url("-premailer-bgdebug");
+}
+
+
+// Header
+// -------------------------
+//pour supprimer toute zone blanche avant chargement header
+.header {
+	&, td.expander { background: @nlBodyBackground; }
 }
 
 

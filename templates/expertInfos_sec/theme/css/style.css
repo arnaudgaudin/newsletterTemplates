@@ -1171,8 +1171,12 @@ img.faicon {
 
 body,
 table.body {
-  -premailer-background: ##((nlBodyBackground))##;
-  background-image: url("-premailer-bgdebug");
+  background: #e0e0e0;
+}
+
+.header,
+.header td.expander {
+  background: #e0e0e0;
 }
 
 hr {
