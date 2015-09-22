@@ -186,14 +186,16 @@ h1, h2, h3, h4, h5, h6 {
 	.contentSecteur-loop(@secteur-section-motifs);
 
 	//changement padding vertical
-	// td.wrapper { padding-top: (@wrapperPad * 2); }
 	table.columns td, table.column td { padding-bottom: 0px; }
 
 	td {
+		font-weight: normal;
+		font-weight: 200;
 		font-size: (@wrapperPad * 2);
 		line-height: (@wrapperPad * 2);
 		.secteur {
 			font-weight: bold;
+			font-weight: 500;
 			text-transform: uppercase;
 			word-break: keep-all;
 			white-space: nowrap;
@@ -203,7 +205,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentSecteur {
-		// td.wrapper { padding-top: (@wrapperPadCollapse * 2) !important; }
 		table.columns td, table.column td { padding-bottom: 0px !important; }
 
 		td {
