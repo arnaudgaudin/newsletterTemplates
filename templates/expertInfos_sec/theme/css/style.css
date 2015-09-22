@@ -1060,6 +1060,28 @@ h6 a {
   padding-top: 5px;
 }
 
+.readMore table.tiny-button td {
+  background: #00ff00;
+  color: #ff0000;
+}
+
+.readMore table.tiny-button td a {
+  color: #ff0000;
+}
+
+.readMore table.tiny-button:hover td,
+.readMore table.tiny-button:visited td,
+.readMore table.tiny-button:active td {
+  background: #00cc00 !important;
+}
+
+.readMore table.tiny-button:hover td a,
+.readMore table.tiny-button:visited td a,
+.readMore table.tiny-button:active td a,
+.readMore table.tiny-button td a:visited {
+  color: #cc0000 !important;
+}
+
 .readMore {
   background-color: #f00;
   width: 100%;
