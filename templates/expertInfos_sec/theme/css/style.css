@@ -1240,6 +1240,10 @@ img.faicon {
   white-space: nowrap;
 }
 
+.contentSecteur td .secteur .dash {
+  margin: 0 -0.25em;
+}
+
 body,
 table.body {
   background: #e0e0e0;
