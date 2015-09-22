@@ -1169,9 +1169,14 @@ img.faicon {
   vertical-align: top;
 }
 
+body,
+table.body {
+  background: #e0e0e0;
+}
+
 hr {
   color: #f39b1e;
-  -premailer-background: #f39b1e;
+  background: #f39b1e;
 }
 
 .row.bordered td hr.border {

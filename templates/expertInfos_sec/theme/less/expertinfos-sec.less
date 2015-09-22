@@ -138,17 +138,23 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-// CUSTOM COLORS
+// DEVELOPPEMENT COLORS
 // --------------------------------------------------
 
-
+// Body
+// -------------------------
+body, table.body {
+	background: @nlBodyBackground;
+	//rajout pour suppression paramètre doublon via compiler
+	// background-image: url("-premailer-bgdebug");
+}
 
 
 // Hr borders
 // -------------------------
 hr {
 	color: @nlHrBorder;
-	-premailer-background: @nlHrBorder;
+	background: @nlHrBorder;
 }
 //gestion row avec bordures de séparation
 .row.bordered {
