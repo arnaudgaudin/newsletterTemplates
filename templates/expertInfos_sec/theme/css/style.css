@@ -570,23 +570,23 @@ h6 {
 }
 
 h1 {
-  font-size: 28px;
+  font-size: 36px;
 }
 
 h2 {
-  font-size: 26px;
+  font-size: 30px;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 24px;
 }
 
 h4 {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 h5 {
-  font-size: 15px;
+  font-size: 16px;
 }
 
 h6 {
@@ -606,8 +606,8 @@ td {
 p.lead,
 p.lede,
 p.leed {
-  font-size: 15.6px;
-  line-height: 17.94px;
+  font-size: 15px;
+  line-height: 17.25px;
 }
 
 p {
@@ -615,7 +615,7 @@ p {
 }
 
 small {
-  font-size: 10.2px;
+  font-size: 11px;
 }
 
 a {
@@ -1011,23 +1011,23 @@ h6 {
 }
 
 h1 {
-  line-height: 30.8px;
+  line-height: 39.6px;
 }
 
 h2 {
-  line-height: 28.6px;
+  line-height: 33px;
 }
 
 h3 {
-  line-height: 22px;
+  line-height: 26.4px;
 }
 
 h4 {
-  line-height: 17.6px;
+  line-height: 19.8px;
 }
 
 h5 {
-  line-height: 16.5px;
+  line-height: 17.6px;
 }
 
 h6 {
@@ -1094,7 +1094,7 @@ h6 a {
 
 .readMore {
   text-align: right;
-  font-size: 10.2px;
+  font-size: 11px;
   margin: 0px;
   color: #f39b1e;
 }
@@ -1199,6 +1199,42 @@ img.faicon {
 
 .contentOnline .name {
   display: block;
+}
+
+.contentSecteur {
+  background-color: #f00;
+}
+
+.contentSecteur,
+.contentSecteur td,
+.contentSecteur .inner {
+  color: #ffffff;
+}
+
+.contentSecteur a {
+  color: #ffffff;
+}
+
+.contentSecteur a .important,
+.contentSecteur a:visited,
+.contentSecteur a:hover,
+.contentSecteur a:focus,
+.contentSecteur a:active {
+  color: #ffffff !important;
+}
+
+.contentSecteur table.columns td,
+.contentSecteur table.column td {
+  padding-bottom: 0px;
+}
+
+.contentSecteur td {
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.contentSecteur td .secteur {
+  font-weight: bold;
 }
 
 body,
@@ -1485,5 +1521,15 @@ hr {
   table[class="body"] .contentOnline .columns,
   table[class="body"] .contentOnline .column {
     display: table !important;
+  }
+
+  table[class="body"] .contentSecteur table.columns td,
+  table[class="body"] .contentSecteur table.column td {
+    padding-bottom: 0px !important;
+  }
+
+  table[class="body"] .contentSecteur td {
+    font-size: 35px;
+    line-height: 35px;
   }
 }

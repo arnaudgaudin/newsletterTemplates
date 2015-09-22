@@ -176,6 +176,37 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+// contentSecteur area
+// -------------------------
+.contentSecteur {
+	background-color: #f00;
+	.newsletterInnerTextColor(#fff);
+
+	//changement padding vertical
+	// td.wrapper { padding-top: (@wrapperPad * 2); }
+	table.columns td, table.column td { padding-bottom: 0px; }
+
+	td {
+		font-size: (@wrapperPad * 2.5);
+		line-height: (@wrapperPad * 2.5);
+		.secteur {
+			font-weight: bold;
+		}
+	}
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentSecteur {
+		// td.wrapper { padding-top: (@wrapperPadCollapse * 2) !important; }
+		table.columns td, table.column td { padding-bottom: 0px !important; }
+
+		td {
+			font-size: (@wrapperPadCollapse * 3.5);
+			line-height: (@wrapperPadCollapse * 3.5);
+		}
+	}
+}
+
+
 
 // DEVELOPPEMENT COLORS
 // --------------------------------------------------
