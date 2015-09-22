@@ -1223,6 +1223,26 @@ img.faicon {
   color: #ffffff !important;
 }
 
+.contentSecteur.secteur-BTP {
+  background-color: #f39b1e;
+}
+
+.contentSecteur.secteur-SAN {
+  background-color: #20a611;
+}
+
+.contentSecteur.secteur-TRA {
+  background-color: #e7503d;
+}
+
+.contentSecteur.secteur-COM {
+  background-color: #9186bc;
+}
+
+.contentSecteur.secteur-HCR {
+  background-color: #c9526f;
+}
+
 .contentSecteur table.columns td,
 .contentSecteur table.column td {
   padding-bottom: 0px;

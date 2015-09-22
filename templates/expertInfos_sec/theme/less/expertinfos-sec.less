@@ -182,6 +182,17 @@ h1, h2, h3, h4, h5, h6 {
 	background-color: #f00;
 	.newsletterInnerTextColor(#fff);
 
+	.contentSecteur-loop(@list, @index: 1) when (@index <= length(@list)) {
+		//extraction du motif
+		@testa-motif: extract(@list, @index);
+		//extraction de la couleur
+		@testa-color: ~"secteur-section-color-@{testa-motif}";
+		&.secteur-@{testa-motif} { background-color: @@testa-color; }
+		//boucle suivante
+		.contentSecteur-loop(@list, (@index + 1));
+	}
+	.contentSecteur-loop(@secteur-section-motifs);
+
 	//changement padding vertical
 	// td.wrapper { padding-top: (@wrapperPad * 2); }
 	table.columns td, table.column td { padding-bottom: 0px; }
