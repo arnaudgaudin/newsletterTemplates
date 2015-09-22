@@ -1052,38 +1052,6 @@ h6 a {
   padding-bottom: 0px;
 }
 
-.preTitle {
-  color: #333333;
-}
-
-.preTitle a {
-  color: #333333;
-}
-
-.preTitle a .important,
-.preTitle a:visited,
-.preTitle a:hover,
-.preTitle a:focus,
-.preTitle a:active {
-  color: #333333 !important;
-}
-
-.preTitle .last {
-  color: #f39b1e;
-}
-
-.preTitle .last a {
-  color: #f39b1e;
-}
-
-.preTitle .last a .important,
-.preTitle .last a:visited,
-.preTitle .last a:hover,
-.preTitle .last a:focus,
-.preTitle .last a:active {
-  color: #f39b1e !important;
-}
-
 * + .preTitle {
   padding-top: 10px;
 }
@@ -1288,6 +1256,38 @@ table.body {
   background: #e0e0e0;
 }
 
+.preTitle {
+  color: #333333;
+}
+
+.preTitle a {
+  color: #333333;
+}
+
+.preTitle a .important,
+.preTitle a:visited,
+.preTitle a:hover,
+.preTitle a:focus,
+.preTitle a:active {
+  color: #333333 !important;
+}
+
+.preTitle .last {
+  color: #f39b1e;
+}
+
+.preTitle .last a {
+  color: #f39b1e;
+}
+
+.preTitle .last a .important,
+.preTitle .last a:visited,
+.preTitle .last a:hover,
+.preTitle .last a:focus,
+.preTitle .last a:active {
+  color: #f39b1e !important;
+}
+
 hr {
   color: #f39b1e;
   background: #f39b1e;
@@ -1396,6 +1396,50 @@ hr {
 .contentDateInfo .info a:focus,
 .contentDateInfo .info a:active {
   color: #ffffff !important;
+}
+
+.contentCabInform,
+.contentCabInform td.expander {
+  background: #eaeaea;
+}
+
+.contentCabInform .title {
+  color: #262626;
+}
+
+.contentCabInform .title a {
+  color: #262626;
+}
+
+.contentCabInform .title a .important,
+.contentCabInform .title a:visited,
+.contentCabInform .title a:hover,
+.contentCabInform .title a:focus,
+.contentCabInform .title a:active {
+  color: #262626 !important;
+}
+
+.contentCabInform .text,
+.contentCabInform .readMore {
+  color: #595959;
+}
+
+.contentCabInform,
+.contentCabInform td,
+.contentCabInform .inner {
+  color: #595959;
+}
+
+.contentCabInform a {
+  color: #595959;
+}
+
+.contentCabInform a .important,
+.contentCabInform a:visited,
+.contentCabInform a:hover,
+.contentCabInform a:focus,
+.contentCabInform a:active {
+  color: #595959 !important;
 }
 
 @media only screen and (max-width: 720px) {

@@ -50,13 +50,6 @@ h1, h2, h3, h4, h5, h6 {
 
 //sur titres
 .preTitle {
-	color: @nlHeadings;
-	a { .newsletterLinkColor(@nlHeadings); }
-	.last {
-		color: @colorCouleur1;
-		a { .newsletterLinkColor(@colorCouleur1); }
-	}
-
 	//décalage si précédé
 	* + & { padding-top: 10px; }
 }
@@ -271,6 +264,18 @@ body, table.body {
 }
 
 
+// Sur-titres
+// -------------------------
+.preTitle {
+	color: @nlPreTitle;
+	a { .newsletterLinkColor(@nlPreTitle); }
+	.last {
+		color: @nlPreTitleLast;
+		a { .newsletterLinkColor(@nlPreTitleLast); }
+	}
+}
+
+
 // Hr borders
 // -------------------------
 hr {
@@ -309,4 +314,16 @@ hr {
 		&, td.expander { background: @nlCntDtiInfoBackground; }
 		.newsletterInnerTextColor(@nlCntDtiInfoText);
 	}
+}
+
+// contentCabInform area
+// -------------------------
+.contentCabInform {
+	&, td.expander { background: @nlCntCabBackground; }
+	.title {
+		color: @nlCntCabTitle;
+		a { .newsletterLinkColor(@nlCntCabTitle); }
+	}
+	.text, .readMore { color: @nlCntCabText; }
+	.newsletterInnerTextColor(@nlCntCabText);
 }
