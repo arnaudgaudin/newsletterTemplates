@@ -73,26 +73,7 @@ h1, h2, h3, h4, h5, h6 {
 // }
 
 .readMore {
-	table.tiny-button {
-		td {
-			background: #00ff00;
-			border-color: #ffff00;
-			&, a { color: #ff0000; }
-		}
-
-		//hover|visited|active state
-		&:hover td,
-		&:visited td,
-		&:active td {
-			background: darken(#00ff00, 10%) !important;
-			a { color: darken(#ff0000, 10%) !important; }
-		}
-		td a:visited { color: darken(#ff0000, 10%) !important; }
-	}
-}
-
-.readMore {
-	background-color: #f00;
+	background-color: #f0f;
 	width: 100%;
 	-premailer-width: 100%;
 	overflow: hidden;
@@ -426,6 +407,23 @@ hr {
 	}
 	.text, .readMore { color: @nlCntCabText; }
 	.newsletterInnerTextColor(@nlCntCabText);
+
+	.readMore table.tiny-button {
+		td {
+			background: @nlCntCabReadMoreBackground;
+			border-color: @nlCntCabReadMoreBorder;
+			&, a { color: @nlCntCabReadMoreText; }
+		}
+
+		//hover|visited|active state
+		&:hover td,
+		&:visited td,
+		&:active td {
+			background: @nlCntCabReadMoreBackgroundHover !important;
+			a { color: @nlCntCabReadMoreText !important; }
+		}
+		td a:visited { color: @nlCntCabReadMoreText !important; }
+	}
 }
 
 
