@@ -407,7 +407,6 @@ hr {
 	}
 	.text, .readMore { color: @nlCntCabText; }
 	.newsletterInnerTextColor(@nlCntCabText);
-
 	.readMore table.tiny-button {
 		td {
 			background: @nlCntCabReadMoreBackground;
@@ -431,4 +430,20 @@ hr {
 // -------------------------
 .contentArticles {
 	&, td.expander { background: @nlCntArtBackground; }
+	.readMore table.tiny-button {
+		td {
+			background: @nlCntArtReadMoreBackground;
+			border-color: @nlCntArtReadMoreBorder;
+			&, a { color: @nlCntArtReadMoreText; }
+		}
+
+		//hover|visited|active state
+		&:hover td,
+		&:visited td,
+		&:active td {
+			background: @nlCntArtReadMoreBackgroundHover !important;
+			a { color: @nlCntArtReadMoreText !important; }
+		}
+		td a:visited { color: @nlCntArtReadMoreText !important; }
+	}
 }
