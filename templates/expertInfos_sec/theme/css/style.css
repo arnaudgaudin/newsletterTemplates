@@ -1445,6 +1445,11 @@ hr {
   color: #595959 !important;
 }
 
+.contentArticles,
+.contentArticles td.expander {
+  background: #eaeaea;
+}
+
 @media only screen and (max-width: 720px) {
   table[class="body"] img {
     max-width: auto !important;
