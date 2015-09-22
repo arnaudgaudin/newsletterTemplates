@@ -234,8 +234,15 @@ h1, h2, h3, h4, h5, h6 {
 // contentDateInfo area
 // -------------------------
 .contentDateInfo {
-	&, td.expander { background: @nlCntDtiBackground; }
-	.newsletterInnerTextColor(@nlCntDtiText);
+	//réduction décalage vertical en haut
+	td.wrapper { padding-top: (@wrapperPad / 2); }
+	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentDateInfo {
+		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
+		table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
+	}
 }
 
 
@@ -285,5 +292,18 @@ hr {
 	.name {
 		color: @nlCntOnlineName;
 		a { .newsletterLinkColor(@nlCntOnlineName); }
+	}
+}
+
+// contentDateInfo area
+// -------------------------
+.contentDateInfo {
+	.wrapper.date {
+		&, td.expander { background: @nlCntDtiDateBackground; }
+		.newsletterInnerTextColor(@nlCntDtiDateText);
+	}
+	.wrapper.info {
+		&, td.expander { background: @nlCntDtiInfoBackground; }
+		.newsletterInnerTextColor(@nlCntDtiInfoText);
 	}
 }

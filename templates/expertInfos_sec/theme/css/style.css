@@ -1265,27 +1265,13 @@ img.faicon {
   margin: 0 -0.25em;
 }
 
-.contentDateInfo,
-.contentDateInfo td.expander {
-  background: #4f5966;
+.contentDateInfo td.wrapper {
+  padding-top: 10px;
 }
 
-.contentDateInfo,
-.contentDateInfo td,
-.contentDateInfo .inner {
-  color: #ffffff;
-}
-
-.contentDateInfo a {
-  color: #ffffff;
-}
-
-.contentDateInfo a .important,
-.contentDateInfo a:visited,
-.contentDateInfo a:hover,
-.contentDateInfo a:focus,
-.contentDateInfo a:active {
-  color: #ffffff !important;
+.contentDateInfo table.columns td,
+.contentDateInfo table.column td {
+  padding-bottom: 10px;
 }
 
 body,
@@ -1360,6 +1346,52 @@ hr {
 .contentOnline .name a:focus,
 .contentOnline .name a:active {
   color: #333333 !important;
+}
+
+.contentDateInfo .wrapper.date,
+.contentDateInfo .wrapper.date td.expander {
+  background: #8d99a7;
+}
+
+.contentDateInfo .wrapper.date,
+.contentDateInfo .wrapper.date td,
+.contentDateInfo .wrapper.date .inner {
+  color: #ffffff;
+}
+
+.contentDateInfo .wrapper.date a {
+  color: #ffffff;
+}
+
+.contentDateInfo .wrapper.date a .important,
+.contentDateInfo .wrapper.date a:visited,
+.contentDateInfo .wrapper.date a:hover,
+.contentDateInfo .wrapper.date a:focus,
+.contentDateInfo .wrapper.date a:active {
+  color: #ffffff !important;
+}
+
+.contentDateInfo .wrapper.info,
+.contentDateInfo .wrapper.info td.expander {
+  background: #4f5966;
+}
+
+.contentDateInfo .wrapper.info,
+.contentDateInfo .wrapper.info td,
+.contentDateInfo .wrapper.info .inner {
+  color: #ffffff;
+}
+
+.contentDateInfo .wrapper.info a {
+  color: #ffffff;
+}
+
+.contentDateInfo .wrapper.info a .important,
+.contentDateInfo .wrapper.info a:visited,
+.contentDateInfo .wrapper.info a:hover,
+.contentDateInfo .wrapper.info a:focus,
+.contentDateInfo .wrapper.info a:active {
+  color: #ffffff !important;
 }
 
 @media only screen and (max-width: 720px) {
@@ -1595,5 +1627,14 @@ hr {
     display: block !important;
     background-color: #0f0 !important;
     text-align: right;
+  }
+
+  table[class="body"] .contentDateInfo td.wrapper {
+    padding-top: 5px !important;
+  }
+
+  table[class="body"] .contentDateInfo table.columns td,
+  table[class="body"] .contentDateInfo table.column td {
+    padding-bottom: 5px !important;
   }
 }
