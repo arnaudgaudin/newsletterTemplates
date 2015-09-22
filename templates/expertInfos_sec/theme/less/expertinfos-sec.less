@@ -187,7 +187,7 @@ h1, h2, h3, h4, h5, h6 {
 		@testa-motif: extract(@list, @index);
 		//extraction de la couleur
 		@testa-color: ~"secteur-section-color-@{testa-motif}";
-		&.secteur-@{testa-motif} { background-color: @@testa-color; }
+		&.secteur-@{testa-motif} { &, td.expander { background-color: @@testa-color; } }
 		//boucle suivante
 		.contentSecteur-loop(@list, (@index + 1));
 	}
