@@ -1171,7 +1171,8 @@ img.faicon {
 
 body,
 table.body {
-  background: #e0e0e0;
+  -premailer-background: ##((nlBodyBackground))##;
+  background-image: url("-premailer-bgdebug");
 }
 
 hr {
