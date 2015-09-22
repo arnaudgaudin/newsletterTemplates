@@ -1229,12 +1229,15 @@ img.faicon {
 }
 
 .contentSecteur td {
-  font-size: 50px;
-  line-height: 50px;
+  font-size: 40px;
+  line-height: 40px;
 }
 
 .contentSecteur td .secteur {
   font-weight: bold;
+  text-transform: uppercase;
+  word-break: keep-all;
+  white-space: nowrap;
 }
 
 body,
@@ -1529,7 +1532,12 @@ hr {
   }
 
   table[class="body"] .contentSecteur td {
-    font-size: 35px;
-    line-height: 35px;
+    font-size: 30px !important;
+    line-height: 30px !important;
+  }
+
+  table[class="body"] .contentSecteur td .secteur {
+    word-break: normal !important;
+    white-space: normal !important;
   }
 }

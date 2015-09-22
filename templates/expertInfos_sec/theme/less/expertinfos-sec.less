@@ -187,10 +187,13 @@ h1, h2, h3, h4, h5, h6 {
 	table.columns td, table.column td { padding-bottom: 0px; }
 
 	td {
-		font-size: (@wrapperPad * 2.5);
-		line-height: (@wrapperPad * 2.5);
+		font-size: (@wrapperPad * 2);
+		line-height: (@wrapperPad * 2);
 		.secteur {
 			font-weight: bold;
+			text-transform: uppercase;
+			word-break: keep-all;
+			white-space: nowrap;
 		}
 	}
 }
@@ -200,8 +203,12 @@ h1, h2, h3, h4, h5, h6 {
 		table.columns td, table.column td { padding-bottom: 0px !important; }
 
 		td {
-			font-size: (@wrapperPadCollapse * 3.5);
-			line-height: (@wrapperPadCollapse * 3.5);
+			font-size: (@wrapperPadCollapse * 3) !important;
+			line-height: (@wrapperPadCollapse * 3) !important;
+			.secteur {
+				word-break: normal !important;
+				white-space: normal !important;
+			}
 		}
 	}
 }
