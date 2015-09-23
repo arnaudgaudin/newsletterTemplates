@@ -1253,6 +1253,31 @@ img.faicon {
   -premailer-background: **((secteur_color))**;
 }
 
+.contentSecteur.secteur-BTP,
+.contentSecteur.secteur-BTP td.expander {
+  background-color: #f39b1e;
+}
+
+.contentSecteur.secteur-SAN,
+.contentSecteur.secteur-SAN td.expander {
+  background-color: #20a611;
+}
+
+.contentSecteur.secteur-TRA,
+.contentSecteur.secteur-TRA td.expander {
+  background-color: #e7503d;
+}
+
+.contentSecteur.secteur-COM,
+.contentSecteur.secteur-COM td.expander {
+  background-color: #9186bc;
+}
+
+.contentSecteur.secteur-HCR,
+.contentSecteur.secteur-HCR td.expander {
+  background-color: #c9526f;
+}
+
 .contentSecteur table.columns td,
 .contentSecteur table.column td {
   padding-bottom: 0px;

@@ -253,16 +253,17 @@ a.tiny-button-link, table.columns .readMore td.buttonWrapper td, table.column .r
 	.newsletterInnerTextColor(#fff);
 	&, td.expander { -premailer-background: e("**((secteur_color))**"); }
 
-	// .contentSecteur-loop(@list, @index: 1) when (@index <= length(@list)) {
-	// 	//extraction du motif
-	// 	@testa-motif: extract(@list, @index);
-	// 	//extraction de la couleur
-	// 	@testa-color: ~"secteur-section-color-@{testa-motif}";
-	// 	&.secteur-@{testa-motif} { &, td.expander { background-color: @@testa-color; } }
-	// 	//boucle suivante
-	// 	.contentSecteur-loop(@list, (@index + 1));
-	// }
-	// .contentSecteur-loop(@secteur-section-motifs);
+	//pour l'affichage des tests
+	.contentSecteur-loop(@list, @index: 1) when (@index <= length(@list)) {
+		//extraction du motif
+		@testa-motif: extract(@list, @index);
+		//extraction de la couleur
+		@testa-color: ~"secteur-section-color-@{testa-motif}";
+		&.secteur-@{testa-motif} { &, td.expander { background-color: @@testa-color; } }
+		//boucle suivante
+		.contentSecteur-loop(@list, (@index + 1));
+	}
+	.contentSecteur-loop(@secteur-section-motifs);
 
 	//changement padding vertical
 	table.columns td, table.column td { padding-bottom: 0px; }
