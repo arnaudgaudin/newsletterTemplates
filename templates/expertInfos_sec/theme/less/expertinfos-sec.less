@@ -431,7 +431,7 @@ a.tiny-button-link, table.columns .readMore td.buttonWrapper td, table.column .r
 }
 
 
-// DEVELOPPEMENT COLORS
+// DEFAULT COLORS
 // --------------------------------------------------
 //couleurs de la newsletter figée, donc on reste sur des couleurs fixes
 
@@ -458,23 +458,8 @@ body, table.body {
 .preTitle {
 	color: @nlPreTitle;
 	a { .newsletterLinkColor(@nlPreTitle); }
-	.last {
-		color: @nlPreTitleLast;
-		a { .newsletterLinkColor(@nlPreTitleLast); }
-	}
 }
 
-
-// Hr borders
-// -------------------------
-hr {
-	color: @nlHrBorder;
-	background: @nlHrBorder;
-}
-//gestion row avec bordures de séparation
-.row.bordered {
-	td hr.border { border-bottom: 1px solid @nlHrBorder; }
-}
 
 
 // contentOnline area
@@ -534,27 +519,6 @@ hr {
 }
 
 
-// contentALaUne area
-// -------------------------
-.contentALaUne {
-	.readMore table.tiny-button {
-		td {
-			background: @nlCntUneReadMoreBackground;
-			border-color: @nlCntUneReadMoreBorder;
-			&, a { color: @nlCntUneReadMoreText; }
-		}
-
-		//hover|visited|active state
-		&:hover td,
-		&:visited td,
-		&:active td {
-			background: @nlCntUneReadMoreBackgroundHover !important;
-			a { color: @nlCntUneReadMoreText !important; }
-		}
-		td a:visited { color: @nlCntUneReadMoreText !important; }
-	}
-}
-
 
 // contentArticles area
 // -------------------------
@@ -591,5 +555,50 @@ hr {
 	table[class="body"] .contentEtude {
 		//rajout bordures horizontales
 		table.columns td, table.column td { border-bottom: 1px solid @nlCntEtuBorder !important; }
+	}
+}
+
+
+// CUSTOM COLORS
+// --------------------------------------------------
+
+// Sur-titres
+// -------------------------
+.preTitle .last {
+	color: @nlPreTitleLast;
+	a { .newsletterLinkColor(@nlPreTitleLast); }
+}
+
+
+// Hr borders
+// -------------------------
+hr {
+	color: @nlHrBorder;
+	background: @nlHrBorder;
+}
+//gestion row avec bordures de séparation
+.row.bordered {
+	td hr.border { border-bottom: 1px solid @nlHrBorder; }
+}
+
+
+// contentALaUne area
+// -------------------------
+.contentALaUne {
+	.readMore table.tiny-button {
+		td {
+			background: @nlCntUneReadMoreBackground;
+			border-color: @nlCntUneReadMoreBorder;
+			&, a { color: @nlCntUneReadMoreText; }
+		}
+
+		//hover|visited|active state
+		&:hover td,
+		&:visited td,
+		&:active td {
+			background: @nlCntUneReadMoreBackgroundHover !important;
+			a { color: @nlCntUneReadMoreText !important; }
+		}
+		td a:visited { color: @nlCntUneReadMoreText !important; }
 	}
 }

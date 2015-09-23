@@ -1413,31 +1413,6 @@ table.body {
   color: #333333 !important;
 }
 
-.preTitle .last {
-  color: #f39b1e;
-}
-
-.preTitle .last a {
-  color: #f39b1e;
-}
-
-.preTitle .last a .important,
-.preTitle .last a:visited,
-.preTitle .last a:hover,
-.preTitle .last a:focus,
-.preTitle .last a:active {
-  color: #f39b1e !important;
-}
-
-hr {
-  color: #f39b1e;
-  background: #f39b1e;
-}
-
-.row.bordered td hr.border {
-  border-bottom: 1px solid #f39b1e;
-}
-
 .contentOnline,
 .contentOnline td.expander {
   background: #e0e0e0;
@@ -1609,32 +1584,6 @@ hr {
   color: #ffffff !important;
 }
 
-.contentALaUne .readMore table.tiny-button td {
-  background: #f39b1e;
-  border-color: #c97a0b;
-}
-
-.contentALaUne .readMore table.tiny-button td,
-.contentALaUne .readMore table.tiny-button td a {
-  color: #ffffff;
-}
-
-.contentALaUne .readMore table.tiny-button:hover td,
-.contentALaUne .readMore table.tiny-button:visited td,
-.contentALaUne .readMore table.tiny-button:active td {
-  background: #d3800b !important;
-}
-
-.contentALaUne .readMore table.tiny-button:hover td a,
-.contentALaUne .readMore table.tiny-button:visited td a,
-.contentALaUne .readMore table.tiny-button:active td a {
-  color: #ffffff !important;
-}
-
-.contentALaUne .readMore table.tiny-button td a:visited {
-  color: #ffffff !important;
-}
-
 .contentArticles,
 .contentArticles td.expander {
   background: #eaeaea;
@@ -1695,6 +1644,57 @@ hr {
 
 .contentEtude .wrapper:not(.first) {
   border-left: 1px solid #f39b1e;
+}
+
+.preTitle .last {
+  color: #f39b1e;
+}
+
+.preTitle .last a {
+  color: #f39b1e;
+}
+
+.preTitle .last a .important,
+.preTitle .last a:visited,
+.preTitle .last a:hover,
+.preTitle .last a:focus,
+.preTitle .last a:active {
+  color: #f39b1e !important;
+}
+
+hr {
+  color: #f39b1e;
+  background: #f39b1e;
+}
+
+.row.bordered td hr.border {
+  border-bottom: 1px solid #f39b1e;
+}
+
+.contentALaUne .readMore table.tiny-button td {
+  background: #f39b1e;
+  border-color: #c97a0b;
+}
+
+.contentALaUne .readMore table.tiny-button td,
+.contentALaUne .readMore table.tiny-button td a {
+  color: #ffffff;
+}
+
+.contentALaUne .readMore table.tiny-button:hover td,
+.contentALaUne .readMore table.tiny-button:visited td,
+.contentALaUne .readMore table.tiny-button:active td {
+  background: #d3800b !important;
+}
+
+.contentALaUne .readMore table.tiny-button:hover td a,
+.contentALaUne .readMore table.tiny-button:visited td a,
+.contentALaUne .readMore table.tiny-button:active td a {
+  color: #ffffff !important;
+}
+
+.contentALaUne .readMore table.tiny-button td a:visited {
+  color: #ffffff !important;
 }
 
 @media only screen and (max-width: 720px) {
