@@ -161,7 +161,11 @@ Select Case motifsec
 		secteur_essentiel = "L'essentiel des"
 		secteur_title = "H&#244;tel<span class=""dash""> - </span>Caf&#233;<span class=""dash""> - </span>Restaurant"
 	Case Else
-		secteur_color = "#000000"
+		secteur_color = "#1f1f1f"
+		secteur_color_darken10 = "#1a1a1a"
+		secteur_color_darken12 = "#000000"
+		secteur_essentiel = "Secteur"
+		secteur_title = "non d&#233;fini"
 End Select
 
 online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/"&fileName&".asp?fintrack=&amp;id_client="&id_client&"&idarticle="&idarticle&"&idarticleAlaune="&idarticleAlaune&"&is_online=1"&get_coll
@@ -261,10 +265,10 @@ tracking_url = "rep="&repertoire_ei&"&amp;url_site_exp="&url_site_exp
 								<!-- SECTEUR START -->
 								<!-- BTP, SAN, TRA, COM, HCR -->
 								<!--DEL{{--><table border="0" class="row contentSecteur secteur-BTP"><tr><td class="wrapper first"><table border="0" class="twelve columns"><tr><td class="text-pad center"><span class="essentiel">L'essentiel du</span> <span class="secteur">BTP</span></td><td class="expander"></td></tr></table></td></tr></table><!--}}DEL-->
-								<!--DEL{{--><table border="0" class="row contentSecteur secteur-SAN"><tr><td class="wrapper first"><table border="0" class="twelve columns"><tr><td class="text-pad center"><span class="essentiel">L'essentiel de la</span> <span class="secteur">Santé</span></td><td class="expander"></td></tr></table></td></tr></table><!--}}DEL-->
+								<!--DEL{{--><table border="0" class="row contentSecteur secteur-SAN"><tr><td class="wrapper first"><table border="0" class="twelve columns"><tr><td class="text-pad center"><span class="essentiel">L'essentiel de la</span> <span class="secteur">SantÃ©</span></td><td class="expander"></td></tr></table></td></tr></table><!--}}DEL-->
 								<!--DEL{{--><table border="0" class="row contentSecteur secteur-TRA"><tr><td class="wrapper first"><table border="0" class="twelve columns"><tr><td class="text-pad center"><span class="essentiel">L'essentiel du</span> <span class="secteur">Transport</span></td><td class="expander"></td></tr></table></td></tr></table><!--}}DEL-->
 								<!--DEL{{--><table border="0" class="row contentSecteur secteur-COM"><tr><td class="wrapper first"><table border="0" class="twelve columns"><tr><td class="text-pad center"><span class="essentiel">L'essentiel du</span> <span class="secteur">Commerce</span></td><td class="expander"></td></tr></table></td></tr></table><!--}}DEL-->
-								<!--DEL{{--><table border="0" class="row contentSecteur secteur-HCR"><tr><td class="wrapper first"><table border="0" class="twelve columns"><tr><td class="text-pad center"><span class="essentiel">L'essentiel des</span> <span class="secteur">Hôtel<span class="dash"> - </span>Café<span class="dash"> - </span>Restaurant</span></td><td class="expander"></td></tr></table></td></tr></table><!--}}DEL-->
+								<!--DEL{{--><table border="0" class="row contentSecteur secteur-HCR"><tr><td class="wrapper first"><table border="0" class="twelve columns"><tr><td class="text-pad center"><span class="essentiel">L'essentiel des</span> <span class="secteur">HÃ´tel<span class="dash"> - </span>CafÃ©<span class="dash"> - </span>Restaurant</span></td><td class="expander"></td></tr></table></td></tr></table><!--}}DEL-->
 								<table border="0" class="row contentSecteur secteur-%%{{=motifsec}}%% -premailer-hidden" nlbgcolor="%%{{=secteur_color}}%%">
 									<tr>
 										<td class="wrapper first">
@@ -411,9 +415,9 @@ tracking_url = "rep="&repertoire_ei&"&amp;url_site_exp="&url_site_exp
 											<table border="0" class="twelve columns">
 												<tr>
 													<td class="text-pad">
-														<h5 class="preTitle">À la <span class="last">une</span></h5>
+														<h5 class="preTitle">Ã€ la <span class="last">une</span></h5>
 														<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/%%{{=article_une_url_v3}}%%&amp;%%{{=tracking_url}}%%">
-															<img class="center" src="http://e-newsletter.expert-infos.com/_infos/_photos/%%{{=id_de_larticle}}%%-h.jpg" width="640" height="293" alt="Article à la Une" /><!--DEL{{--><img class="center" src="http://lorempixel.com/1280/586/business/" width="640" height="293" alt="" /><!--}}DEL-->
+															<img class="center" src="http://e-newsletter.expert-infos.com/_infos/_photos/%%{{=id_de_larticle}}%%-h.jpg" width="640" height="293" alt="Article Ã  la Une" /><!--DEL{{--><img class="center" src="http://lorempixel.com/1280/586/business/" width="640" height="293" alt="" /><!--}}DEL-->
 														</a>
 														<h2 class="title">
 															<a target="_blank" href="http://%%{{=url_site_exp}}%%/%%{{=article_une_url_v3}}%%&amp;%%{{=tracking_url}}%%">
@@ -464,7 +468,7 @@ tracking_url = "rep="&repertoire_ei&"&amp;url_site_exp="&url_site_exp
 											<table border="0" class="twelve columns">
 												<tr>
 													<td class="text-pad">
-														<h5 class="preTitle">Autres <span class="last">actualités</span></h5>
+														<h5 class="preTitle">Autres <span class="last">actualitÃ©s</span></h5>
 														<!--{{%%{{
 														if idarticle="" then request.QueryString("amp;idarticle")
 														article=Mid(idarticle,1,(len(idarticle)))
@@ -550,7 +554,7 @@ tracking_url = "rep="&repertoire_ei&"&amp;url_site_exp="&url_site_exp
 												<tr>
 													<td class="text-pad center">
 														<div class="value">
-															<!--{{%%{{=etude1_valeur}}%%}}--><!--DEL{{-->1324 %<!--}}DEL-->
+															<!--{{%%{{=etude1_valeur}}%%}}--><!--DEL{{-->1324Â %<!--}}DEL-->
 														</div>
 														<div class="text">
 															<!--{{%%{{=etude1_titre}}%%}}--><!--DEL{{-->etude1_titre<!--}}DEL-->
@@ -565,7 +569,7 @@ tracking_url = "rep="&repertoire_ei&"&amp;url_site_exp="&url_site_exp
 												<tr>
 													<td class="text-pad center">
 														<div class="value">
-															<!--{{%%{{=etude2_valeur}}%%}}--><!--DEL{{-->1324 €<!--}}DEL-->
+															<!--{{%%{{=etude2_valeur}}%%}}--><!--DEL{{-->1324Â â‚¬<!--}}DEL-->
 														</div>
 														<div class="text">
 															<!--{{%%{{=etude2_titre}}%%}}--><!--DEL{{-->etude2_titre<!--}}DEL-->
@@ -649,10 +653,10 @@ tracking_url = "rep="&repertoire_ei&"&amp;url_site_exp="&url_site_exp
 														}}%%}}--><!--DEL{{-->adresse<!--}}DEL--></span></a>
 														<!--{{%%{{ if (len(trim(tel_cabinet)) > 1) then }}%%}}-->
 														<br/>
-														<img class="faicon" src="http://www.expert-infos.com/_newsletter/_logos/faicon-phone.gif" alt="Téléphone" width="15" height="15" />&#160;T&eacute;l. <span class="appleLinks"><a href="tel:%%{{=tel_cabinet}}%%"><span class="important"><!--{{%%{{=tel_cabinet}}%%}}--><!--DEL{{-->tel_cabinet<!--}}DEL--></span></a></span>
+														<img class="faicon" src="http://www.expert-infos.com/_newsletter/_logos/faicon-phone.gif" alt="TÃ©lÃ©phone" width="15" height="15" />&#160;T&eacute;l. <span class="appleLinks"><a href="tel:%%{{=tel_cabinet}}%%"><span class="important"><!--{{%%{{=tel_cabinet}}%%}}--><!--DEL{{-->tel_cabinet<!--}}DEL--></span></a></span>
 														<!--{{%%{{ end if }}%%}}-->
 														<!--{{%%{{ if (len(trim(fax_cabinet)) > 1) then }}%%}}-->
-														&#160;-&#160;<img class="faicon" src="http://www.expert-infos.com/_newsletter/_logos/faicon-print.gif" alt="Téléphone" width="15" height="15" />&#160;Fax&#160;: <a class="link_disabled" href="#"><span class="important"><!--{{%%{{=fax_cabinet}}%%}}--><!--DEL{{-->fax_cabinet<!--}}DEL--></span></a>
+														&#160;-&#160;<img class="faicon" src="http://www.expert-infos.com/_newsletter/_logos/faicon-print.gif" alt="TÃ©lÃ©phone" width="15" height="15" />&#160;Fax&#160;: <a class="link_disabled" href="#"><span class="important"><!--{{%%{{=fax_cabinet}}%%}}--><!--DEL{{-->fax_cabinet<!--}}DEL--></span></a>
 														<!--{{%%{{ end if }}%%}}-->
 
 														<br/>
@@ -746,7 +750,7 @@ tracking_url = "rep="&repertoire_ei&"&amp;url_site_exp="&url_site_exp
 												<tr>
 													<td class="center text-pad">
 														<small>
-															Si vous ne souhaitez plus recevoir cette newsletter, veuillez accéder à la page de <a target="_blank" class="link_underline" href="#" lien_blackliste="lien_blackliste"><span class="important">désinscription</span></a>.
+															Si vous ne souhaitez plus recevoir cette newsletter, veuillez accÃ©der Ã  la page de <a target="_blank" class="link_underline" href="#" lien_blackliste="lien_blackliste"><span class="important">dÃ©sinscription</span></a>.
 														</small>
 													</td>
 													<td class="expander"></td>
