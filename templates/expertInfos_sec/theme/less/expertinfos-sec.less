@@ -333,6 +333,8 @@ a.tiny-button-link, table.columns .readMore td.buttonWrapper td, table.column .r
 	.value {
 		font-size: @headingsFontSizeH2;
 		line-height: @headingsFontSizeH2;
+		font-weight: normal;
+		font-weight: 500;
 	}
 
 	//suppression padding vertical
@@ -580,6 +582,7 @@ hr {
 .contentEtude {
 	&, td.expander { background: @nlCntEtuBackground; }
 	.newsletterInnerTextColor(@nlCntEtuText);
+	.text { color: mix(@nlCntEtuBackground, @nlCntEtuText, 25%); }
 	.wrapper:not(.first) { border-left: 1px solid @nlCntEtuBorder; }
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {

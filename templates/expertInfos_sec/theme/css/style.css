@@ -1318,6 +1318,8 @@ img.faicon {
 .contentEtude .value {
   font-size: 30px;
   line-height: 30px;
+  font-weight: normal;
+  font-weight: 500;
 }
 
 .contentEtude table.columns td,
@@ -1647,6 +1649,10 @@ hr {
 .contentEtude a:focus,
 .contentEtude a:active {
   color: #ffffff !important;
+}
+
+.contentEtude .text {
+  color: #d3d6d9;
 }
 
 .contentEtude .wrapper:not(.first) {
