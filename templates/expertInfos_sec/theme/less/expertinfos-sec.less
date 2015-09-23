@@ -518,6 +518,16 @@ hr {
 		//pas de sélecteur :not car il n'est pas géré partout et le style mobile n'est pas inliné
 		.wrapper {
 			border-left: 0px !important;
+
+			//déplacement du padding sur les wrappers
+			.text-pad {
+				padding-left: 0px !important;
+				padding-right: 0px !important;
+			}
+			padding-left: @textPadCollapse !important;
+			padding-right: @textPadCollapse !important;
+
+
 			//suppression bordure sur le dernier
 			&.last {
 				table.columns td, table.column td {

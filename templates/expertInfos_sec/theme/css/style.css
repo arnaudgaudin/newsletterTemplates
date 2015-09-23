@@ -1633,7 +1633,7 @@ hr {
 }
 
 .contentEtude .wrapper:not(.first) {
-  border-left: 1px solid #ff0000;
+  border-left: 1px solid #f39b1e;
 }
 
 .contentEtude .wrapper:not(.first) .columns.four {
@@ -1917,11 +1917,18 @@ hr {
   table[class="body"] .contentEtude table.columns td,
   table[class="body"] .contentEtude table.column td {
     padding-bottom: 9px !important;
-    border-bottom: 1px solid #ff0000 !important;
+    border-bottom: 1px solid #f39b1e !important;
   }
 
   table[class="body"] .contentEtude .wrapper {
     border-left: 0px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  table[class="body"] .contentEtude .wrapper .text-pad {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
   }
 
   table[class="body"] .contentEtude .wrapper.last table.columns td,
