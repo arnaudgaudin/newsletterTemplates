@@ -21,10 +21,11 @@
 
 // Main colors
 // -------------------------
-@colorCouleur1: @secteur-section-color-BTP;
-@colorCouleur1Clair: lighten(@colorCouleur1, 25%);
-@colorCouleur1Moyen: darken(@colorCouleur1, 15%);
-@colorCouleur1Fonce: darken(@colorCouleur1, 30%);
+// Pas de couleurs 1, cette dernière est variabilisée par le motif du secteur
+// @colorCouleur1: @secteur-section-color-BTP;
+// @colorCouleur1Clair: lighten(@colorCouleur1, 25%);
+// @colorCouleur1Moyen: darken(@colorCouleur1, 15%);
+// @colorCouleur1Fonce: darken(@colorCouleur1, 30%);
 
 @colorCouleur2: #4f5966;
 @colorCouleur2Clair: lighten(@colorCouleur2, 25%);
@@ -45,7 +46,7 @@
 @nlLinkColor: @nlText;
 @nlLinkColorHover: @nlLinkColor;
 @nlPreTitle: @nlHeadings;
-@nlPreTitleLast: @colorCouleur1;
+@nlPreTitleLast: @secteur-section-color-BTP;
 
 
 //configuration de la grille
@@ -60,7 +61,7 @@
 @nlBodyBackground: darken(@colorCouleur3Clair, 4%);
 
 //couleur de fond des bordures de séparation
-@nlHrBorder: @colorCouleur1;
+@nlHrBorder: @secteur-section-color-BTP;
 
 //Visualisation message en ligne et Titre
 @nlCntOnlineBackground: @nlBodyBackground;
@@ -83,7 +84,7 @@
 @nlCntCabReadMoreText: #ffffff;
 
 //À la Une
-@nlCntUneReadMoreBackground: @colorCouleur1;
+@nlCntUneReadMoreBackground: @secteur-section-color-BTP;
 @nlCntUneReadMoreBackgroundHover: darken(@nlCntUneReadMoreBackground, 10%);
 @nlCntUneReadMoreBorder: darken(@nlCntUneReadMoreBackground, 12%);
 @nlCntUneReadMoreText: #ffffff;
@@ -98,7 +99,7 @@
 //Les études sectorielles
 @nlCntEtuBackground: @colorCouleur2;
 @nlCntEtuText: #ffffff;
-@nlCntEtuBorder: @colorCouleur1;
+@nlCntEtuBorder: @secteur-section-color-BTP;
 
 
 // Scaffolding
