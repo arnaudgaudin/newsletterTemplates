@@ -400,6 +400,34 @@ a.tiny-button-link, table.columns .readMore td.buttonWrapper td, table.column .r
 }
 
 
+// contentContact area
+// -------------------------
+.contentContact {
+	//réduction décalage vertical en bas
+	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentOnline {
+		table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
+	}
+}
+
+
+// footer area
+// -------------------------
+.footer {
+	//réduction décalage vertical en haut
+	td.wrapper { padding-top: (@wrapperPad / 2); }
+	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentOnline {
+		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
+		table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
+	}
+}
+
+
 // DEVELOPPEMENT COLORS
 // --------------------------------------------------
 //couleurs de la newsletter figée, donc on reste sur des couleurs fixes

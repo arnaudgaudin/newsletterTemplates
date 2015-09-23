@@ -1334,6 +1334,20 @@ img.faicon {
   width: 239px;
 }
 
+.contentContact table.columns td,
+.contentContact table.column td {
+  padding-bottom: 10px;
+}
+
+.footer td.wrapper {
+  padding-top: 10px;
+}
+
+.footer table.columns td,
+.footer table.column td {
+  padding-bottom: 10px;
+}
+
 body,
 table.body {
   background: #e0e0e0;
@@ -1950,6 +1964,20 @@ hr {
   table[class="body"] .contentEtude .text {
     padding-top: 0px !important;
     padding-left: 10px !important;
+  }
+
+  table[class="body"] .contentOnline table.columns td,
+  table[class="body"] .contentOnline table.column td {
+    padding-bottom: 5px !important;
+  }
+
+  table[class="body"] .contentOnline td.wrapper {
+    padding-top: 5px !important;
+  }
+
+  table[class="body"] .contentOnline table.columns td,
+  table[class="body"] .contentOnline table.column td {
+    padding-bottom: 5px !important;
   }
 
   table[class="body"] .contentEtude table.columns td,
