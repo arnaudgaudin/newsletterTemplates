@@ -527,7 +527,6 @@ hr {
 			padding-left: @textPadCollapse !important;
 			padding-right: @textPadCollapse !important;
 
-
 			//suppression bordure sur le dernier
 			&.last {
 				table.columns td, table.column td {
@@ -535,7 +534,22 @@ hr {
 					border-bottom: 0px !important;
 				}
 			}
+
+			//alignement du texte
+			td {
+				text-align: left !important;
+				vertical-align: middle !important;
+			}
 		}
 
+		//déplacement du titre à droite de la valeur
+		.value, .text {
+			display: inline !important;
+			vertical-align: middle !important;
+		}
+		.text {
+			padding-top: 0px !important;
+			padding-left: 10px !important;
+		}
 	}
 }
