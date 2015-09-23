@@ -519,6 +519,24 @@ body, table.body {
 }
 
 
+// contentALaUne area
+// -------------------------
+.contentALaUne {
+	.readMore table.tiny-button {
+		td {
+			&, a { color: @nlCntUneReadMoreText; }
+		}
+
+		//hover|visited|active state
+		&:hover td,
+		&:visited td,
+		&:active td {
+			a { color: @nlCntUneReadMoreText !important; }
+		}
+		td a:visited { color: @nlCntUneReadMoreText !important; }
+	}
+}
+
 
 // contentArticles area
 // -------------------------
@@ -590,7 +608,6 @@ hr {
 		td {
 			-premailer-background: e("**((secteur_color))**");
 			border-color: e("**((secteur_color_darken12))**");
-			&, a { color: e("**((secteur_color))**"); }
 		}
 
 		//hover|visited|active state
@@ -598,9 +615,7 @@ hr {
 		&:visited td,
 		&:active td {
 			background: e("**((secteur_color_darken10))**") !important;
-			a { color: e("**((secteur_color))**") !important; }
 		}
-		td a:visited { color: e("**((secteur_color))**") !important; }
 	}
 }
 
@@ -635,7 +650,6 @@ hr {
 		td {
 			background: @nlCntUneReadMoreBackground;
 			border-color: @nlCntUneReadMoreBorder;
-			&, a { color: @nlCntUneReadMoreText; }
 		}
 
 		//hover|visited|active state
@@ -643,9 +657,7 @@ hr {
 		&:visited td,
 		&:active td {
 			background: @nlCntUneReadMoreBackgroundHover !important;
-			a { color: @nlCntUneReadMoreText !important; }
 		}
-		td a:visited { color: @nlCntUneReadMoreText !important; }
 	}
 }
 */

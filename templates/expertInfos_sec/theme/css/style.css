@@ -1584,6 +1584,21 @@ table.body {
   color: #ffffff !important;
 }
 
+.contentALaUne .readMore table.tiny-button td,
+.contentALaUne .readMore table.tiny-button td a {
+  color: #ffffff;
+}
+
+.contentALaUne .readMore table.tiny-button:hover td a,
+.contentALaUne .readMore table.tiny-button:visited td a,
+.contentALaUne .readMore table.tiny-button:active td a {
+  color: #ffffff !important;
+}
+
+.contentALaUne .readMore table.tiny-button td a:visited {
+  color: #ffffff !important;
+}
+
 .contentArticles,
 .contentArticles td.expander {
   background: #eaeaea;
@@ -1676,25 +1691,10 @@ hr {
   border-color: **((secteur_color_darken12))**;
 }
 
-.contentALaUne .readMore table.tiny-button td,
-.contentALaUne .readMore table.tiny-button td a {
-  color: **((secteur_color))**;
-}
-
 .contentALaUne .readMore table.tiny-button:hover td,
 .contentALaUne .readMore table.tiny-button:visited td,
 .contentALaUne .readMore table.tiny-button:active td {
   background: **((secteur_color_darken10))** !important;
-}
-
-.contentALaUne .readMore table.tiny-button:hover td a,
-.contentALaUne .readMore table.tiny-button:visited td a,
-.contentALaUne .readMore table.tiny-button:active td a {
-  color: **((secteur_color))** !important;
-}
-
-.contentALaUne .readMore table.tiny-button td a:visited {
-  color: **((secteur_color))** !important;
 }
 
 /*
@@ -1728,7 +1728,6 @@ hr {
 		td {
 			background: @nlCntUneReadMoreBackground;
 			border-color: @nlCntUneReadMoreBorder;
-			&, a { color: @nlCntUneReadMoreText; }
 		}
 
 		//hover|visited|active state
@@ -1736,9 +1735,7 @@ hr {
 		&:visited td,
 		&:active td {
 			background: @nlCntUneReadMoreBackgroundHover !important;
-			a { color: @nlCntUneReadMoreText !important; }
 		}
-		td a:visited { color: @nlCntUneReadMoreText !important; }
 	}
 }
 */
