@@ -40,28 +40,14 @@
 
 // Newsletter Default Colors
 // --------------------------------------------------
+//couleur de fond générale
+@nlBodyBackground: darken(@colorCouleur3Clair, 4%);
 @nlContainerBackground: #ffffff;
 @nlText: #666666;
 @nlHeadings: #333333;
 @nlLinkColor: @nlText;
 @nlLinkColorHover: @nlLinkColor;
 @nlPreTitle: @nlHeadings;
-@nlPreTitleLast: @secteur-section-color-BTP;
-
-
-//configuration de la grille
-@nlColumnWidth: 60px;
-@nlGutterWidth: 0px;
-@nlContainerWidth: (11 * @nlGutterWidth + 12 * @nlColumnWidth);
-
-
-// Newsletter Custom Colors
-// --------------------------------------------------
-//couleur de fond générale
-@nlBodyBackground: darken(@colorCouleur3Clair, 4%);
-
-//couleur de fond des bordures de séparation
-@nlHrBorder: @secteur-section-color-BTP;
 
 //Visualisation message en ligne et Titre
 @nlCntOnlineBackground: @nlBodyBackground;
@@ -83,12 +69,6 @@
 @nlCntCabReadMoreBorder: darken(@nlCntCabReadMoreBackground, 12%);
 @nlCntCabReadMoreText: #ffffff;
 
-//À la Une
-@nlCntUneReadMoreBackground: @secteur-section-color-BTP;
-@nlCntUneReadMoreBackgroundHover: darken(@nlCntUneReadMoreBackground, 10%);
-@nlCntUneReadMoreBorder: darken(@nlCntUneReadMoreBackground, 12%);
-@nlCntUneReadMoreText: #ffffff;
-
 //Les articles
 @nlCntArtBackground: @colorCouleur3Clair;
 @nlCntArtReadMoreBackground: @colorCouleur3;
@@ -101,6 +81,25 @@
 @nlCntEtuText: #ffffff;
 @nlCntEtuBorder: @secteur-section-color-BTP;
 
+//configuration de la grille
+@nlColumnWidth: 60px;
+@nlGutterWidth: 0px;
+@nlContainerWidth: (11 * @nlGutterWidth + 12 * @nlColumnWidth);
+
+
+// Newsletter Custom Colors
+// --------------------------------------------------
+//couleurs du dernier mot des pre-titres
+@nlPreTitleLast: @secteur-section-color-BTP;
+
+//couleur de fond des bordures de séparation
+@nlHrBorder: @secteur-section-color-BTP;
+
+//À la Une
+@nlCntUneReadMoreBackground: @secteur-section-color-BTP;
+@nlCntUneReadMoreBackgroundHover: darken(@nlCntUneReadMoreBackground, 10%);
+@nlCntUneReadMoreBorder: darken(@nlCntUneReadMoreBackground, 12%);
+@nlCntUneReadMoreText: #ffffff;
 
 // Scaffolding
 // -------------------------
