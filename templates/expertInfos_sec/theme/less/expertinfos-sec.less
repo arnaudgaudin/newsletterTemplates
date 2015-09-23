@@ -492,11 +492,40 @@ hr {
 	.wrapper {
 		padding-top: 0px;
 
-		//rajout bordures sur le premier
+		//rajout bordures verticales
 		&:not(.first) {
 			border-left: 1px solid @nlCntEtuBorder;
 			//réduction largeur tableau 6 colonnes de 1px pour compenser
 			.columns.four { width: (3 * @gutterWidth + 4 * @columnWidth - 1px); }
 		}
+	}
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentEtude {
+		//masquage des fillers
+		.filler {
+			height: 0px !important;
+			display: none !important;
+			visibility: hidden !important;
+		}
+
+		//rajout bordures horizontales
+		table.columns td, table.column td {
+			padding-bottom: (@columnPadCollapse - 1px) !important;
+			border-bottom: 1px solid @nlCntEtuBorder !important;
+		}
+
+		//pas de sélecteur :not car il n'est pas géré partout et le style mobile n'est pas inliné
+		.wrapper {
+			border-left: 0px !important;
+			//suppression bordure sur le dernier
+			&.last {
+				table.columns td, table.column td {
+					padding-bottom: @columnPadCollapse !important;
+					border-bottom: 0px !important;
+				}
+			}
+		}
+
 	}
 }
