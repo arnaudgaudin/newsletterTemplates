@@ -132,22 +132,32 @@ motifsec=request.QueryString("motifsec")
 Select Case motifsec
 	Case  "BTP"
 		secteur_color = colorParsing.Item("nlSecColorBTP")
+		secteur_color_darken10 = colorParsing.Item("nlSecColorBTPdarken10")
+		secteur_color_darken12 = colorParsing.Item("nlSecColorBTPdarken12")
 		secteur_essentiel = "L'essentiel du"
 		secteur_title = "BTP"
 	Case  "SAN"
 		secteur_color = colorParsing.Item("nlSecColorSAN")
+		secteur_color_darken10 = colorParsing.Item("nlSecColorSANdarken10")
+		secteur_color_darken12 = colorParsing.Item("nlSecColorSANdarken12")
 		secteur_essentiel = "L'essentiel de la"
 		secteur_title = "Sant&#233;"
 	Case  "TRA"
 		secteur_color = colorParsing.Item("nlSecColorTRA")
+		secteur_color_darken10 = colorParsing.Item("nlSecColorTRAdarken10")
+		secteur_color_darken12 = colorParsing.Item("nlSecColorTRAdarken12")
 		secteur_essentiel = "L'essentiel du"
 		secteur_title = "Transport"
 	Case  "COM"
 		secteur_color = colorParsing.Item("nlSecColorCOM")
+		secteur_color_darken10 = colorParsing.Item("nlSecColorCOMdarken10")
+		secteur_color_darken12 = colorParsing.Item("nlSecColorCOMdarken12")
 		secteur_essentiel = "L'essentiel du"
 		secteur_title = "Commerce"
 	Case  "HCR"
 		secteur_color = colorParsing.Item("nlSecColorHCR")
+		secteur_color_darken10 = colorParsing.Item("nlSecColorHCRdarken10")
+		secteur_color_darken12 = colorParsing.Item("nlSecColorHCRdarken12")
 		secteur_essentiel = "L'essentiel des"
 		secteur_title = "H&#244;tel<span class=""dash""> - </span>Caf&#233;<span class=""dash""> - </span>Restaurant"
 	Case Else
