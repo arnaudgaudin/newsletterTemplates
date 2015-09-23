@@ -322,6 +322,84 @@ a.tiny-button-link, table.columns .readMore td.buttonWrapper td, table.column .r
 }
 
 
+// contentEtude area
+// -------------------------
+.contentEtude {
+	//pour rajouter de l'espace en haut et en dessous des wrappers
+	.filler {
+		height: @wrapperPad;
+		-premailer-height: @wrapperPad;
+	}
+
+	.value {
+		font-size: @headingsFontSizeH2;
+		line-height: @headingsFontSizeH2;
+	}
+
+	//suppression padding vertical
+	table.columns td, table.column td { padding-bottom: 0px; }
+	.wrapper {
+		padding-top: 0px;
+
+		//rajout bordures verticales
+		&:not(.first) {
+			//réduction largeur tableau 6 colonnes de 1px pour compenser
+			.columns.four { width: (3 * @gutterWidth + 4 * @columnWidth - 1px); }
+		}
+	}
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentEtude {
+		//masquage des fillers
+		.filler {
+			height: 0px !important;
+			display: none !important;
+			visibility: hidden !important;
+		}
+
+		//rajout bordures horizontales
+		table.columns td, table.column td { padding-bottom: (@columnPadCollapse - 1px) !important; }
+
+		//pas de sélecteur :not car il n'est pas géré partout et le style mobile n'est pas inliné
+		.wrapper {
+			border-left: 0px !important;
+
+			//déplacement du padding sur les wrappers
+			.text-pad {
+				padding-left: 0px !important;
+				padding-right: 0px !important;
+			}
+			padding-left: @textPadCollapse !important;
+			padding-right: @textPadCollapse !important;
+
+			//suppression bordure sur le dernier
+			&.last {
+				table.columns td, table.column td {
+					padding-bottom: @columnPadCollapse !important;
+					border-bottom: 0px !important;
+				}
+			}
+
+			//alignement du texte
+			td {
+				text-align: left !important;
+				vertical-align: middle !important;
+			}
+		}
+
+		//déplacement du titre à droite de la valeur
+		.value, .text {
+			display: inline !important;
+			vertical-align: middle !important;
+		}
+		.text {
+			padding-top: 0px !important;
+			padding-left: 10px !important;
+		}
+	}
+}
+
+
 // DEVELOPPEMENT COLORS
 // --------------------------------------------------
 //couleurs de la newsletter figée, donc on reste sur des couleurs fixes
@@ -475,81 +553,11 @@ hr {
 .contentEtude {
 	&, td.expander { background: @nlCntEtuBackground; }
 	.newsletterInnerTextColor(@nlCntEtuText);
-
-	//pour rajouter de l'espace en haut et en dessous des wrappers
-	.filler {
-		height: @wrapperPad;
-		-premailer-height: @wrapperPad;
-	}
-
-	.value {
-		font-size: @headingsFontSizeH2;
-		line-height: @headingsFontSizeH2;
-	}
-
-	//suppression padding vertical
-	table.columns td, table.column td { padding-bottom: 0px; }
-	.wrapper {
-		padding-top: 0px;
-
-		//rajout bordures verticales
-		&:not(.first) {
-			border-left: 1px solid @nlCntEtuBorder;
-			//réduction largeur tableau 6 colonnes de 1px pour compenser
-			.columns.four { width: (3 * @gutterWidth + 4 * @columnWidth - 1px); }
-		}
-	}
+	.wrapper:not(.first) { border-left: 1px solid @nlCntEtuBorder; }
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentEtude {
-		//masquage des fillers
-		.filler {
-			height: 0px !important;
-			display: none !important;
-			visibility: hidden !important;
-		}
-
 		//rajout bordures horizontales
-		table.columns td, table.column td {
-			padding-bottom: (@columnPadCollapse - 1px) !important;
-			border-bottom: 1px solid @nlCntEtuBorder !important;
-		}
-
-		//pas de sélecteur :not car il n'est pas géré partout et le style mobile n'est pas inliné
-		.wrapper {
-			border-left: 0px !important;
-
-			//déplacement du padding sur les wrappers
-			.text-pad {
-				padding-left: 0px !important;
-				padding-right: 0px !important;
-			}
-			padding-left: @textPadCollapse !important;
-			padding-right: @textPadCollapse !important;
-
-			//suppression bordure sur le dernier
-			&.last {
-				table.columns td, table.column td {
-					padding-bottom: @columnPadCollapse !important;
-					border-bottom: 0px !important;
-				}
-			}
-
-			//alignement du texte
-			td {
-				text-align: left !important;
-				vertical-align: middle !important;
-			}
-		}
-
-		//déplacement du titre à droite de la valeur
-		.value, .text {
-			display: inline !important;
-			vertical-align: middle !important;
-		}
-		.text {
-			padding-top: 0px !important;
-			padding-left: 10px !important;
-		}
+		table.columns td, table.column td { border-bottom: 1px solid @nlCntEtuBorder !important; }
 	}
 }
