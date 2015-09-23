@@ -1052,6 +1052,17 @@ h6 a {
   padding-bottom: 0px;
 }
 
+.filler,
+.filler .empty {
+  mso-line-height-rule: exactly;
+  line-height: 0px;
+  font-size: 0px;
+}
+
+.filler .empty {
+  margin: 0px;
+}
+
 * + .preTitle {
   padding-top: 10px;
 }
@@ -1602,9 +1613,31 @@ hr {
   color: #ffffff !important;
 }
 
+.contentEtude .filler {
+  height: 20px;
+  -premailer-height: 20px;
+}
+
 .contentEtude .value {
   font-size: 30px;
   line-height: 30px;
+}
+
+.contentEtude table.columns td,
+.contentEtude table.column td {
+  padding-bottom: 0px;
+}
+
+.contentEtude .wrapper {
+  padding-top: 0px;
+}
+
+.contentEtude .wrapper:not(.first) {
+  border-left: 1px solid #ff0000;
+}
+
+.contentEtude .wrapper:not(.first) .columns.four {
+  width: 239px;
 }
 
 @media only screen and (max-width: 720px) {

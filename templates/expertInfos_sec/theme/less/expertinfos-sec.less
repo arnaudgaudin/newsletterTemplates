@@ -48,6 +48,16 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 
+//pour rajouter de l'espace en haut et en dessous des wrappers
+.filler {
+	&, .empty {
+		mso-line-height-rule: exactly;
+		line-height: 0px;
+		font-size: 0px;
+	}
+	.empty { margin: 0px; }
+}
+
 //sur titres
 .preTitle {
 	//décalage si précédé
@@ -466,8 +476,27 @@ hr {
 	&, td.expander { background: @nlCntEtuBackground; }
 	.newsletterInnerTextColor(@nlCntEtuText);
 
+	//pour rajouter de l'espace en haut et en dessous des wrappers
+	.filler {
+		height: @wrapperPad;
+		-premailer-height: @wrapperPad;
+	}
+
 	.value {
 		font-size: @headingsFontSizeH2;
 		line-height: @headingsFontSizeH2;
+	}
+
+	//suppression padding vertical
+	table.columns td, table.column td { padding-bottom: 0px; }
+	.wrapper {
+		padding-top: 0px;
+
+		//rajout bordures sur le premier
+		&:not(.first) {
+			border-left: 1px solid @nlCntEtuBorder;
+			//réduction largeur tableau 6 colonnes de 1px pour compenser
+			.columns.four { width: (3 * @gutterWidth + 4 * @columnWidth - 1px); }
+		}
 	}
 }
