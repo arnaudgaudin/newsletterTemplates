@@ -1673,7 +1673,7 @@ hr {
 
 .contentALaUne .readMore table.tiny-button td {
   -premailer-background: **((secteur_color))**;
-  border-color: **((secteur_color))**;
+  border-color: **((secteur_color_darken12))**;
 }
 
 .contentALaUne .readMore table.tiny-button td,
@@ -1684,7 +1684,7 @@ hr {
 .contentALaUne .readMore table.tiny-button:hover td,
 .contentALaUne .readMore table.tiny-button:visited td,
 .contentALaUne .readMore table.tiny-button:active td {
-  background: **((secteur_color))** !important;
+  background: **((secteur_color_darken10))** !important;
 }
 
 .contentALaUne .readMore table.tiny-button:hover td a,
