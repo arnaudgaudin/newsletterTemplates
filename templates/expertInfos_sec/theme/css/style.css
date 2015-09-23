@@ -1647,11 +1647,11 @@ table.body {
 }
 
 .preTitle .last {
-  color: #f39b1e;
+  color: **((secteur_color))**;
 }
 
 .preTitle .last a {
-  color: #f39b1e;
+  color: **((secteur_color))**;
 }
 
 .preTitle .last a .important,
@@ -1659,43 +1659,89 @@ table.body {
 .preTitle .last a:hover,
 .preTitle .last a:focus,
 .preTitle .last a:active {
-  color: #f39b1e !important;
+  color: **((secteur_color))** !important;
 }
 
 hr {
-  color: #f39b1e;
-  background: #f39b1e;
+  color: **((secteur_color))**;
+  -premailer-background: **((secteur_color))**;
 }
 
 .row.bordered td hr.border {
-  border-bottom: 1px solid #f39b1e;
+  border-bottom: 1px solid **((secteur_color))**;
 }
 
 .contentALaUne .readMore table.tiny-button td {
-  background: #f39b1e;
-  border-color: #c97a0b;
+  -premailer-background: **((secteur_color))**;
+  border-color: **((secteur_color))**;
 }
 
 .contentALaUne .readMore table.tiny-button td,
 .contentALaUne .readMore table.tiny-button td a {
-  color: #ffffff;
+  color: **((secteur_color))**;
 }
 
 .contentALaUne .readMore table.tiny-button:hover td,
 .contentALaUne .readMore table.tiny-button:visited td,
 .contentALaUne .readMore table.tiny-button:active td {
-  background: #d3800b !important;
+  background: **((secteur_color))** !important;
 }
 
 .contentALaUne .readMore table.tiny-button:hover td a,
 .contentALaUne .readMore table.tiny-button:visited td a,
 .contentALaUne .readMore table.tiny-button:active td a {
-  color: #ffffff !important;
+  color: **((secteur_color))** !important;
 }
 
 .contentALaUne .readMore table.tiny-button td a:visited {
-  color: #ffffff !important;
+  color: **((secteur_color))** !important;
 }
+
+/*
+// DEVELOPPEMENT COLORS
+// --------------------------------------------------
+
+// Sur-titres
+// -------------------------
+.preTitle .last {
+	color: @nlPreTitleLast;
+	a { .newsletterLinkColor(@nlPreTitleLast); }
+}
+
+
+// Hr borders
+// -------------------------
+hr {
+	color: @nlHrBorder;
+	background: @nlHrBorder;
+}
+//gestion row avec bordures de séparation
+.row.bordered {
+	td hr.border { border-bottom: 1px solid @nlHrBorder; }
+}
+
+
+// contentALaUne area
+// -------------------------
+.contentALaUne {
+	.readMore table.tiny-button {
+		td {
+			background: @nlCntUneReadMoreBackground;
+			border-color: @nlCntUneReadMoreBorder;
+			&, a { color: @nlCntUneReadMoreText; }
+		}
+
+		//hover|visited|active state
+		&:hover td,
+		&:visited td,
+		&:active td {
+			background: @nlCntUneReadMoreBackgroundHover !important;
+			a { color: @nlCntUneReadMoreText !important; }
+		}
+		td a:visited { color: @nlCntUneReadMoreText !important; }
+	}
+}
+*/
 
 @media only screen and (max-width: 720px) {
   table[class="body"] img {

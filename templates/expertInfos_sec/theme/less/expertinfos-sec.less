@@ -565,6 +565,52 @@ body, table.body {
 // Sur-titres
 // -------------------------
 .preTitle .last {
+	color: e("**((secteur_color))**");
+	a { .newsletterLinkColor(e("**((secteur_color))**")); }
+}
+
+
+// Hr borders
+// -------------------------
+hr {
+	color: e("**((secteur_color))**");
+	-premailer-background: e("**((secteur_color))**");
+
+}
+//gestion row avec bordures de séparation
+.row.bordered {
+	td hr.border { border-bottom: 1px solid e("**((secteur_color))**"); }
+}
+
+
+// contentALaUne area
+// -------------------------
+.contentALaUne {
+	.readMore table.tiny-button {
+		td {
+			-premailer-background: e("**((secteur_color))**");
+			border-color: e("**((secteur_color))**");
+			&, a { color: e("**((secteur_color))**"); }
+		}
+
+		//hover|visited|active state
+		&:hover td,
+		&:visited td,
+		&:active td {
+			background: e("**((secteur_color))**") !important;
+			a { color: e("**((secteur_color))**") !important; }
+		}
+		td a:visited { color: e("**((secteur_color))**") !important; }
+	}
+}
+
+/*
+// DEVELOPPEMENT COLORS
+// --------------------------------------------------
+
+// Sur-titres
+// -------------------------
+.preTitle .last {
 	color: @nlPreTitleLast;
 	a { .newsletterLinkColor(@nlPreTitleLast); }
 }
@@ -602,3 +648,4 @@ hr {
 		td a:visited { color: @nlCntUneReadMoreText !important; }
 	}
 }
+*/
