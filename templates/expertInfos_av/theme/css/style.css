@@ -1591,8 +1591,7 @@ table.body {
 
 hr {
   color: ##((nlHrBorder))##;
-  -premailer-background: ##((nlHrBorder))##;
-  background-image: url("-premailer-bgdebug");
+  background: ##((nlHrBorder))##;
 }
 
 .row.bordered td hr.border {
