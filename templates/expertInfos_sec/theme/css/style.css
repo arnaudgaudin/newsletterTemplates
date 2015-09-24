@@ -850,6 +850,10 @@ body.outlook p {
   text-decoration: none;
 }
 
+.appleLinks a .important {
+  text-decoration: none !important;
+}
+
 .appleLinks a:hover,
 .appleLinks a:active {
   color: #666666 !important;
