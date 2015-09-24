@@ -32,6 +32,10 @@ h4 { line-height: (@headingsFontSizeH4 * 1.1); }
 h5 { line-height: (@headingsFontSizeH5 * 1.1); }
 h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 
+h1, h2, h3, h4, h5, h6 {
+	a { .newsletterLinkColor(@nlHeadings); }
+}
+
 .header {
 	//suppression décalage en trop
 	td.wrapper { padding-top: 0px; }
@@ -58,12 +62,7 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 
 //tous les titres
 .title {
-	color: #000000;
-	a { .newsletterLinkColor(#000000); }
-
-	.category {
-		font-weight: normal;
-	}
+	.category { font-weight: normal; }
 	
 	//décalage si précédé
 	* + & { padding-top: 5px; }
