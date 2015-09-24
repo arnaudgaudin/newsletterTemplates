@@ -1680,7 +1680,8 @@ hr {
 }
 
 .row.bordered td hr.border {
-  border-bottom: 1px solid **((secteur_color))**;
+  -premailer-border-bottom: 1px solid **((secteur_color))**;
+  border: 999000999ex none transparent;
 }
 
 .contentALaUne .readMore table.tiny-button td {

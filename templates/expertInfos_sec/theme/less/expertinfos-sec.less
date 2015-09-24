@@ -591,7 +591,11 @@ hr {
 }
 //gestion row avec bordures de séparation
 .row.bordered {
-	td hr.border { border-bottom: 1px solid e("**((secteur_color))**"); }
+	td hr.border {
+		-premailer-border-bottom: 1px solid e("**((secteur_color))**");
+		//rajout pour suppression paramètre doublon via compiler
+		border: 999000999ex none transparent;
+	}
 }
 
 
