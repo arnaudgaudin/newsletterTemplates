@@ -1369,11 +1369,6 @@ img.faicon {
   padding-bottom: 10px;
 }
 
-.contentArticles table.columns .readMore:last-child td.buttonWrapper,
-.contentArticles table.column .readMore:last-child td.buttonWrapper {
-  padding-bottom: 0px;
-}
-
 .contentEtude .filler {
   height: 20px;
   -premailer-height: 20px;
