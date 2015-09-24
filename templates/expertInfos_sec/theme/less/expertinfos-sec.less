@@ -620,14 +620,17 @@ hr {
 // contentEtude area
 // -------------------------
 .contentEtude {
-	.wrapper:not(.first) { border-left: 1px solid @nlCntEtuBorder; }
+	.wrapper:not(.first) {
+		-premailer-border-left: 1px solid e("**((secteur_color))**");
+		//rajout pour suppression paramètre doublon via compiler
+		border: 999000999ex none transparent;
+	}
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentEtude {
-		table.columns td, table.column td { border-bottom: 1px solid @nlCntEtuBorder !important; }
+		table.columns td, table.column td { border-bottom: 1px solid e("**((secteur_color))**") !important; }
 	}
 }
-
 
 /*
 // DEVELOPPEMENT COLORS
@@ -668,6 +671,18 @@ hr {
 		&:active td {
 			background: @nlCntUneReadMoreBackgroundHover !important;
 		}
+	}
+}
+
+
+// contentEtude area
+// -------------------------
+.contentEtude {
+	.wrapper:not(.first) { border-left: 1px solid @nlCntEtuBorder; }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentEtude {
+		table.columns td, table.column td { border-bottom: 1px solid @nlCntEtuBorder !important; }
 	}
 }
 */

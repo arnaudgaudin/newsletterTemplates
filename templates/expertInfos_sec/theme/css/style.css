@@ -1697,7 +1697,8 @@ hr {
 }
 
 .contentEtude .wrapper:not(.first) {
-  border-left: 1px solid #f39b1e;
+  -premailer-border-left: 1px solid **((secteur_color))**;
+  border: 999000999ex none transparent;
 }
 
 /*
@@ -1739,6 +1740,18 @@ hr {
 		&:active td {
 			background: @nlCntUneReadMoreBackgroundHover !important;
 		}
+	}
+}
+
+
+// contentEtude area
+// -------------------------
+.contentEtude {
+	.wrapper:not(.first) { border-left: 1px solid @nlCntEtuBorder; }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentEtude {
+		table.columns td, table.column td { border-bottom: 1px solid @nlCntEtuBorder !important; }
 	}
 }
 */
@@ -2071,6 +2084,6 @@ hr {
 
   table[class="body"] .contentEtude table.columns td,
   table[class="body"] .contentEtude table.column td {
-    border-bottom: 1px solid #f39b1e !important;
+    border-bottom: 1px solid **((secteur_color))** !important;
   }
 }
