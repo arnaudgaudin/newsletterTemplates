@@ -2167,7 +2167,7 @@ hr {
 
   table[class="body"] .contentEtude .wrapper table.columns .text td,
   table[class="body"] .contentEtude .wrapper table.column .text td {
-    padding: 0 0 0 10px !important;
+    padding: 8px 0 0 10px !important;
   }
 
   table[class="body"] .contentEtude .value,
@@ -2180,10 +2180,6 @@ hr {
   table[class="body"] .contentEtude .value {
     display: block !important;
     float: left !important;
-  }
-
-  table[class="body"] .contentEtude .text td {
-    line-height: 30px !important;
   }
 
   table[class="body"] .contentOnline table.columns td,

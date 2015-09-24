@@ -432,7 +432,7 @@ a.tiny-button-link, table.columns .readMore td.buttonWrapper td, table.column .r
 			//suppression padding
 			table.columns, table.column {
 				.value td { padding: 0px !important; }
-				.text td { padding: 0 0 0 10px !important; }
+				.text td { padding: (@headingsFontSizeH2 - @baseLineHeight - @baseFontSize / 2) 0 0 10px !important; }
 			}
 		}
 
@@ -446,7 +446,6 @@ a.tiny-button-link, table.columns .readMore td.buttonWrapper td, table.column .r
 			display: block !important;
 			float: left !important;
 		}
-		.text td { line-height: @headingsFontSizeH2 !important; }
 	}
 }
 
