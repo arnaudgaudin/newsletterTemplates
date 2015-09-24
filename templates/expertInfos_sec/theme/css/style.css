@@ -1360,6 +1360,20 @@ img.faicon {
   text-transform: uppercase;
 }
 
+.contentALaUne .preTitle {
+  padding-bottom: 5px;
+}
+
+.contentArticles table.columns .readMore td.buttonWrapper,
+.contentArticles table.column .readMore td.buttonWrapper {
+  padding-bottom: 10px;
+}
+
+.contentArticles table.columns .readMore:last-child td.buttonWrapper,
+.contentArticles table.column .readMore:last-child td.buttonWrapper {
+  padding-bottom: 0px;
+}
+
 .contentEtude .filler {
   height: 20px;
   -premailer-height: 20px;
@@ -1594,10 +1608,6 @@ table.body {
 
 .contentCabInform .readMore table.tiny-button td a:visited {
   color: #ffffff !important;
-}
-
-.contentALaUne .preTitle {
-  padding-bottom: 5px;
 }
 
 .contentALaUne .readMore table.tiny-button td,

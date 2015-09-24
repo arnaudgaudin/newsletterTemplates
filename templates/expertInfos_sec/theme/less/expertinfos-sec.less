@@ -334,6 +334,25 @@ a.tiny-button-link, table.columns .readMore td.buttonWrapper td, table.column .r
 }
 
 
+// contentALaUne area
+// -------------------------
+.contentALaUne {
+	.preTitle { padding-bottom: 5px; }
+}
+
+
+// contentArticles area
+// -------------------------
+.contentArticles {
+	table.columns, table.column {
+		.readMore {
+			td.buttonWrapper { padding-bottom: 10px; }
+			&:last-child td.buttonWrapper { padding-bottom: 0px; }
+		}
+	}
+}
+
+
 // contentEtude area
 // -------------------------
 .contentEtude {
@@ -533,8 +552,6 @@ body, table.body {
 // contentALaUne area
 // -------------------------
 .contentALaUne {
-	.preTitle { padding-bottom: 5px; }
-
 	.readMore table.tiny-button {
 		td {
 			&, a { color: @nlCntUneReadMoreText; }
