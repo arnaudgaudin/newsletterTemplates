@@ -1206,6 +1206,7 @@ table.column .readMore td.buttonWrapper td {
   margin: 0px;
   background-color: transparent;
   height: 0px;
+  -premailer-border: none;
 }
 
 .faicons {

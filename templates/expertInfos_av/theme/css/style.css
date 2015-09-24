@@ -1168,6 +1168,7 @@ h6 a:active {
   margin: 0px;
   background-color: transparent;
   height: 0px;
+  -premailer-border: none;
 }
 
 .faicons {
