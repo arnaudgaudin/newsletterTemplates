@@ -126,7 +126,7 @@ end if
 
 'Gestion des variables sectorielles'
 'BTP|SAN|TRA|COM|HCR'
-motifsec=request.QueryString("motifsec")
+motifsec=UCase(request.QueryString("motifsec"))
 'motifsec="BTP"'
 
 Select Case motifsec
