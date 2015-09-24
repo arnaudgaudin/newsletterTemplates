@@ -1723,33 +1723,72 @@ table.body {
   color: #8c8c8c;
 }
 
+.preTitle .last {
+  color: **((secteur_color))**;
+}
+
+.preTitle .last a {
+  color: **((secteur_color))**;
+}
+
+.preTitle .last a .important,
+.preTitle .last a:visited,
+.preTitle .last a:hover,
+.preTitle .last a:focus,
+.preTitle .last a:active {
+  color: **((secteur_color))** !important;
+}
+
+hr {
+  color: **((secteur_color))**;
+  -premailer-background: **((secteur_color))**;
+  background-image: url("-premailer-bgdebug");
+}
+
+.row.bordered td hr.border {
+  -premailer-border-bottom: 1px solid **((secteur_color))**;
+  border: 999000999ex none transparent;
+}
+
+.contentALaUne .readMore table.tiny-button td {
+  -premailer-background: **((secteur_color))**;
+  -premailer-border: 1px solid **((secteur_color_darken12))**;
+  background-image: url("-premailer-bgdebug");
+  border: 999000999ex none transparent;
+}
+
+.contentALaUne .readMore table.tiny-button:hover td,
+.contentALaUne .readMore table.tiny-button:visited td,
+.contentALaUne .readMore table.tiny-button:active td {
+  background: **((secteur_color_darken10))** !important;
+}
+
+.contentEtude .wrapper:not(.first) {
+  -premailer-border-left: 1px solid **((secteur_color))**;
+  border: 999000999ex none transparent;
+}
+
 /*
-// CUSTOM COLORS
+// DEVELOPPEMENT COLORS
 // --------------------------------------------------
 
 // Sur-titres
 // -------------------------
 .preTitle .last {
-	color: e("**((secteur_color))**");
-	a { .newsletterLinkColor(e("**((secteur_color))**")); }
+	color: @nlPreTitleLast;
+	a { .newsletterLinkColor(@nlPreTitleLast); }
 }
 
 
 // Hr borders
 // -------------------------
 hr {
-	color: e("**((secteur_color))**");
-	-premailer-background: e("**((secteur_color))**");
-	//rajout pour suppression paramètre doublon via compiler
-	background-image: url("-premailer-bgdebug");
+	color: @nlHrBorder;
+	background: @nlHrBorder;
 }
 //gestion row avec bordures de séparation
 .row.bordered {
-	td hr.border {
-		-premailer-border-bottom: 1px solid e("**((secteur_color))**");
-		//rajout pour suppression paramètre doublon via compiler
-		border: 999000999ex none transparent;
-	}
+	td hr.border { border-bottom: 1px solid @nlHrBorder; }
 }
 
 
@@ -1758,18 +1797,15 @@ hr {
 .contentALaUne {
 	.readMore table.tiny-button {
 		td {
-			-premailer-background: e("**((secteur_color))**");
-			-premailer-border: 1px solid e("**((secteur_color_darken12))**");
-			//rajout pour suppression paramètre doublon via compiler
-			background-image: url("-premailer-bgdebug");
-			border: 999000999ex none transparent;
+			background: @nlCntUneReadMoreBackground;
+			border: 1px solid @nlCntUneReadMoreBorder;
 		}
 
 		//hover|visited|active state
 		&:hover td,
 		&:visited td,
 		&:active td {
-			background: e("**((secteur_color_darken10))**") !important;
+			background: @nlCntUneReadMoreBackgroundHover !important;
 		}
 	}
 }
@@ -1778,58 +1814,14 @@ hr {
 // contentEtude area
 // -------------------------
 .contentEtude {
-	.wrapper:not(.first) {
-		-premailer-border-left: 1px solid e("**((secteur_color))**");
-		//rajout pour suppression paramètre doublon via compiler
-		border: 999000999ex none transparent;
-	}
+	.wrapper:not(.first) { border-left: 1px solid @nlCntEtuBorder; }
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentEtude {
-		table.columns td, table.column td { border-bottom: 1px solid e("**((secteur_color))**") !important; }
+		table.columns td, table.column td { border-bottom: 1px solid @nlCntEtuBorder !important; }
 	}
 }
 */
-
-.preTitle .last {
-  color: #f39b1e;
-}
-
-.preTitle .last a {
-  color: #f39b1e;
-}
-
-.preTitle .last a .important,
-.preTitle .last a:visited,
-.preTitle .last a:hover,
-.preTitle .last a:focus,
-.preTitle .last a:active {
-  color: #f39b1e !important;
-}
-
-hr {
-  color: #f39b1e;
-  background: #f39b1e;
-}
-
-.row.bordered td hr.border {
-  border-bottom: 1px solid #f39b1e;
-}
-
-.contentALaUne .readMore table.tiny-button td {
-  background: #f39b1e;
-  border: 1px solid #c97a0b;
-}
-
-.contentALaUne .readMore table.tiny-button:hover td,
-.contentALaUne .readMore table.tiny-button:visited td,
-.contentALaUne .readMore table.tiny-button:active td {
-  background: #d3800b !important;
-}
-
-.contentEtude .wrapper:not(.first) {
-  border-left: 1px solid #f39b1e;
-}
 
 @media only screen and (max-width: 720px) {
   table[class="body"] img {
@@ -2159,6 +2151,6 @@ hr {
 
   table[class="body"] .contentEtude table.columns td,
   table[class="body"] .contentEtude table.column td {
-    border-bottom: 1px solid #f39b1e !important;
+    border-bottom: 1px solid **((secteur_color))** !important;
   }
 }
