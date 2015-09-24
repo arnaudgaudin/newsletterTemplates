@@ -1380,22 +1380,10 @@ img.faicon {
   -premailer-height: 20px;
 }
 
-.contentEtude .wrapper:nth-child(odd) {
-  background-color: #00f;
-}
-
-.contentEtude .wrapper:nth-child(even) {
-  background-color: #00a;
-}
-
 .contentEtude .value,
 .contentEtude .text {
   width: 100%;
   -premailer-width: 100%;
-}
-
-.contentEtude .value {
-  background-color: #f00;
 }
 
 .contentEtude .value td {
@@ -1403,10 +1391,6 @@ img.faicon {
   line-height: 30px;
   font-weight: normal;
   font-weight: 500;
-}
-
-.contentEtude .text {
-  background-color: #0f0;
 }
 
 .contentEtude .text td {
