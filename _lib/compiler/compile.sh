@@ -68,7 +68,7 @@ perl -pi -e "s/background: transparent(.*?)-premailer-bgdebug'\); //g;" newslett
 perl -pi -e 's/background="(.*?)-premailer-bgdebug" //g;' newsletter-inline-postanova.html
 
 #Suppression doublon résultant des -premailer-border
-
+perl -pi -e "s/border: 999000999ex none transparent; //g;" newsletter-inline-postanova.html
 
 #Suppression des balises de récupération des styles
 perl -pi -e 's/<(.+?)data-type="getstyle" (.*?)style=/style=/g;' newsletter-inline-postanova.html
