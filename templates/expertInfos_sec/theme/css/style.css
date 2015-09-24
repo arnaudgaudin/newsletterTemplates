@@ -1741,8 +1741,7 @@ table.body {
 
 hr {
   color: **((secteur_color))**;
-  -premailer-background: **((secteur_color))**;
-  background-image: url("-premailer-bgdebug");
+  background: **((secteur_color))**;
 }
 
 .row.bordered td hr.border {
