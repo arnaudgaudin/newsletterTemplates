@@ -1657,10 +1657,6 @@ table.body {
   color: #d3d6d9;
 }
 
-.contentEtude .wrapper:not(.first) {
-  border-left: 1px solid #f39b1e;
-}
-
 .preTitle .last {
   color: **((secteur_color))**;
 }
@@ -1698,6 +1694,10 @@ hr {
 .contentALaUne .readMore table.tiny-button:visited td,
 .contentALaUne .readMore table.tiny-button:active td {
   background: **((secteur_color_darken10))** !important;
+}
+
+.contentEtude .wrapper:not(.first) {
+  border-left: 1px solid #f39b1e;
 }
 
 /*

@@ -567,13 +567,6 @@ body, table.body {
 	&, td.expander { background: @nlCntEtuBackground; }
 	.newsletterInnerTextColor(@nlCntEtuText);
 	.text { color: mix(@nlCntEtuBackground, @nlCntEtuText, 25%); }
-	.wrapper:not(.first) { border-left: 1px solid @nlCntEtuBorder; }
-}
-@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
-	table[class="body"] .contentEtude {
-		//rajout bordures horizontales
-		table.columns td, table.column td { border-bottom: 1px solid @nlCntEtuBorder !important; }
-	}
 }
 
 
@@ -622,6 +615,19 @@ hr {
 		}
 	}
 }
+
+
+// contentEtude area
+// -------------------------
+.contentEtude {
+	.wrapper:not(.first) { border-left: 1px solid @nlCntEtuBorder; }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentEtude {
+		table.columns td, table.column td { border-bottom: 1px solid @nlCntEtuBorder !important; }
+	}
+}
+
 
 /*
 // DEVELOPPEMENT COLORS
