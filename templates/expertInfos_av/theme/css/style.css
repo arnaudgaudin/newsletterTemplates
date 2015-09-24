@@ -1566,10 +1566,12 @@ table.body {
 hr {
   color: ##((nlHrBorder))##;
   -premailer-background: ##((nlHrBorder))##;
+  background-image: url("-premailer-bgdebug");
 }
 
 .row.bordered td hr.border {
-  border-bottom: 1px solid ##((nlHrBorder))##;
+  -premailer-border-bottom: 1px solid ##((nlHrBorder))##;
+  border: 999000999ex none transparent;
 }
 
 .contentOnline,
