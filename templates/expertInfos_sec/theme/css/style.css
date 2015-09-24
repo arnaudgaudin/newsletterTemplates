@@ -1364,11 +1364,6 @@ img.faicon {
   padding-bottom: 5px;
 }
 
-.contentArticles table.columns .readMore td.buttonWrapper,
-.contentArticles table.column .readMore td.buttonWrapper {
-  padding-bottom: 10px;
-}
-
 .contentEtude .filler {
   height: 20px;
   -premailer-height: 20px;
