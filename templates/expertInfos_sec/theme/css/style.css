@@ -2154,6 +2154,13 @@ hr {
     padding: 8px 0 0 10px !important;
   }
 
+  table[class="body"] .contentEtude .wrapper table.columns .value td,
+  table[class="body"] .contentEtude .wrapper table.column .value td,
+  table[class="body"] .contentEtude .wrapper table.columns .text td,
+  table[class="body"] .contentEtude .wrapper table.column .text td {
+    border-bottom: 0px !important;
+  }
+
   table[class="body"] .contentEtude .value,
   table[class="body"] .contentEtude .text {
     width: auto !important;
