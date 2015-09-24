@@ -1689,7 +1689,7 @@ hr {
 
 .contentALaUne .readMore table.tiny-button td {
   -premailer-background: **((secteur_color))**;
-  border-color: **((secteur_color_darken12))**;
+  background-image: url("-premailer-bgdebug");
 }
 
 .contentALaUne .readMore table.tiny-button:hover td,
