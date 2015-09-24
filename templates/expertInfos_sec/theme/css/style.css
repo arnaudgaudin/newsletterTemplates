@@ -1680,6 +1680,7 @@ table.body {
 hr {
   color: **((secteur_color))**;
   -premailer-background: **((secteur_color))**;
+  background-image: url("-premailer-bgdebug");
 }
 
 .row.bordered td hr.border {
