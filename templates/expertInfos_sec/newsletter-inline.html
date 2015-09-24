@@ -966,14 +966,29 @@ background: **((secteur_color_darken10))** !important;
   table[class="body"] .contentEtude .wrapper td {
     text-align: left !important; vertical-align: middle !important;
   }
+  table[class="body"] .contentEtude .wrapper table.columns .value td {
+    padding: 0px !important;
+  }
+  table[class="body"] .contentEtude .wrapper table.column .value td {
+    padding: 0px !important;
+  }
+  table[class="body"] .contentEtude .wrapper table.columns .text td {
+    padding: 0 0 0 10px !important;
+  }
+  table[class="body"] .contentEtude .wrapper table.column .text td {
+    padding: 0 0 0 10px !important;
+  }
   table[class="body"] .contentEtude .value {
-    display: inline !important; vertical-align: middle !important;
+    width: auto !important; vertical-align: bottom !important; max-width: 50% !important;
   }
   table[class="body"] .contentEtude .text {
-    display: inline !important; vertical-align: middle !important;
+    width: auto !important; vertical-align: bottom !important; max-width: 50% !important;
   }
-  table[class="body"] .contentEtude .text {
-    padding-top: 0px !important; padding-left: 10px !important;
+  table[class="body"] .contentEtude .value {
+    display: block !important; float: left !important;
+  }
+  table[class="body"] .contentEtude .text td {
+    line-height: 30px !important;
   }
   table[class="body"] .contentOnline table.columns td {
     padding-bottom: 5px !important;
@@ -1398,46 +1413,70 @@ background: **((secteur_color_darken10))** !important;
 										<td class="filler" style="-moz-hyphens: none; -ms-hyphens: none; -premailer-height: 20px; -webkit-hyphens: none; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 0px; font-weight: normal; height: 20px; hyphens: none; line-height: 0px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top" height="20px"><p class="empty" style="color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 0px; font-weight: normal; line-height: 0px; margin: 0px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left">&#160;</p></td>
 									</tr>
 									<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
-										<td class="wrapper first" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+										<td class="wrapper first" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; background: #00f; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" bgcolor="#00f" valign="top">
 											<table border="0" class="four columns" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 240; border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 240px" width="240" cellpadding="0" cellspacing="0">
 												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
-													<td class="text-pad center" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px 40px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
-														<div class="value" style="font-size: 30px; font-weight: 500; line-height: 30px">
-															<a class="link_disabled" href="#" style="color: #ffffff; cursor: default; pointer-events: none; text-decoration: none"><span class="important" style="color: #ffffff !important; cursor: default !important; pointer-events: none !important; text-decoration: none !important"><!--{{%%{{=etude1_valeur}}%%}}--><!--DEL{{-->etude1 valeur<!--}}DEL--></span></a>
-														</div>
-														<div class="text" style="color: #d3d6d9; padding-top: 5px">
-															<!--{{%%{{=etude1_titre}}%%}}--><!--DEL{{-->etude1_titre<!--}}DEL-->
-														</div>
+													<td class="text-pad" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px 40px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+														<table border="0" class="value" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%; background: #f00; border-collapse: collapse; border-spacing: 0; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 100%" bgcolor="#f00" width="100%" cellpadding="0" cellspacing="0">
+															<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+																<td class="center" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 30px; font-weight: 500; hyphens: none; line-height: 30px; margin: 0; padding: 0px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
+																	<a class="link_disabled" href="#" style="color: #ffffff; cursor: default; pointer-events: none; text-decoration: none"><span class="important" style="color: #ffffff !important; cursor: default !important; pointer-events: none !important; text-decoration: none !important"><!--{{%%{{=etude1_valeur}}%%}}--><!--DEL{{-->etude1 valeur<!--}}DEL--></span></a>
+																</td>
+															</tr>
+														</table>
+														<table border="0" class="text" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%; background: #0f0; border-collapse: collapse; border-spacing: 0; color: #d3d6d9; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 5px 0 0; text-align: left; vertical-align: top; width: 100%" bgcolor="#0f0" width="100%" cellpadding="0" cellspacing="0">
+															<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+																<td class="center" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 5px 0px 0px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
+																	<!--{{%%{{=etude1_titre}}%%}}--><!--DEL{{-->etude1_titre<!--}}DEL-->
+																</td>
+															</tr>
+														</table>
 													</td>
 													<td class="expander" style="-moz-hyphens: none; -ms-hyphens: none; -premailer-width: 1; -webkit-hyphens: none; background: #4f5966; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word" align="left" bgcolor="#4f5966" valign="top" width="1"></td>
 												</tr>
 											</table>
 										</td>
-										<td class="wrapper" style="-moz-hyphens: none; -ms-hyphens: none; -premailer-border-left: 1px solid **((secteur_color))**; -webkit-hyphens: none; border: 999000999ex none transparent; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+										<td class="wrapper" style="-moz-hyphens: none; -ms-hyphens: none; -premailer-border-left: 1px solid **((secteur_color))**; -webkit-hyphens: none; background: #00a; border: 999000999ex none transparent; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" bgcolor="#00a" valign="top">
 											<table border="0" class="four columns" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 240; border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 239px" width="240" cellpadding="0" cellspacing="0">
 												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
-													<td class="text-pad center" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px 40px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
-														<div class="value" style="font-size: 30px; font-weight: 500; line-height: 30px">
-															<a class="link_disabled" href="#" style="color: #ffffff; cursor: default; pointer-events: none; text-decoration: none"><span class="important" style="color: #ffffff !important; cursor: default !important; pointer-events: none !important; text-decoration: none !important"><!--{{%%{{=etude2_valeur}}%%}}--><!--DEL{{-->etude2 valeur<!--}}DEL--></span></a>
-														</div>
-														<div class="text" style="color: #d3d6d9; padding-top: 5px">
-															<!--{{%%{{=etude2_titre}}%%}}--><!--DEL{{-->etude2_titre<!--}}DEL-->
-														</div>
+													<td class="text-pad" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px 40px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+														<table border="0" class="value" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%; background: #f00; border-collapse: collapse; border-spacing: 0; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 100%" bgcolor="#f00" width="100%" cellpadding="0" cellspacing="0">
+															<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+																<td class="center" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 30px; font-weight: 500; hyphens: none; line-height: 30px; margin: 0; padding: 0px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
+																	<a class="link_disabled" href="#" style="color: #ffffff; cursor: default; pointer-events: none; text-decoration: none"><span class="important" style="color: #ffffff !important; cursor: default !important; pointer-events: none !important; text-decoration: none !important"><!--{{%%{{=etude2_valeur}}%%}}--><!--DEL{{-->etude2 valeur<!--}}DEL--></span></a>
+																</td>
+															</tr>
+														</table>
+														<table border="0" class="text" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%; background: #0f0; border-collapse: collapse; border-spacing: 0; color: #d3d6d9; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 5px 0 0; text-align: left; vertical-align: top; width: 100%" bgcolor="#0f0" width="100%" cellpadding="0" cellspacing="0">
+															<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+																<td class="center" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 5px 0px 0px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
+																	<!--{{%%{{=etude2_titre}}%%}}--><!--DEL{{-->etude2_titre<!--}}DEL-->
+																</td>
+															</tr>
+														</table>
 													</td>
 													<td class="expander" style="-moz-hyphens: none; -ms-hyphens: none; -premailer-width: 1; -webkit-hyphens: none; background: #4f5966; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word" align="left" bgcolor="#4f5966" valign="top" width="1"></td>
 												</tr>
 											</table>
 										</td>
-										<td class="wrapper last" style="-moz-hyphens: none; -ms-hyphens: none; -premailer-border-left: 1px solid **((secteur_color))**; -webkit-hyphens: none; border: 999000999ex none transparent; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+										<td class="wrapper last" style="-moz-hyphens: none; -ms-hyphens: none; -premailer-border-left: 1px solid **((secteur_color))**; -webkit-hyphens: none; background: #00f; border: 999000999ex none transparent; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" bgcolor="#00f" valign="top">
 											<table border="0" class="four columns" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 240; border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 239px" width="240" cellpadding="0" cellspacing="0">
 												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
-													<td class="text-pad center" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px 40px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
-														<div class="value" style="font-size: 30px; font-weight: 500; line-height: 30px">
-															<a class="link_disabled" href="#" style="color: #ffffff; cursor: default; pointer-events: none; text-decoration: none"><span class="important" style="color: #ffffff !important; cursor: default !important; pointer-events: none !important; text-decoration: none !important"><!--{{%%{{=etude3_valeur}}%%}}--><!--DEL{{-->etude3 valeur<!--}}DEL--></span></a>
-														</div>
-														<div class="text" style="color: #d3d6d9; padding-top: 5px">
-															<!--{{%%{{=etude3_titre}}%%}}--><!--DEL{{-->etude3_titre<!--}}DEL-->
-														</div>
+													<td class="text-pad" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px 40px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+														<table border="0" class="value" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%; background: #f00; border-collapse: collapse; border-spacing: 0; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 100%" bgcolor="#f00" width="100%" cellpadding="0" cellspacing="0">
+															<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+																<td class="center" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 30px; font-weight: 500; hyphens: none; line-height: 30px; margin: 0; padding: 0px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
+																	<a class="link_disabled" href="#" style="color: #ffffff; cursor: default; pointer-events: none; text-decoration: none"><span class="important" style="color: #ffffff !important; cursor: default !important; pointer-events: none !important; text-decoration: none !important"><!--{{%%{{=etude3_valeur}}%%}}--><!--DEL{{-->etude3 valeur<!--}}DEL--></span></a>
+																</td>
+															</tr>
+														</table>
+														<table border="0" class="text" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%; background: #0f0; border-collapse: collapse; border-spacing: 0; color: #d3d6d9; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 5px 0 0; text-align: left; vertical-align: top; width: 100%" bgcolor="#0f0" width="100%" cellpadding="0" cellspacing="0">
+															<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+																<td class="center" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 5px 0px 0px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
+																	<!--{{%%{{=etude3_titre}}%%}}--><!--DEL{{-->etude3_titre<!--}}DEL-->
+																</td>
+															</tr>
+														</table>
 													</td>
 													<td class="expander" style="-moz-hyphens: none; -ms-hyphens: none; -premailer-width: 1; -webkit-hyphens: none; background: #4f5966; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word" align="left" bgcolor="#4f5966" valign="top" width="1"></td>
 												</tr>

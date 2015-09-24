@@ -1380,11 +1380,37 @@ img.faicon {
   -premailer-height: 20px;
 }
 
+.contentEtude .wrapper:nth-child(odd) {
+  background-color: #00f;
+}
+
+.contentEtude .wrapper:nth-child(even) {
+  background-color: #00a;
+}
+
+.contentEtude .value,
+.contentEtude .text {
+  width: 100%;
+  -premailer-width: 100%;
+}
+
 .contentEtude .value {
+  background-color: #f00;
+}
+
+.contentEtude .value td {
   font-size: 30px;
   line-height: 30px;
   font-weight: normal;
   font-weight: 500;
+}
+
+.contentEtude .text {
+  background-color: #0f0;
+}
+
+.contentEtude .text td {
+  padding-top: 5px;
 }
 
 .contentEtude table.columns td,
@@ -2134,15 +2160,30 @@ hr {
     vertical-align: middle !important;
   }
 
-  table[class="body"] .contentEtude .value,
-  table[class="body"] .contentEtude .text {
-    display: inline !important;
-    vertical-align: middle !important;
+  table[class="body"] .contentEtude .wrapper table.columns .value td,
+  table[class="body"] .contentEtude .wrapper table.column .value td {
+    padding: 0px !important;
   }
 
+  table[class="body"] .contentEtude .wrapper table.columns .text td,
+  table[class="body"] .contentEtude .wrapper table.column .text td {
+    padding: 0 0 0 10px !important;
+  }
+
+  table[class="body"] .contentEtude .value,
   table[class="body"] .contentEtude .text {
-    padding-top: 0px !important;
-    padding-left: 10px !important;
+    width: auto !important;
+    vertical-align: bottom !important;
+    max-width: 50% !important;
+  }
+
+  table[class="body"] .contentEtude .value {
+    display: block !important;
+    float: left !important;
+  }
+
+  table[class="body"] .contentEtude .text td {
+    line-height: 30px !important;
   }
 
   table[class="body"] .contentOnline table.columns td,
