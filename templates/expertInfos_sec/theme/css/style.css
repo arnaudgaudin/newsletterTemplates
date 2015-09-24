@@ -1596,6 +1596,10 @@ table.body {
   color: #ffffff !important;
 }
 
+.contentALaUne .preTitle {
+  padding-bottom: 5px;
+}
+
 .contentALaUne .readMore table.tiny-button td,
 .contentALaUne .readMore table.tiny-button td a {
   color: #ffffff;
