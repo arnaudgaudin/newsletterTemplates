@@ -12,6 +12,7 @@ cp newsletter.html newsletter-preprocess.html
 
 #Remplacement des propriétés spécifiques pour les Newsletters
 perl -pi -e 's/nlbgcolor=/bgcolor=/g;' newsletter-preprocess.html
+perl -pi -e 's/nlbordercolor=/bordercolor=/g;' newsletter-preprocess.html
 
 #inline style in html
 echo "inlining newsletter.html ..."
