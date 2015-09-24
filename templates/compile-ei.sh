@@ -27,3 +27,6 @@ cd ..
 cd expertInfos_hebdoxml
 ./compile.sh
 cd ..
+cd expertInfos_sec
+./compile.sh
+cd ..
