@@ -1657,6 +1657,56 @@ table.body {
   color: #d3d6d9;
 }
 
+.contentContact,
+.contentContact td.expander {
+  background: #ffffff;
+}
+
+.contentContact,
+.contentContact td,
+.contentContact .inner {
+  color: #666666;
+}
+
+.contentContact a {
+  color: #666666;
+}
+
+.contentContact a .important,
+.contentContact a:visited,
+.contentContact a:hover,
+.contentContact a:focus,
+.contentContact a:active {
+  color: #666666 !important;
+}
+
+.footer,
+.footer td.expander {
+  background: #ffffff;
+}
+
+.footer,
+.footer td,
+.footer .inner {
+  color: #8c8c8c;
+}
+
+.footer a {
+  color: #8c8c8c;
+}
+
+.footer a .important,
+.footer a:visited,
+.footer a:hover,
+.footer a:focus,
+.footer a:active {
+  color: #8c8c8c !important;
+}
+
+.footer small {
+  color: #8c8c8c;
+}
+
 .preTitle .last {
   color: **((secteur_color))**;
 }

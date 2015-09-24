@@ -626,6 +626,30 @@ color: #ffffff !important;
 .contentEtude a:active {
 color: #ffffff !important;
 }
+.contentContact a:visited {
+color: #666666 !important;
+}
+.contentContact a:hover {
+color: #666666 !important;
+}
+.contentContact a:focus {
+color: #666666 !important;
+}
+.contentContact a:active {
+color: #666666 !important;
+}
+.footer a:visited {
+color: #8c8c8c !important;
+}
+.footer a:hover {
+color: #8c8c8c !important;
+}
+.footer a:focus {
+color: #8c8c8c !important;
+}
+.footer a:active {
+color: #8c8c8c !important;
+}
 .preTitle .last a:visited {
 color: <%=secteur_color%> !important;
 }
@@ -1429,7 +1453,7 @@ background: <%=secteur_color_darken10%> !important;
 								<!-- ETUDE END -->
 
 								<!-- CONTACT START -->
-								<table border="0" class="row contentContact" style="border-collapse: collapse; border-spacing: 0; display: block; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px; text-align: left; vertical-align: top; width: 100%" width="100%" cellpadding="0" cellspacing="0">
+								<table border="0" class="row contentContact" style="background: #ffffff; border-collapse: collapse; border-spacing: 0; color: #666666; display: block; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px; text-align: left; vertical-align: top; width: 100%" bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0">
 									<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 										<td class="wrapper first" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 20px 0px 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
 										<% if(isSocialNetwork=False)Then %>
@@ -1442,7 +1466,7 @@ background: <%=secteur_color_darken10%> !important;
 														<strong><% if (len(trim(type_client)) > 1) then response.write(type_client & " ") end if %><%=raison_sociale_exp%></strong>
 														<br />
 														<% lien_adresse=Server.URLEncode(adresse1_exp & " " & adresse2_exp & " " & code_postal_exp & " " & commune_exp) %>
-														<a target="_blank" href="http://maps.apple.com/?q=<%=lien_adresse%>" style="color: #666666; text-decoration: none"><span class="important"><%
+														<a target="_blank" href="http://maps.apple.com/?q=<%=lien_adresse%>" style="color: #666666; text-decoration: none"><span class="important" style="color: #666666 !important"><%
 															'affichage adresse1'
 															nbc_desc=len(adresse1_exp)
 															k=1
@@ -1478,23 +1502,23 @@ background: <%=secteur_color_darken10%> !important;
 														%></span></a>
 														<% if (len(trim(tel_cabinet)) > 1) then %>
 														<br />
-														<img class="faicon" src="http://www.expert-infos.com/_newsletter/_logos/faicon-phone.gif" alt="T&#233;l&#233;phone" width="15" height="15" style="-ms-interpolation-mode: bicubic; clear: both; display: inline; float: none; font-size: 0px; line-height: 0px; max-width: 100%; mso-line-height-rule: exactly; outline: none; padding: 2px; text-decoration: none; vertical-align: top; width: auto" align="none" />&#160;T&#233;l. <span class="appleLinks"><a href="tel:<%=tel_cabinet%>" style="color: inherit; text-decoration: none"><span class="important"><%=tel_cabinet%></span></a></span>
+														<img class="faicon" src="http://www.expert-infos.com/_newsletter/_logos/faicon-phone.gif" alt="T&#233;l&#233;phone" width="15" height="15" style="-ms-interpolation-mode: bicubic; clear: both; display: inline; float: none; font-size: 0px; line-height: 0px; max-width: 100%; mso-line-height-rule: exactly; outline: none; padding: 2px; text-decoration: none; vertical-align: top; width: auto" align="none" />&#160;T&#233;l. <span class="appleLinks"><a href="tel:<%=tel_cabinet%>" style="color: #666666; text-decoration: none"><span class="important" style="color: #666666 !important"><%=tel_cabinet%></span></a></span>
 														<% end if %>
 														<% if (len(trim(fax_cabinet)) > 1) then %>
-														&#160;-&#160;<img class="faicon" src="http://www.expert-infos.com/_newsletter/_logos/faicon-print.gif" alt="T&#233;l&#233;phone" width="15" height="15" style="-ms-interpolation-mode: bicubic; clear: both; display: inline; float: none; font-size: 0px; line-height: 0px; max-width: 100%; mso-line-height-rule: exactly; outline: none; padding: 2px; text-decoration: none; vertical-align: top; width: auto" align="none" />&#160;Fax&#160;: <a class="link_disabled" href="#" style="color: #666666; cursor: default !important; pointer-events: none !important; text-decoration: none !important"><span class="important"><%=fax_cabinet%></span></a>
+														&#160;-&#160;<img class="faicon" src="http://www.expert-infos.com/_newsletter/_logos/faicon-print.gif" alt="T&#233;l&#233;phone" width="15" height="15" style="-ms-interpolation-mode: bicubic; clear: both; display: inline; float: none; font-size: 0px; line-height: 0px; max-width: 100%; mso-line-height-rule: exactly; outline: none; padding: 2px; text-decoration: none; vertical-align: top; width: auto" align="none" />&#160;Fax&#160;: <a class="link_disabled" href="#" style="color: #666666; cursor: default !important; pointer-events: none !important; text-decoration: none !important"><span class="important" style="color: #666666 !important"><%=fax_cabinet%></span></a>
 														<% end if %>
 
 														<br />
-														<img class="faicon" src="http://www.expert-infos.com/_newsletter/_logos/faicon-envelope.gif" alt="Email" width="15" height="15" style="-ms-interpolation-mode: bicubic; clear: both; display: inline; float: none; font-size: 0px; line-height: 0px; max-width: 100%; mso-line-height-rule: exactly; outline: none; padding: 2px; text-decoration: none; vertical-align: top; width: auto" align="none" />&#160;<a class="link_underline" href="mailto:<%=email_exp%>" style="color: #666666; text-decoration: underline"><span class="important" style="text-decoration: underline !important"><%=email_exp%></span></a>
+														<img class="faicon" src="http://www.expert-infos.com/_newsletter/_logos/faicon-envelope.gif" alt="Email" width="15" height="15" style="-ms-interpolation-mode: bicubic; clear: both; display: inline; float: none; font-size: 0px; line-height: 0px; max-width: 100%; mso-line-height-rule: exactly; outline: none; padding: 2px; text-decoration: none; vertical-align: top; width: auto" align="none" />&#160;<a class="link_underline" href="mailto:<%=email_exp%>" style="color: #666666; text-decoration: underline"><span class="important" style="color: #666666 !important; text-decoration: underline !important"><%=email_exp%></span></a>
 														-
 														<%
 														if type_abo="4" then
 															url_site_exp = rsCabinet("url_site_exp")
 														end if
 														%>
-														<a target="_blank" class="link_underline" href="http://<%=url_site_exp%>?fintrack=&amp;<%=tracking_url%>" style="color: #666666; text-decoration: underline"><span class="important" style="text-decoration: underline !important"><%=url_site_exp%></span></a>
+														<a target="_blank" class="link_underline" href="http://<%=url_site_exp%>?fintrack=&amp;<%=tracking_url%>" style="color: #666666; text-decoration: underline"><span class="important" style="color: #666666 !important; text-decoration: underline !important"><%=url_site_exp%></span></a>
 													</td>
-													<td class="expander" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word" align="left" valign="top" width="1"></td>
+													<td class="expander" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; background: #ffffff; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word" align="left" bgcolor="#ffffff" valign="top" width="1"></td>
 												</tr>
 											</table>
 										</td>
@@ -1539,20 +1563,20 @@ background: <%=secteur_color_darken10%> !important;
 														</a>
 														<% end if %>
 													</td>
-													<td class="expander" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0; text-align: right; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word" align="right" valign="top" width="1"></td>
+													<td class="expander" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; background: #ffffff; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0; text-align: right; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word" align="right" bgcolor="#ffffff" valign="top" width="1"></td>
 												</tr>
 											</table>
 										</td>
 										<% end if %>
 									</tr>
 								</table>
-								<table border="0" class="row contentContact bordered" style="border-collapse: collapse; border-spacing: 0; display: block; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px; text-align: left; vertical-align: top; width: 100%" width="100%" cellpadding="0" cellspacing="0">
+								<table border="0" class="row contentContact bordered" style="background: #ffffff; border-collapse: collapse; border-spacing: 0; color: #666666; display: block; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px; text-align: left; vertical-align: top; width: 100%" bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0">
 									<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 										<td class="wrapper first last" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 0px; margin: 0; padding: 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
 											<table border="0" class="twelve columns" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 720px" width="720" cellpadding="0" cellspacing="0">
 												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 													<td class="center text-pad" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 0px; margin: 0; padding: 0px 40px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top"><hr class="border" style="background: <%=secteur_color%>; border-bottom: 1px solid <%=secteur_color%>; color: <%=secteur_color%>; height: 0px; margin: 0px" /></td>
-													<td class="expander" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 0px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word" align="left" valign="top" width="1"></td>
+													<td class="expander" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; background: #ffffff; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 0px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word" align="left" bgcolor="#ffffff" valign="top" width="1"></td>
 												</tr>
 											</table>
 										</td>
@@ -1568,17 +1592,17 @@ background: <%=secteur_color_darken10%> !important;
 									url_site_exp = rsCabinet("repertoire_ei")&".expert-infos.com"
 								end if
 								%>
-								<table border="0" class="row footer" style="border-collapse: collapse; border-spacing: 0; display: block; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px; text-align: left; vertical-align: top; width: 100%" width="100%" cellpadding="0" cellspacing="0">
+								<table border="0" class="row footer" style="background: #ffffff; border-collapse: collapse; border-spacing: 0; color: #8c8c8c; display: block; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px; text-align: left; vertical-align: top; width: 100%" bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0">
 									<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
-										<td class="wrapper first last" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 10px 0px 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+										<td class="wrapper first last" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #8c8c8c; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 10px 0px 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
 											<table border="0" class="twelve columns" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 720px" width="720" cellpadding="0" cellspacing="0">
 												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
-													<td class="center text-pad" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px 40px 10px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
-														<small style="font-size: 11px">
-															Si vous ne souhaitez plus recevoir cette newsletter, veuillez acc&#233;der &#224; la page de <a target="_blank" class="link_underline" href="#" lien_blackliste style="color: #666666; text-decoration: underline"><span class="important" style="text-decoration: underline !important">d&#233;sinscription</span></a>.
+													<td class="center text-pad" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #8c8c8c; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px 40px 10px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
+														<small style="color: #8c8c8c; font-size: 11px">
+															Si vous ne souhaitez plus recevoir cette newsletter, veuillez acc&#233;der &#224; la page de <a target="_blank" class="link_underline" href="#" lien_blackliste style="color: #8c8c8c; text-decoration: underline"><span class="important" style="color: #8c8c8c !important; text-decoration: underline !important">d&#233;sinscription</span></a>.
 														</small>
 													</td>
-													<td class="expander" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word" align="left" valign="top" width="1"></td>
+													<td class="expander" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; background: #ffffff; border-collapse: collapse !important; color: #8c8c8c; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word" align="left" bgcolor="#ffffff" valign="top" width="1"></td>
 												</tr>
 											</table>
 										</td>
