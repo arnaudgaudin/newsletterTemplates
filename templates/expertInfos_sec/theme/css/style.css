@@ -1691,7 +1691,7 @@ hr {
   -premailer-background: **((secteur_color))**;
   -premailer-border: 1px solid **((secteur_color_darken12))**;
   background-image: url("-premailer-bgdebug");
-  border: 0px none transparent;
+  border: 999000999ex none transparent;
 }
 
 .contentALaUne .readMore table.tiny-button:hover td,

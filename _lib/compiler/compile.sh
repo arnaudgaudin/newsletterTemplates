@@ -54,17 +54,21 @@ perl -pi -e 's/}}##/?>/g;' newsletter-inline-postanova.html
 
 #Remplacement des attributs spécifiques Premailer
 perl -pi -e 's/-premailer-background/background/g;' newsletter-inline-postanova.html
+perl -pi -e 's/-premailer-border/border/g;' newsletter-inline-postanova.html
 perl -pi -e 's/-premailer-cellpadding(.*?); //g;' newsletter-inline-postanova.html
 perl -pi -e 's/-premailer-cellspacing(.*?); //g;' newsletter-inline-postanova.html
 perl -pi -e 's/-premailer-width(.*?); //g;' newsletter-inline-postanova.html
 perl -pi -e 's/-premailer-height(.*?); //g;' newsletter-inline-postanova.html
 perl -pi -e 's/( ?)-premailer-hidden( ?)//g;' newsletter-inline-postanova.html
 
-#Suppression doublon résultant des -premailer-background sur body et table.body
+#Suppression doublon résultant des -premailer-background
 perl -pi -e "s/background-image: url\('(.*?)-premailer-bgdebug'\);//g;" newsletter-inline-postanova.html
 perl -pi -e "s/background: #(.*?)-premailer-bgdebug'\); //g;" newsletter-inline-postanova.html
 perl -pi -e "s/background: transparent(.*?)-premailer-bgdebug'\); //g;" newsletter-inline-postanova.html
 perl -pi -e 's/background="(.*?)-premailer-bgdebug" //g;' newsletter-inline-postanova.html
+
+#Suppression doublon résultant des -premailer-border
+
 
 #Suppression des balises de récupération des styles
 perl -pi -e 's/<(.+?)data-type="getstyle" (.*?)style=/style=/g;' newsletter-inline-postanova.html
