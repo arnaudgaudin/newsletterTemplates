@@ -1724,38 +1724,13 @@ table.body {
   color: ##((nlFooterText))##;
 }
 
-img.voeux {
-  display: inline;
-  vertical-align: top;
-}
-
-.contentCallToAction td.wrapper {
+.contentMain td.wrapper {
   padding-top: 0px;
 }
 
-.contentCallToAction table.columns .text-pad,
-.contentCallToAction table.column .text-pad {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-}
-
-.contentCallToAction .button td {
-  padding: 12px 12px 10px 12px;
-}
-
-.contentCallToAction .button td a {
-  color: #ffffff;
-  font-weight: bold;
-  width: auto;
-  height: auto;
-}
-
-.contentCallToAction .button td a .important,
-.contentCallToAction .button td a:visited,
-.contentCallToAction .button td a:hover,
-.contentCallToAction .button td a:focus,
-.contentCallToAction .button td a:active {
-  color: #ffffff !important;
+.contentMain table.columns td,
+.contentMain table.column td {
+  padding-bottom: 0px;
 }
 
 @media only screen and (max-width: 720px) {
@@ -1948,22 +1923,12 @@ img.voeux {
     border-bottom: none !important;
   }
 
-  table[class="body"] img.voeux {
-    display: block !important;
+  table[class="body"] .contentMain td.wrapper {
+    padding-top: 0px !important;
   }
 
-  table[class="body"] .contentCallToAction .button td {
-    width: auto !important;
-  }
-
-  table[class="body"] .contentCallToAction table.columns,
-  table[class="body"] .contentCallToAction table.column {
-    display: table !important;
-  }
-
-  table[class="body"] .contentCallToAction table.columns .text-pad,
-  table[class="body"] .contentCallToAction table.column .text-pad {
-    padding-left: 10px !important;
-    padding-right: 10px !important;
+  table[class="body"] .contentMain table.columns td,
+  table[class="body"] .contentMain table.column td {
+    padding-bottom: 0px) !important;
   }
 }

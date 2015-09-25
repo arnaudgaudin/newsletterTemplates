@@ -7,51 +7,16 @@
 @import "../../../expertInfos/theme/less/expertinfos.less";
 
 
-// LAYOUT
-// --------------------------------------------------
-
-//pour centrer image dans Outlook
-img.voeux {
-	display: inline;
-	vertical-align: top;
-}
-@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
-	table[class="body"] img.voeux { display: block !important; }
-}
-
-
-// contentCallToAction
+// contentMain area
 // -------------------------
-.contentCallToAction {
-	//suppression décalage en trop
+.contentMain {
+	//réduction décalage vertical en haut
 	td.wrapper { padding-top: 0px; }
-
-	table.columns .text-pad,
-	table.column .text-pad {
-		padding-left: 0 !important;
-		padding-right: 0 !important;
-	}
-
-	.button td {
-		padding: 12px 12px 10px 12px;
-		a {
-			.newsletterLinkColor(#ffffff);
-			//restylage bouton par défaut
-			font-weight: bold;
-			width: auto;
-			height: auto;
-		}
-	}
+	table.columns td, table.column td { padding-bottom: 0px; }
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
-	table[class="body"] .contentCallToAction {
-		.button td { width: auto !important; }
-		table.columns, table.column {
-			display: table !important;
-			.text-pad {
-				padding-left: @textPadCollapse !important;
-				padding-right: @textPadCollapse !important;
-			}
-		}
+	table[class="body"] .contentMain {
+		td.wrapper { padding-top: 0px !important; }
+		table.columns td, table.column td { padding-bottom: 0px) !important; }
 	}
 }
