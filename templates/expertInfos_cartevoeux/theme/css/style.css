@@ -103,8 +103,8 @@ td {
 }
 
 hr {
-  color: #6b6b6b;
-  background-color: #6b6b6b;
+  color: #8c8c8c;
+  background-color: #8c8c8c;
   height: 1px;
   border: none;
 }
@@ -1289,7 +1289,7 @@ h6 a:visited {
 
 .contentArticles .title {
   color: #333333;
-  border-top: 1px dotted #6b6b6b;
+  border-top: 1px dotted #8c8c8c;
 }
 
 .contentArticles .title a {
@@ -1351,7 +1351,7 @@ h6 a:visited {
 }
 
 .contentBottom .dessin .border {
-  border-top: 1px dotted #6b6b6b;
+  border-top: 1px dotted #8c8c8c;
 }
 
 .contentBottom .profession .title {
@@ -1375,7 +1375,7 @@ h6 a:visited {
 }
 
 .contentBottom .profession .border {
-  border-top: 1px dotted #6b6b6b;
+  border-top: 1px dotted #8c8c8c;
 }
 
 .contentBottom .question .title {
@@ -1399,7 +1399,7 @@ h6 a:visited {
 }
 
 .contentBottom .question .border {
-  border-top: 1px dotted #6b6b6b;
+  border-top: 1px dotted #8c8c8c;
 }
 
 body,
@@ -1794,12 +1794,12 @@ table.body {
 }
 
 hr {
-  color: #6b6b6b;
-  background: #6b6b6b;
+  color: #8c8c8c;
+  background: #8c8c8c;
 }
 
 .row.bordered td hr.border {
-  border-bottom: 1px solid #6b6b6b;
+  border-bottom: 1px solid #8c8c8c;
 }
 
 .header {
@@ -1888,6 +1888,35 @@ hr {
 .contentContact a:focus,
 .contentContact a:active {
   color: #333333 !important;
+}
+
+.footer,
+.footer td.expander {
+  -premailer-background: #00ff00;
+  background-color: #00ff00;
+  background-image: url("-premailer-bgdebug");
+}
+
+.footer,
+.footer td,
+.footer .inner {
+  color: #001900;
+}
+
+.footer a {
+  color: #001900;
+}
+
+.footer a .important,
+.footer a:visited,
+.footer a:hover,
+.footer a:focus,
+.footer a:active {
+  color: #001900 !important;
+}
+
+.footer small {
+  color: #001900;
 }
 
 @media only screen and (max-width: 720px) {
@@ -2069,7 +2098,7 @@ hr {
   }
 
   table[class="body"] .contentArticles {
-    border-bottom: 1px dotted #6b6b6b !important;
+    border-bottom: 1px dotted #8c8c8c !important;
   }
 
   table[class="body"] .contentArticles .title {

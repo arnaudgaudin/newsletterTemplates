@@ -144,3 +144,17 @@ hr {
 	}
 	.newsletterInnerTextColor(@nlCntCctText);
 }
+
+
+// footer area
+// -------------------------
+.footer {
+	&, td.expander {
+		-premailer-background: @nlFooterBackground;
+		background-color: @nlFooterBackground;
+		//rajout pour suppression paramètre doublon via compiler
+		background-image: url("-premailer-bgdebug");
+	}
+	.newsletterInnerTextColor(@nlFooterText);
+	small { color: @nlFooterText; }
+}

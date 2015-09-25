@@ -23,12 +23,17 @@
 // --------------------------------------------------
 //couleur de fond générale
 @nlBodyBackground: #00ff00;
+@nlHrBorder: darken(@nlContainerBackground, 45%);
 
 //Visualisation message en ligne et Titre
 @nlCntOnlineBackground: @nlBodyBackground;
 @nlCntOnlineText: darken(@nlCntOnlineBackground, 45%);
-@nlCntOnlineName: #333333;
+@nlCntOnlineName: @nlText;
 
 //Contact
 @nlCntCctBackground: @nlBodyBackground;
-@nlCntCctText: #333333;
+@nlCntCctText: @nlText;
+
+//Footer
+@nlFooterBackground: @nlBodyBackground;
+@nlFooterText: darken(@nlFooterBackground, 45%);
