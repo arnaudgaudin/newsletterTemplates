@@ -63,7 +63,9 @@ perl -pi -e 's/( ?)-premailer-hidden( ?)//g;' newsletter-inline-postanova.html
 
 #Suppression doublon résultant des -premailer-background
 perl -pi -e "s/background-image: url\('(.*?)-premailer-bgdebug'\);//g;" newsletter-inline-postanova.html
-perl -pi -e "s/background: #(.*?)-premailer-bgdebug'\); //g;" newsletter-inline-postanova.html
+# Ancienne expression trop imprécise
+# perl -pi -e "s/background: #(.*?)-premailer-bgdebug'\); //g;" newsletter-inline-postanova.html
+perl -pi -e "s/background: #([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3}) url\((.*?)-premailer-bgdebug'\); //g;" newsletter-inline-postanova.html
 perl -pi -e "s/background: transparent(.*?)-premailer-bgdebug'\); //g;" newsletter-inline-postanova.html
 perl -pi -e 's/background="(.*?)-premailer-bgdebug" //g;' newsletter-inline-postanova.html
 
