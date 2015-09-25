@@ -1791,7 +1791,6 @@ img.faicon {
 body,
 table.body {
   -premailer-background: #00ff00;
-  background-image: url("-premailer-bgdebug");
 }
 
 hr {
