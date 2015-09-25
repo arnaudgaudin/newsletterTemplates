@@ -4,7 +4,7 @@
 
 body,
 table.body {
-  background-color: #00ff00;
+  background-color: #ffffff;
 }
 
 /**********************************************
@@ -1790,7 +1790,7 @@ img.faicon {
 
 body,
 table.body {
-  -premailer-background: #00ff00;
+  -premailer-background: #ffffff;
 }
 
 hr {
@@ -1803,26 +1803,26 @@ hr {
 }
 
 .header {
-  -premailer-background: #00ff00;
-  background-color: #00ff00;
+  -premailer-background: #ffffff;
+  background-color: #ffffff;
   background-image: url("-premailer-bgdebug");
 }
 
 .contentOnline,
 .contentOnline td.expander {
-  -premailer-background: #00ff00;
-  background-color: #00ff00;
+  -premailer-background: #ffffff;
+  background-color: #ffffff;
   background-image: url("-premailer-bgdebug");
 }
 
 .contentOnline,
 .contentOnline td,
 .contentOnline .inner {
-  color: #001900;
+  color: #8c8c8c;
 }
 
 .contentOnline a {
-  color: #001900;
+  color: #8c8c8c;
 }
 
 .contentOnline a .important,
@@ -1830,15 +1830,15 @@ hr {
 .contentOnline a:hover,
 .contentOnline a:focus,
 .contentOnline a:active {
-  color: #001900 !important;
+  color: #8c8c8c !important;
 }
 
 .contentOnline .online {
-  color: #001900;
+  color: #8c8c8c;
 }
 
 .contentOnline .online a {
-  color: #001900;
+  color: #8c8c8c;
 }
 
 .contentOnline .online a .important,
@@ -1846,7 +1846,7 @@ hr {
 .contentOnline .online a:hover,
 .contentOnline .online a:focus,
 .contentOnline .online a:active {
-  color: #001900 !important;
+  color: #8c8c8c !important;
 }
 
 .contentOnline .name {
@@ -1867,8 +1867,8 @@ hr {
 
 .contentContact,
 .contentContact td.expander {
-  -premailer-background: #00ff00;
-  background-color: #00ff00;
+  -premailer-background: #ffffff;
+  background-color: #ffffff;
   background-image: url("-premailer-bgdebug");
 }
 
@@ -1892,19 +1892,19 @@ hr {
 
 .footer,
 .footer td.expander {
-  -premailer-background: #00ff00;
-  background-color: #00ff00;
+  -premailer-background: #ffffff;
+  background-color: #ffffff;
   background-image: url("-premailer-bgdebug");
 }
 
 .footer,
 .footer td,
 .footer .inner {
-  color: #001900;
+  color: #8c8c8c;
 }
 
 .footer a {
-  color: #001900;
+  color: #8c8c8c;
 }
 
 .footer a .important,
@@ -1912,11 +1912,11 @@ hr {
 .footer a:hover,
 .footer a:focus,
 .footer a:active {
-  color: #001900 !important;
+  color: #8c8c8c !important;
 }
 
 .footer small {
-  color: #001900;
+  color: #8c8c8c;
 }
 
 @media only screen and (max-width: 720px) {

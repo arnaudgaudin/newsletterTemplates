@@ -22,18 +22,19 @@
 // Newsletter Default Colors
 // --------------------------------------------------
 //couleur de fond générale
-@nlBodyBackground: #00ff00;
+@nlBodyBackground: #ffffff;
+@nlContainerBackground: @nlBodyBackground;
 @nlHrBorder: darken(@nlContainerBackground, 45%);
 
 //Visualisation message en ligne et Titre
-@nlCntOnlineBackground: @nlBodyBackground;
+@nlCntOnlineBackground: @nlContainerBackground;
 @nlCntOnlineText: darken(@nlCntOnlineBackground, 45%);
 @nlCntOnlineName: @nlText;
 
 //Contact
-@nlCntCctBackground: @nlBodyBackground;
+@nlCntCctBackground: @nlContainerBackground;
 @nlCntCctText: @nlText;
 
 //Footer
-@nlFooterBackground: @nlBodyBackground;
+@nlFooterBackground: @nlContainerBackground;
 @nlFooterText: darken(@nlFooterBackground, 45%);
