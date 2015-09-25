@@ -1802,6 +1802,12 @@ hr {
   border-bottom: 1px solid #6b6b6b;
 }
 
+.header {
+  -premailer-background: #00ff00;
+  background-color: #00ff00;
+  background-image: url("-premailer-bgdebug");
+}
+
 @media only screen and (max-width: 720px) {
   table[class="body"] img {
     max-width: auto !important;

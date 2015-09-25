@@ -100,3 +100,13 @@ hr {
 .row.bordered {
 	td hr.border { border-bottom: 1px solid @nlHrBorder; }
 }
+
+// Header
+// -------------------------
+//pour supprimer toute zone blanche avant chargement header
+.header {
+	-premailer-background: @nlBodyBackground;
+	background-color: @nlBodyBackground;
+	//rajout pour suppression paramètre doublon via compiler
+	background-image: url("-premailer-bgdebug");
+}
