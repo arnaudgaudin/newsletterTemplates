@@ -1810,19 +1810,19 @@ hr {
 
 .contentOnline,
 .contentOnline td.expander {
-  -premailer-background: #0000ff;
-  background-color: #0000ff;
+  -premailer-background: #00ff00;
+  background-color: #00ff00;
   background-image: url("-premailer-bgdebug");
 }
 
 .contentOnline,
 .contentOnline td,
 .contentOnline .inner {
-  color: #000019;
+  color: #001900;
 }
 
 .contentOnline a {
-  color: #000019;
+  color: #001900;
 }
 
 .contentOnline a .important,
@@ -1830,15 +1830,15 @@ hr {
 .contentOnline a:hover,
 .contentOnline a:focus,
 .contentOnline a:active {
-  color: #000019 !important;
+  color: #001900 !important;
 }
 
 .contentOnline .online {
-  color: #000019;
+  color: #001900;
 }
 
 .contentOnline .online a {
-  color: #000019;
+  color: #001900;
 }
 
 .contentOnline .online a .important,
@@ -1846,7 +1846,7 @@ hr {
 .contentOnline .online a:hover,
 .contentOnline .online a:focus,
 .contentOnline .online a:active {
-  color: #000019 !important;
+  color: #001900 !important;
 }
 
 .contentOnline .name {
