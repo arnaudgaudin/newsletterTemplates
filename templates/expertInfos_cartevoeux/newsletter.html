@@ -68,12 +68,12 @@ if not rsCabinet.eof then
 
 	type_carte = rsCabinet("type_carte")
 	Select Case type_carte
-		Case 0 img_carte = "voeux-newsletter.png"
-		Case 1 img_carte = "m11-aviateur.jpg"
-		Case 2 img_carte = "m13-etoile.jpg"
-		Case 3 img_carte = "m19-telechargement.jpg"
-		Case 4 img_carte = "m10-chiffres.jpg"
-		Case 5 img_carte = "m16-typo.jpg"
+		Case 0 img_carte = "voeux-newsletter.gif"
+		Case 1 img_carte = "nlcv_nature.gif"
+		Case 2 img_carte = "nlcv_cadeau.gif"
+		Case 3 img_carte = "voeux-newsletter.gif"
+		Case 4 img_carte = "voeux-newsletter.gif"
+		Case 5 img_carte = "voeux-newsletter.gif"
 	End Select
 
 	url_carte = rsCabinet("url_carte")
@@ -234,10 +234,8 @@ tracking_url = "rep="&repertoire_ei&"&amp;url_site_exp="&url_site_exp
 												<tr>
 													<td class="center">
 														<a target="_blank" href="%%{{=url_carte}}%%?fintrack=&amp;%%{{=tracking_url}}%%" title="Visualisez votre carte de voeux en ligne">
-															<!-- <img class="voeux center" src="./theme/images/%%{{=img_carte}}%%" alt="Carte de voeux Expert Infos" width="360" height="360" /> -->
-															<!--DEL{{--><!--}}DEL-->
-															<!-- <img class="voeux center" src="./theme/images/voeux-newsletter.png" alt="Carte de voeux Expert Infos" width="360" height="360" /> -->
-															<img class="voeux center" src="./theme/images/nlcv_cadeau.gif" alt="Carte de voeux Expert Infos" width="720" height="384" />
+															<img class="voeux center" src="./theme/images/%%{{=img_carte}}%%" alt="Carte de voeux Expert Infos" width="720" height="384" />
+															<!--DEL{{--><img class="voeux center" src="./theme/images/voeux-newsletter.gif" alt="Carte de voeux Expert Infos" width="720" height="384" /><!--}}DEL-->
 														</a>
 													</td>
 													<td class="expander"></td>
