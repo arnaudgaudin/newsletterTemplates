@@ -110,3 +110,24 @@ hr {
 	//rajout pour suppression paramètre doublon via compiler
 	background-image: url("-premailer-bgdebug");
 }
+
+
+// contentOnline area
+// -------------------------
+.contentOnline {
+	&, td.expander {
+		-premailer-background: @nlCntOnlineBackground;
+		background-color: @nlCntOnlineBackground;
+		//rajout pour suppression paramètre doublon via compiler
+		background-image: url("-premailer-bgdebug");
+	}
+	// .newsletterInnerTextColor(e("##((nlCntOnlineText))##"));
+	// .online {
+	// 	color: e("##((nlCntOnlineText))##");
+	// 	a { .newsletterLinkColor(e("##((nlCntOnlineText))##")); }
+	// }
+	// .name {
+	// 	color: e("##((nlCntOnlineName))##");
+	// 	a { .newsletterLinkColor(e("##((nlCntOnlineName))##")); }
+	// }
+}

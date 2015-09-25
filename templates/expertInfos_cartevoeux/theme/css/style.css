@@ -1808,6 +1808,13 @@ hr {
   background-image: url("-premailer-bgdebug");
 }
 
+.contentOnline,
+.contentOnline td.expander {
+  -premailer-background: #0000ff;
+  background-color: #0000ff;
+  background-image: url("-premailer-bgdebug");
+}
+
 @media only screen and (max-width: 720px) {
   table[class="body"] img {
     max-width: auto !important;
