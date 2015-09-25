@@ -87,12 +87,12 @@
 
 // Body
 // -------------------------
-// body, table.body {
-// 	-premailer-background: none;
-// 	background-color: @nlBodyBackground;
-// 	//rajout pour suppression paramètre doublon via compiler
-// 	background-image: none;
-// }
+body, table.body {
+	-premailer-background: @nlBodyBackground;
+	// background-color: @nlBodyBackground;
+	//rajout pour suppression paramètre doublon via compiler
+	background-image: url("-premailer-bgdebug");
+}
 
 
 // Hr borders

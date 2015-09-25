@@ -1788,6 +1788,12 @@ img.faicon {
   padding-bottom: 0px;
 }
 
+body,
+table.body {
+  -premailer-background: #00ff00;
+  background-image: url("-premailer-bgdebug");
+}
+
 hr {
   color: #6b6b6b;
   background: #6b6b6b;
