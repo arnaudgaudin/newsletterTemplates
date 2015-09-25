@@ -7,6 +7,65 @@
 @import "../../../expertInfos/theme/less/expertinfos.less";
 
 
+//gestion row avec bordures de séparation
+.row.bordered {
+	//suppression décalage en trop
+	td.wrapper { padding-top: 0px; }
+	table.columns td, table.column td { padding-bottom: 0px; }
+	td {
+		line-height: 0px;
+		hr.border {
+			margin: 0px;
+			//débuggage bordure pour PostaNova
+			background-color: transparent;
+			height: 0px;
+			-premailer-border: none;
+		}
+	}
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .row.bordered {
+		td.wrapper { padding-top: 0px !important; }
+		table.columns td, table.column td { padding-bottom: 0px !important; }
+	}
+}
+
+
+//réseaux sociaux
+.faicons {
+	vertical-align: bottom;
+	td { text-align: right; }
+}
+.faicon {
+	display: inline;
+	//pour supprimer les espaces
+	font-size: 0px;
+	mso-line-height-rule: exactly;
+	line-height: 0px;
+	padding: 0px 5px 5px 5px;
+	&.first { padding-left: 0px; }
+	&.last { padding-right: 0px; }
+	img, img& {
+		display: inline;
+		float: none;
+	}
+	img& {
+		padding: 2px;
+		vertical-align: top;
+	}
+}
+
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] {
+		.faicons { vertical-align: baseline !important; }
+		.faicon img, img.faicon {
+			width: 15px !important;
+			height: 15px !important;
+		}
+	}
+}
+
+
 // contentMain area
 // -------------------------
 .contentMain {
@@ -19,4 +78,19 @@
 		td.wrapper { padding-top: 0px !important; }
 		table.columns td, table.column td { padding-bottom: 0px) !important; }
 	}
+}
+
+
+// DEFAULT COLORS
+// --------------------------------------------------
+
+// Hr borders
+// -------------------------
+hr {
+	color: @nlHrBorder;
+	background: @nlHrBorder;
+}
+//gestion row avec bordures de séparation
+.row.bordered {
+	td hr.border { border-bottom: 1px solid @nlHrBorder; }
 }

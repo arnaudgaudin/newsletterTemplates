@@ -1724,6 +1724,61 @@ table.body {
   color: ##((nlFooterText))##;
 }
 
+.row.bordered td.wrapper {
+  padding-top: 0px;
+}
+
+.row.bordered table.columns td,
+.row.bordered table.column td {
+  padding-bottom: 0px;
+}
+
+.row.bordered td {
+  line-height: 0px;
+}
+
+.row.bordered td hr.border {
+  margin: 0px;
+  background-color: transparent;
+  height: 0px;
+  -premailer-border: none;
+}
+
+.faicons {
+  vertical-align: bottom;
+}
+
+.faicons td {
+  text-align: right;
+}
+
+.faicon {
+  display: inline;
+  font-size: 0px;
+  mso-line-height-rule: exactly;
+  line-height: 0px;
+  padding: 0px 5px 5px 5px;
+}
+
+.faicon.first {
+  padding-left: 0px;
+}
+
+.faicon.last {
+  padding-right: 0px;
+}
+
+.faicon img,
+img.faicon {
+  display: inline;
+  float: none;
+}
+
+img.faicon {
+  padding: 2px;
+  vertical-align: top;
+}
+
 .contentMain td.wrapper {
   padding-top: 0px;
 }
@@ -1731,6 +1786,15 @@ table.body {
 .contentMain table.columns td,
 .contentMain table.column td {
   padding-bottom: 0px;
+}
+
+hr {
+  color: #6b6b6b;
+  background: #6b6b6b;
+}
+
+.row.bordered td hr.border {
+  border-bottom: 1px solid #6b6b6b;
 }
 
 @media only screen and (max-width: 720px) {
@@ -1921,6 +1985,25 @@ table.body {
 
   table[class="body"] .contentArticles.last {
     border-bottom: none !important;
+  }
+
+  table[class="body"] .row.bordered td.wrapper {
+    padding-top: 0px !important;
+  }
+
+  table[class="body"] .row.bordered table.columns td,
+  table[class="body"] .row.bordered table.column td {
+    padding-bottom: 0px !important;
+  }
+
+  table[class="body"] .faicons {
+    vertical-align: baseline !important;
+  }
+
+  table[class="body"] .faicon img,
+  table[class="body"] img.faicon {
+    width: 15px !important;
+    height: 15px !important;
   }
 
   table[class="body"] .contentMain td.wrapper {
