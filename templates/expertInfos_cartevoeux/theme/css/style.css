@@ -1865,6 +1865,31 @@ hr {
   color: #333333 !important;
 }
 
+.contentContact,
+.contentContact td.expander {
+  -premailer-background: #00ff00;
+  background-color: #00ff00;
+  background-image: url("-premailer-bgdebug");
+}
+
+.contentContact,
+.contentContact td,
+.contentContact .inner {
+  color: #333333;
+}
+
+.contentContact a {
+  color: #333333;
+}
+
+.contentContact a .important,
+.contentContact a:visited,
+.contentContact a:hover,
+.contentContact a:focus,
+.contentContact a:active {
+  color: #333333 !important;
+}
+
 @media only screen and (max-width: 720px) {
   table[class="body"] img {
     max-width: auto !important;

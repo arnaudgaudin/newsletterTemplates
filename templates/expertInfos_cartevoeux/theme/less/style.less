@@ -131,3 +131,16 @@ hr {
 		a { .newsletterLinkColor(@nlCntOnlineName); }
 	}
 }
+
+
+// contentContact area
+// -------------------------
+.contentContact {
+	&, td.expander {
+		-premailer-background: @nlCntCctBackground;
+		background-color: @nlCntCctBackground;
+		//rajout pour suppression paramètre doublon via compiler
+		background-image: url("-premailer-bgdebug");
+	}
+	.newsletterInnerTextColor(@nlCntCctText);
+}
