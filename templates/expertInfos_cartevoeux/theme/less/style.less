@@ -72,11 +72,18 @@
 	//réduction décalage vertical en haut
 	td.wrapper { padding-top: 0px; }
 	table.columns td, table.column td { padding-bottom: 0px; }
+
+	//pour centrer image dans Outlook
+	img.voeux {
+		display: inline;
+		vertical-align: top;
+	}
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentMain {
 		td.wrapper { padding-top: 0px !important; }
 		table.columns td, table.column td { padding-bottom: 0px) !important; }
+		img.voeux { display: block !important; }
 	}
 }
 
