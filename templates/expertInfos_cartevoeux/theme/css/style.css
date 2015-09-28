@@ -1788,11 +1788,6 @@ img.faicon {
   padding-bottom: 0px;
 }
 
-.contentMain img.voeux {
-  display: inline;
-  vertical-align: top;
-}
-
 body,
 table.body {
   -premailer-background: #ffffff;
@@ -2140,9 +2135,5 @@ hr {
   table[class="body"] .contentMain table.columns td,
   table[class="body"] .contentMain table.column td {
     padding-bottom: 0px) !important;
-  }
-
-  table[class="body"] .contentMain img.voeux {
-    display: block !important;
   }
 }
