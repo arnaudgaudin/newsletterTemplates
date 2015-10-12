@@ -14,6 +14,34 @@ h4 { line-height: (@headingsFontSizeH4 * 1.1); }
 h5 { line-height: (@headingsFontSizeH5 * 1.1); }
 h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 
+//gestion header
+.header {
+	background-color: @bodyBackground;
+	.newsletterInnerTextColor(mix(#ffffff, @bodyBackground, 75%));
+
+	td {
+		&.sub-columns.last { text-align: right; }
+		p {
+			text-align: right;
+			margin: 0px;
+			&.mail {
+				font-size: @fontSizeSmall;
+				line-height: (@fontSizeSmall * 1.25);
+			}
+		}
+	}
+
+	//réduction décalage vertical en haut
+	td.wrapper { padding-top: (@wrapperPad / 2); }
+	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .header {
+		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
+		table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
+	}
+}
+
 
 // contentOnline area
 // -------------------------
@@ -30,13 +58,13 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentOnline {
-		td.wrapper { padding-top: (@wrapperPad / 2) !important; }
-		table.columns td, table.column td { padding-bottom: (@columnPad / 2) !important; }
+		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
+		table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
 	}
 }
 
 // contentIntroduction area
 // -------------------------
 .contentIntroduction {
-	
+
 }

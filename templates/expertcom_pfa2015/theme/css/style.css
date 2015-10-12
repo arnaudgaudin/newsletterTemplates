@@ -1054,6 +1054,51 @@ h6 {
   line-height: 22.33px;
 }
 
+.header {
+  background-color: #54616b;
+}
+
+.header,
+.header td,
+.header .inner {
+  color: #d4d8da;
+}
+
+.header a {
+  color: #d4d8da;
+}
+
+.header a .important,
+.header a:visited,
+.header a:hover,
+.header a:focus,
+.header a:active {
+  color: #d4d8da !important;
+}
+
+.header td.sub-columns.last {
+  text-align: right;
+}
+
+.header td p {
+  text-align: right;
+  margin: 0px;
+}
+
+.header td p.mail {
+  font-size: 9.8px;
+  line-height: 12.25px;
+}
+
+.header td.wrapper {
+  padding-top: 10px;
+}
+
+.header table.columns td,
+.header table.column td {
+  padding-bottom: 10px;
+}
+
 .contentOnline {
   background-color: #54616b;
 }
@@ -1256,12 +1301,21 @@ h6 {
     padding: 10px !important;
   }
 
+  table[class="body"] .header td.wrapper {
+    padding-top: 5px !important;
+  }
+
+  table[class="body"] .header table.columns td,
+  table[class="body"] .header table.column td {
+    padding-bottom: 5px !important;
+  }
+
   table[class="body"] .contentOnline td.wrapper {
-    padding-top: 10px !important;
+    padding-top: 5px !important;
   }
 
   table[class="body"] .contentOnline table.columns td,
   table[class="body"] .contentOnline table.column td {
-    padding-bottom: 10px !important;
+    padding-bottom: 5px !important;
   }
 }
