@@ -1090,6 +1090,11 @@ h6 {
   line-height: 12.25px;
 }
 
+.header table.subWrapper {
+  width: 100%;
+  -premailer-width: 100%;
+}
+
 .header td.wrapper {
   padding-top: 10px;
 }
