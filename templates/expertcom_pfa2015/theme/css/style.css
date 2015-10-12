@@ -1059,7 +1059,8 @@ h6 {
   -premailer-width: 100%;
 }
 
-table.subWrapper > tr > td {
+table.subWrapper > tr > td,
+table.subWrapper > tbody > tr > td {
   padding: 0px;
 }
 
