@@ -100,23 +100,34 @@ table.subWrapper {
 	td {
 		font-size: @headingsFontSizeH6;
 		line-height: (@headingsFontSizeH6 * 1.1);
-	}
-	
-	//séparation entre les 2 boutons
-	table.sep {
-		width: 100%;
-		-premailer-width: 100%;
-		td {
-			background-color: #0f0;
-			padding: 0px;
-			line-height: 0px;
-			height: 10px;
-			-premailer-height: 10px;
+		vertical-align: middle;
+
+		//séparation entre les 2 boutons
+		table.sep {
+			width: 100%;
+			-premailer-width: 100%;
+			td {
+				background-color: #0f0;
+				padding: 0px;
+				line-height: 0px;
+				height: 10px;
+				-premailer-height: 10px;
+			}
 		}
 	}
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentTop {
-
+		table.columns, table.column {
+			table.sep td {
+				padding: 0px !important;
+				height: 5px !important;
+			}
+		}
+		.text-pad-right { padding-left: 0px !important; }
+		td {
+			font-size: @fontSizeLarge;
+			line-height: (@fontSizeLarge * 1.1);
+		}
 	}
 }

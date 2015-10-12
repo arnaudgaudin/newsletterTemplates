@@ -1176,14 +1176,15 @@ table.subWrapper > tbody > tr > td {
 .contentTop td {
   font-size: 20.3px;
   line-height: 22.33px;
+  vertical-align: middle;
 }
 
-.contentTop table.sep {
+.contentTop td table.sep {
   width: 100%;
   -premailer-width: 100%;
 }
 
-.contentTop table.sep td {
+.contentTop td table.sep td {
   background-color: #0f0;
   padding: 0px;
   line-height: 0px;
@@ -1382,5 +1383,20 @@ table.subWrapper > tbody > tr > td {
   table[class="body"] .contentIntroduction td {
     font-size: 24.5px !important;
     line-height: 26.95px !important;
+  }
+
+  table[class="body"] .contentTop table.columns table.sep td,
+  table[class="body"] .contentTop table.column table.sep td {
+    padding: 0px !important;
+    height: 5px !important;
+  }
+
+  table[class="body"] .contentTop .text-pad-right {
+    padding-left: 0px !important;
+  }
+
+  table[class="body"] .contentTop td {
+    font-size: 17.5px;
+    line-height: 19.25px;
   }
 }
