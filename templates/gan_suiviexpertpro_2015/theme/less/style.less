@@ -129,6 +129,8 @@ table.imgCont {
 // contentOutlookIntro area
 // -------------------------
 .contentOutlookIntro {
+	display: none !important;
+	visibility: hidden !important;
 	background-color: @bodyBackground;
 	td {
 		font-size: @fontSizeSmall;
@@ -141,6 +143,8 @@ table.imgCont {
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentOutlookIntro {
+		display: none !important;
+		visibility: hidden !important;
 		td.wrapper { padding-top: (@wrapperPad / 2) !important; }
 		table.columns td, table.column td { padding-bottom: 0px !important; }
 	}

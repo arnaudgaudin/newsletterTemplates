@@ -1175,6 +1175,8 @@ table.imgCont .icon-img {
 }
 
 .contentOutlookIntro {
+  display: none !important;
+  visibility: hidden !important;
   background-color: #ededed;
 }
 
@@ -1712,6 +1714,11 @@ table.imgCont .icon-img {
 
   table[class="body"] table.imgCont .icon-img[data-type^="get"] {
     display: none !important;
+  }
+
+  table[class="body"] .contentOutlookIntro {
+    display: none !important;
+    visibility: hidden !important;
   }
 
   table[class="body"] .contentOutlookIntro td.wrapper {
