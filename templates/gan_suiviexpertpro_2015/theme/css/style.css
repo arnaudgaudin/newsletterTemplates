@@ -850,6 +850,7 @@ body.outlook p {
   visibility: hidden;
 }
 
+.hidden,
 .hidden * {
   mso-hide: all;
 }
@@ -1171,6 +1172,24 @@ table.imgCont .icon-img {
   line-height: 60px;
   width: 60px !important;
   height: 60px !important;
+}
+
+.contentOutlookIntro {
+  background-color: #ededed;
+}
+
+.contentOutlookIntro td {
+  font-size: 11.9px;
+  line-height: 14.875px;
+}
+
+.contentOutlookIntro td.wrapper {
+  padding-top: 10px;
+}
+
+.contentOutlookIntro table.columns td,
+.contentOutlookIntro table.column td {
+  padding-bottom: 0px;
 }
 
 .contentOnline {
@@ -1693,6 +1712,15 @@ table.imgCont .icon-img {
 
   table[class="body"] table.imgCont .icon-img[data-type^="get"] {
     display: none !important;
+  }
+
+  table[class="body"] .contentOutlookIntro td.wrapper {
+    padding-top: 10px !important;
+  }
+
+  table[class="body"] .contentOutlookIntro table.columns td,
+  table[class="body"] .contentOutlookIntro table.column td {
+    padding-bottom: 0px !important;
   }
 
   table[class="body"] .contentOnline td.wrapper {
