@@ -1054,6 +1054,15 @@ h6 {
   line-height: 22.33px;
 }
 
+.sub-columns > table.subWrapper {
+  width: 100%;
+  -premailer-width: 100%;
+}
+
+table.subWrapper > tr > td {
+  padding: 0px;
+}
+
 .header {
   background-color: #54616b;
 }
@@ -1088,11 +1097,6 @@ h6 {
 .header td p.mail {
   font-size: 9.8px;
   line-height: 12.25px;
-}
-
-.header table.subWrapper {
-  width: 100%;
-  -premailer-width: 100%;
 }
 
 .header td.wrapper {
@@ -1140,8 +1144,50 @@ h6 {
   padding-bottom: 10px;
 }
 
+.contentIntroduction td {
+  font-weight: bold;
+  font-size: 31.5px;
+  line-height: 34.65px;
+}
+
 .contentIntroduction td .vc {
   color: #b02323;
+}
+
+.contentTop,
+.contentTop td,
+.contentTop .inner {
+  color: #54616b;
+}
+
+.contentTop a {
+  color: #54616b;
+}
+
+.contentTop a .important,
+.contentTop a:visited,
+.contentTop a:hover,
+.contentTop a:focus,
+.contentTop a:active {
+  color: #54616b !important;
+}
+
+.contentTop td {
+  font-size: 20.3px;
+  line-height: 22.33px;
+}
+
+.contentTop table.sep {
+  width: 100%;
+  -premailer-width: 100%;
+}
+
+.contentTop table.sep td {
+  background-color: #0f0;
+  padding: 0px;
+  line-height: 0px;
+  height: 10px;
+  -premailer-height: 10px;
 }
 
 @media only screen and (max-width: 720px) {
@@ -1326,5 +1372,14 @@ h6 {
   table[class="body"] .contentOnline table.columns td,
   table[class="body"] .contentOnline table.column td {
     padding-bottom: 5px !important;
+  }
+
+  table[class="body"] .contentIntroduction .text-pad-right {
+    padding-left: 0px !important;
+  }
+
+  table[class="body"] .contentIntroduction td {
+    font-size: 24.5px !important;
+    line-height: 26.95px !important;
   }
 }
