@@ -845,6 +845,15 @@ body.outlook p {
 
 /*  Media Queries */
 
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.hidden * {
+  mso-hide: all;
+}
+
 .appleLinks a {
   color: #91999c;
   text-decoration: none;
