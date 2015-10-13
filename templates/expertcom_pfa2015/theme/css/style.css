@@ -1113,6 +1113,9 @@ table.subWrapper > tbody > tr > td {
 
 .webicons td {
   text-align: center;
+  font-size: 0px;
+  mso-line-height-rule: exactly;
+  line-height: 0px;
 }
 
 .webicon {
@@ -1120,23 +1123,18 @@ table.subWrapper > tbody > tr > td {
   font-size: 0px;
   mso-line-height-rule: exactly;
   line-height: 0px;
-  padding: 0px 5px;
-  mso-margin-left-alt: 5px;
-  mso-margin-right-alt: 5px;
-}
-
-.webicon.first {
-  padding-left: 0px;
-  mso-margin-left-alt: 0px;
-}
-
-.webicon.last {
-  padding-right: 0px;
-  mso-margin-right-alt: 0px;
 }
 
 .webicon img {
   display: inline;
+  float: none;
+}
+
+img.webicon-spacer {
+  display: inline;
+  font-size: 0px;
+  mso-line-height-rule: exactly;
+  line-height: 0px;
   float: none;
 }
 
@@ -1615,6 +1613,11 @@ table.subWrapper > tbody > tr > td {
 
   table[class="body"] .webicon img {
     width: 28px !important;
+    height: 28px !important;
+  }
+
+  table[class="body"] img.webicon-spacer {
+    width: 10px !important;
     height: 28px !important;
   }
 
