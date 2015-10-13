@@ -1261,6 +1261,7 @@ table.subWrapper > tbody > tr > td {
 }
 
 .contentMain .spec {
+  margin: 0px;
   padding-bottom: 10px;
 }
 
