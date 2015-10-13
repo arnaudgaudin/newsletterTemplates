@@ -89,17 +89,7 @@ table.subWrapper {
 	background-color: @bodyBackground;
 	.newsletterInnerTextColor(mix(#ffffff, @bodyBackground, 75%));
 
-	td {
-		&.sub-columns.last { text-align: right; }
-		p {
-			text-align: right;
-			margin: 0px;
-			&.mail {
-				font-size: @fontSizeSmall;
-				line-height: (@fontSizeSmall * 1.25);
-			}
-		}
-	}
+	td { text-align: right; }
 
 	//réduction décalage vertical en haut
 	td.wrapper { padding-top: (@wrapperPad / 2); }
