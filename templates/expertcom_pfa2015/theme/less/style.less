@@ -146,9 +146,10 @@ img.webicon-spacer {
 // contentIntroduction area
 // -------------------------
 .contentIntroduction {
-	td {
-		vertical-align: middle;
-		.vc { color: @colorPfa1; }
+	td { vertical-align: middle; }
+	h1.mainTitle.vc {
+		color: @colorPfa1;
+		a { .newsletterLinkColor(@colorPfa1); }
 	}
 	//réduction décalage vertical en haut
 	table.columns td, table.column td { padding-bottom: 0px; }

@@ -1213,8 +1213,20 @@ img.webicon-spacer {
   vertical-align: middle;
 }
 
-.contentIntroduction td .vc {
+.contentIntroduction h1.mainTitle.vc {
   color: #b02323;
+}
+
+.contentIntroduction h1.mainTitle.vc a {
+  color: #b02323;
+}
+
+.contentIntroduction h1.mainTitle.vc a .important,
+.contentIntroduction h1.mainTitle.vc a:visited,
+.contentIntroduction h1.mainTitle.vc a:hover,
+.contentIntroduction h1.mainTitle.vc a:focus,
+.contentIntroduction h1.mainTitle.vc a:active {
+  color: #b02323 !important;
 }
 
 .contentIntroduction table.columns td,
