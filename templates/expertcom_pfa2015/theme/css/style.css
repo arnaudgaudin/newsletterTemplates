@@ -1265,6 +1265,14 @@ table.subWrapper > tbody > tr > td {
 
 .contentMain table.buttonWrapper {
   background-color: #0f0;
+  width: 100%;
+  -premailer-width: 100%;
+}
+
+.contentMain table.buttonWrapper td.first,
+.contentMain table.buttonWrapper td.last {
+  width: 25%;
+  -premailer-width: 25%;
 }
 
 .contentMain table.buttonWrapper td.first {
@@ -1273,6 +1281,13 @@ table.subWrapper > tbody > tr > td {
 
 .contentMain table.buttonWrapper td.last {
   background-color: #ff0;
+}
+
+.contentMain table.columns td table.buttonWrapper > tbody > tr > td,
+.contentMain table.column td table.buttonWrapper > tbody > tr > td,
+.contentMain table.columns td table.buttonWrapper > tr > td,
+.contentMain table.column td table.buttonWrapper > tr > td {
+  padding-bottom: 0px;
 }
 
 .contentMain .wrapper.first table.columns .text-pad,

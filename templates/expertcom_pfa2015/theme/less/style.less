@@ -159,14 +159,21 @@ table.subWrapper {
 	//réduction largeur boutons
 	table.buttonWrapper {
 		background-color: #0f0;
+		width: 100%;
+		-premailer-width: 100%;
 		td {
-			&.first {
-				background-color: #00f;
+			&.first, &.last {
+				width: 25%;
+				-premailer-width: 25%;
 			}
-
-			&.last {
-				background-color: #ff0;
-			}
+			&.first { background-color: #00f; }
+			&.last { background-color: #ff0; }
+		}
+	}
+	table.columns td, table.column td {
+		table.buttonWrapper {
+			& > tbody > tr > td,
+			& > tr > td { padding-bottom: 0px; }
 		}
 	}
 
