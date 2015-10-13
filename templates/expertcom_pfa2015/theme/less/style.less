@@ -146,7 +146,10 @@ img.webicon-spacer {
 // contentIntroduction area
 // -------------------------
 .contentIntroduction {
-	td { .vc { color: @colorPfa1; } }
+	td {
+		vertical-align: middle;
+		.vc { color: @colorPfa1; }
+	}
 	//réduction décalage vertical en haut
 	table.columns td, table.column td { padding-bottom: 0px; }
 }
@@ -268,6 +271,7 @@ img.webicon-spacer {
 			font-size: @headingsFontSizeH4 !important;
 			line-height: (@headingsFontSizeH4 * 1.1) !important;
 		}
+		.spec { padding-bottom: 0px; }
 		table.columns, table.column {
 			table.sep td {
 				padding: 0px !important;
@@ -290,6 +294,10 @@ img.webicon-spacer {
 		.wrapper.last {
 			table.columns .text-pad, table.column .text-pad { padding-left: @textPadCollapse !important; }
 		}
+
+		//augmentation espacement vertical
+		td.wrapper { padding-top: (@wrapperPadCollapse * 2) !important; }
+		table.columns td, table.column td { padding-bottom: (@columnPadCollapse * 2) !important; }
 	}
 }
 

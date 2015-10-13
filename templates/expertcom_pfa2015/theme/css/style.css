@@ -1209,6 +1209,10 @@ img.webicon-spacer {
   padding-bottom: 10px;
 }
 
+.contentIntroduction td {
+  vertical-align: middle;
+}
+
 .contentIntroduction td .vc {
   color: #b02323;
 }
@@ -1677,6 +1681,10 @@ img.webicon-spacer {
     line-height: 17.6px !important;
   }
 
+  table[class="body"] .contentMain .spec {
+    padding-bottom: 0px;
+  }
+
   table[class="body"] .contentMain table.columns table.sep td,
   table[class="body"] .contentMain table.column table.sep td {
     padding: 0px !important;
@@ -1722,6 +1730,15 @@ img.webicon-spacer {
   table[class="body"] .contentMain .wrapper.last table.columns .text-pad,
   table[class="body"] .contentMain .wrapper.last table.column .text-pad {
     padding-left: 20px !important;
+  }
+
+  table[class="body"] .contentMain td.wrapper {
+    padding-top: 20px !important;
+  }
+
+  table[class="body"] .contentMain table.columns td,
+  table[class="body"] .contentMain table.column td {
+    padding-bottom: 20px !important;
   }
 
   table[class="body"] .contentContact td.wrapper {
