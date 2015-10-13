@@ -1264,7 +1264,6 @@ table.subWrapper > tbody > tr > td {
 }
 
 .contentMain table.buttonWrapper {
-  background-color: #0f0;
   width: 100%;
   -premailer-width: 100%;
 }
@@ -1273,14 +1272,6 @@ table.subWrapper > tbody > tr > td {
 .contentMain table.buttonWrapper td.last {
   width: 25%;
   -premailer-width: 25%;
-}
-
-.contentMain table.buttonWrapper td.first {
-  background-color: #00f;
-}
-
-.contentMain table.buttonWrapper td.last {
-  background-color: #ff0;
 }
 
 .contentMain table.columns td table.buttonWrapper > tbody > tr > td,
@@ -1519,13 +1510,37 @@ table.subWrapper > tbody > tr > td {
     height: 10px !important;
   }
 
+  table[class="body"] .contentMain table.columns table.buttonWrapper > tbody > tr > td,
+  table[class="body"] .contentMain table.column table.buttonWrapper > tbody > tr > td,
+  table[class="body"] .contentMain table.columns table.buttonWrapper > tr > td,
+  table[class="body"] .contentMain table.column table.buttonWrapper > tr > td {
+    width: auto !important;
+    padding: 0px !important;
+  }
+
+  table[class="body"] .contentMain table.columns table.buttonWrapper > tbody > tr > td.first,
+  table[class="body"] .contentMain table.column table.buttonWrapper > tbody > tr > td.first,
+  table[class="body"] .contentMain table.columns table.buttonWrapper > tr > td.first,
+  table[class="body"] .contentMain table.column table.buttonWrapper > tr > td.first,
+  table[class="body"] .contentMain table.columns table.buttonWrapper > tbody > tr > td.last,
+  table[class="body"] .contentMain table.column table.buttonWrapper > tbody > tr > td.last,
+  table[class="body"] .contentMain table.columns table.buttonWrapper > tr > td.last,
+  table[class="body"] .contentMain table.column table.buttonWrapper > tr > td.last {
+    width: 25% !important;
+  }
+
+  table[class="body"] .contentMain table.columns table.tiny-button td,
+  table[class="body"] .contentMain table.column table.tiny-button td {
+    padding: 5px 0 !important;
+  }
+
   table[class="body"] .contentMain .wrapper.first table.columns .text-pad,
   table[class="body"] .contentMain .wrapper.first table.column .text-pad {
-    padding-right: 10px !important;
+    padding-right: 20px !important;
   }
 
   table[class="body"] .contentMain .wrapper.last table.columns .text-pad,
   table[class="body"] .contentMain .wrapper.last table.column .text-pad {
-    padding-left: 10px !important;
+    padding-left: 20px !important;
   }
 }

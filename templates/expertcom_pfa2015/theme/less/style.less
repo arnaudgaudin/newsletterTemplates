@@ -158,7 +158,6 @@ table.subWrapper {
 
 	//réduction largeur boutons
 	table.buttonWrapper {
-		background-color: #0f0;
 		width: 100%;
 		-premailer-width: 100%;
 		td {
@@ -166,8 +165,6 @@ table.subWrapper {
 				width: 25%;
 				-premailer-width: 25%;
 			}
-			&.first { background-color: #00f; }
-			&.last { background-color: #ff0; }
 		}
 	}
 	table.columns td, table.column td {
@@ -196,12 +193,21 @@ table.subWrapper {
 				padding: 0px !important;
 				height: 10px !important;
 			}
+			table.buttonWrapper {
+				& > tbody > tr > td,
+				& > tr > td {
+					&.first, &.last { width: 25% !important; }
+					width: auto !important;
+					padding: 0px !important;
+				}
+			}
+			table.tiny-button td { padding: 5px 0 !important; }
 		}
 		.wrapper.first {
-			table.columns .text-pad, table.column .text-pad { padding-right: (@textPadCollapse / 2) !important; }
+			table.columns .text-pad, table.column .text-pad { padding-right: @textPadCollapse !important; }
 		}
 		.wrapper.last {
-			table.columns .text-pad, table.column .text-pad { padding-left: (@textPadCollapse / 2) !important; }
+			table.columns .text-pad, table.column .text-pad { padding-left: @textPadCollapse !important; }
 		}
 	}
 }
