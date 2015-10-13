@@ -14,6 +14,8 @@ h4 { line-height: (@headingsFontSizeH4 * 1.1); }
 h5 { line-height: (@headingsFontSizeH5 * 1.1); }
 h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 
+// Buttons
+table.tiny-button td a { font-weight: bold; }
 
 table.subWrapper {
 	//lorsque contenu dans 
@@ -77,18 +79,15 @@ table.subWrapper {
 // -------------------------
 .contentIntroduction {
 	td {
-		font-weight: bold;
-		font-size: @headingsFontSizeH3;
-		line-height: (@headingsFontSizeH3 * 1.1);
 		.vc { color: @colorPfa1; }
 	}
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentIntroduction {
 		.text-pad-right { padding-left: 0px !important; }
-		td {
-			font-size: @headingsFontSizeH5 !important;
-			line-height: (@headingsFontSizeH5 * 1.1) !important;
+		h1.mainTitle {
+			font-size: @headingsFontSizeH2 !important;
+			line-height: (@headingsFontSizeH2 * 1.1) !important;
 		}
 	}
 }
@@ -98,9 +97,8 @@ table.subWrapper {
 .contentTop {
 	.newsletterInnerTextColor(@colorPfa2);
 	td {
-		font-size: @headingsFontSizeH6;
-		line-height: (@headingsFontSizeH6 * 1.1);
 		vertical-align: middle;
+		h3.teaserTitle { font-weight: normal; }
 
 		//séparation entre les 2 boutons
 		table.sep {
@@ -124,9 +122,23 @@ table.subWrapper {
 			}
 		}
 		.text-pad-right { padding-left: 0px !important; }
-		td {
-			font-size: @fontSizeLarge;
-			line-height: (@fontSizeLarge * 1.1);
+		h3.teaserTitle {
+			font-size: @headingsFontSizeH4 !important;
+			line-height: (@headingsFontSizeH4 * 1.1) !important;
 		}
+	}
+}
+
+
+// contentMain area
+// -------------------------
+.contentMain {
+	background-color: @colorPfa3;
+	.newsletterInnerTextColor(#ffffff);
+	.title { padding-bottom: 5px; }
+	.spec { padding-bottom: 10px; }
+	.title, .spec {
+		color: #ffffff;
+		text-align: center;
 	}
 }

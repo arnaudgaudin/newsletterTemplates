@@ -570,27 +570,27 @@ h6 {
 }
 
 h1 {
-  font-size: 39.9px;
-}
-
-h2 {
-  font-size: 35.7px;
-}
-
-h3 {
-  font-size: 31.5px;
-}
-
-h4 {
   font-size: 28px;
 }
 
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
 h5 {
-  font-size: 24.5px;
+  font-size: 15px;
 }
 
 h6 {
-  font-size: 20.3px;
+  font-size: 14px;
 }
 
 body,
@@ -600,14 +600,14 @@ td {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-size: 14px;
-  line-height: 19px;
+  line-height: 18px;
 }
 
 p.lead,
 p.lede,
 p.leed {
-  font-size: 17.5px;
-  line-height: 20.125px;
+  font-size: 18px;
+  line-height: 20.7px;
 }
 
 p {
@@ -615,7 +615,7 @@ p {
 }
 
 small {
-  font-size: 9.8px;
+  font-size: 12px;
 }
 
 a {
@@ -793,22 +793,22 @@ table.large-button td a:visited {
 table.secondary td {
   background: #5d93a5;
   border-color: #4a7685;
-  color: #555555;
+  color: #ffffff;
 }
 
 table.secondary td a {
-  color: #555555;
+  color: #ffffff;
 }
 
 table.secondary:hover td {
   background: #6d9eae !important;
-  color: #555555;
+  color: #ffffff;
 }
 
 table.secondary:hover td a,
 table.secondary td a:visited,
 table.secondary:active td a {
-  color: #555555 !important;
+  color: #ffffff !important;
 }
 
 table.success td {
@@ -1055,27 +1055,31 @@ h6 {
 }
 
 h1 {
-  line-height: 43.89px;
-}
-
-h2 {
-  line-height: 39.27px;
-}
-
-h3 {
-  line-height: 34.65px;
-}
-
-h4 {
   line-height: 30.8px;
 }
 
+h2 {
+  line-height: 26.4px;
+}
+
+h3 {
+  line-height: 22px;
+}
+
+h4 {
+  line-height: 17.6px;
+}
+
 h5 {
-  line-height: 26.95px;
+  line-height: 16.5px;
 }
 
 h6 {
-  line-height: 22.33px;
+  line-height: 15.4px;
+}
+
+table.tiny-button td a {
+  font-weight: bold;
 }
 
 .sub-columns > table.subWrapper {
@@ -1120,8 +1124,8 @@ table.subWrapper > tbody > tr > td {
 }
 
 .header td p.mail {
-  font-size: 9.8px;
-  line-height: 12.25px;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .header td.wrapper {
@@ -1156,8 +1160,8 @@ table.subWrapper > tbody > tr > td {
 }
 
 .contentOnline td {
-  font-size: 9.8px;
-  line-height: 12.25px;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .contentOnline td.wrapper {
@@ -1167,12 +1171,6 @@ table.subWrapper > tbody > tr > td {
 .contentOnline table.columns td,
 .contentOnline table.column td {
   padding-bottom: 10px;
-}
-
-.contentIntroduction td {
-  font-weight: bold;
-  font-size: 31.5px;
-  line-height: 34.65px;
 }
 
 .contentIntroduction td .vc {
@@ -1198,9 +1196,11 @@ table.subWrapper > tbody > tr > td {
 }
 
 .contentTop td {
-  font-size: 20.3px;
-  line-height: 22.33px;
   vertical-align: middle;
+}
+
+.contentTop td h3.teaserTitle {
+  font-weight: normal;
 }
 
 .contentTop td table.sep {
@@ -1213,6 +1213,42 @@ table.subWrapper > tbody > tr > td {
   line-height: 0px;
   height: 10px;
   -premailer-height: 10px;
+}
+
+.contentMain {
+  background-color: #5d93a5;
+}
+
+.contentMain,
+.contentMain td,
+.contentMain .inner {
+  color: #ffffff;
+}
+
+.contentMain a {
+  color: #ffffff;
+}
+
+.contentMain a .important,
+.contentMain a:visited,
+.contentMain a:hover,
+.contentMain a:focus,
+.contentMain a:active {
+  color: #ffffff !important;
+}
+
+.contentMain .title {
+  padding-bottom: 5px;
+}
+
+.contentMain .spec {
+  padding-bottom: 10px;
+}
+
+.contentMain .title,
+.contentMain .spec {
+  color: #ffffff;
+  text-align: center;
 }
 
 @media only screen and (max-width: 720px) {
@@ -1403,9 +1439,9 @@ table.subWrapper > tbody > tr > td {
     padding-left: 0px !important;
   }
 
-  table[class="body"] .contentIntroduction td {
-    font-size: 24.5px !important;
-    line-height: 26.95px !important;
+  table[class="body"] .contentIntroduction h1.mainTitle {
+    font-size: 24px !important;
+    line-height: 26.4px !important;
   }
 
   table[class="body"] .contentTop table.columns table.sep td,
@@ -1418,8 +1454,8 @@ table.subWrapper > tbody > tr > td {
     padding-left: 0px !important;
   }
 
-  table[class="body"] .contentTop td {
-    font-size: 17.5px;
-    line-height: 19.25px;
+  table[class="body"] .contentTop h3.teaserTitle {
+    font-size: 16px !important;
+    line-height: 17.6px !important;
   }
 }
