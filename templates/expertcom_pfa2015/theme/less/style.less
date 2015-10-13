@@ -142,6 +142,34 @@ table.subWrapper {
 		text-align: center;
 	}
 
+	td {
+		//séparation avant bouton
+		table.sep {
+			width: 100%;
+			-premailer-width: 100%;
+			td {
+				padding: 0px;
+				line-height: 0px;
+				height: 20px;
+				-premailer-height: 20px;
+			}
+		}
+	}
+
+	//réduction largeur boutons
+	table.buttonWrapper {
+		background-color: #0f0;
+		td {
+			&.first {
+				background-color: #00f;
+			}
+
+			&.last {
+				background-color: #ff0;
+			}
+		}
+	}
+
 	//différenciation padding pour zone centrale
 	.wrapper.first {
 		table.columns .text-pad, table.column .text-pad { padding-right: (@textPad / 2) !important; }
@@ -156,7 +184,12 @@ table.subWrapper {
 			font-size: @headingsFontSizeH4 !important;
 			line-height: (@headingsFontSizeH4 * 1.1) !important;
 		}
-
+		table.columns, table.column {
+			table.sep td {
+				padding: 0px !important;
+				height: 10px !important;
+			}
+		}
 		.wrapper.first {
 			table.columns .text-pad, table.column .text-pad { padding-right: (@textPadCollapse / 2) !important; }
 		}

@@ -834,7 +834,7 @@ table.success:active td a {
 
 table.alert td {
   background: #b02323;
-  border-color: #457a1a;
+  border-color: #851b1b;
   color: #ffffff;
 }
 
@@ -843,7 +843,7 @@ table.alert td a {
 }
 
 table.alert:hover td {
-  background: #518f1f !important;
+  background: #9b1f1f !important;
   color: #ffffff;
 }
 
@@ -1251,6 +1251,30 @@ table.subWrapper > tbody > tr > td {
   text-align: center;
 }
 
+.contentMain td table.sep {
+  width: 100%;
+  -premailer-width: 100%;
+}
+
+.contentMain td table.sep td {
+  padding: 0px;
+  line-height: 0px;
+  height: 20px;
+  -premailer-height: 20px;
+}
+
+.contentMain table.buttonWrapper {
+  background-color: #0f0;
+}
+
+.contentMain table.buttonWrapper td.first {
+  background-color: #00f;
+}
+
+.contentMain table.buttonWrapper td.last {
+  background-color: #ff0;
+}
+
 .contentMain .wrapper.first table.columns .text-pad,
 .contentMain .wrapper.first table.column .text-pad {
   padding-right: 20px !important;
@@ -1472,6 +1496,12 @@ table.subWrapper > tbody > tr > td {
   table[class="body"] .contentMain h3.title {
     font-size: 16px !important;
     line-height: 17.6px !important;
+  }
+
+  table[class="body"] .contentMain table.columns table.sep td,
+  table[class="body"] .contentMain table.column table.sep td {
+    padding: 0px !important;
+    height: 10px !important;
   }
 
   table[class="body"] .contentMain .wrapper.first table.columns .text-pad,
