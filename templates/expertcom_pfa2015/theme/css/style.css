@@ -1258,11 +1258,12 @@ table.subWrapper > tbody > tr > td {
 
 .contentMain .title {
   padding-bottom: 5px;
+  mso-margin-bottom-alt: 5px;
 }
 
 .contentMain .spec {
-  margin: 0px;
   padding-bottom: 10px;
+  mso-margin-bottom-alt: 10px;
 }
 
 .contentMain .title,
