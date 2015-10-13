@@ -137,14 +137,18 @@ table.subWrapper {
 // -------------------------
 .contentIntroduction {
 	td { .vc { color: @colorPfa1; } }
+	//réduction décalage vertical en haut
+	table.columns td, table.column td { padding-bottom: 0px; }
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentIntroduction {
+		td.sub-columns.first { vertical-align: middle !important; }
 		.text-pad-right { padding-left: 0px !important; }
 		h1.mainTitle {
 			font-size: @headingsFontSizeH2 !important;
 			line-height: (@headingsFontSizeH2 * 1.1) !important;
 		}
+		table.columns td, table.column td { padding-bottom: 0px !important; }
 	}
 }
 

@@ -570,11 +570,11 @@ h6 {
 }
 
 h1 {
-  font-size: 28px;
+  font-size: 36px;
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 28px;
 }
 
 h3 {
@@ -1055,11 +1055,11 @@ h6 {
 }
 
 h1 {
-  line-height: 30.8px;
+  line-height: 39.6px;
 }
 
 h2 {
-  line-height: 26.4px;
+  line-height: 30.8px;
 }
 
 h3 {
@@ -1223,6 +1223,11 @@ table.subWrapper > tbody > tr > td {
 
 .contentIntroduction td .vc {
   color: #b02323;
+}
+
+.contentIntroduction table.columns td,
+.contentIntroduction table.column td {
+  padding-bottom: 0px;
 }
 
 .contentTop,
@@ -1636,13 +1641,22 @@ table.subWrapper > tbody > tr > td {
     padding-bottom: 5px !important;
   }
 
+  table[class="body"] .contentIntroduction td.sub-columns.first {
+    vertical-align: middle !important;
+  }
+
   table[class="body"] .contentIntroduction .text-pad-right {
     padding-left: 0px !important;
   }
 
   table[class="body"] .contentIntroduction h1.mainTitle {
-    font-size: 24px !important;
-    line-height: 26.4px !important;
+    font-size: 28px !important;
+    line-height: 30.8px !important;
+  }
+
+  table[class="body"] .contentIntroduction table.columns td,
+  table[class="body"] .contentIntroduction table.column td {
+    padding-bottom: 0px !important;
   }
 
   table[class="body"] .contentTop table.columns table.sep td,
