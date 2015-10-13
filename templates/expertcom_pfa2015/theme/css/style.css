@@ -1217,15 +1217,15 @@ img.webicon-spacer {
   color: #b02323;
 }
 
-.contentIntroduction a.mainTitle.vc {
+.contentIntroduction h1.mainTitle.vc a {
   color: #b02323;
 }
 
-.contentIntroduction a.mainTitle.vc .important,
-.contentIntroduction a.mainTitle.vc:visited,
-.contentIntroduction a.mainTitle.vc:hover,
-.contentIntroduction a.mainTitle.vc:focus,
-.contentIntroduction a.mainTitle.vc:active {
+.contentIntroduction h1.mainTitle.vc a .important,
+.contentIntroduction h1.mainTitle.vc a:visited,
+.contentIntroduction h1.mainTitle.vc a:hover,
+.contentIntroduction h1.mainTitle.vc a:focus,
+.contentIntroduction h1.mainTitle.vc a:active {
   color: #b02323 !important;
 }
 
