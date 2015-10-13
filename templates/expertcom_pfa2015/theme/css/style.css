@@ -1092,6 +1092,25 @@ table.subWrapper > tbody > tr > td {
   padding: 0px;
 }
 
+.row.bordered {
+  background-color: #0f0;
+}
+
+.row.bordered td.wrapper {
+  padding-top: 0px;
+}
+
+.row.bordered table.columns td,
+.row.bordered table.column td {
+  padding-bottom: 0px;
+}
+
+.row.bordered td {
+  line-height: 0;
+  height: 10px;
+  -premailer-height: 10px;
+}
+
 .header {
   background-color: #54616b;
 }
@@ -1455,6 +1474,15 @@ table.subWrapper > tbody > tr > td {
 
   table[class="container"] .panel {
     padding: 10px !important;
+  }
+
+  table[class="body"] .row.bordered td.wrapper {
+    padding-top: 0px !important;
+  }
+
+  table[class="body"] .row.bordered table.columns td,
+  table[class="body"] .row.bordered table.column td {
+    padding-bottom: 0px !important;
   }
 
   table[class="body"] .header td.wrapper {

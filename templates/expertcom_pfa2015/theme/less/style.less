@@ -17,13 +17,33 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 // Buttons
 table.tiny-button td a { font-weight: bold; }
 
+// Gestion sous-containers
 table.subWrapper {
-	//lorsque contenu dans 
+	//lorsque contenu dans sous-colonne
 	.sub-columns > & {
 		width: 100%;
 		-premailer-width: 100%;
 	}
 	& > tr > td, & > tbody > tr > td { padding: 0px; }
+}
+
+//gestion row avec bordures de séparation
+.row.bordered {
+	background-color: #0f0;
+	//suppression décalage en trop
+	td.wrapper { padding-top: 0px; }
+	table.columns td, table.column td { padding-bottom: 0px; }
+	td {
+		line-height: 0;
+		height: 10px;
+		-premailer-height: 10px;
+	}
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .row.bordered {
+		td.wrapper { padding-top: 0px !important; }
+		table.columns td, table.column td { padding-bottom: 0px !important; }
+	}
 }
 
 //gestion header
