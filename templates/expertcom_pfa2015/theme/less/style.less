@@ -101,9 +101,7 @@ table.subWrapper {
 // contentIntroduction area
 // -------------------------
 .contentIntroduction {
-	td {
-		.vc { color: @colorPfa1; }
-	}
+	td { .vc { color: @colorPfa1; } }
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentIntroduction {
@@ -238,5 +236,29 @@ table.subWrapper {
 		.wrapper.last {
 			table.columns .text-pad, table.column .text-pad { padding-left: @textPadCollapse !important; }
 		}
+	}
+}
+
+
+// contentContact area
+// -------------------------
+.contentContact {
+	background-color: #0f0;
+	.newsletterInnerTextColor(@colorPfa2);
+	.title {
+		color: @colorPfa1;
+		text-align: center;
+		padding-bottom: 5px;
+		mso-margin-bottom-alt: 5px;
+	}
+
+	//réduction décalage vertical en haut
+	td.wrapper { padding-top: (@wrapperPad / 2); }
+	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentContact {
+		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
+		table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
 	}
 }
