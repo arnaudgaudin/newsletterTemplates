@@ -1111,6 +1111,10 @@ table.subWrapper > tbody > tr > td {
   -premailer-height: 10px;
 }
 
+body {
+  overflow: hidden;
+}
+
 .header {
   background-color: #54616b;
 }
