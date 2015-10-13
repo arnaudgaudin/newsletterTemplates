@@ -1341,10 +1341,6 @@ table.subWrapper > tbody > tr > td {
   padding-left: 20px !important;
 }
 
-.contentContact {
-  background-color: #0f0;
-}
-
 .contentContact,
 .contentContact td,
 .contentContact .inner {
@@ -1379,16 +1375,48 @@ table.subWrapper > tbody > tr > td {
   padding-bottom: 10px;
 }
 
-.contentFooter {
-  background-color: #f00;
-}
-
 .contentFooter td.wrapper {
-  padding-top: 10px;
+  padding-top: 0px;
 }
 
 .contentFooter table.columns td,
 .contentFooter table.column td {
+  padding-bottom: 10px;
+}
+
+.contentUnsubscribe {
+  background-color: #54616b;
+}
+
+.contentUnsubscribe,
+.contentUnsubscribe td,
+.contentUnsubscribe .inner {
+  color: #aab0b5;
+}
+
+.contentUnsubscribe a {
+  color: #aab0b5;
+}
+
+.contentUnsubscribe a .important,
+.contentUnsubscribe a:visited,
+.contentUnsubscribe a:hover,
+.contentUnsubscribe a:focus,
+.contentUnsubscribe a:active {
+  color: #aab0b5 !important;
+}
+
+.contentUnsubscribe td {
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.contentUnsubscribe td.wrapper {
+  padding-top: 10px;
+}
+
+.contentUnsubscribe table.columns td,
+.contentUnsubscribe table.column td {
   padding-bottom: 10px;
 }
 
@@ -1687,11 +1715,20 @@ table.subWrapper > tbody > tr > td {
   }
 
   table[class="body"] .contentFooter td.wrapper {
-    padding-top: 5px !important;
+    padding-top: 0px !important;
   }
 
   table[class="body"] .contentFooter table.columns td,
   table[class="body"] .contentFooter table.column td {
+    padding-bottom: 5px !important;
+  }
+
+  table[class="body"] .contentUnsubscribe td.wrapper {
+    padding-top: 5px !important;
+  }
+
+  table[class="body"] .contentUnsubscribe table.columns td,
+  table[class="body"] .contentUnsubscribe table.column td {
     padding-bottom: 5px !important;
   }
 }

@@ -278,7 +278,6 @@ table.subWrapper {
 // contentContact area
 // -------------------------
 .contentContact {
-	background-color: #0f0;
 	.newsletterInnerTextColor(@colorPfa2);
 	.title {
 		color: @colorPfa1;
@@ -302,13 +301,33 @@ table.subWrapper {
 // contentFooter area
 // -------------------------
 .contentFooter {
-	background-color: #f00;
+	//réduction décalage vertical en haut
+	td.wrapper { padding-top: 0px; }
+	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentFooter {
+		td.wrapper { padding-top: 0px !important; }
+		table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
+	}
+}
+
+
+// contentUnsubscribe area
+// -------------------------
+.contentUnsubscribe {
+	background-color: @bodyBackground;
+	.newsletterInnerTextColor(mix(#ffffff, @bodyBackground, 50%));
+	td {
+		font-size: @fontSizeSmall;
+		line-height: (@fontSizeSmall * 1.25);
+	}
 	//réduction décalage vertical en haut
 	td.wrapper { padding-top: (@wrapperPad / 2); }
 	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
-	table[class="body"] .contentFooter {
+	table[class="body"] .contentUnsubscribe {
 		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
 		table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
 	}
