@@ -814,19 +814,43 @@ table.secondary:active td a {
 table.success td {
   background: #5da423;
   border-color: #396516;
+  color: #ffffff;
+}
+
+table.success td a {
+  color: #ffffff;
 }
 
 table.success:hover td {
   background: #396516 !important;
+  color: #ffffff;
+}
+
+table.success:hover td a,
+table.success td a:visited,
+table.success:active td a {
+  color: #ffffff !important;
 }
 
 table.alert td {
   background: #c60f13;
   border-color: #67080a;
+  color: #ffffff;
+}
+
+table.alert td a {
+  color: #ffffff;
 }
 
 table.alert:hover td {
   background: #67080a !important;
+  color: #ffffff;
+}
+
+table.alert:hover td a,
+table.alert td a:visited,
+table.alert:active td a {
+  color: #ffffff !important;
 }
 
 table.radius td {
