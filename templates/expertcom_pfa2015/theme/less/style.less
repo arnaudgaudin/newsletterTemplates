@@ -50,16 +50,24 @@ table.subWrapper {
 }
 
 //réseaux sociaux
-.webicons td { text-align: right; }
+.webicons td { text-align: center; }
 .webicon {
 	display: inline;
 	//pour supprimer les espaces
 	font-size: 0px;
 	mso-line-height-rule: exactly;
 	line-height: 0px;
-	// padding: 0px 5px 5px 5px;
-	&.first { padding-left: 0px; }
-	&.last { padding-right: 0px; }
+	padding: 0px 5px;
+	mso-margin-left-alt: 5px;
+	mso-margin-right-alt: 5px;
+	&.first {
+		padding-left: 0px;
+		mso-margin-left-alt: 0px;
+	}
+	&.last {
+		padding-right: 0px;
+		mso-margin-right-alt: 0px;
+	}
 	img {
 		display: inline;
 		float: none;
@@ -285,6 +293,22 @@ table.subWrapper {
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentContact {
+		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
+		table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
+	}
+}
+
+
+// contentFooter area
+// -------------------------
+.contentFooter {
+	background-color: #f00;
+	//réduction décalage vertical en haut
+	td.wrapper { padding-top: (@wrapperPad / 2); }
+	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentFooter {
 		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
 		table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
 	}
