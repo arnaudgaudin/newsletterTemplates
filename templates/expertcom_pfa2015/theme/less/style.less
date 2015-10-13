@@ -49,6 +49,33 @@ table.subWrapper {
 	}
 }
 
+//réseaux sociaux
+.webicons td { text-align: right; }
+.webicon {
+	display: inline;
+	//pour supprimer les espaces
+	font-size: 0px;
+	mso-line-height-rule: exactly;
+	line-height: 0px;
+	// padding: 0px 5px 5px 5px;
+	&.first { padding-left: 0px; }
+	&.last { padding-right: 0px; }
+	img {
+		display: inline;
+		float: none;
+	}
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .webicons {
+		.columns, .column { display: table !important; }
+		td { text-align: center !important; }
+	}
+	table[class="body"] .webicon img {
+		width: 28px !important;
+		height: 28px !important;
+	}
+}
+
 //gestion header
 .header {
 	background-color: @bodyBackground;

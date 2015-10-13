@@ -1111,6 +1111,30 @@ table.subWrapper > tbody > tr > td {
   -premailer-height: 10px;
 }
 
+.webicons td {
+  text-align: right;
+}
+
+.webicon {
+  display: inline;
+  font-size: 0px;
+  mso-line-height-rule: exactly;
+  line-height: 0px;
+}
+
+.webicon.first {
+  padding-left: 0px;
+}
+
+.webicon.last {
+  padding-right: 0px;
+}
+
+.webicon img {
+  display: inline;
+  float: none;
+}
+
 .header {
   background-color: #54616b;
 }
@@ -1532,6 +1556,20 @@ table.subWrapper > tbody > tr > td {
 
   table[class="body"] .row.bordered td {
     height: 0px !important;
+  }
+
+  table[class="body"] .webicons .columns,
+  table[class="body"] .webicons .column {
+    display: table !important;
+  }
+
+  table[class="body"] .webicons td {
+    text-align: center !important;
+  }
+
+  table[class="body"] .webicon img {
+    width: 28px !important;
+    height: 28px !important;
   }
 
   table[class="body"] .header td.wrapper {
