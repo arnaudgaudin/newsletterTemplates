@@ -1093,7 +1093,7 @@ table.subWrapper > tbody > tr > td {
 }
 
 .row.bordered {
-  background-color: #0f0;
+  background-color: #ffffff;
 }
 
 .row.bordered td.wrapper {
@@ -1476,6 +1476,11 @@ table.subWrapper > tbody > tr > td {
     padding: 10px !important;
   }
 
+  table[class="body"] .row.bordered {
+    display: none !important;
+    visibility: hidden !important;
+  }
+
   table[class="body"] .row.bordered td.wrapper {
     padding-top: 0px !important;
   }
@@ -1483,6 +1488,10 @@ table.subWrapper > tbody > tr > td {
   table[class="body"] .row.bordered table.columns td,
   table[class="body"] .row.bordered table.column td {
     padding-bottom: 0px !important;
+  }
+
+  table[class="body"] .row.bordered td {
+    height: 0px !important;
   }
 
   table[class="body"] .header td.wrapper {
