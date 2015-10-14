@@ -1093,7 +1093,7 @@ table.subWrapper > tbody > tr > td {
 }
 
 .row.bordered {
-  background-color: #ffffff;
+  background-color: #0f0;
 }
 
 .row.bordered td.wrapper {
@@ -1382,7 +1382,7 @@ img.webicon-spacer {
 }
 
 .contentContact td.wrapper {
-  padding-top: 10px;
+  padding-top: 0px;
 }
 
 .contentContact table.columns td,
