@@ -1106,7 +1106,7 @@ table.subWrapper > tbody > tr > td {
 }
 
 .row.bordered td {
-  background-color: #ffffff;
+  background-color: #ffffff !important;
   line-height: 0;
   height: 10px;
   -premailer-height: 10px;
