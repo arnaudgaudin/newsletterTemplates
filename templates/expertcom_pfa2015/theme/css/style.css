@@ -699,7 +699,7 @@ table.large-button td {
   text-align: center;
   background: #010101;
   border: 1px solid #000000;
-  color: #ffffff;
+  color: #ff00ff;
   padding: 8px 0;
   line-height: initial !important;
 }
@@ -728,11 +728,19 @@ table.large-button td a {
   font-weight: bold;
   text-decoration: none;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #ffffff;
+  color: #ff00ff;
   font-size: 16.1px;
   display: block;
   height: 100%;
   width: 100%;
+}
+
+table.button td a .important,
+table.tiny-button td a .important,
+table.small-button td a .important,
+table.medium-button td a .important,
+table.large-button td a .important {
+  color: #ff00ff !important;
 }
 
 table.tiny-button td a {
@@ -760,8 +768,11 @@ table.button:active td {
 
 table.button:hover td a,
 table.button:visited td a,
-table.button:active td a {
-  color: #ffffff !important;
+table.button:active td a,
+table.button:hover td a .important,
+table.button:visited td a .important,
+table.button:active td a .important {
+  color: #ff00ff !important;
 }
 
 table.button:hover td,
@@ -786,29 +797,51 @@ table.medium-button:active td a,
 table.medium-button td a:visited,
 table.large-button:hover td a,
 table.large-button:active td a,
-table.large-button td a:visited {
-  color: #ffffff !important;
+table.large-button td a:visited,
+table.button:hover td a .important,
+table.button:active td a .important,
+table.button td a:visited .important,
+table.tiny-button:hover td a .important,
+table.tiny-button:active td a .important,
+table.tiny-button td a:visited .important,
+table.small-button:hover td a .important,
+table.small-button:active td a .important,
+table.small-button td a:visited .important,
+table.medium-button:hover td a .important,
+table.medium-button:active td a .important,
+table.medium-button td a:visited .important,
+table.large-button:hover td a .important,
+table.large-button:active td a .important,
+table.large-button td a:visited .important {
+  color: #ff00ff !important;
 }
 
 table.secondary td {
   background: #5d93a5;
   border-color: #4a7685;
-  color: #ffffff;
+  color: #0000ff;
 }
 
 table.secondary td a {
-  color: #ffffff;
+  color: #0000ff;
+}
+
+table.secondary td a .important {
+  color: #0000ff !important;
 }
 
 table.secondary:hover td {
   background: #6d9eae !important;
-  color: #ffffff;
+  color: #0000ff;
 }
 
 table.secondary:hover td a,
 table.secondary td a:visited,
-table.secondary:active td a {
-  color: #ffffff !important;
+table.secondary:active td a,
+table.secondary:hover td a .important,
+table.secondary td a:visited .important,
+table.secondary:active td a .important {
+  color: #0000ff !important;
 }
 
 table.success td {
@@ -821,6 +854,10 @@ table.success td a {
   color: #ffffff;
 }
 
+table.success td a .important {
+  color: #ffffff !important;
+}
+
 table.success:hover td {
   background: #396516 !important;
   color: #ffffff;
@@ -828,29 +865,39 @@ table.success:hover td {
 
 table.success:hover td a,
 table.success td a:visited,
-table.success:active td a {
+table.success:active td a,
+table.success:hover td a .important,
+table.success td a:visited .important,
+table.success:active td a .important {
   color: #ffffff !important;
 }
 
 table.alert td {
   background: #b02323;
   border-color: #851b1b;
-  color: #ffffff;
+  color: #ffff00;
 }
 
 table.alert td a {
-  color: #ffffff;
+  color: #ffff00;
+}
+
+table.alert td a .important {
+  color: #ffff00 !important;
 }
 
 table.alert:hover td {
   background: #9b1f1f !important;
-  color: #ffffff;
+  color: #ffff00;
 }
 
 table.alert:hover td a,
 table.alert td a:visited,
-table.alert:active td a {
-  color: #ffffff !important;
+table.alert:active td a,
+table.alert:hover td a .important,
+table.alert td a:visited .important,
+table.alert:active td a .important {
+  color: #ffff00 !important;
 }
 
 table.radius td {
