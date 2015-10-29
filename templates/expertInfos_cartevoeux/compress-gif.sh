@@ -12,8 +12,8 @@ gifsicle -v -O3 --lossy=800 --colors=128 ${PWD}/_sources/anim_ambiance.gif -o ${
 
 echo "compressing gif files for sites ..."
 gifsicle -v -O3 --lossy=20  --colors=224 ${PWD}/_sources/anim_cadeau_site.gif   -o ${PWD}/theme/images/stcv_cadeau.gif
-gifsicle -v -O3 --lossy=100 --colors=192 ${PWD}/_sources/anim_projet_site.gif   -o ${PWD}/theme/images/stcv_projet.gif
-gifsicle -v -O3 --lossy=600 --colors=96  ${PWD}/_sources/anim_nature_site.gif   -o ${PWD}/theme/images/stcv_nature.gif
-gifsicle -v -O3 --lossy=400 --colors=128 ${PWD}/_sources/anim_ambiance_site.gif -o ${PWD}/theme/images/stcv_ambiance.gif
+gifsicle -v -O3 --lossy=50 --colors=192 ${PWD}/_sources/anim_projet_site.gif    -o ${PWD}/theme/images/stcv_projet.gif
+gifsicle -v -O3 --lossy=200 --colors=96  ${PWD}/_sources/anim_nature_site.gif   -o ${PWD}/theme/images/stcv_nature.gif
+gifsicle -v -O3 --lossy=200 --colors=128 ${PWD}/_sources/anim_ambiance_site.gif -o ${PWD}/theme/images/stcv_ambiance.gif
 
 echo "That's all folks !"
