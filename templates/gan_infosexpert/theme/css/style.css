@@ -1231,6 +1231,18 @@ h6 {
   color: #4275A0;
 }
 
+.contentMain table.columns .sub-columns.last table.subWrapper td.portrait,
+.contentMain table.column .sub-columns.last table.subWrapper td.portrait {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.contentMain table.columns .sub-columns.last table.subWrapper td.person,
+.contentMain table.column .sub-columns.last table.subWrapper td.person {
+  padding-top: 5px;
+  padding-bottom: 0;
+}
+
 @media only screen and (max-width: 720px) {
   table[class="body"] img {
     max-width: auto !important;

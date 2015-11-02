@@ -91,6 +91,22 @@ h4, h5, h6 {
 		.newsletterInnerTextColor(@colorGan1);
 		p, h1, h2, h3, h4, h5, h6 { color: @colorGan1; }
 	}
+	table.columns, table.column {
+		.sub-columns.last {
+			table.subWrapper {
+				td {
+					&.portrait {
+						padding-top: 0;
+						padding-bottom: 0;
+					}
+					&.person {
+						padding-top: 5px;
+						padding-bottom: 0;
+					}
+				}
+			}
+		}
+	}
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentMain {
