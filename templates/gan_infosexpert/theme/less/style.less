@@ -2,3 +2,53 @@
 @import "import.less";
 
 // additionnal template's style which extends ink's style
+//cf propriétés MSO : https://gist.github.com/webtobesocial/ac9d052595b406d5a5c1
+
+
+// LAYOUT
+// --------------------------------------------------
+
+h1, h2, h3, h4, h5, h6 { mso-line-height-rule: exactly; }
+h1 { line-height: (@headingsFontSizeH1 * 1.1); }
+h2 { line-height: (@headingsFontSizeH2 * 1.1); }
+h3 { line-height: (@headingsFontSizeH3 * 1.1); }
+h4 { line-height: (@headingsFontSizeH4 * 1.1); }
+h5 { line-height: (@headingsFontSizeH5 * 1.1); }
+h6 { line-height: (@headingsFontSizeH6 * 1.1); }
+
+
+//gestion header
+.header {
+	background-color: @containerBackground;
+	//réduction décalage vertical
+	td.wrapper { padding-top: (@wrapperPad / 2); }
+	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .header {
+		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
+		table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
+	}
+}
+
+
+// contentOnline area
+// -------------------------
+.contentOnline {
+	background-color: @bodyBackground;
+	.newsletterInnerTextColor(darken(@bodyBackground, 45%));
+	
+	td {
+		font-size: @fontSizeSmall;
+		line-height: (@fontSizeSmall * 1.25);
+	}
+	//réduction décalage vertical
+	td.wrapper { padding-top: (@wrapperPad / 2); }
+	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentOnline {
+		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
+		table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
+	}
+}

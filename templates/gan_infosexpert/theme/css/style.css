@@ -1092,6 +1092,88 @@ table.large-button td {
   -premailer-width: auto;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  mso-line-height-rule: exactly;
+}
+
+h1 {
+  line-height: 26.4px;
+}
+
+h2 {
+  line-height: 22px;
+}
+
+h3 {
+  line-height: 19.8px;
+}
+
+h4 {
+  line-height: 17.6px;
+}
+
+h5 {
+  line-height: 16.5px;
+}
+
+h6 {
+  line-height: 15.4px;
+}
+
+.header {
+  background-color: #ffffff;
+}
+
+.header td.wrapper {
+  padding-top: 10px;
+}
+
+.header table.columns td,
+.header table.column td {
+  padding-bottom: 10px;
+}
+
+.contentOnline {
+  background-color: #DEE0E1;
+}
+
+.contentOnline,
+.contentOnline td,
+.contentOnline .inner {
+  color: #686e72;
+}
+
+.contentOnline a {
+  color: #686e72;
+}
+
+.contentOnline a .important,
+.contentOnline a:visited,
+.contentOnline a:hover,
+.contentOnline a:focus,
+.contentOnline a:active {
+  color: #686e72 !important;
+}
+
+.contentOnline td {
+  font-size: 11.9px;
+  line-height: 14.875px;
+}
+
+.contentOnline td.wrapper {
+  padding-top: 10px;
+}
+
+.contentOnline table.columns td,
+.contentOnline table.column td {
+  padding-bottom: 10px;
+}
+
 @media only screen and (max-width: 720px) {
   table[class="body"] img {
     max-width: auto !important;
@@ -1256,5 +1338,23 @@ table.large-button td {
 
   table[class="container"] .panel {
     padding: 10px !important;
+  }
+
+  table[class="body"] .header td.wrapper {
+    padding-top: 5px !important;
+  }
+
+  table[class="body"] .header table.columns td,
+  table[class="body"] .header table.column td {
+    padding-bottom: 5px !important;
+  }
+
+  table[class="body"] .contentOnline td.wrapper {
+    padding-top: 5px !important;
+  }
+
+  table[class="body"] .contentOnline table.columns td,
+  table[class="body"] .contentOnline table.column td {
+    padding-bottom: 5px !important;
   }
 }
