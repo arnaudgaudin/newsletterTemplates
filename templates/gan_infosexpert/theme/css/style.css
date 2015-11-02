@@ -1138,6 +1138,26 @@ h6 {
   padding-bottom: 10px;
 }
 
+p {
+  margin: 0;
+  padding-bottom: 9px;
+  mso-margin-bottom-alt: 9px;
+}
+
+h1,
+h2,
+h3 {
+  padding-bottom: 9px;
+  mso-margin-bottom-alt: 9px;
+}
+
+h4,
+h5,
+h6 {
+  padding-bottom: 6px;
+  mso-margin-bottom-alt: 6px;
+}
+
 .contentOnline {
   background-color: #DEE0E1;
 }
@@ -1183,8 +1203,36 @@ h6 {
   padding-bottom: 0px;
 }
 
-.contentMain .sub-columns.first {
+.contentMain td.sub-columns.first {
   background-color: #0f0;
+}
+
+.contentMain td.sub-columns.first,
+.contentMain td.sub-columns.first td,
+.contentMain td.sub-columns.first .inner {
+  color: #4275A0;
+}
+
+.contentMain td.sub-columns.first a {
+  color: #4275A0;
+}
+
+.contentMain td.sub-columns.first a .important,
+.contentMain td.sub-columns.first a:visited,
+.contentMain td.sub-columns.first a:hover,
+.contentMain td.sub-columns.first a:focus,
+.contentMain td.sub-columns.first a:active {
+  color: #4275A0 !important;
+}
+
+.contentMain td.sub-columns.first p,
+.contentMain td.sub-columns.first h1,
+.contentMain td.sub-columns.first h2,
+.contentMain td.sub-columns.first h3,
+.contentMain td.sub-columns.first h4,
+.contentMain td.sub-columns.first h5,
+.contentMain td.sub-columns.first h6 {
+  color: #4275A0;
 }
 
 .contentMain .sub-columns.last {
