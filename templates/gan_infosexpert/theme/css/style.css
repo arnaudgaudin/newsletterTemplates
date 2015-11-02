@@ -550,7 +550,7 @@ h5,
 h6,
 p,
 td {
-  color: #939A9E;
+  color: #333333;
   padding: 0;
   margin: 0;
   text-align: left;
@@ -565,7 +565,7 @@ h5,
 h6 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
-  color: #939A9E;
+  color: #333333;
   word-break: normal;
 }
 
@@ -619,20 +619,20 @@ small {
 }
 
 a {
-  color: #939A9E;
+  color: #333333;
   text-decoration: none;
 }
 
 a:hover {
-  color: #939A9E !important;
+  color: #333333 !important;
 }
 
 a:active {
-  color: #939A9E !important;
+  color: #333333 !important;
 }
 
 a:visited {
-  color: #939A9E !important;
+  color: #333333 !important;
 }
 
 h1 a,
@@ -641,7 +641,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-  color: #939A9E;
+  color: #333333;
 }
 
 h1 a:active,
@@ -650,7 +650,7 @@ h3 a:active,
 h4 a:active,
 h5 a:active,
 h6 a:active {
-  color: #939A9E !important;
+  color: #333333 !important;
 }
 
 h1 a:visited,
@@ -659,7 +659,7 @@ h3 a:visited,
 h4 a:visited,
 h5 a:visited,
 h6 a:visited {
-  color: #939A9E !important;
+  color: #333333 !important;
 }
 
 /* Panels */
@@ -697,8 +697,8 @@ table.large-button td {
   display: block;
   width: auto !important;
   text-align: center;
-  background: #939A9E;
-  border: 1px solid #60676b;
+  background: #333333;
+  border: 1px solid #000000;
   color: #ffffff;
   padding: 8px 0;
   line-height: initial !important;
@@ -763,7 +763,7 @@ table.large-button td a {
 table.button:hover td,
 table.button:visited td,
 table.button:active td {
-  background: #788186 !important;
+  background: #1a1a1a !important;
 }
 
 table.button:hover td a,
@@ -780,7 +780,7 @@ table.tiny-button:hover td,
 table.small-button:hover td,
 table.medium-button:hover td,
 table.large-button:hover td {
-  background: #788186 !important;
+  background: #1a1a1a !important;
 }
 
 table.button:hover td a,
@@ -927,7 +927,7 @@ body.outlook p {
 }
 
 .appleLinks a {
-  color: #939A9E;
+  color: #333333;
   text-decoration: none;
 }
 
@@ -937,11 +937,11 @@ body.outlook p {
 
 .appleLinks a:hover,
 .appleLinks a:active {
-  color: #939A9E !important;
+  color: #333333 !important;
 }
 
 .appleLinks a:visited {
-  color: #939A9E !important;
+  color: #333333 !important;
 }
 
 a[href^=tel] {
@@ -1203,10 +1203,6 @@ h6 {
   padding-bottom: 0px;
 }
 
-.contentMain td.sub-columns.first {
-  background-color: #0f0;
-}
-
 .contentMain td.sub-columns.first,
 .contentMain td.sub-columns.first td,
 .contentMain td.sub-columns.first .inner {
@@ -1233,10 +1229,6 @@ h6 {
 .contentMain td.sub-columns.first h5,
 .contentMain td.sub-columns.first h6 {
   color: #4275A0;
-}
-
-.contentMain .sub-columns.last {
-  background-color: #00f;
 }
 
 @media only screen and (max-width: 720px) {
