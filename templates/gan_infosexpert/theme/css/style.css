@@ -1262,6 +1262,43 @@ h6 {
   padding-left: 5px;
 }
 
+.contentExpert {
+  background-color: #939A9E;
+}
+
+.contentExpert,
+.contentExpert td,
+.contentExpert .inner {
+  color: #ffffff;
+}
+
+.contentExpert a {
+  color: #ffffff;
+}
+
+.contentExpert a .important,
+.contentExpert a:visited,
+.contentExpert a:hover,
+.contentExpert a:focus,
+.contentExpert a:active {
+  color: #ffffff !important;
+}
+
+.contentExpert table.columns table.subWrapper td,
+.contentExpert table.column table.subWrapper td {
+  padding-bottom: 0px;
+}
+
+.contentExpert table.columns table.subWrapper td.portrait,
+.contentExpert table.column table.subWrapper td.portrait {
+  padding-top: 0px;
+}
+
+.contentExpert table.columns table.subWrapper td.person,
+.contentExpert table.column table.subWrapper td.person {
+  padding-top: 5px;
+}
+
 @media only screen and (max-width: 720px) {
   table[class="body"] img {
     max-width: auto !important;
@@ -1473,6 +1510,20 @@ h6 {
 
   table[class="body"] .contentDirection table.columns table.subWrapper td.portrait img,
   table[class="body"] .contentDirection table.column table.subWrapper td.portrait img {
+    width: 100px !important;
+    height: 100px !important;
+  }
+
+  table[class="body"] .contentExpert table.columns table.subWrapper td,
+  table[class="body"] .contentExpert table.column table.subWrapper td {
+    background-color: #0f0;
+    width: auto !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+
+  table[class="body"] .contentExpert table.columns table.subWrapper td.portrait img,
+  table[class="body"] .contentExpert table.column table.subWrapper td.portrait img {
     width: 100px !important;
     height: 100px !important;
   }
