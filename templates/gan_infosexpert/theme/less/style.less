@@ -95,14 +95,9 @@ h4, h5, h6 {
 		.sub-columns.last {
 			table.subWrapper {
 				td {
-					&.portrait {
-						padding-top: 0;
-						padding-bottom: 0;
-					}
-					&.person {
-						padding-top: 5px;
-						padding-bottom: 0;
-					}
+					padding-bottom: 0px;
+					&.portrait { padding-top: 0px; }
+					&.person { padding-top: 5px; }
 				}
 			}
 		}
@@ -111,5 +106,39 @@ h4, h5, h6 {
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentMain {
 		.left-text-pad, .text-pad-left { padding-right: 0px !important; }
+	}
+}
+
+
+
+//contentDirection area
+// -------------------------
+.contentDirection {
+	background-color: @colorGan4;
+	table.columns, table.column {
+		table.subWrapper {
+			td {
+				vertical-align: bottom;
+				padding-top: 0px;
+				padding-bottom: 0px;
+				&.person { padding-left: 5px; }
+			}
+		}
+	}
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentDirection {
+		td.wrapper.last { padding-top: 0px !important; }
+		table.columns, table.column {
+			table.subWrapper td {
+				width: auto !important;
+				padding-top: 0px !important;
+				padding-bottom: 0px !important;
+				&.portrait img {
+					width: 100px !important;
+					height: 100px !important;
+				}
+			}
+		}
 	}
 }

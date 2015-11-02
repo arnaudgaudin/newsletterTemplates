@@ -4,7 +4,7 @@
 
 body,
 table.body {
-  background-color: #DEE0E1;
+  background-color: #ebeded;
 }
 
 /**********************************************
@@ -1159,17 +1159,17 @@ h6 {
 }
 
 .contentOnline {
-  background-color: #DEE0E1;
+  background-color: #ebeded;
 }
 
 .contentOnline,
 .contentOnline td,
 .contentOnline .inner {
-  color: #686e72;
+  color: #747b7f;
 }
 
 .contentOnline a {
-  color: #686e72;
+  color: #747b7f;
 }
 
 .contentOnline a .important,
@@ -1177,7 +1177,7 @@ h6 {
 .contentOnline a:hover,
 .contentOnline a:focus,
 .contentOnline a:active {
-  color: #686e72 !important;
+  color: #747b7f !important;
 }
 
 .contentOnline td {
@@ -1231,16 +1231,35 @@ h6 {
   color: #4275A0;
 }
 
+.contentMain table.columns .sub-columns.last table.subWrapper td,
+.contentMain table.column .sub-columns.last table.subWrapper td {
+  padding-bottom: 0px;
+}
+
 .contentMain table.columns .sub-columns.last table.subWrapper td.portrait,
 .contentMain table.column .sub-columns.last table.subWrapper td.portrait {
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-top: 0px;
 }
 
 .contentMain table.columns .sub-columns.last table.subWrapper td.person,
 .contentMain table.column .sub-columns.last table.subWrapper td.person {
   padding-top: 5px;
-  padding-bottom: 0;
+}
+
+.contentDirection {
+  background-color: #DEE0E1;
+}
+
+.contentDirection table.columns table.subWrapper td,
+.contentDirection table.column table.subWrapper td {
+  vertical-align: bottom;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.contentDirection table.columns table.subWrapper td.person,
+.contentDirection table.column table.subWrapper td.person {
+  padding-left: 5px;
 }
 
 @media only screen and (max-width: 720px) {
@@ -1439,5 +1458,22 @@ h6 {
   table[class="body"] .contentMain .left-text-pad,
   table[class="body"] .contentMain .text-pad-left {
     padding-right: 0px !important;
+  }
+
+  table[class="body"] .contentDirection td.wrapper.last {
+    padding-top: 0px !important;
+  }
+
+  table[class="body"] .contentDirection table.columns table.subWrapper td,
+  table[class="body"] .contentDirection table.column table.subWrapper td {
+    width: auto !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+
+  table[class="body"] .contentDirection table.columns table.subWrapper td.portrait img,
+  table[class="body"] .contentDirection table.column table.subWrapper td.portrait img {
+    width: 100px !important;
+    height: 100px !important;
   }
 }
