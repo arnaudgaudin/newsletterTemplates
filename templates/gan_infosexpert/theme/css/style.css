@@ -1299,6 +1299,38 @@ h6 {
   padding-top: 5px;
 }
 
+.contentFooter {
+  background-color: #4275A0;
+}
+
+.contentFooter,
+.contentFooter td,
+.contentFooter .inner {
+  color: #ffffff;
+}
+
+.contentFooter a {
+  color: #ffffff;
+}
+
+.contentFooter a .important,
+.contentFooter a:visited,
+.contentFooter a:hover,
+.contentFooter a:focus,
+.contentFooter a:active {
+  color: #ffffff !important;
+}
+
+.contentFooter p,
+.contentFooter h1,
+.contentFooter h2,
+.contentFooter h3,
+.contentFooter h4,
+.contentFooter h5,
+.contentFooter h6 {
+  color: #ffffff;
+}
+
 @media only screen and (max-width: 720px) {
   table[class="body"] img {
     max-width: auto !important;
