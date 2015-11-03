@@ -1284,6 +1284,24 @@ h6 {
   color: #ffffff !important;
 }
 
+.contentExpert table.columns,
+.contentExpert table.column {
+  display: table !important;
+}
+
+.contentExpert table.columns table.columns td,
+.contentExpert table.column table.columns td,
+.contentExpert table.columns table.column td,
+.contentExpert table.column table.column td {
+  padding-bottom: 0px;
+}
+
+.contentExpert table.columns table.subWrapper,
+.contentExpert table.column table.subWrapper {
+  width: 100%;
+  -premailer-width: 100%;
+}
+
 .contentExpert table.columns table.subWrapper td,
 .contentExpert table.column table.subWrapper td {
   padding-bottom: 0px;
@@ -1582,9 +1600,17 @@ h6 {
     height: 100px !important;
   }
 
+  table[class="body"] .contentExpert td.wrapper.last {
+    padding-top: 0px !important;
+  }
+
+  table[class="body"] .contentExpert table.columns,
+  table[class="body"] .contentExpert table.column {
+    display: table !important;
+  }
+
   table[class="body"] .contentExpert table.columns table.subWrapper td,
   table[class="body"] .contentExpert table.column table.subWrapper td {
-    background-color: #0f0;
     width: auto !important;
     padding-top: 0px !important;
     padding-bottom: 0px !important;

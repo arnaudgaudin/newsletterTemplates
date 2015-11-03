@@ -149,7 +149,11 @@ h4, h5, h6 {
 	background-color: @colorGan5;
 	.newsletterInnerTextColor(#ffffff);
 	table.columns, table.column {
+		display: table !important;
+		table.columns td, table.column td { padding-bottom: 0px; }
 		table.subWrapper {
+			width: 100%;
+			-premailer-width: 100%;
 			td {
 				padding-bottom: 0px;
 				&.portrait { padding-top: 0px; }
@@ -161,9 +165,10 @@ h4, h5, h6 {
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentExpert {
+		td.wrapper.last { padding-top: 0px !important; }
 		table.columns, table.column {
+			display: table !important;
 			table.subWrapper td {
-				background-color: #0f0;
 				width: auto !important;
 				padding-top: 0px !important;
 				padding-bottom: 0px !important;
