@@ -1246,22 +1246,6 @@ h6 {
   padding-top: 5px;
 }
 
-.contentDirection {
-  background-color: #DEE0E1;
-}
-
-.contentDirection table.columns table.subWrapper td,
-.contentDirection table.column table.subWrapper td {
-  vertical-align: bottom;
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-
-.contentDirection table.columns table.subWrapper td.person,
-.contentDirection table.column table.subWrapper td.person {
-  padding-left: 5px;
-}
-
 .contentExpert {
   background-color: #939A9E;
 }
@@ -1635,23 +1619,6 @@ h6 {
   table[class="body"] .contentMain .left-text-pad,
   table[class="body"] .contentMain .text-pad-left {
     padding-right: 0px !important;
-  }
-
-  table[class="body"] .contentDirection td.wrapper.last {
-    padding-top: 0px !important;
-  }
-
-  table[class="body"] .contentDirection table.columns table.subWrapper td,
-  table[class="body"] .contentDirection table.column table.subWrapper td {
-    width: auto !important;
-    padding-top: 0px !important;
-    padding-bottom: 0px !important;
-  }
-
-  table[class="body"] .contentDirection table.columns table.subWrapper td.portrait img,
-  table[class="body"] .contentDirection table.column table.subWrapper td.portrait img {
-    width: 100px !important;
-    height: 100px !important;
   }
 
   table[class="body"] .contentExpert td.wrapper.last {
