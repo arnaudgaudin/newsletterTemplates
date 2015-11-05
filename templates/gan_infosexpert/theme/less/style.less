@@ -160,18 +160,16 @@ h4, h5, h6 {
 	td {
 		font-size: @fontSizeSmall;
 		line-height: (@fontSizeSmall * 1.25);
+		.function {
+			font-size: @fontSizeMini;
+			line-height: (@fontSizeMini * 1.25);
+		}
 	}
-
-	.wrapper.first { background-color: #f00; }
-	.wrapper.last { background-color: #00f; }
 
 	table.columns, table.column {
 		display: table !important;
-		background-color: #aaa;
-
 		table.columns td, table.column td { padding-bottom: 0px; }
 		table.subWrapper {
-			background-color: #0f0;
 			width: 100%;
 			-premailer-width: 100%;
 			td {
@@ -185,10 +183,7 @@ h4, h5, h6 {
 				height: @expertThumbSize;
 				-premailer-height: @expertThumbSize;
 			}
-			td {
-				vertical-align: middle;
-				background-color: #888;
-			}
+			td { vertical-align: middle; }
 		}
 	}
 	td.wrapper.first {
@@ -199,12 +194,10 @@ h4, h5, h6 {
 					padding-right: 0px !important;
 				}
 				&:nth-of-type(2) .text-pad {
-					background-color: #0ff;
 					padding-left: @expertThumbGutter !important;
 					padding-right: (@expertWrapperSize - @expertThumbSize - @expertThumbGutter) !important;
 				}
 				&.last .text-pad {
-					background-color: #f0f;
 					padding-left: (@expertWrapperSize - @expertThumbSize - @expertThumbGutter / 2) !important;
 					padding-right: (@expertThumbGutter / 2) !important;
 				}
@@ -219,12 +212,10 @@ h4, h5, h6 {
 					padding-right: @textPad !important;
 				}
 				&:nth-of-type(2) .text-pad {
-					background-color: #0ff;
 					padding-left: (@expertWrapperSize - @expertThumbSize - @expertThumbGutter) !important;
 					padding-right: @expertThumbGutter !important;
 				}
 				&.first .text-pad {
-					background-color: #ff0;
 					padding-left: (@expertThumbGutter / 2) !important;
 					padding-right: (@expertWrapperSize - @expertThumbSize - @expertThumbGutter / 2) !important;
 				}

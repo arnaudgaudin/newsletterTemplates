@@ -1278,18 +1278,14 @@ h6 {
   line-height: 14.875px;
 }
 
-.contentExpert .wrapper.first {
-  background-color: #f00;
-}
-
-.contentExpert .wrapper.last {
-  background-color: #00f;
+.contentExpert td .function {
+  font-size: 9.1px;
+  line-height: 11.375px;
 }
 
 .contentExpert table.columns,
 .contentExpert table.column {
   display: table !important;
-  background-color: #aaa;
 }
 
 .contentExpert table.columns table.columns td,
@@ -1301,7 +1297,6 @@ h6 {
 
 .contentExpert table.columns table.subWrapper,
 .contentExpert table.column table.subWrapper {
-  background-color: #0f0;
   width: 100%;
   -premailer-width: 100%;
 }
@@ -1332,7 +1327,6 @@ h6 {
 .contentExpert table.columns td.sub-columns.title .subWrapper td,
 .contentExpert table.column td.sub-columns.title .subWrapper td {
   vertical-align: middle;
-  background-color: #888;
 }
 
 .contentExpert td.wrapper.first table.columns .sub-columns.first .text-pad,
@@ -1343,14 +1337,12 @@ h6 {
 
 .contentExpert td.wrapper.first table.columns .sub-columns:nth-of-type(2) .text-pad,
 .contentExpert td.wrapper.first table.column .sub-columns:nth-of-type(2) .text-pad {
-  background-color: #0ff;
   padding-left: 32px !important;
   padding-right: 8px !important;
 }
 
 .contentExpert td.wrapper.first table.columns .sub-columns.last .text-pad,
 .contentExpert td.wrapper.first table.column .sub-columns.last .text-pad {
-  background-color: #f0f;
   padding-left: 24px !important;
   padding-right: 16px !important;
 }
@@ -1363,14 +1355,12 @@ h6 {
 
 .contentExpert td.wrapper.last table.columns .sub-columns:nth-of-type(2) .text-pad,
 .contentExpert td.wrapper.last table.column .sub-columns:nth-of-type(2) .text-pad {
-  background-color: #0ff;
   padding-left: 8px !important;
   padding-right: 32px !important;
 }
 
 .contentExpert td.wrapper.last table.columns .sub-columns.first .text-pad,
 .contentExpert td.wrapper.last table.column .sub-columns.first .text-pad {
-  background-color: #ff0;
   padding-left: 16px !important;
   padding-right: 24px !important;
 }
