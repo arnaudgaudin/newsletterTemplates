@@ -1284,6 +1284,8 @@ h6 {
 .contentExpert table.columns,
 .contentExpert table.column {
   display: table !important;
+  height: 100%;
+  background-color: #aaa;
 }
 
 .contentExpert table.columns table.columns td,
@@ -1313,6 +1315,20 @@ h6 {
 .contentExpert table.columns table.subWrapper td.person,
 .contentExpert table.column table.subWrapper td.person {
   padding-top: 5px;
+}
+
+.contentExpert table.columns td.sub-columns.title .subWrapper,
+.contentExpert table.column td.sub-columns.title .subWrapper,
+.contentExpert table.columns td.sub-columns.title .subWrapper td,
+.contentExpert table.column td.sub-columns.title .subWrapper td {
+  height: 80px;
+  -premailer-height: 80px;
+}
+
+.contentExpert table.columns td.sub-columns.title .subWrapper td,
+.contentExpert table.column td.sub-columns.title .subWrapper td {
+  vertical-align: middle;
+  background-color: #888;
 }
 
 .contentExpert td.wrapper.first table.columns .sub-columns.first .text-pad,
@@ -1619,6 +1635,13 @@ h6 {
   table[class="body"] .contentMain .left-text-pad,
   table[class="body"] .contentMain .text-pad-left {
     padding-right: 0px !important;
+  }
+
+  table[class="body"] .contentExpert table.columns td.sub-columns.title .subWrapper,
+  table[class="body"] .contentExpert table.column td.sub-columns.title .subWrapper,
+  table[class="body"] .contentExpert table.columns td.sub-columns.title .subWrapper td,
+  table[class="body"] .contentExpert table.column td.sub-columns.title .subWrapper td {
+    height: 100% !important;
   }
 
   table[class="body"] .contentExpert td.wrapper.last {

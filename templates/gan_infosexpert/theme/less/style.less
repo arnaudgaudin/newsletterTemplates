@@ -163,6 +163,9 @@ h4, h5, h6 {
 
 	table.columns, table.column {
 		display: table !important;
+		height: 100%;
+		background-color: #aaa;
+
 		table.columns td, table.column td { padding-bottom: 0px; }
 		table.subWrapper {
 			background-color: #0f0;
@@ -172,6 +175,16 @@ h4, h5, h6 {
 				padding-bottom: 0px;
 				&.portrait { padding-top: 0px; }
 				&.person { padding-top: 5px; }
+			}
+		}
+		td.sub-columns.title .subWrapper {
+			&, td {
+				height: @expertThumbSize;
+				-premailer-height: @expertThumbSize;
+			}
+			td {
+				vertical-align: middle;
+				background-color: #888;
 			}
 		}
 	}
@@ -219,13 +232,11 @@ h4, h5, h6 {
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentExpert {
-		// td.wrapper.first {
-		// 	table.columns, table.column { .text-pad { padding-left: @textPadCollapse !important; } }
-		// }
-		// td.wrapper.last {
-		// 	table.columns, table.column { .text-pad { padding-right: @textPadCollapse !important; } }
-		// }
-
+		table.columns, table.column {
+			td.sub-columns.title .subWrapper {
+				&, td { height: 100% !important; }
+			}
+		}
 		td.wrapper {
 			&.last { padding-top: 0px !important; }
 
