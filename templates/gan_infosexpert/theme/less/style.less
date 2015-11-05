@@ -156,6 +156,7 @@ h4, h5, h6 {
 	.subTitle {
 		color: #ffffff;
 		font-style: italic;
+		padding: 0px;
 	}
 	td {
 		font-size: @fontSizeSmall;
@@ -178,12 +179,15 @@ h4, h5, h6 {
 				&.person { padding-top: 5px; }
 			}
 		}
-		td.sub-columns.title .subWrapper {
-			&, td {
-				height: @expertThumbSize;
-				-premailer-height: @expertThumbSize;
+		td.sub-columns.title {
+			vertical-align: middle;
+			.subWrapper {
+				td { vertical-align: middle; }
+				&, td {
+					height: @expertThumbSize;
+					-premailer-height: @expertThumbSize;
+				}
 			}
-			td { vertical-align: middle; }
 		}
 	}
 	td.wrapper.first {
@@ -238,7 +242,6 @@ h4, h5, h6 {
 				display: table !important;
 				table.subWrapper td {
 					width: auto !important;
-					padding-top: 0px !important;
 					padding-bottom: 0px !important;
 					&.portrait img {
 						width: 100% !important;
