@@ -1264,8 +1264,6 @@ h6 {
 
 .contentExpert {
   background-color: #939A9E;
-  expertThumbSize: 80px;
-  expertTextPad: 16px;
 }
 
 .contentExpert,
@@ -1286,6 +1284,11 @@ h6 {
   color: #ffffff !important;
 }
 
+.contentExpert td {
+  font-size: 11.9px;
+  line-height: 14.875px;
+}
+
 .contentExpert .wrapper.first {
   background-color: #f00;
 }
@@ -1299,12 +1302,6 @@ h6 {
   display: table !important;
 }
 
-.contentExpert table.columns .text-pad,
-.contentExpert table.column .text-pad {
-  padding-left: 16px !important;
-  padding-right: 16px !important;
-}
-
 .contentExpert table.columns table.columns td,
 .contentExpert table.column table.columns td,
 .contentExpert table.columns table.column td,
@@ -1315,6 +1312,8 @@ h6 {
 .contentExpert table.columns table.subWrapper,
 .contentExpert table.column table.subWrapper {
   background-color: #0f0;
+  width: 100%;
+  -premailer-width: 100%;
 }
 
 .contentExpert table.columns table.subWrapper td,
@@ -1342,6 +1341,14 @@ h6 {
 .contentExpert td.wrapper.first table.column .sub-columns:nth-of-type(2) .text-pad {
   background-color: #0ff;
   padding-left: 32px !important;
+  padding-right: 8px !important;
+}
+
+.contentExpert td.wrapper.first table.columns .sub-columns.last .text-pad,
+.contentExpert td.wrapper.first table.column .sub-columns.last .text-pad {
+  background-color: #f0f;
+  padding-left: 24px !important;
+  padding-right: 16px !important;
 }
 
 .contentExpert td.wrapper.last table.columns .sub-columns.last .text-pad,
@@ -1353,7 +1360,15 @@ h6 {
 .contentExpert td.wrapper.last table.columns .sub-columns:nth-of-type(2) .text-pad,
 .contentExpert td.wrapper.last table.column .sub-columns:nth-of-type(2) .text-pad {
   background-color: #0ff;
+  padding-left: 8px !important;
   padding-right: 32px !important;
+}
+
+.contentExpert td.wrapper.last table.columns .sub-columns.first .text-pad,
+.contentExpert td.wrapper.last table.column .sub-columns.first .text-pad {
+  background-color: #ff0;
+  padding-left: 16px !important;
+  padding-right: 24px !important;
 }
 
 .contentFooter {
@@ -1643,28 +1658,38 @@ h6 {
     padding-top: 0px !important;
   }
 
-  table[class="body"] .contentExpert table.columns,
-  table[class="body"] .contentExpert table.column {
+  table[class="body"] .contentExpert td.wrapper table.columns,
+  table[class="body"] .contentExpert td.wrapper table.column {
     display: table !important;
   }
 
-  table[class="body"] .contentExpert table.columns .text-pad,
-  table[class="body"] .contentExpert table.column .text-pad {
-    padding-left: 20px !important;
-    padding-right: 20px !important;
-  }
-
-  table[class="body"] .contentExpert table.columns table.subWrapper td,
-  table[class="body"] .contentExpert table.column table.subWrapper td {
+  table[class="body"] .contentExpert td.wrapper table.columns table.subWrapper td,
+  table[class="body"] .contentExpert td.wrapper table.column table.subWrapper td {
     width: auto !important;
     padding-top: 0px !important;
     padding-bottom: 0px !important;
   }
 
-  table[class="body"] .contentExpert table.columns table.subWrapper td.portrait img,
-  table[class="body"] .contentExpert table.column table.subWrapper td.portrait img {
-    width: 100px !important;
-    height: 100px !important;
+  table[class="body"] .contentExpert td.wrapper table.columns table.subWrapper td.portrait img,
+  table[class="body"] .contentExpert td.wrapper table.column table.subWrapper td.portrait img {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  table[class="body"] .contentExpert td.wrapper.first table.columns .sub-columns .text-pad,
+  table[class="body"] .contentExpert td.wrapper.last table.columns .sub-columns .text-pad,
+  table[class="body"] .contentExpert td.wrapper.first table.column .sub-columns .text-pad,
+  table[class="body"] .contentExpert td.wrapper.last table.column .sub-columns .text-pad,
+  table[class="body"] .contentExpert td.wrapper.first table.columns .sub-columns.first .text-pad,
+  table[class="body"] .contentExpert td.wrapper.last table.columns .sub-columns.first .text-pad,
+  table[class="body"] .contentExpert td.wrapper.first table.column .sub-columns.first .text-pad,
+  table[class="body"] .contentExpert td.wrapper.last table.column .sub-columns.first .text-pad,
+  table[class="body"] .contentExpert td.wrapper.first table.columns .sub-columns.last .text-pad,
+  table[class="body"] .contentExpert td.wrapper.last table.columns .sub-columns.last .text-pad,
+  table[class="body"] .contentExpert td.wrapper.first table.column .sub-columns.last .text-pad,
+  table[class="body"] .contentExpert td.wrapper.last table.column .sub-columns.last .text-pad {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
   }
 
   table[class="body"] .contentUnsubscribe td.wrapper {
