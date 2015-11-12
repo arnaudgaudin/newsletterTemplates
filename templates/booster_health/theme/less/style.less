@@ -262,15 +262,13 @@ table.secondary {
 	background-color: #a0a;
 
 	table.columns, table.column {
-		table.button {
-			td {
-				padding: (@wrapperPad / 4) 8px;
-				text-transform: uppercase;
-				vertical-align: middle;
-				//pour les éventuels paragraphes vides rajoutés par Outlook
-				a, p { margin: 0px !important; padding: 0px !important; }
-				a { background-color: #0f0; }
-			}
+		table.button td {
+			padding: (@wrapperPad / 4) 8px;
+			text-transform: uppercase;
+			vertical-align: middle;
+			//pour les éventuels paragraphes vides rajoutés par Outlook
+			a, p { margin: 0px !important; padding: 0px !important; }
+			a { background-color: #0f0; }
 		}
 	}
 
@@ -312,9 +310,24 @@ table.secondary {
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentPartenariat {
-		td img.les_echos {
-			width: 230px !important;
-			height: auto !important;
+		table.columns, table.column {
+			table.button td { padding: (@wrapperPadCollapse / 4) 8px !important; }
+		}
+		td.wrapper.first td {
+			text-align: center !important;
+			img.button_play {
+				width: 18px !important;
+				height: auto !important;
+			}
+		}
+		td.wrapper.last td {
+			padding-top: (@wrapperPadCollapse / 4);
+			padding-bottom: (@wrapperPadCollapse / 4);
+			text-align: center !important;
+			img.les_echos {
+				width: 230px !important;
+				height: auto !important;
+			}
 		}
 		td.wrapper { padding-top: 0px !important; }
 		table.columns td, table.column td { padding-bottom: 0px !important; }
