@@ -1369,7 +1369,7 @@ table.secondary:active td a {
 
 .contentPartenariat table.columns table.button td,
 .contentPartenariat table.column table.button td {
-  padding: 10px 8px;
+  padding: 5px 8px;
   text-transform: uppercase;
   vertical-align: middle;
 }
@@ -1382,9 +1382,9 @@ table.secondary:active td a {
   padding: 0px !important;
 }
 
-.contentPartenariat td.wrapper {
-  padding-top: 10px;
-  padding-bottom: 10px;
+.contentPartenariat table.columns table.button td a,
+.contentPartenariat table.column table.button td a {
+  background-color: #0f0;
 }
 
 .contentPartenariat td.wrapper.first {
@@ -1417,6 +1417,7 @@ table.secondary:active td a {
 .contentPartenariat td.wrapper.first td img.button_play {
   display: inline;
   float: none;
+  vertical-align: bottom;
   background-color: #f00;
 }
 
@@ -1425,6 +1426,8 @@ table.secondary:active td a {
 }
 
 .contentPartenariat td.wrapper.last td {
+  padding-top: 5px;
+  padding-bottom: 5px;
   line-height: 0px;
   text-align: right;
 }
@@ -1432,6 +1435,12 @@ table.secondary:active td a {
 .contentPartenariat td.wrapper.last td img.les_echos {
   display: inline;
   float: none;
+  vertical-align: bottom;
+  background-color: #00f;
+}
+
+.contentPartenariat td.wrapper {
+  padding-top: 0px;
 }
 
 .contentPartenariat table.columns td,
@@ -1858,8 +1867,7 @@ table.secondary:active td a {
   }
 
   table[class="body"] .contentPartenariat td.wrapper {
-    padding-top: 5px !important;
-    padding-bottom: 5px !important;
+    padding-top: 0px !important;
   }
 
   table[class="body"] .contentPartenariat table.columns td,

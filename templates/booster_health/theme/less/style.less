@@ -263,29 +263,18 @@ table.secondary {
 
 	table.columns, table.column {
 		table.button {
-			// display: table;
-			// table-layout: auto;
-			// width: auto;
-			// -premailer-width: auto;
-			// float: right;
 			td {
-				// width: auto;
-				// float: none;
-				// -premailer-width: auto;
-				padding: (@wrapperPad / 2) 8px;
+				padding: (@wrapperPad / 4) 8px;
 				text-transform: uppercase;
 				vertical-align: middle;
 				//pour les éventuels paragraphes vides rajoutés par Outlook
 				a, p { margin: 0px !important; padding: 0px !important; }
+				a { background-color: #0f0; }
 			}
 		}
 	}
 
 	td.wrapper {
-		padding-top: (@wrapperPad / 2);
-		padding-bottom: (@columnPad / 2);
-
-
 		&.first {
 			background-color: #0ff;
 			.newsletterInnerTextColor(#ffffff);
@@ -295,6 +284,7 @@ table.secondary {
 				img.button_play {
 					display: inline;
 					float: none;
+					vertical-align: bottom;
 					background-color: #f00;
 				}
 			}
@@ -302,17 +292,22 @@ table.secondary {
 		&.last {
 			background-color: #0f0;
 			td {
+				padding-top: (@wrapperPad / 4);
+				padding-bottom: (@wrapperPad / 4);
 				line-height: 0px;
 				text-align: right;
 				img.les_echos {
 					display: inline;
 					float: none;
+					vertical-align: bottom;
+					background-color: #00f;
 				}
 			}
 		}
 	}
 
 	//réduction décalage vertical
+	td.wrapper { padding-top: 0px; }
 	table.columns td, table.column td { padding-bottom: 0px; }
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
@@ -321,10 +316,7 @@ table.secondary {
 			width: 230px !important;
 			height: auto !important;
 		}
-		td.wrapper {
-			padding-top: (@wrapperPadCollapse / 2) !important;
-			padding-bottom: (@columnPadCollapse / 2) !important;
-		}
+		td.wrapper { padding-top: 0px !important; }
 		table.columns td, table.column td { padding-bottom: 0px !important; }
 	}
 }
