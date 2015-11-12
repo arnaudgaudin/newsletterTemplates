@@ -1375,6 +1375,7 @@ table.secondary:active td a {
 .contentPartenariat table.columns table.button td a,
 .contentPartenariat table.column table.button td a {
   font-size: 12px;
+  font-weight: bold;
 }
 
 .contentPartenariat table.columns table.button td a,

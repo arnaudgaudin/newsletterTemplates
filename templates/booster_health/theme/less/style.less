@@ -264,7 +264,10 @@ table.secondary {
 			padding: (@wrapperPad / 4) 8px;
 			text-transform: uppercase;
 			vertical-align: middle;
-			&, a { font-size: @fontSizeSmall; }
+			&, a {
+				font-size: @fontSizeSmall;
+				font-weight: bold;
+			}
 			//pour les éventuels paragraphes vides rajoutés par Outlook
 			a, p { margin: 0px !important; padding: 0px !important; }
 		}
