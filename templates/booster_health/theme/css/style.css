@@ -1876,8 +1876,8 @@ table.secondary:active td a {
   }
 
   table[class="body"] .contentPartenariat td.wrapper.last td {
-    padding-top: 2.5px;
-    padding-bottom: 2.5px;
+    padding-top: 2.5px !important;
+    padding-bottom: 2.5px !important;
     text-align: center !important;
   }
 
