@@ -259,36 +259,30 @@ table.secondary {
 // contentPartenariat area
 // -------------------------
 .contentPartenariat {
-	background-color: #a0a;
-
 	table.columns, table.column {
 		table.button td {
 			padding: (@wrapperPad / 4) 8px;
 			text-transform: uppercase;
 			vertical-align: middle;
+			&, a { font-size: @fontSizeSmall; }
 			//pour les éventuels paragraphes vides rajoutés par Outlook
 			a, p { margin: 0px !important; padding: 0px !important; }
-			a { background-color: #0f0; }
 		}
 	}
 
 	td.wrapper {
 		&.first {
-			background-color: #0ff;
 			.newsletterInnerTextColor(#ffffff);
 			td {
-				font-size: @headingsFontSizeH6;
 				text-transform: uppercase;
 				img.button_play {
 					display: inline;
 					float: none;
 					vertical-align: bottom;
-					background-color: #f00;
 				}
 			}
 		}
 		&.last {
-			background-color: #0f0;
 			td {
 				padding-top: (@wrapperPad / 4);
 				padding-bottom: (@wrapperPad / 4);
@@ -298,7 +292,6 @@ table.secondary {
 					display: inline;
 					float: none;
 					vertical-align: bottom;
-					background-color: #00f;
 				}
 			}
 		}
@@ -311,7 +304,10 @@ table.secondary {
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentPartenariat {
 		table.columns, table.column {
-			table.button td { padding: (@wrapperPadCollapse / 4) 8px !important; }
+			table.button td {
+				padding: (@wrapperPadCollapse / 4) 0px !important;
+				&, a { font-size: floor(@fontSizeSmall * 0.85) !important; }
+			}
 		}
 		td.wrapper.first td {
 			text-align: center !important;

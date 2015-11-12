@@ -1363,15 +1363,18 @@ table.secondary:active td a {
   color: #ffffff;
 }
 
-.contentPartenariat {
-  background-color: #a0a;
-}
-
 .contentPartenariat table.columns table.button td,
 .contentPartenariat table.column table.button td {
   padding: 5px 8px;
   text-transform: uppercase;
   vertical-align: middle;
+}
+
+.contentPartenariat table.columns table.button td,
+.contentPartenariat table.column table.button td,
+.contentPartenariat table.columns table.button td a,
+.contentPartenariat table.column table.button td a {
+  font-size: 12px;
 }
 
 .contentPartenariat table.columns table.button td a,
@@ -1380,15 +1383,6 @@ table.secondary:active td a {
 .contentPartenariat table.column table.button td p {
   margin: 0px !important;
   padding: 0px !important;
-}
-
-.contentPartenariat table.columns table.button td a,
-.contentPartenariat table.column table.button td a {
-  background-color: #0f0;
-}
-
-.contentPartenariat td.wrapper.first {
-  background-color: #0ff;
 }
 
 .contentPartenariat td.wrapper.first,
@@ -1410,7 +1404,6 @@ table.secondary:active td a {
 }
 
 .contentPartenariat td.wrapper.first td {
-  font-size: 16px;
   text-transform: uppercase;
 }
 
@@ -1418,11 +1411,6 @@ table.secondary:active td a {
   display: inline;
   float: none;
   vertical-align: bottom;
-  background-color: #f00;
-}
-
-.contentPartenariat td.wrapper.last {
-  background-color: #0f0;
 }
 
 .contentPartenariat td.wrapper.last td {
@@ -1436,7 +1424,6 @@ table.secondary:active td a {
   display: inline;
   float: none;
   vertical-align: bottom;
-  background-color: #00f;
 }
 
 .contentPartenariat td.wrapper {
@@ -1863,7 +1850,14 @@ table.secondary:active td a {
 
   table[class="body"] .contentPartenariat table.columns table.button td,
   table[class="body"] .contentPartenariat table.column table.button td {
-    padding: 2.5px 8px !important;
+    padding: 2.5px 0px !important;
+  }
+
+  table[class="body"] .contentPartenariat table.columns table.button td,
+  table[class="body"] .contentPartenariat table.column table.button td,
+  table[class="body"] .contentPartenariat table.columns table.button td a,
+  table[class="body"] .contentPartenariat table.column table.button td a {
+    font-size: 10px !important;
   }
 
   table[class="body"] .contentPartenariat td.wrapper.first td {
