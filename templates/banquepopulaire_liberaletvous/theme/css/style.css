@@ -4,7 +4,7 @@
 
 body,
 table.body {
-  background-color: #e6e6e7;
+  background-color: #E6E6E7;
 }
 
 /**********************************************
@@ -550,7 +550,7 @@ h5,
 h6,
 p,
 td {
-  color: #ffffff;
+  color: #fff;
   padding: 0;
   margin: 0;
   text-align: left;
@@ -619,20 +619,20 @@ small {
 }
 
 a {
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
 }
 
 a:hover {
-  color: #ffffff !important;
+  color: #fff !important;
 }
 
 a:active {
-  color: #ffffff !important;
+  color: #fff !important;
 }
 
 a:visited {
-  color: #ffffff !important;
+  color: #fff !important;
 }
 
 h1 a,
@@ -641,7 +641,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-  color: #ffffff;
+  color: #fff;
 }
 
 h1 a:active,
@@ -650,7 +650,7 @@ h3 a:active,
 h4 a:active,
 h5 a:active,
 h6 a:active {
-  color: #ffffff !important;
+  color: #fff !important;
 }
 
 h1 a:visited,
@@ -659,7 +659,7 @@ h3 a:visited,
 h4 a:visited,
 h5 a:visited,
 h6 a:visited {
-  color: #ffffff !important;
+  color: #fff !important;
 }
 
 /* Panels */
@@ -697,7 +697,7 @@ table.large-button td {
   display: block;
   width: auto !important;
   text-align: center;
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #cccccc;
   color: #ffffff;
   padding: 8px 0;
@@ -735,6 +735,14 @@ table.large-button td a {
   width: 100%;
 }
 
+table.button td a .important,
+table.tiny-button td a .important,
+table.small-button td a .important,
+table.medium-button td a .important,
+table.large-button td a .important {
+  color: #ffffff !important;
+}
+
 table.tiny-button td a {
   font-size: 11.05px;
   font-weight: normal;
@@ -760,7 +768,10 @@ table.button:active td {
 
 table.button:hover td a,
 table.button:visited td a,
-table.button:active td a {
+table.button:active td a,
+table.button:hover td a .important,
+table.button:visited td a .important,
+table.button:active td a .important {
   color: #ffffff !important;
 }
 
@@ -786,18 +797,37 @@ table.medium-button:active td a,
 table.medium-button td a:visited,
 table.large-button:hover td a,
 table.large-button:active td a,
-table.large-button td a:visited {
+table.large-button td a:visited,
+table.button:hover td a .important,
+table.button:active td a .important,
+table.button td a:visited .important,
+table.tiny-button:hover td a .important,
+table.tiny-button:active td a .important,
+table.tiny-button td a:visited .important,
+table.small-button:hover td a .important,
+table.small-button:active td a .important,
+table.small-button td a:visited .important,
+table.medium-button:hover td a .important,
+table.medium-button:active td a .important,
+table.medium-button td a:visited .important,
+table.large-button:hover td a .important,
+table.large-button:active td a .important,
+table.large-button td a:visited .important {
   color: #ffffff !important;
 }
 
 table.secondary td {
-  background: #e9e9e9;
+  background: #E9E9E9;
   border-color: #d0d0d0;
   color: #555555;
 }
 
 table.secondary td a {
   color: #555555;
+}
+
+table.secondary td a .important {
+  color: #555555 !important;
 }
 
 table.secondary:hover td {
@@ -807,26 +837,67 @@ table.secondary:hover td {
 
 table.secondary:hover td a,
 table.secondary td a:visited,
-table.secondary:active td a {
+table.secondary:active td a,
+table.secondary:hover td a .important,
+table.secondary td a:visited .important,
+table.secondary:active td a .important {
   color: #555555 !important;
 }
 
 table.success td {
   background: #5da423;
   border-color: #396516;
+  color: #ffffff;
+}
+
+table.success td a {
+  color: #ffffff;
+}
+
+table.success td a .important {
+  color: #ffffff !important;
 }
 
 table.success:hover td {
   background: #396516 !important;
+  color: #ffffff;
+}
+
+table.success:hover td a,
+table.success td a:visited,
+table.success:active td a,
+table.success:hover td a .important,
+table.success td a:visited .important,
+table.success:active td a .important {
+  color: #ffffff !important;
 }
 
 table.alert td {
   background: #c60f13;
   border-color: #67080a;
+  color: #ffffff;
+}
+
+table.alert td a {
+  color: #ffffff;
+}
+
+table.alert td a .important {
+  color: #ffffff !important;
 }
 
 table.alert:hover td {
   background: #67080a !important;
+  color: #ffffff;
+}
+
+table.alert:hover td a,
+table.alert td a:visited,
+table.alert:active td a,
+table.alert:hover td a .important,
+table.alert td a:visited .important,
+table.alert:active td a .important {
+  color: #ffffff !important;
 }
 
 table.radius td {
@@ -845,8 +916,18 @@ body.outlook p {
 
 /*  Media Queries */
 
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+.hidden,
+.hidden * {
+  mso-hide: all;
+}
+
 .appleLinks a {
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -856,11 +937,11 @@ body.outlook p {
 
 .appleLinks a:hover,
 .appleLinks a:active {
-  color: #ffffff !important;
+  color: #fff !important;
 }
 
 .appleLinks a:visited {
-  color: #ffffff !important;
+  color: #fff !important;
 }
 
 a[href^=tel] {
@@ -1101,7 +1182,7 @@ ol.unstyled {
   display: inline-block;
   width: 0;
   height: 0;
-  border-color: transparent transparent transparent #ffffff;
+  border-color: transparent transparent transparent #fff;
   border-style: solid;
   border-width: 4px;
 }
@@ -1113,7 +1194,7 @@ ol.unstyled {
 }
 
 .contentOnline {
-  background-color: #e6e6e7;
+  background-color: #E6E6E7;
 }
 
 .contentOnline,
@@ -1196,7 +1277,7 @@ ol.unstyled {
 }
 
 .contentLegal {
-  background-color: #e6e6e7;
+  background-color: #E6E6E7;
 }
 
 .contentLegal,
@@ -1222,7 +1303,7 @@ ol.unstyled {
 }
 
 .contentUnsub {
-  background-color: #e6e6e7;
+  background-color: #E6E6E7;
 }
 
 .contentUnsub,
