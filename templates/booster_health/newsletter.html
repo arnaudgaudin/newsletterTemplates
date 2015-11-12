@@ -102,15 +102,19 @@
 											<table border="0" class="six columns">
 												<tr>
 													<td class="text-pad">
-														<table border="0" class="button">
-															<tr>
-																<td>
-																	<a class="button-link" href="#">
-																		Cliquez pour financer une start-up ! <img class="button_play" src="./theme/images/button_play.png" alt="Financement" width="16" height="16" />
-																	</a>
-																</td>
-															</tr>
-														</table>
+														<!--{{##{{<champ>
+														<type>lien</type>
+														<href>http://www.booster-funds.com</href>
+														<html_avant>}}--><table border="0" class="button"><tr><td><!--{{</html_avant>}}-->
+														<!--DEL{{--><a class="button-link" href="http://www.booster-funds.com"><!--}}DEL-->
+														<!--{{<texte>}}-->Cliquez pour financer une start-up !<!--{{</texte>
+														<html_interieur_apres>}}--> <img class="button_play" src="./theme/images/button_play.png" alt="Financement" width="16" height="16" /><!--{{</html_interieur_apres>}}-->
+														<!--DEL{{--></a><!--}}DEL-->
+														<!--{{<html_apres>}}--></td></tr></table><!--{{</html_apres>
+														<params>
+														}}--><a data-type="getstyle" class="button-link"><!--getstyle--></a><!--{{ class="button-link"
+														</params>
+														</champ>}}##}}-->
 													</td>
 													<td class="expander"></td>
 												</tr>
