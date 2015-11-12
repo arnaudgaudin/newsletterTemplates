@@ -259,18 +259,40 @@ table.secondary {
 // contentPartenariat area
 // -------------------------
 .contentPartenariat {
-	td {
-		line-height: 0px;
-		text-align: right;
-		img.les_echos {
-			display: inline;
-			float: none;
+	background-color: #a0a;
+	td.wrapper {
+		padding-top: (@wrapperPad / 2);
+		padding-bottom: (@columnPad / 2);
+
+
+		&.first {
+			background-color: @colorBoosterHealth1;
+			.newsletterInnerTextColor(#ffffff);
+			td {
+				font-size: @headingsFontSizeH6;
+				text-transform: uppercase;
+				img.button_play {
+					display: inline;
+					float: none;
+					background-color: #f00;
+				}
+			}
+		}
+		&.last {
+			background-color: #0f0;
+			td {
+				line-height: 0px;
+				text-align: right;
+				img.les_echos {
+					display: inline;
+					float: none;
+				}
+			}
 		}
 	}
 
 	//réduction décalage vertical
-	td.wrapper { padding-top: (@wrapperPad / 2); }
-	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+	table.columns td, table.column td { padding-bottom: 0px; }
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentPartenariat {
@@ -278,8 +300,11 @@ table.secondary {
 			width: 230px !important;
 			height: auto !important;
 		}
-		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
-		table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
+		td.wrapper {
+			padding-top: (@wrapperPadCollapse / 2) !important;
+			padding-bottom: (@columnPadCollapse / 2) !important;
+		}
+		table.columns td, table.column td { padding-bottom: 0px !important; }
 	}
 }
 
