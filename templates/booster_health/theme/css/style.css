@@ -1367,13 +1367,28 @@ table.secondary:active td a {
   background-color: #a0a;
 }
 
+.contentPartenariat table.columns table.button td,
+.contentPartenariat table.column table.button td {
+  padding: 10px 8px;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.contentPartenariat table.columns table.button td a,
+.contentPartenariat table.column table.button td a,
+.contentPartenariat table.columns table.button td p,
+.contentPartenariat table.column table.button td p {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
 .contentPartenariat td.wrapper {
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
 .contentPartenariat td.wrapper.first {
-  background-color: #3593CE;
+  background-color: #0ff;
 }
 
 .contentPartenariat td.wrapper.first,

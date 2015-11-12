@@ -260,13 +260,34 @@ table.secondary {
 // -------------------------
 .contentPartenariat {
 	background-color: #a0a;
+
+	table.columns, table.column {
+		table.button {
+			// display: table;
+			// table-layout: auto;
+			// width: auto;
+			// -premailer-width: auto;
+			// float: right;
+			td {
+				// width: auto;
+				// float: none;
+				// -premailer-width: auto;
+				padding: (@wrapperPad / 2) 8px;
+				text-transform: uppercase;
+				vertical-align: middle;
+				//pour les éventuels paragraphes vides rajoutés par Outlook
+				a, p { margin: 0px !important; padding: 0px !important; }
+			}
+		}
+	}
+
 	td.wrapper {
 		padding-top: (@wrapperPad / 2);
 		padding-bottom: (@columnPad / 2);
 
 
 		&.first {
-			background-color: @colorBoosterHealth1;
+			background-color: #0ff;
 			.newsletterInnerTextColor(#ffffff);
 			td {
 				font-size: @headingsFontSizeH6;
