@@ -1387,6 +1387,10 @@ table.secondary:active td a {
   padding: 0px !important;
 }
 
+.contentPartenariat td.wrapper {
+  vertical-align: middle;
+}
+
 .contentPartenariat td.wrapper.first,
 .contentPartenariat td.wrapper.first td,
 .contentPartenariat td.wrapper.first .inner {
