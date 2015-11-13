@@ -261,11 +261,13 @@ table.secondary {
 .contentPartenariat {
 	table.columns, table.column {
 		table.button td {
-			padding: (@wrapperPad / 4) 8px;
+			padding: floor(@wrapperPad / 4) 4px;
 			text-transform: uppercase;
 			vertical-align: middle;
 			&, a {
-				font-size: @fontSizeSmall;
+				//same lineheight as image's height
+				line-height: 18px;
+				font-size: @baseFontSize;
 				font-weight: bold;
 			}
 			//pour les éventuels paragraphes vides rajoutés par Outlook
@@ -287,8 +289,8 @@ table.secondary {
 		}
 		&.last {
 			td {
-				padding-top: (@wrapperPad / 4);
-				padding-bottom: (@wrapperPad / 4);
+				padding-top: floor(@wrapperPad / 4);
+				padding-bottom: floor(@wrapperPad / 4);
 				line-height: 0px;
 				text-align: right;
 				img.les_echos {
@@ -308,7 +310,7 @@ table.secondary {
 	table[class="body"] .contentPartenariat {
 		table.columns, table.column {
 			table.button td {
-				padding: (@wrapperPadCollapse / 4) 0px !important;
+				padding: floor(@wrapperPadCollapse / 4) 0px !important;
 				&, a { font-size: floor(@fontSizeSmall * 0.85) !important; }
 			}
 		}
@@ -320,8 +322,8 @@ table.secondary {
 			}
 		}
 		td.wrapper.last td {
-			padding-top: (@wrapperPadCollapse / 4) !important;
-			padding-bottom: (@wrapperPadCollapse / 4) !important;
+			padding-top: floor(@wrapperPadCollapse / 4) !important;
+			padding-bottom: floor(@wrapperPadCollapse / 4) !important;
 			text-align: center !important;
 			img.les_echos {
 				width: 230px !important;

@@ -1365,7 +1365,7 @@ table.secondary:active td a {
 
 .contentPartenariat table.columns table.button td,
 .contentPartenariat table.column table.button td {
-  padding: 5px 8px;
+  padding: 5px 4px;
   text-transform: uppercase;
   vertical-align: middle;
 }
@@ -1374,7 +1374,8 @@ table.secondary:active td a {
 .contentPartenariat table.column table.button td,
 .contentPartenariat table.columns table.button td a,
 .contentPartenariat table.column table.button td a {
-  font-size: 12px;
+  line-height: 18px;
+  font-size: 14px;
   font-weight: bold;
 }
 
@@ -1851,7 +1852,7 @@ table.secondary:active td a {
 
   table[class="body"] .contentPartenariat table.columns table.button td,
   table[class="body"] .contentPartenariat table.column table.button td {
-    padding: 2.5px 0px !important;
+    padding: 2px 0px !important;
   }
 
   table[class="body"] .contentPartenariat table.columns table.button td,
@@ -1871,8 +1872,8 @@ table.secondary:active td a {
   }
 
   table[class="body"] .contentPartenariat td.wrapper.last td {
-    padding-top: 2.5px !important;
-    padding-bottom: 2.5px !important;
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
     text-align: center !important;
   }
 
