@@ -1,0 +1,490 @@
+//
+// Booster theme's newsletter
+// v3.0 | 2014-09-16 09:30
+// --------------------------------------------------
+
+
+//Propriétés mso-* utilisées dans Outlook
+//Debug outlook : http://www.verticalresponse.com/blog/its-not-you-its-outlook-the-complete-guide-for-email-marketers/
+
+// LAYOUT
+// --------------------------------------------------
+
+h1, h2, h3, h4, h5, h6 { mso-line-height-rule: exactly; }
+h1 { line-height: (@headingsFontSizeH1 * 1.1); }
+h2 { line-height: (@headingsFontSizeH2 * 1.1); }
+h3 { line-height: (@headingsFontSizeH3 * 1.1); }
+h4 { line-height: (@headingsFontSizeH4 * 1.1); }
+h5 { line-height: (@headingsFontSizeH5 * 1.1); }
+h6 { line-height: (@headingsFontSizeH6 * 1.1); }
+
+//réduction tailles titrages en mode mobile
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] {
+		body, &, p, td {
+			font-size: floor(@baseFontSize * 0.9) !important;
+  			line-height: floor(@baseLineHeight * 0.9) !important;
+		}
+
+		small {
+			font-size: floor(@fontSizeSmall * 0.9) !important;
+		}
+
+		h1 {
+			font-size: floor(@headingsFontSizeH1 * 0.9) !important;
+			line-height: (floor(@headingsFontSizeH1 * 0.9) * 1.1) !important;
+		}
+		h2 {
+			font-size: floor(@headingsFontSizeH2 * 0.9) !important;
+			line-height: (floor(@headingsFontSizeH2 * 0.9) * 1.1) !important;
+		}
+		h3 {
+			font-size: floor(@headingsFontSizeH3 * 0.9) !important;
+			line-height: (floor(@headingsFontSizeH3 * 0.9) * 1.1) !important;
+		}
+		h4 {
+			font-size: floor(@headingsFontSizeH4 * 0.9) !important;
+			line-height: (floor(@headingsFontSizeH4 * 0.9) * 1.1) !important;
+		}
+		h5 {
+			font-size: floor(@headingsFontSizeH5 * 0.9) !important;
+			line-height: (floor(@headingsFontSizeH5 * 0.9) * 1.1) !important;
+		}
+		h6 {
+			font-size: floor(@headingsFontSizeH6 * 0.9) !important;
+			line-height: (floor(@headingsFontSizeH6 * 0.9) * 1.1) !important;
+		}
+	}
+}
+
+
+
+//gestion header
+.header {
+	//suppression décalage en trop
+	td.wrapper { padding-top: 0px; }
+	table.columns td, table.column td { padding-bottom: 0px; }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .header {
+		td.wrapper { padding-top: 0px !important; }
+		table.columns td, table.column td { padding-bottom: 0px !important; }
+	}
+}
+
+
+//sur titres
+.preTitle {
+	padding-bottom: 10px;
+	.last {
+		color: @colorBoosterHealth1;
+		a { .newsletterLinkColor(@colorBoosterHealth1); }
+	}
+}
+
+//tous les titres
+.title {
+	color: @colorBoosterHealth5;
+	a { .newsletterLinkColor(@colorBoosterHealth5); }
+	margin: 0px;
+	padding: 0px;
+	padding-bottom: 5px;
+	//on rajoute un padding de séparation lorsque précédé d'un readMore (utile pour articles)
+	.readMore + &, .readMore + * + & { padding-top: 10px; }
+
+	//séparation de l'image qui précède
+	img + & { padding-top: 5px; }
+}
+
+//tous les paragraphes pour Outlook
+//cf http://stackoverflow.com/questions/18109812/ms-outlook-email-templates-adding-extra-spacing
+p {
+	margin: 0px;
+	padding: 0px;
+	margin-bottom: 0px;
+}
+
+.author {
+	font-weight: bold;
+	font-size: @fontSizeSmall;
+	margin: 0px;
+	padding-bottom: 5px;
+}
+
+//lien de suivis
+.readMore {
+	width: 100%;
+	-premailer-width: 100%;
+	overflow: hidden;
+	clear: both;
+
+	table.columns &, table.column & {
+		td.buttonWrapper {
+			padding-bottom: 0px;
+			clear: both;
+			td { color: #ffffff; }
+		}
+		table.tiny-button {
+			display: table;
+			table-layout: auto;
+			width: auto;
+			-premailer-width: auto;
+			float: right;
+			td {
+				width: auto;
+				float: none;
+				-premailer-width: auto;
+				padding: 4px 8px;
+				text-transform: uppercase;
+				vertical-align: middle;
+				//pour les éventuels paragraphes vides rajoutés par Outlook
+				a, p { margin: 0px !important; padding: 0px !important; }
+			}
+		}
+	}
+	.text + & {
+		table.columns &, table.column & {
+			td.buttonWrapper { padding-top: 5px; }
+		}
+	}
+}
+a.tiny-button-link {
+	padding: 0px;
+	margin: 0px;
+	.newsletterLinkColor(#ffffff);
+	line-height: ceil(@buttonFontSizeTiny * 1.33);
+	mso-line-height-rule: exactly;
+}
+table.columns .readMore td.buttonWrapper td, table.column .readMore td.buttonWrapper td {
+	//pour Outlook
+	&, p.MsoNormal {
+		line-height: ceil(@buttonFontSizeTiny * 1.33) !important;
+		mso-line-height-rule: exactly;
+		margin: 0px;
+	}
+	p.MsoNormal { padding: 0px; }
+}
+a.tiny-button-link, table.columns .readMore td.buttonWrapper td, table.column .readMore td.buttonWrapper td {
+	font-size: @buttonFontSizeTiny;
+	font-weight: normal;
+}
+
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] {
+		table.columns, table.column {
+			.readMore {
+				td.buttonWrapper {
+					padding-bottom: 0px !important;
+				}
+				table.tiny-button {
+					display: table !important;
+					table-layout: auto !important;
+					width: auto !important;
+					td {
+						width: auto !important;
+						padding: 4px 8px !important;
+					}
+				}
+			}
+		}
+		a.tiny-button-link, table.columns .readMore td.buttonWrapper td, table.column .readMore td.buttonWrapper td {
+			font-size: @buttonFontSizeTiny !important;
+			line-height: ceil(@buttonFontSizeTiny * 1.33) !important;
+		}
+	}
+}
+
+//buttons
+table.secondary {
+	td, td a, &:hover td { color: #ffffff; }
+	&:hover td a, td a:visited, &:active td a { color: #ffffff !important; }
+}
+
+//réseaux sociaux
+.faicons td { text-align: right; }
+.faicon {
+	display: inline;
+	//pour supprimer les espaces
+	font-size: 0px;
+	mso-line-height-rule: exactly;
+	line-height: 0px;
+	// padding: 0px 5px 5px 5px;
+	&.first { padding-left: 0px; }
+	&.last { padding-right: 0px; }
+	img {
+		display: inline;
+		float: none;
+	}
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .faicons {
+		.columns, .column { display: table !important; }
+		td { text-align: center !important; }
+	}
+	table[class="body"] .faicon img {
+		width: 30px !important;
+		height: 30px !important;
+	}
+}
+
+
+// contentOnline area
+// -------------------------
+.contentOnline {
+	background-color: @bodyBackground;
+	.newsletterInnerTextColor(#ffffff);
+	
+	td {
+		font-size: @fontSizeSmall;
+		line-height: (@fontSizeSmall * 1.25);
+	}
+	//réduction décalage vertical
+	td.wrapper { padding-top: (@wrapperPad / 2); }
+	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentOnline {
+		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
+		table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
+	}
+}
+
+
+// contentOnline area
+// -------------------------
+.contentIntroduction {
+	background-color: @colorBoosterHealth2;
+	h3.introduction {
+		font-weight: normal;
+		color: #ffffff;
+	}
+}
+
+// contentPartenariat area
+// -------------------------
+.contentPartenariat {
+	table.columns, table.column {
+		table.button td {
+			padding: floor(@wrapperPad / 4) 4px;
+			text-transform: uppercase;
+			vertical-align: middle;
+			&, a {
+				//same lineheight as image's height
+				line-height: 18px;
+				font-size: @baseFontSize;
+				font-weight: bold;
+			}
+			//pour les éventuels paragraphes vides rajoutés par Outlook
+			a, p { margin: 0px !important; padding: 0px !important; }
+		}
+	}
+
+	td.wrapper {
+		vertical-align: middle;
+		&.first {
+			.newsletterInnerTextColor(#ffffff);
+			td {
+				text-transform: uppercase;
+				img.button_play {
+					display: inline;
+					float: none;
+					vertical-align: bottom;
+				}
+			}
+		}
+		&.last {
+			td {
+				padding-top: floor(@wrapperPad / 4);
+				padding-bottom: floor(@wrapperPad / 4);
+				line-height: 0px;
+				text-align: right;
+				img.les_echos {
+					display: inline;
+					float: none;
+					vertical-align: bottom;
+				}
+			}
+		}
+	}
+
+	//réduction décalage vertical
+	td.wrapper { padding-top: 0px; }
+	table.columns td, table.column td { padding-bottom: 0px; }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentPartenariat {
+		table.columns, table.column {
+			table.button td {
+				padding: floor(@wrapperPadCollapse / 4) 0px !important;
+				&, a { font-size: floor(@fontSizeSmall * 0.85) !important; }
+			}
+		}
+		td.wrapper.first td {
+			text-align: center !important;
+			img.button_play {
+				width: 18px !important;
+				height: auto !important;
+			}
+		}
+		td.wrapper.last td {
+			padding-top: floor(@wrapperPadCollapse / 4) !important;
+			padding-bottom: floor(@wrapperPadCollapse / 4) !important;
+			text-align: center !important;
+			img.les_echos {
+				width: 230px !important;
+				height: auto !important;
+			}
+		}
+		td.wrapper { padding-top: 0px !important; }
+		table.columns td, table.column td { padding-bottom: 0px !important; }
+	}
+}
+
+// contentALaUne area
+// -------------------------
+.contentALaUne {
+	img { float: none; }
+	
+	//réduction décalage vertical
+	td.wrapper { padding-top: (@wrapperPad / 2); }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentALaUne {
+		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
+	}
+}
+
+
+// contentAvisExpert area
+// -------------------------
+.contentAvisExpert {
+	background-color: @colorBoosterHealth4;
+	tr:first-child {
+		table.columns td, table.column td { padding-bottom: 0px; }
+	}
+	tr:last-child {
+		td.wrapper { padding-top: 0px; }
+	}
+
+	.person {
+		padding-top: 5px;
+		a { .newsletterLinkColor(@textColor); }
+	}
+
+	table.columns, table.column {
+		.subWrapper td { padding-bottom: 0px; }
+	}
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentAvisExpert {
+		tr:first-child {
+			table.columns td, table.column td { padding-bottom: 0px !important; }
+		}
+		tr:last-child {
+			td.wrapper { padding-top: 0px !important; }
+		}
+		.right-text-pad, .text-pad-right { padding-left: 0px !important; }
+		table.columns, table.column {
+			.subWrapper td { padding-bottom: 0px !important; }
+		}
+	}
+}
+
+
+// contentActualites area
+// -------------------------
+.contentActualites {
+	.title {
+		color: @colorBoosterHealth1;
+		a { .newsletterLinkColor(@colorBoosterHealth1); }
+	}
+}
+
+
+// contentProjet area
+// -------------------------
+.contentProjet {
+	background-color: @colorBoosterHealth4;
+	
+	img { float: none; }
+
+	table.columns, table.column {
+		.subWrapper {
+			background-color: @containerBackground;
+			//comparaison des paddings
+			@padV: floor(@columnPad / 2);
+			@padH: floor(@textPad / 4);
+			td.text-pad when (@padV = @padH) { padding: @padV !important; }
+			td.text-pad when not(@padV = @padH) { padding: @padV @padH !important; }
+		}
+	}
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentProjet {
+		table.columns, table.column {
+			.subWrapper {
+				//comparaison des paddings
+				@padV: floor(@columnPadCollapse / 2);
+				@padH: floor(@textPadCollapse / 4);
+				td.text-pad when (@padV = @padH) { padding: @padV !important; }
+				td.text-pad when not(@padV = @padH) { padding: @padV @padH !important; }
+			}
+		}
+	}
+}
+
+
+// contentFooter area
+// -------------------------
+.contentFooter {
+	background-color: @colorBoosterHealth2;
+	.newsletterInnerTextColor(#ffffff);
+
+	.boosterFunds {
+		font-weight: normal;
+	}
+
+	.joinus {
+		font-size: @baseFontSize;
+		line-height: @baseFontSize;
+		padding-right: 10px;
+		color: mix(#fff, @colorBoosterHealth2, 65%);
+		padding-top: ((30px - @baseFontSize) / 2);
+		padding-bottom: ((30px - @baseFontSize) / 2);
+		vertical-align: ((30px - @baseFontSize) / 2);
+	}
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentFooter {
+		.boosterFunds, td { text-align: center !important; }
+		td.wrapper.first {
+			table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
+		}
+		td.wrapper.last {
+			padding-top: (@wrapperPadCollapse / 2) !important;
+		}
+	}
+}
+
+
+// contentUnsubscribe area
+// -------------------------
+.contentUnsubscribe {
+	background-color: @colorBoosterHealth1;
+	.newsletterInnerTextColor(#ffffff);
+
+	td {
+		font-size: @fontSizeSmall;
+		line-height: (@fontSizeSmall * 1.25);
+	}
+
+	//réduction décalage vertical
+	td.wrapper { padding-top: (@wrapperPad / 2); }
+	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentUnsubscribe {
+		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
+		table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
+	}
+}
