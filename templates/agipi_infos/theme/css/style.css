@@ -1375,6 +1375,29 @@ table.separator td {
   background-color: #e6e6e6;
 }
 
+.contentChiffre table.subWrapper td {
+  padding: 0px;
+}
+
+.contentChiffre table.subWrapper td.parenthesis {
+  font-size: 0px;
+  line-height: 0px;
+}
+
+.contentChiffre table.subWrapper td.parenthesis img {
+  display: inline;
+  float: none;
+}
+
+.contentChiffre table.subWrapper td.value {
+  background-color: #f0f;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 35.2px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
 .contentFooter {
   background-color: #006eb6;
 }
@@ -1720,6 +1743,17 @@ table.separator td {
   table[class="body"] .contentActualites table.columns td,
   table[class="body"] .contentActualites table.column td {
     padding-bottom: 5px !important;
+  }
+
+  table[class="body"] .contentChiffre table.subWrapper td {
+    padding: 0px !important;
+  }
+
+  table[class="body"] .contentChiffre table.subWrapper td.value {
+    font-size: 28px !important;
+    line-height: 30.8px !important;
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
   }
 
   table[class="body"] .contentFooter td.wrapper.first table.columns td,
