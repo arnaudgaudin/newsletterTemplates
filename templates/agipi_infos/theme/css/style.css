@@ -1423,6 +1423,10 @@ table.separator td {
   font-size: 12px;
 }
 
+.contentFooter td.faicons {
+  vertical-align: bottom;
+}
+
 .contentUnsubscribe {
   background-color: #9c9b9b;
 }
