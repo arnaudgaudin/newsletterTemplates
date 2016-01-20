@@ -619,20 +619,20 @@ small {
 }
 
 a {
-  color: #2ba6cb;
+  color: #006eb6;
   text-decoration: none;
 }
 
 a:hover {
-  color: #2284a1 !important;
+  color: #004f83 !important;
 }
 
 a:active {
-  color: #2284a1 !important;
+  color: #004f83 !important;
 }
 
 a:visited {
-  color: #2ba6cb !important;
+  color: #006eb6 !important;
 }
 
 h1 a,
@@ -641,7 +641,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-  color: #2ba6cb;
+  color: #006eb6;
 }
 
 h1 a:active,
@@ -650,7 +650,7 @@ h3 a:active,
 h4 a:active,
 h5 a:active,
 h6 a:active {
-  color: #2ba6cb !important;
+  color: #006eb6 !important;
 }
 
 h1 a:visited,
@@ -659,7 +659,7 @@ h3 a:visited,
 h4 a:visited,
 h5 a:visited,
 h6 a:visited {
-  color: #2ba6cb !important;
+  color: #006eb6 !important;
 }
 
 /* Panels */
@@ -697,8 +697,8 @@ table.large-button td {
   display: block;
   width: auto !important;
   text-align: center;
-  background: #2ba6cb;
-  border: 1px solid #196177;
+  background: #006eb6;
+  border: 1px solid #005c97;
   color: #ffffff;
   padding: 8px 0;
   line-height: initial !important;
@@ -763,7 +763,7 @@ table.large-button td a {
 table.button:hover td,
 table.button:visited td,
 table.button:active td {
-  background: #2284a1 !important;
+  background: #0065a7 !important;
 }
 
 table.button:hover td a,
@@ -780,7 +780,7 @@ table.tiny-button:hover td,
 table.small-button:hover td,
 table.medium-button:hover td,
 table.large-button:hover td {
-  background: #2284a1 !important;
+  background: #0065a7 !important;
 }
 
 table.button:hover td a,
@@ -817,8 +817,8 @@ table.large-button td a:visited .important {
 }
 
 table.secondary td {
-  background: #E9E9E9;
-  border-color: #d0d0d0;
+  background: #34354c;
+  border-color: #28283a;
   color: #555555;
 }
 
@@ -831,7 +831,7 @@ table.secondary td a .important {
 }
 
 table.secondary:hover td {
-  background: #d0d0d0 !important;
+  background: #2e2f43 !important;
   color: #555555;
 }
 
@@ -927,7 +927,7 @@ body.outlook p {
 }
 
 .appleLinks a {
-  color: #2ba6cb;
+  color: #006eb6;
   text-decoration: none;
 }
 
@@ -937,11 +937,11 @@ body.outlook p {
 
 .appleLinks a:hover,
 .appleLinks a:active {
-  color: #2284a1 !important;
+  color: #004f83 !important;
 }
 
 .appleLinks a:visited {
-  color: #2ba6cb !important;
+  color: #006eb6 !important;
 }
 
 a[href^=tel] {
@@ -1259,6 +1259,79 @@ table.column .readMore td.buttonWrapper td {
   font-weight: normal;
 }
 
+table.secondary td,
+table.secondary td a,
+table.secondary:hover td {
+  color: #ffffff;
+}
+
+table.secondary:hover td a,
+table.secondary td a:visited,
+table.secondary:active td a {
+  color: #ffffff !important;
+}
+
+.faicons td {
+  text-align: right;
+}
+
+.faicon {
+  display: inline;
+  font-size: 0px;
+  mso-line-height-rule: exactly;
+  line-height: 0px;
+  padding: 0px 5px;
+}
+
+.faicon.first {
+  padding-left: 0px;
+}
+
+.faicon.last {
+  padding-right: 0px;
+}
+
+.faicon img {
+  display: inline;
+  float: none;
+}
+
+.contentOnline {
+  background-color: #a00;
+}
+
+.contentOnline,
+.contentOnline td,
+.contentOnline .inner {
+  color: #ffffff;
+}
+
+.contentOnline a {
+  color: #ffffff;
+}
+
+.contentOnline a .important,
+.contentOnline a:visited,
+.contentOnline a:hover,
+.contentOnline a:focus,
+.contentOnline a:active {
+  color: #ffffff !important;
+}
+
+.contentOnline td {
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.contentOnline td.wrapper {
+  padding-top: 10px;
+}
+
+.contentOnline table.columns td,
+.contentOnline table.column td {
+  padding-bottom: 10px;
+}
+
 @media only screen and (max-width: 720px) {
   table[class="body"] img {
     max-width: auto !important;
@@ -1499,5 +1572,28 @@ table.column .readMore td.buttonWrapper td {
   table[class="body"] table.column .readMore td.buttonWrapper td {
     font-size: 9px !important;
     line-height: 12px !important;
+  }
+
+  table[class="body"] .faicons .columns,
+  table[class="body"] .faicons .column {
+    display: table !important;
+  }
+
+  table[class="body"] .faicons td {
+    text-align: center !important;
+  }
+
+  table[class="body"] .faicon img {
+    width: 30px !important;
+    height: 30px !important;
+  }
+
+  table[class="body"] .contentOnline td.wrapper {
+    padding-top: 5px !important;
+  }
+
+  table[class="body"] .contentOnline table.columns td,
+  table[class="body"] .contentOnline table.column td {
+    padding-bottom: 5px !important;
   }
 }
