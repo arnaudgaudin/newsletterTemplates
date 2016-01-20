@@ -1125,10 +1125,6 @@ h6 {
   line-height: 17.6px;
 }
 
-.header {
-  background-color: #0f0;
-}
-
 .header td.wrapper {
   padding-top: 10px;
 }
@@ -1271,6 +1267,16 @@ table.secondary:active td a {
   color: #ffffff !important;
 }
 
+table.separator,
+table.separator td {
+  font-size: 0px;
+  line-height: 0px;
+  -premailer-width: 100%;
+  -premailer-height: 10px;
+  width: 100%;
+  height: 10px;
+}
+
 .faicons td {
   text-align: right;
 }
@@ -1356,8 +1362,79 @@ table.secondary:active td a {
   color: #006eb6 !important;
 }
 
+.contentActualites td.wrapper {
+  padding-top: 10px;
+}
+
+.contentActualites table.columns td,
+.contentActualites table.column td {
+  padding-bottom: 10px;
+}
+
 .contentDossier {
   background-color: #e6e6e6;
+}
+
+.contentFooter {
+  background-color: #006eb6;
+}
+
+.contentFooter,
+.contentFooter td,
+.contentFooter .inner {
+  color: #ffffff;
+}
+
+.contentFooter a {
+  color: #ffffff;
+}
+
+.contentFooter a .important,
+.contentFooter a:visited,
+.contentFooter a:hover,
+.contentFooter a:focus,
+.contentFooter a:active {
+  color: #ffffff !important;
+}
+
+.contentFooter td.address td {
+  font-size: 12px;
+}
+
+.contentUnsubscribe {
+  background-color: #9c9b9b;
+}
+
+.contentUnsubscribe,
+.contentUnsubscribe td,
+.contentUnsubscribe .inner {
+  color: #ffffff;
+}
+
+.contentUnsubscribe a {
+  color: #ffffff;
+}
+
+.contentUnsubscribe a .important,
+.contentUnsubscribe a:visited,
+.contentUnsubscribe a:hover,
+.contentUnsubscribe a:focus,
+.contentUnsubscribe a:active {
+  color: #ffffff !important;
+}
+
+.contentUnsubscribe td {
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.contentUnsubscribe td.wrapper {
+  padding-top: 10px;
+}
+
+.contentUnsubscribe table.columns td,
+.contentUnsubscribe table.column td {
+  padding-bottom: 10px;
 }
 
 @media only screen and (max-width: 720px) {
@@ -1602,13 +1679,20 @@ table.secondary:active td a {
     line-height: 12px !important;
   }
 
+  table.separator,
+  table.separator td {
+    height: 5px !important;
+    font-size: 0px !important;
+    line-height: 0px !important;
+  }
+
   table[class="body"] .faicons .columns,
   table[class="body"] .faicons .column {
     display: table !important;
   }
 
   table[class="body"] .faicons td {
-    text-align: center !important;
+    text-align: left !important;
   }
 
   table[class="body"] .faicon img {
@@ -1627,5 +1711,32 @@ table.secondary:active td a {
 
   table[class="body"] .contentALaUne td.wrapper {
     padding-top: 5px !important;
+  }
+
+  table[class="body"] .contentActualites td.wrapper {
+    padding-top: 5px !important;
+  }
+
+  table[class="body"] .contentActualites table.columns td,
+  table[class="body"] .contentActualites table.column td {
+    padding-bottom: 5px !important;
+  }
+
+  table[class="body"] .contentFooter td.wrapper.first table.columns td,
+  table[class="body"] .contentFooter td.wrapper.first table.column td {
+    padding-bottom: 5px !important;
+  }
+
+  table[class="body"] .contentFooter td.wrapper.last {
+    padding-top: 5px !important;
+  }
+
+  table[class="body"] .contentUnsubscribe td.wrapper {
+    padding-top: 5px !important;
+  }
+
+  table[class="body"] .contentUnsubscribe table.columns td,
+  table[class="body"] .contentUnsubscribe table.column td {
+    padding-bottom: 5px !important;
   }
 }
