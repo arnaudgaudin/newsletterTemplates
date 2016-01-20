@@ -317,7 +317,7 @@ text-decoration: underline; cursor: pointer;
     position: relative !important; width: 100% !important; display: block !important;
   }
   table[class="body"] .wrapper {
-    position: relative !important; display: block !important; padding-right: 0 !important;
+    position: relative !important; display: block !important; padding-top: 10px !important; padding-right: 0 !important;
   }
   table[class="body"] .columns {
     table-layout: fixed !important; float: none !important; width: 100% !important; padding-right: 0px !important; padding-left: 0px !important; display: block !important;
@@ -332,10 +332,10 @@ text-decoration: underline; cursor: pointer;
     display: table !important;
   }
   table[class="body"] table.columns td {
-    width: 100% !important;
+    width: 100% !important; padding-bottom: 10px !important;
   }
   table[class="body"] table.column td {
-    width: 100% !important;
+    width: 100% !important; padding-bottom: 10px !important;
   }
   table[class="body"] .columns td.one {
     width: 8.333333% !important;
@@ -445,17 +445,20 @@ text-decoration: underline; cursor: pointer;
   table[class="body"] table.columns td.expander {
     width: 1px !important;
   }
+  table[class="body"] .text-pad {
+    padding-left: 20px !important; padding-right: 20px !important;
+  }
   table[class="body"] .right-text-pad {
-    padding-left: 10px !important;
+    padding-left: 20px !important; padding-right: 20px !important;
   }
   table[class="body"] .text-pad-right {
-    padding-left: 10px !important;
+    padding-left: 20px !important; padding-right: 20px !important;
   }
   table[class="body"] .left-text-pad {
-    padding-right: 10px !important;
+    padding-left: 20px !important; padding-right: 20px !important;
   }
   table[class="body"] .text-pad-left {
-    padding-right: 10px !important;
+    padding-left: 20px !important; padding-right: 20px !important;
   }
   table[class="body"] .hide-for-small {
     display: none !important;
@@ -470,7 +473,10 @@ text-decoration: underline; cursor: pointer;
     display: block !important; width: auto !important; overflow: visible !important;
   }
   table[class="container"] .block-grid td {
-    width: 100% !important;
+    width: 100% !important; padding: 10px !important;
+  }
+  table[class="container"] .panel {
+    padding: 10px !important;
   }
 }
 </style>
@@ -493,10 +499,10 @@ text-decoration: underline; cursor: pointer;
 								<!--{{<gab_lien_message_online>}}-->
 								<table border="0" class="row contentOnline" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%; border-collapse: collapse; border-spacing: 0; display: block; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px; text-align: left; vertical-align: top; width: 100%" width="100%" cellpadding="0" cellspacing="0">
 									<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
-										<td class="wrapper last" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #222222; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 19px; margin: 0; padding: 10px 0px 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+										<td class="wrapper last" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #222222; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 19px; margin: 0; padding: 20px 0px 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
 											<table border="0" class="twelve columns" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 720; border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 720px" width="720" cellpadding="0" cellspacing="0">
 												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
-													<td class="text-pad center" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #222222; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 19px; margin: 0; padding: 0px 10px 10px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
+													<td class="text-pad center" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #222222; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 19px; margin: 0; padding: 0px 40px 20px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
 														Pour visualiser ce message en ligne, <a class="link_underline" target="_blank" href="#" lien_message_online="lien_message_online" style="color: #2ba6cb; text-decoration: underline">suivez ce lien</a>.
 													</td>
 													<td class="expander" style="-moz-hyphens: none; -ms-hyphens: none; -premailer-width: 1; -webkit-hyphens: none; border-collapse: collapse !important; color: #222222; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 19px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word" align="left" valign="top" width="1"></td>
@@ -507,6 +513,86 @@ text-decoration: underline; cursor: pointer;
 								</table>
 								<!--{{</gab_lien_message_online>}}-->
 								<!-- ONLINE END -->
+
+								<!-- HEADER START -->
+								<table border="0" class="row header" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%; border-collapse: collapse; border-spacing: 0; display: block; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px; text-align: left; vertical-align: top; width: 100%" width="100%" cellpadding="0" cellspacing="0">
+									<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+										<td class="wrapper last" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #222222; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 19px; margin: 0; padding: 20px 0px 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+											<table border="0" class="twelve columns" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 720; border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 720px" width="720" cellpadding="0" cellspacing="0">
+												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+													<td class="text-pad center" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #222222; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 19px; margin: 0; padding: 0px 40px 20px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
+														<a target="_blank" class="link_box" href="http://www.booster-health.fr" style="color: #2ba6cb; display: block; outline: none; text-decoration: none">
+															<img class="center" src="http://newsletter-templates.lesechos-publishing.fr/templates/agipi_infos/theme/images/header-newsletter.png" alt="AGIPI Infos" width="640" height="92" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: none; margin: 0 auto; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none" />
+														</a>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+								<!-- HEADER END -->
+
+								<!-- ALAUNE START -->
+								<table border="0" class="row contentALaUne" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%; border-collapse: collapse; border-spacing: 0; display: block; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px; text-align: left; vertical-align: top; width: 100%" width="100%" cellpadding="0" cellspacing="0">
+									<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+										<td class="wrapper last" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #222222; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 19px; margin: 0; padding: 20px 0px 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+											<table border="0" class="twelve columns" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 720; border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 720px" width="720" cellpadding="0" cellspacing="0">
+												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+													<td class="text-pad" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #222222; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 19px; margin: 0; padding: 0px 40px 20px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+														<!--{{##{{<champ> 
+														<type>image</type>
+														<src>}}--><a data-type="gethref" href="http://newsletter-templates.lesechos-publishing.fr/templates/agipi_infos/theme/images/image-alaune.jpg" style="color: #2ba6cb; text-decoration: none"><!--gethref--></a><!--{{</src>
+														<lien>http://www.booster-health.fr</lien>
+														<survol></survol>
+														<width>640</width>
+														<height>290</height>
+														<width_max>1280</width_max>
+														<height_max>580</height_max>
+														<params>}}-->
+														<img data-type="getstyle" style="-ms-interpolation-mode: bicubic; clear: both; display: block; float: left; max-width: 100%; outline: none; text-decoration: none; width: auto" align="left" /><!--getstyle-->
+														<!--{{</params>
+														</champ>}}##}}-->
+														<!--DEL{{--><img src="http://newsletter-templates.lesechos-publishing.fr/templates/agipi_infos/theme/images/image-alaune.jpg" width="640" height="290" alt="" style="-ms-interpolation-mode: bicubic; clear: both; display: block; float: left; max-width: 100%; outline: none; text-decoration: none; width: auto" align="left" /><!--}}DEL-->
+														<!--{{##{{<champ>
+														<type>lien</type>
+														<href>http://www.booster-health.fr</href>
+														<html_interieur_avant>}}--><h2 class="title" style="color: inherit; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 35.7px; font-weight: bold; line-height: 1.3; margin: 0; padding: 0; text-align: left; word-break: normal" align="left"><!--{{</html_interieur_avant>
+														<texte>}}-->Mybiody balance adopte le Design Thinking<!--{{</texte>
+														<html_interieur_apres>}}--></h2><!--{{</html_interieur_apres>
+														<params>
+														}}--><a data-type="getstyle" style="color: #2ba6cb; text-decoration: none"><!--getstyle--></a><!--{{
+														</params>
+														</champ>}}## ##{{<champ>
+														<type>textarea</type>
+														<html_avant>}}--><div class="text"><!--{{</html_avant>
+														<defaut>}}-->Pour d&#233;velopper son appareil de mesures physiologiques, la start-up BBRC s'est entour&#233; d'un comit&#233; pluridisciplinaire et a r&#233;alis&#233; des tests aupr&#232;s d'utilisateurs. Quel est le point commun entre Apple, Decathlon et Samsung&#160;? Tous trois placent l'humain au c&#339;ur de leur conception.<!--{{</defaut>
+														<html_apres>}}--></div><!--{{</html_apres>
+														</champ>}}## ##{{<champ>
+														<type>lien</type>
+														<href>http://www.booster-health.fr</href>
+														<html_avant>}}-->
+														<table class="readMore" border="0" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; border-collapse: collapse; border-spacing: 0; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top" cellpadding="0" cellspacing="0">
+															<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+																<td class="buttonWrapper" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #222222; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 19px; margin: 0; padding: 0px 0px 20px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+																	<table border="0" align="right" class="tiny-button" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%; border-collapse: collapse; border-spacing: 0; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; overflow: hidden; padding: 0; text-align: left; vertical-align: top; width: 100%" width="100%" cellpadding="0" cellspacing="0"><tr style="padding: 0; text-align: left; vertical-align: top" align="left"><td style="-moz-hyphens: none; -ms-hyphens: none; -premailer-width: auto; -webkit-hyphens: none; background: #2ba6cb; border: 1px solid #196177; border-collapse: collapse !important; color: #ffffff; display: block; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: initial !important; margin: 0; padding: 5px 0; text-align: center; vertical-align: top; width: auto !important; word-break: break-word" align="center" bgcolor="#2ba6cb" valign="top" width="auto"><!--{{</html_avant>
+														<texte>}}-->Lire la suite<!--{{</texte>
+														<html_apres>}}--></td></tr></table>
+																</td>
+															</tr>
+														</table>
+														<!--{{</html_apres>
+														<params>
+														}}--><a data-type="getstyle" class="tiny-button-link" style="color: #2ba6cb; text-decoration: none"><!--getstyle--></a><!--{{ class="tiny-button-link"
+														</params>
+														</champ>}}##}}-->
+													</td>
+													<td class="expander" style="-moz-hyphens: none; -ms-hyphens: none; -premailer-width: 1; -webkit-hyphens: none; border-collapse: collapse !important; color: #222222; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 19px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word" align="left" valign="top" width="1"></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+								<!-- ALAUNE END -->
 
 							</td>
 						</tr>
