@@ -4,7 +4,7 @@
 
 body,
 table.body {
-  background-color: #a00;
+  background-color: #9c9b9b;
 }
 
 /**********************************************
@@ -550,7 +550,7 @@ h5,
 h6,
 p,
 td {
-  color: #222222;
+  color: #333333;
   padding: 0;
   margin: 0;
   text-align: left;
@@ -565,7 +565,7 @@ h5,
 h6 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
-  color: #222222;
+  color: #333333;
   word-break: normal;
 }
 
@@ -1139,14 +1139,14 @@ h6 {
 }
 
 .title {
-  color: #006eb6;
+  color: #2d2d2d;
   margin: 0px;
   padding: 0px;
   padding-bottom: 5px;
 }
 
 .title a {
-  color: #006eb6;
+  color: #2d2d2d;
 }
 
 .title a .important,
@@ -1154,7 +1154,7 @@ h6 {
 .title a:hover,
 .title a:focus,
 .title a:active {
-  color: #006eb6 !important;
+  color: #2d2d2d !important;
 }
 
 .readMore + .title,
@@ -1297,7 +1297,7 @@ table.secondary:active td a {
 }
 
 .contentOnline {
-  background-color: #a00;
+  background-color: #9c9b9b;
 }
 
 .contentOnline,
@@ -1330,6 +1330,34 @@ table.secondary:active td a {
 .contentOnline table.columns td,
 .contentOnline table.column td {
   padding-bottom: 10px;
+}
+
+.contentALaUne img {
+  float: none;
+}
+
+.contentALaUne td.wrapper {
+  padding-top: 10px;
+}
+
+.contentActualites .title {
+  color: #006eb6;
+}
+
+.contentActualites .title a {
+  color: #006eb6;
+}
+
+.contentActualites .title a .important,
+.contentActualites .title a:visited,
+.contentActualites .title a:hover,
+.contentActualites .title a:focus,
+.contentActualites .title a:active {
+  color: #006eb6 !important;
+}
+
+.contentDossier {
+  background-color: #e6e6e6;
 }
 
 @media only screen and (max-width: 720px) {
@@ -1595,5 +1623,9 @@ table.secondary:active td a {
   table[class="body"] .contentOnline table.columns td,
   table[class="body"] .contentOnline table.column td {
     padding-bottom: 5px !important;
+  }
+
+  table[class="body"] .contentALaUne td.wrapper {
+    padding-top: 5px !important;
   }
 }

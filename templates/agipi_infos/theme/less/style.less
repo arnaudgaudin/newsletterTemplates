@@ -72,8 +72,8 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 
 //tous les titres
 .title {
-	color: @colorAgipi1;
-	a { .newsletterLinkColor(@colorAgipi1); }
+	color: @colorAgipi5;
+	a { .newsletterLinkColor(@colorAgipi5); }
 	margin: 0px;
 	padding: 0px;
 	padding-bottom: 5px;
@@ -228,4 +228,36 @@ table.secondary {
 		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
 		table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
 	}
+}
+
+
+// contentALaUne area
+// -------------------------
+.contentALaUne {
+	img { float: none; }
+	
+	//réduction décalage vertical
+	td.wrapper { padding-top: (@wrapperPad / 2); }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentALaUne {
+		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
+	}
+}
+
+
+// contentActualites area
+// -------------------------
+.contentActualites {
+	.title {
+		color: @colorAgipi1;
+		a { .newsletterLinkColor(@colorAgipi1); }
+	}
+}
+
+
+// contentDossier area
+// -------------------------
+.contentDossier {
+	background-color: @colorAgipi4;
 }
