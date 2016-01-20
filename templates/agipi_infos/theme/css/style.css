@@ -1395,6 +1395,19 @@ table.separator td {
   line-height: 35.2px;
   padding-top: 5px;
   padding-bottom: 5px;
+  color: #2d2d2d;
+}
+
+.contentChiffre table.subWrapper td.value a {
+  color: #2d2d2d;
+}
+
+.contentChiffre table.subWrapper td.value a .important,
+.contentChiffre table.subWrapper td.value a:visited,
+.contentChiffre table.subWrapper td.value a:hover,
+.contentChiffre table.subWrapper td.value a:focus,
+.contentChiffre table.subWrapper td.value a:active {
+  color: #2d2d2d !important;
 }
 
 .contentFooter {
