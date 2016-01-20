@@ -565,32 +565,32 @@ h5,
 h6 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
-  color: inherit;
+  color: #222222;
   word-break: normal;
 }
 
 h1 {
-  font-size: 39.9px;
+  font-size: 32px;
 }
 
 h2 {
-  font-size: 35.7px;
-}
-
-h3 {
-  font-size: 31.5px;
-}
-
-h4 {
   font-size: 28px;
 }
 
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
 h5 {
-  font-size: 24.5px;
+  font-size: 18px;
 }
 
 h6 {
-  font-size: 20.3px;
+  font-size: 16px;
 }
 
 body,
@@ -600,14 +600,14 @@ td {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-size: 14px;
-  line-height: 19px;
+  line-height: 18px;
 }
 
 p.lead,
 p.lede,
 p.leed {
-  font-size: 17.5px;
-  line-height: 20.125px;
+  font-size: 18px;
+  line-height: 20.7px;
 }
 
 p {
@@ -615,7 +615,7 @@ p {
 }
 
 small {
-  font-size: 9.8px;
+  font-size: 12px;
 }
 
 a {
@@ -729,7 +729,7 @@ table.large-button td a {
   text-decoration: none;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #ffffff;
-  font-size: 16.1px;
+  font-size: 12px;
   display: block;
   height: 100%;
   width: 100%;
@@ -744,20 +744,20 @@ table.large-button td a .important {
 }
 
 table.tiny-button td a {
-  font-size: 11.9px;
+  font-size: 9px;
   font-weight: normal;
 }
 
 table.small-button td a {
-  font-size: 16.1px;
+  font-size: 12px;
 }
 
 table.medium-button td a {
-  font-size: 20.3px;
+  font-size: 14px;
 }
 
 table.large-button td a {
-  font-size: 28px;
+  font-size: 18px;
 }
 
 table.button:hover td,
