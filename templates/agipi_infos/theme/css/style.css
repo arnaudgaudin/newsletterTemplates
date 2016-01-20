@@ -1092,6 +1092,173 @@ table.large-button td {
   -premailer-width: auto;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  mso-line-height-rule: exactly;
+}
+
+h1 {
+  line-height: 35.2px;
+}
+
+h2 {
+  line-height: 30.8px;
+}
+
+h3 {
+  line-height: 26.4px;
+}
+
+h4 {
+  line-height: 24.2px;
+}
+
+h5 {
+  line-height: 19.8px;
+}
+
+h6 {
+  line-height: 17.6px;
+}
+
+.header {
+  background-color: #0f0;
+}
+
+.header td.wrapper {
+  padding-top: 10px;
+}
+
+.header table.columns td,
+.header table.column td {
+  padding-bottom: 10px;
+}
+
+.title {
+  color: #006eb6;
+  margin: 0px;
+  padding: 0px;
+  padding-bottom: 5px;
+}
+
+.title a {
+  color: #006eb6;
+}
+
+.title a .important,
+.title a:visited,
+.title a:hover,
+.title a:focus,
+.title a:active {
+  color: #006eb6 !important;
+}
+
+.readMore + .title,
+.readMore + * + .title {
+  padding-top: 10px;
+}
+
+img + .title {
+  padding-top: 5px;
+}
+
+p {
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 0px;
+}
+
+.readMore {
+  width: 100%;
+  -premailer-width: 100%;
+  overflow: hidden;
+  clear: both;
+}
+
+table.columns .readMore td.buttonWrapper,
+table.column .readMore td.buttonWrapper {
+  padding-bottom: 0px;
+  clear: both;
+}
+
+table.columns .readMore td.buttonWrapper td,
+table.column .readMore td.buttonWrapper td {
+  color: #ffffff;
+}
+
+table.columns .readMore table.tiny-button,
+table.column .readMore table.tiny-button {
+  display: table;
+  table-layout: auto;
+  width: auto;
+  -premailer-width: auto;
+  float: right;
+}
+
+table.columns .readMore table.tiny-button td,
+table.column .readMore table.tiny-button td {
+  width: auto;
+  float: none;
+  -premailer-width: auto;
+  padding: 4px 8px;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+table.columns .readMore table.tiny-button td a,
+table.column .readMore table.tiny-button td a,
+table.columns .readMore table.tiny-button td p,
+table.column .readMore table.tiny-button td p {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+table.columns .text + .readMore td.buttonWrapper,
+table.column .text + .readMore td.buttonWrapper {
+  padding-top: 5px;
+}
+
+a.tiny-button-link {
+  padding: 0px;
+  margin: 0px;
+  color: #ffffff;
+  line-height: 12px;
+  mso-line-height-rule: exactly;
+}
+
+a.tiny-button-link .important,
+a.tiny-button-link:visited,
+a.tiny-button-link:hover,
+a.tiny-button-link:focus,
+a.tiny-button-link:active {
+  color: #ffffff !important;
+}
+
+table.columns .readMore td.buttonWrapper td,
+table.column .readMore td.buttonWrapper td,
+table.columns .readMore td.buttonWrapper td p.MsoNormal,
+table.column .readMore td.buttonWrapper td p.MsoNormal {
+  line-height: 12px !important;
+  mso-line-height-rule: exactly;
+  margin: 0px;
+}
+
+table.columns .readMore td.buttonWrapper td p.MsoNormal,
+table.column .readMore td.buttonWrapper td p.MsoNormal {
+  padding: 0px;
+}
+
+a.tiny-button-link,
+table.columns .readMore td.buttonWrapper td,
+table.column .readMore td.buttonWrapper td {
+  font-size: 9px;
+  font-weight: normal;
+}
+
 @media only screen and (max-width: 720px) {
   table[class="body"] img {
     max-width: auto !important;
@@ -1256,5 +1423,81 @@ table.large-button td {
 
   table[class="container"] .panel {
     padding: 10px !important;
+  }
+
+  table[class="body"] body,
+  table[class="body"],
+  table[class="body"] p,
+  table[class="body"] td {
+    font-size: 12px !important;
+    line-height: 16px !important;
+  }
+
+  table[class="body"] small {
+    font-size: 10px !important;
+  }
+
+  table[class="body"] h1 {
+    font-size: 28px !important;
+    line-height: 30.8px !important;
+  }
+
+  table[class="body"] h2 {
+    font-size: 25px !important;
+    line-height: 27.5px !important;
+  }
+
+  table[class="body"] h3 {
+    font-size: 21px !important;
+    line-height: 23.1px !important;
+  }
+
+  table[class="body"] h4 {
+    font-size: 19px !important;
+    line-height: 20.9px !important;
+  }
+
+  table[class="body"] h5 {
+    font-size: 16px !important;
+    line-height: 17.6px !important;
+  }
+
+  table[class="body"] h6 {
+    font-size: 14px !important;
+    line-height: 15.4px !important;
+  }
+
+  table[class="body"] .header td.wrapper {
+    padding-top: 5px !important;
+  }
+
+  table[class="body"] .header table.columns td,
+  table[class="body"] .header table.column td {
+    padding-bottom: 5px !important;
+  }
+
+  table[class="body"] table.columns .readMore td.buttonWrapper,
+  table[class="body"] table.column .readMore td.buttonWrapper {
+    padding-bottom: 0px !important;
+  }
+
+  table[class="body"] table.columns .readMore table.tiny-button,
+  table[class="body"] table.column .readMore table.tiny-button {
+    display: table !important;
+    table-layout: auto !important;
+    width: auto !important;
+  }
+
+  table[class="body"] table.columns .readMore table.tiny-button td,
+  table[class="body"] table.column .readMore table.tiny-button td {
+    width: auto !important;
+    padding: 4px 8px !important;
+  }
+
+  table[class="body"] a.tiny-button-link,
+  table[class="body"] table.columns .readMore td.buttonWrapper td,
+  table[class="body"] table.column .readMore td.buttonWrapper td {
+    font-size: 9px !important;
+    line-height: 12px !important;
   }
 }
