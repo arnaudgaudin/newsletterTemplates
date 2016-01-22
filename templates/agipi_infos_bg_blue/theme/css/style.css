@@ -1745,7 +1745,7 @@ table.separator td {
   }
 
   .contentChiffre table.subWrapper td.parenthesis {
-    height: 5px !important;
+    height: 10px !important;
     font-size: 0px !important;
     line-height: 0px !important;
   }
