@@ -1740,6 +1740,24 @@ table.separator td {
     padding-bottom: 5px !important;
   }
 
+  table[class="body"] .contentChiffre table.columns td.empty,
+  table[class="body"] .contentChiffre table.column td.empty {
+    font-size: 0px !important;
+    line-height: 0px !important;
+    width: 20px !important;
+  }
+
+  table[class="body"] .contentChiffre table.columns td.content,
+  table[class="body"] .contentChiffre table.column td.content {
+    width: 180px !important;
+  }
+
+  table[class="body"] .contentChiffre table.columns td.content img,
+  table[class="body"] .contentChiffre table.column td.content img {
+    width: 180px !important;
+    height: 41px !important;
+  }
+
   table[class="body"] .contentChiffre table.subWrapper {
     width: 100% !important;
   }
