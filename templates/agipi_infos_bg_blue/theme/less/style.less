@@ -278,11 +278,17 @@ table.separator {
 		padding: 0px;
 
 		&.parenthesis {
+			background-color: @colorAgipi1;
 			font-size: 0px;
 			line-height: 0px;
-			img {
-				display: inline;
-				float: none;
+			-premailer-width: 100%;
+			-premailer-height: (@wrapperPad / 2);
+			width: 100%;
+			height: (@wrapperPad / 2);
+			@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+				height: (@wrapperPadCollapse / 2) !important;
+				font-size: 0px !important;
+				line-height: 0px !important;
 			}
 		}
 		&.value {
