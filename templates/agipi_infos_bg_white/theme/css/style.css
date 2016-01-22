@@ -1362,6 +1362,11 @@ table.separator td {
   background-color: #e6e6e6;
 }
 
+.contentChiffre table.subWrapper {
+  -premailer-width: 100%;
+  width: 100%;
+}
+
 .contentChiffre table.subWrapper td {
   padding: 0px;
 }
@@ -1733,6 +1738,10 @@ table.separator td {
   table[class="body"] .contentActualites table.columns td,
   table[class="body"] .contentActualites table.column td {
     padding-bottom: 5px !important;
+  }
+
+  table[class="body"] .contentChiffre table.subWrapper {
+    width: 100% !important;
   }
 
   table[class="body"] .contentChiffre table.subWrapper td {

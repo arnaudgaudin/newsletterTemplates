@@ -275,6 +275,8 @@ table.separator {
 // -------------------------
 .contentChiffre {
 	table.subWrapper {
+		-premailer-width: 100%;
+		width: 100%;
 		td {
 			padding: 0px;
 
@@ -301,6 +303,7 @@ table.separator {
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentChiffre {
 		table.subWrapper {
+			width: 100% !important;
 			td {
 				padding: 0px !important;
 				&.value {
