@@ -274,31 +274,29 @@ table.separator {
 // contentChiffre area
 // -------------------------
 .contentChiffre {
-	table.subWrapper td {
-		padding: 0px;
+	table.subWrapper {
+		td {
+			padding: 0px;
 
-		&.parenthesis {
-			font-size: 0px;
-			line-height: 0px;
-			img {
-				display: inline;
-				float: none;
+			&.parenthesis {
+				font-size: 0px;
+				line-height: 0px;
+				img {
+					display: inline;
+					float: none;
+				}
+			}
+			&.value {
+				font-weight: bold;
+				font-size: @headingsFontSizeH1;
+				line-height: (@headingsFontSizeH1 * 1.1);
+				padding-top: floor(@wrapperPad / 4);
+				padding-bottom: floor(@columnPad / 4);
+				color: @colorAgipi5;
+				a { .newsletterLinkColor(@colorAgipi5); }
 			}
 		}
-		&.value {
-			font-weight: bold;
-			font-size: @headingsFontSizeH1;
-			line-height: (@headingsFontSizeH1 * 1.1);
-			padding-top: floor(@wrapperPad / 4);
-			padding-bottom: floor(@columnPad / 4);
-			color: @colorAgipi5;
-			a { .newsletterLinkColor(@colorAgipi5); }
-		}
 	}
-
-	//suppression décalage en trop
-	// td.wrapper { padding-top: 0px; }
-	// table.columns td, table.column td { padding-bottom: 0px; }
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentChiffre {
