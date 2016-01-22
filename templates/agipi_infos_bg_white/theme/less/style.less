@@ -300,13 +300,15 @@ table.separator {
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentChiffre {
-		table.subWrapper td {
-			padding: 0px !important;
-			&.value {
-				font-size: floor(@headingsFontSizeH1 * 0.9) !important;
-				line-height: (floor(@headingsFontSizeH1 * 0.9) * 1.1) !important;
-				padding-top: floor(@wrapperPadCollapse / 4) !important;
-				padding-bottom: floor(@columnPadCollapse / 4) !important;
+		table.subWrapper {
+			td {
+				padding: 0px !important;
+				&.value {
+					font-size: floor(@headingsFontSizeH1 * 0.9) !important;
+					line-height: (floor(@headingsFontSizeH1 * 0.9) * 1.1) !important;
+					padding-top: floor(@wrapperPadCollapse / 4) !important;
+					padding-bottom: floor(@columnPadCollapse / 4) !important;
+				}
 			}
 		}
 	}
