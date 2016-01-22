@@ -57,17 +57,7 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 }
 
 //gestion header
-.header {
-	//réduction décalage
-	td.wrapper { padding-top: (@wrapperPad / 2); }
-	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
-}
-@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
-	table[class="body"] .header {
-		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
-		table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
-	}
-}
+.header { background-color: @colorAgipi1; }
 
 //tous les titres
 .title {
@@ -251,14 +241,6 @@ table.separator {
 // -------------------------
 .contentALaUne {
 	img { float: none; }
-	
-	//réduction décalage vertical
-	td.wrapper { padding-top: (@wrapperPad / 2); }
-}
-@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
-	table[class="body"] .contentALaUne {
-		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
-	}
 }
 
 
