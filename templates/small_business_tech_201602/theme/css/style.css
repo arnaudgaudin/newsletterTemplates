@@ -1230,6 +1230,42 @@ table.secondary:active td a {
   color: #ffffff !important;
 }
 
+.contentOnline {
+  background-color: #aaaaaa;
+}
+
+.contentOnline,
+.contentOnline td,
+.contentOnline .inner {
+  color: #ffffff;
+}
+
+.contentOnline a {
+  color: #ffffff;
+}
+
+.contentOnline a .important,
+.contentOnline a:visited,
+.contentOnline a:hover,
+.contentOnline a:focus,
+.contentOnline a:active {
+  color: #ffffff !important;
+}
+
+.contentOnline td {
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.contentOnline td.wrapper {
+  padding-top: 10px;
+}
+
+.contentOnline table.columns td,
+.contentOnline table.column td {
+  padding-bottom: 10px;
+}
+
 @media only screen and (max-width: 720px) {
   table[class="body"] img {
     max-width: auto !important;
@@ -1461,5 +1497,14 @@ table.secondary:active td a {
   table[class="body"] table.column .readMore td.buttonWrapper td {
     font-size: 9px !important;
     line-height: 12px !important;
+  }
+
+  table[class="body"] .contentOnline td.wrapper {
+    padding-top: 5px !important;
+  }
+
+  table[class="body"] .contentOnline table.columns td,
+  table[class="body"] .contentOnline table.column td {
+    padding-bottom: 5px !important;
   }
 }
