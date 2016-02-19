@@ -196,8 +196,18 @@ table.secondary {
 
 //gestion row avec bordures de séparation
 .row.bordered {
-	background-color: @colorSbt1;
-	
+	background-color: #ff0;
+
+	table.border {
+		background-color: @colorSbt1;
+		&, td {
+			width: 100%;
+			height: ceil(@headingsFontSizeH5 * 1.1);
+			-premailer-width: 100%;
+			-premailer-height: unit(ceil(@headingsFontSizeH5 * 1.1));
+		}
+	}
+
 	//on se base sur la taille du preTitle
 	h5.preTitle {
 		font-weight: bold;
@@ -209,10 +219,6 @@ table.secondary {
 	//container du preTitle
 	.subWrapper {
 		background-color: #f00;
-		&, td {
-			height: ceil(@headingsFontSizeH5 * 1.1);
-			-premailer-height: unit(ceil(@headingsFontSizeH5 * 1.1));
-		}
 	}
 
 	//suppression décalage en trop
@@ -222,6 +228,11 @@ table.secondary {
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .row.bordered {
 
+		h5.preTitle { line-height: ceil(floor(@headingsFontSizeH5 * 0.9) * 1.1) !important; }
+
+		table.border {
+			&, td { height: ceil(floor(@headingsFontSizeH5 * 0.9) * 1.1) !important; }
+		}
 
 		td.wrapper { padding-top: 0px !important; }
 		table.columns td, table.column td { padding-bottom: 0px !important; }
