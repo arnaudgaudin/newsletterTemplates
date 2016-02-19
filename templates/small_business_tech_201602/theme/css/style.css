@@ -1211,7 +1211,6 @@ table.column .readMore table.tiny-button td {
   float: none;
   -premailer-width: auto;
   padding: 4px 8px;
-  text-transform: uppercase;
   vertical-align: middle;
 }
 
@@ -1277,10 +1276,6 @@ table.secondary:active td a {
   color: #ffffff !important;
 }
 
-.row.bordered {
-  background-color: #ff0;
-}
-
 .row.bordered table.border {
   background-color: #0098d4;
 }
@@ -1300,16 +1295,26 @@ table.secondary:active td a {
   line-height: 20px;
 }
 
-.row.bordered .subWrapper {
-  background-color: #f00;
+.row.bordered .subWrapper,
+.row.bordered .subWrapper td {
+  background-color: #ffffff;
 }
 
-.row.bordered td.wrapper {
+.row.bordered .subWrapper td {
+  padding-right: 10px;
+}
+
+.row.bordered.first table.columns td,
+.row.bordered.first table.column td {
+  padding-bottom: 0px;
+}
+
+.row.bordered.last td.wrapper {
   padding-top: 0px;
 }
 
-.row.bordered table.columns td,
-.row.bordered table.column td {
+.row.bordered.last table.columns table td,
+.row.bordered.last table.column table td {
   padding-bottom: 0px;
 }
 
@@ -1344,21 +1349,12 @@ table.secondary:active td a {
   padding-top: 10px;
 }
 
-.contentOnline table.columns td,
-.contentOnline table.column td {
-  padding-bottom: 10px;
-}
-
 .contentALaUne .preTitle {
   padding-top: 5px;
 }
 
 .contentALaUne img {
   float: none;
-}
-
-.contentPartenaire {
-  background-color: #0f0;
 }
 
 .contentPartenaire td.wrapper {
@@ -1612,21 +1608,30 @@ table.secondary:active td a {
     line-height: 12px !important;
   }
 
-  table[class="body"] .row.bordered h5.preTitle {
-    line-height: 18px !important;
-  }
-
   table[class="body"] .row.bordered table.border,
   table[class="body"] .row.bordered table.border td {
     height: 18px !important;
   }
 
-  table[class="body"] .row.bordered td.wrapper {
+  table[class="body"] .row.bordered h5.preTitle {
+    line-height: 18px !important;
+  }
+
+  table[class="body"] .row.bordered .subWrapper td {
+    padding-right: 5px !important;
+  }
+
+  table[class="body"] .row.bordered.first table.columns td,
+  table[class="body"] .row.bordered.first table.column td {
+    padding-bottom: 0px !important;
+  }
+
+  table[class="body"] .row.bordered.last td.wrapper {
     padding-top: 0px !important;
   }
 
-  table[class="body"] .row.bordered table.columns td,
-  table[class="body"] .row.bordered table.column td {
+  table[class="body"] .row.bordered.last table.columns table td,
+  table[class="body"] .row.bordered.last table.column table td {
     padding-bottom: 0px !important;
   }
 
@@ -1636,15 +1641,6 @@ table.secondary:active td a {
 
   table[class="body"] .contentOnline table.columns td,
   table[class="body"] .contentOnline table.column td {
-    padding-bottom: 5px !important;
-  }
-
-  table[class="body"] .contentPartenaire td.wrapper {
-    padding-top: 5px !important;
-  }
-
-  table[class="body"] .contentPartenaire table.columns td,
-  table[class="body"] .contentPartenaire table.column td {
     padding-bottom: 5px !important;
   }
 }

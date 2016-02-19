@@ -128,7 +128,6 @@ p {
 				float: none;
 				-premailer-width: auto;
 				padding: 4px 8px;
-				text-transform: uppercase;
 				vertical-align: middle;
 				//pour les éventuels paragraphes vides rajoutés par Outlook
 				a, p { margin: 0px !important; padding: 0px !important; }
@@ -196,8 +195,6 @@ table.secondary {
 
 //gestion row avec bordures de séparation
 .row.bordered {
-	background-color: #ff0;
-
 	table.border {
 		background-color: @colorSbt1;
 		&, td {
@@ -218,24 +215,41 @@ table.secondary {
 
 	//container du preTitle
 	.subWrapper {
-		background-color: #f00;
+		&, td { background-color: @containerBackground; }
+		td { padding-right: (@textPad / 4); }
 	}
 
 	//suppression décalage en trop
-	td.wrapper { padding-top: 0px; }
-	table.columns td, table.column td { padding-bottom: 0px; }
+	&.first {
+		table.columns td, table.column td { padding-bottom: 0px; }
+	}
+	&.last {
+		td.wrapper { padding-top: 0px; }
+		//suppression padding intérieurs
+		table.columns table td, table.column table td { padding-bottom: 0px; }
+	}
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .row.bordered {
-
-		h5.preTitle { line-height: ceil(floor(@headingsFontSizeH5 * 0.9) * 1.1) !important; }
 
 		table.border {
 			&, td { height: ceil(floor(@headingsFontSizeH5 * 0.9) * 1.1) !important; }
 		}
 
-		td.wrapper { padding-top: 0px !important; }
-		table.columns td, table.column td { padding-bottom: 0px !important; }
+		h5.preTitle { line-height: ceil(floor(@headingsFontSizeH5 * 0.9) * 1.1) !important; }
+
+		.subWrapper {
+			td { padding-right: (@textPadCollapse / 4) !important; }
+		}
+
+		&.first {
+			table.columns td, table.column td { padding-bottom: 0px !important; }
+		}
+		&.last {
+			td.wrapper { padding-top: 0px !important; }
+			//suppression padding intérieurs
+			table.columns table td, table.column table td { padding-bottom: 0px !important; }
+		}
 	}
 }
 
@@ -252,7 +266,7 @@ table.secondary {
 	}
 	//réduction décalage vertical
 	td.wrapper { padding-top: (@wrapperPad / 2); }
-	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+	// table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentOnline {
@@ -273,18 +287,9 @@ table.secondary {
 // contentPartenaire area
 // -------------------------
 .contentPartenaire {
-	background-color: #0f0;
-
-
 	//réduction décalage vertical
 	td.wrapper { padding-top: (@wrapperPad / 2); }
 	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
-}
-@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
-	table[class="body"] .contentPartenaire {
-		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
-		table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
-	}
 }
 
 
