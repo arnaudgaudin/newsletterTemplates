@@ -300,3 +300,43 @@ table.secondary {
 }
 
 
+// contentJeuConcours area
+// -------------------------
+.contentJeuConcours {
+	background-color: #f00;
+}
+
+
+// contentBottom area
+// -------------------------
+.contentBottom {
+	background-color: #aaa;
+
+	//réduction des paddings
+	table.columns, table.column {
+		.text-pad {
+			padding-left: (@textPad / 2) !important;
+			padding-right: (@textPad / 2) !important;
+		}
+	}
+
+	td.wrapper {
+		background-color: #9784E0;
+		&.first {
+			background-color: #B2E084;
+			table.columns, table.column {
+				.text-pad { padding-left: @textPad !important; }
+			}
+		}
+		&.last {
+			background-color: #E0A384;
+			table.columns, table.column {
+				.text-pad { padding-right: @textPad !important; }
+			}
+		}
+	}
+
+
+
+
+}
