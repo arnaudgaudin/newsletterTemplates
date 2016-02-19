@@ -313,25 +313,32 @@ table.secondary {
 	background-color: #aaa;
 
 	//réduction des paddings
-	table.columns, table.column {
-		.text-pad {
-			padding-left: (@textPad / 2) !important;
-			padding-right: (@textPad / 2) !important;
-		}
-	}
-
 	td.wrapper {
 		background-color: #9784E0;
+
+		table.columns, table.column {
+			.text-pad {
+				padding-left: ceil(@textPad * 2 / 3) !important;
+				padding-right: ceil(@textPad * 2 / 3) !important;
+			}
+		}
+
 		&.first {
 			background-color: #B2E084;
 			table.columns, table.column {
-				.text-pad { padding-left: @textPad !important; }
+				.text-pad {
+					padding-left: @textPad !important;
+					padding-right: ceil(@textPad / 3) !important;
+				}
 			}
 		}
 		&.last {
 			background-color: #E0A384;
 			table.columns, table.column {
-				.text-pad { padding-right: @textPad !important; }
+				.text-pad {
+					padding-left: ceil(@textPad / 3) !important;
+					padding-right: @textPad !important;
+				}
 			}
 		}
 	}
