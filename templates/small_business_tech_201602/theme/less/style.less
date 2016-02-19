@@ -301,9 +301,8 @@ table.secondary {
 
 // contentJeuConcours area
 // -------------------------
-.contentJeuConcours {
-	background-color: #f00;
-}
+// .contentJeuConcours {
+// }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentJeuConcours {
 		td.wrapper { padding-top: (@wrapperPadCollapse * 2) !important; }
@@ -315,7 +314,6 @@ table.secondary {
 // contentBottom area
 // -------------------------
 .contentBottom {
-	background-color: #0f0;
 	img { float: none; }
 
 	//réduction des paddings
@@ -370,23 +368,25 @@ table.secondary {
 
 // contentFooter area
 // -------------------------
-.contentFooter {
-	background-color: #f00;
+// .contentFooter {
+// }
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentFooter {
+		td.wrapper { padding-top: (@wrapperPadCollapse * 2) !important; }
+		table.columns td, table.column td { padding-bottom: (@columnPadCollapse * 2) !important; }
+	}
 }
 
 
 // contentLegal area
 // -------------------------
 .contentLegal {
-	background-color: #0f0;
-
 	td {
 		font-size: @fontSizeSmall;
 		line-height: (@fontSizeSmall * 1.25);
 	}
 
 	.subWrapper {
-		background-color: #00f;
 		&, td {
 			width: 100%;
 			-premailer-width: 100%;
@@ -400,8 +400,7 @@ table.secondary {
 	}
 
 	//réduction décalage vertical
-	td.wrapper { padding-top: (@wrapperPad / 2); }
-	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+	td.wrapper { padding-top: 0px; }
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentLegal {
@@ -416,8 +415,7 @@ table.secondary {
 			}
 		}
 
-		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
-		table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
+		td.wrapper { padding-top: 0px !important; }
 	}
 }
 

@@ -1377,14 +1377,6 @@ table.secondary:active td a {
   padding-bottom: 10px;
 }
 
-.contentJeuConcours {
-  background-color: #f00;
-}
-
-.contentBottom {
-  background-color: #0f0;
-}
-
 .contentBottom img {
   float: none;
 }
@@ -1412,21 +1404,9 @@ table.secondary:active td a {
   padding-right: 40px !important;
 }
 
-.contentFooter {
-  background-color: #f00;
-}
-
-.contentLegal {
-  background-color: #0f0;
-}
-
 .contentLegal td {
   font-size: 12px;
   line-height: 15px;
-}
-
-.contentLegal .subWrapper {
-  background-color: #00f;
 }
 
 .contentLegal .subWrapper,
@@ -1442,12 +1422,7 @@ table.secondary:active td a {
 }
 
 .contentLegal td.wrapper {
-  padding-top: 10px;
-}
-
-.contentLegal table.columns td,
-.contentLegal table.column td {
-  padding-bottom: 10px;
+  padding-top: 0px;
 }
 
 .contentUnsubscribe {
@@ -1783,6 +1758,15 @@ table.secondary:active td a {
     padding-right: 20px !important;
   }
 
+  table[class="body"] .contentFooter td.wrapper {
+    padding-top: 20px !important;
+  }
+
+  table[class="body"] .contentFooter table.columns td,
+  table[class="body"] .contentFooter table.column td {
+    padding-bottom: 20px !important;
+  }
+
   table[class="body"] .contentLegal img.logo_les {
     width: 100px !important;
     height: 10px !important;
@@ -1795,12 +1779,7 @@ table.secondary:active td a {
   }
 
   table[class="body"] .contentLegal td.wrapper {
-    padding-top: 5px !important;
-  }
-
-  table[class="body"] .contentLegal table.columns td,
-  table[class="body"] .contentLegal table.column td {
-    padding-bottom: 5px !important;
+    padding-top: 0px !important;
   }
 
   table[class="body"] .contentUnsubscribe td.wrapper {
