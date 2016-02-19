@@ -4,7 +4,7 @@
 
 body,
 table.body {
-  background-color: #aaaaaa;
+  background-color: #f2f3f4;
 }
 
 /**********************************************
@@ -1267,7 +1267,7 @@ a.tiny-button-link,
 table.columns .readMore td.buttonWrapper td,
 table.column .readMore td.buttonWrapper td {
   font-size: 9px;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 table.secondary td,
@@ -1325,17 +1325,17 @@ table.secondary:active td a {
 }
 
 .contentOnline {
-  background-color: #aaaaaa;
+  background-color: #f2f3f4;
 }
 
 .contentOnline,
 .contentOnline td,
 .contentOnline .inner {
-  color: #ffffff;
+  color: #9fa9ae;
 }
 
 .contentOnline a {
-  color: #ffffff;
+  color: #9fa9ae;
 }
 
 .contentOnline a .important,
@@ -1343,7 +1343,7 @@ table.secondary:active td a {
 .contentOnline a:hover,
 .contentOnline a:focus,
 .contentOnline a:active {
-  color: #ffffff !important;
+  color: #9fa9ae !important;
 }
 
 .contentOnline td {
@@ -1353,6 +1353,11 @@ table.secondary:active td a {
 
 .contentOnline td.wrapper {
   padding-top: 10px;
+}
+
+.contentOnline table.columns td,
+.contentOnline table.column td {
+  padding-bottom: 10px;
 }
 
 .contentALaUne .preTitle {
@@ -1377,11 +1382,16 @@ table.secondary:active td a {
 }
 
 .contentBottom {
-  background-color: #aaa;
+  background-color: #0f0;
 }
 
-.contentBottom td.wrapper {
-  background-color: #9784E0;
+.contentBottom img {
+  float: none;
+}
+
+.contentBottom td.wrapper table.columns,
+.contentBottom td.wrapper table.column {
+  height: 100%;
 }
 
 .contentBottom td.wrapper table.columns .text-pad,
@@ -1390,24 +1400,90 @@ table.secondary:active td a {
   padding-right: 27px !important;
 }
 
-.contentBottom td.wrapper.first {
-  background-color: #B2E084;
-}
-
 .contentBottom td.wrapper.first table.columns .text-pad,
 .contentBottom td.wrapper.first table.column .text-pad {
   padding-left: 40px !important;
   padding-right: 14px !important;
 }
 
-.contentBottom td.wrapper.last {
-  background-color: #E0A384;
-}
-
 .contentBottom td.wrapper.last table.columns .text-pad,
 .contentBottom td.wrapper.last table.column .text-pad {
   padding-left: 14px !important;
   padding-right: 40px !important;
+}
+
+.contentFooter {
+  background-color: #f00;
+}
+
+.contentLegal {
+  background-color: #0f0;
+}
+
+.contentLegal td {
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.contentLegal .subWrapper {
+  background-color: #00f;
+}
+
+.contentLegal .subWrapper,
+.contentLegal .subWrapper td {
+  width: 100%;
+  -premailer-width: 100%;
+}
+
+.contentLegal table.columns .subWrapper td,
+.contentLegal table.column .subWrapper td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.contentLegal td.wrapper {
+  padding-top: 10px;
+}
+
+.contentLegal table.columns td,
+.contentLegal table.column td {
+  padding-bottom: 10px;
+}
+
+.contentUnsubscribe {
+  background-color: #f2f3f4;
+}
+
+.contentUnsubscribe,
+.contentUnsubscribe td,
+.contentUnsubscribe .inner {
+  color: #9fa9ae;
+}
+
+.contentUnsubscribe a {
+  color: #9fa9ae;
+}
+
+.contentUnsubscribe a .important,
+.contentUnsubscribe a:visited,
+.contentUnsubscribe a:hover,
+.contentUnsubscribe a:focus,
+.contentUnsubscribe a:active {
+  color: #9fa9ae !important;
+}
+
+.contentUnsubscribe td {
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.contentUnsubscribe td.wrapper {
+  padding-top: 10px;
+}
+
+.contentUnsubscribe table.columns td,
+.contentUnsubscribe table.column td {
+  padding-bottom: 10px;
 }
 
 @media only screen and (max-width: 720px) {
@@ -1705,5 +1781,34 @@ table.secondary:active td a {
   table[class="body"] .contentBottom td.wrapper.last table.column .text-pad {
     padding-left: 20px !important;
     padding-right: 20px !important;
+  }
+
+  table[class="body"] .contentLegal img.logo_les {
+    width: 100px !important;
+    height: 10px !important;
+  }
+
+  table[class="body"] .contentLegal table.columns .subWrapper td,
+  table[class="body"] .contentLegal table.column .subWrapper td {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+  }
+
+  table[class="body"] .contentLegal td.wrapper {
+    padding-top: 5px !important;
+  }
+
+  table[class="body"] .contentLegal table.columns td,
+  table[class="body"] .contentLegal table.column td {
+    padding-bottom: 5px !important;
+  }
+
+  table[class="body"] .contentUnsubscribe td.wrapper {
+    padding-top: 5px !important;
+  }
+
+  table[class="body"] .contentUnsubscribe table.columns td,
+  table[class="body"] .contentUnsubscribe table.column td {
+    padding-bottom: 5px !important;
   }
 }

@@ -165,7 +165,7 @@ table.columns .readMore td.buttonWrapper td, table.column .readMore td.buttonWra
 }
 a.tiny-button-link, table.columns .readMore td.buttonWrapper td, table.column .readMore td.buttonWrapper td {
 	font-size: @buttonFontSizeTiny;
-	font-weight: normal;
+	font-weight: bold;
 }
 
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
@@ -265,15 +265,14 @@ table.secondary {
 // -------------------------
 .contentOnline {
 	background-color: @bodyBackground;
-	.newsletterInnerTextColor(#ffffff);
-	
+	.newsletterInnerTextColor(darken(@bodyBackground, 30%));
 	td {
 		font-size: @fontSizeSmall;
 		line-height: (@fontSizeSmall * 1.25);
 	}
 	//réduction décalage vertical
 	td.wrapper { padding-top: (@wrapperPad / 2); }
-	// table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentOnline {
@@ -316,13 +315,16 @@ table.secondary {
 // contentBottom area
 // -------------------------
 .contentBottom {
-	background-color: #aaa;
+	background-color: #0f0;
+	img { float: none; }
 
 	//réduction des paddings
 	td.wrapper {
-		background-color: #9784E0;
+		// background-color: #9784E0;
 
 		table.columns, table.column {
+			// background-color: fade(#000, 25%);
+			height: 100%;
 			.text-pad {
 				padding-left: ceil(@textPad * 2 / 3) !important;
 				padding-right: ceil(@textPad * 2 / 3) !important;
@@ -330,7 +332,7 @@ table.secondary {
 		}
 
 		&.first {
-			background-color: #B2E084;
+			// background-color: #B2E084;
 			table.columns, table.column {
 				.text-pad {
 					padding-left: @textPad !important;
@@ -339,7 +341,7 @@ table.secondary {
 			}
 		}
 		&.last {
-			background-color: #E0A384;
+			// background-color: #E0A384;
 			table.columns, table.column {
 				.text-pad {
 					padding-left: ceil(@textPad / 3) !important;
@@ -362,5 +364,80 @@ table.secondary {
 				}
 			}
 		}
+	}
+}
+
+
+// contentFooter area
+// -------------------------
+.contentFooter {
+	background-color: #f00;
+}
+
+
+// contentLegal area
+// -------------------------
+.contentLegal {
+	background-color: #0f0;
+
+	td {
+		font-size: @fontSizeSmall;
+		line-height: (@fontSizeSmall * 1.25);
+	}
+
+	.subWrapper {
+		background-color: #00f;
+		&, td {
+			width: 100%;
+			-premailer-width: 100%;
+		}
+	}
+	table.columns, table.column {
+		.subWrapper td {
+			padding-top: (@wrapperPad / 2);
+			padding-bottom: (@columnPad / 2);
+		}
+	}
+
+	//réduction décalage vertical
+	td.wrapper { padding-top: (@wrapperPad / 2); }
+	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentLegal {
+		img.logo_les {
+			width: 100px !important;
+			height: 10px !important;
+		}
+		table.columns, table.column {
+			.subWrapper td {
+				padding-top: (@wrapperPadCollapse / 2) !important;
+				padding-bottom: (@columnPadCollapse / 2) !important;
+			}
+		}
+
+		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
+		table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
+	}
+}
+
+
+// contentUnsubscribe area
+// -------------------------
+.contentUnsubscribe {
+	background-color: @bodyBackground;
+	.newsletterInnerTextColor(darken(@bodyBackground, 30%));
+	td {
+		font-size: @fontSizeSmall;
+		line-height: (@fontSizeSmall * 1.25);
+	}
+	//réduction décalage vertical en haut
+	td.wrapper { padding-top: (@wrapperPad / 2); }
+	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentUnsubscribe {
+		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
+		table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
 	}
 }
