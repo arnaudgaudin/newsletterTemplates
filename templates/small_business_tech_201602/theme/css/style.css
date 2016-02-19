@@ -1178,6 +1178,12 @@ p {
   margin-bottom: 0px;
 }
 
+.readMoreSimple {
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: bold;
+}
+
 .readMore {
   width: 100%;
   -premailer-width: 100%;
