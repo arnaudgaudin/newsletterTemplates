@@ -303,6 +303,18 @@ text-decoration: underline; cursor: pointer;
 a.link_underline:focus {
 text-decoration: underline; cursor: pointer;
 }
+.preTitle a:visited {
+color: #0098d4 !important;
+}
+.preTitle a:hover {
+color: #0098d4 !important;
+}
+.preTitle a:focus {
+color: #0098d4 !important;
+}
+.preTitle a:active {
+color: #0098d4 !important;
+}
 a.tiny-button-link:visited {
 color: #ffffff !important;
 }
@@ -547,6 +559,15 @@ color: #ffffff !important;
   table[class="body"] h6 {
     font-size: 14px !important; line-height: 15.4px !important;
   }
+  table[class="body"] .header td.wrapper {
+    padding-top: 0px !important;
+  }
+  table[class="body"] .header table.columns td {
+    padding-bottom: 0px !important;
+  }
+  table[class="body"] .header table.column td {
+    padding-bottom: 0px !important;
+  }
   table[class="body"] table.columns .readMore td.buttonWrapper {
     padding-bottom: 0px !important;
   }
@@ -574,6 +595,15 @@ color: #ffffff !important;
   table[class="body"] table.column .readMore td.buttonWrapper td {
     font-size: 9px !important; line-height: 12px !important;
   }
+  table[class="body"] .row.bordered td.wrapper {
+    padding-top: 0px !important;
+  }
+  table[class="body"] .row.bordered table.columns td {
+    padding-bottom: 0px !important;
+  }
+  table[class="body"] .row.bordered table.column td {
+    padding-bottom: 0px !important;
+  }
   table[class="body"] .contentOnline td.wrapper {
     padding-top: 5px !important;
   }
@@ -581,6 +611,15 @@ color: #ffffff !important;
     padding-bottom: 5px !important;
   }
   table[class="body"] .contentOnline table.column td {
+    padding-bottom: 5px !important;
+  }
+  table[class="body"] .contentPartenaire td.wrapper {
+    padding-top: 5px !important;
+  }
+  table[class="body"] .contentPartenaire table.columns td {
+    padding-bottom: 5px !important;
+  }
+  table[class="body"] .contentPartenaire table.column td {
     padding-bottom: 5px !important;
   }
 }
@@ -622,10 +661,10 @@ color: #ffffff !important;
 								<!-- HEADER START -->
 								<table border="0" class="row header" style="border-collapse: collapse; border-spacing: 0; display: block; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px; text-align: left; vertical-align: top; width: 100%" width="100%" cellpadding="0" cellspacing="0">
 									<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
-										<td class="wrapper last" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 18px; margin: 0; padding: 20px 0px 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+										<td class="wrapper last" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 18px; margin: 0; padding: 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
 											<table border="0" class="twelve columns" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 720px" width="720" cellpadding="0" cellspacing="0">
 												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
-													<td class="center" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 18px; margin: 0; padding: 0px 0px 20px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
+													<td class="center" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 18px; margin: 0; padding: 0px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
 														<a target="_blank" class="link_box" href="http://www.smallbusiness-tech.com" style="color: #0098d4; display: block; outline: none; text-decoration: none">
 															<img class="center" src="http://newsletter-templates.lesechos-publishing.fr/templates/small_business_tech_201602/theme/images/header-newsletter.png" alt="Small Business Tech" width="720" height="129" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: none; margin: 0 auto; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none" />
 														</a>
@@ -654,19 +693,19 @@ color: #ffffff !important;
 														<width_max>1280</width_max>
 														<height_max>580</height_max>
 														<params>
-														style="-ms-interpolation-mode: bicubic; clear: both; display: block; float: left; max-width: 100%; outline: none; text-decoration: none; width: auto" align="left" 
+														style="-ms-interpolation-mode: bicubic; clear: both; display: block; float: none; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none" 
 														</params>
 														</champ>?>
 														
 														<?<champ>
 														<type>text</type>
-														<html_avant><h5 class="preTitle" style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: bold; line-height: 19.8px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; word-break: normal" align="left"></html_avant>
+														<html_avant><h5 class="preTitle" style="color: #0098d4; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 19.8px; margin: 0; mso-line-height-rule: exactly; padding: 5px 0; text-align: left; text-transform: uppercase; word-break: normal" align="left"></html_avant>
 														<defaut>Dossier</defaut>
 														<html_apres></h5></html_apres>
 														</champ>?> <?<champ>
 														<type>lien</type>
 														<href>http://www.agipi.com</href>
-														<html_interieur_avant><h2 class="title" style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 28px; font-weight: bold; line-height: 30.8px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; word-break: normal" align="left"></html_interieur_avant>
+														<html_interieur_avant><h2 class="title" style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 28px; font-weight: bold; line-height: 30.8px; margin: 0px; mso-line-height-rule: exactly; padding: 0px 0px 5px; text-align: left; word-break: normal" align="left"></html_interieur_avant>
 														<texte>Comment bien utiliser les r&#233;seaux sociaux</texte>
 														<html_interieur_apres></h2></html_interieur_apres>
 														<params>
@@ -674,7 +713,7 @@ color: #ffffff !important;
 														</params>
 														</champ>?> <?<champ>
 														<type>textarea</type>
-														<html_avant><div class="text"></html_avant>
+														<html_avant><div class="text" style="color: #839097"></html_avant>
 														<defaut>Il y a &#224; peine plus de 10 ans, la simple notion de r&#233;seaux sociaux n'agitait que le Landernau des sp&#233;cialistes du Web. Aujourd'hui, pr&#232;s d'un quart de la population mondiale dispose d'un compte sur Facebook. Un v&#233;ritable monde parall&#232;le dans lequel chaque entreprise a la possibilit&#233; de trouver de nouveaux clients, de nouveaux partenaires ou encore de nouveaux collaborateurs. Pr&#233;sentation des principales r&#232;gles &#224; respecter dans l'univers des r&#233;seaux sociaux.&#160;(...)</defaut>
 														<html_apres></div></html_apres>
 														</champ>?> <?<champ>
@@ -740,7 +779,7 @@ color: #ffffff !important;
 														<?<champ>
 														<type>lien</type>
 														<href>http://www.agipi.com</href>
-														<html_interieur_avant><h3 class="title" style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 24px; font-weight: bold; line-height: 26.4px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; word-break: normal" align="left"></html_interieur_avant>
+														<html_interieur_avant><h3 class="title" style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 24px; font-weight: bold; line-height: 26.4px; margin: 0px; mso-line-height-rule: exactly; padding: 0px 0px 5px; text-align: left; word-break: normal" align="left"></html_interieur_avant>
 														<texte>Small Business Tech&#160;: Pour les dirigeants d'avenir et les entrepreneurs du futur</texte>
 														<html_interieur_apres></h3></html_interieur_apres>
 														<params>
@@ -748,7 +787,7 @@ color: #ffffff !important;
 														</params>
 														</champ>?> <?<champ>
 														<type>textarea</type>
-														<html_avant><div class="text"></html_avant>
+														<html_avant><div class="text" style="color: #839097"></html_avant>
 														<defaut>V&#233;ritable &#171;&#160;Hall of Tech&#160;&#187; du Salon des Entrepreneurs, Small Business Tech a &#233;t&#233; cette ann&#233;e une exp&#233;rience num&#233;rique incontournable. Pendant 2 jours, c'est un foisonnement de d&#233;mos, d'ateliers et de conf&#233;rences, permettant d'appr&#233;hender les nouveaux usages et les pratiques &#233;mergentes&#160;(...)</defaut>
 														<html_apres></div></html_apres>
 														</champ>?> <?<champ>
@@ -809,7 +848,7 @@ color: #ffffff !important;
 														<?<champ>
 														<type>lien</type>
 														<href>http://www.agipi.com</href>
-														<html_interieur_avant><h3 class="title" style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 24px; font-weight: bold; line-height: 26.4px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; word-break: normal" align="left"></html_interieur_avant>
+														<html_interieur_avant><h3 class="title" style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 24px; font-weight: bold; line-height: 26.4px; margin: 0px; mso-line-height-rule: exactly; padding: 0px 0px 5px; text-align: left; word-break: normal" align="left"></html_interieur_avant>
 														<texte>L'influence du num&#233;rique sur le monde de l'entreprise jug&#233;e par les Fran&#231;ais</texte>
 														<html_interieur_apres></h3></html_interieur_apres>
 														<params>
@@ -817,7 +856,7 @@ color: #ffffff !important;
 														</params>
 														</champ>?> <?<champ>
 														<type>textarea</type>
-														<html_avant><div class="text"></html_avant>
+														<html_avant><div class="text" style="color: #839097"></html_avant>
 														<defaut>Si les Fran&#231;ais soulignent majoritairement le r&#244;le positif jou&#233; par le num&#233;rique en mati&#232;re de productivit&#233; des entreprises, ils s'interrogent sur ses impacts sur l'emploi&#160;(...)</defaut>
 														<html_apres></div></html_apres>
 														</champ>?> <?<champ>
@@ -878,7 +917,7 @@ color: #ffffff !important;
 														<?<champ>
 														<type>lien</type>
 														<href>http://www.agipi.com</href>
-														<html_interieur_avant><h3 class="title" style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 24px; font-weight: bold; line-height: 26.4px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; word-break: normal" align="left"></html_interieur_avant>
+														<html_interieur_avant><h3 class="title" style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 24px; font-weight: bold; line-height: 26.4px; margin: 0px; mso-line-height-rule: exactly; padding: 0px 0px 5px; text-align: left; word-break: normal" align="left"></html_interieur_avant>
 														<texte>Le &#171;&#160;cross-device&#160;&#187;, cl&#233; de voute du m-commerce</texte>
 														<html_interieur_apres></h3></html_interieur_apres>
 														<params>
@@ -886,7 +925,7 @@ color: #ffffff !important;
 														</params>
 														</champ>?> <?<champ>
 														<type>textarea</type>
-														<html_avant><div class="text"></html_avant>
+														<html_avant><div class="text" style="color: #839097"></html_avant>
 														<defaut>Les sp&#233;cialistes du e-marketing appellent cela le &#171;&#160;cross-device&#160;&#187;. Derri&#232;re cette expression anglo-saxonne se cache un comportement de consommation conduisant un client &#224; utiliser successivement plusieurs appareils connect&#233;s&#160;(...)</defaut>
 														<html_apres></div></html_apres>
 														</champ>?> <?<champ>
@@ -918,15 +957,15 @@ color: #ffffff !important;
 								<!-- ACTUALIT&#201;S END -->
 
 								<!-- PARTENAIRE START -->
-								<table border="0" class="row bordered" style="border-collapse: collapse; border-spacing: 0; display: block; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px; text-align: left; vertical-align: top; width: 100%" width="100%" cellpadding="0" cellspacing="0">
+								<table border="0" class="row bordered" style="background: #0098d4; border-collapse: collapse; border-spacing: 0; display: block; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px; text-align: left; vertical-align: top; width: 100%" bgcolor="#0098d4" width="100%" cellpadding="0" cellspacing="0">
 									<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
-										<td class="wrapper first last" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 18px; margin: 0; padding: 20px 0px 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+										<td class="wrapper first last" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 18px; margin: 0; padding: 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
 											<table border="0" class="twelve columns" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 720px" width="720" cellpadding="0" cellspacing="0">
 												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
-													<td class="text-pad" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 18px; margin: 0; padding: 0px 40px 20px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+													<td class="text-pad" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 18px; margin: 0; padding: 0px 40px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
 														<?<champ>
 														<type>text</type>
-														<html_avant><table border="0" class="subWrapper" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top" cellpadding="0" cellspacing="0"><tr style="padding: 0; text-align: left; vertical-align: top" align="left"><td style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 18px; margin: 0; padding: 0px 0px 20px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top"><h5 class="preTitle" style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: bold; line-height: 19.8px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; word-break: normal" align="left"></html_avant>
+														<html_avant><table border="0" class="subWrapper" style="-rheight: 19.8px; background: #f00; border-collapse: collapse; border-spacing: 0; empty-cells: hide; height: 19.8px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top" bgcolor="#f00" cellpadding="0" cellspacing="0"><tr style="padding: 0; text-align: left; vertical-align: top" align="left"><td style="-moz-hyphens: none; -ms-hyphens: none; -rheight: 19.8px; -webkit-hyphens: none; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; height: 19.8px; hyphens: none; line-height: 18px; margin: 0; padding: 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top"><h5 class="preTitle" style="color: #0098d4; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: bold; line-height: 19.8px; margin: 0; mso-line-height-rule: exactly; padding: 0px; text-align: left; text-transform: none; word-break: normal" align="left"></html_avant>
 														<defaut>Partenaire</defaut>
 														<html_apres></h5></td></tr></table></html_apres>
 														</champ>?>
@@ -937,16 +976,16 @@ color: #ffffff !important;
 										</td>
 									</tr>
 								</table>
-								<table border="0" class="row contentPartenaire" style="border-collapse: collapse; border-spacing: 0; display: block; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px; text-align: left; vertical-align: top; width: 100%" width="100%" cellpadding="0" cellspacing="0">
+								<table border="0" class="row contentPartenaire" style="background: #0f0; border-collapse: collapse; border-spacing: 0; display: block; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px; text-align: left; vertical-align: top; width: 100%" bgcolor="#0f0" width="100%" cellpadding="0" cellspacing="0">
 									<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
-										<td class="wrapper" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 18px; margin: 0; padding: 20px 0 0px 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+										<td class="wrapper" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 18px; margin: 0; padding: 10px 0 0px 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
 											<table border="0" class="six columns" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 360px" width="360" cellpadding="0" cellspacing="0">
 												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
-													<td class="text-pad-left" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 18px; margin: 0; padding: 0px 0px 20px 40px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+													<td class="text-pad-left" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 18px; margin: 0; padding: 0px 0px 10px 40px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
 														<?<champ>
 														<type>lien</type>
 														<href>http://www.agipi.com</href>
-														<html_interieur_avant><h3 class="title" style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 24px; font-weight: bold; line-height: 26.4px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; word-break: normal" align="left"></html_interieur_avant>
+														<html_interieur_avant><h3 class="title" style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 24px; font-weight: bold; line-height: 26.4px; margin: 0px; mso-line-height-rule: exactly; padding: 0px 0px 5px; text-align: left; word-break: normal" align="left"></html_interieur_avant>
 														<texte>[Infographie] Les TPE/PME sur internet&#160;: bilan et perspectives</texte>
 														<html_interieur_apres></h3></html_interieur_apres>
 														<params>
@@ -954,7 +993,7 @@ color: #ffffff !important;
 														</params>
 														</champ>?> <?<champ>
 														<type>textarea</type>
-														<html_avant><div class="text"></html_avant>
+														<html_avant><div class="text" style="color: #839097"></html_avant>
 														<defaut>Augmenter sa visibilit&#233;, toucher de nouveaux clients, vendre plus facilement &#224; l'international... Si les b&#233;n&#233;fices d'une pr&#233;sence en ligne sont aujourd'hui largement reconnus, les TPE/PME fran&#231;aises sont toujours moins pr&#233;sentes sur le web que leurs voisines europ&#233;ennes&#160;(...)</defaut>
 														<html_apres></div></html_apres>
 														</champ>?> <?<champ>
@@ -980,13 +1019,13 @@ color: #ffffff !important;
 												</tr>
 											</table>
 										</td>
-										<td class="wrapper last" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 18px; margin: 0; padding: 20px 0px 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+										<td class="wrapper last" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 18px; margin: 0; padding: 10px 0px 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
 											<table border="0" class="six columns" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 360px" width="360" cellpadding="0" cellspacing="0">
 												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
-													<td class="text-pad" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 18px; margin: 0; padding: 0px 40px 20px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+													<td class="text-pad" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 18px; margin: 0; padding: 0px 40px 10px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
 														<?<champ> 
 														<type>image</type>
-														<src>http://newsletter-templates.lesechos-publishing.fr/templates/small_business_tech_201602/theme/images/image-partenaire.jpg</src>
+														<src>http://newsletter-templates.lesechos-publishing.fr/templates/small_business_tech_201602/theme/images/image-partenaire.png</src>
 														<lien>http://www.agipi.com</lien>
 														<survol></survol>
 														<width>280</width>
@@ -1005,12 +1044,12 @@ color: #ffffff !important;
 										</td>
 									</tr>
 								</table>
-								<table border="0" class="row bordered" style="border-collapse: collapse; border-spacing: 0; display: block; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px; text-align: left; vertical-align: top; width: 100%" width="100%" cellpadding="0" cellspacing="0">
+								<table border="0" class="row bordered" style="background: #0098d4; border-collapse: collapse; border-spacing: 0; display: block; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px; text-align: left; vertical-align: top; width: 100%" bgcolor="#0098d4" width="100%" cellpadding="0" cellspacing="0">
 									<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
-										<td class="wrapper first last" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 18px; margin: 0; padding: 20px 0px 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+										<td class="wrapper first last" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 18px; margin: 0; padding: 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
 											<table border="0" class="twelve columns" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 720px" width="720" cellpadding="0" cellspacing="0">
 												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
-													<td class="text-pad" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 18px; margin: 0; padding: 0px 40px 20px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">&#160;</td>
+													<td class="text-pad" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 18px; margin: 0; padding: 0px 40px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">&#160;</td>
 													<td class="expander" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 18px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word" align="left" valign="top" width="1"></td>
 												</tr>
 											</table>
@@ -1061,7 +1100,7 @@ color: #ffffff !important;
 														<?<champ>
 														<type>lien</type>
 														<href>http://www.agipi.com</href>
-														<html_interieur_avant><h6 class="title" style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold; line-height: 17.6px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; word-break: normal" align="left"></html_interieur_avant>
+														<html_interieur_avant><h6 class="title" style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold; line-height: 17.6px; margin: 0px; mso-line-height-rule: exactly; padding: 5px 0px; text-align: left; word-break: normal" align="left"></html_interieur_avant>
 														<texte>Mot de passe&#160;: les r&#232;gles &#224; suivre</texte>
 														<html_interieur_apres></h6></html_interieur_apres>
 														<params>
@@ -1110,7 +1149,7 @@ color: #ffffff !important;
 														<?<champ>
 														<type>lien</type>
 														<href>http://www.agipi.com</href>
-														<html_interieur_avant><h6 class="title" style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold; line-height: 17.6px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; word-break: normal" align="left"></html_interieur_avant>
+														<html_interieur_avant><h6 class="title" style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold; line-height: 17.6px; margin: 0px; mso-line-height-rule: exactly; padding: 5px 0px; text-align: left; word-break: normal" align="left"></html_interieur_avant>
 														<texte>Les professionnels sont accros aux e-mails</texte>
 														<html_interieur_apres></h6></html_interieur_apres>
 														<params>
@@ -1159,7 +1198,7 @@ color: #ffffff !important;
 														<?<champ>
 														<type>lien</type>
 														<href>http://www.agipi.com</href>
-														<html_interieur_avant><h6 class="title" style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold; line-height: 17.6px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; word-break: normal" align="left"></html_interieur_avant>
+														<html_interieur_avant><h6 class="title" style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold; line-height: 17.6px; margin: 0px; mso-line-height-rule: exactly; padding: 5px 0px; text-align: left; word-break: normal" align="left"></html_interieur_avant>
 														<texte>L'acc&#232;s aux march&#233;s des grands comptes reste d&#233;licat pour les PME du num&#233;rique</texte>
 														<html_interieur_apres></h6></html_interieur_apres>
 														<params>

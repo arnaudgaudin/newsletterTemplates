@@ -1125,6 +1125,53 @@ h6 {
   line-height: 17.6px;
 }
 
+.header td.wrapper {
+  padding-top: 0px;
+}
+
+.header table.columns td,
+.header table.column td {
+  padding-bottom: 0px;
+}
+
+.preTitle {
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #0098d4;
+  padding-bottom: 5px;
+}
+
+.preTitle a {
+  color: #0098d4;
+}
+
+.preTitle a .important,
+.preTitle a:visited,
+.preTitle a:hover,
+.preTitle a:focus,
+.preTitle a:active {
+  color: #0098d4 !important;
+}
+
+.title {
+  margin: 0px;
+  padding: 0px;
+  padding-bottom: 5px;
+}
+
+.readMore + .title,
+.readMore + * + .title {
+  padding-top: 10px;
+}
+
+img + .title {
+  padding-top: 5px;
+}
+
+.text {
+  color: #839097;
+}
+
 p {
   margin: 0px;
   padding: 0px;
@@ -1230,6 +1277,35 @@ table.secondary:active td a {
   color: #ffffff !important;
 }
 
+.row.bordered {
+  background-color: #0098d4;
+}
+
+.row.bordered h5.preTitle {
+  font-weight: bold;
+  text-transform: none;
+  padding: 0px;
+}
+
+.row.bordered .subWrapper {
+  background-color: #f00;
+}
+
+.row.bordered .subWrapper,
+.row.bordered .subWrapper td {
+  height: 19.8px;
+  -rheight: 19.8px;
+}
+
+.row.bordered td.wrapper {
+  padding-top: 0px;
+}
+
+.row.bordered table.columns td,
+.row.bordered table.column td {
+  padding-bottom: 0px;
+}
+
 .contentOnline {
   background-color: #aaaaaa;
 }
@@ -1263,6 +1339,27 @@ table.secondary:active td a {
 
 .contentOnline table.columns td,
 .contentOnline table.column td {
+  padding-bottom: 10px;
+}
+
+.contentALaUne .preTitle {
+  padding-top: 5px;
+}
+
+.contentALaUne img {
+  float: none;
+}
+
+.contentPartenaire {
+  background-color: #0f0;
+}
+
+.contentPartenaire td.wrapper {
+  padding-top: 10px;
+}
+
+.contentPartenaire table.columns td,
+.contentPartenaire table.column td {
   padding-bottom: 10px;
 }
 
@@ -1474,6 +1571,15 @@ table.secondary:active td a {
     line-height: 15.4px !important;
   }
 
+  table[class="body"] .header td.wrapper {
+    padding-top: 0px !important;
+  }
+
+  table[class="body"] .header table.columns td,
+  table[class="body"] .header table.column td {
+    padding-bottom: 0px !important;
+  }
+
   table[class="body"] table.columns .readMore td.buttonWrapper,
   table[class="body"] table.column .readMore td.buttonWrapper {
     padding-bottom: 0px !important;
@@ -1499,12 +1605,30 @@ table.secondary:active td a {
     line-height: 12px !important;
   }
 
+  table[class="body"] .row.bordered td.wrapper {
+    padding-top: 0px !important;
+  }
+
+  table[class="body"] .row.bordered table.columns td,
+  table[class="body"] .row.bordered table.column td {
+    padding-bottom: 0px !important;
+  }
+
   table[class="body"] .contentOnline td.wrapper {
     padding-top: 5px !important;
   }
 
   table[class="body"] .contentOnline table.columns td,
   table[class="body"] .contentOnline table.column td {
+    padding-bottom: 5px !important;
+  }
+
+  table[class="body"] .contentPartenaire td.wrapper {
+    padding-top: 5px !important;
+  }
+
+  table[class="body"] .contentPartenaire table.columns td,
+  table[class="body"] .contentPartenaire table.column td {
     padding-bottom: 5px !important;
   }
 }
