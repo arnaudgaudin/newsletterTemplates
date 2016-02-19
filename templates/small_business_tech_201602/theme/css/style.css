@@ -1285,6 +1285,7 @@ table.secondary:active td a {
   font-weight: bold;
   text-transform: none;
   padding: 0px;
+  line-height: 20px;
 }
 
 .row.bordered .subWrapper {
@@ -1293,8 +1294,8 @@ table.secondary:active td a {
 
 .row.bordered .subWrapper,
 .row.bordered .subWrapper td {
-  height: 19.8px;
-  -rheight: 19.8px;
+  height: 20px;
+  -premailer-height: 20;
 }
 
 .row.bordered td.wrapper {

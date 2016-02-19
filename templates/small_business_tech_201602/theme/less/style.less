@@ -203,14 +203,15 @@ table.secondary {
 		font-weight: bold;
 		text-transform: none;
 		padding: 0px;
+		line-height: ceil(@headingsFontSizeH5 * 1.1);
 	}
 
 	//container du preTitle
 	.subWrapper {
 		background-color: #f00;
 		&, td {
-			height: (@headingsFontSizeH5 * 1.1);
-			-rheight: (@headingsFontSizeH5 * 1.1);
+			height: ceil(@headingsFontSizeH5 * 1.1);
+			-premailer-height: unit(ceil(@headingsFontSizeH5 * 1.1));
 		}
 	}
 
