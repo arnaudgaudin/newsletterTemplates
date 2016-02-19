@@ -305,6 +305,12 @@ table.secondary {
 .contentJeuConcours {
 	background-color: #f00;
 }
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentJeuConcours {
+		td.wrapper { padding-top: (@wrapperPadCollapse * 2) !important; }
+		table.columns td, table.column td { padding-bottom: (@columnPadCollapse * 2) !important; }
+	}
+}
 
 
 // contentBottom area
@@ -342,8 +348,19 @@ table.secondary {
 			}
 		}
 	}
+}
 
-
-
-
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentBottom {
+		td.wrapper {
+			&, &.first, &.last {
+				table.columns, table.column {
+					.text-pad {
+						padding-left: @textPadCollapse !important;
+						padding-right: @textPadCollapse !important;
+					}
+				}
+			}
+		}
+	}
 }

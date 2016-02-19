@@ -1687,4 +1687,23 @@ table.secondary:active td a {
   table[class="body"] .contentOnline table.column td {
     padding-bottom: 5px !important;
   }
+
+  table[class="body"] .contentJeuConcours td.wrapper {
+    padding-top: 20px !important;
+  }
+
+  table[class="body"] .contentJeuConcours table.columns td,
+  table[class="body"] .contentJeuConcours table.column td {
+    padding-bottom: 20px !important;
+  }
+
+  table[class="body"] .contentBottom td.wrapper table.columns .text-pad,
+  table[class="body"] .contentBottom td.wrapper.first table.columns .text-pad,
+  table[class="body"] .contentBottom td.wrapper.last table.columns .text-pad,
+  table[class="body"] .contentBottom td.wrapper table.column .text-pad,
+  table[class="body"] .contentBottom td.wrapper.first table.column .text-pad,
+  table[class="body"] .contentBottom td.wrapper.last table.column .text-pad {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
 }
