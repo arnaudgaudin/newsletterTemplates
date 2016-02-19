@@ -104,6 +104,14 @@ p {
 	margin-bottom: 0px;
 }
 
+hr.border {
+	margin: 0;
+	//débuggage bordure pour PostaNova
+	background-color: transparent;
+	height: 0;
+	border-bottom: 1px solid @hrBorder;
+}
+
 //lien de suivi simple sans bouton
 .readMoreSimple {
 	font-size: @fontSizeSmall;
@@ -368,10 +376,27 @@ table.secondary {
 
 // contentFooter area
 // -------------------------
-// .contentFooter {
-// }
+.contentFooter {
+	.subWrapper {
+		&, td {
+			width: 100%;
+			height: (@wrapperPad / 2);
+			-premailer-width: 100%;
+			-premailer-height: unit(@wrapperPad / 2);
+		}
+	}
+	table.columns, table.column {
+		.subWrapper td { padding: 0px; }
+	}
+}
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentFooter {
+		.subWrapper {
+			&, td { height: (@wrapperPadCollapse / 2) !important; }
+		}
+		table.columns, table.column {
+			.subWrapper td { padding: 0px !important; }
+		}
 		td.wrapper { padding-top: (@wrapperPadCollapse * 2) !important; }
 		table.columns td, table.column td { padding-bottom: (@columnPadCollapse * 2) !important; }
 	}

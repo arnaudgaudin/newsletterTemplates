@@ -103,8 +103,8 @@ td {
 }
 
 hr {
-  color: #d9d9d9;
-  background-color: #d9d9d9;
+  color: #0098d4;
+  background-color: #0098d4;
   height: 1px;
   border: none;
 }
@@ -1178,6 +1178,13 @@ p {
   margin-bottom: 0px;
 }
 
+hr.border {
+  margin: 0;
+  background-color: transparent;
+  height: 0;
+  border-bottom: 1px solid #0098d4;
+}
+
 .readMoreSimple {
   font-size: 12px;
   line-height: 15px;
@@ -1402,6 +1409,19 @@ table.secondary:active td a {
 .contentBottom td.wrapper.last table.column .text-pad {
   padding-left: 14px !important;
   padding-right: 40px !important;
+}
+
+.contentFooter .subWrapper,
+.contentFooter .subWrapper td {
+  width: 100%;
+  height: 10px;
+  -premailer-width: 100%;
+  -premailer-height: 10;
+}
+
+.contentFooter table.columns .subWrapper td,
+.contentFooter table.column .subWrapper td {
+  padding: 0px;
 }
 
 .contentLegal td {
@@ -1756,6 +1776,16 @@ table.secondary:active td a {
   table[class="body"] .contentBottom td.wrapper.last table.column .text-pad {
     padding-left: 20px !important;
     padding-right: 20px !important;
+  }
+
+  table[class="body"] .contentFooter .subWrapper,
+  table[class="body"] .contentFooter .subWrapper td {
+    height: 5px !important;
+  }
+
+  table[class="body"] .contentFooter table.columns .subWrapper td,
+  table[class="body"] .contentFooter table.column .subWrapper td {
+    padding: 0px !important;
   }
 
   table[class="body"] .contentFooter td.wrapper {
