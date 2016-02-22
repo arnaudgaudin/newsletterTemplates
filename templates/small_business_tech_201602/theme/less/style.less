@@ -115,12 +115,10 @@ hr.border {
 }
 
 .hrBorderWrapper {
-	background-color: #ccc;
 	&, td {
 		width: 100%;
 		-premailer-width: 100%;
 	}
-	// table.columns & td, table.column & td { padding: 0px; }
 
 	table.columns &, table.column & {
 		&.first {
@@ -346,12 +344,10 @@ table.secondary {
 	}
 
 	//réduction décalage vertical
-	td.wrapper { padding-top: (@wrapperPad / 2); }
 	table.columns td, table.column td { padding-bottom: 0px; }
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentIntroduction {
-		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
 		table.columns td, table.column td { padding-bottom: 0px !important; }
 	}
 }
@@ -365,40 +361,18 @@ table.secondary {
 }
 
 
-// contentActualites area
-// -------------------------
-.contentActualites {
-	background-color: #0f0;
-}
-
-
 // contentPartenaire area
 // -------------------------
 .contentPartenaire {
-	background-color: #00f;
 	//réduction décalage vertical
 	td.wrapper { padding-top: (@wrapperPad / 2); }
 	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
 }
 
 
-// contentJeuConcours area
-// -------------------------
-.contentJeuConcours {
-	background-color: #f00;
-}
-@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
-	table[class="body"] .contentJeuConcours {
-		td.wrapper { padding-top: (@wrapperPadCollapse * 2) !important; }
-		table.columns td, table.column td { padding-bottom: (@columnPadCollapse * 2) !important; }
-	}
-}
-
-
 // contentBottom area
 // -------------------------
 .contentBottom {
-	background-color: #0f0;
 	img { float: none; }
 
 	//réduction des paddings
@@ -450,17 +424,9 @@ table.secondary {
 }
 
 
-// contentFooter area
-// -------------------------
-.contentFooter {
-	background-color: #f00;
-}
-
-
 // contentLegal area
 // -------------------------
 .contentLegal {
-	background-color: #0f0;
 	td {
 		font-size: @fontSizeSmall;
 		line-height: (@fontSizeSmall * 1.25);
