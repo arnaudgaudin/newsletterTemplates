@@ -340,20 +340,19 @@ table.secondary {
 // contentIntroduction area
 // -------------------------
 .contentIntroduction {
-	background-color: #f00;
 	td {
 		font-size: @fontSizeSmall;
 		line-height: (@fontSizeSmall * 1.25);
 	}
 
-	//suppression décalage en trop
-	// td.wrapper { padding-top: 0px; }
-	// table.columns td, table.column td { padding-bottom: 0px; }
+	//réduction décalage vertical
+	td.wrapper { padding-top: (@wrapperPad / 2); }
+	table.columns td, table.column td { padding-bottom: 0px; }
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentIntroduction {
-		// td.wrapper { padding-top: 0px !important; }
-		// table.columns td, table.column td { padding-bottom: 0px !important; }
+		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
+		table.columns td, table.column td { padding-bottom: 0px !important; }
 	}
 }
 
@@ -363,20 +362,20 @@ table.secondary {
 .contentALaUne {
 	.preTitle { padding-top: 5px; }
 	img { float: none; }
-
-	//réduction décalage vertical
-	td.wrapper { padding-top: (@wrapperPad / 2); }
 }
-@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
-	table[class="body"] .contentALaUne {
-		// td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
-	}
+
+
+// contentActualites area
+// -------------------------
+.contentActualites {
+	background-color: #0f0;
 }
 
 
 // contentPartenaire area
 // -------------------------
 .contentPartenaire {
+	background-color: #00f;
 	//réduction décalage vertical
 	td.wrapper { padding-top: (@wrapperPad / 2); }
 	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
@@ -385,8 +384,9 @@ table.secondary {
 
 // contentJeuConcours area
 // -------------------------
-// .contentJeuConcours {
-// }
+.contentJeuConcours {
+	background-color: #f00;
+}
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentJeuConcours {
 		td.wrapper { padding-top: (@wrapperPadCollapse * 2) !important; }
@@ -454,15 +454,6 @@ table.secondary {
 // -------------------------
 .contentFooter {
 	background-color: #f00;
-	//suppression décalage en trop
-	// td.wrapper { padding-top: 0px; }
-	// table.columns td, table.column td { padding-bottom: 0px; }
-}
-@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
-	table[class="body"] .contentFooter {
-		// td.wrapper { padding-top: (@wrapperPadCollapse * 2) !important; }
-		// table.columns td, table.column td { padding-bottom: (@columnPadCollapse * 2) !important; }
-	}
 }
 
 
@@ -482,10 +473,7 @@ table.secondary {
 		}
 	}
 	table.columns, table.column {
-		.subWrapper td {
-			padding-top: (@wrapperPad / 2);
-			padding-bottom: (@columnPad / 2);
-		}
+		.subWrapper td { padding-bottom: (@columnPad / 2); }
 	}
 
 	//réduction décalage vertical
@@ -498,12 +486,8 @@ table.secondary {
 			height: 10px !important;
 		}
 		table.columns, table.column {
-			.subWrapper td {
-				padding-top: (@wrapperPadCollapse / 2) !important;
-				padding-bottom: (@columnPadCollapse / 2) !important;
-			}
+			.subWrapper td { padding-bottom: (@columnPadCollapse / 2) !important; }
 		}
-
 		td.wrapper { padding-top: 0px !important; }
 	}
 }

@@ -1390,13 +1390,18 @@ table.secondary:active td a {
   padding-bottom: 10px;
 }
 
-.contentIntroduction {
-  background-color: #f00;
-}
-
 .contentIntroduction td {
   font-size: 12px;
   line-height: 15px;
+}
+
+.contentIntroduction td.wrapper {
+  padding-top: 10px;
+}
+
+.contentIntroduction table.columns td,
+.contentIntroduction table.column td {
+  padding-bottom: 0px;
 }
 
 .contentALaUne .preTitle {
@@ -1407,8 +1412,12 @@ table.secondary:active td a {
   float: none;
 }
 
-.contentALaUne td.wrapper {
-  padding-top: 10px;
+.contentActualites {
+  background-color: #0f0;
+}
+
+.contentPartenaire {
+  background-color: #00f;
 }
 
 .contentPartenaire td.wrapper {
@@ -1418,6 +1427,10 @@ table.secondary:active td a {
 .contentPartenaire table.columns td,
 .contentPartenaire table.column td {
   padding-bottom: 10px;
+}
+
+.contentJeuConcours {
+  background-color: #f00;
 }
 
 .contentBottom {
@@ -1472,7 +1485,6 @@ table.secondary:active td a {
 
 .contentLegal table.columns .subWrapper td,
 .contentLegal table.column .subWrapper td {
-  padding-top: 10px;
   padding-bottom: 10px;
 }
 
@@ -1806,6 +1818,15 @@ table.secondary:active td a {
     padding-bottom: 5px !important;
   }
 
+  table[class="body"] .contentIntroduction td.wrapper {
+    padding-top: 5px !important;
+  }
+
+  table[class="body"] .contentIntroduction table.columns td,
+  table[class="body"] .contentIntroduction table.column td {
+    padding-bottom: 0px !important;
+  }
+
   table[class="body"] .contentJeuConcours td.wrapper {
     padding-top: 20px !important;
   }
@@ -1832,7 +1853,6 @@ table.secondary:active td a {
 
   table[class="body"] .contentLegal table.columns .subWrapper td,
   table[class="body"] .contentLegal table.column .subWrapper td {
-    padding-top: 5px !important;
     padding-bottom: 5px !important;
   }
 
