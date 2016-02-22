@@ -1179,6 +1179,7 @@ p {
 }
 
 hr.border {
+  background-color: #0f0;
   margin: 0;
   background-color: transparent;
   height: 0;
@@ -1192,14 +1193,19 @@ hr.border {
 .hrBorderWrapper,
 .hrBorderWrapper td {
   width: 100%;
-  height: 10px;
   -premailer-width: 100%;
-  -premailer-height: 10;
 }
 
-table.columns .hrBorderWrapper td,
-table.column .hrBorderWrapper td {
-  padding: 0px;
+table.columns .hrBorderWrapper.first td,
+table.column .hrBorderWrapper.first td {
+  padding-top: 0px;
+  padding-bottom: 10px;
+}
+
+table.columns .hrBorderWrapper.last td,
+table.column .hrBorderWrapper.last td {
+  padding-top: 10px;
+  padding-bottom: 0px;
 }
 
 .readMoreSimple {
@@ -1727,14 +1733,16 @@ table.secondary:active td a {
     padding-bottom: 0px !important;
   }
 
-  table[class="body"] .hrBorderWrapper,
-  table[class="body"] .hrBorderWrapper td {
-    height: 5px !important;
+  table[class="body"] table.columns .hrBorderWrapper.first td,
+  table[class="body"] table.column .hrBorderWrapper.first td {
+    padding-top: 0px !important;
+    padding-bottom: 5px !important;
   }
 
-  table[class="body"] table.columns .hrBorderWrapper td,
-  table[class="body"] table.column .hrBorderWrapper td {
-    padding: 0px !important;
+  table[class="body"] table.columns .hrBorderWrapper.last td,
+  table[class="body"] table.column .hrBorderWrapper.last td {
+    padding-top: 5px !important;
+    padding-bottom: 0px !important;
   }
 
   table[class="body"] table.columns .readMore td.buttonWrapper,

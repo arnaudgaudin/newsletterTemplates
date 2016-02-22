@@ -106,6 +106,7 @@ p {
 
 //bordure inclue dans hr
 hr.border {
+	background-color: #0f0;
 	margin: 0;
 	//débuggage bordure pour PostaNova
 	background-color: transparent;
@@ -117,20 +118,46 @@ hr.border {
 	background-color: #ccc;
 	&, td {
 		width: 100%;
-		height: (@wrapperPad / 2);
 		-premailer-width: 100%;
-		-premailer-height: unit(@wrapperPad / 2);
 	}
-	table.columns & td, table.column & td { padding: 0px; }
+	// table.columns & td, table.column & td { padding: 0px; }
+
+	table.columns &, table.column & {
+		&.first {
+			td {
+				padding-top: 0px;
+				padding-bottom: (@wrapperPad / 2);
+			}
+		}
+		&.last {
+			td {
+				padding-top: (@wrapperPad / 2);
+				padding-bottom: 0px;
+			}
+		}
+	}
 }
 
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] {
-		.hrBorderWrapper {
-			&, td { height: (@wrapperPadCollapse / 2) !important; }
-		}
+		// .hrBorderWrapper {
+		// 	// &, td { height: (@wrapperPadCollapse / 2) !important; }
+		// }
 		table.columns, table.column {
-			.hrBorderWrapper td { padding: 0px !important; }
+			.hrBorderWrapper {
+				&.first {
+					td {
+						padding-top: 0px !important;
+						padding-bottom: (@wrapperPadCollapse / 2) !important;
+					}
+				}
+				&.last {
+					td {
+						padding-top: (@wrapperPadCollapse / 2) !important;
+						padding-bottom: 0px !important;
+					}
+				}
+			}
 		}
 	}
 }
