@@ -1367,6 +1367,36 @@ table.secondary:active td a {
   padding-bottom: 10px;
 }
 
+.contentIntroduction {
+  background-color: #f00;
+}
+
+.contentIntroduction td {
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.contentIntroduction .subWrapper,
+.contentIntroduction .subWrapper td {
+  width: 100%;
+  -premailer-width: 100%;
+}
+
+.contentIntroduction table.columns .subWrapper td,
+.contentIntroduction table.column .subWrapper td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.contentIntroduction td.wrapper {
+  padding-top: 0px;
+}
+
+.contentIntroduction table.columns td,
+.contentIntroduction table.column td {
+  padding-bottom: 0px;
+}
+
 .contentALaUne .preTitle {
   padding-top: 5px;
 }
@@ -1422,6 +1452,10 @@ table.secondary:active td a {
 .contentFooter table.columns .subWrapper td,
 .contentFooter table.column .subWrapper td {
   padding: 0px;
+}
+
+.contentLegal {
+  background-color: #f00;
 }
 
 .contentLegal td {
@@ -1757,6 +1791,21 @@ table.secondary:active td a {
   table[class="body"] .contentOnline table.columns td,
   table[class="body"] .contentOnline table.column td {
     padding-bottom: 5px !important;
+  }
+
+  table[class="body"] .contentIntroduction table.columns .subWrapper td,
+  table[class="body"] .contentIntroduction table.column .subWrapper td {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+  }
+
+  table[class="body"] .contentIntroduction td.wrapper {
+    padding-top: 0px !important;
+  }
+
+  table[class="body"] .contentIntroduction table.columns td,
+  table[class="body"] .contentIntroduction table.column td {
+    padding-bottom: 0px !important;
   }
 
   table[class="body"] .contentJeuConcours td.wrapper {
