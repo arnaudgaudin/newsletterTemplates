@@ -1291,7 +1291,8 @@ table.column .readMore td.buttonWrapper td p.MsoNormal {
 
 a.tiny-button-link,
 table.columns .readMore td.buttonWrapper td,
-table.column .readMore td.buttonWrapper td {
+table.column .readMore td.buttonWrapper td,
+table.tiny-button td a {
   font-size: 9px;
   font-weight: bold;
 }
