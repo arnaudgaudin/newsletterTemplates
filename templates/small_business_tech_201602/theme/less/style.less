@@ -104,12 +104,35 @@ p {
 	margin-bottom: 0px;
 }
 
+//bordure inclue dans hr
 hr.border {
 	margin: 0;
 	//débuggage bordure pour PostaNova
 	background-color: transparent;
 	height: 0;
 	border-bottom: 1px solid @hrBorder;
+}
+
+.hrBorderWrapper {
+	background-color: #ccc;
+	&, td {
+		width: 100%;
+		height: (@wrapperPad / 2);
+		-premailer-width: 100%;
+		-premailer-height: unit(@wrapperPad / 2);
+	}
+	table.columns & td, table.column & td { padding: 0px; }
+}
+
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] {
+		.hrBorderWrapper {
+			&, td { height: (@wrapperPadCollapse / 2) !important; }
+		}
+		table.columns, table.column {
+			.hrBorderWrapper td { padding: 0px !important; }
+		}
+	}
 }
 
 //lien de suivi simple sans bouton
@@ -299,34 +322,14 @@ table.secondary {
 		line-height: (@fontSizeSmall * 1.25);
 	}
 
-	.subWrapper {
-		&, td {
-			width: 100%;
-			-premailer-width: 100%;
-		}
-	}
-	table.columns, table.column {
-		.subWrapper td {
-			padding-top: (@wrapperPad / 2);
-			padding-bottom: (@columnPad / 2);
-		}
-	}
-
 	//suppression décalage en trop
-	td.wrapper { padding-top: 0px; }
-	table.columns td, table.column td { padding-bottom: 0px; }
+	// td.wrapper { padding-top: 0px; }
+	// table.columns td, table.column td { padding-bottom: 0px; }
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentIntroduction {
-		table.columns, table.column {
-			.subWrapper td {
-				padding-top: (@wrapperPadCollapse / 2) !important;
-				padding-bottom: (@columnPadCollapse / 2) !important;
-			}
-		}
-
-		td.wrapper { padding-top: 0px !important; }
-		table.columns td, table.column td { padding-bottom: 0px !important; }
+		// td.wrapper { padding-top: 0px !important; }
+		// table.columns td, table.column td { padding-bottom: 0px !important; }
 	}
 }
 
@@ -336,6 +339,14 @@ table.secondary {
 .contentALaUne {
 	.preTitle { padding-top: 5px; }
 	img { float: none; }
+
+	//réduction décalage vertical
+	td.wrapper { padding-top: (@wrapperPad / 2); }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentALaUne {
+		// td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
+	}
 }
 
 
@@ -363,6 +374,7 @@ table.secondary {
 // contentBottom area
 // -------------------------
 .contentBottom {
+	background-color: #0f0;
 	img { float: none; }
 
 	//réduction des paddings
@@ -398,7 +410,6 @@ table.secondary {
 		}
 	}
 }
-
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentBottom {
 		td.wrapper {
@@ -418,28 +429,15 @@ table.secondary {
 // contentFooter area
 // -------------------------
 .contentFooter {
-	.subWrapper {
-		&, td {
-			width: 100%;
-			height: (@wrapperPad / 2);
-			-premailer-width: 100%;
-			-premailer-height: unit(@wrapperPad / 2);
-		}
-	}
-	table.columns, table.column {
-		.subWrapper td { padding: 0px; }
-	}
+	background-color: #f00;
+	//suppression décalage en trop
+	// td.wrapper { padding-top: 0px; }
+	// table.columns td, table.column td { padding-bottom: 0px; }
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentFooter {
-		.subWrapper {
-			&, td { height: (@wrapperPadCollapse / 2) !important; }
-		}
-		table.columns, table.column {
-			.subWrapper td { padding: 0px !important; }
-		}
-		td.wrapper { padding-top: (@wrapperPadCollapse * 2) !important; }
-		table.columns td, table.column td { padding-bottom: (@columnPadCollapse * 2) !important; }
+		// td.wrapper { padding-top: (@wrapperPadCollapse * 2) !important; }
+		// table.columns td, table.column td { padding-bottom: (@columnPadCollapse * 2) !important; }
 	}
 }
 
@@ -447,7 +445,7 @@ table.secondary {
 // contentLegal area
 // -------------------------
 .contentLegal {
-	background-color: #f00;
+	background-color: #0f0;
 	td {
 		font-size: @fontSizeSmall;
 		line-height: (@fontSizeSmall * 1.25);

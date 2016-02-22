@@ -1185,6 +1185,23 @@ hr.border {
   border-bottom: 1px solid #0098d4;
 }
 
+.hrBorderWrapper {
+  background-color: #ccc;
+}
+
+.hrBorderWrapper,
+.hrBorderWrapper td {
+  width: 100%;
+  height: 10px;
+  -premailer-width: 100%;
+  -premailer-height: 10;
+}
+
+table.columns .hrBorderWrapper td,
+table.column .hrBorderWrapper td {
+  padding: 0px;
+}
+
 .readMoreSimple {
   font-size: 12px;
   line-height: 15px;
@@ -1376,33 +1393,16 @@ table.secondary:active td a {
   line-height: 15px;
 }
 
-.contentIntroduction .subWrapper,
-.contentIntroduction .subWrapper td {
-  width: 100%;
-  -premailer-width: 100%;
-}
-
-.contentIntroduction table.columns .subWrapper td,
-.contentIntroduction table.column .subWrapper td {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.contentIntroduction td.wrapper {
-  padding-top: 0px;
-}
-
-.contentIntroduction table.columns td,
-.contentIntroduction table.column td {
-  padding-bottom: 0px;
-}
-
 .contentALaUne .preTitle {
   padding-top: 5px;
 }
 
 .contentALaUne img {
   float: none;
+}
+
+.contentALaUne td.wrapper {
+  padding-top: 10px;
 }
 
 .contentPartenaire td.wrapper {
@@ -1412,6 +1412,10 @@ table.secondary:active td a {
 .contentPartenaire table.columns td,
 .contentPartenaire table.column td {
   padding-bottom: 10px;
+}
+
+.contentBottom {
+  background-color: #0f0;
 }
 
 .contentBottom img {
@@ -1441,21 +1445,12 @@ table.secondary:active td a {
   padding-right: 40px !important;
 }
 
-.contentFooter .subWrapper,
-.contentFooter .subWrapper td {
-  width: 100%;
-  height: 10px;
-  -premailer-width: 100%;
-  -premailer-height: 10;
-}
-
-.contentFooter table.columns .subWrapper td,
-.contentFooter table.column .subWrapper td {
-  padding: 0px;
+.contentFooter {
+  background-color: #f00;
 }
 
 .contentLegal {
-  background-color: #f00;
+  background-color: #0f0;
 }
 
 .contentLegal td {
@@ -1732,6 +1727,16 @@ table.secondary:active td a {
     padding-bottom: 0px !important;
   }
 
+  table[class="body"] .hrBorderWrapper,
+  table[class="body"] .hrBorderWrapper td {
+    height: 5px !important;
+  }
+
+  table[class="body"] table.columns .hrBorderWrapper td,
+  table[class="body"] table.column .hrBorderWrapper td {
+    padding: 0px !important;
+  }
+
   table[class="body"] table.columns .readMore td.buttonWrapper,
   table[class="body"] table.column .readMore td.buttonWrapper {
     padding-bottom: 0px !important;
@@ -1793,21 +1798,6 @@ table.secondary:active td a {
     padding-bottom: 5px !important;
   }
 
-  table[class="body"] .contentIntroduction table.columns .subWrapper td,
-  table[class="body"] .contentIntroduction table.column .subWrapper td {
-    padding-top: 5px !important;
-    padding-bottom: 5px !important;
-  }
-
-  table[class="body"] .contentIntroduction td.wrapper {
-    padding-top: 0px !important;
-  }
-
-  table[class="body"] .contentIntroduction table.columns td,
-  table[class="body"] .contentIntroduction table.column td {
-    padding-bottom: 0px !important;
-  }
-
   table[class="body"] .contentJeuConcours td.wrapper {
     padding-top: 20px !important;
   }
@@ -1825,25 +1815,6 @@ table.secondary:active td a {
   table[class="body"] .contentBottom td.wrapper.last table.column .text-pad {
     padding-left: 20px !important;
     padding-right: 20px !important;
-  }
-
-  table[class="body"] .contentFooter .subWrapper,
-  table[class="body"] .contentFooter .subWrapper td {
-    height: 5px !important;
-  }
-
-  table[class="body"] .contentFooter table.columns .subWrapper td,
-  table[class="body"] .contentFooter table.column .subWrapper td {
-    padding: 0px !important;
-  }
-
-  table[class="body"] .contentFooter td.wrapper {
-    padding-top: 20px !important;
-  }
-
-  table[class="body"] .contentFooter table.columns td,
-  table[class="body"] .contentFooter table.column td {
-    padding-bottom: 20px !important;
   }
 
   table[class="body"] .contentLegal img.logo_les {
