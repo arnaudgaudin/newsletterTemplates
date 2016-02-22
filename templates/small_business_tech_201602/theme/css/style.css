@@ -1392,6 +1392,11 @@ table.secondary:active td a {
   line-height: 15px;
 }
 
+.contentIntroduction .readMore td.buttonWrapper td,
+.contentIntroduction .readMore td.buttonWrapper td a {
+  text-transform: uppercase;
+}
+
 .contentIntroduction table.columns td,
 .contentIntroduction table.column td {
   padding-bottom: 0px;
