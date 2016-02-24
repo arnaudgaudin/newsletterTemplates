@@ -735,6 +735,14 @@ table.large-button td a {
   width: 100%;
 }
 
+table.button td a .important,
+table.tiny-button td a .important,
+table.small-button td a .important,
+table.medium-button td a .important,
+table.large-button td a .important {
+  color: #ffffff !important;
+}
+
 table.tiny-button td a {
   font-size: 11.9px;
   font-weight: normal;
@@ -760,7 +768,10 @@ table.button:active td {
 
 table.button:hover td a,
 table.button:visited td a,
-table.button:active td a {
+table.button:active td a,
+table.button:hover td a .important,
+table.button:visited td a .important,
+table.button:active td a .important {
   color: #ffffff !important;
 }
 
@@ -786,7 +797,22 @@ table.medium-button:active td a,
 table.medium-button td a:visited,
 table.large-button:hover td a,
 table.large-button:active td a,
-table.large-button td a:visited {
+table.large-button td a:visited,
+table.button:hover td a .important,
+table.button:active td a .important,
+table.button td a:visited .important,
+table.tiny-button:hover td a .important,
+table.tiny-button:active td a .important,
+table.tiny-button td a:visited .important,
+table.small-button:hover td a .important,
+table.small-button:active td a .important,
+table.small-button td a:visited .important,
+table.medium-button:hover td a .important,
+table.medium-button:active td a .important,
+table.medium-button td a:visited .important,
+table.large-button:hover td a .important,
+table.large-button:active td a .important,
+table.large-button td a:visited .important {
   color: #ffffff !important;
 }
 
@@ -800,6 +826,10 @@ table.secondary td a {
   color: #555555;
 }
 
+table.secondary td a .important {
+  color: #555555 !important;
+}
+
 table.secondary:hover td {
   background: #d0d0d0 !important;
   color: #555555;
@@ -807,26 +837,67 @@ table.secondary:hover td {
 
 table.secondary:hover td a,
 table.secondary td a:visited,
-table.secondary:active td a {
+table.secondary:active td a,
+table.secondary:hover td a .important,
+table.secondary td a:visited .important,
+table.secondary:active td a .important {
   color: #555555 !important;
 }
 
 table.success td {
   background: #5da423;
   border-color: #396516;
+  color: #ffffff;
+}
+
+table.success td a {
+  color: #ffffff;
+}
+
+table.success td a .important {
+  color: #ffffff !important;
 }
 
 table.success:hover td {
   background: #396516 !important;
+  color: #ffffff;
+}
+
+table.success:hover td a,
+table.success td a:visited,
+table.success:active td a,
+table.success:hover td a .important,
+table.success td a:visited .important,
+table.success:active td a .important {
+  color: #ffffff !important;
 }
 
 table.alert td {
   background: #c60f13;
   border-color: #67080a;
+  color: #ffffff;
+}
+
+table.alert td a {
+  color: #ffffff;
+}
+
+table.alert td a .important {
+  color: #ffffff !important;
 }
 
 table.alert:hover td {
   background: #67080a !important;
+  color: #ffffff;
+}
+
+table.alert:hover td a,
+table.alert td a:visited,
+table.alert:active td a,
+table.alert:hover td a .important,
+table.alert td a:visited .important,
+table.alert:active td a .important {
+  color: #ffffff !important;
 }
 
 table.radius td {
