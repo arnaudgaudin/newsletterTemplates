@@ -102,13 +102,13 @@ hr.border {
 }
 
 .hrBorderWrapper {
-	background-color: #f00;
 	&, td {
 		width: 100%;
-		height: 0px;
 		-premailer-width: 100%;
-		-premailer-height: 0px;
-		line-height: 0px;
+		height: (@wrapperPad / 2);
+		-premailer-height: (@wrapperPad / 2);
+		line-height: (@wrapperPad / 2);
+		font-size: 0px;
 	}
 
 	table.columns &, table.column & {
@@ -116,13 +116,13 @@ hr.border {
 			td {
 				border-top: 1px solid @hrBorder;
 				padding-top: 0px;
-				padding-bottom: @wrapperPad;
+				padding-bottom: (@wrapperPad / 2);
 			}
 		}
 		&.last {
 			td {
 				border-bottom: 1px solid @hrBorder;
-				padding-top: @wrapperPad;
+				padding-top: (@wrapperPad / 2);
 				padding-bottom: 0px;
 			}
 		}
@@ -130,17 +130,25 @@ hr.border {
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] {
+		.hrBorderWrapper {
+			&, td {
+				height: (@wrapperPadCollapse / 2) !important;
+				line-height: (@wrapperPadCollapse / 2) !important;
+				font-size: 0px !important;
+			}
+		}
+
 		table.columns, table.column {
 			.hrBorderWrapper {
 				&.first {
 					td {
 						padding-top: 0px !important;
-						padding-bottom: @wrapperPadCollapse !important;
+						padding-bottom: (@wrapperPadCollapse / 2) !important;
 					}
 				}
 				&.last {
 					td {
-						padding-top: @wrapperPadCollapse !important;
+						padding-top: (@wrapperPadCollapse / 2) !important;
 						padding-bottom: 0px !important;
 					}
 				}
