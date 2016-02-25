@@ -1158,12 +1158,15 @@ img + .title {
 }
 
 .preTitle {
-  background-color: #0f0;
   display: block;
   font-size: 12px;
   text-transform: uppercase;
   padding-bottom: 5px;
   color: #333333;
+}
+
+img + .preTitle {
+  padding-top: 5px;
 }
 
 .preTitle a {
