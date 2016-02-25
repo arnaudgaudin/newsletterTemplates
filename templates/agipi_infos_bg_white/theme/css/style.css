@@ -1125,6 +1125,10 @@ h6 {
   line-height: 17.6px;
 }
 
+.header {
+  background-color: #ffffff;
+}
+
 .title {
   color: #2d2d2d;
   margin: 0px;
