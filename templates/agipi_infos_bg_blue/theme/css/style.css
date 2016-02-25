@@ -1157,6 +1157,27 @@ img + .title {
   padding-top: 5px;
 }
 
+.preTitle {
+  background-color: #0f0;
+  display: block;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  color: #006eb6;
+}
+
+.preTitle a {
+  color: #006eb6;
+}
+
+.preTitle a .important,
+.preTitle a:visited,
+.preTitle a:hover,
+.preTitle a:focus,
+.preTitle a:active {
+  color: #006eb6 !important;
+}
+
 p {
   margin: 0px;
   padding: 0px;

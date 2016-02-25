@@ -57,7 +57,7 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 }
 
 //gestion header
-// .header { background-color: #0f0; }
+// .header { background-color: @containerBackground; }
 
 //tous les titres
 .title {
@@ -71,6 +71,17 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 
 	//séparation de l'image qui précède
 	img + & { padding-top: 5px; }
+}
+
+//sur titres
+.preTitle {
+	background-color: #0f0;
+	display: block;
+	font-size: @fontSizeSmall;
+	text-transform: uppercase;
+	padding-bottom: 5px;
+	color: @colorAgipi1;
+	a { .newsletterLinkColor(@colorAgipi1); }
 }
 
 //tous les paragraphes pour Outlook

@@ -73,6 +73,17 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 	img + & { padding-top: 5px; }
 }
 
+//sur titres
+.preTitle {
+	background-color: #0f0;
+	display: block;
+	font-size: @fontSizeSmall;
+	text-transform: uppercase;
+	padding-bottom: 5px;
+	color: @colorAgipi1;
+	a { .newsletterLinkColor(@colorAgipi1); }
+}
+
 //tous les paragraphes pour Outlook
 //cf http://stackoverflow.com/questions/18109812/ms-outlook-email-templates-adding-extra-spacing
 p {
