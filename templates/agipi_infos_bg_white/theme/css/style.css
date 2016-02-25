@@ -1391,25 +1391,18 @@ table.separator td {
   padding-bottom: 0px;
 }
 
-.contentActualites .preTitle,
 .contentActualites .title {
   color: #006eb6;
 }
 
-.contentActualites .preTitle a,
 .contentActualites .title a {
   color: #006eb6;
 }
 
-.contentActualites .preTitle a .important,
 .contentActualites .title a .important,
-.contentActualites .preTitle a:visited,
 .contentActualites .title a:visited,
-.contentActualites .preTitle a:hover,
 .contentActualites .title a:hover,
-.contentActualites .preTitle a:focus,
 .contentActualites .title a:focus,
-.contentActualites .preTitle a:active,
 .contentActualites .title a:active {
   color: #006eb6 !important;
 }
