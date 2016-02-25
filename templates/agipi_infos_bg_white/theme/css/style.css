@@ -1194,20 +1194,29 @@ hr.border {
   border-bottom: 1px solid #006eb6;
 }
 
+.hrBorderWrapper {
+  background-color: #f00;
+}
+
 .hrBorderWrapper,
 .hrBorderWrapper td {
   width: 100%;
+  height: 0px;
   -premailer-width: 100%;
+  -premailer-height: 100%;
+  line-height: 0px;
 }
 
 table.columns .hrBorderWrapper.first td,
 table.column .hrBorderWrapper.first td {
+  border-top: 1px solid #006eb6;
   padding-top: 0px;
   padding-bottom: 20px;
 }
 
 table.columns .hrBorderWrapper.last td,
 table.column .hrBorderWrapper.last td {
+  border-bottom: 1px solid #006eb6;
   padding-top: 20px;
   padding-bottom: 0px;
 }
