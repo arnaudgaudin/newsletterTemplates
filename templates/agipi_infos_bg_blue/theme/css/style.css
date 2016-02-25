@@ -103,8 +103,8 @@ td {
 }
 
 hr {
-  color: #d9d9d9;
-  background-color: #d9d9d9;
+  color: #006eb6;
+  background-color: #006eb6;
   height: 1px;
   border: none;
 }
@@ -1187,6 +1187,31 @@ p {
   margin-bottom: 0px;
 }
 
+hr.border {
+  margin: 0;
+  background-color: transparent;
+  height: 0;
+  border-bottom: 1px solid #006eb6;
+}
+
+.hrBorderWrapper,
+.hrBorderWrapper td {
+  width: 100%;
+  -premailer-width: 100%;
+}
+
+table.columns .hrBorderWrapper.first td,
+table.column .hrBorderWrapper.first td {
+  padding-top: 0px;
+  padding-bottom: 10px;
+}
+
+table.columns .hrBorderWrapper.last td,
+table.column .hrBorderWrapper.last td {
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+
 .readMore {
   width: 100%;
   -premailer-width: 100%;
@@ -1709,6 +1734,18 @@ table.separator td {
   table[class="body"] h6 {
     font-size: 14px !important;
     line-height: 15.4px !important;
+  }
+
+  table[class="body"] table.columns .hrBorderWrapper.first td,
+  table[class="body"] table.column .hrBorderWrapper.first td {
+    padding-top: 0px !important;
+    padding-bottom: 5px !important;
+  }
+
+  table[class="body"] table.columns .hrBorderWrapper.last td,
+  table[class="body"] table.column .hrBorderWrapper.last td {
+    padding-top: 5px !important;
+    padding-bottom: 0px !important;
   }
 
   table[class="body"] table.columns .readMore td.buttonWrapper,

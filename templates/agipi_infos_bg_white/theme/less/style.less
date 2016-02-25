@@ -92,6 +92,57 @@ p {
 	margin-bottom: 0px;
 }
 
+//bordure inclue dans hr
+hr.border {
+	margin: 0;
+	//débuggage bordure pour PostaNova
+	background-color: transparent;
+	height: 0;
+	border-bottom: 1px solid @hrBorder;
+}
+
+.hrBorderWrapper {
+	&, td {
+		width: 100%;
+		-premailer-width: 100%;
+	}
+
+	table.columns &, table.column & {
+		&.first {
+			td {
+				padding-top: 0px;
+				padding-bottom: (@wrapperPad / 2);
+			}
+		}
+		&.last {
+			td {
+				padding-top: (@wrapperPad / 2);
+				padding-bottom: 0px;
+			}
+		}
+	}
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] {
+		table.columns, table.column {
+			.hrBorderWrapper {
+				&.first {
+					td {
+						padding-top: 0px !important;
+						padding-bottom: (@wrapperPadCollapse / 2) !important;
+					}
+				}
+				&.last {
+					td {
+						padding-top: (@wrapperPadCollapse / 2) !important;
+						padding-bottom: 0px !important;
+					}
+				}
+			}
+		}
+	}
+}
+
 //lien de suivis
 .readMore {
 	width: 100%;
