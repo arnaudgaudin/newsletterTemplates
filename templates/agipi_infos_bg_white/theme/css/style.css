@@ -1099,6 +1099,8 @@ h4,
 h5,
 h6 {
   mso-line-height-rule: exactly;
+  mso-margin-top-alt: 0px;
+  mso-margin-bottom-alt: 0px;
 }
 
 h1 {
