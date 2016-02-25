@@ -1203,12 +1203,12 @@ hr.border {
 table.columns .hrBorderWrapper.first td,
 table.column .hrBorderWrapper.first td {
   padding-top: 0px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 table.columns .hrBorderWrapper.last td,
 table.column .hrBorderWrapper.last td {
-  padding-top: 10px;
+  padding-top: 20px;
   padding-bottom: 0px;
 }
 
@@ -1384,6 +1384,11 @@ table.separator td {
 
 .contentALaUne img {
   float: none;
+}
+
+.contentALaUne table.columns td,
+.contentALaUne table.column td {
+  padding-bottom: 0px;
 }
 
 .contentActualites .preTitle,
@@ -1739,12 +1744,12 @@ table.separator td {
   table[class="body"] table.columns .hrBorderWrapper.first td,
   table[class="body"] table.column .hrBorderWrapper.first td {
     padding-top: 0px !important;
-    padding-bottom: 5px !important;
+    padding-bottom: 10px !important;
   }
 
   table[class="body"] table.columns .hrBorderWrapper.last td,
   table[class="body"] table.column .hrBorderWrapper.last td {
-    padding-top: 5px !important;
+    padding-top: 10px !important;
     padding-bottom: 0px !important;
   }
 
@@ -1801,6 +1806,11 @@ table.separator td {
   table[class="body"] .contentOnline table.columns td,
   table[class="body"] .contentOnline table.column td {
     padding-bottom: 5px !important;
+  }
+
+  table[class="body"] .contentALaUne table.columns td,
+  table[class="body"] .contentALaUne table.column td {
+    padding-bottom: 0px !important;
   }
 
   table[class="body"] .contentActualites td.wrapper {

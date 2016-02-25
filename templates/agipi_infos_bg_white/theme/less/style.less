@@ -111,12 +111,12 @@ hr.border {
 		&.first {
 			td {
 				padding-top: 0px;
-				padding-bottom: (@wrapperPad / 2);
+				padding-bottom: @wrapperPad;
 			}
 		}
 		&.last {
 			td {
-				padding-top: (@wrapperPad / 2);
+				padding-top: @wrapperPad;
 				padding-bottom: 0px;
 			}
 		}
@@ -129,12 +129,12 @@ hr.border {
 				&.first {
 					td {
 						padding-top: 0px !important;
-						padding-bottom: (@wrapperPadCollapse / 2) !important;
+						padding-bottom: @wrapperPadCollapse !important;
 					}
 				}
 				&.last {
 					td {
-						padding-top: (@wrapperPadCollapse / 2) !important;
+						padding-top: @wrapperPadCollapse !important;
 						padding-bottom: 0px !important;
 					}
 				}
@@ -303,6 +303,14 @@ table.separator {
 // -------------------------
 .contentALaUne {
 	img { float: none; }
+
+	//réduction décalage vertical
+	table.columns td, table.column td { padding-bottom: 0px; }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentALaUne {
+		table.columns td, table.column td { padding-bottom: 0px !important; }
+	}
 }
 
 
