@@ -103,8 +103,8 @@ td {
 }
 
 hr {
-  color: #005ca4;
-  background-color: #005ca4;
+  color: #006eb6;
+  background-color: #006eb6;
   height: 1px;
   border: none;
 }
@@ -1092,14 +1092,23 @@ table.large-button td {
   -premailer-width: auto;
 }
 
-.header td.wrapper {
-  padding-top: 10px;
+.header {
+  background-color: #006eb6;
 }
 
-.header table.columns td,
-.header table.column td {
-  padding-bottom: 0px;
+/*
+.header {
+	//suppression décalage en trop
+	td.wrapper { padding-top: (@wrapperPad / 2); }
+	table.columns td, table.column td { padding-bottom: 0px; }
 }
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .header {
+		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
+		table.columns td, table.column td { padding-bottom: 0px !important; }
+	}
+}
+*/
 
 .contentOnline {
   background-color: #e5e5e5;
@@ -1226,7 +1235,7 @@ table.large-button td {
 }
 
 .contentUnsubscribe {
-  background-color: #005ca4;
+  background-color: #006eb6;
 }
 
 .contentUnsubscribe,
@@ -1425,15 +1434,6 @@ table.large-button td {
 
   table[class="container"] .panel {
     padding: 10px !important;
-  }
-
-  table[class="body"] .header td.wrapper {
-    padding-top: 5px !important;
-  }
-
-  table[class="body"] .header table.columns td,
-  table[class="body"] .header table.column td {
-    padding-bottom: 0px !important;
   }
 
   table[class="body"] .contentOnline td.wrapper {
