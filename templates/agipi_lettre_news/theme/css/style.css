@@ -615,7 +615,7 @@ p {
 }
 
 small {
-  font-size: 12px;
+  font-size: 11px;
 }
 
 a {
@@ -1144,8 +1144,8 @@ table.large-button td {
 }
 
 .contentOnline td {
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 11px;
+  line-height: 13.75px;
 }
 
 .contentOnline td.wrapper {
@@ -1212,8 +1212,8 @@ table.large-button td {
 }
 
 .contentFooter td {
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 11px;
+  line-height: 13.75px;
 }
 
 .contentFooter td.faicons {
@@ -1248,8 +1248,8 @@ table.large-button td {
 }
 
 .contentUnsubscribe td {
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 11px;
+  line-height: 13.75px;
 }
 
 .contentUnsubscribe td.wrapper {

@@ -615,7 +615,7 @@ p {
 }
 
 small {
-  font-size: 12px;
+  font-size: 11px;
 }
 
 a {
@@ -729,7 +729,7 @@ table.large-button td a {
   text-decoration: none;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #ffffff;
-  font-size: 12px;
+  font-size: 11px;
   display: block;
   height: 100%;
   width: 100%;
@@ -749,7 +749,7 @@ table.tiny-button td a {
 }
 
 table.small-button td a {
-  font-size: 12px;
+  font-size: 11px;
 }
 
 table.medium-button td a {
@@ -1159,7 +1159,7 @@ img + .title {
 
 .preTitle {
   display: block;
-  font-size: 12px;
+  font-size: 11px;
   text-transform: uppercase;
   padding-bottom: 5px;
   color: #333333;
@@ -1375,8 +1375,8 @@ table.separator td {
 }
 
 .contentOnline td {
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 11px;
+  line-height: 13.75px;
 }
 
 .contentOnline td.wrapper {
@@ -1489,8 +1489,8 @@ table.separator td {
 }
 
 .contentFooter td {
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 11px;
+  line-height: 13.75px;
 }
 
 .contentFooter td.faicons {
@@ -1525,8 +1525,8 @@ table.separator td {
 }
 
 .contentUnsubscribe td {
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 11px;
+  line-height: 13.75px;
 }
 
 .contentUnsubscribe td.wrapper {
@@ -1713,7 +1713,7 @@ table.separator td {
   }
 
   table[class="body"] small {
-    font-size: 10px !important;
+    font-size: 9px !important;
   }
 
   table[class="body"] h1 {
