@@ -1211,8 +1211,9 @@ table.large-button td {
   color: #ffffff !important;
 }
 
-.contentFooter td.address td {
+.contentFooter td {
   font-size: 12px;
+  line-height: 15px;
 }
 
 .contentFooter td.faicons {
