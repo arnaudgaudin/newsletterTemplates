@@ -1497,6 +1497,11 @@ table.separator td {
   vertical-align: bottom;
 }
 
+.contentFooter td.wrapper.first table.columns .text-pad,
+.contentFooter td.wrapper.first table.column .text-pad {
+  padding-right: 0px !important;
+}
+
 .contentUnsubscribe {
   background-color: #9c9b9b;
 }
@@ -1865,6 +1870,11 @@ table.separator td {
   table[class="body"] .contentFooter td.wrapper.first table.columns td,
   table[class="body"] .contentFooter td.wrapper.first table.column td {
     padding-bottom: 5px !important;
+  }
+
+  table[class="body"] .contentFooter td.wrapper.first table.columns .text-pad,
+  table[class="body"] .contentFooter td.wrapper.first table.column .text-pad {
+    padding-right: 20px !important;
   }
 
   table[class="body"] .contentFooter td.wrapper.last {
