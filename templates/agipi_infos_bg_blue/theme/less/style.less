@@ -76,7 +76,8 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 //sur titres
 .preTitle {
 	display: block;
-	font-size: @fontSizeSmall;
+	font-size: floor(@fontSizeSmall * 1.1);
+	line-height: floor(@fontSizeSmall * 1.25 * 1.1);
 	text-transform: uppercase;
 	img + & { padding-top: 5px; }
 	padding-bottom: 5px;
