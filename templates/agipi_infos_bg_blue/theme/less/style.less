@@ -432,7 +432,12 @@ table.separator {
 	.newsletterInnerTextColor(#ffffff);
 	td {
 		font-size: @fontSizeSmall;
-		line-height: (@fontSizeSmall * 1.25);
+		line-height: ceil(@fontSizeSmall * 1.25);
+		//titre plus gros
+		strong {
+			font-size: floor(@fontSizeSmall * 1.1);
+			line-height: floor(@fontSizeSmall * 1.25 * 1.1);
+		}
 	}
 	td.faicons { vertical-align: bottom; }
 

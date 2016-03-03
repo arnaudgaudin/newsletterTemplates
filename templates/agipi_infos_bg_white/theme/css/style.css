@@ -1490,7 +1490,12 @@ table.separator td {
 
 .contentFooter td {
   font-size: 11px;
-  line-height: 13.75px;
+  line-height: 14px;
+}
+
+.contentFooter td strong {
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .contentFooter td.faicons {
