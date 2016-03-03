@@ -1216,7 +1216,8 @@ table.large-button td {
   line-height: 14px;
 }
 
-.contentFooter td strong {
+.contentFooter td strong,
+.contentFooter td a[href="http://www.agipi.com"] {
   font-size: 12px;
   line-height: 15px;
 }
