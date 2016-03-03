@@ -429,15 +429,21 @@ table.separator {
 		line-height: (@fontSizeSmall * 1.25);
 	}
 	td.faicons { vertical-align: bottom; }
+
+	//différenciation padding pour zone centrale
+	td.wrapper.first {
+		table.columns .text-pad, table.column .text-pad { padding-right: 0px !important; }
+	}
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentFooter {
 		td.wrapper.first {
-			table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
+			table.columns, table.column {
+				td { padding-bottom: (@columnPadCollapse / 2) !important; }
+				.text-pad { padding-right: @textPadCollapse !important; }
+			}
 		}
-		td.wrapper.last {
-			padding-top: (@wrapperPadCollapse / 2) !important;
-		}
+		td.wrapper.last { padding-top: (@wrapperPadCollapse / 2) !important; }
 	}
 }
 
