@@ -4,22 +4,35 @@
 // additionnal template's style which extends ink's style
 
 
-
 //gestion header
 .header { background-color: @colorAgipi1; }
-/*
-.header {
-	//suppression décalage en trop
-	td.wrapper { padding-top: (@wrapperPad / 2); }
-	table.columns td, table.column td { padding-bottom: 0px; }
-}
-@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
-	table[class="body"] .header {
-		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
-		table.columns td, table.column td { padding-bottom: 0px !important; }
+
+//réseaux sociaux
+.faicons td { text-align: right; }
+.faicon {
+	display: inline;
+	//pour supprimer les espaces
+	font-size: 0px;
+	mso-line-height-rule: exactly;
+	line-height: 0px;
+	padding: 0px 5px;
+	&.first { padding-left: 0px; }
+	&.last { padding-right: 0px; }
+	img {
+		display: inline;
+		float: none;
 	}
 }
-*/
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .faicons {
+		.columns, .column { display: table !important; }
+		td { text-align: left !important; }
+	}
+	table[class="body"] .faicon img {
+		width: 30px !important;
+		height: 30px !important;
+	}
+}
 
 
 // contentOnline area
@@ -98,58 +111,30 @@
 // contentFooter area
 // -------------------------
 .contentFooter {
-	background-color: @colorAgipi2;
-	.newsletterInnerTextColor(darken(@colorAgipi2, 45%));
-
-	td {
+	background-color: @colorAgipi1;
+	.newsletterInnerTextColor(#ffffff);
+	td.address td {
 		font-size: @fontSizeSmall;
-		line-height: (@fontSizeSmall * 1.25);
-		vertical-align: middle;
 	}
-
-	table.columns, table.column {
-		table.subWrapper {
-			td { padding-bottom: 0px; }
-			&.logo {
-				//uniquement la hauteur sur le tableau (car largeur affectée par le padding)
-				-premailer-width: auto;
-				-premailer-height: 56;
-				td {
-					-premailer-width: 100;
-					-premailer-height: 56;
-				}
-				a { margin: 0px; }
-
-				img {
-					width: 100px;
-					height: 56px;
-				}
-			}
-		}
-	}
+	td.faicons { vertical-align: bottom; }
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentFooter {
-		table.columns, table.column {
-			table.subWrapper {
-				td { padding-bottom: 0px !important; }
-				&.logo {
-					img { height: auto !important; }
-				}
-			}
+		td.wrapper.first {
+			table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
 		}
-
-		.right-text-pad, .text-pad-right { padding-left: 0px !important; }
+		td.wrapper.last {
+			padding-top: (@wrapperPadCollapse / 2) !important;
+		}
 	}
 }
-
 
 
 // contentUnsubscribe area
 // -------------------------
 .contentUnsubscribe {
-	background-color: @colorAgipi1;
-	.newsletterInnerTextColor(#ffffff);
+	background-color: @bodyBackground;
+	.newsletterInnerTextColor(darken(@bodyBackground, 35%));
 
 	td {
 		font-size: @fontSizeSmall;

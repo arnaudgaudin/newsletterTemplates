@@ -1096,19 +1096,30 @@ table.large-button td {
   background-color: #006eb6;
 }
 
-/*
-.header {
-	//suppression décalage en trop
-	td.wrapper { padding-top: (@wrapperPad / 2); }
-	table.columns td, table.column td { padding-bottom: 0px; }
+.faicons td {
+  text-align: right;
 }
-@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
-	table[class="body"] .header {
-		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
-		table.columns td, table.column td { padding-bottom: 0px !important; }
-	}
+
+.faicon {
+  display: inline;
+  font-size: 0px;
+  mso-line-height-rule: exactly;
+  line-height: 0px;
+  padding: 0px 5px;
 }
-*/
+
+.faicon.first {
+  padding-left: 0px;
+}
+
+.faicon.last {
+  padding-right: 0px;
+}
+
+.faicon img {
+  display: inline;
+  float: none;
+}
 
 .contentOnline {
   background-color: #e5e5e5;
@@ -1179,17 +1190,17 @@ table.large-button td {
 }
 
 .contentFooter {
-  background-color: #f2f2f2;
+  background-color: #006eb6;
 }
 
 .contentFooter,
 .contentFooter td,
 .contentFooter .inner {
-  color: #7f7f7f;
+  color: #ffffff;
 }
 
 .contentFooter a {
-  color: #7f7f7f;
+  color: #ffffff;
 }
 
 .contentFooter a .important,
@@ -1197,55 +1208,29 @@ table.large-button td {
 .contentFooter a:hover,
 .contentFooter a:focus,
 .contentFooter a:active {
-  color: #7f7f7f !important;
+  color: #ffffff !important;
 }
 
-.contentFooter td {
+.contentFooter td.address td {
   font-size: 12px;
-  line-height: 15px;
-  vertical-align: middle;
 }
 
-.contentFooter table.columns table.subWrapper td,
-.contentFooter table.column table.subWrapper td {
-  padding-bottom: 0px;
-}
-
-.contentFooter table.columns table.subWrapper.logo,
-.contentFooter table.column table.subWrapper.logo {
-  -premailer-width: auto;
-  -premailer-height: 56;
-}
-
-.contentFooter table.columns table.subWrapper.logo td,
-.contentFooter table.column table.subWrapper.logo td {
-  -premailer-width: 100;
-  -premailer-height: 56;
-}
-
-.contentFooter table.columns table.subWrapper.logo a,
-.contentFooter table.column table.subWrapper.logo a {
-  margin: 0px;
-}
-
-.contentFooter table.columns table.subWrapper.logo img,
-.contentFooter table.column table.subWrapper.logo img {
-  width: 100px;
-  height: 56px;
+.contentFooter td.faicons {
+  vertical-align: bottom;
 }
 
 .contentUnsubscribe {
-  background-color: #006eb6;
+  background-color: #e5e5e5;
 }
 
 .contentUnsubscribe,
 .contentUnsubscribe td,
 .contentUnsubscribe .inner {
-  color: #ffffff;
+  color: #8c8c8c;
 }
 
 .contentUnsubscribe a {
-  color: #ffffff;
+  color: #8c8c8c;
 }
 
 .contentUnsubscribe a .important,
@@ -1253,7 +1238,7 @@ table.large-button td {
 .contentUnsubscribe a:hover,
 .contentUnsubscribe a:focus,
 .contentUnsubscribe a:active {
-  color: #ffffff !important;
+  color: #8c8c8c !important;
 }
 
 .contentUnsubscribe td {
@@ -1436,6 +1421,20 @@ table.large-button td {
     padding: 10px !important;
   }
 
+  table[class="body"] .faicons .columns,
+  table[class="body"] .faicons .column {
+    display: table !important;
+  }
+
+  table[class="body"] .faicons td {
+    text-align: left !important;
+  }
+
+  table[class="body"] .faicon img {
+    width: 30px !important;
+    height: 30px !important;
+  }
+
   table[class="body"] .contentOnline td.wrapper {
     padding-top: 5px !important;
   }
@@ -1463,19 +1462,13 @@ table.large-button td {
     height: auto !important;
   }
 
-  table[class="body"] .contentFooter table.columns table.subWrapper td,
-  table[class="body"] .contentFooter table.column table.subWrapper td {
-    padding-bottom: 0px !important;
+  table[class="body"] .contentFooter td.wrapper.first table.columns td,
+  table[class="body"] .contentFooter td.wrapper.first table.column td {
+    padding-bottom: 5px !important;
   }
 
-  table[class="body"] .contentFooter table.columns table.subWrapper.logo img,
-  table[class="body"] .contentFooter table.column table.subWrapper.logo img {
-    height: auto !important;
-  }
-
-  table[class="body"] .contentFooter .right-text-pad,
-  table[class="body"] .contentFooter .text-pad-right {
-    padding-left: 0px !important;
+  table[class="body"] .contentFooter td.wrapper.last {
+    padding-top: 5px !important;
   }
 
   table[class="body"] .contentUnsubscribe td.wrapper {
