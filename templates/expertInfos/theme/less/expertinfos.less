@@ -332,7 +332,10 @@ body, table.body {
 		color: e("##((nlCntCabTitle))##");
 		a { .newsletterLinkColor(e("##((nlCntCabTitle))##")); }
 	}
-	.text, .readMore, .icon-rsaquo { color: e("##((nlCntCabText))##"); }
+	.text, .readMore, .icon-rsaquo {
+		color: e("##((nlCntCabText))##");
+		.important { color: e("##((nlCntCabText))##") !important; }
+	}
 	.newsletterInnerTextColor(e("##((nlCntCabText))##"));
 }
 
@@ -344,18 +347,30 @@ body, table.body {
 		color: e("##((nlCntUneTitle))##");
 		a { .newsletterLinkColor(e("##((nlCntUneTitle))##")); }
 	}
-	.text { color: e("##((nlCntUneText))##"); }
+	.text {
+		color: e("##((nlCntUneText))##");
+		.important { color: e("##((nlCntUneText))##") !important; }
+	}
 	.newsletterInnerTextColor(e("##((nlCntUneText))##"));
-	.readMore, .icon-rsaquo { color: e("##((nlCntUneReadMore))##"); }
+	.readMore, .icon-rsaquo {
+		color: e("##((nlCntUneReadMore))##");
+		.important { color: e("##((nlCntUneReadMore))##") !important; }
+	}
 }
 
 // contentArticles area
 // -------------------------
 .contentArticles {
 	.title {
-		.icon-rsaquo { color: e("##((nlCntArtIconColor))##"); }
+		.icon-rsaquo {
+			color: e("##((nlCntArtIconColor))##");
+			.important { color: e("##((nlCntArtIconColor))##") !important; }
+		}
 	}
-	.readMore { color: e("##((nlCntArtReadMore))##"); }
+	.readMore {
+		color: e("##((nlCntArtReadMore))##");
+		.important { color: e("##((nlCntArtReadMore))##") !important; }
+	}
 }
 
 
@@ -364,36 +379,57 @@ body, table.body {
 .contentBottom {
 	.agenda {
 		&, td.expander { -premailer-background: e("##((nlCntAgdBackground))##"); }
-		.preTitle { color: e("##((nlCntAgdPreTitle))##"); }
+		.preTitle {
+			color: e("##((nlCntAgdPreTitle))##");
+			.important { color: e("##((nlCntAgdPreTitle))##") !important; }
+		}
 		.title {
 			color: e("##((nlCntAgdTitle))##");
 			a { .newsletterLinkColor(e("##((nlCntAgdTitle))##")); }
 		}
-		.text { color: e("##((nlCntAgdText))##"); }
+		.text {
+			color: e("##((nlCntAgdText))##");
+			.important { color: e("##((nlCntAgdText))##") !important; }
+		}
 		.newsletterInnerTextColor(e("##((nlCntAgdText))##"));
 	}
 
 	.chiffre {
 		&, td.expander { -premailer-background: e("##((nlCntChfBackground))##"); }
-		.preTitle { color: e("##((nlCntChfPreTitle))##"); }
+		.preTitle {
+			color: e("##((nlCntChfPreTitle))##");
+			.important { color: e("##((nlCntChfPreTitle))##") !important; }
+		}
 		.title {
 			color: e("##((nlCntChfTitle))##");
 			a { .newsletterLinkColor(e("##((nlCntChfTitle))##")); }
 		}
-		.text { color: e("##((nlCntChfText))##"); }
+		.text {
+			color: e("##((nlCntChfText))##");
+			.important { color: e("##((nlCntChfText))##") !important; }
+		}
 		.newsletterInnerTextColor(e("##((nlCntChfText))##"));
 	}
 
 	.dessin {
-		.preTitle { color: e("##((nlCntDsnPreTitle))##"); }
+		.preTitle {
+			color: e("##((nlCntDsnPreTitle))##");
+			.important { color: e("##((nlCntDsnPreTitle))##") !important; }
+		}
 	}
 
 	.profession {
-		.preTitle { color: e("##((nlCntPrfPreTitle))##"); }
+		.preTitle {
+			color: e("##((nlCntPrfPreTitle))##");
+			.important { color: e("##((nlCntPrfPreTitle))##") !important; }
+		}
 	}
 
 	.question {
-		.preTitle { color: e("##((nlCntQtnPreTitle))##"); }
+		.preTitle {
+			color: e("##((nlCntQtnPreTitle))##");
+			.important { color: e("##((nlCntQtnPreTitle))##") !important; }
+		}
 	}
 }
 
