@@ -1510,6 +1510,19 @@ img.faicon {
   padding-bottom: 10px;
 }
 
+body,
+table.body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+td {
+  color: #666666;
+}
+
 a,
 h1 a,
 h2 a,
