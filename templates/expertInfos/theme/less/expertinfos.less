@@ -207,20 +207,14 @@ body, table.body, h1, h2, h3, h4, h5, h6, p, td {
 // Links
 // -------------------------
 a {
-	color: @nlLinkColor;
-	&:hover { color: @nlLinkColorHover !important; }
-	&:active { color: @nlLinkColorHover !important; }
-	&:visited { color: @nlLinkColor !important; }
-
-	h1 &, h2 &, h3 &, h4 &, h5 &, h6 & {
+	//LoVe's Hurts Fade Away (LVHFA)
+	&, h1 &, h2 &, h3 &, h4 &, h5 &, h6 &, .appleLinks & {
 		color: @nlLinkColor;
-		&:active, &:visited { color: @nlLinkColor !important; }
-	}
-
-	.appleLinks & {
-		color: @nlLinkColor;
-		&:hover, &:active { color: @nlLinkColorHover !important; }
-		&:visited { color: @nlLinkColor !important; }
+		.important { color: @nlLinkColor !important; }
+		&:visited { &, .important { color: @nlLinkColor !important; } }
+		&:hover { &, .important { color: @nlLinkColorHover !important; } }
+		&:focus { &, .important { color: @nlLinkColorHover !important; } }
+		&:active { &, .important { color: @nlLinkColor !important; } }
 	}
 }
 
