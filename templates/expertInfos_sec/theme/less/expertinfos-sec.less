@@ -485,6 +485,21 @@ a.tiny-button-link, table.columns .readMore td.buttonWrapper td, table.column .r
 //couleurs de la newsletter figée, donc on reste sur des couleurs fixes
 
 
+// Links
+// -------------------------
+a {
+	//LoVe's Hurts Fade Away (LVHFA)
+	&, h1 &, h2 &, h3 &, h4 &, h5 &, h6 &, .appleLinks & {
+		color: @nlLinkColor;
+		.important { color: @nlLinkColor !important; }
+		&:visited { &, .important { color: @nlLinkColor !important; } }
+		&:hover { &, .important { color: @nlLinkColorHover !important; } }
+		&:focus { &, .important { color: @nlLinkColorHover !important; } }
+		&:active { &, .important { color: @nlLinkColor !important; } }
+	}
+}
+
+
 // Sur-titres
 // -------------------------
 .preTitle {
