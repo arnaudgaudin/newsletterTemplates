@@ -493,22 +493,6 @@ a.tiny-button-link, table.columns .readMore td.buttonWrapper td, table.column .r
 }
 
 
-
-// contentOnline area
-// -------------------------
-.contentOnline {
-	&, td.expander { background: @nlCntOnlineBackground; }
-	.newsletterInnerTextColor(@nlCntOnlineText);
-	.online {
-		color: @nlCntOnlineText;
-		a { .newsletterLinkColor(@nlCntOnlineText); }
-	}
-	.name {
-		color: @nlCntOnlineName;
-		a { .newsletterLinkColor(@nlCntOnlineName); }
-	}
-}
-
 // contentDateInfo area
 // -------------------------
 .contentDateInfo {
@@ -637,6 +621,22 @@ body, table.body {
 .header { -premailer-background: e("##((nlSecBodyBackground))##"); }
 
 
+// contentOnline area
+// -------------------------
+.contentOnline {
+	&, td.expander { -premailer-background: e("##((nlSecCntOnlineBackground))##"); }
+	.newsletterInnerTextColor(e("##((nlSecCntOnlineText))##"));
+	.online {
+		color: e("##((nlSecCntOnlineText))##");
+		a { .newsletterLinkColor(e("##((nlSecCntOnlineText))##")); }
+	}
+	.name {
+		color: e("##((nlSecCntOnlineName))##");
+		a { .newsletterLinkColor(e("##((nlSecCntOnlineName))##")); }
+	}
+}
+
+
 // Sur-titres
 // -------------------------
 .preTitle .last {
@@ -716,6 +716,22 @@ body, table.body {
 // -------------------------
 //pour supprimer toute zone blanche avant chargement header
 .header { background: @nlSecBodyBackground; }
+
+
+// contentOnline area
+// -------------------------
+.contentOnline {
+	&, td.expander { background: @nlSecCntOnlineBackground; }
+	.newsletterInnerTextColor(@nlSecCntOnlineText);
+	.online {
+		color: @nlSecCntOnlineText;
+		a { .newsletterLinkColor(@nlSecCntOnlineText); }
+	}
+	.name {
+		color: @nlSecCntOnlineName;
+		a { .newsletterLinkColor(@nlSecCntOnlineName); }
+	}
+}
 
 
 // Sur-titres

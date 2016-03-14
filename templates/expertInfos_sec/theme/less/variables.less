@@ -48,11 +48,6 @@
 @nlLinkColorHover: @nlLinkColor;
 @nlPreTitle: @nlHeadings;
 
-//Visualisation message en ligne et Titre
-@nlCntOnlineBackground: @nlBodyBackground;
-@nlCntOnlineText: darken(@nlCntOnlineBackground, 45%);
-@nlCntOnlineName: #333333;
-
 //Affichage de la date et des infos sur la news
 @nlCntDtiInfoBackground: @colorCouleur2;
 @nlCntDtiInfoText: #ffffff;
@@ -100,6 +95,11 @@
 // --------------------------------------------------
 //couleur de fond générale
 @nlSecBodyBackground: darken(@colorCouleur3Clair, 4%);
+
+//Visualisation message en ligne et Titre
+@nlSecCntOnlineBackground: @nlSecBodyBackground;
+@nlSecCntOnlineText: darken(@nlCntOnlineBackground, 45%);
+@nlSecCntOnlineName: #333333;
 
 //couleurs du dernier mot des pre-titres
 @nlPreTitleLast: @secteur-section-color-BTP;
