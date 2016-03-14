@@ -1315,56 +1315,101 @@ td {
   color: #333333;
 }
 
-a {
-  color: #333333;
-}
-
-a:hover {
-  color: #333333 !important;
-}
-
-a:active {
-  color: #333333 !important;
-}
-
-a:visited {
-  color: #333333 !important;
-}
-
+a,
 h1 a,
 h2 a,
 h3 a,
 h4 a,
 h5 a,
-h6 a {
+h6 a,
+.appleLinks a {
   color: #333333;
 }
 
+a .important,
+h1 a .important,
+h2 a .important,
+h3 a .important,
+h4 a .important,
+h5 a .important,
+h6 a .important,
+.appleLinks a .important {
+  color: #333333 !important;
+}
+
+a:visited,
+h1 a:visited,
+h2 a:visited,
+h3 a:visited,
+h4 a:visited,
+h5 a:visited,
+h6 a:visited,
+.appleLinks a:visited,
+a:visited .important,
+h1 a:visited .important,
+h2 a:visited .important,
+h3 a:visited .important,
+h4 a:visited .important,
+h5 a:visited .important,
+h6 a:visited .important,
+.appleLinks a:visited .important {
+  color: #333333 !important;
+}
+
+a:hover,
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover,
+.appleLinks a:hover,
+a:hover .important,
+h1 a:hover .important,
+h2 a:hover .important,
+h3 a:hover .important,
+h4 a:hover .important,
+h5 a:hover .important,
+h6 a:hover .important,
+.appleLinks a:hover .important {
+  color: #333333 !important;
+}
+
+a:focus,
+h1 a:focus,
+h2 a:focus,
+h3 a:focus,
+h4 a:focus,
+h5 a:focus,
+h6 a:focus,
+.appleLinks a:focus,
+a:focus .important,
+h1 a:focus .important,
+h2 a:focus .important,
+h3 a:focus .important,
+h4 a:focus .important,
+h5 a:focus .important,
+h6 a:focus .important,
+.appleLinks a:focus .important {
+  color: #333333 !important;
+}
+
+a:active,
 h1 a:active,
 h2 a:active,
 h3 a:active,
 h4 a:active,
 h5 a:active,
 h6 a:active,
-h1 a:visited,
-h2 a:visited,
-h3 a:visited,
-h4 a:visited,
-h5 a:visited,
-h6 a:visited {
-  color: #333333 !important;
-}
-
-.appleLinks a {
-  color: #333333;
-}
-
-.appleLinks a:hover,
-.appleLinks a:active {
-  color: #333333 !important;
-}
-
-.appleLinks a:visited {
+.appleLinks a:active,
+a:active .important,
+h1 a:active .important,
+h2 a:active .important,
+h3 a:active .important,
+h4 a:active .important,
+h5 a:active .important,
+h6 a:active .important,
+.appleLinks a:active .important {
   color: #333333 !important;
 }
 
