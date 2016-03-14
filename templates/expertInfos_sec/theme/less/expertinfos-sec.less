@@ -485,12 +485,6 @@ a.tiny-button-link, table.columns .readMore td.buttonWrapper td, table.column .r
 //couleurs de la newsletter figée, donc on reste sur des couleurs fixes
 
 
-// Header
-// -------------------------
-//pour supprimer toute zone blanche avant chargement header
-.header { background: @nlBodyBackground; }
-
-
 // Sur-titres
 // -------------------------
 .preTitle {
@@ -637,6 +631,12 @@ body, table.body {
 }
 
 
+// Header
+// -------------------------
+//pour supprimer toute zone blanche avant chargement header
+.header { -premailer-background: e("##((nlSecBodyBackground))##"); }
+
+
 // Sur-titres
 // -------------------------
 .preTitle .last {
@@ -710,6 +710,13 @@ body, table.body {
 	//rajout pour suppression paramètre doublon via compiler
 	// background-image: url("-premailer-bgdebug");
 }
+
+
+// Header
+// -------------------------
+//pour supprimer toute zone blanche avant chargement header
+.header { background: @nlSecBodyBackground; }
+
 
 // Sur-titres
 // -------------------------
