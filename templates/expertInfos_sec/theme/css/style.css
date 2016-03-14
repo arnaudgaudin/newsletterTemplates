@@ -1510,6 +1510,10 @@ img.faicon {
   padding-bottom: 10px;
 }
 
+.container {
+  background-color: #ffffff;
+}
+
 body,
 table.body,
 h1,

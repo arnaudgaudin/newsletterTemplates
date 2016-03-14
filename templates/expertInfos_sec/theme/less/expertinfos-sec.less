@@ -484,13 +484,15 @@ a.tiny-button-link, table.columns .readMore td.buttonWrapper td, table.column .r
 // --------------------------------------------------
 //couleurs de la newsletter figée, donc on reste sur des couleurs fixes
 
+// Main container
+// -------------------------
+.container { background-color: @nlContainerBackground; }
 
 // Typography
 // -------------------------
 body, table.body, h1, h2, h3, h4, h5, h6, p, td {
 	color: @nlText;
 }
-
 
 // Links
 // -------------------------
@@ -506,14 +508,12 @@ a {
 	}
 }
 
-
 // Sur-titres
 // -------------------------
 .preTitle {
 	color: @nlPreTitle;
 	a { .newsletterLinkColor(@nlPreTitle); }
 }
-
 
 // contentDateInfo area
 // -------------------------
@@ -566,7 +566,6 @@ a {
 	}
 }
 
-
 // contentALaUne area
 // -------------------------
 .contentALaUne {
@@ -591,7 +590,6 @@ a {
 		}
 	}
 }
-
 
 // contentArticles area
 // -------------------------
@@ -622,7 +620,6 @@ a {
 	}
 }
 
-
 // contentEtude area
 // -------------------------
 .contentEtude {
@@ -633,7 +630,6 @@ a {
 		.important { color: mix(@nlCntEtuBackground, @nlCntEtuText, 25%) !important; }
 	}
 }
-
 
 // contentContact area
 // -------------------------
