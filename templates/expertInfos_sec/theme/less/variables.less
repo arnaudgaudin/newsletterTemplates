@@ -41,8 +41,6 @@
 
 // Newsletter Default Colors
 // --------------------------------------------------
-//couleur de fond générale
-@nlBodyBackground: darken(@colorCouleur3Clair, 4%);
 @nlContainerBackground: #ffffff;
 @nlText: #666666;
 @nlHeadings: #333333;
@@ -100,6 +98,9 @@
 
 // Newsletter Custom Colors
 // --------------------------------------------------
+//couleur de fond générale
+@nlSecBodyBackground: darken(@colorCouleur3Clair, 4%);
+
 //couleurs du dernier mot des pre-titres
 @nlPreTitleLast: @secteur-section-color-BTP;
 
@@ -117,7 +118,7 @@
 
 // Scaffolding
 // -------------------------
-@bodyBackground: @nlBodyBackground;
+@bodyBackground: @nlSecBodyBackground;
 @containerBackground: @nlContainerBackground;
 @textColor: @nlText;
 

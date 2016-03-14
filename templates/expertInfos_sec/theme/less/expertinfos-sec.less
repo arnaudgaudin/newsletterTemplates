@@ -485,15 +485,6 @@ a.tiny-button-link, table.columns .readMore td.buttonWrapper td, table.column .r
 //couleurs de la newsletter figée, donc on reste sur des couleurs fixes
 
 
-// Body
-// -------------------------
-body, table.body {
-	background: @nlBodyBackground;
-	//rajout pour suppression paramètre doublon via compiler
-	// background-image: url("-premailer-bgdebug");
-}
-
-
 // Header
 // -------------------------
 //pour supprimer toute zone blanche avant chargement header
@@ -637,6 +628,15 @@ body, table.body {
 // CUSTOM COLORS
 // --------------------------------------------------
 
+// Body
+// -------------------------
+body, table.body {
+	-premailer-background: e("##((nlSecBodyBackground))##");
+	//rajout pour suppression paramètre doublon via compiler
+	background-image: url("-premailer-bgdebug");
+}
+
+
 // Sur-titres
 // -------------------------
 .preTitle .last {
@@ -701,6 +701,15 @@ hr {
 /*
 // DEVELOPPEMENT COLORS
 // --------------------------------------------------
+
+
+// Body
+// -------------------------
+body, table.body {
+	background: @nlSecBodyBackground;
+	//rajout pour suppression paramètre doublon via compiler
+	// background-image: url("-premailer-bgdebug");
+}
 
 // Sur-titres
 // -------------------------
