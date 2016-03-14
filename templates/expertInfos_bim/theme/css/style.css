@@ -1389,6 +1389,10 @@ h6 a:visited {
   color: #333333;
 }
 
+.contentArticles .text .important {
+  color: #333333 !important;
+}
+
 .contentArticles,
 .contentArticles td,
 .contentArticles .inner {
@@ -1427,8 +1431,16 @@ h6 a:visited {
   color: #333333;
 }
 
+.contentBottom .dessin .text .important {
+  color: #333333 !important;
+}
+
 .contentBottom .dessin .readMore {
   color: #9e9e9e;
+}
+
+.contentBottom .dessin .readMore .important {
+  color: #9e9e9e !important;
 }
 
 .contentBottom .dessin .border {
@@ -1455,6 +1467,10 @@ h6 a:visited {
   color: #333333;
 }
 
+.contentBottom .profession .text .important {
+  color: #333333 !important;
+}
+
 .contentBottom .profession .border {
   border-top: 1px dotted #6b6b6b;
 }
@@ -1477,6 +1493,10 @@ h6 a:visited {
 
 .contentBottom .question .text {
   color: #333333;
+}
+
+.contentBottom .question .text .important {
+  color: #333333 !important;
 }
 
 .contentBottom .question .border {
@@ -1575,6 +1595,12 @@ table.body {
   color: ##((nlCntCabText))##;
 }
 
+.contentCabInform .text .important,
+.contentCabInform .readMore .important,
+.contentCabInform .icon-rsaquo .important {
+  color: ##((nlCntCabText))## !important;
+}
+
 .contentCabInform,
 .contentCabInform td,
 .contentCabInform .inner {
@@ -1618,6 +1644,10 @@ table.body {
   color: ##((nlCntUneText))##;
 }
 
+.contentALaUne .text .important {
+  color: ##((nlCntUneText))## !important;
+}
+
 .contentALaUne,
 .contentALaUne td,
 .contentALaUne .inner {
@@ -1641,12 +1671,25 @@ table.body {
   color: ##((nlCntUneReadMore))##;
 }
 
+.contentALaUne .readMore .important,
+.contentALaUne .icon-rsaquo .important {
+  color: ##((nlCntUneReadMore))## !important;
+}
+
 .contentArticles .title .icon-rsaquo {
   color: ##((nlCntArtIconColor))##;
 }
 
+.contentArticles .title .icon-rsaquo .important {
+  color: ##((nlCntArtIconColor))## !important;
+}
+
 .contentArticles .readMore {
   color: ##((nlCntArtReadMore))##;
+}
+
+.contentArticles .readMore .important {
+  color: ##((nlCntArtReadMore))## !important;
 }
 
 .contentBottom .agenda,
@@ -1656,6 +1699,10 @@ table.body {
 
 .contentBottom .agenda .preTitle {
   color: ##((nlCntAgdPreTitle))##;
+}
+
+.contentBottom .agenda .preTitle .important {
+  color: ##((nlCntAgdPreTitle))## !important;
 }
 
 .contentBottom .agenda .title {
@@ -1676,6 +1723,10 @@ table.body {
 
 .contentBottom .agenda .text {
   color: ##((nlCntAgdText))##;
+}
+
+.contentBottom .agenda .text .important {
+  color: ##((nlCntAgdText))## !important;
 }
 
 .contentBottom .agenda,
@@ -1705,6 +1756,10 @@ table.body {
   color: ##((nlCntChfPreTitle))##;
 }
 
+.contentBottom .chiffre .preTitle .important {
+  color: ##((nlCntChfPreTitle))## !important;
+}
+
 .contentBottom .chiffre .title {
   color: ##((nlCntChfTitle))##;
 }
@@ -1723,6 +1778,10 @@ table.body {
 
 .contentBottom .chiffre .text {
   color: ##((nlCntChfText))##;
+}
+
+.contentBottom .chiffre .text .important {
+  color: ##((nlCntChfText))## !important;
 }
 
 .contentBottom .chiffre,
@@ -1747,12 +1806,24 @@ table.body {
   color: ##((nlCntDsnPreTitle))##;
 }
 
+.contentBottom .dessin .preTitle .important {
+  color: ##((nlCntDsnPreTitle))## !important;
+}
+
 .contentBottom .profession .preTitle {
   color: ##((nlCntPrfPreTitle))##;
 }
 
+.contentBottom .profession .preTitle .important {
+  color: ##((nlCntPrfPreTitle))## !important;
+}
+
 .contentBottom .question .preTitle {
   color: ##((nlCntQtnPreTitle))##;
+}
+
+.contentBottom .question .preTitle .important {
+  color: ##((nlCntQtnPreTitle))## !important;
 }
 
 .contentContact,

@@ -1772,6 +1772,11 @@ hr {
   color: ##((nlCntCabText))##;
 }
 
+.contentCabInform .text .important,
+.contentCabInform .readMore .important {
+  color: ##((nlCntCabText))## !important;
+}
+
 .contentCabInform,
 .contentCabInform td,
 .contentCabInform .inner {
@@ -1798,6 +1803,10 @@ hr {
   color: ##((nlCntUneCategory))##;
 }
 
+.contentALaUne .title .category .important {
+  color: ##((nlCntUneCategory))## !important;
+}
+
 .contentALaUne .readMore {
   color: ##((nlCntUneReadMore))##;
 }
@@ -1820,6 +1829,10 @@ hr {
 
 .contentArticles .title .category {
   color: ##((nlCntArtCategory))##;
+}
+
+.contentArticles .title .category .important {
+  color: ##((nlCntArtCategory))## !important;
 }
 
 .contentArticles .readMore {
