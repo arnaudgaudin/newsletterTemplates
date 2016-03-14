@@ -232,7 +232,10 @@ a {
 		a { .newsletterLinkColor(@nlCntArtTitle); }
 		border-top: 1px dotted @nlCntArtBorder;
 	}
-	.text { color: @nlCntArtText; }
+	.text {
+		color: @nlCntArtText;
+		.important { color: @nlCntArtText !important; }
+	}
 	.newsletterInnerTextColor(@nlCntArtText);
 }
 //rajout bordure en bas en mode responsive
@@ -252,8 +255,14 @@ a {
 			color: @nlCntDsnTitle;
 			a { .newsletterLinkColor(@nlCntDsnTitle); }
 		}
-		.text { color: @nlText; }
-		.readMore { color: @nlCntDsnReadMore; }
+		.text {
+			color: @nlText;
+			.important { color: @nlText !important; }
+		}
+		.readMore {
+			color: @nlCntDsnReadMore;
+			.important { color: @nlCntDsnReadMore !important; }
+		}
 		.border { border-top: 1px dotted @nlCntDsnBorder; }
 	}
 
@@ -262,7 +271,10 @@ a {
 			color: @nlCntPrfTitle;
 			a { .newsletterLinkColor(@nlCntPrfTitle); }
 		}
-		.text { color: @nlText; }
+		.text {
+			color: @nlText;
+			.important { color: @nlText !important; }
+		}
 		.border { border-top: 1px dotted @nlCntPrfBorder; }
 	}
 
@@ -271,7 +283,10 @@ a {
 			color: @nlCntQtnTitle;
 			a { .newsletterLinkColor(@nlCntQtnTitle); }
 		}
-		.text { color: @nlText; }
+		.text {
+			color: @nlText;
+			.important { color: @nlText !important; }
+		}
 		.border { border-top: 1px dotted @nlCntQtnBorder; }
 	}
 }
