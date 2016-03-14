@@ -308,16 +308,16 @@ tracking_url = "rep="&repertoire_ei&"&amp;url_site_exp="&url_site_exp
 														if (lien_cab <> "") then
 														}}%%}}-->
 														<h3 class="title">
-															<a target="_blank" href="%%{{=lien_cab}}%%"><!--{{%%{{=rs("titre")}}%%}}--><!--DEL{{-->titre<!--}}DEL--></a>
+															<a target="_blank" href="%%{{=lien_cab}}%%"><span class="important"><!--{{%%{{=rs("titre")}}%%}}--><!--DEL{{-->titre<!--}}DEL--></span></a>
 														</h3>
 														<div class="text">
 															<a target="_blank" href="%%{{=lien_cab}}%%">
-																<!--{{%%{{=rs("texte")}}%%}}--><!--DEL{{-->texte<!--}}DEL-->
+																<span class="important"><!--{{%%{{=rs("texte")}}%%}}--><!--DEL{{-->texte<!--}}DEL--></span>
 															</a>
 														</div>
 														<p class="readMore">
 															<a target="_blank" href="%%{{=lien_cab}}%%">
-																Lire la suite
+																<span class="important">Lire la suite</span>
 															</a>
 														</p>
 														<!--{{%%{{ else }}%%}}-->
@@ -383,7 +383,7 @@ tracking_url = "rep="&repertoire_ei&"&amp;url_site_exp="&url_site_exp
 														<div class="preTitle">À la une</div>
 														<h2 class="title">
 															<a target="_blank" href="http://%%{{=url_site_exp}}%%/%%{{=article_une_url_v3}}%%&amp;%%{{=tracking_url}}%%">
-																<!--{{%%{{ if article_une_rub <> "" then }}%%}}--><span class="category"><!--{{%%{{=article_une_rub}}%%}}--><!--DEL{{-->article_une_rub<!--}}DEL-->.</span> <!--{{%%{{ end if }}%%}}--><!--{{%%{{=article_une_titre}}%%}}--><!--DEL{{-->article_une_titre<!--}}DEL-->
+																<!--{{%%{{ if article_une_rub <> "" then }}%%}}--><span class="category"><span class="important"><!--{{%%{{=article_une_rub}}%%}}--><!--DEL{{-->article_une_rub<!--}}DEL-->.</span></span> <!--{{%%{{ end if }}%%}}--><span class="important"><!--{{%%{{=article_une_titre}}%%}}--><!--DEL{{-->article_une_titre<!--}}DEL--></span>
 															</a>
 														</h2>
 														<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/%%{{=article_une_url_v3}}%%&amp;%%{{=tracking_url}}%%">
@@ -391,12 +391,12 @@ tracking_url = "rep="&repertoire_ei&"&amp;url_site_exp="&url_site_exp
 														</a>
 														<div class="text">
 															<a target="_blank" href="http://%%{{=url_site_exp}}%%/%%{{=article_une_url_v3}}%%&amp;%%{{=tracking_url}}%%">
-																<!--{{%%{{=rsArticleAlaune("CONTENU_CHAPITRE_FLASH_INFOS")}}%%}}--><!--DEL{{-->CONTENU_CHAPITRE_FLASH_INFOS<!--}}DEL-->
+																<span class="important"><!--{{%%{{=rsArticleAlaune("CONTENU_CHAPITRE_FLASH_INFOS")}}%%}}--><!--DEL{{-->CONTENU_CHAPITRE_FLASH_INFOS<!--}}DEL--></span>
 															</a>
 														</div>
 														<p class="readMore">
 															<a target="_blank" href="http://%%{{=url_site_exp}}%%/%%{{=article_une_url_v3}}%%&amp;%%{{=tracking_url}}%%">
-																Lire la suite
+																<span class="important">Lire la suite</span>
 															</a>
 														</p>
 													</td>
@@ -492,17 +492,17 @@ tracking_url = "rep="&repertoire_ei&"&amp;url_site_exp="&url_site_exp
 														}}%%}}-->
 														<h3 class="title">
 															<a target="_blank" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%&amp;%%{{=tracking_url}}%%">
-																<!--{{%%{{ if article_rub <> "" then }}%%}}--><span class="category"><!--{{%%{{=article_rub}}%%}}--><!--DEL{{-->article_rub<!--}}DEL-->.</span> <!--{{%%{{ end if }}%%}}--><!--{{%%{{=article_titre}}%%}}--><!--DEL{{-->article_titre<!--}}DEL-->
+																<!--{{%%{{ if article_rub <> "" then }}%%}}--><span class="category"><span class="important"><!--{{%%{{=article_rub}}%%}}--><!--DEL{{-->article_rub<!--}}DEL-->.</span></span> <span class="important"><!--{{%%{{ end if }}%%}}--><!--{{%%{{=article_titre}}%%}}--><!--DEL{{-->article_titre<!--}}DEL--></span>
 															</a>
 														</h3>
 														<div class="text">
 															<a target="_blank" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%&amp;%%{{=tracking_url}}%%">
-																<!--{{%%{{=rsArticle("CONTENU_CHAPITRE_FLASH_INFOS")}}%%}}--><!--DEL{{-->CONTENU_CHAPITRE_FLASH_INFOS<!--}}DEL-->
+																<span class="important"><!--{{%%{{=rsArticle("CONTENU_CHAPITRE_FLASH_INFOS")}}%%}}--><!--DEL{{-->CONTENU_CHAPITRE_FLASH_INFOS<!--}}DEL--></span>
 															</a>
 														</div>
 														<p class="readMore">
 															<a target="_blank" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%&amp;%%{{=tracking_url}}%%">
-																Lire la suite
+																<span class="important">Lire la suite</span>
 															</a>
 														</p>
 														<!--{{%%{{
@@ -550,7 +550,7 @@ tracking_url = "rep="&repertoire_ei&"&amp;url_site_exp="&url_site_exp
 																	<td class="sub-columns value" nlbgcolor="##((nlCntChfBackground))##">
 																		<p class="inner">
 																			<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/?fintrack=&amp;article=%%{{=chiffre_id}}%%&amp;%%{{=tracking_url}}%%">
-																				<!--{{%%{{=chiffre_valeur}}%%}}--><!--DEL{{-->1625<!--}}DEL-->
+																				<span class="important"><!--{{%%{{=chiffre_valeur}}%%}}--><!--DEL{{-->1625<!--}}DEL--></span>
 																			</a>
 																		</p>
 																	</td>
@@ -562,11 +562,11 @@ tracking_url = "rep="&repertoire_ei&"&amp;url_site_exp="&url_site_exp
 															<tr>
 																<td class="center text-pad">
 																	<h4 class="title">
-																		<a target="_blank" href="http://%%{{=url_site_exp}}%%/?fintrack=&amp;article=%%{{=chiffre_id}}%%&amp;%%{{=tracking_url}}%%">Le chiffre</a>
+																		<a target="_blank" href="http://%%{{=url_site_exp}}%%/?fintrack=&amp;article=%%{{=chiffre_id}}%%&amp;%%{{=tracking_url}}%%"><span class="important">Le chiffre</span></a>
 																	</h4>
 																	<div class="text">
 																		<a target="_blank" href="http://%%{{=url_site_exp}}%%/?fintrack=&amp;article=%%{{=chiffre_id}}%%&amp;%%{{=tracking_url}}%%">
-																			<!--{{%%{{=chiffre_titre}}%%}}--><!--DEL{{-->chiffre_titre<!--}}DEL-->
+																			<span class="important"><!--{{%%{{=chiffre_titre}}%%}}--><!--DEL{{-->chiffre_titre<!--}}DEL--></span>
 																		</a>
 																	</div>
 																</td>
@@ -587,7 +587,7 @@ tracking_url = "rep="&repertoire_ei&"&amp;url_site_exp="&url_site_exp
 																	<td class="sub-columns first hide-for-small">&#160;</td>
 																	<td class="sub-columns value" nlbgcolor="##((nlCntQtnBackground))##">
 																		<p class="inner">
-																			<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/?fintrack=&amp;article=%%{{=question_id}}%%&amp;%%{{=tracking_url}}%%">?</a>
+																			<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/?fintrack=&amp;article=%%{{=question_id}}%%&amp;%%{{=tracking_url}}%%"><span class="important">?</span></a>
 																		</p>
 																	</td>
 																	<td class="sub-columns last hide-for-small">&#160;</td>
@@ -598,11 +598,11 @@ tracking_url = "rep="&repertoire_ei&"&amp;url_site_exp="&url_site_exp
 															<tr>
 																<td class="center text-pad">
 																	<h4 class="title">
-																		<a target="_blank" href="http://%%{{=url_site_exp}}%%/?fintrack=&amp;article=%%{{=question_id}}%%&amp;%%{{=tracking_url}}%%">La question</a>
+																		<a target="_blank" href="http://%%{{=url_site_exp}}%%/?fintrack=&amp;article=%%{{=question_id}}%%&amp;%%{{=tracking_url}}%%"><span class="important">La question</span></a>
 																	</h4>
 																	<div class="text">
 																		<a target="_blank" href="http://%%{{=url_site_exp}}%%/?fintrack=&amp;article=%%{{=question_id}}%%&amp;%%{{=tracking_url}}%%">
-																			<!--{{%%{{=question_titre}}%%}}--><!--DEL{{-->question_titre<!--}}DEL-->
+																			<span class="important"><!--{{%%{{=question_titre}}%%}}--><!--DEL{{-->question_titre<!--}}DEL--></span>
 																		</a>
 																	</div>
 																</td>
@@ -623,10 +623,10 @@ tracking_url = "rep="&repertoire_ei&"&amp;url_site_exp="&url_site_exp
 																	<td class="sub-columns first hide-for-small">&#160;</td>
 																	<td class="sub-columns value" nlbgcolor="##((nlCntAgdBackground))##">
 																		<p class="inner day">
-																			<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/?fintrack=&amp;article=%%{{=agenda_id}}%%&amp;collapse=collapse%%{{=agenda_collapse}}%%&amp;%%{{=tracking_url}}%%"><!--{{%%{{=agenda_jour}}%%}}--><!--DEL{{-->25<!--}}DEL--></a>
+																			<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/?fintrack=&amp;article=%%{{=agenda_id}}%%&amp;collapse=collapse%%{{=agenda_collapse}}%%&amp;%%{{=tracking_url}}%%"><span class="important"><!--{{%%{{=agenda_jour}}%%}}--><!--DEL{{-->25<!--}}DEL--></span></a>
 																		</p>
 																		<p class="inner month">
-																			<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/?fintrack=&amp;article=%%{{=agenda_id}}%%&amp;collapse=collapse%%{{=agenda_collapse}}%%&amp;%%{{=tracking_url}}%%"><!--{{%%{{=agenda_mois_texte}}%%}}--><!--DEL{{-->mars<!--}}DEL--></a>
+																			<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/?fintrack=&amp;article=%%{{=agenda_id}}%%&amp;collapse=collapse%%{{=agenda_collapse}}%%&amp;%%{{=tracking_url}}%%"><span class="important"><!--{{%%{{=agenda_mois_texte}}%%}}--><!--DEL{{-->mars<!--}}DEL--></span></a>
 																		</p>
 																	</td>
 																	<td class="sub-columns last hide-for-small">&#160;</td>
@@ -637,11 +637,11 @@ tracking_url = "rep="&repertoire_ei&"&amp;url_site_exp="&url_site_exp
 															<tr>
 																<td class="center text-pad">
 																	<h4 class="title">
-																		<a target="_blank" href="http://%%{{=url_site_exp}}%%/?fintrack=&amp;article=%%{{=agenda_id}}%%&amp;collapse=collapse%%{{=agenda_collapse}}%%&amp;%%{{=tracking_url}}%%">Le rappel</a>
+																		<a target="_blank" href="http://%%{{=url_site_exp}}%%/?fintrack=&amp;article=%%{{=agenda_id}}%%&amp;collapse=collapse%%{{=agenda_collapse}}%%&amp;%%{{=tracking_url}}%%"><span class="important">Le rappel</span></a>
 																	</h4>
 																	<div class="text">
 																		<a target="_blank" href="http://%%{{=url_site_exp}}%%/?fintrack=&amp;article=%%{{=agenda_id}}%%&amp;collapse=collapse%%{{=agenda_collapse}}%%&amp;%%{{=tracking_url}}%%">
-																			<!--{{%%{{=agenda_titre}}%%}}--><!--DEL{{-->agenda_titre<!--}}DEL-->
+																			<span class="important"><!--{{%%{{=agenda_titre}}%%}}--><!--DEL{{-->agenda_titre<!--}}DEL--></span>
 																		</a>
 																	</div>
 																</td>
