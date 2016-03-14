@@ -514,13 +514,19 @@ a.tiny-button-link, table.columns .readMore td.buttonWrapper td, table.column .r
 		color: @nlCntCabTitle;
 		a { .newsletterLinkColor(@nlCntCabTitle); }
 	}
-	.text, .readMore { color: @nlCntCabText; }
+	.text, .readMore {
+		color: @nlCntCabText;
+		.important { color: @nlCntCabText !important; }
+	}
 	.newsletterInnerTextColor(@nlCntCabText);
 	.readMore table.tiny-button {
 		td {
 			background: @nlCntCabReadMoreBackground;
 			border-color: @nlCntCabReadMoreBorder;
-			&, a { color: @nlCntCabReadMoreText; }
+			&, a {
+				color: @nlCntCabReadMoreText;
+				.important { color: @nlCntCabReadMoreText !important; }
+			}
 		}
 
 		//hover|visited|active state
@@ -528,9 +534,13 @@ a.tiny-button-link, table.columns .readMore td.buttonWrapper td, table.column .r
 		&:visited td,
 		&:active td {
 			background: @nlCntCabReadMoreBackgroundHover !important;
-			a { color: @nlCntCabReadMoreText !important; }
+			a {
+				&, .important { color: @nlCntCabReadMoreText !important; }
+			}
 		}
-		td a:visited { color: @nlCntCabReadMoreText !important; }
+		td a:visited {
+			&, .important { color: @nlCntCabReadMoreText !important; }
+		}
 	}
 }
 
@@ -540,16 +550,23 @@ a.tiny-button-link, table.columns .readMore td.buttonWrapper td, table.column .r
 .contentALaUne {
 	.readMore table.tiny-button {
 		td {
-			&, a { color: @nlCntUneReadMoreText; }
+			&, a {
+				color: @nlCntUneReadMoreText;
+				.important { color: @nlCntUneReadMoreText !important; }
+			}
 		}
 
 		//hover|visited|active state
 		&:hover td,
 		&:visited td,
 		&:active td {
-			a { color: @nlCntUneReadMoreText !important; }
+			a {
+				&, .important { color: @nlCntUneReadMoreText !important; }
+			}
 		}
-		td a:visited { color: @nlCntUneReadMoreText !important; }
+		td a:visited {
+			&, .important { color: @nlCntUneReadMoreText !important; }
+		}
 	}
 }
 
@@ -562,7 +579,10 @@ a.tiny-button-link, table.columns .readMore td.buttonWrapper td, table.column .r
 		td {
 			background: @nlCntArtReadMoreBackground;
 			border-color: @nlCntArtReadMoreBorder;
-			&, a { color: @nlCntArtReadMoreText; }
+			&, a {
+				color: @nlCntArtReadMoreText;
+				.important { color: @nlCntArtReadMoreText !important; }
+			}
 		}
 
 		//hover|visited|active state
@@ -570,9 +590,13 @@ a.tiny-button-link, table.columns .readMore td.buttonWrapper td, table.column .r
 		&:visited td,
 		&:active td {
 			background: @nlCntArtReadMoreBackgroundHover !important;
-			a { color: @nlCntArtReadMoreText !important; }
+			a {
+				&, .important { color: @nlCntArtReadMoreText !important; }
+			}
 		}
-		td a:visited { color: @nlCntArtReadMoreText !important; }
+		td a:visited {
+			&, .important { color: @nlCntArtReadMoreText !important; }
+		}
 	}
 }
 
@@ -582,7 +606,10 @@ a.tiny-button-link, table.columns .readMore td.buttonWrapper td, table.column .r
 .contentEtude {
 	&, td.expander { background: @nlCntEtuBackground; }
 	.newsletterInnerTextColor(@nlCntEtuText);
-	.text { color: mix(@nlCntEtuBackground, @nlCntEtuText, 25%); }
+	.text {
+		color: mix(@nlCntEtuBackground, @nlCntEtuText, 25%);
+		.important { color: mix(@nlCntEtuBackground, @nlCntEtuText, 25%) !important; }
+	}
 }
 
 
