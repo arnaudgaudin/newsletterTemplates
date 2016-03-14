@@ -539,7 +539,10 @@ hr {
 		color: e("##((nlCntCabTitle))##");
 		a { .newsletterLinkColor(e("##((nlCntCabTitle))##")); }
 	}
-	.text, .readMore { color: e("##((nlCntCabText))##"); }
+	.text, .readMore {
+		color: e("##((nlCntCabText))##");
+		.important { color: e("##((nlCntCabText))##") !important; }
+	}
 	.newsletterInnerTextColor(e("##((nlCntCabText))##"));
 }
 
@@ -548,8 +551,9 @@ hr {
 // -------------------------
 .contentALaUne {
 	.preTitle { color: e("##((nlCntUnePreTitle))##"); }
-	.title {
-		.category { color: e("##((nlCntUneCategory))##"); }
+	.title .category {
+		color: e("##((nlCntUneCategory))##");
+		.important { color: e("##((nlCntUneCategory))##") !important; }
 	}
 	.readMore {
 		color: e("##((nlCntUneReadMore))##");
@@ -562,7 +566,10 @@ hr {
 // -------------------------
 .contentArticles {
 	.preTitle { color: e("##((nlCntArtPreTitle))##"); }
-	.title .category { color: e("##((nlCntArtCategory))##"); }
+	.title .category {
+		color: e("##((nlCntArtCategory))##");
+		.important { color: e("##((nlCntArtCategory))##") !important; }
+	}
 	.readMore {
 		color: e("##((nlCntArtReadMore))##");
 		a { .newsletterLinkColor(e("##((nlCntArtReadMore))##")); }
