@@ -1510,15 +1510,6 @@ img.faicon {
   padding-bottom: 10px;
 }
 
-body,
-table.body {
-  background: #e0e0e0;
-}
-
-.header {
-  background: #e0e0e0;
-}
-
 .preTitle {
   color: #333333;
 }
@@ -1532,61 +1523,6 @@ table.body {
 .preTitle a:hover,
 .preTitle a:focus,
 .preTitle a:active {
-  color: #333333 !important;
-}
-
-.contentOnline,
-.contentOnline td.expander {
-  background: #e0e0e0;
-}
-
-.contentOnline,
-.contentOnline td,
-.contentOnline .inner {
-  color: #6d6d6d;
-}
-
-.contentOnline a {
-  color: #6d6d6d;
-}
-
-.contentOnline a .important,
-.contentOnline a:visited,
-.contentOnline a:hover,
-.contentOnline a:focus,
-.contentOnline a:active {
-  color: #6d6d6d !important;
-}
-
-.contentOnline .online {
-  color: #6d6d6d;
-}
-
-.contentOnline .online a {
-  color: #6d6d6d;
-}
-
-.contentOnline .online a .important,
-.contentOnline .online a:visited,
-.contentOnline .online a:hover,
-.contentOnline .online a:focus,
-.contentOnline .online a:active {
-  color: #6d6d6d !important;
-}
-
-.contentOnline .name {
-  color: #333333;
-}
-
-.contentOnline .name a {
-  color: #333333;
-}
-
-.contentOnline .name a .important,
-.contentOnline .name a:visited,
-.contentOnline .name a:hover,
-.contentOnline .name a:focus,
-.contentOnline .name a:active {
   color: #333333 !important;
 }
 
@@ -1829,6 +1765,71 @@ table.body {
   color: #8c8c8c;
 }
 
+body,
+table.body {
+  -premailer-background: ##((nlSecBodyBackground))##;
+  background-image: url("-premailer-bgdebug");
+}
+
+.header {
+  -premailer-background: ##((nlSecBodyBackground))##;
+}
+
+.contentOnline,
+.contentOnline td.expander {
+  -premailer-background: ##((nlSecCntOnlineBackground))##;
+}
+
+.contentOnline,
+.contentOnline td,
+.contentOnline .inner {
+  color: ##((nlSecCntOnlineText))##;
+}
+
+.contentOnline a {
+  color: ##((nlSecCntOnlineText))##;
+}
+
+.contentOnline a .important,
+.contentOnline a:visited,
+.contentOnline a:hover,
+.contentOnline a:focus,
+.contentOnline a:active {
+  color: ##((nlSecCntOnlineText))## !important;
+}
+
+.contentOnline .online {
+  color: ##((nlSecCntOnlineText))##;
+}
+
+.contentOnline .online a {
+  color: ##((nlSecCntOnlineText))##;
+}
+
+.contentOnline .online a .important,
+.contentOnline .online a:visited,
+.contentOnline .online a:hover,
+.contentOnline .online a:focus,
+.contentOnline .online a:active {
+  color: ##((nlSecCntOnlineText))## !important;
+}
+
+.contentOnline .name {
+  color: ##((nlSecCntOnlineName))##;
+}
+
+.contentOnline .name a {
+  color: ##((nlSecCntOnlineName))##;
+}
+
+.contentOnline .name a .important,
+.contentOnline .name a:visited,
+.contentOnline .name a:hover,
+.contentOnline .name a:focus,
+.contentOnline .name a:active {
+  color: ##((nlSecCntOnlineName))## !important;
+}
+
 .preTitle .last {
   color: **((secteur_color))**;
 }
@@ -1876,6 +1877,38 @@ hr {
 /*
 // DEVELOPPEMENT COLORS
 // --------------------------------------------------
+
+
+// Body
+// -------------------------
+body, table.body {
+	background: @nlSecBodyBackground;
+	//rajout pour suppression paramètre doublon via compiler
+	// background-image: url("-premailer-bgdebug");
+}
+
+
+// Header
+// -------------------------
+//pour supprimer toute zone blanche avant chargement header
+.header { background: @nlSecBodyBackground; }
+
+
+// contentOnline area
+// -------------------------
+.contentOnline {
+	&, td.expander { background: @nlSecCntOnlineBackground; }
+	.newsletterInnerTextColor(@nlSecCntOnlineText);
+	.online {
+		color: @nlSecCntOnlineText;
+		a { .newsletterLinkColor(@nlSecCntOnlineText); }
+	}
+	.name {
+		color: @nlSecCntOnlineName;
+		a { .newsletterLinkColor(@nlSecCntOnlineName); }
+	}
+}
+
 
 // Sur-titres
 // -------------------------
