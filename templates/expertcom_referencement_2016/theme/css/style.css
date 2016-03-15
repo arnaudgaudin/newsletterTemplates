@@ -4,7 +4,7 @@
 
 body,
 table.body {
-  background-color: #888888;
+  background-color: #f6f7f8;
 }
 
 /**********************************************
@@ -565,7 +565,7 @@ h5,
 h6 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
-  color: #333333;
+  color: #000;
   word-break: normal;
 }
 
@@ -1092,6 +1092,122 @@ table.large-button td {
   -premailer-width: auto;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  mso-line-height-rule: exactly;
+}
+
+h1 {
+  line-height: 35.2px;
+}
+
+h2 {
+  line-height: 30.8px;
+}
+
+h3 {
+  line-height: 26.4px;
+}
+
+h4 {
+  line-height: 24.2px;
+}
+
+h5 {
+  line-height: 19.8px;
+}
+
+h6 {
+  line-height: 17.6px;
+}
+
+.header {
+  background-color: #4d616d;
+}
+
+.header,
+.header td,
+.header .inner {
+  color: #ffffff;
+}
+
+.header a {
+  color: #ffffff;
+}
+
+.header a .important,
+.header a:visited,
+.header a:hover,
+.header a:focus,
+.header a:active {
+  color: #ffffff !important;
+}
+
+.header td {
+  text-align: right;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.header .title {
+  text-align: right;
+  font-weight: normal;
+  color: #ffffff;
+}
+
+.contentOnline {
+  background-color: #f6f7f8;
+}
+
+.contentOnline,
+.contentOnline td,
+.contentOnline .inner {
+  color: #92a1a8;
+}
+
+.contentOnline a {
+  color: #92a1a8;
+}
+
+.contentOnline a .important,
+.contentOnline a:visited,
+.contentOnline a:hover,
+.contentOnline a:focus,
+.contentOnline a:active {
+  color: #92a1a8 !important;
+}
+
+.contentOnline td {
+  font-size: 11px;
+  line-height: 13.75px;
+}
+
+.contentOnline td.wrapper {
+  padding-top: 10px;
+}
+
+.contentOnline table.columns td,
+.contentOnline table.column td {
+  padding-bottom: 10px;
+}
+
+.contentIntro {
+  background-color: #f0f2f3;
+}
+
+.contentIntro td.wrapper {
+  padding-top: 10px;
+}
+
+.contentIntro table.columns td,
+.contentIntro table.column td {
+  padding-bottom: 10px;
+}
+
 @media only screen and (max-width: 720px) {
   table[class="body"] img {
     max-width: auto !important;
@@ -1256,5 +1372,65 @@ table.large-button td {
 
   table[class="container"] .panel {
     padding: 10px !important;
+  }
+
+  table[class="body"] body,
+  table[class="body"],
+  table[class="body"] p,
+  table[class="body"] td {
+    font-size: 12px !important;
+    line-height: 16px !important;
+  }
+
+  table[class="body"] small {
+    font-size: 9px !important;
+  }
+
+  table[class="body"] h1 {
+    font-size: 28px !important;
+    line-height: 30.8px !important;
+  }
+
+  table[class="body"] h2 {
+    font-size: 25px !important;
+    line-height: 27.5px !important;
+  }
+
+  table[class="body"] h3 {
+    font-size: 21px !important;
+    line-height: 23.1px !important;
+  }
+
+  table[class="body"] h4 {
+    font-size: 19px !important;
+    line-height: 20.9px !important;
+  }
+
+  table[class="body"] h5 {
+    font-size: 16px !important;
+    line-height: 17.6px !important;
+  }
+
+  table[class="body"] h6 {
+    font-size: 14px !important;
+    line-height: 15.4px !important;
+  }
+
+  table[class="body"] .contentOnline td.wrapper {
+    padding-top: 5px !important;
+  }
+
+  table[class="body"] .contentOnline table.columns td,
+  table[class="body"] .contentOnline table.column td {
+    padding-bottom: 5px !important;
+  }
+
+  table[class="body"] .contentIntro td.wrapper {
+    padding-top: 5px !important;
+  }
+
+  table[class="body"] .contentIntro table.columns td,
+  table[class="body"] .contentIntro table.column td {
+    padding-bottom: 5px !important;
   }
 }
