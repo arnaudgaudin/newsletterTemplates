@@ -1267,11 +1267,22 @@ table.imgCont .icon-img {
 
 .webicons table.columns .subWrapper,
 .webicons table.colum .subWrapper {
+  background-color: #0f0;
   display: inline;
+}
+
+.webicons table.columns .subWrapper,
+.webicons table.colum .subWrapper,
+.webicons table.columns .subWrapper .td,
+.webicons table.colum .subWrapper .td {
+  height: 30px;
+  -premailer-height: 30;
 }
 
 .webicons table.columns .subWrapper td,
 .webicons table.colum .subWrapper td {
+  background-color: #f00;
+  overflow: hidden;
   font-size: 0px;
   line-height: 0px;
   padding: 0px 5px;

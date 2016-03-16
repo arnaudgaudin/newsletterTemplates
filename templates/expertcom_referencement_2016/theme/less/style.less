@@ -209,8 +209,16 @@ table.imgCont {
 	
 	table.columns, table.colum {
 		.subWrapper {
+			background-color: #0f0;
 			display: inline;
+			&, .td {
+				height: 30px;
+				-premailer-height: 30;
+			}
+
 			td {
+				background-color: #f00;
+				overflow: hidden;
 				font-size: 0px;
 				line-height: 0px;
 				padding: 0px 5px;
