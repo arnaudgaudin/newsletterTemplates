@@ -1412,16 +1412,8 @@ table.imgCont .icon-img {
   padding-right: 20px !important;
 }
 
-.contentBottom td.wrapper.first {
-  background-color: #ffe5e5;
-}
-
-.contentBottom td.wrapper.middle {
-  background-color: #e5ffe5;
-}
-
-.contentBottom td.wrapper.last {
-  background-color: #e5e5ff;
+.contentContact {
+  background-color: #f00;
 }
 
 @media only screen and (max-width: 720px) {
