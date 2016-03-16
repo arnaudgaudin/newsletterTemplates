@@ -1417,8 +1417,99 @@ table.imgCont .icon-img {
   padding-right: 20px !important;
 }
 
-.contentContact {
-  background-color: #f00;
+.contentContact,
+.contentContact td,
+.contentContact .inner {
+  color: #cf2630;
+}
+
+.contentContact a {
+  color: #cf2630;
+}
+
+.contentContact a .important,
+.contentContact a:visited,
+.contentContact a:hover,
+.contentContact a:focus,
+.contentContact a:active {
+  color: #cf2630 !important;
+}
+
+.contentContact td {
+  font-size: 18px;
+  line-height: 22.5px;
+  font-weight: bold;
+}
+
+.contentFooter {
+  background-color: #4d616d;
+}
+
+.contentFooter,
+.contentFooter td,
+.contentFooter .inner {
+  color: #ffffff;
+}
+
+.contentFooter a {
+  color: #ffffff;
+}
+
+.contentFooter a .important,
+.contentFooter a:visited,
+.contentFooter a:hover,
+.contentFooter a:focus,
+.contentFooter a:active {
+  color: #ffffff !important;
+}
+
+.contentFooter td.wrapper.first td {
+  text-align: right;
+}
+
+.contentFooter td.wrapper {
+  padding-top: 10px;
+}
+
+.contentFooter table.columns td,
+.contentFooter table.column td {
+  padding-bottom: 10px;
+}
+
+.contentUnsubscribe {
+  background-color: #f5f7f8;
+}
+
+.contentUnsubscribe,
+.contentUnsubscribe td,
+.contentUnsubscribe .inner {
+  color: #8ba1af;
+}
+
+.contentUnsubscribe a {
+  color: #8ba1af;
+}
+
+.contentUnsubscribe a .important,
+.contentUnsubscribe a:visited,
+.contentUnsubscribe a:hover,
+.contentUnsubscribe a:focus,
+.contentUnsubscribe a:active {
+  color: #8ba1af !important;
+}
+
+.contentUnsubscribe td {
+  font-size: 11px;
+  line-height: 13.75px;
+}
+
+.contentUnsubscribe td.wrapper {
+  padding-top: 10px;
+}
+
+.contentUnsubscribe table.columns td,
+.contentUnsubscribe table.column td {
+  padding-bottom: 10px;
 }
 
 @media only screen and (max-width: 720px) {
@@ -1732,5 +1823,28 @@ table.imgCont .icon-img {
   table[class="body"] .contentBottom table.column .text-pad {
     padding-left: 20px !important;
     padding-right: 20px !important;
+  }
+
+  table[class="body"] .contentContact td {
+    font-size: 14px !important;
+    line-height: 17.5px !important;
+  }
+
+  table[class="body"] .contentFooter td.wrapper {
+    padding-top: 5px !important;
+  }
+
+  table[class="body"] .contentFooter table.columns td,
+  table[class="body"] .contentFooter table.column td {
+    padding-bottom: 5px !important;
+  }
+
+  table[class="body"] .contentUnsubscribe td.wrapper {
+    padding-top: 5px !important;
+  }
+
+  table[class="body"] .contentUnsubscribe table.columns td,
+  table[class="body"] .contentUnsubscribe table.column td {
+    padding-bottom: 5px !important;
   }
 }

@@ -382,9 +382,63 @@ table.imgCont {
 // contentContact area
 // -------------------------
 .contentContact {
-	background-color: #f00;
+	.newsletterInnerTextColor(@colorExpertCom1);
+	td {
+		font-size: @fontSizeLarge;
+		line-height: (@fontSizeLarge * 1.25);
+		font-weight: bold;
+	}
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentContact {
+		td {
+			font-size: @baseFontSize !important;
+			line-height: (@baseFontSize * 1.25) !important;
+		}
+	}
 }
 
 
+// contentFooter area
+// -------------------------
+.contentFooter {
+	background-color: @colorExpertCom3;
+	.newsletterInnerTextColor(#ffffff);
+
+	td.wrapper.first {
+		td { text-align: right; }
+	}
+
+	//réduction décalage vertical
+	td.wrapper { padding-top: (@wrapperPad / 2); }
+	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentFooter {
+		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
+		table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
+	}
+}
 
 
+// contentUnsubscribe area
+// -------------------------
+.contentUnsubscribe {
+	background-color: @bodyBackground;
+	.newsletterInnerTextColor(darken(@bodyBackground, 35%));
+
+	td {
+		font-size: @fontSizeSmall;
+		line-height: (@fontSizeSmall * 1.25);
+	}
+
+	//réduction décalage vertical
+	td.wrapper { padding-top: (@wrapperPad / 2); }
+	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentUnsubscribe {
+		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
+		table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
+	}
+}
