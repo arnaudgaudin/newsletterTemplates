@@ -1228,6 +1228,34 @@ table.column .readMore td.buttonWrapper td {
   font-weight: bold;
 }
 
+.link_box img,
+.contentRef img,
+.contentBottom img {
+  float: none;
+}
+
+table.imgCont {
+  width: 100%;
+}
+
+table.imgCont td {
+  padding: 0 0 5px 0;
+}
+
+table.imgCont .icon-img,
+body table.imgCont img {
+  display: inline;
+  float: none;
+}
+
+table.imgCont .icon-img {
+  position: relative;
+  vertical-align: text-bottom;
+  line-height: 60px;
+  width: 60px !important;
+  height: 60px !important;
+}
+
 .header {
   background-color: #4d616d;
 }
@@ -1369,6 +1397,34 @@ table.column .readMore td.buttonWrapper td {
 
 .contentMain {
   background-color: #eff2f4;
+}
+
+.contentBottom .title {
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.contentBottom .text,
+.contentBottom .date {
+  font-size: 11px;
+  line-height: 13.75px;
+}
+
+.contentBottom .date {
+  font-weight: bold;
+  color: #279bd4;
+}
+
+.contentBottom .date a {
+  color: #279bd4;
+}
+
+.contentBottom .date a .important,
+.contentBottom .date a:visited,
+.contentBottom .date a:hover,
+.contentBottom .date a:focus,
+.contentBottom .date a:active {
+  color: #279bd4 !important;
 }
 
 @media only screen and (max-width: 720px) {
@@ -1604,6 +1660,26 @@ table.column .readMore td.buttonWrapper td {
     line-height: 15px !important;
   }
 
+  table[class="body"] table.imgCont {
+    width: auto !important;
+    float: left !important;
+  }
+
+  table[class="body"] table.imgCont td {
+    padding: 0 10px 0 0 !important;
+  }
+
+  table[class="body"] table.imgCont .icon-img {
+    display: block !important;
+    float: left !important;
+    width: 60px !important;
+    height: 60px !important;
+  }
+
+  table[class="body"] table.imgCont .icon-img[data-type^="get"] {
+    display: none !important;
+  }
+
   table[class="body"] .contentOnline td.wrapper {
     padding-top: 5px !important;
   }
@@ -1651,5 +1727,10 @@ table.column .readMore td.buttonWrapper td {
   table[class="body"] .contentRef table.columns td,
   table[class="body"] .contentRef table.column td {
     padding-bottom: 0px !important;
+  }
+
+  table[class="body"] .contentBottom td,
+  table[class="body"] .contentBottom td .title {
+    text-align: left !important;
   }
 }

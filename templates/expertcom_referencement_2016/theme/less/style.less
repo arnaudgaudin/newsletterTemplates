@@ -156,6 +156,53 @@ a.medium-button-link, table.columns .readMore td.buttonWrapper td, table.column 
 	}
 }
 
+
+//pas de float pour image contenus dans liens en block ou les liens images
+.link_box, .contentRef, .contentBottom {
+	img { float: none; }
+}
+
+//icone en image
+table.imgCont {
+	td { padding: 0 0 5px 0; }
+	width: 100%;
+	
+	//pour forcer dans lotus
+	.icon-img,
+	body & img {
+		display: inline;
+		float: none;
+	}
+
+	.icon-img {
+		position: relative;
+		vertical-align: text-bottom;
+		line-height: 60px;
+		width: 60px !important;
+		height: 60px !important;
+	}
+}
+
+//override version firefox
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] table.imgCont {
+		td { padding: 0 10px 0 0 !important; }
+
+		width: auto !important;
+		float: left !important;
+
+		.icon-img {
+			display: block !important;
+			float: left !important;
+			width: 60px !important;
+			height: 60px !important;
+			//masquage image de test
+			&[data-type^="get"] { display: none !important; }
+		}
+	}
+}
+
+
 //gestion header
 .header {
 	background-color: @colorExpertCom3;
@@ -293,5 +340,27 @@ a.medium-button-link, table.columns .readMore td.buttonWrapper td, table.column 
 }
 
 
-
-
+// contentBottom area
+// -------------------------
+.contentBottom {
+	.title {
+		text-align: center;
+		padding-bottom: 5px;
+	}
+	.text, .date {
+		font-size: @fontSizeSmall;
+		line-height: (@fontSizeSmall * 1.25);
+	}
+	.date {
+		font-weight: bold;
+		//on remet la couleur pour forcer sur iOS
+		color: @linkColor;
+		a { .newsletterLinkColor(@linkColor); }
+	}
+}
+//override version firefox
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentBottom {
+		td { &, .title { text-align: left !important; } }
+	}
+}
