@@ -550,7 +550,7 @@ h5,
 h6,
 p,
 td {
-  color: #333333;
+  color: #839097;
   padding: 0;
   margin: 0;
   text-align: left;
@@ -1136,6 +1136,98 @@ h6 {
   font-size: 0px;
 }
 
+p {
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 0px;
+}
+
+.readMore {
+  width: 100%;
+  -premailer-width: 100%;
+  overflow: hidden;
+  clear: both;
+}
+
+table.columns .readMore td.buttonWrapper,
+table.column .readMore td.buttonWrapper {
+  padding-bottom: 0px;
+  clear: both;
+}
+
+table.columns .readMore td.buttonWrapper td,
+table.column .readMore td.buttonWrapper td {
+  color: #ffffff;
+}
+
+table.columns .readMore table.medium-button,
+table.column .readMore table.medium-button {
+  display: table;
+  table-layout: auto;
+  width: auto;
+  -premailer-width: auto;
+  float: right;
+}
+
+table.columns .readMore table.medium-button td,
+table.column .readMore table.medium-button td {
+  width: auto;
+  float: none;
+  -premailer-width: auto;
+  padding: 4px 8px;
+  vertical-align: middle;
+}
+
+table.columns .readMore table.medium-button td a,
+table.column .readMore table.medium-button td a,
+table.columns .readMore table.medium-button td p,
+table.column .readMore table.medium-button td p {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+table.columns .text + .readMore td.buttonWrapper,
+table.column .text + .readMore td.buttonWrapper {
+  padding-top: 5px;
+}
+
+a.medium-button-link {
+  padding: 0px;
+  margin: 0px;
+  color: #ffffff;
+  line-height: 19px;
+  mso-line-height-rule: exactly;
+}
+
+a.medium-button-link .important,
+a.medium-button-link:visited,
+a.medium-button-link:hover,
+a.medium-button-link:focus,
+a.medium-button-link:active {
+  color: #ffffff !important;
+}
+
+table.columns .readMore td.buttonWrapper td,
+table.column .readMore td.buttonWrapper td,
+table.columns .readMore td.buttonWrapper td p.MsoNormal,
+table.column .readMore td.buttonWrapper td p.MsoNormal {
+  line-height: 19px !important;
+  mso-line-height-rule: exactly;
+  margin: 0px;
+}
+
+table.columns .readMore td.buttonWrapper td p.MsoNormal,
+table.column .readMore td.buttonWrapper td p.MsoNormal {
+  padding: 0px;
+}
+
+a.medium-button-link,
+table.columns .readMore td.buttonWrapper td,
+table.column .readMore td.buttonWrapper td {
+  font-size: 14px;
+  font-weight: bold;
+}
+
 .header {
   background-color: #4d616d;
 }
@@ -1485,6 +1577,31 @@ h6 {
   table[class="body"] h6 {
     font-size: 14px !important;
     line-height: 15.4px !important;
+  }
+
+  table[class="body"] table.columns .readMore td.buttonWrapper,
+  table[class="body"] table.column .readMore td.buttonWrapper {
+    padding-bottom: 0px !important;
+  }
+
+  table[class="body"] table.columns .readMore table.medium-button,
+  table[class="body"] table.column .readMore table.medium-button {
+    display: table !important;
+    table-layout: auto !important;
+    width: auto !important;
+  }
+
+  table[class="body"] table.columns .readMore table.medium-button td,
+  table[class="body"] table.column .readMore table.medium-button td {
+    width: auto !important;
+    padding: 4px 8px !important;
+  }
+
+  table[class="body"] a.medium-button-link,
+  table[class="body"] table.columns .readMore td.buttonWrapper td,
+  table[class="body"] table.column .readMore td.buttonWrapper td {
+    font-size: 11px !important;
+    line-height: 15px !important;
   }
 
   table[class="body"] .contentOnline td.wrapper {
