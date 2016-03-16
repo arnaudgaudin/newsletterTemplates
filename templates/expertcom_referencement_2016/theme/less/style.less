@@ -129,7 +129,10 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 // -------------------------
 .contentRef {
 	background-color: @colorExpertCom5;
-	table.subWrapper { background-color: @colorExpertCom4; }
+	table.subWrapper {
+		background-color: @colorExpertCom4;
+		td { padding-top: @wrapperPad; }
+	}
 	table.columns, table.column {
 		table.subWrapper td { padding-bottom: 0px; }
 	}

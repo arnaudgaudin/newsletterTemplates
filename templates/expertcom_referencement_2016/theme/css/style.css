@@ -1231,6 +1231,10 @@ h6 {
   background-color: #afbabf;
 }
 
+.contentRef table.subWrapper td {
+  padding-top: 20px;
+}
+
 .contentRef table.columns table.subWrapper td,
 .contentRef table.column table.subWrapper td {
   padding-bottom: 0px;
