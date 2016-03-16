@@ -1125,6 +1125,17 @@ h6 {
   line-height: 17.6px;
 }
 
+.filler {
+  height: 20px;
+  -premailer-height: 20;
+}
+
+.filler,
+.filler .empty {
+  line-height: 0px;
+  font-size: 0px;
+}
+
 .header {
   background-color: #4d616d;
 }
@@ -1197,6 +1208,10 @@ h6 {
 
 .contentIntro {
   background-color: #f0f2f3;
+}
+
+.contentIntro td.filler {
+  background-color: #ffffff;
 }
 
 .contentIntro td.wrapper {
