@@ -1413,15 +1413,15 @@ table.imgCont .icon-img {
 }
 
 .contentBottom td.wrapper.first {
-  background-color: #f00;
+  background-color: #ffe5e5;
 }
 
 .contentBottom td.wrapper.middle {
-  background-color: #0f0;
+  background-color: #e5ffe5;
 }
 
 .contentBottom td.wrapper.last {
-  background-color: #00f;
+  background-color: #e5e5ff;
 }
 
 @media only screen and (max-width: 720px) {
