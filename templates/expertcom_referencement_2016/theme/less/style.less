@@ -109,7 +109,7 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 // contentIntro area
 // -------------------------
 .contentIntro {
-	background-color: @colorExpertCom5;
+	background-color: @colorExpertCom6;
 
 	td.filler { background-color: @containerBackground; }
 	
@@ -128,9 +128,9 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 // contentRef area
 // -------------------------
 .contentRef {
-	background-color: @colorExpertCom5;
+	background-color: @colorExpertCom6;
 	table.subWrapper {
-		background-color: @colorExpertCom4;
+		background-color: @colorExpertCom5;
 		td { padding-top: @wrapperPad; }
 	}
 	table.columns, table.column {
@@ -188,5 +188,20 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 		table.columns td, table.column td { padding-bottom: 0px !important; }
 	}
 }
+
+
+// contentMain area
+// -------------------------
+.contentMain {
+	background-color: @colorExpertCom6;
+	// .newsletterInnerTextColor(darken(@colorExpertCom6, 35%));
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentMain {
+
+	}
+}
+
+
 
 
