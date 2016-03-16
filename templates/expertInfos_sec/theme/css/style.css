@@ -1422,7 +1422,7 @@ img.faicon {
 
 .contentSecteur table.columns td,
 .contentSecteur table.column td {
-  padding-bottom: 0px;
+  padding-bottom: 10px;
 }
 
 .contentSecteur td {
@@ -1434,7 +1434,7 @@ img.faicon {
 
 .contentSecteur td .secteur {
   font-weight: bold;
-  font-weight: 500;
+  font-weight: 600;
   text-transform: uppercase;
   word-break: keep-all;
   white-space: nowrap;
@@ -2351,7 +2351,7 @@ hr {
 
   table[class="body"] .contentSecteur table.columns td,
   table[class="body"] .contentSecteur table.column td {
-    padding-bottom: 0px !important;
+    padding-bottom: 5px !important;
   }
 
   table[class="body"] .contentSecteur td {
