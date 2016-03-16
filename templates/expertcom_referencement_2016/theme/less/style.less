@@ -441,8 +441,11 @@ table.imgCont {
 	background-color: @colorExpertCom3;
 	.newsletterInnerTextColor(#ffffff);
 	
-	//visuellement imparfait
-	// td.wrapper.first td { text-align: right; }
+	td.wrapper.first td {
+		//visuellement imparfait
+		// text-align: right;
+		line-height: 30px;
+	}
 
 	//réduction décalage vertical
 	td.wrapper { padding-top: (@wrapperPad / 2); }
@@ -450,7 +453,10 @@ table.imgCont {
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentFooter {
-		td.wrapper.first td { text-align: center !important; }
+		td.wrapper.first td {
+			text-align: center !important;
+			line-height: floor(@baseLineHeight * 0.9) !important;
+		}
 		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
 		table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
 	}

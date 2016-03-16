@@ -1489,6 +1489,10 @@ table.imgCont .icon-img {
   color: #ffffff !important;
 }
 
+.contentFooter td.wrapper.first td {
+  line-height: 30px;
+}
+
 .contentFooter td.wrapper {
   padding-top: 10px;
 }
@@ -1882,6 +1886,7 @@ table.imgCont .icon-img {
 
   table[class="body"] .contentFooter td.wrapper.first td {
     text-align: center !important;
+    line-height: 16px !important;
   }
 
   table[class="body"] .contentFooter td.wrapper {
