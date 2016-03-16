@@ -1776,6 +1776,11 @@ table.imgCont .icon-img {
     line-height: 1em !important;
   }
 
+  table[class="body"] .contentOnline td {
+    font-size: 11px !important;
+    line-height: 13.75px !important;
+  }
+
   table[class="body"] .contentOnline td.wrapper {
     padding-top: 5px !important;
   }
@@ -1848,6 +1853,11 @@ table.imgCont .icon-img {
   table[class="body"] .contentFooter table.columns td,
   table[class="body"] .contentFooter table.column td {
     padding-bottom: 5px !important;
+  }
+
+  table[class="body"] .contentUnsubscribe td {
+    font-size: 11px !important;
+    line-height: 13.75px !important;
   }
 
   table[class="body"] .contentUnsubscribe td.wrapper {
