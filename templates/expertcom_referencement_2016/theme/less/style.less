@@ -345,22 +345,39 @@ table.imgCont {
 .contentBottom {
 	.title {
 		text-align: center;
+		font-weight: normal;
 		padding-bottom: 5px;
 	}
-	.text, .date {
-		font-size: @fontSizeSmall;
-		line-height: (@fontSizeSmall * 1.25);
+
+	table.columns, table.column {
+		.text-pad {
+			padding-left: (@textPad / 2) !important;
+			padding-right: (@textPad / 2) !important;
+		}
 	}
-	.date {
-		font-weight: bold;
-		//on remet la couleur pour forcer sur iOS
-		color: @linkColor;
-		a { .newsletterLinkColor(@linkColor); }
+
+	td.wrapper {
+		&.first {
+			background-color: #f00;
+		}
+		&.middle {
+			background-color: #0f0;
+		}
+		&.last {
+			background-color: #00f;
+		}
 	}
+
 }
 //override version firefox
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentBottom {
 		td { &, .title { text-align: left !important; } }
+		table.columns, table.column {
+			.text-pad {
+				padding-left: @textPadCollapse !important;
+				padding-right: @textPadCollapse !important;
+			}
+		}
 	}
 }

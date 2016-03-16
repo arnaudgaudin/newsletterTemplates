@@ -342,18 +342,6 @@ color: #8ba1af !important;
 .contentOnline a:active {
 color: #8ba1af !important;
 }
-.contentBottom .date a:visited {
-color: #279bd4 !important;
-}
-.contentBottom .date a:hover {
-color: #279bd4 !important;
-}
-.contentBottom .date a:focus {
-color: #279bd4 !important;
-}
-.contentBottom .date a:active {
-color: #279bd4 !important;
-}
 @media only screen and (max-width: 720px) {
   table[class="body"] img {
     max-width: auto !important; max-height: auto !important; width: auto !important; height: auto !important;
@@ -649,6 +637,12 @@ color: #279bd4 !important;
   table[class="body"] .contentBottom td .title {
     text-align: left !important;
   }
+  table[class="body"] .contentBottom table.columns .text-pad {
+    padding-left: 20px !important; padding-right: 20px !important;
+  }
+  table[class="body"] .contentBottom table.column .text-pad {
+    padding-left: 20px !important; padding-right: 20px !important;
+  }
 }
 </style>
 <style type="text/css" data-premailer="ignore">
@@ -832,10 +826,10 @@ color: #279bd4 !important;
 								<!-- CONTENT BOTTOM START -->
 								<table border="0" class="row contentBottom" style="border-collapse: collapse; border-spacing: 0; display: block; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px; text-align: left; vertical-align: top; width: 100%" width="100%" cellpadding="0" cellspacing="0">
 									<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
-										<td class="chiffre wrapper first" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #839097; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 18px; margin: 0; padding: 20px 0 0px 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+										<td class="wrapper first" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; background: #f00; border-collapse: collapse !important; color: #839097; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 18px; margin: 0; padding: 20px 0 0px 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" bgcolor="#f00" valign="top">
 											<table border="0" class="four columns" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 240px" width="240" cellpadding="0" cellspacing="0">
 												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
-													<td class="center text-pad" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #839097; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 18px; margin: 0; padding: 0px 40px 20px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
+													<td class="center text-pad-left" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #839097; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 18px; margin: 0; padding: 0px 0px 20px 40px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
 														<table border="0" class="imgCont" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 100%" cellpadding="0" cellspacing="0">
 															<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 																<td class="center" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #839097; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 18px; margin: 0; padding: 0 0 5px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
@@ -860,9 +854,9 @@ color: #279bd4 !important;
 														<?<champ>
 														<type>lien</type>
 														<href>http://www.expertinfos.com</href>
-														<html_interieur_avant><h4 class="title" style="color: #000; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 22px; font-weight: bold; line-height: 24.2px; margin: 0; mso-line-height-rule: exactly; padding: 0 0 5px; text-align: center; word-break: normal" align="center"></html_interieur_avant>
-														<texte>Chiffre du mois</texte>
-														<html_interieur_apres></h4></html_interieur_apres>
+														<html_interieur_avant><h5 class="title" style="color: #000; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 19.8px; margin: 0; mso-line-height-rule: exactly; padding: 0 0 5px; text-align: center; word-break: normal" align="center"></html_interieur_avant>
+														<texte>Votre rendez-vous</texte>
+														<html_interieur_apres></h5></html_interieur_apres>
 														<params>
 														style="color: #279bd4; display: block; outline: none; text-decoration: none" class="link_box"
 														</params>
@@ -870,8 +864,8 @@ color: #279bd4 !important;
 														<type>lien</type>
 														<longueur>255</longueur>
 														<href>http://www.expertinfos.com</href>
-														<html_interieur_avant><div class="text" style="font-size: 11px; line-height: 13.75px"></html_interieur_avant>
-														<texte>Pour le premier semestre 2015, le taux de l'int&#233;r&#234;t l&#233;gal est fix&#233; &#224;&#160;(...)</texte>
+														<html_interieur_avant><div class="text"></html_interieur_avant>
+														<texte>Chaque mois d&#233;couvrez dans La Minute R&#233;f&#233;rencement des informations pratiques, des conseils et astuces pour optimiser votre pr&#233;sence dans Google et autres moteurs.</texte>
 														<html_interieur_apres></div></html_interieur_apres>
 														<params>
 														style="color: #279bd4; display: block; outline: none; text-decoration: none" class="link_box"
@@ -882,10 +876,10 @@ color: #279bd4 !important;
 												</tr>
 											</table>
 										</td>
-										<td class="tableau wrapper" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #839097; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 18px; margin: 0; padding: 20px 0 0px 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+										<td class="wrapper middle" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; background: #0f0; border-collapse: collapse !important; color: #839097; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 18px; margin: 0; padding: 20px 0 0px 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" bgcolor="#0f0" valign="top">
 											<table border="0" class="four columns" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 240px" width="240" cellpadding="0" cellspacing="0">
 												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
-													<td class="center text-pad" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #839097; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 18px; margin: 0; padding: 0px 40px 20px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
+													<td class="center text-pad" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #839097; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 18px; margin: 0; padding: 0px 20px 20px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
 														<table border="0" class="imgCont" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 100%" cellpadding="0" cellspacing="0">
 															<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 																<td class="center" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #839097; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 18px; margin: 0; padding: 0 0 5px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
@@ -910,9 +904,9 @@ color: #279bd4 !important;
 														<?<champ>
 														<type>lien</type>
 														<href>http://www.expertinfos.com</href>
-														<html_interieur_avant><h4 class="title" style="color: #000; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 22px; font-weight: bold; line-height: 24.2px; margin: 0; mso-line-height-rule: exactly; padding: 0 0 5px; text-align: center; word-break: normal" align="center"></html_interieur_avant>
-														<texte>Tableau de bord</texte>
-														<html_interieur_apres></h4></html_interieur_apres>
+														<html_interieur_avant><h5 class="title" style="color: #000; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 19.8px; margin: 0; mso-line-height-rule: exactly; padding: 0 0 5px; text-align: center; word-break: normal" align="center"></html_interieur_avant>
+														<texte>Votre accompagnement</texte>
+														<html_interieur_apres></h5></html_interieur_apres>
 														<params>
 														style="color: #279bd4; display: block; outline: none; text-decoration: none" class="link_box"
 														</params>
@@ -920,8 +914,8 @@ color: #279bd4 !important;
 														<type>lien</type>
 														<longueur>255</longueur>
 														<href>http://www.expertinfos.com</href>
-														<html_interieur_avant><div class="text" style="font-size: 11px; line-height: 13.75px"></html_interieur_avant>
-														<texte>Les avantages en nature, c'est-&#224;-dire les prestations fournies gratuitement (ou moyennant une faible participation) par l'employeur &#224; son salari&#233;&#160;(...)</texte>
+														<html_interieur_avant><div class="text"></html_interieur_avant>
+														<texte>Connectez-vous &#224; votre Espace Abonn&#233; et retrouvez nos conseils, et suivez le positionnement de votre site internet dans les moteurs de recherche.</texte>
 														<html_interieur_apres></div></html_interieur_apres>
 														<params>
 														style="color: #279bd4; display: block; outline: none; text-decoration: none" class="link_box"
@@ -932,10 +926,10 @@ color: #279bd4 !important;
 												</tr>
 											</table>
 										</td>
-										<td class="echeancier wrapper last" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #839097; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 18px; margin: 0; padding: 20px 0px 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+										<td class="wrapper last" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; background: #00f; border-collapse: collapse !important; color: #839097; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 18px; margin: 0; padding: 20px 0px 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" bgcolor="#00f" valign="top">
 											<table border="0" class="four columns" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 240px" width="240" cellpadding="0" cellspacing="0">
 												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
-													<td class="center text-pad" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #839097; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 18px; margin: 0; padding: 0px 40px 20px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
+													<td class="center text-pad-right" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #839097; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 18px; margin: 0; padding: 0px 40px 20px 0px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
 														<table border="0" class="imgCont" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 100%" cellpadding="0" cellspacing="0">
 															<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 																<td class="center" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #839097; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 18px; margin: 0; padding: 0 0 5px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
@@ -960,18 +954,9 @@ color: #279bd4 !important;
 														<?<champ>
 														<type>lien</type>
 														<href>http://www.expertinfos.com</href>
-														<html_interieur_avant><h4 class="title" style="color: #000; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 22px; font-weight: bold; line-height: 24.2px; margin: 0; mso-line-height-rule: exactly; padding: 0 0 5px; text-align: center; word-break: normal" align="center"></html_interieur_avant>
-														<texte>&#201;ch&#233;ancier</texte>
-														<html_interieur_apres></h4></html_interieur_apres>
-														<params>
-														style="color: #279bd4; display: block; outline: none; text-decoration: none" class="link_box"
-														</params>
-														</champ>?> <?<champ>
-														<type>lien</type>
-														<href>http://www.expertinfos.com</href>
-														<html_interieur_avant><div class="date" style="color: #279bd4; font-size: 11px; font-weight: bold; line-height: 13.75px"><span class="important"></html_interieur_avant>
-														<texte>28 f&#233;vrier 2015</texte>
-														<html_interieur_apres></span></div></html_interieur_apres>
+														<html_interieur_avant><h5 class="title" style="color: #000; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 19.8px; margin: 0; mso-line-height-rule: exactly; padding: 0 0 5px; text-align: center; word-break: normal" align="center"></html_interieur_avant>
+														<texte>Votre abonnement</texte>
+														<html_interieur_apres></h5></html_interieur_apres>
 														<params>
 														style="color: #279bd4; display: block; outline: none; text-decoration: none" class="link_box"
 														</params>
@@ -979,8 +964,8 @@ color: #279bd4 !important;
 														<type>lien</type>
 														<longueur>255</longueur>
 														<href>http://www.expertinfos.com</href>
-														<html_interieur_avant><div class="text" style="font-size: 11px; line-height: 13.75px"></html_interieur_avant>
-														<texte>Redevables de la taxe d'apprentissage&#160;: date limite de r&#233;alisation de certaines d&#233;penses d&#233;ductibles.</texte>
+														<html_interieur_avant><div class="text"></html_interieur_avant>
+														<texte>Vous souhaitez recevoir La&#160;Minute&#160;R&#233;f&#233;rencement sur un autre email, ou abonner un collaborateur&#160;? Adressez-moi votre demande &#224;&#160;: avalcke@lesechos.fr</texte>
 														<html_interieur_apres></div></html_interieur_apres>
 														<params>
 														style="color: #279bd4; display: block; outline: none; text-decoration: none" class="link_box"

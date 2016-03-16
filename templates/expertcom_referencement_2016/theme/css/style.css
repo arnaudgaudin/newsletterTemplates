@@ -1401,30 +1401,26 @@ table.imgCont .icon-img {
 
 .contentBottom .title {
   text-align: center;
+  font-weight: normal;
   padding-bottom: 5px;
 }
 
-.contentBottom .text,
-.contentBottom .date {
-  font-size: 11px;
-  line-height: 13.75px;
+.contentBottom table.columns .text-pad,
+.contentBottom table.column .text-pad {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
 }
 
-.contentBottom .date {
-  font-weight: bold;
-  color: #279bd4;
+.contentBottom td.wrapper.first {
+  background-color: #f00;
 }
 
-.contentBottom .date a {
-  color: #279bd4;
+.contentBottom td.wrapper.middle {
+  background-color: #0f0;
 }
 
-.contentBottom .date a .important,
-.contentBottom .date a:visited,
-.contentBottom .date a:hover,
-.contentBottom .date a:focus,
-.contentBottom .date a:active {
-  color: #279bd4 !important;
+.contentBottom td.wrapper.last {
+  background-color: #00f;
 }
 
 @media only screen and (max-width: 720px) {
@@ -1732,5 +1728,11 @@ table.imgCont .icon-img {
   table[class="body"] .contentBottom td,
   table[class="body"] .contentBottom td .title {
     text-align: left !important;
+  }
+
+  table[class="body"] .contentBottom table.columns .text-pad,
+  table[class="body"] .contentBottom table.column .text-pad {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
   }
 }
