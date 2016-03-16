@@ -1252,8 +1252,8 @@ table.imgCont .icon-img {
   position: relative;
   vertical-align: text-bottom;
   line-height: 60px;
-  width: 60px !important;
-  height: 60px !important;
+  width: 80px !important;
+  height: 80px !important;
 }
 
 .header {
@@ -1672,8 +1672,8 @@ table.imgCont .icon-img {
   table[class="body"] table.imgCont .icon-img {
     display: block !important;
     float: left !important;
-    width: 60px !important;
-    height: 60px !important;
+    width: 80px !important;
+    height: 80px !important;
   }
 
   table[class="body"] table.imgCont .icon-img[data-type^="get"] {
