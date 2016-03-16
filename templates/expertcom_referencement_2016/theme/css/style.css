@@ -4,7 +4,7 @@
 
 body,
 table.body {
-  background-color: #f6f7f8;
+  background-color: #f5f7f8;
 }
 
 /**********************************************
@@ -103,8 +103,8 @@ td {
 }
 
 hr {
-  color: #d02630;
-  background-color: #d02630;
+  color: #cf2630;
+  background-color: #cf2630;
   height: 1px;
   border: none;
 }
@@ -619,20 +619,20 @@ small {
 }
 
 a {
-  color: #29abdf;
+  color: #279bd4;
   text-decoration: none;
 }
 
 a:hover {
-  color: #1c8cb9 !important;
+  color: #1f7ca9 !important;
 }
 
 a:active {
-  color: #1c8cb9 !important;
+  color: #1f7ca9 !important;
 }
 
 a:visited {
-  color: #29abdf !important;
+  color: #279bd4 !important;
 }
 
 h1 a,
@@ -641,7 +641,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-  color: #29abdf;
+  color: #279bd4;
 }
 
 h1 a:active,
@@ -650,7 +650,7 @@ h3 a:active,
 h4 a:active,
 h5 a:active,
 h6 a:active {
-  color: #29abdf !important;
+  color: #279bd4 !important;
 }
 
 h1 a:visited,
@@ -659,7 +659,7 @@ h3 a:visited,
 h4 a:visited,
 h5 a:visited,
 h6 a:visited {
-  color: #29abdf !important;
+  color: #279bd4 !important;
 }
 
 /* Panels */
@@ -697,8 +697,8 @@ table.large-button td {
   display: block;
   width: auto !important;
   text-align: center;
-  background: #d02630;
-  border: 1px solid #b6212a;
+  background: #cf2630;
+  border: 1px solid #b5212a;
   color: #ffffff;
   padding: 8px 0;
   line-height: initial !important;
@@ -763,7 +763,7 @@ table.large-button td a {
 table.button:hover td,
 table.button:visited td,
 table.button:active td {
-  background: #c3242d !important;
+  background: #c2242d !important;
 }
 
 table.button:hover td a,
@@ -780,7 +780,7 @@ table.tiny-button:hover td,
 table.small-button:hover td,
 table.medium-button:hover td,
 table.large-button:hover td {
-  background: #c3242d !important;
+  background: #c2242d !important;
 }
 
 table.button:hover td a,
@@ -817,8 +817,8 @@ table.large-button td a:visited .important {
 }
 
 table.secondary td {
-  background: #29abdf;
-  border-color: #1e9acb;
+  background: #279bd4;
+  border-color: #2288ba;
   color: #555555;
 }
 
@@ -831,7 +831,7 @@ table.secondary td a .important {
 }
 
 table.secondary:hover td {
-  background: #20a4d8 !important;
+  background: #2592c7 !important;
   color: #555555;
 }
 
@@ -927,7 +927,7 @@ body.outlook p {
 }
 
 .appleLinks a {
-  color: #29abdf;
+  color: #279bd4;
   text-decoration: none;
 }
 
@@ -937,11 +937,11 @@ body.outlook p {
 
 .appleLinks a:hover,
 .appleLinks a:active {
-  color: #1c8cb9 !important;
+  color: #1f7ca9 !important;
 }
 
 .appleLinks a:visited {
-  color: #29abdf !important;
+  color: #279bd4 !important;
 }
 
 a[href^=tel] {
@@ -1171,17 +1171,17 @@ h6 {
 }
 
 .contentOnline {
-  background-color: #f6f7f8;
+  background-color: #f5f7f8;
 }
 
 .contentOnline,
 .contentOnline td,
 .contentOnline .inner {
-  color: #92a1a8;
+  color: #8ba1af;
 }
 
 .contentOnline a {
-  color: #92a1a8;
+  color: #8ba1af;
 }
 
 .contentOnline a .important,
@@ -1189,7 +1189,7 @@ h6 {
 .contentOnline a:hover,
 .contentOnline a:focus,
 .contentOnline a:active {
-  color: #92a1a8 !important;
+  color: #8ba1af !important;
 }
 
 .contentOnline td {
@@ -1207,7 +1207,7 @@ h6 {
 }
 
 .contentIntro {
-  background-color: #f0f2f3;
+  background-color: #eff2f4;
 }
 
 .contentIntro td.filler {
@@ -1224,11 +1224,11 @@ h6 {
 }
 
 .contentRef {
-  background-color: #f0f2f3;
+  background-color: #eff2f4;
 }
 
 .contentRef table.subWrapper {
-  background-color: #afbabf;
+  background-color: #b4bbbf;
 }
 
 .contentRef table.subWrapper td {
@@ -1276,7 +1276,7 @@ h6 {
 }
 
 .contentMain {
-  background-color: #f0f2f3;
+  background-color: #eff2f4;
 }
 
 @media only screen and (max-width: 720px) {
