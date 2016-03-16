@@ -203,6 +203,34 @@ table.imgCont {
 }
 
 
+//réseaux sociaux
+.webicons td { text-align: right; }
+.webicon {
+	display: inline;
+	//pour supprimer les espaces
+	font-size: 0px;
+	mso-line-height-rule: exactly;
+	line-height: 0px;
+	padding: 0px 5px;
+	&.first { padding-left: 0px; }
+	&.last { padding-right: 0px; }
+	img {
+		display: inline;
+		float: none;
+	}
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .webicons {
+		.columns, .column { display: table !important; }
+		td { text-align: center !important; }
+	}
+	table[class="body"] .webicon img {
+		width: 30px !important;
+		height: 30px !important;
+	}
+}
+
+
 //gestion header
 .header {
 	background-color: @colorExpertCom3;
@@ -413,10 +441,9 @@ table.imgCont {
 .contentFooter {
 	background-color: @colorExpertCom3;
 	.newsletterInnerTextColor(#ffffff);
-
-	td.wrapper.first {
-		td { text-align: right; }
-	}
+	
+	//visuellement imparfait
+	// td.wrapper.first td { text-align: right; }
 
 	//réduction décalage vertical
 	td.wrapper { padding-top: (@wrapperPad / 2); }
@@ -424,6 +451,7 @@ table.imgCont {
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentFooter {
+		td.wrapper.first td { text-align: center !important; }
 		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
 		table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
 	}

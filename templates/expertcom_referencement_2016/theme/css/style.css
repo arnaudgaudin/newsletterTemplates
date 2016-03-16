@@ -1261,6 +1261,31 @@ table.imgCont .icon-img {
   height: 80px !important;
 }
 
+.webicons td {
+  text-align: right;
+}
+
+.webicon {
+  display: inline;
+  font-size: 0px;
+  mso-line-height-rule: exactly;
+  line-height: 0px;
+  padding: 0px 5px;
+}
+
+.webicon.first {
+  padding-left: 0px;
+}
+
+.webicon.last {
+  padding-right: 0px;
+}
+
+.webicon img {
+  display: inline;
+  float: none;
+}
+
 .header {
   background-color: #4d616d;
 }
@@ -1463,10 +1488,6 @@ table.imgCont .icon-img {
 .contentFooter a:focus,
 .contentFooter a:active {
   color: #ffffff !important;
-}
-
-.contentFooter td.wrapper.first td {
-  text-align: right;
 }
 
 .contentFooter td.wrapper {
@@ -1767,6 +1788,20 @@ table.imgCont .icon-img {
     display: none !important;
   }
 
+  table[class="body"] .webicons .columns,
+  table[class="body"] .webicons .column {
+    display: table !important;
+  }
+
+  table[class="body"] .webicons td {
+    text-align: center !important;
+  }
+
+  table[class="body"] .webicon img {
+    width: 30px !important;
+    height: 30px !important;
+  }
+
   table[class="body"] .header td {
     text-align: center !important;
   }
@@ -1844,6 +1879,10 @@ table.imgCont .icon-img {
   table[class="body"] .contentContact td {
     font-size: 14px !important;
     line-height: 17.5px !important;
+  }
+
+  table[class="body"] .contentFooter td.wrapper.first td {
+    text-align: center !important;
   }
 
   table[class="body"] .contentFooter td.wrapper {
