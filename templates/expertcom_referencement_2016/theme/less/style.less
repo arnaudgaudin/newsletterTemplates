@@ -204,16 +204,28 @@ table.imgCont {
 
 
 //réseaux sociaux
-.webicons td { text-align: right; }
+.webicons {
+	td { text-align: right; }
+	
+	table.columns, table.colum {
+		.subWrapper {
+			display: inline;
+			td {
+				font-size: 0px;
+				line-height: 0px;
+				padding: 0px 5px;
+				&.first { padding-left: 0px; }
+				&.last { padding-right: 0px; }
+			}
+		}
+	}
+}
 .webicon {
 	display: inline;
 	//pour supprimer les espaces
 	font-size: 0px;
 	mso-line-height-rule: exactly;
 	line-height: 0px;
-	padding: 0px 5px;
-	&.first { padding-left: 0px; }
-	&.last { padding-right: 0px; }
 	img {
 		display: inline;
 		float: none;

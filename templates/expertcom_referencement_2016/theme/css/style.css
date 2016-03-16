@@ -1265,20 +1265,33 @@ table.imgCont .icon-img {
   text-align: right;
 }
 
+.webicons table.columns .subWrapper,
+.webicons table.colum .subWrapper {
+  display: inline;
+}
+
+.webicons table.columns .subWrapper td,
+.webicons table.colum .subWrapper td {
+  font-size: 0px;
+  line-height: 0px;
+  padding: 0px 5px;
+}
+
+.webicons table.columns .subWrapper td.first,
+.webicons table.colum .subWrapper td.first {
+  padding-left: 0px;
+}
+
+.webicons table.columns .subWrapper td.last,
+.webicons table.colum .subWrapper td.last {
+  padding-right: 0px;
+}
+
 .webicon {
   display: inline;
   font-size: 0px;
   mso-line-height-rule: exactly;
   line-height: 0px;
-  padding: 0px 5px;
-}
-
-.webicon.first {
-  padding-left: 0px;
-}
-
-.webicon.last {
-  padding-right: 0px;
 }
 
 .webicon img {
