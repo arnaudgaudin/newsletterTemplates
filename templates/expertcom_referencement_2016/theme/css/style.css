@@ -570,7 +570,7 @@ h6 {
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 30px;
 }
 
 h2 {
@@ -1107,7 +1107,7 @@ h6 {
 }
 
 h1 {
-  line-height: 35.2px;
+  line-height: 33px;
 }
 
 h2 {
@@ -1268,11 +1268,11 @@ table.imgCont .icon-img {
 .header,
 .header td,
 .header .inner {
-  color: #ffffff;
+  color: #eff2f4;
 }
 
 .header a {
-  color: #ffffff;
+  color: #eff2f4;
 }
 
 .header a .important,
@@ -1280,18 +1280,20 @@ table.imgCont .icon-img {
 .header a:hover,
 .header a:focus,
 .header a:active {
-  color: #ffffff !important;
+  color: #eff2f4 !important;
 }
 
 .header td {
   text-align: right;
+  font-weight: 200;
   font-size: 16px;
   line-height: 20px;
 }
 
 .header .title {
+  line-height: 1em;
   text-align: right;
-  font-weight: normal;
+  font-weight: 200;
   color: #ffffff;
 }
 
@@ -1691,8 +1693,8 @@ table.imgCont .icon-img {
   }
 
   table[class="body"] h1 {
-    font-size: 28px !important;
-    line-height: 30.8px !important;
+    font-size: 27px !important;
+    line-height: 29.7px !important;
   }
 
   table[class="body"] h2 {
@@ -1763,6 +1765,15 @@ table.imgCont .icon-img {
 
   table[class="body"] table.imgCont .icon-img[data-type^="get"] {
     display: none !important;
+  }
+
+  table[class="body"] .header td {
+    text-align: center !important;
+  }
+
+  table[class="body"] .header .title {
+    text-align: center !important;
+    line-height: 1em !important;
   }
 
   table[class="body"] .contentOnline td.wrapper {

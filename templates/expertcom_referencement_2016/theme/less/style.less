@@ -206,17 +206,28 @@ table.imgCont {
 //gestion header
 .header {
 	background-color: @colorExpertCom3;
-	.newsletterInnerTextColor(#ffffff);
+	.newsletterInnerTextColor(@colorExpertCom6);
 	td {
 		text-align: right;
+		font-weight: 200;
 		font-size: floor(@baseFontSize * 1.15);
 		line-height: floor(@baseFontSize * 1.15 * 1.25);
 	}
 
 	.title {
+		line-height: 1em;
 		text-align: right;
-		font-weight: normal;
+		font-weight: 200;
 		color: #ffffff;
+	}
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .header {
+		td { text-align: center !important; }
+		.title {
+			text-align: center !important;
+			line-height: 1em !important;
+		}
 	}
 }
 
