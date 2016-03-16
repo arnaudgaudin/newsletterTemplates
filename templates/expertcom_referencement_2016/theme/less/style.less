@@ -134,40 +134,56 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 		table.subWrapper td { padding-bottom: 0px; }
 	}
 
-	td.wrapper {
-		&.first {
-			td.sub-columns {
-				&.first {
-					padding-left: @textPad;
-					table.subWrapper td { padding-left: (@textPad / 2); }
-				}
-				&.last {
-					table.subWrapper td {
-						padding-left: @textPad;
-						padding-right: (@textPad / 2);
-					}
-				}
+	td.wrapper.first {
+		td.sub-columns.first {
+			padding-left: @textPad;
+			table.subWrapper td { padding-left: (@textPad / 2); }
+		}
+		td.sub-columns.last {
+			table.subWrapper td {
+				padding-left: @textPad;
+				padding-right: (@textPad / 2);
 			}
 		}
-		&.last {
-			td.sub-columns {
-				&.first {
-					table.subWrapper td {
-						padding-left: (@textPad / 2);
-						padding-right: @textPad;
-					}
-				}
-				&.last {
-					padding-right: @textPad;
-					table.subWrapper td { padding-right: (@textPad / 2); }
-				}
+	}
+	td.wrapper.last {
+		td.sub-columns.first {
+			table.subWrapper td {
+				padding-left: (@textPad / 2);
+				padding-right: @textPad;
 			}
+		}
+		td.sub-columns.last {
+			padding-right: @textPad;
+			table.subWrapper td { padding-right: (@textPad / 2); }
 		}
 	}
 
 	//réduction décalage vertical
 	td.wrapper { padding-top: 0px; }
 	table.columns td, table.column td { padding-bottom: 0px; }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentRef {
+		table.subWrapper td { padding-top: (@wrapperPadCollapse * 2) !important; }
+		td.sub-columns.first {
+			padding-left: @textPadCollapse !important;
+			table.subWrapper td {
+				padding-left: @textPadCollapse !important;
+				padding-right: (@textPadCollapse / 2) !important;
+			}
+		}
+		td.sub-columns.last {
+			padding-right: @textPadCollapse !important;
+			table.subWrapper td {
+				padding-left: (@textPadCollapse / 2) !important;
+				padding-right: @textPadCollapse !important;
+			}
+		}
+
+		td.wrapper { padding-top: 0px !important; }
+		table.columns td, table.column td { padding-bottom: 0px !important; }
+	}
 }
 
 

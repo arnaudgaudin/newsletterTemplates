@@ -1496,4 +1496,35 @@ h6 {
   table[class="body"] .contentIntro table.column td {
     padding-bottom: 5px !important;
   }
+
+  table[class="body"] .contentRef table.subWrapper td {
+    padding-top: 20px !important;
+  }
+
+  table[class="body"] .contentRef td.sub-columns.first {
+    padding-left: 20px !important;
+  }
+
+  table[class="body"] .contentRef td.sub-columns.first table.subWrapper td {
+    padding-left: 20px !important;
+    padding-right: 10px !important;
+  }
+
+  table[class="body"] .contentRef td.sub-columns.last {
+    padding-right: 20px !important;
+  }
+
+  table[class="body"] .contentRef td.sub-columns.last table.subWrapper td {
+    padding-left: 10px !important;
+    padding-right: 20px !important;
+  }
+
+  table[class="body"] .contentRef td.wrapper {
+    padding-top: 0px !important;
+  }
+
+  table[class="body"] .contentRef table.columns td,
+  table[class="body"] .contentRef table.column td {
+    padding-bottom: 0px !important;
+  }
 }
