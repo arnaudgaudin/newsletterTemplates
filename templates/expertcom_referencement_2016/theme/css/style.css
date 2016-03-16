@@ -1193,7 +1193,7 @@ table.column .readMore table.medium-button td p {
 
 table.columns .text + .readMore td.buttonWrapper,
 table.column .text + .readMore td.buttonWrapper {
-  padding-top: 5px;
+  padding-top: 20px;
 }
 
 a.medium-button-link {
