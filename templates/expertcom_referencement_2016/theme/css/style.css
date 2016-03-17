@@ -1383,45 +1383,6 @@ table.imgCont .icon-img {
   background-color: #eff2f4;
 }
 
-.contentRef table.subWrapper {
-  background-color: #b4bbbf;
-}
-
-.contentRef table.subWrapper td {
-  padding-top: 20px;
-}
-
-.contentRef table.columns table.subWrapper td,
-.contentRef table.column table.subWrapper td {
-  padding-bottom: 0px;
-}
-
-.contentRef td.wrapper.first td.sub-columns.first {
-  padding-left: 40px;
-}
-
-.contentRef td.wrapper.first td.sub-columns.first table.subWrapper td {
-  padding-left: 20px;
-}
-
-.contentRef td.wrapper.first td.sub-columns.last table.subWrapper td {
-  padding-left: 40px;
-  padding-right: 20px;
-}
-
-.contentRef td.wrapper.last td.sub-columns.first table.subWrapper td {
-  padding-left: 20px;
-  padding-right: 40px;
-}
-
-.contentRef td.wrapper.last td.sub-columns.last {
-  padding-right: 40px;
-}
-
-.contentRef td.wrapper.last td.sub-columns.last table.subWrapper td {
-  padding-right: 20px;
-}
-
 .contentRef td.wrapper {
   padding-top: 0px;
 }
@@ -1851,28 +1812,6 @@ table.imgCont .icon-img {
   table[class="body"] .contentIntro table.columns td,
   table[class="body"] .contentIntro table.column td {
     padding-bottom: 5px !important;
-  }
-
-  table[class="body"] .contentRef table.subWrapper td {
-    padding-top: 20px !important;
-  }
-
-  table[class="body"] .contentRef td.sub-columns.first {
-    padding-left: 20px !important;
-  }
-
-  table[class="body"] .contentRef td.sub-columns.first table.subWrapper td {
-    padding-left: 20px !important;
-    padding-right: 10px !important;
-  }
-
-  table[class="body"] .contentRef td.sub-columns.last {
-    padding-right: 20px !important;
-  }
-
-  table[class="body"] .contentRef td.sub-columns.last table.subWrapper td {
-    padding-left: 10px !important;
-    padding-right: 20px !important;
   }
 
   table[class="body"] .contentRef td.wrapper {
