@@ -1496,7 +1496,16 @@ table.imgCont .icon-img {
 
 .contentFooter td.wrapper.first td {
   background-color: #f00;
+}
+
+.contentFooter td.wrapper.first td,
+.contentFooter td.wrapper.first td .ei_lep {
   line-height: 30px;
+}
+
+.contentFooter td.wrapper.first td .ei_lep {
+  background-color: #0f0;
+  color: #ffffff;
 }
 
 .contentFooter td.wrapper.last .subWrapper {
