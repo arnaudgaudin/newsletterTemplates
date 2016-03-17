@@ -1269,14 +1269,13 @@ table.imgCont .icon-img {
 }
 
 .webicon {
-  display: inline;
-  font-size: 0px;
+  display: block;
   mso-line-height-rule: exactly;
-  line-height: 0px;
+  line-height: 30px;
 }
 
 .webicon img {
-  display: inline;
+  display: block;
   float: none;
 }
 
