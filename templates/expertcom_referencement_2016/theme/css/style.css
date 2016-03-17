@@ -1130,17 +1130,6 @@ h6 {
   line-height: 17.6px;
 }
 
-.filler {
-  height: 20px;
-  -premailer-height: 20;
-}
-
-.filler,
-.filler .empty {
-  line-height: 0px;
-  font-size: 0px;
-}
-
 p {
   margin: 0px;
   padding: 0px;
@@ -1364,14 +1353,6 @@ table.imgCont .icon-img {
 
 .contentIntro {
   background-color: #eff2f4;
-}
-
-.contentIntro td.filler {
-  background-color: #ffffff;
-}
-
-.contentIntro td.wrapper {
-  padding-top: 10px;
 }
 
 .contentIntro table.columns td,
@@ -1804,10 +1785,6 @@ table.imgCont .icon-img {
   table[class="body"] .contentOnline table.columns td,
   table[class="body"] .contentOnline table.column td {
     padding-bottom: 5px !important;
-  }
-
-  table[class="body"] .contentIntro td.wrapper {
-    padding-top: 5px !important;
   }
 
   table[class="body"] .contentIntro table.columns td,

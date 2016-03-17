@@ -57,14 +57,14 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 }
 
 //pour rajouter de l'espace en haut et en dessous des wrappers
-.filler {
-	&, .empty {
-		line-height: 0px;
-		font-size: 0px;
-	}
-	height: (@wrapperPad);
-	-premailer-height: unit(@wrapperPad);
-}
+// .filler {
+// 	&, .empty {
+// 		line-height: 0px;
+// 		font-size: 0px;
+// 	}
+// 	height: (@wrapperPad);
+// 	-premailer-height: unit(@wrapperPad);
+// }
 
 //tous les paragraphes pour Outlook
 //cf http://stackoverflow.com/questions/18109812/ms-outlook-email-templates-adding-extra-spacing
@@ -297,16 +297,15 @@ table.imgCont {
 // -------------------------
 .contentIntro {
 	background-color: @colorExpertCom6;
-
-	td.filler { background-color: @containerBackground; }
+	// td.filler { background-color: @containerBackground; }
 	
 	//réduction décalage vertical
-	td.wrapper { padding-top: (@wrapperPad / 2); }
+	// td.wrapper { padding-top: (@wrapperPad / 2); }
 	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentIntro {
-		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
+		// td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
 		table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
 	}
 }
