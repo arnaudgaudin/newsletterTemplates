@@ -1261,27 +1261,8 @@ table.imgCont .icon-img {
   height: 80px !important;
 }
 
-.webicons td {
-  text-align: right;
-}
-
-.webicons table.columns .subWrapper,
-.webicons table.colum .subWrapper {
-  background-color: #0f0;
-  display: inline;
-}
-
-.webicons table.columns .subWrapper,
-.webicons table.colum .subWrapper,
-.webicons table.columns .subWrapper .td,
-.webicons table.colum .subWrapper .td {
-  height: 30px;
-  -premailer-height: 30;
-}
-
 .webicons table.columns .subWrapper td,
 .webicons table.colum .subWrapper td {
-  background-color: #f00;
   overflow: hidden;
   font-size: 0px;
   line-height: 0px;
@@ -1514,7 +1495,13 @@ table.imgCont .icon-img {
 }
 
 .contentFooter td.wrapper.first td {
+  background-color: #f00;
   line-height: 30px;
+}
+
+.contentFooter td.wrapper.last .subWrapper {
+  display: block;
+  float: right;
 }
 
 .contentFooter td.wrapper {

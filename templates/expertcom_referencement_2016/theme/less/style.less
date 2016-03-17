@@ -205,26 +205,14 @@ table.imgCont {
 
 //réseaux sociaux
 .webicons {
-	td { text-align: right; }
-	
 	table.columns, table.colum {
-		.subWrapper {
-			background-color: #0f0;
-			display: inline;
-			&, .td {
-				height: 30px;
-				-premailer-height: 30;
-			}
-
-			td {
-				background-color: #f00;
-				overflow: hidden;
-				font-size: 0px;
-				line-height: 0px;
-				padding: 0px 5px;
-				&.first { padding-left: 0px; }
-				&.last { padding-right: 0px; }
-			}
+		.subWrapper td {
+			overflow: hidden;
+			font-size: 0px;
+			line-height: 0px;
+			padding: 0px 5px;
+			&.first { padding-left: 0px; }
+			&.last { padding-right: 0px; }
 		}
 	}
 }
@@ -462,9 +450,17 @@ table.imgCont {
 	.newsletterInnerTextColor(#ffffff);
 	
 	td.wrapper.first td {
+		background-color: #f00;
 		//visuellement imparfait
 		// text-align: right;
 		line-height: 30px;
+	}
+	td.wrapper.last {
+		.subWrapper {
+			//pas géré partout mais pas grave
+			display: block;
+			float: right;
+		}
 	}
 
 	//réduction décalage vertical
