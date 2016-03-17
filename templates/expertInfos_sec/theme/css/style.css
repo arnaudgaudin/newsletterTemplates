@@ -4,7 +4,7 @@
 
 body,
 table.body {
-  background-color: #e0e0e0;
+  background-color: #dedede;
 }
 
 /**********************************************
@@ -947,6 +947,11 @@ body.outlook p {
 a[href^=tel] {
   color: inherit;
   text-decoration: none;
+}
+
+a[href^=tel] .important {
+  color: inherit !important;
+  text-decoration: none !important;
 }
 
 a.link_box {
