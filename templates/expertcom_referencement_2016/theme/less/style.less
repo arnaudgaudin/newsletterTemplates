@@ -204,29 +204,40 @@ table.imgCont {
 
 
 //réseaux sociaux
-.webicons {
-	table.columns, table.colum {
-		.subWrapper td {
-			overflow: hidden;
-			font-size: 0px;
-			line-height: 0px;
-			padding: 0px 5px;
-			&.first { padding-left: 0px; }
-			&.last { padding-right: 0px; }
-		}
-	}
-}
+.webicons td { text-align: right; }
 .webicon {
-	display: block;
+	background-color: #00f;
+	display: inline;
 	//pour supprimer les espaces
-	// font-size: 0px;
+	font-size: 0px;
 	mso-line-height-rule: exactly;
-	line-height: 30px;
+	line-height: 0px;
+	// padding: 0px 5px;
+	//margin spécifique Outlook car ce dernier ne gère pas le padding
+	// img {
+	// 	mso-style-name: "Webicon";
+	// 	mso-padding-left-alt: 5px;
+	// 	mso-padding-right-alt: 5px;
+	// }
+	// &.first {
+	// 	padding-left: 0px;
+	// 	// img { mso-padding-left-alt: 0px; }
+	// }
+	// &.last {
+	// 	padding-right: 0px;
+	// 	// img { mso-padding-right-alt: 0px; }
+	// }
 	img {
-		display: block;
+		background-color: #f00;
+		display: inline;
 		float: none;
 	}
 }
+img.spacer-webicon {
+	display: inline;
+	float: none;
+}
+
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .webicons {
 		.columns, .column { display: table !important; }
@@ -234,6 +245,10 @@ table.imgCont {
 	}
 	table[class="body"] .webicon img {
 		width: 30px !important;
+		height: 30px !important;
+	}
+	table[class="body"] img.spacer-webicon {
+		width: 10px !important;
 		height: 30px !important;
 	}
 }
@@ -409,11 +424,12 @@ table.imgCont {
 		.ei_lep { color: #ffffff; }
 	}
 	td.wrapper.last {
-		.subWrapper {
-			//pas géré partout mais pas grave
-			display: block;
-			float: right;
-		}
+		background-color: #080;
+		// .subWrapper {
+		// 	//pas géré partout mais pas grave
+		// 	display: block;
+		// 	float: right;
+		// }
 	}
 
 	//réduction décalage vertical
@@ -423,7 +439,7 @@ table.imgCont {
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentFooter {
 		td.wrapper.first td {
-			text-align: center !important;
+			&, .ei_lep { text-align: center !important; }
 			font-size: 16px !important;
 			line-height: floor(@baseLineHeight * 0.9) !important;
 		}

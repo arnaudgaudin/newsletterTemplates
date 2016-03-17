@@ -1250,32 +1250,26 @@ table.imgCont .icon-img {
   height: 80px !important;
 }
 
-.webicons table.columns .subWrapper td,
-.webicons table.colum .subWrapper td {
-  overflow: hidden;
-  font-size: 0px;
-  line-height: 0px;
-  padding: 0px 5px;
-}
-
-.webicons table.columns .subWrapper td.first,
-.webicons table.colum .subWrapper td.first {
-  padding-left: 0px;
-}
-
-.webicons table.columns .subWrapper td.last,
-.webicons table.colum .subWrapper td.last {
-  padding-right: 0px;
+.webicons td {
+  text-align: right;
 }
 
 .webicon {
-  display: block;
+  background-color: #00f;
+  display: inline;
+  font-size: 0px;
   mso-line-height-rule: exactly;
-  line-height: 30px;
+  line-height: 0px;
 }
 
 .webicon img {
-  display: block;
+  background-color: #f00;
+  display: inline;
+  float: none;
+}
+
+img.spacer-webicon {
+  display: inline;
   float: none;
 }
 
@@ -1446,9 +1440,8 @@ table.imgCont .icon-img {
   color: #ffffff;
 }
 
-.contentFooter td.wrapper.last .subWrapper {
-  display: block;
-  float: right;
+.contentFooter td.wrapper.last {
+  background-color: #080;
 }
 
 .contentFooter td.wrapper {
@@ -1763,6 +1756,11 @@ table.imgCont .icon-img {
     height: 30px !important;
   }
 
+  table[class="body"] img.spacer-webicon {
+    width: 10px !important;
+    height: 30px !important;
+  }
+
   table[class="body"] .header td {
     text-align: center !important;
   }
@@ -1817,9 +1815,13 @@ table.imgCont .icon-img {
   }
 
   table[class="body"] .contentFooter td.wrapper.first td {
-    text-align: center !important;
     font-size: 16px !important;
     line-height: 16px !important;
+  }
+
+  table[class="body"] .contentFooter td.wrapper.first td,
+  table[class="body"] .contentFooter td.wrapper.first td .ei_lep {
+    text-align: center !important;
   }
 
   table[class="body"] .contentFooter td.wrapper {
