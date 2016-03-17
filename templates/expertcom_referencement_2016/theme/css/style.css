@@ -1255,7 +1255,6 @@ table.imgCont .icon-img {
 }
 
 .webicon {
-  background-color: #00f;
   display: inline;
   font-size: 0px;
   mso-line-height-rule: exactly;
@@ -1263,7 +1262,6 @@ table.imgCont .icon-img {
 }
 
 .webicon img {
-  background-color: #f00;
   display: inline;
   float: none;
 }
@@ -1438,10 +1436,6 @@ img.spacer-webicon {
 
 .contentFooter td.wrapper.first td .ei_lep {
   color: #ffffff;
-}
-
-.contentFooter td.wrapper.last {
-  background-color: #080;
 }
 
 .contentFooter td.wrapper {
