@@ -453,9 +453,12 @@ table.imgCont {
 		background-color: #f00;
 		//visuellement imparfait
 		// text-align: right;
-		&, .ei_lep { line-height: 30px; }
+		&, .ei_lep {
+			line-height: 30px;
+			mso-line-height-rule: exactly;
+		}
 		.ei_lep {
-			background-color: #0f0;
+			background-color: #060;
 			color: #ffffff;
 		}
 	}
@@ -475,6 +478,7 @@ table.imgCont {
 	table[class="body"] .contentFooter {
 		td.wrapper.first td {
 			text-align: center !important;
+			font-size: 16px !important;
 			line-height: floor(@baseLineHeight * 0.9) !important;
 		}
 		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }

@@ -1501,10 +1501,11 @@ table.imgCont .icon-img {
 .contentFooter td.wrapper.first td,
 .contentFooter td.wrapper.first td .ei_lep {
   line-height: 30px;
+  mso-line-height-rule: exactly;
 }
 
 .contentFooter td.wrapper.first td .ei_lep {
-  background-color: #0f0;
+  background-color: #060;
   color: #ffffff;
 }
 
@@ -1906,6 +1907,7 @@ table.imgCont .icon-img {
 
   table[class="body"] .contentFooter td.wrapper.first td {
     text-align: center !important;
+    font-size: 16px !important;
     line-height: 16px !important;
   }
 
