@@ -1,1 +1,59 @@
 // extends theme's variables.less file here
+
+
+// Scaffolding
+// -------------------------
+@bodyBackground:        #888888;
+@containerBackground:   #ffffff;
+@textColor:             #333333;
+
+
+// Typography
+// -------------------------
+@baseFontSize:          14px;
+@baseLineHeight:        18px;
+@headingsColor:         @textColor;
+@headingsFontWeight:    bold;
+
+
+// Component sizing
+// -------------------------
+@headingsFontSizeH1:    32px;
+@headingsFontSizeH2:    28px;
+@headingsFontSizeH3:    24px;
+@headingsFontSizeH4:    22px;
+@headingsFontSizeH5:    18px;
+@headingsFontSizeH6:    16px;
+
+@fontSizeLarge:         floor(@baseFontSize * 1.30);  // ~18px
+@fontSizeSmall:         floor(@baseFontSize * 0.80);  // ~11px
+@fontSizeMini:          floor(@baseFontSize * 0.65);  // ~9px
+
+@buttonFontSizeLarge:   @fontSizeLarge;
+@buttonFontSizeMedium:  @baseFontSize;
+@buttonFontSizeSmall:   @fontSizeSmall;
+@buttonFontSizeTiny:    @fontSizeMini;
+
+
+// Grid config
+// --------------------------------------------------
+@columnWidth: 60px;
+@gutterWidth: 0;
+
+
+// Padding config
+// --------------------------------------------------
+@wrapperPad: 20px;
+@wrapperPadCollapse: (@wrapperPad / 2);
+
+@columnPad: @wrapperPad;
+@columnPadCollapse: (@columnPad / 2);
+
+@blockGridPad: @wrapperPad;
+@blockGridPadCollapse: (@blockGridPad / 2);
+
+@panelPad: @wrapperPad;
+@panelPadCollapse: (@panelPad / 2);
+
+@textPad: (@wrapperPad * 2);
+@textPadCollapse: (@textPad / 2);
