@@ -60,9 +60,11 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 //gestion header
 .header {
 	background-color: @colorPostaExpert1;
-	.newsletterInnerTextColor(#ffffff);
-	.title, .subtitle { color: #ffffff; }
 	td.decoupe { background-color: @containerBackground; }
+	.newsletterInnerTextColor(#ffffff);
+
+	
+	
 
 	table.columns, table.column {
 		table.subWrapper td { padding-bottom: 0px; }
@@ -84,16 +86,16 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 			}
 		}
 	}
-
 	td.sub-columns {
-		&.first {
-			background-color: #0f0;
-
+		&.first { background-color: #0f0; }
+		&.last {
+			background-color: #00f;
+			vertical-align: bottom;
+			.title, .subtitle { color: #ffffff; }
+			&, * { font-weight: normal; }
+			.title { text-transform: uppercase; }
 		}
-		&.last { background-color: #00f; }
 	}
-
-	
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .header {
