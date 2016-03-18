@@ -63,9 +63,6 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 	td.decoupe { background-color: @containerBackground; }
 	.newsletterInnerTextColor(#ffffff);
 
-	
-	
-
 	table.columns, table.column {
 		table.subWrapper td { padding-bottom: 0px; }
 		table.logo {
@@ -77,7 +74,6 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 			-premailer-height: 80;
 
 			td {
-				background-color: #f00;
 				width: 80px;
 				height: 70px;
 				-premailer-width: 80;
@@ -87,13 +83,16 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 		}
 	}
 	td.sub-columns {
-		&.first { background-color: #0f0; }
 		&.last {
-			background-color: #00f;
 			vertical-align: bottom;
 			.title, .subtitle { color: #ffffff; }
-			&, * { font-weight: normal; }
-			.title { text-transform: uppercase; }
+			.title {
+				text-transform: uppercase;
+				font-weight: 400;
+			}
+			.subtitle {
+				font-weight: 200;
+			}
 		}
 	}
 }

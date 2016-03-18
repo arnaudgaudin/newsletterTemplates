@@ -1173,7 +1173,6 @@ h6 {
 
 .header table.columns table.logo td,
 .header table.column table.logo td {
-  background-color: #f00;
   width: 80px;
   height: 70px;
   -premailer-width: 80;
@@ -1181,12 +1180,7 @@ h6 {
   padding: 15px 10px;
 }
 
-.header td.sub-columns.first {
-  background-color: #0f0;
-}
-
 .header td.sub-columns.last {
-  background-color: #00f;
   vertical-align: bottom;
 }
 
@@ -1195,13 +1189,13 @@ h6 {
   color: #ffffff;
 }
 
-.header td.sub-columns.last,
-.header td.sub-columns.last * {
-  font-weight: normal;
-}
-
 .header td.sub-columns.last .title {
   text-transform: uppercase;
+  font-weight: 400;
+}
+
+.header td.sub-columns.last .subtitle {
+  font-weight: 200;
 }
 
 @media only screen and (max-width: 720px) {
