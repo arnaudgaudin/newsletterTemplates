@@ -1166,15 +1166,8 @@ h6 {
   padding-bottom: 0px;
 }
 
-.header td.sub-columns.first {
-  background-color: #0f0;
-}
-
-.header td.sub-columns.last {
-  background-color: #00f;
-}
-
-.header table.logo {
+.header table.columns table.logo,
+.header table.column table.logo {
   background-color: #ffffff;
   table-layout: fixed;
   width: 100px;
@@ -1183,13 +1176,22 @@ h6 {
   -premailer-height: 80;
 }
 
-.header table.logo td {
+.header table.columns table.logo td,
+.header table.column table.logo td {
   background-color: #f00;
   width: 80px;
   height: 70px;
   -premailer-width: 80;
   -premailer-height: 70;
   padding: 15px 10px;
+}
+
+.header td.sub-columns.first {
+  background-color: #0f0;
+}
+
+.header td.sub-columns.last {
+  background-color: #00f;
 }
 
 @media only screen and (max-width: 720px) {
@@ -1400,12 +1402,19 @@ h6 {
     line-height: 15.4px !important;
   }
 
-  table[class="body"] .header table.logo {
+  table[class="body"] .header table.columns table.subWrapper td,
+  table[class="body"] .header table.column table.subWrapper td {
+    padding-bottom: 0px !important;
+  }
+
+  table[class="body"] .header table.columns table.logo,
+  table[class="body"] .header table.column table.logo {
     width: 100% !important;
     height: 100% !important;
   }
 
-  table[class="body"] .header table.logo td {
+  table[class="body"] .header table.columns table.logo td,
+  table[class="body"] .header table.column table.logo td {
     width: auto !important;
     height: auto !important;
     padding: 18.75% 14.28571429% !important;

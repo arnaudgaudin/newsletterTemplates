@@ -66,6 +66,23 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 
 	table.columns, table.column {
 		table.subWrapper td { padding-bottom: 0px; }
+		table.logo {
+			background-color: #ffffff;
+			table-layout: fixed;
+			width: 100px;
+			height: 100px;
+			-premailer-width: 80;
+			-premailer-height: 80;
+
+			td {
+				background-color: #f00;
+				width: 80px;
+				height: 70px;
+				-premailer-width: 80;
+				-premailer-height: 70;
+				padding: 15px 10px;
+			}
+		}
 	}
 
 	td.sub-columns {
@@ -76,33 +93,20 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 		&.last { background-color: #00f; }
 	}
 
-	table.logo {
-		background-color: #ffffff;
-		table-layout: fixed;
-		width: 100px;
-		height: 100px;
-		-premailer-width: 80;
-		-premailer-height: 80;
-
-		td {
-			background-color: #f00;
-			width: 80px;
-			height: 70px;
-			-premailer-width: 80;
-			-premailer-height: 70;
-			padding: 15px 10px;
-		}
-	}
+	
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .header {
-		table.logo {
-			width: 100% !important;
-			height: 100% !important;
-			td {
-				width: auto !important;
-				height: auto !important;
-				padding: unit((15 / 80 * 100), %) unit((10 / 70 * 100), %) !important;
+		table.columns, table.column {
+			table.subWrapper td { padding-bottom: 0px !important; }
+			table.logo {
+				width: 100% !important;
+				height: 100% !important;
+				td {
+					width: auto !important;
+					height: auto !important;
+					padding: unit((15 / 80 * 100), %) unit((10 / 70 * 100), %) !important;
+				}
 			}
 		}
 	}
