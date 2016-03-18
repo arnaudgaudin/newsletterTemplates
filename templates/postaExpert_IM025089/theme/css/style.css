@@ -1157,19 +1157,19 @@ h6 {
   color: #ffffff;
 }
 
-.header td.sub-columns:first-child {
+.header td.sub-columns.first {
   background-color: #0f0;
 }
 
-.header td.sub-columns:nth-child(2) {
+.header td.sub-columns.last {
   background-color: #00f;
 }
 
 .header table.logo {
   background-color: #ffffff;
   table-layout: fixed;
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   -premailer-width: 80;
   -premailer-height: 80;
 }
@@ -1180,7 +1180,7 @@ h6 {
   height: 64px;
   -premailer-width: 74;
   -premailer-height: 64;
-  padding: 8px 3px;
+  padding: 18px 13px;
 }
 
 @media only screen and (max-width: 720px) {
