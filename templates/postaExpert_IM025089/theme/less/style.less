@@ -94,3 +94,16 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 		}
 	}
 }
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .header {
+		table.logo {
+			width: 100% !important;
+			height: 100% !important;
+			td {
+				width: auto !important;
+				height: auto !important;
+				padding: unit((15 / 80 * 100), %) unit((10 / 70 * 100), %) !important;
+			}
+		}
+	}
+}
