@@ -55,3 +55,29 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 		}
 	}
 }
+
+
+//gestion header
+.header {
+	background-color: @colorPostaExpert1;
+	.newsletterInnerTextColor(#ffffff);
+	.title, .subtitle { color: #ffffff; }
+
+	table.subWrapper.logo {
+		background-color: #ffffff;
+		table-layout: fixed;
+		width: 84px;
+		height: 84px;
+		-premailer-width: 84;
+		-premailer-height: 84;
+
+		td {
+			background-color: #f00;
+			width: 74px;
+			height: 64px;
+			-premailer-width: 74;
+			-premailer-height: 64;
+			padding: 10px 5px;
+		}
+	}
+}

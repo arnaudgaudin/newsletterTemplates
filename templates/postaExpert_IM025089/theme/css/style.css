@@ -1130,6 +1130,51 @@ h6 {
   line-height: 17.6px;
 }
 
+.header {
+  background-color: #082f54;
+}
+
+.header,
+.header td,
+.header .inner {
+  color: #ffffff;
+}
+
+.header a {
+  color: #ffffff;
+}
+
+.header a .important,
+.header a:visited,
+.header a:hover,
+.header a:focus,
+.header a:active {
+  color: #ffffff !important;
+}
+
+.header .title,
+.header .subtitle {
+  color: #ffffff;
+}
+
+.header table.subWrapper.logo {
+  background-color: #ffffff;
+  table-layout: fixed;
+  width: 84px;
+  height: 84px;
+  -premailer-width: 84;
+  -premailer-height: 84;
+}
+
+.header table.subWrapper.logo td {
+  background-color: #f00;
+  width: 74px;
+  height: 64px;
+  -premailer-width: 74;
+  -premailer-height: 64;
+  padding: 10px 5px;
+}
+
 @media only screen and (max-width: 720px) {
   table[class="body"] img {
     max-width: auto !important;
