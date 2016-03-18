@@ -62,6 +62,11 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 	background-color: @colorPostaExpert1;
 	.newsletterInnerTextColor(#ffffff);
 	.title, .subtitle { color: #ffffff; }
+	td.decoupe { background-color: @containerBackground; }
+
+	table.columns, table.column {
+		table.subWrapper td { padding-bottom: 0px; }
+	}
 
 	td.sub-columns {
 		&.first {
