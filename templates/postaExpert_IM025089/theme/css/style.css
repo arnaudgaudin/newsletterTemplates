@@ -4,7 +4,7 @@
 
 body,
 table.body {
-  background-color: #888888;
+  background-color: #efefef;
 }
 
 /**********************************************
@@ -1415,6 +1415,13 @@ h6 {
   table[class="body"] .header table.columns table.subWrapper td,
   table[class="body"] .header table.column table.subWrapper td {
     padding-bottom: 0px !important;
+  }
+
+  table[class="body"] .header table.columns .right-text-pad,
+  table[class="body"] .header table.column .right-text-pad,
+  table[class="body"] .header table.columns .text-pad-right,
+  table[class="body"] .header table.column .text-pad-right {
+    padding-left: 0px !important;
   }
 
   table[class="body"] .header table.columns table.logo,
