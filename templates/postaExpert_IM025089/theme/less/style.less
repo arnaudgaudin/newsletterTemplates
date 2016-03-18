@@ -63,13 +63,18 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 	.newsletterInnerTextColor(#ffffff);
 	.title, .subtitle { color: #ffffff; }
 
-	table.subWrapper.logo {
+	td.sub-columns {
+		&:first-child { background-color: #0f0; }
+		&:nth-child(2) { background-color: #00f; }
+	}
+
+	table.logo {
 		background-color: #ffffff;
 		table-layout: fixed;
-		width: 84px;
-		height: 84px;
-		-premailer-width: 84;
-		-premailer-height: 84;
+		width: 80px;
+		height: 80px;
+		-premailer-width: 80;
+		-premailer-height: 80;
 
 		td {
 			background-color: #f00;
@@ -77,7 +82,7 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 			height: 64px;
 			-premailer-width: 74;
 			-premailer-height: 64;
-			padding: 10px 5px;
+			padding: 8px 3px;
 		}
 	}
 }
