@@ -1268,8 +1268,12 @@ table.column table.subWrapper.bordered td.filler {
 table.columns table.subWrapper.bordered td.br-cont,
 table.column table.subWrapper.bordered td.br-cont {
   background-color: #C3E8D7;
+  line-height: 0px;
+  font-size: 0px;
   width: 38px;
   -premailer-width: 38;
+  height: 100%;
+  -premailer-height: 100%;
   vertical-align: bottom;
 }
 

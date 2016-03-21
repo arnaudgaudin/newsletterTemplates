@@ -170,10 +170,14 @@ table.columns, table.column {
 
 		td.br-cont {
 			background-color: #C3E8D7;
+			line-height: 0px;
+			font-size: 0px;
 			//calcul hauteur br-cont
 			@brCont-height: (@baseLineHeight + 10px);
 			width: (@textPad - 2px);
 			-premailer-width: unit(@textPad - 2px);
+			height: 100%;
+			-premailer-height: 100%;
 			vertical-align: bottom;
 
 			& > table {
