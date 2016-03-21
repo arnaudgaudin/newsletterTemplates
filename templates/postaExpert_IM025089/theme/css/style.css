@@ -1256,11 +1256,11 @@ table.column table.subWrapper.bordered td.br-cont {
   background-color: #C3E8D7;
   width: 40px;
   -premailer-width: 40;
+  vertical-align: bottom;
 }
 
 table.columns table.subWrapper.bordered td.br-cont > table,
 table.column table.subWrapper.bordered td.br-cont > table {
-  table-layout: fixed;
   width: 100%;
   -premailer-width: 100%;
   height: 28px;
