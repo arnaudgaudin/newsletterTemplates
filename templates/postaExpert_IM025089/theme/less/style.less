@@ -229,17 +229,25 @@ table.columns, table.column {
 				}
 				height: (@brCont-height / 2 - 2px);
 				-premailer-height: unit((@brCont-height / 2 - 2px));
+				& > table {
+					width: 100%;
+					-premailer-width: 100%;
+				}
 			}
 
 			td.br-t-l {
 				background-color: #EB7AD0;
-				border-top: 2px solid @colorPostaExpert1;
-				border-left: 2px solid @colorPostaExpert1;
+				td {
+					border-top: 2px solid @colorPostaExpert1;
+					border-left: 2px solid @colorPostaExpert1;
+				}
 			}
 			td.br-t-r {
 				background-color: #8D7AEB;
-				border-top: 2px solid @colorPostaExpert1;
-				border-right: 2px solid @colorPostaExpert1;
+				td {
+					border-top: 2px solid @colorPostaExpert1;
+					border-right: 2px solid @colorPostaExpert1;
+				}
 			}
 
 		}
