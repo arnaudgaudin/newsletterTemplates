@@ -131,12 +131,15 @@ table.columns, table.column {
 		td { padding: 0px; }
 
 		//gestion sous-tableau pour le titre et le texte
-		td.title-cont > table,
-		td.text-cont > table,
-		td.br-cont > table {
-			table-layout: fixed;
-			width: 100%;
-			-premailer-width: 100%;
+		td.title-cont,
+		td.text-cont,
+		td.br-cont,
+		td[class^="br-t-"] {
+			& > table {
+				table-layout: fixed;
+				width: 100%;
+				-premailer-width: 100%;
+			}
 		}
 
 		td.title-cont {
@@ -197,10 +200,10 @@ table.columns, table.column {
 				height: @brCont-height;
 				-premailer-height: unit(@brCont-height);
 
-				td {
-					// width: (@brCont-width - 2px);
-					// -premailer-width: unit((@brCont-width - 2px));
-				}
+				// td {
+				// 	// width: (@brCont-width - 2px);
+				// 	// -premailer-width: unit((@brCont-width - 2px));
+				// }
 			}
 
 			td.filler {

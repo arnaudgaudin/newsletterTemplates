@@ -1219,7 +1219,9 @@ table.column table.subWrapper.bordered td.title-cont > table,
 table.columns table.subWrapper.bordered td.text-cont > table,
 table.column table.subWrapper.bordered td.text-cont > table,
 table.columns table.subWrapper.bordered td.br-cont > table,
-table.column table.subWrapper.bordered td.br-cont > table {
+table.column table.subWrapper.bordered td.br-cont > table,
+table.columns table.subWrapper.bordered td[class^="br-t-"] > table,
+table.column table.subWrapper.bordered td[class^="br-t-"] > table {
   table-layout: fixed;
   width: 100%;
   -premailer-width: 100%;
