@@ -149,15 +149,20 @@ table.columns, table.column {
 		}
 		td.text-cont {
 			background-color: #6FD67F;
-			border-left: 2px solid @colorPostaExpert1;
-			border-bottom: 2px solid @colorPostaExpert1;
-			border-right: 2px solid @colorPostaExpert1;
+			//pour décaler la bordure à l'intérieur
+			padding: 0 2px 2px 2px;
 			& > table {
 				table-layout: fixed;
 				width: 100%;
 				-premailer-width: 100%;
 			}
-			td.text-display { padding: 5px; }
+			td.text-display {
+				background-color: #CF8298;
+				padding: 5px;
+				border-left: 2px solid @colorPostaExpert1;
+				border-bottom: 2px solid @colorPostaExpert1;
+				border-right: 2px solid @colorPostaExpert1;
+			}
 		}
 		td.filler { background-color: #DFEB7A; }
 
@@ -168,6 +173,10 @@ table.columns, table.column {
 			width: @textPad;
 			-premailer-width: unit(@textPad);
 			vertical-align: bottom;
+
+			//pour un calage intérieur des bordures
+			&.first { padding-left: 2px; }
+			&.last { padding-right: 2px; }
 
 			& > table {
 				table-layout: fixed;
@@ -228,7 +237,11 @@ table.columns, table.column {
 					td.title-display { padding: 5px 10px !important; }
 				}
 				td.text-cont { padding: 5px !important; }
-				td.br-cont { width: @textPadCollapse !important; }
+				td.br-cont {
+					&.first { padding-left: 2px !important; }
+					&.last { padding-right: 2px !important; }
+					width: @textPadCollapse !important;
+				}
 			}
 		}
 	}
