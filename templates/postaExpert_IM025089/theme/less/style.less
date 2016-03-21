@@ -133,6 +133,7 @@ table.columns, table.column {
 		td.title-cont {
 			//pour décaler la bordure à l'intérieur
 			padding: 10px 3px 0px 3px;
+			overflow: visible;
 			& > table {
 				table-layout: fixed;
 				width: 100%;
@@ -207,12 +208,12 @@ table.columns, table.column {
 			td.br-t-l {
 				background-color: #EB7AD0;
 				border-top: 2px solid @colorPostaExpert1;
-				border-left: 2px solid #f00;
+				border-left: 2px solid @colorPostaExpert1;
 			}
 			td.br-t-r {
 				background-color: #8D7AEB;
 				border-top: 2px solid @colorPostaExpert1;
-				border-right: 2px solid #f00;
+				border-right: 2px solid @colorPostaExpert1;
 			}
 
 		}
@@ -224,7 +225,7 @@ table.columns, table.column {
 			table.subWrapper.bordered {
 				td { padding: 0px !important; }
 				td.title-cont {
-					padding-top: 10px !important;
+					padding: 10px 3px 0px 3px !important;
 					td.title-display { padding: 5px 10px !important; }
 				}
 				td.text-cont {
