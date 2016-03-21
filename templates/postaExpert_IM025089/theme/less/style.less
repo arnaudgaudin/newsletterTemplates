@@ -56,6 +56,13 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 	}
 }
 
+//tous les paragraphes pour Outlook
+//cf http://stackoverflow.com/questions/18109812/ms-outlook-email-templates-adding-extra-spacing
+p {
+	margin: 0px;
+	padding: 0px;
+	margin-bottom: 0px;
+}
 
 //gestion header
 .header {
@@ -124,19 +131,50 @@ table.columns, table.column {
 		td { padding: 0px; }
 
 		table.title-cont {
-			background-color: #0f0;
 			width: 100%;
 			-premailer-width: 100%;
 			td.title-display {
-				background-color: #f00;
+				background-color: @colorPostaExpert1;
+				color: #ffffff;
 				vertical-align: middle;
+				text-align: center;
+				text-transform: uppercase;
+				padding: 5px 10px;
 			}
 		}
 
-		table.br-cont {
+		td.text-cont {
+			background-color: #6FD67F;
+			border-left: 2px solid @colorPostaExpert1;
+			border-bottom: 2px solid @colorPostaExpert1;
+			border-right: 2px solid @colorPostaExpert1;
+			padding: 5px;
+		}
+		td.filler { background-color: #DFEB7A; }
+
+		td.br-cont {
 			background-color: #C3E8D7;
-			width: 100%;
-			-premailer-width: 100%;
+			width: @textPad;
+			-premailer-width: unit(@textPad);
+			& > table {
+				table-layout: fixed;
+				width: 100%;
+				-premailer-width: 100%;
+				//hauteur égale à lineHeight + padding vertical *2
+				height: (@baseLineHeight + 10px);
+				-premailer-height: unit((@baseLineHeight + 10px));
+			}
+
+			//suppression vide des cases
+			td {
+				&, .empty {
+					line-height: 0;
+					font-size: 0;
+				}
+				height: 50%;
+				-premailer-height: 50%;
+			}
+
 			td.br-t-l {
 				background-color: #EB7AD0;
 				border-top: 2px solid @colorPostaExpert1;
