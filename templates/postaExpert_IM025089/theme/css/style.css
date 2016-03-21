@@ -1319,12 +1319,6 @@ table.column table.subWrapper.bordered td.br-cont td[class^="br-t-"] .empty {
   font-size: 9px;
 }
 
-table.columns table.subWrapper.bordered td.br-cont td[class^="br-t-"] td,
-table.column table.subWrapper.bordered td.br-cont td[class^="br-t-"] td {
-  border-width: 2px;
-  border-style: solid;
-}
-
 table.columns table.subWrapper.bordered td.br-cont td.br-t-l,
 table.column table.subWrapper.bordered td.br-cont td.br-t-l {
   background-color: #EB7AD0;
@@ -1332,7 +1326,8 @@ table.column table.subWrapper.bordered td.br-cont td.br-t-l {
 
 table.columns table.subWrapper.bordered td.br-cont td.br-t-l td,
 table.column table.subWrapper.bordered td.br-cont td.br-t-l td {
-  border-color: #082f54 #f00 #f00 #082f54;
+  border-top: 2px solid #082f54;
+  border-left: 2px solid #082f54;
 }
 
 table.columns table.subWrapper.bordered td.br-cont td.br-t-r,
@@ -1342,7 +1337,8 @@ table.column table.subWrapper.bordered td.br-cont td.br-t-r {
 
 table.columns table.subWrapper.bordered td.br-cont td.br-t-r td,
 table.column table.subWrapper.bordered td.br-cont td.br-t-r td {
-  border-color: #082f54 #082f54 #f00 #f00;
+  border-top: 2px solid #082f54;
+  border-right: 2px solid #082f54;
 }
 
 @media only screen and (max-width: 720px) {
