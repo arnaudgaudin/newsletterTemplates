@@ -1214,17 +1214,21 @@ table.column table.subWrapper.bordered td {
   padding: 0px;
 }
 
+table.columns table.subWrapper.bordered td.title-cont > table,
+table.column table.subWrapper.bordered td.title-cont > table,
+table.columns table.subWrapper.bordered td.text-cont > table,
+table.column table.subWrapper.bordered td.text-cont > table,
+table.columns table.subWrapper.bordered td.br-cont > table,
+table.column table.subWrapper.bordered td.br-cont > table {
+  table-layout: fixed;
+  width: 100%;
+  -premailer-width: 100%;
+}
+
 table.columns table.subWrapper.bordered td.title-cont,
 table.column table.subWrapper.bordered td.title-cont {
   padding: 10px 2px 0px 2px;
   overflow: visible;
-}
-
-table.columns table.subWrapper.bordered td.title-cont > table,
-table.column table.subWrapper.bordered td.title-cont > table {
-  table-layout: fixed;
-  width: 100%;
-  -premailer-width: 100%;
 }
 
 table.columns table.subWrapper.bordered td.title-cont td.title-display,
@@ -1255,13 +1259,6 @@ table.column table.subWrapper.bordered td.text-cont {
   padding: 0 2px 2px 2px;
 }
 
-table.columns table.subWrapper.bordered td.text-cont > table,
-table.column table.subWrapper.bordered td.text-cont > table {
-  table-layout: fixed;
-  width: 100%;
-  -premailer-width: 100%;
-}
-
 table.columns table.subWrapper.bordered td.text-cont td.text-display,
 table.column table.subWrapper.bordered td.text-cont td.text-display {
   background-color: #CF8298;
@@ -1282,21 +1279,12 @@ table.column table.subWrapper.bordered td.br-cont {
   line-height: 0px;
   font-size: 0px;
   vertical-align: bottom;
-  height: 100%;
-  -premailer-height: 100%;
   width: 38px;
   -premailer-width: 38;
 }
 
 table.columns table.subWrapper.bordered td.br-cont > table,
 table.column table.subWrapper.bordered td.br-cont > table {
-  width: 38px;
-  -premailer-width: 38;
-}
-
-table.columns table.subWrapper.bordered td.br-cont > table,
-table.column table.subWrapper.bordered td.br-cont > table {
-  table-layout: fixed;
   vertical-align: bottom;
   height: 28px;
   -premailer-height: 28;
@@ -1334,12 +1322,6 @@ table.columns table.subWrapper.bordered td.br-cont td[class^="br-t-"] .empty,
 table.column table.subWrapper.bordered td.br-cont td[class^="br-t-"] .empty {
   line-height: 12px;
   font-size: 9px;
-}
-
-table.columns table.subWrapper.bordered td.br-cont td[class^="br-t-"] > table,
-table.column table.subWrapper.bordered td.br-cont td[class^="br-t-"] > table {
-  width: 100%;
-  -premailer-width: 100%;
 }
 
 table.columns table.subWrapper.bordered td.br-cont td.br-t-l,
@@ -1620,10 +1602,5 @@ table.column table.subWrapper.bordered td.br-cont td.br-t-r td {
   table[class="body"] table.columns table.subWrapper.bordered td.text-cont td.text-display,
   table[class="body"] table.column table.subWrapper.bordered td.text-cont td.text-display {
     padding: 5px !important;
-  }
-
-  table[class="body"] table.columns table.subWrapper.bordered td.br-cont,
-  table[class="body"] table.column table.subWrapper.bordered td.br-cont {
-    width: 18px !important;
   }
 }

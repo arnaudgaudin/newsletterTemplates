@@ -130,15 +130,20 @@ table.columns, table.column {
 		//remise à zéro du padding par défaut
 		td { padding: 0px; }
 
+		//gestion sous-tableau pour le titre et le texte
+		td.title-cont > table,
+		td.text-cont > table,
+		td.br-cont > table {
+			table-layout: fixed;
+			width: 100%;
+			-premailer-width: 100%;
+		}
+
 		td.title-cont {
 			//pour décaler la bordure à l'intérieur
 			padding: 10px 2px 0px 2px;
 			overflow: visible;
-			& > table {
-				table-layout: fixed;
-				width: 100%;
-				-premailer-width: 100%;
-			}
+
 			td.title-display {
 				background-color: @colorPostaExpert1;
 				vertical-align: middle;
@@ -160,11 +165,6 @@ table.columns, table.column {
 			background-color: #6FD67F;
 			//pour décaler la bordure à l'intérieur
 			padding: 0 2px 2px 2px;
-			& > table {
-				table-layout: fixed;
-				width: 100%;
-				-premailer-width: 100%;
-			}
 			td.text-display {
 				background-color: #CF8298;
 				padding: 5px;
@@ -173,38 +173,29 @@ table.columns, table.column {
 				border-right: 2px solid @colorPostaExpert1;
 			}
 		}
+
 		td.filler { background-color: #DFEB7A; }
 
+		//gestion des bordures entourant le titre
 		td.br-cont {
 			background-color: #C3E8D7;
 			line-height: 0px;
 			font-size: 0px;
 			vertical-align: bottom;
-			height: 100%;
-			-premailer-height: 100%;
 
 			//calcul dimensions br-cont
 			@brCont-width: (@textPad - 2px);
 			@brCont-height: (@baseLineHeight + 10px);	// hauteur égale à lineHeight + padding vertical *2
 
 			//application dimenssions
-			// &, & > table {
-			& {
-				width: @brCont-width;
-				-premailer-width: unit(@brCont-width);
-			}
-			& > table {
-				width: @brCont-width;
-				-premailer-width: unit(@brCont-width);
-			}
+			width: @brCont-width;
+			-premailer-width: unit(@brCont-width);
 
 			& > table {
-				table-layout: fixed;
 				vertical-align: bottom;
-				// width: 100%;
-				// -premailer-width: 100%;
 				height: @brCont-height;
 				-premailer-height: unit(@brCont-height);
+				
 				td {
 					width: (@brCont-width - 2px);
 					-premailer-width: unit((@brCont-width - 2px));
@@ -229,10 +220,6 @@ table.columns, table.column {
 				}
 				height: (@brCont-height / 2 - 2px);
 				-premailer-height: unit((@brCont-height / 2 - 2px));
-				& > table {
-					width: 100%;
-					-premailer-width: 100%;
-				}
 			}
 
 			td.br-t-l {
@@ -269,7 +256,7 @@ table.columns, table.column {
 				td.br-cont {
 					// &.first { padding-left: 2px !important; }
 					// &.last { padding-right: 2px !important; }
-					width: (@textPadCollapse - 2px) !important;
+					// width: (@textPadCollapse - 2px) !important;
 				}
 			}
 		}
