@@ -152,7 +152,12 @@ table.columns, table.column {
 			border-left: 2px solid @colorPostaExpert1;
 			border-bottom: 2px solid @colorPostaExpert1;
 			border-right: 2px solid @colorPostaExpert1;
-			padding: 5px;
+			& > table {
+				table-layout: fixed;
+				width: 100%;
+				-premailer-width: 100%;
+			}
+			td.text-display { padding: 5px; }
 		}
 		td.filler { background-color: #DFEB7A; }
 

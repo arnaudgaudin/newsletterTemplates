@@ -1243,6 +1243,17 @@ table.column table.subWrapper.bordered td.text-cont {
   border-left: 2px solid #082f54;
   border-bottom: 2px solid #082f54;
   border-right: 2px solid #082f54;
+}
+
+table.columns table.subWrapper.bordered td.text-cont > table,
+table.column table.subWrapper.bordered td.text-cont > table {
+  table-layout: fixed;
+  width: 100%;
+  -premailer-width: 100%;
+}
+
+table.columns table.subWrapper.bordered td.text-cont td.text-display,
+table.column table.subWrapper.bordered td.text-cont td.text-display {
   padding: 5px;
 }
 
