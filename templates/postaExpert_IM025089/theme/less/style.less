@@ -131,7 +131,8 @@ table.columns, table.column {
 		td { padding: 0px; }
 
 		td.title-cont {
-			padding-top: 10px;
+			//pour décaler la bordure à l'intérieur
+			padding: 10px 3px 0px 3px;
 			& > table {
 				table-layout: fixed;
 				width: 100%;
@@ -170,13 +171,13 @@ table.columns, table.column {
 			background-color: #C3E8D7;
 			//calcul hauteur br-cont
 			@brCont-height: (@baseLineHeight + 10px);
-			width: @textPad;
-			-premailer-width: unit(@textPad);
+			width: (@textPad - 2px);
+			-premailer-width: unit(@textPad - 2px);
 			vertical-align: bottom;
 
 			//pour un calage intérieur des bordures
-			&.first { padding-left: 2px; }
-			&.last { padding-right: 2px; }
+			// &.first { padding-left: 2px; }
+			// &.last { padding-right: 2px; }
 
 			& > table {
 				table-layout: fixed;
@@ -187,15 +188,8 @@ table.columns, table.column {
 				-premailer-height: unit(@brCont-height);
 			}
 
-			//suppression vide des cases
-			// td {
-			// 	&, .empty {
-			// 		line-height: (@brCont-height / 2);
-			// 		font-size: (@brCont-height / 2);
-			// 	}
-			// }
-
 			td.filler {
+				//suppression vide des cases
 				&, .empty {
 					line-height: (@brCont-height / 2);
 					font-size: floor(@brCont-height / 2 * .75);
@@ -205,6 +199,7 @@ table.columns, table.column {
 			}
 
 			td[class^="br-t-"] {
+				//suppression vide des cases
 				&, .empty {
 					line-height: (@brCont-height / 2 - 2px);
 					font-size: floor((@brCont-height / 2 - 2px) * .75);
@@ -236,11 +231,14 @@ table.columns, table.column {
 					padding-top: 10px !important;
 					td.title-display { padding: 5px 10px !important; }
 				}
-				td.text-cont { padding: 5px !important; }
+				td.text-cont {
+					padding: 0 2px 2px 2px !important;
+					td.text-display { padding: 5px !important; }
+				}
 				td.br-cont {
-					&.first { padding-left: 2px !important; }
-					&.last { padding-right: 2px !important; }
-					width: @textPadCollapse !important;
+					// &.first { padding-left: 2px !important; }
+					// &.last { padding-right: 2px !important; }
+					width: (@textPadCollapse - 2px) !important;
 				}
 			}
 		}
