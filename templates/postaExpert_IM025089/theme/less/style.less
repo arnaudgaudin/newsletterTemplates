@@ -132,7 +132,7 @@ table.columns, table.column {
 
 		td.title-cont {
 			//pour décaler la bordure à l'intérieur
-			padding: 10px 3px 0px 3px;
+			padding: 10px 2px 0px 2px;
 			overflow: visible;
 			& > table {
 				table-layout: fixed;
@@ -179,22 +179,36 @@ table.columns, table.column {
 			background-color: #C3E8D7;
 			line-height: 0px;
 			font-size: 0px;
-			//calcul hauteur br-cont
-			@brCont-height: (@baseLineHeight + 10px);
-			width: (@textPad - 2px);
-			-premailer-width: unit(@textPad - 2px);
+			vertical-align: bottom;
 			height: 100%;
 			-premailer-height: 100%;
-			vertical-align: bottom;
+
+			//calcul dimensions br-cont
+			@brCont-width: (@textPad - 2px);
+			@brCont-height: (@baseLineHeight + 10px);	// hauteur égale à lineHeight + padding vertical *2
+
+			//application dimenssions
+			// &, & > table {
+			& {
+				width: @brCont-width;
+				-premailer-width: unit(@brCont-width);
+			}
+			& > table {
+				width: @brCont-width;
+				-premailer-width: unit(@brCont-width);
+			}
 
 			& > table {
 				table-layout: fixed;
 				vertical-align: bottom;
-				width: 100%;
-				-premailer-width: 100%;
-				//hauteur égale à lineHeight + padding vertical *2
+				// width: 100%;
+				// -premailer-width: 100%;
 				height: @brCont-height;
 				-premailer-height: unit(@brCont-height);
+				td {
+					width: (@brCont-width - 2px);
+					-premailer-width: unit((@brCont-width - 2px));
+				}
 			}
 
 			td.filler {
