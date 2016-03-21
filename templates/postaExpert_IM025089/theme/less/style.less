@@ -194,3 +194,19 @@ table.columns, table.column {
 		}
 	}
 }
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] {
+		table.columns, table.column {
+			table.subWrapper.bordered {
+				td { padding: 0px !important; }
+				td.title-cont {
+					padding-top: 10px !important;
+					td.title-display { padding: 5px 10px !important; }
+				}
+				td.text-cont { padding: 5px !important; }
+				td.br-cont { width: @textPadCollapse !important; }
+			}
+		}
+	}
+}
+

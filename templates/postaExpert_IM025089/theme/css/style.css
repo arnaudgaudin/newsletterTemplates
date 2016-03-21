@@ -1527,4 +1527,29 @@ table.column table.subWrapper.bordered td.br-cont td.br-t-r {
     height: auto !important;
     padding: 18.75% 14.28571429% !important;
   }
+
+  table[class="body"] table.columns table.subWrapper.bordered td,
+  table[class="body"] table.column table.subWrapper.bordered td {
+    padding: 0px !important;
+  }
+
+  table[class="body"] table.columns table.subWrapper.bordered td.title-cont,
+  table[class="body"] table.column table.subWrapper.bordered td.title-cont {
+    padding-top: 10px !important;
+  }
+
+  table[class="body"] table.columns table.subWrapper.bordered td.title-cont td.title-display,
+  table[class="body"] table.column table.subWrapper.bordered td.title-cont td.title-display {
+    padding: 5px 10px !important;
+  }
+
+  table[class="body"] table.columns table.subWrapper.bordered td.text-cont,
+  table[class="body"] table.column table.subWrapper.bordered td.text-cont {
+    padding: 5px !important;
+  }
+
+  table[class="body"] table.columns table.subWrapper.bordered td.br-cont,
+  table[class="body"] table.column table.subWrapper.bordered td.br-cont {
+    width: 20px !important;
+  }
 }
