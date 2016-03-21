@@ -141,7 +141,8 @@ table.columns, table.column {
 
 		td.title-cont {
 			//pour décaler la bordure à l'intérieur
-			padding: 10px 2px 0px 2px;
+			// padding: 10px 2px 0px 2px;
+			padding-top: 10px;
 			overflow: visible;
 
 			td.title-display {
@@ -164,7 +165,7 @@ table.columns, table.column {
 		td.text-cont {
 			background-color: #6FD67F;
 			//pour décaler la bordure à l'intérieur
-			padding: 0 2px 2px 2px;
+			// padding: 0 2px 2px 2px;
 			td.text-display {
 				background-color: #CF8298;
 				padding: 5px;
@@ -184,7 +185,7 @@ table.columns, table.column {
 			vertical-align: bottom;
 
 			//calcul dimensions br-cont
-			@brCont-width: (@textPad - 2px);
+			@brCont-width: @textPad;
 			@brCont-height: (@baseLineHeight + 10px);	// hauteur égale à lineHeight + padding vertical *2
 
 			//application dimenssions
@@ -195,10 +196,10 @@ table.columns, table.column {
 				vertical-align: bottom;
 				height: @brCont-height;
 				-premailer-height: unit(@brCont-height);
-				
+
 				td {
-					width: (@brCont-width - 2px);
-					-premailer-width: unit((@brCont-width - 2px));
+					// width: (@brCont-width - 2px);
+					// -premailer-width: unit((@brCont-width - 2px));
 				}
 			}
 

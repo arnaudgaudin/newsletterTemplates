@@ -1227,7 +1227,7 @@ table.column table.subWrapper.bordered td.br-cont > table {
 
 table.columns table.subWrapper.bordered td.title-cont,
 table.column table.subWrapper.bordered td.title-cont {
-  padding: 10px 2px 0px 2px;
+  padding-top: 10px;
   overflow: visible;
 }
 
@@ -1256,7 +1256,6 @@ table.column table.subWrapper.bordered td.title-cont td.title-display td {
 table.columns table.subWrapper.bordered td.text-cont,
 table.column table.subWrapper.bordered td.text-cont {
   background-color: #6FD67F;
-  padding: 0 2px 2px 2px;
 }
 
 table.columns table.subWrapper.bordered td.text-cont td.text-display,
@@ -1279,8 +1278,8 @@ table.column table.subWrapper.bordered td.br-cont {
   line-height: 0px;
   font-size: 0px;
   vertical-align: bottom;
-  width: 38px;
-  -premailer-width: 38;
+  width: 40px;
+  -premailer-width: 40;
 }
 
 table.columns table.subWrapper.bordered td.br-cont > table,
@@ -1288,12 +1287,6 @@ table.column table.subWrapper.bordered td.br-cont > table {
   vertical-align: bottom;
   height: 28px;
   -premailer-height: 28;
-}
-
-table.columns table.subWrapper.bordered td.br-cont > table td,
-table.column table.subWrapper.bordered td.br-cont > table td {
-  width: 36px;
-  -premailer-width: 36;
 }
 
 table.columns table.subWrapper.bordered td.br-cont td.filler,
