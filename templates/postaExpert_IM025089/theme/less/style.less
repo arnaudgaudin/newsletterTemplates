@@ -141,12 +141,19 @@ table.columns, table.column {
 			}
 			td.title-display {
 				background-color: @colorPostaExpert1;
-				color: #ffffff;
 				vertical-align: middle;
-				text-align: center;
-				text-transform: uppercase;
-				padding: 5px 10px;
 				overflow: hidden;
+				& > table {
+					table-layout: fixed;
+					width: 100%;
+					-premailer-width: 100%;
+				}
+				td {
+					color: #ffffff;
+					text-align: center;
+					text-transform: uppercase;
+					padding: 5px 10px;
+				}
 			}
 		}
 		td.text-cont {
@@ -231,7 +238,7 @@ table.columns, table.column {
 				td { padding: 0px !important; }
 				td.title-cont {
 					padding: 10px 3px 0px 3px !important;
-					td.title-display { padding: 5px 10px !important; }
+					td.title-display td { padding: 5px 10px !important; }
 				}
 				td.text-cont {
 					padding: 0 2px 2px 2px !important;

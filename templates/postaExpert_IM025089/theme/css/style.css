@@ -1230,12 +1230,23 @@ table.column table.subWrapper.bordered td.title-cont > table {
 table.columns table.subWrapper.bordered td.title-cont td.title-display,
 table.column table.subWrapper.bordered td.title-cont td.title-display {
   background-color: #082f54;
-  color: #ffffff;
   vertical-align: middle;
+  overflow: hidden;
+}
+
+table.columns table.subWrapper.bordered td.title-cont td.title-display > table,
+table.column table.subWrapper.bordered td.title-cont td.title-display > table {
+  table-layout: fixed;
+  width: 100%;
+  -premailer-width: 100%;
+}
+
+table.columns table.subWrapper.bordered td.title-cont td.title-display td,
+table.column table.subWrapper.bordered td.title-cont td.title-display td {
+  color: #ffffff;
   text-align: center;
   text-transform: uppercase;
   padding: 5px 10px;
-  overflow: hidden;
 }
 
 table.columns table.subWrapper.bordered td.text-cont,
@@ -1572,8 +1583,8 @@ table.column table.subWrapper.bordered td.br-cont td.br-t-r {
     padding: 10px 3px 0px 3px !important;
   }
 
-  table[class="body"] table.columns table.subWrapper.bordered td.title-cont td.title-display,
-  table[class="body"] table.column table.subWrapper.bordered td.title-cont td.title-display {
+  table[class="body"] table.columns table.subWrapper.bordered td.title-cont td.title-display td,
+  table[class="body"] table.column table.subWrapper.bordered td.title-cont td.title-display td {
     padding: 5px 10px !important;
   }
 
