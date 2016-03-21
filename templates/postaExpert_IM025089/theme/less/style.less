@@ -113,3 +113,41 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 		}
 	}
 }
+
+
+//gestion containers avec bordures spécifiques
+table.columns, table.column {
+	table.subWrapper.bordered {
+		background-color: #D6C3E8;
+
+		//remise à zéro du padding par défaut
+		td { padding: 0px; }
+
+		table.title-cont {
+			background-color: #0f0;
+			width: 100%;
+			-premailer-width: 100%;
+			td.title-display {
+				background-color: #f00;
+				vertical-align: middle;
+			}
+		}
+
+		table.br-cont {
+			background-color: #C3E8D7;
+			width: 100%;
+			-premailer-width: 100%;
+			td.br-t-l {
+				background-color: #EB7AD0;
+				border-top: 2px solid @colorPostaExpert1;
+				border-left: 2px solid @colorPostaExpert1;
+			}
+			td.br-t-r {
+				background-color: #8D7AEB;
+				border-top: 2px solid @colorPostaExpert1;
+				border-right: 2px solid @colorPostaExpert1;
+			}
+
+		}
+	}
+}
