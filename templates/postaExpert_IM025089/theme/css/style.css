@@ -1261,16 +1261,11 @@ table.column table.subWrapper.bordered td.br-cont {
 
 table.columns table.subWrapper.bordered td.br-cont > table,
 table.column table.subWrapper.bordered td.br-cont > table {
+  table-layout: fixed;
   width: 100%;
   -premailer-width: 100%;
   height: 28px;
   -premailer-height: 28;
-}
-
-table.columns table.subWrapper.bordered td.br-cont td,
-table.column table.subWrapper.bordered td.br-cont td {
-  height: 50%;
-  -premailer-height: 50%;
 }
 
 table.columns table.subWrapper.bordered td.br-cont td,
@@ -1281,18 +1276,30 @@ table.column table.subWrapper.bordered td.br-cont td .empty {
   font-size: 0;
 }
 
+table.columns table.subWrapper.bordered td.br-cont td.filler,
+table.column table.subWrapper.bordered td.br-cont td.filler {
+  height: 14px;
+  -premailer-height: 14;
+}
+
+table.columns table.subWrapper.bordered td.br-cont td[class^="br-t-"],
+table.column table.subWrapper.bordered td.br-cont td[class^="br-t-"] {
+  height: 12px;
+  -premailer-height: 12;
+}
+
 table.columns table.subWrapper.bordered td.br-cont td.br-t-l,
 table.column table.subWrapper.bordered td.br-cont td.br-t-l {
   background-color: #EB7AD0;
   border-top: 2px solid #082f54;
-  border-left: 2px solid #082f54;
+  border-left: 2px solid #f00;
 }
 
 table.columns table.subWrapper.bordered td.br-cont td.br-t-r,
 table.column table.subWrapper.bordered td.br-cont td.br-t-r {
   background-color: #8D7AEB;
   border-top: 2px solid #082f54;
-  border-right: 2px solid #082f54;
+  border-right: 2px solid #f00;
 }
 
 @media only screen and (max-width: 720px) {

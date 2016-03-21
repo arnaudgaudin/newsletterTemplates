@@ -158,16 +158,19 @@ table.columns, table.column {
 
 		td.br-cont {
 			background-color: #C3E8D7;
+			//calcul hauteur br-cont
+			@brCont-height: (@baseLineHeight + 10px);
 			width: @textPad;
 			-premailer-width: unit(@textPad);
 			vertical-align: bottom;
+
 			& > table {
-				// table-layout: fixed;
+				table-layout: fixed;
 				width: 100%;
 				-premailer-width: 100%;
 				//hauteur égale à lineHeight + padding vertical *2
-				height: (@baseLineHeight + 10px);
-				-premailer-height: unit((@baseLineHeight + 10px));
+				height: @brCont-height;
+				-premailer-height: unit(@brCont-height);
 			}
 
 			//suppression vide des cases
@@ -176,19 +179,27 @@ table.columns, table.column {
 					line-height: 0;
 					font-size: 0;
 				}
-				height: 50%;
-				-premailer-height: 50%;
+			}
+
+			td.filler {
+				height: (@brCont-height / 2);
+				-premailer-height: unit((@brCont-height / 2));
+			}
+
+			td[class^="br-t-"] {
+				height: (@brCont-height / 2 - 2px);
+				-premailer-height: unit((@brCont-height / 2 - 2px));
 			}
 
 			td.br-t-l {
 				background-color: #EB7AD0;
 				border-top: 2px solid @colorPostaExpert1;
-				border-left: 2px solid @colorPostaExpert1;
+				border-left: 2px solid #f00;
 			}
 			td.br-t-r {
 				background-color: #8D7AEB;
 				border-top: 2px solid @colorPostaExpert1;
-				border-right: 2px solid @colorPostaExpert1;
+				border-right: 2px solid #f00;
 			}
 
 		}
