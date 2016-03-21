@@ -1276,6 +1276,7 @@ table.column table.subWrapper.bordered td.br-cont {
 table.columns table.subWrapper.bordered td.br-cont > table,
 table.column table.subWrapper.bordered td.br-cont > table {
   table-layout: fixed;
+  vertical-align: bottom;
   width: 100%;
   -premailer-width: 100%;
   height: 28px;
