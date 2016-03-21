@@ -1279,24 +1279,32 @@ table.column table.subWrapper.bordered td.br-cont > table {
   -premailer-height: 28;
 }
 
-table.columns table.subWrapper.bordered td.br-cont td,
-table.column table.subWrapper.bordered td.br-cont td,
-table.columns table.subWrapper.bordered td.br-cont td .empty,
-table.column table.subWrapper.bordered td.br-cont td .empty {
-  line-height: 0;
-  font-size: 0;
-}
-
 table.columns table.subWrapper.bordered td.br-cont td.filler,
 table.column table.subWrapper.bordered td.br-cont td.filler {
   height: 14px;
   -premailer-height: 14;
 }
 
+table.columns table.subWrapper.bordered td.br-cont td.filler,
+table.column table.subWrapper.bordered td.br-cont td.filler,
+table.columns table.subWrapper.bordered td.br-cont td.filler .empty,
+table.column table.subWrapper.bordered td.br-cont td.filler .empty {
+  line-height: 14px;
+  font-size: 10px;
+}
+
 table.columns table.subWrapper.bordered td.br-cont td[class^="br-t-"],
 table.column table.subWrapper.bordered td.br-cont td[class^="br-t-"] {
   height: 12px;
   -premailer-height: 12;
+}
+
+table.columns table.subWrapper.bordered td.br-cont td[class^="br-t-"],
+table.column table.subWrapper.bordered td.br-cont td[class^="br-t-"],
+table.columns table.subWrapper.bordered td.br-cont td[class^="br-t-"] .empty,
+table.column table.subWrapper.bordered td.br-cont td[class^="br-t-"] .empty {
+  line-height: 12px;
+  font-size: 9px;
 }
 
 table.columns table.subWrapper.bordered td.br-cont td.br-t-l,

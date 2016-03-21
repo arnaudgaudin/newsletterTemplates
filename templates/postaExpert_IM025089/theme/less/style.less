@@ -179,19 +179,27 @@ table.columns, table.column {
 			}
 
 			//suppression vide des cases
-			td {
-				&, .empty {
-					line-height: 0;
-					font-size: 0;
-				}
-			}
+			// td {
+			// 	&, .empty {
+			// 		line-height: (@brCont-height / 2);
+			// 		font-size: (@brCont-height / 2);
+			// 	}
+			// }
 
 			td.filler {
+				&, .empty {
+					line-height: (@brCont-height / 2);
+					font-size: floor(@brCont-height / 2 * .75);
+				}
 				height: (@brCont-height / 2);
 				-premailer-height: unit((@brCont-height / 2));
 			}
 
 			td[class^="br-t-"] {
+				&, .empty {
+					line-height: (@brCont-height / 2 - 2px);
+					font-size: floor((@brCont-height / 2 - 2px) * .75);
+				}
 				height: (@brCont-height / 2 - 2px);
 				-premailer-height: unit((@brCont-height / 2 - 2px));
 			}
