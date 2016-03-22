@@ -183,6 +183,7 @@ ul {
 			background-color: #f00;
 			td {
 				padding: (@wrapperPad / 2) (@textPad / 2) @wrapperPad @textPad;
+				color: @colorPostaExpert1;
 			}
 		}
 
@@ -296,7 +297,6 @@ ul {
 
 	//réduction décalage vertical
 	td.wrapper { padding-top: 0px; }
-	// table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentMain {
@@ -335,6 +335,6 @@ ul {
 			}
 		}
 		td.wrapper { padding-top: 0px !important; }
-		// table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
+		table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
 	}
 }

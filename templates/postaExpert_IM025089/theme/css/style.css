@@ -1262,6 +1262,7 @@ ul {
 
 .contentMain td.wrapper.first table.subWrapper td {
   padding: 10px 20px 20px 40px;
+  color: #082f54;
 }
 
 .contentMain td.wrapper.first img.bg-person {
@@ -1706,5 +1707,10 @@ ul {
 
   table[class="body"] .contentMain td.wrapper {
     padding-top: 0px !important;
+  }
+
+  table[class="body"] .contentMain table.columns td,
+  table[class="body"] .contentMain table.column td {
+    padding-bottom: 5px !important;
   }
 }
