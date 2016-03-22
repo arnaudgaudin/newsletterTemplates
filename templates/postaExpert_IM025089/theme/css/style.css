@@ -1136,6 +1136,7 @@ p {
 }
 
 ul {
+  list-style-type: square;
   margin: 0px;
   padding-left: 10px;
   padding-bottom: 10px;
