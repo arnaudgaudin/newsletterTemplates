@@ -1407,6 +1407,10 @@ ul {
   padding-right: 20px !important;
 }
 
+.contentContact td.wrapper.first h5.title .link_mail {
+  font-weight: 200;
+}
+
 .contentContact td.wrapper.last table.columns .text-pad,
 .contentContact td.wrapper.last table.column .text-pad {
   padding-left: 20px !important;
