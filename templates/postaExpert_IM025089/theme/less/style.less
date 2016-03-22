@@ -144,7 +144,6 @@ table.columns, table.column {
 
 		td.title-cont {
 			//pour décaler la bordure à l'intérieur
-			// padding: 10px 2px 0px 2px;
 			padding-top: 10px;
 			overflow: visible;
 
@@ -199,11 +198,6 @@ table.columns, table.column {
 				vertical-align: bottom;
 				height: @brCont-height;
 				-premailer-height: unit(@brCont-height);
-
-				// td {
-				// 	// width: (@brCont-width - 2px);
-				// 	// -premailer-width: unit((@brCont-width - 2px));
-				// }
 			}
 
 			td.filler {
@@ -249,19 +243,7 @@ table.columns, table.column {
 		table.columns, table.column {
 			table.subWrapper.bordered {
 				td { padding: 0px !important; }
-				td.title-cont {
-					padding: 10px 3px 0px 3px !important;
-					td.title-display td { padding: 5px 10px !important; }
-				}
-				td.text-cont {
-					padding: 0 2px 2px 2px !important;
-					td.text-display { padding: 5px !important; }
-				}
-				td.br-cont {
-					// &.first { padding-left: 2px !important; }
-					// &.last { padding-right: 2px !important; }
-					// width: (@textPadCollapse - 2px) !important;
-				}
+				td.title-cont { padding-top: 10px !important; }
 			}
 		}
 	}

@@ -1581,21 +1581,6 @@ table.column table.subWrapper.bordered td.br-cont td.br-t-r td {
 
   table[class="body"] table.columns table.subWrapper.bordered td.title-cont,
   table[class="body"] table.column table.subWrapper.bordered td.title-cont {
-    padding: 10px 3px 0px 3px !important;
-  }
-
-  table[class="body"] table.columns table.subWrapper.bordered td.title-cont td.title-display td,
-  table[class="body"] table.column table.subWrapper.bordered td.title-cont td.title-display td {
-    padding: 5px 10px !important;
-  }
-
-  table[class="body"] table.columns table.subWrapper.bordered td.text-cont,
-  table[class="body"] table.column table.subWrapper.bordered td.text-cont {
-    padding: 0 2px 2px 2px !important;
-  }
-
-  table[class="body"] table.columns table.subWrapper.bordered td.text-cont td.text-display,
-  table[class="body"] table.column table.subWrapper.bordered td.text-cont td.text-display {
-    padding: 5px !important;
+    padding-top: 10px !important;
   }
 }
