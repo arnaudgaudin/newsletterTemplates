@@ -173,7 +173,7 @@ table.columns, table.column {
 			// padding: 0 2px 2px 2px;
 			td.text-display {
 				background-color: #CF8298;
-				padding: 5px;
+				padding: (@textPad / 8);
 				border-left: 2px solid @colorPostaExpert1;
 				border-bottom: 2px solid @colorPostaExpert1;
 				border-right: 2px solid @colorPostaExpert1;
@@ -245,7 +245,7 @@ table.columns, table.column {
 					padding-top: (@wrapperPadCollapse / 2) !important;
 					td.title-display td { padding: (@wrapperPadCollapse / 4) (@textPadCollapse / 4) !important; }
 				}
-				td.text-cont td.text-display { padding: 5px !important; }
+				td.text-cont td.text-display { padding: (@textPadCollapse / 8) !important; }
 				td.br-cont {
 					width: @brContCollapse-width !important;
 					& > table { height: @brContCollapse-height !important; }
