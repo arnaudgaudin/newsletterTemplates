@@ -1240,6 +1240,8 @@ table.column table.subWrapper.bordered td.title-cont td.title-display {
 table.columns table.subWrapper.bordered td.title-cont td.title-display td,
 table.column table.subWrapper.bordered td.title-cont td.title-display td {
   color: #ffffff;
+  font-size: 12px;
+  line-height: 16px;
   text-align: center;
   text-transform: uppercase;
   padding: 5px 10px;
@@ -1265,36 +1267,36 @@ table.column table.subWrapper.bordered td.br-cont {
 table.columns table.subWrapper.bordered td.br-cont > table,
 table.column table.subWrapper.bordered td.br-cont > table {
   vertical-align: bottom;
-  height: 28px;
-  -premailer-height: 28;
+  height: 26px;
+  -premailer-height: 26;
 }
 
 table.columns table.subWrapper.bordered td.br-cont td.filler,
 table.column table.subWrapper.bordered td.br-cont td.filler {
-  height: 14px;
-  -premailer-height: 14;
+  height: 13px;
+  -premailer-height: 13;
 }
 
 table.columns table.subWrapper.bordered td.br-cont td.filler,
 table.column table.subWrapper.bordered td.br-cont td.filler,
 table.columns table.subWrapper.bordered td.br-cont td.filler .empty,
 table.column table.subWrapper.bordered td.br-cont td.filler .empty {
-  line-height: 14px;
-  font-size: 10px;
+  line-height: 13px;
+  font-size: 9px;
 }
 
 table.columns table.subWrapper.bordered td.br-cont td[class^="br-t-"],
 table.column table.subWrapper.bordered td.br-cont td[class^="br-t-"] {
-  height: 12px;
-  -premailer-height: 12;
+  height: 11px;
+  -premailer-height: 11;
 }
 
 table.columns table.subWrapper.bordered td.br-cont td[class^="br-t-"],
 table.column table.subWrapper.bordered td.br-cont td[class^="br-t-"],
 table.columns table.subWrapper.bordered td.br-cont td[class^="br-t-"] .empty,
 table.column table.subWrapper.bordered td.br-cont td[class^="br-t-"] .empty {
-  line-height: 12px;
-  font-size: 9px;
+  line-height: 11px;
+  font-size: 8px;
 }
 
 table.columns table.subWrapper.bordered td.br-cont td.br-t-l td,

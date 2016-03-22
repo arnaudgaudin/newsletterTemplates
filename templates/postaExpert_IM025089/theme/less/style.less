@@ -125,7 +125,7 @@ p {
 //gestion containers avec bordures spécifiques
 //calcul dimensions br-cont
 @brCont-width: @textPad;
-@brCont-height: (@baseLineHeight + @wrapperPad / 2);	// hauteur égale à lineHeight + padding vertical *2
+@brCont-height: (floor(@baseLineHeight * 0.9) + @wrapperPad / 2);	// hauteur égale à lineHeight + padding vertical *2
 //pour la version collapsée
 @brContCollapse-width: @textPadCollapse;
 @brContCollapse-height: (floor(@baseLineHeight * 0.9) + @wrapperPadCollapse / 2);	// hauteur égale à lineHeight + padding vertical *2
@@ -160,6 +160,8 @@ table.columns, table.column {
 				overflow: hidden;
 				td {
 					color: #ffffff;
+					font-size: floor(@baseFontSize * 0.9);
+					line-height: floor(@baseLineHeight * 0.9);
 					text-align: center;
 					text-transform: uppercase;
 					padding: (@wrapperPad / 4) (@textPad / 4);
