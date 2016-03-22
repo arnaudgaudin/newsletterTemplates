@@ -1216,6 +1216,8 @@ table.column table.subWrapper.bordered td {
 
 table.columns table.subWrapper.bordered td.title-cont > table,
 table.column table.subWrapper.bordered td.title-cont > table,
+table.columns table.subWrapper.bordered td.title-cont td.title-display > table,
+table.column table.subWrapper.bordered td.title-cont td.title-display > table,
 table.columns table.subWrapper.bordered td.text-cont > table,
 table.column table.subWrapper.bordered td.text-cont > table,
 table.columns table.subWrapper.bordered td.br-cont > table,
@@ -1238,13 +1240,6 @@ table.column table.subWrapper.bordered td.title-cont td.title-display {
   background-color: #082f54;
   vertical-align: middle;
   overflow: hidden;
-}
-
-table.columns table.subWrapper.bordered td.title-cont td.title-display > table,
-table.column table.subWrapper.bordered td.title-cont td.title-display > table {
-  table-layout: fixed;
-  width: 100%;
-  -premailer-width: 100%;
 }
 
 table.columns table.subWrapper.bordered td.title-cont td.title-display td,

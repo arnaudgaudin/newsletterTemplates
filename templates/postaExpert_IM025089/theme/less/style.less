@@ -132,6 +132,7 @@ table.columns, table.column {
 
 		//gestion sous-tableau pour le titre et le texte
 		td.title-cont,
+		td.title-cont td.title-display,
 		td.text-cont,
 		td.br-cont,
 		td[class^="br-t-"] {
@@ -151,11 +152,6 @@ table.columns, table.column {
 				background-color: @colorPostaExpert1;
 				vertical-align: middle;
 				overflow: hidden;
-				& > table {
-					table-layout: fixed;
-					width: 100%;
-					-premailer-width: 100%;
-				}
 				td {
 					color: #ffffff;
 					text-align: center;
