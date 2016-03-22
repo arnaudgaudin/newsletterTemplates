@@ -125,10 +125,10 @@ p {
 //gestion containers avec bordures spécifiques
 //calcul dimensions br-cont
 @brCont-width: @textPad;
-@brCont-height: (@baseLineHeight + 10px);	// hauteur égale à lineHeight + padding vertical *2
+@brCont-height: (@baseLineHeight + @wrapperPad / 2);	// hauteur égale à lineHeight + padding vertical *2
 //pour la version collapsée
 @brContCollapse-width: @textPadCollapse;
-@brContCollapse-height: (@baseLineHeight + 10px);	// hauteur égale à lineHeight + padding vertical *2
+@brContCollapse-height: (floor(@baseLineHeight * 0.9) + @wrapperPadCollapse / 2);	// hauteur égale à lineHeight + padding vertical *2
 
 table.columns, table.column {
 	table.subWrapper.bordered {
@@ -152,7 +152,7 @@ table.columns, table.column {
 
 		td.title-cont {
 			//pour décaler la bordure à l'intérieur
-			padding-top: 10px;
+			padding-top: (@wrapperPad / 2);
 			overflow: visible;
 
 			td.title-display {
@@ -163,7 +163,7 @@ table.columns, table.column {
 					color: #ffffff;
 					text-align: center;
 					text-transform: uppercase;
-					padding: 5px 10px;
+					padding: (@wrapperPad / 4) 10px;
 				}
 			}
 		}
@@ -242,8 +242,8 @@ table.columns, table.column {
 			table.subWrapper.bordered {
 				td { padding: 0px !important; }
 				td.title-cont {
-					padding-top: 10px !important;
-					td.title-display td { padding: 5px 10px !important; }
+					padding-top: (@wrapperPadCollapse / 2) !important;
+					td.title-display td { padding: (@wrapperPadCollapse / 4) 10px !important; }
 				}
 				td.text-cont td.text-display { padding: 5px !important; }
 				td.br-cont {

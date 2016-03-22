@@ -1576,12 +1576,12 @@ table.column table.subWrapper.bordered td.br-cont td.br-t-r td {
 
   table[class="body"] table.columns table.subWrapper.bordered td.title-cont,
   table[class="body"] table.column table.subWrapper.bordered td.title-cont {
-    padding-top: 10px !important;
+    padding-top: 5px !important;
   }
 
   table[class="body"] table.columns table.subWrapper.bordered td.title-cont td.title-display td,
   table[class="body"] table.column table.subWrapper.bordered td.title-cont td.title-display td {
-    padding: 5px 10px !important;
+    padding: 2.5px 10px !important;
   }
 
   table[class="body"] table.columns table.subWrapper.bordered td.text-cont td.text-display,
@@ -1596,32 +1596,32 @@ table.column table.subWrapper.bordered td.br-cont td.br-t-r td {
 
   table[class="body"] table.columns table.subWrapper.bordered td.br-cont > table,
   table[class="body"] table.column table.subWrapper.bordered td.br-cont > table {
-    height: 28px !important;
+    height: 21px !important;
   }
 
   table[class="body"] table.columns table.subWrapper.bordered td.br-cont td.filler,
   table[class="body"] table.column table.subWrapper.bordered td.br-cont td.filler {
-    height: 14px !important;
+    height: 10.5px !important;
   }
 
   table[class="body"] table.columns table.subWrapper.bordered td.br-cont td.filler,
   table[class="body"] table.column table.subWrapper.bordered td.br-cont td.filler,
   table[class="body"] table.columns table.subWrapper.bordered td.br-cont td.filler .empty,
   table[class="body"] table.column table.subWrapper.bordered td.br-cont td.filler .empty {
-    line-height: 14px !important;
-    font-size: 10px !important;
+    line-height: 10.5px !important;
+    font-size: 7px !important;
   }
 
   table[class="body"] table.columns table.subWrapper.bordered td.br-cont td[class^="br-t-"],
   table[class="body"] table.column table.subWrapper.bordered td.br-cont td[class^="br-t-"] {
-    height: 12px !important;
+    height: 8.5px !important;
   }
 
   table[class="body"] table.columns table.subWrapper.bordered td.br-cont td[class^="br-t-"],
   table[class="body"] table.column table.subWrapper.bordered td.br-cont td[class^="br-t-"],
   table[class="body"] table.columns table.subWrapper.bordered td.br-cont td[class^="br-t-"] .empty,
   table[class="body"] table.column table.subWrapper.bordered td.br-cont td[class^="br-t-"] .empty {
-    line-height: 12px !important;
-    font-size: 9px !important;
+    line-height: 8.5px !important;
+    font-size: 6px !important;
   }
 }
