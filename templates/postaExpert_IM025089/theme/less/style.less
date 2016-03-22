@@ -233,7 +233,6 @@ table.columns, table.column {
 					border-right: 2px solid @colorPostaExpert1;
 				}
 			}
-
 		}
 	}
 }
@@ -247,6 +246,25 @@ table.columns, table.column {
 					td.title-display td { padding: 5px 10px !important; }
 				}
 				td.text-cont td.text-display { padding: 5px !important; }
+				td.br-cont {
+					width: @brContCollapse-width !important;
+					& > table { height: @brContCollapse-height !important; }
+					td.filler {
+						&, .empty {
+							line-height: (@brContCollapse-height / 2) !important;
+							font-size: floor(@brContCollapse-height / 2 * .75) !important;
+						}
+						height: (@brContCollapse-height / 2) !important;
+					}
+					td[class^="br-t-"] {
+						//suppression vide des cases
+						&, .empty {
+							line-height: (@brContCollapse-height / 2 - 2px) !important;
+							font-size: floor((@brContCollapse-height / 2 - 2px) * .75) !important;
+						}
+						height: (@brContCollapse-height / 2 - 2px) !important;
+					}
+				}
 			}
 		}
 	}

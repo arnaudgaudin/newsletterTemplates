@@ -1588,4 +1588,40 @@ table.column table.subWrapper.bordered td.br-cont td.br-t-r td {
   table[class="body"] table.column table.subWrapper.bordered td.text-cont td.text-display {
     padding: 5px !important;
   }
+
+  table[class="body"] table.columns table.subWrapper.bordered td.br-cont,
+  table[class="body"] table.column table.subWrapper.bordered td.br-cont {
+    width: 20px !important;
+  }
+
+  table[class="body"] table.columns table.subWrapper.bordered td.br-cont > table,
+  table[class="body"] table.column table.subWrapper.bordered td.br-cont > table {
+    height: 28px !important;
+  }
+
+  table[class="body"] table.columns table.subWrapper.bordered td.br-cont td.filler,
+  table[class="body"] table.column table.subWrapper.bordered td.br-cont td.filler {
+    height: 14px !important;
+  }
+
+  table[class="body"] table.columns table.subWrapper.bordered td.br-cont td.filler,
+  table[class="body"] table.column table.subWrapper.bordered td.br-cont td.filler,
+  table[class="body"] table.columns table.subWrapper.bordered td.br-cont td.filler .empty,
+  table[class="body"] table.column table.subWrapper.bordered td.br-cont td.filler .empty {
+    line-height: 14px !important;
+    font-size: 10px !important;
+  }
+
+  table[class="body"] table.columns table.subWrapper.bordered td.br-cont td[class^="br-t-"],
+  table[class="body"] table.column table.subWrapper.bordered td.br-cont td[class^="br-t-"] {
+    height: 12px !important;
+  }
+
+  table[class="body"] table.columns table.subWrapper.bordered td.br-cont td[class^="br-t-"],
+  table[class="body"] table.column table.subWrapper.bordered td.br-cont td[class^="br-t-"],
+  table[class="body"] table.columns table.subWrapper.bordered td.br-cont td[class^="br-t-"] .empty,
+  table[class="body"] table.column table.subWrapper.bordered td.br-cont td[class^="br-t-"] .empty {
+    line-height: 12px !important;
+    font-size: 9px !important;
+  }
 }
