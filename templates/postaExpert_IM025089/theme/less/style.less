@@ -171,7 +171,7 @@ ul {
 		table.subWrapper.bordered {
 
 			//remise à zéro du padding par défaut
-			td { padding: 0px; }
+			td, p.empty { padding: 0px; }
 
 			//gestion sous-tableau pour le titre et le texte
 			td.title-cont,
@@ -275,7 +275,7 @@ ul {
 	table[class="body"] .contentMain {
 		table.columns, table.column {
 			table.subWrapper.bordered {
-				td { padding: 0px !important; }
+				td, p.empty { padding: 0px !important; }
 				td.title-cont {
 					padding-top: (@wrapperPadCollapse / 2) !important;
 					td.title-display td { padding: (@wrapperPadCollapse / 4) (@textPadCollapse / 4) !important; }

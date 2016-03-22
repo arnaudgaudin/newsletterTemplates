@@ -1251,7 +1251,9 @@ ul {
 }
 
 .contentMain table.columns table.subWrapper.bordered td,
-.contentMain table.column table.subWrapper.bordered td {
+.contentMain table.column table.subWrapper.bordered td,
+.contentMain table.columns table.subWrapper.bordered p.empty,
+.contentMain table.column table.subWrapper.bordered p.empty {
   padding: 0px;
 }
 
@@ -1618,7 +1620,9 @@ ul {
   }
 
   table[class="body"] .contentMain table.columns table.subWrapper.bordered td,
-  table[class="body"] .contentMain table.column table.subWrapper.bordered td {
+  table[class="body"] .contentMain table.column table.subWrapper.bordered td,
+  table[class="body"] .contentMain table.columns table.subWrapper.bordered p.empty,
+  table[class="body"] .contentMain table.column table.subWrapper.bordered p.empty {
     padding: 0px !important;
   }
 
