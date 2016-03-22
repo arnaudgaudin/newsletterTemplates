@@ -353,9 +353,62 @@ ul {
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentBottom {
-
 		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
 		table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
 	}
 }
 
+
+// contentContact area
+// -------------------------
+.contentContact {
+	background-color: #F073E5;
+
+	td.wrapper.first {
+		table.columns .text-pad, table.column .text-pad {
+			padding-right: (@textPad / 2) !important;
+		}
+	}
+	td.wrapper.last {
+		table.columns .text-pad, table.column .text-pad {
+			padding-left: (@textPad / 2) !important;
+		}
+
+		table.subWrapper {
+			background-color: #F0E773;
+			width: 100%;
+			-premailer-width: 100%;
+			td {
+				background-color: #f00;
+				padding: (@wrapperPad / 2) (@textPad / 4);
+				border-bottom: 2px solid @colorPostaExpert1;
+			}
+			&.first td { padding-top: 0px; }
+		}
+	}
+
+	//réduction décalage vertical
+	td.wrapper { padding-top: (@wrapperPad / 2); }
+	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentContact {
+		td.wrapper.first {
+			table.columns .text-pad, table.column .text-pad {
+				padding-right: @textPadCollapse !important;
+			}
+			img.logo {
+				width: 120px !important;
+				height: 105px !important;
+			}
+		}
+		td.wrapper.last {
+			table.subWrapper {
+				td { padding: (@wrapperPadCollapse / 2) (@textPadCollapse / 4) !important; }
+				&.first td { padding-top: 0px !important; }
+			}
+		}
+		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
+		table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
+	}
+}

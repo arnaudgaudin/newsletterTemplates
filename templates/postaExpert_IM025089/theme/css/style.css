@@ -1398,6 +1398,45 @@ ul {
   padding-bottom: 10px;
 }
 
+.contentContact {
+  background-color: #F073E5;
+}
+
+.contentContact td.wrapper.first table.columns .text-pad,
+.contentContact td.wrapper.first table.column .text-pad {
+  padding-right: 20px !important;
+}
+
+.contentContact td.wrapper.last table.columns .text-pad,
+.contentContact td.wrapper.last table.column .text-pad {
+  padding-left: 20px !important;
+}
+
+.contentContact td.wrapper.last table.subWrapper {
+  background-color: #F0E773;
+  width: 100%;
+  -premailer-width: 100%;
+}
+
+.contentContact td.wrapper.last table.subWrapper td {
+  background-color: #f00;
+  padding: 10px 10px;
+  border-bottom: 2px solid #082f54;
+}
+
+.contentContact td.wrapper.last table.subWrapper.first td {
+  padding-top: 0px;
+}
+
+.contentContact td.wrapper {
+  padding-top: 10px;
+}
+
+.contentContact table.columns td,
+.contentContact table.column td {
+  padding-bottom: 10px;
+}
+
 @media only screen and (max-width: 720px) {
   table[class="body"] img {
     max-width: auto !important;
@@ -1732,6 +1771,33 @@ ul {
 
   table[class="body"] .contentBottom table.columns td,
   table[class="body"] .contentBottom table.column td {
+    padding-bottom: 5px !important;
+  }
+
+  table[class="body"] .contentContact td.wrapper.first table.columns .text-pad,
+  table[class="body"] .contentContact td.wrapper.first table.column .text-pad {
+    padding-right: 20px !important;
+  }
+
+  table[class="body"] .contentContact td.wrapper.first img.logo {
+    width: 120px !important;
+    height: 105px !important;
+  }
+
+  table[class="body"] .contentContact td.wrapper.last table.subWrapper td {
+    padding: 5px 5px !important;
+  }
+
+  table[class="body"] .contentContact td.wrapper.last table.subWrapper.first td {
+    padding-top: 0px !important;
+  }
+
+  table[class="body"] .contentContact td.wrapper {
+    padding-top: 5px !important;
+  }
+
+  table[class="body"] .contentContact table.columns td,
+  table[class="body"] .contentContact table.column td {
     padding-bottom: 5px !important;
   }
 }
