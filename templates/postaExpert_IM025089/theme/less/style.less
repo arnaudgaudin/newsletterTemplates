@@ -345,8 +345,6 @@ ul {
 // -------------------------
 .contentBottom {
 	background-color: #0f0;
-
-
 	//réduction décalage vertical
 	td.wrapper { padding-top: (@wrapperPad / 2); }
 	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
@@ -420,6 +418,31 @@ ul {
 				td { padding: (@wrapperPadCollapse / 2) (@textPadCollapse / 4) !important; }
 				&.first td { padding-top: 0px !important; }
 			}
+		}
+		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
+		table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
+	}
+}
+
+
+// contentLegal area
+// -------------------------
+.contentLegal {
+	.newsletterInnerTextColor(darken(@containerBackground, 40%));
+	
+	td {
+		font-size: @fontSizeSmall;
+		line-height: (@fontSizeSmall * 1.25);
+	}
+	//réduction décalage vertical
+	td.wrapper { padding-top: (@wrapperPad / 2); }
+	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentOnline {
+		td {
+			font-size: @fontSizeSmall !important;
+			line-height: (@fontSizeSmall * 1.25) !important;
 		}
 		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
 		table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }

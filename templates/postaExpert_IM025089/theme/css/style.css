@@ -1451,6 +1451,38 @@ ul {
   padding-bottom: 10px;
 }
 
+.contentLegal,
+.contentLegal td,
+.contentLegal .inner {
+  color: #999999;
+}
+
+.contentLegal a {
+  color: #999999;
+}
+
+.contentLegal a .important,
+.contentLegal a:visited,
+.contentLegal a:hover,
+.contentLegal a:focus,
+.contentLegal a:active {
+  color: #999999 !important;
+}
+
+.contentLegal td {
+  font-size: 11px;
+  line-height: 13.75px;
+}
+
+.contentLegal td.wrapper {
+  padding-top: 10px;
+}
+
+.contentLegal table.columns td,
+.contentLegal table.column td {
+  padding-bottom: 10px;
+}
+
 @media only screen and (max-width: 720px) {
   table[class="body"] img {
     max-width: auto !important;
@@ -1821,6 +1853,20 @@ ul {
 
   table[class="body"] .contentContact table.columns td,
   table[class="body"] .contentContact table.column td {
+    padding-bottom: 5px !important;
+  }
+
+  table[class="body"] .contentOnline td {
+    font-size: 11px !important;
+    line-height: 13.75px !important;
+  }
+
+  table[class="body"] .contentOnline td.wrapper {
+    padding-top: 5px !important;
+  }
+
+  table[class="body"] .contentOnline table.columns td,
+  table[class="body"] .contentOnline table.column td {
     padding-bottom: 5px !important;
   }
 }
