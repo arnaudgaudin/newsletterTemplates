@@ -181,7 +181,6 @@ ul {
 	
 	td.wrapper.last {
 		background-color: #DE85CC;
-
 		table.columns, table.column {
 			table.subWrapper.bordered {
 
@@ -283,8 +282,7 @@ ul {
 	}
 
 	//réduction décalage vertical
-	td.wrapper.first { padding-top: (@wrapperPad / 2); }
-	td.wrapper.last { padding-top: 0px; }
+	td.wrapper { padding-top: 0px; }
 	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
@@ -320,8 +318,7 @@ ul {
 				}
 			}
 		}
-		td.wrapper.first { padding-top: (@wrapperPadCollapse / 2) !important; }
-		td.wrapper.last { padding-top: 0px !important; }
+		td.wrapper { padding-top: 0px !important; }
 		table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
 	}
 }
