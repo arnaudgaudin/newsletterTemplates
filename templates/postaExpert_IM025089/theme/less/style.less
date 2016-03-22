@@ -123,6 +123,10 @@ p {
 
 
 //gestion containers avec bordures spécifiques
+//calcul dimensions br-cont
+@brCont-width: @textPad;
+@brCont-height: (@baseLineHeight + 10px);	// hauteur égale à lineHeight + padding vertical *2
+
 table.columns, table.column {
 	table.subWrapper.bordered {
 		background-color: #D6C3E8;
@@ -181,10 +185,6 @@ table.columns, table.column {
 			line-height: 0px;
 			font-size: 0px;
 			vertical-align: bottom;
-
-			//calcul dimensions br-cont
-			@brCont-width: @textPad;
-			@brCont-height: (@baseLineHeight + 10px);	// hauteur égale à lineHeight + padding vertical *2
 
 			//application dimenssions
 			width: @brCont-width;
