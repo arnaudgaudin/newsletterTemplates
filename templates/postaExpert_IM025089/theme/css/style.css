@@ -1248,6 +1248,15 @@ ul {
 
 .contentMain td.wrapper.first {
   background-color: #85DE9A;
+  vertical-align: bottom;
+}
+
+.contentMain td.wrapper.first table.subWrapper {
+  background-color: #f00;
+}
+
+.contentMain td.wrapper.first img.bg-person {
+  background-color: #00f;
 }
 
 .contentMain td.wrapper.last {
