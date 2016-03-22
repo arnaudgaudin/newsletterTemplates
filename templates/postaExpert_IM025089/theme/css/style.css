@@ -1411,6 +1411,12 @@ ul {
   font-weight: 200;
 }
 
+.contentContact td.wrapper.first table.logo {
+  background-color: #f00;
+  width: 100%;
+  -premailer-width: 100%;
+}
+
 .contentContact td.wrapper.last table.columns .text-pad,
 .contentContact td.wrapper.last table.column .text-pad {
   padding-left: 20px !important;
