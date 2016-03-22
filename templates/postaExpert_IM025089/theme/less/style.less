@@ -60,8 +60,13 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 //cf http://stackoverflow.com/questions/18109812/ms-outlook-email-templates-adding-extra-spacing
 p {
 	margin: 0px;
-	padding: 0px;
-	margin-bottom: 0px;
+	padding-bottom: 10px;
+}
+
+ul {
+	margin: 0px;
+	padding-left: 10px;
+	padding-bottom: 10px;
 }
 
 //gestion header
@@ -262,3 +267,47 @@ table.columns, table.column {
 	}
 }
 
+
+// contentOnline area
+// -------------------------
+.contentOnline {
+	background-color: @bodyBackground;
+	.newsletterInnerTextColor(darken(@bodyBackground, 40%));
+	
+	td {
+		font-size: @fontSizeSmall;
+		line-height: (@fontSizeSmall * 1.25);
+	}
+	//réduction décalage vertical
+	td.wrapper { padding-top: (@wrapperPad / 2); }
+	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentOnline {
+		td {
+			font-size: @fontSizeSmall !important;
+			line-height: (@fontSizeSmall * 1.25) !important;
+		}
+		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
+		table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
+	}
+}
+
+
+// contentMain area
+// -------------------------
+.contentMain {
+	background-color: #DE85CC;
+
+	//réduction décalage vertical
+	td.wrapper.first { padding-top: (@wrapperPad / 2); }
+	td.wrapper.last { padding-top: 0px; }
+	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentMain {
+		td.wrapper.first { padding-top: (@wrapperPadCollapse / 2) !important; }
+		td.wrapper.last { padding-top: 0px !important; }
+		table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
+	}
+}
