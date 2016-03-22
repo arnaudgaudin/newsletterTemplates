@@ -1314,7 +1314,7 @@ ul {
 
 .contentMain td.wrapper.last table.columns table.subWrapper.bordered td.text-cont td.text-display,
 .contentMain td.wrapper.last table.column table.subWrapper.bordered td.text-cont td.text-display {
-  padding: 5px 10px 10px 10px;
+  padding: 5px 10px 0px 10px;
   border-left: 2px solid #082f54;
   border-bottom: 2px solid #082f54;
   border-right: 2px solid #082f54;
@@ -1655,7 +1655,7 @@ ul {
 
   table[class="body"] .contentMain td.wrapper.last table.columns table.subWrapper.bordered td.text-cont td.text-display,
   table[class="body"] .contentMain td.wrapper.last table.column table.subWrapper.bordered td.text-cont td.text-display {
-    padding: 2.5px 5px 5px 5px !important;
+    padding: 2.5px 5px 0px 5px !important;
   }
 
   table[class="body"] .contentMain td.wrapper.last table.columns table.subWrapper.bordered td.br-cont,
