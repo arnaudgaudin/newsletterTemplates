@@ -1387,6 +1387,14 @@ ul {
   border-right: 2px solid #082f54;
 }
 
+.contentMain td.wrapper.last table.columns table.subWrapper.quoted td,
+.contentMain td.wrapper.last table.column table.subWrapper.quoted td {
+  padding: 10px 10px 0px 10px;
+  font-size: 11px;
+  line-height: 14px;
+  font-style: italic;
+}
+
 .contentMain td.wrapper {
   padding-top: 0px;
 }
@@ -1703,6 +1711,11 @@ ul {
   table[class="body"] .contentMain td.wrapper.last table.column table.subWrapper.bordered td.br-cont td[class^="br-t-"] .empty {
     line-height: 8.5px !important;
     font-size: 6px !important;
+  }
+
+  table[class="body"] .contentMain td.wrapper.last table.columns table.subWrapper.quoted td,
+  table[class="body"] .contentMain td.wrapper.last table.column table.subWrapper.quoted td {
+    adding: 5px 5px 0px 5px !important;
   }
 
   table[class="body"] .contentMain td.wrapper {

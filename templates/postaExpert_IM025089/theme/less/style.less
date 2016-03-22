@@ -292,6 +292,14 @@ ul {
 					}
 				}
 			}
+			table.subWrapper.quoted {
+				td {
+					padding: (@wrapperPad / 2) (@textPad / 4) 0px (@textPad / 4);
+					font-size: @fontSizeSmall;
+					line-height: floor(@baseLineHeight * 0.8);
+					font-style: italic;
+				}
+			}
 		}
 	}
 
@@ -331,6 +339,9 @@ ul {
 							height: (@brContCollapse-height / 2 - 2px) !important;
 						}
 					}
+				}
+				table.subWrapper.quoted td {
+					adding: (@wrapperPadCollapse / 2) (@textPadCollapse / 4) 0px (@textPadCollapse / 4) !important;
 				}
 			}
 		}
