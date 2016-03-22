@@ -1251,12 +1251,17 @@ ul {
   vertical-align: bottom;
 }
 
+.contentMain td.wrapper.first table.columns td,
+.contentMain td.wrapper.first table.column td {
+  padding-bottom: 0px;
+}
+
 .contentMain td.wrapper.first table.subWrapper {
   background-color: #f00;
 }
 
 .contentMain td.wrapper.first table.subWrapper td {
-  padding: 10px 20px 0 40px;
+  padding: 10px 20px 20px 40px;
 }
 
 .contentMain td.wrapper.first img.bg-person {
@@ -1265,6 +1270,11 @@ ul {
 
 .contentMain td.wrapper.last {
   background-color: #DE85CC;
+}
+
+.contentMain td.wrapper.last table.columns td,
+.contentMain td.wrapper.last table.column td {
+  padding-bottom: 10px;
 }
 
 .contentMain td.wrapper.last table.columns table.subWrapper.bordered td,
@@ -1378,11 +1388,6 @@ ul {
 
 .contentMain td.wrapper {
   padding-top: 0px;
-}
-
-.contentMain table.columns td,
-.contentMain table.column td {
-  padding-bottom: 10px;
 }
 
 @media only screen and (max-width: 720px) {
@@ -1638,7 +1643,7 @@ ul {
   }
 
   table[class="body"] .contentMain td.wrapper.first table.subWrapper td {
-    padding: 5px 20px 0 20px !important;
+    padding: 5px 20px 10px 20px !important;
   }
 
   table[class="body"] .contentMain td.wrapper.last table.columns table.subWrapper.bordered td,
@@ -1701,10 +1706,5 @@ ul {
 
   table[class="body"] .contentMain td.wrapper {
     padding-top: 0px !important;
-  }
-
-  table[class="body"] .contentMain table.columns td,
-  table[class="body"] .contentMain table.column td {
-    padding-bottom: 5px !important;
   }
 }
