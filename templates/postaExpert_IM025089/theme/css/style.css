@@ -1784,6 +1784,11 @@ ul {
     height: 105px !important;
   }
 
+  table[class="body"] .contentContact td.wrapper.last table.columns .text-pad,
+  table[class="body"] .contentContact td.wrapper.last table.column .text-pad {
+    padding-left: 20px !important;
+  }
+
   table[class="body"] .contentContact td.wrapper.last table.subWrapper td {
     padding: 5px 5px !important;
   }
