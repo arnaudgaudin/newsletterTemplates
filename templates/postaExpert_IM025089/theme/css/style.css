@@ -1255,6 +1255,10 @@ ul {
   background-color: #f00;
 }
 
+.contentMain td.wrapper.first table.subWrapper td {
+  padding-top: 10px;
+}
+
 .contentMain td.wrapper.first img.bg-person {
   background-color: #00f;
 }
@@ -1626,6 +1630,10 @@ ul {
   table[class="body"] .contentOnline table.columns td,
   table[class="body"] .contentOnline table.column td {
     padding-bottom: 5px !important;
+  }
+
+  table[class="body"] .contentMain td.wrapper.first table.subWrapper td {
+    padding-top: 5px !important;
   }
 
   table[class="body"] .contentMain td.wrapper.last table.columns table.subWrapper.bordered td,
