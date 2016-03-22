@@ -1483,6 +1483,42 @@ ul {
   padding-bottom: 10px;
 }
 
+.contentUnsubscribe {
+  background-color: #efefef;
+}
+
+.contentUnsubscribe,
+.contentUnsubscribe td,
+.contentUnsubscribe .inner {
+  color: #8a8888;
+}
+
+.contentUnsubscribe a {
+  color: #8a8888;
+}
+
+.contentUnsubscribe a .important,
+.contentUnsubscribe a:visited,
+.contentUnsubscribe a:hover,
+.contentUnsubscribe a:focus,
+.contentUnsubscribe a:active {
+  color: #8a8888 !important;
+}
+
+.contentUnsubscribe td {
+  font-size: 11px;
+  line-height: 13.75px;
+}
+
+.contentUnsubscribe td.wrapper {
+  padding-top: 10px;
+}
+
+.contentUnsubscribe table.columns td,
+.contentUnsubscribe table.column td {
+  padding-bottom: 10px;
+}
+
 @media only screen and (max-width: 720px) {
   table[class="body"] img {
     max-width: auto !important;
@@ -1867,6 +1903,15 @@ ul {
 
   table[class="body"] .contentOnline table.columns td,
   table[class="body"] .contentOnline table.column td {
+    padding-bottom: 5px !important;
+  }
+
+  table[class="body"] .contentUnsubscribe td.wrapper {
+    padding-top: 5px !important;
+  }
+
+  table[class="body"] .contentUnsubscribe table.columns td,
+  table[class="body"] .contentUnsubscribe table.column td {
     padding-bottom: 5px !important;
   }
 }
