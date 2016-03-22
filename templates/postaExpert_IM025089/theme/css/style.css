@@ -1385,6 +1385,19 @@ ul {
   padding-top: 0px;
 }
 
+.contentBottom {
+  background-color: #0f0;
+}
+
+.contentBottom td.wrapper {
+  padding-top: 10px;
+}
+
+.contentBottom table.columns td,
+.contentBottom table.column td {
+  padding-bottom: 10px;
+}
+
 @media only screen and (max-width: 720px) {
   table[class="body"] img {
     max-width: auto !important;
@@ -1710,6 +1723,15 @@ ul {
 
   table[class="body"] .contentMain table.columns td,
   table[class="body"] .contentMain table.column td {
+    padding-bottom: 5px !important;
+  }
+
+  table[class="body"] .contentBottom td.wrapper {
+    padding-top: 5px !important;
+  }
+
+  table[class="body"] .contentBottom table.columns td,
+  table[class="body"] .contentBottom table.column td {
     padding-bottom: 5px !important;
   }
 }
