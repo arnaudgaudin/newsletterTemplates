@@ -239,7 +239,11 @@ table.columns, table.column {
 		table.columns, table.column {
 			table.subWrapper.bordered {
 				td { padding: 0px !important; }
-				td.title-cont { padding-top: 10px !important; }
+				td.title-cont {
+					padding-top: 10px !important;
+					td.title-display td { padding: 5px 10px !important; }
+				}
+				td.text-cont td.text-display { padding: 5px !important; }
 			}
 		}
 	}

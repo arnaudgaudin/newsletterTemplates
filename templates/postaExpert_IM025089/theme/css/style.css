@@ -1578,4 +1578,14 @@ table.column table.subWrapper.bordered td.br-cont td.br-t-r td {
   table[class="body"] table.column table.subWrapper.bordered td.title-cont {
     padding-top: 10px !important;
   }
+
+  table[class="body"] table.columns table.subWrapper.bordered td.title-cont td.title-display td,
+  table[class="body"] table.column table.subWrapper.bordered td.title-cont td.title-display td {
+    padding: 5px 10px !important;
+  }
+
+  table[class="body"] table.columns table.subWrapper.bordered td.text-cont td.text-display,
+  table[class="body"] table.column table.subWrapper.bordered td.text-cont td.text-display {
+    padding: 5px !important;
+  }
 }
