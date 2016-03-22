@@ -1258,7 +1258,7 @@ table.column table.subWrapper.bordered td.text-cont {
 table.columns table.subWrapper.bordered td.text-cont td.text-display,
 table.column table.subWrapper.bordered td.text-cont td.text-display {
   background-color: #CF8298;
-  padding: 5px;
+  padding: 10px;
   border-left: 2px solid #082f54;
   border-bottom: 2px solid #082f54;
   border-right: 2px solid #082f54;
@@ -1586,7 +1586,7 @@ table.column table.subWrapper.bordered td.br-cont td.br-t-r td {
 
   table[class="body"] table.columns table.subWrapper.bordered td.text-cont td.text-display,
   table[class="body"] table.column table.subWrapper.bordered td.text-cont td.text-display {
-    padding: 2.5px !important;
+    padding: 5px !important;
   }
 
   table[class="body"] table.columns table.subWrapper.bordered td.br-cont,
