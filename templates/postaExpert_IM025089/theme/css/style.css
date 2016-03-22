@@ -1210,113 +1210,6 @@ ul {
   font-weight: 200;
 }
 
-table.columns table.subWrapper.bordered td,
-table.column table.subWrapper.bordered td {
-  padding: 0px;
-}
-
-table.columns table.subWrapper.bordered td.title-cont > table,
-table.column table.subWrapper.bordered td.title-cont > table,
-table.columns table.subWrapper.bordered td.title-cont td.title-display > table,
-table.column table.subWrapper.bordered td.title-cont td.title-display > table,
-table.columns table.subWrapper.bordered td.text-cont > table,
-table.column table.subWrapper.bordered td.text-cont > table,
-table.columns table.subWrapper.bordered td.br-cont > table,
-table.column table.subWrapper.bordered td.br-cont > table,
-table.columns table.subWrapper.bordered td[class^="br-t-"] > table,
-table.column table.subWrapper.bordered td[class^="br-t-"] > table {
-  table-layout: fixed;
-  width: 100%;
-  -premailer-width: 100%;
-}
-
-table.columns table.subWrapper.bordered td.title-cont,
-table.column table.subWrapper.bordered td.title-cont {
-  padding-top: 10px;
-  overflow: visible;
-}
-
-table.columns table.subWrapper.bordered td.title-cont td.title-display,
-table.column table.subWrapper.bordered td.title-cont td.title-display {
-  background-color: #082f54;
-  vertical-align: middle;
-  overflow: hidden;
-}
-
-table.columns table.subWrapper.bordered td.title-cont td.title-display td,
-table.column table.subWrapper.bordered td.title-cont td.title-display td {
-  color: #ffffff;
-  font-size: 12px;
-  line-height: 16px;
-  text-align: center;
-  text-transform: uppercase;
-  padding: 5px 10px;
-}
-
-table.columns table.subWrapper.bordered td.text-cont td.text-display,
-table.column table.subWrapper.bordered td.text-cont td.text-display {
-  padding: 5px 10px 10px 10px;
-  border-left: 2px solid #082f54;
-  border-bottom: 2px solid #082f54;
-  border-right: 2px solid #082f54;
-}
-
-table.columns table.subWrapper.bordered td.br-cont,
-table.column table.subWrapper.bordered td.br-cont {
-  line-height: 0px;
-  font-size: 0px;
-  vertical-align: bottom;
-  width: 40px;
-  -premailer-width: 40;
-}
-
-table.columns table.subWrapper.bordered td.br-cont > table,
-table.column table.subWrapper.bordered td.br-cont > table {
-  vertical-align: bottom;
-  height: 26px;
-  -premailer-height: 26;
-}
-
-table.columns table.subWrapper.bordered td.br-cont td.filler,
-table.column table.subWrapper.bordered td.br-cont td.filler {
-  height: 13px;
-  -premailer-height: 13;
-}
-
-table.columns table.subWrapper.bordered td.br-cont td.filler,
-table.column table.subWrapper.bordered td.br-cont td.filler,
-table.columns table.subWrapper.bordered td.br-cont td.filler .empty,
-table.column table.subWrapper.bordered td.br-cont td.filler .empty {
-  line-height: 13px;
-  font-size: 9px;
-}
-
-table.columns table.subWrapper.bordered td.br-cont td[class^="br-t-"],
-table.column table.subWrapper.bordered td.br-cont td[class^="br-t-"] {
-  height: 11px;
-  -premailer-height: 11;
-}
-
-table.columns table.subWrapper.bordered td.br-cont td[class^="br-t-"],
-table.column table.subWrapper.bordered td.br-cont td[class^="br-t-"],
-table.columns table.subWrapper.bordered td.br-cont td[class^="br-t-"] .empty,
-table.column table.subWrapper.bordered td.br-cont td[class^="br-t-"] .empty {
-  line-height: 11px;
-  font-size: 8px;
-}
-
-table.columns table.subWrapper.bordered td.br-cont td.br-t-l td,
-table.column table.subWrapper.bordered td.br-cont td.br-t-l td {
-  border-top: 2px solid #082f54;
-  border-left: 2px solid #082f54;
-}
-
-table.columns table.subWrapper.bordered td.br-cont td.br-t-r td,
-table.column table.subWrapper.bordered td.br-cont td.br-t-r td {
-  border-top: 2px solid #082f54;
-  border-right: 2px solid #082f54;
-}
-
 .contentOnline {
   background-color: #efefef;
 }
@@ -1355,6 +1248,113 @@ table.column table.subWrapper.bordered td.br-cont td.br-t-r td {
 
 .contentMain {
   background-color: #DE85CC;
+}
+
+.contentMain table.columns table.subWrapper.bordered td,
+.contentMain table.column table.subWrapper.bordered td {
+  padding: 0px;
+}
+
+.contentMain table.columns table.subWrapper.bordered td.title-cont > table,
+.contentMain table.column table.subWrapper.bordered td.title-cont > table,
+.contentMain table.columns table.subWrapper.bordered td.title-cont td.title-display > table,
+.contentMain table.column table.subWrapper.bordered td.title-cont td.title-display > table,
+.contentMain table.columns table.subWrapper.bordered td.text-cont > table,
+.contentMain table.column table.subWrapper.bordered td.text-cont > table,
+.contentMain table.columns table.subWrapper.bordered td.br-cont > table,
+.contentMain table.column table.subWrapper.bordered td.br-cont > table,
+.contentMain table.columns table.subWrapper.bordered td[class^="br-t-"] > table,
+.contentMain table.column table.subWrapper.bordered td[class^="br-t-"] > table {
+  table-layout: fixed;
+  width: 100%;
+  -premailer-width: 100%;
+}
+
+.contentMain table.columns table.subWrapper.bordered td.title-cont,
+.contentMain table.column table.subWrapper.bordered td.title-cont {
+  padding-top: 10px;
+  overflow: visible;
+}
+
+.contentMain table.columns table.subWrapper.bordered td.title-cont td.title-display,
+.contentMain table.column table.subWrapper.bordered td.title-cont td.title-display {
+  background-color: #082f54;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.contentMain table.columns table.subWrapper.bordered td.title-cont td.title-display td,
+.contentMain table.column table.subWrapper.bordered td.title-cont td.title-display td {
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 5px 10px;
+}
+
+.contentMain table.columns table.subWrapper.bordered td.text-cont td.text-display,
+.contentMain table.column table.subWrapper.bordered td.text-cont td.text-display {
+  padding: 5px 10px 10px 10px;
+  border-left: 2px solid #082f54;
+  border-bottom: 2px solid #082f54;
+  border-right: 2px solid #082f54;
+}
+
+.contentMain table.columns table.subWrapper.bordered td.br-cont,
+.contentMain table.column table.subWrapper.bordered td.br-cont {
+  line-height: 0px;
+  font-size: 0px;
+  vertical-align: bottom;
+  width: 40px;
+  -premailer-width: 40;
+}
+
+.contentMain table.columns table.subWrapper.bordered td.br-cont > table,
+.contentMain table.column table.subWrapper.bordered td.br-cont > table {
+  vertical-align: bottom;
+  height: 26px;
+  -premailer-height: 26;
+}
+
+.contentMain table.columns table.subWrapper.bordered td.br-cont td.filler,
+.contentMain table.column table.subWrapper.bordered td.br-cont td.filler {
+  height: 13px;
+  -premailer-height: 13;
+}
+
+.contentMain table.columns table.subWrapper.bordered td.br-cont td.filler,
+.contentMain table.column table.subWrapper.bordered td.br-cont td.filler,
+.contentMain table.columns table.subWrapper.bordered td.br-cont td.filler .empty,
+.contentMain table.column table.subWrapper.bordered td.br-cont td.filler .empty {
+  line-height: 13px;
+  font-size: 9px;
+}
+
+.contentMain table.columns table.subWrapper.bordered td.br-cont td[class^="br-t-"],
+.contentMain table.column table.subWrapper.bordered td.br-cont td[class^="br-t-"] {
+  height: 11px;
+  -premailer-height: 11;
+}
+
+.contentMain table.columns table.subWrapper.bordered td.br-cont td[class^="br-t-"],
+.contentMain table.column table.subWrapper.bordered td.br-cont td[class^="br-t-"],
+.contentMain table.columns table.subWrapper.bordered td.br-cont td[class^="br-t-"] .empty,
+.contentMain table.column table.subWrapper.bordered td.br-cont td[class^="br-t-"] .empty {
+  line-height: 11px;
+  font-size: 8px;
+}
+
+.contentMain table.columns table.subWrapper.bordered td.br-cont td.br-t-l td,
+.contentMain table.column table.subWrapper.bordered td.br-cont td.br-t-l td {
+  border-top: 2px solid #082f54;
+  border-left: 2px solid #082f54;
+}
+
+.contentMain table.columns table.subWrapper.bordered td.br-cont td.br-t-r td,
+.contentMain table.column table.subWrapper.bordered td.br-cont td.br-t-r td {
+  border-top: 2px solid #082f54;
+  border-right: 2px solid #082f54;
 }
 
 .contentMain td.wrapper.first {
@@ -1603,62 +1603,6 @@ table.column table.subWrapper.bordered td.br-cont td.br-t-r td {
     padding: 18.75% 14.28571429% !important;
   }
 
-  table[class="body"] table.columns table.subWrapper.bordered td,
-  table[class="body"] table.column table.subWrapper.bordered td {
-    padding: 0px !important;
-  }
-
-  table[class="body"] table.columns table.subWrapper.bordered td.title-cont,
-  table[class="body"] table.column table.subWrapper.bordered td.title-cont {
-    padding-top: 5px !important;
-  }
-
-  table[class="body"] table.columns table.subWrapper.bordered td.title-cont td.title-display td,
-  table[class="body"] table.column table.subWrapper.bordered td.title-cont td.title-display td {
-    padding: 2.5px 5px !important;
-  }
-
-  table[class="body"] table.columns table.subWrapper.bordered td.text-cont td.text-display,
-  table[class="body"] table.column table.subWrapper.bordered td.text-cont td.text-display {
-    padding: 2.5px 5px 5px 5px !important;
-  }
-
-  table[class="body"] table.columns table.subWrapper.bordered td.br-cont,
-  table[class="body"] table.column table.subWrapper.bordered td.br-cont {
-    width: 20px !important;
-  }
-
-  table[class="body"] table.columns table.subWrapper.bordered td.br-cont > table,
-  table[class="body"] table.column table.subWrapper.bordered td.br-cont > table {
-    height: 21px !important;
-  }
-
-  table[class="body"] table.columns table.subWrapper.bordered td.br-cont td.filler,
-  table[class="body"] table.column table.subWrapper.bordered td.br-cont td.filler {
-    height: 10.5px !important;
-  }
-
-  table[class="body"] table.columns table.subWrapper.bordered td.br-cont td.filler,
-  table[class="body"] table.column table.subWrapper.bordered td.br-cont td.filler,
-  table[class="body"] table.columns table.subWrapper.bordered td.br-cont td.filler .empty,
-  table[class="body"] table.column table.subWrapper.bordered td.br-cont td.filler .empty {
-    line-height: 10.5px !important;
-    font-size: 7px !important;
-  }
-
-  table[class="body"] table.columns table.subWrapper.bordered td.br-cont td[class^="br-t-"],
-  table[class="body"] table.column table.subWrapper.bordered td.br-cont td[class^="br-t-"] {
-    height: 8.5px !important;
-  }
-
-  table[class="body"] table.columns table.subWrapper.bordered td.br-cont td[class^="br-t-"],
-  table[class="body"] table.column table.subWrapper.bordered td.br-cont td[class^="br-t-"],
-  table[class="body"] table.columns table.subWrapper.bordered td.br-cont td[class^="br-t-"] .empty,
-  table[class="body"] table.column table.subWrapper.bordered td.br-cont td[class^="br-t-"] .empty {
-    line-height: 8.5px !important;
-    font-size: 6px !important;
-  }
-
   table[class="body"] .contentOnline td {
     font-size: 11px !important;
     line-height: 13.75px !important;
@@ -1671,6 +1615,62 @@ table.column table.subWrapper.bordered td.br-cont td.br-t-r td {
   table[class="body"] .contentOnline table.columns td,
   table[class="body"] .contentOnline table.column td {
     padding-bottom: 5px !important;
+  }
+
+  table[class="body"] .contentMain table.columns table.subWrapper.bordered td,
+  table[class="body"] .contentMain table.column table.subWrapper.bordered td {
+    padding: 0px !important;
+  }
+
+  table[class="body"] .contentMain table.columns table.subWrapper.bordered td.title-cont,
+  table[class="body"] .contentMain table.column table.subWrapper.bordered td.title-cont {
+    padding-top: 5px !important;
+  }
+
+  table[class="body"] .contentMain table.columns table.subWrapper.bordered td.title-cont td.title-display td,
+  table[class="body"] .contentMain table.column table.subWrapper.bordered td.title-cont td.title-display td {
+    padding: 2.5px 5px !important;
+  }
+
+  table[class="body"] .contentMain table.columns table.subWrapper.bordered td.text-cont td.text-display,
+  table[class="body"] .contentMain table.column table.subWrapper.bordered td.text-cont td.text-display {
+    padding: 2.5px 5px 5px 5px !important;
+  }
+
+  table[class="body"] .contentMain table.columns table.subWrapper.bordered td.br-cont,
+  table[class="body"] .contentMain table.column table.subWrapper.bordered td.br-cont {
+    width: 20px !important;
+  }
+
+  table[class="body"] .contentMain table.columns table.subWrapper.bordered td.br-cont > table,
+  table[class="body"] .contentMain table.column table.subWrapper.bordered td.br-cont > table {
+    height: 21px !important;
+  }
+
+  table[class="body"] .contentMain table.columns table.subWrapper.bordered td.br-cont td.filler,
+  table[class="body"] .contentMain table.column table.subWrapper.bordered td.br-cont td.filler {
+    height: 10.5px !important;
+  }
+
+  table[class="body"] .contentMain table.columns table.subWrapper.bordered td.br-cont td.filler,
+  table[class="body"] .contentMain table.column table.subWrapper.bordered td.br-cont td.filler,
+  table[class="body"] .contentMain table.columns table.subWrapper.bordered td.br-cont td.filler .empty,
+  table[class="body"] .contentMain table.column table.subWrapper.bordered td.br-cont td.filler .empty {
+    line-height: 10.5px !important;
+    font-size: 7px !important;
+  }
+
+  table[class="body"] .contentMain table.columns table.subWrapper.bordered td.br-cont td[class^="br-t-"],
+  table[class="body"] .contentMain table.column table.subWrapper.bordered td.br-cont td[class^="br-t-"] {
+    height: 8.5px !important;
+  }
+
+  table[class="body"] .contentMain table.columns table.subWrapper.bordered td.br-cont td[class^="br-t-"],
+  table[class="body"] .contentMain table.column table.subWrapper.bordered td.br-cont td[class^="br-t-"],
+  table[class="body"] .contentMain table.columns table.subWrapper.bordered td.br-cont td[class^="br-t-"] .empty,
+  table[class="body"] .contentMain table.column table.subWrapper.bordered td.br-cont td[class^="br-t-"] .empty {
+    line-height: 8.5px !important;
+    font-size: 6px !important;
   }
 
   table[class="body"] .contentMain td.wrapper.first {
