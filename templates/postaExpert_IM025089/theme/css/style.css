@@ -1417,6 +1417,10 @@ ul {
   -premailer-width: 100%;
 }
 
+.contentContact td.wrapper.first table.logo td {
+  padding-bottom: 10px;
+}
+
 .contentContact td.wrapper.last table.columns .text-pad,
 .contentContact td.wrapper.last table.column .text-pad {
   padding-left: 20px !important;
@@ -1789,7 +1793,11 @@ ul {
     padding-right: 20px !important;
   }
 
-  table[class="body"] .contentContact td.wrapper.first img.logo {
+  table[class="body"] .contentContact td.wrapper.first table.logo td {
+    padding-bottom: 5px !important;
+  }
+
+  table[class="body"] .contentContact td.wrapper.first table.logo img {
     width: 120px !important;
     height: 105px !important;
   }

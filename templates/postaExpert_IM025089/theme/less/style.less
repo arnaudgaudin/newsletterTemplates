@@ -373,6 +373,7 @@ ul {
 			background-color: #f00;
 			width: 100%;
 			-premailer-width: 100%;
+			td { padding-bottom: (@wrapperPad / 2); }
 		}
 	}
 	td.wrapper.last {
@@ -403,9 +404,12 @@ ul {
 			table.columns .text-pad, table.column .text-pad {
 				padding-right: @textPadCollapse !important;
 			}
-			img.logo {
-				width: 120px !important;
-				height: 105px !important;
+			table.logo {
+				td { padding-bottom: (@wrapperPadCollapse / 2) !important; }
+				img {
+					width: 120px !important;
+					height: 105px !important;
+				}
 			}
 		}
 		td.wrapper.last {
