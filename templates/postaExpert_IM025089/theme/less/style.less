@@ -165,101 +165,109 @@ ul {
 @brContCollapse-height: (floor(@baseLineHeight * 0.9) + @wrapperPadCollapse / 2);	// hauteur égale à lineHeight + padding vertical *2
 
 .contentMain {
-	background-color: #DE85CC;
 
-	table.columns, table.column {
-		table.subWrapper.bordered {
+	//contenu dans la colonne de gauche
+	td.wrapper.first {
+		background-color: #85DE9A;
+	}
+	
+	td.wrapper.last {
+		background-color: #DE85CC;
 
-			//remise à zéro du padding par défaut
-			td, p.empty { padding: 0px; }
+		table.columns, table.column {
+			table.subWrapper.bordered {
 
-			//gestion sous-tableau pour le titre et le texte
-			td.title-cont,
-			td.title-cont td.title-display,
-			td.text-cont,
-			td.br-cont,
-			td[class^="br-t-"] {
-				& > table {
-					table-layout: fixed;
-					width: 100%;
-					-premailer-width: 100%;
-				}
-			}
+				//remise à zéro du padding par défaut
+				td, p.empty { padding: 0px; }
 
-			td.title-cont {
-				//pour décaler la bordure à l'intérieur
-				padding-top: (@wrapperPad / 2);
-				overflow: visible;
-
-				td.title-display {
-					background-color: @colorPostaExpert1;
-					vertical-align: middle;
-					overflow: hidden;
-					td {
-						color: #ffffff;
-						font-size: floor(@baseFontSize * 0.9);
-						line-height: floor(@baseLineHeight * 0.9);
-						text-align: center;
-						text-transform: uppercase;
-						padding: (@wrapperPad / 4) (@textPad / 4);
-					}
-				}
-			}
-			td.text-cont {
-				td.text-display {
-					padding: (@wrapperPad / 4) (@textPad / 4) (@wrapperPad / 2) (@textPad / 4);
-					border-left: 2px solid @colorPostaExpert1;
-					border-bottom: 2px solid @colorPostaExpert1;
-					border-right: 2px solid @colorPostaExpert1;
-				}
-			}
-
-			//gestion des bordures entourant le titre
-			td.br-cont {
-				line-height: 0px;
-				font-size: 0px;
-				vertical-align: bottom;
-
-				//application dimenssions
-				width: @brCont-width;
-				-premailer-width: unit(@brCont-width);
-
-				& > table {
-					vertical-align: bottom;
-					height: @brCont-height;
-					-premailer-height: unit(@brCont-height);
-				}
-
-				td.filler {
-					//suppression vide des cases
-					&, .empty {
-						line-height: (@brCont-height / 2);
-						font-size: floor(@brCont-height / 2 * .75);
-					}
-					height: (@brCont-height / 2);
-					-premailer-height: unit((@brCont-height / 2));
-				}
-
+				//gestion sous-tableau pour le titre et le texte
+				td.title-cont,
+				td.title-cont td.title-display,
+				td.text-cont,
+				td.br-cont,
 				td[class^="br-t-"] {
-					//suppression vide des cases
-					&, .empty {
-						line-height: (@brCont-height / 2 - 2px);
-						font-size: floor((@brCont-height / 2 - 2px) * .75);
+					& > table {
+						table-layout: fixed;
+						width: 100%;
+						-premailer-width: 100%;
 					}
-					height: (@brCont-height / 2 - 2px);
-					-premailer-height: unit((@brCont-height / 2 - 2px));
 				}
 
-				td.br-t-l {
-					td {
-						border-top: 2px solid @colorPostaExpert1;
-						border-left: 2px solid @colorPostaExpert1;
+				td.title-cont {
+					//pour décaler la bordure à l'intérieur
+					padding-top: (@wrapperPad / 2);
+					overflow: visible;
+
+					td.title-display {
+						background-color: @colorPostaExpert1;
+						vertical-align: middle;
+						overflow: hidden;
+						td {
+							color: #ffffff;
+							font-size: floor(@baseFontSize * 0.9);
+							line-height: floor(@baseLineHeight * 0.9);
+							text-align: center;
+							text-transform: uppercase;
+							padding: (@wrapperPad / 4) (@textPad / 4);
+						}
 					}
 				}
-				td.br-t-r {
-					td {
-						border-top: 2px solid @colorPostaExpert1;
+				td.text-cont {
+					td.text-display {
+						padding: (@wrapperPad / 4) (@textPad / 4) (@wrapperPad / 2) (@textPad / 4);
+						border-left: 2px solid @colorPostaExpert1;
+						border-bottom: 2px solid @colorPostaExpert1;
 						border-right: 2px solid @colorPostaExpert1;
+					}
+				}
+
+				//gestion des bordures entourant le titre
+				td.br-cont {
+					line-height: 0px;
+					font-size: 0px;
+					vertical-align: bottom;
+
+					//application dimenssions
+					width: @brCont-width;
+					-premailer-width: unit(@brCont-width);
+
+					& > table {
+						vertical-align: bottom;
+						height: @brCont-height;
+						-premailer-height: unit(@brCont-height);
+					}
+
+					td.filler {
+						//suppression vide des cases
+						&, .empty {
+							line-height: (@brCont-height / 2);
+							font-size: floor(@brCont-height / 2 * .75);
+						}
+						height: (@brCont-height / 2);
+						-premailer-height: unit((@brCont-height / 2));
+					}
+
+					td[class^="br-t-"] {
+						//suppression vide des cases
+						&, .empty {
+							line-height: (@brCont-height / 2 - 2px);
+							font-size: floor((@brCont-height / 2 - 2px) * .75);
+						}
+						height: (@brCont-height / 2 - 2px);
+						-premailer-height: unit((@brCont-height / 2 - 2px));
+					}
+
+					td.br-t-l {
+						td {
+							border-top: 2px solid @colorPostaExpert1;
+							border-left: 2px solid @colorPostaExpert1;
+						}
+					}
+					td.br-t-r {
+						td {
+							border-top: 2px solid @colorPostaExpert1;
+							border-right: 2px solid @colorPostaExpert1;
+						}
 					}
 				}
 			}
@@ -273,36 +281,37 @@ ul {
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentMain {
-		table.columns, table.column {
-			table.subWrapper.bordered {
-				td, p.empty { padding: 0px !important; }
-				td.title-cont {
-					padding-top: (@wrapperPadCollapse / 2) !important;
-					td.title-display td { padding: (@wrapperPadCollapse / 4) (@textPadCollapse / 4) !important; }
-				}
-				td.text-cont td.text-display { padding: (@wrapperPadCollapse / 4) (@textPadCollapse / 4) (@wrapperPadCollapse / 2) (@textPadCollapse / 4) !important; }
-				td.br-cont {
-					width: @brContCollapse-width !important;
-					& > table { height: @brContCollapse-height !important; }
-					td.filler {
-						&, .empty {
-							line-height: (@brContCollapse-height / 2) !important;
-							font-size: floor(@brContCollapse-height / 2 * .75) !important;
-						}
-						height: (@brContCollapse-height / 2) !important;
+		td.wrapper.last {
+			table.columns, table.column {
+				table.subWrapper.bordered {
+					td, p.empty { padding: 0px !important; }
+					td.title-cont {
+						padding-top: (@wrapperPadCollapse / 2) !important;
+						td.title-display td { padding: (@wrapperPadCollapse / 4) (@textPadCollapse / 4) !important; }
 					}
-					td[class^="br-t-"] {
-						//suppression vide des cases
-						&, .empty {
-							line-height: (@brContCollapse-height / 2 - 2px) !important;
-							font-size: floor((@brContCollapse-height / 2 - 2px) * .75) !important;
+					td.text-cont td.text-display { padding: (@wrapperPadCollapse / 4) (@textPadCollapse / 4) (@wrapperPadCollapse / 2) (@textPadCollapse / 4) !important; }
+					td.br-cont {
+						width: @brContCollapse-width !important;
+						& > table { height: @brContCollapse-height !important; }
+						td.filler {
+							&, .empty {
+								line-height: (@brContCollapse-height / 2) !important;
+								font-size: floor(@brContCollapse-height / 2 * .75) !important;
+							}
+							height: (@brContCollapse-height / 2) !important;
 						}
-						height: (@brContCollapse-height / 2 - 2px) !important;
+						td[class^="br-t-"] {
+							//suppression vide des cases
+							&, .empty {
+								line-height: (@brContCollapse-height / 2 - 2px) !important;
+								font-size: floor((@brContCollapse-height / 2 - 2px) * .75) !important;
+							}
+							height: (@brContCollapse-height / 2 - 2px) !important;
+						}
 					}
 				}
 			}
 		}
-
 		td.wrapper.first { padding-top: (@wrapperPadCollapse / 2) !important; }
 		td.wrapper.last { padding-top: 0px !important; }
 		table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
