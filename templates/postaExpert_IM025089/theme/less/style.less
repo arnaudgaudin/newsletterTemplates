@@ -176,23 +176,12 @@ ul {
 
 	//contenu dans la colonne de gauche
 	td.wrapper.first {
-		background-color: #85DE9A;
 		table.columns td, table.column td { padding-bottom: 0px; }
 		vertical-align: bottom;
-		table.subWrapper {
-			background-color: #f00;
-			td {
-				padding: (@wrapperPad / 2) (@textPad / 2) @wrapperPad @textPad;
-			}
-		}
-
-		img.bg-person {
-			background-color: #00f;
-		}
+		table.subWrapper td { padding: (@wrapperPad / 2) (@textPad / 2) @wrapperPad @textPad; }
 	}
 	
 	td.wrapper.last {
-		background-color: #DE85CC;
 		table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
 		table.columns, table.column {
 			table.subWrapper.bordered {

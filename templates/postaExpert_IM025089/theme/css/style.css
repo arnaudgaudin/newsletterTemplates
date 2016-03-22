@@ -1247,7 +1247,6 @@ ul {
 }
 
 .contentMain td.wrapper.first {
-  background-color: #85DE9A;
   vertical-align: bottom;
 }
 
@@ -1256,20 +1255,8 @@ ul {
   padding-bottom: 0px;
 }
 
-.contentMain td.wrapper.first table.subWrapper {
-  background-color: #f00;
-}
-
 .contentMain td.wrapper.first table.subWrapper td {
   padding: 10px 20px 20px 40px;
-}
-
-.contentMain td.wrapper.first img.bg-person {
-  background-color: #00f;
-}
-
-.contentMain td.wrapper.last {
-  background-color: #DE85CC;
 }
 
 .contentMain td.wrapper.last table.columns td,
