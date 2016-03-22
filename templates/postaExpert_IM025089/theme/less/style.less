@@ -58,17 +58,25 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 
 //tous les paragraphes pour Outlook
 //cf http://stackoverflow.com/questions/18109812/ms-outlook-email-templates-adding-extra-spacing
+//style répétés en dur dans la balise style
 p {
 	margin: 0px;
 	padding-bottom: 10px;
 }
-
+//style répétés en dur dans la balise style
 ul {
 	list-style-type: square;
 	margin: 0px;
 	padding-left: 10px;
 	padding-bottom: 10px;
 }
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] {
+		p, ul { padding-bottom: 5px; }
+	}
+}
+
+
 
 //gestion header
 .header {

@@ -1593,6 +1593,11 @@ ul {
     line-height: 15.4px !important;
   }
 
+  table[class="body"] p,
+  table[class="body"] ul {
+    padding-bottom: 5px;
+  }
+
   table[class="body"] .header table.columns table.subWrapper td,
   table[class="body"] .header table.column table.subWrapper td {
     padding-bottom: 0px !important;
