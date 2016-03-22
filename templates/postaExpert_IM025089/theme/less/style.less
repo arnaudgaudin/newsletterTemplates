@@ -172,7 +172,9 @@ ul {
 		vertical-align: bottom;
 		table.subWrapper {
 			background-color: #f00;
-			td { padding-top: (@wrapperPad / 2); }
+			td {
+				padding: (@wrapperPad / 2) (@textPad / 2) 0 @textPad;
+			}
 		}
 
 		img.bg-person {
@@ -289,7 +291,7 @@ ul {
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentMain {
 		td.wrapper.first {
-			table.subWrapper td { padding-top: (@wrapperPadCollapse / 2) !important; }
+			table.subWrapper td { padding: (@wrapperPadCollapse / 2) @textPadCollapse 0 @textPadCollapse !important; }
 		}
 		td.wrapper.last {
 			table.columns, table.column {
