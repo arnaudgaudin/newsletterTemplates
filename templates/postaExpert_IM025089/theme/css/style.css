@@ -1260,6 +1260,12 @@ ul {
   padding: 10px 20px 20px 40px;
 }
 
+.contentMain td.wrapper.first table.subWrapper td.text-cont {
+  background-color: #00f;
+  height: 245px;
+  -premailer-height: 245px;
+}
+
 .contentMain td.wrapper.first table.subWrapper td.img-cont {
   background-color: #f00;
   padding: 0px;
@@ -1810,6 +1816,7 @@ ul {
   table[class="body"] .contentMain td.wrapper.first table.columns,
   table[class="body"] .contentMain td.wrapper.first table.column,
   table[class="body"] .contentMain td.wrapper.first table.subWrapper,
+  table[class="body"] .contentMain td.wrapper.first table.subWrapper td.text-cont,
   table[class="body"] .contentMain td.wrapper.first table.subWrapper td.img-cont {
     height: auto !important;
   }

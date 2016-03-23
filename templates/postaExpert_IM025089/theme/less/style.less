@@ -184,6 +184,11 @@ ul {
 		table.subWrapper td {
 			background-color: #0f0;
 			padding: (@wrapperPad / 2) (@textPad / 2) @wrapperPad @textPad;
+			&.text-cont {
+				background-color: #00f;
+				height: 245px;
+				-premailer-height: 245px;
+			}
 			&.img-cont {
 				background-color: #f00;
 				padding: 0px;
@@ -320,7 +325,7 @@ ul {
 				padding: (@wrapperPadCollapse / 2) @textPadCollapse @wrapperPadCollapse @textPadCollapse !important;
 				&.img-cont { padding: 0px !important; }
 			}
-			&, table.columns, table.column, table.subWrapper, table.subWrapper td.img-cont { height: auto !important; }
+			&, table.columns, table.column, table.subWrapper, table.subWrapper td.text-cont, table.subWrapper td.img-cont { height: auto !important; }
 		}
 		td.wrapper.last {
 			table.columns, table.column {
