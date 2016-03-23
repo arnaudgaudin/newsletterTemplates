@@ -1399,7 +1399,25 @@ ul {
 }
 
 .contentContact {
-  background-color: #F073E5;
+  background-color: #F0C0EC;
+}
+
+.contentContact,
+.contentContact td,
+.contentContact .inner {
+  color: #082f54;
+}
+
+.contentContact a {
+  color: #082f54;
+}
+
+.contentContact a .important,
+.contentContact a:visited,
+.contentContact a:hover,
+.contentContact a:focus,
+.contentContact a:active {
+  color: #082f54 !important;
 }
 
 .contentContact td.wrapper.first table.columns .text-pad,
@@ -1412,7 +1430,7 @@ ul {
 }
 
 .contentContact td.wrapper.first table.logo {
-  background-color: #f00;
+  background-color: #FFE6E6;
   width: 100%;
   -premailer-width: 100%;
 }
@@ -1427,13 +1445,13 @@ ul {
 }
 
 .contentContact td.wrapper.last table.subWrapper {
-  background-color: #F0E773;
+  background-color: #F0EDC0;
   width: 100%;
   -premailer-width: 100%;
 }
 
 .contentContact td.wrapper.last table.subWrapper td {
-  background-color: #f00;
+  background-color: #FFE6E6;
   padding: 10px 10px;
   border-bottom: 2px solid #082f54;
 }
