@@ -1247,7 +1247,6 @@ ul {
 }
 
 .contentMain td.wrapper.first {
-  background-color: #F0B4B4;
   vertical-align: bottom;
 }
 
@@ -1257,25 +1256,18 @@ ul {
 }
 
 .contentMain td.wrapper.first table.subWrapper td {
-  background-color: #0f0;
   padding: 10px 20px 20px 40px;
 }
 
 .contentMain td.wrapper.first table.subWrapper td.text-cont {
-  background-color: #00f;
   height: 245px;
   -premailer-height: 245;
 }
 
 .contentMain td.wrapper.first table.subWrapper td.img-cont {
-  background-color: #f00;
   padding: 0px;
   height: 315px;
   -premailer-height: 315;
-}
-
-.contentMain td.wrapper.last {
-  background-color: #C5B4F0;
 }
 
 .contentMain td.wrapper.last table.columns td,

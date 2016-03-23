@@ -178,20 +178,16 @@ ul {
 	//pour tester BGI dans outlook :
 	//https://www.campaignmonitor.com/blog/email-marketing/2010/12/updated-applying-a-background-image-to-html-email/
 	td.wrapper.first {
-		background-color: #F0B4B4;
 		table.columns td, table.column td { padding-bottom: 0px; }
 		vertical-align: bottom;
 		table.subWrapper td {
-			background-color: #0f0;
 			padding: (@wrapperPad / 2) (@textPad / 2) @wrapperPad @textPad;
 			&.text-cont {
-				background-color: #00f;
 				//hauteur de base pour aligner le contenu : 275 moins padding vertical
 				height: (275px - @wrapperPad * 1.5);
 				-premailer-height: unit((275px - @wrapperPad * 1.5));
 			}
 			&.img-cont {
-				background-color: #f00;
 				padding: 0px;
 				height: 315px;
 				-premailer-height: 315;
@@ -207,7 +203,6 @@ ul {
 	}
 	
 	td.wrapper.last {
-		background-color: #C5B4F0;
 		table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
 		table.columns, table.column {
 			table.subWrapper.bordered {
