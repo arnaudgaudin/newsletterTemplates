@@ -1385,10 +1385,6 @@ ul {
   padding-top: 0px;
 }
 
-.contentBottom {
-  background-color: #0f0;
-}
-
 .contentBottom td.wrapper {
   padding-top: 10px;
 }
@@ -1396,10 +1392,6 @@ ul {
 .contentBottom table.columns td,
 .contentBottom table.column td {
   padding-bottom: 10px;
-}
-
-.contentContact {
-  background-color: #F0C0EC;
 }
 
 .contentContact,
@@ -1430,7 +1422,6 @@ ul {
 }
 
 .contentContact td.wrapper.first table.logo {
-  background-color: #FFE6E6;
   width: 100%;
   -premailer-width: 100%;
 }
@@ -1445,13 +1436,11 @@ ul {
 }
 
 .contentContact td.wrapper.last table.subWrapper {
-  background-color: #F0EDC0;
   width: 100%;
   -premailer-width: 100%;
 }
 
 .contentContact td.wrapper.last table.subWrapper td {
-  background-color: #FFE6E6;
   padding: 10px 10px;
   border-bottom: 2px solid #082f54;
 }
