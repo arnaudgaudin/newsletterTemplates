@@ -199,10 +199,11 @@ ul {
 		}
 
 		//placement des éléments pour image en bas
-		&, table.columns, table.column, table.subWrapper {
-			height: 100%;
-			-premailer-height: 100%;
-		}
+		//marche pas sous Chrome
+		// &, table.columns, table.column, table.subWrapper {
+		// 	height: 100%;
+		// 	-premailer-height: 100%;
+		// }
 	}
 	
 	td.wrapper.last {
@@ -326,7 +327,8 @@ ul {
 				padding: (@wrapperPadCollapse / 2) @textPadCollapse @wrapperPadCollapse @textPadCollapse !important;
 				&.img-cont { padding: 0px !important; }
 			}
-			&, table.columns, table.column, table.subWrapper, table.subWrapper td.text-cont, table.subWrapper td.img-cont { height: auto !important; }
+			// &, table.columns, table.column, table.subWrapper, table.subWrapper td.text-cont, table.subWrapper td.img-cont { height: auto !important; }
+			table.subWrapper td.text-cont, table.subWrapper td.img-cont { height: auto !important; }
 		}
 		td.wrapper.last {
 			table.columns, table.column {

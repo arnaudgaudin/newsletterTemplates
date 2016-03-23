@@ -1274,14 +1274,6 @@ ul {
   -premailer-height: 315;
 }
 
-.contentMain td.wrapper.first,
-.contentMain td.wrapper.first table.columns,
-.contentMain td.wrapper.first table.column,
-.contentMain td.wrapper.first table.subWrapper {
-  height: 100%;
-  -premailer-height: 100%;
-}
-
 .contentMain td.wrapper.last {
   background-color: #C5B4F0;
 }
@@ -1813,10 +1805,6 @@ ul {
     padding: 0px !important;
   }
 
-  table[class="body"] .contentMain td.wrapper.first,
-  table[class="body"] .contentMain td.wrapper.first table.columns,
-  table[class="body"] .contentMain td.wrapper.first table.column,
-  table[class="body"] .contentMain td.wrapper.first table.subWrapper,
   table[class="body"] .contentMain td.wrapper.first table.subWrapper td.text-cont,
   table[class="body"] .contentMain td.wrapper.first table.subWrapper td.img-cont {
     height: auto !important;
