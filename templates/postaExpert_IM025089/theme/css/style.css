@@ -1264,14 +1264,14 @@ ul {
 .contentMain td.wrapper.first table.subWrapper td.text-cont {
   background-color: #00f;
   height: 245px;
-  -premailer-height: 245px;
+  -premailer-height: 245;
 }
 
 .contentMain td.wrapper.first table.subWrapper td.img-cont {
   background-color: #f00;
   padding: 0px;
   height: 315px;
-  -premailer-height: 315px;
+  -premailer-height: 315;
 }
 
 .contentMain td.wrapper.first,

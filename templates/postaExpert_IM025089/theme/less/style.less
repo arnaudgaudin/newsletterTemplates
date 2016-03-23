@@ -186,14 +186,15 @@ ul {
 			padding: (@wrapperPad / 2) (@textPad / 2) @wrapperPad @textPad;
 			&.text-cont {
 				background-color: #00f;
-				height: 245px;
-				-premailer-height: 245px;
+				//hauteur de base pour aligner le contenu : 275 moins padding vertical
+				height: (275px - @wrapperPad * 1.5);
+				-premailer-height: unit((275px - @wrapperPad * 1.5));
 			}
 			&.img-cont {
 				background-color: #f00;
 				padding: 0px;
 				height: 315px;
-				-premailer-height: 315px;
+				-premailer-height: 315;
 			}
 		}
 
