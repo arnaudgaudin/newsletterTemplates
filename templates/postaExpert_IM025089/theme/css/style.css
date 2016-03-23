@@ -1802,6 +1802,18 @@ ul {
     padding: 5px 20px 10px 20px !important;
   }
 
+  table[class="body"] .contentMain td.wrapper.first table.subWrapper td.img-cont {
+    padding: 0px !important;
+  }
+
+  table[class="body"] .contentMain td.wrapper.first,
+  table[class="body"] .contentMain td.wrapper.first table.columns,
+  table[class="body"] .contentMain td.wrapper.first table.column,
+  table[class="body"] .contentMain td.wrapper.first table.subWrapper,
+  table[class="body"] .contentMain td.wrapper.first table.subWrapper td.img-cont {
+    height: auto !important;
+  }
+
   table[class="body"] .contentMain td.wrapper.last table.columns table.subWrapper.bordered td,
   table[class="body"] .contentMain td.wrapper.last table.column table.subWrapper.bordered td,
   table[class="body"] .contentMain td.wrapper.last table.columns table.subWrapper.bordered p.empty,
