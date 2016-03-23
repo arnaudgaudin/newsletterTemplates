@@ -1248,6 +1248,7 @@ ul {
 
 .contentMain td.wrapper.first {
   background-color: #F0B4B4;
+  vertical-align: bottom;
 }
 
 .contentMain td.wrapper.first table.columns td,
