@@ -451,8 +451,8 @@ ul {
 	.newsletterInnerTextColor(darken(@containerBackground, 40%));
 	
 	td {
-		font-size: @fontSizeSmall;
-		line-height: (@fontSizeSmall * 1.25);
+		font-size: @fontSizeMini;
+		line-height: (@fontSizeMini * 1.25);
 	}
 	//réduction décalage vertical
 	td.wrapper { padding-top: (@wrapperPad / 2); }
@@ -461,8 +461,8 @@ ul {
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentOnline {
 		td {
-			font-size: @fontSizeSmall !important;
-			line-height: (@fontSizeSmall * 1.25) !important;
+			font-size: @fontSizeMini !important;
+			line-height: (@fontSizeMini * 1.25) !important;
 		}
 		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
 		table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
