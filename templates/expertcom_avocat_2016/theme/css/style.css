@@ -1403,20 +1403,26 @@ table.column .readMore td.buttonWrapper td {
   -premailer-width: 720;
 }
 
-.contentMain table.textCont {
+.contentMain table.columns.textCont,
+.contentMain table.column.textCont {
   background-color: #007240;
 }
 
-.contentMain table.textCont,
-.contentMain table.textCont td {
-  height: 330px;
-  -premailer-height: 330;
+.contentMain table.columns.textCont,
+.contentMain table.column.textCont,
+.contentMain table.columns.textCont td,
+.contentMain table.column.textCont td {
+  height: 290px;
+  -premailer-height: 290;
   width: 200px;
   -premailer-width: 200;
 }
 
-.contentMain table.textCont td {
+.contentMain table.columns.textCont td,
+.contentMain table.column.textCont td {
   vertical-align: middle;
+  padding-top: 20px;
+  padding-bottom: 20px;
   padding-left: 0px;
   padding-right: 40px;
 }
@@ -1802,12 +1808,17 @@ table.column .readMore td.buttonWrapper td {
     width: auto !important;
   }
 
-  table[class="body"] .contentMain table.textCont,
-  table[class="body"] .contentMain table.textCont td {
+  table[class="body"] .contentMain table.columns.textCont,
+  table[class="body"] .contentMain table.column.textCont,
+  table[class="body"] .contentMain table.columns.textCont td,
+  table[class="body"] .contentMain table.column.textCont td {
     height: auto !important;
   }
 
-  table[class="body"] .contentMain table.textCont td {
+  table[class="body"] .contentMain table.columns.textCont td,
+  table[class="body"] .contentMain table.column.textCont td {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
     padding-left: 20px !important;
     padding-right: 20px !important;
   }
