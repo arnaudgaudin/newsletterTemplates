@@ -72,22 +72,39 @@ p {
 // -------------------------
 .contentMain {
 	background-color: #0f0;
-	table.imgCont { float: left; }
-	table.textCont { float: right; }
-	&.imgRight {
-		background-color: #090;
-		table.imgCont { float: right; }
-		table.textCont { float: left; }
+	
+	//pleine largeur pour le wrapper
+	td.wrapper {
+		width: @containerWidth;
+		-premailer-width: unit(@containerWidth);
 	}
 
 	table.textCont {
 		background-color: fade(#00f, 25%);
 		&, td {
+			//hauteur de l'image
 			height: 330px;
-			-premailer-height: 330px;
+			-premailer-height: 330;
+			//largeur 4 colonnes moins text-pad
+			width: (3 * @gutterWidth + 4 * @columnWidth - @textPad);
+			-premailer-width: unit(3 * @gutterWidth + 4 * @columnWidth - @textPad);
 		}
 		td {
 			vertical-align: middle;
+			padding-left: 0px;
+			padding-right: @textPad;
+		}
+	}
+
+	// table.imgCont { float: left; }
+	// table.textCont { float: right; }
+	&.imgRight {
+		background-color: #090;
+		// table.imgCont { float: right; }
+		// table.textCont { float: left; }
+		table.textCont td {
+			padding-left: @textPad;
+			padding-right: 0px;
 		}
 	}
 
@@ -98,8 +115,15 @@ p {
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentMain {
+		td.wrapper {
+			width: auto !important;
+		}
 		table.textCont {
 			&, td { height: auto !important; }
+			td {
+				padding-left: @textPadCollapse !important;
+				padding-right: @textPadCollapse !important;
+			}
 		}
 		table.imgCont, table.textCont { float: none !important; }
 		td.wrapper { padding-top: 0px !important; }

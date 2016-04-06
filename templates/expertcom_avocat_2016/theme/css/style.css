@@ -1140,24 +1140,9 @@ p {
   background-color: #0f0;
 }
 
-.contentMain table.imgCont {
-  float: left;
-}
-
-.contentMain table.textCont {
-  float: right;
-}
-
-.contentMain.imgRight {
-  background-color: #090;
-}
-
-.contentMain.imgRight table.imgCont {
-  float: right;
-}
-
-.contentMain.imgRight table.textCont {
-  float: left;
+.contentMain td.wrapper {
+  width: 720px;
+  -premailer-width: 720;
 }
 
 .contentMain table.textCont {
@@ -1167,11 +1152,24 @@ p {
 .contentMain table.textCont,
 .contentMain table.textCont td {
   height: 330px;
-  -premailer-height: 330px;
+  -premailer-height: 330;
+  width: 200px;
+  -premailer-width: 200;
 }
 
 .contentMain table.textCont td {
   vertical-align: middle;
+  padding-left: 0px;
+  padding-right: 40px;
+}
+
+.contentMain.imgRight {
+  background-color: #090;
+}
+
+.contentMain.imgRight table.textCont td {
+  padding-left: 40px;
+  padding-right: 0px;
 }
 
 .contentMain td.wrapper {
@@ -1391,9 +1389,18 @@ p {
     line-height: 15.4px !important;
   }
 
+  table[class="body"] .contentMain td.wrapper {
+    width: auto !important;
+  }
+
   table[class="body"] .contentMain table.textCont,
   table[class="body"] .contentMain table.textCont td {
     height: auto !important;
+  }
+
+  table[class="body"] .contentMain table.textCont td {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
   }
 
   table[class="body"] .contentMain table.imgCont,
