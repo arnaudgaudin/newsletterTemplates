@@ -1421,6 +1421,12 @@ table.column .readMore td.buttonWrapper td {
 .contentMain table.columns.textCont td,
 .contentMain table.column.textCont td {
   padding: 0px;
+}
+
+.contentMain table.columns.textCont td,
+.contentMain table.column.textCont td,
+.contentMain table.columns.textCont td table.subWrapper,
+.contentMain table.column.textCont td table.subWrapper {
   vertical-align: middle;
 }
 
