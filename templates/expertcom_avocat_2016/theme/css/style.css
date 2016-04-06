@@ -1268,7 +1268,8 @@ table.column .readMore td.buttonWrapper td {
   clear: none;
 }
 
-.header table.readMore td {
+.header table.readMore td.buttonWrapper,
+.header table.readMore td.buttonWrapper table {
   vertical-align: bottom;
 }
 

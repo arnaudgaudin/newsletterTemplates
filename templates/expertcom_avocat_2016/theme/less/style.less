@@ -173,7 +173,9 @@ a.large-button-link, table.columns .readMore td.buttonWrapper td, table.column .
 		width: auto;
 		-premailer-width: auto;
 		clear: none;
-		td { vertical-align: bottom; }
+		td.buttonWrapper {
+			&, table { vertical-align: bottom; }
+		}
 	}
 
 	table.columns, table.column {
@@ -189,8 +191,6 @@ a.large-button-link, table.columns .readMore td.buttonWrapper td, table.column .
 			}
 		}
 	}
-
-
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .header {
