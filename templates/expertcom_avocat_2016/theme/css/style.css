@@ -1226,6 +1226,29 @@ table.column .readMore td.buttonWrapper td {
   background-color: #0f0;
 }
 
+.header,
+.header td,
+.header .inner {
+  color: #4d616d;
+}
+
+.header a {
+  color: #4d616d;
+}
+
+.header a .important,
+.header a:visited,
+.header a:hover,
+.header a:focus,
+.header a:active {
+  color: #4d616d !important;
+}
+
+.header td {
+  font-size: 12px;
+  line-height: 15px;
+}
+
 .header table.subWrapper {
   background-color: #00f;
   width: 100%;
@@ -1233,7 +1256,7 @@ table.column .readMore td.buttonWrapper td {
 }
 
 .header table.subWrapper tr.first > td {
-  border-bottom: 1px solid #f00;
+  border-bottom: 1px solid #4d616d;
 }
 
 .header table.readMore {
