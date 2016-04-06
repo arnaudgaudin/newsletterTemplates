@@ -1097,6 +1097,53 @@ table.large-button td {
   -premailer-width: auto;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  mso-line-height-rule: exactly;
+}
+
+h1 {
+  line-height: 33px;
+}
+
+h2 {
+  line-height: 30.8px;
+}
+
+h3 {
+  line-height: 26.4px;
+}
+
+h4 {
+  line-height: 24.2px;
+}
+
+h5 {
+  line-height: 19.8px;
+}
+
+h6 {
+  line-height: 17.6px;
+}
+
+p {
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 0px;
+}
+
+.contentMain {
+  background-color: #0f0;
+}
+
+.contentMain.imgRight {
+  background-color: #090;
+}
+
 @media only screen and (max-width: 720px) {
   table[class="body"] img {
     max-width: auto !important;
@@ -1261,5 +1308,47 @@ table.large-button td {
 
   table[class="container"] .panel {
     padding: 10px !important;
+  }
+
+  table[class="body"] body,
+  table[class="body"],
+  table[class="body"] p,
+  table[class="body"] td {
+    font-size: 12px !important;
+    line-height: 16px !important;
+  }
+
+  table[class="body"] small {
+    font-size: 9px !important;
+  }
+
+  table[class="body"] h1 {
+    font-size: 27px !important;
+    line-height: 29.7px !important;
+  }
+
+  table[class="body"] h2 {
+    font-size: 25px !important;
+    line-height: 27.5px !important;
+  }
+
+  table[class="body"] h3 {
+    font-size: 21px !important;
+    line-height: 23.1px !important;
+  }
+
+  table[class="body"] h4 {
+    font-size: 19px !important;
+    line-height: 20.9px !important;
+  }
+
+  table[class="body"] h5 {
+    font-size: 16px !important;
+    line-height: 17.6px !important;
+  }
+
+  table[class="body"] h6 {
+    font-size: 14px !important;
+    line-height: 15.4px !important;
   }
 }

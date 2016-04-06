@@ -2,3 +2,85 @@
 @import "import.less";
 
 // additionnal template's style which extends ink's style
+
+//Propriétés mso-* utilisées dans Outlook
+//Debug outlook : http://www.verticalresponse.com/blog/its-not-you-its-outlook-the-complete-guide-for-email-marketers/
+
+// LAYOUT
+// --------------------------------------------------
+
+h1, h2, h3, h4, h5, h6 { mso-line-height-rule: exactly; }
+h1 { line-height: (@headingsFontSizeH1 * 1.1); }
+h2 { line-height: (@headingsFontSizeH2 * 1.1); }
+h3 { line-height: (@headingsFontSizeH3 * 1.1); }
+h4 { line-height: (@headingsFontSizeH4 * 1.1); }
+h5 { line-height: (@headingsFontSizeH5 * 1.1); }
+h6 { line-height: (@headingsFontSizeH6 * 1.1); }
+
+//réduction tailles titrages en mode mobile
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] {
+		body, &, p, td {
+			font-size: floor(@baseFontSize * 0.9) !important;
+  			line-height: floor(@baseLineHeight * 0.9) !important;
+		}
+
+		small {
+			font-size: floor(@fontSizeSmall * 0.9) !important;
+		}
+
+		h1 {
+			font-size: floor(@headingsFontSizeH1 * 0.9) !important;
+			line-height: (floor(@headingsFontSizeH1 * 0.9) * 1.1) !important;
+		}
+		h2 {
+			font-size: floor(@headingsFontSizeH2 * 0.9) !important;
+			line-height: (floor(@headingsFontSizeH2 * 0.9) * 1.1) !important;
+		}
+		h3 {
+			font-size: floor(@headingsFontSizeH3 * 0.9) !important;
+			line-height: (floor(@headingsFontSizeH3 * 0.9) * 1.1) !important;
+		}
+		h4 {
+			font-size: floor(@headingsFontSizeH4 * 0.9) !important;
+			line-height: (floor(@headingsFontSizeH4 * 0.9) * 1.1) !important;
+		}
+		h5 {
+			font-size: floor(@headingsFontSizeH5 * 0.9) !important;
+			line-height: (floor(@headingsFontSizeH5 * 0.9) * 1.1) !important;
+		}
+		h6 {
+			font-size: floor(@headingsFontSizeH6 * 0.9) !important;
+			line-height: (floor(@headingsFontSizeH6 * 0.9) * 1.1) !important;
+		}
+	}
+}
+
+//tous les paragraphes pour Outlook
+//cf http://stackoverflow.com/questions/18109812/ms-outlook-email-templates-adding-extra-spacing
+p {
+	margin: 0px;
+	padding: 0px;
+	margin-bottom: 0px;
+}
+
+
+
+
+
+// contentMain area
+// -------------------------
+.contentMain {
+	background-color: #0f0;
+	&.imgRight {
+		background-color: #090;
+
+		// table.imgCont {
+		// 	float: right;
+		// }
+		// table.textCont {
+		// 	float: left;
+		// }
+	}
+
+}
