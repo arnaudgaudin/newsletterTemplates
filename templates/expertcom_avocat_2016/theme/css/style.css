@@ -1140,8 +1140,24 @@ p {
   background-color: #0f0;
 }
 
+.contentMain table.imgCont {
+  float: left;
+}
+
+.contentMain table.textCont {
+  float: right;
+}
+
 .contentMain.imgRight {
   background-color: #090;
+}
+
+.contentMain.imgRight table.imgCont {
+  float: right;
+}
+
+.contentMain.imgRight table.textCont {
+  float: left;
 }
 
 .contentMain table.textCont {
