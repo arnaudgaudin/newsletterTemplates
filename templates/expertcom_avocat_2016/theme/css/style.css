@@ -103,8 +103,8 @@ td {
 }
 
 hr {
-  color: #d9d9d9;
-  background-color: #d9d9d9;
+  color: #961d23;
+  background-color: #961d23;
   height: 1px;
   border: none;
 }
@@ -697,8 +697,8 @@ table.large-button td {
   display: block;
   width: auto !important;
   text-align: center;
-  background: #2ba6cb;
-  border: 1px solid #196177;
+  background: #4d616d;
+  border: 1px solid #40515b;
   color: #ffffff;
   padding: 8px 0;
   line-height: initial !important;
@@ -763,7 +763,7 @@ table.large-button td a {
 table.button:hover td,
 table.button:visited td,
 table.button:active td {
-  background: #2284a1 !important;
+  background: #475964 !important;
 }
 
 table.button:hover td a,
@@ -780,7 +780,7 @@ table.tiny-button:hover td,
 table.small-button:hover td,
 table.medium-button:hover td,
 table.large-button:hover td {
-  background: #2284a1 !important;
+  background: #475964 !important;
 }
 
 table.button:hover td a,
@@ -817,8 +817,8 @@ table.large-button td a:visited .important {
 }
 
 table.secondary td {
-  background: #e9e9e9;
-  border-color: #d0d0d0;
+  background: #2ba6cb;
+  border-color: #2691b2;
   color: #555555;
 }
 
@@ -831,7 +831,7 @@ table.secondary td a .important {
 }
 
 table.secondary:hover td {
-  background: #d0d0d0 !important;
+  background: #289cbe !important;
   color: #555555;
 }
 
@@ -1136,6 +1136,108 @@ p {
   margin-bottom: 0px;
 }
 
+.readMore {
+  width: 100%;
+  -premailer-width: 100%;
+  overflow: hidden;
+  clear: both;
+}
+
+table.columns .readMore td.buttonWrapper,
+table.column .readMore td.buttonWrapper {
+  padding-bottom: 0px;
+  clear: both;
+}
+
+table.columns .readMore td.buttonWrapper td,
+table.column .readMore td.buttonWrapper td {
+  color: #ffffff;
+}
+
+table.columns .readMore table.medium-button,
+table.column .readMore table.medium-button {
+  display: table;
+  table-layout: auto;
+  width: auto;
+  -premailer-width: auto;
+  float: right;
+}
+
+table.columns .readMore table.medium-button td,
+table.column .readMore table.medium-button td {
+  width: auto;
+  float: none;
+  -premailer-width: auto;
+  padding: 4px 8px;
+  vertical-align: middle;
+}
+
+table.columns .readMore table.medium-button td a,
+table.column .readMore table.medium-button td a,
+table.columns .readMore table.medium-button td p,
+table.column .readMore table.medium-button td p {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+table.columns .text + .readMore td.buttonWrapper,
+table.column .text + .readMore td.buttonWrapper {
+  padding-top: 20px;
+}
+
+a.medium-button-link {
+  padding: 0px;
+  margin: 0px;
+  color: #ffffff;
+  line-height: 19px;
+  mso-line-height-rule: exactly;
+}
+
+a.medium-button-link .important,
+a.medium-button-link:visited,
+a.medium-button-link:hover,
+a.medium-button-link:focus,
+a.medium-button-link:active {
+  color: #ffffff !important;
+}
+
+table.columns .readMore td.buttonWrapper td,
+table.column .readMore td.buttonWrapper td,
+table.columns .readMore td.buttonWrapper td p.MsoNormal,
+table.column .readMore td.buttonWrapper td p.MsoNormal {
+  line-height: 19px !important;
+  mso-line-height-rule: exactly;
+  margin: 0px;
+}
+
+table.columns .readMore td.buttonWrapper td p.MsoNormal,
+table.column .readMore td.buttonWrapper td p.MsoNormal {
+  padding: 0px;
+}
+
+a.medium-button-link,
+table.columns .readMore td.buttonWrapper td,
+table.column .readMore td.buttonWrapper td {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.header {
+  background-color: #0f0;
+}
+
+.header table.subWrapper {
+  background-color: #00f;
+  width: 100%;
+  -premailer-width: 100%;
+  border-bottom: 1px solid #f00;
+}
+
+.header table.columns table.subWrapper td,
+.header table.column table.subWrapper td {
+  padding-bottom: 0px;
+}
+
 .contentOnline,
 .contentUnsubscribe {
   background-color: #eff2f4;
@@ -1437,6 +1539,31 @@ p {
   table[class="body"] h6 {
     font-size: 14px !important;
     line-height: 15.4px !important;
+  }
+
+  table[class="body"] table.columns .readMore td.buttonWrapper,
+  table[class="body"] table.column .readMore td.buttonWrapper {
+    padding-bottom: 0px !important;
+  }
+
+  table[class="body"] table.columns .readMore table.medium-button,
+  table[class="body"] table.column .readMore table.medium-button {
+    display: table !important;
+    table-layout: auto !important;
+    width: auto !important;
+  }
+
+  table[class="body"] table.columns .readMore table.medium-button td,
+  table[class="body"] table.column .readMore table.medium-button td {
+    width: auto !important;
+    padding: 4px 8px !important;
+  }
+
+  table[class="body"] a.medium-button-link,
+  table[class="body"] table.columns .readMore td.buttonWrapper td,
+  table[class="body"] table.column .readMore td.buttonWrapper td {
+    font-size: 11px !important;
+    line-height: 15px !important;
   }
 
   table[class="body"] .contentOnline td,
