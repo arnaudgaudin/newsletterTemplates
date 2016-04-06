@@ -253,7 +253,22 @@ a.large-button-link, table.columns .readMore td.buttonWrapper td, table.column .
 // -------------------------
 .contentTop {
 	background-color: @colorExpertCom1;
-	.newsletterInnerTextColor(#fff);
+	.newsletterInnerTextColor(#ffffff);
+	h1.title { color: #ffffff; }
+	td.wrapper { vertical-align: middle; }
+
+	table.columns, table.column {
+		table.subWrapper {
+			td.content {
+				padding-top: (@wrapperPad / 2);
+				padding-bottom: @columnPad;
+			}
+		}
+		.readMore {
+			td.buttonWrapper { padding-top: @wrapperPad; }
+			table.large-button { float: none; }
+		}
+	}
 
 	//réduction décalage vertical
 	td.wrapper { padding-top: (@wrapperPad / 2); }
@@ -261,7 +276,17 @@ a.large-button-link, table.columns .readMore td.buttonWrapper td, table.column .
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentTop {
-
+		table.columns, table.column {
+			table.subWrapper {
+				td.content {
+					padding-top: (@wrapperPadCollapse / 2) !important;
+					padding-bottom: @columnPadCollapse !important;
+				}
+			}
+			.readMore {
+				td.buttonWrapper { padding-top: @wrapperPadCollapse !important; }
+			}
+		}
 		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
 		table.columns td, table.column td { padding-bottom: 0px !important; }
 	}

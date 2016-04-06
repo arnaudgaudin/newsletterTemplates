@@ -570,15 +570,15 @@ h6 {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 40px;
 }
 
 h2 {
-  font-size: 28px;
+  font-size: 34px;
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 28px;
 }
 
 h4 {
@@ -817,22 +817,22 @@ table.large-button td a:visited .important {
 }
 
 table.secondary td {
-  background: #961d23;
-  border-color: #7c181d;
-  color: #555555;
+  background: #fff;
+  border-color: #f0f0f0;
+  color: #000;
 }
 
 table.secondary td a {
-  color: #555555;
+  color: #000;
 }
 
 table.secondary td a .important {
-  color: #555555 !important;
+  color: #000 !important;
 }
 
 table.secondary:hover td {
-  background: #891b20 !important;
-  color: #555555;
+  background: #f7f7f7 !important;
+  color: #000;
 }
 
 table.secondary:hover td a,
@@ -841,7 +841,7 @@ table.secondary:active td a,
 table.secondary:hover td a .important,
 table.secondary td a:visited .important,
 table.secondary:active td a .important {
-  color: #555555 !important;
+  color: #000 !important;
 }
 
 table.success td {
@@ -1107,15 +1107,15 @@ h6 {
 }
 
 h1 {
-  line-height: 33px;
+  line-height: 44px;
 }
 
 h2 {
-  line-height: 30.8px;
+  line-height: 37.4px;
 }
 
 h3 {
-  line-height: 26.4px;
+  line-height: 30.8px;
 }
 
 h4 {
@@ -1346,11 +1346,11 @@ table.column .readMore td.buttonWrapper td {
 .contentTop,
 .contentTop td,
 .contentTop .inner {
-  color: #fff;
+  color: #ffffff;
 }
 
 .contentTop a {
-  color: #fff;
+  color: #ffffff;
 }
 
 .contentTop a .important,
@@ -1358,7 +1358,31 @@ table.column .readMore td.buttonWrapper td {
 .contentTop a:hover,
 .contentTop a:focus,
 .contentTop a:active {
-  color: #fff !important;
+  color: #ffffff !important;
+}
+
+.contentTop h1.title {
+  color: #ffffff;
+}
+
+.contentTop td.wrapper {
+  vertical-align: middle;
+}
+
+.contentTop table.columns table.subWrapper td.content,
+.contentTop table.column table.subWrapper td.content {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.contentTop table.columns .readMore td.buttonWrapper,
+.contentTop table.column .readMore td.buttonWrapper {
+  padding-top: 20px;
+}
+
+.contentTop table.columns .readMore table.large-button,
+.contentTop table.column .readMore table.large-button {
+  float: none;
 }
 
 .contentTop td.wrapper {
@@ -1594,18 +1618,18 @@ table.column .readMore td.buttonWrapper td {
   }
 
   table[class="body"] h1 {
-    font-size: 27px !important;
-    line-height: 29.7px !important;
+    font-size: 36px !important;
+    line-height: 39.6px !important;
   }
 
   table[class="body"] h2 {
-    font-size: 25px !important;
-    line-height: 27.5px !important;
+    font-size: 30px !important;
+    line-height: 33px !important;
   }
 
   table[class="body"] h3 {
-    font-size: 21px !important;
-    line-height: 23.1px !important;
+    font-size: 25px !important;
+    line-height: 27.5px !important;
   }
 
   table[class="body"] h4 {
@@ -1680,6 +1704,17 @@ table.column .readMore td.buttonWrapper td {
   table[class="body"] .contentOnline table.column td,
   table[class="body"] .contentUnsubscribe table.column td {
     padding-bottom: 5px !important;
+  }
+
+  table[class="body"] .contentTop table.columns table.subWrapper td.content,
+  table[class="body"] .contentTop table.column table.subWrapper td.content {
+    padding-top: 5px !important;
+    padding-bottom: 10px !important;
+  }
+
+  table[class="body"] .contentTop table.columns .readMore td.buttonWrapper,
+  table[class="body"] .contentTop table.column .readMore td.buttonWrapper {
+    padding-top: 10px !important;
   }
 
   table[class="body"] .contentTop td.wrapper {
