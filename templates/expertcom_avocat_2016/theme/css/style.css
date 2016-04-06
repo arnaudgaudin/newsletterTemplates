@@ -1339,6 +1339,37 @@ table.column .readMore td.buttonWrapper td {
   padding-bottom: 10px;
 }
 
+.contentTop {
+  background-color: #961d23;
+}
+
+.contentTop,
+.contentTop td,
+.contentTop .inner {
+  color: #fff;
+}
+
+.contentTop a {
+  color: #fff;
+}
+
+.contentTop a .important,
+.contentTop a:visited,
+.contentTop a:hover,
+.contentTop a:focus,
+.contentTop a:active {
+  color: #fff !important;
+}
+
+.contentTop td.wrapper {
+  padding-top: 10px;
+}
+
+.contentTop table.columns td,
+.contentTop table.column td {
+  padding-bottom: 0px;
+}
+
 .contentMain {
   background-color: #0f0;
 }
@@ -1649,6 +1680,15 @@ table.column .readMore td.buttonWrapper td {
   table[class="body"] .contentOnline table.column td,
   table[class="body"] .contentUnsubscribe table.column td {
     padding-bottom: 5px !important;
+  }
+
+  table[class="body"] .contentTop td.wrapper {
+    padding-top: 5px !important;
+  }
+
+  table[class="body"] .contentTop table.columns td,
+  table[class="body"] .contentTop table.column td {
+    padding-bottom: 0px !important;
   }
 
   table[class="body"] .contentMain td.wrapper {

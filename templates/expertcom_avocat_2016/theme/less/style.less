@@ -249,6 +249,25 @@ a.large-button-link, table.columns .readMore td.buttonWrapper td, table.column .
 }
 
 
+// contentTop area
+// -------------------------
+.contentTop {
+	background-color: @colorExpertCom1;
+	.newsletterInnerTextColor(#fff);
+
+	//réduction décalage vertical
+	td.wrapper { padding-top: (@wrapperPad / 2); }
+	table.columns td, table.column td { padding-bottom: 0px; }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentTop {
+
+		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
+		table.columns td, table.column td { padding-bottom: 0px !important; }
+	}
+}
+
+
 // contentMain area
 // -------------------------
 .contentMain {
@@ -311,3 +330,4 @@ a.large-button-link, table.columns .readMore td.buttonWrapper td, table.column .
 		table.columns td, table.column td { padding-bottom: 0px !important; }
 	}
 }
+
