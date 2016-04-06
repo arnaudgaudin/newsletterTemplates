@@ -1248,6 +1248,12 @@ table.column .readMore td.buttonWrapper td {
   padding-bottom: 0px;
 }
 
+.header table.columns table.subWrapper td table.logoWrapper td,
+.header table.column table.subWrapper td table.logoWrapper td {
+  background-color: #0ff;
+  padding-bottom: 10px;
+}
+
 .contentOnline,
 .contentUnsubscribe {
   background-color: #eff2f4;
