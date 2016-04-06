@@ -76,8 +76,15 @@ p {
 		background-color: #090;
 	}
 
-	td.wrapper {
-		vertical-align: middle;
+	table.textCont {
+		background-color: fade(#00f, 25%);
+		&, td {
+			height: 330px;
+			-premailer-height: 330px;
+		}
+		td {
+			vertical-align: middle;
+		}
 	}
 
 	//suppression décalage vertical
@@ -87,6 +94,9 @@ p {
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentMain {
+		table.textCont {
+			&, td { height: auto !important; }
+		}
 		table.imgCont, table.textCont { float: none !important; }
 		td.wrapper { padding-top: 0px !important; }
 		table.columns td, table.column td { padding-bottom: 0px !important; }

@@ -1144,7 +1144,17 @@ p {
   background-color: #090;
 }
 
-.contentMain td.wrapper {
+.contentMain table.textCont {
+  background-color: rgba(0, 0, 255, 0.25);
+}
+
+.contentMain table.textCont,
+.contentMain table.textCont td {
+  height: 330px;
+  -premailer-height: 330px;
+}
+
+.contentMain table.textCont td {
   vertical-align: middle;
 }
 
@@ -1363,6 +1373,11 @@ p {
   table[class="body"] h6 {
     font-size: 14px !important;
     line-height: 15.4px !important;
+  }
+
+  table[class="body"] .contentMain table.textCont,
+  table[class="body"] .contentMain table.textCont td {
+    height: auto !important;
   }
 
   table[class="body"] .contentMain table.imgCont,
