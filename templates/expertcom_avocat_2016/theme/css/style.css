@@ -1261,11 +1261,13 @@ table.column .readMore td.buttonWrapper td {
 
 .header table.readMore {
   background-color: #CF53B6;
-  height: 38px;
-  -premailer-height: 38;
   width: auto;
   -premailer-width: auto;
   clear: none;
+}
+
+.header table.readMore td.buttonWrapper {
+  padding-top: 10px;
 }
 
 .header table.readMore td.buttonWrapper,
@@ -1284,10 +1286,16 @@ table.column .readMore td.buttonWrapper td {
   padding-bottom: 0px;
 }
 
-.header table.columns table.subWrapper table.logoWrapper td,
-.header table.column table.subWrapper table.logoWrapper td {
+.header table.columns table.subWrapper a,
+.header table.column table.subWrapper a {
+  margin: 0px;
+}
+
+.header table.columns table.subWrapper img,
+.header table.column table.subWrapper img {
   background-color: #0ff;
-  padding-bottom: 10px;
+  float: left;
+  margin: 0px;
 }
 
 .contentOnline,
@@ -1763,7 +1771,11 @@ table.column .readMore td.buttonWrapper td {
     line-height: 15px !important;
   }
 
-  table[class="body"] .header table.logoWrapper img {
+  table[class="body"] .header table.readMore td.buttonWrapper {
+    padding-top: 10px !important;
+  }
+
+  table[class="body"] .header img {
     width: 300px !important;
     height: 28px !important;
   }
@@ -1873,6 +1885,5 @@ table.column .readMore td.buttonWrapper td {
 @media only screen and (max-width: 435px) {
   table[class="body"] .header table.readMore {
     float: left !important;
-    height: auto !important;
   }
 }

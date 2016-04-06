@@ -167,13 +167,11 @@ a.large-button-link, table.columns .readMore td.buttonWrapper td, table.column .
 
 	table.readMore {
 		background-color: #CF53B6;
-		//hauteur logo + padding
-		height: (28px + @wrapperPad / 2);
-		-premailer-height: unit(28px + @wrapperPad / 2);
 		width: auto;
 		-premailer-width: auto;
 		clear: none;
 		td.buttonWrapper {
+			padding-top: (@wrapperPad / 2);
 			&, table { vertical-align: bottom; }
 		}
 	}
@@ -185,16 +183,19 @@ a.large-button-link, table.columns .readMore td.buttonWrapper td, table.column .
 				padding-top: (@columnPad / 2);
 				padding-bottom: 0px;
 			}
-			table.logoWrapper td {
+			a { margin: 0px; }
+			img {
 				background-color: #0ff;
-				padding-bottom: (@wrapperPad / 2);
+				float: left;
+				margin: 0px;
 			}
 		}
 	}
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .header {
-		table.logoWrapper img {
+		table.readMore td.buttonWrapper { padding-top: @wrapperPadCollapse !important; }
+		img {
 			width: 300px !important;
 			height: 28px !important;
 		}
@@ -212,10 +213,7 @@ a.large-button-link, table.columns .readMore td.buttonWrapper td, table.column .
 //replacement bouton
 @media only screen and (max-width: 435px) {
 	table[class="body"] .header {
-		table.readMore {
-			float: left !important;
-			height: auto !important;
-		}
+		table.readMore { float: left !important; }
 	}
 }
 
