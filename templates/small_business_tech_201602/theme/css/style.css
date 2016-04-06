@@ -1130,6 +1130,15 @@ h6 {
   line-height: 17.6px;
 }
 
+.header table.columns table.subWrapper td,
+.header table.column table.subWrapper td {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 12px;
+  line-height: 15px;
+  color: #839097;
+}
+
 .header td.wrapper {
   padding-top: 0px;
 }
@@ -1403,6 +1412,10 @@ table.secondary:active td a {
 .contentIntroduction .readMore td.buttonWrapper td,
 .contentIntroduction .readMore td.buttonWrapper td a {
   text-transform: uppercase;
+}
+
+.contentIntroduction td.wrapper {
+  padding-top: 0px;
 }
 
 .contentIntroduction table.columns td,
@@ -1718,6 +1731,12 @@ table.secondary:active td a {
     line-height: 15.4px !important;
   }
 
+  table[class="body"] .header table.columns table.subWrapper td,
+  table[class="body"] .header table.column table.subWrapper td {
+    padding-top: 2.5px !important;
+    padding-bottom: 2.5px !important;
+  }
+
   table[class="body"] .header td.wrapper {
     padding-top: 0px !important;
   }
@@ -1798,6 +1817,10 @@ table.secondary:active td a {
   table[class="body"] .contentOnline table.columns td,
   table[class="body"] .contentOnline table.column td {
     padding-bottom: 5px !important;
+  }
+
+  table[class="body"] .contentIntroduction td.wrapper {
+    padding-top: 0px !important;
   }
 
   table[class="body"] .contentIntroduction table.columns td,
