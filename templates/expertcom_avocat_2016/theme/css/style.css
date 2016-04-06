@@ -1476,6 +1476,41 @@ table.column .readMore td.buttonWrapper td {
   font-weight: 200;
 }
 
+.contentFooter {
+  background-color: #00f;
+}
+
+.contentFooter table.columns td,
+.contentFooter table.column td {
+  padding-bottom: 10px;
+}
+
+.contentContact {
+  background-color: #0f0;
+}
+
+.contentContact,
+.contentContact td,
+.contentContact .inner {
+  color: #000;
+}
+
+.contentContact a {
+  color: #000;
+}
+
+.contentContact a .important,
+.contentContact a:visited,
+.contentContact a:hover,
+.contentContact a:focus,
+.contentContact a:active {
+  color: #000 !important;
+}
+
+.contentContact td.wrapper {
+  padding-top: 10px;
+}
+
 @media only screen and (max-width: 720px) {
   table[class="body"] img {
     max-width: auto !important;
@@ -1794,6 +1829,20 @@ table.column .readMore td.buttonWrapper td {
   table[class="body"] .contentBottom td {
     font-size: 25px !important;
     line-height: 27.5px !important;
+  }
+
+  table[class="body"] .contentFooter img {
+    width: 300px !important;
+    height: 28px !important;
+  }
+
+  table[class="body"] .contentFooter table.columns td,
+  table[class="body"] .contentFooter table.column td {
+    padding-bottom: 5px !important;
+  }
+
+  table[class="body"] .contentContact td.wrapper {
+    padding-top: 5px !important;
   }
 }
 

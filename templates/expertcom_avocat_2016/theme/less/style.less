@@ -382,3 +382,39 @@ a.large-button-link, table.columns .readMore td.buttonWrapper td, table.column .
 	}
 }
 
+
+// contentFooter area
+// -------------------------
+.contentFooter {
+	background-color: #00f;
+
+	//réduction décalage vertical
+	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentFooter {
+		img {
+			width: 300px !important;
+			height: 28px !important;
+		}
+		table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
+	}
+}
+
+
+// contentContact area
+// -------------------------
+.contentContact {
+	background-color: #0f0;
+	.newsletterInnerTextColor(@textColor);
+
+	//réduction décalage vertical
+	td.wrapper { padding-top: (@wrapperPad / 2); }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentContact {
+		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
+	}
+}
+
+
