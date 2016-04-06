@@ -156,8 +156,10 @@ a.large-button-link, table.columns .readMore td.buttonWrapper td, table.column .
 		background-color: #00f;
 		width: 100%;
 		-premailer-width: 100%;
-		border-bottom: 1px solid #f00;
-		td { vertical-align: bottom; }
+		tr.first > td {
+			border-bottom: 1px solid #f00;
+			vertical-align: bottom;
+		}
 	}
 
 	table.readMore {
@@ -167,18 +169,36 @@ a.large-button-link, table.columns .readMore td.buttonWrapper td, table.column .
 	}
 
 	table.columns, table.column {
-		table.subWrapper td {
-			padding-bottom: 0px;
+		table.subWrapper {
+			tr.first > td { padding-bottom: 0px; }
+			tr.last > td {
+				padding-top: (@columnPad / 2);
+				padding-bottom: 0px;
+			}
 			table.logoWrapper td {
 				background-color: #0ff;
 				padding-bottom: (@wrapperPad / 2);
 			}
 		}
 	}
+
+
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .header {
-
+		table.logoWrapper img {
+			width: 300px !important;
+			height: 28px !important;
+		}
+		table.columns, table.column {
+			table.subWrapper {
+				tr.first > td { padding-bottom: 0px !important; }
+				tr.last > td {
+					padding-top: (@columnPadCollapse / 2) !important;
+					padding-bottom: 0px !important;
+				}
+			}
+		}
 	}
 }
 

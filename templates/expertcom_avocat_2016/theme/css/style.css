@@ -1230,10 +1230,10 @@ table.column .readMore td.buttonWrapper td {
   background-color: #00f;
   width: 100%;
   -premailer-width: 100%;
-  border-bottom: 1px solid #f00;
 }
 
-.header table.subWrapper td {
+.header table.subWrapper tr.first > td {
+  border-bottom: 1px solid #f00;
   vertical-align: bottom;
 }
 
@@ -1243,13 +1243,19 @@ table.column .readMore td.buttonWrapper td {
   clear: none;
 }
 
-.header table.columns table.subWrapper td,
-.header table.column table.subWrapper td {
+.header table.columns table.subWrapper tr.first > td,
+.header table.column table.subWrapper tr.first > td {
   padding-bottom: 0px;
 }
 
-.header table.columns table.subWrapper td table.logoWrapper td,
-.header table.column table.subWrapper td table.logoWrapper td {
+.header table.columns table.subWrapper tr.last > td,
+.header table.column table.subWrapper tr.last > td {
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+
+.header table.columns table.subWrapper table.logoWrapper td,
+.header table.column table.subWrapper table.logoWrapper td {
   background-color: #0ff;
   padding-bottom: 10px;
 }
@@ -1580,6 +1586,22 @@ table.column .readMore td.buttonWrapper td {
   table[class="body"] table.column .readMore td.buttonWrapper td {
     font-size: 11px !important;
     line-height: 15px !important;
+  }
+
+  table[class="body"] .header table.logoWrapper img {
+    width: 300px !important;
+    height: 28px !important;
+  }
+
+  table[class="body"] .header table.columns table.subWrapper tr.first > td,
+  table[class="body"] .header table.column table.subWrapper tr.first > td {
+    padding-bottom: 0px !important;
+  }
+
+  table[class="body"] .header table.columns table.subWrapper tr.last > td,
+  table[class="body"] .header table.column table.subWrapper tr.last > td {
+    padding-top: 5px !important;
+    padding-bottom: 0px !important;
   }
 
   table[class="body"] .contentOnline td,
