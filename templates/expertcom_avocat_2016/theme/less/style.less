@@ -307,16 +307,19 @@ a.large-button-link, table.columns .readMore td.buttonWrapper td, table.column .
 	table.columns, table.column {
 		&.textCont {
 			background-color: #007240;
-			&, td {
-				//hauteur de l'image moins padding vertical
-				height: (330px - @wrapperPad - @columnPad);
-				-premailer-height: unit(330px - @wrapperPad - @columnPad);
+			&, td.subTextCont {
+				//hauteur de l'image
+				height: 330px;
+				-premailer-height: 330;
 				//largeur 4 colonnes moins text-pad
 				width: (3 * @gutterWidth + 4 * @columnWidth - @textPad);
 				-premailer-width: unit(3 * @gutterWidth + 4 * @columnWidth - @textPad);
 			}
 			td {
+				padding: 0px;
 				vertical-align: middle;
+			}
+			table.subWrapper td {
 				padding-top: @wrapperPad;
 				padding-bottom: @columnPad;
 				padding-left: 0px;
@@ -329,11 +332,11 @@ a.large-button-link, table.columns .readMore td.buttonWrapper td, table.column .
 	// table.textCont { float: right; }
 	&.imgRight {
 		background-color: #090;
-		// table.imgCont { float: right; }
-		// table.textCont { float: left; }
-		table.textCont td {
-			padding-left: @textPad;
-			padding-right: 0px;
+		table.columns, table.column {
+			&.textCont table.subWrapper td {
+				padding-left: @textPad;
+				padding-right: 0px;
+			}
 		}
 	}
 
@@ -349,8 +352,8 @@ a.large-button-link, table.columns .readMore td.buttonWrapper td, table.column .
 		}
 		table.columns, table.column {
 			&.textCont {
-				&, td { height: auto !important; }
-				td {
+				&, td.subTextCont { height: auto !important; }
+				table.subWrapper td {
 					padding-top: @wrapperPadCollapse !important;
 					padding-bottom: @columnPadCollapse !important;
 					padding-left: @textPadCollapse !important;

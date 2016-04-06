@@ -1410,17 +1410,22 @@ table.column .readMore td.buttonWrapper td {
 
 .contentMain table.columns.textCont,
 .contentMain table.column.textCont,
-.contentMain table.columns.textCont td,
-.contentMain table.column.textCont td {
-  height: 290px;
-  -premailer-height: 290;
+.contentMain table.columns.textCont td.subTextCont,
+.contentMain table.column.textCont td.subTextCont {
+  height: 330px;
+  -premailer-height: 330;
   width: 200px;
   -premailer-width: 200;
 }
 
 .contentMain table.columns.textCont td,
 .contentMain table.column.textCont td {
+  padding: 0px;
   vertical-align: middle;
+}
+
+.contentMain table.columns.textCont table.subWrapper td,
+.contentMain table.column.textCont table.subWrapper td {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 0px;
@@ -1431,7 +1436,8 @@ table.column .readMore td.buttonWrapper td {
   background-color: #090;
 }
 
-.contentMain.imgRight table.textCont td {
+.contentMain.imgRight table.columns.textCont table.subWrapper td,
+.contentMain.imgRight table.column.textCont table.subWrapper td {
   padding-left: 40px;
   padding-right: 0px;
 }
@@ -1810,13 +1816,13 @@ table.column .readMore td.buttonWrapper td {
 
   table[class="body"] .contentMain table.columns.textCont,
   table[class="body"] .contentMain table.column.textCont,
-  table[class="body"] .contentMain table.columns.textCont td,
-  table[class="body"] .contentMain table.column.textCont td {
+  table[class="body"] .contentMain table.columns.textCont td.subTextCont,
+  table[class="body"] .contentMain table.column.textCont td.subTextCont {
     height: auto !important;
   }
 
-  table[class="body"] .contentMain table.columns.textCont td,
-  table[class="body"] .contentMain table.column.textCont td {
+  table[class="body"] .contentMain table.columns.textCont table.subWrapper td,
+  table[class="body"] .contentMain table.column.textCont table.subWrapper td {
     padding-top: 10px !important;
     padding-bottom: 10px !important;
     padding-left: 20px !important;
