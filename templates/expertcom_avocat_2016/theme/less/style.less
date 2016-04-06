@@ -156,16 +156,18 @@ a.large-button-link, table.columns .readMore td.buttonWrapper td, table.column .
 		background-color: #00f;
 		width: 100%;
 		-premailer-width: 100%;
-		tr.first > td {
-			border-bottom: 1px solid #f00;
-			vertical-align: bottom;
-		}
+		tr.first > td { border-bottom: 1px solid #f00; }
 	}
 
 	table.readMore {
+		background-color: #CF53B6;
+		//hauteur logo + padding
+		height: (28px + @wrapperPad / 2);
+		-premailer-height: unit(28px + @wrapperPad / 2);
 		width: auto;
 		-premailer-width: auto;
 		clear: none;
+		td { vertical-align: bottom; }
 	}
 
 	table.columns, table.column {
@@ -198,6 +200,15 @@ a.large-button-link, table.columns .readMore td.buttonWrapper td, table.column .
 					padding-bottom: 0px !important;
 				}
 			}
+		}
+	}
+}
+//replacement bouton
+@media only screen and (max-width: 435px) {
+	table[class="body"] .header {
+		table.readMore {
+			float: left !important;
+			height: auto !important;
 		}
 	}
 }

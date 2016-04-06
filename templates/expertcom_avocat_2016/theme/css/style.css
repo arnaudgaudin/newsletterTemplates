@@ -619,20 +619,20 @@ small {
 }
 
 a {
-  color: #2ba6cb;
+  color: #961d23;
   text-decoration: none;
 }
 
 a:hover {
-  color: #2284a1 !important;
+  color: #6b1519 !important;
 }
 
 a:active {
-  color: #2284a1 !important;
+  color: #6b1519 !important;
 }
 
 a:visited {
-  color: #2ba6cb !important;
+  color: #961d23 !important;
 }
 
 h1 a,
@@ -641,7 +641,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-  color: #2ba6cb;
+  color: #961d23;
 }
 
 h1 a:active,
@@ -650,7 +650,7 @@ h3 a:active,
 h4 a:active,
 h5 a:active,
 h6 a:active {
-  color: #2ba6cb !important;
+  color: #961d23 !important;
 }
 
 h1 a:visited,
@@ -659,7 +659,7 @@ h3 a:visited,
 h4 a:visited,
 h5 a:visited,
 h6 a:visited {
-  color: #2ba6cb !important;
+  color: #961d23 !important;
 }
 
 /* Panels */
@@ -817,8 +817,8 @@ table.large-button td a:visited .important {
 }
 
 table.secondary td {
-  background: #2ba6cb;
-  border-color: #2691b2;
+  background: #961d23;
+  border-color: #7c181d;
   color: #555555;
 }
 
@@ -831,7 +831,7 @@ table.secondary td a .important {
 }
 
 table.secondary:hover td {
-  background: #289cbe !important;
+  background: #891b20 !important;
   color: #555555;
 }
 
@@ -927,7 +927,7 @@ body.outlook p {
 }
 
 .appleLinks a {
-  color: #2ba6cb;
+  color: #961d23;
   text-decoration: none;
 }
 
@@ -937,11 +937,11 @@ body.outlook p {
 
 .appleLinks a:hover,
 .appleLinks a:active {
-  color: #2284a1 !important;
+  color: #6b1519 !important;
 }
 
 .appleLinks a:visited {
-  color: #2ba6cb !important;
+  color: #961d23 !important;
 }
 
 a[href^=tel] {
@@ -1234,13 +1234,19 @@ table.column .readMore td.buttonWrapper td {
 
 .header table.subWrapper tr.first > td {
   border-bottom: 1px solid #f00;
-  vertical-align: bottom;
 }
 
 .header table.readMore {
+  background-color: #CF53B6;
+  height: 38px;
+  -premailer-height: 38;
   width: auto;
   -premailer-width: auto;
   clear: none;
+}
+
+.header table.readMore td {
+  vertical-align: bottom;
 }
 
 .header table.columns table.subWrapper tr.first > td,
@@ -1648,5 +1654,12 @@ table.column .readMore td.buttonWrapper td {
   table[class="body"] .contentMain table.columns td,
   table[class="body"] .contentMain table.column td {
     padding-bottom: 0px !important;
+  }
+}
+
+@media only screen and (max-width: 435px) {
+  table[class="body"] .header table.readMore {
+    float: left !important;
+    height: auto !important;
   }
 }
