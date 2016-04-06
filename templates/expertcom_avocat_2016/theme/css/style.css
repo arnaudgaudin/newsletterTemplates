@@ -1154,8 +1154,8 @@ table.column .readMore td.buttonWrapper td {
   color: #ffffff;
 }
 
-table.columns .readMore table.medium-button,
-table.column .readMore table.medium-button {
+table.columns .readMore table.large-button,
+table.column .readMore table.large-button {
   display: table;
   table-layout: auto;
   width: auto;
@@ -1163,8 +1163,8 @@ table.column .readMore table.medium-button {
   float: right;
 }
 
-table.columns .readMore table.medium-button td,
-table.column .readMore table.medium-button td {
+table.columns .readMore table.large-button td,
+table.column .readMore table.large-button td {
   width: auto;
   float: none;
   -premailer-width: auto;
@@ -1172,10 +1172,10 @@ table.column .readMore table.medium-button td {
   vertical-align: middle;
 }
 
-table.columns .readMore table.medium-button td a,
-table.column .readMore table.medium-button td a,
-table.columns .readMore table.medium-button td p,
-table.column .readMore table.medium-button td p {
+table.columns .readMore table.large-button td a,
+table.column .readMore table.large-button td a,
+table.columns .readMore table.large-button td p,
+table.column .readMore table.large-button td p {
   margin: 0px !important;
   padding: 0px !important;
 }
@@ -1185,7 +1185,7 @@ table.column .text + .readMore td.buttonWrapper {
   padding-top: 20px;
 }
 
-a.medium-button-link {
+a.large-button-link {
   padding: 0px;
   margin: 0px;
   color: #ffffff;
@@ -1193,11 +1193,11 @@ a.medium-button-link {
   mso-line-height-rule: exactly;
 }
 
-a.medium-button-link .important,
-a.medium-button-link:visited,
-a.medium-button-link:hover,
-a.medium-button-link:focus,
-a.medium-button-link:active {
+a.large-button-link .important,
+a.large-button-link:visited,
+a.large-button-link:hover,
+a.large-button-link:focus,
+a.large-button-link:active {
   color: #ffffff !important;
 }
 
@@ -1215,7 +1215,7 @@ table.column .readMore td.buttonWrapper td p.MsoNormal {
   padding: 0px;
 }
 
-a.medium-button-link,
+a.large-button-link,
 table.columns .readMore td.buttonWrapper td,
 table.column .readMore td.buttonWrapper td {
   font-size: 14px;
@@ -1231,6 +1231,16 @@ table.column .readMore td.buttonWrapper td {
   width: 100%;
   -premailer-width: 100%;
   border-bottom: 1px solid #f00;
+}
+
+.header table.subWrapper td {
+  vertical-align: bottom;
+}
+
+.header table.readMore {
+  width: auto;
+  -premailer-width: auto;
+  clear: none;
 }
 
 .header table.columns table.subWrapper td,
@@ -1546,20 +1556,20 @@ table.column .readMore td.buttonWrapper td {
     padding-bottom: 0px !important;
   }
 
-  table[class="body"] table.columns .readMore table.medium-button,
-  table[class="body"] table.column .readMore table.medium-button {
+  table[class="body"] table.columns .readMore table.large-button,
+  table[class="body"] table.column .readMore table.large-button {
     display: table !important;
     table-layout: auto !important;
     width: auto !important;
   }
 
-  table[class="body"] table.columns .readMore table.medium-button td,
-  table[class="body"] table.column .readMore table.medium-button td {
+  table[class="body"] table.columns .readMore table.large-button td,
+  table[class="body"] table.column .readMore table.large-button td {
     width: auto !important;
     padding: 4px 8px !important;
   }
 
-  table[class="body"] a.medium-button-link,
+  table[class="body"] a.large-button-link,
   table[class="body"] table.columns .readMore td.buttonWrapper td,
   table[class="body"] table.column .readMore td.buttonWrapper td {
     font-size: 11px !important;
