@@ -949,6 +949,11 @@ a[href^=tel] {
   text-decoration: none;
 }
 
+a[href^=tel] .important {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
 a.link_box {
   display: block;
 }
@@ -1389,6 +1394,10 @@ table.secondary:active td a {
 .contentIntroduction td {
   font-size: 12px;
   line-height: 15px;
+}
+
+.contentIntroduction .text {
+  color: #333333;
 }
 
 .contentIntroduction .readMore td.buttonWrapper td,
