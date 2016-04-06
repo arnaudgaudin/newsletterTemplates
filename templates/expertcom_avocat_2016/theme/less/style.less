@@ -356,3 +356,29 @@ a.large-button-link, table.columns .readMore td.buttonWrapper td, table.column .
 	}
 }
 
+
+// contentBottom area
+// -------------------------
+.contentBottom {
+	background-color: @colorExpertCom1;
+	.newsletterInnerTextColor(#ffffff);
+	td {
+		font-size: @headingsFontSizeH3;
+		line-height: (@headingsFontSizeH3 * 1.25);
+		&, a { font-weight: 500; }
+	}
+
+	h3.title {
+		color: #ffffff;
+		font-weight: 200;
+	}
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentBottom {
+		td {
+			font-size: floor(@headingsFontSizeH3 * 0.9) !important;
+			line-height: (floor(@headingsFontSizeH3 * 0.9) * 1.1) !important;
+		}
+	}
+}
+
