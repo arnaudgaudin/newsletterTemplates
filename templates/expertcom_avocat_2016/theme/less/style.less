@@ -156,10 +156,14 @@ a.large-button-link, table.columns .readMore td.buttonWrapper td, table.column .
 		td.logoCont {
 			background-color: #CDB9F0;
 			table.logoWrapper {
-				width: 100%;
-				-premailer-width: 100%;
-				border-bottom: 1px solid #f00;
-				td { padding-bottom: (@wrapperPad / 2); }
+				&, td {
+					width: 100%;
+					-premailer-width: 100%;
+				}
+				td {
+					border-bottom: 1px solid #f00;
+					padding-bottom: (@wrapperPad / 2);
+				}
 			}
 		}
 		td.btnCont {
@@ -171,9 +175,11 @@ a.large-button-link, table.columns .readMore td.buttonWrapper td, table.column .
 			}
 
 			table.readMore {
-				width: 100%;
-				-premailer-width: 100%;
-				border-bottom: 1px solid #0f0;
+				&, td.buttonWrapper {
+					width: 100%;
+					-premailer-width: 100%;
+				}
+				td.buttonWrapper { border-bottom: 1px solid #0f0; }
 			}
 		}
 

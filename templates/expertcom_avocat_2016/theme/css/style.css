@@ -1250,14 +1250,16 @@ table.column .readMore td.buttonWrapper td {
 }
 
 .header table.columns td.logoCont table.logoWrapper,
-.header table.column td.logoCont table.logoWrapper {
+.header table.column td.logoCont table.logoWrapper,
+.header table.columns td.logoCont table.logoWrapper td,
+.header table.column td.logoCont table.logoWrapper td {
   width: 100%;
   -premailer-width: 100%;
-  border-bottom: 1px solid #f00;
 }
 
 .header table.columns td.logoCont table.logoWrapper td,
 .header table.column td.logoCont table.logoWrapper td {
+  border-bottom: 1px solid #f00;
   padding-bottom: 10px;
 }
 
@@ -1279,9 +1281,15 @@ table.column .readMore td.buttonWrapper td {
 }
 
 .header table.columns td.btnCont table.readMore,
-.header table.column td.btnCont table.readMore {
+.header table.column td.btnCont table.readMore,
+.header table.columns td.btnCont table.readMore td.buttonWrapper,
+.header table.column td.btnCont table.readMore td.buttonWrapper {
   width: 100%;
   -premailer-width: 100%;
+}
+
+.header table.columns td.btnCont table.readMore td.buttonWrapper,
+.header table.column td.btnCont table.readMore td.buttonWrapper {
   border-bottom: 1px solid #0f0;
 }
 
