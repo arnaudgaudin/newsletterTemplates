@@ -1856,6 +1856,10 @@ table.column .readMore td.buttonWrapper td {
     width: auto !important;
   }
 
+  table[class="body"] .contentMain .title {
+    padding-bottom: 5px !important;
+  }
+
   table[class="body"] .contentMain table.columns.textCont,
   table[class="body"] .contentMain table.column.textCont,
   table[class="body"] .contentMain table.columns.textCont td.subTextCont,
@@ -1883,6 +1887,10 @@ table.column .readMore td.buttonWrapper td {
   table[class="body"] .contentMain table.columns td,
   table[class="body"] .contentMain table.column td {
     padding-bottom: 0px !important;
+  }
+
+  table[class="body"] .contentBottom .title {
+    padding-bottom: 5px !important;
   }
 
   table[class="body"] .contentBottom td {
