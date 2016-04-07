@@ -321,8 +321,23 @@
 											<table border="0" class="twelve columns">
 												<tr>
 													<td class="text-pad">
-														<h3 class="title">Retrouvez toutes nos solutions : sites internet, magazine clients, newsletters juridiques...</h3>
-														<a target="_blank" href="http://avocat.lesechos-publishing.fr"><span class="important">avocat.lesechos-publishing.fr</span></a>
+														<!--{{##{{<champ>
+														<type>text</type>
+														<html_avant>}}--><h3 class="title"><!--{{</html_avant>
+														<defaut>}}-->Retrouvez toutes nos solutions : sites internet, magazine clients, newsletters juridiques...<!--{{</defaut>
+														<html_apres>}}--></h3><!--{{</html_apres>
+														</champ>}}## ##{{<champ>
+														<type>lien</type>
+														<href>http://avocat.lesechos-publishing.fr</href>}}-->
+														<!--DEL{{--><a href="http://avocat.lesechos-publishing.fr"><!--}}DEL-->
+														<!--{{<html_interieur_avant>}}--><span class="important"><!--{{</html_interieur_avant>
+														<texte>}}-->avocat.lesechos-publishing.fr<!--{{</texte>
+														<html_interieur_apres>}}--></span><!--{{</html_interieur_apres>}}-->
+														<!--DEL{{--></a><!--}}DEL-->
+														<!--{{<params>
+														}}--><a data-type="getstyle"><!--getstyle--></a><!--{{
+														</params>
+														</champ>}}##}}-->
 													</td>
 													<td class="expander"></td>
 												</tr>
