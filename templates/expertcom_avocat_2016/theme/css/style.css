@@ -1441,6 +1441,7 @@ table.column .readMore td.buttonWrapper td {
 
 .contentMain .title {
   padding-bottom: 10px;
+  mso-margin-bottom-alt: 10px;
 }
 
 .contentMain .title a {
@@ -1536,6 +1537,7 @@ table.column .readMore td.buttonWrapper td {
   color: #ffffff;
   font-weight: 300;
   padding-bottom: 10px;
+  mso-margin-bottom-alt: 10px;
 }
 
 .contentFooter table.columns td,
