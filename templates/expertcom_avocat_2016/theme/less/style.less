@@ -313,7 +313,10 @@ a.large-button-link, table.columns .readMore td.buttonWrapper td, table.column .
 	}
 
 	//espacement titre
-	.title { padding-bottom: (@wrapperPad / 2); }
+	.title {
+		padding-bottom: (@wrapperPad / 2);
+		a { .newsletterLinkColor(@headingsColor); }
+	}
 	
 	table.columns, table.column {
 		&.textCont {

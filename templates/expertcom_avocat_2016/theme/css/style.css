@@ -550,7 +550,7 @@ h5,
 h6,
 p,
 td {
-  color: #000;
+  color: #000000;
   padding: 0;
   margin: 0;
   text-align: left;
@@ -565,7 +565,7 @@ h5,
 h6 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
-  color: #000;
+  color: #000000;
   word-break: normal;
 }
 
@@ -819,20 +819,20 @@ table.large-button td a:visited .important {
 table.secondary td {
   background: #fff;
   border-color: #f0f0f0;
-  color: #000;
+  color: #000000;
 }
 
 table.secondary td a {
-  color: #000;
+  color: #000000;
 }
 
 table.secondary td a .important {
-  color: #000 !important;
+  color: #000000 !important;
 }
 
 table.secondary:hover td {
   background: #f7f7f7 !important;
-  color: #000;
+  color: #000000;
 }
 
 table.secondary:hover td a,
@@ -841,7 +841,7 @@ table.secondary:active td a,
 table.secondary:hover td a .important,
 table.secondary td a:visited .important,
 table.secondary:active td a .important {
-  color: #000 !important;
+  color: #000000 !important;
 }
 
 table.success td {
@@ -1443,6 +1443,18 @@ table.column .readMore td.buttonWrapper td {
   padding-bottom: 10px;
 }
 
+.contentMain .title a {
+  color: #000000;
+}
+
+.contentMain .title a .important,
+.contentMain .title a:visited,
+.contentMain .title a:hover,
+.contentMain .title a:focus,
+.contentMain .title a:active {
+  color: #000000 !important;
+}
+
 .contentMain table.columns.textCont,
 .contentMain table.column.textCont,
 .contentMain table.columns.textCont td.subTextCont,
@@ -1534,11 +1546,11 @@ table.column .readMore td.buttonWrapper td {
 .contentContact,
 .contentContact td,
 .contentContact .inner {
-  color: #000;
+  color: #000000;
 }
 
 .contentContact a {
-  color: #000;
+  color: #000000;
 }
 
 .contentContact a .important,
@@ -1546,7 +1558,7 @@ table.column .readMore td.buttonWrapper td {
 .contentContact a:hover,
 .contentContact a:focus,
 .contentContact a:active {
-  color: #000 !important;
+  color: #000000 !important;
 }
 
 .contentContact td.wrapper {
