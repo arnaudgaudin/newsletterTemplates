@@ -1222,10 +1222,6 @@ table.column .readMore td.buttonWrapper td {
   font-weight: bold;
 }
 
-.header {
-  background-color: #B9E2F0;
-}
-
 .header,
 .header td,
 .header .inner {
@@ -1244,11 +1240,6 @@ table.column .readMore td.buttonWrapper td {
   color: #4d616d !important;
 }
 
-.header table.columns td.logoCont,
-.header table.column td.logoCont {
-  background-color: #CDB9F0;
-}
-
 .header table.columns td.logoCont table.logoWrapper,
 .header table.column td.logoCont table.logoWrapper,
 .header table.columns td.logoCont table.logoWrapper td,
@@ -1259,18 +1250,8 @@ table.column .readMore td.buttonWrapper td {
 
 .header table.columns td.logoCont table.logoWrapper td,
 .header table.column td.logoCont table.logoWrapper td {
-  border-bottom: 1px solid #f00;
+  border-bottom: 1px solid #4d616d;
   padding-bottom: 10px;
-}
-
-.header table.columns td.btnCont,
-.header table.column td.btnCont {
-  background-color: #CEF0B9;
-}
-
-.header table.columns td.btnCont table.subWrapper,
-.header table.column td.btnCont table.subWrapper {
-  background-color: #F0DBB9;
 }
 
 .header table.columns td.btnCont table.subWrapper,
@@ -1290,7 +1271,7 @@ table.column .readMore td.buttonWrapper td {
 
 .header table.columns td.btnCont table.readMore td.buttonWrapper,
 .header table.column td.btnCont table.readMore td.buttonWrapper {
-  border-bottom: 1px solid #0f0;
+  border-bottom: 1px solid #4d616d;
 }
 
 .header table.columns td.logoCont,
@@ -1453,18 +1434,9 @@ table.column .readMore td.buttonWrapper td {
   padding-bottom: 0px;
 }
 
-.contentMain {
-  background-color: #0f0;
-}
-
 .contentMain td.wrapper {
   width: 720px;
   -premailer-width: 720;
-}
-
-.contentMain table.columns.textCont,
-.contentMain table.column.textCont {
-  background-color: #007240;
 }
 
 .contentMain table.columns.textCont,
@@ -1495,10 +1467,6 @@ table.column .readMore td.buttonWrapper td {
   padding-bottom: 20px;
   padding-left: 0px;
   padding-right: 40px;
-}
-
-.contentMain.imgRight {
-  background-color: #090;
 }
 
 .contentMain.imgRight table.columns.textCont table.subWrapper td,
@@ -1553,17 +1521,9 @@ table.column .readMore td.buttonWrapper td {
   font-weight: 200;
 }
 
-.contentFooter {
-  background-color: #00f;
-}
-
 .contentFooter table.columns td,
 .contentFooter table.column td {
   padding-bottom: 10px;
-}
-
-.contentContact {
-  background-color: #0f0;
 }
 
 .contentContact,

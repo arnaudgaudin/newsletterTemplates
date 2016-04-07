@@ -149,28 +149,23 @@ a.large-button-link, table.columns .readMore td.buttonWrapper td, table.column .
 
 //gestion header
 .header {
-	background-color: #B9E2F0;
 	.newsletterInnerTextColor(@colorExpertCom2);
 
 	table.columns, table.column {
 		td.logoCont {
-			background-color: #CDB9F0;
 			table.logoWrapper {
 				&, td {
 					width: 100%;
 					-premailer-width: 100%;
 				}
 				td {
-					border-bottom: 1px solid #f00;
+					border-bottom: 1px solid @colorExpertCom2;
 					padding-bottom: (@wrapperPad / 2);
 				}
 			}
 		}
 		td.btnCont {
-			background-color: #CEF0B9;
-
 			table.subWrapper {
-				background-color: #F0DBB9;
 				&, td { text-align: right; }
 			}
 
@@ -179,7 +174,7 @@ a.large-button-link, table.columns .readMore td.buttonWrapper td, table.column .
 					width: 100%;
 					-premailer-width: 100%;
 				}
-				td.buttonWrapper { border-bottom: 1px solid #0f0; }
+				td.buttonWrapper { border-bottom: 1px solid @colorExpertCom2; }
 			}
 		}
 
@@ -311,8 +306,6 @@ a.large-button-link, table.columns .readMore td.buttonWrapper td, table.column .
 // contentMain area
 // -------------------------
 .contentMain {
-	background-color: #0f0;
-	
 	//pleine largeur pour le wrapper
 	td.wrapper {
 		width: @containerWidth;
@@ -321,7 +314,6 @@ a.large-button-link, table.columns .readMore td.buttonWrapper td, table.column .
 	
 	table.columns, table.column {
 		&.textCont {
-			background-color: #007240;
 			&, td.subTextCont {
 				//hauteur de l'image
 				height: 330px;
@@ -343,10 +335,7 @@ a.large-button-link, table.columns .readMore td.buttonWrapper td, table.column .
 		}
 	}
 
-	// table.imgCont { float: left; }
-	// table.textCont { float: right; }
 	&.imgRight {
-		background-color: #090;
 		table.columns, table.column {
 			&.textCont table.subWrapper td {
 				padding-left: @textPad;
@@ -412,8 +401,6 @@ a.large-button-link, table.columns .readMore td.buttonWrapper td, table.column .
 // contentFooter area
 // -------------------------
 .contentFooter {
-	background-color: #00f;
-
 	//réduction décalage vertical
 	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
 }
@@ -431,7 +418,6 @@ a.large-button-link, table.columns .readMore td.buttonWrapper td, table.column .
 // contentContact area
 // -------------------------
 .contentContact {
-	background-color: #0f0;
 	.newsletterInnerTextColor(@textColor);
 
 	//réduction décalage vertical
