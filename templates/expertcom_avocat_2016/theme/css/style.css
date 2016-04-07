@@ -1250,7 +1250,9 @@ table.column .readMore td.buttonWrapper td {
 
 .header table.columns td.logoCont table.logoWrapper td,
 .header table.column td.logoCont table.logoWrapper td {
+  background-color: #0f0;
   border-bottom: 1px solid #4d616d;
+  padding-right: 10px;
   padding-bottom: 10px;
 }
 
@@ -1808,6 +1810,7 @@ table.column .readMore td.buttonWrapper td {
 
   table[class="body"] .header table.columns td.logoCont table.logoWrapper td,
   table[class="body"] .header table.column td.logoCont table.logoWrapper td {
+    padding-right: 5px !important;
     padding-bottom: 5px !important;
   }
 

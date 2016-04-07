@@ -159,7 +159,9 @@ a.large-button-link, table.columns .readMore td.buttonWrapper td, table.column .
 					-premailer-width: 100%;
 				}
 				td {
+					background-color: #0f0;
 					border-bottom: 1px solid @colorExpertCom2;
+					padding-right: (@textPad / 4);
 					padding-bottom: (@wrapperPad / 2);
 				}
 			}
@@ -201,7 +203,10 @@ a.large-button-link, table.columns .readMore td.buttonWrapper td, table.column .
 		}
 
 		table.columns, table.column {
-			td.logoCont table.logoWrapper td { padding-bottom: (@wrapperPadCollapse / 2) !important; }
+			td.logoCont table.logoWrapper td {
+				padding-right: (@textPadCollapse / 4) !important;
+				padding-bottom: (@wrapperPadCollapse / 2) !important;
+			}
 		}
 
 		//suppression padding rajouté
