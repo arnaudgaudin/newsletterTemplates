@@ -1782,8 +1782,8 @@ table.column .readMore td.buttonWrapper td {
   table[class="body"] a.large-button-link,
   table[class="body"] table.columns .readMore td.buttonWrapper td,
   table[class="body"] table.column .readMore td.buttonWrapper td {
-    font-size: 11px !important;
-    line-height: 15px !important;
+    font-size: 13px !important;
+    line-height: 16px !important;
   }
 
   table[class="body"] .header img {
