@@ -1280,6 +1280,8 @@ table.column .readMore td.buttonWrapper td {
 
 .header table.columns td.btnCont table.readMore,
 .header table.column td.btnCont table.readMore {
+  width: 100%;
+  -premailer-width: 100%;
   border-bottom: 1px solid #0f0;
 }
 
@@ -1309,6 +1311,33 @@ table.column .readMore td.buttonWrapper td {
 .header table.columns td,
 .header table.column td {
   padding-bottom: 0px;
+}
+
+.subHeader,
+.subHeader td,
+.subHeader .inner {
+  color: #4d616d;
+}
+
+.subHeader a {
+  color: #4d616d;
+}
+
+.subHeader a .important,
+.subHeader a:visited,
+.subHeader a:hover,
+.subHeader a:focus,
+.subHeader a:active {
+  color: #4d616d !important;
+}
+
+.subHeader td {
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.subHeader td.wrapper {
+  padding-top: 10px;
 }
 
 .contentOnline,
@@ -1790,9 +1819,26 @@ table.column .readMore td.buttonWrapper td {
     height: auto !important;
   }
 
+  table[class="body"] .header table.columns td.logoCont table.logoWrapper td,
+  table[class="body"] .header table.column td.logoCont table.logoWrapper td {
+    padding-bottom: 5px !important;
+  }
+
+  table[class="body"] .header .text-pad-left {
+    padding-right: 0px !important;
+  }
+
+  table[class="body"] .header .text-pad-right {
+    padding-left: 0px !important;
+  }
+
   table[class="body"] .header table.columns td,
   table[class="body"] .header table.column td {
     padding-bottom: 0px !important;
+  }
+
+  table[class="body"] .subHeader td.wrapper {
+    padding-top: 5px !important;
   }
 
   table[class="body"] .contentOnline td,

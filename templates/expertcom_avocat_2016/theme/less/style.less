@@ -152,11 +152,6 @@ a.large-button-link, table.columns .readMore td.buttonWrapper td, table.column .
 	background-color: #B9E2F0;
 	.newsletterInnerTextColor(@colorExpertCom2);
 
-	// td {
-	// 	font-size: ceil(@baseFontSize * 0.85);
-	// 	line-height: ceil(@baseFontSize * 0.85 * 1.25);
-	// }
-
 	table.columns, table.column {
 		td.logoCont {
 			background-color: #CDB9F0;
@@ -176,6 +171,8 @@ a.large-button-link, table.columns .readMore td.buttonWrapper td, table.column .
 			}
 
 			table.readMore {
+				width: 100%;
+				-premailer-width: 100%;
 				border-bottom: 1px solid #0f0;
 			}
 		}
@@ -190,9 +187,6 @@ a.large-button-link, table.columns .readMore td.buttonWrapper td, table.column .
 			}
 		}
 	}
-
-
-
 
 	//réduction décalage vertical
 	table.columns td, table.column td { padding-bottom: 0px; }
@@ -242,11 +236,15 @@ a.large-button-link, table.columns .readMore td.buttonWrapper td, table.column .
 			height: auto !important;
 		}
 
+		table.columns, table.column {
+			td.logoCont table.logoWrapper td { padding-bottom: (@wrapperPadCollapse / 2) !important; }
+		}
+
+		//suppression padding rajouté
+		.text-pad-left { padding-right: 0px !important; }
+		.text-pad-right { padding-left: 0px !important; }
+
 		table.columns td, table.column td { padding-bottom: 0px !important; }
-
-
-
-
 
 
 		// table.readMore td.buttonWrapper { padding-top: @wrapperPadCollapse !important; }
@@ -262,9 +260,26 @@ a.large-button-link, table.columns .readMore td.buttonWrapper td, table.column .
 	}
 }
 //replacement bouton
-@media only screen and (max-width: 435px) {
-	table[class="body"] .header {
-		// table.readMore { float: left !important; }
+// @media only screen and (max-width: 435px) {
+// 	table[class="body"] .header {
+// 		table.readMore { float: left !important; }
+// 	}
+// }
+
+.subHeader {
+	.newsletterInnerTextColor(@colorExpertCom2);
+
+	td {
+		font-size: ceil(@baseFontSize * 0.85);
+		line-height: ceil(@baseFontSize * 0.85 * 1.25);
+	}
+
+	//réduction décalage vertical
+	td.wrapper { padding-top: (@wrapperPad / 2); }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .subHeader {
+		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
 	}
 }
 
