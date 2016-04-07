@@ -149,13 +149,55 @@ a.large-button-link, table.columns .readMore td.buttonWrapper td, table.column .
 
 //gestion header
 .header {
-	background-color: #0f0;
+	background-color: #B9E2F0;
 	.newsletterInnerTextColor(@colorExpertCom2);
 
-	td {
-		font-size: ceil(@baseFontSize * 0.85);
-		line-height: ceil(@baseFontSize * 0.85 * 1.25);
+	// td {
+	// 	font-size: ceil(@baseFontSize * 0.85);
+	// 	line-height: ceil(@baseFontSize * 0.85 * 1.25);
+	// }
+
+	table.columns, table.column {
+		td.logoCont {
+			background-color: #CDB9F0;
+			table.logoWrapper {
+				width: 100%;
+				-premailer-width: 100%;
+				border-bottom: 1px solid #f00;
+				td { padding-bottom: (@wrapperPad / 2); }
+			}
+		}
+		td.btnCont {
+			background-color: #CEF0B9;
+
+			table.subWrapper {
+				background-color: #F0DBB9;
+				&, td { text-align: right; }
+			}
+
+			table.readMore {
+				border-bottom: 1px solid #0f0;
+			}
+		}
+
+		td.logoCont, td.btnCont {
+			&, table.subWrapper { vertical-align: bottom; }
+			table.subWrapper {
+				&, td {
+					width: 100%;
+					-premailer-width: 100%;
+				}
+			}
+		}
 	}
+
+
+
+
+	//réduction décalage vertical
+	table.columns td, table.column td { padding-bottom: 0px; }
+
+
 
 	//container logo et bouton
 	// table.subWrapper {
@@ -194,11 +236,20 @@ a.large-button-link, table.columns .readMore td.buttonWrapper td, table.column .
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .header {
-		// table.readMore td.buttonWrapper { padding-top: @wrapperPadCollapse !important; }
 		img {
-			width: 300px !important;
-			height: 28px !important;
+			max-width: 100% !important;
+			width: 300px;
+			height: auto !important;
 		}
+
+		table.columns td, table.column td { padding-bottom: 0px !important; }
+
+
+
+
+
+
+		// table.readMore td.buttonWrapper { padding-top: @wrapperPadCollapse !important; }
 		// table.columns, table.column {
 		// 	table.subWrapper {
 		// 		tr.first > td { padding-bottom: 0px !important; }

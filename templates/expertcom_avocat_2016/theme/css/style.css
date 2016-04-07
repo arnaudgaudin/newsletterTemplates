@@ -1223,7 +1223,7 @@ table.column .readMore td.buttonWrapper td {
 }
 
 .header {
-  background-color: #0f0;
+  background-color: #B9E2F0;
 }
 
 .header,
@@ -1244,9 +1244,71 @@ table.column .readMore td.buttonWrapper td {
   color: #4d616d !important;
 }
 
-.header td {
-  font-size: 12px;
-  line-height: 15px;
+.header table.columns td.logoCont,
+.header table.column td.logoCont {
+  background-color: #CDB9F0;
+}
+
+.header table.columns td.logoCont table.logoWrapper,
+.header table.column td.logoCont table.logoWrapper {
+  width: 100%;
+  -premailer-width: 100%;
+  border-bottom: 1px solid #f00;
+}
+
+.header table.columns td.logoCont table.logoWrapper td,
+.header table.column td.logoCont table.logoWrapper td {
+  padding-bottom: 10px;
+}
+
+.header table.columns td.btnCont,
+.header table.column td.btnCont {
+  background-color: #CEF0B9;
+}
+
+.header table.columns td.btnCont table.subWrapper,
+.header table.column td.btnCont table.subWrapper {
+  background-color: #F0DBB9;
+}
+
+.header table.columns td.btnCont table.subWrapper,
+.header table.column td.btnCont table.subWrapper,
+.header table.columns td.btnCont table.subWrapper td,
+.header table.column td.btnCont table.subWrapper td {
+  text-align: right;
+}
+
+.header table.columns td.btnCont table.readMore,
+.header table.column td.btnCont table.readMore {
+  border-bottom: 1px solid #0f0;
+}
+
+.header table.columns td.logoCont,
+.header table.column td.logoCont,
+.header table.columns td.btnCont,
+.header table.column td.btnCont,
+.header table.columns td.logoCont table.subWrapper,
+.header table.column td.logoCont table.subWrapper,
+.header table.columns td.btnCont table.subWrapper,
+.header table.column td.btnCont table.subWrapper {
+  vertical-align: bottom;
+}
+
+.header table.columns td.logoCont table.subWrapper,
+.header table.column td.logoCont table.subWrapper,
+.header table.columns td.btnCont table.subWrapper,
+.header table.column td.btnCont table.subWrapper,
+.header table.columns td.logoCont table.subWrapper td,
+.header table.column td.logoCont table.subWrapper td,
+.header table.columns td.btnCont table.subWrapper td,
+.header table.column td.btnCont table.subWrapper td {
+  width: 100%;
+  -premailer-width: 100%;
+}
+
+.header table.columns td,
+.header table.column td {
+  padding-bottom: 0px;
 }
 
 .contentOnline,
@@ -1723,8 +1785,14 @@ table.column .readMore td.buttonWrapper td {
   }
 
   table[class="body"] .header img {
-    width: 300px !important;
-    height: 28px !important;
+    max-width: 100% !important;
+    width: 300px;
+    height: auto !important;
+  }
+
+  table[class="body"] .header table.columns td,
+  table[class="body"] .header table.column td {
+    padding-bottom: 0px !important;
   }
 
   table[class="body"] .contentOnline td,
