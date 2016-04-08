@@ -1546,24 +1546,6 @@ table.column .readMore td.buttonWrapper td {
   padding-bottom: 10px;
 }
 
-.contentContact,
-.contentContact td,
-.contentContact .inner {
-  color: #333333;
-}
-
-.contentContact a {
-  color: #333333;
-}
-
-.contentContact a .important,
-.contentContact a:visited,
-.contentContact a:hover,
-.contentContact a:focus,
-.contentContact a:active {
-  color: #333333 !important;
-}
-
 .contentContact td.wrapper {
   padding-top: 10px;
 }
