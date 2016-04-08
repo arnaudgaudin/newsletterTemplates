@@ -4,7 +4,7 @@
 
 body,
 table.body {
-  background-color: #eff2f4;
+  background-color: #e0e6ea;
 }
 
 /**********************************************
@@ -1361,7 +1361,7 @@ table.column .readMore td.buttonWrapper td {
 
 .contentOnline,
 .contentUnsubscribe {
-  background-color: #eff2f4;
+  background-color: #e0e6ea;
 }
 
 .contentOnline,
@@ -1370,12 +1370,12 @@ table.column .readMore td.buttonWrapper td {
 .contentUnsubscribe td,
 .contentOnline .inner,
 .contentUnsubscribe .inner {
-  color: #859cab;
+  color: #7690a1;
 }
 
 .contentOnline a,
 .contentUnsubscribe a {
-  color: #859cab;
+  color: #7690a1;
 }
 
 .contentOnline a .important,
@@ -1388,7 +1388,7 @@ table.column .readMore td.buttonWrapper td {
 .contentUnsubscribe a:focus,
 .contentOnline a:active,
 .contentUnsubscribe a:active {
-  color: #859cab !important;
+  color: #7690a1 !important;
 }
 
 .contentOnline td,
