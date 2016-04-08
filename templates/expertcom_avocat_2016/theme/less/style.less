@@ -431,7 +431,9 @@ a.large-button-link, table.columns .readMore td.buttonWrapper td, table.column .
 // contentContact area
 // -------------------------
 .contentContact {
-	// .newsletterInnerTextColor(@textColor);
+	//forçage lien tel
+	// a[href^=tel] { .newsletterLinkColor(@linkColor); }
+	.newsletterInnerTextColor(@textColor);
 
 	//réduction décalage vertical
 	td.wrapper { padding-top: (@wrapperPad / 2); }
