@@ -1440,24 +1440,13 @@ table.column .readMore td.buttonWrapper td {
   -premailer-width: 720;
 }
 
-.contentTop table.columns.imgCont,
-.contentTop table.column.imgCont {
-  background-color: #00f;
-}
-
 .contentTop table.columns.imgCont td,
 .contentTop table.column.imgCont td {
   padding-top: 20px;
 }
 
-.contentTop table.columns.textCont,
-.contentTop table.column.textCont {
-  background-color: #0f0;
-}
-
 .contentTop table.columns.textCont table.readMore,
 .contentTop table.column.textCont table.readMore {
-  background-color: #00f;
   width: auto;
   -premailer-width: auto;
 }

@@ -278,16 +278,10 @@ a.large-button-link, table.columns .readMore td.buttonWrapper td, table.column .
 	}
 
 	table.columns, table.column {
-		&.imgCont {
-			background-color: #00f;
-			td { padding-top: @wrapperPad; }
-		}
+		&.imgCont td { padding-top: @wrapperPad; }
 
 		&.textCont {
-			background-color: #0f0;
-
 			table.readMore {
-				background-color: #00f;
 				width: auto;
 				-premailer-width: auto;
 				td.buttonWrapper { padding-top: @wrapperPad; }
@@ -318,25 +312,6 @@ a.large-button-link, table.columns .readMore td.buttonWrapper td, table.column .
 	//suppression décalage vertical
 	td.wrapper { padding-top: 0px; }
 	table.columns td, table.column td { padding-bottom: 0px; }
-
-
-	// td.wrapper { vertical-align: middle; }
-	// table.columns, table.column {
-	// 	table.subWrapper {
-	// 		td.content {
-	// 			padding-top: (@wrapperPad / 2);
-	// 			padding-bottom: @columnPad;
-	// 		}
-	// 	}
-	// 	.readMore {
-	// 		td.buttonWrapper { padding-top: @wrapperPad; }
-	// 		table.large-button { float: none; }
-	// 	}
-	// }
-
-	//réduction décalage vertical
-	// td.wrapper { padding-top: (@wrapperPad / 2); }
-	// table.columns td, table.column td { padding-bottom: 0px; }
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentTop {
@@ -361,21 +336,6 @@ a.large-button-link, table.columns .readMore td.buttonWrapper td, table.column .
 		table.imgCont, table.textCont { float: none !important; }
 		td.wrapper { padding-top: 0px !important; }
 		table.columns td, table.column td { padding-bottom: 0px !important; }
-
-
-		// table.columns, table.column {
-		// 	table.subWrapper {
-		// 		td.content {
-		// 			padding-top: (@wrapperPadCollapse / 2) !important;
-		// 			padding-bottom: @columnPadCollapse !important;
-		// 		}
-		// 	}
-		// 	.readMore {
-		// 		td.buttonWrapper { padding-top: @wrapperPadCollapse !important; }
-		// 	}
-		// }
-		// td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
-		// table.columns td, table.column td { padding-bottom: 0px !important; }
 	}
 }
 
