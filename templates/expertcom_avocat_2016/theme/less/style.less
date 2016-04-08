@@ -278,6 +278,11 @@ a.large-button-link, table.columns .readMore td.buttonWrapper td, table.column .
 	}
 
 	table.columns, table.column {
+		&.imgCont {
+			background-color: #00f;
+			td { padding-top: @wrapperPad; }
+		}
+
 		&.textCont {
 			background-color: #0f0;
 
@@ -290,9 +295,9 @@ a.large-button-link, table.columns .readMore td.buttonWrapper td, table.column .
 			}
 
 			&, td.subTextCont {
-				//hauteur de l'image
-				height: 300px;
-				-premailer-height: 300;
+				//hauteur de l'image plus wrapperPad
+				height: (300px + @wrapperPad);
+				-premailer-height: unit(300px + @wrapperPad);
 				//largeur 8 colonnes moins text-pad
 				width: (7 * @gutterWidth + 8 * @columnWidth - @textPad);
 				-premailer-width: unit(7 * @gutterWidth + 8 * @columnWidth - @textPad);
@@ -337,6 +342,7 @@ a.large-button-link, table.columns .readMore td.buttonWrapper td, table.column .
 	table[class="body"] .contentTop {
 		td.wrapper { width: auto !important; }
 		table.columns, table.column {
+			&.imgCont td { padding-top: @wrapperPadCollapse !important; }
 			&.textCont {
 				table.readMore {
 					width: auto !important;

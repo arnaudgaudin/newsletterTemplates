@@ -1440,6 +1440,16 @@ table.column .readMore td.buttonWrapper td {
   -premailer-width: 720;
 }
 
+.contentTop table.columns.imgCont,
+.contentTop table.column.imgCont {
+  background-color: #00f;
+}
+
+.contentTop table.columns.imgCont td,
+.contentTop table.column.imgCont td {
+  padding-top: 20px;
+}
+
 .contentTop table.columns.textCont,
 .contentTop table.column.textCont {
   background-color: #0f0;
@@ -1466,8 +1476,8 @@ table.column .readMore td.buttonWrapper td {
 .contentTop table.column.textCont,
 .contentTop table.columns.textCont td.subTextCont,
 .contentTop table.column.textCont td.subTextCont {
-  height: 300px;
-  -premailer-height: 300;
+  height: 320px;
+  -premailer-height: 320;
   width: 440px;
   -premailer-width: 440;
 }
@@ -1916,6 +1926,11 @@ table.column .readMore td.buttonWrapper td {
 
   table[class="body"] .contentTop td.wrapper {
     width: auto !important;
+  }
+
+  table[class="body"] .contentTop table.columns.imgCont td,
+  table[class="body"] .contentTop table.column.imgCont td {
+    padding-top: 10px !important;
   }
 
   table[class="body"] .contentTop table.columns.textCont table.readMore,
