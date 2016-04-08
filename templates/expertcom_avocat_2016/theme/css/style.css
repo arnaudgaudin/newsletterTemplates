@@ -550,7 +550,7 @@ h5,
 h6,
 p,
 td {
-  color: #000000;
+  color: #333333;
   padding: 0;
   margin: 0;
   text-align: left;
@@ -619,20 +619,20 @@ small {
 }
 
 a {
-  color: #961d23;
+  color: #333333;
   text-decoration: none;
 }
 
 a:hover {
-  color: #6b1519 !important;
+  color: #1a1a1a !important;
 }
 
 a:active {
-  color: #6b1519 !important;
+  color: #1a1a1a !important;
 }
 
 a:visited {
-  color: #961d23 !important;
+  color: #333333 !important;
 }
 
 h1 a,
@@ -641,7 +641,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-  color: #961d23;
+  color: #333333;
 }
 
 h1 a:active,
@@ -650,7 +650,7 @@ h3 a:active,
 h4 a:active,
 h5 a:active,
 h6 a:active {
-  color: #961d23 !important;
+  color: #333333 !important;
 }
 
 h1 a:visited,
@@ -659,7 +659,7 @@ h3 a:visited,
 h4 a:visited,
 h5 a:visited,
 h6 a:visited {
-  color: #961d23 !important;
+  color: #333333 !important;
 }
 
 /* Panels */
@@ -819,20 +819,20 @@ table.large-button td a:visited .important {
 table.secondary td {
   background: #fff;
   border-color: #f0f0f0;
-  color: #000000;
+  color: #333333;
 }
 
 table.secondary td a {
-  color: #000000;
+  color: #333333;
 }
 
 table.secondary td a .important {
-  color: #000000 !important;
+  color: #333333 !important;
 }
 
 table.secondary:hover td {
   background: #f7f7f7 !important;
-  color: #000000;
+  color: #333333;
 }
 
 table.secondary:hover td a,
@@ -841,7 +841,7 @@ table.secondary:active td a,
 table.secondary:hover td a .important,
 table.secondary td a:visited .important,
 table.secondary:active td a .important {
-  color: #000000 !important;
+  color: #333333 !important;
 }
 
 table.success td {
@@ -927,7 +927,7 @@ body.outlook p {
 }
 
 .appleLinks a {
-  color: #961d23;
+  color: #333333;
   text-decoration: none;
 }
 
@@ -937,11 +937,11 @@ body.outlook p {
 
 .appleLinks a:hover,
 .appleLinks a:active {
-  color: #6b1519 !important;
+  color: #1a1a1a !important;
 }
 
 .appleLinks a:visited {
-  color: #961d23 !important;
+  color: #333333 !important;
 }
 
 a[href^=tel] {
@@ -1440,18 +1440,6 @@ table.column .readMore td.buttonWrapper td {
   -premailer-width: 720;
 }
 
-.contentMain td a {
-  color: #961d23;
-}
-
-.contentMain td a .important,
-.contentMain td a:visited,
-.contentMain td a:hover,
-.contentMain td a:focus,
-.contentMain td a:active {
-  color: #961d23 !important;
-}
-
 .contentMain .title {
   padding-bottom: 10px;
   mso-margin-bottom-alt: 10px;
@@ -1561,11 +1549,11 @@ table.column .readMore td.buttonWrapper td {
 .contentContact,
 .contentContact td,
 .contentContact .inner {
-  color: #000000;
+  color: #333333;
 }
 
 .contentContact a {
-  color: #000000;
+  color: #333333;
 }
 
 .contentContact a .important,
@@ -1573,7 +1561,7 @@ table.column .readMore td.buttonWrapper td {
 .contentContact a:hover,
 .contentContact a:focus,
 .contentContact a:active {
-  color: #000000 !important;
+  color: #333333 !important;
 }
 
 .contentContact td.wrapper {
