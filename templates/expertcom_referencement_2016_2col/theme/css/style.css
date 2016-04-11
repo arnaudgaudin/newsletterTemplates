@@ -1,0 +1,1843 @@
+/**********************************************
+* Inkless - Addons                            *
+**********************************************/
+
+body,
+table.body {
+  background-color: #f5f7f8;
+}
+
+/**********************************************
+* Ink v1.0.5 - Copyright 2013 ZURB Inc        *
+**********************************************/
+
+/* Client-specific Styles and Reset */
+
+#outlook a {
+  padding: 0;
+}
+
+body {
+  width: 100% !important;
+  min-width: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* .ExternalClass applies to Outlook.com (the artist formerly known as Hotmail)  */
+
+.ExternalClass {
+  width: 100%;
+}
+
+.ExternalClass,
+.ExternalClass p,
+.ExternalClass span,
+.ExternalClass font,
+.ExternalClass td,
+.ExternalClass div {
+  line-height: 100%;
+}
+
+/* Equivalent to .ExternalClass */
+
+.ReadMsgBody {
+  width: 100%;
+}
+
+#backgroundTable {
+  margin: 0;
+  padding: 0;
+  width: 100% !important;
+  line-height: 100% !important;
+}
+
+img {
+  outline: none;
+  text-decoration: none;
+  -ms-interpolation-mode: bicubic;
+  width: auto;
+  max-width: 100%;
+  float: left;
+  clear: both;
+  display: block;
+}
+
+center {
+  width: 100%;
+  min-width: 720px;
+}
+
+a img {
+  border: none;
+}
+
+p {
+  margin: 0 0 0 10px;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  mso-table-lspace: 0pt;
+  mso-table-rspace: 0pt;
+}
+
+td {
+  word-break: break-word;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  border-collapse: collapse !important;
+}
+
+table,
+tr,
+td {
+  padding: 0;
+  vertical-align: top;
+  text-align: left;
+}
+
+hr {
+  color: #cf2630;
+  background-color: #cf2630;
+  height: 1px;
+  border: none;
+}
+
+/* Responsive Grid */
+
+table.body {
+  height: 100%;
+  width: 100%;
+}
+
+table.container {
+  background-color: #ffffff;
+  width: 720px;
+  -premailer-width: 720;
+  margin: 0 auto;
+  text-align: inherit;
+}
+
+table.row {
+  padding: 0px;
+  width: 100%;
+}
+
+table.container table.row {
+  display: block;
+}
+
+td.wrapper {
+  padding: 20px 0 0px 0px;
+}
+
+table.columns,
+table.column {
+  margin: 0 auto;
+}
+
+table.columns td,
+table.column td {
+  padding: 0px 0px 20px;
+}
+
+table.columns td.sub-columns,
+table.column td.sub-columns,
+table.columns td.sub-column,
+table.column td.sub-column {
+  padding-right: 0;
+}
+
+td.sub-column,
+td.sub-columns {
+  min-width: 0px;
+}
+
+table.row td.last,
+table.container td.last {
+  padding-right: 0px;
+}
+
+table.one {
+  width: 60px;
+  -premailer-width: 60;
+}
+
+table.two {
+  width: 120px;
+  -premailer-width: 120;
+}
+
+table.three {
+  width: 180px;
+  -premailer-width: 180;
+}
+
+table.four {
+  width: 240px;
+  -premailer-width: 240;
+}
+
+table.five {
+  width: 300px;
+  -premailer-width: 300;
+}
+
+table.six {
+  width: 360px;
+  -premailer-width: 360;
+}
+
+table.seven {
+  width: 420px;
+  -premailer-width: 420;
+}
+
+table.eight {
+  width: 480px;
+  -premailer-width: 480;
+}
+
+table.nine {
+  width: 540px;
+  -premailer-width: 540;
+}
+
+table.ten {
+  width: 600px;
+  -premailer-width: 600;
+}
+
+table.eleven {
+  width: 660px;
+  -premailer-width: 660;
+}
+
+table.twelve {
+  width: 720px;
+  -premailer-width: 720;
+}
+
+table.one center {
+  min-width: 60px;
+}
+
+table.two center {
+  min-width: 120px;
+}
+
+table.three center {
+  min-width: 180px;
+}
+
+table.four center {
+  min-width: 240px;
+}
+
+table.five center {
+  min-width: 300px;
+}
+
+table.six center {
+  min-width: 360px;
+}
+
+table.seven center {
+  min-width: 420px;
+}
+
+table.eight center {
+  min-width: 480px;
+}
+
+table.nine center {
+  min-width: 540px;
+}
+
+table.ten center {
+  min-width: 600px;
+}
+
+table.eleven center {
+  min-width: 660px;
+}
+
+table.twelve center {
+  min-width: 720px;
+}
+
+table.one .panel center {
+  min-width: 60px;
+}
+
+table.two .panel center {
+  min-width: 120px;
+}
+
+table.three .panel center {
+  min-width: 180px;
+}
+
+table.four .panel center {
+  min-width: 240px;
+}
+
+table.five .panel center {
+  min-width: 300px;
+}
+
+table.six .panel center {
+  min-width: 360px;
+}
+
+table.seven .panel center {
+  min-width: 420px;
+}
+
+table.eight .panel center {
+  min-width: 480px;
+}
+
+table.nine .panel center {
+  min-width: 540px;
+}
+
+table.ten .panel center {
+  min-width: 600px;
+}
+
+table.eleven .panel center {
+  min-width: 660px;
+}
+
+table.twelve .panel center {
+  min-width: 720px;
+}
+
+.body .columns td.one,
+.body .column td.one {
+  width: 8.333333%;
+}
+
+.body .columns td.two,
+.body .column td.two {
+  width: 16.666666%;
+}
+
+.body .columns td.three,
+.body .column td.three {
+  width: 25%;
+}
+
+.body .columns td.four,
+.body .column td.four {
+  width: 33.333333%;
+}
+
+.body .columns td.five,
+.body .column td.five {
+  width: 41.666666%;
+}
+
+.body .columns td.six,
+.body .column td.six {
+  width: 50%;
+}
+
+.body .columns td.seven,
+.body .column td.seven {
+  width: 58.333333%;
+}
+
+.body .columns td.eight,
+.body .column td.eight {
+  width: 66.666666%;
+}
+
+.body .columns td.nine,
+.body .column td.nine {
+  width: 75%;
+}
+
+.body .columns td.ten,
+.body .column td.ten {
+  width: 83.333333%;
+}
+
+.body .columns td.eleven,
+.body .column td.eleven {
+  width: 91.666666%;
+}
+
+.body .columns td.twelve,
+.body .column td.twelve {
+  width: 100%;
+}
+
+td.offset-by-one {
+  padding-left: 60px;
+}
+
+td.offset-by-two {
+  padding-left: 120px;
+}
+
+td.offset-by-three {
+  padding-left: 180px;
+}
+
+td.offset-by-four {
+  padding-left: 240px;
+}
+
+td.offset-by-five {
+  padding-left: 300px;
+}
+
+td.offset-by-six {
+  padding-left: 360px;
+}
+
+td.offset-by-seven {
+  padding-left: 420px;
+}
+
+td.offset-by-eight {
+  padding-left: 480px;
+}
+
+td.offset-by-nine {
+  padding-left: 540px;
+}
+
+td.offset-by-ten {
+  padding-left: 600px;
+}
+
+td.offset-by-eleven {
+  padding-left: 660px;
+}
+
+td.expander {
+  visibility: hidden;
+  width: 0px;
+  padding: 0 !important;
+}
+
+table.columns .text-pad,
+table.column .text-pad {
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+}
+
+table.columns .left-text-pad,
+table.columns .text-pad-left,
+table.column .left-text-pad,
+table.column .text-pad-left {
+  padding-left: 40px !important;
+}
+
+table.columns .right-text-pad,
+table.columns .text-pad-right,
+table.column .right-text-pad,
+table.column .text-pad-right {
+  padding-right: 40px !important;
+}
+
+/* Block Grid */
+
+.block-grid {
+  width: 100%;
+  max-width: 720px;
+}
+
+.block-grid td {
+  display: inline-block;
+  padding: 20px;
+}
+
+.two-up td {
+  width: 360px;
+  -premailer-width: 360;
+}
+
+.three-up td {
+  width: 240px;
+  -premailer-width: 240;
+}
+
+.four-up td {
+  width: 180px;
+  -premailer-width: 180;
+}
+
+.five-up td {
+  width: 144px;
+  -premailer-width: 144;
+}
+
+.six-up td {
+  width: 120px;
+  -premailer-width: 120;
+}
+
+.seven-up td {
+  width: 102px;
+  -premailer-width: 102;
+}
+
+.eight-up td {
+  width: 90px;
+  -premailer-width: 90;
+}
+
+/* Alignment and Visibility Classes */
+
+table.center,
+td.center {
+  text-align: center;
+}
+
+h1.center,
+h2.center,
+h3.center,
+h4.center,
+h5.center,
+h6.center,
+p.center {
+  text-align: center;
+}
+
+span.center {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+img.center {
+  margin: 0 auto;
+  float: none;
+}
+
+.show-for-small,
+.hide-for-desktop {
+  display: none;
+  width: 0;
+  mso-hide: all;
+  overflow: hidden;
+}
+
+.show-for-small *,
+.hide-for-desktop * {
+  mso-hide: all;
+}
+
+/* Typography */
+
+body,
+table.body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+td {
+  color: #839097;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  line-height: 1.3;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  color: #000;
+  word-break: normal;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+body,
+table.body,
+p,
+td {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+p.lead,
+p.lede,
+p.leed {
+  font-size: 18px;
+  line-height: 20.7px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+small {
+  font-size: 11px;
+}
+
+a {
+  color: #279bd4;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #1f7ca9 !important;
+}
+
+a:active {
+  color: #1f7ca9 !important;
+}
+
+a:visited {
+  color: #279bd4 !important;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: #279bd4;
+}
+
+h1 a:active,
+h2 a:active,
+h3 a:active,
+h4 a:active,
+h5 a:active,
+h6 a:active {
+  color: #279bd4 !important;
+}
+
+h1 a:visited,
+h2 a:visited,
+h3 a:visited,
+h4 a:visited,
+h5 a:visited,
+h6 a:visited {
+  color: #279bd4 !important;
+}
+
+/* Panels */
+
+.panel {
+  background: #f2f2f2;
+  border: 1px solid #d9d9d9;
+  padding: 20px !important;
+}
+
+.sub-grid table {
+  width: 100%;
+}
+
+.sub-grid td.sub-columns {
+  padding-bottom: 0;
+}
+
+/* Buttons */
+
+table.button,
+table.tiny-button,
+table.small-button,
+table.medium-button,
+table.large-button {
+  width: 100%;
+  overflow: hidden;
+}
+
+table.button td,
+table.tiny-button td,
+table.small-button td,
+table.medium-button td,
+table.large-button td {
+  display: block;
+  width: auto !important;
+  text-align: center;
+  background: #cf2630;
+  border: 1px solid #b5212a;
+  color: #ffffff;
+  padding: 8px 0;
+  line-height: initial !important;
+}
+
+table.tiny-button td {
+  padding: 5px 0;
+}
+
+table.small-button td {
+  padding: 8px 0;
+}
+
+table.medium-button td {
+  padding: 12px 0;
+}
+
+table.large-button td {
+  padding: 21px 0;
+}
+
+table.button td a,
+table.tiny-button td a,
+table.small-button td a,
+table.medium-button td a,
+table.large-button td a {
+  font-weight: bold;
+  text-decoration: none;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  font-size: 11px;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+table.button td a .important,
+table.tiny-button td a .important,
+table.small-button td a .important,
+table.medium-button td a .important,
+table.large-button td a .important {
+  color: #ffffff !important;
+}
+
+table.tiny-button td a {
+  font-size: 9px;
+  font-weight: normal;
+}
+
+table.small-button td a {
+  font-size: 11px;
+}
+
+table.medium-button td a {
+  font-size: 14px;
+}
+
+table.large-button td a {
+  font-size: 18px;
+}
+
+table.button:hover td,
+table.button:visited td,
+table.button:active td {
+  background: #c2242d !important;
+}
+
+table.button:hover td a,
+table.button:visited td a,
+table.button:active td a,
+table.button:hover td a .important,
+table.button:visited td a .important,
+table.button:active td a .important {
+  color: #ffffff !important;
+}
+
+table.button:hover td,
+table.tiny-button:hover td,
+table.small-button:hover td,
+table.medium-button:hover td,
+table.large-button:hover td {
+  background: #c2242d !important;
+}
+
+table.button:hover td a,
+table.button:active td a,
+table.button td a:visited,
+table.tiny-button:hover td a,
+table.tiny-button:active td a,
+table.tiny-button td a:visited,
+table.small-button:hover td a,
+table.small-button:active td a,
+table.small-button td a:visited,
+table.medium-button:hover td a,
+table.medium-button:active td a,
+table.medium-button td a:visited,
+table.large-button:hover td a,
+table.large-button:active td a,
+table.large-button td a:visited,
+table.button:hover td a .important,
+table.button:active td a .important,
+table.button td a:visited .important,
+table.tiny-button:hover td a .important,
+table.tiny-button:active td a .important,
+table.tiny-button td a:visited .important,
+table.small-button:hover td a .important,
+table.small-button:active td a .important,
+table.small-button td a:visited .important,
+table.medium-button:hover td a .important,
+table.medium-button:active td a .important,
+table.medium-button td a:visited .important,
+table.large-button:hover td a .important,
+table.large-button:active td a .important,
+table.large-button td a:visited .important {
+  color: #ffffff !important;
+}
+
+table.secondary td {
+  background: #279bd4;
+  border-color: #2288ba;
+  color: #555555;
+}
+
+table.secondary td a {
+  color: #555555;
+}
+
+table.secondary td a .important {
+  color: #555555 !important;
+}
+
+table.secondary:hover td {
+  background: #2592c7 !important;
+  color: #555555;
+}
+
+table.secondary:hover td a,
+table.secondary td a:visited,
+table.secondary:active td a,
+table.secondary:hover td a .important,
+table.secondary td a:visited .important,
+table.secondary:active td a .important {
+  color: #555555 !important;
+}
+
+table.success td {
+  background: #5da423;
+  border-color: #396516;
+  color: #ffffff;
+}
+
+table.success td a {
+  color: #ffffff;
+}
+
+table.success td a .important {
+  color: #ffffff !important;
+}
+
+table.success:hover td {
+  background: #396516 !important;
+  color: #ffffff;
+}
+
+table.success:hover td a,
+table.success td a:visited,
+table.success:active td a,
+table.success:hover td a .important,
+table.success td a:visited .important,
+table.success:active td a .important {
+  color: #ffffff !important;
+}
+
+table.alert td {
+  background: #c60f13;
+  border-color: #67080a;
+  color: #ffffff;
+}
+
+table.alert td a {
+  color: #ffffff;
+}
+
+table.alert td a .important {
+  color: #ffffff !important;
+}
+
+table.alert:hover td {
+  background: #67080a !important;
+  color: #ffffff;
+}
+
+table.alert:hover td a,
+table.alert td a:visited,
+table.alert:active td a,
+table.alert:hover td a .important,
+table.alert td a:visited .important,
+table.alert:active td a .important {
+  color: #ffffff !important;
+}
+
+table.radius td {
+  border-radius: 3px;
+}
+
+table.round td {
+  border-radius: 500px;
+}
+
+/* Outlook First */
+
+body.outlook p {
+  display: inline !important;
+}
+
+/*  Media Queries */
+
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+.hidden,
+.hidden * {
+  mso-hide: all;
+}
+
+.appleLinks a {
+  color: #279bd4;
+  text-decoration: none;
+}
+
+.appleLinks a .important {
+  text-decoration: none !important;
+}
+
+.appleLinks a:hover,
+.appleLinks a:active {
+  color: #1f7ca9 !important;
+}
+
+.appleLinks a:visited {
+  color: #279bd4 !important;
+}
+
+a[href^=tel] {
+  color: inherit;
+  text-decoration: none;
+}
+
+a[href^=tel] .important {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+a.link_box {
+  display: block;
+}
+
+a.link_box,
+a.link_box:link,
+a.link_box:visited,
+a.link_box:hover,
+a.link_box:focus,
+a.link_box:active {
+  text-decoration: none;
+  outline: none;
+}
+
+a.link_underline {
+  text-decoration: underline;
+}
+
+a.link_underline .important {
+  text-decoration: underline !important;
+}
+
+a.link_underline:hover,
+a.link_underline:focus {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+a.link_disabled {
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+}
+
+a.link_disabled .important {
+  pointer-events: none !important;
+  cursor: default !important;
+  text-decoration: none !important;
+}
+
+table {
+  -premailer-cellpadding: 0;
+  -premailer-cellspacing: 0;
+  empty-cells: hide;
+}
+
+table.row {
+  -premailer-width: 100%;
+}
+
+table.body {
+  -premailer-height: 100%;
+  -premailer-width: 100%;
+}
+
+.block-grid {
+  -premailer-width: 100%;
+}
+
+.body .columns td.one,
+.body .column td.one {
+  -premailer-width: 8.333333%;
+}
+
+.body .columns td.two,
+.body .column td.two {
+  -premailer-width: 16.666666%;
+}
+
+.body .columns td.three,
+.body .column td.three {
+  -premailer-width: 25%;
+}
+
+.body .columns td.four,
+.body .column td.four {
+  -premailer-width: 33.333333%;
+}
+
+.body .columns td.five,
+.body .column td.five {
+  -premailer-width: 41.666666%;
+}
+
+.body .columns td.six,
+.body .column td.six {
+  -premailer-width: 50%;
+}
+
+.body .columns td.seven,
+.body .column td.seven {
+  -premailer-width: 58.333333%;
+}
+
+.body .columns td.eight,
+.body .column td.eight {
+  -premailer-width: 66.666666%;
+}
+
+.body .columns td.nine,
+.body .column td.nine {
+  -premailer-width: 75%;
+}
+
+.body .columns td.ten,
+.body .column td.ten {
+  -premailer-width: 83.333333%;
+}
+
+.body .columns td.eleven,
+.body .column td.eleven {
+  -premailer-width: 91.666666%;
+}
+
+.body .columns td.twelve,
+.body .column td.twelve {
+  -premailer-width: 100%;
+}
+
+td.expander {
+  -premailer-width: 1;
+}
+
+.sub-grid table {
+  -premailer-width: 100%;
+}
+
+table.button,
+table.tiny-button,
+table.small-button,
+table.medium-button,
+table.large-button {
+  -premailer-width: 100%;
+}
+
+table.button td,
+table.tiny-button td,
+table.small-button td,
+table.medium-button td,
+table.large-button td {
+  -premailer-width: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  mso-line-height-rule: exactly;
+}
+
+h1 {
+  line-height: 33px;
+}
+
+h2 {
+  line-height: 30.8px;
+}
+
+h3 {
+  line-height: 26.4px;
+}
+
+h4 {
+  line-height: 24.2px;
+}
+
+h5 {
+  line-height: 19.8px;
+}
+
+h6 {
+  line-height: 17.6px;
+}
+
+p {
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 0px;
+}
+
+.readMore {
+  width: 100%;
+  -premailer-width: 100%;
+  overflow: hidden;
+  clear: both;
+}
+
+table.columns .readMore td.buttonWrapper,
+table.column .readMore td.buttonWrapper {
+  padding-bottom: 0px;
+  clear: both;
+}
+
+table.columns .readMore td.buttonWrapper td,
+table.column .readMore td.buttonWrapper td {
+  color: #ffffff;
+}
+
+table.columns .readMore table.medium-button,
+table.column .readMore table.medium-button {
+  display: table;
+  table-layout: auto;
+  width: auto;
+  -premailer-width: auto;
+  float: right;
+}
+
+table.columns .readMore table.medium-button td,
+table.column .readMore table.medium-button td {
+  width: auto;
+  float: none;
+  -premailer-width: auto;
+  padding: 4px 8px;
+  vertical-align: middle;
+}
+
+table.columns .readMore table.medium-button td a,
+table.column .readMore table.medium-button td a,
+table.columns .readMore table.medium-button td p,
+table.column .readMore table.medium-button td p {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+table.columns .text + .readMore td.buttonWrapper,
+table.column .text + .readMore td.buttonWrapper {
+  padding-top: 20px;
+}
+
+a.medium-button-link {
+  padding: 0px;
+  margin: 0px;
+  color: #ffffff;
+  line-height: 19px;
+  mso-line-height-rule: exactly;
+}
+
+a.medium-button-link .important,
+a.medium-button-link:visited,
+a.medium-button-link:hover,
+a.medium-button-link:focus,
+a.medium-button-link:active {
+  color: #ffffff !important;
+}
+
+table.columns .readMore td.buttonWrapper td,
+table.column .readMore td.buttonWrapper td,
+table.columns .readMore td.buttonWrapper td p.MsoNormal,
+table.column .readMore td.buttonWrapper td p.MsoNormal {
+  line-height: 19px !important;
+  mso-line-height-rule: exactly;
+  margin: 0px;
+}
+
+table.columns .readMore td.buttonWrapper td p.MsoNormal,
+table.column .readMore td.buttonWrapper td p.MsoNormal {
+  padding: 0px;
+}
+
+a.medium-button-link,
+table.columns .readMore td.buttonWrapper td,
+table.column .readMore td.buttonWrapper td {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.link_box img,
+.contentRef img,
+.contentBottom img {
+  float: none;
+}
+
+table.imgCont {
+  width: 100%;
+}
+
+table.imgCont td {
+  padding: 0 0 5px 0;
+}
+
+table.imgCont .icon-img,
+body table.imgCont img {
+  display: inline;
+  float: none;
+}
+
+table.imgCont .icon-img {
+  position: relative;
+  vertical-align: text-bottom;
+  line-height: 60px;
+  width: 80px !important;
+  height: 80px !important;
+}
+
+.webicons td {
+  text-align: right;
+}
+
+.webicon {
+  display: inline;
+  font-size: 0px;
+  mso-line-height-rule: exactly;
+  line-height: 0px;
+}
+
+.webicon img {
+  display: inline;
+  float: none;
+}
+
+img.spacer-webicon {
+  display: inline;
+  float: none;
+}
+
+.header {
+  background-color: #4d616d;
+}
+
+.header,
+.header td,
+.header .inner {
+  color: #eff2f4;
+}
+
+.header a {
+  color: #eff2f4;
+}
+
+.header a .important,
+.header a:visited,
+.header a:hover,
+.header a:focus,
+.header a:active {
+  color: #eff2f4 !important;
+}
+
+.header td {
+  text-align: right;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.header .title {
+  text-align: right;
+  font-weight: 200;
+  color: #ffffff;
+}
+
+.contentOnline {
+  background-color: #f5f7f8;
+}
+
+.contentOnline,
+.contentOnline td,
+.contentOnline .inner {
+  color: #8ba1af;
+}
+
+.contentOnline a {
+  color: #8ba1af;
+}
+
+.contentOnline a .important,
+.contentOnline a:visited,
+.contentOnline a:hover,
+.contentOnline a:focus,
+.contentOnline a:active {
+  color: #8ba1af !important;
+}
+
+.contentOnline td {
+  font-size: 11px;
+  line-height: 13.75px;
+}
+
+.contentOnline td.wrapper {
+  padding-top: 10px;
+}
+
+.contentOnline table.columns td,
+.contentOnline table.column td {
+  padding-bottom: 10px;
+}
+
+.contentIntro {
+  background-color: #eff2f4;
+}
+
+.contentIntro table.columns td,
+.contentIntro table.column td {
+  padding-bottom: 10px;
+}
+
+.contentRef {
+  background-color: #eff2f4;
+}
+
+.contentRef td.wrapper {
+  padding-top: 0px;
+}
+
+.contentRef table.columns td,
+.contentRef table.column td {
+  padding-bottom: 0px;
+}
+
+.contentMain {
+  background-color: #eff2f4;
+}
+
+.contentBottom .title {
+  text-align: center;
+  font-weight: normal;
+  color: #279bd4;
+  padding-bottom: 5px;
+}
+
+.contentBottom table.columns .text-pad,
+.contentBottom table.column .text-pad {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+
+.contentContact,
+.contentContact td,
+.contentContact .inner {
+  color: #cf2630;
+}
+
+.contentContact a {
+  color: #cf2630;
+}
+
+.contentContact a .important,
+.contentContact a:visited,
+.contentContact a:hover,
+.contentContact a:focus,
+.contentContact a:active {
+  color: #cf2630 !important;
+}
+
+.contentContact td {
+  font-size: 18px;
+  line-height: 22.5px;
+  font-weight: bold;
+}
+
+.contentFooter {
+  background-color: #4d616d;
+}
+
+.contentFooter,
+.contentFooter td,
+.contentFooter .inner {
+  color: #ffffff;
+}
+
+.contentFooter a {
+  color: #ffffff;
+}
+
+.contentFooter a .important,
+.contentFooter a:visited,
+.contentFooter a:hover,
+.contentFooter a:focus,
+.contentFooter a:active {
+  color: #ffffff !important;
+}
+
+.contentFooter td.wrapper.first td,
+.contentFooter td.wrapper.first td .ei_lep {
+  line-height: 30px;
+  mso-line-height-rule: exactly;
+  mso-line-height-alt: 26px;
+}
+
+.contentFooter td.wrapper.first td .ei_lep {
+  color: #ffffff;
+}
+
+.contentFooter td.wrapper {
+  padding-top: 10px;
+}
+
+.contentFooter table.columns td,
+.contentFooter table.column td {
+  padding-bottom: 10px;
+}
+
+.contentUnsubscribe {
+  background-color: #f5f7f8;
+}
+
+.contentUnsubscribe,
+.contentUnsubscribe td,
+.contentUnsubscribe .inner {
+  color: #8ba1af;
+}
+
+.contentUnsubscribe a {
+  color: #8ba1af;
+}
+
+.contentUnsubscribe a .important,
+.contentUnsubscribe a:visited,
+.contentUnsubscribe a:hover,
+.contentUnsubscribe a:focus,
+.contentUnsubscribe a:active {
+  color: #8ba1af !important;
+}
+
+.contentUnsubscribe td {
+  font-size: 11px;
+  line-height: 13.75px;
+}
+
+.contentUnsubscribe td.wrapper {
+  padding-top: 10px;
+}
+
+.contentUnsubscribe table.columns td,
+.contentUnsubscribe table.column td {
+  padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 720px) {
+  table[class="body"] img {
+    max-width: auto !important;
+    max-height: auto !important;
+    width: auto !important;
+    height: auto !important;
+  }
+
+  table[class="body"] center {
+    min-width: 0 !important;
+  }
+
+  table[class="body"] .container {
+    width: 95% !important;
+  }
+
+  table[class="body"] .row {
+    position: relative !important;
+    width: 100% !important;
+    display: block !important;
+  }
+
+  table[class="body"] .wrapper {
+    position: relative !important;
+    display: block !important;
+    padding-top: 10px !important;
+    padding-right: 0 !important;
+  }
+
+  table[class="body"] .columns,
+  table[class="body"] .column {
+    table-layout: fixed !important;
+    float: none !important;
+    width: 100% !important;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    display: block !important;
+  }
+
+  table[class="body"] .wrapper.first .columns,
+  table[class="body"] .wrapper.first .column {
+    display: table !important;
+  }
+
+  table[class="body"] table.columns td,
+  table[class="body"] table.column td {
+    width: 100% !important;
+    padding-bottom: 10px !important;
+  }
+
+  table[class="body"] .columns td.one,
+  table[class="body"] .column td.one {
+    width: 8.333333% !important;
+  }
+
+  table[class="body"] .columns td.two,
+  table[class="body"] .column td.two {
+    width: 16.666666% !important;
+  }
+
+  table[class="body"] .columns td.three,
+  table[class="body"] .column td.three {
+    width: 25% !important;
+  }
+
+  table[class="body"] .columns td.four,
+  table[class="body"] .column td.four {
+    width: 33.333333% !important;
+  }
+
+  table[class="body"] .columns td.five,
+  table[class="body"] .column td.five {
+    width: 41.666666% !important;
+  }
+
+  table[class="body"] .columns td.six,
+  table[class="body"] .column td.six {
+    width: 50% !important;
+  }
+
+  table[class="body"] .columns td.seven,
+  table[class="body"] .column td.seven {
+    width: 58.333333% !important;
+  }
+
+  table[class="body"] .columns td.eight,
+  table[class="body"] .column td.eight {
+    width: 66.666666% !important;
+  }
+
+  table[class="body"] .columns td.nine,
+  table[class="body"] .column td.nine {
+    width: 75% !important;
+  }
+
+  table[class="body"] .columns td.ten,
+  table[class="body"] .column td.ten {
+    width: 83.333333% !important;
+  }
+
+  table[class="body"] .columns td.eleven,
+  table[class="body"] .column td.eleven {
+    width: 91.666666% !important;
+  }
+
+  table[class="body"] .columns td.twelve,
+  table[class="body"] .column td.twelve {
+    width: 100% !important;
+  }
+
+  table[class="body"] td.offset-by-one,
+  table[class="body"] td.offset-by-two,
+  table[class="body"] td.offset-by-three,
+  table[class="body"] td.offset-by-four,
+  table[class="body"] td.offset-by-five,
+  table[class="body"] td.offset-by-six,
+  table[class="body"] td.offset-by-seven,
+  table[class="body"] td.offset-by-eight,
+  table[class="body"] td.offset-by-nine,
+  table[class="body"] td.offset-by-ten,
+  table[class="body"] td.offset-by-eleven {
+    padding-left: 0 !important;
+  }
+
+  table[class="body"] table.columns td.expander {
+    width: 1px !important;
+  }
+
+  table[class="body"] .text-pad {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  table[class="body"] .right-text-pad,
+  table[class="body"] .text-pad-right {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  table[class="body"] .left-text-pad,
+  table[class="body"] .text-pad-left {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  table[class="body"] .hide-for-small,
+  table[class="body"] .show-for-desktop {
+    display: none !important;
+  }
+
+  table[class="body"] .show-for-small,
+  table[class="body"] .hide-for-desktop {
+    display: block !important;
+    width: auto !important;
+    overflow: visible !important;
+  }
+
+  table[class="container"] .block-grid td {
+    width: 100% !important;
+    padding: 10px !important;
+  }
+
+  table[class="container"] .panel {
+    padding: 10px !important;
+  }
+
+  table[class="body"] body,
+  table[class="body"],
+  table[class="body"] p,
+  table[class="body"] td {
+    font-size: 12px !important;
+    line-height: 16px !important;
+  }
+
+  table[class="body"] small {
+    font-size: 9px !important;
+  }
+
+  table[class="body"] h1 {
+    font-size: 27px !important;
+    line-height: 29.7px !important;
+  }
+
+  table[class="body"] h2 {
+    font-size: 25px !important;
+    line-height: 27.5px !important;
+  }
+
+  table[class="body"] h3 {
+    font-size: 21px !important;
+    line-height: 23.1px !important;
+  }
+
+  table[class="body"] h4 {
+    font-size: 19px !important;
+    line-height: 20.9px !important;
+  }
+
+  table[class="body"] h5 {
+    font-size: 16px !important;
+    line-height: 17.6px !important;
+  }
+
+  table[class="body"] h6 {
+    font-size: 14px !important;
+    line-height: 15.4px !important;
+  }
+
+  table[class="body"] table.columns .readMore td.buttonWrapper,
+  table[class="body"] table.column .readMore td.buttonWrapper {
+    padding-bottom: 0px !important;
+  }
+
+  table[class="body"] table.columns .readMore table.medium-button,
+  table[class="body"] table.column .readMore table.medium-button {
+    display: table !important;
+    table-layout: auto !important;
+    width: auto !important;
+  }
+
+  table[class="body"] table.columns .readMore table.medium-button td,
+  table[class="body"] table.column .readMore table.medium-button td {
+    width: auto !important;
+    padding: 4px 8px !important;
+  }
+
+  table[class="body"] a.medium-button-link,
+  table[class="body"] table.columns .readMore td.buttonWrapper td,
+  table[class="body"] table.column .readMore td.buttonWrapper td {
+    font-size: 11px !important;
+    line-height: 15px !important;
+  }
+
+  table[class="body"] table.imgCont {
+    width: auto !important;
+    float: left !important;
+  }
+
+  table[class="body"] table.imgCont td {
+    padding: 0 10px 0 0 !important;
+  }
+
+  table[class="body"] table.imgCont .icon-img {
+    display: block !important;
+    float: left !important;
+    width: 80px !important;
+    height: 80px !important;
+  }
+
+  table[class="body"] table.imgCont .icon-img[data-type^="get"] {
+    display: none !important;
+  }
+
+  table[class="body"] .webicons .columns,
+  table[class="body"] .webicons .column {
+    display: table !important;
+  }
+
+  table[class="body"] .webicons td {
+    text-align: center !important;
+  }
+
+  table[class="body"] .webicon img {
+    width: 30px !important;
+    height: 30px !important;
+  }
+
+  table[class="body"] img.spacer-webicon {
+    width: 10px !important;
+    height: 30px !important;
+  }
+
+  table[class="body"] .header td {
+    text-align: center !important;
+  }
+
+  table[class="body"] .header .title {
+    text-align: center !important;
+    line-height: 1em !important;
+  }
+
+  table[class="body"] .contentOnline td {
+    font-size: 11px !important;
+    line-height: 13.75px !important;
+  }
+
+  table[class="body"] .contentOnline td.wrapper {
+    padding-top: 5px !important;
+  }
+
+  table[class="body"] .contentOnline table.columns td,
+  table[class="body"] .contentOnline table.column td {
+    padding-bottom: 5px !important;
+  }
+
+  table[class="body"] .contentIntro table.columns td,
+  table[class="body"] .contentIntro table.column td {
+    padding-bottom: 5px !important;
+  }
+
+  table[class="body"] .contentRef td.wrapper {
+    padding-top: 0px !important;
+  }
+
+  table[class="body"] .contentRef table.columns td,
+  table[class="body"] .contentRef table.column td {
+    padding-bottom: 0px !important;
+  }
+
+  table[class="body"] .contentBottom td,
+  table[class="body"] .contentBottom td .title {
+    text-align: left !important;
+  }
+
+  table[class="body"] .contentBottom table.columns .text-pad,
+  table[class="body"] .contentBottom table.column .text-pad {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  table[class="body"] .contentContact td {
+    font-size: 14px !important;
+    line-height: 17.5px !important;
+  }
+
+  table[class="body"] .contentFooter td.wrapper.first td {
+    font-size: 16px !important;
+    line-height: 16px !important;
+  }
+
+  table[class="body"] .contentFooter td.wrapper.first td,
+  table[class="body"] .contentFooter td.wrapper.first td .ei_lep {
+    text-align: center !important;
+  }
+
+  table[class="body"] .contentFooter td.wrapper {
+    padding-top: 5px !important;
+  }
+
+  table[class="body"] .contentFooter table.columns td,
+  table[class="body"] .contentFooter table.column td {
+    padding-bottom: 5px !important;
+  }
+
+  table[class="body"] .contentUnsubscribe td {
+    font-size: 11px !important;
+    line-height: 13.75px !important;
+  }
+
+  table[class="body"] .contentUnsubscribe td.wrapper {
+    padding-top: 5px !important;
+  }
+
+  table[class="body"] .contentUnsubscribe table.columns td,
+  table[class="body"] .contentUnsubscribe table.column td {
+    padding-bottom: 5px !important;
+  }
+}
