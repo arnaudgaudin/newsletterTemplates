@@ -92,7 +92,6 @@ p {
 			table-layout: auto;
 			width: auto;
 			-premailer-width: auto;
-			float: right;
 			td {
 				width: auto;
 				float: none;
@@ -351,8 +350,14 @@ img.spacer-webicon {
 
 	table.columns, table.column {
 		table.subWrapper {
-			width: 100%;
-			-premailer-width: 100%;
+			&, td.buttonWrapper table {
+				width: 100%;
+				-premailer-width: 100%;
+			}
+			td.sub-columns {
+				padding-top: (@wrapperPad / 2);
+				padding-bottom: 0px;
+			}
 
 			.text-pad-right { padding-right: (@textPad / 2) !important; }
 			.text-pad-left { padding-left: (@textPad / 2) !important; }

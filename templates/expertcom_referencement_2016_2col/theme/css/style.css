@@ -1189,7 +1189,6 @@ table.column .readMore table.medium-button {
   table-layout: auto;
   width: auto;
   -premailer-width: auto;
-  float: right;
 }
 
 table.columns .readMore table.medium-button td,
@@ -1416,9 +1415,17 @@ img.spacer-webicon {
 }
 
 .contentMain table.columns table.subWrapper,
-.contentMain table.column table.subWrapper {
+.contentMain table.column table.subWrapper,
+.contentMain table.columns table.subWrapper td.buttonWrapper table,
+.contentMain table.column table.subWrapper td.buttonWrapper table {
   width: 100%;
   -premailer-width: 100%;
+}
+
+.contentMain table.columns table.subWrapper td.sub-columns,
+.contentMain table.column table.subWrapper td.sub-columns {
+  padding-top: 10px;
+  padding-bottom: 0px;
 }
 
 .contentMain table.columns table.subWrapper .text-pad-right,
