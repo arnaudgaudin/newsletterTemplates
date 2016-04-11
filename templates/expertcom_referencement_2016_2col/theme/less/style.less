@@ -312,7 +312,8 @@ img.spacer-webicon {
 // contentRef area
 // -------------------------
 .contentRef {
-	background-color: @colorExpertCom6;
+	background-color: #0f0;
+	// background-color: @colorExpertCom6;
 	//réduction décalage vertical
 	td.wrapper { padding-top: 0px; }
 	table.columns td, table.column td { padding-bottom: 0px; }
@@ -328,7 +329,25 @@ img.spacer-webicon {
 // contentMain area
 // -------------------------
 .contentMain {
-	background-color: @colorExpertCom6;
+	// background-color: @colorExpertCom6;
+	background-color: #f00;
+	td.wrapper {
+		&.first {
+			background-color: #E8BCE4;
+
+			table.columns, table.column {
+				.text-pad { padding-right: (@textPad / 2) !important; }
+			}
+		}
+		&.last {
+			background-color: #BCE8E1;
+
+			table.columns, table.column {
+				.text-pad { padding-left: (@textPad / 2) !important; }
+			}
+		}
+	}
+
 }
 
 

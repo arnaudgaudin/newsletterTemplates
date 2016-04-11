@@ -1381,7 +1381,7 @@ img.spacer-webicon {
 }
 
 .contentRef {
-  background-color: #eff2f4;
+  background-color: #0f0;
 }
 
 .contentRef td.wrapper {
@@ -1394,7 +1394,25 @@ img.spacer-webicon {
 }
 
 .contentMain {
-  background-color: #eff2f4;
+  background-color: #f00;
+}
+
+.contentMain td.wrapper.first {
+  background-color: #E8BCE4;
+}
+
+.contentMain td.wrapper.first table.columns .text-pad,
+.contentMain td.wrapper.first table.column .text-pad {
+  padding-right: 20px !important;
+}
+
+.contentMain td.wrapper.last {
+  background-color: #BCE8E1;
+}
+
+.contentMain td.wrapper.last table.columns .text-pad,
+.contentMain td.wrapper.last table.column .text-pad {
+  padding-left: 20px !important;
 }
 
 .contentBottom .title {
