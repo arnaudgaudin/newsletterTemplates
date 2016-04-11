@@ -344,10 +344,27 @@ img.spacer-webicon {
 
 			table.columns, table.column {
 				.text-pad { padding-left: (@textPad / 2) !important; }
+
 			}
 		}
 	}
 
+	table.columns, table.column {
+		table.subWrapper {
+			width: 100%;
+			-premailer-width: 100%;
+
+			.text-pad-right { padding-right: (@textPad / 2) !important; }
+			.text-pad-left { padding-left: (@textPad / 2) !important; }
+
+			td.first {
+				background-color: #008;
+			}
+			td.last {
+				background-color: #00c;
+			}
+		}
+	}
 }
 
 

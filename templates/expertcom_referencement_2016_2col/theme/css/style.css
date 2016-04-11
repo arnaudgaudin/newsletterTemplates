@@ -1415,6 +1415,32 @@ img.spacer-webicon {
   padding-left: 20px !important;
 }
 
+.contentMain table.columns table.subWrapper,
+.contentMain table.column table.subWrapper {
+  width: 100%;
+  -premailer-width: 100%;
+}
+
+.contentMain table.columns table.subWrapper .text-pad-right,
+.contentMain table.column table.subWrapper .text-pad-right {
+  padding-right: 20px !important;
+}
+
+.contentMain table.columns table.subWrapper .text-pad-left,
+.contentMain table.column table.subWrapper .text-pad-left {
+  padding-left: 20px !important;
+}
+
+.contentMain table.columns table.subWrapper td.first,
+.contentMain table.column table.subWrapper td.first {
+  background-color: #008;
+}
+
+.contentMain table.columns table.subWrapper td.last,
+.contentMain table.column table.subWrapper td.last {
+  background-color: #00c;
+}
+
 .contentBottom .title {
   text-align: center;
   font-weight: normal;
