@@ -342,8 +342,14 @@ img.spacer-webicon {
 			table.subWrapper {
 				&, td.buttonWrapper table { width: 100% !important; }
 				td.sub-columns { padding-top: (@wrapperPadCollapse / 2); }
-				.text-pad-right { padding-right: (@textPadCollapse / 2) !important; }
-				.text-pad-left { padding-left: (@textPadCollapse / 2) !important; }
+				.text-pad-right {
+					padding-left: 0px !important;
+					padding-right: (@textPadCollapse / 2) !important;
+				}
+				.text-pad-left {
+					padding-left: (@textPadCollapse / 2) !important;
+					padding-right: 0px !important;
+				}
 			}
 		}
 	}
