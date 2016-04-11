@@ -316,18 +316,11 @@ img.spacer-webicon {
 	td.wrapper {
 		&.first {
 			background-color: #E8BCE4;
-
-			table.columns, table.column {
-				.text-pad { padding-right: (@textPad / 2) !important; }
-			}
+			table.columns, table.column { .text-pad { padding-right: (@textPad / 2) !important; } }
 		}
 		&.last {
 			background-color: #BCE8E1;
-
-			table.columns, table.column {
-				.text-pad { padding-left: (@textPad / 2) !important; }
-
-			}
+			table.columns, table.column { .text-pad { padding-left: (@textPad / 2) !important; } }
 		}
 	}
 
@@ -350,6 +343,26 @@ img.spacer-webicon {
 			}
 			td.last {
 				background-color: #00c;
+			}
+		}
+	}
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentMain {
+		td.wrapper {
+			&.first {
+				table.columns, table.column { .text-pad { padding-right: @textPadCollapse !important; } }
+			}
+			&.last {
+				table.columns, table.column { .text-pad { padding-left: @textPadCollapse !important; } }
+			}
+		}
+		table.columns, table.column {
+			table.subWrapper {
+				&, td.buttonWrapper table { width: 100% !important; }
+				td.sub-columns { padding-top: (@wrapperPadCollapse / 2); }
+				.text-pad-right { padding-right: (@textPadCollapse / 2) !important; }
+				.text-pad-left { padding-left: (@textPadCollapse / 2) !important; }
 			}
 		}
 	}
