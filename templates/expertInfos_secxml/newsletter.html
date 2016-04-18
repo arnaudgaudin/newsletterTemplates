@@ -498,26 +498,6 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 								<!-- ALAUNE END -->
 
 								<!-- ARTICLES START -->
-								<!--{{%%{{
-								if isDemo=True then
-									sql_Chapitre_Flash_Infos="SELECT * FROM CHAPITRES_FLASHS_INFOS where ID_FLASH_INFOS = "& ID_FLASH_INFOS &" order by ORDRE_CHAPITRE_FLASH_INFOS DESC"
-									set rs_Chapitre_Flash_Infos=conn.execute(sql_Chapitre_Flash_Infos)
-									                          
-									if not rs_Chapitre_Flash_Infos.eof then
-										while not rs_Chapitre_Flash_Infos.eof
-											idarticle_1=rs_Chapitre_Flash_Infos(0)
-											rs_Chapitre_Flash_Infos.movenext
-											if idarticle_1<>idarticleAlaune then
-												idarticle= idarticle_1 &"-"& idarticle
-											end if
-										wend
-									end if
-								end if
-
-								if isDemo=False then
-									idarticle=idarticle&"-"
-								end if
-								}}%%}}-->
 								<table border="0" class="row contentArticles">
 									<tr>
 										<td class="wrapper first last">
@@ -526,6 +506,7 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 													<td class="text-pad">
 														<h5 class="preTitle">Autres <span class="last">actualités</span></h5>
 														<!--{{%%{{
+														idarticle=idarticle&"-"
 														if idarticle="" then request.QueryString("amp;idarticle")
 														article=Mid(idarticle,1,(len(idarticle)))
 														nbc_desc=len(article)
@@ -548,12 +529,8 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 															set rsCountArt=conn.Execute(CountArt)
 															nbrart=rsCountArt(0)
 
-															article_qstart_v3 = InStr(rsArticle("URL_DETAIL_V3"),"?")
-															if (article_qstart_v3 > 0) then
-																article_url_v3 = Replace(rsArticle("URL_DETAIL_V3"),"?","?fintrack=&amp;",article_qstart_v3,1)
-															else
-																article_url_v3 = "?fintrack=&amp;"&rsArticle("URL_DETAIL_V3")
-															end if
+															'Composition lien article'
+															lien_article = "http://"&URL_NL_XML&id_de_larticle&URL_NL_XML_SUF
 
 															article_rub = ""
 															article_titre = rsArticle("TITRE_CHAPITRE_FLASH_INFOS")
@@ -567,12 +544,12 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 															end if
 														}}%%}}-->
 														<h3 class="title">
-															<a target="_blank" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%&amp;%%{{=tracking_url}}%%">
+															<a target="_blank" href="%%{{=lien_article}}%%">
 																<span class="important"><!--{{%%{{=article_titre}}%%}}--><!--DEL{{-->article_titre<!--}}DEL--></span>
 															</a>
 														</h3>
 														<div class="text">
-															<a target="_blank" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%&amp;%%{{=tracking_url}}%%">
+															<a target="_blank" href="%%{{=lien_article}}%%">
 																<span class="important"><!--{{%%{{=rsArticle("CONTENU_CHAPITRE_FLASH_INFOS")}}%%}}--><!--DEL{{-->CONTENU_CHAPITRE_FLASH_INFOS<!--}}DEL--></span>
 															</a>
 														</div>
@@ -582,7 +559,7 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 																	<table border="0" align="right" class="tiny-button">
 																		<tr>
 																			<td>
-																				<a target="_blank" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%&amp;%%{{=tracking_url}}%%"><span class="important">Lire la suite</span></a>
+																				<a target="_blank" href="%%{{=lien_article}}%%"><span class="important">Lire la suite</span></a>
 																			</td>
 																		</tr>
 																	</table>
