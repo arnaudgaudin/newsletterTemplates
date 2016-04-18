@@ -1,0 +1,181 @@
+// extends theme's variables.less file here
+
+// Expert Infos
+// -------------------------
+@avocatInfosOrange: #c73b1b;
+@avocatInfosViolet: #79468c;	//Violet foncé : #452258 => darken 15%
+
+
+// Secteur - sections
+// -------------------------
+//listing de tous les motifs TESTA des secteurs
+@secteur-section-motifs: BTP, SAN, TRA, COM, HCR, ECO;
+
+//couleurs associées à chacun des motifs des secteurs
+@secteur-section-color-BTP: #f39b1e;					//bâtiment travaux publics
+@secteur-section-color-SAN: #20a611;					//santé
+@secteur-section-color-TRA: #e7503d;					//transport
+@secteur-section-color-COM: #9186bc;					//commerce
+@secteur-section-color-HCR: #c9526f;					//hotels cafés restaurants
+@secteur-section-color-ECO: #009cdd;					//économie
+
+
+// Main colors
+// -------------------------
+// Pas de couleurs 1, cette dernière est variabilisée par le motif du secteur
+// @colorCouleur1: @secteur-section-color-BTP;
+// @colorCouleur1Clair: lighten(@colorCouleur1, 25%);
+// @colorCouleur1Moyen: darken(@colorCouleur1, 15%);
+// @colorCouleur1Fonce: darken(@colorCouleur1, 30%);
+
+@colorCouleur2: #4f5966;
+@colorCouleur2Clair: lighten(@colorCouleur2, 25%);
+@colorCouleur2Moyen: darken(@colorCouleur2, 10%);
+@colorCouleur2Fonce: darken(@colorCouleur2, 20%);
+
+@colorCouleur3: #919191;
+@colorCouleur3Clair: lighten(@colorCouleur3, 35%);
+@colorCouleur3Moyen: lighten(@colorCouleur3, 20%);
+@colorCouleur3Fonce: darken(@colorCouleur3, 20%);
+
+
+// Newsletter Default Colors
+// --------------------------------------------------
+@nlContainerBackground: #ffffff;
+@nlText: #666666;
+@nlHeadings: #333333;
+@nlLinkColor: @nlText;
+@nlLinkColorHover: @nlLinkColor;
+@nlPreTitle: @nlHeadings;
+
+//Affichage de la date et des infos sur la news
+@nlCntDtiInfoBackground: @colorCouleur2;
+@nlCntDtiInfoText: #ffffff;
+@nlCntDtiDateBackground: lighten(@nlCntDtiInfoBackground, 25%);
+@nlCntDtiDateText: @nlCntDtiInfoText;
+
+//Le cabinet vous informe
+@nlCntCabBackground: @colorCouleur3Clair;
+@nlCntCabTitle: darken(@nlHeadings, 5%);
+@nlCntCabText: darken(@nlText, 5%);
+@nlCntCabReadMoreBackground: @colorCouleur3;
+@nlCntCabReadMoreBackgroundHover: darken(@nlCntCabReadMoreBackground, 10%);
+@nlCntCabReadMoreBorder: darken(@nlCntCabReadMoreBackground, 12%);
+@nlCntCabReadMoreText: #ffffff;
+
+//À la Une
+@nlCntUneReadMoreText: #ffffff;
+
+//Les articles
+@nlCntArtBackground: @colorCouleur3Clair;
+@nlCntArtReadMoreBackground: @colorCouleur3;
+@nlCntArtReadMoreBackgroundHover: darken(@nlCntArtReadMoreBackground, 10%);
+@nlCntArtReadMoreBorder: darken(@nlCntArtReadMoreBackground, 12%);
+@nlCntArtReadMoreText: #ffffff;
+
+//Les études sectorielles
+@nlCntEtuBackground: @colorCouleur2;
+@nlCntEtuText: #ffffff;
+
+//Contact
+@nlCntCctBackground: @nlContainerBackground;
+@nlCntCctText: @nlText;
+
+//Footer
+@nlFooterBackground: @nlContainerBackground;
+@nlFooterText: darken(@nlFooterBackground, 45%);
+
+//configuration de la grille
+@nlColumnWidth: 60px;
+@nlGutterWidth: 0px;
+@nlContainerWidth: (11 * @nlGutterWidth + 12 * @nlColumnWidth);
+
+
+// Newsletter Custom Colors
+// --------------------------------------------------
+//couleur de fond générale
+@nlSecBodyBackground: lighten(@colorCouleur3, 30%);
+
+//Visualisation message en ligne et Titre
+@nlSecCntOnlineBackground: @nlSecBodyBackground;
+@nlSecCntOnlineText: darken(@nlSecCntOnlineBackground, 45%);
+@nlSecCntOnlineName: #333333;
+
+//couleurs du dernier mot des pre-titres
+@nlPreTitleLast: @secteur-section-color-BTP;
+
+//couleur de fond des bordures de séparation
+@nlHrBorder: @secteur-section-color-BTP;
+
+//À la Une
+@nlCntUneReadMoreBackground: @secteur-section-color-BTP;
+@nlCntUneReadMoreBackgroundHover: darken(@nlCntUneReadMoreBackground, 10%);
+@nlCntUneReadMoreBorder: darken(@nlCntUneReadMoreBackground, 12%);
+
+//Les études sectorielles
+@nlCntEtuBorder: @secteur-section-color-BTP;
+
+
+// Scaffolding
+// -------------------------
+@bodyBackground: @nlSecBodyBackground;
+@containerBackground: @nlContainerBackground;
+@textColor: @nlText;
+
+
+// Links
+// -------------------------
+@linkColor:             @nlLinkColor;
+@linkColorHover:        @nlLinkColorHover;
+
+
+// Typography
+// -------------------------
+@baseFontSize:          12px;
+@baseLineHeight:        16px;
+@headingsColor:         @nlHeadings;
+@headingsFontWeight:    bold;
+
+
+// Component sizing
+// -------------------------
+@headingsFontSizeH1:    38px;
+@headingsFontSizeH2:    30px;
+@headingsFontSizeH3:    22px;
+@headingsFontSizeH4:    18px;
+@headingsFontSizeH5:    16px;
+@headingsFontSizeH6:    14px;
+
+@fontSizeLarge:         floor(@baseFontSize * 1.30);  // ~18px
+@fontSizeSmall:         ceil(@baseFontSize * 0.85);   // ~12px
+@fontSizeMini:          floor(@baseFontSize * 0.65);  // ~9px
+
+
+// Hr border color
+// -------------------------
+@hrBorder: @nlHrBorder;
+
+
+// Grid config
+// --------------------------------------------------
+@columnWidth: @nlColumnWidth;
+@gutterWidth: @nlGutterWidth;
+@containerWidth: @nlContainerWidth;
+
+
+// Padding config
+// --------------------------------------------------
+@wrapperPad: 20px;
+@wrapperPadCollapse: (@wrapperPad / 2);
+
+@columnPad: @wrapperPad;
+@columnPadCollapse: (@columnPad / 2);
+
+@blockGridPad: @wrapperPad;
+@blockGridPadCollapse: (@blockGridPad / 2);
+
+@panelPad: @wrapperPad;
+@panelPadCollapse: (@panelPad / 2);
+
+@textPad: (@wrapperPad * 2);
+@textPadCollapse: (@textPad / 2);

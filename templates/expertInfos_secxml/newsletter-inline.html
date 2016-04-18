@@ -1,0 +1,2094 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- flashinfos_sec_mail_V3_resp.asp -->
+<!--{{%%{{
+Set Conn = Server.CreateObject("ADODB.Connection")
+Conn.ConnectionString =  application("Base_Newsletter")
+Conn.Open
+
+id_client=request.QueryString("id_client")
+
+CLIENT_SQL="SELECT * FROM CLIENTS WHERE (ID_CLIENT = "&id_client&")"
+Set rsClient=conn.Execute(CLIENT_SQL)
+
+id_exp=rsClient("id_exp")
+id_civilite=rsClient("id_civilite")
+if id_civilite = "1" then
+    civilite="Monsieur"
+elseif id_civilite="2" then
+    civilite="Madame"
+elseif id_civilite="3" then
+    civilite="Mademoiselle"
+elseif id_civilite="4" then
+    civilite="Ma&#238;tre"
+elseif id_civilite="5" then
+    civilite="Docteur"
+elseif id_civilite="6" then
+    civilite="Professeur"
+else
+    civilite=""
+end if
+
+nom_client=rsClient("nom_client")
+
+CABINET_SQL="SELECT * FROM EXPERTS_COMPTABLES WHERE (ID_EXP = "&id_exp&")"
+set rsCabinet=conn.Execute(CABINET_SQL)
+
+if not rsCabinet.eof then
+
+	repertoire_ei = rsCabinet("repertoire_ei")
+	nom_exp = rsCabinet("nom_exp")
+	prenom_exp = rsCabinet("prenom_exp")
+	raison_sociale_exp = rsCabinet("raison_sociale_exp")
+	type_client = rsCabinet("type_client")	
+	adresse1_exp = rsCabinet("adresse1_exp")
+	adresse2_exp = rsCabinet("adresse2_exp")
+	code_postal_exp = rsCabinet("code_postal_exp")
+	commune_exp = rsCabinet("commune_exp")
+	tel_cabinet = rsCabinet("tel_cabinet")
+	fax_cabinet = rsCabinet("fax_cabinet")
+	email_exp = rsCabinet("email_exp")
+	type_perso_site = rsCabinet("type_perso_site")
+	login_site_exp = rsCabinet("login_site_exp")
+	mdp_site_exp = rsCabinet("mdp_site_exp")
+	type_abo = rsCabinet("type_abo")
+	if type_abo="4" then
+	url_site_exp=rsCabinet("url_site_V3")
+	else
+	url_site_exp = rsCabinet("url_site_exp")
+	end if
+	url_facebook = rsCabinet("Facebook")
+	url_twitter = rsCabinet("Twitter")
+	url_linkedin = rsCabinet("Linkedin")
+	url_viadeo = rsCabinet("Viadeo")
+	url_google = rsCabinet("Google")
+	url_vimeo = rsCabinet("Vimeo")
+	url_youtube = rsCabinet("Youtube")
+	logo_groupement = rsCabinet("logo_groupement")
+	lien_groupement = rsCabinet("lien_groupement")
+
+	Select Case type_perso_site
+		Case 38 txt_perso_site = "pop"
+		Case 39 txt_perso_site = "disco"
+	End Select
+end if
+
+'Detect isSocialNetwork'
+if(url_facebook = "" and url_twitter="" and url_linkedin="" and url_viadeo="" and url_google="" and url_vimeo="" and url_youtube="") then
+	isSocialNetwork = False
+else
+	isSocialNetwork = True
+end if
+
+'Detect isDemo'
+if(IsNull(isDemo)=True)then
+	isDemo = false
+end if
+
+'Detect isOnline'
+if(Request.QueryString("is_online") = 1 OR isDemo = True)then
+	isOnline = True
+else
+	isOnline = False
+end if
+
+'Detect isCollaborateur'
+if(Request.QueryString("is_coll") = 1)then
+	isCollaborateur = True
+else
+	isCollaborateur = False
+end if
+
+set rsCount=conn.Execute("SELECT COUNT(*) FROM FLASH_CABINFORM WHERE id_exp="& id_exp &" AND (afficher=1)")
+set rs=conn.Execute("SELECT * FROM FLASH_CABINFORM WHERE id_exp=" & id_exp &" AND (afficher=1) ORDER BY ordre")
+}}%%}}-->
+<!--{{%%{{ 'CSS Parser. Use colorParsing.Item("nlColorVariable")' }}%%}}-->
+<!--#include file="../parserCSS.inc"-->
+<!--#include file="emill-sec.asp"-->
+<!--{{%%{{
+idarticleAlaune=request.QueryString("idarticleAlaune")
+idarticle=request.QueryString("idarticle")
+
+'Changement pour newsletter collaborateur'
+if isCollaborateur=True then
+	get_coll = "&is_coll=1"
+	get_date = la_date_collaborateur
+else
+	get_coll = ""
+	get_date = la_date
+end if
+
+'Ciblage fichier de demo'
+if isDemo=True then
+	fileName = "flashinfos_sec_demo_V3_resp"
+else
+	fileName = "flashinfos_sec_mail_V3_resp"
+end if
+
+'Gestion des variables sectorielles'
+'BTP|SAN|TRA|COM|HCR'
+motifsec=UCase(request.QueryString("motifsec"))
+'motifsec="BTP"'
+
+Select Case motifsec
+	Case  "BTP"
+		secteur_color = colorParsing.Item("nlSecColorBTP")
+		secteur_color_darken10 = colorParsing.Item("nlSecColorBTPdarken10")
+		secteur_color_darken12 = colorParsing.Item("nlSecColorBTPdarken12")
+		secteur_essentiel = "L'essentiel du"
+		secteur_title = "BTP"
+		secteur_etude1_titre = secteur_BTP_etude1_titre
+		secteur_etude1_valeur = secteur_BTP_etude1_valeur
+		secteur_etude2_titre = secteur_BTP_etude2_titre
+		secteur_etude2_valeur = secteur_BTP_etude2_valeur
+		secteur_etude3_titre = secteur_BTP_etude3_titre
+		secteur_etude3_valeur = secteur_BTP_etude3_valeur
+	Case  "SAN"
+		secteur_color = colorParsing.Item("nlSecColorSAN")
+		secteur_color_darken10 = colorParsing.Item("nlSecColorSANdarken10")
+		secteur_color_darken12 = colorParsing.Item("nlSecColorSANdarken12")
+		secteur_essentiel = "L'essentiel de la"
+		secteur_title = "Sant&#233;"
+		secteur_etude1_titre = secteur_SAN_etude1_titre
+		secteur_etude1_valeur = secteur_SAN_etude1_valeur
+		secteur_etude2_titre = secteur_SAN_etude2_titre
+		secteur_etude2_valeur = secteur_SAN_etude2_valeur
+		secteur_etude3_titre = secteur_SAN_etude3_titre
+		secteur_etude3_valeur = secteur_SAN_etude3_valeur
+	Case  "TRA"
+		secteur_color = colorParsing.Item("nlSecColorTRA")
+		secteur_color_darken10 = colorParsing.Item("nlSecColorTRAdarken10")
+		secteur_color_darken12 = colorParsing.Item("nlSecColorTRAdarken12")
+		secteur_essentiel = "L'essentiel du"
+		secteur_title = "Transport"
+		secteur_etude1_titre = secteur_TRA_etude1_titre
+		secteur_etude1_valeur = secteur_TRA_etude1_valeur
+		secteur_etude2_titre = secteur_TRA_etude2_titre
+		secteur_etude2_valeur = secteur_TRA_etude2_valeur
+		secteur_etude3_titre = secteur_TRA_etude3_titre
+		secteur_etude3_valeur = secteur_TRA_etude3_valeur
+	Case  "COM"
+		secteur_color = colorParsing.Item("nlSecColorCOM")
+		secteur_color_darken10 = colorParsing.Item("nlSecColorCOMdarken10")
+		secteur_color_darken12 = colorParsing.Item("nlSecColorCOMdarken12")
+		secteur_essentiel = "L'essentiel du"
+		secteur_title = "Commerce"
+		secteur_etude1_titre = secteur_COM_etude1_titre
+		secteur_etude1_valeur = secteur_COM_etude1_valeur
+		secteur_etude2_titre = secteur_COM_etude2_titre
+		secteur_etude2_valeur = secteur_COM_etude2_valeur
+		secteur_etude3_titre = secteur_COM_etude3_titre
+		secteur_etude3_valeur = secteur_COM_etude3_valeur
+	Case  "HCR"
+		secteur_color = colorParsing.Item("nlSecColorHCR")
+		secteur_color_darken10 = colorParsing.Item("nlSecColorHCRdarken10")
+		secteur_color_darken12 = colorParsing.Item("nlSecColorHCRdarken12")
+		secteur_essentiel = "L'essentiel de la"
+		secteur_title = "Restauration<span class=""slash"" style=""margin: 0 -0.25em""> / </span>H&#244;tellerie"
+		secteur_etude1_titre = secteur_HCR_etude1_titre
+		secteur_etude1_valeur = secteur_HCR_etude1_valeur
+		secteur_etude2_titre = secteur_HCR_etude2_titre
+		secteur_etude2_valeur = secteur_HCR_etude2_valeur
+		secteur_etude3_titre = secteur_HCR_etude3_titre
+		secteur_etude3_valeur = secteur_HCR_etude3_valeur
+	Case  "ECO"
+		secteur_color = colorParsing.Item("nlSecColorECO")
+		secteur_color_darken10 = colorParsing.Item("nlSecColorECOdarken10")
+		secteur_color_darken12 = colorParsing.Item("nlSecColorECOdarken12")
+		secteur_essentiel = "L'essentiel de"
+		secteur_title = "l'&#201;conomie"
+		secteur_etude1_titre = secteur_ECO_etude1_titre
+		secteur_etude1_valeur = secteur_ECO_etude1_valeur
+		secteur_etude2_titre = secteur_ECO_etude2_titre
+		secteur_etude2_valeur = secteur_ECO_etude2_valeur
+		secteur_etude3_titre = secteur_ECO_etude3_titre
+		secteur_etude3_valeur = secteur_ECO_etude3_valeur
+	Case Else
+		secteur_color = "#1f1f1f"
+		secteur_color_darken10 = "#1a1a1a"
+		secteur_color_darken12 = "#000000"
+		secteur_essentiel = "Secteur"
+		secteur_title = "non d&#233;fini"
+		secteur_etude1_titre = "Erreur"
+		secteur_etude1_valeur = "Secteur non d&#233;fini"
+		secteur_etude2_titre = "Erreur"
+		secteur_etude2_valeur = "Secteur non d&#233;fini"
+		secteur_etude3_titre = "Erreur"
+		secteur_etude3_valeur = "Secteur non d&#233;fini"
+End Select
+
+online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/"&fileName&".asp?fintrack=&amp;id_client="&id_client&"&idarticle="&idarticle&"&idarticleAlaune="&idarticleAlaune&"&is_online=1"&get_coll&"&motifsec="&motifsec
+tracking_url = "rep="&repertoire_ei&"&amp;url_site_exp="&url_site_exp
+}}%%}}-->
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="robots" content="noindex" />
+	<title>Newsletter bimensuelle du <!--{{%%{{=get_date}}%%}}--><!--DEL{{-->get_date<!--}}DEL--></title>
+</head>
+<body bgcolor="##((nlSecBodyBackground))##" style="-ms-text-size-adjust: 100%; -premailer-background: ##((nlSecBodyBackground))##; -webkit-text-size-adjust: 100%; background: #dedede url('http://newsletter-templates.lesechos-publishing.fr/templates/expertInfos_sec/-premailer-bgdebug'); color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; line-height: 16px; margin: 0; min-width: 100%; padding: 0; text-align: left; width: 100% !important"><style type="text/css">
+body {
+background-color: #dedede;
+}
+body {
+width: 100% !important; min-width: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; margin: 0; padding: 0;
+}
+.ExternalClass {
+width: 100%;
+}
+.ExternalClass {
+line-height: 100%;
+}
+.ReadMsgBody {
+width: 100%;
+}
+#backgroundTable {
+margin: 0; padding: 0; width: 100% !important; line-height: 100% !important;
+}
+img {
+outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; width: auto; max-width: 100%; float: left; clear: both; display: block;
+}
+body {
+color: #666666; padding: 0; margin: 0; text-align: left; line-height: 1.3;
+}
+body {
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: normal; font-size: 12px; line-height: 16px;
+}
+a:hover {
+color: #666666 !important;
+}
+a:hover .important {
+color: #666666 !important;
+}
+a:active {
+color: #666666 !important;
+}
+a:active .important {
+color: #666666 !important;
+}
+a:visited {
+color: #666666 !important;
+}
+a:visited .important {
+color: #666666 !important;
+}
+h1 a:active {
+color: #666666 !important;
+}
+h2 a:active {
+color: #666666 !important;
+}
+h3 a:active {
+color: #666666 !important;
+}
+h4 a:active {
+color: #666666 !important;
+}
+h5 a:active {
+color: #666666 !important;
+}
+h6 a:active {
+color: #666666 !important;
+}
+h1 a:active .important {
+color: #666666 !important;
+}
+h2 a:active .important {
+color: #666666 !important;
+}
+h3 a:active .important {
+color: #666666 !important;
+}
+h4 a:active .important {
+color: #666666 !important;
+}
+h5 a:active .important {
+color: #666666 !important;
+}
+h6 a:active .important {
+color: #666666 !important;
+}
+h1 a:visited {
+color: #666666 !important;
+}
+h2 a:visited {
+color: #666666 !important;
+}
+h3 a:visited {
+color: #666666 !important;
+}
+h4 a:visited {
+color: #666666 !important;
+}
+h5 a:visited {
+color: #666666 !important;
+}
+h6 a:visited {
+color: #666666 !important;
+}
+h1 a:visited .important {
+color: #666666 !important;
+}
+h2 a:visited .important {
+color: #666666 !important;
+}
+h3 a:visited .important {
+color: #666666 !important;
+}
+h4 a:visited .important {
+color: #666666 !important;
+}
+h5 a:visited .important {
+color: #666666 !important;
+}
+h6 a:visited .important {
+color: #666666 !important;
+}
+table.button:hover td {
+background: #4d4d4d !important;
+}
+table.button:visited td {
+background: #4d4d4d !important;
+}
+table.button:active td {
+background: #4d4d4d !important;
+}
+table.button:hover td a {
+color: #ffffff !important;
+}
+table.button:visited td a {
+color: #ffffff !important;
+}
+table.button:active td a {
+color: #ffffff !important;
+}
+table.button:hover td a .important {
+color: #ffffff !important;
+}
+table.button:visited td a .important {
+color: #ffffff !important;
+}
+table.button:active td a .important {
+color: #ffffff !important;
+}
+table.button:hover td {
+background: #4d4d4d !important;
+}
+table.tiny-button:hover td {
+background: #4d4d4d !important;
+}
+table.small-button:hover td {
+background: #4d4d4d !important;
+}
+table.medium-button:hover td {
+background: #4d4d4d !important;
+}
+table.large-button:hover td {
+background: #4d4d4d !important;
+}
+table.button:hover td a {
+color: #ffffff !important;
+}
+table.button:active td a {
+color: #ffffff !important;
+}
+table.button td a:visited {
+color: #ffffff !important;
+}
+table.tiny-button:hover td a {
+color: #ffffff !important;
+}
+table.tiny-button:active td a {
+color: #ffffff !important;
+}
+table.tiny-button td a:visited {
+color: #ffffff !important;
+}
+table.small-button:hover td a {
+color: #ffffff !important;
+}
+table.small-button:active td a {
+color: #ffffff !important;
+}
+table.small-button td a:visited {
+color: #ffffff !important;
+}
+table.medium-button:hover td a {
+color: #ffffff !important;
+}
+table.medium-button:active td a {
+color: #ffffff !important;
+}
+table.medium-button td a:visited {
+color: #ffffff !important;
+}
+table.large-button:hover td a {
+color: #ffffff !important;
+}
+table.large-button:active td a {
+color: #ffffff !important;
+}
+table.large-button td a:visited {
+color: #ffffff !important;
+}
+table.button:hover td a .important {
+color: #ffffff !important;
+}
+table.button:active td a .important {
+color: #ffffff !important;
+}
+table.button td a:visited .important {
+color: #ffffff !important;
+}
+table.tiny-button:hover td a .important {
+color: #ffffff !important;
+}
+table.tiny-button:active td a .important {
+color: #ffffff !important;
+}
+table.tiny-button td a:visited .important {
+color: #ffffff !important;
+}
+table.small-button:hover td a .important {
+color: #ffffff !important;
+}
+table.small-button:active td a .important {
+color: #ffffff !important;
+}
+table.small-button td a:visited .important {
+color: #ffffff !important;
+}
+table.medium-button:hover td a .important {
+color: #ffffff !important;
+}
+table.medium-button:active td a .important {
+color: #ffffff !important;
+}
+table.medium-button td a:visited .important {
+color: #ffffff !important;
+}
+table.large-button:hover td a .important {
+color: #ffffff !important;
+}
+table.large-button:active td a .important {
+color: #ffffff !important;
+}
+table.large-button td a:visited .important {
+color: #ffffff !important;
+}
+table.secondary:hover td {
+background: #d0d0d0 !important; color: #555555;
+}
+table.secondary:hover td a {
+color: #555555 !important;
+}
+table.secondary td a:visited {
+color: #555555 !important;
+}
+table.secondary:active td a {
+color: #555555 !important;
+}
+table.secondary:hover td a .important {
+color: #555555 !important;
+}
+table.secondary td a:visited .important {
+color: #555555 !important;
+}
+table.secondary:active td a .important {
+color: #555555 !important;
+}
+table.success:hover td {
+background: #396516 !important; color: #ffffff;
+}
+table.success:hover td a {
+color: #ffffff !important;
+}
+table.success td a:visited {
+color: #ffffff !important;
+}
+table.success:active td a {
+color: #ffffff !important;
+}
+table.success:hover td a .important {
+color: #ffffff !important;
+}
+table.success td a:visited .important {
+color: #ffffff !important;
+}
+table.success:active td a .important {
+color: #ffffff !important;
+}
+table.alert:hover td {
+background: #67080a !important; color: #ffffff;
+}
+table.alert:hover td a {
+color: #ffffff !important;
+}
+table.alert td a:visited {
+color: #ffffff !important;
+}
+table.alert:active td a {
+color: #ffffff !important;
+}
+table.alert:hover td a .important {
+color: #ffffff !important;
+}
+table.alert td a:visited .important {
+color: #ffffff !important;
+}
+table.alert:active td a .important {
+color: #ffffff !important;
+}
+body.outlook p {
+display: inline !important;
+}
+.appleLinks a:hover {
+color: #666666 !important;
+}
+.appleLinks a:active {
+color: #666666 !important;
+}
+.appleLinks a:visited {
+color: #666666 !important;
+}
+a.link_box:visited {
+text-decoration: none; outline: none;
+}
+a.link_box:hover {
+text-decoration: none; outline: none;
+}
+a.link_box:focus {
+text-decoration: none; outline: none;
+}
+a.link_box:active {
+text-decoration: none; outline: none;
+}
+a.link_underline:hover {
+text-decoration: underline; cursor: pointer;
+}
+a.link_underline:focus {
+text-decoration: underline; cursor: pointer;
+}
+h1 a:visited {
+color: #333333 !important;
+}
+h2 a:visited {
+color: #333333 !important;
+}
+h3 a:visited {
+color: #333333 !important;
+}
+h4 a:visited {
+color: #333333 !important;
+}
+h5 a:visited {
+color: #333333 !important;
+}
+h6 a:visited {
+color: #333333 !important;
+}
+h1 a:hover {
+color: #333333 !important;
+}
+h2 a:hover {
+color: #333333 !important;
+}
+h3 a:hover {
+color: #333333 !important;
+}
+h4 a:hover {
+color: #333333 !important;
+}
+h5 a:hover {
+color: #333333 !important;
+}
+h6 a:hover {
+color: #333333 !important;
+}
+h1 a:focus {
+color: #333333 !important;
+}
+h2 a:focus {
+color: #333333 !important;
+}
+h3 a:focus {
+color: #333333 !important;
+}
+h4 a:focus {
+color: #333333 !important;
+}
+h5 a:focus {
+color: #333333 !important;
+}
+h6 a:focus {
+color: #333333 !important;
+}
+h1 a:active {
+color: #333333 !important;
+}
+h2 a:active {
+color: #333333 !important;
+}
+h3 a:active {
+color: #333333 !important;
+}
+h4 a:active {
+color: #333333 !important;
+}
+h5 a:active {
+color: #333333 !important;
+}
+h6 a:active {
+color: #333333 !important;
+}
+.contentSecteur a:visited {
+color: #ffffff !important;
+}
+.contentSecteur a:hover {
+color: #ffffff !important;
+}
+.contentSecteur a:focus {
+color: #ffffff !important;
+}
+.contentSecteur a:active {
+color: #ffffff !important;
+}
+body {
+color: #666666;
+}
+a:visited {
+color: #666666 !important;
+}
+h1 a:visited {
+color: #666666 !important;
+}
+h2 a:visited {
+color: #666666 !important;
+}
+h3 a:visited {
+color: #666666 !important;
+}
+h4 a:visited {
+color: #666666 !important;
+}
+h5 a:visited {
+color: #666666 !important;
+}
+h6 a:visited {
+color: #666666 !important;
+}
+.appleLinks a:visited {
+color: #666666 !important;
+}
+a:visited .important {
+color: #666666 !important;
+}
+h1 a:visited .important {
+color: #666666 !important;
+}
+h2 a:visited .important {
+color: #666666 !important;
+}
+h3 a:visited .important {
+color: #666666 !important;
+}
+h4 a:visited .important {
+color: #666666 !important;
+}
+h5 a:visited .important {
+color: #666666 !important;
+}
+h6 a:visited .important {
+color: #666666 !important;
+}
+.appleLinks a:visited .important {
+color: #666666 !important;
+}
+a:hover {
+color: #666666 !important;
+}
+h1 a:hover {
+color: #666666 !important;
+}
+h2 a:hover {
+color: #666666 !important;
+}
+h3 a:hover {
+color: #666666 !important;
+}
+h4 a:hover {
+color: #666666 !important;
+}
+h5 a:hover {
+color: #666666 !important;
+}
+h6 a:hover {
+color: #666666 !important;
+}
+.appleLinks a:hover {
+color: #666666 !important;
+}
+a:hover .important {
+color: #666666 !important;
+}
+h1 a:hover .important {
+color: #666666 !important;
+}
+h2 a:hover .important {
+color: #666666 !important;
+}
+h3 a:hover .important {
+color: #666666 !important;
+}
+h4 a:hover .important {
+color: #666666 !important;
+}
+h5 a:hover .important {
+color: #666666 !important;
+}
+h6 a:hover .important {
+color: #666666 !important;
+}
+.appleLinks a:hover .important {
+color: #666666 !important;
+}
+a:focus {
+color: #666666 !important;
+}
+h1 a:focus {
+color: #666666 !important;
+}
+h2 a:focus {
+color: #666666 !important;
+}
+h3 a:focus {
+color: #666666 !important;
+}
+h4 a:focus {
+color: #666666 !important;
+}
+h5 a:focus {
+color: #666666 !important;
+}
+h6 a:focus {
+color: #666666 !important;
+}
+.appleLinks a:focus {
+color: #666666 !important;
+}
+a:focus .important {
+color: #666666 !important;
+}
+h1 a:focus .important {
+color: #666666 !important;
+}
+h2 a:focus .important {
+color: #666666 !important;
+}
+h3 a:focus .important {
+color: #666666 !important;
+}
+h4 a:focus .important {
+color: #666666 !important;
+}
+h5 a:focus .important {
+color: #666666 !important;
+}
+h6 a:focus .important {
+color: #666666 !important;
+}
+.appleLinks a:focus .important {
+color: #666666 !important;
+}
+a:active {
+color: #666666 !important;
+}
+h1 a:active {
+color: #666666 !important;
+}
+h2 a:active {
+color: #666666 !important;
+}
+h3 a:active {
+color: #666666 !important;
+}
+h4 a:active {
+color: #666666 !important;
+}
+h5 a:active {
+color: #666666 !important;
+}
+h6 a:active {
+color: #666666 !important;
+}
+.appleLinks a:active {
+color: #666666 !important;
+}
+a:active .important {
+color: #666666 !important;
+}
+h1 a:active .important {
+color: #666666 !important;
+}
+h2 a:active .important {
+color: #666666 !important;
+}
+h3 a:active .important {
+color: #666666 !important;
+}
+h4 a:active .important {
+color: #666666 !important;
+}
+h5 a:active .important {
+color: #666666 !important;
+}
+h6 a:active .important {
+color: #666666 !important;
+}
+.appleLinks a:active .important {
+color: #666666 !important;
+}
+.preTitle a:visited {
+color: #333333 !important;
+}
+.preTitle a:hover {
+color: #333333 !important;
+}
+.preTitle a:focus {
+color: #333333 !important;
+}
+.preTitle a:active {
+color: #333333 !important;
+}
+.contentDateInfo .date a:visited {
+color: #ffffff !important;
+}
+.contentDateInfo .date a:hover {
+color: #ffffff !important;
+}
+.contentDateInfo .date a:focus {
+color: #ffffff !important;
+}
+.contentDateInfo .date a:active {
+color: #ffffff !important;
+}
+.contentDateInfo .info a:visited {
+color: #ffffff !important;
+}
+.contentDateInfo .info a:hover {
+color: #ffffff !important;
+}
+.contentDateInfo .info a:focus {
+color: #ffffff !important;
+}
+.contentDateInfo .info a:active {
+color: #ffffff !important;
+}
+.contentCabInform .title a:visited {
+color: #262626 !important;
+}
+.contentCabInform .title a:hover {
+color: #262626 !important;
+}
+.contentCabInform .title a:focus {
+color: #262626 !important;
+}
+.contentCabInform .title a:active {
+color: #262626 !important;
+}
+.contentCabInform a:visited {
+color: #595959 !important;
+}
+.contentCabInform a:hover {
+color: #595959 !important;
+}
+.contentCabInform a:focus {
+color: #595959 !important;
+}
+.contentCabInform a:active {
+color: #595959 !important;
+}
+.contentCabInform .readMore table.tiny-button:hover td {
+background: #787878 !important;
+}
+.contentCabInform .readMore table.tiny-button:visited td {
+background: #787878 !important;
+}
+.contentCabInform .readMore table.tiny-button:active td {
+background: #787878 !important;
+}
+.contentCabInform .readMore table.tiny-button:hover td a {
+color: #ffffff !important;
+}
+.contentCabInform .readMore table.tiny-button:visited td a {
+color: #ffffff !important;
+}
+.contentCabInform .readMore table.tiny-button:active td a {
+color: #ffffff !important;
+}
+.contentCabInform .readMore table.tiny-button:hover td a .important {
+color: #ffffff !important;
+}
+.contentCabInform .readMore table.tiny-button:visited td a .important {
+color: #ffffff !important;
+}
+.contentCabInform .readMore table.tiny-button:active td a .important {
+color: #ffffff !important;
+}
+.contentCabInform .readMore table.tiny-button td a:visited {
+color: #ffffff !important;
+}
+.contentCabInform .readMore table.tiny-button td a:visited .important {
+color: #ffffff !important;
+}
+.contentALaUne .readMore table.tiny-button:hover td a {
+color: #ffffff !important;
+}
+.contentALaUne .readMore table.tiny-button:visited td a {
+color: #ffffff !important;
+}
+.contentALaUne .readMore table.tiny-button:active td a {
+color: #ffffff !important;
+}
+.contentALaUne .readMore table.tiny-button:hover td a .important {
+color: #ffffff !important;
+}
+.contentALaUne .readMore table.tiny-button:visited td a .important {
+color: #ffffff !important;
+}
+.contentALaUne .readMore table.tiny-button:active td a .important {
+color: #ffffff !important;
+}
+.contentALaUne .readMore table.tiny-button td a:visited {
+color: #ffffff !important;
+}
+.contentALaUne .readMore table.tiny-button td a:visited .important {
+color: #ffffff !important;
+}
+.contentArticles .readMore table.tiny-button:hover td {
+background: #787878 !important;
+}
+.contentArticles .readMore table.tiny-button:visited td {
+background: #787878 !important;
+}
+.contentArticles .readMore table.tiny-button:active td {
+background: #787878 !important;
+}
+.contentArticles .readMore table.tiny-button:hover td a {
+color: #ffffff !important;
+}
+.contentArticles .readMore table.tiny-button:visited td a {
+color: #ffffff !important;
+}
+.contentArticles .readMore table.tiny-button:active td a {
+color: #ffffff !important;
+}
+.contentArticles .readMore table.tiny-button:hover td a .important {
+color: #ffffff !important;
+}
+.contentArticles .readMore table.tiny-button:visited td a .important {
+color: #ffffff !important;
+}
+.contentArticles .readMore table.tiny-button:active td a .important {
+color: #ffffff !important;
+}
+.contentArticles .readMore table.tiny-button td a:visited {
+color: #ffffff !important;
+}
+.contentArticles .readMore table.tiny-button td a:visited .important {
+color: #ffffff !important;
+}
+.contentEtude a:visited {
+color: #ffffff !important;
+}
+.contentEtude a:hover {
+color: #ffffff !important;
+}
+.contentEtude a:focus {
+color: #ffffff !important;
+}
+.contentEtude a:active {
+color: #ffffff !important;
+}
+.contentContact a:visited {
+color: #666666 !important;
+}
+.contentContact a:hover {
+color: #666666 !important;
+}
+.contentContact a:focus {
+color: #666666 !important;
+}
+.contentContact a:active {
+color: #666666 !important;
+}
+.footer a:visited {
+color: #8c8c8c !important;
+}
+.footer a:hover {
+color: #8c8c8c !important;
+}
+.footer a:focus {
+color: #8c8c8c !important;
+}
+.footer a:active {
+color: #8c8c8c !important;
+}
+body {
+-premailer-background: ##((nlSecBodyBackground))##; background-image: url('http://newsletter-templates.lesechos-publishing.fr/templates/expertInfos_sec/-premailer-bgdebug');
+}
+.contentOnline a:visited {
+color: ##((nlSecCntOnlineText))## !important;
+}
+.contentOnline a:hover {
+color: ##((nlSecCntOnlineText))## !important;
+}
+.contentOnline a:focus {
+color: ##((nlSecCntOnlineText))## !important;
+}
+.contentOnline a:active {
+color: ##((nlSecCntOnlineText))## !important;
+}
+.contentOnline .online a:visited {
+color: ##((nlSecCntOnlineText))## !important;
+}
+.contentOnline .online a:hover {
+color: ##((nlSecCntOnlineText))## !important;
+}
+.contentOnline .online a:focus {
+color: ##((nlSecCntOnlineText))## !important;
+}
+.contentOnline .online a:active {
+color: ##((nlSecCntOnlineText))## !important;
+}
+.contentOnline .name a:visited {
+color: ##((nlSecCntOnlineName))## !important;
+}
+.contentOnline .name a:hover {
+color: ##((nlSecCntOnlineName))## !important;
+}
+.contentOnline .name a:focus {
+color: ##((nlSecCntOnlineName))## !important;
+}
+.contentOnline .name a:active {
+color: ##((nlSecCntOnlineName))## !important;
+}
+.preTitle .last a:visited {
+color: **((secteur_color))** !important;
+}
+.preTitle .last a:hover {
+color: **((secteur_color))** !important;
+}
+.preTitle .last a:focus {
+color: **((secteur_color))** !important;
+}
+.preTitle .last a:active {
+color: **((secteur_color))** !important;
+}
+.contentALaUne .readMore table.tiny-button:hover td {
+background: **((secteur_color_darken10))** !important;
+}
+.contentALaUne .readMore table.tiny-button:visited td {
+background: **((secteur_color_darken10))** !important;
+}
+.contentALaUne .readMore table.tiny-button:active td {
+background: **((secteur_color_darken10))** !important;
+}
+@media only screen and (max-width: 720px) {
+  table[class="body"] img {
+    max-width: auto !important; max-height: auto !important; width: auto !important; height: auto !important;
+  }
+  table[class="body"] center {
+    min-width: 0 !important;
+  }
+  table[class="body"] .container {
+    width: 95% !important;
+  }
+  table[class="body"] .row {
+    position: relative !important; width: 100% !important; display: block !important;
+  }
+  table[class="body"] .wrapper {
+    position: relative !important; display: block !important; padding-top: 10px !important; padding-right: 0 !important;
+  }
+  table[class="body"] .columns {
+    table-layout: fixed !important; float: none !important; width: 100% !important; padding-right: 0px !important; padding-left: 0px !important; display: block !important;
+  }
+  table[class="body"] .column {
+    table-layout: fixed !important; float: none !important; width: 100% !important; padding-right: 0px !important; padding-left: 0px !important; display: block !important;
+  }
+  table[class="body"] .wrapper.first .columns {
+    display: table !important;
+  }
+  table[class="body"] .wrapper.first .column {
+    display: table !important;
+  }
+  table[class="body"] table.columns td {
+    width: 100% !important; padding-bottom: 10px !important;
+  }
+  table[class="body"] table.column td {
+    width: 100% !important; padding-bottom: 10px !important;
+  }
+  table[class="body"] .columns td.one {
+    width: 8.333333% !important;
+  }
+  table[class="body"] .column td.one {
+    width: 8.333333% !important;
+  }
+  table[class="body"] .columns td.two {
+    width: 16.666666% !important;
+  }
+  table[class="body"] .column td.two {
+    width: 16.666666% !important;
+  }
+  table[class="body"] .columns td.three {
+    width: 25% !important;
+  }
+  table[class="body"] .column td.three {
+    width: 25% !important;
+  }
+  table[class="body"] .columns td.four {
+    width: 33.333333% !important;
+  }
+  table[class="body"] .column td.four {
+    width: 33.333333% !important;
+  }
+  table[class="body"] .columns td.five {
+    width: 41.666666% !important;
+  }
+  table[class="body"] .column td.five {
+    width: 41.666666% !important;
+  }
+  table[class="body"] .columns td.six {
+    width: 50% !important;
+  }
+  table[class="body"] .column td.six {
+    width: 50% !important;
+  }
+  table[class="body"] .columns td.seven {
+    width: 58.333333% !important;
+  }
+  table[class="body"] .column td.seven {
+    width: 58.333333% !important;
+  }
+  table[class="body"] .columns td.eight {
+    width: 66.666666% !important;
+  }
+  table[class="body"] .column td.eight {
+    width: 66.666666% !important;
+  }
+  table[class="body"] .columns td.nine {
+    width: 75% !important;
+  }
+  table[class="body"] .column td.nine {
+    width: 75% !important;
+  }
+  table[class="body"] .columns td.ten {
+    width: 83.333333% !important;
+  }
+  table[class="body"] .column td.ten {
+    width: 83.333333% !important;
+  }
+  table[class="body"] .columns td.eleven {
+    width: 91.666666% !important;
+  }
+  table[class="body"] .column td.eleven {
+    width: 91.666666% !important;
+  }
+  table[class="body"] .columns td.twelve {
+    width: 100% !important;
+  }
+  table[class="body"] .column td.twelve {
+    width: 100% !important;
+  }
+  table[class="body"] td.offset-by-one {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-two {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-three {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-four {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-five {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-six {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-seven {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-eight {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-nine {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-ten {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-eleven {
+    padding-left: 0 !important;
+  }
+  table[class="body"] table.columns td.expander {
+    width: 1px !important;
+  }
+  table[class="body"] .text-pad {
+    padding-left: 20px !important; padding-right: 20px !important;
+  }
+  table[class="body"] .right-text-pad {
+    padding-left: 20px !important; padding-right: 20px !important;
+  }
+  table[class="body"] .text-pad-right {
+    padding-left: 20px !important; padding-right: 20px !important;
+  }
+  table[class="body"] .left-text-pad {
+    padding-left: 20px !important; padding-right: 20px !important;
+  }
+  table[class="body"] .text-pad-left {
+    padding-left: 20px !important; padding-right: 20px !important;
+  }
+  table[class="body"] .hide-for-small {
+    display: none !important;
+  }
+  table[class="body"] .show-for-desktop {
+    display: none !important;
+  }
+  table[class="body"] .show-for-small {
+    display: block !important; width: auto !important; overflow: visible !important;
+  }
+  table[class="body"] .hide-for-desktop {
+    display: block !important; width: auto !important; overflow: visible !important;
+  }
+  table[class="container"] .block-grid td {
+    width: 100% !important; padding: 10px !important;
+  }
+  table[class="container"] .panel {
+    padding: 10px !important;
+  }
+  table[class="body"] .header td.wrapper {
+    padding-top: 0px !important;
+  }
+  table[class="body"] .header table.columns td {
+    padding-bottom: 0px !important;
+  }
+  table[class="body"] .header table.column td {
+    padding-bottom: 0px !important;
+  }
+  table[class="body"] table.columns .readMore td.buttonWrapper {
+    padding-bottom: 0px !important;
+  }
+  table[class="body"] table.column .readMore td.buttonWrapper {
+    padding-bottom: 0px !important;
+  }
+  table[class="body"] table.columns .readMore table.tiny-button {
+    display: table !important; table-layout: auto !important; width: auto !important;
+  }
+  table[class="body"] table.column .readMore table.tiny-button {
+    display: table !important; table-layout: auto !important; width: auto !important;
+  }
+  table[class="body"] table.columns .readMore table.tiny-button td {
+    width: auto !important; padding: 4px 8px !important;
+  }
+  table[class="body"] table.column .readMore table.tiny-button td {
+    width: auto !important; padding: 4px 8px !important;
+  }
+  table[class="body"] a.tiny-button-link {
+    font-size: 10.2px !important; line-height: 14px !important;
+  }
+  table[class="body"] table.columns .readMore td.buttonWrapper td {
+    font-size: 10.2px !important; line-height: 14px !important;
+  }
+  table[class="body"] table.column .readMore td.buttonWrapper td {
+    font-size: 10.2px !important; line-height: 14px !important;
+  }
+  table[class="body"] .row.bordered td.wrapper {
+    padding-top: 0px !important;
+  }
+  table[class="body"] .row.bordered table.columns td {
+    padding-bottom: 0px !important;
+  }
+  table[class="body"] .row.bordered table.column td {
+    padding-bottom: 0px !important;
+  }
+  table[class="body"] .faicons {
+    vertical-align: baseline !important;
+  }
+  table[class="body"] .faicon img {
+    width: 15px !important; height: 15px !important;
+  }
+  table[class="body"] img.faicon {
+    width: 15px !important; height: 15px !important;
+  }
+  table[class="body"] .contentOnline td.wrapper {
+    padding-top: 5px !important;
+  }
+  table[class="body"] .contentOnline table.columns td {
+    padding-bottom: 5px !important;
+  }
+  table[class="body"] .contentOnline table.column td {
+    padding-bottom: 5px !important;
+  }
+  table[class="body"] .contentOnline .online {
+    padding-bottom: 0px !important;
+  }
+  table[class="body"] .contentOnline .columns {
+    display: table !important;
+  }
+  table[class="body"] .contentOnline .column {
+    display: table !important;
+  }
+  table[class="body"] .contentSecteur table.columns td {
+    padding-bottom: 5px !important;
+  }
+  table[class="body"] .contentSecteur table.column td {
+    padding-bottom: 5px !important;
+  }
+  table[class="body"] .contentSecteur td {
+    font-size: 30px !important; line-height: 30px !important; text-align: left !important;
+  }
+  table[class="body"] .contentSecteur td .essentiel {
+    display: block !important;
+  }
+  table[class="body"] .contentSecteur td .secteur {
+    word-break: normal !important; white-space: normal !important; display: block !important; text-align: right;
+  }
+  table[class="body"] .contentDateInfo td.wrapper {
+    padding-top: 5px !important;
+  }
+  table[class="body"] .contentDateInfo table.columns td {
+    padding-bottom: 5px !important;
+  }
+  table[class="body"] .contentDateInfo table.column td {
+    padding-bottom: 5px !important;
+  }
+  table[class="body"] .contentEtude .filler {
+    height: 0px !important; display: none !important; visibility: hidden !important;
+  }
+  table[class="body"] .contentEtude table.columns td {
+    padding-bottom: 9px !important;
+  }
+  table[class="body"] .contentEtude table.column td {
+    padding-bottom: 9px !important;
+  }
+  table[class="body"] .contentEtude .wrapper {
+    border-left: 0px !important; padding-left: 20px !important; padding-right: 20px !important;
+  }
+  table[class="body"] .contentEtude .wrapper .text-pad {
+    padding-left: 0px !important; padding-right: 0px !important;
+  }
+  table[class="body"] .contentEtude .wrapper.last table.columns td {
+    padding-bottom: 10px !important; border-bottom: 0px !important;
+  }
+  table[class="body"] .contentEtude .wrapper.last table.column td {
+    padding-bottom: 10px !important; border-bottom: 0px !important;
+  }
+  table[class="body"] .contentEtude .wrapper td {
+    text-align: left !important; vertical-align: middle !important;
+  }
+  table[class="body"] .contentEtude .wrapper table.columns .value td {
+    padding: 0px !important;
+  }
+  table[class="body"] .contentEtude .wrapper table.column .value td {
+    padding: 0px !important;
+  }
+  table[class="body"] .contentEtude .wrapper table.columns .text td {
+    padding: 8px 0 0 10px !important;
+  }
+  table[class="body"] .contentEtude .wrapper table.column .text td {
+    padding: 8px 0 0 10px !important;
+  }
+  table[class="body"] .contentEtude .wrapper table.columns .value td {
+    border-bottom: 0px !important;
+  }
+  table[class="body"] .contentEtude .wrapper table.column .value td {
+    border-bottom: 0px !important;
+  }
+  table[class="body"] .contentEtude .wrapper table.columns .text td {
+    border-bottom: 0px !important;
+  }
+  table[class="body"] .contentEtude .wrapper table.column .text td {
+    border-bottom: 0px !important;
+  }
+  table[class="body"] .contentEtude .value {
+    width: auto !important; vertical-align: bottom !important; max-width: 50% !important;
+  }
+  table[class="body"] .contentEtude .text {
+    width: auto !important; vertical-align: bottom !important; max-width: 50% !important;
+  }
+  table[class="body"] .contentEtude .value {
+    display: block !important; float: left !important;
+  }
+  table[class="body"] .contentOnline table.columns td {
+    padding-bottom: 5px !important;
+  }
+  table[class="body"] .contentOnline table.column td {
+    padding-bottom: 5px !important;
+  }
+  table[class="body"] .contentOnline td.wrapper {
+    padding-top: 5px !important;
+  }
+  table[class="body"] .contentOnline table.columns td {
+    padding-bottom: 5px !important;
+  }
+  table[class="body"] .contentOnline table.column td {
+    padding-bottom: 5px !important;
+  }
+  table[class="body"] .contentEtude table.columns td {
+    border-bottom: 1px solid **((secteur_color))** !important;
+  }
+  table[class="body"] .contentEtude table.column td {
+    border-bottom: 1px solid **((secteur_color))** !important;
+  }
+}
+</style>
+<style type="text/css" data-premailer="ignore">
+@media only screen and (max-width: 720px) {
+  @-moz-document url-prefix() {
+    table[class="body"] img { width: 100% !important; }
+  }
+}
+/*DEL{{*/img[src*="%%{{"], img[src*="}}%%"], [data-type^="get"], .-premailer-hidden { display: none !important; visibility: hidden !important; }/*}}DEL*/
+</style>
+	<table border="0" class="body" bgcolor="##((nlSecBodyBackground))##" id="backgroundTable" style="-premailer-background: ##((nlSecBodyBackground))##; -premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-height: 100%; -premailer-width: 100%; background: #dedede url('http://newsletter-templates.lesechos-publishing.fr/templates/expertInfos_sec/-premailer-bgdebug'); border-collapse: collapse; border-spacing: 0; color: #666666; empty-cells: hide; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; height: 100%; line-height: 100% !important; margin: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 100% !important" background="http://newsletter-templates.lesechos-publishing.fr/templates/expertInfos_sec/-premailer-bgdebug" width="100%" height="100%" cellpadding="0" cellspacing="0">
+		<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+			<td class="center" align="center" valign="top" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0; text-align: center; vertical-align: top; word-break: break-word">
+				<center style="min-width: 720px; width: 100%">
+					<table border="0" class="container" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 720; background: #ffffff; border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: inherit; vertical-align: top; width: 720px" bgcolor="#ffffff" width="720" cellpadding="0" cellspacing="0">
+						<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+							<td style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+
+								<!-- ONLINE START -->
+								<table border="0" class="row contentOnline" bgcolor="##((nlSecCntOnlineBackground))##" style="-premailer-background: ##((nlSecCntOnlineBackground))##; -premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%; border-collapse: collapse; border-spacing: 0; color: ##((nlSecCntOnlineText))##; display: block; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px; text-align: left; vertical-align: top; width: 100%" width="100%" cellpadding="0" cellspacing="0">
+									<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+										<td class="wrapper first last" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: ##((nlSecCntOnlineText))##; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 10px 0px 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+											<table border="0" class="twelve columns" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 720; border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 720px" width="720" cellpadding="0" cellspacing="0">
+												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+													<td class="text-pad center" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: ##((nlSecCntOnlineText))##; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 0px; font-weight: normal; hyphens: none; line-height: 0px; margin: 0; mso-line-height-rule: exactly; padding: 0px 40px 10px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
+														<!--{{%%{{ if isOnline=False then }}%%}}-->
+														<!--{{<gab_lien_message_online>}}-->
+														<span class="online" style="color: ##((nlSecCntOnlineText))##; display: block; font-size: 12px; line-height: 16px; mso-line-height-rule: exactly; padding-bottom: 5px">
+															<small style="font-size: 11px">Pour visualiser ce message en ligne, <a target="_blank" class="link_underline" href="%%{{=online_url}}%%&amp;%%{{=tracking_url}}%%" style="color: ##((nlSecCntOnlineText))##; text-decoration: underline"><span class="important" style="color: ##((nlSecCntOnlineText))## !important; text-decoration: underline !important">suivez ce lien</span></a>.</small>
+														</span>
+														<!--{{</gab_lien_message_online>}}-->
+														<!--{{%%{{ end if }}%%}}-->
+														<br /><span class="name" style="color: ##((nlSecCntOnlineName))##; display: block; font-size: 12px; line-height: 16px; mso-line-height-rule: exactly"><strong><!--{{%%{{=civilite}}%%}}--><!--DEL{{-->civilite<!--}}DEL-->&#160;<!--{{%%{{=nom_client}}%%}}--><!--DEL{{-->nom_client<!--}}DEL-->, votre newsletter du <a class="link_disabled" href="#" style="color: ##((nlSecCntOnlineName))##; cursor: default; pointer-events: none; text-decoration: none"><span class="important" style="color: ##((nlSecCntOnlineName))## !important; cursor: default !important; pointer-events: none !important; text-decoration: none !important"><!--{{%%{{=get_date}}%%}}--><!--DEL{{-->get_date<!--}}DEL--></span></a>.</strong></span>
+													</td>
+													<td class="expander" bgcolor="##((nlSecCntOnlineBackground))##" style="-moz-hyphens: none; -ms-hyphens: none; -premailer-background: ##((nlSecCntOnlineBackground))##; -premailer-width: 1; -webkit-hyphens: none; border-collapse: collapse !important; color: ##((nlSecCntOnlineText))##; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 0px; font-weight: normal; hyphens: none; line-height: 0px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word" align="left" valign="top" width="1"></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+								<!-- ONLINE END -->
+
+								<!--{{%%{{ if logo_groupement=True then }}%%}}-->
+								<!-- HEADER GROUPE START -->
+								<table border="0" class="row header" bgcolor="##((nlSecBodyBackground))##" style="-premailer-background: ##((nlSecBodyBackground))##; -premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%; border-collapse: collapse; border-spacing: 0; display: block; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px; text-align: left; vertical-align: top; width: 100%" width="100%" cellpadding="0" cellspacing="0">
+									<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+										<td class="wrapper last" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+											<table border="0" class="twelve columns" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 720; border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 720px" width="720" cellpadding="0" cellspacing="0">
+												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+													<td class="eight sub-columns first" style="-moz-hyphens: none; -ms-hyphens: none; -premailer-width: 66.666666%; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; min-width: 0px; padding: 0px; text-align: left; vertical-align: top; width: 66.666666%; word-break: break-word" align="left" valign="top" width="66.666666%">
+														<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%?fintrack=&amp;%%{{=tracking_url}}%%" style="color: #666666; display: block; outline: none; text-decoration: none">
+															<img class="center" src="http://%%{{=url_site_exp}}%%/uploads/assets/header-newsletter-site.png" alt="Header Newsletter Site" width="480" height="96" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: none; margin: 0 auto; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none" /><!--DEL{{--><img class="center" src="http://lorempixel.com/960/192/city/" alt="NomCabinet" width="480" height="96" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: none; margin: 0 auto; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none" /><!--}}DEL-->
+														</a>
+													</td>
+													<td class="four sub-columns last" style="-moz-hyphens: none; -ms-hyphens: none; -premailer-width: 33.333333%; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; min-width: 0px; padding: 0px; text-align: left; vertical-align: top; width: 33.333333%; word-break: break-word" align="left" valign="top" width="33.333333%">
+														<a target="_blank" class="link_box" href="http://%%{{=lien_groupement}}%%?fintrack=&amp;%%{{=tracking_url}}%%" style="color: #666666; display: block; outline: none; text-decoration: none">
+															<img class="center" src="http://%%{{=url_site_exp}}%%/uploads/assets/header-newsletter-groupe.png" alt="Header Newsletter Groupe" width="240" height="96" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: none; margin: 0 auto; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none" /><!--DEL{{--><img class="center" src="http://lorempixel.com/480/192/technics/" alt="NomCabinet" width="240" height="96" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: none; margin: 0 auto; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none" /><!--}}DEL-->
+														</a>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+								<!-- HEADER GROUPE END -->
+								<!--{{%%{{ else }}%%}}-->
+								<!-- HEADER START -->
+								<table border="0" class="row header" bgcolor="##((nlSecBodyBackground))##" style="-premailer-background: ##((nlSecBodyBackground))##; -premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%; border-collapse: collapse; border-spacing: 0; display: block; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px; text-align: left; vertical-align: top; width: 100%" width="100%" cellpadding="0" cellspacing="0">
+								    <tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+								        <td class="wrapper last" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+								            <table border="0" class="twelve columns" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 720; border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 720px" width="720" cellpadding="0" cellspacing="0">
+								                <tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+								                    <td class="center" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
+								                    	<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%?fintrack=&amp;%%{{=tracking_url}}%%" style="color: #666666; display: block; outline: none; text-decoration: none">
+								                            <img class="center" src="http://%%{{=url_site_exp}}%%/uploads/assets/header-newsletter.png" alt="Header Newsletter" width="720" height="96" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: none; margin: 0 auto; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none" /><!--DEL{{--><img class="center" src="http://newsletter-templates.lesechos-publishing.fr/templates/expertInfos_sec/theme/images/header-newsletter.png" width="720" height="96" alt="" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: none; margin: 0 auto; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none" /><!--}}DEL-->
+								                        </a>
+								                    </td>
+								                </tr>
+								            </table>
+								        </td>
+								    </tr>
+								</table>
+								<!-- HEADER END -->
+								<!--{{%%{{ end if }}%%}}-->
+
+								<!-- SECTEUR START -->
+								<!-- BTP, SAN, TRA, COM, HCR -->
+								<!--DEL{{--><table border="0" class="row contentSecteur secteur-BTP" style="-premailer-background: **((secteur_color))**; -premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%; background: #f39b1e; border-collapse: collapse; border-spacing: 0; color: #ffffff; display: block; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px; text-align: left; vertical-align: top; width: 100%" bgcolor="#f39b1e" width="100%" cellpadding="0" cellspacing="0"><tr style="padding: 0; text-align: left; vertical-align: top" align="left"><td class="wrapper first" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 40px; font-weight: 200; hyphens: none; line-height: 40px; margin: 0; padding: 20px 0px 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top"><table border="0" class="twelve columns" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 720; border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 720px" width="720" cellpadding="0" cellspacing="0"><tr style="padding: 0; text-align: left; vertical-align: top" align="left"><td class="text-pad center" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 40px; font-weight: 200; hyphens: none; line-height: 40px; margin: 0; padding: 0px 40px 10px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top"><span class="essentiel">L'essentiel du</span> <span class="secteur" style="font-weight: 600; text-transform: uppercase; white-space: nowrap; word-break: keep-all">BTP</span></td><td class="expander" style="-moz-hyphens: none; -ms-hyphens: none; -premailer-background: **((secteur_color))**; -premailer-width: 1; -webkit-hyphens: none; background: #f39b1e; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 40px; font-weight: 200; hyphens: none; line-height: 40px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word" align="left" bgcolor="#f39b1e" valign="top" width="1"></td></tr></table></td></tr></table><!--}}DEL-->
+								<!--DEL{{--><table border="0" class="row contentSecteur secteur-SAN" style="-premailer-background: **((secteur_color))**; -premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%; background: #20a611; border-collapse: collapse; border-spacing: 0; color: #ffffff; display: block; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px; text-align: left; vertical-align: top; width: 100%" bgcolor="#20a611" width="100%" cellpadding="0" cellspacing="0"><tr style="padding: 0; text-align: left; vertical-align: top" align="left"><td class="wrapper first" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 40px; font-weight: 200; hyphens: none; line-height: 40px; margin: 0; padding: 20px 0px 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top"><table border="0" class="twelve columns" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 720; border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 720px" width="720" cellpadding="0" cellspacing="0"><tr style="padding: 0; text-align: left; vertical-align: top" align="left"><td class="text-pad center" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 40px; font-weight: 200; hyphens: none; line-height: 40px; margin: 0; padding: 0px 40px 10px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top"><span class="essentiel">L'essentiel de la</span> <span class="secteur" style="font-weight: 600; text-transform: uppercase; white-space: nowrap; word-break: keep-all">Sant&#233;</span></td><td class="expander" style="-moz-hyphens: none; -ms-hyphens: none; -premailer-background: **((secteur_color))**; -premailer-width: 1; -webkit-hyphens: none; background: #20a611; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 40px; font-weight: 200; hyphens: none; line-height: 40px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word" align="left" bgcolor="#20a611" valign="top" width="1"></td></tr></table></td></tr></table><!--}}DEL-->
+								<!--DEL{{--><table border="0" class="row contentSecteur secteur-TRA" style="-premailer-background: **((secteur_color))**; -premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%; background: #e7503d; border-collapse: collapse; border-spacing: 0; color: #ffffff; display: block; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px; text-align: left; vertical-align: top; width: 100%" bgcolor="#e7503d" width="100%" cellpadding="0" cellspacing="0"><tr style="padding: 0; text-align: left; vertical-align: top" align="left"><td class="wrapper first" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 40px; font-weight: 200; hyphens: none; line-height: 40px; margin: 0; padding: 20px 0px 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top"><table border="0" class="twelve columns" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 720; border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 720px" width="720" cellpadding="0" cellspacing="0"><tr style="padding: 0; text-align: left; vertical-align: top" align="left"><td class="text-pad center" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 40px; font-weight: 200; hyphens: none; line-height: 40px; margin: 0; padding: 0px 40px 10px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top"><span class="essentiel">L'essentiel du</span> <span class="secteur" style="font-weight: 600; text-transform: uppercase; white-space: nowrap; word-break: keep-all">Transport</span></td><td class="expander" style="-moz-hyphens: none; -ms-hyphens: none; -premailer-background: **((secteur_color))**; -premailer-width: 1; -webkit-hyphens: none; background: #e7503d; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 40px; font-weight: 200; hyphens: none; line-height: 40px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word" align="left" bgcolor="#e7503d" valign="top" width="1"></td></tr></table></td></tr></table><!--}}DEL-->
+								<!--DEL{{--><table border="0" class="row contentSecteur secteur-COM" style="-premailer-background: **((secteur_color))**; -premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%; background: #9186bc; border-collapse: collapse; border-spacing: 0; color: #ffffff; display: block; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px; text-align: left; vertical-align: top; width: 100%" bgcolor="#9186bc" width="100%" cellpadding="0" cellspacing="0"><tr style="padding: 0; text-align: left; vertical-align: top" align="left"><td class="wrapper first" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 40px; font-weight: 200; hyphens: none; line-height: 40px; margin: 0; padding: 20px 0px 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top"><table border="0" class="twelve columns" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 720; border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 720px" width="720" cellpadding="0" cellspacing="0"><tr style="padding: 0; text-align: left; vertical-align: top" align="left"><td class="text-pad center" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 40px; font-weight: 200; hyphens: none; line-height: 40px; margin: 0; padding: 0px 40px 10px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top"><span class="essentiel">L'essentiel du</span> <span class="secteur" style="font-weight: 600; text-transform: uppercase; white-space: nowrap; word-break: keep-all">Commerce</span></td><td class="expander" style="-moz-hyphens: none; -ms-hyphens: none; -premailer-background: **((secteur_color))**; -premailer-width: 1; -webkit-hyphens: none; background: #9186bc; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 40px; font-weight: 200; hyphens: none; line-height: 40px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word" align="left" bgcolor="#9186bc" valign="top" width="1"></td></tr></table></td></tr></table><!--}}DEL-->
+								<!--DEL{{--><table border="0" class="row contentSecteur secteur-HCR" style="-premailer-background: **((secteur_color))**; -premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%; background: #c9526f; border-collapse: collapse; border-spacing: 0; color: #ffffff; display: block; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px; text-align: left; vertical-align: top; width: 100%" bgcolor="#c9526f" width="100%" cellpadding="0" cellspacing="0"><tr style="padding: 0; text-align: left; vertical-align: top" align="left"><td class="wrapper first" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 40px; font-weight: 200; hyphens: none; line-height: 40px; margin: 0; padding: 20px 0px 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top"><table border="0" class="twelve columns" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 720; border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 720px" width="720" cellpadding="0" cellspacing="0"><tr style="padding: 0; text-align: left; vertical-align: top" align="left"><td class="text-pad center" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 40px; font-weight: 200; hyphens: none; line-height: 40px; margin: 0; padding: 0px 40px 10px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top"><span class="essentiel">L'essentiel de la</span> <span class="secteur" style="font-weight: 600; text-transform: uppercase; white-space: nowrap; word-break: keep-all">Restauration<span class="slash" style="margin: 0 -0.25em"> / </span>H&#244;tellerie</span></td><td class="expander" style="-moz-hyphens: none; -ms-hyphens: none; -premailer-background: **((secteur_color))**; -premailer-width: 1; -webkit-hyphens: none; background: #c9526f; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 40px; font-weight: 200; hyphens: none; line-height: 40px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word" align="left" bgcolor="#c9526f" valign="top" width="1"></td></tr></table></td></tr></table><!--}}DEL-->
+								<!--DEL{{--><table border="0" class="row contentSecteur secteur-ECO" style="-premailer-background: **((secteur_color))**; -premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%; background: #009cdd; border-collapse: collapse; border-spacing: 0; color: #ffffff; display: block; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px; text-align: left; vertical-align: top; width: 100%" bgcolor="#009cdd" width="100%" cellpadding="0" cellspacing="0"><tr style="padding: 0; text-align: left; vertical-align: top" align="left"><td class="wrapper first" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 40px; font-weight: 200; hyphens: none; line-height: 40px; margin: 0; padding: 20px 0px 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top"><table border="0" class="twelve columns" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 720; border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 720px" width="720" cellpadding="0" cellspacing="0"><tr style="padding: 0; text-align: left; vertical-align: top" align="left"><td class="text-pad center" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 40px; font-weight: 200; hyphens: none; line-height: 40px; margin: 0; padding: 0px 40px 10px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top"><span class="essentiel">L'essentiel de</span> <span class="secteur" style="font-weight: 600; text-transform: uppercase; white-space: nowrap; word-break: keep-all">l'&#201;conomie</span></td><td class="expander" style="-moz-hyphens: none; -ms-hyphens: none; -premailer-background: **((secteur_color))**; -premailer-width: 1; -webkit-hyphens: none; background: #009cdd; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 40px; font-weight: 200; hyphens: none; line-height: 40px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word" align="left" bgcolor="#009cdd" valign="top" width="1"></td></tr></table></td></tr></table><!--}}DEL-->
+								<table border="0" class="row contentSecteur secteur-%%{{=motifsec}}%% -premailer-hidden" bgcolor="%%{{=secteur_color}}%%" style="-premailer-background: **((secteur_color))**; -premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%; border-collapse: collapse; border-spacing: 0; color: #ffffff; display: block; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px; text-align: left; vertical-align: top; width: 100%" width="100%" cellpadding="0" cellspacing="0">
+									<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+										<td class="wrapper first" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 40px; font-weight: 200; hyphens: none; line-height: 40px; margin: 0; padding: 20px 0px 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+											<table border="0" class="twelve columns" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 720; border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 720px" width="720" cellpadding="0" cellspacing="0">
+												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+													<td class="text-pad center" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 40px; font-weight: 200; hyphens: none; line-height: 40px; margin: 0; padding: 0px 40px 10px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
+														<span class="essentiel"><!--{{%%{{=secteur_essentiel}}%%}}--><!--DEL{{-->secteur_essentiel<!--}}DEL--></span> <span class="secteur" style="font-weight: 600; text-transform: uppercase; white-space: nowrap; word-break: keep-all"><!--{{%%{{=secteur_title}}%%}}--><!--DEL{{-->secteur_title<!--}}DEL--></span>
+													</td>
+													<td class="expander" bgcolor="%%{{=secteur_color}}%%" style="-moz-hyphens: none; -ms-hyphens: none; -premailer-background: **((secteur_color))**; -premailer-width: 1; -webkit-hyphens: none; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 40px; font-weight: 200; hyphens: none; line-height: 40px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word" align="left" valign="top" width="1"></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+								<!-- SECTEUR END -->
+
+								<!-- DATEINFO START -->
+								<table border="0" class="row contentDateInfo" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%; border-collapse: collapse; border-spacing: 0; display: block; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px; text-align: left; vertical-align: top; width: 100%" width="100%" cellpadding="0" cellspacing="0">
+									<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+										<td class="date wrapper first last" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; background: #8d99a7; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 10px 0px 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" bgcolor="#8d99a7" valign="top">
+											<table border="0" class="four columns" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 240; border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 240px" width="240" cellpadding="0" cellspacing="0">
+												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+													<td class="text-pad" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px 40px 10px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top"><a class="link_disabled" href="#" style="color: #ffffff; cursor: default; pointer-events: none; text-decoration: none"><span class="important" style="color: #ffffff !important; cursor: default !important; pointer-events: none !important; text-decoration: none !important"><!--{{%%{{=get_date}}%%}}--><!--DEL{{-->get_date<!--}}DEL--></span></a></td>
+													<td class="expander" style="-moz-hyphens: none; -ms-hyphens: none; -premailer-width: 1; -webkit-hyphens: none; background: #8d99a7; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word" align="left" bgcolor="#8d99a7" valign="top" width="1"></td>
+												</tr>
+											</table>
+										</td>
+										<td class="info wrapper last" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; background: #4f5966; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 10px 0px 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" bgcolor="#4f5966" valign="top">
+											<table border="0" class="eight columns" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 480; border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 480px" width="480" cellpadding="0" cellspacing="0">
+												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+													<td class="text-pad center" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px 40px 10px; text-align: center; text-transform: uppercase; vertical-align: top; word-break: break-word" align="center" valign="top">La newsletter d'information de votre secteur</td>
+													<td class="expander" style="-moz-hyphens: none; -ms-hyphens: none; -premailer-width: 1; -webkit-hyphens: none; background: #4f5966; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0; text-align: left; text-transform: uppercase; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word" align="left" bgcolor="#4f5966" valign="top" width="1"></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+								<!-- DATEINFO END -->
+
+								<!--{{%%{{ if(texte_vacances <> "") then }}%%}}-->
+								<!-- TEXTEVACANCES START -->
+								<table border="0" class="row contentCabInform" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%; background: #eaeaea; border-collapse: collapse; border-spacing: 0; color: #595959; display: block; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px; text-align: left; vertical-align: top; width: 100%" bgcolor="#eaeaea" width="100%" cellpadding="0" cellspacing="0">
+									<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+										<td class="wrapper first last" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #595959; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 20px 0px 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+											<table border="0" class="twelve columns" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 720; border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 720px" width="720" cellpadding="0" cellspacing="0">
+												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+													<td class="text-pad" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #595959; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px 40px 20px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+														<div class="text" style="color: #595959"><!--{{%%{{=texte_vacances}}%%}}--><!--DEL{{-->texte_vacances<!--}}DEL--></div>
+													</td>
+													<td class="expander" style="-moz-hyphens: none; -ms-hyphens: none; -premailer-width: 1; -webkit-hyphens: none; background: #eaeaea; border-collapse: collapse !important; color: #595959; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word" align="left" bgcolor="#eaeaea" valign="top" width="1"></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+								<!-- TEXTEVACANCES END -->
+								<!--{{%%{{ end if }}%%}}-->
+								
+								<!--{{%%{{
+								if ((rsCount(0)>0)) then
+									if not rs.eof then 
+										while not (rs.eof)
+								}}%%}}-->
+								<!-- CABINFORM START -->
+								<table border="0" class="row contentCabInform" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%; background: #eaeaea; border-collapse: collapse; border-spacing: 0; color: #595959; display: block; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px; text-align: left; vertical-align: top; width: 100%" bgcolor="#eaeaea" width="100%" cellpadding="0" cellspacing="0">
+									<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+										<td class="wrapper first last" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #595959; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 20px 0px 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+											<table border="0" class="twelve columns" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 720; border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 720px" width="720" cellpadding="0" cellspacing="0">
+												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+													<td class="text-pad" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #595959; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px 40px 20px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+														<h5 class="preTitle" style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold; line-height: 17.6px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; word-break: normal" align="left">Le cabinet <span class="last" style="color: **((secteur_color))**">vous informe</span></h5>
+														<!--{{%%{{
+														lien_cab=rs("lien")
+														if (lien_cab <> "") then
+														}}%%}}-->
+														<h3 class="title" style="color: #262626; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 22px; font-weight: bold; line-height: 24.2px; margin: 0; mso-line-height-rule: exactly; padding: 5px 0 0; text-align: left; word-break: normal" align="left">
+															<a target="_blank" href="%%{{=lien_cab}}%%" style="color: #262626; text-decoration: none"><span class="important" style="color: #262626 !important; text-decoration: none !important"><!--{{%%{{=rs("titre")}}%%}}--><!--DEL{{-->titre<!--}}DEL--></span></a>
+														</h3>
+														<div class="text" style="color: #595959; padding-top: 5px">
+															<a target="_blank" href="%%{{=lien_cab}}%%" style="color: #595959; text-decoration: none">
+																<span class="important" style="color: #595959 !important; text-decoration: none !important"><!--{{%%{{=rs("texte")}}%%}}--><!--DEL{{-->texte<!--}}DEL--></span>
+															</a>
+														</div>
+														<table class="readMore" border="0" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%; border-collapse: collapse; border-spacing: 0; clear: both; color: #595959; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; overflow: hidden; padding: 0; text-align: left; vertical-align: top; width: 100%" width="100%" cellpadding="0" cellspacing="0">
+															<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+																<td class="buttonWrapper" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; clear: both; color: #595959; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 5px 0px 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+																	<table border="0" align="right" class="tiny-button" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: auto; border-collapse: collapse; border-spacing: 0; display: table; empty-cells: hide; float: right; mso-table-lspace: 0pt; mso-table-rspace: 0pt; overflow: hidden; padding: 0; table-layout: auto; text-align: left; vertical-align: top; width: auto" width="auto" cellpadding="0" cellspacing="0">
+																		<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+																			<td style="-moz-hyphens: none; -ms-hyphens: none; -premailer-width: auto; -webkit-hyphens: none; background: #919191; border: 1px solid #727272; border-collapse: collapse !important; color: #ffffff; display: block; float: none; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 10.2px; font-weight: normal; hyphens: none; line-height: 14px !important; margin: 0px; mso-line-height-rule: exactly; padding: 4px 8px; text-align: center; text-transform: uppercase; vertical-align: middle; width: auto !important; word-break: break-word" align="center" bgcolor="#919191" valign="middle" width="auto">
+																				<a target="_blank" href="%%{{=lien_cab}}%%" style="color: #ffffff; display: block; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 10.2px; font-weight: normal; height: 100%; margin: 0px; padding: 0px; text-decoration: none; width: 100%"><span class="important" style="color: #ffffff !important; text-decoration: none !important">Lire la suite</span></a>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+														</table>
+														<!--{{%%{{ else }}%%}}-->
+														<h3 class="title" style="color: #262626; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 22px; font-weight: bold; line-height: 24.2px; margin: 0; mso-line-height-rule: exactly; padding: 10px 0 0; text-align: left; word-break: normal" align="left"><!--{{%%{{=rs("titre")}}%%}}--><!--DEL{{-->titre<!--}}DEL--></h3>
+														<div class="text" style="color: #595959; padding-top: 5px"><!--{{%%{{=rs("texte")}}%%}}--><!--DEL{{-->texte<!--}}DEL--></div>
+														<!--{{%%{{ end if }}%%}}-->
+													</td>
+													<td class="expander" style="-moz-hyphens: none; -ms-hyphens: none; -premailer-width: 1; -webkit-hyphens: none; background: #eaeaea; border-collapse: collapse !important; color: #595959; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word" align="left" bgcolor="#eaeaea" valign="top" width="1"></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+								<!-- CABINFORM END -->
+								<!--{{%%{{
+										rs.movenext
+										wend
+									end if
+								end if
+								}}%%}}-->
+
+								<!-- ALAUNE START -->
+								<!--{{%%{{
+								if isDemo=True then
+									sql_Flash_Infos="SELECT MAX(ID_FLASH_INFOS) FROM FLASHS_INFOS where type_flash=4 and frequence_flash=2"
+									set rs_Flash_Infos=conn.execute(sql_Flash_Infos)
+									ID_FLASH_INFOS=rs_Flash_Infos(0)
+
+									sql_Flash_Infos_bis="SELECT * FROM FLASHS_INFOS where ID_FLASH_INFOS = "& ID_FLASH_INFOS
+									set rs_Flash_Infos_bis=conn.execute(sql_Flash_Infos_bis)
+									idarticleAlaune= rs_Flash_Infos_bis(4)
+								end if
+
+								if idarticleAlaune="" then idarticleAlaune=request.QueryString("amp;idarticleAlaune")
+									SQLArticleAlaune="SELECT * FROM CHAPITRES_FLASHS_INFOS WHERE (IDCHAPITRE_FLASH_INFOS = "& idarticleAlaune &")"
+									Set rsArticleAlaune=conn.Execute(SQLArticleAlaune)
+									id_de_larticle=mid(rsArticleAlaune("URL_DETAIL_INFO"),13,len(rsArticleAlaune("URL_DETAIL_INFO"))-16)
+
+									article_une_qstart_v3 = InStr(rsArticleAlaune("URL_DETAIL_V3"),"?")
+									if (article_une_qstart_v3 > 0) then
+										article_une_url_v3 = Replace(rsArticleAlaune("URL_DETAIL_V3"),"?","?fintrack=&amp;",article_une_qstart_v3,1)
+									else
+										article_une_url_v3 = "?fintrack=&amp;"&rsArticleAlaune("URL_DETAIL_V3")
+									end if
+									
+									article_une_rub = ""
+									article_une_titre = rsArticleAlaune("TITRE_CHAPITRE_FLASH_INFOS")
+
+									rub_une_start = (InStr(article_une_titre,"$${{") + 4)
+									rub_une_end = InStr(article_une_titre,"}}$$")
+									rub_une_len = (rub_une_end - rub_une_start)
+									if(rub_une_len > 0) then
+										article_une_rub = Mid(article_une_titre, rub_une_start, rub_une_len)
+										article_une_titre = Mid(article_une_titre, (rub_une_end + 4))
+									end if
+								}}%%}}-->
+								<table border="0" class="row contentALaUne" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%; border-collapse: collapse; border-spacing: 0; display: block; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px; text-align: left; vertical-align: top; width: 100%" width="100%" cellpadding="0" cellspacing="0">
+									<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+										<td class="wrapper first last" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 20px 0px 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+											<table border="0" class="twelve columns" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 720; border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 720px" width="720" cellpadding="0" cellspacing="0">
+												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+													<td class="text-pad" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px 40px 20px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+														<h5 class="preTitle" style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold; line-height: 17.6px; margin: 0; mso-line-height-rule: exactly; padding: 0 0 5px; text-align: left; word-break: normal" align="left">&#192; la <span class="last" style="color: **((secteur_color))**">une</span></h5>
+														<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/%%{{=article_une_url_v3}}%%&amp;%%{{=tracking_url}}%%" style="color: #666666; display: block; outline: none; text-decoration: none">
+															<img class="center" src="http://e-newsletter.expert-infos.com/_infos/_photos/%%{{=id_de_larticle}}%%-h.jpg" width="640" height="293" alt="Article &#224; la Une" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: none; margin: 0 auto; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none" /><!--DEL{{--><img class="center" src="http://lorempixel.com/1280/586/business/" width="640" height="293" alt="" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: none; margin: 0 auto; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none" /><!--}}DEL-->
+														</a>
+														<h2 class="title" style="color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 30px; font-weight: bold; line-height: 33px; margin: 0; mso-line-height-rule: exactly; padding: 5px 0 0; text-align: left; word-break: normal" align="left">
+															<a target="_blank" href="http://%%{{=url_site_exp}}%%/%%{{=article_une_url_v3}}%%&amp;%%{{=tracking_url}}%%" style="color: #666666; text-decoration: none">
+																<span class="important" style="color: #666666 !important; text-decoration: none !important"><!--{{%%{{=article_une_titre}}%%}}--><!--DEL{{-->article_une_titre<!--}}DEL--></span>
+															</a>
+														</h2>
+														<div class="text" style="padding-top: 5px">
+															<a target="_blank" href="http://%%{{=url_site_exp}}%%/%%{{=article_une_url_v3}}%%&amp;%%{{=tracking_url}}%%" style="color: #666666; text-decoration: none">
+																<span class="important" style="color: #666666 !important; text-decoration: none !important"><!--{{%%{{=rsArticleAlaune("CONTENU_CHAPITRE_FLASH_INFOS")}}%%}}--><!--DEL{{-->CONTENU_CHAPITRE_FLASH_INFOS<!--}}DEL--></span>
+															</a>
+														</div>
+														<table class="readMore" border="0" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%; border-collapse: collapse; border-spacing: 0; clear: both; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; overflow: hidden; padding: 0; text-align: left; vertical-align: top; width: 100%" width="100%" cellpadding="0" cellspacing="0">
+															<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+																<td class="buttonWrapper" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; clear: both; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 5px 0px 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+																	<table border="0" align="right" class="tiny-button" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: auto; border-collapse: collapse; border-spacing: 0; display: table; empty-cells: hide; float: right; mso-table-lspace: 0pt; mso-table-rspace: 0pt; overflow: hidden; padding: 0; table-layout: auto; text-align: left; vertical-align: top; width: auto" width="auto" cellpadding="0" cellspacing="0">
+																		<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+																			<td bgcolor="%%{{=secteur_color}}%%" bordercolor="%%{{=secteur_color_darken12}}%%" style="-moz-hyphens: none; -ms-hyphens: none; -premailer-background: **((secteur_color))**; -premailer-border: 1px solid **((secteur_color_darken12))**; -premailer-width: auto; -webkit-hyphens: none; background: #666666 url('http://newsletter-templates.lesechos-publishing.fr/templates/expertInfos_sec/-premailer-bgdebug'); border: 999000999ex none transparent; border-collapse: collapse !important; color: #ffffff; display: block; float: none; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 10.2px; font-weight: normal; hyphens: none; line-height: 14px !important; margin: 0px; mso-line-height-rule: exactly; padding: 4px 8px; text-align: center; text-transform: uppercase; vertical-align: middle; width: auto !important; word-break: break-word" align="center" valign="middle" width="auto">
+																				<a target="_blank" href="http://%%{{=url_site_exp}}%%/%%{{=article_une_url_v3}}%%&amp;%%{{=tracking_url}}%%" style="color: #ffffff; display: block; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 10.2px; font-weight: normal; height: 100%; margin: 0px; padding: 0px; text-decoration: none; width: 100%"><span class="important" style="color: #ffffff !important; text-decoration: none !important">Lire la suite</span></a>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+														</table>
+													</td>
+													<td class="expander" style="-moz-hyphens: none; -ms-hyphens: none; -premailer-width: 1; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word" align="left" valign="top" width="1"></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+								<!-- ALAUNE END -->
+
+								<!-- ARTICLES START -->
+								<!--{{%%{{
+								if isDemo=True then
+									sql_Chapitre_Flash_Infos="SELECT * FROM CHAPITRES_FLASHS_INFOS where ID_FLASH_INFOS = "& ID_FLASH_INFOS &" order by ORDRE_CHAPITRE_FLASH_INFOS DESC"
+									set rs_Chapitre_Flash_Infos=conn.execute(sql_Chapitre_Flash_Infos)
+									                          
+									if not rs_Chapitre_Flash_Infos.eof then
+										while not rs_Chapitre_Flash_Infos.eof
+											idarticle_1=rs_Chapitre_Flash_Infos(0)
+											rs_Chapitre_Flash_Infos.movenext
+											if idarticle_1<>idarticleAlaune then
+												idarticle= idarticle_1 &"-"& idarticle
+											end if
+										wend
+									end if
+								end if
+
+								if isDemo=False then
+									idarticle=idarticle&"-"
+								end if
+								}}%%}}-->
+								<table border="0" class="row contentArticles" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%; background: #eaeaea; border-collapse: collapse; border-spacing: 0; display: block; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px; text-align: left; vertical-align: top; width: 100%" bgcolor="#eaeaea" width="100%" cellpadding="0" cellspacing="0">
+									<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+										<td class="wrapper first last" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 20px 0px 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+											<table border="0" class="twelve columns" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 720; border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 720px" width="720" cellpadding="0" cellspacing="0">
+												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+													<td class="text-pad" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px 40px 20px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+														<h5 class="preTitle" style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold; line-height: 17.6px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; word-break: normal" align="left">Autres <span class="last" style="color: **((secteur_color))**">actualit&#233;s</span></h5>
+														<!--{{%%{{
+														if idarticle="" then request.QueryString("amp;idarticle")
+														article=Mid(idarticle,1,(len(idarticle)))
+														nbc_desc=len(article)
+														k=1
+														i=1
+														
+										    			while k <= nbc_desc
+														carn=asc(Mid(article,k,1))
+														car=Mid(article,k,1)
+														if carn = 45 then
+															SQLArticle="SELECT * FROM CHAPITRES_FLASHS_INFOS WHERE (IDCHAPITRE_FLASH_INFOS = "& cart &")"
+															Set rsArticle=conn.Execute(SQLArticle)
+															id_de_larticle=mid(rsArticle("URL_DETAIL_INFO"),13,len(rsArticle("URL_DETAIL_INFO"))-16)
+															
+															SQLIdArticle="SELECT * FROM CHAPITRES_FLASHS_INFOS WHERE (IDCHAPITRE_FLASH_INFOS = "& cart &")"
+															Set rsIdArticle=conn.Execute(SQLIdArticle)
+															id_flash=rsIdArticle("ID_FLASH_INFOS")
+																												
+															CountArt="SELECT COUNT(*) FROM CHAPITRES_FLASHS_INFOS WHERE ID_FLASH_INFOS="& id_flash
+															set rsCountArt=conn.Execute(CountArt)
+															nbrart=rsCountArt(0)
+
+															article_qstart_v3 = InStr(rsArticle("URL_DETAIL_V3"),"?")
+															if (article_qstart_v3 > 0) then
+																article_url_v3 = Replace(rsArticle("URL_DETAIL_V3"),"?","?fintrack=&amp;",article_qstart_v3,1)
+															else
+																article_url_v3 = "?fintrack=&amp;"&rsArticle("URL_DETAIL_V3")
+															end if
+
+															article_rub = ""
+															article_titre = rsArticle("TITRE_CHAPITRE_FLASH_INFOS")
+															
+															rub_start = (InStr(article_titre,"$${{") + 4)
+															rub_end = InStr(article_titre,"}}$$")
+															rub_len = (rub_end - rub_start)
+															if(rub_len > 0) then
+																article_rub = Mid(article_titre, rub_start, rub_len)
+																article_titre = Mid(article_titre, (rub_end + 4))
+															end if
+														}}%%}}-->
+														<h3 class="title" style="color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 22px; font-weight: bold; line-height: 24.2px; margin: 0; mso-line-height-rule: exactly; padding: 5px 0 0; text-align: left; word-break: normal" align="left">
+															<a target="_blank" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%&amp;%%{{=tracking_url}}%%" style="color: #666666; text-decoration: none">
+																<span class="important" style="color: #666666 !important; text-decoration: none !important"><!--{{%%{{=article_titre}}%%}}--><!--DEL{{-->article_titre<!--}}DEL--></span>
+															</a>
+														</h3>
+														<div class="text" style="padding-top: 5px">
+															<a target="_blank" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%&amp;%%{{=tracking_url}}%%" style="color: #666666; text-decoration: none">
+																<span class="important" style="color: #666666 !important; text-decoration: none !important"><!--{{%%{{=rsArticle("CONTENU_CHAPITRE_FLASH_INFOS")}}%%}}--><!--DEL{{-->CONTENU_CHAPITRE_FLASH_INFOS<!--}}DEL--></span>
+															</a>
+														</div>
+														<table class="readMore" border="0" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%; border-collapse: collapse; border-spacing: 0; clear: both; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; overflow: hidden; padding: 0; text-align: left; vertical-align: top; width: 100%" width="100%" cellpadding="0" cellspacing="0">
+															<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+																<td class="buttonWrapper" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; clear: both; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 5px 0px 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+																	<table border="0" align="right" class="tiny-button" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: auto; border-collapse: collapse; border-spacing: 0; display: table; empty-cells: hide; float: right; mso-table-lspace: 0pt; mso-table-rspace: 0pt; overflow: hidden; padding: 0; table-layout: auto; text-align: left; vertical-align: top; width: auto" width="auto" cellpadding="0" cellspacing="0">
+																		<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+																			<td style="-moz-hyphens: none; -ms-hyphens: none; -premailer-width: auto; -webkit-hyphens: none; background: #919191; border: 1px solid #727272; border-collapse: collapse !important; color: #ffffff; display: block; float: none; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 10.2px; font-weight: normal; hyphens: none; line-height: 14px !important; margin: 0px; mso-line-height-rule: exactly; padding: 4px 8px; text-align: center; text-transform: uppercase; vertical-align: middle; width: auto !important; word-break: break-word" align="center" bgcolor="#919191" valign="middle" width="auto">
+																				<a target="_blank" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%&amp;%%{{=tracking_url}}%%" style="color: #ffffff; display: block; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 10.2px; font-weight: normal; height: 100%; margin: 0px; padding: 0px; text-decoration: none; width: 100%"><span class="important" style="color: #ffffff !important; text-decoration: none !important">Lire la suite</span></a>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+														</table>
+														<!--{{%%{{
+															i=i+1
+																cart=""
+															else
+															    cart=cart+car
+															end if
+															k=k+1
+															wend
+														}}%%}}-->
+													</td>
+													<td class="expander" style="-moz-hyphens: none; -ms-hyphens: none; -premailer-width: 1; -webkit-hyphens: none; background: #eaeaea; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word" align="left" bgcolor="#eaeaea" valign="top" width="1"></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+								<!-- ARTICLES END -->
+
+								<!-- ETUDE START -->
+								<table border="0" class="row contentEtude" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%; background: #4f5966; border-collapse: collapse; border-spacing: 0; color: #ffffff; display: block; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px; text-align: left; vertical-align: top; width: 100%" bgcolor="#4f5966" width="100%" cellpadding="0" cellspacing="0">
+									<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+										<td class="filler" style="-moz-hyphens: none; -ms-hyphens: none; -premailer-height: 20px; -webkit-hyphens: none; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 0px; font-weight: normal; height: 20px; hyphens: none; line-height: 0px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top" height="20px"><p class="empty" style="color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 0px; font-weight: normal; line-height: 0px; margin: 0px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left">&#160;</p></td>
+										<td class="filler" style="-moz-hyphens: none; -ms-hyphens: none; -premailer-height: 20px; -webkit-hyphens: none; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 0px; font-weight: normal; height: 20px; hyphens: none; line-height: 0px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top" height="20px"><p class="empty" style="color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 0px; font-weight: normal; line-height: 0px; margin: 0px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left">&#160;</p></td>
+										<td class="filler" style="-moz-hyphens: none; -ms-hyphens: none; -premailer-height: 20px; -webkit-hyphens: none; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 0px; font-weight: normal; height: 20px; hyphens: none; line-height: 0px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top" height="20px"><p class="empty" style="color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 0px; font-weight: normal; line-height: 0px; margin: 0px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left">&#160;</p></td>
+									</tr>
+									<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+										<td class="wrapper first" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+											<table border="0" class="four columns" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 240; border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 240px" width="240" cellpadding="0" cellspacing="0">
+												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+													<td class="text-pad" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px 40px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+														<table border="0" class="value" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%; border-collapse: collapse; border-spacing: 0; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 100%" width="100%" cellpadding="0" cellspacing="0">
+															<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+																<td class="center" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 30px; font-weight: 500; hyphens: none; line-height: 30px; margin: 0; padding: 0px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
+																	<a class="link_disabled" href="#" style="color: #ffffff; cursor: default; pointer-events: none; text-decoration: none"><span class="important" style="color: #ffffff !important; cursor: default !important; pointer-events: none !important; text-decoration: none !important"><!--{{%%{{=secteur_etude1_valeur}}%%}}--><!--DEL{{-->secteur etude1 valeur<!--}}DEL--></span></a>
+																</td>
+															</tr>
+														</table>
+														<table border="0" class="text" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%; border-collapse: collapse; border-spacing: 0; color: #d3d6d9; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 5px 0 0; text-align: left; vertical-align: top; width: 100%" width="100%" cellpadding="0" cellspacing="0">
+															<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+																<td class="center" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 5px 0px 0px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
+																	<!--{{%%{{=secteur_etude1_titre}}%%}}--><!--DEL{{-->secteur etude1 titre<!--}}DEL-->
+																</td>
+															</tr>
+														</table>
+													</td>
+													<td class="expander" style="-moz-hyphens: none; -ms-hyphens: none; -premailer-width: 1; -webkit-hyphens: none; background: #4f5966; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word" align="left" bgcolor="#4f5966" valign="top" width="1"></td>
+												</tr>
+											</table>
+										</td>
+										<td class="wrapper" style="-moz-hyphens: none; -ms-hyphens: none; -premailer-border-left: 1px solid **((secteur_color))**; -webkit-hyphens: none; border: 999000999ex none transparent; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+											<table border="0" class="four columns" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 240; border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 239px" width="240" cellpadding="0" cellspacing="0">
+												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+													<td class="text-pad" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px 40px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+														<table border="0" class="value" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%; border-collapse: collapse; border-spacing: 0; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 100%" width="100%" cellpadding="0" cellspacing="0">
+															<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+																<td class="center" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 30px; font-weight: 500; hyphens: none; line-height: 30px; margin: 0; padding: 0px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
+																	<a class="link_disabled" href="#" style="color: #ffffff; cursor: default; pointer-events: none; text-decoration: none"><span class="important" style="color: #ffffff !important; cursor: default !important; pointer-events: none !important; text-decoration: none !important"><!--{{%%{{=secteur_etude2_valeur}}%%}}--><!--DEL{{-->secteur etude2 valeur<!--}}DEL--></span></a>
+																</td>
+															</tr>
+														</table>
+														<table border="0" class="text" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%; border-collapse: collapse; border-spacing: 0; color: #d3d6d9; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 5px 0 0; text-align: left; vertical-align: top; width: 100%" width="100%" cellpadding="0" cellspacing="0">
+															<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+																<td class="center" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 5px 0px 0px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
+																	<!--{{%%{{=secteur_etude2_titre}}%%}}--><!--DEL{{-->secteur etude2 titre<!--}}DEL-->
+																</td>
+															</tr>
+														</table>
+													</td>
+													<td class="expander" style="-moz-hyphens: none; -ms-hyphens: none; -premailer-width: 1; -webkit-hyphens: none; background: #4f5966; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word" align="left" bgcolor="#4f5966" valign="top" width="1"></td>
+												</tr>
+											</table>
+										</td>
+										<td class="wrapper last" style="-moz-hyphens: none; -ms-hyphens: none; -premailer-border-left: 1px solid **((secteur_color))**; -webkit-hyphens: none; border: 999000999ex none transparent; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+											<table border="0" class="four columns" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 240; border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 239px" width="240" cellpadding="0" cellspacing="0">
+												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+													<td class="text-pad" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px 40px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+														<table border="0" class="value" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%; border-collapse: collapse; border-spacing: 0; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 100%" width="100%" cellpadding="0" cellspacing="0">
+															<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+																<td class="center" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 30px; font-weight: 500; hyphens: none; line-height: 30px; margin: 0; padding: 0px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
+																	<a class="link_disabled" href="#" style="color: #ffffff; cursor: default; pointer-events: none; text-decoration: none"><span class="important" style="color: #ffffff !important; cursor: default !important; pointer-events: none !important; text-decoration: none !important"><!--{{%%{{=secteur_etude3_valeur}}%%}}--><!--DEL{{-->secteur etude3 valeur<!--}}DEL--></span></a>
+																</td>
+															</tr>
+														</table>
+														<table border="0" class="text" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%; border-collapse: collapse; border-spacing: 0; color: #d3d6d9; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 5px 0 0; text-align: left; vertical-align: top; width: 100%" width="100%" cellpadding="0" cellspacing="0">
+															<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+																<td class="center" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 5px 0px 0px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
+																	<!--{{%%{{=secteur_etude3_titre}}%%}}--><!--DEL{{-->secteur etude3 titre<!--}}DEL-->
+																</td>
+															</tr>
+														</table>
+													</td>
+													<td class="expander" style="-moz-hyphens: none; -ms-hyphens: none; -premailer-width: 1; -webkit-hyphens: none; background: #4f5966; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word" align="left" bgcolor="#4f5966" valign="top" width="1"></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+										<td class="filler" style="-moz-hyphens: none; -ms-hyphens: none; -premailer-height: 20px; -webkit-hyphens: none; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 0px; font-weight: normal; height: 20px; hyphens: none; line-height: 0px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top" height="20px"><p class="empty" style="color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 0px; font-weight: normal; line-height: 0px; margin: 0px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left">&#160;</p></td>
+										<td class="filler" style="-moz-hyphens: none; -ms-hyphens: none; -premailer-height: 20px; -webkit-hyphens: none; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 0px; font-weight: normal; height: 20px; hyphens: none; line-height: 0px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top" height="20px"><p class="empty" style="color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 0px; font-weight: normal; line-height: 0px; margin: 0px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left">&#160;</p></td>
+										<td class="filler" style="-moz-hyphens: none; -ms-hyphens: none; -premailer-height: 20px; -webkit-hyphens: none; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 0px; font-weight: normal; height: 20px; hyphens: none; line-height: 0px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top" height="20px"><p class="empty" style="color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 0px; font-weight: normal; line-height: 0px; margin: 0px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left">&#160;</p></td>
+									</tr>
+								</table>
+								<!-- ETUDE END -->
+
+								<!-- CONTACT START -->
+								<table border="0" class="row contentContact" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%; background: #ffffff; border-collapse: collapse; border-spacing: 0; color: #666666; display: block; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px; text-align: left; vertical-align: top; width: 100%" bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0">
+									<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+										<td class="wrapper first" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 20px 0px 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+										<!--{{%%{{ if(isSocialNetwork=False)Then }}%%}}-->
+											<table border="0" class="twelve columns -premailer-hidden" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 720; border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 720px" width="720" cellpadding="0" cellspacing="0"><!--DEL{{--></table><!--}}DEL-->
+										<!--{{%%{{ else }}%%}}-->
+											<table border="0" class="seven columns" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 420; border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 420px" width="420" cellpadding="0" cellspacing="0">
+										<!--{{%%{{ end if }}%%}}-->
+												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+													<td class="text-pad" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px 40px 10px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+														<strong><!--{{%%{{ if (len(trim(type_client)) > 1) then response.write(type_client & " ") end if }}%%%%{{=raison_sociale_exp}}%%}}--><!--DEL{{-->raison_sociale_exp<!--}}DEL--></strong>
+														<br />
+														<!--{{%%{{ lien_adresse=Server.URLEncode(adresse1_exp & " " & adresse2_exp & " " & code_postal_exp & " " & commune_exp) }}%%}}-->
+														<a target="_blank" href="http://maps.apple.com/?q=%%{{=lien_adresse}}%%" style="color: #666666; text-decoration: none"><span class="important" style="color: #666666 !important; text-decoration: none !important"><!--{{%%{{
+															'affichage adresse1'
+															nbc_desc=len(adresse1_exp)
+															k=1
+															while k <= nbc_desc
+																carn=asc(Mid(adresse1_exp,k,1))
+																car=Mid(adresse1_exp,k,1)
+																if carn = 10 then
+																	Response.Write "&nbsp;-&nbsp;"
+																else
+																	Response.Write(car)
+																end if
+																k=k+1
+															wend
+															Response.Write "&nbsp;-&nbsp;"
+															'affichage adresse2'
+															if (len(trim(adresse2_exp)) > 1) then
+																nbc_desc=len(adresse2_exp)
+																k=1
+																while k <= nbc_desc
+																	carn=asc(Mid(adresse2_exp,k,1))
+																	car=Mid(adresse2_exp,k,1)
+																	if carn = 10 then
+																		Response.Write "&nbsp;-&nbsp;"
+																	else
+																		Response.Write(car)
+																	end if
+																	k=k+1
+																wend 
+																Response.Write "&nbsp;-&nbsp;"
+															end if 
+															if (len(trim(code_postal_exp)) > 1) then response.write(code_postal_exp &"&nbsp;")  end if
+															if (len(trim(commune_exp)) > 1) then response.write(commune_exp) end if
+														}}%%}}--><!--DEL{{-->adresse<!--}}DEL--></span></a>
+														<!--{{%%{{ if (len(trim(tel_cabinet)) > 1) then }}%%}}-->
+														<br />
+														<img class="faicon" src="http://www.expert-infos.com/_newsletter/_logos/faicon-phone.gif" alt="T&#233;l&#233;phone" width="15" height="15" style="-ms-interpolation-mode: bicubic; clear: both; display: inline; float: none; font-size: 0px; line-height: 0px; max-width: 100%; mso-line-height-rule: exactly; outline: none; padding: 2px; text-decoration: none; vertical-align: top; width: auto" align="none" />&#160;T&#233;l. <span class="appleLinks"><a href="tel:%%{{=tel_cabinet}}%%" style="color: #666666; text-decoration: none"><span class="important" style="color: #666666 !important; text-decoration: none !important"><!--{{%%{{=tel_cabinet}}%%}}--><!--DEL{{-->tel_cabinet<!--}}DEL--></span></a></span>
+														<!--{{%%{{ end if }}%%}}-->
+														<!--{{%%{{ if (len(trim(fax_cabinet)) > 1) then }}%%}}-->
+														&#160;-&#160;<img class="faicon" src="http://www.expert-infos.com/_newsletter/_logos/faicon-print.gif" alt="T&#233;l&#233;phone" width="15" height="15" style="-ms-interpolation-mode: bicubic; clear: both; display: inline; float: none; font-size: 0px; line-height: 0px; max-width: 100%; mso-line-height-rule: exactly; outline: none; padding: 2px; text-decoration: none; vertical-align: top; width: auto" align="none" />&#160;Fax&#160;: <a class="link_disabled" href="#" style="color: #666666; cursor: default; pointer-events: none; text-decoration: none"><span class="important" style="color: #666666 !important; cursor: default !important; pointer-events: none !important; text-decoration: none !important"><!--{{%%{{=fax_cabinet}}%%}}--><!--DEL{{-->fax_cabinet<!--}}DEL--></span></a>
+														<!--{{%%{{ end if }}%%}}-->
+
+														<br />
+														<img class="faicon" src="http://www.expert-infos.com/_newsletter/_logos/faicon-envelope.gif" alt="Email" width="15" height="15" style="-ms-interpolation-mode: bicubic; clear: both; display: inline; float: none; font-size: 0px; line-height: 0px; max-width: 100%; mso-line-height-rule: exactly; outline: none; padding: 2px; text-decoration: none; vertical-align: top; width: auto" align="none" />&#160;<a class="link_underline" href="mailto:%%{{=email_exp}}%%" style="color: #666666; text-decoration: underline"><span class="important" style="color: #666666 !important; text-decoration: underline !important"><!--{{%%{{=email_exp}}%%}}--><!--DEL{{-->email_exp<!--}}DEL--></span></a>
+														-
+														<!--{{%%{{
+														if type_abo="4" then
+															url_site_exp = rsCabinet("url_site_exp")
+														end if
+														}}%%}}-->
+														<a target="_blank" class="link_underline" href="http://%%{{=url_site_exp}}%%?fintrack=&amp;%%{{=tracking_url}}%%" style="color: #666666; text-decoration: underline"><span class="important" style="color: #666666 !important; text-decoration: underline !important"><!--{{%%{{=url_site_exp}}%%}}--><!--DEL{{-->url_site_exp<!--}}DEL--></span></a>
+													</td>
+													<td class="expander" style="-moz-hyphens: none; -ms-hyphens: none; -premailer-width: 1; -webkit-hyphens: none; background: #ffffff; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word" align="left" bgcolor="#ffffff" valign="top" width="1"></td>
+												</tr>
+											</table>
+										</td>
+										<!--{{%%{{ if(isSocialNetwork=True)Then }}%%}}-->
+										<td class="faicons wrapper last" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 20px 0px 0px; text-align: left; vertical-align: bottom; word-break: break-word" align="left" valign="bottom">
+											<table border="0" class="five columns" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 300; border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 300px" width="300" cellpadding="0" cellspacing="0">
+												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+													<td class="text-pad" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px 40px 10px; text-align: right; vertical-align: top; word-break: break-word" align="right" valign="top">
+														<!--{{%%{{ if (url_facebook<>"") then }}%%}}-->
+														<a target="_blank" class="faicon first" href="http://%%{{=url_facebook}}%%" style="color: #666666; display: inline; font-size: 0px; line-height: 0px; mso-line-height-rule: exactly; padding: 0px 5px 5px 0px; text-decoration: none">
+															<img src="http://www.expert-infos.com/_newsletter/_logos/faicon-facebook.gif" alt="Facebook" width="15" height="15" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: inline; float: none; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none" />
+														</a>
+														<!--{{%%{{ end if }}%%}}-->
+														<!--{{%%{{ if (url_google<>"") then }}%%}}-->
+														<a target="_blank" class="faicon" href="http://%%{{=url_google}}%%" style="color: #666666; display: inline; font-size: 0px; line-height: 0px; mso-line-height-rule: exactly; padding: 0px 5px 5px; text-decoration: none">
+															<img src="http://www.expert-infos.com/_newsletter/_logos/faicon-googleplus.gif" alt="Google+" width="15" height="15" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: inline; float: none; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none" />
+														</a>
+														<!--{{%%{{ end if }}%%}}-->
+														<!--{{%%{{ if (url_linkedin<>"") then }}%%}}-->
+														<a target="_blank" class="faicon" href="http://%%{{=url_linkedin}}%%" style="color: #666666; display: inline; font-size: 0px; line-height: 0px; mso-line-height-rule: exactly; padding: 0px 5px 5px; text-decoration: none">
+															<img src="http://www.expert-infos.com/_newsletter/_logos/faicon-linkedin.gif" alt="Linkedin" width="15" height="15" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: inline; float: none; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none" />
+														</a>
+														<!--{{%%{{ end if }}%%}}-->
+														<!--{{%%{{ if (url_twitter<>"") then }}%%}}-->
+														<a target="_blank" class="faicon" href="http://%%{{=url_twitter}}%%" style="color: #666666; display: inline; font-size: 0px; line-height: 0px; mso-line-height-rule: exactly; padding: 0px 5px 5px; text-decoration: none">
+															<img src="http://www.expert-infos.com/_newsletter/_logos/faicon-twitter.gif" alt="Twitter" width="15" height="15" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: inline; float: none; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none" />
+														</a>
+														<!--{{%%{{ end if }}%%}}-->
+														<!--{{%%{{ if (url_viadeo<>"") then }}%%}}-->
+														<a target="_blank" class="faicon" href="http://%%{{=url_viadeo}}%%" style="color: #666666; display: inline; font-size: 0px; line-height: 0px; mso-line-height-rule: exactly; padding: 0px 5px 5px; text-decoration: none">
+															<img src="http://www.expert-infos.com/_newsletter/_logos/faicon-viadeo.gif" alt="Viadeo" width="15" height="15" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: inline; float: none; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none" />
+														</a>
+														<!--{{%%{{ end if }}%%}}-->
+														<!--{{%%{{ if (url_vimeo<>"") then }}%%}}-->
+														<a target="_blank" class="faicon" href="http://%%{{=url_vimeo}}%%" style="color: #666666; display: inline; font-size: 0px; line-height: 0px; mso-line-height-rule: exactly; padding: 0px 5px 5px; text-decoration: none">
+															<img src="http://www.expert-infos.com/_newsletter/_logos/faicon-vimeo.gif" alt="Vimeo" width="15" height="15" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: inline; float: none; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none" />
+														</a>
+														<!--{{%%{{ end if }}%%}}-->
+														<!--{{%%{{ if (url_youtube<>"") then }}%%}}-->
+														<a target="_blank" class="faicon last" href="http://%%{{=url_youtube}}%%" style="color: #666666; display: inline; font-size: 0px; line-height: 0px; mso-line-height-rule: exactly; padding: 0px 0px 5px 5px; text-decoration: none">
+															<img src="http://www.expert-infos.com/_newsletter/_logos/faicon-youtube.gif" alt="Youtube" width="15" height="15" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: inline; float: none; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none" />
+														</a>
+														<!--{{%%{{ end if }}%%}}-->
+													</td>
+													<td class="expander" style="-moz-hyphens: none; -ms-hyphens: none; -premailer-width: 1; -webkit-hyphens: none; background: #ffffff; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0; text-align: right; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word" align="right" bgcolor="#ffffff" valign="top" width="1"></td>
+												</tr>
+											</table>
+										</td>
+										<!--{{%%{{ end if }}%%}}-->
+									</tr>
+								</table>
+								<table border="0" class="row contentContact bordered" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%; background: #ffffff; border-collapse: collapse; border-spacing: 0; color: #666666; display: block; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px; text-align: left; vertical-align: top; width: 100%" bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0">
+									<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+										<td class="wrapper first last" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 0px; margin: 0; padding: 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+											<table border="0" class="twelve columns" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 720; border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 720px" width="720" cellpadding="0" cellspacing="0">
+												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+													<td class="center text-pad" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 0px; margin: 0; padding: 0px 40px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top"><hr class="border" style="-premailer-border: none; -premailer-border-bottom: 1px solid **((secteur_color))**; background: transparent; border: 999000999ex none transparent; color: **((secteur_color))**; height: 0px; margin: 0px" /></td>
+													<td class="expander" style="-moz-hyphens: none; -ms-hyphens: none; -premailer-width: 1; -webkit-hyphens: none; background: #ffffff; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 0px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word" align="left" bgcolor="#ffffff" valign="top" width="1"></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+								<!-- CONTACT END -->
+
+								<!--{{%%{{ if(isDemo=False)Then }}%%}}-->
+								<!-- FOOTER START -->
+								<!--{{<gab_lien_blackliste>}}-->
+								<!--{{%%{{
+								if (type_abo="4") then
+									url_site_exp = rsCabinet("repertoire_ei")&".expert-infos.com"
+								end if
+								}}%%}}-->
+								<table border="0" class="row footer" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%; background: #ffffff; border-collapse: collapse; border-spacing: 0; color: #8c8c8c; display: block; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px; text-align: left; vertical-align: top; width: 100%" bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0">
+									<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+										<td class="wrapper first last" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #8c8c8c; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 10px 0px 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+											<table border="0" class="twelve columns" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 720; border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 720px" width="720" cellpadding="0" cellspacing="0">
+												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+													<td class="center text-pad" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #8c8c8c; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px 40px 10px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
+														<small style="color: #8c8c8c; font-size: 11px">
+															Si vous ne souhaitez plus recevoir cette newsletter, veuillez acc&#233;der &#224; la page de <a target="_blank" class="link_underline" href="#" lien_blackliste="lien_blackliste" style="color: #8c8c8c; text-decoration: underline"><span class="important" style="color: #8c8c8c !important; text-decoration: underline !important">d&#233;sinscription</span></a>.
+														</small>
+													</td>
+													<td class="expander" style="-moz-hyphens: none; -ms-hyphens: none; -premailer-width: 1; -webkit-hyphens: none; background: #ffffff; border-collapse: collapse !important; color: #8c8c8c; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word" align="left" bgcolor="#ffffff" valign="top" width="1"></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+								<!--{{</gab_lien_blackliste>}}-->
+								<!-- FOOTER END -->
+								<!--{{%%{{ end if }}%%}}-->
+							</td>
+						</tr>
+					</table>
+				</center>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

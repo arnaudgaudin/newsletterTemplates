@@ -1,0 +1,2497 @@
+/**********************************************
+* Inkless - Addons                            *
+**********************************************/
+
+body,
+table.body {
+  background-color: #dedede;
+}
+
+/**********************************************
+* Ink v1.0.5 - Copyright 2013 ZURB Inc        *
+**********************************************/
+
+/* Client-specific Styles and Reset */
+
+#outlook a {
+  padding: 0;
+}
+
+body {
+  width: 100% !important;
+  min-width: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* .ExternalClass applies to Outlook.com (the artist formerly known as Hotmail)  */
+
+.ExternalClass {
+  width: 100%;
+}
+
+.ExternalClass,
+.ExternalClass p,
+.ExternalClass span,
+.ExternalClass font,
+.ExternalClass td,
+.ExternalClass div {
+  line-height: 100%;
+}
+
+/* Equivalent to .ExternalClass */
+
+.ReadMsgBody {
+  width: 100%;
+}
+
+#backgroundTable {
+  margin: 0;
+  padding: 0;
+  width: 100% !important;
+  line-height: 100% !important;
+}
+
+img {
+  outline: none;
+  text-decoration: none;
+  -ms-interpolation-mode: bicubic;
+  width: auto;
+  max-width: 100%;
+  float: left;
+  clear: both;
+  display: block;
+}
+
+center {
+  width: 100%;
+  min-width: 720px;
+}
+
+a img {
+  border: none;
+}
+
+p {
+  margin: 0 0 0 10px;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  mso-table-lspace: 0pt;
+  mso-table-rspace: 0pt;
+}
+
+td {
+  word-break: break-word;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  border-collapse: collapse !important;
+}
+
+table,
+tr,
+td {
+  padding: 0;
+  vertical-align: top;
+  text-align: left;
+}
+
+hr {
+  color: #f39b1e;
+  background-color: #f39b1e;
+  height: 1px;
+  border: none;
+}
+
+/* Responsive Grid */
+
+table.body {
+  height: 100%;
+  width: 100%;
+}
+
+table.container {
+  background-color: #ffffff;
+  width: 720px;
+  -premailer-width: 720;
+  margin: 0 auto;
+  text-align: inherit;
+}
+
+table.row {
+  padding: 0px;
+  width: 100%;
+}
+
+table.container table.row {
+  display: block;
+}
+
+td.wrapper {
+  padding: 20px 0px 0px 0px;
+}
+
+table.columns,
+table.column {
+  margin: 0 auto;
+}
+
+table.columns td,
+table.column td {
+  padding: 0px 0px 20px;
+}
+
+table.columns td.sub-columns,
+table.column td.sub-columns,
+table.columns td.sub-column,
+table.column td.sub-column {
+  padding-right: 0px;
+}
+
+td.sub-column,
+td.sub-columns {
+  min-width: 0px;
+}
+
+table.row td.last,
+table.container td.last {
+  padding-right: 0px;
+}
+
+table.one {
+  width: 60px;
+  -premailer-width: 60;
+}
+
+table.two {
+  width: 120px;
+  -premailer-width: 120;
+}
+
+table.three {
+  width: 180px;
+  -premailer-width: 180;
+}
+
+table.four {
+  width: 240px;
+  -premailer-width: 240;
+}
+
+table.five {
+  width: 300px;
+  -premailer-width: 300;
+}
+
+table.six {
+  width: 360px;
+  -premailer-width: 360;
+}
+
+table.seven {
+  width: 420px;
+  -premailer-width: 420;
+}
+
+table.eight {
+  width: 480px;
+  -premailer-width: 480;
+}
+
+table.nine {
+  width: 540px;
+  -premailer-width: 540;
+}
+
+table.ten {
+  width: 600px;
+  -premailer-width: 600;
+}
+
+table.eleven {
+  width: 660px;
+  -premailer-width: 660;
+}
+
+table.twelve {
+  width: 720px;
+  -premailer-width: 720;
+}
+
+table.one center {
+  min-width: 60px;
+}
+
+table.two center {
+  min-width: 120px;
+}
+
+table.three center {
+  min-width: 180px;
+}
+
+table.four center {
+  min-width: 240px;
+}
+
+table.five center {
+  min-width: 300px;
+}
+
+table.six center {
+  min-width: 360px;
+}
+
+table.seven center {
+  min-width: 420px;
+}
+
+table.eight center {
+  min-width: 480px;
+}
+
+table.nine center {
+  min-width: 540px;
+}
+
+table.ten center {
+  min-width: 600px;
+}
+
+table.eleven center {
+  min-width: 660px;
+}
+
+table.twelve center {
+  min-width: 720px;
+}
+
+table.one .panel center {
+  min-width: 60px;
+}
+
+table.two .panel center {
+  min-width: 120px;
+}
+
+table.three .panel center {
+  min-width: 180px;
+}
+
+table.four .panel center {
+  min-width: 240px;
+}
+
+table.five .panel center {
+  min-width: 300px;
+}
+
+table.six .panel center {
+  min-width: 360px;
+}
+
+table.seven .panel center {
+  min-width: 420px;
+}
+
+table.eight .panel center {
+  min-width: 480px;
+}
+
+table.nine .panel center {
+  min-width: 540px;
+}
+
+table.ten .panel center {
+  min-width: 600px;
+}
+
+table.eleven .panel center {
+  min-width: 660px;
+}
+
+table.twelve .panel center {
+  min-width: 720px;
+}
+
+.body .columns td.one,
+.body .column td.one {
+  width: 8.333333%;
+}
+
+.body .columns td.two,
+.body .column td.two {
+  width: 16.666666%;
+}
+
+.body .columns td.three,
+.body .column td.three {
+  width: 25%;
+}
+
+.body .columns td.four,
+.body .column td.four {
+  width: 33.333333%;
+}
+
+.body .columns td.five,
+.body .column td.five {
+  width: 41.666666%;
+}
+
+.body .columns td.six,
+.body .column td.six {
+  width: 50%;
+}
+
+.body .columns td.seven,
+.body .column td.seven {
+  width: 58.333333%;
+}
+
+.body .columns td.eight,
+.body .column td.eight {
+  width: 66.666666%;
+}
+
+.body .columns td.nine,
+.body .column td.nine {
+  width: 75%;
+}
+
+.body .columns td.ten,
+.body .column td.ten {
+  width: 83.333333%;
+}
+
+.body .columns td.eleven,
+.body .column td.eleven {
+  width: 91.666666%;
+}
+
+.body .columns td.twelve,
+.body .column td.twelve {
+  width: 100%;
+}
+
+td.offset-by-one {
+  padding-left: 60px;
+}
+
+td.offset-by-two {
+  padding-left: 120px;
+}
+
+td.offset-by-three {
+  padding-left: 180px;
+}
+
+td.offset-by-four {
+  padding-left: 240px;
+}
+
+td.offset-by-five {
+  padding-left: 300px;
+}
+
+td.offset-by-six {
+  padding-left: 360px;
+}
+
+td.offset-by-seven {
+  padding-left: 420px;
+}
+
+td.offset-by-eight {
+  padding-left: 480px;
+}
+
+td.offset-by-nine {
+  padding-left: 540px;
+}
+
+td.offset-by-ten {
+  padding-left: 600px;
+}
+
+td.offset-by-eleven {
+  padding-left: 660px;
+}
+
+td.expander {
+  visibility: hidden;
+  width: 0px;
+  padding: 0 !important;
+}
+
+table.columns .text-pad,
+table.column .text-pad {
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+}
+
+table.columns .left-text-pad,
+table.columns .text-pad-left,
+table.column .left-text-pad,
+table.column .text-pad-left {
+  padding-left: 40px !important;
+}
+
+table.columns .right-text-pad,
+table.columns .text-pad-right,
+table.column .right-text-pad,
+table.column .text-pad-right {
+  padding-right: 40px !important;
+}
+
+/* Block Grid */
+
+.block-grid {
+  width: 100%;
+  max-width: 720px;
+}
+
+.block-grid td {
+  display: inline-block;
+  padding: 20px;
+}
+
+.two-up td {
+  width: 360px;
+  -premailer-width: 360;
+}
+
+.three-up td {
+  width: 240px;
+  -premailer-width: 240;
+}
+
+.four-up td {
+  width: 180px;
+  -premailer-width: 180;
+}
+
+.five-up td {
+  width: 144px;
+  -premailer-width: 144;
+}
+
+.six-up td {
+  width: 120px;
+  -premailer-width: 120;
+}
+
+.seven-up td {
+  width: 102px;
+  -premailer-width: 102;
+}
+
+.eight-up td {
+  width: 90px;
+  -premailer-width: 90;
+}
+
+/* Alignment and Visibility Classes */
+
+table.center,
+td.center {
+  text-align: center;
+}
+
+h1.center,
+h2.center,
+h3.center,
+h4.center,
+h5.center,
+h6.center,
+p.center {
+  text-align: center;
+}
+
+span.center {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+img.center {
+  margin: 0 auto;
+  float: none;
+}
+
+.show-for-small,
+.hide-for-desktop {
+  display: none;
+  width: 0;
+  mso-hide: all;
+  overflow: hidden;
+}
+
+.show-for-small *,
+.hide-for-desktop * {
+  mso-hide: all;
+}
+
+/* Typography */
+
+body,
+table.body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+td {
+  color: #666666;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  line-height: 1.3;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  color: #333333;
+  word-break: normal;
+}
+
+h1 {
+  font-size: 38px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+body,
+table.body,
+p,
+td {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+p.lead,
+p.lede,
+p.leed {
+  font-size: 15px;
+  line-height: 17.25px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+small {
+  font-size: 11px;
+}
+
+a {
+  color: #666666;
+  text-decoration: none;
+}
+
+a .important {
+  color: #666666 !important;
+  text-decoration: none !important;
+}
+
+a:hover,
+a:hover .important {
+  color: #666666 !important;
+}
+
+a:active,
+a:active .important {
+  color: #666666 !important;
+}
+
+a:visited,
+a:visited .important {
+  color: #666666 !important;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: #666666;
+}
+
+h1 a .important,
+h2 a .important,
+h3 a .important,
+h4 a .important,
+h5 a .important,
+h6 a .important {
+  color: #666666 !important;
+}
+
+h1 a:active,
+h2 a:active,
+h3 a:active,
+h4 a:active,
+h5 a:active,
+h6 a:active,
+h1 a:active .important,
+h2 a:active .important,
+h3 a:active .important,
+h4 a:active .important,
+h5 a:active .important,
+h6 a:active .important {
+  color: #666666 !important;
+}
+
+h1 a:visited,
+h2 a:visited,
+h3 a:visited,
+h4 a:visited,
+h5 a:visited,
+h6 a:visited,
+h1 a:visited .important,
+h2 a:visited .important,
+h3 a:visited .important,
+h4 a:visited .important,
+h5 a:visited .important,
+h6 a:visited .important {
+  color: #666666 !important;
+}
+
+/* Panels */
+
+.panel {
+  background: #f2f2f2;
+  border: 1px solid #d9d9d9;
+  padding: 20px !important;
+}
+
+.sub-grid table {
+  width: 100%;
+}
+
+.sub-grid td.sub-columns {
+  padding-bottom: 0;
+}
+
+/* Buttons */
+
+table.button,
+table.tiny-button,
+table.small-button,
+table.medium-button,
+table.large-button {
+  width: 100%;
+  overflow: hidden;
+}
+
+table.button td,
+table.tiny-button td,
+table.small-button td,
+table.medium-button td,
+table.large-button td {
+  display: block;
+  width: auto !important;
+  text-align: center;
+  background: #666666;
+  border: 1px solid #333333;
+  color: #ffffff;
+  padding: 8px 0;
+  line-height: initial !important;
+}
+
+table.tiny-button td {
+  padding: 5px 0;
+}
+
+table.small-button td {
+  padding: 8px 0;
+}
+
+table.medium-button td {
+  padding: 12px 0;
+}
+
+table.large-button td {
+  padding: 21px 0;
+}
+
+table.button td a,
+table.tiny-button td a,
+table.small-button td a,
+table.medium-button td a,
+table.large-button td a {
+  font-weight: bold;
+  text-decoration: none;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  font-size: 13.8px;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+table.button td a .important,
+table.tiny-button td a .important,
+table.small-button td a .important,
+table.medium-button td a .important,
+table.large-button td a .important {
+  color: #ffffff !important;
+}
+
+table.tiny-button td a {
+  font-size: 10.2px;
+  font-weight: normal;
+}
+
+table.small-button td a {
+  font-size: 13.8px;
+}
+
+table.medium-button td a {
+  font-size: 17.4px;
+}
+
+table.large-button td a {
+  font-size: 24px;
+}
+
+table.button:hover td,
+table.button:visited td,
+table.button:active td {
+  background: #4d4d4d !important;
+}
+
+table.button:hover td a,
+table.button:visited td a,
+table.button:active td a,
+table.button:hover td a .important,
+table.button:visited td a .important,
+table.button:active td a .important {
+  color: #ffffff !important;
+}
+
+table.button:hover td,
+table.tiny-button:hover td,
+table.small-button:hover td,
+table.medium-button:hover td,
+table.large-button:hover td {
+  background: #4d4d4d !important;
+}
+
+table.button:hover td a,
+table.button:active td a,
+table.button td a:visited,
+table.tiny-button:hover td a,
+table.tiny-button:active td a,
+table.tiny-button td a:visited,
+table.small-button:hover td a,
+table.small-button:active td a,
+table.small-button td a:visited,
+table.medium-button:hover td a,
+table.medium-button:active td a,
+table.medium-button td a:visited,
+table.large-button:hover td a,
+table.large-button:active td a,
+table.large-button td a:visited,
+table.button:hover td a .important,
+table.button:active td a .important,
+table.button td a:visited .important,
+table.tiny-button:hover td a .important,
+table.tiny-button:active td a .important,
+table.tiny-button td a:visited .important,
+table.small-button:hover td a .important,
+table.small-button:active td a .important,
+table.small-button td a:visited .important,
+table.medium-button:hover td a .important,
+table.medium-button:active td a .important,
+table.medium-button td a:visited .important,
+table.large-button:hover td a .important,
+table.large-button:active td a .important,
+table.large-button td a:visited .important {
+  color: #ffffff !important;
+}
+
+table.secondary td {
+  background: #e9e9e9;
+  border-color: #d0d0d0;
+  color: #555555;
+}
+
+table.secondary td a {
+  color: #555555;
+}
+
+table.secondary td a .important {
+  color: #555555 !important;
+}
+
+table.secondary:hover td {
+  background: #d0d0d0 !important;
+  color: #555555;
+}
+
+table.secondary:hover td a,
+table.secondary td a:visited,
+table.secondary:active td a,
+table.secondary:hover td a .important,
+table.secondary td a:visited .important,
+table.secondary:active td a .important {
+  color: #555555 !important;
+}
+
+table.success td {
+  background: #5da423;
+  border-color: #396516;
+  color: #ffffff;
+}
+
+table.success td a {
+  color: #ffffff;
+}
+
+table.success td a .important {
+  color: #ffffff !important;
+}
+
+table.success:hover td {
+  background: #396516 !important;
+  color: #ffffff;
+}
+
+table.success:hover td a,
+table.success td a:visited,
+table.success:active td a,
+table.success:hover td a .important,
+table.success td a:visited .important,
+table.success:active td a .important {
+  color: #ffffff !important;
+}
+
+table.alert td {
+  background: #c60f13;
+  border-color: #67080a;
+  color: #ffffff;
+}
+
+table.alert td a {
+  color: #ffffff;
+}
+
+table.alert td a .important {
+  color: #ffffff !important;
+}
+
+table.alert:hover td {
+  background: #67080a !important;
+  color: #ffffff;
+}
+
+table.alert:hover td a,
+table.alert td a:visited,
+table.alert:active td a,
+table.alert:hover td a .important,
+table.alert td a:visited .important,
+table.alert:active td a .important {
+  color: #ffffff !important;
+}
+
+table.radius td {
+  border-radius: 3px;
+}
+
+table.round td {
+  border-radius: 500px;
+}
+
+/* Outlook First */
+
+body.outlook p {
+  display: inline !important;
+}
+
+/*  Media Queries */
+
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+.hidden,
+.hidden * {
+  mso-hide: all;
+}
+
+.appleLinks a {
+  color: #666666;
+  text-decoration: none;
+}
+
+.appleLinks a .important {
+  text-decoration: none !important;
+}
+
+.appleLinks a:hover,
+.appleLinks a:active {
+  color: #666666 !important;
+}
+
+.appleLinks a:visited {
+  color: #666666 !important;
+}
+
+a[href^=tel] {
+  color: inherit;
+  text-decoration: none;
+}
+
+a[href^=tel] .important {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+a.link_box {
+  display: block;
+}
+
+a.link_box,
+a.link_box:link,
+a.link_box:visited,
+a.link_box:hover,
+a.link_box:focus,
+a.link_box:active {
+  text-decoration: none;
+  outline: none;
+}
+
+a.link_underline {
+  text-decoration: underline;
+}
+
+a.link_underline .important {
+  text-decoration: underline !important;
+}
+
+a.link_underline:hover,
+a.link_underline:focus {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+a.link_disabled {
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+}
+
+a.link_disabled .important {
+  pointer-events: none !important;
+  cursor: default !important;
+  text-decoration: none !important;
+}
+
+table {
+  -premailer-cellpadding: 0;
+  -premailer-cellspacing: 0;
+  empty-cells: hide;
+}
+
+table.row {
+  -premailer-width: 100%;
+}
+
+table.body {
+  -premailer-height: 100%;
+  -premailer-width: 100%;
+}
+
+.block-grid {
+  -premailer-width: 100%;
+}
+
+.body .columns td.one,
+.body .column td.one {
+  -premailer-width: 8.333333%;
+}
+
+.body .columns td.two,
+.body .column td.two {
+  -premailer-width: 16.666666%;
+}
+
+.body .columns td.three,
+.body .column td.three {
+  -premailer-width: 25%;
+}
+
+.body .columns td.four,
+.body .column td.four {
+  -premailer-width: 33.333333%;
+}
+
+.body .columns td.five,
+.body .column td.five {
+  -premailer-width: 41.666666%;
+}
+
+.body .columns td.six,
+.body .column td.six {
+  -premailer-width: 50%;
+}
+
+.body .columns td.seven,
+.body .column td.seven {
+  -premailer-width: 58.333333%;
+}
+
+.body .columns td.eight,
+.body .column td.eight {
+  -premailer-width: 66.666666%;
+}
+
+.body .columns td.nine,
+.body .column td.nine {
+  -premailer-width: 75%;
+}
+
+.body .columns td.ten,
+.body .column td.ten {
+  -premailer-width: 83.333333%;
+}
+
+.body .columns td.eleven,
+.body .column td.eleven {
+  -premailer-width: 91.666666%;
+}
+
+.body .columns td.twelve,
+.body .column td.twelve {
+  -premailer-width: 100%;
+}
+
+td.expander {
+  -premailer-width: 1;
+}
+
+.sub-grid table {
+  -premailer-width: 100%;
+}
+
+table.button,
+table.tiny-button,
+table.small-button,
+table.medium-button,
+table.large-button {
+  -premailer-width: 100%;
+}
+
+table.button td,
+table.tiny-button td,
+table.small-button td,
+table.medium-button td,
+table.large-button td {
+  -premailer-width: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  mso-line-height-rule: exactly;
+}
+
+h1 {
+  line-height: 41.8px;
+}
+
+h2 {
+  line-height: 33px;
+}
+
+h3 {
+  line-height: 24.2px;
+}
+
+h4 {
+  line-height: 19.8px;
+}
+
+h5 {
+  line-height: 17.6px;
+}
+
+h6 {
+  line-height: 15.4px;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: #333333;
+}
+
+h1 a .important,
+h2 a .important,
+h3 a .important,
+h4 a .important,
+h5 a .important,
+h6 a .important,
+h1 a:visited,
+h2 a:visited,
+h3 a:visited,
+h4 a:visited,
+h5 a:visited,
+h6 a:visited,
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover,
+h1 a:focus,
+h2 a:focus,
+h3 a:focus,
+h4 a:focus,
+h5 a:focus,
+h6 a:focus,
+h1 a:active,
+h2 a:active,
+h3 a:active,
+h4 a:active,
+h5 a:active,
+h6 a:active {
+  color: #333333 !important;
+}
+
+.header td.wrapper {
+  padding-top: 0px;
+}
+
+.header table.columns td,
+.header table.column td {
+  padding-bottom: 0px;
+}
+
+.filler,
+.filler .empty {
+  mso-line-height-rule: exactly;
+  line-height: 0px;
+  font-size: 0px;
+}
+
+.filler .empty {
+  margin: 0px;
+}
+
+* + .preTitle {
+  padding-top: 10px;
+}
+
+* + .title {
+  padding-top: 5px;
+}
+
+.readMore + .title {
+  padding-top: 10px;
+}
+
+.title + a img {
+  padding-top: 10px;
+}
+
+* + .text {
+  padding-top: 5px;
+}
+
+.readMore {
+  width: 100%;
+  -premailer-width: 100%;
+  overflow: hidden;
+  clear: both;
+}
+
+table.columns .readMore td.buttonWrapper,
+table.column .readMore td.buttonWrapper {
+  padding-bottom: 0px;
+  clear: both;
+}
+
+table.columns .readMore table.tiny-button,
+table.column .readMore table.tiny-button {
+  display: table;
+  table-layout: auto;
+  width: auto;
+  -premailer-width: auto;
+  float: right;
+}
+
+table.columns .readMore table.tiny-button td,
+table.column .readMore table.tiny-button td {
+  width: auto;
+  float: none;
+  -premailer-width: auto;
+  padding: 4px 8px;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+table.columns .readMore table.tiny-button td a,
+table.column .readMore table.tiny-button td a,
+table.columns .readMore table.tiny-button td p,
+table.column .readMore table.tiny-button td p {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+table.columns .text + .readMore td.buttonWrapper,
+table.column .text + .readMore td.buttonWrapper {
+  padding-top: 5px;
+}
+
+a.tiny-button-link {
+  padding: 0px;
+  margin: 0px;
+  line-height: 14px;
+  mso-line-height-rule: exactly;
+}
+
+table.columns .readMore td.buttonWrapper td,
+table.column .readMore td.buttonWrapper td,
+table.columns .readMore td.buttonWrapper td p.MsoNormal,
+table.column .readMore td.buttonWrapper td p.MsoNormal {
+  line-height: 14px !important;
+  mso-line-height-rule: exactly;
+  margin: 0px;
+}
+
+table.columns .readMore td.buttonWrapper td p.MsoNormal,
+table.column .readMore td.buttonWrapper td p.MsoNormal {
+  padding: 0px;
+}
+
+a.tiny-button-link,
+table.columns .readMore td.buttonWrapper td,
+table.column .readMore td.buttonWrapper td {
+  font-size: 10.2px;
+  font-weight: normal;
+}
+
+.row.bordered td.wrapper {
+  padding-top: 0px;
+}
+
+.row.bordered table.columns td,
+.row.bordered table.column td {
+  padding-bottom: 0px;
+}
+
+.row.bordered td {
+  line-height: 0px;
+}
+
+.row.bordered td hr.border {
+  margin: 0px;
+  background-color: transparent;
+  height: 0px;
+  -premailer-border: none;
+}
+
+.faicons {
+  vertical-align: bottom;
+}
+
+.faicons td {
+  text-align: right;
+}
+
+.faicon {
+  display: inline;
+  font-size: 0px;
+  mso-line-height-rule: exactly;
+  line-height: 0px;
+  padding: 0px 5px 5px 5px;
+}
+
+.faicon.first {
+  padding-left: 0px;
+}
+
+.faicon.last {
+  padding-right: 0px;
+}
+
+.faicon img,
+img.faicon {
+  display: inline;
+  float: none;
+}
+
+img.faicon {
+  padding: 2px;
+  vertical-align: top;
+}
+
+.contentOnline td.wrapper {
+  padding-top: 10px;
+}
+
+.contentOnline table.columns td,
+.contentOnline table.column td {
+  padding-bottom: 10px;
+}
+
+.contentOnline table.columns td,
+.contentOnline table.column td {
+  mso-line-height-rule: exactly;
+  line-height: 0px;
+  font-size: 0px;
+}
+
+.contentOnline .online,
+.contentOnline .name {
+  mso-line-height-rule: exactly;
+  line-height: 16px;
+  font-size: 12px;
+}
+
+.contentOnline .online {
+  display: block;
+  padding-bottom: 5px;
+}
+
+.contentOnline .name {
+  display: block;
+}
+
+.contentSecteur,
+.contentSecteur td,
+.contentSecteur .inner {
+  color: #ffffff;
+}
+
+.contentSecteur a {
+  color: #ffffff;
+}
+
+.contentSecteur a .important,
+.contentSecteur a:visited,
+.contentSecteur a:hover,
+.contentSecteur a:focus,
+.contentSecteur a:active {
+  color: #ffffff !important;
+}
+
+.contentSecteur,
+.contentSecteur td.expander {
+  -premailer-background: **((secteur_color))**;
+}
+
+.contentSecteur.secteur-BTP,
+.contentSecteur.secteur-BTP td.expander {
+  background-color: #f39b1e;
+}
+
+.contentSecteur.secteur-SAN,
+.contentSecteur.secteur-SAN td.expander {
+  background-color: #20a611;
+}
+
+.contentSecteur.secteur-TRA,
+.contentSecteur.secteur-TRA td.expander {
+  background-color: #e7503d;
+}
+
+.contentSecteur.secteur-COM,
+.contentSecteur.secteur-COM td.expander {
+  background-color: #9186bc;
+}
+
+.contentSecteur.secteur-HCR,
+.contentSecteur.secteur-HCR td.expander {
+  background-color: #c9526f;
+}
+
+.contentSecteur.secteur-ECO,
+.contentSecteur.secteur-ECO td.expander {
+  background-color: #009cdd;
+}
+
+.contentSecteur table.columns td,
+.contentSecteur table.column td {
+  padding-bottom: 10px;
+}
+
+.contentSecteur td {
+  font-weight: normal;
+  font-weight: 200;
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.contentSecteur td .secteur {
+  font-weight: bold;
+  font-weight: 600;
+  text-transform: uppercase;
+  word-break: keep-all;
+  white-space: nowrap;
+}
+
+.contentSecteur td .secteur .slash {
+  margin: 0 -0.25em;
+}
+
+.contentDateInfo td.wrapper {
+  padding-top: 10px;
+}
+
+.contentDateInfo table.columns td,
+.contentDateInfo table.column td {
+  padding-bottom: 10px;
+}
+
+.contentDateInfo .info td {
+  text-transform: uppercase;
+}
+
+.contentALaUne .preTitle {
+  padding-bottom: 5px;
+}
+
+.contentEtude .filler {
+  height: 20px;
+  -premailer-height: 20px;
+}
+
+.contentEtude .value,
+.contentEtude .text {
+  width: 100%;
+  -premailer-width: 100%;
+}
+
+.contentEtude .value td {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: normal;
+  font-weight: 500;
+}
+
+.contentEtude .text td {
+  padding-top: 5px;
+}
+
+.contentEtude table.columns td,
+.contentEtude table.column td {
+  padding-bottom: 0px;
+}
+
+.contentEtude .wrapper {
+  padding-top: 0px;
+}
+
+.contentEtude .wrapper:not(.first) .columns.four {
+  width: 239px;
+}
+
+.contentContact table.columns td,
+.contentContact table.column td {
+  padding-bottom: 10px;
+}
+
+.footer td.wrapper {
+  padding-top: 10px;
+}
+
+.footer table.columns td,
+.footer table.column td {
+  padding-bottom: 10px;
+}
+
+.container {
+  background-color: #ffffff;
+}
+
+body,
+table.body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+td {
+  color: #666666;
+}
+
+a,
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a,
+.appleLinks a {
+  color: #666666;
+}
+
+a .important,
+h1 a .important,
+h2 a .important,
+h3 a .important,
+h4 a .important,
+h5 a .important,
+h6 a .important,
+.appleLinks a .important {
+  color: #666666 !important;
+}
+
+a:visited,
+h1 a:visited,
+h2 a:visited,
+h3 a:visited,
+h4 a:visited,
+h5 a:visited,
+h6 a:visited,
+.appleLinks a:visited,
+a:visited .important,
+h1 a:visited .important,
+h2 a:visited .important,
+h3 a:visited .important,
+h4 a:visited .important,
+h5 a:visited .important,
+h6 a:visited .important,
+.appleLinks a:visited .important {
+  color: #666666 !important;
+}
+
+a:hover,
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover,
+.appleLinks a:hover,
+a:hover .important,
+h1 a:hover .important,
+h2 a:hover .important,
+h3 a:hover .important,
+h4 a:hover .important,
+h5 a:hover .important,
+h6 a:hover .important,
+.appleLinks a:hover .important {
+  color: #666666 !important;
+}
+
+a:focus,
+h1 a:focus,
+h2 a:focus,
+h3 a:focus,
+h4 a:focus,
+h5 a:focus,
+h6 a:focus,
+.appleLinks a:focus,
+a:focus .important,
+h1 a:focus .important,
+h2 a:focus .important,
+h3 a:focus .important,
+h4 a:focus .important,
+h5 a:focus .important,
+h6 a:focus .important,
+.appleLinks a:focus .important {
+  color: #666666 !important;
+}
+
+a:active,
+h1 a:active,
+h2 a:active,
+h3 a:active,
+h4 a:active,
+h5 a:active,
+h6 a:active,
+.appleLinks a:active,
+a:active .important,
+h1 a:active .important,
+h2 a:active .important,
+h3 a:active .important,
+h4 a:active .important,
+h5 a:active .important,
+h6 a:active .important,
+.appleLinks a:active .important {
+  color: #666666 !important;
+}
+
+.preTitle {
+  color: #333333;
+}
+
+.preTitle a {
+  color: #333333;
+}
+
+.preTitle a .important,
+.preTitle a:visited,
+.preTitle a:hover,
+.preTitle a:focus,
+.preTitle a:active {
+  color: #333333 !important;
+}
+
+.contentDateInfo .date,
+.contentDateInfo .date td.expander {
+  background: #8d99a7;
+}
+
+.contentDateInfo .date,
+.contentDateInfo .date td,
+.contentDateInfo .date .inner {
+  color: #ffffff;
+}
+
+.contentDateInfo .date a {
+  color: #ffffff;
+}
+
+.contentDateInfo .date a .important,
+.contentDateInfo .date a:visited,
+.contentDateInfo .date a:hover,
+.contentDateInfo .date a:focus,
+.contentDateInfo .date a:active {
+  color: #ffffff !important;
+}
+
+.contentDateInfo .info,
+.contentDateInfo .info td.expander {
+  background: #4f5966;
+}
+
+.contentDateInfo .info,
+.contentDateInfo .info td,
+.contentDateInfo .info .inner {
+  color: #ffffff;
+}
+
+.contentDateInfo .info a {
+  color: #ffffff;
+}
+
+.contentDateInfo .info a .important,
+.contentDateInfo .info a:visited,
+.contentDateInfo .info a:hover,
+.contentDateInfo .info a:focus,
+.contentDateInfo .info a:active {
+  color: #ffffff !important;
+}
+
+.contentCabInform,
+.contentCabInform td.expander {
+  background: #eaeaea;
+}
+
+.contentCabInform .title {
+  color: #262626;
+}
+
+.contentCabInform .title a {
+  color: #262626;
+}
+
+.contentCabInform .title a .important,
+.contentCabInform .title a:visited,
+.contentCabInform .title a:hover,
+.contentCabInform .title a:focus,
+.contentCabInform .title a:active {
+  color: #262626 !important;
+}
+
+.contentCabInform .text,
+.contentCabInform .readMore {
+  color: #595959;
+}
+
+.contentCabInform .text .important,
+.contentCabInform .readMore .important {
+  color: #595959 !important;
+}
+
+.contentCabInform,
+.contentCabInform td,
+.contentCabInform .inner {
+  color: #595959;
+}
+
+.contentCabInform a {
+  color: #595959;
+}
+
+.contentCabInform a .important,
+.contentCabInform a:visited,
+.contentCabInform a:hover,
+.contentCabInform a:focus,
+.contentCabInform a:active {
+  color: #595959 !important;
+}
+
+.contentCabInform .readMore table.tiny-button td {
+  background: #919191;
+  border-color: #727272;
+}
+
+.contentCabInform .readMore table.tiny-button td,
+.contentCabInform .readMore table.tiny-button td a {
+  color: #ffffff;
+}
+
+.contentCabInform .readMore table.tiny-button td .important,
+.contentCabInform .readMore table.tiny-button td a .important {
+  color: #ffffff !important;
+}
+
+.contentCabInform .readMore table.tiny-button:hover td,
+.contentCabInform .readMore table.tiny-button:visited td,
+.contentCabInform .readMore table.tiny-button:active td {
+  background: #787878 !important;
+}
+
+.contentCabInform .readMore table.tiny-button:hover td a,
+.contentCabInform .readMore table.tiny-button:visited td a,
+.contentCabInform .readMore table.tiny-button:active td a,
+.contentCabInform .readMore table.tiny-button:hover td a .important,
+.contentCabInform .readMore table.tiny-button:visited td a .important,
+.contentCabInform .readMore table.tiny-button:active td a .important {
+  color: #ffffff !important;
+}
+
+.contentCabInform .readMore table.tiny-button td a:visited,
+.contentCabInform .readMore table.tiny-button td a:visited .important {
+  color: #ffffff !important;
+}
+
+.contentALaUne .readMore table.tiny-button td,
+.contentALaUne .readMore table.tiny-button td a {
+  color: #ffffff;
+}
+
+.contentALaUne .readMore table.tiny-button td .important,
+.contentALaUne .readMore table.tiny-button td a .important {
+  color: #ffffff !important;
+}
+
+.contentALaUne .readMore table.tiny-button:hover td a,
+.contentALaUne .readMore table.tiny-button:visited td a,
+.contentALaUne .readMore table.tiny-button:active td a,
+.contentALaUne .readMore table.tiny-button:hover td a .important,
+.contentALaUne .readMore table.tiny-button:visited td a .important,
+.contentALaUne .readMore table.tiny-button:active td a .important {
+  color: #ffffff !important;
+}
+
+.contentALaUne .readMore table.tiny-button td a:visited,
+.contentALaUne .readMore table.tiny-button td a:visited .important {
+  color: #ffffff !important;
+}
+
+.contentArticles,
+.contentArticles td.expander {
+  background: #eaeaea;
+}
+
+.contentArticles .readMore table.tiny-button td {
+  background: #919191;
+  border-color: #727272;
+}
+
+.contentArticles .readMore table.tiny-button td,
+.contentArticles .readMore table.tiny-button td a {
+  color: #ffffff;
+}
+
+.contentArticles .readMore table.tiny-button td .important,
+.contentArticles .readMore table.tiny-button td a .important {
+  color: #ffffff !important;
+}
+
+.contentArticles .readMore table.tiny-button:hover td,
+.contentArticles .readMore table.tiny-button:visited td,
+.contentArticles .readMore table.tiny-button:active td {
+  background: #787878 !important;
+}
+
+.contentArticles .readMore table.tiny-button:hover td a,
+.contentArticles .readMore table.tiny-button:visited td a,
+.contentArticles .readMore table.tiny-button:active td a,
+.contentArticles .readMore table.tiny-button:hover td a .important,
+.contentArticles .readMore table.tiny-button:visited td a .important,
+.contentArticles .readMore table.tiny-button:active td a .important {
+  color: #ffffff !important;
+}
+
+.contentArticles .readMore table.tiny-button td a:visited,
+.contentArticles .readMore table.tiny-button td a:visited .important {
+  color: #ffffff !important;
+}
+
+.contentEtude,
+.contentEtude td.expander {
+  background: #4f5966;
+}
+
+.contentEtude,
+.contentEtude td,
+.contentEtude .inner {
+  color: #ffffff;
+}
+
+.contentEtude a {
+  color: #ffffff;
+}
+
+.contentEtude a .important,
+.contentEtude a:visited,
+.contentEtude a:hover,
+.contentEtude a:focus,
+.contentEtude a:active {
+  color: #ffffff !important;
+}
+
+.contentEtude .text {
+  color: #d3d6d9;
+}
+
+.contentEtude .text .important {
+  color: #d3d6d9 !important;
+}
+
+.contentContact,
+.contentContact td.expander {
+  background: #ffffff;
+}
+
+.contentContact,
+.contentContact td,
+.contentContact .inner {
+  color: #666666;
+}
+
+.contentContact a {
+  color: #666666;
+}
+
+.contentContact a .important,
+.contentContact a:visited,
+.contentContact a:hover,
+.contentContact a:focus,
+.contentContact a:active {
+  color: #666666 !important;
+}
+
+.footer,
+.footer td.expander {
+  background: #ffffff;
+}
+
+.footer,
+.footer td,
+.footer .inner {
+  color: #8c8c8c;
+}
+
+.footer a {
+  color: #8c8c8c;
+}
+
+.footer a .important,
+.footer a:visited,
+.footer a:hover,
+.footer a:focus,
+.footer a:active {
+  color: #8c8c8c !important;
+}
+
+.footer small {
+  color: #8c8c8c;
+}
+
+body,
+table.body {
+  -premailer-background: ##((nlSecBodyBackground))##;
+  background-image: url("-premailer-bgdebug");
+}
+
+.header {
+  -premailer-background: ##((nlSecBodyBackground))##;
+}
+
+.contentOnline,
+.contentOnline td.expander {
+  -premailer-background: ##((nlSecCntOnlineBackground))##;
+}
+
+.contentOnline,
+.contentOnline td,
+.contentOnline .inner {
+  color: ##((nlSecCntOnlineText))##;
+}
+
+.contentOnline a {
+  color: ##((nlSecCntOnlineText))##;
+}
+
+.contentOnline a .important,
+.contentOnline a:visited,
+.contentOnline a:hover,
+.contentOnline a:focus,
+.contentOnline a:active {
+  color: ##((nlSecCntOnlineText))## !important;
+}
+
+.contentOnline .online {
+  color: ##((nlSecCntOnlineText))##;
+}
+
+.contentOnline .online a {
+  color: ##((nlSecCntOnlineText))##;
+}
+
+.contentOnline .online a .important,
+.contentOnline .online a:visited,
+.contentOnline .online a:hover,
+.contentOnline .online a:focus,
+.contentOnline .online a:active {
+  color: ##((nlSecCntOnlineText))## !important;
+}
+
+.contentOnline .name {
+  color: ##((nlSecCntOnlineName))##;
+}
+
+.contentOnline .name a {
+  color: ##((nlSecCntOnlineName))##;
+}
+
+.contentOnline .name a .important,
+.contentOnline .name a:visited,
+.contentOnline .name a:hover,
+.contentOnline .name a:focus,
+.contentOnline .name a:active {
+  color: ##((nlSecCntOnlineName))## !important;
+}
+
+.preTitle .last {
+  color: **((secteur_color))**;
+}
+
+.preTitle .last a {
+  color: **((secteur_color))**;
+}
+
+.preTitle .last a .important,
+.preTitle .last a:visited,
+.preTitle .last a:hover,
+.preTitle .last a:focus,
+.preTitle .last a:active {
+  color: **((secteur_color))** !important;
+}
+
+hr {
+  color: **((secteur_color))**;
+  background: **((secteur_color))**;
+}
+
+.row.bordered td hr.border {
+  -premailer-border-bottom: 1px solid **((secteur_color))**;
+  border: 999000999ex none transparent;
+}
+
+.contentALaUne .readMore table.tiny-button td {
+  -premailer-background: **((secteur_color))**;
+  -premailer-border: 1px solid **((secteur_color_darken12))**;
+  background-image: url("-premailer-bgdebug");
+  border: 999000999ex none transparent;
+}
+
+.contentALaUne .readMore table.tiny-button:hover td,
+.contentALaUne .readMore table.tiny-button:visited td,
+.contentALaUne .readMore table.tiny-button:active td {
+  background: **((secteur_color_darken10))** !important;
+}
+
+.contentEtude .wrapper:not(.first) {
+  -premailer-border-left: 1px solid **((secteur_color))**;
+  border: 999000999ex none transparent;
+}
+
+/*
+// DEVELOPPEMENT COLORS
+// --------------------------------------------------
+
+
+// Body
+// -------------------------
+body, table.body {
+	background: @nlSecBodyBackground;
+	//rajout pour suppression paramètre doublon via compiler
+	// background-image: url("-premailer-bgdebug");
+}
+
+
+// Header
+// -------------------------
+//pour supprimer toute zone blanche avant chargement header
+.header { background: @nlSecBodyBackground; }
+
+
+// contentOnline area
+// -------------------------
+.contentOnline {
+	&, td.expander { background: @nlSecCntOnlineBackground; }
+	.newsletterInnerTextColor(@nlSecCntOnlineText);
+	.online {
+		color: @nlSecCntOnlineText;
+		a { .newsletterLinkColor(@nlSecCntOnlineText); }
+	}
+	.name {
+		color: @nlSecCntOnlineName;
+		a { .newsletterLinkColor(@nlSecCntOnlineName); }
+	}
+}
+
+
+// Sur-titres
+// -------------------------
+.preTitle .last {
+	color: @nlPreTitleLast;
+	a { .newsletterLinkColor(@nlPreTitleLast); }
+}
+
+
+// Hr borders
+// -------------------------
+hr {
+	color: @nlHrBorder;
+	background: @nlHrBorder;
+}
+//gestion row avec bordures de séparation
+.row.bordered {
+	td hr.border { border-bottom: 1px solid @nlHrBorder; }
+}
+
+
+// contentALaUne area
+// -------------------------
+.contentALaUne {
+	.readMore table.tiny-button {
+		td {
+			background: @nlCntUneReadMoreBackground;
+			border: 1px solid @nlCntUneReadMoreBorder;
+		}
+
+		//hover|visited|active state
+		&:hover td,
+		&:visited td,
+		&:active td {
+			background: @nlCntUneReadMoreBackgroundHover !important;
+		}
+	}
+}
+
+
+// contentEtude area
+// -------------------------
+.contentEtude {
+	.wrapper:not(.first) { border-left: 1px solid @nlCntEtuBorder; }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentEtude {
+		table.columns td, table.column td { border-bottom: 1px solid @nlCntEtuBorder !important; }
+	}
+}
+*/
+
+@media only screen and (max-width: 720px) {
+  table[class="body"] img {
+    max-width: auto !important;
+    max-height: auto !important;
+    width: auto !important;
+    height: auto !important;
+  }
+
+  table[class="body"] center {
+    min-width: 0 !important;
+  }
+
+  table[class="body"] .container {
+    width: 95% !important;
+  }
+
+  table[class="body"] .row {
+    position: relative !important;
+    width: 100% !important;
+    display: block !important;
+  }
+
+  table[class="body"] .wrapper {
+    position: relative !important;
+    display: block !important;
+    padding-top: 10px !important;
+    padding-right: 0 !important;
+  }
+
+  table[class="body"] .columns,
+  table[class="body"] .column {
+    table-layout: fixed !important;
+    float: none !important;
+    width: 100% !important;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    display: block !important;
+  }
+
+  table[class="body"] .wrapper.first .columns,
+  table[class="body"] .wrapper.first .column {
+    display: table !important;
+  }
+
+  table[class="body"] table.columns td,
+  table[class="body"] table.column td {
+    width: 100% !important;
+    padding-bottom: 10px !important;
+  }
+
+  table[class="body"] .columns td.one,
+  table[class="body"] .column td.one {
+    width: 8.333333% !important;
+  }
+
+  table[class="body"] .columns td.two,
+  table[class="body"] .column td.two {
+    width: 16.666666% !important;
+  }
+
+  table[class="body"] .columns td.three,
+  table[class="body"] .column td.three {
+    width: 25% !important;
+  }
+
+  table[class="body"] .columns td.four,
+  table[class="body"] .column td.four {
+    width: 33.333333% !important;
+  }
+
+  table[class="body"] .columns td.five,
+  table[class="body"] .column td.five {
+    width: 41.666666% !important;
+  }
+
+  table[class="body"] .columns td.six,
+  table[class="body"] .column td.six {
+    width: 50% !important;
+  }
+
+  table[class="body"] .columns td.seven,
+  table[class="body"] .column td.seven {
+    width: 58.333333% !important;
+  }
+
+  table[class="body"] .columns td.eight,
+  table[class="body"] .column td.eight {
+    width: 66.666666% !important;
+  }
+
+  table[class="body"] .columns td.nine,
+  table[class="body"] .column td.nine {
+    width: 75% !important;
+  }
+
+  table[class="body"] .columns td.ten,
+  table[class="body"] .column td.ten {
+    width: 83.333333% !important;
+  }
+
+  table[class="body"] .columns td.eleven,
+  table[class="body"] .column td.eleven {
+    width: 91.666666% !important;
+  }
+
+  table[class="body"] .columns td.twelve,
+  table[class="body"] .column td.twelve {
+    width: 100% !important;
+  }
+
+  table[class="body"] td.offset-by-one,
+  table[class="body"] td.offset-by-two,
+  table[class="body"] td.offset-by-three,
+  table[class="body"] td.offset-by-four,
+  table[class="body"] td.offset-by-five,
+  table[class="body"] td.offset-by-six,
+  table[class="body"] td.offset-by-seven,
+  table[class="body"] td.offset-by-eight,
+  table[class="body"] td.offset-by-nine,
+  table[class="body"] td.offset-by-ten,
+  table[class="body"] td.offset-by-eleven {
+    padding-left: 0 !important;
+  }
+
+  table[class="body"] table.columns td.expander {
+    width: 1px !important;
+  }
+
+  table[class="body"] .text-pad {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  table[class="body"] .right-text-pad,
+  table[class="body"] .text-pad-right {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  table[class="body"] .left-text-pad,
+  table[class="body"] .text-pad-left {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  table[class="body"] .hide-for-small,
+  table[class="body"] .show-for-desktop {
+    display: none !important;
+  }
+
+  table[class="body"] .show-for-small,
+  table[class="body"] .hide-for-desktop {
+    display: block !important;
+    width: auto !important;
+    overflow: visible !important;
+  }
+
+  table[class="container"] .block-grid td {
+    width: 100% !important;
+    padding: 10px !important;
+  }
+
+  table[class="container"] .panel {
+    padding: 10px !important;
+  }
+
+  table[class="body"] .header td.wrapper {
+    padding-top: 0px !important;
+  }
+
+  table[class="body"] .header table.columns td,
+  table[class="body"] .header table.column td {
+    padding-bottom: 0px !important;
+  }
+
+  table[class="body"] table.columns .readMore td.buttonWrapper,
+  table[class="body"] table.column .readMore td.buttonWrapper {
+    padding-bottom: 0px !important;
+  }
+
+  table[class="body"] table.columns .readMore table.tiny-button,
+  table[class="body"] table.column .readMore table.tiny-button {
+    display: table !important;
+    table-layout: auto !important;
+    width: auto !important;
+  }
+
+  table[class="body"] table.columns .readMore table.tiny-button td,
+  table[class="body"] table.column .readMore table.tiny-button td {
+    width: auto !important;
+    padding: 4px 8px !important;
+  }
+
+  table[class="body"] a.tiny-button-link,
+  table[class="body"] table.columns .readMore td.buttonWrapper td,
+  table[class="body"] table.column .readMore td.buttonWrapper td {
+    font-size: 10.2px !important;
+    line-height: 14px !important;
+  }
+
+  table[class="body"] .row.bordered td.wrapper {
+    padding-top: 0px !important;
+  }
+
+  table[class="body"] .row.bordered table.columns td,
+  table[class="body"] .row.bordered table.column td {
+    padding-bottom: 0px !important;
+  }
+
+  table[class="body"] .faicons {
+    vertical-align: baseline !important;
+  }
+
+  table[class="body"] .faicon img,
+  table[class="body"] img.faicon {
+    width: 15px !important;
+    height: 15px !important;
+  }
+
+  table[class="body"] .contentOnline td.wrapper {
+    padding-top: 5px !important;
+  }
+
+  table[class="body"] .contentOnline table.columns td,
+  table[class="body"] .contentOnline table.column td {
+    padding-bottom: 5px !important;
+  }
+
+  table[class="body"] .contentOnline .online {
+    padding-bottom: 0px !important;
+  }
+
+  table[class="body"] .contentOnline .columns,
+  table[class="body"] .contentOnline .column {
+    display: table !important;
+  }
+
+  table[class="body"] .contentSecteur table.columns td,
+  table[class="body"] .contentSecteur table.column td {
+    padding-bottom: 5px !important;
+  }
+
+  table[class="body"] .contentSecteur td {
+    font-size: 30px !important;
+    line-height: 30px !important;
+    text-align: left !important;
+  }
+
+  table[class="body"] .contentSecteur td .essentiel {
+    display: block !important;
+  }
+
+  table[class="body"] .contentSecteur td .secteur {
+    word-break: normal !important;
+    white-space: normal !important;
+    display: block !important;
+    text-align: right;
+  }
+
+  table[class="body"] .contentDateInfo td.wrapper {
+    padding-top: 5px !important;
+  }
+
+  table[class="body"] .contentDateInfo table.columns td,
+  table[class="body"] .contentDateInfo table.column td {
+    padding-bottom: 5px !important;
+  }
+
+  table[class="body"] .contentEtude .filler {
+    height: 0px !important;
+    display: none !important;
+    visibility: hidden !important;
+  }
+
+  table[class="body"] .contentEtude table.columns td,
+  table[class="body"] .contentEtude table.column td {
+    padding-bottom: 9px !important;
+  }
+
+  table[class="body"] .contentEtude .wrapper {
+    border-left: 0px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  table[class="body"] .contentEtude .wrapper .text-pad {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  table[class="body"] .contentEtude .wrapper.last table.columns td,
+  table[class="body"] .contentEtude .wrapper.last table.column td {
+    padding-bottom: 10px !important;
+    border-bottom: 0px !important;
+  }
+
+  table[class="body"] .contentEtude .wrapper td {
+    text-align: left !important;
+    vertical-align: middle !important;
+  }
+
+  table[class="body"] .contentEtude .wrapper table.columns .value td,
+  table[class="body"] .contentEtude .wrapper table.column .value td {
+    padding: 0px !important;
+  }
+
+  table[class="body"] .contentEtude .wrapper table.columns .text td,
+  table[class="body"] .contentEtude .wrapper table.column .text td {
+    padding: 8px 0 0 10px !important;
+  }
+
+  table[class="body"] .contentEtude .wrapper table.columns .value td,
+  table[class="body"] .contentEtude .wrapper table.column .value td,
+  table[class="body"] .contentEtude .wrapper table.columns .text td,
+  table[class="body"] .contentEtude .wrapper table.column .text td {
+    border-bottom: 0px !important;
+  }
+
+  table[class="body"] .contentEtude .value,
+  table[class="body"] .contentEtude .text {
+    width: auto !important;
+    vertical-align: bottom !important;
+    max-width: 50% !important;
+  }
+
+  table[class="body"] .contentEtude .value {
+    display: block !important;
+    float: left !important;
+  }
+
+  table[class="body"] .contentOnline table.columns td,
+  table[class="body"] .contentOnline table.column td {
+    padding-bottom: 5px !important;
+  }
+
+  table[class="body"] .contentOnline td.wrapper {
+    padding-top: 5px !important;
+  }
+
+  table[class="body"] .contentOnline table.columns td,
+  table[class="body"] .contentOnline table.column td {
+    padding-bottom: 5px !important;
+  }
+
+  table[class="body"] .contentEtude table.columns td,
+  table[class="body"] .contentEtude table.column td {
+    border-bottom: 1px solid **((secteur_color))** !important;
+  }
+}
