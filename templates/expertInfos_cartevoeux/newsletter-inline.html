@@ -175,10 +175,19 @@ font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: normal
 a:hover {
 color: #333333 !important;
 }
+a:hover .important {
+color: #333333 !important;
+}
 a:active {
 color: #333333 !important;
 }
+a:active .important {
+color: #333333 !important;
+}
 a:visited {
+color: #333333 !important;
+}
+a:visited .important {
 color: #333333 !important;
 }
 h1 a:active {
@@ -199,6 +208,24 @@ color: #333333 !important;
 h6 a:active {
 color: #333333 !important;
 }
+h1 a:active .important {
+color: #333333 !important;
+}
+h2 a:active .important {
+color: #333333 !important;
+}
+h3 a:active .important {
+color: #333333 !important;
+}
+h4 a:active .important {
+color: #333333 !important;
+}
+h5 a:active .important {
+color: #333333 !important;
+}
+h6 a:active .important {
+color: #333333 !important;
+}
 h1 a:visited {
 color: #333333 !important;
 }
@@ -215,6 +242,24 @@ h5 a:visited {
 color: #333333 !important;
 }
 h6 a:visited {
+color: #333333 !important;
+}
+h1 a:visited .important {
+color: #333333 !important;
+}
+h2 a:visited .important {
+color: #333333 !important;
+}
+h3 a:visited .important {
+color: #333333 !important;
+}
+h4 a:visited .important {
+color: #333333 !important;
+}
+h5 a:visited .important {
+color: #333333 !important;
+}
+h6 a:visited .important {
 color: #333333 !important;
 }
 table.button:hover td {
@@ -1259,7 +1304,7 @@ color: #8c8c8c !important;
 														<strong><!--{{%%{{ if (len(trim(type_client)) > 1) then response.write(type_client & " ") end if }}%%%%{{=raison_sociale_exp}}%%}}--><!--DEL{{-->raison_sociale_exp<!--}}DEL--></strong>
 														<br />
 														<!--{{%%{{ lien_adresse=Server.URLEncode(adresse1_exp & " " & adresse2_exp & " " & code_postal_exp & " " & commune_exp) }}%%}}-->
-														<a target="_blank" href="http://maps.apple.com/?q=%%{{=lien_adresse}}%%" style="color: #333333; text-decoration: none"><span class="important" style="color: #333333 !important"><!--{{%%{{
+														<a target="_blank" href="http://maps.apple.com/?q=%%{{=lien_adresse}}%%" style="color: #333333; text-decoration: none"><span class="important" style="color: #333333 !important; text-decoration: none !important"><!--{{%%{{
 															'affichage adresse1'
 															nbc_desc=len(adresse1_exp)
 															k=1

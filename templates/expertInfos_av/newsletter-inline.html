@@ -218,10 +218,19 @@ font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: normal
 a:hover {
 color: #666666 !important;
 }
+a:hover .important {
+color: #666666 !important;
+}
 a:active {
 color: #666666 !important;
 }
+a:active .important {
+color: #666666 !important;
+}
 a:visited {
+color: #666666 !important;
+}
+a:visited .important {
 color: #666666 !important;
 }
 h1 a:active {
@@ -242,6 +251,24 @@ color: #666666 !important;
 h6 a:active {
 color: #666666 !important;
 }
+h1 a:active .important {
+color: #666666 !important;
+}
+h2 a:active .important {
+color: #666666 !important;
+}
+h3 a:active .important {
+color: #666666 !important;
+}
+h4 a:active .important {
+color: #666666 !important;
+}
+h5 a:active .important {
+color: #666666 !important;
+}
+h6 a:active .important {
+color: #666666 !important;
+}
 h1 a:visited {
 color: #666666 !important;
 }
@@ -258,6 +285,24 @@ h5 a:visited {
 color: #666666 !important;
 }
 h6 a:visited {
+color: #666666 !important;
+}
+h1 a:visited .important {
+color: #666666 !important;
+}
+h2 a:visited .important {
+color: #666666 !important;
+}
+h3 a:visited .important {
+color: #666666 !important;
+}
+h4 a:visited .important {
+color: #666666 !important;
+}
+h5 a:visited .important {
+color: #666666 !important;
+}
+h6 a:visited .important {
 color: #666666 !important;
 }
 table.button:hover td {
@@ -1421,16 +1466,16 @@ color: ##((nlFooterText))## !important;
 														if (lien_cab <> "") then
 														}}%%}}-->
 														<h3 class="title" style="color: ##((nlCntCabTitle))##; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 20px; font-weight: bold; line-height: 22px; margin: 0; mso-line-height-rule: exactly; padding: 5px 0 0; text-align: left; word-break: normal" align="left">
-															<a target="_blank" href="%%{{=lien_cab}}%%" style="color: ##((nlCntCabTitle))##; text-decoration: none"><span class="important" style="color: ##((nlCntCabTitle))## !important"><!--{{%%{{=rs("titre")}}%%}}--><!--DEL{{-->titre<!--}}DEL--></span></a>
+															<a target="_blank" href="%%{{=lien_cab}}%%" style="color: ##((nlCntCabTitle))##; text-decoration: none"><span class="important" style="color: ##((nlCntCabTitle))## !important; text-decoration: none !important"><!--{{%%{{=rs("titre")}}%%}}--><!--DEL{{-->titre<!--}}DEL--></span></a>
 														</h3>
 														<div class="text" style="color: ##((nlCntCabText))##; padding-top: 5px">
 															<a target="_blank" href="%%{{=lien_cab}}%%" style="color: ##((nlCntCabText))##; text-decoration: none">
-																<span class="important" style="color: ##((nlCntCabText))## !important"><!--{{%%{{=rs("texte")}}%%}}--><!--DEL{{-->texte<!--}}DEL--></span>
+																<span class="important" style="color: ##((nlCntCabText))## !important; text-decoration: none !important"><!--{{%%{{=rs("texte")}}%%}}--><!--DEL{{-->texte<!--}}DEL--></span>
 															</a>
 														</div>
 														<p class="readMore" style="color: ##((nlCntCabText))##; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 10.2px; font-weight: normal; line-height: 16px; margin: 0px; padding: 5px 0 0; text-align: right" align="right">
 															<a target="_blank" href="%%{{=lien_cab}}%%" style="color: ##((nlCntCabText))##; text-decoration: none">
-																<span class="important" style="color: ##((nlCntCabText))## !important">Lire la suite</span>
+																<span class="important" style="color: ##((nlCntCabText))## !important; text-decoration: none !important">Lire la suite</span>
 															</a>
 														</p>
 														<!--{{%%{{ else }}%%}}-->
@@ -1496,7 +1541,7 @@ color: ##((nlFooterText))## !important;
 														<div class="preTitle" style="color: ##((nlCntUnePreTitle))##; display: block; font-size: 12px; text-transform: uppercase">&#192; la une</div>
 														<h2 class="title" style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 26px; font-weight: bold; line-height: 28.6px; margin: 0; mso-line-height-rule: exactly; padding: 5px 0 0; text-align: left; word-break: normal" align="left">
 															<a target="_blank" href="http://%%{{=url_site_exp}}%%/%%{{=article_une_url_v3}}%%&amp;%%{{=tracking_url}}%%" style="color: #333333; text-decoration: none">
-																<!--{{%%{{ if article_une_rub <> "" then }}%%}}--><span class="category" style="color: ##((nlCntUneCategory))##; font-weight: normal"><span class="important" style="color: ##((nlCntUneCategory))## !important"><!--{{%%{{=article_une_rub}}%%}}--><!--DEL{{-->article_une_rub<!--}}DEL-->.</span></span> <!--{{%%{{ end if }}%%}}--><span class="important" style="color: #333333 !important"><!--{{%%{{=article_une_titre}}%%}}--><!--DEL{{-->article_une_titre<!--}}DEL--></span>
+																<!--{{%%{{ if article_une_rub <> "" then }}%%}}--><span class="category" style="color: ##((nlCntUneCategory))##; font-weight: normal"><span class="important" style="color: ##((nlCntUneCategory))## !important; text-decoration: none !important"><!--{{%%{{=article_une_rub}}%%}}--><!--DEL{{-->article_une_rub<!--}}DEL-->.</span></span> <!--{{%%{{ end if }}%%}}--><span class="important" style="color: #333333 !important; text-decoration: none !important"><!--{{%%{{=article_une_titre}}%%}}--><!--DEL{{-->article_une_titre<!--}}DEL--></span>
 															</a>
 														</h2>
 														<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/%%{{=article_une_url_v3}}%%&amp;%%{{=tracking_url}}%%" style="color: #666666; display: block; outline: none; text-decoration: none">
@@ -1504,12 +1549,12 @@ color: ##((nlFooterText))## !important;
 														</a>
 														<div class="text" style="color: #666666; padding-top: 5px">
 															<a target="_blank" href="http://%%{{=url_site_exp}}%%/%%{{=article_une_url_v3}}%%&amp;%%{{=tracking_url}}%%" style="color: #666666; text-decoration: none">
-																<span class="important" style="color: #666666 !important"><!--{{%%{{=rsArticleAlaune("CONTENU_CHAPITRE_FLASH_INFOS")}}%%}}--><!--DEL{{-->CONTENU_CHAPITRE_FLASH_INFOS<!--}}DEL--></span>
+																<span class="important" style="color: #666666 !important; text-decoration: none !important"><!--{{%%{{=rsArticleAlaune("CONTENU_CHAPITRE_FLASH_INFOS")}}%%}}--><!--DEL{{-->CONTENU_CHAPITRE_FLASH_INFOS<!--}}DEL--></span>
 															</a>
 														</div>
 														<p class="readMore" style="color: ##((nlCntUneReadMore))##; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 10.2px; font-weight: normal; line-height: 16px; margin: 0px; padding: 5px 0 0; text-align: right" align="right">
 															<a target="_blank" href="http://%%{{=url_site_exp}}%%/%%{{=article_une_url_v3}}%%&amp;%%{{=tracking_url}}%%" style="color: ##((nlCntUneReadMore))##; text-decoration: none">
-																<span class="important" style="color: ##((nlCntUneReadMore))## !important">Lire la suite</span>
+																<span class="important" style="color: ##((nlCntUneReadMore))## !important; text-decoration: none !important">Lire la suite</span>
 															</a>
 														</p>
 													</td>
@@ -1605,17 +1650,17 @@ color: ##((nlFooterText))## !important;
 														}}%%}}-->
 														<h3 class="title" style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 20px; font-weight: bold; line-height: 22px; margin: 0; mso-line-height-rule: exactly; padding: 5px 0 0; text-align: left; word-break: normal" align="left">
 															<a target="_blank" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%&amp;%%{{=tracking_url}}%%" style="color: #333333; text-decoration: none">
-																<!--{{%%{{ if article_rub <> "" then }}%%}}--><span class="category" style="color: ##((nlCntArtCategory))##; font-weight: normal"><span class="important" style="color: ##((nlCntArtCategory))## !important"><!--{{%%{{=article_rub}}%%}}--><!--DEL{{-->article_rub<!--}}DEL-->.</span></span> <span class="important" style="color: #333333 !important"><!--{{%%{{ end if }}%%}}--><!--{{%%{{=article_titre}}%%}}--><!--DEL{{-->article_titre<!--}}DEL--></span>
+																<!--{{%%{{ if article_rub <> "" then }}%%}}--><span class="category" style="color: ##((nlCntArtCategory))##; font-weight: normal"><span class="important" style="color: ##((nlCntArtCategory))## !important; text-decoration: none !important"><!--{{%%{{=article_rub}}%%}}--><!--DEL{{-->article_rub<!--}}DEL-->.</span></span> <span class="important" style="color: #333333 !important; text-decoration: none !important"><!--{{%%{{ end if }}%%}}--><!--{{%%{{=article_titre}}%%}}--><!--DEL{{-->article_titre<!--}}DEL--></span>
 															</a>
 														</h3>
 														<div class="text" style="color: #666666; padding-top: 5px">
 															<a target="_blank" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%&amp;%%{{=tracking_url}}%%" style="color: #666666; text-decoration: none">
-																<span class="important" style="color: #666666 !important"><!--{{%%{{=rsArticle("CONTENU_CHAPITRE_FLASH_INFOS")}}%%}}--><!--DEL{{-->CONTENU_CHAPITRE_FLASH_INFOS<!--}}DEL--></span>
+																<span class="important" style="color: #666666 !important; text-decoration: none !important"><!--{{%%{{=rsArticle("CONTENU_CHAPITRE_FLASH_INFOS")}}%%}}--><!--DEL{{-->CONTENU_CHAPITRE_FLASH_INFOS<!--}}DEL--></span>
 															</a>
 														</div>
 														<p class="readMore" style="color: ##((nlCntArtReadMore))##; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 10.2px; font-weight: normal; line-height: 16px; margin: 0px; padding: 5px 0 0; text-align: right" align="right">
 															<a target="_blank" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%&amp;%%{{=tracking_url}}%%" style="color: ##((nlCntArtReadMore))##; text-decoration: none">
-																<span class="important" style="color: ##((nlCntArtReadMore))## !important">Lire la suite</span>
+																<span class="important" style="color: ##((nlCntArtReadMore))## !important; text-decoration: none !important">Lire la suite</span>
 															</a>
 														</p>
 														<!--{{%%{{
@@ -1663,7 +1708,7 @@ color: ##((nlFooterText))## !important;
 																	<td class="sub-columns value" bgcolor="##((nlCntChfBackground))##" style="-moz-hyphens: none; -ms-hyphens: none; -premailer-background: ##((nlCntChfBackground))##; -premailer-height: **((chiffreContHeight))**; -premailer-width: 25%; -webkit-hyphens: none; border-collapse: collapse !important; border-radius: 500px; color: ##((nlCntChfValue))##; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: **((chiffreFontSize))**px; font-weight: normal; height: **((chiffreContHeight))**px; hyphens: none; line-height: **((chiffreLineHeight))**px; margin: 0; min-width: 0px; mso-line-height-rule: exactly; overflow: hidden; padding: **((floor(chiffrepadvertical)))**px 0px **((ceil(chiffrepadvertical)))**px; text-align: center; vertical-align: middle; width: 25%; word-break: break-word" align="center" valign="middle" width="25%" height="**((chiffreContHeight))**">
 																		<p class="inner" style="color: ##((nlCntChfValue))##; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: **((chiffreFontSize))**px; font-weight: normal; line-height: **((chiffreLineHeight))**px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: center" align="center">
 																			<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/?fintrack=&amp;article=%%{{=chiffre_id}}%%&amp;%%{{=tracking_url}}%%" style="color: ##((nlCntChfValue))##; display: block; outline: none; text-decoration: none">
-																				<span class="important" style="color: ##((nlCntChfValue))## !important"><!--{{%%{{=chiffre_valeur}}%%}}--><!--DEL{{-->1625<!--}}DEL--></span>
+																				<span class="important" style="color: ##((nlCntChfValue))## !important; text-decoration: none !important"><!--{{%%{{=chiffre_valeur}}%%}}--><!--DEL{{-->1625<!--}}DEL--></span>
 																			</a>
 																		</p>
 																	</td>
@@ -1675,11 +1720,11 @@ color: ##((nlFooterText))## !important;
 															<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 																<td class="center text-pad" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 10px 40px 0px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
 																	<h4 class="title" style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold; line-height: 17.6px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: center; word-break: normal" align="center">
-																		<a target="_blank" href="http://%%{{=url_site_exp}}%%/?fintrack=&amp;article=%%{{=chiffre_id}}%%&amp;%%{{=tracking_url}}%%" style="color: #333333; text-decoration: none"><span class="important" style="color: #333333 !important">Le chiffre</span></a>
+																		<a target="_blank" href="http://%%{{=url_site_exp}}%%/?fintrack=&amp;article=%%{{=chiffre_id}}%%&amp;%%{{=tracking_url}}%%" style="color: #333333; text-decoration: none"><span class="important" style="color: #333333 !important; text-decoration: none !important">Le chiffre</span></a>
 																	</h4>
 																	<div class="text" style="color: #666666; padding-top: 5px">
 																		<a target="_blank" href="http://%%{{=url_site_exp}}%%/?fintrack=&amp;article=%%{{=chiffre_id}}%%&amp;%%{{=tracking_url}}%%" style="color: #666666; text-decoration: none">
-																			<span class="important" style="color: #666666 !important"><!--{{%%{{=chiffre_titre}}%%}}--><!--DEL{{-->chiffre_titre<!--}}DEL--></span>
+																			<span class="important" style="color: #666666 !important; text-decoration: none !important"><!--{{%%{{=chiffre_titre}}%%}}--><!--DEL{{-->chiffre_titre<!--}}DEL--></span>
 																		</a>
 																	</div>
 																</td>
@@ -1700,7 +1745,7 @@ color: ##((nlFooterText))## !important;
 																	<td class="sub-columns first hide-for-small" style="-moz-hyphens: none; -ms-hyphens: none; -premailer-background: ##((nlCntQtnBackground))##; -premailer-height: 50; -premailer-width: 37.5%; -webkit-hyphens: none; background: transparent; border-collapse: collapse !important; border-radius: 0px; color: ##((nlCntQtnValue))##; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 40px; font-weight: normal; height: 50px; hyphens: none; line-height: 50px; margin: 0; min-width: 0px; mso-line-height-rule: exactly; overflow: hidden; padding: 5px 0px; text-align: center; vertical-align: middle; width: 37.5%; word-break: break-word" align="center" bgcolor="transparent" valign="middle" width="37.5%" height="50">&#160;</td>
 																	<td class="sub-columns value" bgcolor="##((nlCntQtnBackground))##" style="-moz-hyphens: none; -ms-hyphens: none; -premailer-background: ##((nlCntQtnBackground))##; -premailer-height: 50; -premailer-width: 25%; -webkit-hyphens: none; border-collapse: collapse !important; border-radius: 500px; color: ##((nlCntQtnValue))##; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 40px; font-weight: normal; height: 50px; hyphens: none; line-height: 50px; margin: 0; min-width: 0px; mso-line-height-rule: exactly; overflow: hidden; padding: 5px 0px; text-align: center; vertical-align: middle; width: 25%; word-break: break-word" align="center" valign="middle" width="25%" height="50">
 																		<p class="inner" style="color: ##((nlCntQtnValue))##; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 40px; font-weight: normal; line-height: 50px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: center" align="center">
-																			<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/?fintrack=&amp;article=%%{{=question_id}}%%&amp;%%{{=tracking_url}}%%" style="color: ##((nlCntQtnValue))##; display: block; outline: none; text-decoration: none"><span class="important" style="color: ##((nlCntQtnValue))## !important">?</span></a>
+																			<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/?fintrack=&amp;article=%%{{=question_id}}%%&amp;%%{{=tracking_url}}%%" style="color: ##((nlCntQtnValue))##; display: block; outline: none; text-decoration: none"><span class="important" style="color: ##((nlCntQtnValue))## !important; text-decoration: none !important">?</span></a>
 																		</p>
 																	</td>
 																	<td class="sub-columns last hide-for-small" style="-moz-hyphens: none; -ms-hyphens: none; -premailer-background: ##((nlCntQtnBackground))##; -premailer-height: 50; -premailer-width: 37.5%; -webkit-hyphens: none; background: transparent; border-collapse: collapse !important; border-radius: 0px; color: ##((nlCntQtnValue))##; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 40px; font-weight: normal; height: 50px; hyphens: none; line-height: 50px; margin: 0; min-width: 0px; mso-line-height-rule: exactly; overflow: hidden; padding: 5px 0px; text-align: center; vertical-align: middle; width: 37.5%; word-break: break-word" align="center" bgcolor="transparent" valign="middle" width="37.5%" height="50">&#160;</td>
@@ -1711,11 +1756,11 @@ color: ##((nlFooterText))## !important;
 															<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 																<td class="center text-pad" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 10px 40px 0px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
 																	<h4 class="title" style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold; line-height: 17.6px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: center; word-break: normal" align="center">
-																		<a target="_blank" href="http://%%{{=url_site_exp}}%%/?fintrack=&amp;article=%%{{=question_id}}%%&amp;%%{{=tracking_url}}%%" style="color: #333333; text-decoration: none"><span class="important" style="color: #333333 !important">La question</span></a>
+																		<a target="_blank" href="http://%%{{=url_site_exp}}%%/?fintrack=&amp;article=%%{{=question_id}}%%&amp;%%{{=tracking_url}}%%" style="color: #333333; text-decoration: none"><span class="important" style="color: #333333 !important; text-decoration: none !important">La question</span></a>
 																	</h4>
 																	<div class="text" style="color: #666666; padding-top: 5px">
 																		<a target="_blank" href="http://%%{{=url_site_exp}}%%/?fintrack=&amp;article=%%{{=question_id}}%%&amp;%%{{=tracking_url}}%%" style="color: #666666; text-decoration: none">
-																			<span class="important" style="color: #666666 !important"><!--{{%%{{=question_titre}}%%}}--><!--DEL{{-->question_titre<!--}}DEL--></span>
+																			<span class="important" style="color: #666666 !important; text-decoration: none !important"><!--{{%%{{=question_titre}}%%}}--><!--DEL{{-->question_titre<!--}}DEL--></span>
 																		</a>
 																	</div>
 																</td>
@@ -1736,10 +1781,10 @@ color: ##((nlFooterText))## !important;
 																	<td class="sub-columns first hide-for-small" style="-moz-hyphens: none; -ms-hyphens: none; -premailer-background: ##((nlCntAgdBackground))##; -premailer-height: 48; -premailer-width: 37.5%; -webkit-hyphens: none; background: transparent; border-collapse: collapse !important; border-radius: 0px; color: ##((nlCntAgdValue))##; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 0px; font-weight: normal; height: 48px; hyphens: none; line-height: 0px; margin: 0; min-width: 0px; mso-line-height-rule: exactly; overflow: hidden; padding: 6px 0px; text-align: center; text-transform: uppercase; vertical-align: middle; width: 37.5%; word-break: break-word" align="center" bgcolor="transparent" valign="middle" width="37.5%" height="48">&#160;</td>
 																	<td class="sub-columns value" bgcolor="##((nlCntAgdBackground))##" style="-moz-hyphens: none; -ms-hyphens: none; -premailer-background: ##((nlCntAgdBackground))##; -premailer-height: 48; -premailer-width: 25%; -webkit-hyphens: none; border-collapse: collapse !important; border-radius: 500px; color: ##((nlCntAgdValue))##; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 0px; font-weight: normal; height: 48px; hyphens: none; line-height: 0px; margin: 0; min-width: 0px; mso-line-height-rule: exactly; overflow: hidden; padding: 6px 0px; text-align: center; text-transform: uppercase; vertical-align: middle; width: 25%; word-break: break-word" align="center" valign="middle" width="25%" height="48">
 																		<p class="inner day" style="color: ##((nlCntAgdValue))##; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 28px; font-weight: normal; line-height: 35px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: center; text-transform: uppercase" align="center">
-																			<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/?fintrack=&amp;article=%%{{=agenda_id}}%%&amp;collapse=collapse%%{{=agenda_collapse}}%%&amp;%%{{=tracking_url}}%%" style="color: ##((nlCntAgdValue))##; display: block; outline: none; text-decoration: none"><span class="important" style="color: ##((nlCntAgdValue))## !important"><!--{{%%{{=agenda_jour}}%%}}--><!--DEL{{-->25<!--}}DEL--></span></a>
+																			<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/?fintrack=&amp;article=%%{{=agenda_id}}%%&amp;collapse=collapse%%{{=agenda_collapse}}%%&amp;%%{{=tracking_url}}%%" style="color: ##((nlCntAgdValue))##; display: block; outline: none; text-decoration: none"><span class="important" style="color: ##((nlCntAgdValue))## !important; text-decoration: none !important"><!--{{%%{{=agenda_jour}}%%}}--><!--DEL{{-->25<!--}}DEL--></span></a>
 																		</p>
 																		<p class="inner month" style="color: ##((nlCntAgdValue))##; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 10px; font-weight: normal; line-height: 13px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: center; text-transform: uppercase" align="center">
-																			<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/?fintrack=&amp;article=%%{{=agenda_id}}%%&amp;collapse=collapse%%{{=agenda_collapse}}%%&amp;%%{{=tracking_url}}%%" style="color: ##((nlCntAgdValue))##; display: block; outline: none; text-decoration: none"><span class="important" style="color: ##((nlCntAgdValue))## !important"><!--{{%%{{=agenda_mois_texte}}%%}}--><!--DEL{{-->mars<!--}}DEL--></span></a>
+																			<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/?fintrack=&amp;article=%%{{=agenda_id}}%%&amp;collapse=collapse%%{{=agenda_collapse}}%%&amp;%%{{=tracking_url}}%%" style="color: ##((nlCntAgdValue))##; display: block; outline: none; text-decoration: none"><span class="important" style="color: ##((nlCntAgdValue))## !important; text-decoration: none !important"><!--{{%%{{=agenda_mois_texte}}%%}}--><!--DEL{{-->mars<!--}}DEL--></span></a>
 																		</p>
 																	</td>
 																	<td class="sub-columns last hide-for-small" style="-moz-hyphens: none; -ms-hyphens: none; -premailer-background: ##((nlCntAgdBackground))##; -premailer-height: 48; -premailer-width: 37.5%; -webkit-hyphens: none; background: transparent; border-collapse: collapse !important; border-radius: 0px; color: ##((nlCntAgdValue))##; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 0px; font-weight: normal; height: 48px; hyphens: none; line-height: 0px; margin: 0; min-width: 0px; mso-line-height-rule: exactly; overflow: hidden; padding: 6px 0px; text-align: center; text-transform: uppercase; vertical-align: middle; width: 37.5%; word-break: break-word" align="center" bgcolor="transparent" valign="middle" width="37.5%" height="48">&#160;</td>
@@ -1750,11 +1795,11 @@ color: ##((nlFooterText))## !important;
 															<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 																<td class="center text-pad" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 10px 40px 0px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
 																	<h4 class="title" style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold; line-height: 17.6px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: center; word-break: normal" align="center">
-																		<a target="_blank" href="http://%%{{=url_site_exp}}%%/?fintrack=&amp;article=%%{{=agenda_id}}%%&amp;collapse=collapse%%{{=agenda_collapse}}%%&amp;%%{{=tracking_url}}%%" style="color: #333333; text-decoration: none"><span class="important" style="color: #333333 !important">Le&#160;rappel</span></a>
+																		<a target="_blank" href="http://%%{{=url_site_exp}}%%/?fintrack=&amp;article=%%{{=agenda_id}}%%&amp;collapse=collapse%%{{=agenda_collapse}}%%&amp;%%{{=tracking_url}}%%" style="color: #333333; text-decoration: none"><span class="important" style="color: #333333 !important; text-decoration: none !important">Le&#160;rappel</span></a>
 																	</h4>
 																	<div class="text" style="color: #666666; padding-top: 5px">
 																		<a target="_blank" href="http://%%{{=url_site_exp}}%%/?fintrack=&amp;article=%%{{=agenda_id}}%%&amp;collapse=collapse%%{{=agenda_collapse}}%%&amp;%%{{=tracking_url}}%%" style="color: #666666; text-decoration: none">
-																			<span class="important" style="color: #666666 !important"><!--{{%%{{=agenda_titre}}%%}}--><!--DEL{{-->agenda_titre<!--}}DEL--></span>
+																			<span class="important" style="color: #666666 !important; text-decoration: none !important"><!--{{%%{{=agenda_titre}}%%}}--><!--DEL{{-->agenda_titre<!--}}DEL--></span>
 																		</a>
 																	</div>
 																</td>
@@ -1783,7 +1828,7 @@ color: ##((nlFooterText))## !important;
 														<strong><!--{{%%{{ if (len(trim(type_client)) > 1) then response.write(type_client & " ") end if }}%%%%{{=raison_sociale_exp}}%%}}--><!--DEL{{-->raison_sociale_exp<!--}}DEL--></strong>
 														<br />
 														<!--{{%%{{ lien_adresse=Server.URLEncode(adresse1_exp & " " & adresse2_exp & " " & code_postal_exp & " " & commune_exp) }}%%}}-->
-														<a target="_blank" href="http://maps.apple.com/?q=%%{{=lien_adresse}}%%" style="color: ##((nlCntCctText))##; text-decoration: none"><span class="important" style="color: ##((nlCntCctText))## !important"><!--{{%%{{
+														<a target="_blank" href="http://maps.apple.com/?q=%%{{=lien_adresse}}%%" style="color: ##((nlCntCctText))##; text-decoration: none"><span class="important" style="color: ##((nlCntCctText))## !important; text-decoration: none !important"><!--{{%%{{
 															'affichage adresse1'
 															nbc_desc=len(adresse1_exp)
 															k=1

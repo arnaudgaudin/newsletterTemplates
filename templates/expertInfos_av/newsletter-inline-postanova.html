@@ -218,10 +218,19 @@ font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: normal
 a:hover {
 color: #666666 !important;
 }
+a:hover .important {
+color: #666666 !important;
+}
 a:active {
 color: #666666 !important;
 }
+a:active .important {
+color: #666666 !important;
+}
 a:visited {
+color: #666666 !important;
+}
+a:visited .important {
 color: #666666 !important;
 }
 h1 a:active {
@@ -242,6 +251,24 @@ color: #666666 !important;
 h6 a:active {
 color: #666666 !important;
 }
+h1 a:active .important {
+color: #666666 !important;
+}
+h2 a:active .important {
+color: #666666 !important;
+}
+h3 a:active .important {
+color: #666666 !important;
+}
+h4 a:active .important {
+color: #666666 !important;
+}
+h5 a:active .important {
+color: #666666 !important;
+}
+h6 a:active .important {
+color: #666666 !important;
+}
 h1 a:visited {
 color: #666666 !important;
 }
@@ -258,6 +285,24 @@ h5 a:visited {
 color: #666666 !important;
 }
 h6 a:visited {
+color: #666666 !important;
+}
+h1 a:visited .important {
+color: #666666 !important;
+}
+h2 a:visited .important {
+color: #666666 !important;
+}
+h3 a:visited .important {
+color: #666666 !important;
+}
+h4 a:visited .important {
+color: #666666 !important;
+}
+h5 a:visited .important {
+color: #666666 !important;
+}
+h6 a:visited .important {
 color: #666666 !important;
 }
 table.button:hover td {
@@ -1421,16 +1466,16 @@ color: <%=colorParsing.Item("nlFooterText")%> !important;
 														if (lien_cab <> "") then
 														%>
 														<h3 class="title" style="color: <%=colorParsing.Item("nlCntCabTitle")%>; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 20px; font-weight: bold; line-height: 22px; margin: 0; mso-line-height-rule: exactly; padding: 5px 0 0; text-align: left; word-break: normal" align="left">
-															<a target="_blank" href="<%=lien_cab%>" style="color: <%=colorParsing.Item("nlCntCabTitle")%>; text-decoration: none"><span class="important" style="color: <%=colorParsing.Item("nlCntCabTitle")%> !important"><%=rs("titre")%></span></a>
+															<a target="_blank" href="<%=lien_cab%>" style="color: <%=colorParsing.Item("nlCntCabTitle")%>; text-decoration: none"><span class="important" style="color: <%=colorParsing.Item("nlCntCabTitle")%> !important; text-decoration: none !important"><%=rs("titre")%></span></a>
 														</h3>
 														<div class="text" style="color: <%=colorParsing.Item("nlCntCabText")%>; padding-top: 5px">
 															<a target="_blank" href="<%=lien_cab%>" style="color: <%=colorParsing.Item("nlCntCabText")%>; text-decoration: none">
-																<span class="important" style="color: <%=colorParsing.Item("nlCntCabText")%> !important"><%=rs("texte")%></span>
+																<span class="important" style="color: <%=colorParsing.Item("nlCntCabText")%> !important; text-decoration: none !important"><%=rs("texte")%></span>
 															</a>
 														</div>
 														<p class="readMore" style="color: <%=colorParsing.Item("nlCntCabText")%>; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 10.2px; font-weight: normal; line-height: 16px; margin: 0px; padding: 5px 0 0; text-align: right" align="right">
 															<a target="_blank" href="<%=lien_cab%>" style="color: <%=colorParsing.Item("nlCntCabText")%>; text-decoration: none">
-																<span class="important" style="color: <%=colorParsing.Item("nlCntCabText")%> !important">Lire la suite</span>
+																<span class="important" style="color: <%=colorParsing.Item("nlCntCabText")%> !important; text-decoration: none !important">Lire la suite</span>
 															</a>
 														</p>
 														<% else %>
@@ -1496,7 +1541,7 @@ color: <%=colorParsing.Item("nlFooterText")%> !important;
 														<div class="preTitle" style="color: <%=colorParsing.Item("nlCntUnePreTitle")%>; display: block; font-size: 12px; text-transform: uppercase">&#192; la une</div>
 														<h2 class="title" style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 26px; font-weight: bold; line-height: 28.6px; margin: 0; mso-line-height-rule: exactly; padding: 5px 0 0; text-align: left; word-break: normal" align="left">
 															<a target="_blank" href="http://<%=url_site_exp%>/<%=article_une_url_v3%>&amp;<%=tracking_url%>" style="color: #333333; text-decoration: none">
-																<% if article_une_rub <> "" then %><span class="category" style="color: <%=colorParsing.Item("nlCntUneCategory")%>; font-weight: normal"><span class="important" style="color: <%=colorParsing.Item("nlCntUneCategory")%> !important"><%=article_une_rub%>.</span></span> <% end if %><span class="important" style="color: #333333 !important"><%=article_une_titre%></span>
+																<% if article_une_rub <> "" then %><span class="category" style="color: <%=colorParsing.Item("nlCntUneCategory")%>; font-weight: normal"><span class="important" style="color: <%=colorParsing.Item("nlCntUneCategory")%> !important; text-decoration: none !important"><%=article_une_rub%>.</span></span> <% end if %><span class="important" style="color: #333333 !important; text-decoration: none !important"><%=article_une_titre%></span>
 															</a>
 														</h2>
 														<a target="_blank" class="link_box" href="http://<%=url_site_exp%>/<%=article_une_url_v3%>&amp;<%=tracking_url%>" style="color: #666666; display: block; outline: none; text-decoration: none">
@@ -1504,12 +1549,12 @@ color: <%=colorParsing.Item("nlFooterText")%> !important;
 														</a>
 														<div class="text" style="color: #666666; padding-top: 5px">
 															<a target="_blank" href="http://<%=url_site_exp%>/<%=article_une_url_v3%>&amp;<%=tracking_url%>" style="color: #666666; text-decoration: none">
-																<span class="important" style="color: #666666 !important"><%=rsArticleAlaune("CONTENU_CHAPITRE_FLASH_INFOS")%></span>
+																<span class="important" style="color: #666666 !important; text-decoration: none !important"><%=rsArticleAlaune("CONTENU_CHAPITRE_FLASH_INFOS")%></span>
 															</a>
 														</div>
 														<p class="readMore" style="color: <%=colorParsing.Item("nlCntUneReadMore")%>; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 10.2px; font-weight: normal; line-height: 16px; margin: 0px; padding: 5px 0 0; text-align: right" align="right">
 															<a target="_blank" href="http://<%=url_site_exp%>/<%=article_une_url_v3%>&amp;<%=tracking_url%>" style="color: <%=colorParsing.Item("nlCntUneReadMore")%>; text-decoration: none">
-																<span class="important" style="color: <%=colorParsing.Item("nlCntUneReadMore")%> !important">Lire la suite</span>
+																<span class="important" style="color: <%=colorParsing.Item("nlCntUneReadMore")%> !important; text-decoration: none !important">Lire la suite</span>
 															</a>
 														</p>
 													</td>
@@ -1605,17 +1650,17 @@ color: <%=colorParsing.Item("nlFooterText")%> !important;
 														%>
 														<h3 class="title" style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 20px; font-weight: bold; line-height: 22px; margin: 0; mso-line-height-rule: exactly; padding: 5px 0 0; text-align: left; word-break: normal" align="left">
 															<a target="_blank" href="http://<%=url_site_exp%>/<%=article_url_v3%>&amp;<%=tracking_url%>" style="color: #333333; text-decoration: none">
-																<% if article_rub <> "" then %><span class="category" style="color: <%=colorParsing.Item("nlCntArtCategory")%>; font-weight: normal"><span class="important" style="color: <%=colorParsing.Item("nlCntArtCategory")%> !important"><%=article_rub%>.</span></span> <span class="important" style="color: #333333 !important"><% end if %><%=article_titre%></span>
+																<% if article_rub <> "" then %><span class="category" style="color: <%=colorParsing.Item("nlCntArtCategory")%>; font-weight: normal"><span class="important" style="color: <%=colorParsing.Item("nlCntArtCategory")%> !important; text-decoration: none !important"><%=article_rub%>.</span></span> <span class="important" style="color: #333333 !important; text-decoration: none !important"><% end if %><%=article_titre%></span>
 															</a>
 														</h3>
 														<div class="text" style="color: #666666; padding-top: 5px">
 															<a target="_blank" href="http://<%=url_site_exp%>/<%=article_url_v3%>&amp;<%=tracking_url%>" style="color: #666666; text-decoration: none">
-																<span class="important" style="color: #666666 !important"><%=rsArticle("CONTENU_CHAPITRE_FLASH_INFOS")%></span>
+																<span class="important" style="color: #666666 !important; text-decoration: none !important"><%=rsArticle("CONTENU_CHAPITRE_FLASH_INFOS")%></span>
 															</a>
 														</div>
 														<p class="readMore" style="color: <%=colorParsing.Item("nlCntArtReadMore")%>; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 10.2px; font-weight: normal; line-height: 16px; margin: 0px; padding: 5px 0 0; text-align: right" align="right">
 															<a target="_blank" href="http://<%=url_site_exp%>/<%=article_url_v3%>&amp;<%=tracking_url%>" style="color: <%=colorParsing.Item("nlCntArtReadMore")%>; text-decoration: none">
-																<span class="important" style="color: <%=colorParsing.Item("nlCntArtReadMore")%> !important">Lire la suite</span>
+																<span class="important" style="color: <%=colorParsing.Item("nlCntArtReadMore")%> !important; text-decoration: none !important">Lire la suite</span>
 															</a>
 														</p>
 														<%
@@ -1663,7 +1708,7 @@ color: <%=colorParsing.Item("nlFooterText")%> !important;
 																	<td class="sub-columns value" bgcolor="<%=colorParsing.Item("nlCntChfBackground")%>" style="-moz-hyphens: none; -ms-hyphens: none; background: <%=colorParsing.Item("nlCntChfBackground")%>; -webkit-hyphens: none; border-collapse: collapse !important; border-radius: 500px; color: <%=colorParsing.Item("nlCntChfValue")%>; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: <%=chiffreFontSize%>px; font-weight: normal; height: <%=chiffreContHeight%>px; hyphens: none; line-height: <%=chiffreLineHeight%>px; margin: 0; min-width: 0px; mso-line-height-rule: exactly; overflow: hidden; padding: <%=floor(chiffrepadvertical)%>px 0px <%=ceil(chiffrepadvertical)%>px; text-align: center; vertical-align: middle; width: 25%; word-break: break-word" align="center" valign="middle" width="25%" height="<%=chiffreContHeight%>">
 																		<p class="inner" style="color: <%=colorParsing.Item("nlCntChfValue")%>; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: <%=chiffreFontSize%>px; font-weight: normal; line-height: <%=chiffreLineHeight%>px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: center" align="center">
 																			<a target="_blank" class="link_box" href="http://<%=url_site_exp%>/?fintrack=&amp;article=<%=chiffre_id%>&amp;<%=tracking_url%>" style="color: <%=colorParsing.Item("nlCntChfValue")%>; display: block; outline: none; text-decoration: none">
-																				<span class="important" style="color: <%=colorParsing.Item("nlCntChfValue")%> !important"><%=chiffre_valeur%></span>
+																				<span class="important" style="color: <%=colorParsing.Item("nlCntChfValue")%> !important; text-decoration: none !important"><%=chiffre_valeur%></span>
 																			</a>
 																		</p>
 																	</td>
@@ -1675,11 +1720,11 @@ color: <%=colorParsing.Item("nlFooterText")%> !important;
 															<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 																<td class="center text-pad" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 10px 40px 0px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
 																	<h4 class="title" style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold; line-height: 17.6px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: center; word-break: normal" align="center">
-																		<a target="_blank" href="http://<%=url_site_exp%>/?fintrack=&amp;article=<%=chiffre_id%>&amp;<%=tracking_url%>" style="color: #333333; text-decoration: none"><span class="important" style="color: #333333 !important">Le chiffre</span></a>
+																		<a target="_blank" href="http://<%=url_site_exp%>/?fintrack=&amp;article=<%=chiffre_id%>&amp;<%=tracking_url%>" style="color: #333333; text-decoration: none"><span class="important" style="color: #333333 !important; text-decoration: none !important">Le chiffre</span></a>
 																	</h4>
 																	<div class="text" style="color: #666666; padding-top: 5px">
 																		<a target="_blank" href="http://<%=url_site_exp%>/?fintrack=&amp;article=<%=chiffre_id%>&amp;<%=tracking_url%>" style="color: #666666; text-decoration: none">
-																			<span class="important" style="color: #666666 !important"><%=chiffre_titre%></span>
+																			<span class="important" style="color: #666666 !important; text-decoration: none !important"><%=chiffre_titre%></span>
 																		</a>
 																	</div>
 																</td>
@@ -1700,7 +1745,7 @@ color: <%=colorParsing.Item("nlFooterText")%> !important;
 																	<td class="sub-columns first hide-for-small" style="-moz-hyphens: none; -ms-hyphens: none; background: <%=colorParsing.Item("nlCntQtnBackground")%>; -webkit-hyphens: none; background: transparent; border-collapse: collapse !important; border-radius: 0px; color: <%=colorParsing.Item("nlCntQtnValue")%>; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 40px; font-weight: normal; height: 50px; hyphens: none; line-height: 50px; margin: 0; min-width: 0px; mso-line-height-rule: exactly; overflow: hidden; padding: 5px 0px; text-align: center; vertical-align: middle; width: 37.5%; word-break: break-word" align="center" bgcolor="transparent" valign="middle" width="37.5%" height="50">&#160;</td>
 																	<td class="sub-columns value" bgcolor="<%=colorParsing.Item("nlCntQtnBackground")%>" style="-moz-hyphens: none; -ms-hyphens: none; background: <%=colorParsing.Item("nlCntQtnBackground")%>; -webkit-hyphens: none; border-collapse: collapse !important; border-radius: 500px; color: <%=colorParsing.Item("nlCntQtnValue")%>; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 40px; font-weight: normal; height: 50px; hyphens: none; line-height: 50px; margin: 0; min-width: 0px; mso-line-height-rule: exactly; overflow: hidden; padding: 5px 0px; text-align: center; vertical-align: middle; width: 25%; word-break: break-word" align="center" valign="middle" width="25%" height="50">
 																		<p class="inner" style="color: <%=colorParsing.Item("nlCntQtnValue")%>; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 40px; font-weight: normal; line-height: 50px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: center" align="center">
-																			<a target="_blank" class="link_box" href="http://<%=url_site_exp%>/?fintrack=&amp;article=<%=question_id%>&amp;<%=tracking_url%>" style="color: <%=colorParsing.Item("nlCntQtnValue")%>; display: block; outline: none; text-decoration: none"><span class="important" style="color: <%=colorParsing.Item("nlCntQtnValue")%> !important">?</span></a>
+																			<a target="_blank" class="link_box" href="http://<%=url_site_exp%>/?fintrack=&amp;article=<%=question_id%>&amp;<%=tracking_url%>" style="color: <%=colorParsing.Item("nlCntQtnValue")%>; display: block; outline: none; text-decoration: none"><span class="important" style="color: <%=colorParsing.Item("nlCntQtnValue")%> !important; text-decoration: none !important">?</span></a>
 																		</p>
 																	</td>
 																	<td class="sub-columns last hide-for-small" style="-moz-hyphens: none; -ms-hyphens: none; background: <%=colorParsing.Item("nlCntQtnBackground")%>; -webkit-hyphens: none; background: transparent; border-collapse: collapse !important; border-radius: 0px; color: <%=colorParsing.Item("nlCntQtnValue")%>; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 40px; font-weight: normal; height: 50px; hyphens: none; line-height: 50px; margin: 0; min-width: 0px; mso-line-height-rule: exactly; overflow: hidden; padding: 5px 0px; text-align: center; vertical-align: middle; width: 37.5%; word-break: break-word" align="center" bgcolor="transparent" valign="middle" width="37.5%" height="50">&#160;</td>
@@ -1711,11 +1756,11 @@ color: <%=colorParsing.Item("nlFooterText")%> !important;
 															<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 																<td class="center text-pad" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 10px 40px 0px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
 																	<h4 class="title" style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold; line-height: 17.6px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: center; word-break: normal" align="center">
-																		<a target="_blank" href="http://<%=url_site_exp%>/?fintrack=&amp;article=<%=question_id%>&amp;<%=tracking_url%>" style="color: #333333; text-decoration: none"><span class="important" style="color: #333333 !important">La question</span></a>
+																		<a target="_blank" href="http://<%=url_site_exp%>/?fintrack=&amp;article=<%=question_id%>&amp;<%=tracking_url%>" style="color: #333333; text-decoration: none"><span class="important" style="color: #333333 !important; text-decoration: none !important">La question</span></a>
 																	</h4>
 																	<div class="text" style="color: #666666; padding-top: 5px">
 																		<a target="_blank" href="http://<%=url_site_exp%>/?fintrack=&amp;article=<%=question_id%>&amp;<%=tracking_url%>" style="color: #666666; text-decoration: none">
-																			<span class="important" style="color: #666666 !important"><%=question_titre%></span>
+																			<span class="important" style="color: #666666 !important; text-decoration: none !important"><%=question_titre%></span>
 																		</a>
 																	</div>
 																</td>
@@ -1736,10 +1781,10 @@ color: <%=colorParsing.Item("nlFooterText")%> !important;
 																	<td class="sub-columns first hide-for-small" style="-moz-hyphens: none; -ms-hyphens: none; background: <%=colorParsing.Item("nlCntAgdBackground")%>; -webkit-hyphens: none; background: transparent; border-collapse: collapse !important; border-radius: 0px; color: <%=colorParsing.Item("nlCntAgdValue")%>; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 0px; font-weight: normal; height: 48px; hyphens: none; line-height: 0px; margin: 0; min-width: 0px; mso-line-height-rule: exactly; overflow: hidden; padding: 6px 0px; text-align: center; text-transform: uppercase; vertical-align: middle; width: 37.5%; word-break: break-word" align="center" bgcolor="transparent" valign="middle" width="37.5%" height="48">&#160;</td>
 																	<td class="sub-columns value" bgcolor="<%=colorParsing.Item("nlCntAgdBackground")%>" style="-moz-hyphens: none; -ms-hyphens: none; background: <%=colorParsing.Item("nlCntAgdBackground")%>; -webkit-hyphens: none; border-collapse: collapse !important; border-radius: 500px; color: <%=colorParsing.Item("nlCntAgdValue")%>; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 0px; font-weight: normal; height: 48px; hyphens: none; line-height: 0px; margin: 0; min-width: 0px; mso-line-height-rule: exactly; overflow: hidden; padding: 6px 0px; text-align: center; text-transform: uppercase; vertical-align: middle; width: 25%; word-break: break-word" align="center" valign="middle" width="25%" height="48">
 																		<p class="inner day" style="color: <%=colorParsing.Item("nlCntAgdValue")%>; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 28px; font-weight: normal; line-height: 35px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: center; text-transform: uppercase" align="center">
-																			<a target="_blank" class="link_box" href="http://<%=url_site_exp%>/?fintrack=&amp;article=<%=agenda_id%>&amp;collapse=collapse<%=agenda_collapse%>&amp;<%=tracking_url%>" style="color: <%=colorParsing.Item("nlCntAgdValue")%>; display: block; outline: none; text-decoration: none"><span class="important" style="color: <%=colorParsing.Item("nlCntAgdValue")%> !important"><%=agenda_jour%></span></a>
+																			<a target="_blank" class="link_box" href="http://<%=url_site_exp%>/?fintrack=&amp;article=<%=agenda_id%>&amp;collapse=collapse<%=agenda_collapse%>&amp;<%=tracking_url%>" style="color: <%=colorParsing.Item("nlCntAgdValue")%>; display: block; outline: none; text-decoration: none"><span class="important" style="color: <%=colorParsing.Item("nlCntAgdValue")%> !important; text-decoration: none !important"><%=agenda_jour%></span></a>
 																		</p>
 																		<p class="inner month" style="color: <%=colorParsing.Item("nlCntAgdValue")%>; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 10px; font-weight: normal; line-height: 13px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: center; text-transform: uppercase" align="center">
-																			<a target="_blank" class="link_box" href="http://<%=url_site_exp%>/?fintrack=&amp;article=<%=agenda_id%>&amp;collapse=collapse<%=agenda_collapse%>&amp;<%=tracking_url%>" style="color: <%=colorParsing.Item("nlCntAgdValue")%>; display: block; outline: none; text-decoration: none"><span class="important" style="color: <%=colorParsing.Item("nlCntAgdValue")%> !important"><%=agenda_mois_texte%></span></a>
+																			<a target="_blank" class="link_box" href="http://<%=url_site_exp%>/?fintrack=&amp;article=<%=agenda_id%>&amp;collapse=collapse<%=agenda_collapse%>&amp;<%=tracking_url%>" style="color: <%=colorParsing.Item("nlCntAgdValue")%>; display: block; outline: none; text-decoration: none"><span class="important" style="color: <%=colorParsing.Item("nlCntAgdValue")%> !important; text-decoration: none !important"><%=agenda_mois_texte%></span></a>
 																		</p>
 																	</td>
 																	<td class="sub-columns last hide-for-small" style="-moz-hyphens: none; -ms-hyphens: none; background: <%=colorParsing.Item("nlCntAgdBackground")%>; -webkit-hyphens: none; background: transparent; border-collapse: collapse !important; border-radius: 0px; color: <%=colorParsing.Item("nlCntAgdValue")%>; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 0px; font-weight: normal; height: 48px; hyphens: none; line-height: 0px; margin: 0; min-width: 0px; mso-line-height-rule: exactly; overflow: hidden; padding: 6px 0px; text-align: center; text-transform: uppercase; vertical-align: middle; width: 37.5%; word-break: break-word" align="center" bgcolor="transparent" valign="middle" width="37.5%" height="48">&#160;</td>
@@ -1750,11 +1795,11 @@ color: <%=colorParsing.Item("nlFooterText")%> !important;
 															<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 																<td class="center text-pad" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 10px 40px 0px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
 																	<h4 class="title" style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold; line-height: 17.6px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: center; word-break: normal" align="center">
-																		<a target="_blank" href="http://<%=url_site_exp%>/?fintrack=&amp;article=<%=agenda_id%>&amp;collapse=collapse<%=agenda_collapse%>&amp;<%=tracking_url%>" style="color: #333333; text-decoration: none"><span class="important" style="color: #333333 !important">Le&#160;rappel</span></a>
+																		<a target="_blank" href="http://<%=url_site_exp%>/?fintrack=&amp;article=<%=agenda_id%>&amp;collapse=collapse<%=agenda_collapse%>&amp;<%=tracking_url%>" style="color: #333333; text-decoration: none"><span class="important" style="color: #333333 !important; text-decoration: none !important">Le&#160;rappel</span></a>
 																	</h4>
 																	<div class="text" style="color: #666666; padding-top: 5px">
 																		<a target="_blank" href="http://<%=url_site_exp%>/?fintrack=&amp;article=<%=agenda_id%>&amp;collapse=collapse<%=agenda_collapse%>&amp;<%=tracking_url%>" style="color: #666666; text-decoration: none">
-																			<span class="important" style="color: #666666 !important"><%=agenda_titre%></span>
+																			<span class="important" style="color: #666666 !important; text-decoration: none !important"><%=agenda_titre%></span>
 																		</a>
 																	</div>
 																</td>
@@ -1783,7 +1828,7 @@ color: <%=colorParsing.Item("nlFooterText")%> !important;
 														<strong><% if (len(trim(type_client)) > 1) then response.write(type_client & " ") end if %><%=raison_sociale_exp%></strong>
 														<br />
 														<% lien_adresse=Server.URLEncode(adresse1_exp & " " & adresse2_exp & " " & code_postal_exp & " " & commune_exp) %>
-														<a target="_blank" href="http://maps.apple.com/?q=<%=lien_adresse%>" style="color: <%=colorParsing.Item("nlCntCctText")%>; text-decoration: none"><span class="important" style="color: <%=colorParsing.Item("nlCntCctText")%> !important"><%
+														<a target="_blank" href="http://maps.apple.com/?q=<%=lien_adresse%>" style="color: <%=colorParsing.Item("nlCntCctText")%>; text-decoration: none"><span class="important" style="color: <%=colorParsing.Item("nlCntCctText")%> !important; text-decoration: none !important"><%
 															'affichage adresse1'
 															nbc_desc=len(adresse1_exp)
 															k=1
