@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<!-- flashinfos_sec_mail_V3_resp.asp -->
+<!-- flashinfos_secxml_mail_V3_resp.asp -->
 <!--{{%%{{
 Set Conn = Server.CreateObject("ADODB.Connection")
 Conn.ConnectionString =  application("Base_Newsletter")
@@ -56,6 +56,7 @@ if not rsCabinet.eof then
 	else
 	url_site_exp = rsCabinet("url_site_exp")
 	end if
+	rscab_url_site_exp = rsCabinet("url_site_exp")
 	url_facebook = rsCabinet("Facebook")
 	url_twitter = rsCabinet("Twitter")
 	url_linkedin = rsCabinet("Linkedin")
@@ -65,6 +66,8 @@ if not rsCabinet.eof then
 	url_youtube = rsCabinet("Youtube")
 	logo_groupement = rsCabinet("logo_groupement")
 	lien_groupement = rsCabinet("lien_groupement")
+	URL_NL_XML = rsCabinet("URL_NL_XML")
+	URL_NL_XML_SUF = rsCabinet("URL_NL_XML_SUF")
 
 	Select Case type_perso_site
 		Case 38 txt_perso_site = "pop"
@@ -119,15 +122,14 @@ end if
 
 'Ciblage fichier de demo'
 if isDemo=True then
-	fileName = "flashinfos_sec_demo_V3_resp"
+	fileName = "flashinfos_secxml_demo_V3_resp"
 else
-	fileName = "flashinfos_sec_mail_V3_resp"
+	fileName = "flashinfos_secxml_mail_V3_resp"
 end if
 
 'Gestion des variables sectorielles'
 'BTP|SAN|TRA|COM|HCR'
 motifsec=UCase(request.QueryString("motifsec"))
-'motifsec="BTP"'
 
 Select Case motifsec
 	Case  "BTP"
@@ -216,8 +218,7 @@ Select Case motifsec
 		secteur_etude3_valeur = "Secteur non d&#233;fini"
 End Select
 
-online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/"&fileName&".asp?fintrack=&amp;id_client="&id_client&"&idarticle="&idarticle&"&idarticleAlaune="&idarticleAlaune&"&is_online=1"&get_coll&"&motifsec="&motifsec
-tracking_url = "rep="&repertoire_ei&"&amp;url_site_exp="&url_site_exp
+online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/"&fileName&".asp?id_client="&id_client&"&idarticle="&idarticle&"&idarticleAlaune="&idarticleAlaune&"&is_online=1"&get_coll&"&motifsec="&motifsec
 }}%%}}-->
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -1471,7 +1472,7 @@ background: **((secteur_color_darken10))** !important;
 														<!--{{%%{{ if isOnline=False then }}%%}}-->
 														<!--{{<gab_lien_message_online>}}-->
 														<span class="online" style="color: ##((nlSecCntOnlineText))##; display: block; font-size: 12px; line-height: 16px; mso-line-height-rule: exactly; padding-bottom: 5px">
-															<small style="font-size: 11px">Pour visualiser ce message en ligne, <a target="_blank" class="link_underline" href="%%{{=online_url}}%%&amp;%%{{=tracking_url}}%%" style="color: ##((nlSecCntOnlineText))##; text-decoration: underline"><span class="important" style="color: ##((nlSecCntOnlineText))## !important; text-decoration: underline !important">suivez ce lien</span></a>.</small>
+															<small style="font-size: 11px">Pour visualiser ce message en ligne, <a target="_blank" class="link_underline" href="%%{{=online_url}}%%" style="color: ##((nlSecCntOnlineText))##; text-decoration: underline"><span class="important" style="color: ##((nlSecCntOnlineText))## !important; text-decoration: underline !important">suivez ce lien</span></a>.</small>
 														</span>
 														<!--{{</gab_lien_message_online>}}-->
 														<!--{{%%{{ end if }}%%}}-->
@@ -1493,12 +1494,12 @@ background: **((secteur_color_darken10))** !important;
 											<table border="0" class="twelve columns" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 720; border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 720px" width="720" cellpadding="0" cellspacing="0">
 												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 													<td class="eight sub-columns first" style="-moz-hyphens: none; -ms-hyphens: none; -premailer-width: 66.666666%; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; min-width: 0px; padding: 0px; text-align: left; vertical-align: top; width: 66.666666%; word-break: break-word" align="left" valign="top" width="66.666666%">
-														<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%?fintrack=&amp;%%{{=tracking_url}}%%" style="color: #666666; display: block; outline: none; text-decoration: none">
+														<a target="_blank" class="link_box" href="http://%%{{=rscab_url_site_exp}}%%" style="color: #666666; display: block; outline: none; text-decoration: none">
 															<img class="center" src="http://%%{{=url_site_exp}}%%/uploads/assets/header-newsletter-site.png" alt="Header Newsletter Site" width="480" height="96" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: none; margin: 0 auto; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none" /><!--DEL{{--><img class="center" src="http://lorempixel.com/960/192/city/" alt="NomCabinet" width="480" height="96" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: none; margin: 0 auto; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none" /><!--}}DEL-->
 														</a>
 													</td>
 													<td class="four sub-columns last" style="-moz-hyphens: none; -ms-hyphens: none; -premailer-width: 33.333333%; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; min-width: 0px; padding: 0px; text-align: left; vertical-align: top; width: 33.333333%; word-break: break-word" align="left" valign="top" width="33.333333%">
-														<a target="_blank" class="link_box" href="http://%%{{=lien_groupement}}%%?fintrack=&amp;%%{{=tracking_url}}%%" style="color: #666666; display: block; outline: none; text-decoration: none">
+														<a target="_blank" class="link_box" href="http://%%{{=lien_groupement}}%%" style="color: #666666; display: block; outline: none; text-decoration: none">
 															<img class="center" src="http://%%{{=url_site_exp}}%%/uploads/assets/header-newsletter-groupe.png" alt="Header Newsletter Groupe" width="240" height="96" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: none; margin: 0 auto; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none" /><!--DEL{{--><img class="center" src="http://lorempixel.com/480/192/technics/" alt="NomCabinet" width="240" height="96" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: none; margin: 0 auto; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none" /><!--}}DEL-->
 														</a>
 													</td>
@@ -1516,7 +1517,7 @@ background: **((secteur_color_darken10))** !important;
 								            <table border="0" class="twelve columns" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 720; border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 720px" width="720" cellpadding="0" cellspacing="0">
 								                <tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 								                    <td class="center" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
-								                    	<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%?fintrack=&amp;%%{{=tracking_url}}%%" style="color: #666666; display: block; outline: none; text-decoration: none">
+								                    	<a target="_blank" class="link_box" href="http://%%{{=rscab_url_site_exp}}%%" style="color: #666666; display: block; outline: none; text-decoration: none">
 								                            <img class="center" src="http://%%{{=url_site_exp}}%%/uploads/assets/header-newsletter.png" alt="Header Newsletter" width="720" height="96" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: none; margin: 0 auto; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none" /><!--DEL{{--><img class="center" src="http://newsletter-templates.lesechos-publishing.fr/templates/expertInfos_secxml/theme/images/header-newsletter.png" width="720" height="96" alt="" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: none; margin: 0 auto; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none" /><!--}}DEL-->
 								                        </a>
 								                    </td>
@@ -1653,27 +1654,13 @@ background: **((secteur_color_darken10))** !important;
 
 								<!-- ALAUNE START -->
 								<!--{{%%{{
-								if isDemo=True then
-									sql_Flash_Infos="SELECT MAX(ID_FLASH_INFOS) FROM FLASHS_INFOS where type_flash=4 and frequence_flash=2"
-									set rs_Flash_Infos=conn.execute(sql_Flash_Infos)
-									ID_FLASH_INFOS=rs_Flash_Infos(0)
-
-									sql_Flash_Infos_bis="SELECT * FROM FLASHS_INFOS where ID_FLASH_INFOS = "& ID_FLASH_INFOS
-									set rs_Flash_Infos_bis=conn.execute(sql_Flash_Infos_bis)
-									idarticleAlaune= rs_Flash_Infos_bis(4)
-								end if
-
 								if idarticleAlaune="" then idarticleAlaune=request.QueryString("amp;idarticleAlaune")
 									SQLArticleAlaune="SELECT * FROM CHAPITRES_FLASHS_INFOS WHERE (IDCHAPITRE_FLASH_INFOS = "& idarticleAlaune &")"
 									Set rsArticleAlaune=conn.Execute(SQLArticleAlaune)
 									id_de_larticle=mid(rsArticleAlaune("URL_DETAIL_INFO"),13,len(rsArticleAlaune("URL_DETAIL_INFO"))-16)
 
-									article_une_qstart_v3 = InStr(rsArticleAlaune("URL_DETAIL_V3"),"?")
-									if (article_une_qstart_v3 > 0) then
-										article_une_url_v3 = Replace(rsArticleAlaune("URL_DETAIL_V3"),"?","?fintrack=&amp;",article_une_qstart_v3,1)
-									else
-										article_une_url_v3 = "?fintrack=&amp;"&rsArticleAlaune("URL_DETAIL_V3")
-									end if
+									'Composition lien article'
+									lien_article = "http://"&URL_NL_XML&id_de_larticle&URL_NL_XML_SUF
 									
 									article_une_rub = ""
 									article_une_titre = rsArticleAlaune("TITRE_CHAPITRE_FLASH_INFOS")
@@ -1693,16 +1680,16 @@ background: **((secteur_color_darken10))** !important;
 												<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 													<td class="text-pad" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px 40px 20px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
 														<h5 class="preTitle" style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold; line-height: 17.6px; margin: 0; mso-line-height-rule: exactly; padding: 0 0 5px; text-align: left; word-break: normal" align="left">&#192; la <span class="last" style="color: **((secteur_color))**">une</span></h5>
-														<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/%%{{=article_une_url_v3}}%%&amp;%%{{=tracking_url}}%%" style="color: #666666; display: block; outline: none; text-decoration: none">
+														<a target="_blank" class="link_box" href="%%{{=lien_article}}%%" style="color: #666666; display: block; outline: none; text-decoration: none">
 															<img class="center" src="http://e-newsletter.expert-infos.com/_infos/_photos/%%{{=id_de_larticle}}%%-h.jpg" width="640" height="293" alt="Article &#224; la Une" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: none; margin: 0 auto; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none" /><!--DEL{{--><img class="center" src="http://lorempixel.com/1280/586/business/" width="640" height="293" alt="" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: none; margin: 0 auto; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none" /><!--}}DEL-->
 														</a>
 														<h2 class="title" style="color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 30px; font-weight: bold; line-height: 33px; margin: 0; mso-line-height-rule: exactly; padding: 5px 0 0; text-align: left; word-break: normal" align="left">
-															<a target="_blank" href="http://%%{{=url_site_exp}}%%/%%{{=article_une_url_v3}}%%&amp;%%{{=tracking_url}}%%" style="color: #666666; text-decoration: none">
+															<a target="_blank" href="%%{{=lien_article}}%%" style="color: #666666; text-decoration: none">
 																<span class="important" style="color: #666666 !important; text-decoration: none !important"><!--{{%%{{=article_une_titre}}%%}}--><!--DEL{{-->article_une_titre<!--}}DEL--></span>
 															</a>
 														</h2>
 														<div class="text" style="padding-top: 5px">
-															<a target="_blank" href="http://%%{{=url_site_exp}}%%/%%{{=article_une_url_v3}}%%&amp;%%{{=tracking_url}}%%" style="color: #666666; text-decoration: none">
+															<a target="_blank" href="%%{{=lien_article}}%%" style="color: #666666; text-decoration: none">
 																<span class="important" style="color: #666666 !important; text-decoration: none !important"><!--{{%%{{=rsArticleAlaune("CONTENU_CHAPITRE_FLASH_INFOS")}}%%}}--><!--DEL{{-->CONTENU_CHAPITRE_FLASH_INFOS<!--}}DEL--></span>
 															</a>
 														</div>
@@ -1712,7 +1699,7 @@ background: **((secteur_color_darken10))** !important;
 																	<table border="0" align="right" class="tiny-button" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: auto; border-collapse: collapse; border-spacing: 0; display: table; empty-cells: hide; float: right; mso-table-lspace: 0pt; mso-table-rspace: 0pt; overflow: hidden; padding: 0; table-layout: auto; text-align: left; vertical-align: top; width: auto" width="auto" cellpadding="0" cellspacing="0">
 																		<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 																			<td bgcolor="%%{{=secteur_color}}%%" bordercolor="%%{{=secteur_color_darken12}}%%" style="-moz-hyphens: none; -ms-hyphens: none; -premailer-background: **((secteur_color))**; -premailer-border: 1px solid **((secteur_color_darken12))**; -premailer-width: auto; -webkit-hyphens: none; background: #666666 url('http://newsletter-templates.lesechos-publishing.fr/templates/expertInfos_secxml/-premailer-bgdebug'); border: 999000999ex none transparent; border-collapse: collapse !important; color: #ffffff; display: block; float: none; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 10.2px; font-weight: normal; hyphens: none; line-height: 14px !important; margin: 0px; mso-line-height-rule: exactly; padding: 4px 8px; text-align: center; text-transform: uppercase; vertical-align: middle; width: auto !important; word-break: break-word" align="center" valign="middle" width="auto">
-																				<a target="_blank" href="http://%%{{=url_site_exp}}%%/%%{{=article_une_url_v3}}%%&amp;%%{{=tracking_url}}%%" style="color: #ffffff; display: block; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 10.2px; font-weight: normal; height: 100%; margin: 0px; padding: 0px; text-decoration: none; width: 100%"><span class="important" style="color: #ffffff !important; text-decoration: none !important">Lire la suite</span></a>
+																				<a target="_blank" href="%%{{=lien_article}}%%" style="color: #ffffff; display: block; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 10.2px; font-weight: normal; height: 100%; margin: 0px; padding: 0px; text-decoration: none; width: 100%"><span class="important" style="color: #ffffff !important; text-decoration: none !important">Lire la suite</span></a>
 																			</td>
 																		</tr>
 																	</table>
@@ -1729,26 +1716,6 @@ background: **((secteur_color_darken10))** !important;
 								<!-- ALAUNE END -->
 
 								<!-- ARTICLES START -->
-								<!--{{%%{{
-								if isDemo=True then
-									sql_Chapitre_Flash_Infos="SELECT * FROM CHAPITRES_FLASHS_INFOS where ID_FLASH_INFOS = "& ID_FLASH_INFOS &" order by ORDRE_CHAPITRE_FLASH_INFOS DESC"
-									set rs_Chapitre_Flash_Infos=conn.execute(sql_Chapitre_Flash_Infos)
-									                          
-									if not rs_Chapitre_Flash_Infos.eof then
-										while not rs_Chapitre_Flash_Infos.eof
-											idarticle_1=rs_Chapitre_Flash_Infos(0)
-											rs_Chapitre_Flash_Infos.movenext
-											if idarticle_1<>idarticleAlaune then
-												idarticle= idarticle_1 &"-"& idarticle
-											end if
-										wend
-									end if
-								end if
-
-								if isDemo=False then
-									idarticle=idarticle&"-"
-								end if
-								}}%%}}-->
 								<table border="0" class="row contentArticles" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%; background: #eaeaea; border-collapse: collapse; border-spacing: 0; display: block; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px; text-align: left; vertical-align: top; width: 100%" bgcolor="#eaeaea" width="100%" cellpadding="0" cellspacing="0">
 									<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 										<td class="wrapper first last" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 20px 0px 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
@@ -1757,6 +1724,7 @@ background: **((secteur_color_darken10))** !important;
 													<td class="text-pad" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px 40px 20px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
 														<h5 class="preTitle" style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold; line-height: 17.6px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; word-break: normal" align="left">Autres <span class="last" style="color: **((secteur_color))**">actualit&#233;s</span></h5>
 														<!--{{%%{{
+														idarticle=idarticle&"-"
 														if idarticle="" then request.QueryString("amp;idarticle")
 														article=Mid(idarticle,1,(len(idarticle)))
 														nbc_desc=len(article)
@@ -1779,12 +1747,8 @@ background: **((secteur_color_darken10))** !important;
 															set rsCountArt=conn.Execute(CountArt)
 															nbrart=rsCountArt(0)
 
-															article_qstart_v3 = InStr(rsArticle("URL_DETAIL_V3"),"?")
-															if (article_qstart_v3 > 0) then
-																article_url_v3 = Replace(rsArticle("URL_DETAIL_V3"),"?","?fintrack=&amp;",article_qstart_v3,1)
-															else
-																article_url_v3 = "?fintrack=&amp;"&rsArticle("URL_DETAIL_V3")
-															end if
+															'Composition lien article'
+															lien_article = "http://"&URL_NL_XML&id_de_larticle&URL_NL_XML_SUF
 
 															article_rub = ""
 															article_titre = rsArticle("TITRE_CHAPITRE_FLASH_INFOS")
@@ -1798,12 +1762,12 @@ background: **((secteur_color_darken10))** !important;
 															end if
 														}}%%}}-->
 														<h3 class="title" style="color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 22px; font-weight: bold; line-height: 24.2px; margin: 0; mso-line-height-rule: exactly; padding: 5px 0 0; text-align: left; word-break: normal" align="left">
-															<a target="_blank" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%&amp;%%{{=tracking_url}}%%" style="color: #666666; text-decoration: none">
+															<a target="_blank" href="%%{{=lien_article}}%%" style="color: #666666; text-decoration: none">
 																<span class="important" style="color: #666666 !important; text-decoration: none !important"><!--{{%%{{=article_titre}}%%}}--><!--DEL{{-->article_titre<!--}}DEL--></span>
 															</a>
 														</h3>
 														<div class="text" style="padding-top: 5px">
-															<a target="_blank" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%&amp;%%{{=tracking_url}}%%" style="color: #666666; text-decoration: none">
+															<a target="_blank" href="%%{{=lien_article}}%%" style="color: #666666; text-decoration: none">
 																<span class="important" style="color: #666666 !important; text-decoration: none !important"><!--{{%%{{=rsArticle("CONTENU_CHAPITRE_FLASH_INFOS")}}%%}}--><!--DEL{{-->CONTENU_CHAPITRE_FLASH_INFOS<!--}}DEL--></span>
 															</a>
 														</div>
@@ -1813,7 +1777,7 @@ background: **((secteur_color_darken10))** !important;
 																	<table border="0" align="right" class="tiny-button" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: auto; border-collapse: collapse; border-spacing: 0; display: table; empty-cells: hide; float: right; mso-table-lspace: 0pt; mso-table-rspace: 0pt; overflow: hidden; padding: 0; table-layout: auto; text-align: left; vertical-align: top; width: auto" width="auto" cellpadding="0" cellspacing="0">
 																		<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 																			<td style="-moz-hyphens: none; -ms-hyphens: none; -premailer-width: auto; -webkit-hyphens: none; background: #919191; border: 1px solid #727272; border-collapse: collapse !important; color: #ffffff; display: block; float: none; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 10.2px; font-weight: normal; hyphens: none; line-height: 14px !important; margin: 0px; mso-line-height-rule: exactly; padding: 4px 8px; text-align: center; text-transform: uppercase; vertical-align: middle; width: auto !important; word-break: break-word" align="center" bgcolor="#919191" valign="middle" width="auto">
-																				<a target="_blank" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%&amp;%%{{=tracking_url}}%%" style="color: #ffffff; display: block; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 10.2px; font-weight: normal; height: 100%; margin: 0px; padding: 0px; text-decoration: none; width: 100%"><span class="important" style="color: #ffffff !important; text-decoration: none !important">Lire la suite</span></a>
+																				<a target="_blank" href="%%{{=lien_article}}%%" style="color: #ffffff; display: block; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 10.2px; font-weight: normal; height: 100%; margin: 0px; padding: 0px; text-decoration: none; width: 100%"><span class="important" style="color: #ffffff !important; text-decoration: none !important">Lire la suite</span></a>
 																			</td>
 																		</tr>
 																	</table>
@@ -1988,7 +1952,7 @@ background: **((secteur_color_darken10))** !important;
 															url_site_exp = rsCabinet("url_site_exp")
 														end if
 														}}%%}}-->
-														<a target="_blank" class="link_underline" href="http://%%{{=url_site_exp}}%%?fintrack=&amp;%%{{=tracking_url}}%%" style="color: #666666; text-decoration: underline"><span class="important" style="color: #666666 !important; text-decoration: underline !important"><!--{{%%{{=url_site_exp}}%%}}--><!--DEL{{-->url_site_exp<!--}}DEL--></span></a>
+														<a target="_blank" class="link_underline" href="http://%%{{=url_site_exp}}%%" style="color: #666666; text-decoration: underline"><span class="important" style="color: #666666 !important; text-decoration: underline !important"><!--{{%%{{=url_site_exp}}%%}}--><!--DEL{{-->url_site_exp<!--}}DEL--></span></a>
 													</td>
 													<td class="expander" style="-moz-hyphens: none; -ms-hyphens: none; -premailer-width: 1; -webkit-hyphens: none; background: #ffffff; border-collapse: collapse !important; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word" align="left" bgcolor="#ffffff" valign="top" width="1"></td>
 												</tr>
