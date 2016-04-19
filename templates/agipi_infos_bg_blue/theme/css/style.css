@@ -1423,6 +1423,25 @@ table.separator td {
   padding-bottom: 10px;
 }
 
+.contentDateInfo {
+  background-color: #0f0;
+}
+
+.contentDateInfo td {
+  font-size: 11px;
+  line-height: 13.75px;
+  text-align: right;
+}
+
+.contentDateInfo td.wrapper {
+  padding-top: 10px;
+}
+
+.contentDateInfo table.columns td,
+.contentDateInfo table.column td {
+  padding-bottom: 0px;
+}
+
 .contentALaUne img {
   float: none;
 }
@@ -1875,6 +1894,15 @@ table.separator td {
   table[class="body"] .contentOnline table.columns td,
   table[class="body"] .contentOnline table.column td {
     padding-bottom: 5px !important;
+  }
+
+  table[class="body"] .contentDateInfo td.wrapper {
+    padding-top: 5px !important;
+  }
+
+  table[class="body"] .contentDateInfo table.columns td,
+  table[class="body"] .contentDateInfo table.column td {
+    padding-bottom: 0px !important;
   }
 
   table[class="body"] .contentALaUne table.columns td,

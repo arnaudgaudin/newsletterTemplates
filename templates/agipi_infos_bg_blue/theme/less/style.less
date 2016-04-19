@@ -314,11 +314,33 @@ table.separator {
 }
 
 
+// contentDateInfo area
+// -------------------------
+.contentDateInfo {
+	background-color: #0f0;
+	
+	td {
+		font-size: @fontSizeSmall;
+		line-height: (@fontSizeSmall * 1.25);
+		text-align: right;
+	}
+	//réduction décalage vertical
+	td.wrapper { padding-top: (@wrapperPad / 2); }
+	table.columns td, table.column td { padding-bottom: 0px; }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentDateInfo {
+		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
+		table.columns td, table.column td { padding-bottom: 0px !important; }
+	}
+}
+
+
 // contentALaUne area
 // -------------------------
 .contentALaUne {
 	img { float: none; }
-	
+
 	.title {
 		color: @colorAgipi1;
 		a { .newsletterLinkColor(@colorAgipi1); }
