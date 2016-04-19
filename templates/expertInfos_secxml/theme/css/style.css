@@ -1507,8 +1507,8 @@ img.faicon {
 }
 
 .contentEtude .value td {
-  font-size: 30px;
-  line-height: 30px;
+  font-size: 26px;
+  line-height: 26px;
   font-weight: normal;
   font-weight: 500;
 }
@@ -2454,7 +2454,7 @@ hr {
 
   table[class="body"] .contentEtude .wrapper table.columns .text td,
   table[class="body"] .contentEtude .wrapper table.column .text td {
-    padding: 8px 0 0 10px !important;
+    padding: 4px 0 0 10px !important;
   }
 
   table[class="body"] .contentEtude .wrapper table.columns .value td,
