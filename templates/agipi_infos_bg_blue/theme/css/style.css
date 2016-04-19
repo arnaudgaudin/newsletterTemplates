@@ -1309,6 +1309,7 @@ a.tiny-button-link {
   color: #ffffff;
   line-height: 12px;
   mso-line-height-rule: exactly;
+  text-transform: uppercase;
 }
 
 a.tiny-button-link .important,
@@ -1317,6 +1318,10 @@ a.tiny-button-link:hover,
 a.tiny-button-link:focus,
 a.tiny-button-link:active {
   color: #ffffff !important;
+}
+
+a.tiny-button-link .important {
+  text-transform: uppercase !important;
 }
 
 table.columns .readMore td.buttonWrapper td,
