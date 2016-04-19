@@ -1423,8 +1423,22 @@ table.separator td {
   padding-bottom: 10px;
 }
 
-.contentDateInfo {
-  background-color: #0f0;
+.contentDateInfo,
+.contentDateInfo td,
+.contentDateInfo .inner {
+  color: #333333;
+}
+
+.contentDateInfo a {
+  color: #333333;
+}
+
+.contentDateInfo a .important,
+.contentDateInfo a:visited,
+.contentDateInfo a:hover,
+.contentDateInfo a:focus,
+.contentDateInfo a:active {
+  color: #333333 !important;
 }
 
 .contentDateInfo td {
