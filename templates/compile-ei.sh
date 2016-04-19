@@ -30,3 +30,6 @@ cd ..
 cd expertInfos_sec
 ./compile.sh
 cd ..
+cd expertInfos_secxml
+./compile.sh
+cd ..
