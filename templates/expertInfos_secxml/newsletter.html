@@ -114,11 +114,12 @@ idarticle=request.QueryString("idarticle")
 'Changement pour newsletter collaborateur'
 if isCollaborateur=True then
 	get_coll = "&is_coll=1"
-	get_date = la_date_collaborateur
 else
 	get_coll = ""
-	get_date = la_date
 end if
+
+'Composition affichage date'
+get_date = "mois "&la_date_determinant&la_date
 
 'Ciblage fichier de demo'
 if isDemo=True then
