@@ -1476,6 +1476,10 @@ table.separator td {
   color: #006eb6 !important;
 }
 
+.contentALaUne td.wrapper {
+  padding-top: 10px;
+}
+
 .contentALaUne table.columns td,
 .contentALaUne table.column td {
   padding-bottom: 0px;
@@ -1917,6 +1921,10 @@ table.separator td {
   table[class="body"] .contentDateInfo table.columns td,
   table[class="body"] .contentDateInfo table.column td {
     padding-bottom: 0px !important;
+  }
+
+  table[class="body"] .contentALaUne td.wrapper {
+    padding-top: 5px !important;
   }
 
   table[class="body"] .contentALaUne table.columns td,
