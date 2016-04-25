@@ -623,15 +623,23 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+a .important {
+  color: #2ba6cb !important;
+  text-decoration: none !important;
+}
+
+a:hover,
+a:hover .important {
   color: #2284a1 !important;
 }
 
-a:active {
+a:active,
+a:active .important {
   color: #2284a1 !important;
 }
 
-a:visited {
+a:visited,
+a:visited .important {
   color: #2ba6cb !important;
 }
 
@@ -644,12 +652,27 @@ h6 a {
   color: #2ba6cb;
 }
 
+h1 a .important,
+h2 a .important,
+h3 a .important,
+h4 a .important,
+h5 a .important,
+h6 a .important {
+  color: #2ba6cb !important;
+}
+
 h1 a:active,
 h2 a:active,
 h3 a:active,
 h4 a:active,
 h5 a:active,
-h6 a:active {
+h6 a:active,
+h1 a:active .important,
+h2 a:active .important,
+h3 a:active .important,
+h4 a:active .important,
+h5 a:active .important,
+h6 a:active .important {
   color: #2ba6cb !important;
 }
 
@@ -658,7 +681,13 @@ h2 a:visited,
 h3 a:visited,
 h4 a:visited,
 h5 a:visited,
-h6 a:visited {
+h6 a:visited,
+h1 a:visited .important,
+h2 a:visited .important,
+h3 a:visited .important,
+h4 a:visited .important,
+h5 a:visited .important,
+h6 a:visited .important {
   color: #2ba6cb !important;
 }
 
@@ -947,6 +976,11 @@ body.outlook p {
 a[href^=tel] {
   color: inherit;
   text-decoration: none;
+}
+
+a[href^=tel] .important {
+  color: inherit !important;
+  text-decoration: none !important;
 }
 
 a.link_box {
