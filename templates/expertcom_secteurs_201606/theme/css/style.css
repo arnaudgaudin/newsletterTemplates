@@ -570,15 +570,15 @@ h6 {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 40px;
 }
 
 h2 {
-  font-size: 28px;
+  font-size: 30px;
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 26px;
 }
 
 h4 {
@@ -606,8 +606,8 @@ td {
 p.lead,
 p.lede,
 p.leed {
-  font-size: 18px;
-  line-height: 20.7px;
+  font-size: 24px;
+  line-height: 27.6px;
 }
 
 p {
@@ -786,7 +786,7 @@ table.medium-button td a {
 }
 
 table.large-button td a {
-  font-size: 18px;
+  font-size: 24px;
 }
 
 table.button:hover td,
@@ -1126,6 +1126,133 @@ table.large-button td {
   -premailer-width: auto;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  mso-line-height-rule: exactly;
+}
+
+h1 {
+  line-height: 44px;
+  font-weight: normal;
+}
+
+h2 {
+  line-height: 33px;
+}
+
+h3 {
+  line-height: 28.6px;
+  font-weight: normal;
+}
+
+h4 {
+  line-height: 24.2px;
+}
+
+h5 {
+  line-height: 19.8px;
+}
+
+h6 {
+  line-height: 17.6px;
+}
+
+p {
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 0px;
+}
+
+.readMore {
+  width: 100%;
+  -premailer-width: 100%;
+  overflow: hidden;
+  clear: both;
+}
+
+table.columns .readMore td.buttonWrapper,
+table.column .readMore td.buttonWrapper {
+  padding-bottom: 0px;
+  clear: both;
+}
+
+table.columns .readMore td.buttonWrapper td,
+table.column .readMore td.buttonWrapper td {
+  color: #ffffff;
+}
+
+table.columns .readMore table.large-button,
+table.column .readMore table.large-button {
+  display: table;
+  table-layout: auto;
+  width: auto;
+  -premailer-width: auto;
+  float: right;
+}
+
+table.columns .readMore table.large-button td,
+table.column .readMore table.large-button td {
+  width: auto;
+  float: none;
+  -premailer-width: auto;
+  padding: 4px 8px;
+  vertical-align: middle;
+}
+
+table.columns .readMore table.large-button td a,
+table.column .readMore table.large-button td a,
+table.columns .readMore table.large-button td p,
+table.column .readMore table.large-button td p {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+table.columns .text + .readMore td.buttonWrapper,
+table.column .text + .readMore td.buttonWrapper {
+  padding-top: 20px;
+}
+
+a.large-button-link {
+  padding: 0px;
+  margin: 0px;
+  color: #ffffff;
+  line-height: 32px;
+  mso-line-height-rule: exactly;
+}
+
+a.large-button-link .important,
+a.large-button-link:visited,
+a.large-button-link:hover,
+a.large-button-link:focus,
+a.large-button-link:active {
+  color: #ffffff !important;
+}
+
+table.columns .readMore td.buttonWrapper td,
+table.column .readMore td.buttonWrapper td,
+table.columns .readMore td.buttonWrapper td p.MsoNormal,
+table.column .readMore td.buttonWrapper td p.MsoNormal {
+  line-height: 32px !important;
+  mso-line-height-rule: exactly;
+  margin: 0px;
+}
+
+table.columns .readMore td.buttonWrapper td p.MsoNormal,
+table.column .readMore td.buttonWrapper td p.MsoNormal {
+  padding: 0px;
+}
+
+a.large-button-link,
+table.columns .readMore td.buttonWrapper td,
+table.column .readMore td.buttonWrapper td {
+  font-size: 24px;
+  font-weight: bold;
+}
+
 @media only screen and (max-width: 720px) {
   table[class="body"] img {
     max-width: auto !important;
@@ -1290,5 +1417,72 @@ table.large-button td {
 
   table[class="container"] .panel {
     padding: 10px !important;
+  }
+
+  table[class="body"] body,
+  table[class="body"],
+  table[class="body"] p,
+  table[class="body"] td {
+    font-size: 12px !important;
+    line-height: 16px !important;
+  }
+
+  table[class="body"] small {
+    font-size: 9px !important;
+  }
+
+  table[class="body"] h1 {
+    font-size: 36px !important;
+    line-height: 39.6px !important;
+  }
+
+  table[class="body"] h2 {
+    font-size: 27px !important;
+    line-height: 29.7px !important;
+  }
+
+  table[class="body"] h3 {
+    font-size: 23px !important;
+    line-height: 25.3px !important;
+  }
+
+  table[class="body"] h4 {
+    font-size: 19px !important;
+    line-height: 20.9px !important;
+  }
+
+  table[class="body"] h5 {
+    font-size: 16px !important;
+    line-height: 17.6px !important;
+  }
+
+  table[class="body"] h6 {
+    font-size: 14px !important;
+    line-height: 15.4px !important;
+  }
+
+  table[class="body"] table.columns .readMore td.buttonWrapper,
+  table[class="body"] table.column .readMore td.buttonWrapper {
+    padding-bottom: 0px !important;
+  }
+
+  table[class="body"] table.columns .readMore table.large-button,
+  table[class="body"] table.column .readMore table.large-button {
+    display: table !important;
+    table-layout: auto !important;
+    width: auto !important;
+  }
+
+  table[class="body"] table.columns .readMore table.large-button td,
+  table[class="body"] table.column .readMore table.large-button td {
+    width: auto !important;
+    padding: 4px 8px !important;
+  }
+
+  table[class="body"] a.large-button-link,
+  table[class="body"] table.columns .readMore td.buttonWrapper td,
+  table[class="body"] table.column .readMore td.buttonWrapper td {
+    font-size: 11px !important;
+    line-height: 15px !important;
   }
 }

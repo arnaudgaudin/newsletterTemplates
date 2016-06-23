@@ -2,3 +2,146 @@
 @import "import.less";
 
 // additionnal template's style which extends ink's style
+
+//Propriétés mso-* utilisées dans Outlook
+//Debug outlook : http://www.verticalresponse.com/blog/its-not-you-its-outlook-the-complete-guide-for-email-marketers/
+
+// LAYOUT
+// --------------------------------------------------
+
+h1, h2, h3, h4, h5, h6 { mso-line-height-rule: exactly; }
+h1 { line-height: (@headingsFontSizeH1 * 1.1); font-weight: normal; }
+h2 { line-height: (@headingsFontSizeH2 * 1.1); }
+h3 { line-height: (@headingsFontSizeH3 * 1.1); font-weight: normal; }
+h4 { line-height: (@headingsFontSizeH4 * 1.1); }
+h5 { line-height: (@headingsFontSizeH5 * 1.1); }
+h6 { line-height: (@headingsFontSizeH6 * 1.1); }
+
+//réduction tailles titrages en mode mobile
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] {
+		body, &, p, td {
+			font-size: floor(@baseFontSize * 0.9) !important;
+  			line-height: floor(@baseLineHeight * 0.9) !important;
+		}
+
+		small {
+			font-size: floor(@fontSizeSmall * 0.9) !important;
+		}
+
+		h1 {
+			font-size: floor(@headingsFontSizeH1 * 0.9) !important;
+			line-height: (floor(@headingsFontSizeH1 * 0.9) * 1.1) !important;
+		}
+		h2 {
+			font-size: floor(@headingsFontSizeH2 * 0.9) !important;
+			line-height: (floor(@headingsFontSizeH2 * 0.9) * 1.1) !important;
+		}
+		h3 {
+			font-size: floor(@headingsFontSizeH3 * 0.9) !important;
+			line-height: (floor(@headingsFontSizeH3 * 0.9) * 1.1) !important;
+		}
+		h4 {
+			font-size: floor(@headingsFontSizeH4 * 0.9) !important;
+			line-height: (floor(@headingsFontSizeH4 * 0.9) * 1.1) !important;
+		}
+		h5 {
+			font-size: floor(@headingsFontSizeH5 * 0.9) !important;
+			line-height: (floor(@headingsFontSizeH5 * 0.9) * 1.1) !important;
+		}
+		h6 {
+			font-size: floor(@headingsFontSizeH6 * 0.9) !important;
+			line-height: (floor(@headingsFontSizeH6 * 0.9) * 1.1) !important;
+		}
+	}
+}
+
+//tous les paragraphes pour Outlook
+//cf http://stackoverflow.com/questions/18109812/ms-outlook-email-templates-adding-extra-spacing
+p {
+	margin: 0px;
+	padding: 0px;
+	margin-bottom: 0px;
+}
+
+//lien de suivis
+.readMore {
+	width: 100%;
+	-premailer-width: 100%;
+	overflow: hidden;
+	clear: both;
+
+	table.columns &, table.column & {
+		td.buttonWrapper {
+			padding-bottom: 0px;
+			clear: both;
+			td { color: #ffffff; }
+		}
+		table.large-button {
+			display: table;
+			table-layout: auto;
+			width: auto;
+			-premailer-width: auto;
+			float: right;
+			td {
+				width: auto;
+				float: none;
+				-premailer-width: auto;
+				padding: 4px 8px;
+				vertical-align: middle;
+				//pour les éventuels paragraphes vides rajoutés par Outlook
+				a, p { margin: 0px !important; padding: 0px !important; }
+			}
+		}
+	}
+	.text + & {
+		table.columns &, table.column & {
+			td.buttonWrapper { padding-top: 20px; }
+		}
+	}
+}
+a.large-button-link {
+	padding: 0px;
+	margin: 0px;
+	.newsletterLinkColor(#ffffff);
+	line-height: ceil(@buttonFontSizeLarge * 1.33);
+	mso-line-height-rule: exactly;
+}
+table.columns .readMore td.buttonWrapper td, table.column .readMore td.buttonWrapper td {
+	//pour Outlook
+	&, p.MsoNormal {
+		line-height: ceil(@buttonFontSizeLarge * 1.33) !important;
+		mso-line-height-rule: exactly;
+		margin: 0px;
+	}
+	p.MsoNormal { padding: 0px; }
+}
+a.large-button-link, table.columns .readMore td.buttonWrapper td, table.column .readMore td.buttonWrapper td {
+	font-size: @buttonFontSizeLarge;
+	font-weight: bold;
+}
+
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] {
+		table.columns, table.column {
+			.readMore {
+				td.buttonWrapper {
+					padding-bottom: 0px !important;
+				}
+				table.large-button {
+					display: table !important;
+					table-layout: auto !important;
+					width: auto !important;
+					td {
+						width: auto !important;
+						padding: 4px 8px !important;
+					}
+				}
+			}
+		}
+		a.large-button-link, table.columns .readMore td.buttonWrapper td, table.column .readMore td.buttonWrapper td {
+			font-size: @buttonFontSizeSmall !important;
+			line-height: ceil(@buttonFontSizeSmall * 1.33) !important;
+		}
+	}
+}
