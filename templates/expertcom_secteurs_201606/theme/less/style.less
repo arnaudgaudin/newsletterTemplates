@@ -65,6 +65,35 @@ p {
 }
 
 //lien de suivis
+.btnWrapper {
+	width: 100%;
+	-premailer-width: 100%;
+	td.sub-columns {
+		padding-top: (@wrapperPad / 2);
+		padding-bottom: 0px;
+	}
+	table.columns &, table.column & {
+		.readMore table.large-button {
+			width: 100%;
+			-premailer-width: 100%;
+			float: none;
+		}
+	}
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] {
+		.btnWrapper {
+			td.sub-columns {
+				padding-top: (@wrapperPadCollapse / 2) !important;
+				padding-bottom: 0px !important;
+			}
+		}
+		table.columns, table.column {
+			.btnWrapper .readMore table.large-button { width: 100% !important; float: none !important; }
+		}
+	}
+}
+
 .readMore {
 	width: 100%;
 	-premailer-width: 100%;
