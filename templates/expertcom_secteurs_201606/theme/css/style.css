@@ -1296,6 +1296,78 @@ img.spacer-webicon {
   color: #333333 !important;
 }
 
+.contentOnline {
+  background-color: #f4f5f6;
+}
+
+.contentOnline,
+.contentOnline td,
+.contentOnline .inner {
+  color: #919aa7;
+}
+
+.contentOnline a {
+  color: #919aa7;
+}
+
+.contentOnline a .important,
+.contentOnline a:visited,
+.contentOnline a:hover,
+.contentOnline a:focus,
+.contentOnline a:active {
+  color: #919aa7 !important;
+}
+
+.contentOnline td {
+  font-size: 11px;
+  line-height: 13.75px;
+}
+
+.contentOnline td.wrapper {
+  padding-top: 10px;
+}
+
+.contentOnline table.columns td,
+.contentOnline table.column td {
+  padding-bottom: 10px;
+}
+
+.contentUnsubscribe {
+  background-color: #f4f5f6;
+}
+
+.contentUnsubscribe,
+.contentUnsubscribe td,
+.contentUnsubscribe .inner {
+  color: #919aa7;
+}
+
+.contentUnsubscribe a {
+  color: #919aa7;
+}
+
+.contentUnsubscribe a .important,
+.contentUnsubscribe a:visited,
+.contentUnsubscribe a:hover,
+.contentUnsubscribe a:focus,
+.contentUnsubscribe a:active {
+  color: #919aa7 !important;
+}
+
+.contentUnsubscribe td {
+  font-size: 11px;
+  line-height: 13.75px;
+}
+
+.contentUnsubscribe td.wrapper {
+  padding-top: 10px;
+}
+
+.contentUnsubscribe table.columns td,
+.contentUnsubscribe table.column td {
+  padding-bottom: 10px;
+}
+
 @media only screen and (max-width: 720px) {
   table[class="body"] img {
     max-width: auto !important;
@@ -1546,5 +1618,33 @@ img.spacer-webicon {
   table[class="body"] img.spacer-webicon {
     width: 10px !important;
     height: 30px !important;
+  }
+
+  table[class="body"] .contentOnline td {
+    font-size: 11px !important;
+    line-height: 13.75px !important;
+  }
+
+  table[class="body"] .contentOnline td.wrapper {
+    padding-top: 5px !important;
+  }
+
+  table[class="body"] .contentOnline table.columns td,
+  table[class="body"] .contentOnline table.column td {
+    padding-bottom: 5px !important;
+  }
+
+  table[class="body"] .contentUnsubscribe td {
+    font-size: 11px !important;
+    line-height: 13.75px !important;
+  }
+
+  table[class="body"] .contentUnsubscribe td.wrapper {
+    padding-top: 5px !important;
+  }
+
+  table[class="body"] .contentUnsubscribe table.columns td,
+  table[class="body"] .contentUnsubscribe table.column td {
+    padding-bottom: 5px !important;
   }
 }
