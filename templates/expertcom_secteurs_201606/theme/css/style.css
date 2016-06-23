@@ -4,7 +4,7 @@
 
 body,
 table.body {
-  background-color: #e0e3e6;
+  background-color: #f4f5f6;
 }
 
 /**********************************************
@@ -1253,6 +1253,49 @@ table.column .readMore td.buttonWrapper td {
   font-weight: bold;
 }
 
+.webicons td {
+  text-align: center;
+}
+
+.webicon {
+  display: inline;
+  font-size: 0px;
+  mso-line-height-rule: exactly;
+  line-height: 0px;
+}
+
+.webicon img {
+  display: inline;
+  float: none;
+}
+
+img.spacer-webicon {
+  display: inline;
+  float: none;
+}
+
+.header {
+  background-color: #e6e8eb;
+}
+
+.header,
+.header td,
+.header .inner {
+  color: #333333;
+}
+
+.header a {
+  color: #333333;
+}
+
+.header a .important,
+.header a:visited,
+.header a:hover,
+.header a:focus,
+.header a:active {
+  color: #333333 !important;
+}
+
 @media only screen and (max-width: 720px) {
   table[class="body"] img {
     max-width: auto !important;
@@ -1484,5 +1527,24 @@ table.column .readMore td.buttonWrapper td {
   table[class="body"] table.column .readMore td.buttonWrapper td {
     font-size: 11px !important;
     line-height: 15px !important;
+  }
+
+  table[class="body"] .webicons .columns,
+  table[class="body"] .webicons .column {
+    display: table !important;
+  }
+
+  table[class="body"] .webicons td {
+    text-align: center !important;
+  }
+
+  table[class="body"] .webicon img {
+    width: 30px !important;
+    height: 30px !important;
+  }
+
+  table[class="body"] img.spacer-webicon {
+    width: 10px !important;
+    height: 30px !important;
   }
 }
