@@ -1349,6 +1349,15 @@ img.spacer-webicon {
   padding-bottom: 10px;
 }
 
+.contentMain td.wrapper {
+  padding-top: 0px;
+}
+
+.contentMain table.columns td,
+.contentMain table.column td {
+  padding-bottom: 0px;
+}
+
 .contentUnsubscribe {
   background-color: #f4f5f6;
 }
@@ -1660,6 +1669,15 @@ img.spacer-webicon {
   table[class="body"] .contentOnline table.columns td,
   table[class="body"] .contentOnline table.column td {
     padding-bottom: 5px !important;
+  }
+
+  table[class="body"] .contentMain td.wrapper {
+    padding-top: 0px !important;
+  }
+
+  table[class="body"] .contentMain table.columns td,
+  table[class="body"] .contentMain table.column td {
+    padding-bottom: 0px !important;
   }
 
   table[class="body"] .contentUnsubscribe td {
