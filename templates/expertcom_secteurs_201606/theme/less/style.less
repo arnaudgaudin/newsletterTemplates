@@ -256,6 +256,30 @@ img.spacer-webicon {
 	}
 }
 
+// contentContact area
+// -------------------------
+.contentContact {
+	background-color: @colorExpertCom2;
+	.newsletterInnerTextColor(@textColor);
+	//réduction décalage vertical
+	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentContact {
+		table.columns td, table.column td { padding-bottom: 0px !important; }
+	}
+}
+
+
+// contentFooter area
+// -------------------------
+.contentFooter {
+	background-color: @colorExpertCom2;
+	.newsletterInnerTextColor(@textColor);
+	//réduction décalage vertical
+	td.wrapper { padding-top: (@wrapperPad / 2); }
+}
+
 
 // contentUnsubscribe area
 // -------------------------
