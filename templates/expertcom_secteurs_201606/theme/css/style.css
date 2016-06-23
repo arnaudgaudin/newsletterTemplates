@@ -1625,8 +1625,8 @@ img.spacer-webicon {
   table[class="body"] a.large-button-link,
   table[class="body"] table.columns .readMore td.buttonWrapper td,
   table[class="body"] table.column .readMore td.buttonWrapper td {
-    font-size: 11px !important;
-    line-height: 15px !important;
+    font-size: 14px !important;
+    line-height: 19px !important;
   }
 
   table[class="body"] .webicons .columns,
