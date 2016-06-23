@@ -10,3 +10,4 @@ dmCorePlugin/test/project/log/*
 .metadata
 /.buildpath
 /.project
+htdocs/modeles/*
