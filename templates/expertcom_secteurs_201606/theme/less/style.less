@@ -261,6 +261,10 @@ img.spacer-webicon {
 .contentContact {
 	background-color: @colorExpertCom2;
 	.newsletterInnerTextColor(@textColor);
+	td {
+		font-size: ceil(@baseFontSize * 0.90);
+		line-height: ceil(@baseFontSize * 0.90 * 1.25);
+	}
 	td.wrapper {
 		&.first { table.columns, table.column { .text-pad { padding-right: (@textPad / 2) !important; } } }
 		&.last { table.columns, table.column { .text-pad { padding-left: (@textPad / 2) !important; } } }
@@ -270,6 +274,10 @@ img.spacer-webicon {
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentContact {
+		td {
+			font-size: ceil(@baseFontSize * 0.90) !important;
+			line-height: ceil(@baseFontSize * 0.90 * 1.25) !important;
+		}
 		td.wrapper {
 			table.columns, table.column { display: table !important; }
 			&.first { table.columns, table.column { .text-pad { padding-right: @textPadCollapse !important; } } }

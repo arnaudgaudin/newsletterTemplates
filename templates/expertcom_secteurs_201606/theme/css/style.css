@@ -1380,6 +1380,11 @@ img.spacer-webicon {
   color: #333333 !important;
 }
 
+.contentContact td {
+  font-size: 13px;
+  line-height: 16px;
+}
+
 .contentContact td.wrapper.first table.columns .text-pad,
 .contentContact td.wrapper.first table.column .text-pad {
   padding-right: 20px !important;
@@ -1741,6 +1746,11 @@ img.spacer-webicon {
   table[class="body"] .contentMain table.columns td,
   table[class="body"] .contentMain table.column td {
     padding-bottom: 0px !important;
+  }
+
+  table[class="body"] .contentContact td {
+    font-size: 13px !important;
+    line-height: 16px !important;
   }
 
   table[class="body"] .contentContact td.wrapper table.columns,
