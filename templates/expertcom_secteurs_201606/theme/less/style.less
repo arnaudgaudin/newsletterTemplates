@@ -261,11 +261,20 @@ img.spacer-webicon {
 .contentContact {
 	background-color: @colorExpertCom2;
 	.newsletterInnerTextColor(@textColor);
+	td.wrapper {
+		&.first { table.columns, table.column { .text-pad { padding-right: (@textPad / 2) !important; } } }
+		&.last { table.columns, table.column { .text-pad { padding-left: (@textPad / 2) !important; } } }
+	}
 	//réduction décalage vertical
 	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentContact {
+		td.wrapper {
+			table.columns, table.column { display: table !important; }
+			&.first { table.columns, table.column { .text-pad { padding-right: @textPadCollapse !important; } } }
+			&.last { table.columns, table.column { .text-pad { padding-left: @textPadCollapse !important; } } }
+		}
 		table.columns td, table.column td { padding-bottom: 0px !important; }
 	}
 }

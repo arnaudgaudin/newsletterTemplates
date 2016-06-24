@@ -4,7 +4,7 @@
 
 body,
 table.body {
-  background-color: #f4f5f6;
+  background-color: #d8dbe0;
 }
 
 /**********************************************
@@ -1314,17 +1314,17 @@ img.spacer-webicon {
 }
 
 .contentOnline {
-  background-color: #f4f5f6;
+  background-color: #d8dbe0;
 }
 
 .contentOnline,
 .contentOnline td,
 .contentOnline .inner {
-  color: #919aa7;
+  color: #758090;
 }
 
 .contentOnline a {
-  color: #919aa7;
+  color: #758090;
 }
 
 .contentOnline a .important,
@@ -1332,7 +1332,7 @@ img.spacer-webicon {
 .contentOnline a:hover,
 .contentOnline a:focus,
 .contentOnline a:active {
-  color: #919aa7 !important;
+  color: #758090 !important;
 }
 
 .contentOnline td {
@@ -1380,6 +1380,16 @@ img.spacer-webicon {
   color: #333333 !important;
 }
 
+.contentContact td.wrapper.first table.columns .text-pad,
+.contentContact td.wrapper.first table.column .text-pad {
+  padding-right: 20px !important;
+}
+
+.contentContact td.wrapper.last table.columns .text-pad,
+.contentContact td.wrapper.last table.column .text-pad {
+  padding-left: 20px !important;
+}
+
 .contentContact table.columns td,
 .contentContact table.column td {
   padding-bottom: 10px;
@@ -1412,17 +1422,17 @@ img.spacer-webicon {
 }
 
 .contentUnsubscribe {
-  background-color: #f4f5f6;
+  background-color: #d8dbe0;
 }
 
 .contentUnsubscribe,
 .contentUnsubscribe td,
 .contentUnsubscribe .inner {
-  color: #919aa7;
+  color: #758090;
 }
 
 .contentUnsubscribe a {
-  color: #919aa7;
+  color: #758090;
 }
 
 .contentUnsubscribe a .important,
@@ -1430,7 +1440,7 @@ img.spacer-webicon {
 .contentUnsubscribe a:hover,
 .contentUnsubscribe a:focus,
 .contentUnsubscribe a:active {
-  color: #919aa7 !important;
+  color: #758090 !important;
 }
 
 .contentUnsubscribe td {
@@ -1731,6 +1741,21 @@ img.spacer-webicon {
   table[class="body"] .contentMain table.columns td,
   table[class="body"] .contentMain table.column td {
     padding-bottom: 0px !important;
+  }
+
+  table[class="body"] .contentContact td.wrapper table.columns,
+  table[class="body"] .contentContact td.wrapper table.column {
+    display: table !important;
+  }
+
+  table[class="body"] .contentContact td.wrapper.first table.columns .text-pad,
+  table[class="body"] .contentContact td.wrapper.first table.column .text-pad {
+    padding-right: 20px !important;
+  }
+
+  table[class="body"] .contentContact td.wrapper.last table.columns .text-pad,
+  table[class="body"] .contentContact td.wrapper.last table.column .text-pad {
+    padding-left: 20px !important;
   }
 
   table[class="body"] .contentContact table.columns td,
