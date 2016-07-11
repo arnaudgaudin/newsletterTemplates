@@ -1541,6 +1541,28 @@ table.imgCont .icon-img {
   color: #91999c !important;
 }
 
+.contentAuthor {
+  background-color: #4275a0;
+}
+
+.contentAuthor,
+.contentAuthor td,
+.contentAuthor .inner {
+  color: #ffffff;
+}
+
+.contentAuthor a {
+  color: #ffffff;
+}
+
+.contentAuthor a .important,
+.contentAuthor a:visited,
+.contentAuthor a:hover,
+.contentAuthor a:focus,
+.contentAuthor a:active {
+  color: #ffffff !important;
+}
+
 .contentFooter td.wrapper {
   padding-top: 10px;
 }
