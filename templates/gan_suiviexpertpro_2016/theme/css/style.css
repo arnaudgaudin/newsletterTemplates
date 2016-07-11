@@ -1409,6 +1409,24 @@ table.imgCont .icon-img {
   background-color: #ffd718;
 }
 
+.contentOffre,
+.contentOffre td,
+.contentOffre .inner {
+  color: #000000;
+}
+
+.contentOffre a {
+  color: #000000;
+}
+
+.contentOffre a .important,
+.contentOffre a:visited,
+.contentOffre a:hover,
+.contentOffre a:focus,
+.contentOffre a:active {
+  color: #000000 !important;
+}
+
 .contentOffre .preTitle,
 .contentOffre .title,
 .contentOffre .readMore {
@@ -1439,22 +1457,56 @@ table.imgCont .icon-img {
   color: #239AD7 !important;
 }
 
-.contentOffre,
-.contentOffre td,
-.contentOffre .inner {
-  color: #000000;
+.contentOffre.alternate {
+  background-color: #239AD7;
 }
 
-.contentOffre a {
-  color: #000000;
+.contentOffre.alternate,
+.contentOffre.alternate td,
+.contentOffre.alternate .inner {
+  color: #ffffff;
 }
 
-.contentOffre a .important,
-.contentOffre a:visited,
-.contentOffre a:hover,
-.contentOffre a:focus,
-.contentOffre a:active {
-  color: #000000 !important;
+.contentOffre.alternate a {
+  color: #ffffff;
+}
+
+.contentOffre.alternate a .important,
+.contentOffre.alternate a:visited,
+.contentOffre.alternate a:hover,
+.contentOffre.alternate a:focus,
+.contentOffre.alternate a:active {
+  color: #ffffff !important;
+}
+
+.contentOffre.alternate .preTitle,
+.contentOffre.alternate .title,
+.contentOffre.alternate .readMore {
+  color: #ffd718;
+}
+
+.contentOffre.alternate .preTitle a,
+.contentOffre.alternate .title a,
+.contentOffre.alternate .readMore a {
+  color: #ffd718;
+}
+
+.contentOffre.alternate .preTitle a .important,
+.contentOffre.alternate .title a .important,
+.contentOffre.alternate .readMore a .important,
+.contentOffre.alternate .preTitle a:visited,
+.contentOffre.alternate .title a:visited,
+.contentOffre.alternate .readMore a:visited,
+.contentOffre.alternate .preTitle a:hover,
+.contentOffre.alternate .title a:hover,
+.contentOffre.alternate .readMore a:hover,
+.contentOffre.alternate .preTitle a:focus,
+.contentOffre.alternate .title a:focus,
+.contentOffre.alternate .readMore a:focus,
+.contentOffre.alternate .preTitle a:active,
+.contentOffre.alternate .title a:active,
+.contentOffre.alternate .readMore a:active {
+  color: #ffd718 !important;
 }
 
 .contentDossier .text {

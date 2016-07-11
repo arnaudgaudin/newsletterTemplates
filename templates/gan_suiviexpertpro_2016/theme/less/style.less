@@ -255,11 +255,19 @@ table.imgCont {
 // -------------------------
 .contentOffre {
 	background-color: @colorGan6;
+	.newsletterInnerTextColor(#000000);
 	.preTitle, .title, .readMore {
 		color: @colorGan3;
 		a { .newsletterLinkColor(@colorGan3); }
 	}
-	.newsletterInnerTextColor(#000000);
+	&.alternate {
+		background-color: @colorGan3;
+		.newsletterInnerTextColor(#ffffff);
+		.preTitle, .title, .readMore {
+			color: @colorGan6;
+			a { .newsletterLinkColor(@colorGan6); }
+		}
+	}
 }
 
 // contentDossier area
