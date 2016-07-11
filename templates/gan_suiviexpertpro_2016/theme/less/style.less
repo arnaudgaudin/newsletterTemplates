@@ -167,13 +167,13 @@ table.imgCont {
 //contentPartenariat area
 // -------------------------
 .contentPartenariat {
-	// background-color: @colorGan1;
+	background-color: #f00;
+	.newsletterInnerTextColor(#fff);
 	table.subWrapper {
 		td.logo {
-			// background-color: fade(darken(#0f0, 20%), 50%);
+			background-color: fade(darken(#00f, 20%), 50%);
 		}
 		td.filler {
-			// background-color: fade(darken(#f00, 20%), 50%);
 			width: @textPad;
 			-premailer-width: unit(@textPad);
 		}
@@ -181,14 +181,15 @@ table.imgCont {
 	table.doubleLiner {
 		width: 100%;
 		-premailer-width: 100%;
-		tr.first td {
-			background-color: @colorGan1;
+		td.first {
+			background-color: fade(@colorGan1, 50%);
 			height: 36px;
 			-premailer-height: 36;
 			line-height: 36px;
 		}
-		tr.last td {
-			background-color: @containerBackground;
+		td.last {
+			background-color: fade(@containerBackground, 50%);
+			// background-color: #0f0;
 			height: (55px - 36px);
 			-premailer-height: (55 - 36);
 		}

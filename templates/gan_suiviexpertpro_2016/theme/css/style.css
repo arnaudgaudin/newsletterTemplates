@@ -1328,6 +1328,32 @@ table.imgCont .icon-img {
   color: #464c4e !important;
 }
 
+.contentPartenariat {
+  background-color: #f00;
+}
+
+.contentPartenariat,
+.contentPartenariat td,
+.contentPartenariat .inner {
+  color: #fff;
+}
+
+.contentPartenariat a {
+  color: #fff;
+}
+
+.contentPartenariat a .important,
+.contentPartenariat a:visited,
+.contentPartenariat a:hover,
+.contentPartenariat a:focus,
+.contentPartenariat a:active {
+  color: #fff !important;
+}
+
+.contentPartenariat table.subWrapper td.logo {
+  background-color: rgba(0, 0, 153, 0.5);
+}
+
 .contentPartenariat table.subWrapper td.filler {
   width: 40px;
   -premailer-width: 40;
@@ -1338,15 +1364,15 @@ table.imgCont .icon-img {
   -premailer-width: 100%;
 }
 
-.contentPartenariat table.doubleLiner tr.first td {
-  background-color: #43769e;
+.contentPartenariat table.doubleLiner td.first {
+  background-color: rgba(67, 118, 158, 0.5);
   height: 36px;
   -premailer-height: 36;
   line-height: 36px;
 }
 
-.contentPartenariat table.doubleLiner tr.last td {
-  background-color: #ffffff;
+.contentPartenariat table.doubleLiner td.last {
+  background-color: rgba(255, 255, 255, 0.5);
   height: 19px;
   -premailer-height: 19;
 }
