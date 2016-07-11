@@ -103,8 +103,8 @@ td {
 }
 
 hr {
-  color: #43769e;
-  background-color: #43769e;
+  color: #4275a0;
+  background-color: #4275a0;
   height: 1px;
   border: none;
 }
@@ -1172,11 +1172,11 @@ h6 {
   font-size: 12px;
   text-transform: uppercase;
   padding-bottom: 5px;
-  color: #43769e;
+  color: #4275a0;
 }
 
 .preTitle a {
-  color: #43769e;
+  color: #4275a0;
 }
 
 .preTitle a .important,
@@ -1184,7 +1184,7 @@ h6 {
 .preTitle a:hover,
 .preTitle a:focus,
 .preTitle a:active {
-  color: #43769e !important;
+  color: #4275a0 !important;
 }
 
 .title {
@@ -1214,11 +1214,11 @@ h6 {
   text-align: right;
   font-size: 12px;
   margin: 0;
-  color: #43769e;
+  color: #4275a0;
 }
 
 .readMore a {
-  color: #43769e;
+  color: #4275a0;
 }
 
 .readMore a .important,
@@ -1226,7 +1226,7 @@ h6 {
 .readMore a:hover,
 .readMore a:focus,
 .readMore a:active {
-  color: #43769e !important;
+  color: #4275a0 !important;
 }
 
 .link_box img,
@@ -1254,7 +1254,7 @@ h6 {
   margin: 0;
   background-color: transparent;
   height: 0;
-  border-bottom: 1px solid #43769e;
+  border-bottom: 1px solid #4275a0;
 }
 
 table.imgCont {
@@ -1375,7 +1375,7 @@ table.imgCont .icon-img {
 
 .contentPartenariat table.columns table.doubleLiner td.first,
 .contentPartenariat table.column table.doubleLiner td.first {
-  background-color: #43769e;
+  background-color: #4275a0;
   height: 15px;
   -premailer-height: 15;
   padding-top: 11px;
@@ -1405,24 +1405,20 @@ table.imgCont .icon-img {
   padding-top: 0px;
 }
 
-.contentDossier .text {
-  padding-top: 10px;
-}
-
 .contentOffre {
-  background-color: #91999c;
+  background-color: #ffd718;
 }
 
 .contentOffre .preTitle,
 .contentOffre .title,
 .contentOffre .readMore {
-  color: #ffffff;
+  color: #239AD7;
 }
 
 .contentOffre .preTitle a,
 .contentOffre .title a,
 .contentOffre .readMore a {
-  color: #ffffff;
+  color: #239AD7;
 }
 
 .contentOffre .preTitle a .important,
@@ -1440,17 +1436,17 @@ table.imgCont .icon-img {
 .contentOffre .preTitle a:active,
 .contentOffre .title a:active,
 .contentOffre .readMore a:active {
-  color: #ffffff !important;
+  color: #239AD7 !important;
 }
 
 .contentOffre,
 .contentOffre td,
 .contentOffre .inner {
-  color: #ffffff;
+  color: #000000;
 }
 
 .contentOffre a {
-  color: #ffffff;
+  color: #000000;
 }
 
 .contentOffre a .important,
@@ -1458,7 +1454,11 @@ table.imgCont .icon-img {
 .contentOffre a:hover,
 .contentOffre a:focus,
 .contentOffre a:active {
-  color: #ffffff !important;
+  color: #000000 !important;
+}
+
+.contentDossier .text {
+  padding-top: 10px;
 }
 
 .contentPartenaire {
@@ -1556,7 +1556,7 @@ table.imgCont .icon-img {
 
 .contentFooter a {
   font-weight: bold;
-  color: #43769e;
+  color: #4275a0;
 }
 
 .contentFooter a .important,
@@ -1564,7 +1564,7 @@ table.imgCont .icon-img {
 .contentFooter a:hover,
 .contentFooter a:focus,
 .contentFooter a:active {
-  color: #43769e !important;
+  color: #4275a0 !important;
 }
 
 .contentFooter .wrapper.last td {
