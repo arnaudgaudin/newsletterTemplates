@@ -1563,6 +1563,16 @@ table.imgCont .icon-img {
   color: #ffffff !important;
 }
 
+.contentAuthor img {
+  width: 180px;
+  height: 180px;
+}
+
+.contentAuthor table.columns table.subWrapper td,
+.contentAuthor table.column table.subWrapper td {
+  padding-bottom: 0px;
+}
+
 .contentFooter td.wrapper {
   padding-top: 10px;
 }
@@ -1912,6 +1922,11 @@ table.imgCont .icon-img {
   table[class="body"] .contentBottom td,
   table[class="body"] .contentBottom td .title {
     text-align: left !important;
+  }
+
+  table[class="body"] .contentAuthor img {
+    width: 120px !important;
+    height: 120px !important;
   }
 
   table[class="body"] .contentFooter td.wrapper {

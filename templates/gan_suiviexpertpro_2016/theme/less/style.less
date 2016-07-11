@@ -319,6 +319,26 @@ table.imgCont {
 .contentAuthor {
 	background-color: @colorGan1;
 	.newsletterInnerTextColor(#ffffff);
+
+	img {
+		width: 180px;
+		height: 180px;
+	}
+
+
+	table.columns, table.column {
+		table.subWrapper {
+			td { padding-bottom: 0px; }
+		}
+	}
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentAuthor {
+		img {
+			width: 120px !important;
+			height: 120px !important;
+		}
+	}
 }
 
 
