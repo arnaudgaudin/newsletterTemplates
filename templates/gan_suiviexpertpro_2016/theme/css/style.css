@@ -1357,11 +1357,6 @@ table.imgCont .icon-img {
   -premailer-width: 100%;
 }
 
-.contentPartenariat table.columns table.subWrapper td.logo,
-.contentPartenariat table.column table.subWrapper td.logo {
-  background-color: #f00;
-}
-
 .contentPartenariat table.columns table.subWrapper td.filler,
 .contentPartenariat table.column table.subWrapper td.filler,
 .contentPartenariat table.columns table.subWrapper td.filler table.doubleLiner,
@@ -1389,7 +1384,6 @@ table.imgCont .icon-img {
 
 .contentPartenariat table.columns table.doubleLiner td.last,
 .contentPartenariat table.column table.doubleLiner td.last {
-  background-color: #0f0;
   height: 19px;
   -premailer-height: 19;
 }
