@@ -166,11 +166,12 @@ table.imgCont {
 
 //contentPartenariat area
 // -------------------------
+@contentPartenariatImgHeight: 55px;
 .contentPartenariat {
 	.newsletterInnerTextColor(#fff);
 	td {
 		font-size: @fontSizeSmall;
-		line-height: (@fontSizeSmall * 1.25);
+		line-height: ceil(@fontSizeSmall * 1.25);
 	}
 
 	table.columns, table.column {
@@ -188,15 +189,18 @@ table.imgCont {
 			-premailer-width: 100%;
 			td.first {
 				background-color: @colorGan1;
-				height: 36px;
-				-premailer-height: 36;
-				line-height: 36px;
+				height: ceil(@fontSizeSmall * 1.25);
+				-premailer-height: unit(ceil(@fontSizeSmall * 1.25));
+				padding-top: floor((36px - @fontSizeSmall * 1.25) / 2);
+				padding-bottom: floor((36px - @fontSizeSmall * 1.25) / 2);
 			}
 			td.last {
-				background-color: @containerBackground;
+				// background-color: @containerBackground;
+				background-color: #0f0;
 				//hauteur image - 36
 				height: 19px;
 				-premailer-height: 19;
+				line-height: 19px;
 			}
 		}
 	}
@@ -209,7 +213,7 @@ table.imgCont {
 	table[class="body"] .contentPartenariat {
 		td {
 			font-size: @fontSizeMini !important;
-			line-height: (@fontSizeMini * 1.25) !important;
+			line-height: floor(@fontSizeMini * 1.25) !important;
 		}
 		
 		table.columns, table.column {
@@ -219,7 +223,12 @@ table.imgCont {
 			}
 			table.doubleLiner {
 				width: 100% !important;
-				td.first { line-height: 36px !important; }
+				td.first {
+					height: auto !important;
+					padding-top: floor(@fontSizeSmall * 1.25 / 2) !important;
+					padding-bottom: floor(@fontSizeSmall * 1.25 / 2) !important;
+
+				}
 			}
 		}
 

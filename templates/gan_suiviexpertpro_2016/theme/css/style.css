@@ -606,8 +606,8 @@ td {
 p.lead,
 p.lede,
 p.leed {
-  font-size: 18.2px;
-  line-height: 20.93px;
+  font-size: 18px;
+  line-height: 20.7px;
 }
 
 p {
@@ -615,7 +615,7 @@ p {
 }
 
 small {
-  font-size: 11.9px;
+  font-size: 12px;
 }
 
 a {
@@ -1212,7 +1212,7 @@ h6 {
 .readMore {
   padding-top: 5px;
   text-align: right;
-  font-size: 11.9px;
+  font-size: 12px;
   margin: 0;
   color: #43769e;
 }
@@ -1284,8 +1284,8 @@ table.imgCont .icon-img {
 }
 
 .contentOnline td {
-  font-size: 11.9px;
-  line-height: 14.875px;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .contentOnline td.wrapper {
@@ -1347,8 +1347,8 @@ table.imgCont .icon-img {
 }
 
 .contentPartenariat td {
-  font-size: 11.9px;
-  line-height: 14.875px;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .contentPartenariat table.columns table.subWrapper,
@@ -1377,16 +1377,18 @@ table.imgCont .icon-img {
 .contentPartenariat table.columns table.doubleLiner td.first,
 .contentPartenariat table.column table.doubleLiner td.first {
   background-color: #43769e;
-  height: 36px;
-  -premailer-height: 36;
-  line-height: 36px;
+  height: 15px;
+  -premailer-height: 15;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .contentPartenariat table.columns table.doubleLiner td.last,
 .contentPartenariat table.column table.doubleLiner td.last {
-  background-color: #ffffff;
+  background-color: #0f0;
   height: 19px;
   -premailer-height: 19;
+  line-height: 19px;
 }
 
 .contentPartenariat td.wrapper {
@@ -1422,7 +1424,7 @@ table.imgCont .icon-img {
 .contentInfoClient .signature {
   padding-top: 5px;
   text-align: right;
-  font-size: 11.9px;
+  font-size: 12px;
   font-weight: bold;
   color: #000000;
 }
@@ -1562,8 +1564,8 @@ table.imgCont .icon-img {
 
 .contentBottom .text,
 .contentBottom .date {
-  font-size: 11.9px;
-  line-height: 14.875px;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .contentBottom .date {
@@ -1614,8 +1616,8 @@ table.imgCont .icon-img {
 }
 
 .contentLegal td {
-  font-size: 9.1px;
-  line-height: 12.103px;
+  font-size: 9px;
+  line-height: 11.97px;
 }
 
 .contentLegal td.wrapper {
@@ -1659,8 +1661,8 @@ table.imgCont .icon-img {
 }
 
 .contentUnsubscribe td {
-  font-size: 11.9px;
-  line-height: 14.875px;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 @media only screen and (max-width: 720px) {
@@ -1881,8 +1883,8 @@ table.imgCont .icon-img {
   }
 
   table[class="body"] .contentPartenariat td {
-    font-size: 9.1px !important;
-    line-height: 11.375px !important;
+    font-size: 9px !important;
+    line-height: 11px !important;
   }
 
   table[class="body"] .contentPartenariat table.columns table.subWrapper,
@@ -1902,7 +1904,9 @@ table.imgCont .icon-img {
 
   table[class="body"] .contentPartenariat table.columns table.doubleLiner td.first,
   table[class="body"] .contentPartenariat table.column table.doubleLiner td.first {
-    line-height: 36px !important;
+    height: auto !important;
+    padding-top: 7px !important;
+    padding-bottom: 7px !important;
   }
 
   table[class="body"] .contentPartenariat td.wrapper {
