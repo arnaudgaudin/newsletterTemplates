@@ -1461,62 +1461,6 @@ table.imgCont .icon-img {
   padding-top: 10px;
 }
 
-.contentPartenaire {
-  background-color: #c98c1f;
-}
-
-.contentPartenaire .preTitle,
-.contentPartenaire .title,
-.contentPartenaire .readMore {
-  color: #ffffff;
-}
-
-.contentPartenaire .preTitle a,
-.contentPartenaire .title a,
-.contentPartenaire .readMore a {
-  color: #ffffff;
-}
-
-.contentPartenaire .preTitle a .important,
-.contentPartenaire .title a .important,
-.contentPartenaire .readMore a .important,
-.contentPartenaire .preTitle a:visited,
-.contentPartenaire .title a:visited,
-.contentPartenaire .readMore a:visited,
-.contentPartenaire .preTitle a:hover,
-.contentPartenaire .title a:hover,
-.contentPartenaire .readMore a:hover,
-.contentPartenaire .preTitle a:focus,
-.contentPartenaire .title a:focus,
-.contentPartenaire .readMore a:focus,
-.contentPartenaire .preTitle a:active,
-.contentPartenaire .title a:active,
-.contentPartenaire .readMore a:active {
-  color: #ffffff !important;
-}
-
-.contentPartenaire,
-.contentPartenaire td,
-.contentPartenaire .inner {
-  color: #ffffff;
-}
-
-.contentPartenaire a {
-  color: #ffffff;
-}
-
-.contentPartenaire a .important,
-.contentPartenaire a:visited,
-.contentPartenaire a:hover,
-.contentPartenaire a:focus,
-.contentPartenaire a:active {
-  color: #ffffff !important;
-}
-
-.contentPartenaire .readMore {
-  text-align: left;
-}
-
 .contentBottom .title {
   text-align: center;
   padding-bottom: 5px;
