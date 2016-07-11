@@ -178,10 +178,7 @@ table.imgCont {
 		table.subWrapper {
 			width: 100%;
 			-premailer-width: 100%;
-			td.logo {
-				background-color: #f00;
-				// background-color: @containerBackground;
-			}
+			td.logo { background-color: #f00; }
 			td.filler {
 				&, table.doubleLiner, table.doubleLiner td {
 					width: @textPad;
@@ -196,16 +193,15 @@ table.imgCont {
 				background-color: @colorGan1;
 				height: ceil(@fontSizeSmall * 1.25);
 				-premailer-height: unit(ceil(@fontSizeSmall * 1.25));
+				//36px correspont à la hauteur 
 				padding-top: ceil((36px - @fontSizeSmall * 1.25) / 2);
 				padding-bottom: floor((36px - @fontSizeSmall * 1.25) / 2);
 			}
 			td.last {
-				// background-color: @containerBackground;
 				background-color: #0f0;
 				//hauteur image - 36
 				height: 19px;
 				-premailer-height: 19;
-				line-height: 19px;
 			}
 		}
 	}
@@ -234,8 +230,8 @@ table.imgCont {
 					height: auto !important;
 					padding-top: ceil(@fontSizeSmall * 1.25 / 2) !important;
 					padding-bottom: floor(@fontSizeSmall * 1.25 / 2) !important;
-
 				}
+				td.last { height: auto !important; }
 			}
 		}
 

@@ -1392,7 +1392,6 @@ table.imgCont .icon-img {
   background-color: #0f0;
   height: 19px;
   -premailer-height: 19;
-  line-height: 19px;
 }
 
 .contentPartenariat td.wrapper {
@@ -1915,6 +1914,11 @@ table.imgCont .icon-img {
     height: auto !important;
     padding-top: 8px !important;
     padding-bottom: 7px !important;
+  }
+
+  table[class="body"] .contentPartenariat table.columns table.doubleLiner td.last,
+  table[class="body"] .contentPartenariat table.column table.doubleLiner td.last {
+    height: auto !important;
   }
 
   table[class="body"] .contentPartenariat td.wrapper {
