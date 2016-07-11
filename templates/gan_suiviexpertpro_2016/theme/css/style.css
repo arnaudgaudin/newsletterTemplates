@@ -1350,28 +1350,44 @@ table.imgCont .icon-img {
   color: #fff !important;
 }
 
-.contentPartenariat table.subWrapper td.logo {
-  background-color: rgba(0, 0, 153, 0.5);
+.contentPartenariat td {
+  font-size: 11.9px;
+  line-height: 14.875px;
 }
 
-.contentPartenariat table.subWrapper td.filler {
-  width: 40px;
-  -premailer-width: 40;
-}
-
-.contentPartenariat table.doubleLiner {
+.contentPartenariat table.columns table.subWrapper,
+.contentPartenariat table.column table.subWrapper {
   width: 100%;
   -premailer-width: 100%;
 }
 
-.contentPartenariat table.doubleLiner td.first {
+.contentPartenariat table.columns table.subWrapper td.logo,
+.contentPartenariat table.column table.subWrapper td.logo {
+  background-color: rgba(0, 0, 153, 0.5);
+}
+
+.contentPartenariat table.columns table.subWrapper td.filler,
+.contentPartenariat table.column table.subWrapper td.filler {
+  width: 40px;
+  -premailer-width: 40;
+}
+
+.contentPartenariat table.columns table.doubleLiner,
+.contentPartenariat table.column table.doubleLiner {
+  width: 100%;
+  -premailer-width: 100%;
+}
+
+.contentPartenariat table.columns table.doubleLiner td.first,
+.contentPartenariat table.column table.doubleLiner td.first {
   background-color: rgba(67, 118, 158, 0.5);
   height: 36px;
   -premailer-height: 36;
   line-height: 36px;
 }
 
-.contentPartenariat table.doubleLiner td.last {
+.contentPartenariat table.columns table.doubleLiner td.last,
+.contentPartenariat table.column table.doubleLiner td.last {
   background-color: rgba(255, 255, 255, 0.5);
   height: 19px;
   -premailer-height: 19;
@@ -1866,6 +1882,31 @@ table.imgCont .icon-img {
   table[class="body"] .contentMonth table.columns td,
   table[class="body"] .contentMonth table.column td {
     padding-bottom: 0px !important;
+  }
+
+  table[class="body"] .contentPartenariat td {
+    font-size: 9.1px !important;
+    line-height: 11.375px !important;
+  }
+
+  table[class="body"] .contentPartenariat table.columns table.subWrapper,
+  table[class="body"] .contentPartenariat table.column table.subWrapper {
+    width: 100% !important;
+  }
+
+  table[class="body"] .contentPartenariat table.columns table.subWrapper td.filler,
+  table[class="body"] .contentPartenariat table.column table.subWrapper td.filler {
+    width: 20px !important;
+  }
+
+  table[class="body"] .contentPartenariat table.columns table.doubleLiner,
+  table[class="body"] .contentPartenariat table.column table.doubleLiner {
+    width: 100% !important;
+  }
+
+  table[class="body"] .contentPartenariat table.columns table.doubleLiner td.first,
+  table[class="body"] .contentPartenariat table.column table.doubleLiner td.first {
+    line-height: 36px !important;
   }
 
   table[class="body"] .contentPartenariat td.wrapper {

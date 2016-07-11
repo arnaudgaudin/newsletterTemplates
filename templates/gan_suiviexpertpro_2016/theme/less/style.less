@@ -169,29 +169,38 @@ table.imgCont {
 .contentPartenariat {
 	background-color: #f00;
 	.newsletterInnerTextColor(#fff);
-	table.subWrapper {
-		td.logo {
-			background-color: fade(darken(#00f, 20%), 50%);
-		}
-		td.filler {
-			width: @textPad;
-			-premailer-width: unit(@textPad);
-		}
+	td {
+		font-size: @fontSizeSmall;
+		line-height: (@fontSizeSmall * 1.25);
 	}
-	table.doubleLiner {
-		width: 100%;
-		-premailer-width: 100%;
-		td.first {
-			background-color: fade(@colorGan1, 50%);
-			height: 36px;
-			-premailer-height: 36;
-			line-height: 36px;
+
+	table.columns, table.column {
+		table.subWrapper {
+			width: 100%;
+			-premailer-width: 100%;
+			td.logo {
+				background-color: fade(darken(#00f, 20%), 50%);
+			}
+			td.filler {
+				width: @textPad;
+				-premailer-width: unit(@textPad);
+			}
 		}
-		td.last {
-			background-color: fade(@containerBackground, 50%);
-			// background-color: #0f0;
-			height: (55px - 36px);
-			-premailer-height: (55 - 36);
+		table.doubleLiner {
+			width: 100%;
+			-premailer-width: 100%;
+			td.first {
+				background-color: fade(@colorGan1, 50%);
+				height: 36px;
+				-premailer-height: 36;
+				line-height: 36px;
+			}
+			td.last {
+				background-color: fade(@containerBackground, 50%);
+				// background-color: #0f0;
+				height: (55px - 36px);
+				-premailer-height: (55 - 36);
+			}
 		}
 	}
 
@@ -201,6 +210,22 @@ table.imgCont {
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentPartenariat {
+		td {
+			font-size: @fontSizeMini !important;
+			line-height: (@fontSizeMini * 1.25) !important;
+		}
+		
+		table.columns, table.column {
+			table.subWrapper {
+				width: 100% !important;
+				td.filler { width: @textPadCollapse !important; }
+			}
+			table.doubleLiner {
+				width: 100% !important;
+				td.first { line-height: 36px !important; }
+			}
+		}
+
 		td.wrapper { padding-top: 0px !important; }
 		table.columns td, table.column td { padding-bottom: 0px !important; }
 	}
