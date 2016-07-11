@@ -178,10 +178,15 @@ table.imgCont {
 		table.subWrapper {
 			width: 100%;
 			-premailer-width: 100%;
-			td.logo { background-color: @containerBackground; }
+			td.logo {
+				background-color: #f00;
+				// background-color: @containerBackground;
+			}
 			td.filler {
-				width: @textPad;
-				-premailer-width: unit(@textPad);
+				&, table.doubleLiner, table.doubleLiner td {
+					width: @textPad;
+					-premailer-width: unit(@textPad);
+				}
 			}
 		}
 		table.doubleLiner {
@@ -191,7 +196,7 @@ table.imgCont {
 				background-color: @colorGan1;
 				height: ceil(@fontSizeSmall * 1.25);
 				-premailer-height: unit(ceil(@fontSizeSmall * 1.25));
-				padding-top: floor((36px - @fontSizeSmall * 1.25) / 2);
+				padding-top: ceil((36px - @fontSizeSmall * 1.25) / 2);
 				padding-bottom: floor((36px - @fontSizeSmall * 1.25) / 2);
 			}
 			td.last {
@@ -219,13 +224,15 @@ table.imgCont {
 		table.columns, table.column {
 			table.subWrapper {
 				width: 100% !important;
-				td.filler { width: @textPadCollapse !important; }
+				td.filler {
+					&, table.doubleLiner, table.doubleLiner td { width: @textPadCollapse !important; }
+				}
 			}
 			table.doubleLiner {
 				width: 100% !important;
 				td.first {
 					height: auto !important;
-					padding-top: floor(@fontSizeSmall * 1.25 / 2) !important;
+					padding-top: ceil(@fontSizeSmall * 1.25 / 2) !important;
 					padding-bottom: floor(@fontSizeSmall * 1.25 / 2) !important;
 
 				}

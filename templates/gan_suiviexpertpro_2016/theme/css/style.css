@@ -1359,11 +1359,15 @@ table.imgCont .icon-img {
 
 .contentPartenariat table.columns table.subWrapper td.logo,
 .contentPartenariat table.column table.subWrapper td.logo {
-  background-color: #ffffff;
+  background-color: #f00;
 }
 
 .contentPartenariat table.columns table.subWrapper td.filler,
-.contentPartenariat table.column table.subWrapper td.filler {
+.contentPartenariat table.column table.subWrapper td.filler,
+.contentPartenariat table.columns table.subWrapper td.filler table.doubleLiner,
+.contentPartenariat table.column table.subWrapper td.filler table.doubleLiner,
+.contentPartenariat table.columns table.subWrapper td.filler table.doubleLiner td,
+.contentPartenariat table.column table.subWrapper td.filler table.doubleLiner td {
   width: 40px;
   -premailer-width: 40;
 }
@@ -1379,7 +1383,7 @@ table.imgCont .icon-img {
   background-color: #43769e;
   height: 15px;
   -premailer-height: 15;
-  padding-top: 10px;
+  padding-top: 11px;
   padding-bottom: 10px;
 }
 
@@ -1893,7 +1897,11 @@ table.imgCont .icon-img {
   }
 
   table[class="body"] .contentPartenariat table.columns table.subWrapper td.filler,
-  table[class="body"] .contentPartenariat table.column table.subWrapper td.filler {
+  table[class="body"] .contentPartenariat table.column table.subWrapper td.filler,
+  table[class="body"] .contentPartenariat table.columns table.subWrapper td.filler table.doubleLiner,
+  table[class="body"] .contentPartenariat table.column table.subWrapper td.filler table.doubleLiner,
+  table[class="body"] .contentPartenariat table.columns table.subWrapper td.filler table.doubleLiner td,
+  table[class="body"] .contentPartenariat table.column table.subWrapper td.filler table.doubleLiner td {
     width: 20px !important;
   }
 
@@ -1905,7 +1913,7 @@ table.imgCont .icon-img {
   table[class="body"] .contentPartenariat table.columns table.doubleLiner td.first,
   table[class="body"] .contentPartenariat table.column table.doubleLiner td.first {
     height: auto !important;
-    padding-top: 7px !important;
+    padding-top: 8px !important;
     padding-bottom: 7px !important;
   }
 
