@@ -1397,49 +1397,12 @@ table.imgCont .icon-img {
   padding-bottom: 0px;
 }
 
-.contentInfoClient td.wrapper {
-  padding-top: 0px;
-}
-
-.contentInfoClient .text {
-  color: #43769e;
-  padding-top: 0;
-}
-
-.contentInfoClient .text a {
-  color: #43769e;
-}
-
-.contentInfoClient .text a .important,
-.contentInfoClient .text a:visited,
-.contentInfoClient .text a:hover,
-.contentInfoClient .text a:focus,
-.contentInfoClient .text a:active {
-  color: #43769e !important;
-}
-
-.contentInfoClient .signature {
-  padding-top: 5px;
-  text-align: right;
-  font-size: 12px;
-  font-weight: bold;
-  color: #000000;
-}
-
-.contentInfoClient .signature a {
-  color: #000000;
-}
-
-.contentInfoClient .signature a .important,
-.contentInfoClient .signature a:visited,
-.contentInfoClient .signature a:hover,
-.contentInfoClient .signature a:focus,
-.contentInfoClient .signature a:active {
-  color: #000000 !important;
-}
-
 .contentALaUne .text {
   padding-top: 10px;
+}
+
+.contentALaUne td.wrapper {
+  padding-top: 0px;
 }
 
 .contentDossier .text {
@@ -1922,6 +1885,10 @@ table.imgCont .icon-img {
   table[class="body"] .contentPartenariat table.columns td,
   table[class="body"] .contentPartenariat table.column td {
     padding-bottom: 0px !important;
+  }
+
+  table[class="body"] .contentALaUne td.wrapper {
+    padding-top: 0px !important;
   }
 
   table[class="body"] .contentBottom td,

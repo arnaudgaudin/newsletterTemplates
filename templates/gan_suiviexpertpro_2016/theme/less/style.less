@@ -238,31 +238,17 @@ table.imgCont {
 	}
 }
 
-// contentInfoClient area
-// -------------------------
-.contentInfoClient {
-	//suppression décalage en trop
-	td.wrapper { padding-top: 0px; }
-
-	.text {
-		color: @colorGan1;
-		a { .newsletterLinkColor(@colorGan1); }
-		padding-top: 0;
-	}
-	.signature {
-		padding-top: 5px;
-		text-align: right;
-		font-size: @fontSizeSmall;
-		font-weight: bold;
-		color: #000000;
-		a { .newsletterLinkColor(#000000); }
-	}
-}
-
 // contentALaUne area
 // -------------------------
 .contentALaUne {
 	.text { padding-top: 10px; }
+	//suppression décalage en trop
+	td.wrapper { padding-top: 0px; }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentALaUne {
+		td.wrapper { padding-top: 0px !important; }
+	}
 }
 
 // contentDossier area
