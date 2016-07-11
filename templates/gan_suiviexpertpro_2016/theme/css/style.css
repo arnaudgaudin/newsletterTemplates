@@ -1328,10 +1328,6 @@ table.imgCont .icon-img {
   color: #464c4e !important;
 }
 
-.contentPartenariat {
-  background-color: #f00;
-}
-
 .contentPartenariat,
 .contentPartenariat td,
 .contentPartenariat .inner {
@@ -1363,7 +1359,7 @@ table.imgCont .icon-img {
 
 .contentPartenariat table.columns table.subWrapper td.logo,
 .contentPartenariat table.column table.subWrapper td.logo {
-  background-color: rgba(0, 0, 153, 0.5);
+  background-color: #ffffff;
 }
 
 .contentPartenariat table.columns table.subWrapper td.filler,
@@ -1380,7 +1376,7 @@ table.imgCont .icon-img {
 
 .contentPartenariat table.columns table.doubleLiner td.first,
 .contentPartenariat table.column table.doubleLiner td.first {
-  background-color: rgba(67, 118, 158, 0.5);
+  background-color: #43769e;
   height: 36px;
   -premailer-height: 36;
   line-height: 36px;
@@ -1388,7 +1384,7 @@ table.imgCont .icon-img {
 
 .contentPartenariat table.columns table.doubleLiner td.last,
 .contentPartenariat table.column table.doubleLiner td.last {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #ffffff;
   height: 19px;
   -premailer-height: 19;
 }

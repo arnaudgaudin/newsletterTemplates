@@ -167,7 +167,6 @@ table.imgCont {
 //contentPartenariat area
 // -------------------------
 .contentPartenariat {
-	background-color: #f00;
 	.newsletterInnerTextColor(#fff);
 	td {
 		font-size: @fontSizeSmall;
@@ -178,9 +177,7 @@ table.imgCont {
 		table.subWrapper {
 			width: 100%;
 			-premailer-width: 100%;
-			td.logo {
-				background-color: fade(darken(#00f, 20%), 50%);
-			}
+			td.logo { background-color: @containerBackground; }
 			td.filler {
 				width: @textPad;
 				-premailer-width: unit(@textPad);
@@ -190,16 +187,16 @@ table.imgCont {
 			width: 100%;
 			-premailer-width: 100%;
 			td.first {
-				background-color: fade(@colorGan1, 50%);
+				background-color: @colorGan1;
 				height: 36px;
 				-premailer-height: 36;
 				line-height: 36px;
 			}
 			td.last {
-				background-color: fade(@containerBackground, 50%);
-				// background-color: #0f0;
-				height: (55px - 36px);
-				-premailer-height: (55 - 36);
+				background-color: @containerBackground;
+				//hauteur image - 36
+				height: 19px;
+				-premailer-height: 19;
 			}
 		}
 	}
