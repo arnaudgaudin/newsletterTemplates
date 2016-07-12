@@ -1563,7 +1563,7 @@ table.imgCont .icon-img {
   color: #ffffff !important;
 }
 
-.contentAuthor table.subWrapper td {
+.contentAuthor table.subWrapper.image td {
   padding-right: 20px;
 }
 
