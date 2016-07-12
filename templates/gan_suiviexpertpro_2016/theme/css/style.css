@@ -1563,6 +1563,10 @@ table.imgCont .icon-img {
   color: #ffffff !important;
 }
 
+.contentAuthor table.subWrapper td {
+  padding-right: 20px;
+}
+
 .contentAuthor td {
   font-size: 12px;
   line-height: 15px;
@@ -1570,8 +1574,8 @@ table.imgCont .icon-img {
 }
 
 .contentAuthor img {
-  width: 180px;
-  height: 180px;
+  width: 160px;
+  height: 120px;
 }
 
 .contentAuthor table.columns table.subWrapper td,
@@ -1930,9 +1934,13 @@ table.imgCont .icon-img {
     text-align: left !important;
   }
 
+  table[class="body"] .contentAuthor table.subWrapper td {
+    padding-right: 10px;
+  }
+
   table[class="body"] .contentAuthor img {
     width: 120px !important;
-    height: 120px !important;
+    height: 90px !important;
   }
 
   table[class="body"] .contentFooter td.wrapper {

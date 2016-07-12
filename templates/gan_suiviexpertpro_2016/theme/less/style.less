@@ -320,6 +320,8 @@ table.imgCont {
 	background-color: @colorGan1;
 	.newsletterInnerTextColor(#ffffff);
 
+	table.subWrapper td { padding-right: (@textPad / 2); }
+
 	td {
 		font-size: @fontSizeSmall;
 		line-height: (@fontSizeSmall * 1.25);
@@ -327,8 +329,8 @@ table.imgCont {
 	}
 
 	img {
-		width: 180px;
-		height: 180px;
+		width: 160px;
+		height: 120px;
 	}
 
 
@@ -340,9 +342,10 @@ table.imgCont {
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentAuthor {
+		table.subWrapper td { padding-right: (@textPadCollapse / 2); }
 		img {
 			width: 120px !important;
-			height: 120px !important;
+			height: 90px !important;
 		}
 	}
 }
