@@ -1563,6 +1563,12 @@ table.imgCont .icon-img {
   color: #ffffff !important;
 }
 
+.contentAuthor td {
+  font-size: 12px;
+  line-height: 15px;
+  vertical-align: middle;
+}
+
 .contentAuthor img {
   width: 180px;
   height: 180px;
