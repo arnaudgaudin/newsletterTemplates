@@ -570,11 +570,11 @@ h6 {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 28px;
 }
 
 h2 {
-  font-size: 28px;
+  font-size: 26px;
 }
 
 h3 {
@@ -1136,11 +1136,11 @@ h6 {
 }
 
 h1 {
-  line-height: 33px;
+  line-height: 30.8px;
 }
 
 h2 {
-  line-height: 30.8px;
+  line-height: 28.6px;
 }
 
 h3 {
@@ -1381,6 +1381,12 @@ img.spacer-webicon {
 
 .contentMain {
   background-color: #eff2f4;
+}
+
+.contentMain .title {
+  font-weight: normal;
+  color: #279bd4;
+  padding-bottom: 5px;
 }
 
 .contentMain td.wrapper.first table.columns .text-pad,
@@ -1711,13 +1717,13 @@ img.spacer-webicon {
   }
 
   table[class="body"] h1 {
-    font-size: 27px !important;
-    line-height: 29.7px !important;
+    font-size: 25px !important;
+    line-height: 27.5px !important;
   }
 
   table[class="body"] h2 {
-    font-size: 25px !important;
-    line-height: 27.5px !important;
+    font-size: 23px !important;
+    line-height: 25.3px !important;
   }
 
   table[class="body"] h3 {
