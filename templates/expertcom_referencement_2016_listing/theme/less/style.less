@@ -1,0 +1,475 @@
+// theme's imports
+@import "import.less";
+
+// additionnal template's style which extends ink's style
+
+//Propriétés mso-* utilisées dans Outlook
+//Debug outlook : http://www.verticalresponse.com/blog/its-not-you-its-outlook-the-complete-guide-for-email-marketers/
+
+// LAYOUT
+// --------------------------------------------------
+
+h1, h2, h3, h4, h5, h6 { mso-line-height-rule: exactly; }
+h1 { line-height: (@headingsFontSizeH1 * 1.1); }
+h2 { line-height: (@headingsFontSizeH2 * 1.1); }
+h3 { line-height: (@headingsFontSizeH3 * 1.1); }
+h4 { line-height: (@headingsFontSizeH4 * 1.1); }
+h5 { line-height: (@headingsFontSizeH5 * 1.1); }
+h6 { line-height: (@headingsFontSizeH6 * 1.1); }
+
+//réduction tailles titrages en mode mobile
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] {
+		body, &, p, td {
+			font-size: floor(@baseFontSize * 0.9) !important;
+  			line-height: floor(@baseLineHeight * 0.9) !important;
+		}
+
+		small {
+			font-size: floor(@fontSizeSmall * 0.9) !important;
+		}
+
+		h1 {
+			font-size: floor(@headingsFontSizeH1 * 0.9) !important;
+			line-height: (floor(@headingsFontSizeH1 * 0.9) * 1.1) !important;
+		}
+		h2 {
+			font-size: floor(@headingsFontSizeH2 * 0.9) !important;
+			line-height: (floor(@headingsFontSizeH2 * 0.9) * 1.1) !important;
+		}
+		h3 {
+			font-size: floor(@headingsFontSizeH3 * 0.9) !important;
+			line-height: (floor(@headingsFontSizeH3 * 0.9) * 1.1) !important;
+		}
+		h4 {
+			font-size: floor(@headingsFontSizeH4 * 0.9) !important;
+			line-height: (floor(@headingsFontSizeH4 * 0.9) * 1.1) !important;
+		}
+		h5 {
+			font-size: floor(@headingsFontSizeH5 * 0.9) !important;
+			line-height: (floor(@headingsFontSizeH5 * 0.9) * 1.1) !important;
+		}
+		h6 {
+			font-size: floor(@headingsFontSizeH6 * 0.9) !important;
+			line-height: (floor(@headingsFontSizeH6 * 0.9) * 1.1) !important;
+		}
+	}
+}
+
+//pour rajouter de l'espace en haut et en dessous des wrappers
+// .filler {
+// 	&, .empty {
+// 		line-height: 0px;
+// 		font-size: 0px;
+// 	}
+// 	height: (@wrapperPad);
+// 	-premailer-height: unit(@wrapperPad);
+// }
+
+//tous les paragraphes pour Outlook
+//cf http://stackoverflow.com/questions/18109812/ms-outlook-email-templates-adding-extra-spacing
+p {
+	margin: 0px;
+	padding: 0px;
+	margin-bottom: 0px;
+}
+
+//lien de suivis
+.readMore {
+	width: 100%;
+	-premailer-width: 100%;
+	overflow: hidden;
+	clear: both;
+
+	table.columns &, table.column & {
+		td.buttonWrapper {
+			padding-bottom: 0px;
+			clear: both;
+			td { color: #ffffff; }
+		}
+		table.small-button {
+			display: table;
+			table-layout: auto;
+			width: auto;
+			-premailer-width: auto;
+			td {
+				width: auto;
+				float: none;
+				-premailer-width: auto;
+				padding: 4px 8px;
+				vertical-align: middle;
+				//pour les éventuels paragraphes vides rajoutés par Outlook
+				a, p { margin: 0px !important; padding: 0px !important; }
+			}
+		}
+	}
+	.text + & {
+		table.columns &, table.column & {
+			td.buttonWrapper { padding-top: 20px; }
+		}
+	}
+}
+a.small-button-link {
+	padding: 0px;
+	margin: 0px;
+	.newsletterLinkColor(#ffffff);
+	line-height: ceil(@buttonFontSizeMedium * 1.33);
+	mso-line-height-rule: exactly;
+}
+table.columns .readMore td.buttonWrapper td, table.column .readMore td.buttonWrapper td {
+	//pour Outlook
+	&, p.MsoNormal {
+		line-height: ceil(@buttonFontSizeMedium * 1.33) !important;
+		mso-line-height-rule: exactly;
+		margin: 0px;
+	}
+	p.MsoNormal { padding: 0px; }
+}
+a.small-button-link, table.columns .readMore td.buttonWrapper td, table.column .readMore td.buttonWrapper td {
+	font-size: @buttonFontSizeMedium;
+	font-weight: bold;
+}
+
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] {
+		table.columns, table.column {
+			.readMore {
+				td.buttonWrapper {
+					padding-bottom: 0px !important;
+				}
+				table.small-button {
+					display: table !important;
+					table-layout: auto !important;
+					width: auto !important;
+					td {
+						width: auto !important;
+						padding: 4px 8px !important;
+					}
+				}
+			}
+		}
+		a.small-button-link, table.columns .readMore td.buttonWrapper td, table.column .readMore td.buttonWrapper td {
+			font-size: @buttonFontSizeSmall !important;
+			line-height: ceil(@buttonFontSizeSmall * 1.33) !important;
+		}
+	}
+}
+
+
+//pas de float pour image contenus dans liens en block ou les liens images
+.link_box, .contentRef, .contentBottom {
+	img { float: none; }
+}
+
+//icone en image
+table.imgCont {
+	td { padding: 0 0 5px 0; }
+	width: 100%;
+	
+	//pour forcer dans lotus
+	.icon-img,
+	body & img {
+		display: inline;
+		float: none;
+	}
+
+	.icon-img {
+		position: relative;
+		vertical-align: text-bottom;
+		line-height: 60px;
+		width: 80px !important;
+		height: 80px !important;
+	}
+}
+
+//override version firefox
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] table.imgCont {
+		td { padding: 0 10px 0 0 !important; }
+
+		width: auto !important;
+		float: left !important;
+
+		.icon-img {
+			display: block !important;
+			float: left !important;
+			width: 80px !important;
+			height: 80px !important;
+			//masquage image de test
+			&[data-type^="get"] { display: none !important; }
+		}
+	}
+}
+
+
+//réseaux sociaux
+.webicons td { text-align: right; }
+.webicon {
+	display: inline;
+	//pour supprimer les espaces
+	font-size: 0px;
+	mso-line-height-rule: exactly;
+	line-height: 0px;
+	img {
+		display: inline;
+		float: none;
+	}
+}
+img.spacer-webicon {
+	display: inline;
+	float: none;
+}
+
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .webicons {
+		.columns, .column { display: table !important; }
+		td { text-align: center !important; }
+	}
+	table[class="body"] .webicon img {
+		width: 30px !important;
+		height: 30px !important;
+	}
+	table[class="body"] img.spacer-webicon {
+		width: 10px !important;
+		height: 30px !important;
+	}
+}
+
+
+//gestion header
+.header {
+	background-color: @colorExpertCom3;
+	.newsletterInnerTextColor(@colorExpertCom6);
+	td {
+		text-align: right;
+		font-weight: 200;
+		font-size: floor(@baseFontSize * 1.15);
+		line-height: floor(@baseFontSize * 1.15 * 1.25);
+	}
+
+	.title {
+		text-align: right;
+		font-weight: 200;
+		color: #ffffff;
+	}
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .header {
+		td { text-align: center !important; }
+		.title {
+			text-align: center !important;
+			line-height: 1em !important;
+		}
+	}
+}
+
+
+// contentOnline area
+// -------------------------
+.contentOnline {
+	background-color: @bodyBackground;
+	.newsletterInnerTextColor(darken(@bodyBackground, 35%));
+	
+	td {
+		font-size: @fontSizeSmall;
+		line-height: (@fontSizeSmall * 1.25);
+	}
+	//réduction décalage vertical
+	td.wrapper { padding-top: (@wrapperPad / 2); }
+	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentOnline {
+		td {
+			font-size: @fontSizeSmall !important;
+			line-height: (@fontSizeSmall * 1.25) !important;
+		}
+		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
+		table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
+	}
+}
+
+
+// contentIntro area
+// -------------------------
+.contentIntro {
+	background-color: @colorExpertCom6;
+	// td.filler { background-color: @containerBackground; }
+	
+	//réduction décalage vertical
+	// td.wrapper { padding-top: (@wrapperPad / 2); }
+	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentIntro {
+		// td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
+		table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
+	}
+}
+
+
+// contentMain area
+// -------------------------
+.contentMain {
+	background-color: @colorExpertCom6;
+	td.wrapper {
+		&.first { table.columns, table.column { .text-pad { padding-right: (@textPad / 2) !important; } } }
+		&.last { table.columns, table.column { .text-pad { padding-left: (@textPad / 2) !important; } } }
+	}
+
+	table.columns, table.column {
+		table.subWrapper {
+			&, td.buttonWrapper table {
+				width: 100%;
+				-premailer-width: 100%;
+			}
+			td.sub-columns {
+				padding-top: (@wrapperPad / 2);
+				padding-bottom: 0px;
+			}
+			.text-pad-right { padding-right: (@textPad / 2) !important; }
+			.text-pad-left { padding-left: (@textPad / 2) !important; }
+		}
+	}
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentMain {
+		td.wrapper {
+			&.first { table.columns, table.column { .text-pad { padding-right: @textPadCollapse !important; } } }
+			&.last { table.columns, table.column { .text-pad { padding-left: @textPadCollapse !important; } } }
+		}
+		table.columns, table.column {
+			table.subWrapper {
+				&, td.buttonWrapper table { width: 100% !important; }
+				td.sub-columns { padding-top: (@wrapperPadCollapse / 2); }
+				.text-pad-right {
+					padding-left: 0px !important;
+					padding-right: (@textPadCollapse / 2) !important;
+				}
+				.text-pad-left {
+					padding-left: (@textPadCollapse / 2) !important;
+					padding-right: 0px !important;
+				}
+			}
+		}
+	}
+}
+
+
+// contentBottom area
+// -------------------------
+.contentBottom {
+	.title {
+		text-align: center;
+		font-weight: normal;
+		color: @colorExpertCom2;
+		padding-bottom: 5px;
+	}
+
+	table.columns, table.column {
+		.text-pad {
+			padding-left: (@textPad / 2) !important;
+			padding-right: (@textPad / 2) !important;
+		}
+	}
+	
+	//Pour test
+	// td.wrapper {
+	// 	&.first { background-color: lighten(#f00, 45%); }
+	// 	&.middle { background-color: lighten(#0f0, 45%); }
+	// 	&.last { background-color: lighten(#00f, 45%); }
+	// }
+
+}
+//override version firefox
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentBottom {
+		td { &, .title { text-align: left !important; } }
+		table.columns, table.column {
+			.text-pad {
+				padding-left: @textPadCollapse !important;
+				padding-right: @textPadCollapse !important;
+			}
+		}
+	}
+}
+
+
+// contentContact area
+// -------------------------
+.contentContact {
+	.newsletterInnerTextColor(@colorExpertCom1);
+	td {
+		font-size: @fontSizeLarge;
+		line-height: (@fontSizeLarge * 1.25);
+		font-weight: bold;
+	}
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentContact {
+		td {
+			font-size: @baseFontSize !important;
+			line-height: (@baseFontSize * 1.25) !important;
+		}
+	}
+}
+
+
+// contentFooter area
+// -------------------------
+.contentFooter {
+	background-color: @colorExpertCom3;
+	.newsletterInnerTextColor(#ffffff);
+	
+	td.wrapper.first td {
+		&, .ei_lep {
+			line-height: 30px;
+			//calage différent pour Outlook
+			mso-line-height-rule: exactly;
+			mso-line-height-alt: 26px;
+		}
+		.ei_lep { color: #ffffff; }
+	}
+
+	//réduction décalage vertical
+	td.wrapper { padding-top: (@wrapperPad / 2); }
+	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentFooter {
+		td.wrapper.first td {
+			&, .ei_lep { text-align: center !important; }
+			font-size: 16px !important;
+			line-height: floor(@baseLineHeight * 0.9) !important;
+		}
+		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
+		table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
+	}
+}
+
+
+// contentUnsubscribe area
+// -------------------------
+.contentUnsubscribe {
+	background-color: @bodyBackground;
+	.newsletterInnerTextColor(darken(@bodyBackground, 35%));
+
+	td {
+		font-size: @fontSizeSmall;
+		line-height: (@fontSizeSmall * 1.25);
+	}
+
+	//réduction décalage vertical
+	td.wrapper { padding-top: (@wrapperPad / 2); }
+	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentUnsubscribe {
+		td {
+			font-size: @fontSizeSmall !important;
+			line-height: (@fontSizeSmall * 1.25) !important;
+		}
+		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
+		table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
+	}
+}

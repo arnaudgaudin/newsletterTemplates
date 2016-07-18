@@ -1,0 +1,89 @@
+// extends theme's variables.less file here
+
+// Expert Infos
+// -------------------------
+@colorExpertCom1: #cf2630;		//rouge 			CMJN: 15 100 100 0
+@colorExpertCom2: #279bd4;		//bleu  			CMJN: 75 25 0 0
+@colorExpertCom3: #4d616d;		//gris-bleu foncé	CMJN: 70 50 40 25
+@colorExpertCom4: #839097;		//gris bleu moyen 	CMJN: 10 0 0 50
+@colorExpertCom5: #b4bbbf;		//gris moyen 		CMJN: 30 20 20 0
+@colorExpertCom6: #eff2f4;		//gris clair 		CMJN: 5 2 2 0
+
+
+// Scaffolding
+// -------------------------
+@bodyBackground:        lighten(@colorExpertCom6, 2%);
+@containerBackground:   #ffffff;
+@textColor:             @colorExpertCom4;
+
+// Links
+// -------------------------
+@linkColor: @colorExpertCom2;
+
+
+// Typography
+// -------------------------
+@baseFontSize:          14px;
+@baseLineHeight:        18px;
+@headingsColor:         @textColor;
+@headingsFontWeight:    bold;
+@headingsColor:         #000;
+
+
+// Component sizing
+// -------------------------
+@headingsFontSizeH1:    30px;
+@headingsFontSizeH2:    28px;
+@headingsFontSizeH3:    24px;
+@headingsFontSizeH4:    22px;
+@headingsFontSizeH5:    18px;
+@headingsFontSizeH6:    16px;
+
+@fontSizeLarge:         floor(@baseFontSize * 1.30);  // ~18px
+@fontSizeSmall:         floor(@baseFontSize * 0.80);  // ~11px
+@fontSizeMini:          floor(@baseFontSize * 0.65);  // ~9px
+
+@buttonFontSizeLarge:   @fontSizeLarge;
+@buttonFontSizeMedium:  @baseFontSize;
+@buttonFontSizeSmall:   @fontSizeSmall;
+@buttonFontSizeTiny:    @fontSizeMini;
+
+
+// Hr border color
+// -------------------------
+@hrBorder: @colorExpertCom1;
+
+
+// Buttons
+// -------------------------
+@btnBackground:               @colorExpertCom1;
+@btnBackgroundHover:          darken(@btnBackground, 3%);
+@btnBorder:                   darken(@btnBackground, 6%);
+
+@btnSecondaryBackground:      @linkColor;
+@btnSecondaryBackgroundHover: darken(@btnSecondaryBackground, 3%);
+@btnSecondaryBorder:          darken(@btnSecondaryBackground, 6%);
+
+
+// Grid config
+// --------------------------------------------------
+@columnWidth: 60px;
+@gutterWidth: 0;
+
+
+// Padding config
+// --------------------------------------------------
+@wrapperPad: 20px;
+@wrapperPadCollapse: (@wrapperPad / 2);
+
+@columnPad: @wrapperPad;
+@columnPadCollapse: (@columnPad / 2);
+
+@blockGridPad: @wrapperPad;
+@blockGridPadCollapse: (@blockGridPad / 2);
+
+@panelPad: @wrapperPad;
+@panelPadCollapse: (@panelPad / 2);
+
+@textPad: (@wrapperPad * 2);
+@textPadCollapse: (@textPad / 2);
