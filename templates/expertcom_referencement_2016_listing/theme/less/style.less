@@ -361,6 +361,32 @@ img.spacer-webicon {
 	}
 }
 
+// contentVote area
+// -------------------------
+.contentVote {
+	background-color: @colorExpertCom6;
+
+	table.columns, table.column {
+		table.subWrapper {
+			width: 100%;
+			-premailer-width: 100%;
+			td.sub-columns { padding-bottom: 0px; }
+		}
+
+		.readMore table.small-button {
+			width: 100%;
+			-premailer-width: 100%;
+		}
+	}
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentVote {
+		table.columns, table.column {
+			table.subWrapper td.sub-columns { padding-bottom: 0px !important; }
+		}
+	}
+}
+
 
 // contentBottom area
 // -------------------------

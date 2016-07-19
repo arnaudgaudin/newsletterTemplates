@@ -1423,6 +1423,27 @@ img.spacer-webicon {
   padding-left: 20px !important;
 }
 
+.contentVote {
+  background-color: #eff2f4;
+}
+
+.contentVote table.columns table.subWrapper,
+.contentVote table.column table.subWrapper {
+  width: 100%;
+  -premailer-width: 100%;
+}
+
+.contentVote table.columns table.subWrapper td.sub-columns,
+.contentVote table.column table.subWrapper td.sub-columns {
+  padding-bottom: 0px;
+}
+
+.contentVote table.columns .readMore table.small-button,
+.contentVote table.column .readMore table.small-button {
+  width: 100%;
+  -premailer-width: 100%;
+}
+
 .contentBottom .title {
   text-align: center;
   font-weight: normal;
@@ -1870,6 +1891,11 @@ img.spacer-webicon {
   table[class="body"] .contentMain table.column table.subWrapper .text-pad-left {
     padding-left: 10px !important;
     padding-right: 0px !important;
+  }
+
+  table[class="body"] .contentVote table.columns table.subWrapper td.sub-columns,
+  table[class="body"] .contentVote table.column table.subWrapper td.sub-columns {
+    padding-bottom: 0px !important;
   }
 
   table[class="body"] .contentBottom td,
