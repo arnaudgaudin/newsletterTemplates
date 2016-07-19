@@ -1859,9 +1859,9 @@ img.spacer-webicon {
     padding-bottom: 5px !important;
   }
 
-  table[class="body"] .contentIntro table.columns .text-pad-right,
-  table[class="body"] .contentIntro table.column .text-pad-right {
-    padding-left: 0px !important;
+  table[class="body"] .contentIntro table.columns .text-pad-left,
+  table[class="body"] .contentIntro table.column .text-pad-left {
+    padding-right: 0px !important;
   }
 
   table[class="body"] .contentMain td.wrapper.first table.columns .text-pad,
