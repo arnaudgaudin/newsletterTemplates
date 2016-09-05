@@ -846,8 +846,8 @@ table.large-button td a:visited .important {
 }
 
 table.secondary td {
-  background: #5d93a5;
-  border-color: #4a7685;
+  background: #40b498;
+  border-color: #338e78;
   color: #ffffff;
 }
 
@@ -860,7 +860,7 @@ table.secondary td a .important {
 }
 
 table.secondary:hover td {
-  background: #6d9eae !important;
+  background: #4ec0a4 !important;
   color: #ffffff;
 }
 
@@ -1356,7 +1356,7 @@ img.webicon-spacer {
 }
 
 .contentMain {
-  background-color: #5d93a5;
+  background-color: #40b498;
 }
 
 .contentMain,
