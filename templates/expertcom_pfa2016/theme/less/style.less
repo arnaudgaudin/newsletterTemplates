@@ -1,0 +1,367 @@
+// theme's imports
+@import "import.less";
+
+// additionnal template's style which extends ink's style
+
+// LAYOUT
+// --------------------------------------------------
+
+h1, h2, h3, h4, h5, h6 { mso-line-height-rule: exactly; }
+h1 { line-height: (@headingsFontSizeH1 * 1.1); }
+h2 { line-height: (@headingsFontSizeH2 * 1.1); }
+h3 { line-height: (@headingsFontSizeH3 * 1.1); }
+h4 { line-height: (@headingsFontSizeH4 * 1.1); }
+h5 { line-height: (@headingsFontSizeH5 * 1.1); }
+h6 { line-height: (@headingsFontSizeH6 * 1.1); }
+
+// Buttons
+table.tiny-button td a { font-weight: bold; }
+
+// Gestion sous-containers
+table.subWrapper {
+	//lorsque contenu dans sous-colonne
+	.sub-columns > & {
+		width: 100%;
+		-premailer-width: 100%;
+	}
+	& > tr > td, & > tbody > tr > td { padding: 0px; }
+}
+
+//gestion row avec bordures de séparation
+.row.bordered {
+	background-color: @containerBackground;
+	//suppression décalage en trop
+	td.wrapper { padding-top: 0px; }
+	table.columns td, table.column td { padding-bottom: 0px; }
+	td {
+		background-color: @containerBackground !important;
+		line-height: 0;
+		height: (@wrapperPad / 2);
+		-premailer-height: (@wrapperPad / 2);
+	}
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .row.bordered {
+		display: none !important;
+		visibility: hidden !important;
+		td.wrapper { padding-top: 0px !important; }
+		table.columns td, table.column td { padding-bottom: 0px !important; }
+		td { height: 0px !important; }
+	}
+}
+
+//réseaux sociaux
+.webicons td {
+	text-align: center;
+	//pour supprimer les espaces
+	font-size: 0px;
+	mso-line-height-rule: exactly;
+	line-height: 0px;
+}
+.webicon {
+	display: inline;
+	//pour supprimer les espaces
+	font-size: 0px;
+	mso-line-height-rule: exactly;
+	line-height: 0px;
+	//espacement avec les images vides
+	// padding: 0px 5px;
+	// mso-margin-left-alt: 5px;
+	// mso-margin-right-alt: 5px;
+	// &.first {
+	// 	padding-left: 0px;
+	// 	mso-margin-left-alt: 0px;
+	// }
+	// &.last {
+	// 	padding-right: 0px;
+	// 	mso-margin-right-alt: 0px;
+	// }
+	img {
+		display: inline;
+		float: none;
+	}
+}
+img.webicon-spacer {
+	display: inline;
+	//pour supprimer les espaces
+	font-size: 0px;
+	mso-line-height-rule: exactly;
+	line-height: 0px;
+	float: none;
+	// border: 1px solid #0f0;
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .webicons {
+		.columns, .column { display: table !important; }
+		td { text-align: center !important; }
+	}
+	table[class="body"] .webicon img {
+		width: 28px !important;
+		height: 28px !important;
+	}
+	table[class="body"] img.webicon-spacer {
+		width: 10px !important;
+		height: 28px !important;
+	}
+}
+
+//gestion header
+.header {
+	background-color: @bodyBackground;
+	.newsletterInnerTextColor(mix(#ffffff, @bodyBackground, 75%));
+
+	td { text-align: right; }
+
+	//réduction décalage vertical en haut
+	td.wrapper { padding-top: (@wrapperPad / 2); }
+	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .header {
+		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
+		table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
+	}
+}
+
+
+// contentOnline area
+// -------------------------
+.contentOnline {
+	background-color: @bodyBackground;
+	.newsletterInnerTextColor(mix(#ffffff, @bodyBackground, 50%));
+	td {
+		font-size: @fontSizeSmall;
+		line-height: (@fontSizeSmall * 1.25);
+	}
+	//réduction décalage vertical en haut
+	td.wrapper { padding-top: (@wrapperPad / 2); }
+	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentOnline {
+		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
+		table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
+	}
+}
+
+// contentIntroduction area
+// -------------------------
+.contentIntroduction {
+	td { vertical-align: middle; }
+	h1.mainTitle.vc {
+		color: @colorPfa1;
+		a { .newsletterLinkColor(@colorPfa1); }
+	}
+	//réduction décalage vertical en haut
+	table.columns td, table.column td { padding-bottom: 0px; }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentIntroduction {
+		td.sub-columns.first { vertical-align: middle !important; }
+		.text-pad-right { padding-left: 0px !important; }
+		h1.mainTitle {
+			font-size: @headingsFontSizeH2 !important;
+			line-height: (@headingsFontSizeH2 * 1.1) !important;
+		}
+		table.columns td, table.column td { padding-bottom: 0px !important; }
+	}
+}
+
+// contentTop area
+// -------------------------
+.contentTop {
+	.newsletterInnerTextColor(@colorPfa2);
+	td {
+		vertical-align: middle;
+		h3.teaserTitle {
+			color: @colorPfa2;
+			font-weight: normal;
+		}
+
+		//séparation entre les 2 boutons
+		table.sep {
+			width: 100%;
+			-premailer-width: 100%;
+			td {
+				padding: 0px;
+				line-height: 0px;
+				height: 10px;
+				-premailer-height: 10px;
+			}
+		}
+	}
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentTop {
+		table.columns, table.column {
+			table.sep td {
+				padding: 0px !important;
+				height: 5px !important;
+			}
+		}
+		.text-pad-right { padding-left: 0px !important; }
+		h3.teaserTitle {
+			font-size: @headingsFontSizeH4 !important;
+			line-height: (@headingsFontSizeH4 * 1.1) !important;
+		}
+	}
+}
+
+
+// contentMain area
+// -------------------------
+.contentMain {
+	background-color: @colorPfa3;
+	.newsletterInnerTextColor(#ffffff);
+	.title {
+		padding-bottom: 5px;
+		mso-margin-bottom-alt: 5px;
+	}
+	.spec {
+		padding-bottom: 10px;
+		mso-margin-bottom-alt: 10px;
+	}
+	.title, .spec {
+		color: #ffffff;
+		text-align: center;
+	}
+
+	td {
+		//séparation avant bouton
+		table.sep {
+			width: 100%;
+			-premailer-width: 100%;
+			td {
+				padding: 0px;
+				line-height: 0px;
+				height: 20px;
+				-premailer-height: 20px;
+			}
+		}
+	}
+
+	//réduction largeur boutons
+	table.buttonWrapper {
+		width: 100%;
+		-premailer-width: 100%;
+		td {
+			&.first, &.last {
+				width: 25% !important;
+				-premailer-width: 25%;
+			}
+			&.btn {
+				width: 50% !important;
+				-premailer-width: 50%;
+			}
+		}
+	}
+	table.columns td, table.column td {
+		table.buttonWrapper {
+			& > tbody > tr > td,
+			& > tr > td { padding-bottom: 0px; }
+		}
+	}
+
+	//différenciation padding pour zone centrale
+	.wrapper.first {
+		table.columns .text-pad, table.column .text-pad { padding-right: (@textPad / 2) !important; }
+	}
+	.wrapper.last {
+		table.columns .text-pad, table.column .text-pad { padding-left: (@textPad / 2) !important; }
+	}
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentMain {
+		h3.title {
+			font-size: @headingsFontSizeH4 !important;
+			line-height: (@headingsFontSizeH4 * 1.1) !important;
+		}
+		.spec { padding-bottom: 0px; }
+		table.columns, table.column {
+			table.sep td {
+				padding: 0px !important;
+				height: 10px !important;
+			}
+			table.buttonWrapper {
+				& > tbody > tr > td,
+				& > tr > td {
+					&.first, &.last { width: 25% !important; }
+					&.btn { width: 50% !important; }
+					width: auto !important;
+					padding: 0px !important;
+				}
+			}
+			table.tiny-button td { padding: 5px 0 !important; }
+		}
+		.wrapper.first {
+			table.columns .text-pad, table.column .text-pad { padding-right: @textPadCollapse !important; }
+		}
+		.wrapper.last {
+			table.columns .text-pad, table.column .text-pad { padding-left: @textPadCollapse !important; }
+		}
+
+		//augmentation espacement vertical
+		td.wrapper { padding-top: (@wrapperPadCollapse * 2) !important; }
+		table.columns td, table.column td { padding-bottom: (@columnPadCollapse * 2) !important; }
+	}
+}
+
+
+// contentContact area
+// -------------------------
+.contentContact {
+	.newsletterInnerTextColor(@colorPfa2);
+	.title {
+		color: @colorPfa1;
+		text-align: center;
+		padding-bottom: 5px;
+		mso-margin-bottom-alt: 5px;
+	}
+
+	//réduction décalage vertical en haut
+	//pas de padding car compensé par row.bordered à cette résolution
+	td.wrapper { padding-top: 0px; }
+	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentContact {
+		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
+		table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
+	}
+}
+
+
+// contentFooter area
+// -------------------------
+.contentFooter {
+	//réduction décalage vertical en haut
+	td.wrapper { padding-top: 0px; }
+	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentFooter {
+		td.wrapper { padding-top: 0px !important; }
+		table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
+	}
+}
+
+
+// contentUnsubscribe area
+// -------------------------
+.contentUnsubscribe {
+	background-color: @bodyBackground;
+	.newsletterInnerTextColor(mix(#ffffff, @bodyBackground, 50%));
+	td {
+		font-size: @fontSizeSmall;
+		line-height: (@fontSizeSmall * 1.25);
+	}
+	//réduction décalage vertical en haut
+	td.wrapper { padding-top: (@wrapperPad / 2); }
+	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentUnsubscribe {
+		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
+		table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
+	}
+}
