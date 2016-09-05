@@ -1742,7 +1742,7 @@ img.webicon-spacer {
     vertical-align: middle !important;
   }
 
-  table[class="body"] .contentIntroduction .text-pad-right {
+  table[class="body"] .contentIntroduction .text-pad-left {
     padding-left: 0px !important;
   }
 
