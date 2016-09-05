@@ -1743,7 +1743,7 @@ img.webicon-spacer {
   }
 
   table[class="body"] .contentIntroduction .text-pad-left {
-    padding-left: 0px !important;
+    padding-right: 0px !important;
   }
 
   table[class="body"] .contentIntroduction h1.mainTitle {
@@ -1762,8 +1762,8 @@ img.webicon-spacer {
     height: 5px !important;
   }
 
-  table[class="body"] .contentTop .text-pad-right {
-    padding-left: 0px !important;
+  table[class="body"] .contentTop .text-pad-left {
+    padding-right: 0px !important;
   }
 
   table[class="body"] .contentTop h3.teaserTitle {
