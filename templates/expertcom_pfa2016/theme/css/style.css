@@ -1383,8 +1383,8 @@ img.webicon-spacer {
 }
 
 .contentMain .spec {
-  padding-bottom: 10px;
-  mso-margin-bottom-alt: 10px;
+  padding-top: 10px;
+  mso-margin-top-alt: 10px;
 }
 
 .contentMain .title,
@@ -1777,7 +1777,7 @@ img.webicon-spacer {
   }
 
   table[class="body"] .contentMain .spec {
-    padding-bottom: 0px;
+    padding-top: 0px;
   }
 
   table[class="body"] .contentMain table.columns table.sep td,
