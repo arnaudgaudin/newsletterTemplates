@@ -320,8 +320,6 @@ table.imgCont {
 	background-color: @colorGan1;
 	.newsletterInnerTextColor(#ffffff);
 
-	table.subWrapper.image td { padding-right: (@textPad / 2); }
-
 	td {
 		font-size: @fontSizeSmall;
 		line-height: floor(@fontSizeSmall * 1.25);
@@ -345,11 +343,11 @@ table.imgCont {
 			font-size: @fontSizeMini !important;
 			line-height: floor(@fontSizeMini * 1.25) !important;
 		}
-		table.subWrapper.image td { padding-right: (@textPadCollapse / 2) !important; }
 		img {
-			width: 120px !important;
-			height: 90px !important;
+			width: 100% !important;
+			height: auto !important;
 		}
+		.text-pad-right { padding-left: 0px !important; }
 	}
 }
 
