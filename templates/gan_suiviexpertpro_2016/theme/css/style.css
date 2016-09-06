@@ -1563,10 +1563,6 @@ table.imgCont .icon-img {
   color: #ffffff !important;
 }
 
-.contentAuthor table.subWrapper.image td {
-  padding-right: 20px;
-}
-
 .contentAuthor td {
   font-size: 12px;
   line-height: 15px;
@@ -1938,13 +1934,13 @@ table.imgCont .icon-img {
     line-height: 12px !important;
   }
 
-  table[class="body"] .contentAuthor table.subWrapper.image td {
-    padding-right: 10px !important;
+  table[class="body"] .contentAuthor img {
+    width: 100% !important;
+    height: auto !important;
   }
 
-  table[class="body"] .contentAuthor img {
-    width: 120px !important;
-    height: 90px !important;
+  table[class="body"] .contentAuthor .text-pad-right {
+    padding-left: 0px !important;
   }
 
   table[class="body"] .contentFooter td.wrapper {
