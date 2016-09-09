@@ -1394,6 +1394,19 @@ img.webicon-spacer {
   background-color: #00f;
 }
 
+.contentMain table.imageWrapper td {
+  font-size: 0px;
+  line-height: 0px;
+}
+
+.contentMain table.imageWrapper td p.subWrapper {
+  margin: 0px;
+  padding: 0px;
+  mso-padding-alt: 0px;
+  mso-margin-top-alt: 0px;
+  mso-margin-bottom-alt: 0px;
+}
+
 .contentMain table.buttonWrapper {
   width: 100%;
   -premailer-width: 100%;
