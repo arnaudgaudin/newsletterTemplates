@@ -1244,6 +1244,8 @@ img.webicon-spacer {
 
 .header td {
   text-align: right;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .header td.wrapper {
@@ -1718,6 +1720,11 @@ img.webicon-spacer {
   table[class="body"] img.webicon-spacer {
     width: 10px !important;
     height: 28px !important;
+  }
+
+  table[class="body"] .header td {
+    font-size: 12px;
+    line-height: 15px;
   }
 
   table[class="body"] .header td.wrapper {

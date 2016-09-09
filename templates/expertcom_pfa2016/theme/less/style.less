@@ -110,7 +110,11 @@ img.webicon-spacer {
 	background-color: @bodyBackground;
 	.newsletterInnerTextColor(mix(#ffffff, @bodyBackground, 75%));
 
-	td { text-align: right; }
+	td {
+		text-align: right;
+		font-size: floor(@baseFontSize * 1.15);
+		line-height: floor(@baseFontSize * 1.15 * 1.25);
+	}
 
 	//réduction décalage vertical en haut
 	td.wrapper { padding-top: (@wrapperPad / 2); }
@@ -118,6 +122,10 @@ img.webicon-spacer {
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .header {
+		td {
+			font-size: @fontSizeSmall;
+			line-height: (@fontSizeSmall * 1.25);
+		}
 		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
 		table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
 	}
