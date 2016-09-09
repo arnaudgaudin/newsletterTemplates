@@ -1407,6 +1407,10 @@ img.webicon-spacer {
   -premailer-height: 5px;
 }
 
+.contentMain table.imageWrapper {
+  background-color: #00f;
+}
+
 .contentMain table.buttonWrapper {
   width: 100%;
   -premailer-width: 100%;
