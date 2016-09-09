@@ -1390,23 +1390,6 @@ img.webicon-spacer {
   text-align: center;
 }
 
-.contentMain td table.sep {
-  width: 100%;
-  -premailer-width: 100%;
-}
-
-.contentMain td table.sep tr {
-  page-break-before: always;
-}
-
-.contentMain td table.sep td {
-  padding: 0px;
-  font-size: 3px;
-  line-height: 5px;
-  height: 5px;
-  -premailer-height: 5px;
-}
-
 .contentMain table.imageWrapper {
   background-color: #00f;
 }
@@ -1425,6 +1408,12 @@ img.webicon-spacer {
 .contentMain table.buttonWrapper td.btn {
   width: 50% !important;
   -premailer-width: 50%;
+}
+
+.contentMain table.columns td table.imageWrapper td,
+.contentMain table.column td table.imageWrapper td {
+  padding-top: 10px;
+  padding-bottom: 5px;
 }
 
 .contentMain table.columns td table.buttonWrapper > tbody > tr > td,
@@ -1791,10 +1780,10 @@ img.webicon-spacer {
     padding-bottom: 5px !important;
   }
 
-  table[class="body"] .contentMain table.columns table.sep td,
-  table[class="body"] .contentMain table.column table.sep td {
-    padding: 0px !important;
-    height: 5px !important;
+  table[class="body"] .contentMain table.columns table.imageWrapper td,
+  table[class="body"] .contentMain table.column table.imageWrapper td {
+    padding-top: 5px !important;
+    padding-bottom: 2.5px !important;
   }
 
   table[class="body"] .contentMain table.columns table.buttonWrapper > tbody > tr > td,

@@ -221,7 +221,7 @@ img.webicon-spacer {
 .contentMain {
 	background-color: @colorPfa3;
 	.newsletterInnerTextColor(#ffffff);
-	// img { display: block; }
+	
 	// .title {
 	// 	padding-bottom: 5px;
 	// 	mso-margin-bottom-alt: 5px;
@@ -233,22 +233,6 @@ img.webicon-spacer {
 	.title, .spec {
 		color: #ffffff;
 		text-align: center;
-	}
-
-	td {
-		//séparation avant bouton
-		table.sep {
-			width: 100%;
-			-premailer-width: 100%;
-			tr { page-break-before: always; }
-			td {
-				padding: 0px;
-				font-size: 3px;
-				line-height: 5px;
-				height: 5px;
-				-premailer-height: 5px;
-			}
-		}
 	}
 
 	table.imageWrapper {
@@ -271,6 +255,12 @@ img.webicon-spacer {
 		}
 	}
 	table.columns td, table.column td {
+		table.imageWrapper {
+			td {
+				padding-top: 10px;
+				padding-bottom: 5px;
+			}
+		}
 		table.buttonWrapper {
 			& > tbody > tr > td,
 			& > tr > td { padding-bottom: 0px; }
@@ -293,9 +283,11 @@ img.webicon-spacer {
 		}
 		.spec { padding-bottom: 5px !important; }
 		table.columns, table.column {
-			table.sep td {
-				padding: 0px !important;
-				height: 5px !important;
+			table.imageWrapper {
+				td {
+					padding-top: 5px !important;
+					padding-bottom: 2.5px !important;
+				}
 			}
 			table.buttonWrapper {
 				& > tbody > tr > td,
