@@ -1395,9 +1395,14 @@ img.webicon-spacer {
   -premailer-width: 100%;
 }
 
+.contentMain td table.sep tr {
+  page-break-before: always;
+}
+
 .contentMain td table.sep td {
   padding: 0px;
-  line-height: 0px;
+  font-size: 5px;
+  line-height: 5px;
   height: 5px;
   -premailer-height: 5px;
 }
