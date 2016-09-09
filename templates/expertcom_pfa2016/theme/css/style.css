@@ -1390,16 +1390,14 @@ img.webicon-spacer {
   text-align: center;
 }
 
-.contentMain table.imageWrapper {
-  background-color: #00f;
-}
-
 .contentMain table.imageWrapper td {
   font-size: 0px;
   line-height: 0px;
 }
 
 .contentMain table.imageWrapper td p.subWrapper {
+  font-size: 0px;
+  line-height: 0px;
   margin: 0px;
   padding: 0px;
   mso-padding-alt: 0px;
