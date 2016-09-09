@@ -1379,14 +1379,9 @@ img.webicon-spacer {
   color: #ffffff !important;
 }
 
-.contentMain .title {
+.contentMain .spec {
   padding-bottom: 5px;
   mso-margin-bottom-alt: 5px;
-}
-
-.contentMain .spec {
-  padding-bottom: 10px;
-  mso-margin-bottom-alt: 10px;
 }
 
 .contentMain .title,
@@ -1403,8 +1398,8 @@ img.webicon-spacer {
 .contentMain td table.sep td {
   padding: 0px;
   line-height: 0px;
-  height: 10px;
-  -premailer-height: 10px;
+  height: 5px;
+  -premailer-height: 5px;
 }
 
 .contentMain table.buttonWrapper {
