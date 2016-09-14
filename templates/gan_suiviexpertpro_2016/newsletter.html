@@ -32,7 +32,8 @@
 													<td class="text-pad">
 														<p class="hidden">Les actualités du mois pour les chefs d'entreprises.</p>
 														<span class="online">
-															Pour visualiser ce message en ligne, <a class="link_underline" target="_blank" href="#" lien_message_online="lien_message_online">suivez ce lien</a>.
+															<!--DEL{{-->Pour visualiser ce message en ligne, <a class="link_underline" target="_blank" href="#" lien_message_online="lien_message_online">suivez ce lien</a>.<!--}}DEL-->
+															<!--{{<%@ include view='MirrorPage' %>}}-->
 														</span>
 													</td>
 													<td class="expander"></td>
@@ -100,7 +101,8 @@
 														<table border="0" class="doubleLiner">
 															<tr>
 																<td class="first text-pad">
-																	<strong>Antoine GUYOT</strong>, votre agent général
+																	<!--DEL{{--><strong>Antoine GUYOT</strong>, votre agent général<!--}}DEL-->
+																	<!--{{<strong><%= targetData.E_NOM_AGENT %></strong>, <%= targetData.E_AGENCE_SIGNATURE %>}}-->
 																</td>
 															</tr>
 															<tr>
