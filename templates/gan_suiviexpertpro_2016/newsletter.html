@@ -198,6 +198,7 @@
 								<!-- ALAUNE END -->
 
 								<!-- OFFREDUMOIS START -->
+								<!--{{<% if ( targetData.E_Img_Petite == "aucune" ) { %>}}-->
 								<!-- Bloc jaune sans image -->
 								<table border="0" class="row contentOffre">
 									<tr>
@@ -222,7 +223,7 @@
 										</td>
 									</tr>
 								</table>
-
+								<!--{{<% } %> <% if ( targetData.E_Img_Petite == "petite" ) { %>}}-->
 								<!-- Bloc jaune avec image rectangulaire -->
 								<table border="0" class="row contentOffre">
 									<tr>
@@ -259,7 +260,7 @@
 										</td>
 									</tr>
 								</table>
-
+								<!--{{<% } %> <% if ( targetData.E_Img_Petite == "grande" ) { %>}}-->
 								<!-- Bloc jaune avec image carrée -->
 								<table border="0" class="row contentOffre">
 									<tr>
@@ -295,6 +296,7 @@
 										</td>
 									</tr>
 								</table>
+								<!--{{<% } %>}}-->
 								<!-- OFFREDUMOIS END -->
 
 								<!-- DOSSIER START -->
