@@ -33,7 +33,7 @@
 														<p class="hidden">Les actualités du mois pour les chefs d'entreprises.</p>
 														<span class="online">
 															<!--DEL{{-->Pour visualiser ce message en ligne, <a class="link_underline" target="_blank" href="#" lien_message_online="lien_message_online">suivez ce lien</a>.<!--}}DEL-->
-															<!--{{<%@ include view='MirrorPage' %>}}-->
+															<!--{{%%{{@ include view='MirrorPage' }}%%}}-->
 														</span>
 													</td>
 													<td class="expander"></td>
@@ -102,7 +102,7 @@
 															<tr>
 																<td class="first text-pad">
 																	<!--DEL{{--><strong>Antoine GUYOT</strong>, votre agent général<!--}}DEL-->
-																	<!--{{<strong><%= targetData.E_NOM_AGENT %></strong>, <%= targetData.E_AGENCE_SIGNATURE %>}}-->
+																	<!--{{<strong>%%{{= targetData.E_NOM_AGENT }}%%</strong>, %%{{= targetData.E_AGENCE_SIGNATURE }}%%}}-->
 																</td>
 															</tr>
 															<tr>
@@ -198,7 +198,7 @@
 								<!-- ALAUNE END -->
 
 								<!-- OFFREDUMOIS START -->
-								<!--{{<% if ( targetData.E_Img_Petite == "aucune" ) { %>}}-->
+								<!--{{%%{{ if ( targetData.E_Img_Petite == "aucune" ) { }}%%}}-->
 								<!-- Bloc jaune sans image -->
 								<table border="0" class="row contentOffre">
 									<tr>
@@ -223,7 +223,7 @@
 										</td>
 									</tr>
 								</table>
-								<!--{{<% } %> <% if ( targetData.E_Img_Petite == "petite" ) { %>}}-->
+								<!--{{%%{{ } }}%% %%{{ if ( targetData.E_Img_Petite == "petite" ) { }}%%}}-->
 								<!-- Bloc jaune avec image rectangulaire -->
 								<table border="0" class="row contentOffre">
 									<tr>
@@ -260,7 +260,7 @@
 										</td>
 									</tr>
 								</table>
-								<!--{{<% } %> <% if ( targetData.E_Img_Petite == "grande" ) { %>}}-->
+								<!--{{%%{{ } }}%% %%{{ if ( targetData.E_Img_Petite == "grande" ) { }}%%}}-->
 								<!-- Bloc jaune avec image carrée -->
 								<table border="0" class="row contentOffre">
 									<tr>
@@ -296,7 +296,7 @@
 										</td>
 									</tr>
 								</table>
-								<!--{{<% } %>}}-->
+								<!--{{%%{{ } }}%%}}-->
 								<!-- OFFREDUMOIS END -->
 
 								<!-- DOSSIER START -->
