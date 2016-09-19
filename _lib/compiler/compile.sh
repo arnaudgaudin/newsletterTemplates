@@ -48,7 +48,7 @@ perl -pi -e 's/\)\)##/"\)%>/g;' newsletter-inline-postanova.html
 perl -pi -e 's/\*\*\(\(/<%=/g;' newsletter-inline-postanova.html
 perl -pi -e 's/\)\)\*\*/%>/g;' newsletter-inline-postanova.html
 #Remplacement d'espacement forcé dans une URL d'adresse (Special Gan SEP2016)
-perl -pi -e 's/##SP##/%>/g;' newsletter-inline-postanova.html
+perl -pi -e 's/\$\$SP\$\$/ /g;' newsletter-inline-postanova.html
 
 #Remplacement des balises d'ouverture/fermeture de Posta Nova
 perl -pi -e 's/##{{/<?/g;' newsletter-inline-postanova.html
