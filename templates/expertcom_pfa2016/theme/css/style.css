@@ -1412,13 +1412,13 @@ img.webicon-spacer {
 
 .contentMain table.buttonWrapper td.first,
 .contentMain table.buttonWrapper td.last {
-  width: 25% !important;
-  -premailer-width: 25%;
+  width: 40% !important;
+  -premailer-width: 40%;
 }
 
-.contentMain table.buttonWrapper td.btn {
-  width: 50% !important;
-  -premailer-width: 50%;
+.contentMain table.buttonWrapper td.filler {
+  width: 20% !important;
+  -premailer-width: 20%;
 }
 
 .contentMain table.columns td table.imageWrapper td,
@@ -1813,14 +1813,14 @@ img.webicon-spacer {
   table[class="body"] .contentMain table.column table.buttonWrapper > tbody > tr > td.last,
   table[class="body"] .contentMain table.columns table.buttonWrapper > tr > td.last,
   table[class="body"] .contentMain table.column table.buttonWrapper > tr > td.last {
-    width: 25% !important;
+    width: 40% !important;
   }
 
-  table[class="body"] .contentMain table.columns table.buttonWrapper > tbody > tr > td.btn,
-  table[class="body"] .contentMain table.column table.buttonWrapper > tbody > tr > td.btn,
-  table[class="body"] .contentMain table.columns table.buttonWrapper > tr > td.btn,
-  table[class="body"] .contentMain table.column table.buttonWrapper > tr > td.btn {
-    width: 50% !important;
+  table[class="body"] .contentMain table.columns table.buttonWrapper > tbody > tr > td.filler,
+  table[class="body"] .contentMain table.column table.buttonWrapper > tbody > tr > td.filler,
+  table[class="body"] .contentMain table.columns table.buttonWrapper > tr > td.filler,
+  table[class="body"] .contentMain table.column table.buttonWrapper > tr > td.filler {
+    width: 20% !important;
   }
 
   table[class="body"] .contentMain table.columns table.tiny-button td,
