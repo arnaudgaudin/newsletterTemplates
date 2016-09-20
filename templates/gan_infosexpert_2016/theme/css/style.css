@@ -1280,8 +1280,13 @@ h6 {
   padding-top: 5px;
 }
 
-.contentWebTv {
-  background-color: #ff0;
+.contentWebTv .title {
+  padding-bottom: 0px;
+}
+
+.contentWebTv .title,
+.contentWebTv .subtitle {
+  color: #4275A0;
 }
 
 .contentWebTv table.columns td table.subWrapper td,
