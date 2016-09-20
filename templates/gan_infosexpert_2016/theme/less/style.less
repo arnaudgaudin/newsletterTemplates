@@ -1,0 +1,265 @@
+// theme's imports
+@import "import.less";
+
+// additionnal template's style which extends ink's style
+//cf propriétés MSO : https://gist.github.com/webtobesocial/ac9d052595b406d5a5c1
+
+
+// LAYOUT
+// --------------------------------------------------
+
+h1, h2, h3, h4, h5, h6 { mso-line-height-rule: exactly; }
+h1 { line-height: (@headingsFontSizeH1 * 1.1); }
+h2 { line-height: (@headingsFontSizeH2 * 1.1); }
+h3 { line-height: (@headingsFontSizeH3 * 1.1); }
+h4 { line-height: (@headingsFontSizeH4 * 1.1); }
+h5 { line-height: (@headingsFontSizeH5 * 1.1); }
+h6 { line-height: (@headingsFontSizeH6 * 1.1); }
+
+
+//gestion header
+.header {
+	background-color: @containerBackground;
+	//réduction décalage vertical
+	td.wrapper { padding-top: (@wrapperPad / 2); }
+	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .header {
+		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
+		table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
+	}
+}
+
+p {
+	margin: 0;
+	padding-bottom: (@baseLineHeight / 2);
+	mso-margin-bottom-alt: (@baseLineHeight / 2);
+}
+
+h1, h2, h3 {
+	padding-bottom: (@baseLineHeight / 2);
+	mso-margin-bottom-alt: (@baseLineHeight / 2);
+}
+h4, h5, h6 {
+	padding-bottom: floor(@baseLineHeight / 3);
+	mso-margin-bottom-alt: floor(@baseLineHeight / 3);
+}
+
+
+// contentOnline area
+// -------------------------
+.contentOnline {
+	background-color: @bodyBackground;
+	.newsletterInnerTextColor(darken(@bodyBackground, 45%));
+	
+	td {
+		font-size: @fontSizeSmall;
+		line-height: (@fontSizeSmall * 1.25);
+	}
+	//réduction décalage vertical
+	td.wrapper { padding-top: (@wrapperPad / 2); }
+	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentOnline {
+		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
+		table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
+	}
+}
+
+
+//contentPartenariat area
+// -------------------------
+.contentPartenariat {
+	//suppression décalage en trop
+	td.wrapper { padding-top: 0px; }
+	table.columns td, table.column td { padding-bottom: 0px; }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentPartenariat {
+		td.wrapper { padding-top: 0px !important; }
+		table.columns td, table.column td { padding-bottom: 0px !important; }
+	}
+}
+
+
+//contentMain area
+// -------------------------
+.contentMain {
+	td.sub-columns.first {
+		.newsletterInnerTextColor(@colorGan1);
+		p, h1, h2, h3, h4, h5, h6 { color: @colorGan1; }
+	}
+	table.columns, table.column {
+		.sub-columns.last {
+			table.subWrapper {
+				td {
+					padding-bottom: 0px;
+					&.portrait { padding-top: 0px; }
+					&.person { padding-top: 5px; }
+				}
+			}
+		}
+	}
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentMain {
+		.left-text-pad, .text-pad-left { padding-right: 0px !important; }
+	}
+}
+
+
+//contentExpert area
+// -------------------------
+//calcul des textpad localisé de séparation entre les vignettes
+@expertWrapperSize: @gutterWidth + @columnWidth * 2;
+@expertThumbSize: (@expertWrapperSize - @textPad);
+@expertThumbGutter: ((@containerWidth - @textPad * 2 - @expertThumbSize * 6) / 5);
+
+.contentExpert {
+	background-color: @colorGan5;
+	.newsletterInnerTextColor(#ffffff);
+	.subTitle {
+		color: #ffffff;
+		font-style: italic;
+		padding: 0px;
+	}
+	td {
+		font-size: @fontSizeSmall;
+		line-height: (@fontSizeSmall * 1.25);
+		.function {
+			font-size: @fontSizeMini;
+			line-height: (@fontSizeMini * 1.25);
+		}
+	}
+
+	table.columns, table.column {
+		display: table !important;
+		table.columns td, table.column td { padding-bottom: 0px; }
+		table.subWrapper {
+			width: 100%;
+			-premailer-width: 100%;
+			td {
+				padding-bottom: 0px;
+				&.portrait { padding-top: 0px; }
+				&.person { padding-top: 5px; }
+			}
+		}
+		td.sub-columns.title {
+			vertical-align: middle;
+			.subWrapper {
+				td { vertical-align: middle; }
+				&, td {
+					height: @expertThumbSize;
+					-premailer-height: @expertThumbSize;
+				}
+			}
+		}
+	}
+	td.wrapper.first {
+		table.columns, table.column {
+			.sub-columns {
+				&.first .text-pad {
+					padding-left: @textPad !important;
+					padding-right: 0px !important;
+				}
+				&:nth-of-type(2) .text-pad {
+					padding-left: @expertThumbGutter !important;
+					padding-right: (@expertWrapperSize - @expertThumbSize - @expertThumbGutter) !important;
+				}
+				&.last .text-pad {
+					padding-left: (@expertWrapperSize - @expertThumbSize - @expertThumbGutter / 2) !important;
+					padding-right: (@expertThumbGutter / 2) !important;
+				}
+			}
+		}
+	}
+	td.wrapper.last {
+		table.columns, table.column {
+			.sub-columns {
+				&.last .text-pad {
+					padding-left: 0px !important;
+					padding-right: @textPad !important;
+				}
+				&:nth-of-type(2) .text-pad {
+					padding-left: (@expertWrapperSize - @expertThumbSize - @expertThumbGutter) !important;
+					padding-right: @expertThumbGutter !important;
+				}
+				&.first .text-pad {
+					padding-left: (@expertThumbGutter / 2) !important;
+					padding-right: (@expertWrapperSize - @expertThumbSize - @expertThumbGutter / 2) !important;
+				}
+			}
+		}
+	}
+
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentExpert {
+		table.columns, table.column {
+			td.sub-columns.title .subWrapper {
+				&, td { height: 100% !important; }
+			}
+		}
+		td.wrapper {
+			&.last { padding-top: 0px !important; }
+
+			table.columns, table.column {
+				display: table !important;
+				table.subWrapper td {
+					width: auto !important;
+					padding-bottom: 0px !important;
+					&.portrait img {
+						width: 100% !important;
+						height: auto !important;
+					}
+				}
+			}
+
+			&.first, &.last {
+				table.columns, table.column {
+					.sub-columns {
+						&, &.first, &.last {
+							.text-pad {
+								padding-left: @textPadCollapse !important;
+								padding-right: @textPadCollapse !important;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+//contentFooter area
+// -------------------------
+.contentFooter {
+	background-color: @colorGan1;
+	.newsletterInnerTextColor(#ffffff);
+	p, h1, h2, h3, h4, h5, h6 { color: #ffffff; }
+}
+
+
+// contentUnsubscribe area
+// -------------------------
+.contentUnsubscribe {
+	background-color: @bodyBackground;
+	.newsletterInnerTextColor(darken(@bodyBackground, 45%));
+	
+	td {
+		font-size: @fontSizeSmall;
+		line-height: (@fontSizeSmall * 1.25);
+	}
+	//réduction décalage vertical
+	td.wrapper { padding-top: (@wrapperPad / 2); }
+	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentUnsubscribe {
+		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
+		table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
+	}
+}
