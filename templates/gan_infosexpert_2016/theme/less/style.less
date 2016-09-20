@@ -92,20 +92,19 @@ h4, h5, h6 {
 		p, h1, h2, h3, h4, h5, h6 { color: @colorGan1; }
 	}
 	table.columns, table.column {
-		.sub-columns.last {
-			table.subWrapper {
-				td {
-					padding-bottom: 0px;
-					&.portrait { padding-top: 0px; }
-					&.person { padding-top: 5px; }
-				}
-			}
+		.sub-columns table.subWrapper td {
+			padding-bottom: 0px;
+			&.portrait { padding-top: 0px; }
+			&.person { padding-top: 5px; }
 		}
 	}
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentMain {
-		.left-text-pad, .text-pad-left { padding-right: 0px !important; }
+		table.columns, table.column {
+			.sub-columns table.subWrapper td { padding-bottom: 0px !important; }
+		}
+		.text-pad-left { padding-right: 0px !important; }
 	}
 }
 

@@ -1265,18 +1265,18 @@ h6 {
   color: #4275A0;
 }
 
-.contentMain table.columns .sub-columns.last table.subWrapper td,
-.contentMain table.column .sub-columns.last table.subWrapper td {
+.contentMain table.columns .sub-columns table.subWrapper td,
+.contentMain table.column .sub-columns table.subWrapper td {
   padding-bottom: 0px;
 }
 
-.contentMain table.columns .sub-columns.last table.subWrapper td.portrait,
-.contentMain table.column .sub-columns.last table.subWrapper td.portrait {
+.contentMain table.columns .sub-columns table.subWrapper td.portrait,
+.contentMain table.column .sub-columns table.subWrapper td.portrait {
   padding-top: 0px;
 }
 
-.contentMain table.columns .sub-columns.last table.subWrapper td.person,
-.contentMain table.column .sub-columns.last table.subWrapper td.person {
+.contentMain table.columns .sub-columns table.subWrapper td.person,
+.contentMain table.column .sub-columns table.subWrapper td.person {
   padding-top: 5px;
 }
 
@@ -1623,7 +1623,11 @@ h6 {
     padding-bottom: 0px !important;
   }
 
-  table[class="body"] .contentMain .left-text-pad,
+  table[class="body"] .contentMain table.columns .sub-columns table.subWrapper td,
+  table[class="body"] .contentMain table.column .sub-columns table.subWrapper td {
+    padding-bottom: 0px !important;
+  }
+
   table[class="body"] .contentMain .text-pad-left {
     padding-right: 0px !important;
   }
