@@ -1281,7 +1281,7 @@ h6 {
 }
 
 .contentExpert {
-  background-color: #939A9E;
+  background-color: #4275A0;
 }
 
 .contentExpert,
@@ -1302,20 +1302,47 @@ h6 {
   color: #ffffff !important;
 }
 
+.contentExpert td {
+  font-size: 11.9px;
+  line-height: 14.875px;
+}
+
+.contentExpert td .function {
+  font-size: 9.1px;
+  line-height: 11.375px;
+}
+
+.contentExpert .title table.subWrapper {
+  width: 100%;
+  -premailer-width: 100%;
+  border-bottom: 1px solid #ffffff;
+}
+
+.contentExpert .title table.subWrapper .title {
+  color: #ffffff;
+}
+
 .body .contentExpert .columns td.sub-columns,
 .body .contentExpert .column td.sub-columns {
   width: 20%;
   -premailer-width: 20%;
 }
 
-.body .contentExpert .columns td.sub-columns:nth-child(odd),
-.body .contentExpert .column td.sub-columns:nth-child(odd) {
-  background-color: #00f;
+.contentExpert table.columns.title td,
+.contentExpert table.column.title td,
+.contentExpert table.columns.title td table.subWrapper td,
+.contentExpert table.column.title td table.subWrapper td {
+  padding-bottom: 0px;
 }
 
-.body .contentExpert .columns td.sub-columns:nth-child(even),
-.body .contentExpert .column td.sub-columns:nth-child(even) {
-  background-color: #f00;
+.contentExpert table.columns td.sub-columns table.subWrapper td.portrait,
+.contentExpert table.column td.sub-columns table.subWrapper td.portrait {
+  padding-bottom: 10px;
+}
+
+.contentExpert table.columns td.sub-columns table.subWrapper td.person,
+.contentExpert table.column td.sub-columns table.subWrapper td.person {
+  padding-bottom: 0px;
 }
 
 .contentExpert table.columns td.sub-columns.first table.subWrapper td,
@@ -1346,38 +1373,6 @@ h6 {
 .contentExpert table.column td.sub-columns.last table.subWrapper td {
   padding-left: 8px;
   padding-right: 40px;
-}
-
-.contentFooter {
-  background-color: #4275A0;
-}
-
-.contentFooter,
-.contentFooter td,
-.contentFooter .inner {
-  color: #ffffff;
-}
-
-.contentFooter a {
-  color: #ffffff;
-}
-
-.contentFooter a .important,
-.contentFooter a:visited,
-.contentFooter a:hover,
-.contentFooter a:focus,
-.contentFooter a:active {
-  color: #ffffff !important;
-}
-
-.contentFooter p,
-.contentFooter h1,
-.contentFooter h2,
-.contentFooter h3,
-.contentFooter h4,
-.contentFooter h5,
-.contentFooter h6 {
-  color: #ffffff;
 }
 
 .contentUnsubscribe {
@@ -1614,9 +1609,30 @@ h6 {
     padding-right: 0px !important;
   }
 
+  table[class="body"] .contentExpert .title table.subWrapper {
+    width: 100% !important;
+  }
+
   table[class="body"] .contentExpert .columns td.sub-columns,
   table[class="body"] .contentExpert .column td.sub-columns {
     width: 20% !important;
+  }
+
+  table[class="body"] .contentExpert table.columns.title td,
+  table[class="body"] .contentExpert table.column.title td,
+  table[class="body"] .contentExpert table.columns.title td table.subWrapper td,
+  table[class="body"] .contentExpert table.column.title td table.subWrapper td {
+    padding-bottom: 0px !important;
+  }
+
+  table[class="body"] .contentExpert table.columns td.sub-columns table.subWrapper td.portrait,
+  table[class="body"] .contentExpert table.column td.sub-columns table.subWrapper td.portrait {
+    padding-bottom: 5px !important;
+  }
+
+  table[class="body"] .contentExpert table.columns td.sub-columns table.subWrapper td.person,
+  table[class="body"] .contentExpert table.column td.sub-columns table.subWrapper td.person {
+    padding-bottom: 0px !important;
   }
 
   table[class="body"] .contentExpert table.columns td.sub-columns.first table.subWrapper td,

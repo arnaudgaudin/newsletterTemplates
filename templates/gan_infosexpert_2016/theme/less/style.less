@@ -118,15 +118,29 @@ h4, h5, h6 {
 @expertThumbGutter: ((@containerWidth - @textPad * 2 - @expertThumbSize * 6) / 5);
 
 .contentExpert {
-	background-color: @colorGan5;
+	background-color: @colorGan1;
 	.newsletterInnerTextColor(#ffffff);
+
+	td {
+		font-size: @fontSizeSmall;
+		line-height: (@fontSizeSmall * 1.25);
+		.function {
+			font-size: @fontSizeMini;
+			line-height: (@fontSizeMini * 1.25);
+		}
+	}
+
+	//style du titre
+	.title table.subWrapper {
+		width: 100%;
+		-premailer-width: 100%;
+		.title { color: #ffffff; }
+		border-bottom: 1px solid #ffffff;
+	}
 
 	//dimenssionnement hors grille pour 5 colonnes
 	.body & {
 		.columns td.sub-columns, .column td.sub-columns {
-			&:nth-child(odd) { background-color: #00f; }
-			&:nth-child(even) { background-color: #f00; }
-
 			width: 20%;
 			-premailer-width: 20%;
 		}
@@ -134,7 +148,16 @@ h4, h5, h6 {
 
 	//gestion des padding spécifiques
 	table.columns, table.column {
+		&.title td {
+			&, table.subWrapper td { padding-bottom: 0px; }
+		}
+
 		td.sub-columns {
+			table.subWrapper td {
+				&.portrait { padding-bottom: (@columnPad / 2); }
+				&.person { padding-bottom: 0px; }
+			}
+
 			&.first table.subWrapper td {
 				padding-left: @textPad;
 				padding-right: (@textPad / 5);
@@ -158,20 +181,16 @@ h4, h5, h6 {
 		}
 	}
 
+	//stylage du texte
+
+
 
 	// .subTitle {
 	// 	color: #ffffff;
 	// 	font-style: italic;
 	// 	padding: 0px;
 	// }
-	// td {
-	// 	font-size: @fontSizeSmall;
-	// 	line-height: (@fontSizeSmall * 1.25);
-	// 	.function {
-	// 		font-size: @fontSizeMini;
-	// 		line-height: (@fontSizeMini * 1.25);
-	// 	}
-	// }
+	
 
 	// table.columns, table.column {
 	// 	display: table !important;
@@ -236,12 +255,23 @@ h4, h5, h6 {
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentExpert {
+		.title table.subWrapper { width: 100% !important; }
+
 		//dimenssionnement en 5 colonnes
 		.columns td.sub-columns, .column td.sub-columns { width: 20% !important; }
 		
 		//réduction paddings
 		table.columns, table.column {
+			&.title td {
+				&, table.subWrapper td { padding-bottom: 0px !important; }
+			}
+
 			td.sub-columns {
+				table.subWrapper td {
+					&.portrait { padding-bottom: (@columnPadCollapse / 2) !important; }
+					&.person { padding-bottom: 0px !important; }
+				}
+
 				&.first table.subWrapper td {
 					padding-left: @textPadCollapse !important;
 					padding-right: (@textPadCollapse / 5) !important;
@@ -299,15 +329,6 @@ h4, h5, h6 {
 		// 	}
 		// }
 	}
-}
-
-
-//contentFooter area
-// -------------------------
-.contentFooter {
-	background-color: @colorGan1;
-	.newsletterInnerTextColor(#ffffff);
-	p, h1, h2, h3, h4, h5, h6 { color: #ffffff; }
 }
 
 
