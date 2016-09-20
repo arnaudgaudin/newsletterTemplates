@@ -1280,6 +1280,20 @@ h6 {
   padding-top: 5px;
 }
 
+.contentWebTv {
+  background-color: #ff0;
+}
+
+.contentWebTv table.columns td table.subWrapper td,
+.contentWebTv table.column td table.subWrapper td {
+  padding-bottom: 0px;
+}
+
+.contentWebTv table.columns td.gan_texte table.subWrapper td.text-pad-right,
+.contentWebTv table.column td.gan_texte table.subWrapper td.text-pad-right {
+  padding-right: 0px !important;
+}
+
 .contentExpert {
   background-color: #4275A0;
 }
@@ -1607,6 +1621,17 @@ h6 {
   table[class="body"] .contentMain .left-text-pad,
   table[class="body"] .contentMain .text-pad-left {
     padding-right: 0px !important;
+  }
+
+  table[class="body"] .contentWebTv table.columns td table.subWrapper td,
+  table[class="body"] .contentWebTv table.column td table.subWrapper td {
+    padding-bottom: 0px !important;
+  }
+
+  table[class="body"] .contentWebTv table.columns td.gan_texte table.subWrapper td.text-pad-right,
+  table[class="body"] .contentWebTv table.column td.gan_texte table.subWrapper td.text-pad-right {
+    padding-left: 0px !important;
+    padding-right: 20px !important;
   }
 
   table[class="body"] .contentExpert .title table.subWrapper {
