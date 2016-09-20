@@ -1302,107 +1302,50 @@ h6 {
   color: #ffffff !important;
 }
 
-.contentExpert .subTitle {
-  color: #ffffff;
-  font-style: italic;
-  padding: 0px;
+.body .contentExpert .columns td.sub-columns,
+.body .contentExpert .column td.sub-columns {
+  width: 20%;
+  -premailer-width: 20%;
 }
 
-.contentExpert td {
-  font-size: 11.9px;
-  line-height: 14.875px;
+.body .contentExpert .columns td.sub-columns:nth-child(odd),
+.body .contentExpert .column td.sub-columns:nth-child(odd) {
+  background-color: #00f;
 }
 
-.contentExpert td .function {
-  font-size: 9.1px;
-  line-height: 11.375px;
+.body .contentExpert .columns td.sub-columns:nth-child(even),
+.body .contentExpert .column td.sub-columns:nth-child(even) {
+  background-color: #f00;
 }
 
-.contentExpert table.columns,
-.contentExpert table.column {
-  display: table !important;
+.contentExpert table.columns td.sub-columns.first table.subWrapper td,
+.contentExpert table.column td.sub-columns.first table.subWrapper td {
+  padding-left: 40px;
+  padding-right: 8px;
 }
 
-.contentExpert table.columns table.columns td,
-.contentExpert table.column table.columns td,
-.contentExpert table.columns table.column td,
-.contentExpert table.column table.column td {
-  padding-bottom: 0px;
+.contentExpert table.columns td.sub-columns.center-left table.subWrapper td,
+.contentExpert table.column td.sub-columns.center-left table.subWrapper td {
+  padding-left: 32px;
+  padding-right: 16px;
 }
 
-.contentExpert table.columns table.subWrapper,
-.contentExpert table.column table.subWrapper {
-  width: 100%;
-  -premailer-width: 100%;
+.contentExpert table.columns td.sub-columns.center-real table.subWrapper td,
+.contentExpert table.column td.sub-columns.center-real table.subWrapper td {
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
-.contentExpert table.columns table.subWrapper td,
-.contentExpert table.column table.subWrapper td {
-  padding-bottom: 0px;
+.contentExpert table.columns td.sub-columns.center-right table.subWrapper td,
+.contentExpert table.column td.sub-columns.center-right table.subWrapper td {
+  padding-left: 16px;
+  padding-right: 32px;
 }
 
-.contentExpert table.columns table.subWrapper td.portrait,
-.contentExpert table.column table.subWrapper td.portrait {
-  padding-top: 0px;
-}
-
-.contentExpert table.columns table.subWrapper td.person,
-.contentExpert table.column table.subWrapper td.person {
-  padding-top: 5px;
-}
-
-.contentExpert table.columns td.sub-columns.title,
-.contentExpert table.column td.sub-columns.title {
-  vertical-align: middle;
-}
-
-.contentExpert table.columns td.sub-columns.title .subWrapper td,
-.contentExpert table.column td.sub-columns.title .subWrapper td {
-  vertical-align: middle;
-}
-
-.contentExpert table.columns td.sub-columns.title .subWrapper,
-.contentExpert table.column td.sub-columns.title .subWrapper,
-.contentExpert table.columns td.sub-columns.title .subWrapper td,
-.contentExpert table.column td.sub-columns.title .subWrapper td {
-  height: 80px;
-  -premailer-height: 80px;
-}
-
-.contentExpert td.wrapper.first table.columns .sub-columns.first .text-pad,
-.contentExpert td.wrapper.first table.column .sub-columns.first .text-pad {
-  padding-left: 40px !important;
-  padding-right: 0px !important;
-}
-
-.contentExpert td.wrapper.first table.columns .sub-columns:nth-of-type(2) .text-pad,
-.contentExpert td.wrapper.first table.column .sub-columns:nth-of-type(2) .text-pad {
-  padding-left: 32px !important;
-  padding-right: 8px !important;
-}
-
-.contentExpert td.wrapper.first table.columns .sub-columns.last .text-pad,
-.contentExpert td.wrapper.first table.column .sub-columns.last .text-pad {
-  padding-left: 24px !important;
-  padding-right: 16px !important;
-}
-
-.contentExpert td.wrapper.last table.columns .sub-columns.last .text-pad,
-.contentExpert td.wrapper.last table.column .sub-columns.last .text-pad {
-  padding-left: 0px !important;
-  padding-right: 40px !important;
-}
-
-.contentExpert td.wrapper.last table.columns .sub-columns:nth-of-type(2) .text-pad,
-.contentExpert td.wrapper.last table.column .sub-columns:nth-of-type(2) .text-pad {
-  padding-left: 8px !important;
-  padding-right: 32px !important;
-}
-
-.contentExpert td.wrapper.last table.columns .sub-columns.first .text-pad,
-.contentExpert td.wrapper.last table.column .sub-columns.first .text-pad {
-  padding-left: 16px !important;
-  padding-right: 24px !important;
+.contentExpert table.columns td.sub-columns.last table.subWrapper td,
+.contentExpert table.column td.sub-columns.last table.subWrapper td {
+  padding-left: 8px;
+  padding-right: 40px;
 }
 
 .contentFooter {
@@ -1671,47 +1614,38 @@ h6 {
     padding-right: 0px !important;
   }
 
-  table[class="body"] .contentExpert table.columns td.sub-columns.title .subWrapper,
-  table[class="body"] .contentExpert table.column td.sub-columns.title .subWrapper,
-  table[class="body"] .contentExpert table.columns td.sub-columns.title .subWrapper td,
-  table[class="body"] .contentExpert table.column td.sub-columns.title .subWrapper td {
-    height: 100% !important;
+  table[class="body"] .contentExpert .columns td.sub-columns,
+  table[class="body"] .contentExpert .column td.sub-columns {
+    width: 20% !important;
   }
 
-  table[class="body"] .contentExpert td.wrapper.last {
-    padding-top: 0px !important;
-  }
-
-  table[class="body"] .contentExpert td.wrapper table.columns,
-  table[class="body"] .contentExpert td.wrapper table.column {
-    display: table !important;
-  }
-
-  table[class="body"] .contentExpert td.wrapper table.columns table.subWrapper td,
-  table[class="body"] .contentExpert td.wrapper table.column table.subWrapper td {
-    width: auto !important;
-    padding-bottom: 0px !important;
-  }
-
-  table[class="body"] .contentExpert td.wrapper table.columns table.subWrapper td.portrait img,
-  table[class="body"] .contentExpert td.wrapper table.column table.subWrapper td.portrait img {
-    width: 100% !important;
-    height: auto !important;
-  }
-
-  table[class="body"] .contentExpert td.wrapper.first table.columns .sub-columns .text-pad,
-  table[class="body"] .contentExpert td.wrapper.last table.columns .sub-columns .text-pad,
-  table[class="body"] .contentExpert td.wrapper.first table.column .sub-columns .text-pad,
-  table[class="body"] .contentExpert td.wrapper.last table.column .sub-columns .text-pad,
-  table[class="body"] .contentExpert td.wrapper.first table.columns .sub-columns.first .text-pad,
-  table[class="body"] .contentExpert td.wrapper.last table.columns .sub-columns.first .text-pad,
-  table[class="body"] .contentExpert td.wrapper.first table.column .sub-columns.first .text-pad,
-  table[class="body"] .contentExpert td.wrapper.last table.column .sub-columns.first .text-pad,
-  table[class="body"] .contentExpert td.wrapper.first table.columns .sub-columns.last .text-pad,
-  table[class="body"] .contentExpert td.wrapper.last table.columns .sub-columns.last .text-pad,
-  table[class="body"] .contentExpert td.wrapper.first table.column .sub-columns.last .text-pad,
-  table[class="body"] .contentExpert td.wrapper.last table.column .sub-columns.last .text-pad {
+  table[class="body"] .contentExpert table.columns td.sub-columns.first table.subWrapper td,
+  table[class="body"] .contentExpert table.column td.sub-columns.first table.subWrapper td {
     padding-left: 20px !important;
+    padding-right: 4px !important;
+  }
+
+  table[class="body"] .contentExpert table.columns td.sub-columns.center-left table.subWrapper td,
+  table[class="body"] .contentExpert table.column td.sub-columns.center-left table.subWrapper td {
+    padding-left: 16px !important;
+    padding-right: 8px !important;
+  }
+
+  table[class="body"] .contentExpert table.columns td.sub-columns.center-real table.subWrapper td,
+  table[class="body"] .contentExpert table.column td.sub-columns.center-real table.subWrapper td {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+
+  table[class="body"] .contentExpert table.columns td.sub-columns.center-right table.subWrapper td,
+  table[class="body"] .contentExpert table.column td.sub-columns.center-right table.subWrapper td {
+    padding-left: 8px !important;
+    padding-right: 16px !important;
+  }
+
+  table[class="body"] .contentExpert table.columns td.sub-columns.last table.subWrapper td,
+  table[class="body"] .contentExpert table.column td.sub-columns.last table.subWrapper td {
+    padding-left: 4px !important;
     padding-right: 20px !important;
   }
 
