@@ -257,6 +257,7 @@ img.webicon-spacer {
 		width: 100%;
 		-premailer-width: 100%;
 		td {
+			//pour doubles boutons
 			&.first, &.last {
 				width: 40% !important;
 				-premailer-width: 40%;
@@ -264,6 +265,16 @@ img.webicon-spacer {
 			&.filler {
 				width: 20% !important;
 				-premailer-width: 20%;
+			}
+
+			//pour simple bouton
+			&.first-one, &.last-one {
+				width: 30% !important;
+				-premailer-width: 30%;
+			}
+			&.btn-one {
+				width: 40% !important;
+				-premailer-width: 40%;
 			}
 		}
 	}
@@ -305,8 +316,12 @@ img.webicon-spacer {
 			table.buttonWrapper {
 				& > tbody > tr > td,
 				& > tr > td {
+					//pour doubles boutons
 					&.first, &.last { width: 40% !important; }
 					&.filler { width: 20% !important; }
+					//pour simple bouton
+					&.first-one, &.last-one { width: 30% !important; }
+					&.btn-one { width: 40% !important; }
 					width: auto !important;
 					padding: 0px !important;
 				}

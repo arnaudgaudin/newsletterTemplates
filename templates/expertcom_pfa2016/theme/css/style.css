@@ -1421,6 +1421,17 @@ img.webicon-spacer {
   -premailer-width: 20%;
 }
 
+.contentMain table.buttonWrapper td.first-one,
+.contentMain table.buttonWrapper td.last-one {
+  width: 30% !important;
+  -premailer-width: 30%;
+}
+
+.contentMain table.buttonWrapper td.btn-one {
+  width: 40% !important;
+  -premailer-width: 40%;
+}
+
 .contentMain table.columns td table.imageWrapper td,
 .contentMain table.column td table.imageWrapper td {
   padding-top: 10px;
@@ -1821,6 +1832,24 @@ img.webicon-spacer {
   table[class="body"] .contentMain table.columns table.buttonWrapper > tr > td.filler,
   table[class="body"] .contentMain table.column table.buttonWrapper > tr > td.filler {
     width: 20% !important;
+  }
+
+  table[class="body"] .contentMain table.columns table.buttonWrapper > tbody > tr > td.first-one,
+  table[class="body"] .contentMain table.column table.buttonWrapper > tbody > tr > td.first-one,
+  table[class="body"] .contentMain table.columns table.buttonWrapper > tr > td.first-one,
+  table[class="body"] .contentMain table.column table.buttonWrapper > tr > td.first-one,
+  table[class="body"] .contentMain table.columns table.buttonWrapper > tbody > tr > td.last-one,
+  table[class="body"] .contentMain table.column table.buttonWrapper > tbody > tr > td.last-one,
+  table[class="body"] .contentMain table.columns table.buttonWrapper > tr > td.last-one,
+  table[class="body"] .contentMain table.column table.buttonWrapper > tr > td.last-one {
+    width: 30% !important;
+  }
+
+  table[class="body"] .contentMain table.columns table.buttonWrapper > tbody > tr > td.btn-one,
+  table[class="body"] .contentMain table.column table.buttonWrapper > tbody > tr > td.btn-one,
+  table[class="body"] .contentMain table.columns table.buttonWrapper > tr > td.btn-one,
+  table[class="body"] .contentMain table.column table.buttonWrapper > tr > td.btn-one {
+    width: 40% !important;
   }
 
   table[class="body"] .contentMain table.columns table.tiny-button td,
