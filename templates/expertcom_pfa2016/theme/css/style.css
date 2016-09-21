@@ -1412,24 +1412,24 @@ img.webicon-spacer {
 
 .contentMain table.buttonWrapper td.first,
 .contentMain table.buttonWrapper td.last {
-  width: 40% !important;
-  -premailer-width: 40%;
+  width: 45% !important;
+  -premailer-width: 45%;
 }
 
 .contentMain table.buttonWrapper td.filler {
-  width: 20% !important;
-  -premailer-width: 20%;
+  width: 10% !important;
+  -premailer-width: 10%;
 }
 
 .contentMain table.buttonWrapper td.first-one,
 .contentMain table.buttonWrapper td.last-one {
-  width: 30% !important;
-  -premailer-width: 30%;
+  width: 27.5% !important;
+  -premailer-width: 27.5%;
 }
 
 .contentMain table.buttonWrapper td.btn-one {
-  width: 40% !important;
-  -premailer-width: 40%;
+  width: 45% !important;
+  -premailer-width: 45%;
 }
 
 .contentMain table.columns td table.imageWrapper td,
