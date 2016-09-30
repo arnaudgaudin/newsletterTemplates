@@ -1337,7 +1337,7 @@ ul {
 
 .contentMain td.wrapper.last table.columns table.subWrapper.bordered td.title-cont td.title-display,
 .contentMain td.wrapper.last table.column table.subWrapper.bordered td.title-cont td.title-display {
-  background-color: #082f54;
+  background-color: #eb9928;
   vertical-align: middle;
   overflow: hidden;
 }
@@ -1355,9 +1355,9 @@ ul {
 .contentMain td.wrapper.last table.columns table.subWrapper.bordered td.text-cont td.text-display,
 .contentMain td.wrapper.last table.column table.subWrapper.bordered td.text-cont td.text-display {
   padding: 5px 10px 0px 10px;
-  border-left: 2px solid #082f54;
-  border-bottom: 2px solid #082f54;
-  border-right: 2px solid #082f54;
+  border-left: 2px solid #eb9928;
+  border-bottom: 2px solid #eb9928;
+  border-right: 2px solid #eb9928;
 }
 
 .contentMain td.wrapper.last table.columns table.subWrapper.bordered td.br-cont,
@@ -1406,14 +1406,14 @@ ul {
 
 .contentMain td.wrapper.last table.columns table.subWrapper.bordered td.br-cont td.br-t-l td,
 .contentMain td.wrapper.last table.column table.subWrapper.bordered td.br-cont td.br-t-l td {
-  border-top: 2px solid #082f54;
-  border-left: 2px solid #082f54;
+  border-top: 2px solid #eb9928;
+  border-left: 2px solid #eb9928;
 }
 
 .contentMain td.wrapper.last table.columns table.subWrapper.bordered td.br-cont td.br-t-r td,
 .contentMain td.wrapper.last table.column table.subWrapper.bordered td.br-cont td.br-t-r td {
-  border-top: 2px solid #082f54;
-  border-right: 2px solid #082f54;
+  border-top: 2px solid #eb9928;
+  border-right: 2px solid #eb9928;
 }
 
 .contentMain td.wrapper.last table.columns table.subWrapper.quoted td,
