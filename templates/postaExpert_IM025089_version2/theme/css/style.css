@@ -1170,8 +1170,12 @@ ul {
   margin: 0px;
   padding-left: 10px;
   padding-bottom: 10px;
-  mso-margin-left-alt: 10px;
   mso-margin-bottom-alt: 10px;
+}
+
+ul li {
+  list-style-type: square;
+  mso-special-format: bullet;
 }
 
 .header {
