@@ -1344,14 +1344,14 @@ ul li {
 
 .contentMain td.wrapper.last table.columns table.subWrapper.bordered td.title-cont td.title-display,
 .contentMain td.wrapper.last table.column table.subWrapper.bordered td.title-cont td.title-display {
-  background-color: #034167;
+  background-color: #eb9928;
   vertical-align: middle;
   overflow: hidden;
 }
 
 .contentMain td.wrapper.last table.columns table.subWrapper.bordered td.title-cont td.title-display td,
 .contentMain td.wrapper.last table.column table.subWrapper.bordered td.title-cont td.title-display td {
-  color: #ffffff;
+  color: #034167;
   font-size: 12px;
   line-height: 16px;
   text-align: center;
