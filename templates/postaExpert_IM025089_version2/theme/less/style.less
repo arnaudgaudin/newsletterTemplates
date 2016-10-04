@@ -184,7 +184,7 @@ ul {
 	//pour tester BGI dans outlook :
 	//https://www.campaignmonitor.com/blog/email-marketing/2010/12/updated-applying-a-background-image-to-html-email/
 	td.wrapper.first {
-		vertical-align: bottom;
+		vertical-align: middle;
 		table.columns td, table.column td { padding-bottom: 0px; }
 		table.subWrapper td {
 			padding: (@wrapperPad / 2) (@textPad / 2) @wrapperPad @textPad;
@@ -193,13 +193,14 @@ ul {
 				font-size: floor(@baseFontSize * 1.10);
 				line-height: floor(@baseFontSize * 1.10 * 1.25);
 				//hauteur de base pour aligner le contenu : 275 moins padding vertical
-				height: (275px - @wrapperPad * 1.5);
-				-premailer-height: unit((275px - @wrapperPad * 1.5));
+				// height: (275px - @wrapperPad * 1.5);
+				// -premailer-height: unit((275px - @wrapperPad * 1.5));
 			}
 			&.img-cont {
-				padding: 0px;
-				height: 315px;
-				-premailer-height: 315;
+				// padding: 0px;
+				padding: (@wrapperPad / 4) (@textPad / 4) 0px 0px;
+				height: 271px;
+				-premailer-height: 271;
 			}
 		}
 
@@ -335,7 +336,8 @@ ul {
 					font-size: ceil(@baseFontSize * 1.10 * 0.9) !important;
 					line-height: ceil(@baseFontSize * 1.10 * 0.9 * 1.25) !important;
 				}
-				&.img-cont { padding: 0px !important; }
+				// &.img-cont { padding: 0px !important; }
+				&.img-cont { padding: (@wrapperPadCollapse / 2) 0px 0px 0px !important; }
 			}
 			// &, table.columns, table.column, table.subWrapper, table.subWrapper td.text-cont, table.subWrapper td.img-cont { height: auto !important; }
 			table.subWrapper td.text-cont, table.subWrapper td.img-cont { height: auto !important; }
