@@ -1283,7 +1283,7 @@ ul li {
 }
 
 .contentMain td.wrapper.first {
-  vertical-align: bottom;
+  vertical-align: middle;
 }
 
 .contentMain td.wrapper.first table.columns td,
@@ -1299,14 +1299,12 @@ ul li {
   vertical-align: middle;
   font-size: 15px;
   line-height: 19px;
-  height: 245px;
-  -premailer-height: 245;
 }
 
 .contentMain td.wrapper.first table.subWrapper td.img-cont {
-  padding: 0px;
-  height: 315px;
-  -premailer-height: 315;
+  padding: 5px 10px 0px 0px;
+  height: 271px;
+  -premailer-height: 271;
 }
 
 .contentMain td.wrapper.last table.columns td,
@@ -1841,7 +1839,7 @@ ul li {
   }
 
   table[class="body"] .contentMain td.wrapper.first table.subWrapper td.img-cont {
-    padding: 0px !important;
+    padding: 5px 0px 0px 0px !important;
   }
 
   table[class="body"] .contentMain td.wrapper.first table.subWrapper td.text-cont,
