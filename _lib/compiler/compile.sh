@@ -96,4 +96,8 @@ perl -pi -e 's/\/\*DEL\{\{\*\/.+?\/\*\}\}DEL\*\///g;' newsletter-inline-postanov
 #test pour multiline, à débugguer
 #<!--DEL\{\{-->\n(?s).+?\n<!--\}\}DEL-->
 
+#Correction bug Premailer sur > dans les Styles
+perl -pi -e 's/&gt;/>/g;' newsletter-inline.html
+perl -pi -e 's/&gt;/>/g;' newsletter-inline-postanova.html
+
 echo "That's all folks !"
