@@ -635,8 +635,16 @@ a {
 	&, td.expander { background: @nlCntEtuBackground; }
 	.newsletterInnerTextColor(@nlCntEtuText);
 	.text {
-		color: mix(@nlCntEtuBackground, @nlCntEtuText, 25%);
-		.important { color: mix(@nlCntEtuBackground, @nlCntEtuText, 25%) !important; }
+		&, td {
+			color: mix(@nlCntEtuBackground, @nlCntEtuText, 10%);
+			.important { color: mix(@nlCntEtuBackground, @nlCntEtuText, 10%) !important; }
+		}
+	}
+	.source {
+		&, td {
+			color: mix(@nlCntEtuBackground, @nlCntEtuText, 25%);
+			.important { color: mix(@nlCntEtuBackground, @nlCntEtuText, 25%) !important; }
+		}
 	}
 }
 
