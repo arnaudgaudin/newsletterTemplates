@@ -1899,11 +1899,23 @@ h6 a:active .important,
   color: #ffffff !important;
 }
 
-.contentEtude .text {
+.contentEtude .text,
+.contentEtude .text td {
+  color: #edeef0;
+}
+
+.contentEtude .text .important,
+.contentEtude .text td .important {
+  color: #edeef0 !important;
+}
+
+.contentEtude .source,
+.contentEtude .source td {
   color: #d3d6d9;
 }
 
-.contentEtude .text .important {
+.contentEtude .source .important,
+.contentEtude .source td .important {
   color: #d3d6d9 !important;
 }
 
