@@ -56,6 +56,7 @@ perl -pi -e 's/}}##/?>/g;' newsletter-inline-postanova.html
 
 #Remplacement des attributs additionnels Premailer
 perl -pi -e 's/-premailer-background/background/g;' newsletter-inline-postanova.html
+perl -pi -e 's/-premailer-float/float/g;' newsletter-inline-postanova.html
 perl -pi -e 's/-premailer-border/border/g;' newsletter-inline-postanova.html
 perl -pi -e 's/( ?)-premailer-hidden( ?)//g;' newsletter-inline-postanova.html
 
