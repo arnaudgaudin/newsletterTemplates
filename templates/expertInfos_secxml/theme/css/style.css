@@ -1519,7 +1519,7 @@ img.faicon {
 }
 
 .contentEtude .source td {
-  padding-top: 0px;
+  padding-top: 5px;
   font-size: 11px;
   line-height: 14px;
   font-style: italic;
@@ -2479,7 +2479,7 @@ hr {
 
   table[class="body"] .contentEtude .wrapper table.columns .source td,
   table[class="body"] .contentEtude .wrapper table.column .source td {
-    padding: 0px !important;
+    padding: 2.5px 0 0 0 !important;
   }
 
   table[class="body"] .contentEtude .wrapper table.columns .value td,
