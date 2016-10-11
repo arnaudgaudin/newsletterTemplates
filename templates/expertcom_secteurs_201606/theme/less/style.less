@@ -178,19 +178,20 @@ a.large-button-link, table.columns .readMore td.buttonWrapper td, table.column .
 //réseaux sociaux
 .webicons td { text-align: center; }
 .webicon {
-	display: inline;
+	display: inline-block;
 	//pour supprimer les espaces
 	font-size: 0px;
 	mso-line-height-rule: exactly;
 	line-height: 0px;
-	img {
-		display: inline;
-		float: none;
-	}
 }
-img.spacer-webicon {
-	display: inline;
-	float: none;
+.webicons {
+	img {
+		background-color: #00f;
+		display: inline-block;
+		float: none;
+		-premailer-float: none;
+		&.spacer-webicon { background-color: #0f0; }
+	}
 }
 
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
