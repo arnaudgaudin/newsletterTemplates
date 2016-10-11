@@ -2476,15 +2476,23 @@ hr {
     padding: 4px 0 0 10px !important;
   }
 
+  table[class="body"] .contentEtude .wrapper table.columns .source td,
+  table[class="body"] .contentEtude .wrapper table.column .source td {
+    padding: 0 0 0 10px !important;
+  }
+
   table[class="body"] .contentEtude .wrapper table.columns .value td,
   table[class="body"] .contentEtude .wrapper table.column .value td,
   table[class="body"] .contentEtude .wrapper table.columns .text td,
-  table[class="body"] .contentEtude .wrapper table.column .text td {
+  table[class="body"] .contentEtude .wrapper table.column .text td,
+  table[class="body"] .contentEtude .wrapper table.columns .source td,
+  table[class="body"] .contentEtude .wrapper table.column .source td {
     border-bottom: 0px !important;
   }
 
   table[class="body"] .contentEtude .value,
-  table[class="body"] .contentEtude .text {
+  table[class="body"] .contentEtude .text,
+  table[class="body"] .contentEtude .source {
     width: auto !important;
     vertical-align: bottom !important;
     max-width: 50% !important;
