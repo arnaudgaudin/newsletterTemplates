@@ -1519,6 +1519,7 @@ img.faicon {
 }
 
 .contentEtude .source td {
+  padding-top: 0px;
   font-size: 11px;
   line-height: 14px;
   font-style: italic;
@@ -2478,21 +2479,18 @@ hr {
 
   table[class="body"] .contentEtude .wrapper table.columns .source td,
   table[class="body"] .contentEtude .wrapper table.column .source td {
-    padding: 0 0 0 10px !important;
+    padding: 0px !important;
   }
 
   table[class="body"] .contentEtude .wrapper table.columns .value td,
   table[class="body"] .contentEtude .wrapper table.column .value td,
   table[class="body"] .contentEtude .wrapper table.columns .text td,
-  table[class="body"] .contentEtude .wrapper table.column .text td,
-  table[class="body"] .contentEtude .wrapper table.columns .source td,
-  table[class="body"] .contentEtude .wrapper table.column .source td {
+  table[class="body"] .contentEtude .wrapper table.column .text td {
     border-bottom: 0px !important;
   }
 
   table[class="body"] .contentEtude .value,
-  table[class="body"] .contentEtude .text,
-  table[class="body"] .contentEtude .source {
+  table[class="body"] .contentEtude .text {
     width: auto !important;
     vertical-align: bottom !important;
     max-width: 50% !important;
