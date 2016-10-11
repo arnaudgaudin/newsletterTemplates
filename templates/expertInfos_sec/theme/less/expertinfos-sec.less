@@ -381,6 +381,7 @@ a.tiny-button-link, table.columns .readMore td.buttonWrapper td, table.column .r
 	.source {
 		// background-color: #00f;
 		td {
+			padding-top: 0px;
 			font-size: @fontSizeSmall;
 			line-height: floor(@fontSizeSmall * 1.33);
 			font-style: italic;
@@ -441,15 +442,15 @@ a.tiny-button-link, table.columns .readMore td.buttonWrapper td, table.column .r
 			table.columns, table.column {
 				.value td { padding: 0px !important; }
 				.text td { padding: (@etudeFontSize - @baseLineHeight - @baseFontSize / 2) 0 0 10px !important; }
-				.source td { padding: 0 0 0 10px !important; }
-				.value, .text, .source {
+				.source td { padding: 0px !important; }
+				.value, .text {
 					td { border-bottom: 0px !important; }
 				}
 			}
 		}
 
 		//déplacement du titre à droite de la valeur
-		.value, .text, .source {
+		.value, .text {
 			width: auto !important;
 			vertical-align: bottom !important;
 			max-width: 50% !important;
