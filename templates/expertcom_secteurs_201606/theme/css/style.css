@@ -4,7 +4,7 @@
 
 body,
 table.body {
-  background-color: #d8dbe0;
+  background-color: #556d78;
 }
 
 /**********************************************
@@ -1310,17 +1310,17 @@ table.column .readMore td.buttonWrapper td {
 }
 
 .contentOnline {
-  background-color: #d8dbe0;
+  background-color: #556d78;
 }
 
 .contentOnline,
 .contentOnline td,
 .contentOnline .inner {
-  color: #758090;
+  color: #b5c4cb;
 }
 
 .contentOnline a {
-  color: #758090;
+  color: #b5c4cb;
 }
 
 .contentOnline a .important,
@@ -1328,7 +1328,7 @@ table.column .readMore td.buttonWrapper td {
 .contentOnline a:hover,
 .contentOnline a:focus,
 .contentOnline a:active {
-  color: #758090 !important;
+  color: #b5c4cb !important;
 }
 
 .contentOnline td {
@@ -1423,17 +1423,17 @@ table.column .readMore td.buttonWrapper td {
 }
 
 .contentUnsubscribe {
-  background-color: #d8dbe0;
+  background-color: #556d78;
 }
 
 .contentUnsubscribe,
 .contentUnsubscribe td,
 .contentUnsubscribe .inner {
-  color: #758090;
+  color: #b5c4cb;
 }
 
 .contentUnsubscribe a {
-  color: #758090;
+  color: #b5c4cb;
 }
 
 .contentUnsubscribe a .important,
@@ -1441,7 +1441,7 @@ table.column .readMore td.buttonWrapper td {
 .contentUnsubscribe a:hover,
 .contentUnsubscribe a:focus,
 .contentUnsubscribe a:active {
-  color: #758090 !important;
+  color: #b5c4cb !important;
 }
 
 .contentUnsubscribe td {
