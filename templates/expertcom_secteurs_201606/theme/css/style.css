@@ -1275,20 +1275,16 @@ table.column .readMore td.buttonWrapper td {
 }
 
 .webicon {
-  display: inline;
+  display: inline-block;
   font-size: 0px;
   mso-line-height-rule: exactly;
   line-height: 0px;
 }
 
-.webicon img {
-  display: inline;
+.webicons img {
+  display: inline-block;
   float: none;
-}
-
-img.spacer-webicon {
-  display: inline;
-  float: none;
+  -premailer-float: none;
 }
 
 .header {
