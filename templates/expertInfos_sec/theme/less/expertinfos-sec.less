@@ -358,7 +358,7 @@ a.tiny-button-link, table.columns .readMore td.buttonWrapper td, table.column .r
 	// 	background-color: #00a;
 	// }
 
-	.value, .text {
+	.value, .text, .source {
 		width: 100%;
 		-premailer-width: 100%;
 	}
@@ -376,6 +376,15 @@ a.tiny-button-link, table.columns .readMore td.buttonWrapper td, table.column .r
 	.text {
 		// background-color: #0f0;
 		td { padding-top: 5px; }
+	}
+
+	.source {
+		// background-color: #00f;
+		td {
+			font-size: @fontSizeSmall;
+			line-height: floor(@fontSizeSmall * 1.33);
+			font-style: italic;
+		}
 	}
 
 	//suppression padding vertical
