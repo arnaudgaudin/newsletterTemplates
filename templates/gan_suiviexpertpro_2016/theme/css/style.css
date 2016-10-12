@@ -1234,7 +1234,7 @@ h6 {
 .contentDossier img,
 .contentActualites img,
 .contentBottom img {
-  float: none;
+  -premailer-float: none;
 }
 
 .row.bordered td.wrapper {
@@ -1268,7 +1268,7 @@ table.imgCont td {
 table.imgCont .icon-img,
 body table.imgCont img {
   display: inline;
-  float: none;
+  -premailer-float: none;
 }
 
 table.imgCont .icon-img {
