@@ -214,6 +214,7 @@ table.secondary {
 	img {
 		display: inline;
 		float: none;
+		-premailer-float: none;
 	}
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
@@ -288,6 +289,7 @@ table.secondary {
 				img.button_play {
 					display: inline;
 					float: none;
+					-premailer-float: none;
 					vertical-align: bottom;
 				}
 			}
@@ -301,6 +303,7 @@ table.secondary {
 				img.les_echos {
 					display: inline;
 					float: none;
+					-premailer-float: none;
 					vertical-align: bottom;
 				}
 			}
@@ -343,7 +346,10 @@ table.secondary {
 // contentALaUne area
 // -------------------------
 .contentALaUne {
-	img { float: none; }
+	img {
+		float: none;
+		-premailer-float: none;
+	}
 	
 	//réduction décalage vertical
 	td.wrapper { padding-top: (@wrapperPad / 2); }
@@ -406,7 +412,10 @@ table.secondary {
 .contentProjet {
 	background-color: @colorBoosterHealth4;
 	
-	img { float: none; }
+	img {
+		float: none;
+		-premailer-float: none;
+	}
 
 	table.columns, table.column {
 		.subWrapper {
