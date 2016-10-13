@@ -523,6 +523,7 @@ span.center {
 img.center {
   margin: 0 auto;
   float: none;
+  -premailer-float: none;
 }
 
 .show-for-small,
@@ -1229,6 +1230,7 @@ h6 {
 .webicon img {
   display: inline;
   float: none;
+  -premailer-float: none;
   border-radius: 5px;
 }
 
@@ -2003,6 +2005,7 @@ table.body {
 img.faicon {
   display: inline;
   float: none;
+  -premailer-float: none;
 }
 
 img.faicon {
