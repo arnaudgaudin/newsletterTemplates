@@ -20,7 +20,10 @@ h1, h2, h3, h4, h5, h6 { line-height: 1.1; }
 
 	//suppression décalages liens images
 	a { line-height: 0; }
-	img { float: none; }
+	img {
+		float: none;
+		-premailer-float: none;
+	}
 
 	//rajout fond dans la colonne de gauche
 	.sub-columns.first { background-color: @colorGan1; }

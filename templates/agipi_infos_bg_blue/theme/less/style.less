@@ -280,6 +280,7 @@ table.separator {
 	img {
 		display: inline;
 		float: none;
+		-premailer-float: none;
 	}
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
@@ -341,7 +342,10 @@ table.separator {
 // contentALaUne area
 // -------------------------
 .contentALaUne {
-	img { float: none; }
+	img {
+		float: none;
+		-premailer-float: none;
+	}
 
 	.title {
 		color: @colorAgipi1;

@@ -159,7 +159,10 @@ a.medium-button-link, table.columns .readMore td.buttonWrapper td, table.column 
 
 //pas de float pour image contenus dans liens en block ou les liens images
 .link_box, .contentRef, .contentBottom {
-	img { float: none; }
+	img {
+		float: none;
+		-premailer-float: none;
+	}
 }
 
 //icone en image
@@ -172,6 +175,7 @@ table.imgCont {
 	body & img {
 		display: inline;
 		float: none;
+		-premailer-float: none;
 	}
 
 	.icon-img {
@@ -214,11 +218,13 @@ table.imgCont {
 	img {
 		display: inline;
 		float: none;
+		-premailer-float: none;
 	}
 }
 img.spacer-webicon {
 	display: inline;
 	float: none;
+	-premailer-float: none;
 }
 
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {

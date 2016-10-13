@@ -61,7 +61,10 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 
 //pas de float pour image contenus dans liens en block ou les liens images
 .link_box, .contentALaUne, .contentDossier, .contentActualites, .contentBottom {
-	img { float: none; }
+	img {
+		float: none;
+		-premailer-float: none;
+	}
 }
 
 //gestion row avec bordures de séparation
@@ -97,6 +100,7 @@ table.imgCont {
 	body & img {
 		display: inline;
 		float: none;
+		-premailer-float: none;
 	}
 
 	.icon-img {
