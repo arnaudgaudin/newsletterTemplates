@@ -523,6 +523,7 @@ span.center {
 img.center {
   margin: 0 auto;
   float: none;
+  -premailer-float: none;
 }
 
 .show-for-small,
@@ -1210,6 +1211,7 @@ table.subWrapper > tbody > tr > td {
 .webicon img {
   display: inline;
   float: none;
+  -premailer-float: none;
 }
 
 img.webicon-spacer {
@@ -1218,6 +1220,7 @@ img.webicon-spacer {
   mso-line-height-rule: exactly;
   line-height: 0px;
   float: none;
+  -premailer-float: none;
 }
 
 .header {
