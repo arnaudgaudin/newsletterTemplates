@@ -523,6 +523,7 @@ span.center {
 img.center {
   margin: 0 auto;
   float: none;
+  -premailer-float: none;
 }
 
 .show-for-small,
@@ -1254,6 +1255,7 @@ table.column .readMore td.buttonWrapper td {
 .contentRef img,
 .contentBottom img {
   float: none;
+  -premailer-float: none;
 }
 
 table.imgCont {
@@ -1268,6 +1270,7 @@ table.imgCont .icon-img,
 body table.imgCont img {
   display: inline;
   float: none;
+  -premailer-float: none;
 }
 
 table.imgCont .icon-img {
@@ -1292,11 +1295,13 @@ table.imgCont .icon-img {
 .webicon img {
   display: inline;
   float: none;
+  -premailer-float: none;
 }
 
 img.spacer-webicon {
   display: inline;
   float: none;
+  -premailer-float: none;
 }
 
 .header {
