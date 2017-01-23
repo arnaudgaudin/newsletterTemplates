@@ -523,6 +523,7 @@ span.center {
 img.center {
   margin: 0 auto;
   float: none;
+  -premailer-float: none;
 }
 
 .show-for-small,
@@ -1234,6 +1235,7 @@ h6 {
 .contentDossier img,
 .contentActualites img,
 .contentBottom img {
+  float: none;
   -premailer-float: none;
 }
 
@@ -1268,6 +1270,7 @@ table.imgCont td {
 table.imgCont .icon-img,
 body table.imgCont img {
   display: inline;
+  float: none;
   -premailer-float: none;
 }
 
