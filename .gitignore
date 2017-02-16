@@ -11,3 +11,4 @@ dmCorePlugin/test/project/log/*
 /.buildpath
 /.project
 htdocs/modeles/*
+htdocs/ExpertCom/*
