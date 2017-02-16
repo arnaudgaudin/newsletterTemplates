@@ -23,6 +23,7 @@ if($templatesGit != false) {
 
 <h2>Templates gérés via FTP</h2>
 <h3>Peuvent être overridés via FTP.</h3>
+<ul>
 <?php
 $templatesFtp = scandir('ExpertCom');
 if($templatesFtp != false) {
@@ -33,5 +34,6 @@ if($templatesFtp != false) {
 	}
 }
 ?>
+</ul>
 </body>
 </html>
