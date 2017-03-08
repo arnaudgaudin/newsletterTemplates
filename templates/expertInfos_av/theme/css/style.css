@@ -1407,6 +1407,7 @@ img.faicon {
 .body .contentBottom table.round td.first,
 .body .contentBottom table.round td.last {
   background-color: transparent;
+  -premailer-background: transparent;
 }
 
 .contentBottom table.round td,
