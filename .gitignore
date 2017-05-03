@@ -12,3 +12,4 @@ dmCorePlugin/test/project/log/*
 /.project
 htdocs/modeles/*
 htdocs/ExpertCom/*
+htdocs/Publishing/*
