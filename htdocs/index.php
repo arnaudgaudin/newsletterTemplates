@@ -23,6 +23,8 @@ if($templatesGit != false) {
 
 <h2>Templates gérés via FTP</h2>
 <h3>Peuvent être overridés via FTP.</h3>
+
+<h4>Templates ExpertCom</h4>
 <ul>
 <?php
 $templatesFtp = scandir('ExpertCom');
@@ -30,6 +32,20 @@ if($templatesFtp != false) {
 	foreach ($templatesFtp as $templateFtp) {
 		if(strlen($templateFtp) > 2) {
 			echo '<li><a href="/ExpertCom/' . $templateFtp . '/newsletter.html">' . $templateFtp . '</a></li>';
+		}
+	}
+}
+?>
+</ul>
+
+<h4>Templates Publishing</h4>
+<ul>
+<?php
+$templatesFtp = scandir('Publishing');
+if($templatesFtp != false) {
+	foreach ($templatesFtp as $templateFtp) {
+		if(strlen($templateFtp) > 2) {
+			echo '<li><a href="/Publishing/' . $templateFtp . '/newsletter.html">' . $templateFtp . '</a></li>';
 		}
 	}
 }
