@@ -1,0 +1,420 @@
+// theme's imports
+@import "import.less";
+
+// additionnal template's style which extends ink's style
+//cf propriétés MSO : https://gist.github.com/webtobesocial/ac9d052595b406d5a5c1
+
+
+// LAYOUT
+// --------------------------------------------------
+
+h1, h2, h3, h4, h5, h6 { mso-line-height-rule: exactly; }
+h1 { line-height: (@headingsFontSizeH1 * 1.1); }
+h2 { line-height: (@headingsFontSizeH2 * 1.1); }
+h3 { line-height: (@headingsFontSizeH3 * 1.1); }
+h4 { line-height: (@headingsFontSizeH4 * 1.1); }
+h5 { line-height: (@headingsFontSizeH5 * 1.1); }
+h6 { line-height: (@headingsFontSizeH6 * 1.1); }
+
+//gestion header
+.header {
+	background-color: @bodyBackground;
+	//réduction décalage vertical
+	td.wrapper { padding-top: (@wrapperPad / 2); }
+	// table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .header {
+		td.wrapper { padding-top: (@wrapperPad / 2) !important; }
+		// table.columns td, table.column td { padding-bottom: (@columnPad / 2) !important; }
+	}
+}
+
+//sur titres
+.preTitle {
+	display: block;
+	font-size: 12px;
+	text-transform: uppercase;
+	padding-bottom: 5px;
+	color: @colorGan1;
+	a { .newsletterLinkColor(@colorGan1); }
+}
+
+//tous les titres
+.title {
+	color: #000000;
+	a { .newsletterLinkColor(#000000); }
+	padding-bottom: 10px;
+	//on rajoute un padding de séparation lorsque précédé d'un readMore (utile pour articles)
+	.readMore + &, .readMore + * + & { padding-top: 10px; }
+}
+
+//lien de suivis
+.readMore {
+	padding-top: 5px;
+	text-align: right;
+	font-size: @fontSizeSmall;
+	margin: 0;
+	color: @colorGan1;
+	a { .newsletterLinkColor(@colorGan1); }
+}
+
+//pas de float pour image contenus dans liens en block ou les liens images
+.link_box, .contentALaUne, .contentDossier, .contentActualites, .contentBottom {
+	img {
+		float: none;
+		-premailer-float: none;
+	}
+}
+
+//gestion row avec bordures de séparation
+.row.bordered {
+	//suppression décalage en trop
+	td.wrapper { padding-top: 0px; }
+	table.columns td, table.column td { padding-bottom: 0px; }
+	td {
+		line-height: 0;
+		hr.border {
+			margin: 0;
+			//débuggage bordure pour PostaNova
+			background-color: transparent;
+			height: 0;
+			border-bottom: 1px solid @hrBorder;
+		}
+	}
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .row.bordered {
+		td.wrapper { padding-top: 0px !important; }
+		table.columns td, table.column td { padding-bottom: 0px !important; }
+	}
+}
+
+//icone en image
+table.imgCont {
+	td { padding: 0 0 5px 0; }
+	width: 100%;
+	
+	//pour forcer dans lotus
+	.icon-img,
+	body & img {
+		display: inline;
+		float: none;
+		-premailer-float: none;
+	}
+
+	.icon-img {
+		position: relative;
+		vertical-align: text-bottom;
+		line-height: 60px;
+		width: 60px !important;
+		height: 60px !important;
+	}
+}
+
+//override version firefox
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] table.imgCont {
+		td { padding: 0 10px 0 0 !important; }
+
+		width: auto !important;
+		float: left !important;
+
+		.icon-img {
+			display: block !important;
+			float: left !important;
+			width: 60px !important;
+			height: 60px !important;
+			//masquage image de test
+			&[data-type^="get"] { display: none !important; }
+		}
+	}
+}
+
+
+// contentOnline area
+// -------------------------
+.contentOnline {
+	background-color: @bodyBackground;
+	td {
+		font-size: @fontSizeSmall;
+		line-height: floor(@fontSizeSmall * 1.25);
+	}
+	//réduction décalage vertical en haut
+	td.wrapper { padding-top: (@wrapperPad / 2); }
+	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentOnline {
+		td.wrapper { padding-top: (@wrapperPad / 2) !important; }
+		table.columns td, table.column td { padding-bottom: (@columnPad / 2) !important; }
+	}
+}
+
+// contentMonth area
+// -------------------------
+.contentMonth {
+	//suppression décalage en trop
+	td.wrapper { padding-top: 0px; }
+	table.columns td, table.column td { padding-bottom: 0px; }
+
+	background-color: @bodyBackground;
+	.newsletterInnerTextColor(darken(@colorGan5, 30%));
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentMonth {
+		td.wrapper { padding-top: 0px !important; }
+		table.columns td, table.column td { padding-bottom: 0px !important; }
+	}
+}
+
+//contentPartenariat area
+// -------------------------
+@contentPartenariatImgHeight: 55px;
+.contentPartenariat {
+	.newsletterInnerTextColor(#fff);
+	td {
+		font-size: @fontSizeSmall;
+		line-height: floor(@fontSizeSmall * 1.25);
+	}
+
+	table.columns, table.column {
+		table.subWrapper {
+			width: 100%;
+			-premailer-width: 100%;
+			td.filler {
+				&, table.doubleLiner, table.doubleLiner td {
+					width: @textPad;
+					-premailer-width: unit(@textPad);
+				}
+			}
+		}
+		table.doubleLiner {
+			width: 100%;
+			-premailer-width: 100%;
+			td.first {
+				background-color: @colorGan1;
+				height: floor(@fontSizeSmall * 1.25);
+				-premailer-height: unit(floor(@fontSizeSmall * 1.25));
+				//36px correspont à la hauteur 
+				padding-top: ceil((36px - @fontSizeSmall * 1.25) / 2);
+				padding-bottom: floor((36px - @fontSizeSmall * 1.25) / 2);
+			}
+			td.last {
+				//hauteur image - 36
+				height: 19px;
+				-premailer-height: 19;
+			}
+		}
+	}
+
+	//suppression décalage en trop
+	td.wrapper { padding-top: 0px; }
+	table.columns td, table.column td { padding-bottom: 0px; }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentPartenariat {
+		td {
+			font-size: @fontSizeMini !important;
+			line-height: floor(@fontSizeMini * 1.25) !important;
+		}
+		
+		table.columns, table.column {
+			table.subWrapper {
+				width: 100% !important;
+				td.filler {
+					&, table.doubleLiner, table.doubleLiner td { width: @textPadCollapse !important; }
+				}
+			}
+			table.doubleLiner {
+				width: 100% !important;
+				td.first {
+					height: auto !important;
+					padding-top: ceil(@fontSizeSmall * 1.25 / 2) !important;
+					padding-bottom: floor(@fontSizeSmall * 1.25 / 2) !important;
+				}
+				td.last { height: auto !important; }
+			}
+		}
+
+		td.wrapper { padding-top: 0px !important; }
+		table.columns td, table.column td { padding-bottom: 0px !important; }
+	}
+}
+
+// contentALaUne area
+// -------------------------
+.contentALaUne {
+	.text { padding-top: 10px; }
+	//suppression décalage en trop
+	td.wrapper { padding-top: 0px; }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentALaUne {
+		td.wrapper { padding-top: 0px !important; }
+	}
+}
+
+// contentOffre area
+// -------------------------
+.contentOffre {
+	background-color: @colorGan6;
+	.newsletterInnerTextColor(#000000);
+	.preTitle, .title, .readMore {
+		color: @colorGan3;
+		a { .newsletterLinkColor(@colorGan3); }
+	}
+	&.alternate {
+		background-color: @colorGan3;
+		.newsletterInnerTextColor(#ffffff);
+		.preTitle, .title, .readMore {
+			color: @colorGan6;
+			a { .newsletterLinkColor(@colorGan6); }
+		}
+	}
+}
+
+// contentDossier area
+// -------------------------
+.contentDossier {
+	.text { padding-top: 10px; }
+}
+
+// contentPartenaire area
+// -------------------------
+.contentPartenaire {
+	// background-color: @colorGan7;
+	// .preTitle, .title, .readMore {
+	// 	color: #ffffff;
+	// 	a { .newsletterLinkColor(#ffffff); }
+	// }
+	// .newsletterInnerTextColor(#ffffff);
+	// .readMore { text-align: left; }
+}
+
+// contentBottom area
+// -------------------------
+.contentBottom {
+	.title {
+		text-align: center;
+		padding-bottom: 5px;
+	}
+	.text, .date {
+		font-size: @fontSizeSmall;
+		line-height: floor(@fontSizeSmall * 1.25);
+	}
+	.date {
+		font-weight: bold;
+		//on remet la couleur pour forcer sur iOS
+		color: @linkColor;
+		a { .newsletterLinkColor(@linkColor); }
+	}
+
+}
+//override version firefox
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentBottom {
+		td { &, .title { text-align: left !important; } }
+	}
+}
+
+// contentAuthor area
+// -------------------------
+.contentAuthor {
+	background-color: @colorGan1;
+	.newsletterInnerTextColor(#ffffff);
+
+	td {
+		font-size: @fontSizeSmall;
+		line-height: floor(@fontSizeSmall * 1.25);
+	}
+
+	img {
+		width: 160px;
+		height: 120px;
+	}
+
+
+	table.columns, table.column {
+		table.subWrapper {
+			td { padding-bottom: 0px; }
+		}
+	}
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentAuthor {
+		td {
+			font-size: @fontSizeMini !important;
+			line-height: floor(@fontSizeMini * 1.25) !important;
+		}
+		img {
+			width: 100% !important;
+			height: auto !important;
+		}
+		.text-pad-right { padding-left: 0px !important; }
+	}
+}
+
+
+// contentFooter area
+// -------------------------
+.contentFooter {
+	//réduction décalage vertical en haut
+	td.wrapper { padding-top: (@wrapperPad / 2); }
+	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+
+	a {
+		font-weight: bold;
+		.newsletterLinkColor(@colorGan1);
+	}
+	//placement à droite pour le dernier
+	.wrapper.last td {
+		text-align: right;
+	}
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentFooter {
+		td.wrapper { padding-top: (@wrapperPad / 2) !important; }
+		table.columns td, table.column td { padding-bottom: (@columnPad / 2) !important; }
+	}
+}
+
+// contentLegal area
+// -------------------------
+.contentLegal {
+	background-color: @bodyBackground;
+	td {
+		font-size: @fontSizeMini;
+		line-height: floor(@fontSizeMini * 1.25);
+	}
+	//réduction décalage vertical
+	td.wrapper { padding-top: (@wrapperPad / 2); }
+	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentLegal {
+		td.wrapper { padding-top: (@wrapperPad / 2) !important; }
+		table.columns td, table.column td { padding-bottom: (@columnPad / 2) !important; }
+	}
+}
+
+// contentUnsubscribe area
+// -------------------------
+.contentUnsubscribe {
+	//réduction décalage vertical
+	td.wrapper { padding-top: 0; }
+	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+
+	background-color: @bodyBackground;
+	.newsletterInnerTextColor(darken(@colorGan5, 30%));
+	td {
+		font-size: @fontSizeSmall;
+		line-height: floor(@fontSizeSmall * 1.25);
+	}
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentUnsubscribe {
+		td.wrapper { padding-top: 0 !important; }
+		table.columns td, table.column td { padding-bottom: (@columnPad / 2) !important; }
+	}
+}
