@@ -12,11 +12,11 @@ echo "compressing gif files ..."
 # gifsicle -v -O3 --lossy=800 --colors=96  ${PWD}/_sources/anim_nature.gif      -o ${PWD}/theme/images/nlcv_nature.gif
 # gifsicle -v -O3 --lossy=200 --colors=192 ${PWD}/_sources/anim_projet.gif      -o ${PWD}/theme/images/nlcv_projet.gif
 # gifsicle -v -O3 --lossy=800 --colors=128 ${PWD}/_sources/anim_sommet.gif      -o ${PWD}/theme/images/nlcv_sommet.gif
-gifsicle -v -O3 --lossy=200 --colors=192 ${PWD}/_sources/anim_feerique.gif      -o ${PWD}/theme/images/nlcv_feerique.gif
-gifsicle -v -O3 --lossy=200 --colors=192 ${PWD}/_sources/anim_mongolfiere.gif   -o ${PWD}/theme/images/nlcv_mongolfiere.gif
-gifsicle -v -O3 --lossy=200 --colors=192 ${PWD}/_sources/anim_neige.gif         -o ${PWD}/theme/images/nlcv_neige.gif
-gifsicle -v -O3 --lossy=200 --colors=192 ${PWD}/_sources/anim_ponton.gif        -o ${PWD}/theme/images/nlcv_ponton.gif
-gifsicle -v -O3 --lossy=200 --colors=192 ${PWD}/_sources/anim_recette.gif       -o ${PWD}/theme/images/nlcv_recette.gif
+giflossy -v -O4 --lossy=300 -k16 -i ${PWD}/_sources/anim_feerique.gif      -o ${PWD}/theme/images/nlcv_feerique.gif
+# gifsicle -v -O3 --lossy=200 --colors=192 ${PWD}/_sources/anim_mongolfiere.gif   -o ${PWD}/theme/images/nlcv_mongolfiere.gif
+# gifsicle -v -O3 --lossy=200 --colors=192 ${PWD}/_sources/anim_neige.gif         -o ${PWD}/theme/images/nlcv_neige.gif
+# gifsicle -v -O3 --lossy=200 --colors=192 ${PWD}/_sources/anim_ponton.gif        -o ${PWD}/theme/images/nlcv_ponton.gif
+# gifsicle -v -O3 --lossy=200 --colors=192 ${PWD}/_sources/anim_recette.gif       -o ${PWD}/theme/images/nlcv_recette.gif
 
 
 echo "compressing gif files for sites ..."
@@ -27,11 +27,11 @@ echo "compressing gif files for sites ..."
 # gifsicle -v -O3 --lossy=200 --colors=96  ${PWD}/_sources/anim_nature_site.gif      -o ${PWD}/theme/images/stcv_nature.gif
 # gifsicle -v -O3 --lossy=50  --colors=192 ${PWD}/_sources/anim_projet_site.gif      -o ${PWD}/theme/images/stcv_projet.gif
 # gifsicle -v -O3 --lossy=200 --colors=128 ${PWD}/_sources/anim_sommet_site.gif      -o ${PWD}/theme/images/stcv_sommet.gif
-gifsicle -v -O3 --lossy=200 --colors=192 ${PWD}/_sources/anim_feerique_site.gif      -o ${PWD}/theme/images/stcv_feerique.gif
-gifsicle -v -O3 --lossy=200 --colors=192 ${PWD}/_sources/anim_mongolfiere_site.gif   -o ${PWD}/theme/images/stcv_mongolfiere.gif
-gifsicle -v -O3 --lossy=200 --colors=192 ${PWD}/_sources/anim_neige_site.gif         -o ${PWD}/theme/images/stcv_neige.gif
-gifsicle -v -O3 --lossy=200 --colors=192 ${PWD}/_sources/anim_ponton_site.gif        -o ${PWD}/theme/images/stcv_ponton.gif
-gifsicle -v -O3 --lossy=200 --colors=192 ${PWD}/_sources/anim_recette_site.gif       -o ${PWD}/theme/images/stcv_recette.gif
+# gifsicle -v -O3 --lossy=200 --colors=192 ${PWD}/_sources/anim_feerique_site.gif      -o ${PWD}/theme/images/stcv_feerique.gif
+# gifsicle -v -O3 --lossy=200 --colors=192 ${PWD}/_sources/anim_mongolfiere_site.gif   -o ${PWD}/theme/images/stcv_mongolfiere.gif
+# gifsicle -v -O3 --lossy=200 --colors=192 ${PWD}/_sources/anim_neige_site.gif         -o ${PWD}/theme/images/stcv_neige.gif
+# gifsicle -v -O3 --lossy=200 --colors=192 ${PWD}/_sources/anim_ponton_site.gif        -o ${PWD}/theme/images/stcv_ponton.gif
+# gifsicle -v -O3 --lossy=200 --colors=192 ${PWD}/_sources/anim_recette_site.gif       -o ${PWD}/theme/images/stcv_recette.gif
 
 
 # Anciennes commandes de compression, pour référence si besoin futur
