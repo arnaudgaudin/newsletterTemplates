@@ -15,7 +15,7 @@ echo "compressing gif files ..."
 # giflossy -v -O3 --lossy=300 -k64 ${PWD}/_sources/anim_feerique.gif `seq -f "#%g" 0 3 139` -o ${PWD}/theme/images/nlcv_feerique.gif
 # giflossy -v -O3 --lossy=600 -k192 ${PWD}/_sources/anim_mongolfiere.gif `seq -f "#%g" 0 2 99` -o ${PWD}/theme/images/nlcv_mongolfiere.gif
 # giflossy -v -O3 --lossy=800 -k128 ${PWD}/_sources/anim_neige.gif `seq -f "#%g" 0 3 139` -o ${PWD}/theme/images/nlcv_neige.gif
-# giflossy -v -O3 --lossy=200 -k192 ${PWD}/_sources/anim_ponton.gif        -o ${PWD}/theme/images/nlcv_ponton.gif
+giflossy -v -O3 --lossy=600 -k192 ${PWD}/_sources/anim_ponton.gif `seq -f "#%g" 0 3 139` -o ${PWD}/theme/images/nlcv_ponton.gif
 # giflossy -v -O3 --lossy=200 -k192 ${PWD}/_sources/anim_recette.gif       -o ${PWD}/theme/images/nlcv_recette.gif
 
 
@@ -29,8 +29,8 @@ echo "compressing gif files for sites ..."
 # giflossy -v -O3 --lossy=200 -k128 ${PWD}/_sources/anim_sommet_site.gif      -o ${PWD}/theme/images/stcv_sommet.gif
 # giflossy -v -O3 --lossy=100 -k64 ${PWD}/_sources/anim_feerique_site.gif `seq -f "#%g" 0 2 139` -o ${PWD}/theme/images/stcv_feerique.gif
 # giflossy -v -O3 --lossy=200 -k192 ${PWD}/_sources/anim_mongolfiere_site.gif `seq -f "#%g" 0 2 99` -o ${PWD}/theme/images/stcv_mongolfiere.gif
-# giflossy -v -O3 --lossy=200 -k128 ${PWD}/_sources/anim_neige_site.gif `seq -f "#%g" 0 2 139` -o ${PWD}/theme/images/stcv_neige.gif
-# giflossy -v -O3 --lossy=200 -k192 ${PWD}/_sources/anim_ponton_site.gif        -o ${PWD}/theme/images/stcv_ponton.gif
+# giflossy -v -O3 --lossy=250 -k128 ${PWD}/_sources/anim_neige_site.gif `seq -f "#%g" 0 2 139` -o ${PWD}/theme/images/stcv_neige.gif
+giflossy -v -O3 --lossy=200 -k192 ${PWD}/_sources/anim_ponton_site.gif `seq -f "#%g" 0 2 139` -o ${PWD}/theme/images/stcv_ponton.gif
 # giflossy -v -O3 --lossy=200 -k192 ${PWD}/_sources/anim_recette_site.gif       -o ${PWD}/theme/images/stcv_recette.gif
 
 
