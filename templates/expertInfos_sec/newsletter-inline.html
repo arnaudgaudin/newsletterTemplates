@@ -132,7 +132,7 @@ motifsec=UCase(request.QueryString("motifsec"))
 
 Select Case motifsec
 	Case  "BTP"
-		type_profil = 5
+		secteur_type_profil = 5
 		secteur_color = colorParsing.Item("nlSecColorBTP")
 		secteur_color_darken10 = colorParsing.Item("nlSecColorBTPdarken10")
 		secteur_color_darken12 = colorParsing.Item("nlSecColorBTPdarken12")
@@ -148,7 +148,7 @@ Select Case motifsec
 		secteur_etude3_valeur = secteur_BTP_etude3_valeur
 		secteur_etude3_source = secteur_BTP_etude3_source
 	Case  "SAN"
-		type_profil = 6
+		secteur_type_profil = 6
 		secteur_color = colorParsing.Item("nlSecColorSAN")
 		secteur_color_darken10 = colorParsing.Item("nlSecColorSANdarken10")
 		secteur_color_darken12 = colorParsing.Item("nlSecColorSANdarken12")
@@ -164,7 +164,7 @@ Select Case motifsec
 		secteur_etude3_valeur = secteur_SAN_etude3_valeur
 		secteur_etude3_source = secteur_SAN_etude3_source
 	Case  "TRA"
-		type_profil = 7
+		secteur_type_profil = 7
 		secteur_color = colorParsing.Item("nlSecColorTRA")
 		secteur_color_darken10 = colorParsing.Item("nlSecColorTRAdarken10")
 		secteur_color_darken12 = colorParsing.Item("nlSecColorTRAdarken12")
@@ -180,7 +180,7 @@ Select Case motifsec
 		secteur_etude3_valeur = secteur_TRA_etude3_valeur
 		secteur_etude3_source = secteur_TRA_etude3_source
 	Case  "COM"
-		type_profil = 8
+		secteur_type_profil = 8
 		secteur_color = colorParsing.Item("nlSecColorCOM")
 		secteur_color_darken10 = colorParsing.Item("nlSecColorCOMdarken10")
 		secteur_color_darken12 = colorParsing.Item("nlSecColorCOMdarken12")
@@ -196,7 +196,7 @@ Select Case motifsec
 		secteur_etude3_valeur = secteur_COM_etude3_valeur
 		secteur_etude3_source = secteur_COM_etude3_source
 	Case  "HCR"
-		type_profil = 9
+		secteur_type_profil = 9
 		secteur_color = colorParsing.Item("nlSecColorHCR")
 		secteur_color_darken10 = colorParsing.Item("nlSecColorHCRdarken10")
 		secteur_color_darken12 = colorParsing.Item("nlSecColorHCRdarken12")
@@ -212,7 +212,7 @@ Select Case motifsec
 		secteur_etude3_valeur = secteur_HCR_etude3_valeur
 		secteur_etude3_source = secteur_HCR_etude3_source
 	Case  "ECO"
-		type_profil = 10
+		secteur_type_profil = 10
 		secteur_color = colorParsing.Item("nlSecColorECO")
 		secteur_color_darken10 = colorParsing.Item("nlSecColorECOdarken10")
 		secteur_color_darken12 = colorParsing.Item("nlSecColorECOdarken12")
@@ -227,6 +227,38 @@ Select Case motifsec
 		secteur_etude3_titre = secteur_ECO_etude3_titre
 		secteur_etude3_valeur = secteur_ECO_etude3_valeur
 		secteur_etude3_source = secteur_ECO_etude3_source
+	Case  "AUTO"
+		secteur_type_profil = 20
+		secteur_color = colorParsing.Item("nlSecColorAUTO")
+		secteur_color_darken10 = colorParsing.Item("nlSecColorAUTOdarken10")
+		secteur_color_darken12 = colorParsing.Item("nlSecColorAUTOdarken12")
+		secteur_essentiel = "L'essentiel de"
+		secteur_title = "l'automobile"
+		secteur_etude1_titre = secteur_AUTO_etude1_titre
+		secteur_etude1_valeur = secteur_AUTO_etude1_valeur
+		secteur_etude1_source = secteur_AUTO_etude1_source
+		secteur_etude2_titre = secteur_AUTO_etude2_titre
+		secteur_etude2_valeur = secteur_AUTO_etude2_valeur
+		secteur_etude2_source = secteur_AUTO_etude2_source
+		secteur_etude3_titre = secteur_AUTO_etude3_titre
+		secteur_etude3_valeur = secteur_AUTO_etude3_valeur
+		secteur_etude3_source = secteur_AUTO_etude3_source
+	Case  "IMMO"
+		secteur_type_profil = 21
+		secteur_color = colorParsing.Item("nlSecColorIMMO")
+		secteur_color_darken10 = colorParsing.Item("nlSecColorIMMOdarken10")
+		secteur_color_darken12 = colorParsing.Item("nlSecColorIMMOdarken12")
+		secteur_essentiel = "L'essentiel de"
+		secteur_title = "l'immobilier"
+		secteur_etude1_titre = secteur_IMMO_etude1_titre
+		secteur_etude1_valeur = secteur_IMMO_etude1_valeur
+		secteur_etude1_source = secteur_IMMO_etude1_source
+		secteur_etude2_titre = secteur_IMMO_etude2_titre
+		secteur_etude2_valeur = secteur_IMMO_etude2_valeur
+		secteur_etude2_source = secteur_IMMO_etude2_source
+		secteur_etude3_titre = secteur_IMMO_etude3_titre
+		secteur_etude3_valeur = secteur_IMMO_etude3_valeur
+		secteur_etude3_source = secteur_IMMO_etude3_source
 	Case Else
 		secteur_color = "#1f1f1f"
 		secteur_color_darken10 = "#1a1a1a"
@@ -1688,7 +1720,7 @@ background: **((secteur_color_darken10))** !important;
 								<!-- ALAUNE START -->
 								<!--{{%%{{
 								if isDemo=True then
-									sql_Flash_Infos="SELECT MAX(ID_FLASH_INFOS) FROM FLASHS_INFOS where type_flash="&type_profil&" and frequence_flash=3"
+									sql_Flash_Infos="SELECT MAX(ID_FLASH_INFOS) FROM FLASHS_INFOS where type_flash="&secteur_type_profil&" and frequence_flash=3"
 									set rs_Flash_Infos=conn.execute(sql_Flash_Infos)
 									ID_FLASH_INFOS=rs_Flash_Infos(0)
 
