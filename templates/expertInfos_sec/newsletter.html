@@ -132,6 +132,7 @@ motifsec=UCase(request.QueryString("motifsec"))
 
 Select Case motifsec
 	Case  "BTP"
+		type_profil = 5
 		secteur_color = colorParsing.Item("nlSecColorBTP")
 		secteur_color_darken10 = colorParsing.Item("nlSecColorBTPdarken10")
 		secteur_color_darken12 = colorParsing.Item("nlSecColorBTPdarken12")
@@ -147,6 +148,7 @@ Select Case motifsec
 		secteur_etude3_valeur = secteur_BTP_etude3_valeur
 		secteur_etude3_source = secteur_BTP_etude3_source
 	Case  "SAN"
+		type_profil = 6
 		secteur_color = colorParsing.Item("nlSecColorSAN")
 		secteur_color_darken10 = colorParsing.Item("nlSecColorSANdarken10")
 		secteur_color_darken12 = colorParsing.Item("nlSecColorSANdarken12")
@@ -162,6 +164,7 @@ Select Case motifsec
 		secteur_etude3_valeur = secteur_SAN_etude3_valeur
 		secteur_etude3_source = secteur_SAN_etude3_source
 	Case  "TRA"
+		type_profil = 7
 		secteur_color = colorParsing.Item("nlSecColorTRA")
 		secteur_color_darken10 = colorParsing.Item("nlSecColorTRAdarken10")
 		secteur_color_darken12 = colorParsing.Item("nlSecColorTRAdarken12")
@@ -177,6 +180,7 @@ Select Case motifsec
 		secteur_etude3_valeur = secteur_TRA_etude3_valeur
 		secteur_etude3_source = secteur_TRA_etude3_source
 	Case  "COM"
+		type_profil = 8
 		secteur_color = colorParsing.Item("nlSecColorCOM")
 		secteur_color_darken10 = colorParsing.Item("nlSecColorCOMdarken10")
 		secteur_color_darken12 = colorParsing.Item("nlSecColorCOMdarken12")
@@ -192,6 +196,7 @@ Select Case motifsec
 		secteur_etude3_valeur = secteur_COM_etude3_valeur
 		secteur_etude3_source = secteur_COM_etude3_source
 	Case  "HCR"
+		type_profil = 9
 		secteur_color = colorParsing.Item("nlSecColorHCR")
 		secteur_color_darken10 = colorParsing.Item("nlSecColorHCRdarken10")
 		secteur_color_darken12 = colorParsing.Item("nlSecColorHCRdarken12")
@@ -207,6 +212,7 @@ Select Case motifsec
 		secteur_etude3_valeur = secteur_HCR_etude3_valeur
 		secteur_etude3_source = secteur_HCR_etude3_source
 	Case  "ECO"
+		type_profil = 10
 		secteur_color = colorParsing.Item("nlSecColorECO")
 		secteur_color_darken10 = colorParsing.Item("nlSecColorECOdarken10")
 		secteur_color_darken12 = colorParsing.Item("nlSecColorECOdarken12")
