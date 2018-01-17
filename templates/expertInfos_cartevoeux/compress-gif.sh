@@ -6,13 +6,13 @@ echo "Hi, $USER!"
 #Pour réduire nbre images : `seq -f "#%g" 0 2 199`
 echo "compressing gif files ..."
 # Anciennes CV2017 pour référence
-# giflossy -v -O3 --lossy=200 -k192 ${PWD}/_sources/anim_aeroport.gif    -o ${PWD}/theme/images/nlcv_aeroport.gif
 # giflossy -v -O3 --lossy=800 -k128 ${PWD}/_sources/anim_ambiance_en.gif -o ${PWD}/theme/images/nlcv_ambiance_EN.gif
 # giflossy -v -O3 --lossy=20  -k224 ${PWD}/_sources/anim_cadeau.gif      -o ${PWD}/theme/images/nlcv_cadeau.gif
 # giflossy -v -O3 --lossy=800 -k96  ${PWD}/_sources/anim_nature.gif      -o ${PWD}/theme/images/nlcv_nature.gif
 # giflossy -v -O3 --lossy=200 -k192 ${PWD}/_sources/anim_projet.gif      -o ${PWD}/theme/images/nlcv_projet.gif
 
 # Nouvelles CV2018
+giflossy -v -O3 --lossy=750 -k192 ${PWD}/_sources/anim_aeroport.gif    -o ${PWD}/theme/images/nlcv_aeroport.gif
 giflossy -v -O3 --lossy=750 -k192 ${PWD}/_sources/anim_chiffres.gif    -o ${PWD}/theme/images/nlcv_chiffres.gif
 giflossy -v -O3 --lossy=375 -k96  ${PWD}/_sources/anim_equipe.gif      -o ${PWD}/theme/images/nlcv_equipe.gif
 giflossy -v -O3 --lossy=750 -k192 ${PWD}/_sources/anim_sapin.gif       -o ${PWD}/theme/images/nlcv_sapin.gif
@@ -27,13 +27,13 @@ giflossy -v -O3 --lossy=375 -k96  ${PWD}/_sources/anim_recette.gif     `seq -f "
 
 echo "compressing gif files for sites ..."
 # Anciennes CV2017 pour référence
-# giflossy -v -O3 --lossy=50  -k192 ${PWD}/_sources/anim_aeroport_site.gif    -o ${PWD}/theme/images/stcv_aeroport.gif
 # giflossy -v -O3 --lossy=200 -k128 ${PWD}/_sources/anim_ambiance_en_site.gif -o ${PWD}/theme/images/stcv_ambiance_EN.gif
 # giflossy -v -O3 --lossy=20  -k224 ${PWD}/_sources/anim_cadeau_site.gif      -o ${PWD}/theme/images/stcv_cadeau.gif
 # giflossy -v -O3 --lossy=200 -k96  ${PWD}/_sources/anim_nature_site.gif      -o ${PWD}/theme/images/stcv_nature.gif
 # giflossy -v -O3 --lossy=50  -k192 ${PWD}/_sources/anim_projet_site.gif      -o ${PWD}/theme/images/stcv_projet.gif
 
 # Nouvelles CV2018
+giflossy -v -O3 --lossy=500 -k192 ${PWD}/_sources/anim_aeroport_site.gif    -o ${PWD}/theme/images/stcv_aeroport.gif
 giflossy -v -O3 --lossy=500 -k192 ${PWD}/_sources/anim_chiffres_site.gif    -o ${PWD}/theme/images/stcv_chiffres.gif
 giflossy -v -O3 --lossy=250 -k96  ${PWD}/_sources/anim_equipe_site.gif      -o ${PWD}/theme/images/stcv_equipe.gif
 giflossy -v -O3 --lossy=500 -k192 ${PWD}/_sources/anim_sapin_site.gif       -o ${PWD}/theme/images/stcv_sapin.gif
