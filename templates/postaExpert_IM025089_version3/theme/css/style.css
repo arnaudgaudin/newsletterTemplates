@@ -1920,38 +1920,28 @@ ul li {
     padding-bottom: 5px !important;
   }
 
-  table[class="body"] .contentContact td.wrapper.first {
-    /*
-			table.columns .text-pad, table.column .text-pad {
-				padding-right: @textPadCollapse !important;
-			}
-			*/
-  }
-
   table[class="body"] .contentContact td.wrapper.first table.logo img {
-    width: 120px !important;
-    height: 105px !important;
+    width: 80px !important;
+    height: 70px !important;
   }
 
-  table[class="body"] .contentContact td.wrapper table.logo td {
-    padding-bottom: 5px !important;
-  }
-
-  table[class="body"] .contentContact td.wrapper.last {
-    /*
-			table.columns .text-pad, table.column .text-pad {
-				padding-left: @textPadCollapse !important;
-			}
-			*/
+  table[class="body"] .contentContact td.wrapper.middle table.columns td.center,
+  table[class="body"] .contentContact td.wrapper.middle table.column td.center {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
   }
 
   table[class="body"] .contentContact td.wrapper.last table.logo img {
-    width: 120px !important;
-    height: 99px !important;
+    width: 80px !important;
+    height: 66px !important;
   }
 
   table[class="body"] .contentContact td.wrapper {
     padding-top: 5px !important;
+  }
+
+  table[class="body"] .contentContact td.wrapper table.logo td {
+    padding-bottom: 5px !important;
   }
 
   table[class="body"] .contentContact table.columns td,
