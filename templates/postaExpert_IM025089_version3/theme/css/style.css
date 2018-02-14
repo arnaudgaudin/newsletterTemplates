@@ -1242,12 +1242,9 @@ ul li {
   font-weight: 600;
 }
 
-.header td.sub-columns.first .subtitle {
-  font-weight: 400;
-}
-
+.header td.sub-columns.first .subtitle,
 .header td.sub-columns.first .host {
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .contentOnline {
