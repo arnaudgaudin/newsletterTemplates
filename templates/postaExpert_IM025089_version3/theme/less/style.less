@@ -407,30 +407,22 @@ ul {
 	td {
 		font-weight: 300;
 	}
-
-	td.wrapper.first {
-		background-color: #f00;
-	}
 	td.wrapper {
-		background-color: #0f0;
 		table.logo {
 			width: 100%;
 			-premailer-width: 100%;
 			td { padding-bottom: (@wrapperPad / 2); }
 		}
-		
-	}
-	td.wrapper.last {
-		background-color: #00f;
+		&.middle { vertical-align: bottom; }
 	}
 
 	//réduction décalage vertical
-	td.wrapper { padding-top: (@wrapperPad / 2); }
 	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentContact {
 		td.wrapper.first {
+			padding-top: @wrapperPadCollapse !important;
 			table.logo img {
 				width: 80px !important;
 				height: 70px !important;
@@ -447,8 +439,8 @@ ul {
 				width: 80px !important;
 				height: 66px !important;
 			}
+			table.columns td, table.column td { padding-bottom: @columnPadCollapse !important; }
 		}
-
 		td.wrapper {
 			padding-top: (@wrapperPadCollapse / 2) !important;
 			table.logo td { padding-bottom: (@wrapperPadCollapse / 2) !important; }
