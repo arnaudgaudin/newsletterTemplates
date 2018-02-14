@@ -1464,11 +1464,6 @@ ul li {
   color: #082f54 !important;
 }
 
-.contentContact td.wrapper.first table.columns .text-pad,
-.contentContact td.wrapper.first table.column .text-pad {
-  padding-right: 20px !important;
-}
-
 .contentContact td.wrapper.first h5.title .link_mail {
   font-weight: 200;
 }
@@ -1480,11 +1475,6 @@ ul li {
 
 .contentContact td.wrapper.first table.logo td {
   padding-bottom: 10px;
-}
-
-.contentContact td.wrapper.last table.columns .text-pad,
-.contentContact td.wrapper.last table.column .text-pad {
-  padding-left: 20px !important;
 }
 
 .contentContact td.wrapper.last table.subWrapper {
