@@ -1214,19 +1214,19 @@ ul li {
 .header table.column table.logo {
   background-color: #ffffff;
   table-layout: fixed;
-  width: 160px;
+  width: 220px;
   height: 100px;
-  -premailer-width: 160;
-  -premailer-height: 50;
+  -premailer-width: 220;
+  -premailer-height: 68;
 }
 
 .header table.columns table.logo td,
 .header table.column table.logo td {
-  width: 160px;
-  height: 50px;
-  -premailer-width: 160;
-  -premailer-height: 50;
-  padding: 25px 0;
+  width: 220px;
+  height: 68px;
+  -premailer-width: 220;
+  -premailer-height: 68;
+  padding: 16px 0;
 }
 
 .header td.sub-columns.first {
@@ -1476,6 +1476,10 @@ ul li {
 
 .contentContact td.wrapper.middle {
   vertical-align: bottom;
+}
+
+.contentContact td.wrapper {
+  padding-top: 10px;
 }
 
 .contentContact table.columns td,
@@ -1784,7 +1788,7 @@ ul li {
   table[class="body"] .header table.column table.logo td {
     width: auto !important;
     height: auto !important;
-    padding: 15.625% 0% !important;
+    padding: 7.27272727% 0% !important;
   }
 
   table[class="body"] .contentOnline td {

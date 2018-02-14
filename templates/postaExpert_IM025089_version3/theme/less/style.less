@@ -95,17 +95,17 @@ ul {
 		table.logo {
 			background-color: #ffffff;
 			table-layout: fixed;
-			width: 160px;
+			width: 220px;
 			height: 100px;
-			-premailer-width: 160;
-			-premailer-height: 50;
+			-premailer-width: 220;
+			-premailer-height: 68;
 
 			td {
-				width: 160px;
-				height: 50px;
-				-premailer-width: 160;
-				-premailer-height: 50;
-				padding: 25px 0;
+				width: 220px;
+				height: 68px;
+				-premailer-width: 220;
+				-premailer-height: 68;
+				padding: 16px 0;
 			}
 		}
 	}
@@ -133,7 +133,7 @@ ul {
 				td {
 					width: auto !important;
 					height: auto !important;
-					padding: unit((25 / 160 * 100), %) unit((0 / 50 * 100), %) !important;
+					padding: unit((16 / 220 * 100), %) unit((0 / 68 * 100), %) !important;
 				}
 			}
 		}
@@ -414,6 +414,7 @@ ul {
 	}
 
 	//réduction décalage vertical
+	td.wrapper { padding-top: (@wrapperPad / 2); }
 	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
