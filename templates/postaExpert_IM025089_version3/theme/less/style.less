@@ -403,32 +403,27 @@ ul {
 // -------------------------
 .contentContact {
 	.newsletterInnerTextColor(@colorPostaExpert1);
+	
+	td {
+		font-weight: 300;
+	}
+
 
 	td.wrapper.first {
-		//table.columns .text-pad, table.column .text-pad {
-		//	padding-right: (@textPad / 2) !important;
-		//}
-		h5.title .link_mail { font-weight: 200; }
+		background-color: #f00;
+	}
+	td.wrapper {
+		background-color: #0f0;
+
 		table.logo {
 			width: 100%;
 			-premailer-width: 100%;
 			td { padding-bottom: (@wrapperPad / 2); }
 		}
 	}
-	td.wrapper.last {
-		//table.columns .text-pad, table.column .text-pad {
-		//	padding-left: (@textPad / 2) !important;
-		//}
 
-		table.subWrapper {
-			width: 100%;
-			-premailer-width: 100%;
-			td {
-				padding: (@wrapperPad / 2) (@textPad / 4);
-				border-bottom: 2px solid @colorPostaExpert1;
-			}
-			&.first td { padding-top: 0px; }
-		}
+	td.wrapper.last {
+		background-color: #00f;
 	}
 
 	//réduction décalage vertical

@@ -1464,31 +1464,29 @@ ul li {
   color: #082f54 !important;
 }
 
-.contentContact td.wrapper.first h5.title .link_mail {
-  font-weight: 200;
+.contentContact td {
+  font-weight: 300;
 }
 
-.contentContact td.wrapper.first table.logo {
+.contentContact td.wrapper.first {
+  background-color: #f00;
+}
+
+.contentContact td.wrapper {
+  background-color: #0f0;
+}
+
+.contentContact td.wrapper table.logo {
   width: 100%;
   -premailer-width: 100%;
 }
 
-.contentContact td.wrapper.first table.logo td {
+.contentContact td.wrapper table.logo td {
   padding-bottom: 10px;
 }
 
-.contentContact td.wrapper.last table.subWrapper {
-  width: 100%;
-  -premailer-width: 100%;
-}
-
-.contentContact td.wrapper.last table.subWrapper td {
-  padding: 10px 10px;
-  border-bottom: 2px solid #082f54;
-}
-
-.contentContact td.wrapper.last table.subWrapper.first td {
-  padding-top: 0px;
+.contentContact td.wrapper.last {
+  background-color: #00f;
 }
 
 .contentContact td.wrapper {
