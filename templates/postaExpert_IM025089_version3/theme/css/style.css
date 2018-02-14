@@ -1920,13 +1920,12 @@ ul li {
     padding-bottom: 5px !important;
   }
 
-  table[class="body"] .contentContact td.wrapper.first table.columns .text-pad,
-  table[class="body"] .contentContact td.wrapper.first table.column .text-pad {
-    padding-right: 20px !important;
-  }
-
-  table[class="body"] .contentContact td.wrapper.first table.logo td {
-    padding-bottom: 5px !important;
+  table[class="body"] .contentContact td.wrapper.first {
+    /*
+			table.columns .text-pad, table.column .text-pad {
+				padding-right: @textPadCollapse !important;
+			}
+			*/
   }
 
   table[class="body"] .contentContact td.wrapper.first table.logo img {
@@ -1934,17 +1933,21 @@ ul li {
     height: 105px !important;
   }
 
-  table[class="body"] .contentContact td.wrapper.last table.columns .text-pad,
-  table[class="body"] .contentContact td.wrapper.last table.column .text-pad {
-    padding-left: 20px !important;
+  table[class="body"] .contentContact td.wrapper table.logo td {
+    padding-bottom: 5px !important;
   }
 
-  table[class="body"] .contentContact td.wrapper.last table.subWrapper td {
-    padding: 5px 5px !important;
+  table[class="body"] .contentContact td.wrapper.last {
+    /*
+			table.columns .text-pad, table.column .text-pad {
+				padding-left: @textPadCollapse !important;
+			}
+			*/
   }
 
-  table[class="body"] .contentContact td.wrapper.last table.subWrapper.first td {
-    padding-top: 0px !important;
+  table[class="body"] .contentContact td.wrapper.last table.logo img {
+    width: 120px !important;
+    height: 99px !important;
   }
 
   table[class="body"] .contentContact td.wrapper {
