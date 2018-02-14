@@ -1239,12 +1239,15 @@ ul li {
 }
 
 .header td.sub-columns.first .title {
-  text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .header td.sub-columns.first .subtitle {
-  font-weight: 200;
+  font-weight: 400;
+}
+
+.header td.sub-columns.first .host {
+  font-weight: 300;
 }
 
 .contentOnline {
