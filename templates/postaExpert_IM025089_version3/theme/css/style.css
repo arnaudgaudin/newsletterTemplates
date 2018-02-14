@@ -1180,7 +1180,7 @@ ul li {
 }
 
 .header {
-  background-color: #eb9928;
+  background-color: #ffffff;
 }
 
 .header td.decoupe {
@@ -1190,11 +1190,11 @@ ul li {
 .header,
 .header td,
 .header .inner {
-  color: #ffffff;
+  color: #082f54;
 }
 
 .header a {
-  color: #ffffff;
+  color: #082f54;
 }
 
 .header a .important,
@@ -1202,7 +1202,7 @@ ul li {
 .header a:hover,
 .header a:focus,
 .header a:active {
-  color: #ffffff !important;
+  color: #082f54 !important;
 }
 
 .header table.columns table.subWrapper td,
@@ -1235,7 +1235,7 @@ ul li {
 
 .header td.sub-columns.first .title,
 .header td.sub-columns.first .subtitle {
-  color: #ffffff;
+  color: #082f54;
 }
 
 .header td.sub-columns.first .title {
@@ -1808,7 +1808,7 @@ ul li {
   table[class="body"] .header table.column table.logo td {
     width: auto !important;
     height: auto !important;
-    padding: 18.75% 14.28571429% !important;
+    padding: 15.625% 0% !important;
   }
 
   table[class="body"] .contentOnline td {
