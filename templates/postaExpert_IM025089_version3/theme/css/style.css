@@ -571,19 +571,19 @@ h6 {
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 26px;
 }
 
 h2 {
-  font-size: 28px;
-}
-
-h3 {
   font-size: 24px;
 }
 
-h4 {
+h3 {
   font-size: 22px;
+}
+
+h4 {
+  font-size: 20px;
 }
 
 h5 {
@@ -1137,19 +1137,19 @@ h6 {
 }
 
 h1 {
-  line-height: 35.2px;
+  line-height: 28.6px;
 }
 
 h2 {
-  line-height: 30.8px;
-}
-
-h3 {
   line-height: 26.4px;
 }
 
-h4 {
+h3 {
   line-height: 24.2px;
+}
+
+h4 {
+  line-height: 22px;
 }
 
 h5 {
@@ -1240,6 +1240,7 @@ ul li {
 
 .header td.sub-columns.first .title {
   font-weight: 600;
+  text-transform: uppercase;
 }
 
 .header td.sub-columns.first .subtitle,
@@ -1352,6 +1353,7 @@ ul li {
 .contentMain td.wrapper.last table.column table.subWrapper.bordered td.title-cont td.title-display td {
   color: #345566;
   font-size: 12px;
+  font-weight: 600;
   line-height: 16px;
   text-align: center;
   text-transform: uppercase;
@@ -1734,23 +1736,23 @@ ul li {
   }
 
   table[class="body"] h1 {
-    font-size: 28px !important;
-    line-height: 30.8px !important;
+    font-size: 23px !important;
+    line-height: 25.3px !important;
   }
 
   table[class="body"] h2 {
-    font-size: 25px !important;
-    line-height: 27.5px !important;
-  }
-
-  table[class="body"] h3 {
     font-size: 21px !important;
     line-height: 23.1px !important;
   }
 
-  table[class="body"] h4 {
+  table[class="body"] h3 {
     font-size: 19px !important;
     line-height: 20.9px !important;
+  }
+
+  table[class="body"] h4 {
+    font-size: 18px !important;
+    line-height: 19.8px !important;
   }
 
   table[class="body"] h5 {
@@ -1916,6 +1918,11 @@ ul li {
   table[class="body"] .contentContact td.wrapper.first table.logo img {
     width: 80px !important;
     height: 70px !important;
+  }
+
+  table[class="body"] .contentContact td.wrapper.middle table.logo img {
+    width: 220px !important;
+    height: 68px !important;
   }
 
   table[class="body"] .contentContact td.wrapper.middle table.columns td.center,

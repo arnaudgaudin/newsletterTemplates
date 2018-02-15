@@ -115,6 +115,7 @@ ul {
 			.title, .subtitle { color: @colorPostaExpert1; }
 			.title {
 				font-weight: 600;
+				text-transform: uppercase;
 			}
 			.subtitle, .host {
 				font-weight: 400;
@@ -244,6 +245,7 @@ ul {
 						td {
 							color: @colorPostaExpert2;
 							font-size: floor(@baseFontSize * 0.9);
+							font-weight: 600;
 							line-height: floor(@baseLineHeight * 0.9);
 							text-align: center;
 							text-transform: uppercase;
@@ -427,6 +429,10 @@ ul {
 			}
 		}
 		td.wrapper.middle {
+			table.logo img {
+				width: 220px !important;
+				height: 68px !important;
+			}
 			table.columns td.center, table.column td.center {
 				padding-left: @textPadCollapse !important;
 				padding-right: @textPadCollapse !important;
