@@ -430,9 +430,21 @@ ul {
 		&.middle { vertical-align: bottom; }
 	}
 
+	table.webicons {
+		width: 100%;
+		-premailer-width: 100%;
+	}
+
 	//réduction décalage vertical
 	td.wrapper { padding-top: (@wrapperPad / 2); }
-	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }
+	table.columns td, table.column td {
+		padding-bottom: (@columnPad / 2);
+
+		.webicons td {
+			padding-top: 5px;
+			padding-bottom: 0px;
+		}
+	}
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentContact {
@@ -440,13 +452,13 @@ ul {
 			padding-top: @wrapperPadCollapse !important;
 			table.logo img {
 				width: 80px !important;
-				height: 70px !important;
+				height: auto !important;
 			}
 		}
 		td.wrapper.middle {
 			table.logo img {
 				width: 220px !important;
-				height: 68px !important;
+				height: auto !important;
 			}
 			table.columns td.center, table.column td.center {
 				padding-left: @textPadCollapse !important;
@@ -456,13 +468,20 @@ ul {
 		td.wrapper.last {
 			table.logo img {
 				width: 80px !important;
-				height: 66px !important;
+				height: auto !important;
 			}
 			table.columns td, table.column td { padding-bottom: @columnPadCollapse !important; }
 		}
 		td.wrapper {
 			padding-top: (@wrapperPadCollapse / 2) !important;
 			table.logo td { padding-bottom: (@wrapperPadCollapse / 2) !important; }
+		}
+		table.webicons {
+			width: 100% !important;
+			img {
+				width: 30px !important;
+				height: 30px !important;
+			}
 		}
 		table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
 	}

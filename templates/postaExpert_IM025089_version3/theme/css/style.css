@@ -1179,6 +1179,19 @@ ul li {
   mso-special-format: bullet;
 }
 
+.webicon {
+  display: inline;
+  font-size: 0px;
+  mso-line-height-rule: exactly;
+  line-height: 0px;
+}
+
+.webicon img {
+  display: inline;
+  float: none;
+  -premailer-float: none;
+}
+
 .header {
   background-color: #ffffff;
 }
@@ -1480,6 +1493,11 @@ ul li {
   vertical-align: bottom;
 }
 
+.contentContact table.webicons {
+  width: 100%;
+  -premailer-width: 100%;
+}
+
 .contentContact td.wrapper {
   padding-top: 10px;
 }
@@ -1487,6 +1505,12 @@ ul li {
 .contentContact table.columns td,
 .contentContact table.column td {
   padding-bottom: 10px;
+}
+
+.contentContact table.columns td .webicons td,
+.contentContact table.column td .webicons td {
+  padding-top: 5px;
+  padding-bottom: 0px;
 }
 
 .contentLegal,
@@ -1917,12 +1941,12 @@ ul li {
 
   table[class="body"] .contentContact td.wrapper.first table.logo img {
     width: 80px !important;
-    height: 70px !important;
+    height: auto !important;
   }
 
   table[class="body"] .contentContact td.wrapper.middle table.logo img {
     width: 220px !important;
-    height: 68px !important;
+    height: auto !important;
   }
 
   table[class="body"] .contentContact td.wrapper.middle table.columns td.center,
@@ -1933,7 +1957,7 @@ ul li {
 
   table[class="body"] .contentContact td.wrapper.last table.logo img {
     width: 80px !important;
-    height: 66px !important;
+    height: auto !important;
   }
 
   table[class="body"] .contentContact td.wrapper.last table.columns td,
@@ -1947,6 +1971,15 @@ ul li {
 
   table[class="body"] .contentContact td.wrapper table.logo td {
     padding-bottom: 5px !important;
+  }
+
+  table[class="body"] .contentContact table.webicons {
+    width: 100% !important;
+  }
+
+  table[class="body"] .contentContact table.webicons img {
+    width: 30px !important;
+    height: 30px !important;
   }
 
   table[class="body"] .contentContact table.columns td,
