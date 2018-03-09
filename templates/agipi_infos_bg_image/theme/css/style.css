@@ -523,6 +523,7 @@ span.center {
 img.center {
   margin: 0 auto;
   float: none;
+  -premailer-float: none;
 }
 
 .show-for-small,
@@ -1159,8 +1160,26 @@ h6 {
   line-height: 17.6px;
 }
 
+.sub-columns > table.subWrapper {
+  width: 100%;
+  -premailer-width: 100%;
+}
+
+table.columns table.subWrapper > tr > td,
+table.columns table.subWrapper > tbody > tr > td,
+table.column table.subWrapper > tr > td,
+table.column table.subWrapper > tbody > tr > td,
+table.subWrapper > tr > td,
+table.subWrapper > tbody > tr > td {
+  padding: 0px;
+}
+
 .header {
   background-color: #ffffff;
+}
+
+.header td.sub-columns {
+  vertical-align: middle;
 }
 
 .title {
@@ -1390,6 +1409,7 @@ table.separator td {
 .faicon img {
   display: inline;
   float: none;
+  -premailer-float: none;
 }
 
 .contentOnline {
@@ -1463,6 +1483,7 @@ table.separator td {
 
 .contentALaUne img {
   float: none;
+  -premailer-float: none;
 }
 
 .contentALaUne .title {
@@ -1536,6 +1557,7 @@ table.separator td {
 .contentChiffre table.subWrapper td.parenthesis img {
   display: inline;
   float: none;
+  -premailer-float: none;
 }
 
 .contentChiffre table.subWrapper td.value {
@@ -1843,6 +1865,14 @@ table.separator td {
   table[class="body"] h6 {
     font-size: 14px !important;
     line-height: 15.4px !important;
+  }
+
+  table[class="body"] .header td.sub-columns {
+    vertical-align: middle !important;
+  }
+
+  table[class="body"] .header .text-pad-right {
+    padding-left: 0px !important;
   }
 
   table[class="body"] .hrBorderWrapper,

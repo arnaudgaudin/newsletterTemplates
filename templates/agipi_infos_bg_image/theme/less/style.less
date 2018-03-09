@@ -17,6 +17,18 @@ h4 { line-height: (@headingsFontSizeH4 * 1.1); }
 h5 { line-height: (@headingsFontSizeH5 * 1.1); }
 h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 
+// Gestion sous-containers
+table.subWrapper {
+	//lorsque contenu dans sous-colonne
+	.sub-columns > & {
+		width: 100%;
+		-premailer-width: 100%;
+	}
+	& > tr > td, & > tbody > tr > td {
+		table.columns &, table.column &, & { padding: 0px; }
+	}
+}
+
 //réduction tailles titrages en mode mobile
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] {
@@ -57,7 +69,16 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 }
 
 //gestion header
-.header { background-color: @containerBackground; }
+.header {
+	background-color: @containerBackground;
+	td.sub-columns { vertical-align: middle; }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .header {
+		td.sub-columns { vertical-align: middle !important; }
+		.text-pad-right { padding-left: 0px !important; }
+	}
+}
 
 //tous les titres
 .title {
