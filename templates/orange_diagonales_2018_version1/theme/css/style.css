@@ -1127,6 +1127,65 @@ table.large-button td {
   -premailer-width: auto;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  mso-line-height-rule: exactly;
+}
+
+h1 {
+  line-height: 43.89px;
+}
+
+h2 {
+  line-height: 39.27px;
+}
+
+h3 {
+  line-height: 34.65px;
+}
+
+h4 {
+  line-height: 30.8px;
+}
+
+h5 {
+  line-height: 26.95px;
+}
+
+h6 {
+  line-height: 22.33px;
+}
+
+.contentOnline {
+  background-color: #95DBD8;
+}
+
+.contentOnline td {
+  font-size: 9.8px;
+  line-height: 12.25px;
+}
+
+.contentOnline td.wrapper {
+  padding-top: 10px;
+}
+
+.contentOnline table.columns td,
+.contentOnline table.column td {
+  padding-bottom: 10px;
+}
+
+.header {
+  background-color: #CD95DB;
+}
+
+.contentALaUne {
+  background-color: #DBCD95;
+}
+
 @media only screen and (max-width: 720px) {
   table[class="body"] img {
     max-width: auto !important;
@@ -1291,5 +1350,56 @@ table.large-button td {
 
   table[class="container"] .panel {
     padding: 10px !important;
+  }
+
+  table[class="body"] body,
+  table[class="body"],
+  table[class="body"] p,
+  table[class="body"] td {
+    font-size: 12px !important;
+    line-height: 16px !important;
+  }
+
+  table[class="body"] small {
+    font-size: 8px !important;
+  }
+
+  table[class="body"] h1 {
+    font-size: 35px !important;
+    line-height: 38.5px !important;
+  }
+
+  table[class="body"] h2 {
+    font-size: 32px !important;
+    line-height: 35.2px !important;
+  }
+
+  table[class="body"] h3 {
+    font-size: 28px !important;
+    line-height: 30.8px !important;
+  }
+
+  table[class="body"] h4 {
+    font-size: 25px !important;
+    line-height: 27.5px !important;
+  }
+
+  table[class="body"] h5 {
+    font-size: 22px !important;
+    line-height: 24.2px !important;
+  }
+
+  table[class="body"] h6 {
+    font-size: 18px !important;
+    line-height: 19.8px !important;
+  }
+
+  table[class="body"] .contentOnline td.wrapper {
+    padding-top: 5px !important;
+  }
+
+  table[class="body"] .contentOnline table.columns td,
+  table[class="body"] .contentOnline table.column td {
+    padding-bottom: 5px !important;
   }
 }
