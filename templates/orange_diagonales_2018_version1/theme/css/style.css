@@ -571,27 +571,27 @@ h6 {
 }
 
 h1 {
-  font-size: 46px;
+  font-size: 50px;
 }
 
 h2 {
-  font-size: 38px;
+  font-size: 42px;
 }
 
 h3 {
-  font-size: 30px;
+  font-size: 34px;
 }
 
 h4 {
-  font-size: 24px;
+  font-size: 26px;
 }
 
 h5 {
-  font-size: 20px;
+  font-size: 22px;
 }
 
 h6 {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 body,
@@ -1137,27 +1137,27 @@ h6 {
 }
 
 h1 {
-  line-height: 50.6px;
+  line-height: 55px;
 }
 
 h2 {
-  line-height: 41.8px;
+  line-height: 46.2px;
 }
 
 h3 {
-  line-height: 33px;
+  line-height: 37.4px;
 }
 
 h4 {
-  line-height: 26.4px;
+  line-height: 28.6px;
 }
 
 h5 {
-  line-height: 22px;
+  line-height: 24.2px;
 }
 
 h6 {
-  line-height: 17.6px;
+  line-height: 19.8px;
 }
 
 table.subWrapper,
@@ -1495,33 +1495,33 @@ table.subWrapper,
   }
 
   table[class="body"] h1 {
-    font-size: 41px !important;
-    line-height: 45.1px !important;
+    font-size: 45px !important;
+    line-height: 49.5px !important;
   }
 
   table[class="body"] h2 {
-    font-size: 34px !important;
-    line-height: 37.4px !important;
+    font-size: 37px !important;
+    line-height: 40.7px !important;
   }
 
   table[class="body"] h3 {
-    font-size: 27px !important;
-    line-height: 29.7px !important;
+    font-size: 30px !important;
+    line-height: 33px !important;
   }
 
   table[class="body"] h4 {
-    font-size: 21px !important;
-    line-height: 23.1px !important;
+    font-size: 23px !important;
+    line-height: 25.3px !important;
   }
 
   table[class="body"] h5 {
-    font-size: 18px !important;
-    line-height: 19.8px !important;
+    font-size: 19px !important;
+    line-height: 20.9px !important;
   }
 
   table[class="body"] h6 {
-    font-size: 14px !important;
-    line-height: 15.4px !important;
+    font-size: 16px !important;
+    line-height: 17.6px !important;
   }
 
   table[class="body"] .contentOnline td.wrapper {
