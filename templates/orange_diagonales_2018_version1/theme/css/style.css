@@ -1182,8 +1182,29 @@ h6 {
   background-color: #CD95DB;
 }
 
-.contentALaUne {
+.contentTitle {
   background-color: #DBCD95;
+}
+
+.contentALaUne {
+  background-color: #95B0DB;
+}
+
+.contentALaUne table.subWrapper {
+  -premailer-width: 100%;
+  width: 100%;
+}
+
+.contentALaUne td.sub-columns.first .subWrapper {
+  background-color: #C429A0;
+}
+
+.contentALaUne td.sub-columns.middle .subWrapper {
+  background-color: #2984C4;
+}
+
+.contentALaUne td.sub-columns.last .subWrapper {
+  background-color: #53C429;
 }
 
 @media only screen and (max-width: 720px) {
