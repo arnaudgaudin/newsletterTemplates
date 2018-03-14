@@ -1207,6 +1207,14 @@ h6 {
   background-color: #53C429;
 }
 
+.contentQuoteRight {
+  background-color: #95DBBF;
+}
+
+.contentQuoteLeft {
+  background-color: #DBD695;
+}
+
 @media only screen and (max-width: 720px) {
   table[class="body"] img {
     max-width: auto !important;
