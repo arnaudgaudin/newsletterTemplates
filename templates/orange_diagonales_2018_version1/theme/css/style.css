@@ -1258,16 +1258,29 @@ table.subWrapper,
   background-color: #95B0DB;
 }
 
+.contentALaUne table.columns.mainImage td {
+  padding-top: 0;
+}
+
 .contentALaUne td.sub-columns.first .subWrapper {
-  background-color: #C429A0;
+  background-color: #5bc6ef;
 }
 
 .contentALaUne td.sub-columns.middle .subWrapper {
-  background-color: #2984C4;
+  background-color: #f38230;
 }
 
 .contentALaUne td.sub-columns.last .subWrapper {
-  background-color: #53C429;
+  background-color: #f4aecd;
+}
+
+.contentALaUne td.wrapper {
+  padding-top: 0;
+}
+
+.contentALaUne table.columns td,
+.contentALaUne table.column td {
+  padding-bottom: 0;
 }
 
 .contentQuoteRight {
@@ -1545,6 +1558,15 @@ table.subWrapper,
 
   table[class="body"] .header table.columns td,
   table[class="body"] .header table.column td {
+    padding-bottom: 0 !important;
+  }
+
+  table[class="body"] .contentALaUne td.wrapper {
+    padding-top: 0 !important;
+  }
+
+  table[class="body"] .contentALaUne table.columns td,
+  table[class="body"] .contentALaUne table.column td {
     padding-bottom: 0 !important;
   }
 

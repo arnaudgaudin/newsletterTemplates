@@ -154,14 +154,30 @@ table.subWrapper {
 .contentALaUne {
 	background-color: #95B0DB;
 
+	table.columns.mainImage {
+		td {
+			padding-top: 0;
+		}
+	}
+
 	td.sub-columns.first .subWrapper {
-		background-color: #C429A0;
+		background-color: @colorBlue;
 	}
 	td.sub-columns.middle .subWrapper {
-		background-color: #2984C4;
+		background-color: @colorOrange;
 	}
 	td.sub-columns.last .subWrapper {
-		background-color: #53C429;
+		background-color: @colorPink;
+	}
+
+	//suppression décalage vertical
+	td.wrapper { padding-top: 0; }
+	table.columns td, table.column td { padding-bottom: 0; }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentALaUne {
+		td.wrapper { padding-top: 0 !important; }
+		table.columns td, table.column td { padding-bottom: 0 !important; }
 	}
 }
 
