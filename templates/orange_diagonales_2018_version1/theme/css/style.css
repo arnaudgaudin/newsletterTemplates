@@ -1183,8 +1183,22 @@ table.subWrapper,
   color: #f38230 !important;
 }
 
-.contentOnline {
-  background-color: #95DBD8;
+.contentOnline,
+.contentOnline td,
+.contentOnline .inner {
+  color: #808080;
+}
+
+.contentOnline a {
+  color: #808080;
+}
+
+.contentOnline a .important,
+.contentOnline a:visited,
+.contentOnline a:hover,
+.contentOnline a:focus,
+.contentOnline a:active {
+  color: #808080 !important;
 }
 
 .contentOnline td {
@@ -1248,14 +1262,6 @@ table.subWrapper,
 .header table.columns td,
 .header table.column td {
   padding-bottom: 0;
-}
-
-.contentTitle {
-  background-color: #DBCD95;
-}
-
-.contentALaUne {
-  background-color: #95B0DB;
 }
 
 .contentALaUne td {
@@ -1359,8 +1365,22 @@ table.subWrapper,
   background-color: #8BABCC;
 }
 
-.contentUnsubscribe {
-  background-color: #95DBD8;
+.contentUnsubscribe,
+.contentUnsubscribe td,
+.contentUnsubscribe .inner {
+  color: #808080;
+}
+
+.contentUnsubscribe a {
+  color: #808080;
+}
+
+.contentUnsubscribe a .important,
+.contentUnsubscribe a:visited,
+.contentUnsubscribe a:hover,
+.contentUnsubscribe a:focus,
+.contentUnsubscribe a:active {
+  color: #808080 !important;
 }
 
 .contentUnsubscribe td {

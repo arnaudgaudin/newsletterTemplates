@@ -83,8 +83,7 @@ table.subWrapper {
 // contentOnline area
 // -------------------------
 .contentOnline {
-	background-color: #95DBD8;
-	// .newsletterInnerTextColor(#ffffff);
+	.newsletterInnerTextColor(darken(@containerBackground, 50%));
 
 	td {
 		font-size: @fontSizeSmall;
@@ -140,23 +139,16 @@ table.subWrapper {
 }
 
 
-
-
 // contentTitle area
 // -------------------------
-.contentTitle {
-	background-color: #DBCD95;
-}
+// .contentTitle {
+// 	background-color: #DBCD95;
+// }
 
 
 // contentALaUne area
 // -------------------------
-
-
-
 .contentALaUne {
-	background-color: #95B0DB;
-
 	td {
 		font-size: @fontSizeLarge;
 		line-height: floor(@fontSizeLarge * 1.15);
@@ -274,7 +266,7 @@ table.subWrapper {
 // contentUnsubscribe area
 // -------------------------
 .contentUnsubscribe {
-	background-color: #95DBD8;
+	.newsletterInnerTextColor(darken(@containerBackground, 50%));
 
 	td {
 		font-size: @fontSizeSmall;
