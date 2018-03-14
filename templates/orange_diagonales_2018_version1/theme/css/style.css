@@ -1215,6 +1215,10 @@ h6 {
   background-color: #DBD695;
 }
 
+.contentHost {
+  background-color: #DB95B1;
+}
+
 @media only screen and (max-width: 720px) {
   table[class="body"] img {
     max-width: auto !important;
