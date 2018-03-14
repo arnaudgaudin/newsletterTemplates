@@ -157,16 +157,33 @@ table.subWrapper {
 .contentALaUne {
 	background-color: #95B0DB;
 
-	table.columns.mainImage {
-		td {
-			padding-top: 0;
-		}
+	td {
+		font-size: @fontSizeLarge;
+		line-height: floor(@fontSizeLarge * 1.25);
+		font-weight: 700;
 	}
 
+	table.columns.mainImage {
+		td { padding-top: 0px; }
+	}
+
+	table.columns, table.column {
+		table.subWrapper td.text-pad {
+			padding-left: (@textPad / 4) !important;
+			padding-right: (@textPad / 4) !important;
+		}
+	}
+	
 	table.subWrapper {
 		height: 100%;
 		-premailer-height: 100%;
 
+		td.text-pad {
+			padding-top: @wrapperPad;
+			padding-bottom: @columnPad;
+		}
+	
+		//gestion des séparations verticales
 		td.colSep {
 			width: (@textPad / 4);
 			-premailer-width: (@textPad / 4);
@@ -197,6 +214,11 @@ table.subWrapper {
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentALaUne {
+		table.columns.mainImage td { padding-top: 0px !important; }
+		table.subWrapper td.colSep {
+			width: (@textPadCollapse / 4) !important;
+			-premailer-width: (@textPadCollapse / 4) !important;
+		}
 		td.wrapper { padding-top: 0 !important; }
 		table.columns td, table.column td { padding-bottom: 0 !important; }
 	}
