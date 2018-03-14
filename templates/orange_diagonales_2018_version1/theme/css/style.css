@@ -571,27 +571,27 @@ h6 {
 }
 
 h1 {
-  font-size: 28px;
+  font-size: 46px;
 }
 
 h2 {
-  font-size: 26px;
+  font-size: 38px;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 30px;
 }
 
 h4 {
-  font-size: 16px;
+  font-size: 24px;
 }
 
 h5 {
-  font-size: 15px;
+  font-size: 20px;
 }
 
 h6 {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 body,
@@ -1137,33 +1137,50 @@ h6 {
 }
 
 h1 {
-  line-height: 30.8px;
+  line-height: 50.6px;
 }
 
 h2 {
-  line-height: 28.6px;
+  line-height: 41.8px;
 }
 
 h3 {
-  line-height: 22px;
+  line-height: 33px;
 }
 
 h4 {
-  line-height: 17.6px;
+  line-height: 26.4px;
 }
 
 h5 {
-  line-height: 16.5px;
+  line-height: 22px;
 }
 
 h6 {
-  line-height: 15.4px;
+  line-height: 17.6px;
 }
 
 table.subWrapper,
 .sub-columns > table.subWrapper {
   width: 100%;
   -premailer-width: 100%;
+}
+
+.title {
+  color: #f38230;
+  padding-bottom: 5px;
+}
+
+.title a {
+  color: #f38230;
+}
+
+.title a .important,
+.title a:visited,
+.title a:hover,
+.title a:focus,
+.title a:active {
+  color: #f38230 !important;
 }
 
 .contentOnline {
@@ -1206,11 +1223,20 @@ table.subWrapper,
   color: #ffffff !important;
 }
 
-.header td {
+.header h4.subTitle {
+  color: #ffffff;
+}
+
+.header td.sub-columns.first {
   vertical-align: middle;
 }
 
-.header table.subWrapper td {
+.header td.sub-columns.last {
+  vertical-align: bottom;
+}
+
+.header table.columns table.subWrapper td,
+.header table.column table.subWrapper td {
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -1469,33 +1495,33 @@ table.subWrapper,
   }
 
   table[class="body"] h1 {
-    font-size: 25px !important;
-    line-height: 27.5px !important;
+    font-size: 41px !important;
+    line-height: 45.1px !important;
   }
 
   table[class="body"] h2 {
-    font-size: 23px !important;
-    line-height: 25.3px !important;
+    font-size: 34px !important;
+    line-height: 37.4px !important;
   }
 
   table[class="body"] h3 {
+    font-size: 27px !important;
+    line-height: 29.7px !important;
+  }
+
+  table[class="body"] h4 {
+    font-size: 21px !important;
+    line-height: 23.1px !important;
+  }
+
+  table[class="body"] h5 {
     font-size: 18px !important;
     line-height: 19.8px !important;
   }
 
-  table[class="body"] h4 {
+  table[class="body"] h6 {
     font-size: 14px !important;
     line-height: 15.4px !important;
-  }
-
-  table[class="body"] h5 {
-    font-size: 13px !important;
-    line-height: 14.3px !important;
-  }
-
-  table[class="body"] h6 {
-    font-size: 12px !important;
-    line-height: 13.2px !important;
   }
 
   table[class="body"] .contentOnline td.wrapper {
@@ -1507,7 +1533,8 @@ table.subWrapper,
     padding-bottom: 10px !important;
   }
 
-  table[class="body"] .header table.subWrapper td {
+  table[class="body"] .header table.columns table.subWrapper td,
+  table[class="body"] .header table.column table.subWrapper td {
     padding-top: 10px !important;
     padding-bottom: 10px !important;
   }

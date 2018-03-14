@@ -67,6 +67,19 @@ table.subWrapper {
 }
 
 
+//tous les titres
+.title {
+	color: @colorOrange;
+	a { .newsletterLinkColor(@colorOrange); }
+	padding-bottom: 5px;
+}
+
+//tous les sous-titre
+// .subTitle {
+
+// }
+
+
 // contentOnline area
 // -------------------------
 .contentOnline {
@@ -94,14 +107,18 @@ table.subWrapper {
 .header {
 	background-color: #000000;
 	.newsletterInnerTextColor(#ffffff);
+	h4.subTitle { color: #ffffff; }
 
-	td { vertical-align: middle; }
+	td.sub-columns.first { vertical-align: middle; }
+	td.sub-columns.last { vertical-align: bottom; }
 
 	//espacement vertical
-	table.subWrapper {
-		td {
-			padding-top: @wrapperPad;
-			padding-bottom: @columnPad;
+	table.columns, table.column {
+		table.subWrapper {
+			td {
+				padding-top: @wrapperPad;
+				padding-bottom: @columnPad;
+			}
 		}
 	}
 
@@ -111,9 +128,11 @@ table.subWrapper {
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .header {
-		table.subWrapper td {
-			padding-top: @wrapperPadCollapse !important;
-			padding-bottom: @columnPadCollapse !important;
+		table.columns, table.column {
+			table.subWrapper td {
+				padding-top: @wrapperPadCollapse !important;
+				padding-bottom: @columnPadCollapse !important;
+			}
 		}
 		td.wrapper { padding-top: 0 !important; }
 		table.columns td, table.column td { padding-bottom: 0 !important; }
