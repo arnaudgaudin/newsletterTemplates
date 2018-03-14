@@ -1260,7 +1260,7 @@ table.subWrapper,
 
 .contentALaUne td {
   font-size: 18px;
-  line-height: 22px;
+  line-height: 20px;
   font-weight: 700;
 }
 
@@ -1291,7 +1291,6 @@ table.subWrapper,
 }
 
 .contentALaUne table.subWrapper td.colSep table.rowSep {
-  background-color: #0f0;
   width: 100%;
   height: 100%;
   -premailer-width: 100%;
@@ -1610,8 +1609,24 @@ table.subWrapper,
     padding-bottom: 0 !important;
   }
 
+  table[class="body"] .contentALaUne td {
+    font-size: 16px !important;
+    line-height: 18.4px !important;
+  }
+
   table[class="body"] .contentALaUne table.columns.mainImage td {
     padding-top: 0px !important;
+  }
+
+  table[class="body"] .contentALaUne table.columns table.subWrapper td.text-pad,
+  table[class="body"] .contentALaUne table.column table.subWrapper td.text-pad {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+
+  table[class="body"] .contentALaUne table.subWrapper td.text-pad {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
   }
 
   table[class="body"] .contentALaUne table.subWrapper td.colSep {
