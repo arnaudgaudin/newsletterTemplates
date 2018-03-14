@@ -571,27 +571,27 @@ h6 {
 }
 
 h1 {
-  font-size: 39.9px;
-}
-
-h2 {
-  font-size: 35.7px;
-}
-
-h3 {
-  font-size: 31.5px;
-}
-
-h4 {
   font-size: 28px;
 }
 
+h2 {
+  font-size: 26px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
 h5 {
-  font-size: 24.5px;
+  font-size: 15px;
 }
 
 h6 {
-  font-size: 20.3px;
+  font-size: 14px;
 }
 
 body,
@@ -607,8 +607,8 @@ td {
 p.lead,
 p.lede,
 p.leed {
-  font-size: 17.5px;
-  line-height: 20.125px;
+  font-size: 18px;
+  line-height: 20.7px;
 }
 
 p {
@@ -616,7 +616,7 @@ p {
 }
 
 small {
-  font-size: 9.8px;
+  font-size: 12px;
 }
 
 a {
@@ -1137,27 +1137,27 @@ h6 {
 }
 
 h1 {
-  line-height: 43.89px;
-}
-
-h2 {
-  line-height: 39.27px;
-}
-
-h3 {
-  line-height: 34.65px;
-}
-
-h4 {
   line-height: 30.8px;
 }
 
+h2 {
+  line-height: 28.6px;
+}
+
+h3 {
+  line-height: 22px;
+}
+
+h4 {
+  line-height: 17.6px;
+}
+
 h5 {
-  line-height: 26.95px;
+  line-height: 16.5px;
 }
 
 h6 {
-  line-height: 22.33px;
+  line-height: 15.4px;
 }
 
 .contentOnline {
@@ -1165,8 +1165,8 @@ h6 {
 }
 
 .contentOnline td {
-  font-size: 9.8px;
-  line-height: 12.25px;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .contentOnline td.wrapper {
@@ -1233,6 +1233,24 @@ h6 {
 
 .contentFooter td.wrapper.last table {
   background-color: #8BABCC;
+}
+
+.contentUnsubscribe {
+  background-color: #95DBD8;
+}
+
+.contentUnsubscribe td {
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.contentUnsubscribe td.wrapper {
+  padding-top: 10px;
+}
+
+.contentUnsubscribe table.columns td,
+.contentUnsubscribe table.column td {
+  padding-bottom: 10px;
 }
 
 @media only screen and (max-width: 720px) {
@@ -1410,45 +1428,54 @@ h6 {
   }
 
   table[class="body"] small {
-    font-size: 8px !important;
+    font-size: 10px !important;
   }
 
   table[class="body"] h1 {
-    font-size: 35px !important;
-    line-height: 38.5px !important;
-  }
-
-  table[class="body"] h2 {
-    font-size: 32px !important;
-    line-height: 35.2px !important;
-  }
-
-  table[class="body"] h3 {
-    font-size: 28px !important;
-    line-height: 30.8px !important;
-  }
-
-  table[class="body"] h4 {
     font-size: 25px !important;
     line-height: 27.5px !important;
   }
 
-  table[class="body"] h5 {
-    font-size: 22px !important;
-    line-height: 24.2px !important;
+  table[class="body"] h2 {
+    font-size: 23px !important;
+    line-height: 25.3px !important;
   }
 
-  table[class="body"] h6 {
+  table[class="body"] h3 {
     font-size: 18px !important;
     line-height: 19.8px !important;
   }
 
+  table[class="body"] h4 {
+    font-size: 14px !important;
+    line-height: 15.4px !important;
+  }
+
+  table[class="body"] h5 {
+    font-size: 13px !important;
+    line-height: 14.3px !important;
+  }
+
+  table[class="body"] h6 {
+    font-size: 12px !important;
+    line-height: 13.2px !important;
+  }
+
   table[class="body"] .contentOnline td.wrapper {
-    padding-top: 5px !important;
+    padding-top: 10px !important;
   }
 
   table[class="body"] .contentOnline table.columns td,
   table[class="body"] .contentOnline table.column td {
-    padding-bottom: 5px !important;
+    padding-bottom: 10px !important;
+  }
+
+  table[class="body"] .contentUnsubscribe td.wrapper {
+    padding-top: 10px !important;
+  }
+
+  table[class="body"] .contentUnsubscribe table.columns td,
+  table[class="body"] .contentUnsubscribe table.column td {
+    padding-bottom: 10px !important;
   }
 }
