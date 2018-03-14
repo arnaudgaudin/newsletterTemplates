@@ -151,6 +151,9 @@ table.subWrapper {
 
 // contentALaUne area
 // -------------------------
+
+
+
 .contentALaUne {
 	background-color: #95B0DB;
 
@@ -160,15 +163,33 @@ table.subWrapper {
 		}
 	}
 
-	td.sub-columns.first .subWrapper {
-		background-color: @colorBlue;
+	table.subWrapper {
+		height: 100%;
+		-premailer-height: 100%;
+
+		td.colSep {
+			width: (@textPad / 4);
+			-premailer-width: (@textPad / 4);
+			background-color: #f00;
+			table.rowSep {
+				background-color: #0f0;
+				width: 100%;
+				height: 100%;
+				-premailer-width: 100%;
+				-premailer-height: 100%;
+				td {
+					height: 50%;
+					-premailer-height: 50%;
+				}
+				td.rowFirst { background-color: #000000; }
+				td.rowLast { background-color: @containerBackground; }
+			}
+		}
 	}
-	td.sub-columns.middle .subWrapper {
-		background-color: @colorOrange;
-	}
-	td.sub-columns.last .subWrapper {
-		background-color: @colorPink;
-	}
+
+	td.sub-columns.first > table.subWrapper { background-color: @colorBlue; }
+	td.sub-columns.middle > table.subWrapper { background-color: @colorOrange; }
+	td.sub-columns.last > table.subWrapper { background-color: @colorPink; }
 
 	//suppression décalage vertical
 	td.wrapper { padding-top: 0; }

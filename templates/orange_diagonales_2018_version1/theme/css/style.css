@@ -551,7 +551,7 @@ h5,
 h6,
 p,
 td {
-  color: #222222;
+  color: #333333;
   padding: 0;
   margin: 0;
   text-align: left;
@@ -566,7 +566,7 @@ h5,
 h6 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
-  color: #222222;
+  color: #333333;
   word-break: normal;
 }
 
@@ -1262,15 +1262,47 @@ table.subWrapper,
   padding-top: 0;
 }
 
-.contentALaUne td.sub-columns.first .subWrapper {
+.contentALaUne table.subWrapper {
+  height: 100%;
+  -premailer-height: 100%;
+}
+
+.contentALaUne table.subWrapper td.colSep {
+  width: 10px;
+  -premailer-width: 10px;
+  background-color: #f00;
+}
+
+.contentALaUne table.subWrapper td.colSep table.rowSep {
+  background-color: #0f0;
+  width: 100%;
+  height: 100%;
+  -premailer-width: 100%;
+  -premailer-height: 100%;
+}
+
+.contentALaUne table.subWrapper td.colSep table.rowSep td {
+  height: 50%;
+  -premailer-height: 50%;
+}
+
+.contentALaUne table.subWrapper td.colSep table.rowSep td.rowFirst {
+  background-color: #000000;
+}
+
+.contentALaUne table.subWrapper td.colSep table.rowSep td.rowLast {
+  background-color: #ffffff;
+}
+
+.contentALaUne td.sub-columns.first > table.subWrapper {
   background-color: #5bc6ef;
 }
 
-.contentALaUne td.sub-columns.middle .subWrapper {
+.contentALaUne td.sub-columns.middle > table.subWrapper {
   background-color: #f38230;
 }
 
-.contentALaUne td.sub-columns.last .subWrapper {
+.contentALaUne td.sub-columns.last > table.subWrapper {
   background-color: #f4aecd;
 }
 
