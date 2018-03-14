@@ -1219,6 +1219,22 @@ h6 {
   background-color: #DB95B1;
 }
 
+.contentFooter {
+  background-color: #95B8DB;
+}
+
+.contentFooter td.wrapper.first table {
+  background-color: #576B80;
+}
+
+.contentFooter td.wrapper.middle table {
+  background-color: #718BA6;
+}
+
+.contentFooter td.wrapper.last table {
+  background-color: #8BABCC;
+}
+
 @media only screen and (max-width: 720px) {
   table[class="body"] img {
     max-width: auto !important;
