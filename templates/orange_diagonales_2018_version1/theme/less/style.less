@@ -69,11 +69,16 @@ table.subWrapper {
 
 // Gestion spacers verticaux
 td.spacer {
+	width: 100%;
 	height: (@wrapperPad * 2);
+	-premailer-width: 100%;
 	-premailer-height: (@wrapperPad * 2);
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
-	td.spacer { height: (@wrapperPadCollapse * 2) !important; }
+	td.spacer {
+		width: 100% !important;
+		height: (@wrapperPadCollapse * 2) !important;
+	}
 }
 
 
@@ -321,7 +326,20 @@ td.spacer {
 // contentHost area
 // -------------------------
 .contentHost {
-	background-color: #DB95B1;
+	td.wrapper { background-color: @colorGray; }
+	td.sub-columns.first { vertical-align: bottom; }
+	td.sub-columns.last { vertical-align: middle; }
+
+	//réduction décalage vertical
+	td.wrapper { padding-top: (@wrapperPad / 2); }
+	table.columns td, table.column td { padding-bottom: 0px; }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentHost {
+		td.text-pad-left { padding-right: 0px !important; }
+		td.wrapper { padding-top: (@wrapperPad / 2) !important; }
+		table.columns td, table.column td { padding-bottom: 0px !important; }
+	}
 }
 
 

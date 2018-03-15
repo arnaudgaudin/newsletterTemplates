@@ -1167,7 +1167,9 @@ table.subWrapper,
 }
 
 td.spacer {
+  width: 100%;
   height: 30px;
+  -premailer-width: 100%;
   -premailer-height: 30px;
 }
 
@@ -1408,8 +1410,25 @@ td.spacer {
   padding-bottom: 0px;
 }
 
-.contentHost {
-  background-color: #DB95B1;
+.contentHost td.wrapper {
+  background-color: #dadad9;
+}
+
+.contentHost td.sub-columns.first {
+  vertical-align: bottom;
+}
+
+.contentHost td.sub-columns.last {
+  vertical-align: middle;
+}
+
+.contentHost td.wrapper {
+  padding-top: 7.5px;
+}
+
+.contentHost table.columns td,
+.contentHost table.column td {
+  padding-bottom: 0px;
 }
 
 .contentFooter {
@@ -1669,6 +1688,7 @@ td.spacer {
   }
 
   td.spacer {
+    width: 100% !important;
     height: 20px !important;
   }
 
@@ -1759,6 +1779,19 @@ td.spacer {
 
   table[class="body"] .contentQuote table.columns td,
   table[class="body"] .contentQuote table.column td {
+    padding-bottom: 0px !important;
+  }
+
+  table[class="body"] .contentHost td.text-pad-left {
+    padding-right: 0px !important;
+  }
+
+  table[class="body"] .contentHost td.wrapper {
+    padding-top: 7.5px !important;
+  }
+
+  table[class="body"] .contentHost table.columns td,
+  table[class="body"] .contentHost table.column td {
     padding-bottom: 0px !important;
   }
 
