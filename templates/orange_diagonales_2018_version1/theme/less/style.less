@@ -383,12 +383,22 @@ td.spacer {
 // -------------------------
 .contentFooter {
 	background-color: #95B8DB;
-	
-	//rajout espacement vertical
-	table.subWrapper.faicons td {
-		padding-top: (@wrapperPad / 2);
+	&, td, .inner { color: #ffffff; }
+  	a { .newsletterLinkColor(@colorOrange); }
+
+	td {
+		font-size: @fontSizeSmall;
+		line-height: floor(@fontSizeSmall * 1.25);
+		vertical-align: bottom;
 	}
-	
+
+	//rajout espacement vertical
+	table.subWrapper.faicons td { padding-top: (@wrapperPad / 2); }
+
+	td.wrapper.last {
+		text-align: right;
+	}
+
 	td.wrapper.first table { background-color: #576B80; }
 	td.wrapper.middle table { background-color: #718BA6; }
 	td.wrapper.last table { background-color: #8BABCC; }
@@ -410,6 +420,7 @@ td.spacer {
 		font-size: @fontSizeSmall;
 		line-height: floor(@fontSizeSmall * 1.25);
 	}
+
 	//réduction décalage vertical
 	td.wrapper { padding-top: (@wrapperPad / 2); }
 	table.columns td, table.column td { padding-bottom: (@columnPad / 2); }

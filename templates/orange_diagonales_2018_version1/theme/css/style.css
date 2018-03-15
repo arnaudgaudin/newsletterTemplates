@@ -1466,8 +1466,36 @@ table.column .faicons td {
   background-color: #95B8DB;
 }
 
+.contentFooter,
+.contentFooter td,
+.contentFooter .inner {
+  color: #ffffff;
+}
+
+.contentFooter a {
+  color: #f38230;
+}
+
+.contentFooter a .important,
+.contentFooter a:visited,
+.contentFooter a:hover,
+.contentFooter a:focus,
+.contentFooter a:active {
+  color: #f38230 !important;
+}
+
+.contentFooter td {
+  font-size: 12px;
+  line-height: 15px;
+  vertical-align: bottom;
+}
+
 .contentFooter table.subWrapper.faicons td {
   padding-top: 7.5px;
+}
+
+.contentFooter td.wrapper.last {
+  text-align: right;
 }
 
 .contentFooter td.wrapper.first table {
