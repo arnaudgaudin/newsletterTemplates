@@ -190,28 +190,20 @@ table.subWrapper {
 			}
 		}
 	}
-
-	td.sub-columns.first > table.subWrapper {
-		background-color: @colorBlue;
-		td.colSep {
-			width: ceil(@textPad * 2 / 6);
-			-premailer-width: ceil(@textPad * 2 / 6);
-		}
+	
+	td.sub-columns > table.subWrapper td.colSep {
+		width: ceil(@textPad * 2 / 6);
+		-premailer-width: ceil(@textPad * 2 / 6);
 	}
-	td.sub-columns.middle > table.subWrapper {
-		background-color: @colorOrange;
-		td.colSep {
-			width: floor(@textPad * 1 / 6);
-			-premailer-width: floor(@textPad * 1 / 6);
-		}
+	td.sub-columns.middle > table.subWrapper td.colSep {
+		width: floor(@textPad * 1 / 6);
+		-premailer-width: floor(@textPad * 1 / 6);
 	}
-	td.sub-columns.last > table.subWrapper {
-		background-color: @colorPink;
-		td.colSep {
-			width: ceil(@textPad * 2 / 6);
-			-premailer-width: ceil(@textPad * 2 / 6);
-		}
-	}
+	
+	//application couleurs spécifiques
+	td.sub-columns.first > table.subWrapper { background-color: @colorBlue; }
+	td.sub-columns.middle > table.subWrapper { background-color: @colorOrange; }
+	td.sub-columns.last > table.subWrapper { background-color: @colorPink; }
 
 	//suppression décalage vertical
 	td.wrapper { padding-top: 0px; }
@@ -236,10 +228,12 @@ table.subWrapper {
 				padding-top: @wrapperPadCollapse !important;
 				padding-bottom: @columnPadCollapse !important;
 			}
-			td.colSep {
-				width: (@textPadCollapse / 4) !important;
-				-premailer-width: (@textPadCollapse / 4) !important;
-			}
+		}
+		td.sub-columns > table.subWrapper td.colSep {
+			width: ceil(@textPadCollapse * 2 / 6) !important;
+		}
+		td.sub-columns.middle > table.subWrapper td.colSep {
+			width: floor(@textPadCollapse * 1 / 6) !important;
 		}
 		td.wrapper { padding-top: 0 !important; }
 		table.columns td, table.column td { padding-bottom: 0 !important; }
@@ -257,6 +251,7 @@ table.subWrapper {
 			padding-left: 0px;
 			padding-right: ceil(@textPad * 2 / 6);
 		}
+		td.sub-columns.first { vertical-align: bottom; }
 	}
 	&.left {
 		background-color: #DBD695;
@@ -265,14 +260,14 @@ table.subWrapper {
 			padding-left: ceil(@textPad * 2 / 6);
 			padding-right: 0px;
 		}
+		td.sub-columns.last { vertical-align: bottom; }
 	}
-
+	
 	table.subWrapper.doublequote td {
 		background-color: #f0f;
 		padding-left: @textPad;
 		padding-right: 0px;
 	}
-	
 
 	td.wrapper {
 		&.quote {
@@ -285,8 +280,6 @@ table.subWrapper {
 				line-height: floor(@headingsFontSizeH4 * 1.15);
 				font-weight: 700;
 			}
-
-
 			//suppression espacement vertical
 			padding-top: 0px;
 			table.columns td, table.column td { padding-bottom: 0px; }
@@ -294,7 +287,30 @@ table.subWrapper {
 
 		&.author {
 			background-color: fade(#00f, 75%);
-
+		}
+	}
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentQuote {
+		&.right table.subWrapper.image td {
+			padding-left: 0px !important;
+			padding-right: ceil(@textPadCollapse * 2 / 6) !important;
+		}
+		&.left table.subWrapper.image td {
+			padding-left: ceil(@textPadCollapse * 2 / 6) !important;
+			padding-right: 0px !important;
+		}
+		table.subWrapper.doublequote td {
+			padding-left: @textPadCollapse !important;
+			padding-right: 0px !important;
+		}
+		td.wrapper.quote {
+			td {
+				font-size: floor(@headingsFontSizeH4 * 0.9) !important;
+				line-height: (floor(@headingsFontSizeH4 * 0.9) * 1.15) !important;
+			}
+			padding-top: 0px !important;
+			table.columns td, table.column td { padding-bottom: 0px !important; }
 		}
 	}
 }

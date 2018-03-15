@@ -1311,17 +1311,9 @@ table.subWrapper,
   background-color: #ffffff;
 }
 
-.contentALaUne td.sub-columns.first > table.subWrapper {
-  background-color: #5bc6ef;
-}
-
-.contentALaUne td.sub-columns.first > table.subWrapper td.colSep {
+.contentALaUne td.sub-columns > table.subWrapper td.colSep {
   width: 10px;
   -premailer-width: 10px;
-}
-
-.contentALaUne td.sub-columns.middle > table.subWrapper {
-  background-color: #f38230;
 }
 
 .contentALaUne td.sub-columns.middle > table.subWrapper td.colSep {
@@ -1329,13 +1321,16 @@ table.subWrapper,
   -premailer-width: 5px;
 }
 
-.contentALaUne td.sub-columns.last > table.subWrapper {
-  background-color: #f4aecd;
+.contentALaUne td.sub-columns.first > table.subWrapper {
+  background-color: #5bc6ef;
 }
 
-.contentALaUne td.sub-columns.last > table.subWrapper td.colSep {
-  width: 10px;
-  -premailer-width: 10px;
+.contentALaUne td.sub-columns.middle > table.subWrapper {
+  background-color: #f38230;
+}
+
+.contentALaUne td.sub-columns.last > table.subWrapper {
+  background-color: #f4aecd;
 }
 
 .contentALaUne td.wrapper {
@@ -1357,6 +1352,10 @@ table.subWrapper,
   padding-right: 10px;
 }
 
+.contentQuote.right td.sub-columns.first {
+  vertical-align: bottom;
+}
+
 .contentQuote.left {
   background-color: #DBD695;
 }
@@ -1365,6 +1364,10 @@ table.subWrapper,
   background-color: #f00;
   padding-left: 10px;
   padding-right: 0px;
+}
+
+.contentQuote.left td.sub-columns.last {
+  vertical-align: bottom;
 }
 
 .contentQuote table.subWrapper.doublequote td {
@@ -1716,9 +1719,12 @@ table.subWrapper,
     padding-bottom: 10px !important;
   }
 
-  table[class="body"] .contentALaUne table.subWrapper td.colSep {
-    width: 5px !important;
-    -premailer-width: 5px !important;
+  table[class="body"] .contentALaUne td.sub-columns > table.subWrapper td.colSep {
+    width: 7px !important;
+  }
+
+  table[class="body"] .contentALaUne td.sub-columns.middle > table.subWrapper td.colSep {
+    width: 3px !important;
   }
 
   table[class="body"] .contentALaUne td.wrapper {
@@ -1728,6 +1734,35 @@ table.subWrapper,
   table[class="body"] .contentALaUne table.columns td,
   table[class="body"] .contentALaUne table.column td {
     padding-bottom: 0 !important;
+  }
+
+  table[class="body"] .contentQuote.right table.subWrapper.image td {
+    padding-left: 0px !important;
+    padding-right: 7px !important;
+  }
+
+  table[class="body"] .contentQuote.left table.subWrapper.image td {
+    padding-left: 7px !important;
+    padding-right: 0px !important;
+  }
+
+  table[class="body"] .contentQuote table.subWrapper.doublequote td {
+    padding-left: 20px !important;
+    padding-right: 0px !important;
+  }
+
+  table[class="body"] .contentQuote td.wrapper.quote {
+    padding-top: 0px !important;
+  }
+
+  table[class="body"] .contentQuote td.wrapper.quote td {
+    font-size: 23px !important;
+    line-height: 26.45px !important;
+  }
+
+  table[class="body"] .contentQuote td.wrapper.quote table.columns td,
+  table[class="body"] .contentQuote td.wrapper.quote table.column td {
+    padding-bottom: 0px !important;
   }
 
   table[class="body"] .contentUnsubscribe td.wrapper {
