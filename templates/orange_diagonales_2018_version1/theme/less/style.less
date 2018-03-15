@@ -20,38 +20,38 @@ h6 { line-height: (@headingsFontSizeH6 * 1.1); }
 //réduction tailles titrages en mode mobile
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] {
-		body, &, p, td {
-			font-size: floor(@baseFontSize * 0.9) !important;
-  			line-height: floor(@baseLineHeight * 0.9) !important;
-		}
+		// body, &, p, td {
+		// 	font-size: floor(@baseFontSize * 0.8) !important;
+  		//  line-height: floor(@baseLineHeight * 0.8) !important;
+		// }
 
 		small {
-			font-size: floor(@fontSizeSmall * 0.9) !important;
+			font-size: floor(@fontSizeSmall * 0.8) !important;
 		}
 
 		h1 {
-			font-size: floor(@headingsFontSizeH1 * 0.9) !important;
-			line-height: (floor(@headingsFontSizeH1 * 0.9) * 1.1) !important;
+			font-size: floor(@headingsFontSizeH1 * 0.8) !important;
+			line-height: (floor(@headingsFontSizeH1 * 0.8) * 1.1) !important;
 		}
 		h2 {
-			font-size: floor(@headingsFontSizeH2 * 0.9) !important;
-			line-height: (floor(@headingsFontSizeH2 * 0.9) * 1.1) !important;
+			font-size: floor(@headingsFontSizeH2 * 0.8) !important;
+			line-height: (floor(@headingsFontSizeH2 * 0.8) * 1.1) !important;
 		}
 		h3 {
-			font-size: floor(@headingsFontSizeH3 * 0.9) !important;
-			line-height: (floor(@headingsFontSizeH3 * 0.9) * 1.1) !important;
+			font-size: floor(@headingsFontSizeH3 * 0.8) !important;
+			line-height: (floor(@headingsFontSizeH3 * 0.8) * 1.1) !important;
 		}
 		h4 {
-			font-size: floor(@headingsFontSizeH4 * 0.9) !important;
-			line-height: (floor(@headingsFontSizeH4 * 0.9) * 1.1) !important;
+			font-size: floor(@headingsFontSizeH4 * 0.8) !important;
+			line-height: (floor(@headingsFontSizeH4 * 0.8) * 1.1) !important;
 		}
 		h5 {
-			font-size: floor(@headingsFontSizeH5 * 0.9) !important;
-			line-height: (floor(@headingsFontSizeH5 * 0.9) * 1.1) !important;
+			font-size: floor(@headingsFontSizeH5 * 0.8) !important;
+			line-height: (floor(@headingsFontSizeH5 * 0.8) * 1.1) !important;
 		}
 		h6 {
-			font-size: floor(@headingsFontSizeH6 * 0.9) !important;
-			line-height: (floor(@headingsFontSizeH6 * 0.9) * 1.1) !important;
+			font-size: floor(@headingsFontSizeH6 * 0.8) !important;
+			line-height: (floor(@headingsFontSizeH6 * 0.8) * 1.1) !important;
 		}
 	}
 }
@@ -192,9 +192,11 @@ td.spacer {
 
 // contentTitle area
 // -------------------------
-// .contentTitle {
-// 	background-color: #DBCD95;
-// }
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentTitle {
+		.columns, .column { display: table !important; }
+	}
+}
 
 
 // contentALaUne area
@@ -263,8 +265,8 @@ td.spacer {
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentALaUne {
 		td {
-			font-size: floor(@fontSizeLarge * 0.9) !important;
-			line-height: (floor(@fontSizeLarge * 0.9) * 1.15) !important;
+			font-size: floor(@fontSizeLarge * 0.8) !important;
+			line-height: (floor(@fontSizeLarge * 0.8) * 1.15) !important;
 		}
 
 		table.columns.mainImage td { padding-top: 0px !important; }
@@ -361,8 +363,8 @@ td.spacer {
 		td.wrapper.quote {
 			padding-top: 0px !important;
 			td {
-				font-size: floor(@headingsFontSizeH4 * 0.9) !important;
-				line-height: (floor(@headingsFontSizeH4 * 0.9) * 1.15) !important;
+				font-size: floor(@headingsFontSizeH4 * 0.8) !important;
+				line-height: (floor(@headingsFontSizeH4 * 0.8) * 1.15) !important;
 			}
 		}
 		table.columns td, table.column td { padding-bottom: 0px !important; }
