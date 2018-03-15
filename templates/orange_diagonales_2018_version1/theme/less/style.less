@@ -220,9 +220,9 @@ td.spacer {
 	table.subWrapper {
 		height: 100%;
 		-premailer-height: 100%;
+		td { vertical-align: middle; }
 
-		td.text-pad {
-			vertical-align: middle;
+		table.subWrapper td {
 			padding-top: @wrapperPad;
 			padding-bottom: @columnPad;
 		}
@@ -254,9 +254,9 @@ td.spacer {
 	}
 	
 	//application couleurs spécifiques
-	td.sub-columns.first > table.subWrapper td.text-pad { background-color: @colorBlue; }
-	td.sub-columns.middle > table.subWrapper td.text-pad { background-color: @colorOrange; }
-	td.sub-columns.last > table.subWrapper td.text-pad { background-color: @colorPink; }
+	td.sub-columns.first { background-color: @colorBlue; }
+	td.sub-columns.middle { background-color: @colorOrange; }
+	td.sub-columns.last { background-color: @colorPink; }
 
 	//suppression décalage vertical
 	td.wrapper { padding-top: 0px; }
@@ -276,11 +276,9 @@ td.spacer {
 				padding-right: (@textPadCollapse / 4) !important;
 			}
 		}
-		table.subWrapper {
-			td.text-pad {
-				padding-top: @wrapperPadCollapse !important;
-				padding-bottom: @columnPadCollapse !important;
-			}
+		table.subWrapper table.subWrapper td {
+			padding-top: @wrapperPadCollapse !important;
+			padding-bottom: @columnPadCollapse !important;
 		}
 		td.sub-columns > table.subWrapper td.colSep {
 			width: ceil(@textPadCollapse * 2 / 6) !important;

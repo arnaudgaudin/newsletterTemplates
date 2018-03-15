@@ -1323,8 +1323,11 @@ table.column .faicons td {
   -premailer-height: 100%;
 }
 
-.contentALaUne table.subWrapper td.text-pad {
+.contentALaUne table.subWrapper td {
   vertical-align: middle;
+}
+
+.contentALaUne table.subWrapper table.subWrapper td {
   padding-top: 15px;
   padding-bottom: 15px;
 }
@@ -1359,15 +1362,15 @@ table.column .faicons td {
   -premailer-width: 5px;
 }
 
-.contentALaUne td.sub-columns.first > table.subWrapper td.text-pad {
+.contentALaUne td.sub-columns.first {
   background-color: #5bc6ef;
 }
 
-.contentALaUne td.sub-columns.middle > table.subWrapper td.text-pad {
+.contentALaUne td.sub-columns.middle {
   background-color: #f38230;
 }
 
-.contentALaUne td.sub-columns.last > table.subWrapper td.text-pad {
+.contentALaUne td.sub-columns.last {
   background-color: #f4aecd;
 }
 
@@ -1796,7 +1799,7 @@ table.column .faicons td {
     padding-right: 5px !important;
   }
 
-  table[class="body"] .contentALaUne table.subWrapper td.text-pad {
+  table[class="body"] .contentALaUne table.subWrapper table.subWrapper td {
     padding-top: 10px !important;
     padding-bottom: 10px !important;
   }
