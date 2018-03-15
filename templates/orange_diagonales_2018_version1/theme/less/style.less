@@ -372,6 +372,7 @@ td.spacer {
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentHost {
+		.columns, .column { display: table !important; }
 		td.text-pad-left { padding-right: 0px !important; }
 		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
 		table.columns td, table.column td { padding-bottom: 0px !important; }
@@ -393,11 +394,7 @@ td.spacer {
 	}
 
 	//rajout espacement vertical
-	table.subWrapper.faicons td { padding-top: (@wrapperPad / 2); }
-
-	td.wrapper.last {
-		text-align: right;
-	}
+	table.subWrapper td { padding-top: (@wrapperPad / 2); }
 
 	td.wrapper.first table { background-color: #576B80; }
 	td.wrapper.middle table { background-color: #718BA6; }
@@ -405,7 +402,21 @@ td.spacer {
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentFooter {
-		table.subWrapper.faicons td { padding-top: (@wrapperPadCollapse / 2); }
+		.columns, .column { display: table !important; }
+
+		td.wrapper td {
+			text-align: center !important;
+		}
+
+		table.subWrapper td { padding-top: (@wrapperPadCollapse / 2); }
+		img.lesechos-publishing {
+			width: 120px !important;
+			height: 12px !important;
+		}
+		img.orange-business-services {
+			width: 180px !important;
+			height: 77px !important;
+		}
 	}
 }
 

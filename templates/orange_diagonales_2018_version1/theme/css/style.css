@@ -1490,12 +1490,8 @@ table.column .faicons td {
   vertical-align: bottom;
 }
 
-.contentFooter table.subWrapper.faicons td {
+.contentFooter table.subWrapper td {
   padding-top: 7.5px;
-}
-
-.contentFooter td.wrapper.last {
-  text-align: right;
 }
 
 .contentFooter td.wrapper.first table {
@@ -1860,6 +1856,11 @@ table.column .faicons td {
     padding-bottom: 0px !important;
   }
 
+  table[class="body"] .contentHost .columns,
+  table[class="body"] .contentHost .column {
+    display: table !important;
+  }
+
   table[class="body"] .contentHost td.text-pad-left {
     padding-right: 0px !important;
   }
@@ -1873,8 +1874,27 @@ table.column .faicons td {
     padding-bottom: 0px !important;
   }
 
-  table[class="body"] .contentFooter table.subWrapper.faicons td {
+  table[class="body"] .contentFooter .columns,
+  table[class="body"] .contentFooter .column {
+    display: table !important;
+  }
+
+  table[class="body"] .contentFooter td.wrapper td {
+    text-align: center !important;
+  }
+
+  table[class="body"] .contentFooter table.subWrapper td {
     padding-top: 5px;
+  }
+
+  table[class="body"] .contentFooter img.lesechos-publishing {
+    width: 120px !important;
+    height: 12px !important;
+  }
+
+  table[class="body"] .contentFooter img.orange-business-services {
+    width: 180px !important;
+    height: 77px !important;
   }
 
   table[class="body"] .contentUnsubscribe td.wrapper {
