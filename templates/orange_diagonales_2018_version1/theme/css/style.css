@@ -1463,7 +1463,7 @@ table.column .faicons td {
 }
 
 .contentFooter {
-  background-color: #95B8DB;
+  background-color: #000000;
 }
 
 .contentFooter,
@@ -1492,18 +1492,6 @@ table.column .faicons td {
 
 .contentFooter table.subWrapper td {
   padding-top: 7.5px;
-}
-
-.contentFooter td.wrapper.first table {
-  background-color: #576B80;
-}
-
-.contentFooter td.wrapper.middle table {
-  background-color: #718BA6;
-}
-
-.contentFooter td.wrapper.last table {
-  background-color: #8BABCC;
 }
 
 .contentUnsubscribe,
@@ -1883,8 +1871,13 @@ table.column .faicons td {
     text-align: center !important;
   }
 
+  table[class="body"] .contentFooter td.wrapper.middle,
+  table[class="body"] .contentFooter td.wrapper.last {
+    padding-top: 0px !important;
+  }
+
   table[class="body"] .contentFooter table.subWrapper td {
-    padding-top: 5px;
+    padding-top: 5px !important;
   }
 
   table[class="body"] .contentFooter img.lesechos-publishing {

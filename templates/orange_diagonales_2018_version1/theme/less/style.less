@@ -348,11 +348,11 @@ td.spacer {
 			padding-right: 0px !important;
 		}
 		td.wrapper.quote {
+			padding-top: 0px !important;
 			td {
 				font-size: floor(@headingsFontSizeH4 * 0.9) !important;
 				line-height: (floor(@headingsFontSizeH4 * 0.9) * 1.15) !important;
 			}
-			padding-top: 0px !important;
 		}
 		table.columns td, table.column td { padding-bottom: 0px !important; }
 	}
@@ -383,7 +383,7 @@ td.spacer {
 // contentFooter area
 // -------------------------
 .contentFooter {
-	background-color: #95B8DB;
+	background-color: #000000;
 	&, td, .inner { color: #ffffff; }
   	a { .newsletterLinkColor(@colorOrange); }
 
@@ -395,20 +395,13 @@ td.spacer {
 
 	//rajout espacement vertical
 	table.subWrapper td { padding-top: (@wrapperPad / 2); }
-
-	td.wrapper.first table { background-color: #576B80; }
-	td.wrapper.middle table { background-color: #718BA6; }
-	td.wrapper.last table { background-color: #8BABCC; }
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentFooter {
 		.columns, .column { display: table !important; }
-
-		td.wrapper td {
-			text-align: center !important;
-		}
-
-		table.subWrapper td { padding-top: (@wrapperPadCollapse / 2); }
+		td.wrapper td { text-align: center !important; }
+		td.wrapper.middle, td.wrapper.last { padding-top: 0px !important; }
+		table.subWrapper td { padding-top: (@wrapperPadCollapse / 2) !important; }
 		img.lesechos-publishing {
 			width: 120px !important;
 			height: 12px !important;
