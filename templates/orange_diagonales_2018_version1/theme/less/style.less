@@ -122,8 +122,8 @@ table.subWrapper {
 	}
 
 	//suppression décalage vertical
-	td.wrapper { padding-top: 0; }
-	table.columns td, table.column td { padding-bottom: 0; }
+	td.wrapper { padding-top: 0px; }
+	table.columns td, table.column td { padding-bottom: 0px; }
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .header {
@@ -199,8 +199,8 @@ table.subWrapper {
 	td.sub-columns.last > table.subWrapper { background-color: @colorPink; }
 
 	//suppression décalage vertical
-	td.wrapper { padding-top: 0; }
-	table.columns td, table.column td { padding-bottom: 0; }
+	td.wrapper { padding-top: 0px; }
+	table.columns td, table.column td { padding-bottom: 0px; }
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentALaUne {
@@ -232,17 +232,25 @@ table.subWrapper {
 }
 
 
-// contentQuoteRight area
+// contentQuote area
 // -------------------------
-.contentQuoteRight {
-	background-color: #95DBBF;
-}
+.contentQuote {
+	&.right { background-color: #95DBBF; }
+	&.left { background-color: #DBD695; }
 
 
-// contentQuoteLeft area
-// -------------------------
-.contentQuoteLeft {
-	background-color: #DBD695;
+	td.wrapper {
+		&.quote {
+			background-color: fade(#0f0, 75%);
+			padding-top: 0px;
+			table.columns td, table.column td { padding-bottom: 0px; }
+		}
+
+		&.author {
+			background-color: fade(#00f, 75%);
+
+		}
+	}
 }
 
 

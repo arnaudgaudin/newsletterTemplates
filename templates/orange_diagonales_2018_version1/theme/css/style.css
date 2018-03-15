@@ -1256,12 +1256,12 @@ table.subWrapper,
 }
 
 .header td.wrapper {
-  padding-top: 0;
+  padding-top: 0px;
 }
 
 .header table.columns td,
 .header table.column td {
-  padding-bottom: 0;
+  padding-bottom: 0px;
 }
 
 .contentALaUne td {
@@ -1330,20 +1330,34 @@ table.subWrapper,
 }
 
 .contentALaUne td.wrapper {
-  padding-top: 0;
+  padding-top: 0px;
 }
 
 .contentALaUne table.columns td,
 .contentALaUne table.column td {
-  padding-bottom: 0;
+  padding-bottom: 0px;
 }
 
-.contentQuoteRight {
+.contentQuote.right {
   background-color: #95DBBF;
 }
 
-.contentQuoteLeft {
+.contentQuote.left {
   background-color: #DBD695;
+}
+
+.contentQuote td.wrapper.quote {
+  background-color: rgba(0, 255, 0, 0.75);
+  padding-top: 0px;
+}
+
+.contentQuote td.wrapper.quote table.columns td,
+.contentQuote td.wrapper.quote table.column td {
+  padding-bottom: 0px;
+}
+
+.contentQuote td.wrapper.author {
+  background-color: rgba(0, 0, 255, 0.75);
 }
 
 .contentHost {
