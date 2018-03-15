@@ -1376,6 +1376,12 @@ table.subWrapper,
   padding-right: 0px;
 }
 
+.contentQuote td.spacer {
+  background-color: #ff0;
+  height: 30px;
+  -premailer-height: 30px;
+}
+
 .contentQuote td.wrapper.quote {
   background-color: rgba(0, 255, 0, 0.75);
   padding-top: 0px;
@@ -1406,13 +1412,13 @@ table.subWrapper,
   font-weight: 700;
 }
 
-.contentQuote td.wrapper.quote table.columns td,
-.contentQuote td.wrapper.quote table.column td {
-  padding-bottom: 0px;
-}
-
 .contentQuote td.wrapper.author {
   background-color: rgba(0, 0, 255, 0.75);
+}
+
+.contentQuote table.columns td,
+.contentQuote table.column td {
+  padding-bottom: 0px;
 }
 
 .contentHost {
@@ -1691,12 +1697,12 @@ table.subWrapper,
   }
 
   table[class="body"] .header td.wrapper {
-    padding-top: 0 !important;
+    padding-top: 0px !important;
   }
 
   table[class="body"] .header table.columns td,
   table[class="body"] .header table.column td {
-    padding-bottom: 0 !important;
+    padding-bottom: 0px !important;
   }
 
   table[class="body"] .contentALaUne td {
@@ -1728,12 +1734,12 @@ table.subWrapper,
   }
 
   table[class="body"] .contentALaUne td.wrapper {
-    padding-top: 0 !important;
+    padding-top: 0px !important;
   }
 
   table[class="body"] .contentALaUne table.columns td,
   table[class="body"] .contentALaUne table.column td {
-    padding-bottom: 0 !important;
+    padding-bottom: 0px !important;
   }
 
   table[class="body"] .contentQuote.right table.subWrapper.image td {
@@ -1751,6 +1757,10 @@ table.subWrapper,
     padding-right: 0px !important;
   }
 
+  table[class="body"] .contentQuote td.spacer {
+    height: 20px !important;
+  }
+
   table[class="body"] .contentQuote td.wrapper.quote {
     padding-top: 0px !important;
   }
@@ -1760,8 +1770,8 @@ table.subWrapper,
     line-height: 26.45px !important;
   }
 
-  table[class="body"] .contentQuote td.wrapper.quote table.columns td,
-  table[class="body"] .contentQuote td.wrapper.quote table.column td {
+  table[class="body"] .contentQuote table.columns td,
+  table[class="body"] .contentQuote table.column td {
     padding-bottom: 0px !important;
   }
 

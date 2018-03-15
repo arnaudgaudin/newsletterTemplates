@@ -133,8 +133,8 @@ table.subWrapper {
 				padding-bottom: @columnPadCollapse !important;
 			}
 		}
-		td.wrapper { padding-top: 0 !important; }
-		table.columns td, table.column td { padding-bottom: 0 !important; }
+		td.wrapper { padding-top: 0px !important; }
+		table.columns td, table.column td { padding-bottom: 0px !important; }
 	}
 }
 
@@ -235,8 +235,8 @@ table.subWrapper {
 		td.sub-columns.middle > table.subWrapper td.colSep {
 			width: floor(@textPadCollapse * 1 / 6) !important;
 		}
-		td.wrapper { padding-top: 0 !important; }
-		table.columns td, table.column td { padding-bottom: 0 !important; }
+		td.wrapper { padding-top: 0px !important; }
+		table.columns td, table.column td { padding-bottom: 0px !important; }
 	}
 }
 
@@ -269,6 +269,12 @@ table.subWrapper {
 		padding-right: 0px;
 	}
 
+	td.spacer {
+		background-color: #ff0;
+		height: (@wrapperPad * 2);
+		-premailer-height: (@wrapperPad * 2);
+	}
+
 	td.wrapper {
 		&.quote {
 			background-color: fade(#0f0, 75%);
@@ -282,13 +288,15 @@ table.subWrapper {
 			}
 			//suppression espacement vertical
 			padding-top: 0px;
-			table.columns td, table.column td { padding-bottom: 0px; }
 		}
 
 		&.author {
 			background-color: fade(#00f, 75%);
 		}
 	}
+	
+	//suppression espacement vertical
+	table.columns td, table.column td { padding-bottom: 0px; }
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentQuote {
@@ -304,14 +312,15 @@ table.subWrapper {
 			padding-left: @textPadCollapse !important;
 			padding-right: 0px !important;
 		}
+		td.spacer { height: (@wrapperPadCollapse * 2) !important; }
 		td.wrapper.quote {
 			td {
 				font-size: floor(@headingsFontSizeH4 * 0.9) !important;
 				line-height: (floor(@headingsFontSizeH4 * 0.9) * 1.15) !important;
 			}
 			padding-top: 0px !important;
-			table.columns td, table.column td { padding-bottom: 0px !important; }
 		}
+		table.columns td, table.column td { padding-bottom: 0px !important; }
 	}
 }
 
