@@ -1351,8 +1351,26 @@ table.subWrapper,
   background-color: #95DBBF;
 }
 
+.contentQuote.right table.subWrapper.image td {
+  background-color: #f00;
+  padding-left: 0px;
+  padding-right: 10px;
+}
+
 .contentQuote.left {
   background-color: #DBD695;
+}
+
+.contentQuote.left table.subWrapper.image td {
+  background-color: #f00;
+  padding-left: 10px;
+  padding-right: 0px;
+}
+
+.contentQuote table.subWrapper.doublequote td {
+  background-color: #f0f;
+  padding-left: 30px;
+  padding-right: 0px;
 }
 
 .contentQuote td.wrapper.quote {

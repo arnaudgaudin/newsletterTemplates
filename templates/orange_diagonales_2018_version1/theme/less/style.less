@@ -250,8 +250,29 @@ table.subWrapper {
 // contentQuote area
 // -------------------------
 .contentQuote {
-	&.right { background-color: #95DBBF; }
-	&.left { background-color: #DBD695; }
+	&.right {
+		background-color: #95DBBF;
+		table.subWrapper.image td {
+			background-color: #f00;
+			padding-left: 0px;
+			padding-right: ceil(@textPad * 2 / 6);
+		}
+	}
+	&.left {
+		background-color: #DBD695;
+		table.subWrapper.image td {
+			background-color: #f00;
+			padding-left: ceil(@textPad * 2 / 6);
+			padding-right: 0px;
+		}
+	}
+
+	table.subWrapper.doublequote td {
+		background-color: #f0f;
+		padding-left: @textPad;
+		padding-right: 0px;
+	}
+	
 
 	td.wrapper {
 		&.quote {
