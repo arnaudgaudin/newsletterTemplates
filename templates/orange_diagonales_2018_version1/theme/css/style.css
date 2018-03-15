@@ -1197,7 +1197,7 @@ td.spacer {
 }
 
 .contentOnline a {
-  color: #808080;
+  color: #404040;
 }
 
 .contentOnline a .important,
@@ -1205,7 +1205,7 @@ td.spacer {
 .contentOnline a:hover,
 .contentOnline a:focus,
 .contentOnline a:active {
-  color: #808080 !important;
+  color: #404040 !important;
 }
 
 .contentOnline td {
@@ -1454,7 +1454,7 @@ td.spacer {
 }
 
 .contentUnsubscribe a {
-  color: #808080;
+  color: #404040;
 }
 
 .contentUnsubscribe a .important,
@@ -1462,7 +1462,7 @@ td.spacer {
 .contentUnsubscribe a:hover,
 .contentUnsubscribe a:focus,
 .contentUnsubscribe a:active {
-  color: #808080 !important;
+  color: #404040 !important;
 }
 
 .contentUnsubscribe td {

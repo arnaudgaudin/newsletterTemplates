@@ -98,7 +98,8 @@ td.spacer {
 // contentOnline area
 // -------------------------
 .contentOnline {
-	.newsletterInnerTextColor(darken(@containerBackground, 50%));
+	&, td, .inner { color: darken(@containerBackground, 50%); }
+  	a { .newsletterLinkColor(darken(@containerBackground, 75%)); }
 
 	td {
 		font-size: @fontSizeSmall;
@@ -357,7 +358,8 @@ td.spacer {
 // contentUnsubscribe area
 // -------------------------
 .contentUnsubscribe {
-	.newsletterInnerTextColor(darken(@containerBackground, 50%));
+	&, td, .inner { color: darken(@containerBackground, 50%); }
+  	a { .newsletterLinkColor(darken(@containerBackground, 75%)); }
 
 	td {
 		font-size: @fontSizeSmall;
