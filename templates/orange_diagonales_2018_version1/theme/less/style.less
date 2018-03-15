@@ -314,6 +314,13 @@ td.spacer {
 		padding-left: @textPad;
 		padding-right: 0px;
 	}
+	
+	table.columns, table.column {
+		table.subWrapper.quote td {
+			padding-top: (@wrapperPad / 2);
+			padding-bottom: (@columnPad / 2);
+		}
+	}
 
 	td.wrapper {
 		&.quote {
@@ -346,6 +353,10 @@ td.spacer {
 		table.subWrapper.doublequote td {
 			padding-left: @textPadCollapse !important;
 			padding-right: 0px !important;
+		}
+		table.subWrapper.quote td {
+			padding-top: (@wrapperPadCollapse / 2) !important;
+			padding-bottom: (@columnPadCollapse / 2) !important;
 		}
 		td.wrapper.quote {
 			padding-top: 0px !important;
