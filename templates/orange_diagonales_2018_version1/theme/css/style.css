@@ -1466,6 +1466,10 @@ table.column .faicons td {
   background-color: #95B8DB;
 }
 
+.contentFooter table.subWrapper.faicons td {
+  padding-top: 7.5px;
+}
+
 .contentFooter td.wrapper.first table {
   background-color: #576B80;
 }
@@ -1739,12 +1743,12 @@ table.column .faicons td {
   }
 
   table[class="body"] .contentOnline td.wrapper {
-    padding-top: 7.5px !important;
+    padding-top: 5px !important;
   }
 
   table[class="body"] .contentOnline table.columns td,
   table[class="body"] .contentOnline table.column td {
-    padding-bottom: 7.5px !important;
+    padding-bottom: 5px !important;
   }
 
   table[class="body"] .header table.columns table.subWrapper td,
@@ -1833,7 +1837,7 @@ table.column .faicons td {
   }
 
   table[class="body"] .contentHost td.wrapper {
-    padding-top: 7.5px !important;
+    padding-top: 5px !important;
   }
 
   table[class="body"] .contentHost table.columns td,
@@ -1841,12 +1845,16 @@ table.column .faicons td {
     padding-bottom: 0px !important;
   }
 
+  table[class="body"] .contentFooter table.subWrapper.faicons td {
+    padding-top: 5px;
+  }
+
   table[class="body"] .contentUnsubscribe td.wrapper {
-    padding-top: 7.5px !important;
+    padding-top: 5px !important;
   }
 
   table[class="body"] .contentUnsubscribe table.columns td,
   table[class="body"] .contentUnsubscribe table.column td {
-    padding-bottom: 7.5px !important;
+    padding-bottom: 5px !important;
   }
 }

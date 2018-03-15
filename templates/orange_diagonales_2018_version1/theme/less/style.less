@@ -146,8 +146,8 @@ td.spacer {
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentOnline {
-		td.wrapper { padding-top: (@wrapperPad / 2) !important; }
-		table.columns td, table.column td { padding-bottom: (@columnPad / 2) !important; }
+		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
+		table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
 	}
 }
 
@@ -373,7 +373,7 @@ td.spacer {
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentHost {
 		td.text-pad-left { padding-right: 0px !important; }
-		td.wrapper { padding-top: (@wrapperPad / 2) !important; }
+		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
 		table.columns td, table.column td { padding-bottom: 0px !important; }
 	}
 }
@@ -384,9 +384,19 @@ td.spacer {
 .contentFooter {
 	background-color: #95B8DB;
 	
+	//rajout espacement vertical
+	table.subWrapper.faicons td {
+		padding-top: (@wrapperPad / 2);
+	}
+	
 	td.wrapper.first table { background-color: #576B80; }
 	td.wrapper.middle table { background-color: #718BA6; }
 	td.wrapper.last table { background-color: #8BABCC; }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentFooter {
+		table.subWrapper.faicons td { padding-top: (@wrapperPadCollapse / 2); }
+	}
 }
 
 
@@ -406,8 +416,8 @@ td.spacer {
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentUnsubscribe {
-		td.wrapper { padding-top: (@wrapperPad / 2) !important; }
-		table.columns td, table.column td { padding-bottom: (@columnPad / 2) !important; }
+		td.wrapper { padding-top: (@wrapperPadCollapse / 2) !important; }
+		table.columns td, table.column td { padding-bottom: (@columnPadCollapse / 2) !important; }
 	}
 }
 
