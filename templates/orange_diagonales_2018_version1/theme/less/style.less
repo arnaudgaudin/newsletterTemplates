@@ -67,6 +67,16 @@ table.subWrapper {
 }
 
 
+// Gestion spacers verticaux
+td.spacer {
+	height: (@wrapperPad * 2);
+	-premailer-height: (@wrapperPad * 2);
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	td.spacer { height: (@wrapperPadCollapse * 2) !important; }
+}
+
+
 //tous les titres
 .title {
 	color: @colorOrange;
@@ -245,18 +255,14 @@ table.subWrapper {
 // -------------------------
 .contentQuote {
 	&.right {
-		background-color: #95DBBF;
 		table.subWrapper.image td {
-			background-color: #f00;
 			padding-left: 0px;
 			padding-right: ceil(@textPad * 2 / 6);
 		}
 		td.sub-columns.first { vertical-align: bottom; }
 	}
 	&.left {
-		background-color: #DBD695;
 		table.subWrapper.image td {
-			background-color: #f00;
 			padding-left: ceil(@textPad * 2 / 6);
 			padding-right: 0px;
 		}
@@ -264,22 +270,14 @@ table.subWrapper {
 	}
 	
 	table.subWrapper.doublequote td {
-		background-color: #f0f;
 		padding-left: @textPad;
 		padding-right: 0px;
 	}
 
-	td.spacer {
-		background-color: #ff0;
-		height: (@wrapperPad * 2);
-		-premailer-height: (@wrapperPad * 2);
-	}
-
 	td.wrapper {
 		&.quote {
-			background-color: fade(#0f0, 75%);
+			background-color: #000000;
 			.newsletterInnerTextColor(#ffffff);
-
 			td {
 				vertical-align: middle;
 				font-size: @headingsFontSizeH4;
@@ -288,10 +286,6 @@ table.subWrapper {
 			}
 			//suppression espacement vertical
 			padding-top: 0px;
-		}
-
-		&.author {
-			background-color: fade(#00f, 75%);
 		}
 	}
 	
@@ -312,7 +306,6 @@ table.subWrapper {
 			padding-left: @textPadCollapse !important;
 			padding-right: 0px !important;
 		}
-		td.spacer { height: (@wrapperPadCollapse * 2) !important; }
 		td.wrapper.quote {
 			td {
 				font-size: floor(@headingsFontSizeH4 * 0.9) !important;

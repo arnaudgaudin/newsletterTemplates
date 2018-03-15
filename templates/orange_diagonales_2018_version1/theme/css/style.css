@@ -1166,6 +1166,11 @@ table.subWrapper,
   -premailer-width: 100%;
 }
 
+td.spacer {
+  height: 30px;
+  -premailer-height: 30px;
+}
+
 .title {
   color: #f38230;
   padding-bottom: 5px;
@@ -1342,12 +1347,7 @@ table.subWrapper,
   padding-bottom: 0px;
 }
 
-.contentQuote.right {
-  background-color: #95DBBF;
-}
-
 .contentQuote.right table.subWrapper.image td {
-  background-color: #f00;
   padding-left: 0px;
   padding-right: 10px;
 }
@@ -1356,12 +1356,7 @@ table.subWrapper,
   vertical-align: bottom;
 }
 
-.contentQuote.left {
-  background-color: #DBD695;
-}
-
 .contentQuote.left table.subWrapper.image td {
-  background-color: #f00;
   padding-left: 10px;
   padding-right: 0px;
 }
@@ -1371,19 +1366,12 @@ table.subWrapper,
 }
 
 .contentQuote table.subWrapper.doublequote td {
-  background-color: #f0f;
   padding-left: 30px;
   padding-right: 0px;
 }
 
-.contentQuote td.spacer {
-  background-color: #ff0;
-  height: 30px;
-  -premailer-height: 30px;
-}
-
 .contentQuote td.wrapper.quote {
-  background-color: rgba(0, 255, 0, 0.75);
+  background-color: #000000;
   padding-top: 0px;
 }
 
@@ -1410,10 +1398,6 @@ table.subWrapper,
   font-size: 26px;
   line-height: 29px;
   font-weight: 700;
-}
-
-.contentQuote td.wrapper.author {
-  background-color: rgba(0, 0, 255, 0.75);
 }
 
 .contentQuote table.columns td,
@@ -1681,6 +1665,10 @@ table.subWrapper,
     line-height: 17.6px !important;
   }
 
+  td.spacer {
+    height: 20px !important;
+  }
+
   table[class="body"] .contentOnline td.wrapper {
     padding-top: 7.5px !important;
   }
@@ -1755,10 +1743,6 @@ table.subWrapper,
   table[class="body"] .contentQuote table.subWrapper.doublequote td {
     padding-left: 20px !important;
     padding-right: 0px !important;
-  }
-
-  table[class="body"] .contentQuote td.spacer {
-    height: 20px !important;
   }
 
   table[class="body"] .contentQuote td.wrapper.quote {
