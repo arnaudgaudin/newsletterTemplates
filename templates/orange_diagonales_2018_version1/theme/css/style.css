@@ -1359,15 +1359,15 @@ table.column .faicons td {
   -premailer-width: 5px;
 }
 
-.contentALaUne td.sub-columns.first > table.subWrapper {
+.contentALaUne td.sub-columns.first > table.subWrapper td.text-pad {
   background-color: #5bc6ef;
 }
 
-.contentALaUne td.sub-columns.middle > table.subWrapper {
+.contentALaUne td.sub-columns.middle > table.subWrapper td.text-pad {
   background-color: #f38230;
 }
 
-.contentALaUne td.sub-columns.last > table.subWrapper {
+.contentALaUne td.sub-columns.last > table.subWrapper td.text-pad {
   background-color: #f4aecd;
 }
 
