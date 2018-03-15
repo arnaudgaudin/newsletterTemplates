@@ -176,9 +176,6 @@ table.subWrapper {
 	
 		//gestion des séparations verticales
 		td.colSep {
-			width: (@textPad / 4);
-			-premailer-width: (@textPad / 4);
-			background-color: #f00;
 			table.rowSep {
 				width: 100%;
 				height: 100%;
@@ -194,9 +191,27 @@ table.subWrapper {
 		}
 	}
 
-	td.sub-columns.first > table.subWrapper { background-color: @colorBlue; }
-	td.sub-columns.middle > table.subWrapper { background-color: @colorOrange; }
-	td.sub-columns.last > table.subWrapper { background-color: @colorPink; }
+	td.sub-columns.first > table.subWrapper {
+		background-color: @colorBlue;
+		td.colSep {
+			width: ceil(@textPad * 2 / 6);
+			-premailer-width: ceil(@textPad * 2 / 6);
+		}
+	}
+	td.sub-columns.middle > table.subWrapper {
+		background-color: @colorOrange;
+		td.colSep {
+			width: floor(@textPad * 1 / 6);
+			-premailer-width: floor(@textPad * 1 / 6);
+		}
+	}
+	td.sub-columns.last > table.subWrapper {
+		background-color: @colorPink;
+		td.colSep {
+			width: ceil(@textPad * 2 / 6);
+			-premailer-width: ceil(@textPad * 2 / 6);
+		}
+	}
 
 	//suppression décalage vertical
 	td.wrapper { padding-top: 0px; }
