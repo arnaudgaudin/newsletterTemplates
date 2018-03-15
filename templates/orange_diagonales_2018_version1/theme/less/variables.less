@@ -49,17 +49,17 @@
 
 // Padding config
 // --------------------------------------------------
-@wrapperPad: 20px;
-@wrapperPadCollapse: (@wrapperPad / 2);
+@wrapperPad: 15px;
+@wrapperPadCollapse: 10px;
 
 @columnPad: @wrapperPad;
-@columnPadCollapse: (@columnPad / 2);
+@columnPadCollapse: @wrapperPadCollapse;
 
 @blockGridPad: @wrapperPad;
-@blockGridPadCollapse: (@blockGridPad / 2);
+@blockGridPadCollapse: @wrapperPadCollapse;
 
 @panelPad: @wrapperPad;
-@panelPadCollapse: (@panelPad / 2);
+@panelPadCollapse: @wrapperPadCollapse;
 
 @textPad: (@wrapperPad * 2);
-@textPadCollapse: (@textPad / 2);
+@textPadCollapse: (@wrapperPadCollapse * 2);

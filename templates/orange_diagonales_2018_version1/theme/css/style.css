@@ -134,7 +134,7 @@ table.container table.row {
 }
 
 td.wrapper {
-  padding: 20px 0 0px 0px;
+  padding: 15px 0 0px 0px;
 }
 
 table.columns,
@@ -144,7 +144,7 @@ table.column {
 
 table.columns td,
 table.column td {
-  padding: 0px 0px 20px;
+  padding: 0px 0px 15px;
 }
 
 table.columns td.sub-columns,
@@ -432,22 +432,22 @@ td.expander {
 
 table.columns .text-pad,
 table.column .text-pad {
-  padding-left: 40px !important;
-  padding-right: 40px !important;
+  padding-left: 30px !important;
+  padding-right: 30px !important;
 }
 
 table.columns .left-text-pad,
 table.columns .text-pad-left,
 table.column .left-text-pad,
 table.column .text-pad-left {
-  padding-left: 40px !important;
+  padding-left: 30px !important;
 }
 
 table.columns .right-text-pad,
 table.columns .text-pad-right,
 table.column .right-text-pad,
 table.column .text-pad-right {
-  padding-right: 40px !important;
+  padding-right: 30px !important;
 }
 
 /* Block Grid */
@@ -459,7 +459,7 @@ table.column .text-pad-right {
 
 .block-grid td {
   display: inline-block;
-  padding: 20px;
+  padding: 15px;
 }
 
 .two-up td {
@@ -697,7 +697,7 @@ h6 a:visited .important {
 .panel {
   background: #f2f2f2;
   border: 1px solid #d9d9d9;
-  padding: 20px !important;
+  padding: 15px !important;
 }
 
 .sub-grid table {
@@ -1207,12 +1207,12 @@ table.subWrapper,
 }
 
 .contentOnline td.wrapper {
-  padding-top: 10px;
+  padding-top: 7.5px;
 }
 
 .contentOnline table.columns td,
 .contentOnline table.column td {
-  padding-bottom: 10px;
+  padding-bottom: 7.5px;
 }
 
 .header {
@@ -1251,8 +1251,8 @@ table.subWrapper,
 
 .header table.columns table.subWrapper td,
 .header table.column table.subWrapper td {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .header td.wrapper {
@@ -1276,8 +1276,8 @@ table.subWrapper,
 
 .contentALaUne table.columns table.subWrapper td.text-pad,
 .contentALaUne table.column table.subWrapper td.text-pad {
-  padding-left: 10px !important;
-  padding-right: 10px !important;
+  padding-left: 7.5px !important;
+  padding-right: 7.5px !important;
 }
 
 .contentALaUne table.subWrapper {
@@ -1287,13 +1287,13 @@ table.subWrapper,
 
 .contentALaUne table.subWrapper td.text-pad {
   vertical-align: middle;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .contentALaUne table.subWrapper td.colSep {
-  width: 10px;
-  -premailer-width: 10px;
+  width: 7.5px;
+  -premailer-width: 7.5px;
   background-color: #f00;
 }
 
@@ -1429,12 +1429,12 @@ table.subWrapper,
 }
 
 .contentUnsubscribe td.wrapper {
-  padding-top: 10px;
+  padding-top: 7.5px;
 }
 
 .contentUnsubscribe table.columns td,
 .contentUnsubscribe table.column td {
-  padding-bottom: 10px;
+  padding-bottom: 7.5px;
 }
 
 @media only screen and (max-width: 720px) {
@@ -1646,12 +1646,12 @@ table.subWrapper,
   }
 
   table[class="body"] .contentOnline td.wrapper {
-    padding-top: 10px !important;
+    padding-top: 7.5px !important;
   }
 
   table[class="body"] .contentOnline table.columns td,
   table[class="body"] .contentOnline table.column td {
-    padding-bottom: 10px !important;
+    padding-bottom: 7.5px !important;
   }
 
   table[class="body"] .header table.columns table.subWrapper td,
@@ -1704,11 +1704,11 @@ table.subWrapper,
   }
 
   table[class="body"] .contentUnsubscribe td.wrapper {
-    padding-top: 10px !important;
+    padding-top: 7.5px !important;
   }
 
   table[class="body"] .contentUnsubscribe table.columns td,
   table[class="body"] .contentUnsubscribe table.column td {
-    padding-bottom: 10px !important;
+    padding-bottom: 7.5px !important;
   }
 }
