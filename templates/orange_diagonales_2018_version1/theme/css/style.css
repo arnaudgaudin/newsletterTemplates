@@ -1190,6 +1190,37 @@ td.spacer {
   color: #f38230 !important;
 }
 
+.faicons td {
+  text-align: left;
+}
+
+table.columns .faicons td,
+table.column .faicons td {
+  padding-bottom: 0px;
+}
+
+.faicon {
+  display: inline;
+  font-size: 0px;
+  mso-line-height-rule: exactly;
+  line-height: 0px;
+  padding: 0px 6px;
+}
+
+.faicon.first {
+  padding-left: 0px;
+}
+
+.faicon.last {
+  padding-right: 0px;
+}
+
+.faicon img {
+  display: inline;
+  float: none;
+  -premailer-float: none;
+}
+
 .contentOnline,
 .contentOnline td,
 .contentOnline .inner {
@@ -1690,6 +1721,21 @@ td.spacer {
   td.spacer {
     width: 100% !important;
     height: 20px !important;
+  }
+
+  table[class="body"] .faicons .columns,
+  table[class="body"] .faicons .column {
+    display: table !important;
+  }
+
+  table[class="body"] .faicon img {
+    width: 24px !important;
+    height: 24px !important;
+  }
+
+  table[class="body"] table.columns .faicons td,
+  table[class="body"] table.column .faicons td {
+    padding-bottom: 0px !important;
   }
 
   table[class="body"] .contentOnline td.wrapper {

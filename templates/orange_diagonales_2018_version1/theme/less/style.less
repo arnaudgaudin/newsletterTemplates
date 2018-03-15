@@ -95,6 +95,41 @@ td.spacer {
 // }
 
 
+//réseaux sociaux
+.faicons td {
+	text-align: left;
+	table.columns &, table.column & { padding-bottom: 0px; }
+}
+.faicon {
+	display: inline;
+	//pour supprimer les espaces
+	font-size: 0px;
+	mso-line-height-rule: exactly;
+	line-height: 0px;
+	padding: 0px 6px;
+	&.first { padding-left: 0px; }
+	&.last { padding-right: 0px; }
+	img {
+		display: inline;
+		float: none;
+		-premailer-float: none;
+	}
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .faicons {
+		.columns, .column { display: table !important; }
+	}
+	table[class="body"] .faicon img {
+		width: 24px !important;
+		height: 24px !important;
+	}
+	table[class="body"] table.columns .faicons td,
+	table[class="body"] table.column .faicons td {
+		padding-bottom: 0px !important;
+	}
+}
+
+
 // contentOnline area
 // -------------------------
 .contentOnline {
