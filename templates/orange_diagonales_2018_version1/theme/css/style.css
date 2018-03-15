@@ -1351,6 +1351,31 @@ table.subWrapper,
   padding-top: 0px;
 }
 
+.contentQuote td.wrapper.quote,
+.contentQuote td.wrapper.quote td,
+.contentQuote td.wrapper.quote .inner {
+  color: #ffffff;
+}
+
+.contentQuote td.wrapper.quote a {
+  color: #ffffff;
+}
+
+.contentQuote td.wrapper.quote a .important,
+.contentQuote td.wrapper.quote a:visited,
+.contentQuote td.wrapper.quote a:hover,
+.contentQuote td.wrapper.quote a:focus,
+.contentQuote td.wrapper.quote a:active {
+  color: #ffffff !important;
+}
+
+.contentQuote td.wrapper.quote td {
+  vertical-align: middle;
+  font-size: 26px;
+  line-height: 29px;
+  font-weight: 700;
+}
+
 .contentQuote td.wrapper.quote table.columns td,
 .contentQuote td.wrapper.quote table.column td {
   padding-bottom: 0px;

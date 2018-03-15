@@ -238,10 +238,20 @@ table.subWrapper {
 	&.right { background-color: #95DBBF; }
 	&.left { background-color: #DBD695; }
 
-
 	td.wrapper {
 		&.quote {
 			background-color: fade(#0f0, 75%);
+			.newsletterInnerTextColor(#ffffff);
+
+			td {
+				vertical-align: middle;
+				font-size: @headingsFontSizeH4;
+				line-height: floor(@headingsFontSizeH4 * 1.15);
+				font-weight: 700;
+			}
+
+
+			//suppression espacement vertical
 			padding-top: 0px;
 			table.columns td, table.column td { padding-bottom: 0px; }
 		}
