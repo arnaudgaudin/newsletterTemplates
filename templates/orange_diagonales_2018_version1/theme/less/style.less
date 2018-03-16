@@ -249,33 +249,24 @@ td.spacer {
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentALaUne {
-		/*
 		td {
 			font-size: floor(@fontSizeLarge * 0.8) !important;
 			line-height: (floor(@fontSizeLarge * 0.8) * 1.15) !important;
 		}
-
-		table.columns.mainImage td { padding-top: 0px !important; }
 		table.columns, table.column {
-			table.subWrapper td.text-pad {
-				padding-left: (@textPadCollapse / 4) !important;
-				padding-right: (@textPadCollapse / 4) !important;
+			table.textWrapper td {
+				padding-top: @wrapperPadCollapse !important;
+				padding-bottom: @columnPadCollapse !important;
+				&.text-pad {
+					padding-left: (@textPadCollapse / 4) !important;
+					padding-right: (@textPadCollapse / 4) !important;
+				}
 			}
 		}
-		table.subWrapper table.subWrapper td {
-			padding-top: @wrapperPadCollapse !important;
-			padding-bottom: @columnPadCollapse !important;
-		}
-		td.sub-columns > table.subWrapper td.colSep {
-			width: ceil(@textPadCollapse * 2 / 6) !important;
-		}
-		td.sub-columns.middle > table.subWrapper td.colSep {
-			width: floor(@textPadCollapse * 1 / 6) !important;
-		}
-		*/
+		table.square td.colSep { width: ceil(@textPadCollapse * 2 / 6) !important; }
+		td.sub-columns.middle table.square td.colSep { width: floor(@textPadCollapse * 1 / 6) !important; }
 		td.wrapper { padding-top: 0px !important; }
 		table.columns td, table.column td { padding-bottom: 0px !important; }
-		
 	}
 }
 

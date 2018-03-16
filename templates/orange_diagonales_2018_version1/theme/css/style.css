@@ -1764,31 +1764,29 @@ table.column .faicons td {
     display: table !important;
   }
 
-  table[class="body"] .contentALaUne {
-    /*
-		td {
-			font-size: floor(@fontSizeLarge * 0.8) !important;
-			line-height: (floor(@fontSizeLarge * 0.8) * 1.15) !important;
-		}
+  table[class="body"] .contentALaUne td {
+    font-size: 14px !important;
+    line-height: 16.1px !important;
+  }
 
-		table.columns.mainImage td { padding-top: 0px !important; }
-		table.columns, table.column {
-			table.subWrapper td.text-pad {
-				padding-left: (@textPadCollapse / 4) !important;
-				padding-right: (@textPadCollapse / 4) !important;
-			}
-		}
-		table.subWrapper table.subWrapper td {
-			padding-top: @wrapperPadCollapse !important;
-			padding-bottom: @columnPadCollapse !important;
-		}
-		td.sub-columns > table.subWrapper td.colSep {
-			width: ceil(@textPadCollapse * 2 / 6) !important;
-		}
-		td.sub-columns.middle > table.subWrapper td.colSep {
-			width: floor(@textPadCollapse * 1 / 6) !important;
-		}
-		*/
+  table[class="body"] .contentALaUne table.columns table.textWrapper td,
+  table[class="body"] .contentALaUne table.column table.textWrapper td {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+
+  table[class="body"] .contentALaUne table.columns table.textWrapper td.text-pad,
+  table[class="body"] .contentALaUne table.column table.textWrapper td.text-pad {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+
+  table[class="body"] .contentALaUne table.square td.colSep {
+    width: 7px !important;
+  }
+
+  table[class="body"] .contentALaUne td.sub-columns.middle table.square td.colSep {
+    width: 3px !important;
   }
 
   table[class="body"] .contentALaUne td.wrapper {
