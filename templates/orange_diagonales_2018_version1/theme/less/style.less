@@ -201,7 +201,6 @@ td.spacer {
 // contentALaUne area
 // -------------------------
 .contentALaUne {
-	background-color: #B1E6C1;
 	//suppression décalage vertical
 	td.wrapper { padding-top: 0px; }
 	table.columns td, table.column td { padding-bottom: 0px; }
@@ -217,7 +216,6 @@ td.spacer {
 // contentSquares area
 // -------------------------
 .contentSquares {
-	background-color: #B1D8E6;
 	td {
 		font-size: @fontSizeLarge;
 		line-height: floor(@fontSizeLarge * 1.15);
@@ -225,8 +223,7 @@ td.spacer {
 	}
 
 	table.subWrapper {
-		background-color: #ff0000;
-
+		background-color: @containerBackground;
 		height: 100%;
 		-premailer-height: 100%;
 
@@ -244,6 +241,7 @@ td.spacer {
 		}
 
 		td.sep {
+			background-color: @containerBackground;
 			width: floor(@textPad / 2);
 			-premailer-width: floor(@textPad / 2);
 		}

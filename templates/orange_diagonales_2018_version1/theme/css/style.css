@@ -1302,10 +1302,6 @@ table.column .faicons td {
   padding-bottom: 0px;
 }
 
-.contentALaUne {
-  background-color: #B1E6C1;
-}
-
 .contentALaUne td.wrapper {
   padding-top: 0px;
 }
@@ -1315,10 +1311,6 @@ table.column .faicons td {
   padding-bottom: 0px;
 }
 
-.contentSquares {
-  background-color: #B1D8E6;
-}
-
 .contentSquares td {
   font-size: 18px;
   line-height: 20px;
@@ -1326,7 +1318,7 @@ table.column .faicons td {
 }
 
 .contentSquares table.subWrapper {
-  background-color: #ff0000;
+  background-color: #ffffff;
   height: 100%;
   -premailer-height: 100%;
 }
@@ -1350,6 +1342,7 @@ table.column .faicons td {
 }
 
 .contentSquares table.subWrapper td.sep {
+  background-color: #ffffff;
   width: 15px;
   -premailer-width: 15px;
 }
