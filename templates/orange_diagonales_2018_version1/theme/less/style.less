@@ -198,10 +198,25 @@ td.spacer {
 	}
 }
 
-
 // contentALaUne area
 // -------------------------
 .contentALaUne {
+	background-color: #B1E6C1;
+	//suppression décalage vertical
+	td.wrapper { padding-top: 0px; }
+	table.columns td, table.column td { padding-bottom: 0px; }
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentALaUne {
+		td.wrapper { padding-top: 0px !important; }
+		table.columns td, table.column td { padding-bottom: 0px !important; }
+	}
+}
+
+
+// contentSquares area
+// -------------------------
+.contentSquares {
 	background-color: #B1D8E6;
 	td {
 		font-size: @fontSizeLarge;
@@ -251,7 +266,7 @@ td.spacer {
 	
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
-	table[class="body"] .contentALaUne {
+	table[class="body"] .contentSquares {
 		td {
 			font-size: floor(@fontSizeLarge * 0.8) !important;
 			line-height: (floor(@fontSizeLarge * 0.8) * 1.15) !important;

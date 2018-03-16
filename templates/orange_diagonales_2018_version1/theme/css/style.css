@@ -1303,54 +1303,7 @@ table.column .faicons td {
 }
 
 .contentALaUne {
-  background-color: #B1D8E6;
-}
-
-.contentALaUne td {
-  font-size: 18px;
-  line-height: 20px;
-  font-weight: 700;
-}
-
-.contentALaUne table.subWrapper {
-  background-color: #ff0000;
-  height: 100%;
-  -premailer-height: 100%;
-}
-
-.contentALaUne table.subWrapper td.square {
-  width: 230px;
-  -premailer-width: 230px;
-  vertical-align: middle;
-}
-
-.contentALaUne table.subWrapper td.square.first {
-  background-color: #5bc6ef;
-}
-
-.contentALaUne table.subWrapper td.square.middle {
-  background-color: #f38230;
-}
-
-.contentALaUne table.subWrapper td.square.last {
-  background-color: #f4aecd;
-}
-
-.contentALaUne table.subWrapper td.sep {
-  width: 15px;
-  -premailer-width: 15px;
-}
-
-.contentALaUne table.columns table.textWrapper td,
-.contentALaUne table.column table.textWrapper td {
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
-.contentALaUne table.columns table.textWrapper td.text-pad,
-.contentALaUne table.column table.textWrapper td.text-pad {
-  padding-left: 7.5px !important;
-  padding-right: 7.5px !important;
+  background-color: #B1E6C1;
 }
 
 .contentALaUne td.wrapper {
@@ -1359,6 +1312,66 @@ table.column .faicons td {
 
 .contentALaUne table.columns td,
 .contentALaUne table.column td {
+  padding-bottom: 0px;
+}
+
+.contentSquares {
+  background-color: #B1D8E6;
+}
+
+.contentSquares td {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.contentSquares table.subWrapper {
+  background-color: #ff0000;
+  height: 100%;
+  -premailer-height: 100%;
+}
+
+.contentSquares table.subWrapper td.square {
+  width: 230px;
+  -premailer-width: 230px;
+  vertical-align: middle;
+}
+
+.contentSquares table.subWrapper td.square.first {
+  background-color: #5bc6ef;
+}
+
+.contentSquares table.subWrapper td.square.middle {
+  background-color: #f38230;
+}
+
+.contentSquares table.subWrapper td.square.last {
+  background-color: #f4aecd;
+}
+
+.contentSquares table.subWrapper td.sep {
+  width: 15px;
+  -premailer-width: 15px;
+}
+
+.contentSquares table.columns table.textWrapper td,
+.contentSquares table.column table.textWrapper td {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.contentSquares table.columns table.textWrapper td.text-pad,
+.contentSquares table.column table.textWrapper td.text-pad {
+  padding-left: 7.5px !important;
+  padding-right: 7.5px !important;
+}
+
+.contentSquares td.wrapper {
+  padding-top: 0px;
+}
+
+.contentSquares table.columns td,
+.contentSquares table.column td {
   padding-bottom: 0px;
 }
 
@@ -1763,37 +1776,46 @@ table.column .faicons td {
     display: table !important;
   }
 
-  table[class="body"] .contentALaUne td {
-    font-size: 14px !important;
-    line-height: 16.1px !important;
-  }
-
-  table[class="body"] .contentALaUne table.subWrapper td.square {
-    width: 31.94444444% !important;
-  }
-
-  table[class="body"] .contentALaUne table.subWrapper td.sep {
-    width: 2.08333333% !important;
-  }
-
-  table[class="body"] .contentALaUne table.columns table.textWrapper td,
-  table[class="body"] .contentALaUne table.column table.textWrapper td {
-    padding-top: 10px !important;
-    padding-bottom: 10px !important;
-  }
-
-  table[class="body"] .contentALaUne table.columns table.textWrapper td.text-pad,
-  table[class="body"] .contentALaUne table.column table.textWrapper td.text-pad {
-    padding-left: 5px !important;
-    padding-right: 5px !important;
-  }
-
   table[class="body"] .contentALaUne td.wrapper {
     padding-top: 0px !important;
   }
 
   table[class="body"] .contentALaUne table.columns td,
   table[class="body"] .contentALaUne table.column td {
+    padding-bottom: 0px !important;
+  }
+
+  table[class="body"] .contentSquares td {
+    font-size: 14px !important;
+    line-height: 16.1px !important;
+  }
+
+  table[class="body"] .contentSquares table.subWrapper td.square {
+    width: 31.94444444% !important;
+  }
+
+  table[class="body"] .contentSquares table.subWrapper td.sep {
+    width: 2.08333333% !important;
+  }
+
+  table[class="body"] .contentSquares table.columns table.textWrapper td,
+  table[class="body"] .contentSquares table.column table.textWrapper td {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+
+  table[class="body"] .contentSquares table.columns table.textWrapper td.text-pad,
+  table[class="body"] .contentSquares table.column table.textWrapper td.text-pad {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+
+  table[class="body"] .contentSquares td.wrapper {
+    padding-top: 0px !important;
+  }
+
+  table[class="body"] .contentSquares table.columns td,
+  table[class="body"] .contentSquares table.column td {
     padding-bottom: 0px !important;
   }
 
