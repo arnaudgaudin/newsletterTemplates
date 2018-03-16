@@ -202,68 +202,54 @@ td.spacer {
 // contentALaUne area
 // -------------------------
 .contentALaUne {
+	background-color: #B1D8E6;
 	td {
 		font-size: @fontSizeLarge;
 		line-height: floor(@fontSizeLarge * 1.15);
 		font-weight: 700;
 	}
 
-	table.columns.mainImage td { padding-top: 0px; }
-
-	table.columns, table.column {
-		table.subWrapper td.text-pad {
-			padding-left: (@textPad / 4) !important;
-			padding-right: (@textPad / 4) !important;
-		}
-	}
-	
-	table.subWrapper {
-		height: 100%;
-		-premailer-height: 100%;
-		td { vertical-align: middle; }
-
-		table.subWrapper td {
-			padding-top: @wrapperPad;
-			padding-bottom: @columnPad;
-		}
-	
-		//gestion des séparations verticales
-		td.colSep {
-			table.rowSep {
-				width: 100%;
-				height: 100%;
-				-premailer-width: 100%;
-				-premailer-height: 100%;
-				td {
-					height: 50%;
-					-premailer-height: 50%;
-				}
-				td.rowFirst { background-color: #000000; }
-				td.rowLast { background-color: @containerBackground; }
-			}
-		}
-	}
-	
-	td.sub-columns > table.subWrapper td.colSep {
-		width: ceil(@textPad * 2 / 6);
-		-premailer-width: ceil(@textPad * 2 / 6);
-	}
-	td.sub-columns.middle > table.subWrapper td.colSep {
-		width: floor(@textPad * 1 / 6);
-		-premailer-width: floor(@textPad * 1 / 6);
-	}
-	
 	//application couleurs spécifiques
 	td.sub-columns.first { background-color: @colorBlue; }
 	td.sub-columns.middle { background-color: @colorOrange; }
 	td.sub-columns.last { background-color: @colorPink; }
+	
+	table.subWrapper, table.square {
+		height: 100%;
+		-premailer-height: 100%;
+	}
+
+	table.columns, table.column {
+		table.textWrapper td {
+			padding-top: @wrapperPad;
+			padding-bottom: @columnPad;
+			&.text-pad {
+				padding-left: (@textPad / 4) !important;
+				padding-right: (@textPad / 4) !important;
+			}
+		}
+	}
+
+	//répartition des séparations verticales
+	table.square td.colSep {
+		background-color: #ff0000;
+		width: ceil(@textPad * 2 / 6);
+		-premailer-width: ceil(@textPad * 2 / 6);
+	}
+	td.sub-columns.middle table.square td.colSep {
+		background-color: #00ff00;
+		width: floor(@textPad * 1 / 6);
+		-premailer-width: floor(@textPad * 1 / 6);
+	}
 
 	//suppression décalage vertical
 	td.wrapper { padding-top: 0px; }
 	table.columns td, table.column td { padding-bottom: 0px; }
+	
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentALaUne {
+		/*
 		td {
 			font-size: floor(@fontSizeLarge * 0.8) !important;
 			line-height: (floor(@fontSizeLarge * 0.8) * 1.15) !important;
@@ -286,8 +272,10 @@ td.spacer {
 		td.sub-columns.middle > table.subWrapper td.colSep {
 			width: floor(@textPadCollapse * 1 / 6) !important;
 		}
+		*/
 		td.wrapper { padding-top: 0px !important; }
 		table.columns td, table.column td { padding-bottom: 0px !important; }
+		
 	}
 }
 

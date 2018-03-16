@@ -1302,64 +1302,14 @@ table.column .faicons td {
   padding-bottom: 0px;
 }
 
+.contentALaUne {
+  background-color: #B1D8E6;
+}
+
 .contentALaUne td {
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
-}
-
-.contentALaUne table.columns.mainImage td {
-  padding-top: 0px;
-}
-
-.contentALaUne table.columns table.subWrapper td.text-pad,
-.contentALaUne table.column table.subWrapper td.text-pad {
-  padding-left: 7.5px !important;
-  padding-right: 7.5px !important;
-}
-
-.contentALaUne table.subWrapper {
-  height: 100%;
-  -premailer-height: 100%;
-}
-
-.contentALaUne table.subWrapper td {
-  vertical-align: middle;
-}
-
-.contentALaUne table.subWrapper table.subWrapper td {
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
-.contentALaUne table.subWrapper td.colSep table.rowSep {
-  width: 100%;
-  height: 100%;
-  -premailer-width: 100%;
-  -premailer-height: 100%;
-}
-
-.contentALaUne table.subWrapper td.colSep table.rowSep td {
-  height: 50%;
-  -premailer-height: 50%;
-}
-
-.contentALaUne table.subWrapper td.colSep table.rowSep td.rowFirst {
-  background-color: #000000;
-}
-
-.contentALaUne table.subWrapper td.colSep table.rowSep td.rowLast {
-  background-color: #ffffff;
-}
-
-.contentALaUne td.sub-columns > table.subWrapper td.colSep {
-  width: 10px;
-  -premailer-width: 10px;
-}
-
-.contentALaUne td.sub-columns.middle > table.subWrapper td.colSep {
-  width: 5px;
-  -premailer-width: 5px;
 }
 
 .contentALaUne td.sub-columns.first {
@@ -1372,6 +1322,36 @@ table.column .faicons td {
 
 .contentALaUne td.sub-columns.last {
   background-color: #f4aecd;
+}
+
+.contentALaUne table.subWrapper,
+.contentALaUne table.square {
+  height: 100%;
+  -premailer-height: 100%;
+}
+
+.contentALaUne table.columns table.textWrapper td,
+.contentALaUne table.column table.textWrapper td {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.contentALaUne table.columns table.textWrapper td.text-pad,
+.contentALaUne table.column table.textWrapper td.text-pad {
+  padding-left: 7.5px !important;
+  padding-right: 7.5px !important;
+}
+
+.contentALaUne table.square td.colSep {
+  background-color: #ff0000;
+  width: 10px;
+  -premailer-width: 10px;
+}
+
+.contentALaUne td.sub-columns.middle table.square td.colSep {
+  background-color: #00ff00;
+  width: 5px;
+  -premailer-width: 5px;
 }
 
 .contentALaUne td.wrapper {
@@ -1784,32 +1764,31 @@ table.column .faicons td {
     display: table !important;
   }
 
-  table[class="body"] .contentALaUne td {
-    font-size: 14px !important;
-    line-height: 16.1px !important;
-  }
+  table[class="body"] .contentALaUne {
+    /*
+		td {
+			font-size: floor(@fontSizeLarge * 0.8) !important;
+			line-height: (floor(@fontSizeLarge * 0.8) * 1.15) !important;
+		}
 
-  table[class="body"] .contentALaUne table.columns.mainImage td {
-    padding-top: 0px !important;
-  }
-
-  table[class="body"] .contentALaUne table.columns table.subWrapper td.text-pad,
-  table[class="body"] .contentALaUne table.column table.subWrapper td.text-pad {
-    padding-left: 5px !important;
-    padding-right: 5px !important;
-  }
-
-  table[class="body"] .contentALaUne table.subWrapper table.subWrapper td {
-    padding-top: 10px !important;
-    padding-bottom: 10px !important;
-  }
-
-  table[class="body"] .contentALaUne td.sub-columns > table.subWrapper td.colSep {
-    width: 7px !important;
-  }
-
-  table[class="body"] .contentALaUne td.sub-columns.middle > table.subWrapper td.colSep {
-    width: 3px !important;
+		table.columns.mainImage td { padding-top: 0px !important; }
+		table.columns, table.column {
+			table.subWrapper td.text-pad {
+				padding-left: (@textPadCollapse / 4) !important;
+				padding-right: (@textPadCollapse / 4) !important;
+			}
+		}
+		table.subWrapper table.subWrapper td {
+			padding-top: @wrapperPadCollapse !important;
+			padding-bottom: @columnPadCollapse !important;
+		}
+		td.sub-columns > table.subWrapper td.colSep {
+			width: ceil(@textPadCollapse * 2 / 6) !important;
+		}
+		td.sub-columns.middle > table.subWrapper td.colSep {
+			width: floor(@textPadCollapse * 1 / 6) !important;
+		}
+		*/
   }
 
   table[class="body"] .contentALaUne td.wrapper {
