@@ -209,14 +209,29 @@ td.spacer {
 		font-weight: 700;
 	}
 
-	//application couleurs spécifiques
-	td.sub-columns.first { background-color: @colorBlue; }
-	td.sub-columns.middle { background-color: @colorOrange; }
-	td.sub-columns.last { background-color: @colorPink; }
-	
-	table.subWrapper, table.square {
+	table.subWrapper {
+		background-color: #ff0000;
+
 		height: 100%;
 		-premailer-height: 100%;
+
+		td.square {
+			width: floor((@containerWidth - @textPad) / 3);
+			-premailer-width: floor((@containerWidth - @textPad) / 3);
+
+			//application couleurs spécifiques
+			&.first { background-color: @colorBlue; }
+			&.middle { background-color: @colorOrange; }
+			&.last { background-color: @colorPink; }
+
+			//alignement vertical
+			vertical-align: middle;
+		}
+
+		td.sep {
+			width: floor(@textPad / 2);
+			-premailer-width: floor(@textPad / 2);
+		}
 	}
 
 	table.columns, table.column {
@@ -230,18 +245,6 @@ td.spacer {
 		}
 	}
 
-	//répartition des séparations verticales
-	table.square td.colSep {
-		background-color: #ff0000;
-		width: ceil(@textPad * 2 / 6);
-		-premailer-width: ceil(@textPad * 2 / 6);
-	}
-	td.sub-columns.middle table.square td.colSep {
-		background-color: #00ff00;
-		width: floor(@textPad * 1 / 6);
-		-premailer-width: floor(@textPad * 1 / 6);
-	}
-
 	//suppression décalage vertical
 	td.wrapper { padding-top: 0px; }
 	table.columns td, table.column td { padding-bottom: 0px; }
@@ -253,6 +256,10 @@ td.spacer {
 			font-size: floor(@fontSizeLarge * 0.8) !important;
 			line-height: (floor(@fontSizeLarge * 0.8) * 1.15) !important;
 		}
+		table.subWrapper {
+			td.square { width: unit((((@containerWidth - @textPad) / 3) / @containerWidth * 100), %) !important; }
+			td.sep { width: unit(((@textPad / 2) / @containerWidth * 100), %) !important; }
+		}
 		table.columns, table.column {
 			table.textWrapper td {
 				padding-top: @wrapperPadCollapse !important;
@@ -263,8 +270,6 @@ td.spacer {
 				}
 			}
 		}
-		table.square td.colSep { width: ceil(@textPadCollapse * 2 / 6) !important; }
-		td.sub-columns.middle table.square td.colSep { width: floor(@textPadCollapse * 1 / 6) !important; }
 		td.wrapper { padding-top: 0px !important; }
 		table.columns td, table.column td { padding-bottom: 0px !important; }
 	}

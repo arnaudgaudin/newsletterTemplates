@@ -1312,22 +1312,33 @@ table.column .faicons td {
   font-weight: 700;
 }
 
-.contentALaUne td.sub-columns.first {
+.contentALaUne table.subWrapper {
+  background-color: #ff0000;
+  height: 100%;
+  -premailer-height: 100%;
+}
+
+.contentALaUne table.subWrapper td.square {
+  width: 230px;
+  -premailer-width: 230px;
+  vertical-align: middle;
+}
+
+.contentALaUne table.subWrapper td.square.first {
   background-color: #5bc6ef;
 }
 
-.contentALaUne td.sub-columns.middle {
+.contentALaUne table.subWrapper td.square.middle {
   background-color: #f38230;
 }
 
-.contentALaUne td.sub-columns.last {
+.contentALaUne table.subWrapper td.square.last {
   background-color: #f4aecd;
 }
 
-.contentALaUne table.subWrapper,
-.contentALaUne table.square {
-  height: 100%;
-  -premailer-height: 100%;
+.contentALaUne table.subWrapper td.sep {
+  width: 15px;
+  -premailer-width: 15px;
 }
 
 .contentALaUne table.columns table.textWrapper td,
@@ -1340,18 +1351,6 @@ table.column .faicons td {
 .contentALaUne table.column table.textWrapper td.text-pad {
   padding-left: 7.5px !important;
   padding-right: 7.5px !important;
-}
-
-.contentALaUne table.square td.colSep {
-  background-color: #ff0000;
-  width: 10px;
-  -premailer-width: 10px;
-}
-
-.contentALaUne td.sub-columns.middle table.square td.colSep {
-  background-color: #00ff00;
-  width: 5px;
-  -premailer-width: 5px;
 }
 
 .contentALaUne td.wrapper {
@@ -1769,6 +1768,14 @@ table.column .faicons td {
     line-height: 16.1px !important;
   }
 
+  table[class="body"] .contentALaUne table.subWrapper td.square {
+    width: 31.94444444% !important;
+  }
+
+  table[class="body"] .contentALaUne table.subWrapper td.sep {
+    width: 2.08333333% !important;
+  }
+
   table[class="body"] .contentALaUne table.columns table.textWrapper td,
   table[class="body"] .contentALaUne table.column table.textWrapper td {
     padding-top: 10px !important;
@@ -1779,14 +1786,6 @@ table.column .faicons td {
   table[class="body"] .contentALaUne table.column table.textWrapper td.text-pad {
     padding-left: 5px !important;
     padding-right: 5px !important;
-  }
-
-  table[class="body"] .contentALaUne table.square td.colSep {
-    width: 7px !important;
-  }
-
-  table[class="body"] .contentALaUne td.sub-columns.middle table.square td.colSep {
-    width: 3px !important;
   }
 
   table[class="body"] .contentALaUne td.wrapper {
