@@ -1302,6 +1302,22 @@ table.column .faicons td {
   padding-bottom: 0px;
 }
 
+.contentTitle .subtitle {
+  color: #222222;
+}
+
+.contentTitle .subtitle a {
+  color: #222222;
+}
+
+.contentTitle .subtitle a .important,
+.contentTitle .subtitle a:visited,
+.contentTitle .subtitle a:hover,
+.contentTitle .subtitle a:focus,
+.contentTitle .subtitle a:active {
+  color: #222222 !important;
+}
+
 .contentALaUne td.wrapper {
   padding-top: 0px;
 }
@@ -1428,6 +1444,18 @@ table.column .faicons td {
   font-size: 26px;
   line-height: 29px;
   font-weight: 700;
+}
+
+.contentQuote td.wrapper.author .text a {
+  color: #222222;
+}
+
+.contentQuote td.wrapper.author .text a .important,
+.contentQuote td.wrapper.author .text a:visited,
+.contentQuote td.wrapper.author .text a:hover,
+.contentQuote td.wrapper.author .text a:focus,
+.contentQuote td.wrapper.author .text a:active {
+  color: #222222 !important;
 }
 
 .contentQuote table.columns td,

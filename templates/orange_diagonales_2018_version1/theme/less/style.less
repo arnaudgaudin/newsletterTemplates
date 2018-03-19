@@ -192,6 +192,12 @@ td.spacer {
 
 // contentTitle area
 // -------------------------
+.contentTitle {
+	.subtitle {
+		color: @textColor;
+		a { .newsletterLinkColor(@textColor); }
+	}
+}
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentTitle {
 		.columns, .column { display: table !important; }
@@ -331,6 +337,9 @@ td.spacer {
 			}
 			//suppression espacement vertical
 			padding-top: 0px;
+		}
+		&.author {
+			.text a { .newsletterLinkColor(@textColor); }
 		}
 	}
 	
