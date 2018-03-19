@@ -89,11 +89,6 @@ td.spacer {
 	padding-bottom: 5px;
 }
 
-//tous les sous-titre
-// .subTitle {
-
-// }
-
 
 //réseaux sociaux
 .faicons td {
@@ -157,7 +152,14 @@ td.spacer {
 .header {
 	background-color: #000000;
 	.newsletterInnerTextColor(#ffffff);
-	h4.subTitle { color: #ffffff; }
+	.title {
+		color: @colorOrange;
+		a { .newsletterLinkColor(@colorOrange); }
+	}
+	.subtitle {
+		color: #ffffff;
+		a { .newsletterLinkColor(#ffffff); }
+	}
 
 	td.sub-columns.first { vertical-align: middle; }
 	td.sub-columns.last { vertical-align: bottom; }

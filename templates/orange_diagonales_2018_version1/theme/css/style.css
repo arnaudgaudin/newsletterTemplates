@@ -1275,8 +1275,36 @@ table.column .faicons td {
   color: #ffffff !important;
 }
 
-.header h4.subTitle {
+.header .title {
+  color: #f38230;
+}
+
+.header .title a {
+  color: #f38230;
+}
+
+.header .title a .important,
+.header .title a:visited,
+.header .title a:hover,
+.header .title a:focus,
+.header .title a:active {
+  color: #f38230 !important;
+}
+
+.header .subtitle {
   color: #ffffff;
+}
+
+.header .subtitle a {
+  color: #ffffff;
+}
+
+.header .subtitle a .important,
+.header .subtitle a:visited,
+.header .subtitle a:hover,
+.header .subtitle a:focus,
+.header .subtitle a:active {
+  color: #ffffff !important;
 }
 
 .header td.sub-columns.first {
