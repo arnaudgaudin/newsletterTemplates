@@ -120,9 +120,9 @@ end if
 
 'Ciblage fichier de demo'
 if isDemo=True then
-	fileName = "flashinfos_demo_V3_resp"
+	fileName = "flashinfos_cga_demo_V3_resp"
 else
-	fileName = "flashinfos_mail_V3_resp"
+	fileName = "flashinfos_cga_mail_V3_resp"
 end if
 
 online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/"&fileName&".asp?fintrack=&amp;id_client="&id_client&"&idarticle="&idarticle&"&idarticleAlaune="&idarticleAlaune&"&is_online=1"&get_coll
@@ -281,7 +281,7 @@ tracking_url = "rep="&repertoire_ei&"&amp;url_site_exp="&url_site_exp
 								<!-- ALAUNE START -->
 								<!--{{%%{{
 								if isDemo=True then
-									sql_Flash_Infos="SELECT MAX(ID_FLASH_INFOS) FROM FLASHS_INFOS where type_flash=1 and frequence_flash=1"
+									sql_Flash_Infos="SELECT MAX(ID_FLASH_INFOS) FROM FLASHS_INFOS where type_flash=11 and frequence_flash=2"
 									set rs_Flash_Infos=conn.execute(sql_Flash_Infos)
 									ID_FLASH_INFOS=rs_Flash_Infos(0)
 
