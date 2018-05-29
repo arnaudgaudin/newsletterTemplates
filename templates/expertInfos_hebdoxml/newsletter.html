@@ -288,7 +288,15 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 									id_de_larticle=mid(rsArticleAlaune("URL_DETAIL_INFO"),13,len(rsArticleAlaune("URL_DETAIL_INFO"))-16)
 
 									'Composition lien article'
-									lien_article = "http://"&URL_NL_XML&id_de_larticle&URL_NL_XML_SUF
+									URL_NL_XML_http = Left(URL_NL_XML,7)
+									URL_NL_XML_https = Left(URL_NL_XML,8)
+									if URL_NL_XML_http = "http://" then
+										lien_article = URL_NL_XML&id_de_larticle&URL_NL_XML_SUF
+									elseif URL_NL_XML_https = "https://" then
+										lien_article = URL_NL_XML&id_de_larticle&URL_NL_XML_SUF
+									else
+										lien_article = "http://"&URL_NL_XML&id_de_larticle&URL_NL_XML_SUF
+									end if
 								}}%%}}-->
 								<table border="0" class="row contentALaUne" nlbgcolor="##((nlCntUneBackground))##">
 									<tr>
@@ -356,7 +364,15 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 									nbrart=rsCountArt(0)
 
 									'Composition lien article'
-							    	lien_article = "http://"&URL_NL_XML&id_de_larticle&URL_NL_XML_SUF
+							    	URL_NL_XML_http = Left(URL_NL_XML,7)
+									URL_NL_XML_https = Left(URL_NL_XML,8)
+									if URL_NL_XML_http = "http://" then
+										lien_article = URL_NL_XML&id_de_larticle&URL_NL_XML_SUF
+									elseif URL_NL_XML_https = "https://" then
+										lien_article = URL_NL_XML&id_de_larticle&URL_NL_XML_SUF
+									else
+										lien_article = "http://"&URL_NL_XML&id_de_larticle&URL_NL_XML_SUF
+									end if
 
 							    	if (i<(nbrart-1)) then
 								}}%%}}-->
@@ -451,10 +467,26 @@ online_url = "http://e-newsletter.expert-infos.com/_e-newsletter/"&la_semaine&"/
 														<!--{{%%{{
 														'Composition lien agenda'
 														'Pour aliantis en disco v2bis dans LNET'
-														if (type_perso_site<45) then
-															lien_agenda = "http://"&URL_NL_XML&url_mois1
+														URL_NL_XML_http = Left(URL_NL_XML,7)
+														URL_NL_XML_https = Left(URL_NL_XML,8)
+														if URL_NL_XML_http = "http://" then
+															if (type_perso_site<45) then
+																lien_agenda = URL_NL_XML&url_mois1&URL_NL_XML_SUF
+															else
+																lien_agenda = URL_NL_XML&url_mois1_V3b&URL_NL_XML_SUF
+															end if
+														elseif URL_NL_XML_https = "https://" then
+															if (type_perso_site<45) then
+																lien_agenda = URL_NL_XML&url_mois1&URL_NL_XML_SUF
+															else
+																lien_agenda = URL_NL_XML&url_mois1_V3b&URL_NL_XML_SUF
+															end if
 														else
-															lien_agenda = "http://"&URL_NL_XML&url_mois1_V3b
+															if (type_perso_site<45) then
+																lien_agenda = "http://"&URL_NL_XML&url_mois1&URL_NL_XML_SUF
+															else
+																lien_agenda = "http://"&URL_NL_XML&url_mois1_V3b&URL_NL_XML_SUF
+															end if
 														end if
 														}}%%}}-->
 														<a target="_blank" class="link_box" href="%%{{=lien_agenda}}%%">
