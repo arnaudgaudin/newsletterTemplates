@@ -1242,14 +1242,10 @@ color: ##((nlFooterText))## !important;
 									id_de_larticle=mid(rsArticleAlaune("URL_DETAIL_INFO"),13,len(rsArticleAlaune("URL_DETAIL_INFO"))-16)
 
 									'Composition lien article'
-									URL_NL_XML_http = Left(URL_NL_XML,7)
-									URL_NL_XML_https = Left(URL_NL_XML,8)
-									if URL_NL_XML_http = "http://" then
-										lien_article = URL_NL_XML&id_de_larticle&URL_NL_XML_SUF
-									elseif URL_NL_XML_https = "https://" then
-										lien_article = URL_NL_XML&id_de_larticle&URL_NL_XML_SUF
-									else
-										lien_article = "http://"&URL_NL_XML&id_de_larticle&URL_NL_XML_SUF
+									lien_article = URL_NL_XML&id_de_larticle&URL_NL_XML_SUF
+									'Detection https'
+									if (Left(lien_article,7) <> "http://" and Left(lien_article,8) <> "https://") then
+										lien_article = "http://"&lien_article
 									end if
 								}}%%}}-->
 								<table border="0" class="row contentALaUne" bgcolor="##((nlCntUneBackground))##" style="-premailer-background: ##((nlCntUneBackground))##; border-collapse: collapse; border-spacing: 0; color: ##((nlCntUneText))##; display: block; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px; text-align: left; vertical-align: top; width: 100%;" width="100%" cellpadding="0" cellspacing="0">
@@ -1318,14 +1314,10 @@ color: ##((nlFooterText))## !important;
 									nbrart=rsCountArt(0)
 
 									'Composition lien article'
-							    	URL_NL_XML_http = Left(URL_NL_XML,7)
-									URL_NL_XML_https = Left(URL_NL_XML,8)
-									if URL_NL_XML_http = "http://" then
-										lien_article = URL_NL_XML&id_de_larticle&URL_NL_XML_SUF
-									elseif URL_NL_XML_https = "https://" then
-										lien_article = URL_NL_XML&id_de_larticle&URL_NL_XML_SUF
-									else
-										lien_article = "http://"&URL_NL_XML&id_de_larticle&URL_NL_XML_SUF
+									lien_article = URL_NL_XML&id_de_larticle&URL_NL_XML_SUF
+									'Detection https'
+									if (Left(lien_article,7) <> "http://" and Left(lien_article,8) <> "https://") then
+										lien_article = "http://"&lien_article
 									end if
 
 							    	if (i<(nbrart-1)) then
@@ -1421,26 +1413,15 @@ color: ##((nlFooterText))## !important;
 														<!--{{%%{{
 														'Composition lien agenda'
 														'Pour aliantis en disco v2bis dans LNET'
-														URL_NL_XML_http = Left(URL_NL_XML,7)
-														URL_NL_XML_https = Left(URL_NL_XML,8)
-														if URL_NL_XML_http = "http://" then
-															if (type_perso_site<45) then
-																lien_agenda = URL_NL_XML&url_mois1&URL_NL_XML_SUF
-															else
-																lien_agenda = URL_NL_XML&url_mois1_V3b&URL_NL_XML_SUF
-															end if
-														elseif URL_NL_XML_https = "https://" then
-															if (type_perso_site<45) then
-																lien_agenda = URL_NL_XML&url_mois1&URL_NL_XML_SUF
-															else
-																lien_agenda = URL_NL_XML&url_mois1_V3b&URL_NL_XML_SUF
-															end if
+														if (type_perso_site<45) then
+															lien_agenda = URL_NL_XML&url_mois1&URL_NL_XML_SUF
 														else
-															if (type_perso_site<45) then
-																lien_agenda = "http://"&URL_NL_XML&url_mois1&URL_NL_XML_SUF
-															else
-																lien_agenda = "http://"&URL_NL_XML&url_mois1_V3b&URL_NL_XML_SUF
-															end if
+															lien_agenda = URL_NL_XML&url_mois1_V3b&URL_NL_XML_SUF
+														end if
+
+														'Detection https'
+														if (Left(lien_agenda,7) <> "http://" and Left(lien_agenda,8) <> "https://") then
+															lien_agenda = "http://"&lien_agenda
 														end if
 														}}%%}}-->
 														<a target="_blank" class="link_box" href="%%{{=lien_agenda}}%%" style="color: ##((nlCntAgdText))##; display: block; outline: none; text-decoration: none;">
