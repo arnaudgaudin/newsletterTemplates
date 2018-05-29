@@ -1318,7 +1318,15 @@ color: ##((nlFooterText))## !important;
 									nbrart=rsCountArt(0)
 
 									'Composition lien article'
-							    	lien_article = "http://"&URL_NL_XML&id_de_larticle&URL_NL_XML_SUF
+							    	URL_NL_XML_http = Left(URL_NL_XML,7)
+									URL_NL_XML_https = Left(URL_NL_XML,8)
+									if URL_NL_XML_http = "http://" then
+										lien_article = URL_NL_XML&id_de_larticle&URL_NL_XML_SUF
+									elseif URL_NL_XML_https = "https://" then
+										lien_article = URL_NL_XML&id_de_larticle&URL_NL_XML_SUF
+									else
+										lien_article = "http://"&URL_NL_XML&id_de_larticle&URL_NL_XML_SUF
+									end if
 
 							    	if (i<(nbrart-1)) then
 								}}%%}}-->
