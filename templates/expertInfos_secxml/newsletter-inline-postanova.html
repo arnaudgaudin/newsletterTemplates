@@ -1689,14 +1689,10 @@ background: <%=secteur_color_darken10%> !important;
 									id_de_larticle=mid(rsArticleAlaune("URL_DETAIL_INFO"),13,len(rsArticleAlaune("URL_DETAIL_INFO"))-16)
 
 									'Composition lien article'
-									URL_NL_XML_http = Left(URL_NL_XML,7)
-									URL_NL_XML_https = Left(URL_NL_XML,8)
-									if URL_NL_XML_http = "http://" then
-										lien_article = URL_NL_XML&id_de_larticle&URL_NL_XML_SUF
-									elseif URL_NL_XML_https = "https://" then
-										lien_article = URL_NL_XML&id_de_larticle&URL_NL_XML_SUF
-									else
-										lien_article = "http://"&URL_NL_XML&id_de_larticle&URL_NL_XML_SUF
+									lien_article = URL_NL_XML&id_de_larticle&URL_NL_XML_SUF
+									'Detection https'
+									if (Left(lien_article,7) <> "http://" and Left(lien_article,8) <> "https://") then
+										lien_article = "http://"&lien_article
 									end if
 									
 									article_une_rub = ""
@@ -1785,16 +1781,11 @@ background: <%=secteur_color_darken10%> !important;
 															nbrart=rsCountArt(0)
 
 															'Composition lien article'
-															URL_NL_XML_http = Left(URL_NL_XML,7)
-															URL_NL_XML_https = Left(URL_NL_XML,8)
-															if URL_NL_XML_http = "http://" then
-																lien_article = URL_NL_XML&id_de_larticle&URL_NL_XML_SUF
-															elseif URL_NL_XML_https = "https://" then
-																lien_article = URL_NL_XML&id_de_larticle&URL_NL_XML_SUF
-															else
-																lien_article = "http://"&URL_NL_XML&id_de_larticle&URL_NL_XML_SUF
+															lien_article = URL_NL_XML&id_de_larticle&URL_NL_XML_SUF
+															'Detection https'
+															if (Left(lien_article,7) <> "http://" and Left(lien_article,8) <> "https://") then
+																lien_article = "http://"&lien_article
 															end if
-															lien_article = "http://"&URL_NL_XML&id_de_larticle&URL_NL_XML_SUF
 
 															article_rub = ""
 															article_titre = rsArticle("TITRE_CHAPITRE_FLASH_INFOS")
