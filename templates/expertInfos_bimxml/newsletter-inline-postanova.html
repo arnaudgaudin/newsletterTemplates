@@ -1242,7 +1242,15 @@ color: <%=colorParsing.Item("nlFooterText")%> !important;
 									id_de_larticle=mid(rsArticleAlaune("URL_DETAIL_INFO"),13,len(rsArticleAlaune("URL_DETAIL_INFO"))-16)
 
 									'Composition lien article'
-									lien_article = "http://"&URL_NL_XML&id_de_larticle&URL_NL_XML_SUF
+									URL_NL_XML_http = Left(URL_NL_XML,7)
+									URL_NL_XML_https = Left(URL_NL_XML,8)
+									if URL_NL_XML_http = "http://" then
+										lien_article = URL_NL_XML&id_de_larticle&URL_NL_XML_SUF
+									elseif URL_NL_XML_https = "https://" then
+										lien_article = URL_NL_XML&id_de_larticle&URL_NL_XML_SUF
+									else
+										lien_article = "http://"&URL_NL_XML&id_de_larticle&URL_NL_XML_SUF
+									end if
 								%>
 								<table border="0" class="row contentALaUne" bgcolor="<%=colorParsing.Item("nlCntUneBackground")%>" style="background: <%=colorParsing.Item("nlCntUneBackground")%>; border-collapse: collapse; border-spacing: 0; color: <%=colorParsing.Item("nlCntUneText")%>; display: block; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px; text-align: left; vertical-align: top; width: 100%;" width="100%" cellpadding="0" cellspacing="0">
 									<tr style="padding: 0; vertical-align: top;" align="left">
@@ -1405,10 +1413,26 @@ color: <%=colorParsing.Item("nlFooterText")%> !important;
 														<%
 														'Composition lien agenda'
 														'Pour aliantis en disco v2bis dans LNET'
-														if (type_perso_site<45) then
-															lien_agenda = "http://"&URL_NL_XML&url_mois1
+														URL_NL_XML_http = Left(URL_NL_XML,7)
+														URL_NL_XML_https = Left(URL_NL_XML,8)
+														if URL_NL_XML_http = "http://" then
+															if (type_perso_site<45) then
+																lien_agenda = URL_NL_XML&url_mois1
+															else
+																lien_agenda = URL_NL_XML&url_mois1_V3b
+															end if
+														elseif URL_NL_XML_https = "https://" then
+															if (type_perso_site<45) then
+																lien_agenda = URL_NL_XML&url_mois1
+															else
+																lien_agenda = URL_NL_XML&url_mois1_V3b
+															end if
 														else
-															lien_agenda = "http://"&URL_NL_XML&url_mois1_V3b
+															if (type_perso_site<45) then
+																lien_agenda = "http://"&URL_NL_XML&url_mois1
+															else
+																lien_agenda = "http://"&URL_NL_XML&url_mois1_V3b
+															end if
 														end if
 														%>
 														<a target="_blank" class="link_box" href="<%=lien_agenda%>" style="color: <%=colorParsing.Item("nlCntAgdText")%>; display: block; outline: none; text-decoration: none;">
