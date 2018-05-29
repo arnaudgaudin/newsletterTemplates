@@ -1,0 +1,30 @@
+.colorParsing {
+  nlBodyBackground: #787878;
+  nlCntOnlineBackground: #787878;
+  nlCntOnlineText: #ffffff;
+  nlCntOnlineName: #ffffff;
+  nlCntCabBackground: #d12329;
+  nlCntCabTitle: #ffffff;
+  nlCntCabText: #ffffff;
+  nlCntUneBackground: #4b606d;
+  nlCntUneTitle: #ffffff;
+  nlCntUneText: #ffffff;
+  nlCntUneReadMore: #d2d7db;
+  nlCntArtIconColor: #d12329;
+  nlCntArtReadMore: #d12329;
+  nlCntAgdBackground: #eaeaea;
+  nlCntAgdPreTitle: #d12329;
+  nlCntAgdTitle: #333333;
+  nlCntAgdText: #333333;
+  nlCntChfBackground: #eaeaea;
+  nlCntChfPreTitle: #d12329;
+  nlCntChfTitle: #333333;
+  nlCntChfText: #333333;
+  nlCntDsnPreTitle: #d12329;
+  nlCntPrfPreTitle: #d12329;
+  nlCntQtnPreTitle: #d12329;
+  nlCntCctBackground: #d12329;
+  nlCntCctText: #ffffff;
+  nlFooterBackground: #787878;
+  nlFooterText: #ffffff;
+}
