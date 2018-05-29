@@ -459,18 +459,13 @@ tracking_url = "rep="&repertoire_ei&"&amp;url_site_exp="&url_site_exp
 										<td class="wrapper first">
 											<table border="0" class="six columns">
 												<tr>
+													<!--{{%%{{ if (alternate) then }}%%}}-->
 													<td class="text-pad-left">
 														<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%&amp;%%{{=tracking_url}}%%">
 															<img src="http://e-newsletter.expert-infos.com/_infos/_photos/%%{{=id_de_larticle}}%%-h.jpg" width="290" height="133" alt="" /><!--DEL{{--><img src="http://lorempixel.com/1440/660/business/" width="290" height="133" alt="" /><!--}}DEL-->
 														</a>
 													</td>
-													<td class="expander"></td>
-												</tr>
-											</table>
-										</td>
-										<td class="wrapper last">
-											<table border="0" class="six columns">
-												<tr>
+													<!--{{%%{{ else }}%%}}-->
 													<td class="text-pad">
 														<h2 class="title">
 															<a target="_blank" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%&amp;%%{{=tracking_url}}%%">
@@ -482,6 +477,33 @@ tracking_url = "rep="&repertoire_ei&"&amp;url_site_exp="&url_site_exp
 															<br /><span class="readMore"><span class="important">lire la suite</span></span>
 														</a>
 													</td>
+													<!--{{%%{{ end if }}%%}}-->
+													<td class="expander"></td>
+												</tr>
+											</table>
+										</td>
+										<td class="wrapper last">
+											<table border="0" class="six columns">
+												<tr>
+													<!--{{%%{{ if (alternate) then }}%%}}-->
+													<td class="text-pad">
+														<h2 class="title">
+															<a target="_blank" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%&amp;%%{{=tracking_url}}%%">
+																<span class="icon-rsaquo"><span class="important">&rsaquo;</span></span><span class="important">&#160;<!--{{%%{{=rsArticle("TITRE_CHAPITRE_FLASH_INFOS")}}%%}}--><!--DEL{{-->TITRE_CHAPITRE_FLASH_INFOS<!--}}DEL--></span>
+															</a>
+														</h2>
+														<a target="_blank" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%&amp;%%{{=tracking_url}}%%">
+															<span class="text"><span class="important"><!--{{%%{{=rsArticle("CONTENU_CHAPITRE_FLASH_INFOS")}}%%}}--><!--DEL{{-->CONTENU_CHAPITRE_FLASH_INFOS<!--}}DEL--></span></span>
+															<br /><span class="readMore"><span class="important">lire la suite</span></span>
+														</a>
+													</td>
+													<!--{{%%{{ else }}%%}}-->
+													<td class="text-pad-right">
+														<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%&amp;%%{{=tracking_url}}%%">
+															<img src="http://e-newsletter.expert-infos.com/_infos/_photos/%%{{=id_de_larticle}}%%-h.jpg" width="290" height="133" alt="" /><!--DEL{{--><img src="http://lorempixel.com/1440/660/business/" width="290" height="133" alt="" /><!--}}DEL-->
+														</a>
+													</td>
+													<!--{{%%{{ end if }}%%}}-->
 													<td class="expander"></td>
 												</tr>
 											</table>
