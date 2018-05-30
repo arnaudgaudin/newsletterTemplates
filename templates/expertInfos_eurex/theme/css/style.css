@@ -1968,6 +1968,10 @@ table.body {
   border-bottom-width: 1px;
 }
 
+.contentBottom .dessin .border {
+  border-top: 0 none transparent;
+}
+
 @media only screen and (max-width: 720px) {
   table[class="body"] img {
     max-width: auto !important;
