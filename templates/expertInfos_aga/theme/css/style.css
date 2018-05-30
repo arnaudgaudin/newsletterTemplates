@@ -1281,8 +1281,8 @@ h6 {
   padding-bottom: 10px;
 }
 
-.contentArticles td.wrapper.first table.columns td,
-.contentArticles td.wrapper.first table.column td {
+.contentArticles td.wrapper.picture table.columns td,
+.contentArticles td.wrapper.picture table.column td {
   mso-line-height-rule: exactly;
   line-height: 0px;
   font-size: 0px;
