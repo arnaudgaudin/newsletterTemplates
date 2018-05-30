@@ -1957,6 +1957,10 @@ table.body {
   color: ##((nlFooterText))##;
 }
 
+.contentArticles .title {
+  border-top: none;
+}
+
 @media only screen and (max-width: 720px) {
   table[class="body"] img {
     max-width: auto !important;
@@ -2144,6 +2148,10 @@ table.body {
   }
 
   table[class="body"] .contentArticles.last {
+    border-bottom: none !important;
+  }
+
+  table[class="body"] .contentArticles {
     border-bottom: none !important;
   }
 }

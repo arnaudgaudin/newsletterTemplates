@@ -5,3 +5,17 @@
 
 //importation style par défaut de la maquette expertInfos
 @import "../../../expertInfos/theme/less/expertinfos.less";
+
+
+
+// contentArticles area
+// -------------------------
+.contentArticles {
+	.title { border-top: none; }
+}
+//rajout bordure en bas en mode responsive
+@media only screen and (max-width: (@nlContainerWidth + @nlGutterWidth)) {
+	table[class="body"] .contentArticles {
+		border-bottom: none !important;
+	}
+}
