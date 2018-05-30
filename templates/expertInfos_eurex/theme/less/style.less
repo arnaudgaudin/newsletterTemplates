@@ -13,9 +13,22 @@
 .contentArticles {
 	.title { border-top: none; }
 }
-//rajout bordure en bas en mode responsive
+//suppression bordure en bas en mode responsive
 @media only screen and (max-width: (@nlContainerWidth + @nlGutterWidth)) {
-	table[class="body"] .contentArticles {
-		border-bottom: none !important;
+	table[class="body"] .contentArticles { border-bottom: none !important; }
+}
+
+
+// contentALaUne area
+// -------------------------
+.contentALaUne {
+	&.content { -premailer-border-bottom: 2px solid e("##((nlCntUneReadMore))##"); }
+}
+@media only screen and (max-width: (@nlContainerWidth + @nlGutterWidth)) {
+	table[class="body"] .contentALaUne {
+		&.content { border-bottom: 2px solid e("##((nlCntUneReadMore))##") !important; }
+		&.alternate {
+			// background-color: @colorCouleur3Clair;
+		}
 	}
 }

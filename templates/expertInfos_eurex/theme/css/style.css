@@ -1961,6 +1961,10 @@ table.body {
   border-top: none;
 }
 
+.contentALaUne.content {
+  -premailer-border-bottom: 2px solid ##((nlCntUneReadMore))##;
+}
+
 @media only screen and (max-width: 720px) {
   table[class="body"] img {
     max-width: auto !important;
@@ -2153,5 +2157,9 @@ table.body {
 
   table[class="body"] .contentArticles {
     border-bottom: none !important;
+  }
+
+  table[class="body"] .contentALaUne.content {
+    border-bottom: 2px solid ##((nlCntUneReadMore))## !important;
   }
 }
