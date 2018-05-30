@@ -21,6 +21,9 @@ cd ..
 cd expertInfos_cgp
 ./compile.sh
 cd ..
+cd expertInfos_eurex
+./compile.sh
+cd ..
 cd expertInfos_hebdo
 ./compile.sh
 cd ..
