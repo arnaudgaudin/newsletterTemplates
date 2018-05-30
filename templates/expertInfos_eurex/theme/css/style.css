@@ -1957,12 +1957,15 @@ table.body {
   color: ##((nlFooterText))##;
 }
 
-.contentArticles .title {
-  border-top: none;
-}
-
 .contentALaUne.content {
   -premailer-border-bottom: 2px solid ##((nlCntUneReadMore))##;
+}
+
+.contentArticles .title {
+  border-top: 0 none transparent;
+  border-bottom-color: ##((nlCntArtReadMore))##;
+  border-bottom-style: dotted;
+  border-bottom-width: 1px;
 }
 
 @media only screen and (max-width: 720px) {
@@ -2155,11 +2158,20 @@ table.body {
     border-bottom: none !important;
   }
 
+  table[class="body"] .contentALaUne.content {
+    border-bottom: 2px solid ##((nlCntUneReadMore))## !important;
+  }
+
   table[class="body"] .contentArticles {
     border-bottom: none !important;
   }
 
-  table[class="body"] .contentALaUne.content {
-    border-bottom: 2px solid ##((nlCntUneReadMore))## !important;
+  table[class="body"] .contentArticles.alternate {
+    background-color: #eaeaea !important;
+  }
+
+  table[class="body"] .contentArticles.alternate table.columns td,
+  table[class="body"] .contentArticles.alternate table.column td {
+    padding-bottom: 5px !important;
   }
 }

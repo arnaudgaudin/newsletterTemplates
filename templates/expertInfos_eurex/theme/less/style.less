@@ -7,18 +7,6 @@
 @import "../../../expertInfos/theme/less/expertinfos.less";
 
 
-
-// contentArticles area
-// -------------------------
-.contentArticles {
-	.title { border-top: none; }
-}
-//suppression bordure en bas en mode responsive
-@media only screen and (max-width: (@nlContainerWidth + @nlGutterWidth)) {
-	table[class="body"] .contentArticles { border-bottom: none !important; }
-}
-
-
 // contentALaUne area
 // -------------------------
 .contentALaUne {
@@ -27,8 +15,28 @@
 @media only screen and (max-width: (@nlContainerWidth + @nlGutterWidth)) {
 	table[class="body"] .contentALaUne {
 		&.content { border-bottom: 2px solid e("##((nlCntUneReadMore))##") !important; }
+	}
+}
+
+
+// contentArticles area
+// -------------------------
+.contentArticles {
+	.title {
+		border-top: 0 none transparent;
+		border-bottom-color: e("##((nlCntArtReadMore))##");
+		border-bottom-style: dotted;
+		border-bottom-width: 1px;
+	}
+}
+//suppression bordure en bas en mode responsive
+@media only screen and (max-width: (@nlContainerWidth + @nlGutterWidth)) {
+	table[class="body"] .contentArticles { 
+		border-bottom: none !important;
 		&.alternate {
-			// background-color: @colorCouleur3Clair;
+			background-color: @colorCouleur3Clair !important;
+			// td.wrapper { padding-top: (@wrapperPad / 2) !important; }
+			table.columns td, table.column td { padding-bottom: (@columnPad / 2) !important; }
 		}
 	}
 }
