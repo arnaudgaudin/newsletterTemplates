@@ -14,19 +14,19 @@ Set rsClient=conn.Execute(CLIENT_SQL)
 id_exp=rsClient("id_exp")
 id_civilite=rsClient("id_civilite")
 if id_civilite = "1" then
-    civilite="Monsieur"
+	civilite="Monsieur"
 elseif id_civilite="2" then
-    civilite="Madame"
+	civilite="Madame"
 elseif id_civilite="3" then
-    civilite="Mademoiselle"
+	civilite="Mademoiselle"
 elseif id_civilite="4" then
-    civilite="Ma&#238;tre"
+	civilite="Ma&#238;tre"
 elseif id_civilite="5" then
-    civilite="Docteur"
+	civilite="Docteur"
 elseif id_civilite="6" then
-    civilite="Professeur"
+	civilite="Professeur"
 else
-    civilite=""
+	civilite=""
 end if
 
 nom_client=rsClient("nom_client")
@@ -140,10 +140,10 @@ tracking_url = "rep="&repertoire_ei&"&amp;url_site_exp="&url_site_exp
 %>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="noindex" />
-    <title>Newsletter bimensuelle du <%=get_date%></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="robots" content="noindex" />
+	<title>Newsletter bimensuelle du <%=get_date%></title>
 </head>
 <body bgcolor="<%=colorParsing.Item("nlBodyBackground")%>" style="-ms-text-size-adjust: 100%; background: <%=colorParsing.Item("nlBodyBackground")%>; -webkit-text-size-adjust: 100%; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; line-height: 16px; margin: 0; min-width: 100%; padding: 0; text-align: left; width: 100% !important;"><style type="text/css">
 body {
@@ -1103,7 +1103,7 @@ color: <%=colorParsing.Item("nlFooterText")%> !important;
 <style type="text/css" data-premailer="ignore">
 @media only screen and (max-width: 720px) {
   @-moz-document url-prefix() {
-    table[class="body"] img { width: 100% !important; }
+	table[class="body"] img { width: 100% !important; }
   }
 }
 
@@ -1138,7 +1138,7 @@ color: <%=colorParsing.Item("nlFooterText")%> !important;
 										</td>
 									</tr>
 								</table>
-					        	<!-- ONLINE END -->
+								<!-- ONLINE END -->
 								
 								<% if logo_groupement=True then %>
 								<!-- HEADER GROUPE START -->
@@ -1166,19 +1166,19 @@ color: <%=colorParsing.Item("nlFooterText")%> !important;
 								<% else %>
 								<!-- HEADER START -->
 								<table border="0" class="row header" bgcolor="<%=colorParsing.Item("nlBodyBackground")%>" style="background: <%=colorParsing.Item("nlBodyBackground")%>; border-collapse: collapse; border-spacing: 0; display: block; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px; text-align: left; vertical-align: top; width: 100%;" width="100%" cellpadding="0" cellspacing="0">
-								    <tr style="padding: 0; vertical-align: top;" align="left">
-								        <td class="wrapper last" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px; word-break: break-word;" align="left" valign="top">
-								            <table border="0" class="twelve columns" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 720px;" width="720" cellpadding="0" cellspacing="0">
-								                <tr style="padding: 0; vertical-align: top;" align="left">
-								                    <td class="center" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px; word-break: break-word;" align="center" valign="top">
-								                    	<a target="_blank" class="link_box" href="http://<%=url_site_exp%>?fintrack=&amp;<%=tracking_url%>" style="color: #333333; display: block; outline: none; text-decoration: none;">
-								                            <img class="center" src="http://<%=url_site_exp%>/uploads/assets/header-newsletter.png" alt="Header Newsletter" width="720" height="96" style="-ms-interpolation-mode: bicubic; float: none; border: none; clear: both; display: block; margin: 0 auto; max-width: 100%; outline: none; text-decoration: none; width: auto;" align="none" />
-								                        </a>
-								                    </td>
-								                </tr>
-								            </table>
-								        </td>
-								    </tr>
+									<tr style="padding: 0; vertical-align: top;" align="left">
+										<td class="wrapper last" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px; word-break: break-word;" align="left" valign="top">
+											<table border="0" class="twelve columns" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 720px;" width="720" cellpadding="0" cellspacing="0">
+												<tr style="padding: 0; vertical-align: top;" align="left">
+													<td class="center" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px; word-break: break-word;" align="center" valign="top">
+														<a target="_blank" class="link_box" href="http://<%=url_site_exp%>?fintrack=&amp;<%=tracking_url%>" style="color: #333333; display: block; outline: none; text-decoration: none;">
+															<img class="center" src="http://<%=url_site_exp%>/uploads/assets/header-newsletter.png" alt="Header Newsletter" width="720" height="96" style="-ms-interpolation-mode: bicubic; float: none; border: none; clear: both; display: block; margin: 0 auto; max-width: 100%; outline: none; text-decoration: none; width: auto;" align="none" />
+														</a>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
 								</table>
 								<!-- HEADER END -->
 								<% end if %>
@@ -1260,16 +1260,18 @@ color: <%=colorParsing.Item("nlFooterText")%> !important;
 									<tr style="padding: 0; vertical-align: top;" align="left">
 										<td class="wrapper last" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: <%=colorParsing.Item("nlCntUneText")%>; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px; word-break: break-word;" align="left" valign="top">
 											 <table border="0" class="twelve columns" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 720px;" width="720" cellpadding="0" cellspacing="0">
-								                <tr style="padding: 0; vertical-align: top;" align="left">
-								                    <td class="center" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: <%=colorParsing.Item("nlCntUneText")%>; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px; word-break: break-word;" align="center" valign="top">
-								                    	<a target="_blank" class="link_box" href="http://<%=url_site_exp%>/<%=article_une_url_v3%>&amp;<%=tracking_url%>" style="color: <%=colorParsing.Item("nlCntUneText")%>; display: block; outline: none; text-decoration: none;">
-								                            <img class="center" src="http://e-newsletter.expert-infos.com/_infos/_photos/<%=id_de_larticle%>-f.jpg" alt="Article &#224; la Une" width="720" height="330" style="-ms-interpolation-mode: bicubic; float: none; border: none; clear: both; display: block; margin: 0 auto; max-width: 100%; outline: none; text-decoration: none; width: auto;" align="none" />
-								                        </a>
-								                    </td>
-								                </tr>
-								            </table>
+												<tr style="padding: 0; vertical-align: top;" align="left">
+													<td class="center" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: <%=colorParsing.Item("nlCntUneText")%>; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px; word-break: break-word;" align="center" valign="top">
+														<a target="_blank" class="link_box" href="http://<%=url_site_exp%>/<%=article_une_url_v3%>&amp;<%=tracking_url%>" style="color: <%=colorParsing.Item("nlCntUneText")%>; display: block; outline: none; text-decoration: none;">
+															<img class="center" src="http://e-newsletter.expert-infos.com/_infos/_photos/<%=id_de_larticle%>-h.jpg" alt="Article &#224; la Une" width="720" height="330" style="-ms-interpolation-mode: bicubic; float: none; border: none; clear: both; display: block; margin: 0 auto; max-width: 100%; outline: none; text-decoration: none; width: auto;" align="none" />
+														</a>
+													</td>
+												</tr>
+											</table>
 										</td>
 									</tr>
+								</table>
+								<table border="0" class="row contentALaUne" bgcolor="<%=colorParsing.Item("nlCntUneBackground")%>" style="background: <%=colorParsing.Item("nlCntUneBackground")%>; border-collapse: collapse; border-spacing: 0; color: <%=colorParsing.Item("nlCntUneText")%>; display: block; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px; text-align: left; vertical-align: top; width: 100%;" width="100%" cellpadding="0" cellspacing="0">
 									<tr style="padding: 0; vertical-align: top;" align="left">
 										<td class="wrapper first" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: <%=colorParsing.Item("nlCntUneText")%>; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px; word-break: break-word;" align="left" valign="top">
 											<table border="0" class="six columns" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 360px;" width="360" cellpadding="0" cellspacing="0">
@@ -1323,7 +1325,7 @@ color: <%=colorParsing.Item("nlFooterText")%> !important;
 								k=1
 								i=1
 								
-				    			while k <= nbc_desc
+								while k <= nbc_desc
 								carn=asc(Mid(article,k,1))
 								car=Mid(article,k,1)
 								if carn = 45 then
@@ -1349,7 +1351,7 @@ color: <%=colorParsing.Item("nlFooterText")%> !important;
 									'Design alternatif pour les impairs'
 									alternate = (i Mod 2 > 0)
 									
-								    if (i<(nbrart-1)) then
+									if (i<(nbrart-1)) then
 								%>
 								<table border="0" class="row contentArticles" style="border-collapse: collapse; border-spacing: 0; color: #333333; display: block; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px; text-align: left; vertical-align: top; width: 100%;" width="100%" cellpadding="0" cellspacing="0">
 									<tr style="padding: 0; vertical-align: top;" align="left">
@@ -1359,7 +1361,7 @@ color: <%=colorParsing.Item("nlFooterText")%> !important;
 													<% if (alternate) then %>
 													<td class="text-pad-left" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 0px; font-weight: normal; hyphens: none; line-height: 0px; margin: 0; mso-line-height-rule: exactly; padding: 0px 0px 0px 10px; word-break: break-word;" align="left" valign="top">
 														<a target="_blank" class="link_box" href="http://<%=url_site_exp%>/<%=article_url_v3%>&amp;<%=tracking_url%>" style="color: #333333; display: block; outline: none; text-decoration: none;">
-															<img src="http://e-newsletter.expert-infos.com/_infos/_photos/<%=id_de_larticle%>-h.jpg" width="290" height="133" alt="" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; max-width: 100%; outline: none; text-decoration: none; width: auto;" align="left" />
+															<img src="http://e-newsletter.expert-infos.com/_infos/_photos/<%=id_de_larticle%>-f.jpg" width="350" height="233" alt="" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; max-width: 100%; outline: none; text-decoration: none; width: auto;" align="left" />
 														</a>
 													</td>
 													<% else %>
@@ -1397,7 +1399,7 @@ color: <%=colorParsing.Item("nlFooterText")%> !important;
 													<% else %>
 													<td class="text-pad-right" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px 10px 0px 0px; word-break: break-word;" align="left" valign="top">
 														<a target="_blank" class="link_box" href="http://<%=url_site_exp%>/<%=article_url_v3%>&amp;<%=tracking_url%>" style="color: #333333; display: block; outline: none; text-decoration: none;">
-															<img src="http://e-newsletter.expert-infos.com/_infos/_photos/<%=id_de_larticle%>-h.jpg" width="290" height="133" alt="" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; max-width: 100%; outline: none; text-decoration: none; width: auto;" align="left" />
+															<img src="http://e-newsletter.expert-infos.com/_infos/_photos/<%=id_de_larticle%>-f.jpg" width="350" height="233" alt="" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; max-width: 100%; outline: none; text-decoration: none; width: auto;" align="left" />
 														</a>
 													</td>
 													<% end if %>
@@ -1416,7 +1418,7 @@ color: <%=colorParsing.Item("nlFooterText")%> !important;
 													<% if (alternate) then %>
 													<td class="text-pad-left" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 0px; font-weight: normal; hyphens: none; line-height: 0px; margin: 0; mso-line-height-rule: exactly; padding: 0px 0px 10px 10px; word-break: break-word;" align="left" valign="top">
 														<a target="_blank" class="link_box" href="http://<%=url_site_exp%>/<%=article_url_v3%>&amp;<%=tracking_url%>" style="color: #333333; display: block; outline: none; text-decoration: none;">
-															<img src="http://e-newsletter.expert-infos.com/_infos/_photos/<%=id_de_larticle%>-h.jpg" width="290" height="133" alt="" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; max-width: 100%; outline: none; text-decoration: none; width: auto;" align="left" />
+															<img src="http://e-newsletter.expert-infos.com/_infos/_photos/<%=id_de_larticle%>-f.jpg" width="350" height="233" alt="" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; max-width: 100%; outline: none; text-decoration: none; width: auto;" align="left" />
 														</a>
 													</td>
 													<% else %>
@@ -1454,7 +1456,7 @@ color: <%=colorParsing.Item("nlFooterText")%> !important;
 													<% else %>
 													<td class="text-pad-right" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px 10px 10px 0px; word-break: break-word;" align="left" valign="top">
 														<a target="_blank" class="link_box" href="http://<%=url_site_exp%>/<%=article_url_v3%>&amp;<%=tracking_url%>" style="color: #333333; display: block; outline: none; text-decoration: none;">
-															<img src="http://e-newsletter.expert-infos.com/_infos/_photos/<%=id_de_larticle%>-h.jpg" width="290" height="133" alt="" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; max-width: 100%; outline: none; text-decoration: none; width: auto;" align="left" />
+															<img src="http://e-newsletter.expert-infos.com/_infos/_photos/<%=id_de_larticle%>-f.jpg" width="350" height="233" alt="" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; max-width: 100%; outline: none; text-decoration: none; width: auto;" align="left" />
 														</a>
 													</td>
 													<% end if %>
@@ -1469,7 +1471,7 @@ color: <%=colorParsing.Item("nlFooterText")%> !important;
 									i=i+1
 										cart=""
 									else
-									    cart=cart+car
+										cart=cart+car
 									end if
 									k=k+1
 									wend
@@ -1689,6 +1691,6 @@ color: <%=colorParsing.Item("nlFooterText")%> !important;
 				</center>
 			</td>
 		</tr>
-    </table>
+	</table>
   </body>
 </html>

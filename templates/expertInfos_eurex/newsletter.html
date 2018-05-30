@@ -14,19 +14,19 @@ Set rsClient=conn.Execute(CLIENT_SQL)
 id_exp=rsClient("id_exp")
 id_civilite=rsClient("id_civilite")
 if id_civilite = "1" then
-    civilite="Monsieur"
+	civilite="Monsieur"
 elseif id_civilite="2" then
-    civilite="Madame"
+	civilite="Madame"
 elseif id_civilite="3" then
-    civilite="Mademoiselle"
+	civilite="Mademoiselle"
 elseif id_civilite="4" then
-    civilite="Ma&#238;tre"
+	civilite="Ma&#238;tre"
 elseif id_civilite="5" then
-    civilite="Docteur"
+	civilite="Docteur"
 elseif id_civilite="6" then
-    civilite="Professeur"
+	civilite="Professeur"
 else
-    civilite=""
+	civilite=""
 end if
 
 nom_client=rsClient("nom_client")
@@ -140,16 +140,16 @@ tracking_url = "rep="&repertoire_ei&"&amp;url_site_exp="&url_site_exp
 }}%%}}-->
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="noindex" />
-    <link rel="stylesheet" type="text/css" media="all" href="theme/css/style.css" /><title>Newsletter bimensuelle du <!--{{%%{{=get_date}}%%}}--><!--DEL{{-->get_date<!--}}DEL--></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="robots" content="noindex" />
+	<link rel="stylesheet" type="text/css" media="all" href="theme/css/style.css" /><title>Newsletter bimensuelle du <!--{{%%{{=get_date}}%%}}--><!--DEL{{-->get_date<!--}}DEL--></title>
 </head>
 <body nlbgcolor="##((nlBodyBackground))##">
 <style type="text/css" data-premailer="ignore">
 @media only screen and (max-width: 720px) {
   @-moz-document url-prefix() {
-    table[class="body"] img { width: 100% !important; }
+	table[class="body"] img { width: 100% !important; }
   }
 }
 /*DEL{{*/img[src*="%%{{"], img[src*="}}%%"], [data-type^="get"], .-premailer-hidden { display: none !important; visibility: hidden !important; }/*}}DEL*/
@@ -184,7 +184,7 @@ tracking_url = "rep="&repertoire_ei&"&amp;url_site_exp="&url_site_exp
 										</td>
 									</tr>
 								</table>
-					        	<!-- ONLINE END -->
+								<!-- ONLINE END -->
 								
 								<!--{{%%{{ if logo_groupement=True then }}%%}}-->
 								<!-- HEADER GROUPE START -->
@@ -212,19 +212,19 @@ tracking_url = "rep="&repertoire_ei&"&amp;url_site_exp="&url_site_exp
 								<!--{{%%{{ else }}%%}}-->
 								<!-- HEADER START -->
 								<table border="0" class="row header" nlbgcolor="##((nlBodyBackground))##">
-								    <tr>
-								        <td class="wrapper last">
-								            <table border="0" class="twelve columns">
-								                <tr>
-								                    <td class="center">
-								                    	<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%?fintrack=&amp;%%{{=tracking_url}}%%">
-								                            <img class="center" src="http://%%{{=url_site_exp}}%%/uploads/assets/header-newsletter.png" alt="Header Newsletter" width="720" height="96" /><!--DEL{{--><img class="center" src="http://ec-tenor.expert-infos.com/uploads/assets/header-newsletter.png" width="720" height="96" alt="" /><!--}}DEL-->
-								                        </a>
-								                    </td>
-								                </tr>
-								            </table>
-								        </td>
-								    </tr>
+									<tr>
+										<td class="wrapper last">
+											<table border="0" class="twelve columns">
+												<tr>
+													<td class="center">
+														<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%?fintrack=&amp;%%{{=tracking_url}}%%">
+															<img class="center" src="http://%%{{=url_site_exp}}%%/uploads/assets/header-newsletter.png" alt="Header Newsletter" width="720" height="96" /><!--DEL{{--><img class="center" src="http://ec-tenor.expert-infos.com/uploads/assets/header-newsletter.png" width="720" height="96" alt="" /><!--}}DEL-->
+														</a>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
 								</table>
 								<!-- HEADER END -->
 								<!--{{%%{{ end if }}%%}}-->
@@ -306,16 +306,18 @@ tracking_url = "rep="&repertoire_ei&"&amp;url_site_exp="&url_site_exp
 									<tr>
 										<td class="wrapper last">
 											 <table border="0" class="twelve columns">
-								                <tr>
-								                    <td class="center">
-								                    	<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/%%{{=article_une_url_v3}}%%&amp;%%{{=tracking_url}}%%">
-								                            <img class="center" src="http://e-newsletter.expert-infos.com/_infos/_photos/%%{{=id_de_larticle}}%%-f.jpg" alt="Article à la Une" width="720" height="330" /><!--DEL{{--><img src="http://lorempixel.com/1440/660/business/" width="720" height="330" alt="" /><!--}}DEL-->
-								                        </a>
-								                    </td>
-								                </tr>
-								            </table>
+												<tr>
+													<td class="center">
+														<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/%%{{=article_une_url_v3}}%%&amp;%%{{=tracking_url}}%%">
+															<img class="center" src="http://e-newsletter.expert-infos.com/_infos/_photos/%%{{=id_de_larticle}}%%-h.jpg" alt="Article à la Une" width="720" height="330" /><!--DEL{{--><img src="http://lorempixel.com/1440/660/business/" width="720" height="330" alt="" /><!--}}DEL-->
+														</a>
+													</td>
+												</tr>
+											</table>
 										</td>
 									</tr>
+								</table>
+								<table border="0" class="row contentALaUne" nlbgcolor="##((nlCntUneBackground))##">
 									<tr>
 										<td class="wrapper first">
 											<table border="0" class="six columns">
@@ -369,7 +371,7 @@ tracking_url = "rep="&repertoire_ei&"&amp;url_site_exp="&url_site_exp
 								k=1
 								i=1
 								
-				    			while k <= nbc_desc
+								while k <= nbc_desc
 								carn=asc(Mid(article,k,1))
 								car=Mid(article,k,1)
 								if carn = 45 then
@@ -395,7 +397,7 @@ tracking_url = "rep="&repertoire_ei&"&amp;url_site_exp="&url_site_exp
 									'Design alternatif pour les impairs'
 									alternate = (i Mod 2 > 0)
 									
-								    if (i<(nbrart-1)) then
+									if (i<(nbrart-1)) then
 								}}%%}}-->
 								<table border="0" class="row contentArticles">
 									<tr>
@@ -405,7 +407,7 @@ tracking_url = "rep="&repertoire_ei&"&amp;url_site_exp="&url_site_exp
 													<!--{{%%{{ if (alternate) then }}%%}}-->
 													<td class="text-pad-left">
 														<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%&amp;%%{{=tracking_url}}%%">
-															<img src="http://e-newsletter.expert-infos.com/_infos/_photos/%%{{=id_de_larticle}}%%-h.jpg" width="290" height="133" alt="" /><!--DEL{{--><img src="http://lorempixel.com/1440/660/business/" width="290" height="133" alt="" /><!--}}DEL-->
+															<img src="http://e-newsletter.expert-infos.com/_infos/_photos/%%{{=id_de_larticle}}%%-f.jpg" width="350" height="233" alt="" /><!--DEL{{--><img src="http://lorempixel.com/1440/960/business/" width="350" height="233" alt="" /><!--}}DEL-->
 														</a>
 													</td>
 													<!--{{%%{{ else }}%%}}-->
@@ -443,7 +445,7 @@ tracking_url = "rep="&repertoire_ei&"&amp;url_site_exp="&url_site_exp
 													<!--{{%%{{ else }}%%}}-->
 													<td class="text-pad-right">
 														<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%&amp;%%{{=tracking_url}}%%">
-															<img src="http://e-newsletter.expert-infos.com/_infos/_photos/%%{{=id_de_larticle}}%%-h.jpg" width="290" height="133" alt="" /><!--DEL{{--><img src="http://lorempixel.com/1440/660/business/" width="290" height="133" alt="" /><!--}}DEL-->
+															<img src="http://e-newsletter.expert-infos.com/_infos/_photos/%%{{=id_de_larticle}}%%-f.jpg" width="350" height="233" alt="" /><!--DEL{{--><img src="http://lorempixel.com/1440/960/business/" width="350" height="233" alt="" /><!--}}DEL-->
 														</a>
 													</td>
 													<!--{{%%{{ end if }}%%}}-->
@@ -462,7 +464,7 @@ tracking_url = "rep="&repertoire_ei&"&amp;url_site_exp="&url_site_exp
 													<!--{{%%{{ if (alternate) then }}%%}}-->
 													<td class="text-pad-left">
 														<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%&amp;%%{{=tracking_url}}%%">
-															<img src="http://e-newsletter.expert-infos.com/_infos/_photos/%%{{=id_de_larticle}}%%-h.jpg" width="290" height="133" alt="" /><!--DEL{{--><img src="http://lorempixel.com/1440/660/business/" width="290" height="133" alt="" /><!--}}DEL-->
+															<img src="http://e-newsletter.expert-infos.com/_infos/_photos/%%{{=id_de_larticle}}%%-f.jpg" width="350" height="233" alt="" /><!--DEL{{--><img src="http://lorempixel.com/1440/960/business/" width="350" height="233" alt="" /><!--}}DEL-->
 														</a>
 													</td>
 													<!--{{%%{{ else }}%%}}-->
@@ -500,7 +502,7 @@ tracking_url = "rep="&repertoire_ei&"&amp;url_site_exp="&url_site_exp
 													<!--{{%%{{ else }}%%}}-->
 													<td class="text-pad-right">
 														<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%/%%{{=article_url_v3}}%%&amp;%%{{=tracking_url}}%%">
-															<img src="http://e-newsletter.expert-infos.com/_infos/_photos/%%{{=id_de_larticle}}%%-h.jpg" width="290" height="133" alt="" /><!--DEL{{--><img src="http://lorempixel.com/1440/660/business/" width="290" height="133" alt="" /><!--}}DEL-->
+															<img src="http://e-newsletter.expert-infos.com/_infos/_photos/%%{{=id_de_larticle}}%%-f.jpg" width="350" height="233" alt="" /><!--DEL{{--><img src="http://lorempixel.com/1440/960/business/" width="350" height="233" alt="" /><!--}}DEL-->
 														</a>
 													</td>
 													<!--{{%%{{ end if }}%%}}-->
@@ -515,7 +517,7 @@ tracking_url = "rep="&repertoire_ei&"&amp;url_site_exp="&url_site_exp
 									i=i+1
 										cart=""
 									else
-									    cart=cart+car
+										cart=cart+car
 									end if
 									k=k+1
 									wend
@@ -735,6 +737,6 @@ tracking_url = "rep="&repertoire_ei&"&amp;url_site_exp="&url_site_exp
 				</center>
 			</td>
 		</tr>
-    </table>
+	</table>
   </body>
 </html>
