@@ -1104,14 +1104,20 @@ color: ##((nlFooterText))## !important;
   table[class="body"] .contentArticles {
     border-bottom: none !important;
   }
+  table[class="body"] .contentArticles td.wrapper.picture {
+    display: table-header-group !important;
+  }
+  table[class="body"] .contentArticles td.wrapper.content {
+    display: table-footer-group !important;
+  }
+  table[class="body"] .contentArticles td.wrapper.content table.columns td {
+    padding-bottom: 5px !important;
+  }
+  table[class="body"] .contentArticles td.wrapper.content table.column td {
+    padding-bottom: 5px !important;
+  }
   table[class="body"] .contentArticles.alternate {
     background-color: #eaeaea !important;
-  }
-  table[class="body"] .contentArticles.alternate table.columns td {
-    padding-bottom: 5px !important;
-  }
-  table[class="body"] .contentArticles.alternate table.column td {
-    padding-bottom: 5px !important;
   }
 }
 </style>
