@@ -2180,6 +2180,7 @@ table.body {
 
   table[class="body"] .contentArticles td.wrapper.content table.columns td,
   table[class="body"] .contentArticles td.wrapper.content table.column td {
+    padding-top: 5px !important;
     padding-bottom: 5px !important;
   }
 

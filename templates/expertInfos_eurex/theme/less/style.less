@@ -37,7 +37,10 @@
 		td.wrapper.picture { display: table-header-group !important; }
 		td.wrapper.content {
 			display: table-footer-group !important;
-			table.columns td, table.column td { padding-bottom: (@columnPad / 2) !important; }
+			table.columns td, table.column td {
+				padding-top: (@columnPad / 2) !important;
+				padding-bottom: (@columnPad / 2) !important;
+			}
 		}
 		
 		&.alternate {
