@@ -1968,6 +1968,10 @@ table.body {
   border-bottom-width: 1px;
 }
 
+.contentArticles td.wrapper.picture {
+  padding: 0px;
+}
+
 .contentBottom .dessin .border {
   border-top: 0 none transparent;
 }
