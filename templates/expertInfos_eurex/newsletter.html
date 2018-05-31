@@ -618,9 +618,24 @@ tracking_url = "rep="&repertoire_ei&"&amp;url_site_exp="&url_site_exp
 									<tr>
 										<td class="wrapper first">
 										<!--{{%%{{ if(isSocialNetwork=False)Then }}%%}}-->
-											<table border="0" class="twelve columns -premailer-hidden"><!--DEL{{--></table><!--}}DEL-->
+											<table border="0" class="twelve columns -premailer-hidden">
+												<tr>
+													<td>
+														<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%?fintrack=&amp;%%{{=tracking_url}}%%">
+															<img class="center" src="http://%%{{=url_site_exp}}%%/uploads/assets/footer-newsletter.png" alt="Footer Newsletter" width="720" height="96" />
+														</a>
+													</td>
+												</tr>
+											<!--DEL{{--></table><!--}}DEL-->
 										<!--{{%%{{ else }}%%}}-->
 											<table border="0" class="seven columns">
+												<tr>
+													<td>
+														<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%?fintrack=&amp;%%{{=tracking_url}}%%">
+															<img class="center" src="http://%%{{=url_site_exp}}%%/uploads/assets/footer-newsletter.png" alt="Footer Newsletter" width="420" height="56" />
+														</a>
+													</td>
+												</tr>
 										<!--{{%%{{ end if }}%%}}-->
 												<tr>
 													<td class="text-pad">
