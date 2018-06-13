@@ -1355,6 +1355,24 @@ table.column .faicons td {
   padding-bottom: 0px;
 }
 
+.contentSquares,
+.contentSquares td,
+.contentSquares .inner {
+  color: #222222;
+}
+
+.contentSquares a {
+  color: #222222;
+}
+
+.contentSquares a .important,
+.contentSquares a:visited,
+.contentSquares a:hover,
+.contentSquares a:focus,
+.contentSquares a:active {
+  color: #222222 !important;
+}
+
 .contentSquares td {
   font-size: 18px;
   line-height: 20px;
