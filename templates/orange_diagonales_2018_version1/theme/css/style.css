@@ -1530,6 +1530,10 @@ table.column .faicons td {
   padding-bottom: 0px;
 }
 
+.contentLastShows {
+  background-color: #0f0;
+}
+
 .contentFooter {
   background-color: #000000;
 }
