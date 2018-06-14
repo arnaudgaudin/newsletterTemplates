@@ -1531,7 +1531,32 @@ table.column .faicons td {
 }
 
 .contentLastShows {
-  background-color: #0f0;
+  background-color: #000;
+}
+
+.contentLastShows .subtitle {
+  color: #ffffff;
+}
+
+.contentLastShows .subtitle a {
+  color: #ffffff;
+}
+
+.contentLastShows .subtitle a .important,
+.contentLastShows .subtitle a:visited,
+.contentLastShows .subtitle a:hover,
+.contentLastShows .subtitle a:focus,
+.contentLastShows .subtitle a:active {
+  color: #ffffff !important;
+}
+
+.contentLastShows.first table.columns td,
+.contentLastShows.first table.column td {
+  padding-bottom: 0px;
+}
+
+.contentLastShows td.wrapper {
+  padding-top: 7.5px;
 }
 
 .contentFooter {
@@ -1939,6 +1964,11 @@ table.column .faicons td {
 
   table[class="body"] .contentHost table.columns td,
   table[class="body"] .contentHost table.column td {
+    padding-bottom: 0px !important;
+  }
+
+  table[class="body"] .contentLastShows.first table.columns td,
+  table[class="body"] .contentLastShows.first table.column td {
     padding-bottom: 0px !important;
   }
 

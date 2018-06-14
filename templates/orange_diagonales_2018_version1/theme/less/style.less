@@ -403,7 +403,33 @@ td.spacer {
 // contentLastShows area
 // -------------------------
 .contentLastShows {
-	background-color: #0f0;
+	background-color: #000;
+	// &.first { background-color: #00a; }
+	// &.last { background-color: #00f; }
+
+	.subtitle {
+		color: #ffffff;
+		a { .newsletterLinkColor(#ffffff); }
+	}
+
+
+
+
+	//réduction décalage vertical
+	&.first {
+		table.columns td, table.column td { padding-bottom: 0px; }	
+	}
+	td.wrapper { padding-top: (@wrapperPad / 2); }
+	
+
+
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentLastShows {
+		&.first {
+			table.columns td, table.column td { padding-bottom: 0px !important; }
+		}
+	}
 }
 
 
