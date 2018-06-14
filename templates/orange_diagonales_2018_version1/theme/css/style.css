@@ -1509,28 +1509,7 @@ table.column .faicons td {
   padding-bottom: 0px;
 }
 
-.contentHost td.wrapper {
-  background-color: #dadad9;
-}
-
-.contentHost td.sub-columns.first {
-  vertical-align: bottom;
-}
-
-.contentHost td.sub-columns.last {
-  vertical-align: middle;
-}
-
-.contentHost td.wrapper {
-  padding-top: 7.5px;
-}
-
-.contentHost table.columns td,
-.contentHost table.column td {
-  padding-bottom: 0px;
-}
-
-.contentLastShows {
+.contentLastShows td.wrapper {
   background-color: #000;
 }
 
@@ -1557,6 +1536,27 @@ table.column .faicons td {
 
 .contentLastShows td.wrapper {
   padding-top: 7.5px;
+}
+
+.contentHost td.wrapper {
+  background-color: #dadad9;
+}
+
+.contentHost td.sub-columns.first {
+  vertical-align: bottom;
+}
+
+.contentHost td.sub-columns.last {
+  vertical-align: middle;
+}
+
+.contentHost td.wrapper {
+  padding-top: 7.5px;
+}
+
+.contentHost table.columns td,
+.contentHost table.column td {
+  padding-bottom: 0px;
 }
 
 .contentFooter {
@@ -1949,6 +1949,16 @@ table.column .faicons td {
     padding-bottom: 0px !important;
   }
 
+  table[class="body"] .contentLastShows .columns,
+  table[class="body"] .contentLastShows .column {
+    display: table !important;
+  }
+
+  table[class="body"] .contentLastShows.first table.columns td,
+  table[class="body"] .contentLastShows.first table.column td {
+    padding-bottom: 0px !important;
+  }
+
   table[class="body"] .contentHost .columns,
   table[class="body"] .contentHost .column {
     display: table !important;
@@ -1964,11 +1974,6 @@ table.column .faicons td {
 
   table[class="body"] .contentHost table.columns td,
   table[class="body"] .contentHost table.column td {
-    padding-bottom: 0px !important;
-  }
-
-  table[class="body"] .contentLastShows.first table.columns td,
-  table[class="body"] .contentLastShows.first table.column td {
     padding-bottom: 0px !important;
   }
 
