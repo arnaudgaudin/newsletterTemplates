@@ -382,9 +382,13 @@ td.spacer {
 // contentLastShows area
 // -------------------------
 .contentLastShows {
-	td.wrapper { background-color: #000; }
-	// &.first td.wrapper { background-color: #00a; }
-	// &.last td.wrapper { background-color: #00f; }
+	.newsletterInnerTextColor(#ffffff);
+	td.wrapper { background-color: #000000; }
+
+	.title {
+		color: @colorOrange;
+		a { .newsletterLinkColor(@colorOrange); }
+	}
 
 	.subtitle {
 		color: #ffffff;

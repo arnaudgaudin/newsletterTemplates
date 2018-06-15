@@ -1509,8 +1509,42 @@ table.column .faicons td {
   padding-bottom: 0px;
 }
 
+.contentLastShows,
+.contentLastShows td,
+.contentLastShows .inner {
+  color: #ffffff;
+}
+
+.contentLastShows a {
+  color: #ffffff;
+}
+
+.contentLastShows a .important,
+.contentLastShows a:visited,
+.contentLastShows a:hover,
+.contentLastShows a:focus,
+.contentLastShows a:active {
+  color: #ffffff !important;
+}
+
 .contentLastShows td.wrapper {
-  background-color: #000;
+  background-color: #000000;
+}
+
+.contentLastShows .title {
+  color: #f38230;
+}
+
+.contentLastShows .title a {
+  color: #f38230;
+}
+
+.contentLastShows .title a .important,
+.contentLastShows .title a:visited,
+.contentLastShows .title a:hover,
+.contentLastShows .title a:focus,
+.contentLastShows .title a:active {
+  color: #f38230 !important;
 }
 
 .contentLastShows .subtitle {
