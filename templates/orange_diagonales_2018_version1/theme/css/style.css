@@ -1411,8 +1411,8 @@ table.column .faicons td {
 
 .contentSquares table.columns table.textWrapper td,
 .contentSquares table.column table.textWrapper td {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .contentSquares table.columns table.textWrapper td.text-pad,
