@@ -307,6 +307,9 @@ td.spacer {
 			padding-right: ceil(@textPad * 2 / 6);
 		}
 		td.sub-columns.first { vertical-align: bottom; }
+		td.wrapper.author {
+			td, .title, .text { text-align: left; }
+		}
 	}
 	&.left {
 		table.subWrapper.image td {
@@ -314,6 +317,9 @@ td.spacer {
 			padding-right: 0px;
 		}
 		td.sub-columns.last { vertical-align: bottom; }
+		td.wrapper.author {
+			td, .title, .text { text-align: right; }
+		}
 	}
 	
 	table.subWrapper.doublequote td {
