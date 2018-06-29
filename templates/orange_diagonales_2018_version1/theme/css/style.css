@@ -1439,6 +1439,12 @@ table.column .faicons td {
   vertical-align: bottom;
 }
 
+.contentQuote.right td.wrapper.author td,
+.contentQuote.right td.wrapper.author .title,
+.contentQuote.right td.wrapper.author .text {
+  text-align: left;
+}
+
 .contentQuote.left table.subWrapper.image td {
   padding-left: 10px;
   padding-right: 0px;
@@ -1446,6 +1452,12 @@ table.column .faicons td {
 
 .contentQuote.left td.sub-columns.last {
   vertical-align: bottom;
+}
+
+.contentQuote.left td.wrapper.author td,
+.contentQuote.left td.wrapper.author .title,
+.contentQuote.left td.wrapper.author .text {
+  text-align: right;
 }
 
 .contentQuote table.subWrapper.doublequote td {
