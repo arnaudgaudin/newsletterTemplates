@@ -160,6 +160,12 @@ td.spacer {
 		color: #ffffff;
 		a { .newsletterLinkColor(#ffffff); }
 	}
+	
+	//application hauteur pour éviter dépassement en dessous
+	&, td.wrapper, table.columns, table.column, td.sub-columns {
+		height: 180px;
+		-premailer-height: 180;
+	}
 
 	td.sub-columns.first { vertical-align: middle; }
 	td.sub-columns.last { vertical-align: bottom; }
@@ -180,6 +186,7 @@ td.spacer {
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .header {
+		&, td.wrapper, table.columns, table.column, td.sub-columns { height: auto !important; }
 		table.columns, table.column {
 			table.subWrapper td {
 				padding-top: @wrapperPadCollapse !important;

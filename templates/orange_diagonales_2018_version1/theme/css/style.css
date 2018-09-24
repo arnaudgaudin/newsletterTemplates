@@ -1307,6 +1307,15 @@ table.column .faicons td {
   color: #ffffff !important;
 }
 
+.header,
+.header td.wrapper,
+.header table.columns,
+.header table.column,
+.header td.sub-columns {
+  height: 180px;
+  -premailer-height: 180;
+}
+
 .header td.sub-columns.first {
   vertical-align: middle;
 }
@@ -1896,6 +1905,14 @@ table.column .faicons td {
   table[class="body"] .contentOnline table.columns td,
   table[class="body"] .contentOnline table.column td {
     padding-bottom: 5px !important;
+  }
+
+  table[class="body"] .header,
+  table[class="body"] .header td.wrapper,
+  table[class="body"] .header table.columns,
+  table[class="body"] .header table.column,
+  table[class="body"] .header td.sub-columns {
+    height: auto !important;
   }
 
   table[class="body"] .header table.columns table.subWrapper td,
