@@ -523,6 +523,7 @@ span.center {
 img.center {
   margin: 0 auto;
   float: none;
+  -premailer-float: none;
 }
 
 .show-for-small,
@@ -623,15 +624,23 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+a .important {
+  color: #F06B31 !important;
+  text-decoration: none !important;
+}
+
+a:hover,
+a:hover .important {
   color: #de4f10 !important;
 }
 
-a:active {
+a:active,
+a:active .important {
   color: #de4f10 !important;
 }
 
-a:visited {
+a:visited,
+a:visited .important {
   color: #F06B31 !important;
 }
 
@@ -644,12 +653,27 @@ h6 a {
   color: #F06B31;
 }
 
+h1 a .important,
+h2 a .important,
+h3 a .important,
+h4 a .important,
+h5 a .important,
+h6 a .important {
+  color: #F06B31 !important;
+}
+
 h1 a:active,
 h2 a:active,
 h3 a:active,
 h4 a:active,
 h5 a:active,
-h6 a:active {
+h6 a:active,
+h1 a:active .important,
+h2 a:active .important,
+h3 a:active .important,
+h4 a:active .important,
+h5 a:active .important,
+h6 a:active .important {
   color: #F06B31 !important;
 }
 
@@ -658,7 +682,13 @@ h2 a:visited,
 h3 a:visited,
 h4 a:visited,
 h5 a:visited,
-h6 a:visited {
+h6 a:visited,
+h1 a:visited .important,
+h2 a:visited .important,
+h3 a:visited .important,
+h4 a:visited .important,
+h5 a:visited .important,
+h6 a:visited .important {
   color: #F06B31 !important;
 }
 
@@ -947,6 +977,11 @@ body.outlook p {
 a[href^=tel] {
   color: inherit;
   text-decoration: none;
+}
+
+a[href^=tel] .important {
+  color: inherit !important;
+  text-decoration: none !important;
 }
 
 a.link_box {
@@ -1316,6 +1351,7 @@ table.secondary:active td a {
 .faicon img {
   display: inline;
   float: none;
+  -premailer-float: none;
 }
 
 .contentOnline {
@@ -1416,6 +1452,7 @@ table.secondary:active td a {
 .contentPartenariat td.wrapper.first td img.button_play {
   display: inline;
   float: none;
+  -premailer-float: none;
   vertical-align: bottom;
 }
 
@@ -1429,6 +1466,7 @@ table.secondary:active td a {
 .contentPartenariat td.wrapper.last td img.les_echos {
   display: inline;
   float: none;
+  -premailer-float: none;
   vertical-align: bottom;
 }
 
@@ -1443,6 +1481,7 @@ table.secondary:active td a {
 
 .contentALaUne img {
   float: none;
+  -premailer-float: none;
 }
 
 .contentALaUne td.wrapper {
@@ -1505,6 +1544,7 @@ table.secondary:active td a {
 
 .contentProjet img {
   float: none;
+  -premailer-float: none;
 }
 
 .contentProjet table.columns .subWrapper,

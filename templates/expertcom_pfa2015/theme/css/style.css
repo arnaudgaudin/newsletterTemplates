@@ -523,6 +523,7 @@ span.center {
 img.center {
   margin: 0 auto;
   float: none;
+  -premailer-float: none;
 }
 
 .show-for-small,
@@ -623,15 +624,23 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+a .important {
+  color: #010101 !important;
+  text-decoration: none !important;
+}
+
+a:hover,
+a:hover .important {
   color: #010101 !important;
 }
 
-a:active {
+a:active,
+a:active .important {
   color: #010101 !important;
 }
 
-a:visited {
+a:visited,
+a:visited .important {
   color: #010101 !important;
 }
 
@@ -644,12 +653,27 @@ h6 a {
   color: #010101;
 }
 
+h1 a .important,
+h2 a .important,
+h3 a .important,
+h4 a .important,
+h5 a .important,
+h6 a .important {
+  color: #010101 !important;
+}
+
 h1 a:active,
 h2 a:active,
 h3 a:active,
 h4 a:active,
 h5 a:active,
-h6 a:active {
+h6 a:active,
+h1 a:active .important,
+h2 a:active .important,
+h3 a:active .important,
+h4 a:active .important,
+h5 a:active .important,
+h6 a:active .important {
   color: #010101 !important;
 }
 
@@ -658,7 +682,13 @@ h2 a:visited,
 h3 a:visited,
 h4 a:visited,
 h5 a:visited,
-h6 a:visited {
+h6 a:visited,
+h1 a:visited .important,
+h2 a:visited .important,
+h3 a:visited .important,
+h4 a:visited .important,
+h5 a:visited .important,
+h6 a:visited .important {
   color: #010101 !important;
 }
 
@@ -949,6 +979,11 @@ a[href^=tel] {
   text-decoration: none;
 }
 
+a[href^=tel] .important {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
 a.link_box {
   display: block;
 }
@@ -1176,6 +1211,7 @@ table.subWrapper > tbody > tr > td {
 .webicon img {
   display: inline;
   float: none;
+  -premailer-float: none;
 }
 
 img.webicon-spacer {
@@ -1184,6 +1220,7 @@ img.webicon-spacer {
   mso-line-height-rule: exactly;
   line-height: 0px;
   float: none;
+  -premailer-float: none;
 }
 
 .header {
