@@ -1,5 +1,9 @@
 echo "Hi, $USER!"
 
+#compress PNG
+#https://networklinx.com/optipng-folderdirectory-of-images.html
+# optipng -o5 -strip all *.png
+
 #compress gif files
 #https://www.lcdf.org/gifsicle/
 #http://graphicdesign.stackexchange.com/questions/20908/how-to-remove-every-second-frame-from-an-animated-gif
