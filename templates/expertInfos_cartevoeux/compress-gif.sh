@@ -50,7 +50,7 @@ echo "compressing gif files for sites ..."
 # giflossy -v -O3 --lossy=250 -k96  ${PWD}/_sources/anim_recette_site.gif     `seq -f "#%g" 0 2 79`  -o ${PWD}/theme/images/stcv_recette.gif
 
 # Nouvelles CV2019
-giflossy -v -O3 --lossy=250 -k192 ${PWD}/_sources/anim_graphique.gif        -o ${PWD}/theme/images/stcv_graphique.gif
+giflossy -v -O3 --lossy=125 -k192 ${PWD}/_sources/anim_graphique.gif        -o ${PWD}/theme/images/stcv_graphique.gif
 giflossy -v -O3 --lossy=333 -k128 ${PWD}/_sources/anim_lagon.gif            -o ${PWD}/theme/images/stcv_lagon.gif
 giflossy -v -O3 --lossy=500 -k192 ${PWD}/_sources/anim_lumiere.gif          -o ${PWD}/theme/images/stcv_lumiere.gif
 giflossy -v -O3 --lossy=500 -k192 ${PWD}/_sources/anim_sapin_2019.gif       -o ${PWD}/theme/images/stcv_sapin.gif
