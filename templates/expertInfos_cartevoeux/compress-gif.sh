@@ -55,6 +55,7 @@ giflossy -v -O3 --lossy=333 -k128 ${PWD}/_sources/anim_lagon.gif            -o $
 giflossy -v -O3 --lossy=500 -k192 ${PWD}/_sources/anim_lumiere.gif          -o ${PWD}/theme/images/stcv_lumiere.gif
 giflossy -v -O3 --lossy=500 -k192 ${PWD}/_sources/anim_sapin_2019.gif       -o ${PWD}/theme/images/stcv_sapin.gif
 giflossy -v -O3 --lossy=333 -k128 ${PWD}/_sources/anim_sommet_2019.gif      -o ${PWD}/theme/images/stcv_sommet.gif
+giflossy -v -O3 --lossy=333 -k128 ${PWD}/_sources/anim_vedette.gif          -o ${PWD}/theme/images/stcv_vedette.gif
 
 # Anciennes commandes de compression, pour référence si besoin futur
 # giflossy -v -O3 --lossy=800 -k128 ${PWD}/_sources/anim_mer_IM004706.gif -o ${PWD}/theme/images/nlcv_mer_IM004706.gif
