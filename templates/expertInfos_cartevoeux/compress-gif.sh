@@ -52,6 +52,7 @@ echo "compressing gif files for sites ..."
 # Nouvelles CV2019
 giflossy -v -O3 --lossy=125 -k192 ${PWD}/_sources/anim_ange_site.gif              -o ${PWD}/theme/images/stcv_ange.gif
 giflossy -v -O3 --lossy=333 -k192 ${PWD}/_sources/anim_ballons_site.gif           -o ${PWD}/theme/images/stcv_ballons.gif
+giflossy -v -O3 --lossy=333 -k192 ${PWD}/_sources/anim_ballons_site_en.gif        -o ${PWD}/theme/images/stcv_ballons_en.gif
 giflossy -v -O3 --lossy=125 -k192 ${PWD}/_sources/anim_bhn_im013545_2019_site.gif -o ${PWD}/theme/images/stcv_bhn_im013545.gif
 giflossy -v -O3 --lossy=333 -k128 ${PWD}/_sources/anim_chiffres_2019_site.gif     -o ${PWD}/theme/images/stcv_chiffres.gif
 giflossy -v -O3 --lossy=125 -k192 ${PWD}/_sources/anim_couleurs_site.gif          -o ${PWD}/theme/images/stcv_couleurs.gif
