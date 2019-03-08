@@ -1,0 +1,3 @@
+Locations images :
+pao-prod/LesEchosPublishing/ORANGE/OBS-VIDEO/Diagonales
+pao-prod/LesEchosPublishing/ORANGE/OBS-VIDEO/Diagonales FLASH
