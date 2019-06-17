@@ -1456,6 +1456,16 @@ img.faicon {
   background-color: #009cdd;
 }
 
+.contentSecteur.secteur-AUTO,
+.contentSecteur.secteur-AUTO td.expander {
+  background-color: #af9e65;
+}
+
+.contentSecteur.secteur-IMMO,
+.contentSecteur.secteur-IMMO td.expander {
+  background-color: #007f98;
+}
+
 .contentSecteur table.columns td,
 .contentSecteur table.column td {
   padding-bottom: 10px;
