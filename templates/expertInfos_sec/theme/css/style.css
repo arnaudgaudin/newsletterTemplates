@@ -1507,6 +1507,49 @@ img.faicon {
   padding-bottom: 5px;
 }
 
+.contentEtudeMarche,
+.contentEtudeMarche td,
+.contentEtudeMarche .inner {
+  color: #ffffff;
+}
+
+.contentEtudeMarche a {
+  color: #ffffff;
+}
+
+.contentEtudeMarche a .important,
+.contentEtudeMarche a:visited,
+.contentEtudeMarche a:hover,
+.contentEtudeMarche a:focus,
+.contentEtudeMarche a:active {
+  color: #ffffff !important;
+}
+
+.contentEtudeMarche table.inner,
+.contentEtudeMarche table.image,
+.contentEtudeMarche table.content {
+  width: 100%;
+  -premailer-width: 100%;
+}
+
+.contentEtudeMarche table.inner td,
+.contentEtudeMarche table.content td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.contentEtudeMarche table.inner {
+  -premailer-background: **((secteur_color))**;
+}
+
+.contentEtudeMarche table.inner td {
+  vertical-align: middle;
+}
+
+.contentEtudeMarche table.content .title {
+  text-align: center;
+}
+
 .contentEtude .filler {
   height: 20px;
   -premailer-height: 20px;
@@ -2443,6 +2486,35 @@ hr {
 
   table[class="body"] .contentDateInfo table.columns td,
   table[class="body"] .contentDateInfo table.column td {
+    padding-bottom: 5px !important;
+  }
+
+  table[class="body"] .contentEtudeMarche {
+    background-color: **((secteur_color))** !important;
+  }
+
+  table[class="body"] .contentEtudeMarche table.inner {
+    background-color: transparent !important;
+  }
+
+  table[class="body"] .contentEtudeMarche td.sub-columns {
+    width: auto !important;
+  }
+
+  table[class="body"] .contentEtudeMarche td.sub-columns.first {
+    min-width: 50px !important;
+  }
+
+  table[class="body"] .contentEtudeMarche td.wrapper,
+  table[class="body"] .contentEtudeMarche table.inner,
+  table[class="body"] .contentEtudeMarche table.image,
+  table[class="body"] .contentEtudeMarche table.content {
+    width: 100% !important;
+  }
+
+  table[class="body"] .contentEtudeMarche table.inner td,
+  table[class="body"] .contentEtudeMarche table.content td {
+    padding-top: 5px !important;
     padding-bottom: 5px !important;
   }
 

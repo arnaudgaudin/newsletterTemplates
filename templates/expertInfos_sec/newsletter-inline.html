@@ -745,6 +745,18 @@ color: #ffffff !important;
 .contentSecteur a:active {
 color: #ffffff !important;
 }
+.contentEtudeMarche a:visited {
+color: #ffffff !important;
+}
+.contentEtudeMarche a:hover {
+color: #ffffff !important;
+}
+.contentEtudeMarche a:focus {
+color: #ffffff !important;
+}
+.contentEtudeMarche a:active {
+color: #ffffff !important;
+}
 body {
 color: #666666;
 }
@@ -1457,6 +1469,36 @@ background: **((secteur_color_darken10))** !important;
   table[class="body"] .contentDateInfo table.column td {
     padding-bottom: 5px !important;
   }
+  table[class="body"] .contentEtudeMarche {
+    background-color: **((secteur_color))** !important;
+  }
+  table[class="body"] .contentEtudeMarche table.inner {
+    background-color: transparent !important;
+  }
+  table[class="body"] .contentEtudeMarche td.sub-columns {
+    width: auto !important;
+  }
+  table[class="body"] .contentEtudeMarche td.sub-columns.first {
+    min-width: 50px !important;
+  }
+  table[class="body"] .contentEtudeMarche td.wrapper {
+    width: 100% !important;
+  }
+  table[class="body"] .contentEtudeMarche table.inner {
+    width: 100% !important;
+  }
+  table[class="body"] .contentEtudeMarche table.image {
+    width: 100% !important;
+  }
+  table[class="body"] .contentEtudeMarche table.content {
+    width: 100% !important;
+  }
+  table[class="body"] .contentEtudeMarche table.inner td {
+    padding-top: 5px !important; padding-bottom: 5px !important;
+  }
+  table[class="body"] .contentEtudeMarche table.content td {
+    padding-top: 5px !important; padding-bottom: 5px !important;
+  }
   table[class="body"] .contentEtude .filler {
     height: 0px !important; display: none !important; visibility: hidden !important;
   }
@@ -1937,6 +1979,63 @@ background: **((secteur_color_darken10))** !important;
 									</tr>
 								</table>
 								<!-- ARTICLES END -->
+
+								<!--{{%%{{ if secteur_etude3_etude_texte1<>"" then }}%%}}-->
+								<!-- ETUDEMARCHE START -->
+								<table border="0" class="row contentEtudeMarche" style="border-collapse: collapse; border-spacing: 0; color: #ffffff; display: block; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px; text-align: left; vertical-align: top; width: 100%;" width="100%" cellpadding="0" cellspacing="0">
+									<tr style="padding: 0; vertical-align: top;" align="left">
+										<td class="wrapper last" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 20px 0px 0px; word-break: break-word;" align="left" valign="top">
+											<table border="0" class="twelve columns" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 720px;" width="720" cellpadding="0" cellspacing="0">
+												<tr style="padding: 0; vertical-align: top;" align="left">
+													<td class="text-pad" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 0px 40px 20px; word-break: break-word;" align="left" valign="top">
+														<table border="0" class="inner" style="-premailer-background: **((secteur_color))**; border-collapse: collapse; border-spacing: 0; color: #ffffff; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 100%;" width="100%" cellpadding="0" cellspacing="0">
+															<tr style="padding: 0; vertical-align: top;" align="left">
+																<td class="two sub-columns first" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; min-width: 0px; padding: 10px 0px; width: 16.666666%; word-break: break-word;" align="left" valign="middle" width="16.666666%">
+																	<table border="0" class="image" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 100%;" width="100%" cellpadding="0" cellspacing="0">
+																		<tr style="padding: 0; vertical-align: top;" align="left">
+																			<td class="center" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 10px 0px; word-break: break-word;" align="center" valign="middle">
+																				<a target="_blank" class="link_box" href="http://%%{{=url_site_exp}}%%?fintrack=&amp;article=%%{{=secteur_etude3_etude_lien}}%%&amp;bs3m=1&amp;%%{{=tracking_url}}%%" style="color: #ffffff; display: block; outline: none; text-decoration: none;">
+																					<img class="center" src="%%{{=secteur_etude3_image}}%%" alt="%%{{=secteur_BTP_etude3_etude_texte2}}%%" width="100" height="100" style="-ms-interpolation-mode: bicubic; -premailer-float: none; border: none; clear: both; display: block; margin: 0 auto; max-width: 100%; outline: none; text-decoration: none; width: auto;" align="none" /><!--DEL{{--><img class="center" src="https://testa.eilep.com/uploads/media/article/0002/06/thumb_105398_article_small.png" alt="&#171;&#160;Le secteur du BTP&#160;&#187;" width="100" height="100" style="-ms-interpolation-mode: bicubic; -premailer-float: none; border: none; clear: both; display: block; margin: 0 auto; max-width: 100%; outline: none; text-decoration: none; width: auto;" align="none" /><!--}}DEL-->
+																				</a>
+																			</td>
+																		</tr>
+
+																	</table>
+																</td>
+																<td class="ten sub-columns first" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; min-width: 0px; padding: 10px 0px; width: 83.333333%; word-break: break-word;" align="left" valign="middle" width="83.333333%">
+																	<table border="0" class="content" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 100%;" width="100%" cellpadding="0" cellspacing="0">
+																		<tr style="padding: 0; vertical-align: top;" align="left">
+																			<td class="text-pad center" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 10px 40px; word-break: break-word;" align="center" valign="middle">
+																				<h6 class="title" style="color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: bold; line-height: 15.4px; margin: 0; mso-line-height-rule: exactly; padding: 0; word-break: normal;" align="center">
+																					<a class="link_box" target="_blank" href="http://%%{{=url_site_exp}}%%?fintrack=&amp;article=%%{{=secteur_etude3_etude_lien}}%%&amp;bs3m=1&amp;%%{{=tracking_url}}%%" style="color: #ffffff; display: block; outline: none; text-decoration: none;">
+																						<span class="important" style="color: #ffffff !important; text-decoration: none !important;"><!--{{%%{{=secteur_etude3_etude_texte1}}%%}}--><!--DEL{{-->secteur_etude3_etude_texte1<!--}}DEL--></span>
+																					</a>
+																				</h6>
+																			</td>
+																		</tr>
+																	</table>
+																	<table border="0" class="content" style="border-collapse: collapse; border-spacing: 0; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; text-align: left; vertical-align: top; width: 100%;" width="100%" cellpadding="0" cellspacing="0">
+																		<tr style="padding: 0; vertical-align: top;" align="left">
+																			<td class="text-pad center" style="-moz-hyphens: none; -ms-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; hyphens: none; line-height: 16px; margin: 0; padding: 10px 40px; word-break: break-word;" align="center" valign="middle">
+																				<h3 class="title" style="color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 22px; font-weight: bold; line-height: 24.2px; margin: 0; mso-line-height-rule: exactly; padding: 0; word-break: normal;" align="center">
+																					<a class="link_box" target="_blank" href="http://%%{{=url_site_exp}}%%?fintrack=&amp;article=%%{{=secteur_etude3_etude_lien}}%%&amp;bs3m=1&amp;%%{{=tracking_url}}%%" style="color: #ffffff; display: block; outline: none; text-decoration: none;">
+																						<span class="important" style="color: #ffffff !important; text-decoration: none !important;"><!--{{%%{{=secteur_etude3_etude_texte2}}%%}}--><!--DEL{{-->secteur_etude3_etude_texte2<!--}}DEL--></span>
+																					</a>
+																				</h3>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+								<!-- ETUDEMARCHE END -->
+								<!--{{%%{{ end if }}%%}}-->
 
 								<!-- ETUDE START -->
 								<table border="0" class="row contentEtude" style="border-collapse: collapse; border-spacing: 0; color: #ffffff; display: block; empty-cells: hide; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px; text-align: left; vertical-align: top; width: 100%;" bgcolor="#4f5966" width="100%" cellpadding="0" cellspacing="0">

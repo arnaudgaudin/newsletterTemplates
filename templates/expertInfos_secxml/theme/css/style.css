@@ -1507,6 +1507,10 @@ img.faicon {
   padding-bottom: 5px;
 }
 
+.contentEtudeMarche {
+  background-color: #0f0;
+}
+
 .contentEtude .filler {
   height: 20px;
   -premailer-height: 20px;

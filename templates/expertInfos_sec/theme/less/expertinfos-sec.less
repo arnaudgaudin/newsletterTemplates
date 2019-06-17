@@ -355,7 +355,7 @@ a.tiny-button-link, table.columns .readMore td.buttonWrapper td, table.column .r
 		padding-bottom: (@columnPad / 2);
 	}
 	table.inner {
-		background-color: #f00;
+		-premailer-background: e("**((secteur_color))**");
 		td { vertical-align: middle; }
 	}
 	table.content .title { text-align: center; }
@@ -363,7 +363,7 @@ a.tiny-button-link, table.columns .readMore td.buttonWrapper td, table.column .r
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentEtudeMarche {
 		//voir pour mise en place pleine couleur en mode mobile
-		background-color: #f00 !important;
+		background-color: e("**((secteur_color))**") !important;
 		table.inner { background-color: transparent !important; }
 		td.sub-columns {
 			width: auto !important;
