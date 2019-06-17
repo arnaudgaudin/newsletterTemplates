@@ -345,7 +345,7 @@ a.tiny-button-link, table.columns .readMore td.buttonWrapper td, table.column .r
 // contentEtudeMarche area
 // -------------------------
 .contentEtudeMarche {
-	background-color: #0f0;
+	.newsletterInnerTextColor(#ffffff);
 	table.inner, table.image, table.content {
 		width: 100%;
 		-premailer-width: 100%;
@@ -358,14 +358,13 @@ a.tiny-button-link, table.columns .readMore td.buttonWrapper td, table.column .r
 		background-color: #f00;
 		td { vertical-align: middle; }
 	}
-	table.content {
-		background-color: #00f;
-		.title { text-align: center; }
-	}
+	table.content .title { text-align: center; }
 }
 @media only screen and (max-width: (@containerWidth + @gutterWidth)) {
 	table[class="body"] .contentEtudeMarche {
 		//voir pour mise en place pleine couleur en mode mobile
+		background-color: #f00 !important;
+		table.inner { background-color: transparent !important; }
 		td.sub-columns {
 			width: auto !important;
 			&.first { min-width: 50px !important; }
