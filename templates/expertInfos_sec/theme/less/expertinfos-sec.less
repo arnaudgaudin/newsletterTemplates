@@ -350,21 +350,33 @@ a.tiny-button-link, table.columns .readMore td.buttonWrapper td, table.column .r
 		width: 100%;
 		-premailer-width: 100%;
 	}
+	table.inner td, table.content td {
+		padding-top: (@wrapperPad / 2);
+		padding-bottom: (@columnPad / 2);
+	}
 	table.inner {
 		background-color: #f00;
-		td {
-			padding-top: (@wrapperPad / 2);
-			padding-bottom: (@columnPad / 2);
-			vertical-align: middle;
-		}
+		td { vertical-align: middle; }
 	}
 	table.content {
 		background-color: #00f;
-		td {
-			padding-top: (@wrapperPad / 2);
-			padding-bottom: (@columnPad / 2);
-		}
 		.title { text-align: center; }
+	}
+}
+@media only screen and (max-width: (@containerWidth + @gutterWidth)) {
+	table[class="body"] .contentEtudeMarche {
+		//voir pour mise en place pleine couleur en mode mobile
+		td.sub-columns {
+			width: auto !important;
+			&.first { min-width: 50px !important; }
+		}
+		td.wrapper, table.inner, table.image, table.content {
+			width: 100% !important;
+		}
+		table.inner td, table.content td {
+			padding-top: (@wrapperPadCollapse / 2) !important;
+			padding-bottom: (@columnPadCollapse / 2) !important;
+		}
 	}
 }
 
