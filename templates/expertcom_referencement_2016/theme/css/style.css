@@ -1335,7 +1335,7 @@ img.spacer-webicon {
 }
 
 .header td.wrapper.last table.columns td.ref {
-  padding-top: 60px;
+  padding-top: 6px;
 }
 
 .header .title {
@@ -1806,7 +1806,7 @@ img.spacer-webicon {
     line-height: 1em !important;
   }
 
-  table[class="body"] .header td.logo img.lelpp {
+  table[class="body"] .header td.logo img.lep {
     max-width: 320px !important;
   }
 
