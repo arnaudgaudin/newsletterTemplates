@@ -1333,11 +1333,14 @@ img.spacer-webicon {
   line-height: 20px;
 }
 
+.header td.wrapper.last table.columns td.ref {
+  padding-top: 60px;
+}
+
 .header .title {
   text-align: right;
   font-weight: 200;
   color: #ffffff;
-  line-height: 30px;
 }
 
 .contentOnline {
@@ -1841,9 +1844,17 @@ img.spacer-webicon {
     text-align: center !important;
   }
 
+  table[class="body"] .header td.wrapper.last table.columns td.ref {
+    padding-top: 0px !important;
+  }
+
   table[class="body"] .header .title {
     text-align: center !important;
     line-height: 1em !important;
+  }
+
+  table[class="body"] .header td.logo img.lelpp {
+    max-width: 320px !important;
   }
 
   table[class="body"] .contentOnline td {
