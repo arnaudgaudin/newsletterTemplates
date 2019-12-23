@@ -75,7 +75,7 @@ giflossy -v -O3 --lossy=500 -k192 ${PWD}/_sources/E05-Mongolfiere-2020.gif      
 giflossy -v -O3 --lossy=125 -k192 ${PWD}/_sources/E06-Fusee-2020.gif              -o ${PWD}/theme/images/stcv-06-fusee.gif
 giflossy -v -O3 --lossy=125 -k192 ${PWD}/_sources/E07-Ambiance-2020.gif           -o ${PWD}/theme/images/stcv-07-ambiance.gif
 giflossy -v -O3 --lossy=125 -k192 ${PWD}/_sources/E08-Chiffres-2020.gif           -o ${PWD}/theme/images/stcv-08-chiffres.gif
-giflossy -v -O3 --lossy=750 -k96 ${PWD}/_sources/E09-Ballons-Noir-2020.gif        -o ${PWD}/theme/images/stcv-09-ballons_noir.gif
+giflossy -v -O3 --lossy=750 -k96  ${PWD}/_sources/E09-Ballons-Noir-2020.gif       -o ${PWD}/theme/images/stcv-09-ballons_noir.gif
 giflossy -v -O3 --lossy=500 -k192 ${PWD}/_sources/E09-Ballons-Rose-2020.gif       -o ${PWD}/theme/images/stcv-09-ballons_rose.gif
 
 # Anciennes commandes de compression, pour référence si besoin futur
