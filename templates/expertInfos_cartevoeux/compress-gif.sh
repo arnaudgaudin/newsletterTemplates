@@ -50,20 +50,33 @@ echo "compressing gif files for sites ..."
 # giflossy -v -O3 --lossy=250 -k96  ${PWD}/_sources/anim_recette_site.gif     `seq -f "#%g" 0 2 79`  -o ${PWD}/theme/images/stcv_recette.gif
 
 # Nouvelles CV2019
-giflossy -v -O3 --lossy=125 -k192 ${PWD}/_sources/anim_ange_site.gif              -o ${PWD}/theme/images/stcv_ange.gif
-giflossy -v -O3 --lossy=333 -k192 ${PWD}/_sources/anim_ballons_site.gif           -o ${PWD}/theme/images/stcv_ballons.gif
-giflossy -v -O3 --lossy=333 -k192 ${PWD}/_sources/anim_ballons_site_en.gif        -o ${PWD}/theme/images/stcv_ballons_en.gif
-giflossy -v -O3 --lossy=125 -k192 ${PWD}/_sources/anim_bhn_im013545_2019_site.gif -o ${PWD}/theme/images/stcv_bhn_im013545.gif
-giflossy -v -O3 --lossy=333 -k128 ${PWD}/_sources/anim_chiffres_2019_site.gif     -o ${PWD}/theme/images/stcv_chiffres.gif
-giflossy -v -O3 --lossy=125 -k192 ${PWD}/_sources/anim_couleurs_site.gif          -o ${PWD}/theme/images/stcv_couleurs.gif
-giflossy -v -O3 --lossy=125 -k192 ${PWD}/_sources/anim_graphique_site.gif         -o ${PWD}/theme/images/stcv_graphique.gif
-giflossy -v -O3 --lossy=333 -k128 ${PWD}/_sources/anim_lagon_site.gif             -o ${PWD}/theme/images/stcv_lagon.gif
-giflossy -v -O3 --lossy=333 -k192 ${PWD}/_sources/anim_lumiere_site.gif           -o ${PWD}/theme/images/stcv_lumiere.gif
-giflossy -v -O3 --lossy=500 -k96  ${PWD}/_sources/anim_neige_2019_site.gif        -o ${PWD}/theme/images/stcv_neige.gif
-giflossy -v -O3 --lossy=333 -k128 ${PWD}/_sources/anim_peinture_site.gif          -o ${PWD}/theme/images/stcv_peinture.gif
-giflossy -v -O3 --lossy=250 -k192 ${PWD}/_sources/anim_sapin_2019_site.gif        -o ${PWD}/theme/images/stcv_sapin.gif
-giflossy -v -O3 --lossy=333 -k192 ${PWD}/_sources/anim_sommet_2019_site.gif       -o ${PWD}/theme/images/stcv_sommet.gif
-giflossy -v -O3 --lossy=125 -k192 ${PWD}/_sources/anim_vedette_site.gif           -o ${PWD}/theme/images/stcv_vedette.gif
+# giflossy -v -O3 --lossy=125 -k192 ${PWD}/_sources/anim_ange_site.gif              -o ${PWD}/theme/images/stcv_ange.gif
+# giflossy -v -O3 --lossy=333 -k192 ${PWD}/_sources/anim_ballons_site.gif           -o ${PWD}/theme/images/stcv_ballons.gif
+# giflossy -v -O3 --lossy=333 -k192 ${PWD}/_sources/anim_ballons_site_en.gif        -o ${PWD}/theme/images/stcv_ballons_en.gif
+# giflossy -v -O3 --lossy=125 -k192 ${PWD}/_sources/BHN_Expertise-2020-IM013545.gif -o ${PWD}/theme/images/stcv_bhn_im013545.gif
+# giflossy -v -O3 --lossy=333 -k128 ${PWD}/_sources/anim_chiffres_2019_site.gif     -o ${PWD}/theme/images/stcv_chiffres.gif
+# giflossy -v -O3 --lossy=125 -k192 ${PWD}/_sources/anim_couleurs_site.gif          -o ${PWD}/theme/images/stcv_couleurs.gif
+# giflossy -v -O3 --lossy=125 -k192 ${PWD}/_sources/anim_graphique_site.gif         -o ${PWD}/theme/images/stcv_graphique.gif
+# giflossy -v -O3 --lossy=333 -k128 ${PWD}/_sources/anim_lagon_site.gif             -o ${PWD}/theme/images/stcv_lagon.gif
+# giflossy -v -O3 --lossy=333 -k192 ${PWD}/_sources/anim_lumiere_site.gif           -o ${PWD}/theme/images/stcv_lumiere.gif
+# giflossy -v -O3 --lossy=500 -k96  ${PWD}/_sources/anim_neige_2019_site.gif        -o ${PWD}/theme/images/stcv_neige.gif
+# giflossy -v -O3 --lossy=333 -k128 ${PWD}/_sources/anim_peinture_site.gif          -o ${PWD}/theme/images/stcv_peinture.gif
+# giflossy -v -O3 --lossy=250 -k192 ${PWD}/_sources/anim_sapin_2019_site.gif        -o ${PWD}/theme/images/stcv_sapin.gif
+# giflossy -v -O3 --lossy=333 -k192 ${PWD}/_sources/anim_sommet_2019_site.gif       -o ${PWD}/theme/images/stcv_sommet.gif
+# giflossy -v -O3 --lossy=125 -k192 ${PWD}/_sources/anim_vedette_site.gif           -o ${PWD}/theme/images/stcv_vedette.gif
+
+# Nouvelles CV2020
+giflossy -v -O3 --lossy=125 -k192 ${PWD}/_sources/BHN_Expertise-2020-IM013545.gif -o ${PWD}/theme/images/stcv-im013545-bhn_expertise.gif
+giflossy -v -O3 --lossy=333 -k192 ${PWD}/_sources/E01-Sommet-2020.gif             -o ${PWD}/theme/images/stcv-01-sommet.gif
+giflossy -v -O3 --lossy=250 -k192 ${PWD}/_sources/E02-Sapin-2020.gif              -o ${PWD}/theme/images/stcv-02-sapin.gif
+giflossy -v -O3 --lossy=125 -k192 ${PWD}/_sources/E03-Vedette-2020.gif            -o ${PWD}/theme/images/stcv-03-vedette.gif
+giflossy -v -O3 --lossy=333 -k192 ${PWD}/_sources/E04-Lumiere-2020.gif            -o ${PWD}/theme/images/stcv-04-lumiere.gif
+giflossy -v -O3 --lossy=500 -k192 ${PWD}/_sources/E05-Mongolfiere-2020.gif        -o ${PWD}/theme/images/stcv-05-mongolfiere.gif
+giflossy -v -O3 --lossy=333 -k128 ${PWD}/_sources/E06-Fusee-2020.gif              -o ${PWD}/theme/images/stcv-06-fusee.gif
+giflossy -v -O3 --lossy=200 -k128 ${PWD}/_sources/E07-Ambiance-2020.gif           -o ${PWD}/theme/images/stcv-07-ambiance.gif
+giflossy -v -O3 --lossy=333 -k128 ${PWD}/_sources/E08-Chiffres-2020.gif           -o ${PWD}/theme/images/stcv-08-chiffres.gif
+giflossy -v -O3 --lossy=333 -k192 ${PWD}/_sources/E09-Ballons-Noir-2020.gif       -o ${PWD}/theme/images/stcv-09-ballons_noir.gif
+giflossy -v -O3 --lossy=333 -k192 ${PWD}/_sources/E09-Ballons-Rose-2020.gif       -o ${PWD}/theme/images/stcv-09-ballons_rose.gif
 
 # Anciennes commandes de compression, pour référence si besoin futur
 # giflossy -v -O3 --lossy=800 -k128 ${PWD}/_sources/anim_mer_IM004706.gif -o ${PWD}/theme/images/nlcv_mer_IM004706.gif
