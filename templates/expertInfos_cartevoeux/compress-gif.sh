@@ -66,17 +66,17 @@ echo "compressing gif files for sites ..."
 # giflossy -v -O3 --lossy=125 -k192 ${PWD}/_sources/anim_vedette_site.gif           -o ${PWD}/theme/images/stcv_vedette.gif
 
 # Nouvelles CV2020
-giflossy -v -O3 --lossy=125 -k192 ${PWD}/_sources/BHN_Expertise-2020-IM013545.gif -o ${PWD}/theme/images/stcv-im013545-bhn_expertise.gif
-giflossy -v -O3 --lossy=333 -k192 ${PWD}/_sources/E01-Sommet-2020.gif             -o ${PWD}/theme/images/stcv-01-sommet.gif
+giflossy -v -O3 --lossy=250 -k192 ${PWD}/_sources/BHN_Expertise-2020-IM013545.gif -o ${PWD}/theme/images/stcv-im013545-bhn_expertise.gif
+giflossy -v -O3 --lossy=500 -k192 ${PWD}/_sources/E01-Sommet-2020.gif             -o ${PWD}/theme/images/stcv-01-sommet.gif
 giflossy -v -O3 --lossy=250 -k192 ${PWD}/_sources/E02-Sapin-2020.gif              -o ${PWD}/theme/images/stcv-02-sapin.gif
 giflossy -v -O3 --lossy=125 -k192 ${PWD}/_sources/E03-Vedette-2020.gif            -o ${PWD}/theme/images/stcv-03-vedette.gif
-giflossy -v -O3 --lossy=333 -k192 ${PWD}/_sources/E04-Lumiere-2020.gif            -o ${PWD}/theme/images/stcv-04-lumiere.gif
+giflossy -v -O3 --lossy=500 -k192 ${PWD}/_sources/E04-Lumiere-2020.gif            -o ${PWD}/theme/images/stcv-04-lumiere.gif
 giflossy -v -O3 --lossy=500 -k192 ${PWD}/_sources/E05-Mongolfiere-2020.gif        -o ${PWD}/theme/images/stcv-05-mongolfiere.gif
-giflossy -v -O3 --lossy=333 -k128 ${PWD}/_sources/E06-Fusee-2020.gif              -o ${PWD}/theme/images/stcv-06-fusee.gif
-giflossy -v -O3 --lossy=200 -k128 ${PWD}/_sources/E07-Ambiance-2020.gif           -o ${PWD}/theme/images/stcv-07-ambiance.gif
-giflossy -v -O3 --lossy=333 -k128 ${PWD}/_sources/E08-Chiffres-2020.gif           -o ${PWD}/theme/images/stcv-08-chiffres.gif
-giflossy -v -O3 --lossy=333 -k192 ${PWD}/_sources/E09-Ballons-Noir-2020.gif       -o ${PWD}/theme/images/stcv-09-ballons_noir.gif
-giflossy -v -O3 --lossy=333 -k192 ${PWD}/_sources/E09-Ballons-Rose-2020.gif       -o ${PWD}/theme/images/stcv-09-ballons_rose.gif
+giflossy -v -O3 --lossy=125 -k192 ${PWD}/_sources/E06-Fusee-2020.gif              -o ${PWD}/theme/images/stcv-06-fusee.gif
+giflossy -v -O3 --lossy=125 -k192 ${PWD}/_sources/E07-Ambiance-2020.gif           -o ${PWD}/theme/images/stcv-07-ambiance.gif
+giflossy -v -O3 --lossy=125 -k192 ${PWD}/_sources/E08-Chiffres-2020.gif           -o ${PWD}/theme/images/stcv-08-chiffres.gif
+giflossy -v -O3 --lossy=750 -k96 ${PWD}/_sources/E09-Ballons-Noir-2020.gif        -o ${PWD}/theme/images/stcv-09-ballons_noir.gif
+giflossy -v -O3 --lossy=500 -k192 ${PWD}/_sources/E09-Ballons-Rose-2020.gif       -o ${PWD}/theme/images/stcv-09-ballons_rose.gif
 
 # Anciennes commandes de compression, pour référence si besoin futur
 # giflossy -v -O3 --lossy=800 -k128 ${PWD}/_sources/anim_mer_IM004706.gif -o ${PWD}/theme/images/nlcv_mer_IM004706.gif
